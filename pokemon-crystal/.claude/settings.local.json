@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"from pypdf import PdfReader; print\\(len\\(PdfReader\\('C Oak Guide.pdf'\\).pages\\)\\)\")",
+      "Bash(python3 -c \"import PyPDF2\")",
+      "Bash(python3 -c \"import pdfplumber\")",
+      "Bash(python3 -c \"import fitz; print\\('pymupdf ok'\\)\")",
+      "Bash(pdfinfo \"C Oak Guide.pdf\")",
+      "Bash(pdftotext -f 1 -l 2 \"C Oak Guide.pdf\" -)",
+      "Bash(pdftotext -layout \"C Oak Guide.pdf\" /tmp/oak_guide.txt)",
+      "Read(//tmp/**)",
+      "Bash(cd *)",
+      "WebFetch(domain:bulbapedia.bulbagarden.net)",
+      "Bash(python3 -c \"import pypdf\")",
+      "Bash(pdftotext -v)",
+      "Bash(pdftotext -layout \"C Oak Guide.pdf\" coak.txt)",
+      "Bash(python3 *)",
+      "Bash(grep -iE '\\\\.\\(png|gif|jpg\\)$')",
+      "Bash(grep -icE '\\\\.\\(png|gif|jpg\\)$')",
+      "Bash(curl -s -o /tmp/test_badge.png -w \"%{http_code} %{size_download}bytes\\\\n\" --max-time 12 \"https://media.retroachievements.org/Badge/228630.png\")"
+    ]
+  }
+}
