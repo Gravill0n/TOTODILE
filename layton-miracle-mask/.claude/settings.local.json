@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdfinfo \"sources/Professor Layton and the Miracle Mask US Any% Guide.pdf\")",
+      "Bash(mkdir -p assets output)",
+      "Bash(cp /home/gravill0n/Games/Guides/.claude/skills/achievement-guide-builder/assets/styles.css assets/)",
+      "Bash(cp /home/gravill0n/Games/Guides/.claude/skills/achievement-guide-builder/assets/app.js assets/)",
+      "Bash(python3 make_guide.py)",
+      "Bash(python3 build.py guide.json -o output/layton-miracle-mask-route.html)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('guide.json'\\)\\); print\\('guide.json OK'\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -)"
+    ]
+  }
+}
