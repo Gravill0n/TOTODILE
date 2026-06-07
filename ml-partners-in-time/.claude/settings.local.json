@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -)",
+      "WebFetch(domain:www.vgmaps.com)",
+      "WebSearch",
+      "WebFetch(domain:www.mariowiki.com)",
+      "Bash(python3 __TRACKED_VAR__/build.py build/guide.json -o output/ml-partners-in-time.html --assets __TRACKED_VAR__/assets)",
+      "Read(//home/gravill0n/.claude/projects/-home-gravill0n-Games-Guides/memory/**)",
+      "Bash(printf -- '- [ML: Partners in Time guide]\\(ml-pit-guide.md\\) — achievement guide build status & decisions\\\\n')"
+    ]
+  }
+}

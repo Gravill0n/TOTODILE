@@ -1,0 +1,1013 @@
+{
+  "game": {
+    "title": "Mario & Luigi: Partners in Time — Achievement Guide",
+    "platform": "Nintendo DS · RetroAchievements",
+    "slug": "ml-partners-in-time-ra",
+    "accent": "#E52521",
+    "spoiler_warning": true
+  },
+  "sources": [
+    {
+      "label": "Mario & Luigi: Partners in Time · RetroAchievements",
+      "url": "https://retroachievements.org/game/3118",
+      "role": "Achievements",
+      "note": "Official achievement set — names, points, rarity, and descriptions."
+    },
+    {
+      "label": "charmandermaster1015 — Partners in Time FAQ/Walkthrough (GameFAQs)",
+      "url": "https://gamefaqs.gamespot.com/ds/928290-mario-and-luigi-partners-in-time/faqs",
+      "role": "Walkthrough",
+      "note": "Turn-by-turn route spine. Facts preserved; connective prose reworded."
+    },
+    {
+      "label": "VGMaps — Mario & Luigi: Partners in Time (DS)",
+      "url": "https://www.vgmaps.com/Atlas/DS/index.htm",
+      "role": "Map",
+      "note": "Region maps ripped by G.E.R. (covers through the Vim Factory)."
+    },
+    {
+      "label": "Super Mario Wiki — Mario & Luigi: Partners in Time",
+      "url": "https://www.mariowiki.com/Mario_%26_Luigi:_Partners_in_Time",
+      "role": "Reference",
+      "note": "Boss/character artwork and sprites."
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach-99548", "name": "Past-Present Troubles", "points": 10, "rarity": "94.80%",
+      "badge_img": "assets/img/538244.png", "type_label": "Progression",
+      "description": "Defeat Shroob Group in Hollijolli Village and rescue your grown-up brothers.",
+      "callout_do": "Win the rematch against the two Shroobs at the Mayor's house in Hollijolli Village.",
+      "howto": [
+        "Story-gated. After the unwinnable Three Shroobs fight, and after the Baby Bowser's Star Cruiser segment, you return to the front of the Mayor's house as the Babies for a rematch against two Shroobs.",
+        "Unlike the first encounter, this battle is winnable. Attack the first Shroob with X and Y; Young Toadsworth then gives you 5 Green Shells.",
+        "Have Baby Mario select the Shell icon and use a Green Shell: press X to release it, and press Y to kick it back when it reaches Baby Luigi. Keep kicking — it speeds up and the rating climbs from OK to Good to Great.",
+        "If you miss a kick the shell is lost, but Young Toadsworth hands you another Green Shell every turn. Keep attacking until both Shroobs fall, avenging the Big Brothers."
+      ]
+    },
+    {
+      "id": "ach-99789", "name": "Harvest Bean: Bowser's Castle", "points": 10, "rarity": "38.40%",
+      "badge_img": "assets/img/538245.png",
+      "description": "Dig out all 8 beans in Bowser's Castle.",
+      "callout_do": "Dig up all 8 underground beans hidden in Bowser's Castle.",
+      "howto": [
+        "Beans are buried at the 'X' markers on the ground and can only be dug out after you learn the Hammer Moves (taught later, inside Toadwood Forest's Vim Factory) — so you return to Bowser's Castle to collect these.",
+        "There are 8 beans to dig in Bowser's Castle. They are useful for buying badges from Fawful's Bean Shop."
+      ],
+      "missing_info": "The route source marks bean spots inline with the word 'BEAN', but its bean markers only begin from the Vim Factory onward — it does not enumerate the 8 individual dig locations inside Bowser's Castle. A bean-location source or map is needed to pin each spot."
+    },
+    {
+      "id": "ach-99549", "name": "Mysterious Sparkling", "points": 10, "rarity": "83.69%",
+      "badge_img": "assets/img/538246.png", "type_label": "Progression",
+      "description": "Have Professor E. Gadd evaluate the sparkling shard found in Bowser's Castle.",
+      "callout_do": "Take the Sparkling Shard from Bowser's Castle back to Professor E. Gadd at Peach's Castle.",
+      "howto": [
+        "While clearing the dark Shine Sprite cave in Bowser's Castle, hit the unique treasure-chest block to receive a Sparkling Shard (it looks like a cone).",
+        "Back in present-day Peach's Castle, navigate to the Professor at the back of the castle.",
+        "He evaluates the shard as a Cobalt Star shard and explains you have collected one and need 5 more — earning this achievement."
+      ]
+    },
+    {
+      "id": "ach-99550", "name": "1337 H4XZ00R", "points": 10, "rarity": "75.34%",
+      "badge_img": "assets/img/538248.png", "type_label": "Progression",
+      "description": "Defeat L33T HAMM3R BROZ. inside Vim Factory in Toadwood Forest.",
+      "callout_do": "Beat both Hammer Bros in the Vim Factory's first true boss fight.",
+      "howto": [
+        "Story mini-boss. After the Hammer Brothers trap Mario and Luigi (speaking '1337'), you fight both of them — 100 HP each, 80 XP.",
+        "Their attack: one Hammer Bro knocks the other into a Baby. Watch his hands — jump to dodge if he uses the hammer, but do NOT jump if he hits with his hands. When one dies or is burnt, the survivor throws hammers that bounce off the ground; jump right when a hammer hits the ground (he throws two or three per turn).",
+        "Use Bro Flowers (effective) and avoid Green Shells (only 1 damage each). Defeating both ends the fight and frees the Bros."
+      ]
+    },
+    {
+      "id": "ach-143328", "name": "N0 BR0Z L3FT B3H1ND", "points": 10, "rarity": "53.29%",
+      "badge_img": "assets/img/538247.png", "missable": true,
+      "description": "Defeat both L33T HAMM3R BROZ. within one turn of each other.",
+      "callout_do": "Down the second Hammer Bro within a turn of the first — don't leave one alive for long.",
+      "howto": [
+        "Fought together with 1337 H4XZ00R against both Hammer Brothers (100 HP each).",
+        "Keep their HP roughly even rather than focusing one down far ahead of the other.",
+        "Use Bro Flowers; burning one can finish it on the same turn the other falls, satisfying the 'within one turn of each other' condition."
+      ]
+    },
+    {
+      "id": "ach-99790", "name": "Harvest Bean: Toadwood Forest", "points": 10, "rarity": "36.39%",
+      "badge_img": "assets/img/538249.png",
+      "description": "Dig out all 14 beans at Toadwood Forest and Vim Factory.",
+      "callout_do": "Dig all 14 beans across Toadwood Forest and the Vim Factory.",
+      "howto": [
+        "14 beans are buried at X markers across Toadwood Forest and the Vim Factory, dug with the Babies after you learn the Hammer Moves.",
+        "The route source flags each one inline with 'BEAN' as you pass; the Vim Factory beans are tucked in side rooms and along the orange-platform spike pits."
+      ]
+    },
+    {
+      "id": "ach-99552", "name": "Oozing Swiggler", "points": 10, "rarity": "71.21%",
+      "badge_img": "assets/img/538251.png", "type_label": "Progression",
+      "description": "Defeat Swiggler inside Vim Factory in Toadwood Forest and acquire a Cobalt Star shard.",
+      "callout_do": "Beat Swiggler and its two Dr. Shroobs to claim the second Cobalt Star shard.",
+      "howto": [
+        "Boss of the Vim Factory — 250 HP, 198 XP. The two Dr. Shroobs die when Swiggler does.",
+        "Dodge his triple ground-pound shock waves by jumping both Bros; hammer away the toxic cloud he spits (twice, or once with precise timing); dodge the saucer energy balls by jumping as they enter the bottom screen.",
+        "You may poison his drink (knock a black Mushroom in) to slash his defense — but NEVER hit a Dr. Shroob holding a red Mushroom (it heals Swiggler 86 HP). Beating him yields the second Cobalt Star shard."
+      ]
+    },
+    {
+      "id": "ach-143305", "name": "Poisonless Drinks", "points": 10, "rarity": "43.99%",
+      "badge_img": "assets/img/538250.png", "missable": true,
+      "description": "Defeat Swiggler without poisoning its drink.",
+      "callout_do": "Beat Swiggler without ever knocking a poison Mushroom into his drink.",
+      "howto": [
+        "Swiggler (250 HP) fights alongside two Dr. Shroobs who pull out red or black Mushrooms.",
+        "Normally you'd jump a Dr. Shroob holding a black (poison) Mushroom to knock it into Swiggler's green drink, lowering his defense — for this achievement, never do that.",
+        "Win using only direct damage (Cannonballers, Green Shells, jumps) while dodging his ground-pound shock waves and hammering away the toxic clouds he spits."
+      ]
+    },
+    {
+      "id": "ach-99594", "name": "Toadsworth Twist", "points": 5, "rarity": "69.00%",
+      "badge_img": "assets/img/538252.png", "type_label": "Progression",
+      "description": "Be inspired by the performance of Toadsworth and learn the Spin Jump ability.",
+      "callout_do": "Watch the Toadsworths spin in the garden, then complete the Spin Jump tutorial.",
+      "howto": [
+        "Back at Peach's Castle after Toadwood Forest, watch the two Toadsworths spin to calm Baby Peach in the garden; Luigi asks to learn the move.",
+        "In the tutorial stage, press R to ready the technique and B to hover over each of the four spiked pits. Completing it teaches the Spin Jump."
+      ]
+    },
+    {
+      "id": "ach-99595", "name": "Cookie Munchers", "points": 10, "rarity": "50.26%",
+      "badge_img": "assets/img/538254.png", "type_label": "Progression",
+      "description": "Defeat Kamek at Yoshi's Island after eating all of the cookies. Yummy!",
+      "callout_do": "Defeat Kamek at the end of Yoshi's Island's first stretch.",
+      "howto": [
+        "Story boss (450 HP, 130 XP); the fight begins after the cut scene where Baby Bowser eats the cookies and storms off.",
+        "Deflect Kamek's spiked-ball throws with your hammer (let falling Mushrooms hit you to heal), find and damage the real Kamek among her four clones, and when she's knocked off her broom her defense drops — pile on Cannonballers."
+      ]
+    },
+    {
+      "id": "ach-143306", "name": "Found You, Faker!", "points": 10, "rarity": "36.63%",
+      "badge_img": "assets/img/538253.png", "missable": true,
+      "description": "Defeat Kamek without hitting any fakes. Counter attacks to figure out which ones are fake!",
+      "callout_do": "Beat Kamek while only ever damaging the real one — never the four clones.",
+      "howto": [
+        "Kamek (450 HP) splits into four clones plus the real one. Only ever damage the real Kamek.",
+        "Find the real one by watching the circle of Kameks — the real one shakes slightly more than the others (use your peripheral vision on the center). Hit her with Cannonballers, and avoid Bro Flowers (those are used to clear fakes).",
+        "Counter her attacks — deflect spiked balls with your hammer (don't deflect Mushrooms, let them heal you), and when she throws a fireball at both Bros, jump together so it hits her."
+      ]
+    },
+    {
+      "id": "ach-99791", "name": "Harvest Bean: Yoshi's Island", "points": 10, "rarity": "30.60%",
+      "badge_img": "assets/img/538255.png",
+      "description": "Dig out all 45 beans on Yoshi's Island and in Yoob's Belly.",
+      "callout_do": "Dig all 45 beans across Yoshi's Island and inside the Giant Yoshi.",
+      "howto": [
+        "45 beans — the most of any region — are split between Yoshi's Island and Yoob's Belly (inside the Giant Yoshi).",
+        "Yoob's Belly opens with a 'crazy bean rush' of roughly fifteen beans around the first room; the rest are scattered on clouds, ledges, and side rooms, flagged inline by the route as you pass."
+      ]
+    },
+    {
+      "id": "ach-99596", "name": "Boogity, Pom, Yoshi", "points": 10, "rarity": "47.07%",
+      "badge_img": "assets/img/538257.png", "type_label": "Progression",
+      "description": "Defeat Sunnycide inside Yoob's Belly on Yoshi's Island.",
+      "callout_do": "Free five Yoshis to flip Sunnycide over, then finish him.",
+      "howto": [
+        "Boss inside the Giant Yoshi — 450 HP plus five 30-HP eggs, 260 XP. Free five Yoshis by jumping the eggs around him; they flip Sunnycide over, leaving him vulnerable.",
+        "While he's down, jump the holes he opens (a second after he pulls the ceiling chain — right hand targets Mario, left targets Luigi) and hammer the Boos he sends in the dark, then bombard him with Cannonballers and shells."
+      ]
+    },
+    {
+      "id": "ach-143307", "name": "The Yoshis Are in Another Egg!", "points": 10, "rarity": "32.81%",
+      "badge_img": "assets/img/538256.png", "missable": true,
+      "description": "Defeat Sunnycide without freeing a single Yoshi.",
+      "callout_do": "Beat Sunnycide's body directly — never break one of the five eggs.",
+      "howto": [
+        "Sunnycide (450 HP, plus five 30-HP eggs) is normally beaten by jumping the five eggs to free Yoshis, who flip him over.",
+        "For this achievement, never break an egg — defeat Sunnycide's body directly without freeing any Yoshi.",
+        "Counter his suck attack by hammering before he eats you; dodge the eggs he throws by jumping when he targets a Brother."
+      ]
+    },
+    {
+      "id": "ach-99597", "name": "Toadworth Rolls", "points": 5, "rarity": "46.08%",
+      "badge_img": "assets/img/538258.png", "type_label": "Progression",
+      "description": "Be inspired by the performance of Toadsworth and learn the Bros. Ball ability.",
+      "callout_do": "Complete the garden Bro Roll tutorial back at Peach's Castle.",
+      "howto": [
+        "Back at Peach's Castle after Yoshi's Island, the Toadsworths roll in the garden; you learn the Bro Roll (Bros. Ball).",
+        "In the tutorial: press R to ready Bro Moves and A to get into position. Roll right across the wavy bridge, then roll under the low bridge to finish."
+      ]
+    },
+    {
+      "id": "ach-99598", "name": "Party Crashers", "points": 10, "rarity": "42.14%",
+      "badge_img": "assets/img/538260.png", "type_label": "Progression",
+      "description": "Defeat Shrooboid Brat inside Koopaseum in Gritzy Desert.",
+      "callout_do": "Beat the Shrooboid Brat on the Koopa Dome's center stage.",
+      "howto": [
+        "Boss of the Koopaseum / Koopa Dome — 1100 HP, 400 XP. The audience votes (M or L posters) for his target before he throws his lollypop — jump a split second after he pulls the candy back.",
+        "Use Ice Flowers to lower his defense, then Smash Eggs and Cannonballers. Hammer away the poison Mushrooms he spits and (normally) let the regular ones hit you."
+      ]
+    },
+    {
+      "id": "ach-143308", "name": "No More Mushrooms", "points": 25, "rarity": "30.41%",
+      "badge_img": "assets/img/538259.png", "missable": true,
+      "description": "Defeat Shrooboid Brat without healing, including heals from the enemy.",
+      "callout_do": "Beat the Shrooboid Brat with zero healing — hammer away EVERY Mushroom he spits.",
+      "howto": [
+        "Shrooboid Brat (1100 HP) sometimes spits regular Mushrooms that heal you if they hit you. Never heal — and let no healing Mushroom touch you.",
+        "When he spits Mushrooms, hammer away BOTH the poison and the regular Mushrooms (don't let the regular ones land). Use no healing items the whole fight.",
+        "Damage him with Cannonballers and Smash Eggs (lower his defense with Ice Flowers first); dodge his thrown lollypop by jumping just after he pulls it behind his head."
+      ]
+    },
+    {
+      "id": "ach-99792", "name": "Harvest Bean: Gritzy Desert", "points": 10, "rarity": "29.26%",
+      "badge_img": "assets/img/538261.png", "missable": true,
+      "description": "Dig out all 21 beans in Gritzy Desert, the Koopaseum, and Gritzy Caves.",
+      "callout_do": "Dig all 21 beans across Gritzy Desert, the Koopaseum, and the Gritzy Caves.",
+      "howto": [
+        "21 beans across Gritzy Desert, the Koopaseum, and the Gritzy Caves (Under Gritzy Desert), dug at X markers in the sandy patches.",
+        "Several sit out in the open desert and the rolling-maze areas; the route flags each as you pass."
+      ]
+    },
+    {
+      "id": "ach-99599", "name": "P Is for Peter Piranha", "points": 10, "rarity": "39.82%",
+      "badge_img": "assets/img/538263.png", "type_label": "Progression",
+      "description": "Defeat Petey Piranha inside Gritzy Caves in Gritzy Desert and acquire a Cobalt Star shard.",
+      "callout_do": "Beat Petey Piranha to free Kylie Koopa and the third Cobalt Star shard.",
+      "howto": [
+        "Boss of the Gritzy Caves — 1000 HP, 360 XP. Dodge his melon throws by jumping right before each melon lands (a rolling dive = melons together; a straight dive = melons separately).",
+        "Hammer away his swinging plant (watch the M-block letter for the target), and rapidly jump in place to escape his quicksand. Beating him frees Kylie Koopa and a Cobalt Star shard."
+      ]
+    },
+    {
+      "id": "ach-143309", "name": "Anti-Air", "points": 10, "rarity": "28.79%",
+      "badge_img": "assets/img/538262.png", "missable": true,
+      "description": "Defeat Petey Piranha without attacking them while they're in the air.",
+      "callout_do": "Only attack Petey while he's grounded — never while he's flying or diving.",
+      "howto": [
+        "Petey Piranha (1000 HP) alternates between flying/diving and burrowing into the floor. Only attack him while he's grounded.",
+        "When he's on the ground (mouth up) he's immune to jumps but open to Hammers and Shells — use Green/Red Shells then. Avoid item timings that would strike him mid-air."
+      ]
+    },
+    {
+      "id": "ach-99600", "name": "Toadsworth Spinake", "points": 5, "rarity": "39.50%",
+      "badge_img": "assets/img/538264.png", "type_label": "Progression",
+      "description": "Be inspired by the performance of Toadsworth and learn the Baby Spin and Baby Cakes abilities.",
+      "callout_do": "Complete the two garden tutorials for Spinning Babies and Baby Cakes.",
+      "howto": [
+        "Back at Peach's Castle after Gritzy Desert, two garden tutorials teach Spinning Babies (Spin Jump into the Babies to launch them) and Baby Cakes (roll over the Babies to flatten them).",
+        "Both are needed to rescue Baby Peach from the hidden garden cave and to proceed."
+      ]
+    },
+    {
+      "id": "ach-99788", "name": "Harvest Bean: Peach's Castle", "points": 10, "rarity": "27.02%",
+      "badge_img": "assets/img/538265.png",
+      "description": "Dig out all 13 beans in Peach's Castle.",
+      "callout_do": "Dig all 13 beans throughout present-day Peach's Castle.",
+      "howto": [
+        "13 beans are buried throughout Peach's Castle (present) — the main halls, the library/bookshelf room, the sewers approach, and the upper-floor rooms you revisit between regions.",
+        "Dig them at X markers once you have the Hammer Moves; the route flags them on each castle return."
+      ]
+    },
+    {
+      "id": "ach-99601", "name": "Lady Volcano", "points": 10, "rarity": "37.30%",
+      "badge_img": "assets/img/538267.png", "type_label": "Progression",
+      "description": "Defeat Mrs. Thwomp at the top of Thwomp Volcano.",
+      "callout_do": "Beat Mrs. Thwomp after the volcano is doused.",
+      "howto": [
+        "Boss after the volcano is put out — 900 HP, 400 XP. Weaken her with Ice Flowers.",
+        "Dodge her spin-and-drop shock wave by jumping both Bros as she lands (jump the Brother nearer her shadow first). When she splits into four, counter each by hammering as it jumps in front of you (watch the eyebrow she raises), then target the real Thwomp."
+      ]
+    },
+    {
+      "id": "ach-143310", "name": "Once Is Enough", "points": 10, "rarity": "28.87%",
+      "badge_img": "assets/img/538266.png", "missable": true,
+      "description": "Defeat Mrs. Thwomp without letting her combine into one again.",
+      "callout_do": "Finish Mrs. Thwomp while she's split into four — don't let her recombine.",
+      "howto": [
+        "Mrs. Thwomp (900 HP) splits into four small Thwomps (three clones + the real one). Normally, if you don't kill the real one fast she recombines to full size.",
+        "Finish her off while split — single out the real Thwomp (regular teeth, no chip in her head) and hit it with strong single-target attacks (Pocket Chomps, Green Shells) before she can merge back."
+      ]
+    },
+    {
+      "id": "ach-99793", "name": "Harvest Bean: Thwomp Volcano", "points": 10, "rarity": "25.13%",
+      "badge_img": "assets/img/538268.png",
+      "description": "Dig out all 21 beans in Thwomp Volcano and Thwomp Caverns.",
+      "callout_do": "Dig all 21 beans across Thwomp Volcano and the caverns inside it.",
+      "howto": [
+        "21 beans across Thwomp Volcano and the Thwomp Caverns inside it.",
+        "Many require Spinning Babies onto green blocks or squashed-Baby tunnels to reach; the route flags each X marker as you climb."
+      ]
+    },
+    {
+      "id": "ach-143304", "name": "Thwackpot!", "points": 5, "rarity": "25.40%",
+      "badge_img": "assets/img/538269.png",
+      "description": "Get 3 stars on the extra-burly difficulty in the Slot Minigame found in Thwomp Caverns; you cannot have more than 990 beans in your inventory.",
+      "callout_do": "Hit three Stars on Extra-Burly in the Thwomp's slot minigame (with 990 beans or fewer).",
+      "howto": [
+        "Inside the volcano, play the Thwomp's slot minigame: roll the Big Bros into the golden cannon, hit the red switch, then roll to collect Blue Diamonds before the reels spin.",
+        "Choose Extra-Burly (only available after your first game) and line up three Stars — that pays 5 beans, but only registers if you're holding 990 beans or fewer.",
+        "Replay as needed. Do NOT ask the Thwomp for help — that option caps the prize at three Mushrooms."
+      ]
+    },
+    {
+      "id": "ach-143303", "name": "Thwhoa!", "points": 5, "rarity": "24.73%",
+      "badge_img": "assets/img/538270.png",
+      "description": "Collect 50 gems in the Thwomp Caverns minigame on the second-last floor to get the Simple Badge.",
+      "callout_do": "Grab all 50 Blue Diamonds in Mr. Thwomp's diamond minigame.",
+      "howto": [
+        "On Mr. Thwomp's diamond-collecting minigame, use Spinning Babies to enter the twister, then float down grabbing Blue Diamonds (stay centered, aim for big clusters).",
+        "The second run asks for 50 — there are exactly 50 in the room, so you must grab every one. Use the ledge sticking out of the right wall to reach the room's far goodies.",
+        "Collecting all 50 earns the special prize (the Simple Badge)."
+      ]
+    },
+    {
+      "id": "ach-99602", "name": "Evil Partnership", "points": 10, "rarity": "35.33%",
+      "badge_img": "assets/img/538272.png", "type_label": "Progression",
+      "description": "Defeat Team Bowser inside Thwomp Cavern at Thwomp Volcano.",
+      "callout_do": "Beat Baby Bowser and Big Bowser at the bottom of the volcano.",
+      "howto": [
+        "Boss at the bottom of the volcano: Baby Bowser (800 HP) and Big Bowser (1200 HP), 400 XP. Power up with a Red Pepper first.",
+        "Jump Bowser's shockwave; deflect his shelled hammer-volley back at him; jump both Bros when Baby Bowser stomps him into spitting fireballs. Use Ice Flowers, Smash Eggs, or Copy Flowers; kill Baby Bowser first to make the rest easy."
+      ]
+    },
+    {
+      "id": "ach-143311", "name": "Using Cheap Tricks", "points": 10, "rarity": "29.38%",
+      "badge_img": "assets/img/538271.png", "missable": true,
+      "description": "Send Bowser off-screen by countering attacks and defeat Baby Bowser while he's gone.",
+      "callout_do": "Knock Big Bowser off-screen via shell counters, then finish Baby Bowser before he returns.",
+      "howto": [
+        "Deflecting Big Bowser's hammered shell correctly makes him miss and temporarily vanish off-screen, leaving only Baby Bowser.",
+        "Counter the shell ping-pong to send Big Bowser away, then defeat Baby Bowser (800 HP) while Big Bowser is gone — before he comes back."
+      ]
+    },
+    {
+      "id": "ach-99794", "name": "Harvest Bean: Shroob Mother Ship", "points": 10, "rarity": "30.37%",
+      "badge_img": "assets/img/538273.png", "missable": true,
+      "description": "Dig out all 11 beans on the Shroom Mother Ship.",
+      "callout_do": "Dig all 11 beans aboard the Shroob's Mother Ship.",
+      "howto": [
+        "11 beans aboard the Shroob's Mother Ship.",
+        "Several cluster near the first Save Block and the regroup blocks; others are by the elevators on the upper stories. The route flags each X marker as you cross the ship."
+      ]
+    },
+    {
+      "id": "ach-99738", "name": "Bombershroob", "points": 10, "rarity": "34.03%",
+      "badge_img": "assets/img/538275.png", "type_label": "Progression",
+      "description": "Defeat Commander Shroob on Star Hill.",
+      "callout_do": "Expose and beat the Commander Shroob hiding behind the Shroob-omb.",
+      "howto": [
+        "Boss on Star Hill — Commander Shroob 1600 HP; Support Shroobs 110 each; ~820 XP.",
+        "Attack the LAST two Support Shroobs in the line — NOT the first one — so the Shroob-omb eventually crushes the first and rolls into the Commander.",
+        "Once exposed, hit the Commander with Red Shells, Copy Flowers, and Ice Flowers; hammer away the Support Shroobs he throws at you between rounds."
+      ]
+    },
+    {
+      "id": "ach-143312", "name": "Self-Destruction", "points": 10, "rarity": "25.56%",
+      "badge_img": "assets/img/538274.png", "missable": true,
+      "description": "Defeat Commander Shroob without attacking a single Support Shroob directly, using only counters.",
+      "callout_do": "Beat the Commander while only ever countering the Support Shroobs — never attacking them.",
+      "howto": [
+        "Commander Shroob hides behind a Shroob-omb carried by Support Shroobs. Never directly attack a Support Shroob — clear them (and expose the Commander) only by countering.",
+        "When they hammer-throw the Shroob-omb at you, deflect it back (watch the bomb's winking eye for the target); it ping-pongs until it explodes on the trio.",
+        "Then counter the Commander's thrown Support Shroobs with your hammer until he's beaten."
+      ]
+    },
+    {
+      "id": "ach-99739", "name": "Star Trial", "points": 10, "rarity": "32.53%",
+      "badge_img": "assets/img/538276.png", "type_label": "Progression",
+      "description": "Acquire a Cobalt Star shard inside Star Shrine on Star Hill.",
+      "callout_do": "Pass the star-gate trials in the Star Shrine to claim the fourth Cobalt Star shard.",
+      "howto": [
+        "Fetch the Aurora Block (launch the Babies to the sky platform, spit water to knock the block across, then strike it for the star gate) and connect all the colored beams across the five star platforms.",
+        "Reaching the inner shrine and pressing the blue button drops the fourth Cobalt Star shard into your hands."
+      ]
+    },
+    {
+      "id": "ach-99795", "name": "Harvest Bean: Toad Town", "points": 10, "rarity": "25.36%",
+      "badge_img": "assets/img/538277.png",
+      "description": "Dig out all 16 beans in Toad Town, on Star Hill, and in Star Shrine.",
+      "callout_do": "Dig all 16 beans across Toad Town, Star Hill, and the Star Shrine.",
+      "howto": [
+        "16 beans across the ruined Toad Town, the icy Star Hill path, and the Star Shrine's floating islands.",
+        "Dig the X markers as you pass, including ones reached only by squashed Babies slipping inside the houses."
+      ]
+    },
+    {
+      "id": "ach-99740", "name": "Enraged Shrooboid", "points": 10, "rarity": "32.69%",
+      "badge_img": "assets/img/538279.png", "type_label": "Progression",
+      "description": "Defeat Elder Shrooboid inside Star Shrine on Star Hill after revealing the drawing secret and acquire a Cobalt Star shard.",
+      "callout_do": "Clean the sketch's smudge, then beat the Elder Shroob for the fifth Cobalt Star shard.",
+      "howto": [
+        "After Toadbert has you rub the smudge off the sketch (clean the lower-right corner with the stylus), the Elder Shroob attacks — 1700 HP first form / 1100 HP angry form, 1500 XP.",
+        "Don't jump on his spikes — use Ice Flowers (while upright) and Copy Flowers. In his giant second form, reset the death-counter saucer by deflecting his spiked ball into it (Baby Luigi sends it straight up; Baby Mario angles it right).",
+        "Winning grants the fifth Cobalt Star shard."
+      ]
+    },
+    {
+      "id": "ach-143313", "name": "A Respectable Fight", "points": 25, "rarity": "24.89%",
+      "badge_img": "assets/img/538278.png", "missable": true,
+      "description": "Defeat Elder Shrooboid without attacking them while they're lying on the floor.",
+      "callout_do": "Beat the Elder Shroob without ever hitting him while he's knocked down.",
+      "howto": [
+        "Elder Shroob (1700 HP first form / 1100 HP angry form) falls flat when you deflect his spiked ball, becoming open to jumps. Never attack him while he's lying on the floor.",
+        "Damage him only while he's upright — use Ice Flowers and Copy Flowers when standing — and skip the knocked-down openings entirely."
+      ]
+    },
+    {
+      "id": "ach-99796", "name": "Harvest Bean: Shroob Castle", "points": 10, "rarity": "23.87%",
+      "badge_img": "assets/img/538280.png",
+      "description": "Dig out all 18 beans in Shroob Castle.",
+      "callout_do": "Dig all 18 beans throughout the Shroob Castle.",
+      "howto": [
+        "18 beans throughout the Shroob Castle (Peach's Castle in the past).",
+        "Many are hidden in the small caves behind the cliff-top fences and in the secret garden cave; the route flags each X marker as you wind through the floors."
+      ]
+    },
+    {
+      "id": "ach-143327", "name": "A Perfect Showdown", "points": 10, "rarity": "24.18%",
+      "badge_img": "assets/img/538281.png", "missable": true,
+      "description": "Defeat the Mother Ship before the final boss without taking any damage.",
+      "callout_do": "Win the saucer dogfight against the Mother Ship without being hit once.",
+      "howto": [
+        "Just before Princess Shroob, you pilot a saucer to destroy her Mother Ship by knocking its small saucers into it (four hits).",
+        "You have four points of health — finish all four hits WITHOUT being hit once.",
+        "Hit the small saucers when they briefly stop so they strike the Mother Ship, and dodge them when they fly at you after about 10 seconds."
+      ]
+    },
+    {
+      "id": "ach-143314", "name": "A Princess Without Her Guard", "points": 10, "rarity": "23.16%",
+      "badge_img": "assets/img/538282.png", "missable": true,
+      "description": "Defeat Princess Shroob without letting her regain her shield.",
+      "callout_do": "Break Princess Shroob's force field, then finish her before she raises a new one.",
+      "howto": [
+        "Princess Shroob (3000 HP; force field ~1000) re-raises a force field as you damage her. Once the shield is gone, finish her before she can put up another.",
+        "Power up with Red Peppers, shred the force field with Trampolines/Pocket Chomps/Copy Flowers, then unload everything the moment it breaks — aim for ~500 damage per turn so she dies before re-shielding."
+      ]
+    },
+    {
+      "id": "ach-143315", "name": "Pantless Victory", "points": 25, "rarity": "20.48%",
+      "badge_img": "assets/img/538283.png", "missable": true,
+      "description": "Defeat Elder Princess Shroob without wearing any pants or badges.",
+      "callout_do": "Beat the Elder Princess Shroob with every Brother stripped of pants and badges.",
+      "howto": [
+        "The Elder (older) Princess Shroob is the second final-boss sister — 3000 HP body; foot 500 / crown 350 / arms 250. All four Brothers must wear NO pants and NO badges.",
+        "Unequip everything beforehand. Use Mix Flowers on her tentacles and foot, then Copy Flowers/Pocket Chomps to break her crown and damage her body; deflect the falling saucers (fire → Mario, short-circuit → Luigi)."
+      ]
+    },
+    {
+      "id": "ach-99741", "name": "Cobalt Princess", "points": 25, "rarity": "29.11%",
+      "badge_img": "assets/img/538284.png", "type_label": "Progression",
+      "description": "Defeat Princess Shroob and her twin sister in Shroob Castle.",
+      "callout_do": "Clear the final-boss gauntlet: Princess Shroob, then the Elder Princess Shroob.",
+      "howto": [
+        "The final-boss gauntlet: first Princess Shroob (force-field form), then her older twin, the Elder Princess Shroob (two forms).",
+        "Save Mix Flowers for the Elder's second form; keep Red Peppers, Copy Flowers, Pocket Chomps and Red Shells stocked. Beating both sisters clears this story milestone."
+      ]
+    },
+    {
+      "id": "ach-99742", "name": "Dream Team", "points": 10, "rarity": "29.07%",
+      "badge_img": "assets/img/538285.png", "type_label": "Win Condition",
+      "description": "Defeat Bowser at Peach Castle while controlled by Princess Shroob.",
+      "callout_do": "Win the final fight against the possessed Bowser to beat the game.",
+      "howto": [
+        "The final battle, back in present-day Peach's Castle: Bowser, possessed by Princess Shroob's ghost. You can't attack him directly — counter/dodge his attacks so they strike the ghost (10 pieces of health) above.",
+        "Jump his direct fireballs (they loop back and chip the ghost half a piece each); hammer the ceiling fireballs and his slow energy balls back at her (a full piece each). Clearing the ghost's health wins the game."
+      ]
+    },
+    {
+      "id": "ach-143326", "name": "Shroob Exterminator", "points": 25, "rarity": "21.27%",
+      "badge_img": "assets/img/538286.png", "missable": true,
+      "description": "Defeat Shrowser without getting hit.",
+      "callout_do": "Beat the final Shrowser fight taking zero damage.",
+      "howto": [
+        "Shrowser is the final Bowser-and-ghost battle. Beat it WITHOUT taking a single hit.",
+        "Perfectly dodge or counter every attack: jump direct fireballs, hammer the ceiling fireballs and the slow energy balls. They speed up as the fight goes on, so stay sharp until the ghost's 10 pieces are gone."
+      ]
+    },
+    {
+      "id": "ach-99797", "name": "Mister Bean", "points": 25, "rarity": "23.20%",
+      "badge_img": "assets/img/538287.png", "missable": true,
+      "description": "Dig out all 167 underground beans in the game.",
+      "callout_do": "Dig up every single underground bean — all 167.",
+      "howto": [
+        "The grand total of every underground bean: 167 across all regions — 8 Bowser's Castle, 14 Toadwood/Vim, 45 Yoshi's Island/Yoob, 21 Gritzy, 13 Peach's Castle, 21 Thwomp Volcano, 11 Mother Ship, 16 Toad Town/Star, 18 Shroob Castle.",
+        "Marked missable because beans can't be dug until you learn the Hammer Moves in the Vim Factory, and some early-area X markers are easy to walk past.",
+        "The route flags each spot inline with 'BEAN'; clearing every regional Harvest Bean achievement unlocks this with the final one."
+      ]
+    },
+    {
+      "id": "ach-95649", "name": "Clothes Make the Plumber", "points": 25, "rarity": "21.07%",
+      "badge_img": "assets/img/538288.png", "missable": true,
+      "description": "Have at least one of every pants in the game. Some cannot be regained after selling them.",
+      "callout_do": "Collect at least one of every pants/trousers — and never sell the item-block-only ones.",
+      "howto": [
+        "Own at least one of every pants/trousers in the game at once. Missable because several pants come only from item blocks and can't be re-bought if sold.",
+        "Buyable pairs (shops): Starchy Jeans, Patched Slacks, Preferred Pants, Branded Slacks, Egg Pants, Shell Slacks, Royal Pants, Royal Trousers; Toad Town adds Mushroom Jeans, Stardust Pants, Shroom Slacks, Star Trousers.",
+        "Item-block-only pants (do NOT sell these): Unarmed Jeans, Wild Trousers, Heart Pants, Puffy Trousers, Secret Jeans, Adult Trousers, Golden Pants, Block Trousers, Stache Jeans, Para Slacks, Rocket Jeans, Space Trousers, 100-Point Pants, Supreme Slacks."
+      ]
+    },
+    {
+      "id": "ach-143316", "name": "Green Shell Master", "points": 5, "rarity": "63.41%",
+      "badge_img": "assets/img/538289.png",
+      "description": "Hit an enemy 15 times with a Green Shell in a single attack.",
+      "callout_do": "Rally a Green Shell to 15 hits in one attack.",
+      "howto": [
+        "Kick a Green Shell back and forth between Brothers like ping-pong (A, then B as it reaches the other Brother). It speeds up after eight kicks (OK → Good → Great).",
+        "Keep a clean rally going to land 15 hits before the shell breaks; with all four Bros, the babies add hammer hits (A, X, B, X…)."
+      ]
+    },
+    {
+      "id": "ach-143324", "name": "Red Shell Master", "points": 5, "rarity": "27.85%",
+      "badge_img": "assets/img/538290.png",
+      "description": "Hit an enemy 20 times with a Red Shell in a single attack.",
+      "callout_do": "Rally a Red Shell to 20 hits in one attack.",
+      "howto": [
+        "Red Shells are used exactly like Green Shells but hit harder and don't break on their own — ideal for racking up hits.",
+        "Keep the rally perfect to reach 20 hits in one attack. Red Shells are common in late-game item blocks (Toad Town onward)."
+      ]
+    },
+    {
+      "id": "ach-143317", "name": "Bro Flower Master", "points": 5, "rarity": "71.25%",
+      "badge_img": "assets/img/538291.png",
+      "description": "Hit an enemy 30 times with a Bro Flower in a single attack.",
+      "callout_do": "Throw a Bro Flower to 30 hits on one enemy.",
+      "howto": [
+        "Select a Bro Flower and mash A to throw fireballs; when the red fireball passes to the other Brother, switch to B (listen for the beep).",
+        "Keep the throws going against an enemy NOT resistant to fire to chain 30 hits in one attack — use a single-target enemy so throws don't scatter."
+      ]
+    },
+    {
+      "id": "ach-143319", "name": "Ice Flower Master", "points": 5, "rarity": "49.19%",
+      "badge_img": "assets/img/538292.png",
+      "description": "Hit an enemy 30 times with an Ice Flower in a single attack.",
+      "callout_do": "Throw an Ice Flower to 30 hits on one enemy.",
+      "howto": [
+        "Ice Flowers are thrown like Bro Flowers (mash A, switch to B on the beep) and can lower the enemy's stats.",
+        "Chain 30 throws in a single attack against an enemy that isn't ice-resistant."
+      ]
+    },
+    {
+      "id": "ach-143320", "name": "Smash Egg Master", "points": 5, "rarity": "45.21%",
+      "badge_img": "assets/img/538293.png",
+      "description": "Hit an enemy 6 times with a Smash Egg in a single attack.",
+      "callout_do": "Land 6 Smash Egg hits in one attack.",
+      "howto": [
+        "Press A to kick the egg up, hold B as it flies, and release when it's about halfway down the screen so it smashes the enemy and returns.",
+        "Land six clean hits before the egg breaks; with four Bros, the Y/X baby variant launches it higher for extra hits. Smash Eggs are plentiful on Yoshi's Island."
+      ]
+    },
+    {
+      "id": "ach-143321", "name": "Pocket Chomp Master", "points": 5, "rarity": "32.06%",
+      "badge_img": "assets/img/538294.png",
+      "description": "Hit an enemy 15 times with a Pocket Chomp in a single attack; additional hits from babies do not count.",
+      "callout_do": "Land 15 Big-Brother Pocket Chomp hits — baby hits don't count.",
+      "howto": [
+        "Throw a Pocket Chomp (A) and press the Brother's button each time the Chain Chomp passes over the enemy's head.",
+        "Only the Big Brothers' hits count toward the 15 — do NOT press the baby buttons. Don't miss a command or you'll trip and end the turn."
+      ]
+    },
+    {
+      "id": "ach-143318", "name": "Cannonballer Master", "points": 5, "rarity": "63.41%",
+      "badge_img": "assets/img/538295.png",
+      "description": "Hit an enemy 4 times with a Cannonballer in a single attack.",
+      "callout_do": "Nail all four Brothers' Cannonballer hits in one attack.",
+      "howto": [
+        "Fire the Cannonballer and press each Brother's button as he shoots out of the cannon at the target (the order is random).",
+        "Hit all four Brothers' action commands in one attack for four hits."
+      ]
+    },
+    {
+      "id": "ach-143322", "name": "Trampoline Master", "points": 5, "rarity": "34.54%",
+      "badge_img": "assets/img/538296.png",
+      "description": "Hit an enemy 15 times with a Trampoline in a single attack.",
+      "callout_do": "Bounce a Trampoline to 15 hits in one attack.",
+      "howto": [
+        "Press A to bounce; when a Brother falls toward the enemy, press his button as he lands on its head, then repeat for each random Brother.",
+        "Best used on a single tough enemy (a boss) so every Brother targets it — keep the chain perfect to reach 15 hits."
+      ]
+    },
+    {
+      "id": "ach-143323", "name": "Copy Flower Master", "points": 5, "rarity": "28.52%",
+      "badge_img": "assets/img/560118.png",
+      "description": "Hit an enemy 30 times with a Copy Flower in a single attack.",
+      "callout_do": "Chain a Copy Flower to 30 hits on one enemy.",
+      "howto": [
+        "Copy Flowers send copies at one target fast — press the Brother's button each time a copy lands, then keep pressing for the copies streaming in from the left.",
+        "One missed command ends the turn with no second chance, so a clean rally to 30 needs steady timing on a single enemy."
+      ]
+    },
+    {
+      "id": "ach-143325", "name": "Mix Flower Master", "points": 5, "rarity": "30.52%",
+      "badge_img": "assets/img/538298.png",
+      "description": "Throw 50 Fireballs using the Mix Flower in a single attack.",
+      "callout_do": "Throw 50 fireballs in one Mix Flower attack.",
+      "howto": [
+        "All four Brothers throw fireballs at the giant fireball in the center (mash each Brother's button as the throw passes to them).",
+        "Keep feeding the central fireball without missing to throw 50 fireballs before it drops — a single tough boss is the best target."
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "chapter-1",
+      "title": "Chapter 1 — Peach's Castle & Hollijolli Village (Past)",
+      "kind": "route",
+      "intro": "The Shroobs invade the Mushroom Kingdom. You begin in the past as Baby Mario and Baby Luigi, lose the grown-up Bros to an unwinnable Shroob ambush in Hollijolli Village, then — by way of Baby Bowser's Star Cruiser — return to rescue them.",
+      "sections": [
+        {
+          "heading": "1.1 · Peach's Castle, First Visit",
+          "items": [
+            { "type": "step", "where": "Peach's Castle (Present)", "text": "Watch the opening scene of the alien Shroobs invading the Mushroom Kingdom. You begin your adventure as Baby Mario and Baby Luigi in the castle (present time)." },
+            { "type": "step", "text": "Listen to young Toadsworth, then walk up the stairs to the next room. Continue walking up — you will pass three dead Toads further up. Baby Bowser then appears with the princess and burns up Toadsworth. When the Babies try to get the Baby Princess back, Baby Bowser attacks." },
+            { "type": "step", "npc": "Tutorial Battle: Baby Bowser", "text": "Health 8 · XP 0 · Very Easy. After your first jump, listen to Toadsworth: press X (or the other Brother's button) right as you land on Baby Bowser's head for triple damage. Dodge his flame attack by jumping over it right after he spits it. A few more hits finishes him." },
+            { "type": "step", "text": "Watch the long cut scene; you move to present time, where everyone is grown (Princess Peach is an adult). After more talking, Mario is sent to fetch a Refreshroom for the fainted Toadsworth — you control him." },
+            { "type": "step", "where": "Castle interior", "text": "Head down to the next room and go to the bottom to find a Save Block (you do not need the restore block). Save, then go left to the next room." },
+            { "type": "step", "text": "In this long room, get the coin from the '?' block to your left, then go up to two more '?' blocks: take the Mushroom from the left one and the coin from the right one. Go to the room to your upper left." },
+            { "type": "step", "text": "Head straight down through three more rooms to the bottom of the third. Go through the door to your left (slightly diagonally up) and hit the '?' block in the middle of the room for the Refreshroom." },
+            { "type": "step", "text": "Return to the middle room with the fallen Toadsworth and watch him get revived. Mario is then thrown into a battle against a green monster, the Junior Shrooboid." },
+            { "type": "step", "npc": "Tutorial Battle: Junior Shrooboid", "text": "Health 13 · XP 6 · Very Easy. Jump on him with A (you are Mario). He spins into you — jump just before he hits you to dodge, or jump right before he starts moving forward (not when he starts spinning) to counter. Keep attacking; the 6 XP levels you up to level 2." },
+            { "type": "step", "text": "Watch a short cut scene; you can now control both Mario and Luigi. Go down to the next room and hit the heart block to your right to heal if you took damage. Save with the Save Block, then go down to the garden for the cut scene." }
+          ]
+        },
+        {
+          "heading": "1.2 · Hollijolli Village (Past)",
+          "items": [
+            { "type": "step", "where": "Hollijolli Village (Past)", "text": "The Brothers enter the time hole into Hollijolli Village. Listen to Stuffwell as it shows you the item stash — follow its instructions for Items, Equipment, and Bro Stats, and it brings you to the top screen. The time hole then closes, leaving Mario and Luigi alone. Walk right and hit the Save Block.",
+              "figure": { "src": "assets/img/map-hollijolli-village.png", "alt": "Hollijolli Village map", "caption": "Hollijolli Village (Past) — full region map", "credit": "VGMaps (rip by G.E.R.)" } },
+            { "type": "step", "text": "Walk to the next part of the village; Stuffwell talks again. Jump up the steps to your right (both Bros can jump together). After two steps, walk up and left to the platform with the '?' block and hit it for 2 Mushrooms. Walk right to the next platform for 5 coins (rapidly hit the block), then take the 1-Up Mushroom from the third plateau." },
+            { "type": "step", "text": "Continue right along the upper ledge; Stuffwell teaches jumping past gaps. Jump past three small gaps (both Bros together) into an area of Mario and Luigi blocks (each holds a single coin). Use Mario to hit the two 'M' blocks and Luigi for the trio of 'L' blocks, then walk up the stairs to your upper right to the grassy area." },
+            { "type": "step", "text": "Walk left; Mario is hit by a falling Toad. After the scene, go up the wooden bridge to your left. You see Shrooblets on the Mushroom and Stuffwell explains them. Use Mario to jump on a Shrooblet to start the battle with initial damage. (Walking into them starts a normal battle; getting touched from behind can make you trip.)" },
+            { "type": "step", "npc": "Enemy: Shrooblet", "text": "Health 7 · XP 2 · Very Easy. They come in pairs and attack by running into you (counter by jumping as they charge). Stuffwell shows how to control both Bros in battle (A for Mario, B for Luigi). Beat them in two turns. Possible item: Mushroom." },
+            { "type": "step", "text": "Kill two more Shrooblets on the Mushroom, then continue up the wooden bridge to the next Mushroom. Kill another Shrooblet and walk up the pair of ladders to your right. As you go, Luigi is hit by a falling Shrooblet; Stuffwell explains taking damage and using items. Press Start when indicated, use a Mushroom on Luigi from the item stash, then press B a few times to exit." },
+            { "type": "step", "text": "Continue up the wooden bridge to your left and kill the pair of Shrooblets. Walk up one last wooden bridge to a giant Mushroom with three Shrooblets. Kill them, then walk to the right of the large Mushroom across the short bridge into the city." },
+            { "type": "step", "where": "Hollijolli city", "text": "After the cut scene, walk to the upper right and enter the first house. Get the coin from the '?' block in the upper-left corner and three Mushrooms from the M block to your right. Exit, walk right to the house at the intersection, enter, and save with the Save Block." },
+            { "type": "step", "text": "Exit and take the left path to the back of another house with an L block — use Luigi for ten coins. Back at the intersection, take the lower-right path to the house beneath the broken one. Use Luigi to rapidly hit the L block for 10-coin pieces, and get another 10-coin piece from the '!' block below it." },
+            { "type": "step", "npc": "Mayor", "text": "Return to the main intersection and follow the upper-right path to the Mayor's house. The Mayor is stuck in the chimney at the back of the house. Listen to him, then jump in the fireplace to pop him out of the chimney outside. After the scene, head back outside when he cries for help. You are thrown into a battle with adult Shroobs." },
+            { "type": "step", "npc": "Boss Battle: Three Shroobs", "text": "Health 18 each · XP 0 · Impossible. You cannot win this fight — a giant saucer kills both Bros after three turns. Before that, try to kill one Shroob. They shoot with a laser gun; dodge by making both Bros jump right after the Shroob fires (when the gun stops spinning). If the gun sparkles it aims for Mario, otherwise for Luigi. After three turns the saucer kills the Bros, and a cut scene moves to Baby Bowser's ship with the Baby Brothers." }
+          ]
+        },
+        {
+          "heading": "1.3 · Baby Bowser's Star Cruiser & the Rescue",
+          "items": [
+            { "type": "step", "where": "Bowser's Star Cruiser", "text": "You control the Babies on the bridge. A Koopa Guard shows you how to make the Babies jump (X for Baby Mario, Y for Baby Luigi). Jump across the crates, getting the Mushroom from the '?' block above the second lone crate. Continue across, grab a coin from another '?' block, and talk to the second Guard to learn jumping across gaps.",
+              "figure": { "src": "assets/img/map-koopa-cruiser.png", "alt": "Koopa Cruiser map", "caption": "Baby Bowser's Star Cruiser (Koopa Cruiser)", "credit": "VGMaps (rip by G.E.R.)" } },
+            { "type": "step", "text": "Climb the crate stairs and jump across the gaps to the M and L blocks. Get 10 coins and a Mushroom from the M blocks, and a 1-Up Mushroom and a Mushroom Drop from the L ones. Jump off the bridge and go up the rest of the pathway to the second part of the bridge." },
+            { "type": "step", "text": "Jump over crates as you walk left, getting the coin from the '?' on the second cluster, and use the crate stairs to pass the large cluster. Walk the last stretch, save with the Save Block, and go up the stairs to your left to meet Baby Bowser and Princess Peach. Watch the long cut scene (Baby Bowser willingly helps the Big Bros); you are sent to save them. Back as the Babies, walk to the front of the Mayor's house for a short cut scene and a battle against two Shroobs." },
+            { "type": "achievement", "ach": "ach-99548" },
+            { "type": "step", "npc": "Boss Battle: Two Shroobs", "text": "Health 18 · XP 6 · Easy. This time the fight is winnable — see the achievement above for the Green Shell kicking technique. Win to avenge the Big Brothers.",
+              "figure": { "src": "assets/img/boss-shroob.png", "alt": "Shroob artwork", "caption": "Shroob — the enemy you must defeat to rescue the grown-up Bros", "credit": "Super Mario Wiki" } },
+            { "type": "step", "text": "After the battle, Young Toadsworth talks about how the town was attacked and brings you back to Baby Bowser's ship. Watch the rest of the long cut scene; the ship crashes and you end up in Bowser's castle — continued in Chapter 2." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-2",
+      "title": "Chapter 2 — Bowser's Castle",
+      "kind": "route",
+      "intro": "The crashed ship drops you into Bowser's Castle. Work down through the lava halls — juggling the Big Bros and the Babies across switches, Split Blocks, and a pitch-dark Shine Sprite cave — to claim a Sparkling Shard, then return to present-day Peach's Castle for Professor E. Gadd's evaluation.",
+      "sections": [
+        {
+          "heading": "2.1 · Descent Through Bowser's Castle",
+          "items": [
+            { "type": "step", "where": "Bowser's Castle", "text": "Save with the Save Block to your right and cross the path to your right into the part of the castle over a giant pool of lava. Get two Mushrooms from the '?' block and 8 Green Shells from the L one. Cross the first bridge and stomp the Goomba to start a battle.",
+              "figure": { "src": "assets/img/map-bowsers-castle.png", "alt": "Bowser's Castle map", "caption": "Bowser's Castle — full region map (large; click to zoom)", "credit": "VGMaps (rip by G.E.R.)" } },
+            { "type": "step", "npc": "Enemy: Goomba", "text": "Health 10 · XP 3 · Very Easy. Goombas act like Shrooblets but are faster and a bit tougher. Jump on them to save your Green Shells, and counter by jumping right when they start running toward you. Possible item: Mushroom." },
+            { "type": "step", "text": "Take the pathway down to fight another Goomba, then go right across another bridge and hit the M block for a 1-Up Mushroom. Back at the intersection, go right and up to a '?' block for 4 Green Shells, and kill the Goomba to your right. Continue along the path to an area with a very small bridge above you." },
+            { "type": "step", "text": "Rather than jumping straight to the bridge, fight the Goombas to your right for experience: walk right to fight 4 Goombas (7 in battle). Grab a pair of Mushrooms and a blue coin from the '?' blocks in the middle. Walk back left and use the three steps at the upper-left corner to get on the bridge. Walk across carefully — do NOT jump sections or you will fall — jump the gap in the middle, and reach the platform at the end. Go through the door and jump to the low red bridge. A cut scene reunites the Big Bros with the Babies; you regain control of Mario and Luigi." },
+            { "type": "step", "text": "Jump to the steps to your left; the Babies start to cry. Listen to Stuffwell, then run into them to put them on your back — you now control the Big and Baby Brothers together. Cross the stairs to your left and press the giant blue switch (with the Babies on your back) to open the giant door, then go through." },
+            { "type": "step", "text": "Step in front of the tall ledge facing right and press X or Y to throw the Babies up. As the Babies, walk right and hit the regroup block (pipe picture) to bring Mario and Luigi next to you. Run the Babies into the Big Bros, then use all four to step on another blue switch, opening a door to a block-filled area. Throw the Babies off and send the Tykes through the small tunnel: jump the wooden bench to your left, rapidly hit the M block for 80 coins (10-coin pieces), and hit the L block for a 1-Up Mushroom. Exit and climb back on the Big Bros' backs." },
+            { "type": "step", "text": "Walk right to the center of the room and hit all the blocks: the first two '?' blocks hold a coin and a Green Shell; the M and L blocks hold a Mushroom Drop and coins (rapidly hit the M); the last two '?' blocks hold two Mushrooms (upper) and coins (lower). Press the large blue switch ahead to open another door." },
+            { "type": "step", "text": "In the ledge area, walk to the first ledge and throw the Babies on top. Hit the regroup block to your far left to bring the Big Bros up, climb on their backs, and save with the Save Block to the right of the ledge. Walk left to another ledge and throw the Babies onto the red platform above. Hit the purple '!' block directly to your left to lower the red platform halfway to the second ledge, then press A or B for the Big Bros. As Mario and Luigi, jump to the third ledge using the red platform as a boost, pick up the Tykes, and press the Blue Switch to open another door." },
+            { "type": "step", "npc": "Tutorial Battle: Boos and Goombas", "text": "Health 14 (Goombas) / 15 (Boos) · XP 3 / 7 · Easy. Stuffwell teaches piggyback moves against the Boo: jump to it, press X for Baby Mario then A as Mario lands; repeat with Y then B for Luigi. After the Boo, Kamek throws out a Goomba and Stuffwell teaches Bros Items with the Babies — Mario selects a Green Shell and Baby Mario rides it, so press X right when you hit for extra damage (best for only the first four kicks); Luigi then uses one (Y for extra). Finally a Goomba and Boo appear: use the shell on the Goomba but NOT the Boo (it floats and is immune to shells). The Boo vanishes and strikes from behind — counter by jumping a split second after it reappears. Finish with piggyback attacks; the Big Bros level up. Possible item: Mushroom (from Boo)." },
+            { "type": "step", "text": "After Kamek flees, climb the stairs, cross the wooden bridge, and hit the '?' block for a Green Shell. Jump on the Boo to your left for a battle with a new enemy, the Boom Guy." },
+            { "type": "step", "npc": "Enemy: Boom Guy", "text": "Health 18 · XP 6 · Moderately Easy. Looks like a Shy Guy with a cannon on its head. A Green Shell kills it easily, but practice dodging. Attack the Boo first; the Boom Guy approaches after the first turn. It has a delayed bullet and a fast bullet — jump when the cannon is about to fire (you auto-jump off a fast bullet); if a puff of smoke appears, quickly jump again for the slower bullet. Jump on his head to knock off the cannon; the Shy Guy survives but cannot act until he calls another (about 50% per turn). Tip: hopping on the Boo throws you into a fight with two Boom Guys and Boos — use Green Shells on the Boom Guys after countering the Boos. Possible item: Green Shell." },
+            { "type": "step", "text": "Cross the rest of the bridge, kill two more Boos and Boom Guys for experience, and go to the lower-left corner to reach the pipe to the second part of the castle. Jump on the blue pipe with all four Brothers to go down; you pop up in the second part of Bowser's castle." },
+            { "type": "step", "where": "Bowser's Castle (lower)", "text": "Jump off the pipe and save with the Save Block to your left. Cross the path to the upper right. Hit the '?' block for a pair of Green Shells, go to the ledge on the right near the wall, throw the Babies to the ledge above, and send them through the door to a small cave. Hit the purple '!' block to grow the bridge near the Big Bros, bring the Babies back, and cross the bridge as a group of four. Press the large blue switch to open the door and enter the next area, then throw the Tykes to the upper-right ledge into another cave." },
+            { "type": "step", "text": "In the cave, hit the purple '!' switch to form a bridge — but don't go back yet. Get the 1-Up Mushroom from the '?' block to your right, kill the two pairs of Goombas in the right section, and get two 10-coin pieces from the '?' block (20 coins). Walk near the lower step and press A for the Big Bros. Stuffwell explains Split Blocks: align Luigi under the solid block and Mario under the flashing one, make Luigi hit the solid (left) block, then quickly make Mario hit the flashing one when it turns solid — this creates a step in the Babies' cave. Make the Babies climb the staircase and line them under the Split Blocks: Baby Luigi hits the solid, Baby Mario the flashing one when solid. A platform to your far right descends. Exit through the left door and climb on the Big Bros' backs." },
+            { "type": "step", "text": "Continue right (don't climb the platforms yet) and kill the ground enemies for experience — beware Boom Guy bullets, since back hits can trip you. Kill the pair of Boom Guys and hit the '?' block to your right for two coins. Go back a little, hop up the platforms to the upper ledge, dodge another Boom Guy's bullet, and kill the trio of Boom Guys. Walk to the wall above and throw the Babies to the ledge — do NOT enter the cave in front of you (it loops back). Jump up the few stairs to your left and hit another pair of Split Blocks to make another bridge. Return to the Big Bros, cross the bridge, and hit the large blue switch to open the door." },
+            { "type": "step", "text": "In the final area, the blue pipe back to the castle's last part is blocked for now. Walk around the cage to the upper-right '?' block for 20 coins, then go to the opposite side to a giant Shine Sprite block (don't hit it yet) and throw the Babies to the ledge above into the pitch-dark cave. Make Mario hit the shine block first; a Shine Sprite pops out under the Babies. Use Baby Mario to activate it and quickly cross the bridge before the light fades — don't fall in spiked pits or hit the Big Shine block with the wrong Brother, or the Babies restart. Reach the third illuminated platform near the upper left, hit the Big Block with the correct Brother, and cross the bridge to your right to the next platform. Hit the big shine block and the small block again, then cross past the small platform to the large one at the bottom right (cross the rest of the bridge when it goes dark)." },
+            { "type": "step", "text": "Exit the cave with the Babies and drop into the cage. Hit the unique treasure-chest block to get a Sparkling Shard (it looks like a cone)! The cage gate opens for the Big Brothers. Regroup into a party of four, go through the door to the room with the blue pipe, and go down the pipe to the final part of the castle." },
+            { "type": "achievement", "ach": "ach-99789" },
+            { "type": "step", "text": "Save with the Save Block to your right, cross the bridge, and continue right. Jump up the staircase without falling, then press another large blue switch to reach the room with a Time Portal. Watch the scene with Young Toadsworth; you are transferred back to Princess Peach's Castle in present time." }
+          ]
+        },
+        {
+          "heading": "2.2 · Back to Peach's Castle",
+          "items": [
+            { "type": "step", "where": "Peach's Castle (Present)", "text": "Exit the room and navigate back to the Professor at the back of the castle. Save and hit the Heart Block to heal if you need to. When you meet him, he explains that you have collected one Cobalt Shard and need 5 more." },
+            { "type": "achievement", "ach": "ach-99549" },
+            { "type": "step", "text": "Stuffwell briefly explains badges as a new Time Portal opens, and you regain control of the group. Walk down to the garden, go through the door to your left into another hallway, enter the upper room, and jump into the Time Hole to reach Toadwood Forest — picked up in Chapter 3." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-3",
+      "title": "Chapter 3 — Toadwood Forest & Vim Factory",
+      "kind": "route",
+      "intro": "A creepy forest of Toads turned to trees leads to the Shroobs' Vim Factory. Here you take down the L33T Hammer Bros, earn the Hammer Moves (so you can finally dig beans), clear the factory, and beat Swiggler for the second Cobalt Star shard — only for Baby Bowser to snatch both shards away.",
+      "sections": [
+        {
+          "heading": "3.1 · Toadwood Forest",
+          "items": [
+            { "type": "step", "where": "Toadwood Forest (Past)", "text": "Step off the deck and save with the Save Block, then go right. Get 6 Bro Flowers from the upper-left corner and a pair of Mushrooms from the '?' block. The area has hollow tree trunks with goodies (or enemies) inside — throw the Babies into the first trunk for a Mushroom Drop (M block) and a 100-coin piece (use the Big Bros to grab it before it vanishes), then trampoline out.",
+              "figure": { "src": "assets/img/map-toadwood-forest.png", "alt": "Toadwood Forest map", "caption": "Toadwood Forest (Past) — full region map", "credit": "VGMaps (rip by G.E.R.)" } },
+            { "type": "step", "text": "Throw the Babies into the second trunk to meet the Koopeleon, then a third trunk to your far left for a coin and a 100-coin piece. Walk up to the first Toad stuck in a tree; after his warning the Bros auto-dodge laser bullets. Send the Babies down the next trunk for a Super Mushroom and a 100-coin piece, then continue right." },
+            { "type": "step", "npc": "Enemy: Koopeleon", "text": "Health 20 · XP 6 · Moderately Easy. Attacks like a Goomba but turns invisible when it attacks — watch the small dust cloud and jump right when it moves forward to counter. Don't use Green Shells or Bro Flowers (only 1 damage). Possible item: Green Shell." },
+            { "type": "step", "text": "Hit the L block for 6 more Bro Flowers and kill three Koopeleons. Throw the Babies into the upper-right trunk for 3 Green Shells and a 100-coin piece, then walk down until you drop onto a Boo Guy." },
+            { "type": "step", "npc": "Enemy: Boo Guy / Elasto-Piranha", "text": "Boo Guy (17 HP, 8 XP, Easy): splits in two and points at a Brother — jump both Bros, or counter by jumping after he finishes splitting. Elasto-Piranha (30 HP, 16 XP, Moderately Hard): spits a slow fireball from varying heights — watch the shadow and jump when it is a bit past halfway down. Do NOT use Bro Flowers on the Elasto-Piranha (only 1 damage)." },
+            { "type": "step", "text": "Work right and down through the trunks and Boo Guy / Koopeleon packs, grabbing the L-block 1-Up Mushrooms, until you reach the area with six small blocks around a larger one and many inaccessible trees. Drop the Babies into the accessible trunk in the bottom-left corner into a large underground tunnel." },
+            { "type": "step", "text": "As the Babies, run the winding tunnel hitting all six Fire Blocks (the fire shoots up into the small surface blocks): hit the first at the first intersection, take the right turn and hit the second on the right side, then the next two along the path, fight an Elasto-Piranha and hit the fifth past the sharp turn, and hit the last after a bit more walking. Trampoline out and regroup." },
+            { "type": "step", "text": "Now the six small blocks hold fire — hit them all so the fire gathers in the center block; after the sixth, hit the flashing red center block to burn down the trees blocking the Blue Pipe. Cross the new pathway and bridge, then drop down the Blue Pipe to the Vim Factory courtyard." }
+          ]
+        },
+        {
+          "heading": "3.2 · Vim Factory Courtyard & the Hammer Bros",
+          "items": [
+            { "type": "step", "where": "Vim Factory courtyard", "text": "Save with the Save Block, jump up the stairs, and talk to the Toad in the tree. Clear the Elasto-Piranha in the trunk and the 6 Koopeleons, then send the Babies down the left trunk for a 100-coin piece and a pair of Unarmed Jeans (M block — high power, very low defense; only equip on a high-HP Baby).",
+              "figure": { "src": "assets/img/map-vim-factory.png", "alt": "Vim Factory map", "caption": "Shroob's Vim Factory — full region map", "credit": "VGMaps (rip by G.E.R.)" } },
+            { "type": "step", "text": "Navigate the orange-platform spike pits (use the Babies on the arrow blocks to move the Big Bros' platform), collecting the Wallet Badge (L block), and clearing Elasto-Piranhas. In the next area, hit the center Split Block with a Babies-assisted jump, then hit the four Split Blocks in order — Baby Luigi, Baby Mario, Luigi, Mario — to power up the first claw at the entrance." },
+            { "type": "step", "text": "Cross the second spike-pit area (beware the golden platform that pushes you off — Spin Jump the Big Bros over it), grab the Wild Trousers (L block) and Bro Flowers along the long final pit, then hit the second center Split Block sequence to power up the second claw. Save in the Blue Pipe area, then step on the blue pipe to enter the factory's second floor." },
+            { "type": "step", "where": "Vim Factory", "text": "Save again, step on the large blue switch, and watch the Hammer Brothers (speaking '1337') trap Mario and Luigi. You're thrown into your first true boss battle against both Hammer Bros." },
+            { "type": "achievement", "ach": "ach-99550" },
+            { "type": "achievement", "ach": "ach-143328" },
+            { "type": "step", "npc": "Tutorial: Hammer Moves", "text": "After the fight the Hammer Bros' antennas fall off and they hand you a hammer. Press R to draw it and X to smash all five crates. Then press Y near a gate to ready the Babies to dig and Y again to go underground; tunnel under both gates, smash two more crates, dig under one more gate, and press R to put hammers away. Hit the purple '!' block — they now let you dig the X markers for beans." }
+          ]
+        },
+        {
+          "heading": "3.3 · Through the Factory to Swiggler",
+          "items": [
+            { "type": "step", "text": "Work through the crate-and-gate rooms (smash crates with X, dig under gates with the Babies), the vents (grab 2 Refreshing Herbs), and the Spiny Shroopa tutorial battles (select the hammer icon; press A then X on the back-of-Bros hammer hit for big damage). Free the Big Brothers by hammering the four red orbs around the trapped tree." },
+            { "type": "achievement", "ach": "ach-99790" },
+            { "type": "step", "npc": "Enemies: Dr. Shroob & Lakitufo", "text": "Dr. Shroob (29 HP, 18 XP): dodge his two laser balls (jump, don't step on them); if he eats a red Mushroom he grows and charges slowly — hammer-counter right before he touches you. Lakitufo (26 HP, 18 XP): always with two Spiny Shroopas; jump-dodge his headbutt and hammer back the spiked ball he throws (or it spawns another Shroopa). Attack Lakitufo first." },
+            { "type": "step", "text": "Clear the factory rooms — dig the BEAN markers as you pass (lower-right of the Lakitufo room, lower-left by the next Save Block, and several more), use the Split Blocks to bridge the electrified pits, and hit the High Coin Blocks (A/B/X/Y letter blocks) for hundreds of coins. Grab Cannonballers and Bro Flowers from the M/L blocks along the way." },
+            { "type": "step", "text": "In the small Save room before the boss, heal everyone with a Mushroom Drop, equip the Babies with the Unarmed Jeans, and save (you really need to). Step on the blue switch into the blue-floored room; watch Swiggler power up some saucers, then fight him." },
+            { "type": "achievement", "ach": "ach-99552" },
+            { "type": "achievement", "ach": "ach-143305" },
+            { "type": "step", "npc": "Boss Battle: Swiggler", "text": "Health 250 · XP 198 · Moderately Hard. Two Dr. Shroobs flank him (they die when he does). Jump both Bros over his triple ground-pound shock waves; hammer away the toxic clouds he spits; jump the saucer energy balls as they enter the bottom screen. Use Cannonballers/Green Shells (Bro Flowers are weak here). Beating him drops the second Cobalt Star shard — then Baby Bowser spins in and steals both shards, and you're teleported back to Peach's Castle." }
+          ]
+        },
+        {
+          "heading": "3.4 · Peach's Castle — the Spin Jump",
+          "items": [
+            { "type": "step", "where": "Peach's Castle (Present)", "text": "Throw the separated Tykes onto the bookshelf by the door and dig the two X markers there for beans. Save in the main hall (you're auto-healed after a boss). Visit the two shops in the upper-right corner for items, equipment, and badges (e.g. Branded Slacks, Preferred Jeans, EXP and Coin Badges)." },
+            { "type": "step", "text": "Talk to the Professor about the new Time Holes, then go to the garden — the Toadsworths spin to calm Baby Peach and Luigi asks to learn the move. You enter a tutorial stage." },
+            { "type": "achievement", "ach": "ach-99594" },
+            { "type": "step", "npc": "Tutorial: Spin Jump", "text": "Press R to ready the technique, then press B to hover in the air at each of the four spiked pits, crossing each one. The Toadsworths return you to the garden." },
+            { "type": "step", "text": "If you like, return to Bowser's Castle (past) now that you can dig — there are 8 beans there and none in Hollijolli Village. Then, from the garden, climb to the second floor (Mushroom/coin from '?' blocks on the way), enter the Library, and Spin Jump across the bookcases collecting the Training Badge and other goodies. Use the Regroup Block, then jump into the portal to your left to reach Yoshi's Island — Chapter 4." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-4",
+      "title": "Chapter 4 — Yoshi's Island & Yoob's Belly",
+      "kind": "route",
+      "intro": "On Yoshi's Island you douse Kamek's fires (with Baby Mario's new water-spit ability), chase her down for a boss fight after Baby Bowser eats the cookies — then get swallowed by the Giant Yoshi (Yoob) and must rally every Yoshi inside to escape past Sunnycide.",
+      "sections": [
+        {
+          "heading": "4.1 · Yoshi's Island",
+          "items": [
+            { "type": "step", "where": "Yoshi's Island (Past)", "text": "Cross the bridge right, read the tilted sign, and follow the giant footprints into a small house for a Shroom Badge (L block); save before leaving. In the next hut you meet Kylie Koopa (the Ace Reporter); the four Yoshis panic and flee when the Giant Pink Yoshi appears." },
+            { "type": "step", "text": "Dig the BEAN by the left platform, Spin Jump roof to roof for 10 coins, and dig another BEAN near the closed hut. In the lower-right hut, Kamek appears then runs off; trampoline into the attic for 2 Smash Eggs and 20 coins, then take 2 Smash Eggs from the upper-left room and save." },
+            { "type": "step", "npc": "Baby Mario's Water Spit", "text": "Past the bridge, Baby Mario drinks from the fountain; Stuffwell explains the water-spitting ability (the number shows your spit ammo; use Baby Luigi's hammer to make him spit a drop). It douses fires, but tubby Baby Mario moves slowly and can't jump. Spit once to put out the first fire across the bridge." },
+            { "type": "step", "npc": "Enemies: Pidgit, Gnarantula, Coconutter", "text": "Pidgit (30 HP, 18 XP): a bird that swoops from front or back — jump after it passes the screen's halfway point. Gnarantula (30 HP, 15 XP): use hammers, not jumps, in case a pointy bug hides under the coat; counter by hammering at the top of its second jump. Coconutter (50 HP, 20 XP): attacks from behind with spears/needles and can heal allies — use Green Shells and kill them before they summon a healing rainstorm." },
+            { "type": "step", "text": "Work across the islands dousing fires by aligning Baby Mario behind each flame or routing water through the yellow pipe blocks (hit them to align the pipes — e.g. lower-left once, lower-right three times, upper twice). Collect Smash Eggs, the Heart Pants, Golden/other goodies, and several BEANs on the clouds. Use the twisters to Spin Jump across the long gaps and chase Kamek." },
+            { "type": "step", "text": "Past the last twister, fight the Coconutters, ride the twister to the tall platform, and hit the purple '!' block to lower a cliff for a hidden Babies tunnel. Through the cave and up to the area with the big blue button: on the long cloud, dig two BEANs and grab Super Mushrooms, Smash Eggs, and 3 Cannonballers (a boss is coming). Drop down, hit the big blue button for the last part of the island, heal, and save. Walk right to watch Baby Bowser eat the cookies — then fight Kamek." },
+            { "type": "achievement", "ach": "ach-99595" },
+            { "type": "achievement", "ach": "ach-143306" },
+            { "type": "achievement", "ach": "ach-99791" },
+            { "type": "step", "npc": "Boss Battle: Kamek", "text": "Health 450 · XP 130 · Moderately Easy. Hammer away her thrown spiked balls (release at the second screen's halfway point) but let her Mushrooms hit you to heal. She splits into four clones plus the real one — find the real (it shakes slightly more) and hit her with Cannonballers, or clear fakes with Bro Flowers. Knocked off her broom her defense drops; jump both Bros to send her fireball back at her. Possible item: Super Drop (every time). Afterward Baby Bowser eats the Cobalt Shards and swallows you into the Giant Yoshi." }
+          ]
+        },
+        {
+          "heading": "4.2 · Inside the Giant Yoshi (Yoob's Belly)",
+          "items": [
+            { "type": "step", "where": "Yoob's Belly", "text": "A Yoshi pushing a boulder asks you to find all his friends. First, the bean rush: grab the BEAN left of the Yoshi, the one by the Save Block, below the boulder, right of the entry hole, below the purple tree stump, and continue clockwise around the room collecting the rest of the roughly fifteen beans here. Regroup and save in the lower-left corner." },
+            { "type": "step", "npc": "Enemies: RC Shroober, Dry Bones, Bully", "text": "RC Shroober (60 HP, 26 XP): jump its explosive robot twice, then hammer its saucer back a split second after it sucks you in; Smash Eggs work well. Dry Bones (44 HP, 32 XP): if it jumps when throwing a bone, don't jump (it sails over); if not, jump. Bully (35 HP, 17 XP): grows angrier each turn — kill fast; Bro/Ice Flowers don't anger it." },
+            { "type": "step", "text": "Free each Yoshi to push the boulder: beat the RC Shroober for the Red Yoshi; solve the colored-switch puzzle (match the light-bulb pattern blue, blue, yellow, yellow, red, blue, red, yellow — same right-to-left on the bottom row) for the Blue Yoshi; bridge the spiked pit for the Pink Yoshi; feed the fruit (from the tree trunk below) to the Yellow Yoshi; and water-blast the RC Shroober's saucer to free the last Yoshi. Grab the Puffy Trousers, Ice Flowers, Drain Badge, and the room's BEANs along the way." },
+            { "type": "step", "text": "After the Yoshis push the boulder down the hole, drop down yourself. Cross the lower stomach rooms (more RC Shroobers and Dry Bones, plus Cannonballers and Smash Eggs), free four more Yoshis from two egg blocks by hitting them up and shooting them with water at the white ball, and follow them through. In the final goodies room grab the BEANs, equip the Babies with Unarmed Jeans, heal, and save before the boss door." },
+            { "type": "achievement", "ach": "ach-99596" },
+            { "type": "achievement", "ach": "ach-143307" },
+            { "type": "step", "npc": "Boss Battle: Sunnycide", "text": "Health 450 (30 per egg) · XP 260 · Moderately Hard. Hammer-counter his suck attack before he eats you. Jump on his five eggs to free Yoshis, who flip him over. While he's down, jump the holes he opens a second after he pulls the ceiling chain (right hand = Mario, left = Luigi) and hammer the Boos in the dark, then hit him with Cannonballers/shells. He flips back up two or three times before dying.",
+              "figure": { "src": "assets/img/boss-sunnycide.png", "alt": "Sunnycide battle sprite", "caption": "Sunnycide — flip him over by freeing five Yoshis", "credit": "Super Mario Wiki" } },
+            { "type": "step", "text": "After the fight, exit through the Giant Yoshi's… bottom, save at the house's back, and exit the front door. A cut scene recovers the Cobalt Shards and teleports you back to the Castle — Chapter 5." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-5",
+      "title": "Chapter 5 — Gritzy Desert, Koopaseum & Gritzy Caves",
+      "kind": "route",
+      "intro": "A long desert leg: roll through cactus mazes, fight your way to the Koopa Dome to beat the Shrooboid Brat, then drop into the Gritzy Caves for Petey Piranha and the third Cobalt Star shard. Back home, two garden tutorials add Spinning Babies and Baby Cakes.",
+      "sections": [
+        {
+          "heading": "5.1 · Castle Sewers & into the Desert",
+          "items": [
+            { "type": "step", "where": "Peach's Castle (Present)", "text": "Back in the library, head downstairs (grab the seven coins and a Mushroom from the '?' blocks) for the Second Shop Stop: pick up a few Cannonballers and Ice Flowers, Egg Pants and Shell Slacks, and Cure Badges. Save in the center, talk to the Professor about the new time hole to Shroob Castle, then go down to the garden — the Toadsworths roll to impress Baby Peach, teaching a new move." },
+            { "type": "achievement", "ach": "ach-99597" },
+            { "type": "step", "npc": "Tutorial: Bro Roll", "text": "Press R to ready your Bro Moves and A to get into position. Roll right across the wavy bridge and jump up the cliff, then roll under the low bridge to finish. Afterward, save in the middle room, go to the '?' room left of the first main hallway, and roll the Babies into the wall gear until the meter fills and a pipe appears — step on it to drop into the Castle Sewers." },
+            { "type": "step", "where": "Castle Sewers", "text": "The sewers are the castle basement, holding item blocks and — the main draw — Fawful's secret bean shop. Dig through the third pipe in the third room (lower-right) and follow the pipes to Fawful; spend beans on the Treasure, EXP Badge A, and Ulti-Free badges. Exit via the far-left blue pipe." },
+            { "type": "step", "text": "Back on the castle ground, go up the left stairs to the second floor and save. On the tall central room, hit the purple '!' switch, then Bro-Roll up the long staircases (two quick right turns onto each next staircase) and hit the second '!' switch within 25 seconds to open the time-portal gate. Dig the two BEANs in the room, regroup, and jump through the portal to Gritzy Desert." },
+            { "type": "step", "npc": "Enemies: Shrooba Diver, Pokey, Bob-omb", "text": "Shrooba Diver (65 HP, 32 XP): jump its thrown spiked balls; hammer-counter when it dives at your head; stand still for thrown guppies. Pokey (60 HP, 36 XP): hammer away its thrown segments; jump when it charges (impossible to dodge at full height — hammer a segment off first). Bob-omb (25 HP, 30 XP): one jump kills it; if ignited, hammer it as it walks in front of you." },
+            { "type": "step", "text": "Comb the desert areas killing enemies and grabbing items (Green Shells, Ice Flowers, Pocket Chomps, the Big-POW Badge in a pipe), digging each BEAN at the sandy patches. Roll through the cactus mazes against the timers (hit the purple '!' blocks), and use the Split-Block laser puzzle (Big Bros first, then Babies within 10 seconds) to break the shell block guarding the switch. Use the golden cannon and twisters to cross the cactus pits, then return to the Koopa building." }
+          ]
+        },
+        {
+          "heading": "5.2 · Koopa Dome — Shrooboid Brat",
+          "items": [
+            { "type": "step", "where": "Koopa Dome", "text": "Regroup and step on the blue pipe, save, then the blue button to head outside the stadium for a Kylie Koopa cut scene. Hit the purple '!' switch to lower the wall platforms, then roll through the cave (Spin Jump the spiked pit, roll under the low wall) collecting coins." },
+            { "type": "step", "text": "Cross a dark Shine-Block cave with the Babies (hit the M block to relight; grab 20 coins, an Ultra Shroom, and the Adult Trousers), hit the red button to open the purple door, and dig the BEAN in the lower-right corner. Regroup, jump the steps, heal, equip Unarmed Jeans on the Babies, save, and ride the blue panel up to the center stage amid the Shroob crowd." },
+            { "type": "achievement", "ach": "ach-99598" },
+            { "type": "achievement", "ach": "ach-143308" },
+            { "type": "step", "npc": "Boss Battle: Shrooboid Brat", "text": "Health 1100 · XP 400 · Moderately Hard. The audience votes (M or L posters) for his target before he throws his lollypop — jump a split second after he pulls the candy behind his head. Lower his defense with Ice Flowers, then use Smash Eggs and Cannonballers. Hammer away the poison Mushrooms he spits (and, for No More Mushrooms, the regular ones too). Watch for green/red poster backgrounds and multiple votes. After he dies you fall into an underground cavern." }
+          ]
+        },
+        {
+          "heading": "5.3 · Under Gritzy Desert — Petey Piranha",
+          "items": [
+            { "type": "step", "where": "Under Gritzy Desert", "text": "Save, douse the fire with Baby Mario's water, and hammer the wall crack. The two Monty Moles run a shop — buy only a few Bro Flowers/Green Shells if low (skip the risky badges and slacks). You should have ~1000 coins after." },
+            { "type": "step", "npc": "Enemies: Dark Boo, Snifaro, Elite Boom Guy", "text": "Dark Boo (35 HP, 20 XP): steals an item — counter by jumping when it appears behind you; flowers do only 1 damage. Snifaro (75 HP, 50 XP): dodge its two head-bullets (jump for the lower mouth, not the upper) and counter its looping body. Elite Boom Guy (80 HP, 40 XP): like a Boom Guy but faster — jump as the nozzle expands, jump again on a smoke puff." },
+            { "type": "step", "text": "Cross the cavern's roll-pegs, conveyor-belt water minigame (shoot only when the top and bottom items match — three pairs builds the bridge), and orange-platform rooms, digging each BEAN and grabbing Fire Flowers, Pocket Chomps, the Big-DEF and Big-POW Badges, and the High Coin Block (~350 coins). Heal, equip Unarmed Jeans, save, and press the big blue button; jump the circle platform and have the Babies hit the block to start the boss." },
+            { "type": "achievement", "ach": "ach-99599" },
+            { "type": "achievement", "ach": "ach-143309" },
+            { "type": "achievement", "ach": "ach-99792" },
+            { "type": "step", "npc": "Boss Battle: Petey Piranha", "text": "Health 1000 · XP 360 · Moderately Hard. Jump just before each melon lands (rolling dive = together, straight dive = separate). Use Bro Flowers/Pocket Chomps with X and Y (not A/B) so they hit. Hammer away his swinging plant (watch the M-block letter) and rapidly jump in place to escape quicksand. When grounded (mouth up) he's open only to Hammers and Shells. Beating him frees Kylie Koopa and the third Cobalt Star shard.",
+              "figure": { "src": "assets/img/boss-petey-piranha.gif", "alt": "Petey Piranha sprite", "caption": "Petey Piranha — only attack him while grounded for Anti-Air", "credit": "Super Mario Wiki" } },
+            { "type": "step", "text": "Hammer the wall crack, dig under the fence, and hit the red switch to hear Peach. Walk the Big Bros through the opened gate; a cut scene teleports you back to Peach's Castle (present)." }
+          ]
+        },
+        {
+          "heading": "5.4 · Peach's Castle — Spinning Babies & Baby Cakes",
+          "items": [
+            { "type": "step", "where": "Peach's Castle (Present)", "text": "Save in the lower-right room, grab the Green Shell, Bro Flower, and Cannonballer from the three '?' blocks, and dig the hidden BEAN down the small stairs. Return to the first floor and the garden, where the Toadsworths' performance teaches two new moves." },
+            { "type": "achievement", "ach": "ach-99600" },
+            { "type": "step", "npc": "Tutorials: Spinning Babies & Baby Cakes", "text": "Spinning Babies: Spin Jump the Big Bros into the Babies to launch them into the air, then steer them past a tall ledge. Baby Cakes: roll the Big Bros into the Babies to flatten them, then squeeze them through a tight cave space. Use both to rescue Baby Peach from the hidden garden cave (flatten the Babies under the gap, hit the red switch, then float them up to her)." },
+            { "type": "achievement", "ach": "ach-99788" },
+            { "type": "step", "text": "After returning the Princess, the castle rattles. Visit the items shop (Super Drops; skip the overpriced Ultra Shrooms/Copy Flowers), then go up the right stairs into Peach's room for a cut scene — Bowser steals Baby Peach and breaks the left bridge, falling into a portal on the first floor. Downstairs, in the upper-left room, dig the BEAN and use Spinning Babies to cross the long gap, then jump into the portal to Thwomp Volcano — Chapter 6." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-6",
+      "title": "Chapter 6 — Thwomp Volcano & Thwomp Caverns",
+      "kind": "route",
+      "intro": "Climb a Thwomp-infested volcano, douse its eruption with the young Professor's help, and beat Mrs. Thwomp at the top. Inside the volcano, two diamond-collecting slot minigames hide their own achievements before Team Bowser falls at the bottom.",
+      "sections": [
+        {
+          "heading": "6.1 · Up Thwomp Volcano",
+          "items": [
+            { "type": "step", "where": "Thwomp Volcano (Past)", "text": "Regroup and go up to the next area; save. Use Baby Cakes to slip the flattened Babies through the wall holes for an Ultra Shroom, and a Baby Spin to put the Big Bros in the hole with the purple '!' switch. Hit it to open the left door." },
+            { "type": "step", "npc": "Enemies: Thwack, Tanoomba, Red Coconutter", "text": "Thwack (60 HP, 20 XP): changes color after each attack — jump its ram, hammer its aerial drop. Tanoomba (69 HP, 82 XP): transforms into a balloon/Thwomp (hammer-counter) or a shell (jump together, repeatedly). Red Coconutter (90 HP, 70 XP): a tougher Coconutter that heals more — beat it fast for 70 XP." },
+            { "type": "step", "text": "Climb the cliffs and slanting bridges using Spinning Babies and Big-Bro rolls across the pegged spike bridges. Dig the many BEANs (on the Thwomp blocks, inside walls reached by squashed Babies, on green blocks), and grab Super Drops, Ice/Bro Flowers, the Counter Badge, and High Coin Block coins. Use the wind-fan caves (Big Bros spin the gear to launch the floating Babies) to reach the clouds and purple '!' blocks." },
+            { "type": "step", "text": "At the Professor-shaped building, heal, equip Unarmed Jeans, save, and Spin-Jump the yellow gear to open the lab. Inside, the fiery Thwomps destroy the lab — Spin Jump the Big Bros into the red valve to start the water, then have Baby Mario drink 9 drops and douse the large fiery Thwomp. The old Professor's invention puts out the volcano. Save, then head back toward the crater, where the Thwomp couple appears and Mrs. Thwomp attacks." },
+            { "type": "achievement", "ach": "ach-99601" },
+            { "type": "achievement", "ach": "ach-143310" },
+            { "type": "achievement", "ach": "ach-99793" },
+            { "type": "step", "npc": "Boss Battle: Mrs. Thwomp", "text": "Health 900 · XP 400 · Moderately Easy. Weaken her with Ice Flowers. Jump both Bros over her spin-and-drop shock wave (jump the Brother nearer her shadow first). She splits into four small Thwomps — counter each by hammering as it jumps in front of you (watch the raised eyebrow), then single out the real one (regular teeth, no chip) with Pocket Chomps/Green Shells before she recombines.",
+              "figure": { "src": "assets/img/boss-mrs-thwomp.gif", "alt": "Mrs. Thwomp sprite", "caption": "Mrs. Thwomp — finish her while split for Once Is Enough", "credit": "Super Mario Wiki" } }
+          ]
+        },
+        {
+          "heading": "6.2 · Inside the Volcano — Slot Minigames & Team Bowser",
+          "items": [
+            { "type": "step", "where": "Inside the Volcano", "text": "Watch the two Bowsers meet; save by Mr. Thwomp. Spin the Babies through the twister and float down the coin pit for Red Peppers and 10-coin pieces. Don't fight the next enemy yet — regroup, hit the M block for 7 Copy Flowers, then jump the golden enemy." },
+            { "type": "step", "npc": "Enemies: Gold Koopeleon, Thwack Totem, Blazing Shroob", "text": "Gold Koopeleon (10 HP, 84 XP): all hits do 1 damage but it drops 100 coins — use Bro Flowers (no physical-attack items) and beat it before it flees. Thwack Totem (150 HP, 60 XP): a stack of Thwacks — Ice Flowers then Smash Eggs/Pocket Chomps; hammer or jump the split Thwacks (red→Baby Mario, green→Baby Luigi). Blazing Shroob (90 HP, 90 XP): jump on its head to douse the fire, or use Ice Flowers." },
+            { "type": "step", "npc": "Mr. Thwomp's Slot Minigame", "text": "Throw the Babies into the wall hole, jump past the Thwomp to start. Roll the Big Bros into the golden cannon, have the Babies hit the red switch, then roll left collecting Blue Diamonds (no sharp turns; aim for dense clusters) before the reels spin. Match three panels — three Stars is best. Prizes scale with difficulty (Normal / Tough / Extra-Burly), which unlock after your first game." },
+            { "type": "achievement", "ach": "ach-143304" },
+            { "type": "step", "text": "Past the minigame, cross the bridge, dig the BEAN, and work down through Blazing Shroobs, Thwack Totems, and Gold Koopeleons. Step on the giant Thwomp to shoot down to each colored blocking block; hit the matching '!' switch on the lower floors (green, then red, then blue) to clear each one, grabbing items and BEANs along the side paths." },
+            { "type": "achievement", "ach": "ach-143303" },
+            { "type": "step", "npc": "Mr. Thwomp's Diamond Run", "text": "Step on Mr. Thwomp for the diamond run: Spin the Babies into the twister and float down grabbing Blue Diamonds (stay centered, hit big clusters). Collect 30 to raise Baby Mario to the red '!' switch; on the repeat run he asks for 50 — grab every one (there are exactly 50, using the right-wall ledge) for the special prize." },
+            { "type": "step", "text": "After the blue blocking block is cleared, complete the third bridge with the purple '!' switch. Heal everyone with Mushroom Drops, equip Unarmed Jeans, put Boss badges (Cure, Big-POW, Dynamic) on the Big Bros, save by the blue '!' switch, and step on the large Thwomp to drop to the bottom floor for the Bowsers." },
+            { "type": "achievement", "ach": "ach-99602" },
+            { "type": "achievement", "ach": "ach-143311" },
+            { "type": "step", "npc": "Boss Battle: Bowsers", "text": "Baby Bowser 800 HP / Big Bowser 1200 HP · XP 400 · Moderately Hard. Power up with a Red Pepper. Jump Bowser's shockwave; deflect his shelled hammer-volley back (it ping-pongs with Baby Bowser until Bowser misses and vanishes off-screen); jump both Bros when Baby Bowser stomps him into fireballs. Use Ice Flowers, Smash Eggs, or Copy Flowers — and kill Baby Bowser while Big Bowser is gone for Using Cheap Tricks. Afterward you're sucked into the Shroob's Mother Ship — Chapter 7." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-7",
+      "title": "Chapter 7 — Shroob's Mother Ship",
+      "kind": "route",
+      "intro": "A short stretch aboard the Shroobs' Mother Ship: ride elevators up three small stories, juggle the Babies across light-beam switch puzzles past Guardian Shroobs, and dig out the ship's hidden beans before dropping into ruined Toad Town.",
+      "sections": [
+        {
+          "heading": "7.1 · Aboard the Mother Ship",
+          "items": [
+            { "type": "step", "where": "Shroob's Mother Ship", "text": "After the Bros catch their smaller selves, grab the three BEANs (near the Save Block on the right, by the left wall, and the upper-right corner by the stairs), then save (you don't want to refight the Bowsers). Go up the left stairs and take the Max Mushroom from the M block at the path's end." },
+            { "type": "step", "npc": "Enemy: Guardian Shroob", "text": "Health 80 · XP 90 · Moderate. Small but comes in large groups with fast-firing guns — jump right when you see the sparkle; if they summon another and flick their guns, jump after the flick. Use Ice Flowers (critical damage and stat-lowering) or Smash Eggs to hit the whole group." },
+            { "type": "step", "text": "Use Spinning Babies and Big-Bro Spin Jumps to climb the ship's ledges, digging each BEAN (by the door, near the regroup block, by the elevators) and grabbing Ultra Drops, Copy Flowers, and the Drain Badge A. Solve the pillar light-beam puzzle: count four pillars to the purple '!' block's shadow, have the Babies hit each red button, and hit the '!' block as it becomes visible to retract the walls and form the spiked-pit bridge." },
+            { "type": "achievement", "ach": "ach-99794" },
+            { "type": "step", "text": "Ride the elevator to the small second story, dig its two BEANs, and Spin the Babies to the upper-right '?' block for coins. Take the elevator to the third floor (a Kylie Koopa cut scene), grab the 1-Up Super and two more BEANs, heal, and save. Enter the door for a long cut scene — you land in ruined Toad Town." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-8",
+      "title": "Chapter 8 — Toad Town, Star Hill & Star Shrine",
+      "kind": "route",
+      "intro": "Fight through a wrecked Toad Town to the icy Star Hill, beat Commander Shroob and his Shroob-omb, then cross the Star Shrine's floating islands — connecting the beam puzzle and cleaning Toadbert's sketch — to claim two Cobalt Star shards from Elder Shroob.",
+      "sections": [
+        {
+          "heading": "8.1 · Toad Town (Past)",
+          "items": [
+            { "type": "step", "where": "Toad Town (Past)", "text": "Save and visit the item shop — your coin-saving pays off here. Buy 1-Up Supers, Red/Green Peppers, and stock Bro Items (Green Shells, Bro Flowers, Cannonballers, Ice Flowers; skip the pricey Mix Flowers/Red Shells for now). In the equipment shop grab the Stardust Pants and Star Trousers (two each)." },
+            { "type": "step", "npc": "Enemies: Shroid, Skellokey, Love Bubble", "text": "Shroid (110 HP, 140 XP): hammer back its thrown spiked balls (watch the letter); if it short-circuits, do the OPPOSITE of its colored-flag commands; rapidly jump to break its blue prisms. Skellokey (96 HP, 100 XP): use Green/Red Shells to knock off its spiked segments, then hammers (flowers do nothing). Love Bubble (90 HP, 70 XP): very fast, heals allies — kill it first; use Smash Eggs/jumps." },
+            { "type": "step", "text": "Clear the town's houses (use Baby Cakes to slip through the short door openings for coins, the Dire-POW Badge, and BEANs), solve the four-Split-Block gate puzzles (Babies on one pair, Big Bros on the other), and gather Red Shells, Smash Eggs, and 1-Up items. At the far-right area dig the BEAN by the Regroup Block, save, and hit the purple '!' block to open the Sewers gate (optional Fawful badge run). Take the lower-right blue pipe to Star Hill." }
+          ]
+        },
+        {
+          "heading": "8.2 · Star Hill — Commander Shroob",
+          "items": [
+            { "type": "step", "where": "Star Hill", "text": "Grab 6 Mix Flowers (M block) and 2 more (? block), then climb the icy path." },
+            { "type": "step", "npc": "Enemies: Handfake & Fly Guy", "text": "Handfake (130 HP, 155 XP): a glove holding enemy cutouts (Goomba/Bowser/Bob-omb/Paratroopa) — dodge each cutout's attack as described, use Bro Flowers or jumps. Fly Guy (100 HP, 145 XP): holds a numbered spiked bomb — jump its thrown bomb, or hammer the dropped bomb back; hit the one reading '1' to blow it up on the Fly Guy. Attack lower-numbered bombs first." },
+            { "type": "step", "text": "Use the wind-fan caves (Big Bros spin the gear; floating Babies reach the ledges) to grab Mix/Copy Flowers and a BEAN, then regroup. Climb to the item-rich pre-boss area (Copy Flowers, Ultra Drops, 1-Up Supers, Mix Flowers), heal, gear up, and save. Walk up to meet the Pink Shroob with two flags." },
+            { "type": "achievement", "ach": "ach-99738" },
+            { "type": "achievement", "ach": "ach-143312" },
+            { "type": "step", "npc": "Boss Battle: Commander Shroob", "text": "Commander Shroob 1600 HP · Support Shroobs 110 each · ~820 XP · Hard. Attack the LAST two Support Shroobs in the line (NOT the first), so the Shroob-omb eventually crushes the first and explodes on the Commander. Deflect the hammer-thrown Shroob-omb back (watch its winking eye for the target). When exposed, hit the Commander with Red Shells, Copy Flowers, and Ice Flowers; hammer away the Support Shroobs he throws between rounds.",
+              "figure": { "src": "assets/img/boss-commander-shroob.gif", "alt": "Commander Shroob sprite", "caption": "Commander Shroob — clear the Support Shroobs by countering for Self-Destruction", "credit": "Super Mario Wiki" } },
+            { "type": "step", "text": "Up the icy path, step on the star platform; the Cobalt Star makes a starry path. Roll across it to the blue pipe, regroup, and drop down to the Star Shrine." }
+          ]
+        },
+        {
+          "heading": "8.3 · Star Shrine — the Aurora Block & Elder Shroob",
+          "items": [
+            { "type": "step", "where": "Star Shrine", "text": "Dig the BEAN below the pipe and save. The star gate needs the Aurora Block: clear the islands of Fly Guys and Handfakes (and the new Piranha Planet and Wonder Thwack), grabbing Mix/Ice Flowers, Red Shells, and Max Mushrooms across the four corner islands." },
+            { "type": "step", "npc": "Enemies: Piranha Planet & Wonder Thwack", "text": "Piranha Planet (130 HP, 155 XP): jump the seven small Piranhas it spins out (in firing order; green→Luigi, red→Mario) and its laser (top→Mario, bottom→Luigi). Wonder Thwack (60 HP, 30 XP): a stronger Thwack — hammer its aerial drop as it starts to crash (it hovers too high to hit at the top); green weak to Bro Flowers, red to Ice Flowers." },
+            { "type": "step", "text": "On the gear platform, launch the Babies up, have them drink water and spit at the Aurora Block as it falls so it crosses to the right; trampoline up to push it down, then hit it back to the star gate. After the gate's riddle (any answer is wrong — strike the Aurora Block a fifth time), pass through to the inner shrine." },
+            { "type": "step", "text": "Connect the colored light beams across the five star platforms: hit each platform's Star Block in the right order so matching beams link (the route notes which platform feeds which). Solve the red/green star-mark pattern (R R G G G R G R R G R G via the '!' blocks in the green-building cave) and the dark Shine-Block cave (grab the Stache Jeans). Dig each BEAN, then take the central blue pipe down. Press the blue button for the fourth Cobalt Star shard." },
+            { "type": "achievement", "ach": "ach-99739" },
+            { "type": "achievement", "ach": "ach-99795" },
+            { "type": "step", "text": "Cross the red-stairs room (squashed-Baby wind tunnels hide the Hit-Free Badge and coins), Spin the Babies up the red steps, and reach the pre-boss Save area (Red Peppers, Refreshing Herbs, Copy Flowers, Ultra Drops). Equip Unarmed Jeans, heal, and save. Toadbert has you rub the smudge off the sketch's lower-right corner with the stylus, revealing a small Shroob — then the Elder Shroob attacks." },
+            { "type": "achievement", "ach": "ach-99740" },
+            { "type": "achievement", "ach": "ach-143313" },
+            { "type": "step", "npc": "Boss Battle: Elder Shroob", "text": "Normal Form 1700 HP / Angry Form 1100 HP · XP 1500 · Hard. Don't jump on his spikes — use Ice Flowers (upright) and Copy Flowers. Break out of his yellow prisms by rapidly jumping; jump the kicked Chain Chomp (red→Mario, green→Luigi); deflect his spiked ball to knock him flat. In his giant second form a saucer counts down from 4 to a one-shot kill — reset it by deflecting his spiked ball into it (Baby Luigi sends it straight up; Baby Mario angles it right). Winning grants the fifth Cobalt Star shard." },
+            { "type": "step", "text": "Jump through the time hole to the Castle Sewers — Chapter 9." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-9",
+      "title": "Chapter 9 — Shroob Castle & the Finale",
+      "kind": "route",
+      "intro": "The endgame: cross the Shroob Castle (Peach's Castle in the past), down its Mother Ship in a saucer dogfight, and clear the final-boss gauntlet — Princess Shroob and her elder sister — before the possessed Bowser (Shrowser) falls and the game is won.",
+      "sections": [
+        {
+          "heading": "9.1 · Through Shroob Castle",
+          "items": [
+            { "type": "step", "where": "Castle Sewers", "text": "Walk to the upper-left corner of the sewers back into Peach's Castle, then the items shop. Buy Red Shells, 20 Ice Flowers, and Green Shells; in equipment grab one Royal Pants and two Royal Trousers, plus two Cure Badge As. Talk to the Professor — the time hole to Shroob Castle is on the third floor. Take the left stairs up two floors, save in the middle-right room, and drop through the marked time hole." },
+            { "type": "step", "npc": "Enemies: Tashrooba & castle foes", "text": "Tashrooba (125 HP, 150 XP): a faster gray Tanoomba — hammer-counter its balloon/Thwomp drops and jump together for its shell. The castle also crawls with Ghoul Guys, Shroobsworths, Snoozorbs, and (in the bottomless garden/Soul Bubble rooms) instant-death pits — never fall." },
+            { "type": "step", "text": "Wind through the castle's cliff-tops and small caves, digging each BEAN (behind the cliff-top fences, in the secret garden cave with two beans, and around the laser rooms), and grabbing the Space Trousers, Supreme Slacks, peppers, and stacks of Bro Items. Beat the four-Chain-Chomp puzzle (find the real, faster-chomping one and laser it), then route the Big Bros and Babies through the Split-Block laser puzzles to open the blue pipes between floors." },
+            { "type": "step", "text": "On the uppermost floor, hit the bookshelf '!' block to lower a bookcase and Spin the Babies up for Red/Green Peppers, gather the six-block stash (Mix Flowers, Trampolines, Pocket Chomps, Red Shells, Copy Flowers, Ice Flowers), and stock the long staircase rooms with Mushrooms of every kind. Hit the Heart Block (the only one outside Peach's Castle), save, and ride the blue button toward the saucer battle." },
+            { "type": "achievement", "ach": "ach-99796" }
+          ]
+        },
+        {
+          "heading": "9.2 · The Final Gauntlet",
+          "items": [
+            { "type": "step", "npc": "Minigame: The Final Saucer Battle", "text": "You pilot a saucer against Princess Shroob's Mother Ship: hit the saucer block in the back to rise, wait for the small saucers to briefly stop, and shoot them into the mother ship (four hits). You have four points of health — getting hit four times kills you. The small saucers fly at you after ~10 seconds; dodge or shoot them. Save afterward." },
+            { "type": "achievement", "ach": "ach-143327" },
+            { "type": "achievement", "ach": "ach-99741" },
+            { "type": "achievement", "ach": "ach-143314" },
+            { "type": "step", "npc": "Final Boss 1: Princess Shroob", "text": "Princess Shroob 3000 HP / Force Field ~1000 · Hard. Power up with Red Peppers and shred the force field with Trampolines/Pocket Chomps/Copy Flowers (it shifts blue→green→orange→red as it weakens). Jump her downward energy rings (watch the robot-leg shadow) and hammer back her force-field smash. When it breaks, unload ~500 damage per turn — for A Princess Without Her Guard, finish her before she raises a new shield. Out of the field, dodge/deflect her laser balls.",
+              "figure": { "src": "assets/img/boss-princess-shroob.jpg", "alt": "Princess Shroob artwork", "caption": "Princess Shroob — break the shield and finish her before it returns", "credit": "Super Mario Wiki" } },
+            { "type": "achievement", "ach": "ach-143315" },
+            { "type": "step", "npc": "Final Boss 2: Elder Princess Shroob", "text": "First Form 3000 HP, Second Form 3000 HP (Foot 500 / Crown 350 / Arms 250) · Very Hard. First form: Red Peppers, then Copy Flowers/Pocket Chomps/Red Shells; hammer the yellow stars into her assisting saucers; counter her charge (hammer just before contact, or after a one-second delay if her hand waves up). Second form: use Mix Flowers on her tentacles and foot, then Copy Flowers/Pocket Chomps to break her crown and damage her body; deflect the falling saucers (fire→Mario, short-circuit→Luigi). For Pantless Victory, fight her with NO pants and NO badges on anyone.",
+              "figure": { "src": "assets/img/boss-elder-princess-shroob.png", "alt": "Elder Princess Shroob artwork", "caption": "Elder Princess Shroob — the hardest fight; save your Mix Flowers", "credit": "Super Mario Wiki" } },
+            { "type": "step", "text": "After a long cut scene you return to present-day Peach's Castle, the future saved." }
+          ]
+        },
+        {
+          "heading": "9.3 · Peach's Castle — Shrowser",
+          "items": [
+            { "type": "step", "where": "Peach's Castle (Present)", "text": "Save in the garden room, heal up, and walk to the back of the castle. After Bowser eats the Mushroom, the final fight begins — Bowser possessed by Princess Shroob's ghost (Shrowser)." },
+            { "type": "achievement", "ach": "ach-99742" },
+            { "type": "achievement", "ach": "ach-143326" },
+            { "type": "step", "npc": "Final Boss: Shrowser", "text": "Bowser with Princess Shroob's ghost · 10 pieces (the ghost's health) · Moderately Easy. You can't attack directly — counter/dodge so his attacks hit the ghost. Jump his direct fireballs (they loop back, half a piece each); hammer the ceiling fireballs and his slow energy balls back at her (a full piece each). They speed up as the fight goes on — clear all 10 pieces (taking zero hits for Shroob Exterminator) to win the game. Congratulations — you've beaten Mario & Luigi: Partners in Time!" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-bro-masters",
+      "title": "Roundup — Bro-Item Masters",
+      "kind": "roundup",
+      "intro": "Ten challenge achievements for landing a set number of hits with each Bro Item in a single attack. Best farmed against a single tough enemy or boss so every hit lands on one target. Keep a stock of each item (most are common in late-game blocks; Red/Copy/Mix Flowers show up from Toad Town onward).",
+      "achievements": [
+        "ach-143316", "ach-143324", "ach-143317", "ach-143319", "ach-143320",
+        "ach-143321", "ach-143318", "ach-143322", "ach-143323", "ach-143325"
+      ]
+    },
+    {
+      "id": "chapter-completion",
+      "title": "Roundup — 100% Completion",
+      "kind": "roundup",
+      "intro": "The two game-spanning completion achievements. Both are missable: dig every bean as you go (the route flags each 'BEAN' inline and each region has its own Harvest Bean achievement), and never sell the item-block-only pants.",
+      "achievements": [
+        "ach-99797", "ach-95649"
+      ]
+    }
+  ]
+}
