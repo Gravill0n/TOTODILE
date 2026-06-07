@@ -17,7 +17,13 @@
       "Bash(python3 *)",
       "Bash(grep -iE '\\\\.\\(png|gif|jpg\\)$')",
       "Bash(grep -icE '\\\\.\\(png|gif|jpg\\)$')",
-      "Bash(curl -s -o /tmp/test_badge.png -w \"%{http_code} %{size_download}bytes\\\\n\" --max-time 12 \"https://media.retroachievements.org/Badge/228630.png\")"
+      "Bash(curl -s -o /tmp/test_badge.png -w \"%{http_code} %{size_download}bytes\\\\n\" --max-time 12 \"https://media.retroachievements.org/Badge/228630.png\")",
+      "Bash(grep -oE '<div class=\"ach-callout[^\"]*\">.{0,400}' output/pkmn-crystal-poc.html)",
+      "Bash(grep -oE '<article class=\"achievement\"[^>]*>.{0,300}' output/pkmn-crystal-poc.html)",
+      "Bash(scripts/start-server.sh --project-dir /home/gravill0n/Games/Guides/pokemon-crystal)",
+      "Bash(timeout 3 node scripts/server.cjs --screen-dir /tmp/bs-test/content --state-dir /tmp/bs-test/state --host 127.0.0.1)",
+      "Bash(scripts/stop-server.sh /home/gravill0n/Games/Guides/pokemon-crystal/.superpowers/brainstorm/46470-1780844516)",
+      "Bash(echo \"\\(stop script note: $?\\)\")"
     ]
   }
 }

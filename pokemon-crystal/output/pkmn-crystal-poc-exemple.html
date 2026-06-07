@@ -1,0 +1,1864 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Pokémon Crystal — Professor Oak Challenge &amp; Achievement Guide
+    </title>
+    <style>
+      /* Achievement Guide — dark gaming theme
+ * Accent color is on --accent; change per-game if requested.
+ */
+
+      :root {
+        --bg: #0e1015;
+        --bg-elev: #161922;
+        --bg-card: #1c2030;
+        --bg-card-hover: #232838;
+        --border: #2a3045;
+        --text: #e6e8ee;
+        --text-dim: #9098a8;
+        --text-muted: #6a7185;
+        --accent: #6ee7ff; /* cyan default */
+        --accent-soft: #6ee7ff22;
+        --warning: #f6a14a;
+        --warning-bg: #f6a14a18;
+        --danger: #ef4a5c;
+        --danger-bg: #ef4a5c18;
+        --success: #59d18b;
+        --gold: #f7c948;
+        --silver: #c0c6d4;
+        --bronze: #c98c5d;
+        --spoiler-bg: #0a0c12;
+        --radius: 10px;
+        --shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+        --font-body:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        --font-mono:
+          "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas,
+          monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--font-body);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 24px 20px 80px;
+      }
+
+      /* Header */
+      .guide-header {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 20px;
+        margin-bottom: 24px;
+      }
+
+      .guide-header h1 {
+        font-size: 2rem;
+        margin: 0 0 8px;
+        color: var(--text);
+      }
+
+      .guide-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        color: var(--text-dim);
+        font-size: 0.92rem;
+      }
+
+      .guide-meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .guide-meta strong {
+        color: var(--accent);
+      }
+
+      /* Spoiler warning banner */
+      .spoiler-warning {
+        background: var(--warning-bg);
+        border: 1px solid var(--warning);
+        color: var(--warning);
+        padding: 12px 16px;
+        border-radius: var(--radius);
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      /* Progress tracker */
+      .tracker {
+        background: var(--bg-elev);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 16px 20px;
+        margin-bottom: 28px;
+        position: sticky;
+        top: 8px;
+        z-index: 10;
+        box-shadow: var(--shadow);
+      }
+
+      .tracker-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .tracker-title {
+        font-weight: 600;
+        font-size: 1.05rem;
+      }
+
+      .tracker-progress {
+        font-family: var(--font-mono);
+        color: var(--accent);
+        font-size: 0.95rem;
+      }
+
+      .tracker-bar {
+        width: 100%;
+        height: 6px;
+        background: var(--bg);
+        border-radius: 3px;
+        margin-top: 10px;
+        overflow: hidden;
+      }
+
+      .tracker-bar-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--accent), var(--success));
+        width: 0%;
+        transition: width 0.3s ease;
+      }
+
+      .tracker-list {
+        max-height: 320px;
+        overflow-y: auto;
+        margin-top: 14px;
+        display: none;
+      }
+
+      .tracker.open .tracker-list {
+        display: block;
+      }
+
+      .tracker-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        columns: 2;
+        column-gap: 20px;
+      }
+
+      .tracker-list li {
+        padding: 4px 0;
+        font-size: 0.88rem;
+        color: var(--text-dim);
+        break-inside: avoid;
+      }
+
+      .tracker-list label {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        cursor: pointer;
+      }
+
+      .tracker-list input[type="checkbox"] {
+        margin-top: 4px;
+        accent-color: var(--accent);
+      }
+
+      .tracker-list .completed {
+        text-decoration: line-through;
+        color: var(--text-muted);
+      }
+
+      /* Chapter sections */
+      .chapter {
+        margin-bottom: 28px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: var(--bg-elev);
+      }
+
+      .chapter > summary {
+        padding: 16px 20px;
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-weight: 600;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: var(--radius);
+      }
+
+      .chapter > summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .chapter > summary::after {
+        content: "▾";
+        color: var(--text-dim);
+        transition: transform 0.2s ease;
+      }
+
+      .chapter[open] > summary::after {
+        transform: rotate(180deg);
+      }
+
+      .chapter > summary:hover {
+        background: var(--bg-card-hover);
+      }
+
+      .chapter-body {
+        padding: 4px 20px 20px;
+      }
+
+      .chapter-body p {
+        color: var(--text);
+      }
+
+      /* Turn-by-turn route */
+      .route {
+        counter-reset: route-step;
+        list-style: none;
+        margin: 8px 0;
+        padding: 0;
+      }
+
+      .route > li {
+        counter-increment: route-step;
+        position: relative;
+        padding: 10px 0 10px 44px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .route > li:last-child {
+        border-bottom: none;
+      }
+
+      .route > li::before {
+        content: counter(route-step);
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 28px;
+        height: 28px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        border: 1px solid var(--accent);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-mono);
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .route .route-where {
+        font-weight: 600;
+        color: var(--accent);
+        margin-right: 6px;
+      }
+
+      .route .route-npc {
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      /* Inline achievement callout — the at-a-glance flag at the exact step */
+      .ach-callout {
+        background: var(--accent-soft);
+        border: 1px solid var(--accent);
+        border-left: 4px solid var(--accent);
+        border-radius: 8px;
+        padding: 10px 14px;
+        margin: 10px 0 10px 44px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .ach-callout input[type="checkbox"] {
+        margin-top: 3px;
+        accent-color: var(--accent);
+        width: 17px;
+        height: 17px;
+        flex-shrink: 0;
+      }
+
+      .ach-callout-body {
+        flex: 1;
+      }
+
+      .ach-callout .ach-callout-name {
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      .ach-callout .ach-callout-do {
+        color: var(--text-dim);
+        font-size: 0.92rem;
+        margin-top: 2px;
+      }
+
+      .ach-callout.missable {
+        background: var(--warning-bg);
+        border-color: var(--warning);
+        border-left-color: var(--warning);
+      }
+
+      .ach-callout.missable input[type="checkbox"] {
+        accent-color: var(--warning);
+      }
+      .ach-callout.missable .ach-callout-label {
+        color: var(--warning);
+      }
+      .ach-callout.missable .ach-callout-label::after {
+        content: " · ⚠ MISSABLE — do this before moving on";
+      }
+
+      /* Achievement cards */
+      .achievement {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-left: 4px solid var(--accent);
+        border-radius: var(--radius);
+        padding: 16px 18px;
+        margin: 16px 0;
+        position: relative;
+      }
+
+      .ach-callout-label {
+        font-weight: 700;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.72rem;
+      }
+
+      .achievement.missable {
+        border-left-color: var(--warning);
+        background: linear-gradient(
+          90deg,
+          var(--warning-bg),
+          var(--bg-card) 20%
+        );
+      }
+
+      .achievement.missable::before {
+        content: "⚠ MISSABLE";
+        position: absolute;
+        top: -10px;
+        right: 14px;
+        background: var(--warning);
+        color: #000;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        padding: 3px 10px;
+        border-radius: 20px;
+      }
+
+      .achievement-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-block: 8px;
+      }
+
+      .achievement-checkbox {
+        margin-top: 5px;
+        accent-color: var(--accent);
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+      }
+
+      .achievement-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0;
+        flex: 1;
+      }
+
+      .achievement-badges {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-left: auto;
+      }
+
+      .badge {
+        font-size: 0.72rem;
+        font-weight: 600;
+        padding: 3px 8px;
+        border-radius: 12px;
+        background: var(--bg);
+        color: var(--text-dim);
+        border: 1px solid var(--border);
+        white-space: nowrap;
+      }
+
+      .badge.bronze {
+        background: var(--bronze);
+        color: #111;
+        border-color: var(--bronze);
+      }
+      .badge.silver {
+        background: var(--silver);
+        color: #111;
+        border-color: var(--silver);
+      }
+      .badge.gold {
+        background: var(--gold);
+        color: #111;
+        border-color: var(--gold);
+      }
+      .badge.platinum {
+        background: linear-gradient(135deg, #d8e4ff, #9ab8f0);
+        color: #111;
+        border-color: #9ab8f0;
+      }
+      .badge.points {
+        background: var(--accent-soft);
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+      .badge.rarity {
+        font-family: var(--font-mono);
+      }
+
+      .achievement-description {
+        color: var(--text-dim);
+        font-style: italic;
+        margin: 0 0 12px;
+        font-size: 0.95rem;
+      }
+
+      .achievement-howto {
+        margin-top: 10px;
+      }
+
+      .achievement-howto h4 {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--text-muted);
+        margin: 0 0 6px;
+      }
+
+      .achievement-howto ol,
+      .achievement-howto ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .achievement-howto li {
+        margin-bottom: 4px;
+      }
+
+      .achievement-images {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+
+      .achievement-images img {
+        max-width: 320px;
+        max-height: 200px;
+        border-radius: 6px;
+        border: 1px solid var(--border);
+        object-fit: cover;
+      }
+
+      .achievement-source {
+        margin-top: 12px;
+        font-size: 0.78rem;
+        color: var(--text-muted);
+        border-top: 1px dashed var(--border);
+        padding-top: 8px;
+      }
+
+      .achievement-source a {
+        color: var(--text-dim);
+        text-decoration: none;
+      }
+
+      .achievement-source a:hover {
+        color: var(--accent);
+      }
+
+      /* Spoiler treatment */
+      .spoiler {
+        background: var(--spoiler-bg);
+        border: 1px dashed var(--border);
+        border-radius: 6px;
+        padding: 10px 12px;
+        margin: 8px 0;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .spoiler:not(.revealed) > * {
+        filter: blur(6px);
+        user-select: none;
+        pointer-events: none;
+      }
+
+      .spoiler:not(.revealed)::after {
+        content: "👁 Click to reveal spoiler";
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--warning);
+        font-weight: 600;
+        font-size: 0.9rem;
+        background: rgba(10, 12, 18, 0.6);
+        border-radius: 6px;
+      }
+
+      .spoiler.revealed {
+        border-color: var(--warning);
+      }
+
+      /* Missing info markers */
+      .missing-info {
+        background: var(--danger-bg);
+        border: 1px solid var(--danger);
+        color: var(--danger);
+        padding: 10px 14px;
+        border-radius: 6px;
+        margin: 10px 0;
+        font-size: 0.9rem;
+      }
+
+      /* Inline meta tags within prose */
+      .tag {
+        display: inline-block;
+        font-size: 0.72rem;
+        font-weight: 600;
+        padding: 2px 7px;
+        border-radius: 10px;
+        background: var(--bg-card);
+        color: var(--text-dim);
+        margin: 0 2px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .tag.story {
+        background: #5b6cff22;
+        color: #8ea0ff;
+      }
+      .tag.combat {
+        background: #ef4a5c22;
+        color: #ef4a5c;
+      }
+      .tag.collectible {
+        background: #59d18b22;
+        color: #59d18b;
+      }
+      .tag.exploration {
+        background: #6ee7ff22;
+        color: #6ee7ff;
+      }
+      .tag.endgame {
+        background: #f7c94822;
+        color: #f7c948;
+      }
+
+      /* Sources footer */
+      .sources-footer {
+        margin-top: 60px;
+        border-top: 1px solid var(--border);
+        padding-top: 20px;
+        color: var(--text-dim);
+        font-size: 0.9rem;
+      }
+
+      .sources-footer h2 {
+        font-size: 1.1rem;
+        color: var(--text);
+      }
+
+      .sources-footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sources-footer li {
+        padding: 4px 0;
+      }
+
+      .sources-footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .sources-footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Responsive */
+      @media (max-width: 720px) {
+        body {
+          padding: 16px 12px 60px;
+        }
+        .guide-header h1 {
+          font-size: 1.5rem;
+        }
+        .tracker-list ul {
+          columns: 1;
+        }
+        .achievement-images img {
+          max-width: 100%;
+        }
+        .achievement-header {
+          flex-wrap: wrap;
+        }
+        .achievement-badges {
+          margin-left: 0;
+          width: 100%;
+        }
+        .ach-callout {
+          margin-left: 0;
+        }
+        .route > li {
+          padding-left: 38px;
+        }
+      }
+
+      /* ---- Table of Contents ---- */
+      .toc {
+        background: var(--bg-elev);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 16px 20px;
+        margin-bottom: 28px;
+      }
+      .toc-head {
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+      }
+      .toc ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        columns: 2;
+        column-gap: 28px;
+      }
+      .toc li {
+        break-inside: avoid;
+        padding: 5px 0;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+        border-bottom: 1px solid var(--border);
+      }
+      .toc a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.92rem;
+      }
+      .toc a:hover {
+        color: var(--accent);
+      }
+      .toc-meta {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 8px;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      .toc-count {
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--accent);
+      }
+      .toc-count.complete {
+        color: var(--success);
+      }
+      .toc-missable {
+        font-size: 0.72rem;
+        color: var(--warning);
+        font-family: var(--font-mono);
+      }
+      @media (max-width: 720px) {
+        .toc ol {
+          columns: 1;
+        }
+      }
+
+      /* ---- Grouped tracker ---- */
+      .tracker-group {
+        margin-bottom: 14px;
+      }
+      .tracker-group-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 10px 0 4px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--border);
+      }
+      .tracker-group-title {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--text-dim);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .tracker-group-title:hover {
+        color: var(--accent);
+      }
+      .tracker-group-count {
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        color: var(--accent);
+        flex-shrink: 0;
+      }
+      .tracker-group-count.complete {
+        color: var(--success);
+      }
+      .tracker-group ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        columns: 2;
+        column-gap: 20px;
+      }
+      .tracker-group li {
+        padding: 3px 0;
+        font-size: 0.88rem;
+        break-inside: avoid;
+      }
+      .track-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        text-decoration: none;
+        color: var(--text-dim);
+        cursor: pointer;
+      }
+      .track-row:hover {
+        color: var(--accent);
+      }
+      .track-check {
+        margin-top: 3px;
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        border: 1.5px solid var(--text-muted);
+        border-radius: 3px;
+        position: relative;
+      }
+      .tracker-group li.completed .track-check {
+        background: var(--success);
+        border-color: var(--success);
+      }
+      .tracker-group li.completed .track-check::after {
+        content: "✓";
+        position: absolute;
+        inset: -2px 0 0 0;
+        color: #0e1015;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 16px;
+      }
+      .tracker-group li.completed .track-name {
+        text-decoration: line-through;
+        color: var(--text-muted);
+      }
+      @media (max-width: 720px) {
+        .tracker-group ul {
+          columns: 1;
+        }
+      }
+      :target.chapter > summary {
+        box-shadow: inset 3px 0 0 var(--accent);
+      }
+      :target.achievement {
+        box-shadow: 0 0 0 2px var(--accent);
+      }
+
+      /* ---- Route figures (embedded maps/screenshots) ---- */
+      .route-figure {
+        margin: 10px 0 12px 44px;
+        padding: 0;
+      }
+      .route-figure-link {
+        display: inline-block;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--bg);
+        cursor: zoom-in;
+        line-height: 0;
+      }
+      .route-figure-link:hover {
+        border-color: var(--accent);
+      }
+      .route-figure img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      .route-figure figcaption {
+        margin-top: 6px;
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        line-height: 1.4;
+        max-width: 540px;
+      }
+      @media (max-width: 720px) {
+        .route-figure {
+          margin-left: 0;
+        }
+      }
+
+      /* ---- Lightbox ---- */
+      .lightbox-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(6, 8, 12, 0.92);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        padding: 24px;
+        cursor: zoom-out;
+      }
+      .lightbox-overlay.open {
+        display: flex;
+      }
+      .lightbox-overlay img {
+        max-width: 95%;
+        max-height: 90%;
+        border-radius: 8px;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+      }
+      .lightbox-close {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        font-size: 2rem;
+        color: var(--text);
+        background: none;
+        border: none;
+        cursor: pointer;
+        line-height: 1;
+      }
+
+      :root {
+        --accent: #4fa8d8;
+        --accent-soft: #4fa8d822;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="guide-header">
+      <h1>Pokémon Crystal — Professor Oak Challenge &amp; Achievement Guide</h1>
+      <div class="guide-meta">
+        <span>🎮 <strong>Game Boy Color · RetroAchievements</strong></span
+        ><span>🏆 <strong data-total-count>337</strong> achievements</span
+        ><span>✓ <strong data-completed-count>0</strong> completed</span
+        ><span>📚 <strong>5</strong> source(s)</span>
+      </div>
+    </header>
+    <div class="spoiler-warning">
+      ⚠ This guide contains spoilers. Story-revealing content is hidden behind
+      blur — click to reveal.
+    </div>
+    <main>
+      <details class="chapter" id="ch0-basics" open>
+        <summary>Chapter 0 — The Basics (read first)</summary>
+        <div class="chapter-body">
+          <p>
+            A Professor Oak Challenge means catching and evolving as many
+            Pokémon as possible before each gym badge becomes required to
+            proceed (or before you need an HM that needs a badge). The dex comes
+            first — your gym challenge goes on hold. This guide fuses
+            Mewlax&#x27;s POC route with both RetroAchievements sets: the base
+            game set and the Professor Oak Challenge subset. Facts come straight
+            from those sources; nothing is invented.
+          </p>
+          <h3 class="route-section">The rules of the challenge</h3>
+          <ol class="route">
+            <li>
+              <span class="route-where">Rule</span> Catch and evolve as many
+              Pokémon as is possible until a gym badge is required to proceed or
+              you need a HM move that requires a badge. Where gyms can be done
+              in any order, always get the badge that unlocks the most Pokémon
+              (this guide picks the order for you).
+            </li>
+            <li>
+              <span class="route-where">Rule</span> You cannot trade with other
+              versions. Trade evolutions are off the table, you get no version
+              exclusives, and you are stuck with the decisions you make such as
+              your starter. In-game trades ARE allowed.
+            </li>
+            <li>
+              <span class="route-where">Rule</span> Optional: call yourself
+              &#x27;Oak&#x27; or &#x27;Prof. Oak&#x27; for fun.
+            </li>
+          </ol>
+          <h3 class="route-section">Tips for the Crystal version</h3>
+          <ol class="route">
+            <li>
+              <span class="route-where">Tip</span> Move sets are slow. Consider
+              keeping three-stage Pokémon unevolved a little longer so they
+              learn better moves, and keep multiple attacking moves over status
+              moves like Growl or Sand Attack — you will KO huge numbers of wild
+              Pokémon.
+            </li>
+            <li>
+              <span class="route-where">Tip</span> Time of day matters. Crystal
+              pushes this further than Gold/Silver — almost every route has
+              Pokémon that appear only in one or two slots. Morning is
+              4am–9:59am, Day is 10am–5:59pm, Night is 6pm–3:59am.
+            </li>
+            <li>
+              <span class="route-where">Tip</span> This is a very grindy
+              challenge; the part before Falkner alone can take tens of hours.
+              It gets less grindy as the game proceeds.
+            </li>
+            <li>
+              <span class="route-where">Note</span> This guide lists the Pokémon
+              you can catch at the earliest opportunity plus required items — it
+              is not a full walkthrough of optimal EXP routes. Consult
+              Bulbapedia for deeper detail.
+            </li>
+          </ol>
+          <h3 class="route-section">
+            The Moon Stone savings plan (start this immediately)
+          </h3>
+          <ol class="route">
+            <li>
+              <span class="route-npc">Mom</span>: When you leave New Bark Town
+              after delivering the egg to Professor Elm, speak to your Mother
+              before leaving so she starts saving your money. A quarter of every
+              trainer&#x27;s winnings goes to her automatically; you can also
+              deposit manually at home to speed it up.
+            </li>
+            <li>
+              <span class="route-where">Thresholds</span> Thresholds and the
+              item she buys: P900 → Super Potion; P4,000 → Repel; P7,000 → Super
+              Potion; P10,000 → Charmander Doll; P15,000 → Moon Stone. Because
+              her savings drop each time she buys, you need P18,270 deposited in
+              total to reach the Moon Stone.
+            </li>
+            <li>
+              <span class="route-where">How it triggers</span> The phone call
+              that delivers an item only triggers when you defeat a trainer
+              while she is already at the threshold, or the winnings from that
+              battle push her over it.
+            </li>
+          </ol>
+          <h3 class="route-section">
+            Forcing NPC calls &amp; changing date/time
+          </h3>
+          <ol class="route">
+            <li>
+              <span class="route-npc">Mom</span>: Many evolution stones and
+              swarm catches come from Pokégear contacts calling you. You can
+              force a call: go to New Bark Town, talk to your mother, and toggle
+              daylight savings (alternate winter/summer time) to instantly
+              prompt a contact to call.
+            </li>
+            <li>
+              <span class="route-where">Clock</span> To change the in-game
+              date/time directly, on the title screen press Down + Select + B
+              together to reach the password prompt. The password is based on
+              your name, ID and money, so it stays the same as long as your
+              money doesn&#x27;t change — handy for save-reset tricks.
+            </li>
+          </ol>
+          <h3 class="route-section">Cartridge vs Virtual Console</h3>
+          <ol class="route">
+            <li>
+              <span class="route-where">Versions</span> Celebi is obtainable
+              only on the Virtual Console release (via the GS Ball). Cartridge
+              players cannot get it. Final dex totals: 206 on cartridge, 207 on
+              Virtual Console. VC-only steps are flagged inline.
+            </li>
+          </ol>
+        </div>
+      </details>
+      <details class="chapter" id="ch1-falkner">
+        <summary>Chapter 1 — Pre-Badge #1: Falkner</summary>
+        <div class="chapter-body">
+          <p>
+            Everything you can do BEFORE the first badge from Falkner — the most
+            daunting stretch of the challenge. Thankfully there is no Jigglypuff
+            on Route 46, so no Moon Stone is needed yet (but get your Mother
+            saving from the very start). By the end you should have caught 46
+            Pokémon, including a fully evolved starter and Pidgeot.
+          </p>
+          <h3 class="route-section">1.1 · New Bark Town — the starter</h3>
+          <ol class="route">
+            <figure class="route-figure">
+              <a class="route-figure-link" href="assets/img/Bourg_Geon_OAC.png"
+                ><img
+                  src="assets/img/Bourg_Geon_OAC.png"
+                  alt="Route 29 map"
+                  loading="lazy"
+              /></a>
+              <figcaption>
+                New Bark Town ·
+                <span style="color: var(--text-muted)">Source: Poképedia</span>
+              </figcaption>
+            </figure>
+            <li>
+              <span class="route-where">New Bark Town</span>
+              <span class="route-npc">Prof. Elm</span>: Set the clock and start
+              the game. <br />
+              Your Mother gives you a PokéGear; head to Professor Elm&#x27;s
+              lab. <br />
+              He asks you to visit Mr. Pokémon and lets you take one Pokémon
+              partner.
+            </li>
+            <li>
+              <span class="route-where">Elm&#x27;s Lab</span> Pick one
+              starter:<br />
+              Chikorita (→ Bayleef Lv. 16 → Meganium Lv. 32), <br />Cyndaquil (→
+              Quilava Lv. 14 → Typhlosion Lv. 36), <br />Totodile (→ Croconaw
+              Lv. 18 → Feraligatr Lv. 30).<br />
+              Chikorita is the weakest start given all the bug/flying/poison
+              early on; Totodile fully evolves earliest at Lv. 30.
+            </li>
+            <article class="achievement" id="ach-315085">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315085"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348944.png"
+                  alt="Chikorita, Cyndaquil or Totodile badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">
+                  Chikorita, Cyndaquil or Totodile
+                </h3>
+                <div class="achievement-badges">
+                  <span class="badge points">1 pts</span>
+                  <span class="badge rarity">99.70%</span>
+                </div>
+              </div>
+              <p class="achievement-description">"Obtain your starter."</p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>
+                    Chikorita, Cyndaquil or Totodile — you can only pick one,
+                    and you cannot trade for the others in a POC.
+                  </li>
+                </ol>
+              </div>
+            </article>
+            <article class="achievement" id="ach-315086">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315086"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348945.png"
+                  alt="Bayleef, Quilava or Croconaw badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Bayleef, Quilava or Croconaw</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">2 pts</span>
+                  <span class="badge rarity">81.33%</span>
+                </div>
+              </div>
+              <p class="achievement-description">"Evolve your starter."</p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>
+                    Chikorita → Bayleef at Lv. 16, <br />Cyndaquil → Quilava at
+                    Lv. 14, <br />Totodile → Croconaw at Lv. 18.
+                  </li>
+                </ol>
+              </div>
+            </article>
+            <article class="achievement" id="ach-315087">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315087"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348946.png"
+                  alt="Meganium, Typhlosion or Feraligatr badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">
+                  Meganium, Typhlosion or Feraligatr
+                </h3>
+                <div class="achievement-badges">
+                  <span class="badge points">3 pts</span>
+                  <span class="badge rarity">67.92%</span>
+                </div>
+              </div>
+              <p class="achievement-description">
+                "Evolve your starter to its third form."
+              </p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>
+                    Bayleef → Meganium at Lv. 32, <br />Quilava → Typhlosion at
+                    Lv. 36, <br />Croconaw → Feraligatr at Lv. 30.
+                    <br />Consider leaving it unevolved a while so it learns
+                    moves faster for the grind.
+                  </li>
+                </ol>
+              </div>
+            </article>
+            <li>
+              <span class="route-where">Route 30</span>
+              <span class="route-npc">Mr. Pokémon</span>: Visit Mr.
+              Pokémon&#x27;s house (north past Cherrygrove)
+            </li>
+            <li>
+              <span class="route-where">Cherrygrove City</span>
+              <span class="route-npc">Rival</span>: Go back to New Bark Town,
+              battle your Rival on the way.
+            </li>
+            <li>
+              <span class="route-where">New Bark Town</span>
+              <span class="route-npc">Officer</span>: Back in New Bark Town, an
+              officer at Professor Elm&#x27;s lab asks for your rival&#x27;s
+              name (he raided the lab and stole a starter). Give it to register
+              the achievement.
+            </li>
+            <article class="achievement" id="ach-5636">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-5636"
+                /><img
+                  src="https://media.retroachievements.org/Badge/228630.png"
+                  alt="The Silver Case badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">The Silver Case</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">1 pts</span>
+                  <span class="badge">Progression</span>
+                  <span class="badge rarity">91.45%</span>
+                </div>
+              </div>
+              <p class="achievement-description">
+                "Give your rival&#x27;s name to the officer at Professor
+                Elm&#x27;s lab."
+              </p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>
+                    Story-related — happens automatically when you return from
+                    Mr. Pokémon.
+                  </li>
+                </ol>
+              </div>
+            </article>
+            <li>
+              <span class="route-where">New Bark Town</span>
+              <span class="route-npc">Mom</span>: Talk to Mom before leaving
+              town to start the savings
+            </li>
+          </ol>
+          <h3 class="route-section">1.2 · Route 29</h3>
+          <ol class="route">
+            <figure class="route-figure">
+              <a class="route-figure-link" href="assets/img/Route_29_OAC.png"
+                ><img
+                  src="assets/img/Route_29_OAC.png"
+                  alt="Route 29 map"
+                  loading="lazy"
+              /></a>
+              <figcaption>
+                Route 29 ·
+                <span style="color: var(--text-muted)">Source: Poképedia</span>
+              </figcaption>
+            </figure>
+            <li>Catch: Rattata (5% Morning, 5% Day, 45% Night)</li>
+            <li>Catch: Pidgey (50% Morning, 50% Day)</li>
+            <li>Catch: Sentret (40% Morning, 40% Day)</li>
+            <li>Catch: Hoppip (5% Morning, 5% Day)</li>
+            <li>Catch: Hoothoot (55% Night)</li>
+            <li>Item: Potion (East of the northeastern grass patch)</li>
+            <article class="achievement" id="ach-315089">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315089"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348948.png"
+                  alt="Pidgey badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Pidgey</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">1 pts</span>
+                  <span class="badge rarity">87.50%</span>
+                </div>
+              </div>
+              <p class="achievement-description">"Catch a Pidgey."</p>
+            </article>
+            <article class="achievement" id="ach-315090">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315090"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348949.png"
+                  alt="Pidgeotto badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Pidgeotto</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">2 pts</span>
+                  <span class="badge rarity">71.69%</span>
+                </div>
+              </div>
+              <p class="achievement-description">
+                "Evolve Pidgey to Pidgeotto."
+              </p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>Level Pidgey to Lv. 18 to get Pidgeotto.</li>
+                </ol>
+              </div>
+            </article>
+            <article class="achievement" id="ach-315091">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315091"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348950.png"
+                  alt="Pidgeot badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Pidgeot</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">3 pts</span>
+                  <span class="badge rarity">65.36%</span>
+                </div>
+              </div>
+              <p class="achievement-description">
+                "Evolve Pidgeotto to Pidgeot."
+              </p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>Level Pidgeotto to Lv. 36 to get Pidgeot.</li>
+                </ol>
+              </div>
+            </article>
+            <article class="achievement" id="ach-315093">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315093"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348952.png"
+                  alt="Hoppip badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Hoppip</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">1 pts</span>
+                  <span class="badge rarity">85.09%</span>
+                </div>
+              </div>
+              <p class="achievement-description">"Catch a Hoppip."</p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>
+                    Hoppip only knows Tackle (from Lv. 10) as an attacking move,
+                    even unevolved up to Skiploom/Jumpluff — train it patiently.
+                  </li>
+                </ol>
+              </div>
+            </article>
+            <article class="achievement" id="ach-315094">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315094"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348953.png"
+                  alt="Skiploom badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Skiploom</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">2 pts</span>
+                  <span class="badge rarity">67.77%</span>
+                </div>
+              </div>
+              <p class="achievement-description">
+                "Evolve Hoppip to Skiploom."
+              </p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>Level Hoppip to Lv. 18 to get Skiploom.</li>
+                </ol>
+              </div>
+            </article>
+            <article class="achievement" id="ach-315095">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315095"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348954.png"
+                  alt="Jumpluff badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Jumpluff</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">3 pts</span>
+                  <span class="badge rarity">64.76%</span>
+                </div>
+              </div>
+              <p class="achievement-description">
+                "Evolve Skiploom to Jumpluff."
+              </p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>Level Skiploom to Lv. 27 to get Jumpluff.</li>
+                </ol>
+              </div>
+            </article>
+            <article class="achievement" id="ach-315096">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315096"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348955.png"
+                  alt="Sentret badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Sentret</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">1 pts</span>
+                  <span class="badge rarity">85.84%</span>
+                </div>
+              </div>
+              <p class="achievement-description">"Catch a Sentret."</p>
+            </article>
+            <article class="achievement" id="ach-315097">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315097"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348956.png"
+                  alt="Furret badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Furret</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">2 pts</span>
+                  <span class="badge rarity">68.37%</span>
+                </div>
+              </div>
+              <p class="achievement-description">"Evolve Sentret to Furret."</p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>Level Sentret to Lv. 15 to get Furret.</li>
+                </ol>
+              </div>
+            </article>
+            <article class="achievement" id="ach-315098">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315098"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348957.png"
+                  alt="Hoothoot badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Hoothoot</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">1 pts</span>
+                  <span class="badge rarity">85.99%</span>
+                </div>
+              </div>
+              <p class="achievement-description">"Catch a Hoothoot."</p>
+            </article>
+            <article class="achievement" id="ach-315099">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315099"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348958.png"
+                  alt="Noctowl badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Noctowl</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">2 pts</span>
+                  <span class="badge rarity">68.07%</span>
+                </div>
+              </div>
+              <p class="achievement-description">
+                "Evolve Hoothoot to Noctowl."
+              </p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>Level Hoothoot to Lv. 20 to get Noctowl.</li>
+                </ol>
+              </div>
+            </article>
+            <article class="achievement" id="ach-315088">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315088"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348947.png"
+                  alt="Rattata badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Rattata</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">1 pts</span>
+                  <span class="badge rarity">89.31%</span>
+                </div>
+              </div>
+              <p class="achievement-description">"Catch a Rattata."</p>
+            </article>
+            <article class="achievement" id="ach-315092">
+              <div class="ach-callout-label">🏆 Achievement here</div>
+              <div class="achievement-header">
+                <input
+                  type="checkbox"
+                  class="achievement-checkbox"
+                  data-ach-id="ach-315092"
+                /><img
+                  src="https://media.retroachievements.org/Badge/348951.png"
+                  alt="Raticate badge"
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 4px;
+                    flex-shrink: 0;
+                  "
+                  loading="lazy"
+                />
+                <h3 class="achievement-name">Raticate</h3>
+                <div class="achievement-badges">
+                  <span class="badge points">2 pts</span>
+                  <span class="badge rarity">69.58%</span>
+                </div>
+              </div>
+              <p class="achievement-description">
+                "Evolve Rattata to Raticate."
+              </p>
+              <div class="achievement-howto">
+                <h4>How to obtain</h4>
+                <ol>
+                  <li>Level Rattata to Lv. 20 to get Raticate.</li>
+                </ol>
+              </div>
+            </article>
+          </ol>
+        </div>
+      </details>
+    </main>
+    <footer class="sources-footer">
+      <h2>Sources used</h2>
+      <ul>
+        <li>
+          <a
+            href="https://www.reddit.com/user/mewlax84"
+            target="_blank"
+            rel="noopener"
+            >Mewlax&#x27;s Professor Oak Challenge Guide — Pokémon Crystal</a
+          >
+          — Turn-by-turn POC walkthrough (badge-by-badge) by u/mewlax84 — the
+          route spine.
+        </li>
+        <li>
+          <a
+            href="https://retroachievements.org/game/810"
+            target="_blank"
+            rel="noopener"
+            >RetroAchievements — Pokémon Crystal (base set)</a
+          >
+          — Official base-game achievement set (113): names, points, rarity,
+          descriptions.
+        </li>
+        <li>
+          <a
+            href="https://retroachievements.org/game/24140"
+            target="_blank"
+            rel="noopener"
+            >RetroAchievements — Pokémon Crystal [Professor Oak Challenge
+            subset]</a
+          >
+          — POC subset (224): the catch/evolve Pokédex-completion set.
+        </li>
+        <li>
+          <a
+            href="https://github.com/RetroAchievements/guides/wiki/Pokemon-Crystal-(Game-Boy-Color)"
+            target="_blank"
+            rel="noopener"
+            >RetroAchievements guides wiki — Pokémon Crystal</a
+          >
+          — Community guide (Set-mode gym tips, datetime/phone tricks). Note:
+          uses older achievement names.
+        </li>
+        <li>
+          <a
+            href="https://bulbapedia.bulbagarden.net/wiki/Walkthrough:Pok%C3%A9mon_Crystal"
+            target="_blank"
+            rel="noopener"
+            >Bulbapedia — Walkthrough: Pokémon Crystal</a
+          >
+          — General story walkthrough.
+        </li>
+        <li>
+          <a
+            href="https://www.pokepedia.fr/Pok%C3%A9mon_Version_Cristal"
+            target="_blank"
+            rel="noopener"
+            >Poképedia — French wiki</a
+          >
+          — Data and maps.
+        </li>
+      </ul>
+      <p style="margin-top: 20px; color: var(--text-muted); font-size: 0.82rem">
+        This guide was generated from the listed sources. Facts are preserved
+        from the sources; no content was invented. Report errors or gaps to add
+        sources and regenerate.
+      </p>
+    </footer>
+    <script>
+      window.GAME_SLUG = "pkmn-crystal-poc";
+    </script>
+    <script>
+      /* ============================================================
+   Achievement Guide — interactivity (extracted verbatim from the
+   reference implementation; do not rewrite, only extend). */
+
+      /* Achievement Guide — interactivity
+       * - Checklist state persisted in localStorage, keyed by game slug
+       * - Spoiler reveal on click
+       * - Tracker panel collapse/expand
+       * - Two-way sync between in-card checkboxes and tracker checkboxes (same data-ach-id)
+       */
+
+      (function () {
+        "use strict";
+
+        // The GAME_SLUG global is set by the generated HTML inline.
+        // Falls back to the document title slug if not set.
+        const SLUG =
+          typeof window.GAME_SLUG === "string" && window.GAME_SLUG
+            ? window.GAME_SLUG
+            : (document.title || "guide")
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, "-");
+
+        const STORAGE_KEY = "achievement-guide:" + SLUG;
+
+        // ---- State ----
+        function loadState() {
+          try {
+            const raw = localStorage.getItem(STORAGE_KEY);
+            return raw ? JSON.parse(raw) : {};
+          } catch (e) {
+            return {};
+          }
+        }
+
+        function saveState(state) {
+          try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+          } catch (e) {
+            // Storage may be disabled; fail silently.
+          }
+        }
+
+        let state = loadState();
+
+        // ---- Checkbox sync ----
+        function getAllCheckboxesById(id) {
+          return Array.from(
+            document.querySelectorAll(
+              'input[type="checkbox"][data-ach-id="' + CSS.escape(id) + '"]',
+            ),
+          );
+        }
+
+        function applyState() {
+          const allCheckboxes = document.querySelectorAll(
+            'input[type="checkbox"][data-ach-id]',
+          );
+          allCheckboxes.forEach((cb) => {
+            const id = cb.getAttribute("data-ach-id");
+            cb.checked = !!state[id];
+            const li = cb.closest("li");
+            if (li) li.classList.toggle("completed", cb.checked);
+          });
+          updateProgress();
+        }
+
+        function onCheckboxChange(e) {
+          const cb = e.target;
+          if (!cb.matches('input[type="checkbox"][data-ach-id]')) return;
+          const id = cb.getAttribute("data-ach-id");
+          state[id] = cb.checked;
+          saveState(state);
+
+          // Sync siblings with same id (tracker <-> card)
+          getAllCheckboxesById(id).forEach((other) => {
+            if (other !== cb) other.checked = cb.checked;
+            const li = other.closest("li");
+            if (li) li.classList.toggle("completed", cb.checked);
+          });
+          updateProgress();
+        }
+
+        // ---- Progress display ----
+        function updateProgress() {
+          // Count unique achievement IDs (each one only counts once even if duplicated in DOM)
+          const ids = new Set();
+          document
+            .querySelectorAll('input[type="checkbox"][data-ach-id]')
+            .forEach((cb) => {
+              ids.add(cb.getAttribute("data-ach-id"));
+            });
+          const total = ids.size;
+          let done = 0;
+          ids.forEach((id) => {
+            if (state[id]) done += 1;
+          });
+
+          const progressEl = document.querySelector(".tracker-progress");
+          if (progressEl) progressEl.textContent = done + " / " + total;
+
+          const barFill = document.querySelector(".tracker-bar-fill");
+          if (barFill) {
+            const pct = total === 0 ? 0 : (done / total) * 100;
+            barFill.style.width = pct + "%";
+          }
+
+          const completedCount = document.querySelector(
+            "[data-completed-count]",
+          );
+          if (completedCount) completedCount.textContent = done;
+          const totalCount = document.querySelector("[data-total-count]");
+          if (totalCount) totalCount.textContent = total;
+        }
+
+        // ---- Tracker collapse ----
+        function setupTrackerToggle() {
+          const tracker = document.querySelector(".tracker");
+          const header = document.querySelector(".tracker-header");
+          if (!tracker || !header) return;
+          header.addEventListener("click", () => {
+            tracker.classList.toggle("open");
+          });
+        }
+
+        // ---- Spoiler reveal ----
+        function setupSpoilers() {
+          document.querySelectorAll(".spoiler").forEach((el) => {
+            el.addEventListener("click", () => {
+              el.classList.add("revealed");
+            });
+          });
+        }
+
+        // ---- Reset button ----
+        function setupReset() {
+          const btn = document.querySelector("[data-reset-progress]");
+          if (!btn) return;
+          btn.addEventListener("click", () => {
+            if (!confirm("Reset all checklist progress for this game?")) return;
+            state = {};
+            saveState(state);
+            applyState();
+          });
+        }
+
+        // ---- Init ----
+        document.addEventListener("DOMContentLoaded", () => {
+          setupTrackerToggle();
+          setupSpoilers();
+          setupReset();
+          document.addEventListener("change", onCheckboxChange);
+          applyState();
+        });
+      })();
+    </script>
+  </body>
+</html>
