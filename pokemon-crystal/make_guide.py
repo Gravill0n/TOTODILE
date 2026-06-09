@@ -14,8 +14,13 @@ SUB  = {a["id"]: a for a in json.load(open(os.path.join(ROOT, "sources/subset.js
 
 USED = {}  # id -> achievement dict (deduped)
 
-def ach(aid, callout_do=None, howto=None, type_label=None, missing_info=None):
-    """Return an inline-achievement reference, registering the full card once."""
+def ach(aid, callout_do=None, howto=None, type_label=None, missing_info=None, note=None):
+    """Return an inline-achievement reference, registering the full card once.
+
+    Catch/evolve achievements (present in the POC subset, not the base set) are
+    tagged display="compact" so the renderer shows a one-line row. `note` is the
+    short fact shown on that row, e.g. "evolve at Lv. 18" (facts from sources).
+    """
     src = BASE.get(aid) or SUB.get(aid)
     if not src:
         raise KeyError(f"unknown achievement {aid}")
@@ -40,10 +45,16 @@ def ach(aid, callout_do=None, howto=None, type_label=None, missing_info=None):
             a["type_label"] = "Progression"
         elif t == "Win Condition":
             a["type_label"] = "Win Condition"
-        if callout_do:
-            a["callout_do"] = callout_do
-        if howto:
-            a["howto"] = howto
+        # Category: POC-subset-only achievements render as compact rows.
+        if aid in SUB and aid not in BASE:
+            a["display"] = "compact"
+            if note:
+                a["note"] = note
+        else:
+            if callout_do:
+                a["callout_do"] = callout_do
+            if howto:
+                a["howto"] = howto
         if missing_info:
             a["missing_info"] = missing_info
         USED[aid] = a
@@ -57,6 +68,40 @@ def step(text, where=None, npc=None, spoiler=None, figure=None, missing_info=Non
     if figure: s["figure"] = figure
     if missing_info: s["missing_info"] = missing_info
     return s
+
+def encounters(*rows):
+    """rows: dicts {mon, slots:{morning,day,night}, method?} — rates VERBATIM from source."""
+    return {"type": "encounters", "rows": list(rows)}
+
+def enc(mon, morning=None, day=None, night=None, method=None):
+    r = {"mon": mon, "slots": {"morning": morning, "day": day, "night": night}}
+    if method:
+        r["method"] = method
+    return r
+
+def items(*rows):
+    """rows: dicts {id, name, where} — locations VERBATIM from source."""
+    return {"type": "items", "rows": list(rows)}
+
+def item(iid, name, where=None):
+    r = {"id": iid, "name": name}
+    if where:
+        r["where"] = where
+    return r
+
+def trainers(*rows):
+    """rows: dicts {id, name, team?, reward?, note?} — VERBATIM from source."""
+    return {"type": "trainers", "rows": list(rows)}
+
+def trainer(tid, name, team=None, reward=None, note=None):
+    r = {"id": tid, "name": name}
+    if team:
+        r["team"] = team
+    if reward:
+        r["reward"] = reward
+    if note:
+        r["note"] = note
+    return r
 
 # ---------------------------------------------------------------------------
 # Chapter 0 — The Basics
@@ -144,141 +189,221 @@ ch1 = {
               "fully evolved starter and Pidgeot."),
     "sections": [
         {"heading": "1.1 · New Bark Town — the starter", "items": [
-            step("Set the clock and start the game. Your Mother gives you a PokéGear; head "
-                 "to Professor Elm's lab. He asks you to visit Mr. Pokémon and lets you "
-                 "take one Pokémon partner.", where="New Bark Town", npc="Prof. Elm"),
-            step("Pick one starter: Chikorita (→ Bayleef Lv. 16 → Meganium Lv. 32), "
-                 "Cyndaquil (→ Quilava Lv. 14 → Typhlosion Lv. 36), or Totodile (→ "
-                 "Croconaw Lv. 18 → Feraligatr Lv. 30). Chikorita is the weakest start "
-                 "given all the bug/flying/poison early on; Totodile fully evolves "
-                 "earliest at Lv. 30.", where="Elm's Lab"),
-            ach("315085", "Choose your starter from Professor Elm.",
-                ["Chikorita, Cyndaquil or Totodile — you can only pick one, and you "
-                 "cannot trade for the others in a POC."]),
-            step("Visit Mr. Pokémon's house (north past Cherrygrove), then return to New "
-                 "Bark Town to receive your Pokédex and Poké Balls — now the challenge "
-                 "truly begins. Talk to Mom before leaving town to start the savings.",
+            step(["Set the clock and start the game. Your Mother gives you a PokéGear.",
+                  "Head to Professor Elm's lab. He asks you to visit Mr. Pokémon and lets "
+                  "you take one Pokémon partner."],
+                 where="New Bark Town", npc="Prof. Elm"),
+            step(["Pick one starter — you can only pick one, and a POC forbids trading for "
+                  "the others:",
+                  "Chikorita → Bayleef Lv. 16 → Meganium Lv. 32",
+                  "Cyndaquil → Quilava Lv. 14 → Typhlosion Lv. 36",
+                  "Totodile → Croconaw Lv. 18 → Feraligatr Lv. 30",
+                  "Chikorita is the weakest start given all the bug/flying/poison early "
+                  "on; Totodile fully evolves earliest at Lv. 30."],
+                 where="Elm's Lab"),
+            ach("315085", note="choose your starter"),
+            step(["Visit Mr. Pokémon's house (north past Cherrygrove), then return to New "
+                  "Bark Town to receive your Pokédex and Poké Balls — now the challenge "
+                  "truly begins.",
+                  "Talk to Mom before leaving town to start the savings."],
                  where="Route 30 → New Bark Town", npc="Mr. Pokémon"),
-            ach("315086", "Evolve your starter to its second stage by leveling up.",
-                ["Chikorita → Bayleef at Lv. 16, Cyndaquil → Quilava at Lv. 14, "
-                 "Totodile → Croconaw at Lv. 18."]),
-            ach("315087", "Fully evolve your starter — this is required before Falkner.",
-                ["Bayleef → Meganium at Lv. 32, Quilava → Typhlosion at Lv. 36, "
-                 "Croconaw → Feraligatr at Lv. 30. Consider leaving it unevolved a while "
-                 "so it learns moves faster for the grind."]),
+            ach("315086", note="evolve 2nd stage (Lv. 14/16/18)"),
+            ach("315087", note="fully evolve (Lv. 30/32/36) — required before Falkner"),
+            step("Consider leaving your starter unevolved a while so it learns moves "
+                 "faster for the long grind ahead.", where="Tip"),
         ]},
         {"heading": "1.2 · Route 29", "items": [
-            step("Straight out of New Bark Town. Pidgey, Hoppip and Sentret appear "
-                 "Morning/Day, Hoothoot at Night, and Rattata at all times.",
+            step(["Straight out of New Bark Town.",
+                  "Pidgey, Sentret and Hoppip appear Morning/Day, Hoothoot at Night, and "
+                  "Rattata at all times."],
                  where="Route 29"),
-            ach("315089", "Catch a Pidgey (Morning/Day).",
-                ["Fully evolving Pidgey is one of the bigger grinds before Falkner."]),
-            ach("315090", "Level Pidgey to Lv. 18 to get Pidgeotto."),
-            ach("315091", "Level Pidgeotto to Lv. 36 to get Pidgeot."),
-            ach("315093", "Catch a Hoppip (Morning/Day).",
-                ["Hoppip only knows Tackle (from Lv. 10) as an attacking move, even "
-                 "unevolved up to Skiploom/Jumpluff — train it patiently."]),
-            ach("315094", "Level Hoppip to Lv. 18 to get Skiploom."),
-            ach("315095", "Level Skiploom to Lv. 27 to get Jumpluff."),
-            ach("315096", "Catch a Sentret (Morning/Day)."),
-            ach("315097", "Level Sentret to Lv. 15 to get Furret."),
-            ach("315098", "Catch a Hoothoot (Night)."),
-            ach("315099", "Level Hoothoot to Lv. 20 to get Noctowl."),
-            ach("315088", "Catch a Rattata (any time)."),
-            ach("315092", "Level Rattata to Lv. 20 to get Raticate."),
+            encounters(
+                enc("Pidgey",   morning="50%", day="50%"),
+                enc("Sentret",  morning="40%", day="40%"),
+                enc("Rattata",  morning="5%",  day="5%",  night="45%"),
+                enc("Hoppip",   morning="5%",  day="5%"),
+                enc("Hoothoot", night="55%"),
+            ),
+            items(
+                item("item-rt29-potion", "Potion",
+                     where="East of the northeastern grass patch"),
+            ),
+            ach("315089", note="catch (Morning/Day)"),
+            ach("315090", note="evolve at Lv. 18"),
+            ach("315091", note="evolve at Lv. 36"),
+            ach("315093", note="catch (Morning/Day)"),
+            ach("315094", note="evolve at Lv. 18"),
+            ach("315095", note="evolve at Lv. 27"),
+            ach("315096", note="catch (Morning/Day)"),
+            ach("315097", note="evolve at Lv. 15"),
+            ach("315098", note="catch (Night)"),
+            ach("315099", note="evolve at Lv. 20"),
+            ach("315088", note="catch (any time)"),
+            ach("315092", note="evolve at Lv. 20"),
+            step(["Fully evolving Pidgey is one of the bigger grinds before Falkner.",
+                  "Hoppip only knows Tackle (from Lv. 10) as an attacking move, even "
+                  "unevolved up to Skiploom/Jumpluff — train it patiently."],
+                 where="Tip"),
         ]},
         {"heading": "1.3 · Route 46", "items": [
-            step("Through the northern gate of Route 29 you reach the lower section of "
-                 "Route 46. Phanpy appears in the morning, Spearow any time except night, "
-                 "and Geodude at any time.", where="Route 46"),
-            ach("315102", "Catch a Phanpy (Morning).",
-                ["Phanpy has a 50% chance to flee each turn. If it wastes too many balls, "
-                 "come back later with a Gastly that knows Mean Look."]),
-            ach("315103", "Level Phanpy to Lv. 25 to get Donphan."),
-            ach("315100", "Catch a Geodude (any time)."),
-            ach("315101", "Level Geodude to Lv. 25 to get Graveler.",
-                ["Graveler's evolution into Golem is a trade evolution, so Golem is not "
-                 "obtainable in a POC."]),
-            ach("315104", "Catch a Spearow (any time except Night)."),
-            ach("315105", "Level Spearow to Lv. 20 to get Fearow."),
+            step(["Through the northern gate of Route 29 you reach the lower section of "
+                  "Route 46.",
+                  "Phanpy appears in the morning, Spearow Morning/Day, Geodude and Rattata "
+                  "at any time. (Jigglypuff is Gold/Silver-only here — not in Crystal, so "
+                  "no Moon Stone is needed yet.)"],
+                 where="Route 46"),
+            encounters(
+                enc("Geodude", morning="50%", day="50%", night="45%"),
+                enc("Spearow", morning="30%", day="30%"),
+                enc("Phanpy",  morning="5%"),
+            ),
+            trainers(
+                trainer("trainer-rt46-camper-ted", "Camper Ted",
+                        team="Mankey Lv. 17", reward="P340"),
+                trainer("trainer-rt46-picnicker-erin", "Picnicker Erin",
+                        team="Ponyta Lv. 16, Ponyta Lv. 16", reward="P320",
+                        note="has Pokégear phone"),
+                trainer("trainer-rt46-hiker-bailey", "Hiker Bailey",
+                        team="Geodude Lv. 13 ×5", reward="P416"),
+            ),
+            ach("315102", note="catch (Morning)"),
+            ach("315103", note="evolve at Lv. 25"),
+            ach("315100", note="catch (any time)"),
+            ach("315101", note="evolve at Lv. 25"),
+            ach("315104", note="catch (Morning/Day)"),
+            ach("315105", note="evolve at Lv. 20"),
+            step(["Phanpy has a high chance to flee each turn. If it wastes too many "
+                  "balls, come back later with a Gastly that knows Mean Look to trap it.",
+                  "Graveler's evolution into Golem is a trade evolution, so Golem is NOT "
+                  "obtainable in a POC."],
+                 where="Note"),
         ]},
         {"heading": "1.4 · Route 30", "items": [
-            step("Pass through Cherrygrove City and head north to Route 30. Ledyba appears "
-                 "in the morning, Caterpie and Weedle Morning/Day, and Spinarak, Poliwag "
-                 "and Zubat at night.", where="Route 30"),
-            ach("315106", "Catch a Caterpie (Morning/Day)."),
-            ach("315107", "Level Caterpie to Lv. 7 to get Metapod."),
-            ach("315108", "Level Metapod to Lv. 10 to get Butterfree.",
-                ["Butterfree gives ridiculous EXP when flushed out of Headbutt trees "
-                 "later."]),
-            ach("315109", "Catch a Weedle (Morning/Day)."),
-            ach("315110", "Level Weedle to Lv. 7 to get Kakuna."),
-            ach("315111", "Level Kakuna to Lv. 10 to get Beedrill."),
-            ach("315112", "Catch a Spinarak (Night)."),
-            ach("315113", "Level Spinarak to Lv. 22 to get Ariados."),
-            ach("315114", "Catch a Ledyba (Morning)."),
-            ach("315115", "Level Ledyba to Lv. 18 to get Ledian."),
-            ach("315116", "Catch a Zubat (Night).",
-                ["Keep Zubat in your party at all times: Golbat evolves into Crobat via "
-                 "high happiness, and leveling on the route you caught it gives more "
-                 "friendship per level in Crystal."]),
-            ach("315117", "Level Zubat to Lv. 22 to get Golbat."),
-            ach("315118", "Raise Golbat's happiness (any time) to get Crobat."),
-            ach("315119", "Catch a Poliwag (Night)."),
-            ach("315120", "Level Poliwag to Lv. 25 to get Poliwhirl.",
-                ["Poliwhirl needs a Water Stone for Poliwrath, which you cannot obtain "
-                 "yet — that comes later."]),
+            step(["Pass through Cherrygrove City and head north to Route 30.",
+                  "Ledyba appears in the morning; Caterpie and Weedle Morning/Day; "
+                  "Spinarak, Poliwag and Zubat at night."],
+                 where="Route 30"),
+            encounters(
+                enc("Caterpie", morning="50%", day="50%"),
+                enc("Ledyba",   morning="30%"),
+                enc("Weedle",   morning="5%",  day="5%"),
+                enc("Spinarak", night="30%"),
+                enc("Poliwag",  night="20%"),
+                enc("Zubat",    night="5%"),
+            ),
+            ach("315106", note="catch (Morning/Day)"),
+            ach("315107", note="evolve at Lv. 7"),
+            ach("315108", note="evolve at Lv. 10"),
+            ach("315109", note="catch (Morning/Day)"),
+            ach("315110", note="evolve at Lv. 7"),
+            ach("315111", note="evolve at Lv. 10"),
+            ach("315112", note="catch (Night)"),
+            ach("315113", note="evolve at Lv. 22"),
+            ach("315114", note="catch (Morning)"),
+            ach("315115", note="evolve at Lv. 18"),
+            ach("315116", note="catch (Night)"),
+            ach("315117", note="evolve at Lv. 22"),
+            ach("315118", note="evolve via high happiness"),
+            ach("315119", note="catch (Night)"),
+            ach("315120", note="evolve at Lv. 25"),
+            step(["Keep Zubat in your party at all times: Golbat evolves into Crobat via "
+                  "high happiness, and leveling on the route you caught it gives more "
+                  "friendship per level in Crystal.",
+                  "Butterfree gives ridiculous EXP when flushed out of Headbutt trees "
+                  "later.",
+                  "Poliwhirl needs a Water Stone for Poliwrath, which you cannot obtain "
+                  "yet — that comes later."],
+                 where="Tip"),
         ]},
         {"heading": "1.5 · Route 31", "items": [
-            step("Head further north onto Route 31. Bellsprout appears at all times and "
-                 "Gastly at night (or get one at night in Sprout Tower). Catch a SECOND "
-                 "Bellsprout for an upcoming trade.", where="Route 31"),
-            ach("315121", "Catch a Bellsprout (any time) — and a second for the Onix trade."),
-            ach("315122", "Level Bellsprout to Lv. 21 to get Weepinbell.",
-                ["Weepinbell needs a Leaf Stone for Victreebel, handled later."]),
-            ach("315123", "Catch a Gastly (Night) — on Route 31 or in Sprout Tower."),
-            ach("315124", "Level Gastly to Lv. 25 to get Haunter.",
-                ["Haunter's evolution into Gengar is a trade evolution, so Gengar is not "
-                 "obtainable in a POC. A Haunter with Mean Look/Night Shade helps catch "
-                 "roaming legendaries later."]),
+            step(["Head further north onto Route 31.",
+                  "Bellsprout appears Morning and Night, Gastly at night (or get one at "
+                  "night in Sprout Tower). Catch a SECOND Bellsprout for an upcoming "
+                  "trade."],
+                 where="Route 31"),
+            encounters(
+                enc("Bellsprout", morning="20%", night="20%"),
+                enc("Gastly",     night="5%"),
+            ),
+            items(
+                item("item-rt31-pokeball", "Poké Ball", where="Near Bug Catcher Wade"),
+                item("item-rt31-bitterberry", "Bitter Berry",
+                     where="Berry tree near the sleeping man (daily respawn)"),
+            ),
+            trainers(
+                trainer("trainer-rt31-bug-catcher-wade", "Bug Catcher Wade",
+                        team="Caterpie Lv. 2 ×2, Weedle Lv. 3", reward="P32",
+                        note="has Pokégear phone for rematches"),
+            ),
+            ach("315121", note="catch (any time) — get a second for the Onix trade"),
+            ach("315122", note="evolve at Lv. 21"),
+            ach("315123", note="catch (Night) — Route 31 or Sprout Tower"),
+            ach("315124", note="evolve at Lv. 25"),
+            step(["Weepinbell needs a Leaf Stone for Victreebel, handled later.",
+                  "Haunter's evolution into Gengar is a trade evolution, so Gengar is NOT "
+                  "obtainable in a POC. A Haunter with Mean Look/Night Shade helps catch "
+                  "roaming legendaries later."],
+                 where="Note"),
         ]},
         {"heading": "1.6 · Dark Cave", "items": [
-            step("Instead of heading west to Violet City, enter Dark Cave. You won't get "
-                 "far, but you can stumble far enough to catch a Teddiursa in the morning "
-                 "and a super-rare 1% Dunsparce.", where="Dark Cave"),
-            ach("315125", "Catch a Dunsparce (1% encounter — be patient).",
-                ["A Dunsparce with Rage is highly recommended for the Falkner Set "
-                 "challenge: it is Normal type and takes little damage."]),
-            ach("315126", "Catch a Teddiursa (Morning).",
-                ["Another fleeing Pokémon — bring something to trap it if needed."]),
-            ach("315127", "Level Teddiursa to Lv. 30 to get Ursaring."),
+            step(["Instead of heading west to Violet City, enter Dark Cave (Route 31 "
+                  "entrance).",
+                  "You won't get far, but you can stumble far enough to catch a Teddiursa "
+                  "in the morning and a super-rare 1% Dunsparce."],
+                 where="Dark Cave"),
+            encounters(
+                enc("Teddiursa", morning="5%"),
+                enc("Dunsparce", morning="1%",  day="1%",  night="1%"),
+            ),
+            ach("315125", note="catch (1% — be patient)"),
+            ach("315126", note="catch (Morning)"),
+            ach("315127", note="evolve at Lv. 30"),
+            step(["A Dunsparce with Rage is highly recommended for the Falkner Set "
+                  "challenge: it is Normal type and takes little damage.",
+                  "Teddiursa is another fleeing Pokémon — bring something to trap it if "
+                  "needed."],
+                 where="Tip"),
         ]},
         {"heading": "1.7 · Violet City", "items": [
-            step("It is not time for the gym yet. In one of the town houses, someone wants "
-                 "to trade an Onix for your Bellsprout — definitely do this, as Onix can't "
-                 "be caught until much later. Sprout Tower has a Gastly at night and the "
-                 "Flash HM at the top.", where="Violet City"),
-            ach("315128", "Trade your spare Bellsprout for Onix.",
-                ["This in-game trade is the only way to get Onix this early."]),
+            step(["It is not time for the gym yet.",
+                  "In one of the town houses, someone wants to trade an Onix for your "
+                  "Bellsprout — definitely do this, as Onix can't be caught until much "
+                  "later.",
+                  "Sprout Tower has a Gastly at night and the Flash HM at the top."],
+                 where="Violet City"),
+            ach("315128", note="in-game trade — spare Bellsprout → Onix"),
         ]},
         {"heading": "1.8 · Route 36 (western grass)", "items": [
-            step("Head west out of Violet City. Exclusive to Crystal, a small patch of "
-                 "grass here holds a Growlithe during Morning/Day.", where="Route 36"),
-            ach("315129", "Catch a Growlithe (Morning/Day).",
-                ["Growlithe needs a Fire Stone for Arcanine, obtained later from a "
-                 "Pokégear contact."]),
+            step(["Head west out of Violet City.",
+                  "Exclusive to Crystal, the grass here holds a Growlithe during "
+                  "Morning/Day."],
+                 where="Route 36"),
+            encounters(
+                enc("Growlithe",  morning="10%", day="10%"),
+            ),
+            trainers(
+                trainer("trainer-rt36-psychic-mark", "Psychic Mark", reward="P544",
+                        note="team not sourced"),
+                trainer("trainer-rt36-schoolboy-alan", "Schoolboy Alan", reward="P512",
+                        note="Pokégear contact — later gives Fire Stones; team not sourced"),
+            ),
+            ach("315129", note="catch (Morning/Day)"),
+            step("Growlithe needs a Fire Stone for Arcanine, obtained later from a "
+                 "Pokégear contact (Schoolboy Alan).", where="Note"),
         ]},
         {"heading": "1.9 · Ruins of Alph", "items": [
-            step("Go through the gate house south of the Route 36 grass to reach the Ruins "
-                 "of Alph. Solve the first tile puzzle to encounter Unown.",
+            step(["Go through the gate house south of the Route 36 grass to reach the "
+                  "Ruins of Alph.",
+                  "Solve the first tile puzzle to encounter Unown."],
                  where="Ruins of Alph"),
-            ach("315130", "Catch an Unown (it may flee).",
-                ["Catch one now; you can collect all 26 forms later once every puzzle "
-                 "chamber is unlocked."]),
-            step("That's the end of catching for the first section. Grind your team up — "
-                 "Sprout Tower at night is great against Gastly, and Dark Cave / Route 31 "
-                 "/ Ruins of Alph are good for the rest. The killers are the fully evolved "
-                 "starter, Pidgeot and Ursaring.", where="Leveling tip"),
+            ach("315130", note="catch (it may flee)"),
+            step(["Catch one Unown now; you can collect all 26 forms later once every "
+                  "puzzle chamber is unlocked.",
+                  "That's the end of catching for the first section. Grind your team up — "
+                  "Sprout Tower at night is great against Gastly, and Dark Cave / Route 31 "
+                  "/ Ruins of Alph are good for the rest. The killers are the fully "
+                  "evolved starter, Pidgeot and Ursaring."],
+                 where="Leveling tip"),
         ]},
         {"heading": "1.10 · The Zephyr Badge — Falkner", "items": [
             step("Back in New Bark Town, after the Mr. Pokémon errand, an officer at "
@@ -290,9 +415,7 @@ ch1 = {
             step("With all 46 Pokémon caught and your starter and Pidgey fully evolved, "
                  "enter the Violet City Gym and challenge Falkner, who uses Flying types "
                  "(Pidgey, Pidgeotto).", where="Violet City Gym", npc="Falkner"),
-            ach("315131", "POC checkpoint: have all 46 obtainable Pokémon registered "
-                "before you beat Falkner.",
-                ["This subset milestone confirms the Part 1 dex is complete."]),
+            ach("315131", note="all 46 caught before Falkner"),
             ach("5637", "Defeat Falkner for the Zephyr Badge."),
             ach("199603",
                 "Optional challenge: beat Falkner in Set style, Johto-only, all "
@@ -318,92 +441,190 @@ ch2 = {
               "Headbutting trees. Target: 77 caught before Bugsy."),
     "sections": [
         {"heading": "2.1 · The Egg → Togepi", "items": [
-            step("After beating Falkner, Professor Elm calls: an aide is at the Pokémon "
-                 "Center with a present — the Egg. Keep it in your party so its happiness "
-                 "rises while you grind; it hatches into Togepi.",
+            step(["After beating Falkner, Professor Elm calls: an aide is at the Pokémon "
+                  "Center with a present — the Egg.",
+                  "Keep it in your party so its happiness rises while you grind; it "
+                  "hatches into Togepi."],
                  where="Violet City", npc="Elm's Aide"),
-            ach("315132", "Hatch the Egg into Togepi by walking with it in your party."),
-            ach("315133", "Raise Togepi's happiness → Togetic."),
+            ach("315132", note="hatch the Egg (walk with it in your party)"),
+            ach("315133", note="evolve via high happiness"),
             step("Show the hatched Togepi to Professor Elm to receive an Everstone.",
                  where="New Bark Town", npc="Prof. Elm"),
             ach("199582", "Show Elm your hatched Togepi for the Everstone."),
         ]},
         {"heading": "2.2 · Route 32", "items": [
-            step("Head south from Violet City (skip Ruins of Alph for now). Ekans appears "
-                 "Morning/Day, Wooper only at Night. The Pokémon Center on this route has "
-                 "a man who gives you the Old Rod.", where="Route 32"),
-            ach("315134", "Catch a Wooper (Night)."),
-            ach("315135", "Level Wooper to Lv. 20 → Quagsire."),
-            ach("315136", "Catch an Ekans (Morning/Day)."),
-            ach("315137", "Level Ekans to Lv. 22 → Arbok."),
+            step(["Head south from Violet City (skip Ruins of Alph for now).",
+                  "Ekans appears Morning/Day, Wooper only at Night.",
+                  "The Pokémon Center on this route has a man who gives you the Old Rod."],
+                 where="Route 32"),
+            encounters(
+                enc("Ekans",      morning="30%", day="30%"),
+                enc("Wooper",     night="30%"),
+            ),
+            items(
+                item("item-rt32-old-rod", "Old Rod",
+                     where="Fishing Guru in the Route 32 Pokémon Center"),
+                item("item-rt32-great-ball", "Great Ball",
+                     where="Grass patch southwest of the pier"),
+                item("item-rt32-tm05-roar", "TM05 Roar",
+                     where="From a man on the ledge (needs Cut, return later)"),
+            ),
+            trainers(
+                trainer("trainer-rt32-fisher-ralph", "Fisher Ralph",
+                        team="Goldeen Lv. 10", reward="P400",
+                        note="Pokégear contact — calls about Qwilfish swarms"),
+                trainer("trainer-rt32-youngster-albert", "Youngster Albert",
+                        team="Rattata Lv. 6, Zubat Lv. 8", reward="P128"),
+                trainer("trainer-rt32-picnicker-liz", "Picnicker Liz",
+                        team="Nidoran♀ Lv. 9", reward="P180"),
+                trainer("trainer-rt32-youngster-gordon", "Youngster Gordon",
+                        team="Wooper Lv. 10", reward="P160"),
+            ),
+            ach("315134", note="catch (Night)"),
+            ach("315135", note="evolve at Lv. 20"),
+            ach("315136", note="catch (Morning/Day)"),
+            ach("315137", note="evolve at Lv. 22"),
         ]},
         {"heading": "2.3 · Old Rod fishing tour", "items": [
-            step("With the Old Rod, backtrack to fish up new Pokémon. Get Fisherman "
-                 "Ralph's number on Route 32 — if he calls about a Qwilfish outbreak, "
-                 "come back and catch one. Catch a SECOND Krabby for a later trade.",
+            step(["With the Old Rod, backtrack to fish up new Pokémon.",
+                  "Get Fisherman Ralph's number on Route 32 — if he calls about a Qwilfish "
+                  "outbreak, come back and catch one.",
+                  "Catch a SECOND Krabby for a later trade."],
                  where="Old Rod", npc="Fisherman Ralph"),
-            ach("315138", "Fish up a Magikarp (anywhere).",
-                ["Magikarp can't battle until it learns Tackle — train it once it can."]),
-            ach("315139", "Level Magikarp to Lv. 20 → Gyarados."),
-            ach("315140", "Fish up a Tentacool (New Bark Town)."),
-            ach("315141", "Level Tentacool to Lv. 30 → Tentacruel."),
-            ach("315142", "Fish up a Krabby (Cherrygrove City) — get a second for a trade."),
-            ach("315143", "Level Krabby to Lv. 28 → Kingler."),
-            ach("315144", "Fish up a Goldeen (Dark Cave)."),
-            ach("315145", "Level Goldeen to Lv. 33 → Seaking."),
-            ach("315146", "Fish up a Qwilfish (Route 32, during a swarm).",
-                ["Toggle daylight savings with Mom to force Ralph's swarm call."]),
+            encounters(
+                enc("Tentacool", morning="15%", day="15%", night="15%",
+                    method="Old Rod (New Bark Town)"),
+                enc("Krabby",    morning="15%", day="15%", night="15%",
+                    method="Old Rod (Cherrygrove City)"),
+                enc("Goldeen",   morning="15%", day="15%", night="15%",
+                    method="Old Rod (Dark Cave / Union Cave)"),
+                enc("Qwilfish",  morning="10%", day="10%", night="10%",
+                    method="Super Rod (Route 32, during a swarm)"),
+                enc("Magikarp",  morning="85%", day="85%", night="85%",
+                    method="Old Rod (anywhere)"),
+            ),
+            ach("315138", note="fish up (anywhere)"),
+            ach("315139", note="evolve at Lv. 20"),
+            ach("315140", note="fish up (New Bark Town)"),
+            ach("315141", note="evolve at Lv. 30"),
+            ach("315142", note="fish up (Cherrygrove) — get a second for the trade"),
+            ach("315143", note="evolve at Lv. 28"),
+            ach("315144", note="fish up (Dark Cave)"),
+            ach("315145", note="evolve at Lv. 33"),
+            ach("315146", note="fish up (Route 32 swarm)"),
+            step(["Magikarp can't battle until it learns Tackle — train it once it can.",
+                  "Qwilfish needs the Super Rod and a Ralph swarm call. Toggle daylight "
+                  "savings with Mom to force the call."],
+                 where="Tip"),
         ]},
         {"heading": "2.4 · Union Cave & Slowpoke Well", "items": [
-            step("Enter Union Cave at the south end of Route 32. Sandshrew appears "
-                 "Morning/Day. The cave is bigger than it looks but you can't fully "
-                 "explore it yet; the far side leads to Azalea Town.", where="Union Cave"),
-            ach("315147", "Catch a Sandshrew (Morning/Day)."),
-            ach("315148", "Level Sandshrew to Lv. 22 → Sandslash."),
-            step("Go to Kurt's house in Azalea; he leaves for the Slowpoke Well. Follow "
-                 "and defeat the Rocket grunt leading the raid, then catch a Slowpoke. "
-                 "Afterward Kurt makes special balls from Apricorns.",
+            step(["Enter Union Cave at the south end of Route 32.",
+                  "Sandshrew appears Morning/Day.",
+                  "The cave is bigger than it looks but you can't fully explore it yet; "
+                  "the far side leads to Azalea Town."],
+                 where="Union Cave"),
+            encounters(
+                enc("Sandshrew", morning="30%", day="30%"),
+            ),
+            items(
+                item("item-union-cave-potion", "Potion", where="1F, northwest corner"),
+                item("item-union-cave-great-ball", "Great Ball",
+                     where="1F, southeast near a trainer"),
+                item("item-union-cave-awakening", "Awakening",
+                     where="1F, near the Route 33 exit"),
+                item("item-union-cave-tm39", "TM39 Swift", where="B1F, west of the ladder"),
+            ),
+            trainers(
+                trainer("trainer-union-cave-hiker-daniel", "Hiker Daniel",
+                        team="Onix Lv. 11", reward="P352"),
+            ),
+            ach("315147", note="catch (Morning/Day)"),
+            ach("315148", note="evolve at Lv. 22"),
+            step(["Go to Kurt's house in Azalea; he leaves for the Slowpoke Well.",
+                  "Follow and defeat the Rocket grunt leading the raid, then catch a "
+                  "Slowpoke.",
+                  "Afterward Kurt makes special balls from Apricorns."],
                  where="Slowpoke Well", npc="Kurt"),
+            encounters(
+                enc("Slowpoke", morning="15%", day="15%", night="15%"),
+                enc("Slowpoke", morning="100%", day="100%", night="100%", method="Surf"),
+            ),
+            trainers(
+                trainer("trainer-slowpoke-well-rocket-grunt-m", "Team Rocket Grunt",
+                        team="Rattata Lv. 9 ×2", reward="P360"),
+                trainer("trainer-slowpoke-well-rocket-grunt-f", "Team Rocket Grunt",
+                        team="Zubat Lv. 9, Ekans Lv. 11", reward="P440"),
+            ),
             ach("5934", "Defeat the Rocket Grunt leading the Slowpoke Well raid."),
-            ach("315149", "Catch a Slowpoke."),
-            ach("315150", "Level Slowpoke to Lv. 37 → Slowbro.",
-                ["Slowpoke's other evolution, Slowking, is a trade evolution — not "
-                 "obtainable in a POC."]),
+            ach("315149", note="catch"),
+            ach("315150", note="evolve at Lv. 37"),
             ach("199601", "Receive at least 10 special Poké Balls at once from Kurt.",
                 ["Hand Kurt a batch of Apricorns so he returns 10+ balls in one go."]),
+            step("Slowpoke's other evolution, Slowking, is a trade evolution — not "
+                 "obtainable in a POC.", where="Note"),
         ]},
         {"heading": "2.5 · Ilex Forest", "items": [
-            step("Leave Azalea west (defeat your rival first) into Ilex Forest. Grab the "
-                 "Cut HM here. Paras appears any time; Psyduck, Oddish and Venonat at "
-                 "Night.", where="Ilex Forest"),
-            ach("315151", "Catch an Oddish (Night)."),
-            ach("315152", "Level Oddish to Lv. 21 → Gloom.",
-                ["Gloom needs a Leaf Stone or Sun Stone later for Vileplume/Bellossom."]),
-            ach("315153", "Catch a Paras (any time)."),
-            ach("315154", "Level Paras to Lv. 24 → Parasect."),
-            ach("315155", "Catch a Psyduck (Night)."),
-            ach("315156", "Level Psyduck to Lv. 33 → Golduck."),
-            ach("315157", "Catch a Venonat (Night)."),
-            ach("315158", "Level Venonat to Lv. 31 → Venomoth."),
+            step(["Leave Azalea west (defeat your rival first) into Ilex Forest.",
+                  "Grab the Cut HM here.",
+                  "Paras appears any time (5%); Psyduck, Oddish and Venonat at Night."],
+                 where="Ilex Forest"),
+            encounters(
+                enc("Paras",    morning="5%",  day="5%",  night="5%"),
+                enc("Oddish",   night="50%"),
+                enc("Venonat",  night="30%"),
+                enc("Psyduck",  night="10%"),
+            ),
+            items(
+                item("item-ilex-hm01-cut", "HM01 Cut",
+                     where="From the Farfetch'd-herding boy event"),
+                item("item-ilex-tm02-headbutt", "TM02 Headbutt", where="Ilex Forest"),
+                item("item-ilex-revive", "Revive", where="Ilex Forest"),
+                item("item-ilex-ether", "Ether", where="Ilex Forest"),
+            ),
+            trainers(
+                trainer("trainer-ilex-bug-catcher-wayne", "Bug Catcher Wayne",
+                        team="Ledyba Lv. 8, Paras Lv. 10", reward="P160"),
+            ),
+            ach("315151", note="catch (Night)"),
+            ach("315152", note="evolve at Lv. 21"),
+            ach("315153", note="catch (any time, 5%)"),
+            ach("315154", note="evolve at Lv. 24"),
+            ach("315155", note="catch (Night)"),
+            ach("315156", note="evolve at Lv. 33"),
+            ach("315157", note="catch (Night)"),
+            ach("315158", note="evolve at Lv. 31"),
+            step("Gloom needs a Leaf Stone or Sun Stone later for Vileplume/Bellossom.",
+                 where="Note"),
         ]},
         {"heading": "2.6 · Headbutt trees", "items": [
-            step("Even blocked off without Cut, you can Headbutt trees once Slowpoke "
-                 "learns Headbutt. Try a tree and see what falls out: Pineco in Ilex "
-                 "Forest, Aipom and Heracross in Azalea Town, Exeggcute back on Route 32.",
+            step(["Even blocked off without Cut, you can Headbutt trees once Slowpoke "
+                  "learns Headbutt.",
+                  "Try a tree and see what falls out: Pineco in Ilex Forest, Aipom and "
+                  "Heracross in Azalea Town, Exeggcute back on Route 32.",
+                  "Headbutt odds depend on the tree, not the time of day — rarer mon like "
+                  "Heracross only appear from the 'low chance' trees, so keep trying "
+                  "different trees."],
                  where="Headbutt trees"),
             ach("199596", "Headbutt a tree and run into a sleeping Pokémon."),
-            ach("315161", "Headbutt an Exeggcute out of a tree (Route 32).",
-                ["Exeggcute needs a Leaf Stone later for Exeggutor."]),
-            ach("315159", "Headbutt a Pineco out of a tree (Ilex Forest)."),
-            ach("315160", "Level Pineco to Lv. 31 → Forretress."),
-            ach("315163", "Headbutt an Aipom out of a tree (Azalea Town)."),
-            ach("315162", "Headbutt a Heracross out of a tree (Azalea Town).",
-                ["Heracross gives huge EXP and is a great team member; not required for "
-                 "the Hive milestone but part of the dex."]),
+            ach("315161", note="Headbutt (Route 32)"),
+            ach("315159", note="Headbutt (Ilex Forest)"),
+            ach("315160", note="evolve at Lv. 31"),
+            ach("315163", note="Headbutt (Azalea Town)"),
+            ach("315162", note="Headbutt (Azalea Town)"),
+            step(["Exeggcute needs a Leaf Stone later for Exeggutor.",
+                  "Heracross gives huge EXP and is a great team member; not required for "
+                  "the Hive milestone but part of the dex."],
+                 where="Tip"),
         ]},
         {"heading": "2.7 · The Hive Badge — Bugsy", "items": [
-            ach("315164", "POC checkpoint: 77 Pokémon registered before Bugsy "
-                "(Heracross not required)."),
+            step("With 77 Pokémon registered, enter the Azalea Town Gym and challenge "
+                 "Bugsy, who uses Bug types.", where="Azalea Gym", npc="Bugsy"),
+            trainers(
+                trainer("trainer-azalea-gym-bugsy", "Leader Bugsy",
+                        team="Metapod Lv. 14, Kakuna Lv. 14, Scyther Lv. 16",
+                        reward="P1600"),
+            ),
+            ach("315164", note="77 caught before Bugsy (Heracross not required)"),
             ach("5638", "Defeat Bugsy in Azalea Town for the Hive Badge."),
             ach("199604", "Optional challenge: beat Bugsy in Set style, Johto-only, ≤ Lv. "
                 "16, no Pack items.",
@@ -424,48 +645,88 @@ ch3 = {
               "evolution stones await. Target: 109 caught before Whitney."),
     "sections": [
         {"heading": "3.1 · Route 34", "items": [
-            step("Several new Pokémon plus the Day-Care. Snubbull appears Morning/Day, "
-                 "Drowzee at Night; everything else any time. Catch a SECOND Abra for an "
-                 "upcoming trade and get Picnicker Gina's number (she gives Leaf Stones).",
+            step(["Several new Pokémon plus the Day-Care.",
+                  "Snubbull appears Morning/Day, Drowzee at Night; everything else any "
+                  "time.",
+                  "Catch a SECOND Abra for an upcoming trade and get Picnicker Gina's "
+                  "number (she gives Leaf Stones)."],
                  where="Route 34", npc="Picnicker Gina"),
-            ach("315195", "Catch a Drowzee (Night)."),
-            ach("315196", "Level Drowzee to Lv. 26 → Hypno."),
-            ach("315165", "Catch an Abra (any time) — and a second for the Machop trade."),
-            ach("315166", "Level Abra to Lv. 16 → Kadabra.",
-                ["Kadabra's evolution into Alakazam is a trade evolution — not obtainable."]),
-            ach("315167", "Catch a Ditto (Route 34)."),
-            ach("315168", "Catch a Snubbull (Morning/Day)."),
-            ach("315169", "Level Snubbull to Lv. 23 → Granbull."),
-            ach("315170", "Catch a Jigglypuff (Route 34)."),
+            encounters(
+                enc("Snubbull",   morning="30%", day="30%"),
+                enc("Abra",       morning="10%", day="10%", night="10%"),
+                enc("Jigglypuff", morning="5%",  day="5%",  night="5%"),
+                enc("Ditto",      morning="5%",  day="5%",  night="5%"),
+                enc("Drowzee",    night="30%"),
+            ),
+            items(
+                item("item-rt34-tm12-sweet-scent", "TM12 Sweet Scent",
+                     where="From the woman at the gate to Ilex Forest"),
+                item("item-rt34-nugget", "Nugget",
+                     where="Fenced area west of Picnicker Gina (needs Surf, Crystal only)"),
+                item("item-rt34-rare-candy", "Rare Candy",
+                     where="Hidden in the fenced area (needs Surf)"),
+            ),
+            trainers(
+                trainer("trainer-rt34-picnicker-gina", "Picnicker Gina",
+                        team="Hoppip Lv. 9 ×2, Bulbasaur Lv. 12", reward="P240",
+                        note="Pokégear contact — calls about Leaf Stones"),
+                trainer("trainer-rt34-youngster-samuel", "Youngster Samuel",
+                        team="Rattata Lv. 7, Spearow Lv. 8 ×2, Sandshrew Lv. 10",
+                        reward="P128"),
+                trainer("trainer-rt34-pokefan-brandon", "Pokéfan Brandon",
+                        team="Snubbull Lv. 13", reward="P1040"),
+                trainer("trainer-rt34-youngster-ian", "Youngster Ian",
+                        team="Mankey Lv. 10, Diglett Lv. 12", reward="P192"),
+                trainer("trainer-rt34-camper-todd", "Camper Todd",
+                        team="Psyduck Lv. 14", reward="P280"),
+            ),
+            ach("315195", note="catch (Night)"),
+            ach("315196", note="evolve at Lv. 26"),
+            ach("315165", note="catch (any time) — get a second for the Machop trade"),
+            ach("315166", note="evolve at Lv. 16"),
+            ach("315167", note="catch (any time)"),
+            ach("315168", note="catch (Morning/Day)"),
+            ach("315169", note="evolve at Lv. 23"),
+            ach("315170", note="catch (any time)"),
+            step("Kadabra's evolution into Alakazam is a trade evolution — not obtainable "
+                 "in a POC.", where="Note"),
         ]},
         {"heading": "3.2 · The Odd Egg", "items": [
-            step("Talk to the old man outside the Day-Care for the Odd Egg. SAVE BEFORE "
-                 "TALKING TO HIM — the species is fixed when received. It can be Pichu, "
-                 "Cleffa, Igglybuff, Tyrogue, Smoochum, Elekid or Magby. Soft-reset until "
-                 "you get Tyrogue (it nets four Pokémon now via the Hitmon line).",
+            step(["Talk to the old man outside the Day-Care for the Odd Egg.",
+                  "SAVE BEFORE TALKING TO HIM — the species is fixed when received. It can "
+                  "be Pichu, Cleffa, Igglybuff, Tyrogue, Smoochum, Elekid or Magby.",
+                  "Soft-reset until you get Tyrogue (it nets four Pokémon now via the "
+                  "Hitmon line)."],
                  where="Route 34 Day-Care", npc="Old Man"),
             ach("199561", "Receive the Odd Egg from the Day-Care Man on Route 34."),
-            ach("315172", "Hatch the Odd Egg into Tyrogue (save before receiving the egg).",
-                ["With the exception of Igglybuff, the others aren't available yet — "
-                 "Tyrogue gives the most dex progress. There's a high shiny chance."]),
-            ach("315174", "Evolve Tyrogue at Lv. 20 with Defense > Attack → Hitmonchan."),
-            ach("315173", "Evolve Tyrogue at Lv. 20 with Attack > Defense → Hitmonlee."),
-            ach("315175", "Evolve Tyrogue at Lv. 20 with Attack = Defense → Hitmontop."),
+            ach("315172", note="hatch into Tyrogue (save before receiving the egg)"),
+            ach("315174", note="evolve at Lv. 20, Defense > Attack"),
+            ach("315173", note="evolve at Lv. 20, Attack > Defense"),
+            ach("315175", note="evolve at Lv. 20, Attack = Defense"),
+            step(["With the exception of Igglybuff, the other Odd Egg species aren't "
+                  "available yet — Tyrogue gives the most dex progress, and there's a high "
+                  "shiny chance.",
+                  "Tyrogue's evolution depends on its stats at Lv. 20: Defense > Attack → "
+                  "Hitmonchan, Attack > Defense → Hitmonlee, Attack = Defense → "
+                  "Hitmontop."],
+                 where="Tip"),
             step("Breed your Jigglypuff with Ditto at the Day-Care to produce Igglybuff.",
                  where="Day-Care"),
-            ach("315171", "Breed Jigglypuff with Ditto and hatch an Igglybuff."),
+            ach("315171", note="breed Jigglypuff × Ditto, then hatch"),
         ]},
         {"heading": "3.3 · Goldenrod City — bike, Underground & Game Corner", "items": [
-            step("The biggest city in Johto. Grab the bike. The Underground has a Coin "
-                 "Case for the Game Corner, and you can trade your spare Abra for a "
-                 "Machop. Crystal's Game Corner offers Cubone and Wobbuffet.",
+            step(["The biggest city in Johto. Grab the bike.",
+                  "The Underground has a Coin Case for the Game Corner, and you can trade "
+                  "your spare Abra for a Machop.",
+                  "Crystal's Game Corner offers Cubone and Wobbuffet."],
                  where="Goldenrod City"),
-            ach("315176", "Trade your spare Abra for a Machop in the Underground."),
-            ach("315177", "Level Machop to Lv. 28 → Machoke.",
-                ["Machoke's evolution into Machamp is a trade evolution — not obtainable."]),
-            ach("315178", "Buy a Cubone with coins at the Game Corner."),
-            ach("315179", "Level Cubone to Lv. 28 → Marowak."),
-            ach("315180", "Buy a Wobbuffet with coins at the Game Corner."),
+            ach("315176", note="trade your spare Abra in the Underground"),
+            ach("315177", note="evolve at Lv. 28"),
+            ach("315178", note="buy with Game Corner coins"),
+            ach("315179", note="evolve at Lv. 28"),
+            ach("315180", note="buy with Game Corner coins"),
+            step("Machoke's evolution into Machamp is a trade evolution — not obtainable "
+                 "in a POC.", where="Note"),
             ach("199638", "Promote the Miracle Cycle bike shop so you keep the bike."),
             ach("199631", "Make a purchase at the Goldenrod Dept. Store Rooftop Sale."),
             ach("199620", "Learn a move from Bill's father outside the Game Corner."),
@@ -477,18 +738,53 @@ ch3 = {
             ach("199627", "Win a x24 bet in the Game Corner Card Flip minigame."),
         ]},
         {"heading": "3.4 · Route 35 & National Park", "items": [
-            step("North of Goldenrod, Route 35 holds an ultra-rare 1% Yanma. Through the "
-                 "north gate is National Park: Nidoran♂/♀ Morning/Day, Sunkern daytime. "
-                 "On Tue/Thu/Sat the Bug-Catching Contest runs here.",
+            step(["North of Goldenrod, Route 35 holds an ultra-rare 1% Yanma; Growlithe "
+                  "appears Morning/Day (you need it for the later Fire Stone evolution).",
+                  "Through the north gate is National Park: Nidoran♂/♀ Morning/Day, Sunkern "
+                  "in the daytime.",
+                  "On Tue/Thu/Sat the Bug-Catching Contest runs in National Park."],
                  where="Route 35 / National Park"),
-            ach("315181", "Catch a Yanma (1% encounter — be patient)."),
-            ach("315182", "Catch a Nidoran♀ (Morning/Day)."),
-            ach("315183", "Level Nidoran♀ to Lv. 16 → Nidorina."),
-            ach("315184", "Catch a Nidoran♂ (Morning/Day)."),
-            ach("315185", "Level Nidoran♂ to Lv. 16 → Nidorino."),
-            ach("315186", "Catch a Sunkern (daytime)."),
-            ach("315188", "Catch a Scyther in the Bug-Catching Contest."),
-            ach("315189", "Catch a Pinsir in the Bug-Catching Contest."),
+            step("National Park's tall-grass slots are unusual in that nearly every mon is "
+                 "split by time of day — re-check the table for Morning vs Day vs Night. "
+                 "Sunkern only appears in the Day slot.",
+                 where="Note"),
+            encounters(
+                enc("Yanma",     morning="1%",  day="1%",  night="1%"),
+            ),
+            encounters(
+                enc("Nidoran♀",  morning="30%", day="30%", method="National Park"),
+                enc("Nidoran♂",  morning="30%", day="30%", method="National Park"),
+                enc("Sunkern",                  day="20%", method="National Park"),
+            ),
+            items(
+                item("item-rt35-tm04-rollout", "TM04 Rollout",
+                     where="Route 35, southern grass patch"),
+                item("item-natpark-paralyze-heal", "Paralyze Heal",
+                     where="National Park, behind the fence near the east gate"),
+                item("item-natpark-tm28-dig", "TM28 Dig",
+                     where="National Park, behind the fence in the southwest"),
+                item("item-natpark-full-heal", "Full Heal",
+                     where="National Park, hidden between two flowers near the south gate"),
+            ),
+            trainers(
+                trainer("trainer-rt35-bug-catcher-arnie", "Bug Catcher Arnie",
+                        team="Venonat Lv. 15", reward="P240"),
+                trainer("trainer-rt35-bird-keeper-bryan", "Bird Keeper Bryan",
+                        team="Pidgey Lv. 12, Pidgeotto Lv. 14", reward="P336"),
+                trainer("trainer-rt35-firebreather-walt", "Firebreather Walt",
+                        team="Magmar Lv. 11, Magmar Lv. 13", reward="P624"),
+                trainer("trainer-rt35-juggler-irwin", "Juggler Irwin",
+                        team="Voltorb Lv. 2/6/10/14", reward="P560",
+                        note="rematchable"),
+            ),
+            ach("315181", note="catch (Morning/Day, 1% — be patient)"),
+            ach("315182", note="catch (Morning/Day)"),
+            ach("315183", note="evolve at Lv. 16"),
+            ach("315184", note="catch (Morning/Day)"),
+            ach("315185", note="evolve at Lv. 16"),
+            ach("315186", note="catch (Day, National Park)"),
+            ach("315188", note="catch in the Bug-Catching Contest"),
+            ach("315189", note="catch in the Bug-Catching Contest"),
             ach("199622", "Win the Bug-Catching Contest.",
                 ["Save before entering so you can retry. Put a Pokémon to sleep and catch "
                  "it at full HP for the best score; a Scyther or Pinsir is ideal."]),
@@ -497,29 +793,38 @@ ch3 = {
             ach("199624", "Win the contest with Cooltrainer Nick as a participant."),
         ]},
         {"heading": "3.5 · A stash of stones", "items": [
-            step("Now evolve your stone Pokémon. Mom's Moon Stone evolves one of "
-                 "Jigglypuff / Nidorina / Nidorino; two Sun Stones come from winning the "
-                 "Bug Contest; Leaf and Fire Stones arrive via Gina and Schoolboy Alan's "
-                 "PokéGear calls (force them with the daylight-savings trick).",
+            step(["Now evolve your stone Pokémon.",
+                  "Mom's Moon Stone evolves one of Jigglypuff / Nidorina / Nidorino; two "
+                  "Sun Stones come from winning the Bug Contest.",
+                  "Leaf and Fire Stones arrive via Gina and Schoolboy Alan's PokéGear "
+                  "calls (force them with the daylight-savings trick)."],
                  where="Evolution stones"),
+            step(["You get three Moon Stones across Parts 3 and 5 — spread them across "
+                  "Wigglytuff, Nidoking and Nidoqueen.",
+                  "Catch/raise a second Gloom so you can get BOTH Bellossom (Sun Stone) "
+                  "and Vileplume (Leaf Stone)."],
+                 where="Tip"),
             ach("199567", "Receive an evolution stone from a registered PokéGear Trainer.",
                 ["Gina gives Leaf Stones, Alan gives Fire Stones, plus later contacts for "
                  "Water/Thunder Stones."]),
-            ach("315226", "Use a Moon Stone on Jigglypuff → Wigglytuff.",
-                ["You get three Moon Stones across Parts 3 and 5; spread them across "
-                 "Wigglytuff, Nidoking and Nidoqueen."]),
-            ach("315227", "Use a Moon Stone on Nidorino → Nidoking."),
-            ach("315290", "Use a Moon Stone on Nidorina → Nidoqueen."),
-            ach("315187", "Use a Sun Stone (Bug Contest prize) on Sunkern → Sunflora."),
-            ach("315190", "Use a Sun Stone on Gloom → Bellossom."),
-            ach("315191", "Use a Leaf Stone on Gloom → Vileplume.",
-                ["Catch/raise a second Gloom so you can get both Bellossom and Vileplume."]),
-            ach("315192", "Use a Leaf Stone on Exeggcute → Exeggutor."),
-            ach("315193", "Use a Leaf Stone on Weepinbell → Victreebel."),
-            ach("315194", "Use a Fire Stone (from Alan) on Growlithe → Arcanine."),
+            ach("315226", note="Moon Stone → Wigglytuff"),
+            ach("315227", note="Moon Stone → Nidoking"),
+            ach("315290", note="Moon Stone → Nidoqueen"),
+            ach("315187", note="Sun Stone (Bug Contest prize) → Sunflora"),
+            ach("315190", note="Sun Stone → Bellossom"),
+            ach("315191", note="Leaf Stone → Vileplume"),
+            ach("315192", note="Leaf Stone → Exeggutor"),
+            ach("315193", note="Leaf Stone → Victreebel"),
+            ach("315194", note="Fire Stone (from Alan) → Arcanine"),
         ]},
         {"heading": "3.6 · The Plain Badge — Whitney", "items": [
-            ach("315197", "POC checkpoint: 109 Pokémon registered before Whitney."),
+            step("With 109 Pokémon registered, challenge Whitney in the Goldenrod City "
+                 "Gym for the Plain Badge.", where="Goldenrod Gym", npc="Whitney"),
+            trainers(
+                trainer("trainer-goldenrod-gym-whitney", "Leader Whitney",
+                        team="Clefairy Lv. 18, Miltank Lv. 20", reward="P2000"),
+            ),
+            ach("315197", note="109 caught before Whitney"),
             ach("5639", "Defeat Whitney in Goldenrod City for the Plain Badge.",
                 ["Her Miltank is infamous — Dunsparce with Rage or a Heracross handle it."]),
             ach("199605", "Optional challenge: beat Whitney in Set style, Johto-only, ≤ "
@@ -540,53 +845,100 @@ ch4 = {
               "and Entei. Target: 142 caught before Morty."),
     "sections": [
         {"heading": "4.1 · Sudowoodo (Route 36)", "items": [
-            step("After Whitney, return to Route 36 and talk to the lady by the 'tree'. "
-                 "She sends you to the Goldenrod flower shop for the SquirtBottle; bring "
-                 "it back and SAVE before using it on the tree — this is your only "
-                 "Sudowoodo. The man on its right then gives you the Rock Smash TM.",
+            step(["After Whitney, return to Route 36 and talk to the lady by the 'tree'. "
+                  "She sends you to the Goldenrod flower shop for the SquirtBottle.",
+                  "Bring it back and SAVE before using it on the tree — this is your only "
+                  "Sudowoodo (a one-off static battle, not a wild slot). The man on its "
+                  "right then gives you the Rock Smash TM."],
                  where="Route 36", npc="Flower-shop lady"),
+            items(
+                item("item-rt36-tm08-rock-smash", "TM08 Rock Smash",
+                     where="From the man right of the Sudowoodo tree (after the battle)"),
+            ),
             ach("199564", "Catch the Sudowoodo on Route 36 and register it."),
-            ach("315198", "Catch the Sudowoodo (save before using the SquirtBottle)."),
+            ach("315198", note="static battle — save before using the SquirtBottle"),
         ]},
         {"heading": "4.2 · Route 37 & Ecruteak — Eevee", "items": [
-            step("Route 37 has a single new catch, Stantler, at Night only.",
-                 where="Route 37"),
-            ach("315199", "Catch a Stantler (Night)."),
+            step("Route 37 has a single new catch worth stopping for, Stantler, at Night "
+                 "only. Vulpix is also available here in the daytime.", where="Route 37"),
+            encounters(
+                enc("Stantler",  night="40%"),
+            ),
+            items(
+                item("item-rt37-apricorns", "Red / Blu / Blk Apricorns",
+                     where="From the three Apricorn trees on the route"),
+            ),
+            trainers(
+                trainer("trainer-rt37-twins-ann-anne", "Twins Ann & Anne",
+                        team="Clefairy Lv. 16, Jigglypuff Lv. 16"),
+                trainer("trainer-rt37-psychic-greg", "Psychic Greg",
+                        team="Drowzee Lv. 17"),
+            ),
+            ach("315199", note="catch (Night)"),
             step("Reach Ecruteak and enter the Pokémon Center; Bill heads back to "
                  "Goldenrod. Follow him and he gives you an Eevee. Breed it five times — "
                  "use the babies for Espeon/Umbreon (higher base happiness).",
                  where="Goldenrod City", npc="Bill"),
-            ach("315200", "Receive Eevee from Bill in Goldenrod."),
-            ach("315203", "Use a Fire Stone on Eevee → Flareon."),
-            ach("315202", "Use a Thunder Stone on Eevee → Jolteon.",
-                ["Thunder Stones come from Lass Dana's PokéGear calls (Route 38)."]),
-            ach("315201", "Use a Water Stone on Eevee → Vaporeon.",
-                ["Water Stones come from Fisherman Tully's calls (Route 42 area)."]),
-            ach("315204", "Raise Eevee's happiness during the DAY → Espeon."),
-            ach("315205", "Raise Eevee's happiness during the NIGHT → Umbreon."),
+            ach("315200", note="gift from Bill in Goldenrod"),
+            ach("315203", note="Fire Stone → Flareon"),
+            ach("315202", note="Thunder Stone → Jolteon (stones from Lass Dana, Route 38)"),
+            ach("315201", note="Water Stone → Vaporeon (stones from Tully, Route 42)"),
+            ach("315204", note="raise happiness during the DAY → Espeon"),
+            ach("315205", note="raise happiness during the NIGHT → Umbreon"),
         ]},
         {"heading": "4.3 · Burned Tower", "items": [
             step("Take on the Kimono Girls for the Surf HM, then visit the Burned Tower. "
-                 "Koffing lurks on any floor. In the basement you disturb the three "
+                 "Koffing lurks on both floors. In the basement you disturb the three "
                  "legendary beasts — Raikou and Entei begin roaming; Suicune appears in "
                  "set locations later.", where="Burned Tower", npc="Eusine"),
+            encounters(
+                enc("Koffing",  morning="30%", day="30%", night="30%", method="1F"),
+                enc("Koffing",  morning="59%", day="59%", night="59%", method="B1F"),
+            ),
+            items(
+                item("item-burned-tower-hp-up", "HP Up",
+                     where="1F, behind a breakable rock (needs Rock Smash)"),
+                item("item-burned-tower-tm20", "TM20 Endure", where="B1F"),
+                item("item-burned-tower-ultra-ball", "Ultra Ball", where="1F (hidden)"),
+            ),
             ach("199566", "Complete the Eusine sidequest in the Burned Tower."),
-            ach("315206", "Catch a Koffing (Burned Tower)."),
-            ach("315207", "Level Koffing to Lv. 35 → Weezing (or catch a Weezing)."),
+            ach("315206", note="catch (Burned Tower, any time)"),
+            ach("315207", note="level to Lv. 35 → Weezing (or catch the rare 1% Weezing)"),
         ]},
-        {"heading": "4.4 · Route 38", "items": [
+        {"heading": "4.4 · Route 38 & Moomoo Farm", "items": [
             step("West to Route 38. Magnemite any time, Tauros & Miltank Morning/Day, "
                  "Meowth at Night. Beat Lass Dana and get her number for Thunder Stones.",
                  where="Route 38", npc="Lass Dana"),
-            ach("315208", "Catch a Magnemite (any time)."),
-            ach("315209", "Level Magnemite to Lv. 30 → Magneton.",
-                ["Magneton's evolution into Magnezone doesn't exist in Gen 2."]),
-            ach("315210", "Catch a Miltank (Morning/Day)."),
-            ach("315211", "Catch a Tauros (Morning/Day)."),
-            ach("315212", "Catch a Meowth (Night)."),
-            ach("315213", "Level Meowth to Lv. 28 → Persian."),
+            encounters(
+                enc("Magnemite", morning="20%", day="20%", night="20%"),
+                enc("Miltank",   morning="5%",  day="5%"),
+                enc("Tauros",    morning="5%",  day="5%"),
+                enc("Meowth",    night="40%"),
+            ),
+            trainers(
+                trainer("trainer-rt38-lass-dana", "Lass Dana",
+                        team="Flaaffy Lv. 18, Psyduck Lv. 18",
+                        note="Pokégear contact — calls about Thunder Stones"),
+                trainer("trainer-rt38-sailor-harry", "Sailor Harry",
+                        team="Wooper Lv. 19"),
+                trainer("trainer-rt38-beauty-valerie", "Beauty Valerie",
+                        team="Hoppip Lv. 17, Skiploom Lv. 17"),
+                trainer("trainer-rt38-bird-keeper-toby", "Bird Keeper Toby",
+                        team="Doduo Lv. 15/16/17"),
+                trainer("trainer-rt38-school-kid-chad", "School Kid Chad",
+                        team="Mr. Mime Lv. 19"),
+                trainer("trainer-rt38-beauty-olivia", "Beauty Olivia",
+                        team="Corsola Lv. 19"),
+            ),
+            ach("315208", note="catch (any time)"),
+            ach("315209", note="level to Lv. 30 → Magneton (no Magnezone in Gen 2)"),
+            ach("315210", note="catch (Morning/Day)"),
+            ach("315211", note="catch (Morning/Day)"),
+            ach("315212", note="catch (Night)"),
+            ach("315213", note="level to Lv. 28 → Persian"),
             step("On Route 39 between Ecruteak and Olivine, stop at Moomoo Farm and help "
-                 "nurse the sick Miltank, Moomoo, back to health.",
+                 "nurse the sick Miltank, Moomoo, back to health (it then sells Moomoo "
+                 "Milk and gives you TM13 Snore).",
                  where="Route 39 · Moomoo Farm"),
             ach("199580", "Nurse Moomoo back to health at Moomoo Farm."),
         ]},
@@ -595,31 +947,67 @@ ch4 = {
                  "(not done yet). Trade your spare Krabby for a Voltorb, grab the "
                  "Strength HM, then smash rocks on Route 40 for a chance at Shuckle.",
                  where="Olivine City"),
-            ach("315214", "Trade a Krabby for Voltorb in Olivine."),
-            ach("315215", "Level Voltorb to Lv. 30 → Electrode."),
-            ach("315216", "Smash rocks on Route 40 to find a wild Shuckle."),
+            encounters(
+                enc("Shuckle", morning="10%", day="10%", night="10%", method="Route 40 Rock Smash"),
+            ),
+            items(
+                item("item-olivine-hm04-strength", "HM04 Strength",
+                     where="From the Sailor in the Olivine Café"),
+            ),
+            trainers(
+                trainer("trainer-olivine-trade-krabby", "In-game trade (Krabby → Voltorb)",
+                        note="Voltorb arrives holding a PRZCureBerry"),
+            ),
+            ach("315214", note="in-game trade in Olivine"),
+            ach("315215", note="level to Lv. 30 → Electrode"),
+            ach("315216", note="Route 40 Rock Smash, ~10%"),
         ]},
         {"heading": "4.6 · Good Rod fishing & the Water Stone", "items": [
-            step("Pick up the Good Rod in Olivine for more catches, then journey to Route "
-                 "42 / Mt. Mortar. Defeat Fisherman Tully past the mountain for the final "
-                 "stone contact — Water Stones now evolve several Pokémon.",
+            step(["Pick up the Good Rod from the Fishing Guru in Olivine for more catches, "
+                  "then journey to Route 42 / Mt. Mortar. Defeat Fisherman Tully past the "
+                  "mountain for the final stone contact — Water Stones now evolve several "
+                  "Pokémon.",
+                  "Shellder and Chinchou bite on the Good Rod at the Olivine harbor and "
+                  "in New Bark Town; Corsola and Staryu bite in Olivine City itself."],
                  where="Good Rod", npc="Fisherman Tully"),
-            ach("315217", "Good-Rod a Shellder (Olivine Harbor / New Bark Town)."),
-            ach("315218", "Use a Water Stone on Shellder → Cloyster."),
-            ach("315285", "Good-Rod a Chinchou (Olivine Harbor / New Bark Town)."),
-            ach("315219", "Level Chinchou to Lv. 27 → Lanturn."),
-            ach("315286", "Good-Rod a Corsola (Olivine City, Morning/Day)."),
-            ach("315220", "Good-Rod a Staryu (Olivine City, Night)."),
-            ach("315221", "Use a Water Stone on Staryu → Starmie."),
-            ach("315287", "Catch a Marill (Mt. Mortar, Night)."),
-            ach("315222", "Level Marill to Lv. 18 → Azumarill."),
-            ach("315223", "Use a Water Stone on Poliwhirl → Poliwrath."),
+            encounters(
+                enc("Corsola",  morning="10%", day="10%",               method="Olivine Good Rod"),
+                enc("Staryu",                              night="10%", method="Olivine Good Rod"),
+            ),
+            items(
+                item("item-olivine-good-rod", "Good Rod",
+                     where="From the Fishing Guru north of the Pokémon Center"),
+            ),
+            ach("315217", note="Good Rod at Olivine harbor / New Bark Town"),
+            ach("315218", note="Water Stone → Cloyster"),
+            ach("315285", note="Good Rod at Olivine harbor / New Bark Town"),
+            ach("315219", note="level to Lv. 27 → Lanturn"),
+            ach("315286", note="Good Rod in Olivine City (Day)"),
+            ach("315220", note="Good Rod in Olivine City (Night)"),
+            ach("315221", note="Water Stone → Starmie"),
+            ach("315287", note="catch (Mt. Mortar / Route 42 grass, Night)"),
+            ach("315222", note="level to Lv. 18 → Azumarill"),
+            ach("315223", note="Water Stone → Poliwrath"),
+            step("Marill also appears during a Mt. Mortar swarm at higher rates; check the "
+                 "Pokégear for an active outbreak.", where="Tip"),
         ]},
         {"heading": "4.7 · Route 43 — Farfetch'd", "items": [
-            step("Rest in Mahogany Town, then head north to Route 43 for a Farfetch'd. "
-                 "Keep going to the Lake of Rage (nothing to do there yet).",
+            step("Rest in Mahogany Town, then head north to Route 43 for a Farfetch'd "
+                 "(Morning/Day). Keep going to the Lake of Rage (nothing to do there yet).",
                  where="Route 43"),
-            ach("315288", "Catch a Farfetch'd (Route 43)."),
+            encounters(
+                enc("Farfetch'd", morning="20%", day="20%"),
+            ),
+            trainers(
+                trainer("trainer-rt43-camper-spencer", "Camper Spencer",
+                        team="Sandshrew Lv. 17, Sandslash Lv. 17, Zubat Lv. 19",
+                        reward="P380"),
+                trainer("trainer-rt43-picnicker-tiffany", "Picnicker Tiffany",
+                        team="Clefairy Lv. 20", reward="P400", note="rematchable"),
+                trainer("trainer-rt43-fisher-marvin", "Fisher Marvin",
+                        team="Magikarp Lv. 10/15, Gyarados Lv. 10/15", reward="P600"),
+            ),
+            ach("315288", note="catch (Route 43, Morning/Day)"),
             ach("199598", "Obtain a Stick by catching or Thief-ing a wild Farfetch'd."),
         ]},
         {"heading": "4.8 · Rounding up the beasts", "items": [
@@ -660,24 +1048,50 @@ ch5 = {
               "Rocket Hideout, then pick Pryce (he unlocks Whirlpool). Target: 150 caught."),
     "sections": [
         {"heading": "5.1 · Moon Stone runs & Union Cave", "items": [
-            step("Surf east from New Bark to Route 27 and enter Tohjo Falls to reach a "
-                 "Moon Stone. In Union Cave's basement, Surf across to a grassy bit of "
-                 "the Ruins of Alph for Natu and Smeargle; a Friday brings Lapras to the "
-                 "lowest floor. The Aerodactyl puzzle room hides a third Moon Stone "
-                 "(use Flash on the wall writing).", where="Union Cave / Ruins of Alph"),
-            ach("315291", "Catch a Natu (any time, Ruins of Alph grass)."),
-            ach("315228", "Level Natu to Lv. 25 → Xatu."),
-            ach("315292", "Catch a Smeargle (any time except Night)."),
-            ach("315229", "Catch the Lapras in Union Cave (Fridays only)."),
+            step(["Surf east from New Bark to Route 27 and enter Tohjo Falls to reach a "
+                  "Moon Stone.",
+                  "In Union Cave's basement, Surf across to the grassy outside of the "
+                  "Ruins of Alph for Natu and Smeargle (Smeargle is rare — don't KO it). "
+                  "On a Friday a Lapras appears on Union Cave B2F (Surf the southernmost "
+                  "pond).",
+                  "The Aerodactyl puzzle room hides a third Moon Stone (use Flash on the "
+                  "wall writing)."],
+                 where="Union Cave / Ruins of Alph"),
+            encounters(
+                enc("Natu",     morning="90%", day="90%", night="90%",
+                    method="Ruins of Alph (grass)"),
+                enc("Smeargle", morning="10%", day="10%",
+                    method="Ruins of Alph (grass)"),
+                enc("Lapras",   morning="100%", day="100%", night="100%",
+                    method="Union Cave B2F Surf — Fridays only, Lv. 20"),
+            ),
+            items(
+                item("item-tohjo-falls-moon-stone", "Moon Stone",
+                     where="Tohjo Falls (reached by Surf from Route 27)"),
+                item("item-alph-moon-stone", "Moon Stone",
+                     where="Ruins of Alph Aerodactyl puzzle room (Flash the wall writing)"),
+            ),
+            ach("315291", note="catch (Ruins of Alph grass, any time)"),
+            ach("315228", note="level to Lv. 25 → Xatu"),
+            ach("315292", note="catch (Ruins of Alph grass, Morning/Day)"),
+            ach("315229", note="Union Cave B2F Surf, Fridays only (Lv. 20)"),
             ach("199591", "Catch the Union Cave Lapras and register it."),
         ]},
         {"heading": "5.2 · Route 41 & Cianwood — Eusine, Shuckie", "items": [
             step("Surf south from Olivine over Route 40 onto Route 41 (borders Cianwood) "
-                 "for a Mantine. At Cianwood, grab Amphy's medicine at the pharmacy; head "
-                 "north to see Suicune, where Eusine challenges you — required to meet "
-                 "Suicune later. Mania here lends you the Shuckle 'Shuckie'.",
+                 "and Surf up a Mantine. At Cianwood, grab Amphy's medicine at the "
+                 "pharmacy; head north to see Suicune, where Eusine challenges you — "
+                 "required to meet Suicune later. Mania here lends you the Shuckle "
+                 "'Shuckie'.",
                  where="Route 41 / Cianwood City", npc="Eusine"),
-            ach("315293", "Surf up a Mantine on Route 41."),
+            encounters(
+                enc("Mantine",    morning="10%", day="10%", night="10%", method="Surf"),
+            ),
+            trainers(
+                trainer("trainer-cianwood-eusine", "Eusine",
+                        team="Drowzee Lv. 23, Haunter Lv. 23, Electrode Lv. 25"),
+            ),
+            ach("315293", note="Surf encounter on Route 41 (10%)"),
             ach("199568", "Defeat Eusine in Cianwood City."),
             ach("199630", "Raise Shuckie's Friendship high enough that Mania lets you keep it."),
             ach("199633", "Have a Shuckle turn a Berry into Berry Juice after a battle."),
@@ -686,11 +1100,18 @@ ch5 = {
             ach("199595", "Encounter Suicune on Route 36."),
         ]},
         {"heading": "5.3 · Lake of Rage & the Mahogany Rocket Hideout", "items": [
-            step("Surf to the red Gyarados at the Lake of Rage. After catching/defeating "
-                 "it, Lance teams up with you to raid the Rocket Hideout in Mahogany. "
-                 "Inside you get the Whirlpool HM — also grab the Thief TM for a Moon "
-                 "Stone later. The Fishing Guru by the lake rewards a record Magikarp.",
+            step("Surf to the red Gyarados (Lv. 30) at the Lake of Rage. After "
+                 "catching/defeating it, Lance teams up with you to raid the Rocket "
+                 "Hideout in Mahogany. Inside you get the Whirlpool HM — also grab the "
+                 "Thief TM for a Moon Stone later. The Fishing Guru by the lake rewards "
+                 "a record Magikarp.",
                  where="Lake of Rage / Mahogany Town", npc="Lance"),
+            items(
+                item("item-mahogany-hm06-whirlpool", "HM06 Whirlpool",
+                     where="Mahogany Rocket Hideout (story event with Lance)"),
+                item("item-mahogany-tm46-thief", "TM46 Thief",
+                     where="Mahogany Rocket Hideout"),
+            ),
             ach("199570", "Catch the red Gyarados in the Lake of Rage."),
             ach("199578",
                 "Trade the Red Scale (from the red Gyarados) to Mr. Pokémon for the EXP Share."),
@@ -702,7 +1123,12 @@ ch5 = {
             step("Three gyms are open now; Pryce is the pick because the Glacier Badge "
                  "lets you use Whirlpool (and unlocks more Pokémon).",
                  where="Mahogany Town", npc="Pryce"),
-            ach("315230", "POC checkpoint: 150 Pokémon registered before Pryce."),
+            trainers(
+                trainer("trainer-mahogany-gym-pryce", "Leader Pryce",
+                        team="Seel Lv. 27, Dewgong Lv. 29, Piloswine Lv. 31",
+                        reward="P3100"),
+            ),
+            ach("315230", note="150 caught before Pryce"),
             ach("5643", "Defeat Pryce in Mahogany Town for the Glacier Badge."),
             ach("199609", "Optional challenge: beat Pryce in Set style, Johto-only, ≤ Lv. "
                 "31, no Pack items.",
@@ -724,32 +1150,59 @@ ch6 = {
               "Target: 154 caught."),
     "sections": [
         {"heading": "6.1 · Whirl Islands", "items": [
-            step("With Whirlpool, enter the Whirl Islands on Route 41. Seel appears in the "
-                 "caves except at Night; Horsea is found while Surfing.",
+            step(["With Whirlpool, enter the Whirl Islands off the Olivine–Cianwood surf "
+                  "route. Seel appears in the cave grass Morning/Day (not Night); Horsea "
+                  "is found while Surfing on the inner pools.",
+                  "Seadra also shows up Surfing in the inner cave and on the Super Rod, so "
+                  "you can catch one outright if you'd rather not grind Horsea to Lv. 32."],
                  where="Whirl Islands"),
-            ach("315231", "Catch a Seel (caves, not Night)."),
-            ach("315232", "Level Seel to Lv. 34 → Dewgong."),
-            ach("315294", "Surf up a Horsea in the Whirl Islands."),
-            ach("315233", "Level Horsea to Lv. 32 → Seadra (or catch a Seadra).",
-                ["Seadra's evolution into Kingdra is a trade evolution — not obtainable."]),
+            step("Krabby is the bulk of the cave grass and rises to a 60% Night rate; Seel "
+                 "and Zubat occupy the daytime slots. The Surf Horsea rate climbs from the "
+                 "entrance pools (30%) toward the inner cave.",
+                 where="Note"),
+            encounters(
+                enc("Seel",       morning="25%", day="25%",              method="Cave"),
+                enc("Horsea",     morning="30%", day="30%", night="30%", method="Surf (entrance)"),
+            ),
+            ach("315231", note="catch in the cave grass (Morning/Day)"),
+            ach("315232", note="level Seel to Lv. 34"),
+            ach("315294", note="Surf the pools (Horsea 30%+, rising toward the inner cave)"),
+            ach("315233", note="level Horsea to Lv. 32, or catch a Seadra (Super Rod)"),
+            step("Seadra's evolution into Kingdra is a trade evolution — not obtainable in "
+                 "a POC.", where="Note"),
+            step("Zubat's Night cave rate could not be sourced reliably (Bulbapedia shows "
+                 "no Night slot; Serebii lists 30%) — Morning/Day 30% is agreed, so the "
+                 "Night value is left blank.",
+                 where="Note", missing_info="Whirl Islands Zubat cave Night rate: "
+                 "Bulbapedia (0%/absent) vs Serebii (30%) disagree — left blank."),
         ]},
         {"heading": "6.2 · Cure Amphy & the two gyms", "items": [
-            step("Deliver the medicine to the top of the Olivine Lighthouse to cure Amphy "
-                 "— this opens Jasmine's gym. Defeat Chuck and Jasmine in a row.",
-                 where="Olivine Lighthouse", npc="Jasmine"),
+            step(["Deliver the SecretPotion to the top of the Olivine Lighthouse to cure "
+                  "Amphy — this opens Jasmine's gym.",
+                  "Defeat Chuck for the Storm Badge in Cianwood, then Jasmine for the "
+                  "Mineral Badge in Olivine, back to back."],
+                 where="Olivine Lighthouse / the two gyms", npc="Jasmine"),
+            trainers(
+                trainer("trainer-cianwood-gym-chuck", "Leader Chuck",
+                        team="Primeape Lv. 27, Poliwrath Lv. 30", reward="P3000",
+                        note="carries a Full Heal — Flying/Psychic hits both"),
+                trainer("trainer-olivine-gym-jasmine", "Leader Jasmine",
+                        team="Magnemite Lv. 30 ×2, Steelix Lv. 35", reward="P3500",
+                        note="carries a Hyper Potion — Ground ignores the Magnemite"),
+            ),
             ach("199569", "Cure Amphy at the top of the Olivine Lighthouse."),
             ach("5641", "Defeat Chuck in Cianwood City for the Storm Badge."),
             ach("199607", "Optional challenge: beat Chuck in Set style, Johto-only, ≤ Lv. "
                 "30, no Pack items.",
                 ["A Chinchou/Lanturn, Togetic, Mantine or Crobat carries this Flying-weak "
                  "gym."], type_label="Challenge"),
-            ach("315295", "POC checkpoint: 154 Pokémon registered (Storm Badge)."),
+            ach("315295", note="POC checkpoint: 154 caught (Storm Badge)"),
             ach("5642", "Defeat Jasmine in Olivine City for the Mineral Badge."),
             ach("199608", "Optional challenge: beat Jasmine in Set style, Johto-only, ≤ "
                 "Lv. 35, no Pack items.",
                 ["Wooper/Quagsire (Ground) ignore her Magnetons; Sudowoodo and Heracross "
                  "bring Fighting moves."], type_label="Challenge"),
-            ach("315234", "POC checkpoint: 154 Pokémon registered (Mineral Badge)."),
+            ach("315234", note="POC checkpoint: 154 caught (Mineral Badge)"),
         ]},
     ],
 }
@@ -779,39 +1232,149 @@ ch7 = {
                  where="Tin Tower", npc="Suicune"),
             ach("5948", "Catch Suicune, the Aurora Pokémon."),
             ach("199573", "Catch Suicune and register it without using a Master Ball."),
-            ach("315235", "Catch Suicune."),
+            ach("315235", note="catch at the Tin Tower (will not flee)"),
         ]},
-        {"heading": "7.3 · Route 44 & Ice Path", "items": [
-            step("With 7 badges the man blocking eastern Mahogany is gone. Route 44's "
-                 "grass sits mid-water (Surf across): Lickitung Morning/Day, Tangela any "
-                 "time. The Ice Path holds the Waterfall HM, Swinub & Jynx Morning/Day, "
-                 "Delibird & Sneasel at Night (rates rise on lower floors).",
-                 where="Route 44 / Ice Path"),
-            ach("315296", "Catch a Lickitung (Route 44, Morning/Day)."),
-            ach("315236", "Catch a Tangela (Route 44, any time)."),
-            ach("315237", "Catch a Jynx (Ice Path, Morning/Day, lower floors)."),
-            ach("315297", "Catch a Swinub (Ice Path, Morning/Day)."),
-            ach("315238", "Level Swinub to Lv. 33 → Piloswine."),
-            ach("315298", "Catch a Delibird (Ice Path, Night)."),
-            ach("315239", "Catch a Sneasel (Ice Path, Night)."),
+        {"heading": "7.3 · Route 44", "items": [
+            step(["With 7 badges the man blocking eastern Mahogany is gone. Route 44's "
+                  "grass sits on an island mid-lake — Surf across to reach it.",
+                  "Lickitung appears Morning/Day only; Poliwag/Poliwhirl replace it at "
+                  "Night. Tangela, Bellsprout and Weepinbell appear any time."],
+                 where="Route 44"),
+            encounters(
+                enc("Lickitung",  morning="40%", day="40%"),
+                enc("Tangela",    morning="30%", day="30%", night="30%"),
+            ),
+            items(
+                item("item-rt44-max-revive", "Max Revive",
+                     where="In the grass island in the middle of the lake (needs Surf)"),
+                item("item-rt44-elixir", "Elixir",
+                     where="Hidden in the grass island in the lake (needs Surf)"),
+                item("item-rt44-ultra-ball", "Ultra Ball", where="Northeast of the ponds"),
+                item("item-rt44-max-repel", "Max Repel",
+                     where="Directly east of the Mahogany Town entrance"),
+                item("item-rt44-burnt-berry", "Burnt Berry",
+                     where="Northeast of the Mahogany Town entrance (daily)"),
+            ),
+            trainers(
+                trainer("trainer-rt44-psychic-phil", "Psychic Phil",
+                        team="Natu Lv. 24, Kadabra Lv. 26", reward="P972"),
+                trainer("trainer-rt44-fisher-edgar", "Fisher Edgar",
+                        team="Remoraid Lv. 25 ×2", reward="P1000"),
+                trainer("trainer-rt44-cooltrainer-cybil", "Cooltrainer Cybil",
+                        team="Butterfree Lv. 25, Bellossom Lv. 25", reward="P1200"),
+                trainer("trainer-rt44-cooltrainer-allen", "Cooltrainer Allen",
+                        team="Charmeleon Lv. 27", reward="P1296"),
+                trainer("trainer-rt44-pokemaniac-zach", "Pokémaniac Zach",
+                        team="Rhyhorn Lv. 27", reward="P1620"),
+                trainer("trainer-rt44-fisher-wilton", "Fisher Wilton",
+                        team="Goldeen Lv. 23 ×2, Seaking Lv. 25", reward="P1000"),
+                trainer("trainer-rt44-bird-keeper-vance", "Bird Keeper Vance",
+                        team="Pidgeotto Lv. 25 ×2", reward="P600",
+                        note="Pokégear contact — Carbos on second rematch"),
+            ),
+            ach("315296", note="catch (Morning/Day)"),
+            ach("315236", note="catch (any time)"),
         ]},
-        {"heading": "7.4 · Blackthorn City & Route 45", "items": [
-            step("Blackthorn has a required in-game trade: a female Dragonair for a "
-                 "Dodrio (available only after badge 8). South on Route 45 (bring Fly for "
-                 "the ledges): Gligar any time, Skarmory Morning/Day; fish the small pond "
-                 "on the right for two Dratini (one female). Then breed Dodrio→Doduo and "
-                 "Jynx→Smoochum at the Day-Care.", where="Blackthorn City / Route 45"),
-            ach("315299", "Catch a Gligar (Route 45, any time)."),
-            ach("315240", "Catch a Skarmory (Route 45, Morning/Day)."),
-            ach("315300", "Fish up two Dratini on Route 45 (one female for the trade)."),
-            ach("315241", "Level Dratini to Lv. 30 → Dragonair."),
-            ach("315242", "Level Dragonair to Lv. 55 → Dragonite."),
-            ach("315243", "Trade a female Dragonair for Dodrio in Blackthorn."),
-            ach("315244", "Breed Dodrio with Ditto and hatch a Doduo."),
-            ach("315245", "Breed Jynx and hatch a Smoochum."),
+        {"heading": "7.4 · Ice Path", "items": [
+            step(["The Ice Path holds HM07 Waterfall and a sliding-ice puzzle across "
+                  "four floors (1F, B1F, B2F, B3F).",
+                  "Swinub and Jynx appear Morning/Day; Delibird and Sneasel only at "
+                  "Night. Jynx and Sneasel are absent from 1F and grow more common on "
+                  "deeper floors (≈1% on B1F → 5% on B2F → 10% on B3F)."],
+                 where="Ice Path"),
+            encounters(
+                enc("Swinub",   morning="40%", day="40%"),
+                enc("Jynx",     morning="1%",  day="1%",  method="B1F; 5% B2F, 10% B3F"),
+                enc("Delibird", night="40%"),
+                enc("Sneasel",  night="1%",                method="B1F; 5% B2F, 10% B3F"),
+            ),
+            items(
+                item("item-icepath-hm07-waterfall", "HM07 Waterfall",
+                     where="1F, past the third ice patch"),
+                item("item-icepath-protein", "Protein", where="1F, north of the last ladder"),
+                item("item-icepath-pp-up", "PP Up", where="1F, bottom"),
+                item("item-icepath-iron", "Iron", where="B1F, bottom"),
+                item("item-icepath-max-potion-b1f", "Max Potion",
+                     where="B1F, hidden on the middle rock of the ice puzzle"),
+                item("item-icepath-max-potion-b2f", "Max Potion",
+                     where="B2F, northwest corner of the left portion"),
+                item("item-icepath-full-heal", "Full Heal", where="B2F, center of the left portion"),
+                item("item-icepath-carbos", "Carbos",
+                     where="B2F, hidden in the southeast corner of the left portion"),
+                item("item-icepath-ice-heal", "Ice Heal",
+                     where="B2F, hidden in a lone boulder on the right side"),
+                item("item-icepath-tm44-rest", "TM44 Rest", where="B2F, bottom right"),
+                item("item-icepath-nevermeltice", "NeverMeltIce",
+                     where="B3F, bottom-left (past a breakable rock)"),
+            ),
+            ach("315237", note="catch (Morning/Day, deeper floors)"),
+            ach("315297", note="catch (Morning/Day)"),
+            ach("315238", note="level Swinub to Lv. 33 → Piloswine"),
+            ach("315298", note="catch (Night)"),
+            ach("315239", note="catch (Night, deeper floors)"),
         ]},
-        {"heading": "7.5 · The Rising Badge — Clair", "items": [
-            ach("315246", "POC checkpoint: 170 Pokémon registered before the Rising Badge."),
+        {"heading": "7.5 · Blackthorn City & Route 45", "items": [
+            step(["Blackthorn has a required in-game trade: a female Dragonair for a "
+                  "Dodrio (it arrives holding a Smoke Ball; only after badge 8).",
+                  "South on Route 45 (bring Fly for the ledges): Gligar any time, "
+                  "Skarmory Morning/Day; fish the pond at the south end for Dratini "
+                  "(Good/Super Rod) — get two, one female for the trade.",
+                  "Then breed Dodrio→Doduo and Jynx→Smoochum at the Day-Care."],
+                 where="Blackthorn City / Route 45", npc="Trade NPC (Dodrio)"),
+            encounters(
+                enc("Gligar",   morning="20%", day="20%", night="20%"),
+                enc("Skarmory", morning="5%",  day="5%"),
+                enc("Dratini",  morning="10%", day="10%", night="10%", method="Good Rod"),
+                enc("Dratini",  morning="30%", day="30%", night="30%", method="Super Rod"),
+            ),
+            items(
+                item("item-rt45-elixir", "Elixir", where="Left path"),
+                item("item-rt45-max-potion", "Max Potion", where="Center path"),
+                item("item-rt45-revive", "Revive", where="Left path"),
+                item("item-rt45-nugget", "Nugget", where="Left path (Crystal only)"),
+                item("item-rt45-pp-up", "PP Up",
+                     where="Hidden in the middle of the southern pond (needs Surf)"),
+                item("item-rt45-mysteryberry", "MysteryBerry",
+                     where="Near the southern pond (daily)"),
+            ),
+            trainers(
+                trainer("trainer-rt45-hiker-erik", "Hiker Erik",
+                        team="Machop Lv. 24, Graveler Lv. 27, Machop Lv. 27", reward="P864"),
+                trainer("trainer-rt45-cooltrainer-ryan", "Cooltrainer Ryan",
+                        team="Pidgeot Lv. 25, Electabuzz Lv. 27", reward="P1296"),
+                trainer("trainer-rt45-cooltrainer-kelly", "Cooltrainer Kelly",
+                        team="Marill Lv. 27, Wartortle Lv. 24 ×2", reward="P1152"),
+                trainer("trainer-rt45-hiker-parry", "Hiker Parry",
+                        team="Onix Lv. 29", reward="P928"),
+                trainer("trainer-rt45-blackbelt-kenji", "Blackbelt Kenji",
+                        team="Machoke Lv. 28", reward="P672"),
+                trainer("trainer-rt45-hiker-timothy", "Hiker Timothy",
+                        team="Diglett Lv. 27, Dugtrio Lv. 27", reward="P864"),
+                trainer("trainer-rt45-hiker-michael", "Hiker Michael",
+                        team="Geodude Lv. 25, Graveler Lv. 25, Golem Lv. 25", reward="P800"),
+                trainer("trainer-rt45-camper-quentin", "Camper Quentin",
+                        team="Fearow Lv. 30, Primeape Lv. 30, Tauros Lv. 30", reward="P600"),
+            ),
+            ach("315299", note="catch (any time)"),
+            ach("315240", note="catch (Morning/Day)"),
+            ach("315300", note="fish the southern pond (Good/Super Rod); get one female"),
+            ach("315241", note="level Dratini to Lv. 30 → Dragonair"),
+            ach("315242", note="level Dragonair to Lv. 55 → Dragonite"),
+            ach("315243", note="trade a female Dragonair for Dodrio in Blackthorn"),
+            ach("315244", note="breed Dodrio × Ditto, then hatch Doduo"),
+            ach("315245", note="breed Jynx × Ditto, then hatch Smoochum"),
+        ]},
+        {"heading": "7.6 · The Rising Badge — Clair", "items": [
+            step("With 170 Pokémon registered, challenge Clair in the Blackthorn City "
+                 "Gym. She awards TM24 DragonBreath with the Rising Badge (the Dragon's "
+                 "Den test follows before the badge is official).",
+                 where="Blackthorn Gym", npc="Clair"),
+            trainers(
+                trainer("trainer-blackthorn-gym-clair", "Leader Clair",
+                        team="Dragonair Lv. 37 ×3, Kingdra Lv. 40", reward="P4000",
+                        note="gives TM24 DragonBreath + Rising Badge"),
+            ),
+            ach("315246", note="170 caught before Clair"),
             ach("5644", "Defeat Clair in Blackthorn City for the Rising Badge."),
             ach("199610", "Optional challenge: beat Clair in Set style, Johto-only, ≤ Lv. "
                 "40, no Pack items (Beasts allowed).",
@@ -831,30 +1394,68 @@ ch8 = {
               "Pokémon before challenging the Elite Four. Target: 174 caught."),
     "sections": [
         {"heading": "8.1 · Dragon's Den & the Master Ball", "items": [
-            step("After Clair, complete the trial in the Dragon's Den for your final "
-                 "badge and Waterfall. Answer every question of the Master's quiz "
-                 "correctly on the FIRST attempt to receive a Dratini with ExtremeSpeed. "
-                 "Then see Prof. Elm in New Bark Town for the Master Ball.",
+            step(["After Clair, complete the trial in the Dragon's Den for your final "
+                  "badge and Waterfall.",
+                  "Answer every question of the Master's quiz correctly on the FIRST "
+                  "attempt to receive a Dratini with ExtremeSpeed.",
+                  "Then see Prof. Elm in New Bark Town for the Master Ball."],
                  where="Dragon's Den", npc="Elder"),
             ach("199576", "Answer the Dragon Shrine quiz perfectly for an ExtremeSpeed "
                 "Dratini."),
         ]},
-        {"heading": "8.2 · Into Kanto's edge — Route 27 & Victory Road", "items": [
-            step("Surf east of New Bark to Route 27 (cross Tohjo Falls via Waterfall). "
-                 "Catch a Ponyta Morning/Day (more common on Route 26). In Victory Road, "
-                 "catch Rhyhorn Morning/Day — or hunt the 5% Rhydon directly.",
-                 where="Route 27 / Victory Road"),
-            ach("315247", "Catch a Ponyta (Morning/Day)."),
-            ach("315248", "Level Ponyta to Lv. 40 → Rapidash."),
-            ach("315249", "Catch a Rhyhorn (Victory Road, Morning/Day)."),
-            ach("315250", "Level Rhyhorn to Lv. 42 → Rhydon (or catch a wild Rhydon, 5%)."),
+        {"heading": "8.2 · Tohjo Falls", "items": [
+            step(["Surf east of New Bark and cross Tohjo Falls via Waterfall on the way "
+                  "to Route 27.",
+                  "The cave's wild list is all Pokémon you already have, but the small "
+                  "western ledge holds a Moon Stone (needs Surf)."],
+                 where="Tohjo Falls"),
+            items(
+                item("item-tohjo-moon-stone", "Moon Stone",
+                     where="Small piece of land at the western end of the cave (needs Surf)"),
+            ),
         ]},
-        {"heading": "8.3 · The Elite Four & Champion Lance", "items": [
+        {"heading": "8.3 · Routes 26 & 27", "items": [
+            step(["The twin routes east of Tohjo Falls into Kanto's edge.",
+                  "Catch a Ponyta — it appears Morning/Day on both routes (20% on Route "
+                  "26, 5% on Route 27).",
+                  "Noctowl, Quagsire and Raticate fill the Night slots."],
+                 where="Routes 26 / 27"),
+            encounters(
+                enc("Ponyta",    morning="20%", day="20%",            method="Rt 26 Grass"),
+            ),
+            encounters(
+                enc("Ponyta",    morning="5%",  day="5%",             method="Rt 27 Grass"),
+            ),
+            items(
+                item("item-rt27-tm22-solarbeam", "TM22 SolarBeam",
+                     where="Isolated land south of the Route 27 bridge (needs Surf + Whirlpool)"),
+                item("item-rt27-rare-candy", "Rare Candy",
+                     where="Tiny area southeast of Tohjo Falls (needs Surf)"),
+                item("item-rt27-tm37-sandstorm", "TM37 Sandstorm",
+                     where="From the woman in the house east of Tohjo Falls, at high friendship"),
+                item("item-rt26-ice-berry", "Ice Berry",
+                     where="North of the Route 26 rest stop (daily)"),
+            ),
+            ach("315247", note="catch (Morning/Day; 20% Rt 26, 5% Rt 27)"),
+            ach("315248", note="evolve at Lv. 40"),
+        ]},
+        {"heading": "8.4 · Victory Road", "items": [
+            step(["The final cave before the Indigo Plateau, full of Rock/Ground mons.",
+                  "Catch Rhyhorn Morning/Day (30%), or hunt the 5% wild Rhydon directly. "
+                  "Onix, Graveler and Golbat round out the floors."],
+                 where="Victory Road"),
+            encounters(
+                enc("Rhyhorn",  morning="30%", day="30%",            method="Cave"),
+            ),
+            ach("315249", note="catch (Morning/Day, 30%)"),
+            ach("315250", note="evolve at Lv. 42 (or catch a wild Rhydon, 5%)"),
+        ]},
+        {"heading": "8.5 · The Elite Four & Champion Lance", "items": [
             step("At the Indigo Plateau your rival challenges you in an optional battle "
                  "before the League. Then take on the Elite Four and Champion Lance.",
                  where="Indigo Plateau", npc="Rival"),
             ach("199593", "Win the optional rival battle at the Indigo Plateau."),
-            ach("315251", "POC checkpoint: 174 Pokémon registered before the Elite Four."),
+            ach("315251", note="174 caught before the Elite Four"),
             ach("5949", "Defeat the Elite Four and Champion Lance to become Champion!"),
             ach("199611", "Optional challenge: beat the Elite Four in Set style, "
                 "Johto-only, ≤ Lv. 44, no Pack items, one session (Beasts allowed).",
@@ -889,8 +1490,11 @@ ch9 = {
                  "was stolen. Chase the Rocket through the Cerulean Gym, recover the part "
                  "from Nugget Bridge, and return it to the Power Plant.",
                  where="Route 10 Power Plant"),
+            encounters(
+                enc("Electabuzz", morning="5%",  day="5%",  night="5%"),
+            ),
             ach("199637", "Defeat every Trainer aboard the S.S. Aqua (after the first voyage)."),
-            ach("315252", "Catch an Electabuzz (Route 10 grass)."),
+            ach("315252", note="catch (Route 10 grass, ~5% any time)"),
             ach("199585", "Return the stolen Machine Part to the Power Plant staff."),
         ]},
         {"heading": "9.3 · Rock Tunnel, the radio card & Magnet Train", "items": [
@@ -899,7 +1503,12 @@ ch9 = {
                  "Tower for the radio expansion card (PokéFlute). In Saffron, the Copycat "
                  "wants her doll — fetch it from the Vermilion Pokémon Fan Club to get the "
                  "Magnet Train pass.", where="Rock Tunnel → Lavender → Saffron"),
-            ach("315253", "Catch a Kangaskhan (Rock Tunnel, lower floors)."),
+            encounters(
+                enc("Kangaskhan", morning="5%",  day="5%",               method="B1F"),
+                enc("Cubone",     morning="30%", day="30%",              method="Thick Club holder; 1F & B1F"),
+                enc("Marowak",    morning="5%",  day="5%",               method="Thick Club holder; 1F & B1F"),
+            ),
+            ach("315253", note="catch (Rock Tunnel B1F, ~5% Morning/Day)"),
             ach("199599", "Obtain a Thick Club from a wild Cubone or Marowak."),
             ach("199640", "Receive the Magnet Train Pass from the Saffron Copycat."),
         ]},
@@ -908,31 +1517,43 @@ ch9 = {
                  "Murkrow. In Celadon, Surf the small pool for Grimer (10% Muk). The Game "
                  "Corner sells Porygon (5,555 coins) and Larvitar (8,888). Prove to "
                  "Eusine in the Celadon Mart that you've caught Raikou/Entei/Suicune for "
-                 "the Rainbow Wing. Slugma hides on Routes 16–18 in daytime.",
+                 "the Rainbow Wing. Slugma appears on Route 16 in the daytime.",
                  where="Kanto routes / Celadon", npc="Eusine"),
-            ach("315255", "Catch a Houndour (Route 7, Night)."),
-            ach("315256", "Level Houndour to Lv. 24 → Houndoom."),
-            ach("315254", "Catch a Murkrow (Route 7, Night)."),
-            ach("315257", "Surf up a Grimer in Celadon (10% chance of Muk)."),
-            ach("315258", "Catch a Muk (or evolve Grimer at Lv. 38)."),
-            ach("315259", "Buy a Porygon at the Celadon Game Corner (5,555 coins)."),
-            ach("315301", "Buy a Larvitar at the Celadon Game Corner (8,888 coins).",
-                ["This Larvitar comes at Lv. 40 — only 15 levels to a full Tyranitar."]),
-            ach("315260", "Level Larvitar to Lv. 30 → Pupitar."),
-            ach("315261", "Level Pupitar to Lv. 55 → Tyranitar."),
-            ach("315302", "Catch a Slugma (Routes 16–18, daytime)."),
-            ach("315262", "Level Slugma to Lv. 38 → Magcargo."),
+            encounters(
+                enc("Murkrow",                              night="30%",method="Rt 7 Grass"),
+                enc("Houndour",                             night="20%",method="Rt 7 Grass"),
+            ),
+            encounters(
+                enc("Grimer", morning="90%", day="90%", night="90%", method="Celadon Surf"),
+            ),
+            encounters(
+                enc("Slugma",                 day="5%",               method="Rt 16 Grass"),
+            ),
+            ach("315255", note="catch (Route 7, Night, 20%)"),
+            ach("315256", note="level Houndour to Lv. 24 → Houndoom"),
+            ach("315254", note="catch (Route 7, Night, 30%)"),
+            ach("315257", note="Surf the Celadon pool (90%)"),
+            ach("315258", note="catch via Surf (10%) or evolve Grimer at Lv. 38"),
+            ach("315259", note="buy at the Celadon Game Corner (5,555 coins)"),
+            ach("315301", note="buy at the Celadon Game Corner (8,888 coins) — arrives Lv. 40"),
+            ach("315260", note="level Larvitar to Lv. 30 → Pupitar"),
+            ach("315261", note="level Pupitar to Lv. 55 → Tyranitar"),
+            ach("315302", note="catch (Route 16 grass, Day, 5%)"),
+            ach("315262", note="level Slugma to Lv. 38 → Magcargo"),
         ]},
         {"heading": "9.5 · Chansey, Aerodactyl & the eastern routes", "items": [
             step("On Route 15 catch the 1% Chansey (Lv. 25 — repel-trick with a Lv. 24 "
                  "lead helps). Breed it so you keep one, then trade a Chansey on Route 14 "
                  "for Aerodactyl. Bill's grandfather on Route 25 rewards showing him "
                  "specific Pokémon.", where="Routes 14/15/25", npc="Bill's grandfather"),
-            ach("315263", "Catch a Chansey (Route 15, 1% encounter)."),
-            ach("315264", "Raise Chansey's happiness → Blissey."),
+            encounters(
+                enc("Chansey",   morning="1%",  day="1%",  night="1%"),
+            ),
+            ach("315263", note="catch (Route 15 grass, 1% any time)"),
+            ach("315264", note="raise Chansey's happiness → Blissey"),
             ach("199600",
                 "Obtain a Lucky Egg by catching or Thief-ing a wild Chansey."),
-            ach("315303", "Trade a Chansey for Aerodactyl on Route 14."),
+            ach("315303", note="trade a Chansey for Aerodactyl on Route 14"),
             ach("199588", "Show all 5 requested Pokémon to Bill's grandfather on Route 25."),
         ]},
         {"heading": "9.6 · Unlocking the rest of Kanto", "items": [
@@ -941,24 +1562,33 @@ ch9 = {
                  "Pewter (Silver Wing from the old man) and Mt. Moon for Clefairy and a "
                  "Moon Stone (Monday-night ritual needs Rock Smash). Surf at Pallet to "
                  "Route 21 for Mr. Mime.", where="Diglett's Cave → Mt. Moon → Route 21"),
+            encounters(
+                enc("Pikachu",   morning="5%",  day="5%",               method="Rt 2 Grass"),
+            ),
+            encounters(
+                enc("Clefairy",  morning="5%",  day="5%",  night="25%", method="Mt. Moon"),
+            ),
+            encounters(
+                enc("Mr. Mime",  morning="10%", day="10%",              method="Rt 21 Grass"),
+            ),
             ach("199586", "Catch the Snorlax east of Vermilion and register it."),
-            ach("315265", "Catch the Snorlax (wake it with the PokéFlute; save first)."),
-            ach("315266", "Catch a Diglett (Diglett's Cave)."),
-            ach("315267", "Catch a Dugtrio (or evolve Diglett at Lv. 26)."),
-            ach("315268", "Catch a Pikachu on Route 2 (or take the Game Corner one)."),
-            ach("315304", "Use a Thunder Stone on Pikachu → Raichu."),
-            ach("315269", "Catch a Clefairy at Mt. Moon."),
-            ach("315305", "Use a Moon Stone on Clefairy → Clefable."),
+            ach("315265", note="wake it with the PokéFlute and catch it (save first)"),
+            ach("315266", note="catch (Diglett's Cave)"),
+            ach("315267", note="catch (Diglett's Cave) or evolve Diglett at Lv. 26"),
+            ach("315268", note="catch (Route 2, ~5%) or take the Game Corner one"),
+            ach("315304", note="use a Thunder Stone on Pikachu → Raichu"),
+            ach("315269", note="catch (Mt. Moon, 5% Morning/Day, 25% Night)"),
+            ach("315305", note="use a Moon Stone on Clefairy → Clefable"),
             ach("199587", "Receive a Moon Stone after the Clefairy ritual at Mt. Moon Square."),
-            ach("315270", "Catch a Mr. Mime (Route 21, Morning/Day)."),
+            ach("315270", note="catch (Route 21 grass, Morning/Day, 10%)"),
         ]},
         {"heading": "9.7 · Kanto baby Pokémon & errands", "items": [
             step("Back at the Johto Day-Care, breed your Kanto catches for their babies. "
                  "Daisy Oak in Pallet will comb a Pokémon for you.",
                  where="Day-Care / Pallet Town", npc="Daisy Oak"),
-            ach("315307", "Breed Electabuzz and hatch an Elekid."),
-            ach("315306", "Breed Pikachu/Raichu and hatch a Pichu."),
-            ach("315271", "Breed Clefairy/Clefable and hatch a Cleffa."),
+            ach("315307", note="breed Electabuzz × Ditto, then hatch Elekid"),
+            ach("315306", note="breed Pikachu/Raichu × Ditto, then hatch Pichu"),
+            ach("315271", note="breed Clefairy/Clefable × Ditto, then hatch Cleffa"),
             ach("199625", "Have Daisy Oak comb your Pokémon in Pallet Town."),
         ]},
         {"heading": "9.8 · The two box legendaries", "items": [
@@ -968,10 +1598,10 @@ ch9 = {
                  "normally.", where="Whirl Islands / Tin Tower"),
             ach("5952", "Catch Lugia at the Whirl Islands."),
             ach("199589", "Catch Lugia without using a Master Ball."),
-            ach("315273", "Catch Lugia."),
+            ach("315273", note="catch (Whirl Islands, Lv. 60)"),
             ach("5953", "Catch Ho-Oh at the Tin Tower."),
             ach("199590", "Catch Ho-Oh without using a Master Ball."),
-            ach("315272", "Catch Ho-Oh."),
+            ach("315272", note="catch (Tin Tower, Lv. 60)"),
         ]},
     ],
 }
@@ -1049,18 +1679,57 @@ ch11 = {
               "summit. This completes the challenge: 206 caught (207 on VC with Celebi)."),
     "sections": [
         {"heading": "11.1 · Silver Cave", "items": [
-            step("From the Pokémon League gates, exit west to Route 28 and the Pokémon "
-                 "Center at Silver Cave. On the entrance floor (Morning/Day) catch a "
-                 "Magmar to breed for Magby; Misdreavus appears on the next floor at "
-                 "Night.", where="Silver Cave"),
-            ach("315282", "Catch a Magmar (entrance floor, Morning/Day)."),
-            ach("315283", "Breed Magmar and hatch a Magby."),
-            ach("315281", "Catch a Misdreavus (next floor, Night)."),
+            step(["From the Pokémon League gates, exit west to Route 28 and the Pokémon "
+                  "Center at the foot of Mt. Silver, then enter Silver Cave (Flash lights "
+                  "the first room).",
+                  "On 1F, Magmar appears Morning/Day — catch one to breed for Magby.",
+                  "Climb to 2F: Misdreavus shows up only at Night (5% on 2F; up to 30% "
+                  "deeper in the Chambers). These are the last two wild Pokémon you need."],
+                 where="Silver Cave"),
+            encounters(
+                enc("Magmar",   morning="10%", day="10%",              method="1F"),
+                enc("Misdreavus",                           night="5%",  method="2F"),
+            ),
+            items(
+                item("item-silvercave-escape-rope", "Escape Rope",
+                     where="1F, west of the entrance"),
+                item("item-silvercave-protein", "Protein", where="1F, east of the entrance"),
+                item("item-silvercave-ultra-ball-1f-mid", "Ultra Ball",
+                     where="1F, in the middle of the floor"),
+                item("item-silvercave-dire-hit", "Dire Hit",
+                     where="1F, on the rock between the central ledges (hidden)"),
+                item("item-silvercave-max-elixir", "Max Elixir", where="1F, northwest corner"),
+                item("item-silvercave-ultra-ball-1f-se", "Ultra Ball",
+                     where="1F, southeast area near the 2F entrance (hidden)"),
+                item("item-silvercave-max-potion", "Max Potion",
+                     where="2F, on the rock just west of the 2F entrance (hidden)"),
+                item("item-silvercave-pp-up", "PP Up",
+                     where="2F, western shoreline (needs Surf and Waterfall)"),
+                item("item-silvercave-max-revive", "Max Revive",
+                     where="2F, far western end (needs Surf and Waterfall)"),
+                item("item-silvercave-ultra-ball-2f", "Ultra Ball",
+                     where="2F, east of the triple stairway"),
+                item("item-silvercave-calcium", "Calcium",
+                     where="2F, northeastern interior (needs Surf and Waterfall)"),
+                item("item-silvercave-full-restore", "Full Restore",
+                     where="2F, far northeastern end (needs Surf and Waterfall)"),
+            ),
+            ach("315282", note="catch on 1F (Morning/Day, 10%)"),
+            ach("315283", note="breed Magmar and hatch a Magby"),
+            ach("315281", note="catch on 2F or in the Chambers (Night only)"),
         ]},
         {"heading": "11.2 · The summit — Red", "items": [
-            step("Climb to the top of Mt. Silver to battle Red. His team is very high "
-                 "level — bring your best six.", where="Mt. Silver summit", npc="Red"),
-            ach("315284", "POC checkpoint: 206 Pokémon registered before Red."),
+            step("Climb to the top of Mt. Silver to battle Red — the highest-level Trainer "
+                 "in the game. His team is mid-to-low 70s with a Lv. 81 Pikachu, and he "
+                 "carries two Full Restores; bring your best six.",
+                 where="Mt. Silver summit", npc="Red"),
+            trainers(
+                trainer("trainer-mtsilver-red", "Pokémon Trainer Red",
+                        team="Pikachu Lv. 81, Snorlax Lv. 75, Venusaur Lv. 77, "
+                             "Charizard Lv. 77, Blastoise Lv. 77, Espeon Lv. 73",
+                        reward="P7700", note="has two Full Restores"),
+            ),
+            ach("315284", note="206 Pokémon registered before Red"),
             ach("5958", "Defeat Pokémon Trainer Red at the summit of Mt. Silver!"),
             ach("199619", "Optional challenge: beat Red in Set style, Johto-only, ≤ Lv. "
                 "65, no Pack items (all Johto Legendaries allowed).",
