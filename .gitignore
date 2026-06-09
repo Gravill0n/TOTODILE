@@ -1,2 +1,3 @@
 sources/
 .superpowers/
+*.local.json
