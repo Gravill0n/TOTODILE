@@ -1,4 +1,4 @@
-# TDD Requirement Files
+# TOTODILE — TDD Requirement Files
 
 One file per pure-logic unit from `IMPLEMENTATION_PLAN.md`, written for the
 `/bon-cop-bad-cop:tdd-loop` skill. Each file is self-contained: exact signatures,

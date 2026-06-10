@@ -1,8 +1,10 @@
-# Product Requirements Document: React app to regroup video game guides/trackers
+# Product Requirements Document: TOTODILE
+
+*Tracker Of Things, Order, Data, Items, Lists & Everything — the React app regrouping video game guides/trackers.*
 
 ## Executive Summary
 
-**Product:** A personal video-game completion companion — every guide, tracker, and checklist for Pierre's games in one offline-first PWA.
+**Product:** TOTODILE — a personal video-game completion companion; every guide, tracker, and checklist for Pierre's games in one offline-first PWA. (Named for the Pokémon Crystal starter; Crystal is the pilot guide.)
 
 **Vision:** The official Pokémon HeartGold strategy guide reborn as an interactive app: a chronological companion that gathers everything needed to fully complete a game — above all *what to do in what order* — and checks itself off via RetroAchievements.
 

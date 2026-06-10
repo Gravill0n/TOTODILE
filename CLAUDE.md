@@ -1,7 +1,8 @@
-# Guides — Video Game Completion Companion
+# TOTODILE — Tracker Of Things, Order, Data, Items, Lists & Everything
 
 Personal project (single user: Pierre). Hand-built HTML achievement guides are being
-replaced by a React PWA that renders guides from static JSON. No backend, ever.
+replaced by **TOTODILE**, a React PWA that renders guides from static JSON. No
+backend, ever. (Named for the Pokémon Crystal starter — Crystal is the pilot guide.)
 
 ## Read these before doing anything
 

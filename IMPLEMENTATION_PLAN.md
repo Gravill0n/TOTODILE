@@ -1,4 +1,4 @@
-# Implementation Plan — Guide App
+# Implementation Plan — TOTODILE
 
 Derived from `prd-react-app-to-regroup-video-game-guides-trackers-FINAL.md` (2026-06-10).
 All section references (§) point into the PRD. Phases are dependency-ordered (§16.3); each has a hard exit gate. A phase is not started until the previous gate passes.
