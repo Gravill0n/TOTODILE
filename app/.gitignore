@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+
+# Yarn 4 — keep only the pinned config and lockfile
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
