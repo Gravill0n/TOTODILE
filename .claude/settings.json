@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(yarn *)",
+      "Bash(corepack *)",
+      "Bash(node --version)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git show*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch*)",
+      "Bash(git switch *)",
+      "Bash(cd *)",
+      "Bash(echo *)",
+      "Bash(ls*)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+      "Bash(grep *)",
+      "Bash(rg *)",
+      "Bash(sed -n *)",
+      "Bash(jq *)",
+      "Bash(mkdir *)",
+      "Bash(curl -s http://localhost*)"
+    ],
+    "ask": [
+      "Bash(yarn add *)",
+      "Bash(yarn remove *)",
+      "Bash(yarn up *)",
+      "Bash(yarn dlx *)"
+    ],
+    "deny": [
+      "Write(guides/**/approvals.json)",
+      "Edit(guides/**/approvals.json)"
+    ]
+  }
+}
