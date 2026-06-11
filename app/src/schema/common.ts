@@ -1,11 +1,20 @@
 import { z } from "zod";
 
-// v0. Bump rules + changelog conventions land in Phase 0 Task 4 (§9.2, §18.3).
+// Versioning conventions live in ./CHANGELOG.md (§9.2, §18.3): every contract
+// change bumps the version and ships a migration note; guides migrate at
+// recompile, never in the browser.
+
+// The version the compiler emits.
 export const SCHEMA_VERSION = 0;
+
+// The versions the app and validate-guides read. Holds two versions only
+// during a declared vN → vN+1 transition window (§18.3), then drops back
+// to one.
+export const SUPPORTED_SCHEMA_VERSIONS = [SCHEMA_VERSION] as const;
 
 // Every repo-side guide file declares the schema version it was compiled
 // against (§8.2 — the files are the API).
-export const schemaVersion = z.literal(SCHEMA_VERSION);
+export const schemaVersion = z.literal(SUPPORTED_SCHEMA_VERSIONS);
 
 // ─── Stable-ID grammar (§20.3) — fixed forever ──────────────────────────────
 //
