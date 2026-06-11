@@ -7,7 +7,7 @@ import {
   raAchievementId,
   sourceRefs,
   stepId,
-} from "./common";
+} from "./common.ts";
 
 export const step = z.object({
   id: stepId,

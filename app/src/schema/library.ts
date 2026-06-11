@@ -6,7 +6,7 @@ import {
   localId,
   raGameId,
   schemaVersion,
-} from "./common";
+} from "./common.ts";
 
 // In-compilation guides open into the review lens, never play (§7 S1).
 export const guideStatus = z.enum(["in-compilation", "playable"]);

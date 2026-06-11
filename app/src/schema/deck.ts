@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { localId, schemaVersion } from "./common";
-import { widgetType } from "./widgets";
+import { localId, schemaVersion } from "./common.ts";
+import { widgetType } from "./widgets.ts";
 
 export const deckSlot = z.object({
   primitive: widgetType,

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { findDuplicates, guideSlug, localId, schemaVersion } from "./common";
+import { findDuplicates, guideSlug, localId, schemaVersion } from "./common.ts";
 
 export const sourceType = z.enum([
   "wiki",

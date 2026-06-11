@@ -6,7 +6,7 @@ import {
   raAchievementId,
   raGameId,
   schemaVersion,
-} from "./common";
+} from "./common.ts";
 
 export const raMappingEntry = z.object({
   raAchievementId,

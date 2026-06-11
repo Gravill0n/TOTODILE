@@ -1,7 +1,7 @@
 import { z } from "zod";
-import { findDuplicates, guideSlug, idSlug, schemaVersion } from "./common";
-import { chapter } from "./spine";
-import { widget, widgetItemIds } from "./widgets";
+import { findDuplicates, guideSlug, idSlug, schemaVersion } from "./common.ts";
+import { chapter } from "./spine.ts";
+import { widget, widgetItemIds } from "./widgets.ts";
 
 // guides/<slug>/guide.json — spine + widget instances (§20.1), the only file
 // the player-facing app strictly needs per guide.

@@ -5,7 +5,7 @@ import {
   guideSlug,
   localId,
   schemaVersion,
-} from "./common";
+} from "./common.ts";
 
 export const layerKind = z.enum(["spine", "widget-pass", "ra-mapping"]);
 

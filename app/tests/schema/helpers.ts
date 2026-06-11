@@ -203,6 +203,8 @@ export function validGuide() {
   };
 }
 
+// Slot order mirrors the widget deckPositions in validGuide(), so the
+// validate-guides deck cross-check passes on the assembled fixture tree.
 export function validDeck() {
   return {
     schemaVersion: SCHEMA_VERSION,
@@ -213,10 +215,31 @@ export function validDeck() {
         defaultTitle: "Key items",
         defaultScope: "chapter",
       },
+      { primitive: "matrix", defaultTitle: "Combos", defaultScope: "global" },
+      {
+        primitive: "dataTable",
+        defaultTitle: "Bestiary",
+        defaultScope: "global",
+      },
       {
         primitive: "counter",
         defaultTitle: "Collectibles",
         defaultScope: "global",
+      },
+      {
+        primitive: "flowchart",
+        defaultTitle: "Trade chain",
+        defaultScope: "global",
+      },
+      {
+        primitive: "mapPins",
+        defaultTitle: "Locations",
+        defaultScope: "global",
+      },
+      {
+        primitive: "prepCard",
+        defaultTitle: "Boss prep",
+        defaultScope: "chapter",
       },
     ],
   };
