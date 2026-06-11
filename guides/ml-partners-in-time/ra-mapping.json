@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 0,
+  "guideId": "ml-partners-in-time",
+  "raGameId": 3118,
+  "entries": [
+    {
+      "raAchievementId": 99548,
+      "targetItemId": "ml-partners-in-time:c1:s24"
+    },
+    {
+      "raAchievementId": 99789,
+      "targetItemId": "ml-partners-in-time:c2:s17"
+    },
+    {
+      "raAchievementId": 99549,
+      "targetItemId": "ml-partners-in-time:c2:s19"
+    },
+    {
+      "raAchievementId": 99550,
+      "targetItemId": "ml-partners-in-time:c3:s12"
+    },
+    {
+      "raAchievementId": 143328,
+      "targetItemId": "ml-partners-in-time:c3:s12"
+    },
+    {
+      "raAchievementId": 99790,
+      "targetItemId": "ml-partners-in-time:c3:s14"
+    },
+    {
+      "raAchievementId": 99552,
+      "targetItemId": "ml-partners-in-time:c3:s17"
+    },
+    {
+      "raAchievementId": 143305,
+      "targetItemId": "ml-partners-in-time:c3:s17"
+    },
+    {
+      "raAchievementId": 99594,
+      "targetItemId": "ml-partners-in-time:c3:s20"
+    },
+    {
+      "raAchievementId": 99595,
+      "targetItemId": "ml-partners-in-time:c4:s6"
+    },
+    {
+      "raAchievementId": 143306,
+      "targetItemId": "ml-partners-in-time:c4:s6"
+    },
+    {
+      "raAchievementId": 99791,
+      "targetItemId": "ml-partners-in-time:c4:s6"
+    },
+    {
+      "raAchievementId": 99596,
+      "targetItemId": "ml-partners-in-time:c4:s11"
+    },
+    {
+      "raAchievementId": 143307,
+      "targetItemId": "ml-partners-in-time:c4:s11"
+    },
+    {
+      "raAchievementId": 99597,
+      "targetItemId": "ml-partners-in-time:c5:s1"
+    },
+    {
+      "raAchievementId": 99598,
+      "targetItemId": "ml-partners-in-time:c5:s8"
+    },
+    {
+      "raAchievementId": 143308,
+      "targetItemId": "ml-partners-in-time:c5:s8"
+    },
+    {
+      "raAchievementId": 99599,
+      "targetItemId": "ml-partners-in-time:c5:s12"
+    },
+    {
+      "raAchievementId": 143309,
+      "targetItemId": "ml-partners-in-time:c5:s12"
+    },
+    {
+      "raAchievementId": 99792,
+      "targetItemId": "ml-partners-in-time:c5:s12"
+    },
+    {
+      "raAchievementId": 99600,
+      "targetItemId": "ml-partners-in-time:c5:s15"
+    },
+    {
+      "raAchievementId": 99788,
+      "targetItemId": "ml-partners-in-time:c5:s16"
+    },
+    {
+      "raAchievementId": 99601,
+      "targetItemId": "ml-partners-in-time:c6:s4"
+    },
+    {
+      "raAchievementId": 143310,
+      "targetItemId": "ml-partners-in-time:c6:s4"
+    },
+    {
+      "raAchievementId": 99793,
+      "targetItemId": "ml-partners-in-time:c6:s4"
+    },
+    {
+      "raAchievementId": 143304,
+      "targetItemId": "ml-partners-in-time:c6:s8"
+    },
+    {
+      "raAchievementId": 143303,
+      "targetItemId": "ml-partners-in-time:c6:s9"
+    },
+    {
+      "raAchievementId": 99602,
+      "targetItemId": "ml-partners-in-time:c6:s11"
+    },
+    {
+      "raAchievementId": 143311,
+      "targetItemId": "ml-partners-in-time:c6:s11"
+    },
+    {
+      "raAchievementId": 99794,
+      "targetItemId": "ml-partners-in-time:c7:s3"
+    },
+    {
+      "raAchievementId": 99738,
+      "targetItemId": "ml-partners-in-time:c8:s6"
+    },
+    {
+      "raAchievementId": 143312,
+      "targetItemId": "ml-partners-in-time:c8:s6"
+    },
+    {
+      "raAchievementId": 99739,
+      "targetItemId": "ml-partners-in-time:c8:s12"
+    },
+    {
+      "raAchievementId": 99795,
+      "targetItemId": "ml-partners-in-time:c8:s12"
+    },
+    {
+      "raAchievementId": 99740,
+      "targetItemId": "ml-partners-in-time:c8:s13"
+    },
+    {
+      "raAchievementId": 143313,
+      "targetItemId": "ml-partners-in-time:c8:s13"
+    },
+    {
+      "raAchievementId": 99796,
+      "targetItemId": "ml-partners-in-time:c9:s4"
+    },
+    {
+      "raAchievementId": 143327,
+      "targetItemId": "ml-partners-in-time:c9:s5"
+    },
+    {
+      "raAchievementId": 99741,
+      "targetItemId": "ml-partners-in-time:c9:s5"
+    },
+    {
+      "raAchievementId": 143314,
+      "targetItemId": "ml-partners-in-time:c9:s5"
+    },
+    {
+      "raAchievementId": 143315,
+      "targetItemId": "ml-partners-in-time:c9:s6"
+    },
+    {
+      "raAchievementId": 99742,
+      "targetItemId": "ml-partners-in-time:c9:s9"
+    },
+    {
+      "raAchievementId": 143326,
+      "targetItemId": "ml-partners-in-time:c9:s9"
+    },
+    {
+      "raAchievementId": 143316,
+      "targetItemId": "ml-partners-in-time:bro-masters:ach-143316"
+    },
+    {
+      "raAchievementId": 143324,
+      "targetItemId": "ml-partners-in-time:bro-masters:ach-143324"
+    },
+    {
+      "raAchievementId": 143317,
+      "targetItemId": "ml-partners-in-time:bro-masters:ach-143317"
+    },
+    {
+      "raAchievementId": 143319,
+      "targetItemId": "ml-partners-in-time:bro-masters:ach-143319"
+    },
+    {
+      "raAchievementId": 143320,
+      "targetItemId": "ml-partners-in-time:bro-masters:ach-143320"
+    },
+    {
+      "raAchievementId": 143321,
+      "targetItemId": "ml-partners-in-time:bro-masters:ach-143321"
+    },
+    {
+      "raAchievementId": 143318,
+      "targetItemId": "ml-partners-in-time:bro-masters:ach-143318"
+    },
+    {
+      "raAchievementId": 143322,
+      "targetItemId": "ml-partners-in-time:bro-masters:ach-143322"
+    },
+    {
+      "raAchievementId": 143323,
+      "targetItemId": "ml-partners-in-time:bro-masters:ach-143323"
+    },
+    {
+      "raAchievementId": 143325,
+      "targetItemId": "ml-partners-in-time:bro-masters:ach-143325"
+    },
+    {
+      "raAchievementId": 99797,
+      "targetItemId": "ml-partners-in-time:completion:ach-99797"
+    },
+    {
+      "raAchievementId": 95649,
+      "targetItemId": "ml-partners-in-time:completion:ach-95649"
+    }
+  ]
+}

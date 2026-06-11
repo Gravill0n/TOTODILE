@@ -14,6 +14,9 @@ export const step = z.object({
   order: z.int().nonnegative(),
   text: z.string().min(1),
   location: z.string().min(1).optional(),
+  // Grouping label within the chapter (e.g. "2.1 · Descent Through the
+  // Castle"); renderers may group consecutive steps that share one.
+  section: z.string().min(1).optional(),
   // Presence of `missable` is the flag; `deadline` is the human-readable
   // "do this before X" description shown in the missable banner (§6.2, FR-B5).
   missable: z.object({ deadline: z.string().min(1) }).optional(),
@@ -29,6 +32,7 @@ export const chapter = z
   .object({
     id: chapterId,
     title: z.string().min(1),
+    intro: z.string().min(1).optional(),
     order: z.int().nonnegative(),
     steps: z.array(step).min(1),
   })

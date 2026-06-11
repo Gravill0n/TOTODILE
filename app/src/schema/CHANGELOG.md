@@ -26,6 +26,12 @@ the app declares what it reads via `SUPPORTED_SCHEMA_VERSIONS` in `common.ts`.
 
 Baseline. No migration — first version.
 
+Amended in place during Phase 0 (v0 was not yet frozen — no bump): the ML
+PiT translation stress test (Task 7) added two optional spine fields,
+`chapter.intro` and `step.section` (a grouping label for consecutive
+steps). Real guides carry intro paragraphs and section headings; without
+these fields that content had no home.
+
 - The seven §6 repo-side entities: guide spine (chapters → steps with
   missable + achievement annotations), the 7 widget primitives (closed
   set), genre deck, library manifest, RA mapping, source manifest,

@@ -18,6 +18,14 @@ describe("step", () => {
     expectParses(step, minimal);
   });
 
+  it("parses a section grouping label", () => {
+    expectParses(step, { ...validStep(), section: "1.1 · The Castle Gate" });
+  });
+
+  it("rejects an empty section label", () => {
+    expectRejects(step, { ...validStep(), section: "" });
+  });
+
   it("rejects a step without source references (§6.6 invariant)", () => {
     expectRejects(step, { ...validStep(), sourceRefs: [] });
   });
@@ -46,6 +54,17 @@ describe("step", () => {
 describe("chapter", () => {
   it("parses a valid chapter", () => {
     expectParses(chapter, validChapter());
+  });
+
+  it("parses an intro paragraph", () => {
+    expectParses(chapter, {
+      ...validChapter(),
+      intro: "The gate town at dawn.",
+    });
+  });
+
+  it("rejects an empty intro", () => {
+    expectRejects(chapter, { ...validChapter(), intro: "" });
   });
 
   it("rejects a chapter with no steps", () => {
