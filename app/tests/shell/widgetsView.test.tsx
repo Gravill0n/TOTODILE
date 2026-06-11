@@ -65,7 +65,7 @@ describe("widget view (S3)", () => {
   it("moving the pointer to chapter 2 switches the chapter context", async () => {
     await renderGuide();
     fireEvent.click(
-      screen.getByRole("button", { name: /Defeat the Vault Warden/ }),
+      screen.getByRole("button", { name: /^Defeat the Vault Warden/ }),
     );
     await waitFor(() => {
       expect(screen.getAllByText("Vault shard locations")).not.toHaveLength(0);

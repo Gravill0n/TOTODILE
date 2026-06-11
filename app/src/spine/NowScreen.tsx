@@ -8,7 +8,10 @@ type NowScreenProps = {
   slug: string;
   currentStepId: string | null;
   doneIds: ReadonlySet<string>;
+  skippedIds: ReadonlySet<string>;
   onToggleDone: (stepId: string) => void;
+  onToggleSkip: (stepId: string) => void;
+  onMarkThrough: (stepId: string) => void;
   onMovePointer: (stepId: string) => void;
 };
 
@@ -20,7 +23,10 @@ export function NowScreen({
   slug,
   currentStepId,
   doneIds,
+  skippedIds,
   onToggleDone,
+  onToggleSkip,
+  onMarkThrough,
   onMovePointer,
 }: NowScreenProps) {
   return (
@@ -49,7 +55,10 @@ export function NowScreen({
                   slug={slug}
                   isCurrent={step.id === currentStepId}
                   isDone={doneIds.has(step.id)}
+                  isSkipped={skippedIds.has(step.id)}
                   onToggleDone={() => onToggleDone(step.id)}
+                  onToggleSkip={() => onToggleSkip(step.id)}
+                  onMarkThrough={() => onMarkThrough(step.id)}
                   onMoveHere={() => onMovePointer(step.id)}
                 />
               </Fragment>

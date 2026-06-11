@@ -7,7 +7,11 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { closeProgressDb } from "../../src/progress/progressStore";
+import {
+  closeProgressDb,
+  emptySlot,
+  writeSlot,
+} from "../../src/progress/progressStore";
 import { createAppRouter } from "../../src/shell/router";
 import { validLibrary } from "../schema/helpers";
 
@@ -79,6 +83,34 @@ describe("app shell", () => {
     expect(screen.getByText("Ghost Quest — draft guide")).toBeDefined();
     expect(screen.getByText("in compilation")).toBeDefined();
     expect(screen.getAllByText("en")).toHaveLength(2);
+  });
+
+  it("shows completion % and current chapter, sorted by last activity (FR-A3)", async () => {
+    await writeSlot({
+      ...emptySlot("fictional-quest"),
+      stats: {
+        stepsDone: 3,
+        stepsTotal: 12,
+        currentChapterTitle: "Chapter 1 — The Castle Gate",
+      },
+      lastActivityAt: "2026-06-11T10:00:00Z",
+    });
+    await writeSlot({
+      ...emptySlot("ghost-quest"),
+      stats: { stepsDone: 2, stepsTotal: 4, currentChapterTitle: null },
+      lastActivityAt: "2026-06-12T10:00:00Z",
+    });
+    stubContentFetch(libraryWithTwoGuides());
+    renderAt("/");
+    await screen.findByText("25%");
+    expect(screen.getByText("Chapter 1 — The Castle Gate")).toBeDefined();
+    const cardTitles = screen
+      .getAllByRole("heading", { level: 2 })
+      .map((heading) => heading.textContent);
+    expect(cardTitles).toEqual([
+      "Ghost Quest — draft guide",
+      "Fictional Quest — 100% guide",
+    ]);
   });
 
   it("reaches the current step in one tap from a card (§7, FR-A4)", async () => {

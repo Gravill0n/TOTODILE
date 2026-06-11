@@ -32,6 +32,11 @@ PiT translation stress test (Task 7) added two optional spine fields,
 steps). Real guides carry intro paragraphs and section headings; without
 these fields that content had no home.
 
+Amended again in Phase 1 Task 4: `progress.ts` adds the browser-side
+progress slot and the progress export file (`kind:
+"totodile-progress"`) — the FR-B6 backup/device-move format, part of the
+§8.2 contract. Item states are `done | skipped` (FR-B2).
+
 - The seven §6 repo-side entities: guide spine (chapters → steps with
   missable + achievement annotations), the 7 widget primitives (closed
   set), genre deck, library manifest, RA mapping, source manifest,

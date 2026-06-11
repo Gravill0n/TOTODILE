@@ -8,10 +8,12 @@ import {
   Outlet,
   type RouterHistory,
 } from "@tanstack/react-router";
+import { readAllSlots } from "../progress/progressStore";
 import { loadGuide } from "../spine/guideData";
 import { GuideScreen } from "./GuideScreen";
 import { LibraryScreen } from "./LibraryScreen";
 import { loadLibrary } from "./libraryData";
+import { SettingsScreen } from "./SettingsScreen";
 
 const rootRoute = createRootRoute({
   component: () => (
@@ -41,9 +43,13 @@ const rootRoute = createRootRoute({
 const libraryRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/",
-  loader: () => loadLibrary(),
+  loader: async () => ({
+    library: await loadLibrary(),
+    slots: await readAllSlots(),
+  }),
   component: function LibraryRouteComponent() {
-    return <LibraryScreen library={libraryRoute.useLoaderData()} />;
+    const { library, slots } = libraryRoute.useLoaderData();
+    return <LibraryScreen library={library} slots={slots} />;
   },
 });
 
@@ -66,20 +72,7 @@ const guideRoute = createRoute({
 const settingsRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/settings",
-  component: () => (
-    <main className="mx-auto max-w-xl px-4 py-6">
-      <h1 className="text-xl font-bold">Settings</h1>
-      <p className="mt-2 text-sm text-ink-soft">
-        RA username and API key arrive with Sync (Phase 4). The key lives in
-        browser storage only — never in the repo (§5.2).
-      </p>
-      <p className="mt-4 text-sm">
-        <Link to="/" className="underline">
-          Back to the library
-        </Link>
-      </p>
-    </main>
-  ),
+  component: () => <SettingsScreen />,
 });
 
 const routeTree = rootRoute.addChildren([

@@ -139,7 +139,10 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
           slug={entry.id}
           currentStepId={progress.currentStepId}
           doneIds={progress.doneIds}
+          skippedIds={progress.skippedIds}
           onToggleDone={progress.toggleDone}
+          onToggleSkip={progress.toggleSkip}
+          onMarkThrough={progress.markThrough}
           onMovePointer={progress.movePointer}
         />
       ) : (

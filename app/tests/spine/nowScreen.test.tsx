@@ -89,7 +89,9 @@ describe("spine play view", () => {
   it("tapping a step's text moves the pointer there (§6.7 manual move)", async () => {
     render(<GuideScreen entry={entry} guide={guide} />);
     await screen.findByText(S1_TEXT);
-    fireEvent.click(screen.getByRole("button", { name: WARDEN_TEXT }));
+    fireEvent.click(
+      screen.getByRole("button", { name: /^Defeat the Vault Warden/ }),
+    );
     await waitFor(() => expect(currentText()).toMatch(WARDEN_TEXT));
   });
 
