@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+/* Paper-guide palette stubs (§0.4, §9.1). Values get refined in Phase 1
+   Task 6; the token NAMES are the contract — components style only through
+   these, never literal colors (§22.1). */
+@theme {
+  --color-paper: #f6f1e7;
+  --color-paper-dim: #ece4d4;
+  --color-ink: #2b2620;
+  --color-ink-soft: #6b6354;
+  --color-card: #fffdf7;
+  --color-line: #d8cdb8;
+  /* One accent, reserved for achievements / RA moments (§7). */
+  --color-accent: #c9572a;
+  /* The one unmistakable missable treatment, used everywhere (§7). */
+  --color-missable: #b3261e;
+}
