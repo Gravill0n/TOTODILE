@@ -47,7 +47,10 @@ describe("guideFile", () => {
     expectRejects(guideFile, {
       ...validGuide(),
       widgets: [
-        { ...collision, rows: [{ ...collision.rows[0], itemId: "fic:c1:s1" }] },
+        {
+          ...collision,
+          rows: [{ ...collision.rows[0], itemId: "fictional-quest:c1:s1" }],
+        },
       ],
     });
   });
@@ -58,7 +61,7 @@ describe("guideFile", () => {
       widgets: [
         {
           ...validChecklist(1),
-          scope: { kind: "chapter", chapterId: "fic:c99" },
+          scope: { kind: "chapter", chapterId: "fictional-quest:c99" },
         },
       ],
     });

@@ -54,7 +54,10 @@ describe("chapter", () => {
 
   it("rejects duplicate step IDs", () => {
     const duplicate = validChapter();
-    duplicate.steps = [validStep(1), { ...validStep(2), id: "fic:c1:s1" }];
+    duplicate.steps = [
+      validStep(1),
+      { ...validStep(2), id: "fictional-quest:c1:s1" },
+    ];
     expectRejects(chapter, duplicate);
   });
 

@@ -15,8 +15,8 @@ describe("raMapping", () => {
     expectParses(raMapping, {
       ...validRaMapping(),
       entries: [
-        { raAchievementId: 101, targetItemId: "fic:c1:s1" },
-        { raAchievementId: 102, targetItemId: "fic:c1:s1" },
+        { raAchievementId: 101, targetItemId: "fictional-quest:c1:s1" },
+        { raAchievementId: 102, targetItemId: "fictional-quest:c1:s1" },
       ],
     });
   });
@@ -25,8 +25,8 @@ describe("raMapping", () => {
     expectRejects(raMapping, {
       ...validRaMapping(),
       entries: [
-        { raAchievementId: 101, targetItemId: "fic:c1:s1" },
-        { raAchievementId: 101, targetItemId: "fic:c1:s2" },
+        { raAchievementId: 101, targetItemId: "fictional-quest:c1:s1" },
+        { raAchievementId: 101, targetItemId: "fictional-quest:c1:s2" },
       ],
     });
   });
@@ -34,7 +34,9 @@ describe("raMapping", () => {
   it("rejects a non-integer RA achievement ID", () => {
     expectRejects(raMapping, {
       ...validRaMapping(),
-      entries: [{ raAchievementId: "101", targetItemId: "fic:c1:s1" }],
+      entries: [
+        { raAchievementId: "101", targetItemId: "fictional-quest:c1:s1" },
+      ],
     });
   });
 

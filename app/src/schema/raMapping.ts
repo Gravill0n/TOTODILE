@@ -1,10 +1,11 @@
 import { z } from "zod";
 import {
+  checkableId,
   findDuplicates,
+  guideSlug,
   raAchievementId,
   raGameId,
   schemaVersion,
-  stableId,
 } from "./common";
 
 export const raMappingEntry = z.object({
@@ -12,7 +13,7 @@ export const raMappingEntry = z.object({
   // A step ID or widget item ID from guide.json. Existence is a cross-file
   // check owned by validate-guides. Several achievements may target the same
   // item (e.g. progression + challenge on one boss step).
-  targetItemId: stableId,
+  targetItemId: checkableId,
 });
 
 // guides/<slug>/ra-mapping.json — standalone and optional (§6.5). RA
@@ -21,7 +22,7 @@ export const raMappingEntry = z.object({
 export const raMapping = z
   .object({
     schemaVersion,
-    guideId: stableId,
+    guideId: guideSlug,
     raGameId,
     entries: z.array(raMappingEntry),
   })

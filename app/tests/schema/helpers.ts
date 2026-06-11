@@ -18,7 +18,7 @@ export function expectRejects(schema: z.ZodType, value: unknown): void {
 
 export function validStep(n = 1) {
   return {
-    id: `fic:c1:s${n}`,
+    id: `fictional-quest:c1:s${n}`,
     order: n - 1,
     text: "Cross the drawbridge and stomp the sentry.",
     location: "Castle Gate",
@@ -32,7 +32,7 @@ export function validStep(n = 1) {
 
 export function validChapter() {
   return {
-    id: "fic:c1",
+    id: "fictional-quest:c1",
     title: "Chapter 1 — The Castle Gate",
     order: 0,
     steps: [validStep(1), validStep(2)],
@@ -41,7 +41,7 @@ export function validChapter() {
 
 function widgetBase(n: number) {
   return {
-    id: `fic:w${n}`,
+    id: `fictional-quest:w${n}`,
     title: "Widget",
     scope: { kind: "global" },
     deckPosition: n - 1,
@@ -55,7 +55,7 @@ export function validChecklist(n = 1) {
     title: "Treasure checklist",
     rows: [
       {
-        itemId: `fic:w${n}:r1`,
+        itemId: `fictional-quest:w${n}:r1`,
         label: "Gate key",
         note: "Behind the loose brick",
         sourceRefs: ["src-wiki"],
@@ -74,7 +74,7 @@ export function validMatrix(n = 2) {
     columns: [{ id: "col-fire", label: "Fire badge" }],
     cells: [
       {
-        itemId: `fic:w${n}:hero-fire`,
+        itemId: `fictional-quest:w${n}:hero-fire`,
         rowId: "row-hero",
         columnId: "col-fire",
         sourceRefs: ["src-wiki"],
@@ -95,7 +95,7 @@ export function validDataTable(n = 3) {
     ],
     rows: [
       {
-        itemId: `fic:w${n}:sentry`,
+        itemId: `fictional-quest:w${n}:sentry`,
         checkable: false,
         cells: { "col-hp": "10", "col-xp": "3" },
         sourceRefs: ["src-wiki"],
@@ -112,7 +112,7 @@ export function validCounter(n = 4) {
     title: "Collectibles",
     counters: [
       {
-        itemId: `fic:w${n}:coins`,
+        itemId: `fictional-quest:w${n}:coins`,
         label: "Blue coins",
         target: 40,
         sourceRefs: ["src-wiki"],
@@ -129,19 +129,21 @@ export function validFlowchart(n = 5) {
     title: "Trade chain",
     nodes: [
       {
-        itemId: `fic:w${n}:n1`,
+        itemId: `fictional-quest:w${n}:n1`,
         label: "Give the apple to the guard",
         sourceRefs: ["src-wiki"],
         confidence: "normal",
       },
       {
-        itemId: `fic:w${n}:n2`,
+        itemId: `fictional-quest:w${n}:n2`,
         label: "Trade the badge for the key",
         sourceRefs: ["src-wiki"],
         confidence: "normal",
       },
     ],
-    edges: [{ from: `fic:w${n}:n1`, to: `fic:w${n}:n2` }],
+    edges: [
+      { from: `fictional-quest:w${n}:n1`, to: `fictional-quest:w${n}:n2` },
+    ],
   };
 }
 
@@ -153,7 +155,7 @@ export function validMapPins(n = 6) {
     image: { src: "images/overworld.png", alt: "Overworld map" },
     pins: [
       {
-        itemId: `fic:w${n}:shard1`,
+        itemId: `fictional-quest:w${n}:shard1`,
         label: "Shard under the bridge",
         x: 0.25,
         y: 0.75,
@@ -171,7 +173,7 @@ export function validPrepCard(n = 7) {
     title: "Before the final boss",
     items: [
       {
-        itemId: `fic:w${n}:p1`,
+        itemId: `fictional-quest:w${n}:p1`,
         label: "Max mushrooms",
         quantity: 10,
         sourceRefs: ["src-wiki"],
@@ -187,7 +189,10 @@ export function validGuide() {
     guideId: "fictional-quest",
     chapters: [validChapter()],
     widgets: [
-      { ...validChecklist(1), scope: { kind: "chapter", chapterId: "fic:c1" } },
+      {
+        ...validChecklist(1),
+        scope: { kind: "chapter", chapterId: "fictional-quest:c1" },
+      },
       validMatrix(2),
       validDataTable(3),
       validCounter(4),
@@ -242,8 +247,8 @@ export function validRaMapping() {
     guideId: "fictional-quest",
     raGameId: 9000,
     entries: [
-      { raAchievementId: 101, targetItemId: "fic:c1:s1" },
-      { raAchievementId: 102, targetItemId: "fic:w1:r1" },
+      { raAchievementId: 101, targetItemId: "fictional-quest:c1:s1" },
+      { raAchievementId: 102, targetItemId: "fictional-quest:w1:r1" },
     ],
   };
 }
@@ -274,7 +279,7 @@ export function validLayer(
     report: {
       rowCount: 2,
       anomalies: ["Chapter 1 has no boss step"],
-      flaggedItemIds: ["fic:c1:s2"],
+      flaggedItemIds: ["fictional-quest:c1:s2"],
     },
     contentHash:
       "3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b",
@@ -291,7 +296,7 @@ export function validLayer(
                 : undefined,
           },
         }),
-    spotChecks: [{ itemId: "fic:c1:s1", verdict: "pass" }],
+    spotChecks: [{ itemId: "fictional-quest:c1:s1", verdict: "pass" }],
   };
 }
 

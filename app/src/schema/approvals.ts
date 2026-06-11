@@ -1,12 +1,18 @@
 import { z } from "zod";
-import { findDuplicates, schemaVersion, stableId } from "./common";
+import {
+  checkableId,
+  findDuplicates,
+  guideSlug,
+  localId,
+  schemaVersion,
+} from "./common";
 
 export const layerKind = z.enum(["spine", "widget-pass", "ra-mapping"]);
 
 export const layerStatus = z.enum(["draft", "approved", "rejected"]);
 
 export const spotCheckVerdict = z.object({
-  itemId: stableId,
+  itemId: checkableId,
   verdict: z.enum(["pass", "fail"]),
   note: z.string().min(1).optional(),
 });
@@ -21,12 +27,12 @@ export const approvalRecord = z.object({
 export const layerReport = z.object({
   rowCount: z.int().nonnegative(),
   anomalies: z.array(z.string().min(1)).default([]),
-  flaggedItemIds: z.array(stableId).default([]),
+  flaggedItemIds: z.array(checkableId).default([]),
 });
 
 export const layerRecord = z
   .object({
-    id: stableId,
+    id: localId,
     kind: layerKind,
     // Path to the pass output, e.g. layers/spine.json (§20.1).
     artifact: z.string().min(1),
@@ -79,7 +85,7 @@ export const layerRecord = z
 export const approvalsFile = z
   .object({
     schemaVersion,
-    guideId: stableId,
+    guideId: guideSlug,
     layers: z.array(layerRecord),
   })
   .superRefine((value, ctx) => {

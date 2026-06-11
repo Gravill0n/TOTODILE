@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { findDuplicates, schemaVersion, stableId } from "./common";
+import { findDuplicates, guideSlug, localId, schemaVersion } from "./common";
 
 export const sourceType = z.enum([
   "wiki",
@@ -11,7 +11,7 @@ export const sourceType = z.enum([
 ]);
 
 export const sourceEntry = z.object({
-  id: stableId,
+  id: localId,
   title: z.string().min(1),
   // Optional: offline sources (a paper manual, a personal playthrough) have none.
   url: z.url().optional(),
@@ -25,7 +25,7 @@ export const sourceEntry = z.object({
 export const sourceManifest = z
   .object({
     schemaVersion,
-    guideId: stableId,
+    guideId: guideSlug,
     sources: z.array(sourceEntry).min(1),
   })
   .superRefine((value, ctx) => {

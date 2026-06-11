@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { findDuplicates, schemaVersion, stableId } from "./common";
+import { findDuplicates, guideSlug, idSlug, schemaVersion } from "./common";
 import { chapter } from "./spine";
 import { widget, widgetItemIds } from "./widgets";
 
@@ -8,7 +8,7 @@ import { widget, widgetItemIds } from "./widgets";
 export const guideFile = z
   .object({
     schemaVersion,
-    guideId: stableId,
+    guideId: guideSlug,
     chapters: z.array(chapter).min(1),
     widgets: z.array(widget).default([]),
   })
@@ -56,6 +56,34 @@ export const guideFile = z
           path: ["widgets", index, "scope", "chapterId"],
           message: `Widget "${w.id}" is scoped to unknown chapter "${w.scope.chapterId}"`,
         });
+      }
+    });
+    // Slugs are forever, so the first segment must match the guide — unlike
+    // the middle segment, which only records where the entity was minted
+    // (see the grammar note in common.ts).
+    const expectSlug = (
+      id: string,
+      path: (string | number)[],
+      what: string,
+    ) => {
+      if (idSlug(id) !== value.guideId) {
+        ctx.addIssue({
+          code: "custom",
+          path,
+          message: `${what} "${id}" does not carry the guide slug "${value.guideId}"`,
+        });
+      }
+    };
+    value.chapters.forEach((c, ci) => {
+      expectSlug(c.id, ["chapters", ci, "id"], "Chapter ID");
+      c.steps.forEach((s, si) => {
+        expectSlug(s.id, ["chapters", ci, "steps", si, "id"], "Step ID");
+      });
+    });
+    value.widgets.forEach((w, wi) => {
+      expectSlug(w.id, ["widgets", wi, "id"], "Widget ID");
+      for (const id of widgetItemIds(w)) {
+        expectSlug(id, ["widgets", wi], "Item ID");
       }
     });
   });

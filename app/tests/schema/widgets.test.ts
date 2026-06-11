@@ -77,7 +77,10 @@ describe("matrix", () => {
     const value = validMatrix();
     expectRejects(widget, {
       ...value,
-      cells: [...value.cells, { ...value.cells[0], itemId: "fic:w2:dup" }],
+      cells: [
+        ...value.cells,
+        { ...value.cells[0], itemId: "fictional-quest:w2:dup" },
+      ],
     });
   });
 
@@ -152,7 +155,9 @@ describe("flowchart", () => {
     const value = validFlowchart();
     expectRejects(widget, {
       ...value,
-      edges: [{ from: "fic:w5:ghost", to: "fic:w5:n2" }],
+      edges: [
+        { from: "fictional-quest:w5:ghost", to: "fictional-quest:w5:n2" },
+      ],
     });
   });
 
@@ -160,7 +165,9 @@ describe("flowchart", () => {
     const value = validFlowchart();
     expectRejects(widget, {
       ...value,
-      edges: [{ from: "fic:w5:n1", to: "fic:w5:ghost" }],
+      edges: [
+        { from: "fictional-quest:w5:n1", to: "fictional-quest:w5:ghost" },
+      ],
     });
   });
 });
@@ -207,14 +214,14 @@ describe("widgetItemIds", () => {
       validPrepCard(7),
     ].flatMap((value) => widgetItemIds(widget.parse(value)));
     expect(all).toEqual([
-      "fic:w1:r1",
-      "fic:w2:hero-fire",
-      "fic:w3:sentry",
-      "fic:w4:coins",
-      "fic:w5:n1",
-      "fic:w5:n2",
-      "fic:w6:shard1",
-      "fic:w7:p1",
+      "fictional-quest:w1:r1",
+      "fictional-quest:w2:hero-fire",
+      "fictional-quest:w3:sentry",
+      "fictional-quest:w4:coins",
+      "fictional-quest:w5:n1",
+      "fictional-quest:w5:n2",
+      "fictional-quest:w6:shard1",
+      "fictional-quest:w7:p1",
     ]);
   });
 });

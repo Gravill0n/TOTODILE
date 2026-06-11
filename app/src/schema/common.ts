@@ -7,15 +7,74 @@ export const SCHEMA_VERSION = 0;
 // against (§8.2 — the files are the API).
 export const schemaVersion = z.literal(SCHEMA_VERSION);
 
-// Stable entity ID. IDs are forever — never regenerated across recompiles
-// (§6.8); progress data and approvals key on them. The exact format
-// (`<slug>:<chapter>:<short-id>` style) is fixed in Phase 0 Task 3.
-export const stableId = z.string().min(1);
+// ─── Stable-ID grammar (§20.3) — fixed forever ──────────────────────────────
+//
+// Every ID is one or more kebab-case segments joined by ":":
+//
+//   segment      [a-z0-9]+(-[a-z0-9]+)*
+//   guide slug   <slug>                        pokemon-crystal
+//   chapter ID   <slug>:<chapter>              pokemon-crystal:c2
+//   step ID      <slug>:<chapter>:<short-id>   pokemon-crystal:c2:s14
+//   widget ID    <slug>:<widget>               pokemon-crystal:badges
+//   item ID      <slug>:<widget>:<short-id>    pokemon-crystal:badges:rising
+//   local ID     <segment>                     src-wiki — sources, layers,
+//                                              decks, matrix axes, table columns
+//
+// IDs are never regenerated across recompiles (§6.8): progress data, RA
+// mappings, and approvals key on them. The first segment is always the guide
+// slug (enforced in guide.ts — slugs are stable forever). The middle segment
+// records where the entity was *minted*: if a recompile later moves a step to
+// another chapter (or an item to another widget), the ID keeps its original
+// spelling. Containment is a minting convention, not a validated invariant,
+// precisely so IDs can survive restructuring.
+
+const SEGMENT = "[a-z0-9]+(?:-[a-z0-9]+)*";
+const oneSegment = new RegExp(`^${SEGMENT}$`);
+const twoSegments = new RegExp(`^${SEGMENT}:${SEGMENT}$`);
+const threeSegments = new RegExp(`^(?:${SEGMENT}:){2}${SEGMENT}$`);
+
+export const guideSlug = z
+  .string()
+  .regex(
+    oneSegment,
+    'Expected a kebab-case guide slug, e.g. "pokemon-crystal"',
+  );
+export const chapterId = z
+  .string()
+  .regex(twoSegments, 'Expected "<slug>:<chapter>"');
+export const stepId = z
+  .string()
+  .regex(threeSegments, 'Expected "<slug>:<chapter>:<short-id>"');
+export const widgetId = z
+  .string()
+  .regex(twoSegments, 'Expected "<slug>:<widget>"');
+export const itemId = z
+  .string()
+  .regex(threeSegments, 'Expected "<slug>:<widget>:<short-id>"');
+
+// What progress states, RA-mapping targets, and spot-checks address: a step
+// ID or a widget item ID — indistinguishable by design (§6.5), they share one
+// checkable namespace per guide (enforced in guide.ts).
+export const checkableId = z
+  .string()
+  .regex(
+    threeSegments,
+    "Expected a 3-segment checkable ID (step or widget item)",
+  );
+
+// IDs that never leave their containing file.
+export const localId = z
+  .string()
+  .regex(oneSegment, "Expected a single kebab-case segment");
+
+export function idSlug(id: string): string {
+  return id.split(":")[0] ?? "";
+}
 
 // §6.6 invariant: every step and every widget row traces to at least one
 // source-manifest entry. Whether the referenced IDs exist in sources.json
 // is a cross-file check owned by validate-guides.
-export const sourceRefs = z.array(stableId).min(1);
+export const sourceRefs = z.array(localId).min(1);
 
 // Compiler confidence on an emitted datum (FR-D2/D3); flagged rows surface
 // in the review lens.
@@ -34,7 +93,13 @@ export const imageRef = z.object({
 export const raGameId = z.int().positive();
 export const raAchievementId = z.int().positive();
 
-export type StableId = z.infer<typeof stableId>;
+export type GuideSlug = z.infer<typeof guideSlug>;
+export type ChapterId = z.infer<typeof chapterId>;
+export type StepId = z.infer<typeof stepId>;
+export type WidgetId = z.infer<typeof widgetId>;
+export type ItemId = z.infer<typeof itemId>;
+export type CheckableId = z.infer<typeof checkableId>;
+export type LocalId = z.infer<typeof localId>;
 export type Confidence = z.infer<typeof confidence>;
 export type Language = z.infer<typeof language>;
 export type ImageRef = z.infer<typeof imageRef>;

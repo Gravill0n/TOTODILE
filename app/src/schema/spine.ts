@@ -1,15 +1,16 @@
 import { z } from "zod";
 import {
+  chapterId,
   confidence,
   findDuplicates,
   imageRef,
   raAchievementId,
   sourceRefs,
-  stableId,
+  stepId,
 } from "./common";
 
 export const step = z.object({
-  id: stableId,
+  id: stepId,
   order: z.int().nonnegative(),
   text: z.string().min(1),
   location: z.string().min(1).optional(),
@@ -26,7 +27,7 @@ export const step = z.object({
 
 export const chapter = z
   .object({
-    id: stableId,
+    id: chapterId,
     title: z.string().min(1),
     order: z.int().nonnegative(),
     steps: z.array(step).min(1),

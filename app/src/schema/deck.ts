@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { schemaVersion, stableId } from "./common";
+import { localId, schemaVersion } from "./common";
 import { widgetType } from "./widgets";
 
 export const deckSlot = z.object({
@@ -15,7 +15,7 @@ export const deckSlot = z.object({
 // back via `deckPosition`.
 export const genreDeck = z.object({
   schemaVersion,
-  id: stableId,
+  id: localId,
   slots: z.array(deckSlot).min(1),
 });
 
