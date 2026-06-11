@@ -3,11 +3,6 @@
 Derived from `prd-react-app-to-regroup-video-game-guides-trackers-FINAL.md` (2026-06-10).
 All section references (§) point into the PRD. Phases are dependency-ordered (§16.3); each has a hard exit gate. A phase is not started until the previous gate passes.
 
-**TDD requirement files:** every pure-logic unit in these phases has a ready-to-run
-spec in `requirements/` (see `requirements/README.md` for the index and the
-`/bon-cop-bad-cop:tdd-loop` invocation). Build those units via the loop; UI, PWA,
-IndexedDB wiring, and compiler skills are built directly per §12.2.
-
 ---
 
 ## Phase 0 — Schema v0 (the keystone)

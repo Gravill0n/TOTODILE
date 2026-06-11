@@ -11,8 +11,6 @@ backend, ever. (Named for the Pokémon Crystal starter — Crystal is the pilot 
    amends it. Section 24 (AI Agent Boundaries) applies to every session.
 2. **`IMPLEMENTATION_PLAN.md`** — phases P0–P5 with hard exit gates, dependency-ordered.
    Don't start a phase before the previous gate passes.
-3. **`requirements/README.md`** — index of TDD requirement files (one per pure-logic
-   unit), built via `/bon-cop-bad-cop:tdd-loop --requirement-file <path>` from `app/`.
 
 ## Hard rules (from PRD §24 — full list there)
 

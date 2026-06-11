@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 0,
+  "guideId": "fictional-quest",
+  "sources": [
+    {
+      "id": "src-wiki",
+      "title": "Fictional Quest community wiki — full walkthrough",
+      "url": "https://example.org/fictional-quest/walkthrough",
+      "type": "wiki",
+      "retrievedAt": "2026-06-11"
+    },
+    {
+      "id": "src-manual",
+      "title": "Fictional Quest instruction booklet (paper)",
+      "type": "manual",
+      "retrievedAt": "2026-06-11"
+    },
+    {
+      "id": "src-ra",
+      "title": "RetroAchievements set 9000 — Fictional Quest",
+      "url": "https://example.org/ra/fictional-quest",
+      "type": "ra-set",
+      "retrievedAt": "2026-06-11"
+    }
+  ]
+}

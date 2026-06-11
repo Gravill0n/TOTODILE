@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 0,
+  "guideId": "fictional-quest",
+  "layers": [
+    {
+      "id": "layer-spine",
+      "kind": "spine",
+      "artifact": "layers/spine.json",
+      "report": {
+        "rowCount": 10,
+        "anomalies": [],
+        "flaggedItemIds": ["fictional-quest:c2:s2"]
+      },
+      "contentHash": "3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-11T09:00:00Z",
+        "verdict": "approved",
+        "note": "Lever order verified against the instruction booklet"
+      },
+      "spotChecks": [
+        { "itemId": "fictional-quest:c1:s2", "verdict": "pass" },
+        { "itemId": "fictional-quest:c2:s5", "verdict": "pass" }
+      ]
+    },
+    {
+      "id": "layer-widgets",
+      "kind": "widget-pass",
+      "artifact": "layers/widgets.json",
+      "report": {
+        "rowCount": 18,
+        "anomalies": ["Gilded Slime XP differs between wiki and booklet"],
+        "flaggedItemIds": [
+          "fictional-quest:treasure:old-coin",
+          "fictional-quest:bestiary:gilded-slime"
+        ]
+      },
+      "contentHash": "9c1efb6a2d4f5e3b7a8c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a",
+      "status": "draft",
+      "spotChecks": []
+    }
+  ]
+}
