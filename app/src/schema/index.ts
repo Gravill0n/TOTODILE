@@ -1,4 +1,12 @@
-// Schema source of truth (PRD §20.2). Populated in Phase 0 Task 2 —
-// guide spine, the 7 widget primitives, genre deck, library manifest,
-// RA mapping, source manifest, approvals record (§6.1–6.7).
-export {};
+// Schema source of truth (PRD §20.2): app validation, the validate-guides CI
+// gate, and the compiler skills all import from here. Types come from these
+// schemas via z.infer — never hand-written duplicates (§22.1).
+export * from "./approvals";
+export * from "./common";
+export * from "./deck";
+export * from "./guide";
+export * from "./library";
+export * from "./raMapping";
+export * from "./sources";
+export * from "./spine";
+export * from "./widgets";
