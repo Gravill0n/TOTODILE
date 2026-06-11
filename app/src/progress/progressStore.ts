@@ -15,6 +15,8 @@ export type ProgressSlot = {
   // null only before the first open initializes it to the first step.
   currentStepId: string | null;
   itemStates: Record<string, ItemState>;
+  // Counter item ID → current count (FR-B3). Absent = 0.
+  counterValues: Record<string, number>;
   lastActivityAt: string;
 };
 
@@ -37,6 +39,7 @@ export function emptySlot(guideId: string): ProgressSlot {
     guideId,
     currentStepId: null,
     itemStates: {},
+    counterValues: {},
     lastActivityAt: new Date().toISOString(),
   };
 }
@@ -45,7 +48,9 @@ export async function readSlot(guideId: string): Promise<ProgressSlot> {
   const slot = (await (await db()).get(STORE, guideId)) as
     | ProgressSlot
     | undefined;
-  return slot ?? emptySlot(guideId);
+  // Spreading over the empty slot defaults fields added after a slot was
+  // first written (e.g. counterValues) — implicit forward migration.
+  return slot ? { ...emptySlot(guideId), ...slot } : emptySlot(guideId);
 }
 
 export async function writeSlot(slot: ProgressSlot): Promise<void> {

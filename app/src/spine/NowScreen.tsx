@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import type { Chapter, GuideFile, Step } from "../schema";
+import type { GuideFile, Step } from "../schema";
 import { chapterDomId } from "./guideData";
 import { StepRow } from "./StepRow";
 
@@ -72,12 +72,4 @@ function SectionHeading({
   return (
     <h3 className="pt-3 text-sm font-bold text-ink-soft">{step.section}</h3>
   );
-}
-
-export function chapterOf(
-  guide: GuideFile,
-  stepId: string | null,
-): Chapter | undefined {
-  if (stepId === null) return undefined;
-  return guide.chapters.find((c) => c.steps.some((s) => s.id === stepId));
 }

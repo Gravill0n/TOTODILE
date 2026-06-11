@@ -9,8 +9,11 @@ export type GuideProgress =
       ready: true;
       currentStepId: string | null;
       doneIds: ReadonlySet<string>;
-      toggleDone: (stepId: string) => void;
+      counterValues: Readonly<Record<string, number>>;
+      toggleDone: (itemId: string) => void;
       movePointer: (stepId: string) => void;
+      adjustCounter: (itemId: string, delta: number) => void;
+      resetCounter: (itemId: string) => void;
     };
 
 // Owns the progress slot for one guide. Lives at the screen level — spine
@@ -90,6 +93,30 @@ export function useGuideProgress(guide: GuideFile): GuideProgress {
     [mutateSlot],
   );
 
+  const adjustCounter = useCallback(
+    (itemId: string, delta: number) => {
+      mutateSlot((slot) => ({
+        ...slot,
+        counterValues: {
+          ...slot.counterValues,
+          [itemId]: Math.max(0, (slot.counterValues[itemId] ?? 0) + delta),
+        },
+      }));
+    },
+    [mutateSlot],
+  );
+
+  const resetCounter = useCallback(
+    (itemId: string) => {
+      mutateSlot((slot) => {
+        const counterValues = { ...slot.counterValues };
+        delete counterValues[itemId];
+        return { ...slot, counterValues };
+      });
+    },
+    [mutateSlot],
+  );
+
   if (slot === null) return { ready: false };
   return {
     ready: true,
@@ -99,7 +126,10 @@ export function useGuideProgress(guide: GuideFile): GuideProgress {
         .filter(([, value]) => value.state === "done")
         .map(([id]) => id),
     ),
+    counterValues: slot.counterValues,
     toggleDone,
     movePointer,
+    adjustCounter,
+    resetCounter,
   };
 }

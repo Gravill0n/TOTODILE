@@ -1,10 +1,18 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import type { ProgressSlice } from "../progress/progressSlice";
 import { useGuideProgress } from "../progress/useGuideProgress";
 import type { GuideFile, LibraryEntry } from "../schema";
 import { ChapterSheet } from "../spine/ChapterSheet";
-import { chapterDomId, stepDomId } from "../spine/guideData";
+import {
+  chapterDomId,
+  chapterOf,
+  guideAssetUrl,
+  stepDomId,
+} from "../spine/guideData";
 import { NowScreen } from "../spine/NowScreen";
 import { PostureLayout } from "./PostureLayout";
+import { WidgetDeck, type WidgetHandlers } from "./WidgetDeck";
+import { WidgetsSheet } from "./WidgetsSheet";
 
 type GuideScreenProps = {
   entry: LibraryEntry;
@@ -22,12 +30,29 @@ function scrollToElement(
 }
 
 // S2 — the play view. Owns the progress slot and the navigation chrome;
-// the spine itself renders purely below (§22.1).
+// the spine and widgets render purely below (§22.1).
 export function GuideScreen({ entry, guide }: GuideScreenProps) {
   const progress = useGuideProgress(guide);
   const [chaptersOpen, setChaptersOpen] = useState(false);
+  const [widgetsOpen, setWidgetsOpen] = useState(false);
+  const [wholeGame, setWholeGame] = useState(false);
 
   const currentStepId = progress.ready ? progress.currentStepId : null;
+
+  // FR-A5: widgets auto-filter to the chapter the current step is in;
+  // the whole-game toggle lifts the filter. Global widgets always show.
+  const currentChapterId = chapterOf(guide, currentStepId)?.id;
+  const visibleWidgets = useMemo(() => {
+    const ordered = [...guide.widgets].sort(
+      (a, b) => a.deckPosition - b.deckPosition,
+    );
+    if (wholeGame) return ordered;
+    return ordered.filter(
+      (widget) =>
+        widget.scope.kind === "global" ||
+        widget.scope.chapterId === currentChapterId,
+    );
+  }, [guide, wholeGame, currentChapterId]);
 
   // FR-A4: opening the guide lands on the current step — once, not on
   // every pointer move.
@@ -39,13 +64,64 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
     }
   }, [currentStepId]);
 
+  const progressSlice: ProgressSlice = {
+    doneIds: progress.ready ? progress.doneIds : new Set(),
+    counterValues: progress.ready ? progress.counterValues : {},
+  };
+  const handlers: WidgetHandlers = {
+    onToggle: progress.ready ? progress.toggleDone : () => {},
+    onAdjustCounter: progress.ready ? progress.adjustCounter : () => {},
+    onResetCounter: progress.ready ? progress.resetCounter : () => {},
+    resolveAsset: (path) => guideAssetUrl(entry.id, path),
+  };
+
+  // Browse posture: widgets alternate across the two side columns in deck
+  // order (the §6.4 deck order is the contract; the split is presentation).
+  const leftWidgets = visibleWidgets.filter((_, index) => index % 2 === 0);
+  const rightWidgets = visibleWidgets.filter((_, index) => index % 2 === 1);
+  const wholeGameToggle = (
+    <label className="mb-3 flex items-center gap-1 text-xs text-ink-soft">
+      <input
+        type="checkbox"
+        checked={wholeGame}
+        onChange={(event) => setWholeGame(event.target.checked)}
+        aria-label="Whole game"
+      />
+      Whole game
+    </label>
+  );
+
   return (
     <PostureLayout
       onChapters={() => setChaptersOpen(true)}
+      onWidgets={
+        guide.widgets.length > 0 ? () => setWidgetsOpen(true) : undefined
+      }
       onWhereAmI={
         currentStepId !== null
           ? () => scrollToElement(stepDomId(currentStepId))
           : undefined
+      }
+      leftPanel={
+        progress.ready && guide.widgets.length > 0 ? (
+          <>
+            {wholeGameToggle}
+            <WidgetDeck
+              widgets={leftWidgets}
+              progress={progressSlice}
+              {...handlers}
+            />
+          </>
+        ) : undefined
+      }
+      rightPanel={
+        progress.ready && rightWidgets.length > 0 ? (
+          <WidgetDeck
+            widgets={rightWidgets}
+            progress={progressSlice}
+            {...handlers}
+          />
+        ) : undefined
       }
     >
       <header className="mb-4">
@@ -77,6 +153,16 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
             scrollToElement(chapterDomId(chapterId), "start");
           }}
           onClose={() => setChaptersOpen(false)}
+        />
+      ) : null}
+      {widgetsOpen && progress.ready ? (
+        <WidgetsSheet
+          widgets={visibleWidgets}
+          progress={progressSlice}
+          wholeGame={wholeGame}
+          onWholeGameChange={setWholeGame}
+          onClose={() => setWidgetsOpen(false)}
+          {...handlers}
         />
       ) : null}
     </PostureLayout>

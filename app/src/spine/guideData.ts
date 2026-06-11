@@ -1,4 +1,4 @@
-import type { GuideFile } from "../schema";
+import type { Chapter, GuideFile } from "../schema";
 import { guideFile } from "../schema";
 
 // Same contract as the library loader: relative URLs work in dev (vite
@@ -23,4 +23,12 @@ export function stepDomId(stepId: string): string {
 
 export function chapterDomId(chapterId: string): string {
   return `chapter-${chapterId}`;
+}
+
+export function chapterOf(
+  guide: GuideFile,
+  stepId: string | null,
+): Chapter | undefined {
+  if (stepId === null) return undefined;
+  return guide.chapters.find((c) => c.steps.some((s) => s.id === stepId));
 }
