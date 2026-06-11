@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 0,
+  "guideId": "fictional-quest",
+  "raGameId": 9000,
+  "entries": [
+    { "raAchievementId": 101, "targetItemId": "fictional-quest:c1:s3" },
+    { "raAchievementId": 102, "targetItemId": "fictional-quest:c2:s5" },
+    {
+      "raAchievementId": 103,
+      "targetItemId": "fictional-quest:treasure:old-coin"
+    },
+    {
+      "raAchievementId": 104,
+      "targetItemId": "fictional-quest:badges:mira-fire"
+    },
+    {
+      "raAchievementId": 105,
+      "targetItemId": "fictional-quest:counters:blue-coins"
+    },
+    {
+      "raAchievementId": 106,
+      "targetItemId": "fictional-quest:vault-map:shard-east"
+    }
+  ]
+}

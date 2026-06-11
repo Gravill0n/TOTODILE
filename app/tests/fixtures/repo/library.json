@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 0,
+  "guides": [
+    {
+      "id": "fictional-quest",
+      "title": "Fictional Quest — 100% completion guide",
+      "game": "Fictional Quest",
+      "platform": "Game Boy Advance",
+      "raGameId": 9000,
+      "deckId": "deck-rpg",
+      "language": "en",
+      "status": "playable",
+      "cover": "guides/fictional-quest/images/cover.png"
+    }
+  ]
+}

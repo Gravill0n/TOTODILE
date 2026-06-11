@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 0,
+  "guideId": "fictional-quest",
+  "chapters": [
+    {
+      "id": "fictional-quest:c1",
+      "title": "Chapter 1 — The Castle Gate",
+      "order": 0,
+      "steps": [
+        {
+          "id": "fictional-quest:c1:s1",
+          "order": 0,
+          "text": "Talk to the gatekeeper twice; he hands over the rusty lantern you need for the cellar.",
+          "location": "Castle Gate",
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "id": "fictional-quest:c1:s2",
+          "order": 1,
+          "text": "Pry the Old Coin from behind the loose brick left of the portcullis.",
+          "location": "Castle Gate",
+          "missable": {
+            "deadline": "Before opening the gate — the courtyard locks behind you"
+          },
+          "sourceRefs": ["src-wiki", "src-manual"],
+          "confidence": "normal"
+        },
+        {
+          "id": "fictional-quest:c1:s3",
+          "order": 2,
+          "text": "Beat the Sentry Captain on the wall. Jump his lance sweep, counter the second thrust.",
+          "location": "Castle Wall",
+          "achievementRefs": [101],
+          "images": [
+            {
+              "src": "images/castle-gate.png",
+              "alt": "Castle gate and wall route",
+              "caption": "The wall route to the Sentry Captain",
+              "credit": "Fictional Quest wiki"
+            }
+          ],
+          "sourceRefs": ["src-wiki", "src-ra"],
+          "confidence": "normal"
+        },
+        {
+          "id": "fictional-quest:c1:s4",
+          "order": 3,
+          "text": "Sweep the courtyard for blue coins — eight are reachable now; the rest need the Tide badge.",
+          "location": "Courtyard",
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "id": "fictional-quest:c1:s5",
+          "order": 4,
+          "text": "Take the east stairs down to the docks and ring the bell to call the ferry.",
+          "location": "Docks",
+          "sourceRefs": ["src-manual"],
+          "confidence": "normal"
+        }
+      ]
+    },
+    {
+      "id": "fictional-quest:c2",
+      "title": "Chapter 2 — The Sunken Vault",
+      "order": 1,
+      "steps": [
+        {
+          "id": "fictional-quest:c2:s1",
+          "order": 0,
+          "text": "Dive at the buoy and swim through the cracked grate into the vault antechamber.",
+          "location": "Sunken Vault",
+          "images": [
+            {
+              "src": "images/vault-entrance.png",
+              "alt": "Vault entrance under the buoy"
+            }
+          ],
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "id": "fictional-quest:c2:s2",
+          "order": 1,
+          "text": "Pull the levers west, east, then center to drain the hall. Some sources list east first.",
+          "location": "Sunken Vault",
+          "sourceRefs": ["src-wiki", "src-manual"],
+          "confidence": "flagged"
+        },
+        {
+          "id": "fictional-quest:c2:s3",
+          "order": 2,
+          "text": "Feed the moray eel a mushroom so it leaves the east alcove.",
+          "location": "Sunken Vault",
+          "missable": {
+            "deadline": "Before draining the vault — the eel flees once the water drops"
+          },
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "id": "fictional-quest:c2:s4",
+          "order": 3,
+          "text": "Stock up at the diver's cache and check your prep card before the sealed door.",
+          "location": "Vault Antechamber",
+          "sourceRefs": ["src-manual"],
+          "confidence": "normal"
+        },
+        {
+          "id": "fictional-quest:c2:s5",
+          "order": 4,
+          "text": "Defeat the Vault Warden. Stay off the center tiles during the flood phase.",
+          "location": "Vault Heart",
+          "achievementRefs": [102],
+          "sourceRefs": ["src-wiki", "src-ra"],
+          "confidence": "normal"
+        }
+      ]
+    }
+  ],
+  "widgets": [
+    {
+      "id": "fictional-quest:treasure",
+      "type": "checklist",
+      "title": "Castle treasure checklist",
+      "scope": { "kind": "chapter", "chapterId": "fictional-quest:c1" },
+      "deckPosition": 0,
+      "rows": [
+        {
+          "itemId": "fictional-quest:treasure:gate-key",
+          "label": "Gate key",
+          "note": "From the gatekeeper after the lantern errand",
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:treasure:old-coin",
+          "label": "Old Coin",
+          "note": "Missable — behind the loose brick",
+          "sourceRefs": ["src-wiki", "src-manual"],
+          "confidence": "flagged"
+        },
+        {
+          "itemId": "fictional-quest:treasure:rusty-lantern",
+          "label": "Rusty lantern",
+          "sourceRefs": ["src-manual"],
+          "confidence": "normal"
+        }
+      ]
+    },
+    {
+      "id": "fictional-quest:badges",
+      "type": "matrix",
+      "title": "Badges × characters",
+      "scope": { "kind": "global" },
+      "deckPosition": 1,
+      "rows": [
+        { "id": "row-mira", "label": "Mira" },
+        { "id": "row-theo", "label": "Theo" }
+      ],
+      "columns": [
+        { "id": "col-fire", "label": "Fire badge" },
+        { "id": "col-tide", "label": "Tide badge" }
+      ],
+      "cells": [
+        {
+          "itemId": "fictional-quest:badges:mira-fire",
+          "rowId": "row-mira",
+          "columnId": "col-fire",
+          "sourceRefs": ["src-ra"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:badges:mira-tide",
+          "rowId": "row-mira",
+          "columnId": "col-tide",
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:badges:theo-fire",
+          "rowId": "row-theo",
+          "columnId": "col-fire",
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:badges:theo-tide",
+          "rowId": "row-theo",
+          "columnId": "col-tide",
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        }
+      ]
+    },
+    {
+      "id": "fictional-quest:bestiary",
+      "type": "dataTable",
+      "title": "Bestiary",
+      "scope": { "kind": "global" },
+      "deckPosition": 2,
+      "columns": [
+        { "id": "col-hp", "label": "HP" },
+        { "id": "col-xp", "label": "XP" },
+        { "id": "col-weakness", "label": "Weakness" }
+      ],
+      "rows": [
+        {
+          "itemId": "fictional-quest:bestiary:sentry-captain",
+          "checkable": false,
+          "cells": {
+            "col-hp": "60",
+            "col-xp": "25",
+            "col-weakness": "Counter after the second thrust"
+          },
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:bestiary:moray-eel",
+          "checkable": false,
+          "cells": {
+            "col-hp": "—",
+            "col-xp": "0",
+            "col-weakness": "Cannot be fought; feed it instead"
+          },
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:bestiary:gilded-slime",
+          "checkable": true,
+          "cells": {
+            "col-hp": "1",
+            "col-xp": "200",
+            "col-weakness": "Rare spawn — check off when defeated"
+          },
+          "sourceRefs": ["src-manual"],
+          "confidence": "flagged"
+        }
+      ]
+    },
+    {
+      "id": "fictional-quest:counters",
+      "type": "counter",
+      "title": "Collectible counters",
+      "scope": { "kind": "global" },
+      "deckPosition": 3,
+      "counters": [
+        {
+          "itemId": "fictional-quest:counters:blue-coins",
+          "label": "Blue coins",
+          "target": 40,
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:counters:beans",
+          "label": "Glow beans",
+          "target": 10,
+          "sourceRefs": ["src-manual"],
+          "confidence": "normal"
+        }
+      ]
+    },
+    {
+      "id": "fictional-quest:trade",
+      "type": "flowchart",
+      "title": "Trade chain",
+      "scope": { "kind": "global" },
+      "deckPosition": 4,
+      "nodes": [
+        {
+          "itemId": "fictional-quest:trade:apple",
+          "label": "Orchard apple",
+          "note": "Pick it up in the courtyard",
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:trade:brass-badge",
+          "label": "Brass badge",
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:trade:vault-key",
+          "label": "Vault key",
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        }
+      ],
+      "edges": [
+        {
+          "from": "fictional-quest:trade:apple",
+          "to": "fictional-quest:trade:brass-badge",
+          "label": "Give to the gatekeeper"
+        },
+        {
+          "from": "fictional-quest:trade:brass-badge",
+          "to": "fictional-quest:trade:vault-key"
+        }
+      ]
+    },
+    {
+      "id": "fictional-quest:vault-map",
+      "type": "mapPins",
+      "title": "Vault shard locations",
+      "scope": { "kind": "chapter", "chapterId": "fictional-quest:c2" },
+      "deckPosition": 5,
+      "image": {
+        "src": "images/vault-map.png",
+        "alt": "Map of the Sunken Vault",
+        "credit": "Hand-drawn for the fixture"
+      },
+      "pins": [
+        {
+          "itemId": "fictional-quest:vault-map:shard-east",
+          "label": "Shard — east alcove",
+          "x": 0.78,
+          "y": 0.41,
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:vault-map:shard-west",
+          "label": "Shard — west ledge",
+          "x": 0.18,
+          "y": 0.36,
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:vault-map:shard-deep",
+          "label": "Shard — flooded floor",
+          "x": 0.52,
+          "y": 0.83,
+          "sourceRefs": ["src-manual"],
+          "confidence": "normal"
+        }
+      ]
+    },
+    {
+      "id": "fictional-quest:warden-prep",
+      "type": "prepCard",
+      "title": "Before the Vault Warden",
+      "scope": { "kind": "chapter", "chapterId": "fictional-quest:c2" },
+      "deckPosition": 6,
+      "items": [
+        {
+          "itemId": "fictional-quest:warden-prep:mushrooms",
+          "label": "Mushrooms",
+          "quantity": 5,
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:warden-prep:antidotes",
+          "label": "Antidotes",
+          "quantity": 2,
+          "sourceRefs": ["src-manual"],
+          "confidence": "normal"
+        },
+        {
+          "itemId": "fictional-quest:warden-prep:tide-badge",
+          "label": "Tide badge equipped",
+          "note": "The flood phase is unsurvivable without it",
+          "sourceRefs": ["src-wiki"],
+          "confidence": "normal"
+        }
+      ]
+    }
+  ]
+}
