@@ -8,6 +8,7 @@ import {
   Outlet,
   type RouterHistory,
 } from "@tanstack/react-router";
+import { loadGuide } from "../spine/guideData";
 import { GuideScreen } from "./GuideScreen";
 import { LibraryScreen } from "./LibraryScreen";
 import { loadLibrary } from "./libraryData";
@@ -53,10 +54,12 @@ const guideRoute = createRoute({
     const library = await loadLibrary();
     const entry = library.guides.find((g) => g.id === params.slug);
     if (!entry) throw notFound();
-    return entry;
+    const guide = await loadGuide(entry.id);
+    return { entry, guide };
   },
   component: function GuideRouteComponent() {
-    return <GuideScreen entry={guideRoute.useLoaderData()} />;
+    const { entry, guide } = guideRoute.useLoaderData();
+    return <GuideScreen entry={entry} guide={guide} />;
   },
 });
 
