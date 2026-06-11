@@ -11,8 +11,14 @@ type GuideScreenProps = {
   guide: GuideFile;
 };
 
-function scrollToElement(domId: string) {
-  document.getElementById(domId)?.scrollIntoView?.({ block: "center" });
+// "center" suits small targets (step rows). Whole chapters are taller than
+// the viewport, and centering a too-tall element scrolls to its middle —
+// chapter jumps must align to "start" to land on the heading.
+function scrollToElement(
+  domId: string,
+  block: ScrollLogicalPosition = "center",
+) {
+  document.getElementById(domId)?.scrollIntoView?.({ block });
 }
 
 // S2 — the play view. Owns the progress slot and the navigation chrome;
@@ -68,7 +74,7 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
           chapters={guide.chapters}
           onJump={(chapterId) => {
             setChaptersOpen(false);
-            scrollToElement(chapterDomId(chapterId));
+            scrollToElement(chapterDomId(chapterId), "start");
           }}
           onClose={() => setChaptersOpen(false)}
         />

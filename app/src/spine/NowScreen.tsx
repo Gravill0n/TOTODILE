@@ -26,7 +26,11 @@ export function NowScreen({
   return (
     <div className="space-y-8">
       {guide.chapters.map((chapter) => (
-        <section key={chapter.id} id={chapterDomId(chapter.id)}>
+        <section
+          key={chapter.id}
+          id={chapterDomId(chapter.id)}
+          className="scroll-mt-4"
+        >
           <h2 className="border-b-2 border-line pb-1 text-lg font-bold">
             {chapter.title}
           </h2>
