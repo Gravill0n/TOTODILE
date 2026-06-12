@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:legend-map",
+    "title": "Item & legendary map",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 4,
+    "type": "mapPins",
+    "image": {
+      "src": "images/johto-kanto-map.png",
+      "alt": "Johto and Kanto region map (pixel map from the crystal-ap-tracker pack)"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:legend-map:sudowoodo",
+        "label": "Sudowoodo — Route 36 (SquirtBottle, one chance)",
+        "x": 0.2153,
+        "y": 0.3833,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:red-gyarados",
+        "label": "Red Gyarados — Lake of Rage (guaranteed shiny)",
+        "x": 0.3542,
+        "y": 0.1167,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:suicune",
+        "label": "Suicune Lv. 40 — Tin Tower 1F (Clear Bell)",
+        "x": 0.2292,
+        "y": 0.1833,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:ho-oh",
+        "label": "Ho-Oh Lv. 60 — Tin Tower roof (Rainbow Wing)",
+        "x": 0.2222,
+        "y": 0.1583,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:lugia",
+        "label": "Lugia Lv. 60 — Whirl Islands inner chamber (Silver Wing)",
+        "x": 0.0764,
+        "y": 0.65,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:beasts",
+        "label": "Raikou & Entei wake here (Burned Tower) — then roam all Johto",
+        "x": 0.2014,
+        "y": 0.2,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:snorlax",
+        "label": "Snorlax Lv. 50 — Vermilion, radio Ch. 20.0 (one chance)",
+        "x": 0.8264,
+        "y": 0.5833,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:lapras",
+        "label": "Lapras Lv. 20 — Union Cave B2F, Fridays",
+        "x": 0.2708,
+        "y": 0.85,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:clefairy-dance",
+        "label": "Clefairy dance + Moon Stone — Mt. Moon Square, Monday nights",
+        "x": 0.7431,
+        "y": 0.25,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:celebi-vc",
+        "label": "(VC only) Celebi Lv. 30 — Ilex shrine via GS Ball",
+        "x": 0.1597,
+        "y": 0.9167,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:tyrogue",
+        "label": "Tyrogue gift — Mt. Mortar depths (beat Kiyo)",
+        "x": 0.2708,
+        "y": 0.1833,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:shuckie",
+        "label": "Shuckie — Cianwood (keep via friendship)",
+        "x": 0.0486,
+        "y": 0.7167,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:silver-wing",
+        "label": "Silver Wing — Pewter City old man",
+        "x": 0.6597,
+        "y": 0.3167,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:odd-egg",
+        "label": "Odd Egg — Route 34 Day-Care (save first; shiny odds)",
+        "x": 0.1597,
+        "y": 0.7833,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:legend-map:red",
+        "label": "Red — Mt. Silver summit",
+        "x": 0.4931,
+        "y": 0.45,
+        "sourceRefs": [
+          "src-ap-tracker",
+          "src-ra"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
