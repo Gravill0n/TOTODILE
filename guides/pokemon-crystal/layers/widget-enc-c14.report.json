@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-enc-c14",
+  "generatedAt": "2026-06-12T21:30:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "f8ba5fe7e99282cba17fcbff46a52777801519e28bb362a48005ad46ae1affa8"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "ef213f8d17f3cab306e7df883682918ee40d45cb1e1a7b6ee3a72f5d609cbacc"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "a021213212d12513010bcf4ad06e718fb1a40d55622392dc9a0dca3ae1bb9860"
+    }
+  ],
+  "report": {
+    "rowCount": 8,
+    "anomalies": [
+      "Kanto-east tables extract poorly (version-mixed pages): species lists are reliable, most rates pending — this instance needs a dedicated deepening re-run before approval (5 of 8 rows flagged)"
+    ],
+    "flaggedItemIds": [
+      "pokemon-crystal:enc-c14:r6-grass",
+      "pokemon-crystal:enc-c14:r8-grass",
+      "pokemon-crystal:enc-c14:rt-1f",
+      "pokemon-crystal:enc-c14:rt-b1f",
+      "pokemon-crystal:enc-c14:r9-10"
+    ]
+  },
+  "notes": [
+    "Covers Routes 6/8/9/10, Rock Tunnel, Routes 24/25 for c14's window — deliberately coarse, flagged for deepening."
+  ]
+}
