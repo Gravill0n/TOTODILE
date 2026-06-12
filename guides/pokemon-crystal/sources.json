@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "sources": [
+    {
+      "id": "src-ra",
+      "title": "RetroAchievements — Pokémon Crystal Version, main set (game 810; local snapshot in pokemon-crystal/sources/)",
+      "url": "https://retroachievements.org/game/810",
+      "type": "ra-set",
+      "retrievedAt": "2026-06-12"
+    },
+    {
+      "id": "src-ra-oak",
+      "title": "RetroAchievements — Subset: Professor Oak Challenge (game 24140; local snapshot in pokemon-crystal/sources/)",
+      "url": "https://retroachievements.org/game/24140",
+      "type": "ra-set",
+      "retrievedAt": "2026-06-12"
+    },
+    {
+      "id": "src-ra-wiki",
+      "title": "RA community guide & walkthrough — Pokemon Crystal (guides wiki; local snapshot in pokemon-crystal/sources/)",
+      "url": "https://github.com/RetroAchievements/guides/wiki/Pokemon-Crystal-(Game-Boy-Color)",
+      "type": "wiki",
+      "retrievedAt": "2026-06-12"
+    },
+    {
+      "id": "src-oak-pdf",
+      "title": "C Oak Guide — Professor Oak Challenge guide, 21 pages (local PDF: pokemon-crystal/sources/C Oak Guide.pdf)",
+      "type": "manual",
+      "retrievedAt": "2026-06-12"
+    },
+    {
+      "id": "src-ap-tracker",
+      "title": "crystal-ap-tracker 11.0.4 — PopTracker pack with Johto/Kanto maps and per-area location data (local copy in pokemon-crystal/sources/)",
+      "url": "https://github.com/palex00/crystal-ap-tracker",
+      "type": "other",
+      "retrievedAt": "2026-06-12"
+    },
+    {
+      "id": "src-bulba-walkthrough",
+      "title": "Bulbapedia — Appendix:Crystal walkthrough (28 sections)",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Appendix:Crystal_walkthrough",
+      "type": "wiki",
+      "retrievedAt": "2026-06-12"
+    },
+    {
+      "id": "src-bulba-locations",
+      "title": "Bulbapedia — Johto/Kanto location articles (maps, items, wild encounters per area)",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Johto",
+      "type": "map",
+      "retrievedAt": "2026-06-12"
+    },
+    {
+      "id": "src-serebii-pokearth",
+      "title": "Serebii Pokéarth — Johto/Kanto area data for Gold/Silver/Crystal",
+      "url": "https://www.serebii.net/pokearth/johto/",
+      "type": "map",
+      "retrievedAt": "2026-06-12"
+    }
+  ]
+}

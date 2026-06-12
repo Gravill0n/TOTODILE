@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c4",
+    "title": "Oak catch list — before Bugsy (78 cumulative)",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c4"
+    },
+    "deckPosition": 6,
+    "type": "checklist",
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c4:togepi",
+        "label": "Togepi (egg) → Togetic (happiness)",
+        "note": "Egg from Elm's aide in the Violet Pokémon Center after Falkner; keep it in the party",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:wooper",
+        "label": "Wooper → Quagsire (L20)",
+        "note": "Route 32, night only",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:ekans",
+        "label": "Ekans → Arbok (L22)",
+        "note": "Route 32, morning/day",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:magikarp",
+        "label": "Magikarp → Gyarados (L20)",
+        "note": "Old Rod, anywhere",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:tentacool",
+        "label": "Tentacool → Tentacruel (L30)",
+        "note": "Old Rod, New Bark Town",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:krabby",
+        "label": "Krabby → Kingler (L28)",
+        "note": "Old Rod, Cherrygrove City — catch a SECOND for a later trade",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:goldeen",
+        "label": "Goldeen → Seaking (L33)",
+        "note": "Old Rod, Dark Cave",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:qwilfish",
+        "label": "Qwilfish",
+        "note": "Route 32 during a swarm — register Fisherman Ralph; the DST trick at home forces PokéGear calls",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:sandshrew",
+        "label": "Sandshrew → Sandslash (L22)",
+        "note": "Union Cave, morning/day",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:slowpoke",
+        "label": "Slowpoke → Slowbro (L37)",
+        "note": "Slowpoke Well after following Kurt down",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:oddish",
+        "label": "Oddish → Gloom (L21)",
+        "note": "Ilex Forest, night",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:paras",
+        "label": "Paras → Parasect (L24)",
+        "note": "Ilex Forest, any time",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:psyduck",
+        "label": "Psyduck → Golduck (L33)",
+        "note": "Ilex Forest, night",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:venonat",
+        "label": "Venonat → Venomoth (L31)",
+        "note": "Ilex Forest, night",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:exeggcute",
+        "label": "Exeggcute (Headbutt)",
+        "note": "Route 32 trees — teach Slowpoke Headbutt (L? level it) to start early",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:pineco",
+        "label": "Pineco → Forretress (L31) (Headbutt)",
+        "note": "Ilex Forest trees",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:aipom",
+        "label": "Aipom (Headbutt)",
+        "note": "Azalea Town trees",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:heracross",
+        "label": "Heracross (Headbutt)",
+        "note": "Azalea Town trees — also prime EXP",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

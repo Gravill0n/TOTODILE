@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:badges",
+    "title": "Gym badges",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 0,
+    "type": "checklist",
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:badges:zephyr",
+        "label": "Zephyr Badge",
+        "note": "Falkner — Violet City (c2)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:hive",
+        "label": "Hive Badge",
+        "note": "Bugsy — Azalea Town (c4)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:plain",
+        "label": "Plain Badge",
+        "note": "Whitney — Goldenrod City (c5)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:fog",
+        "label": "Fog Badge",
+        "note": "Morty — Ecruteak City (c7)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:storm",
+        "label": "Storm Badge",
+        "note": "Chuck — Cianwood City (c8)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:mineral",
+        "label": "Mineral Badge",
+        "note": "Jasmine — Olivine City (c8)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:glacier",
+        "label": "Glacier Badge",
+        "note": "Pryce — Mahogany Town (c9)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:rising",
+        "label": "Rising Badge",
+        "note": "Clair — Blackthorn City / Dragon's Den (c11)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:thunder",
+        "label": "Thunder Badge",
+        "note": "Lt. Surge — Vermilion City (c14)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:marsh",
+        "label": "Marsh Badge",
+        "note": "Sabrina — Saffron City (c14)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:cascade",
+        "label": "Cascade Badge",
+        "note": "Misty — Cerulean City (c14)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:rainbow",
+        "label": "Rainbow Badge",
+        "note": "Erika — Celadon City (c15)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:soul",
+        "label": "Soul Badge",
+        "note": "Janine — Fuchsia City (c15)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:boulder",
+        "label": "Boulder Badge",
+        "note": "Brock — Pewter City (c15)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:volcano",
+        "label": "Volcano Badge",
+        "note": "Blaine — Seafoam Islands (c15)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badges:earth",
+        "label": "Earth Badge",
+        "note": "Blue — Viridian City (c15)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-enc-c15",
+  "generatedAt": "2026-06-12T21:45:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "f8ba5fe7e99282cba17fcbff46a52777801519e28bb362a48005ad46ae1affa8"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "ef213f8d17f3cab306e7df883682918ee40d45cb1e1a7b6ee3a72f5d609cbacc"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "a021213212d12513010bcf4ad06e718fb1a40d55622392dc9a0dca3ae1bb9860"
+    }
+  ],
+  "report": {
+    "rowCount": 12,
+    "anomalies": [
+      "Route 7, Route 3, Mt. Moon and Route 21 tables are exact (walkthrough Crystal tables); Routes 2, 12–15, 16–18 are species-level placeholders — deepen on a re-run",
+      "Notable Crystal catches surfaced: Houndour/Murkrow (Route 7, night), Mr. Mime & Tangela (Route 21), Lanturn line (Route 21 rods), Corsola (Routes 19/20 rods)"
+    ],
+    "flaggedItemIds": [
+      "pokemon-crystal:enc-c15:r2-grass",
+      "pokemon-crystal:enc-c15:r12-15",
+      "pokemon-crystal:enc-c15:cycling"
+    ]
+  },
+  "notes": [
+    "Covers the c15 loop: Route 7, Route 2, Diglett's Cave, Routes 3/4 + Mt. Moon, Routes 1/21/19/20, the eastern loop and Cycling Road."
+  ]
+}

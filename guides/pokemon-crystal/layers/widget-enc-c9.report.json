@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-enc-c9",
+  "generatedAt": "2026-06-12T20:40:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "f8ba5fe7e99282cba17fcbff46a52777801519e28bb362a48005ad46ae1affa8"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "ef213f8d17f3cab306e7df883682918ee40d45cb1e1a7b6ee3a72f5d609cbacc"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "a021213212d12513010bcf4ad06e718fb1a40d55622392dc9a0dca3ae1bb9860"
+    }
+  ],
+  "report": {
+    "rowCount": 14,
+    "anomalies": [
+      "Lake of Rage per-rod fishing rates not captured this run — surf table verified"
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Covers Route 43 and the Lake of Rage (incl. the one-shot Red Gyarados row) for c9's window."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-legend-map",
+  "generatedAt": "2026-06-12T23:15:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "f8ba5fe7e99282cba17fcbff46a52777801519e28bb362a48005ad46ae1affa8"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "ef213f8d17f3cab306e7df883682918ee40d45cb1e1a7b6ee3a72f5d609cbacc"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "a021213212d12513010bcf4ad06e718fb1a40d55622392dc9a0dca3ae1bb9860"
+    },
+    {
+      "file": "images/johto-kanto-map.png",
+      "sha256": "99cce0c880c6316fcbfc74a8986fbe185b04f86e1676b15687e79f0382539803"
+    }
+  ],
+  "report": {
+    "rowCount": 15,
+    "anomalies": [
+      "Pin coordinates are mechanically derived from the crystal-ap-tracker pack's own johtokanto map locations (288×120 px, +2px center offset) — not hand-placed; Ho-Oh and the beasts are nudged ≤3px off Tin/Burned Tower so overlapping pins stay tappable",
+      "Map image reused from the tracker pack (src-ap-tracker, MIT-style licensed repo) — swap for ripped game art later if preferred"
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Fills deck slot 4 (mapPins, global): the 15 one-shot/static moments of the run, spatially. Item-by-item field loot stays with the spine and the 'Flourishing Findings' roundup."
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c14",
+    "title": "Oak catch list — before the Kanto badges (203/204 cumulative)",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c14"
+    },
+    "deckPosition": 6,
+    "type": "checklist",
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c14:celebi-vc",
+        "label": "(Virtual Console only) CELEBI L30",
+        "note": "GS Ball from the Goldenrod PC comms floor → Kurt overnight → Ilex shrine; Recover-stall it like a beast",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:electabuzz",
+        "label": "Electabuzz → breed for Elekid",
+        "note": "Route 10 grass near the Power Plant",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:kangaskhan",
+        "label": "Kangaskhan",
+        "note": "Rock Tunnel lower floors",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:houndour",
+        "label": "Houndour → Houndoom (L24)",
+        "note": "Route 7, night only",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:murkrow",
+        "label": "Murkrow",
+        "note": "Route 7, night only",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:grimer",
+        "label": "Grimer → Muk (L38)",
+        "note": "Celadon City pool (Surf) — 10% for wild Muk",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:porygon",
+        "label": "Porygon",
+        "note": "Celadon Game Corner, 5,555 coins — Porygon2 is a trade evo, unobtainable",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:larvitar",
+        "label": "LARVITAR → Pupitar (L30) → Tyranitar (L55)",
+        "note": "Celadon Game Corner, 8,888 coins — arrives L40, only 15 levels to Tyranitar; normally a 16-badge catch",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:slugma",
+        "label": "Slugma → Magcargo (L38)",
+        "note": "Routes 16/17/18, daytime",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:chansey",
+        "label": "Chansey → Blissey (happiness)",
+        "note": "Route 15 — 1% at L25: lead an L24 mon with a Repel; breed for the trade Chansey",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:aerodactyl",
+        "label": "Aerodactyl (trade a Chansey)",
+        "note": "Route 14 — trade the BRED Chansey, not your only one",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:snorlax",
+        "label": "SNORLAX L50",
+        "note": "Radio Channel 20.0 at Diglett's Cave — save first; catch, don't KO",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:diglett",
+        "label": "Diglett → Dugtrio (L26)",
+        "note": "Diglett's Cave — wild Dugtrio also appears",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:pikachu",
+        "label": "Pikachu → Raichu (Thunder Stone) → breed for Pichu",
+        "note": "Route 2 grass",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:clefairy",
+        "label": "Clefairy → Clefable (Moon Stone) → breed for Cleffa",
+        "note": "Mt. Moon — Monday-night dance leaves a Moon Stone (bring Rock Smash!); 2% hold a Moon Stone (Thief)",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:mr-mime",
+        "label": "Mr. Mime",
+        "note": "Route 21 grass (Surf from Pallet), morning/day",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:baby-breeds",
+        "label": "Elekid, Pichu, Cleffa (breeding round)",
+        "note": "Johto Day-Care with Ditto",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:rainbow-wing",
+        "label": "Rainbow Wing — prove the three beasts to Eusine",
+        "note": "Oak guide: Eusine at the Celadon Game Corner area; Bulbapedia: the middle Tin Tower sage — verify which (or both) in-game",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:lugia",
+        "label": "LUGIA L60",
+        "note": "Whirl Islands B2F inner chamber (Silver Wing from Pewter) — Heavy Balls excel",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c14:ho-oh",
+        "label": "HO-OH L60",
+        "note": "Tin Tower roof (Rainbow Wing) — the Oak guide spends the Master Ball on one of the two box birds",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

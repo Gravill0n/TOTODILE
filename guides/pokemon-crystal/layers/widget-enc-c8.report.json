@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-enc-c8",
+  "generatedAt": "2026-06-12T20:25:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "f8ba5fe7e99282cba17fcbff46a52777801519e28bb362a48005ad46ae1affa8"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "ef213f8d17f3cab306e7df883682918ee40d45cb1e1a7b6ee3a72f5d609cbacc"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "a021213212d12513010bcf4ad06e718fb1a40d55622392dc9a0dca3ae1bb9860"
+    }
+  ],
+  "report": {
+    "rowCount": 17,
+    "anomalies": [
+      "pokemon-crystal:enc-c8:r38-md: Crystal morning/day rates for Route 38 were not separable from the Gold/Silver table in extraction — species list reliable, rates pending",
+      "pokemon-crystal:enc-c8:r41-fish: Route 41 fishing table not captured in detail (Chinchou/Lanturn availability unverified for Crystal)",
+      "pokemon-crystal:enc-c8:mortar-entrance: Mt. Mortar entrance-hall table not fetched this run — species are the common cave families, rates pending; deepen on a re-run",
+      "This instance is the coarsest so far (coastal pages mix versions heavily) — a dedicated re-run with the raw tables is recommended before approval"
+    ],
+    "flaggedItemIds": [
+      "pokemon-crystal:enc-c8:r38-md",
+      "pokemon-crystal:enc-c8:r41-fish",
+      "pokemon-crystal:enc-c8:mortar-entrance"
+    ]
+  },
+  "notes": [
+    "Covers Routes 38–42 + Mt. Mortar entrance + the Route 40 Rock Smash Shuckle for c8's window. Notably coarser than enc-c2..c6 — flagged accordingly."
+  ]
+}

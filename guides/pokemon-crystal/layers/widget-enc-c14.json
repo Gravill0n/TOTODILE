@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-c14",
+    "title": "Wild encounters — Kanto east",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c14"
+    },
+    "deckPosition": 1,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "area",
+        "label": "Area"
+      },
+      {
+        "id": "species",
+        "label": "Pokémon"
+      },
+      {
+        "id": "levels",
+        "label": "Lv."
+      },
+      {
+        "id": "when",
+        "label": "Time / Method"
+      },
+      {
+        "id": "rate",
+        "label": "Rate"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:enc-c14:r6-grass",
+        "checkable": false,
+        "cells": {
+          "area": "Route 6",
+          "species": "Rattata / Raticate / Jigglypuff / Meowth / Psyduck / Magnemite / Drowzee / Snubbull / Granbull",
+          "levels": "mid-30s",
+          "when": "Any",
+          "rate": "rates pending"
+        },
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c14:r8-grass",
+        "checkable": false,
+        "cells": {
+          "area": "Route 8",
+          "species": "Pidgeotto / Jigglypuff / Meowth / Growlithe / Abra / Kadabra / Haunter",
+          "levels": "mid-30s",
+          "when": "Any (Meowth/Haunter night)",
+          "rate": "rates pending"
+        },
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c14:rt-1f",
+        "checkable": false,
+        "cells": {
+          "area": "Rock Tunnel 1F",
+          "species": "Cubone / Geodude / Zubat families — Haunter at night",
+          "levels": "10–16",
+          "when": "Any",
+          "rate": "Cubone/Geodude ~30–35%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c14:rt-b1f",
+        "checkable": false,
+        "cells": {
+          "area": "Rock Tunnel B1F",
+          "species": "Cubone / Geodude / Onix families",
+          "levels": "10–16",
+          "when": "Any",
+          "rate": "~30% each"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c14:r9-10",
+        "checkable": false,
+        "cells": {
+          "area": "Routes 9/10",
+          "species": "Rattata / Raticate / Spearow / Fearow families · Magnemite near the Power Plant",
+          "levels": "28–32",
+          "when": "Any",
+          "rate": "rates pending"
+        },
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c14:r24-m",
+        "checkable": false,
+        "cells": {
+          "area": "Route 24/25",
+          "species": "Caterpie / Metapod / Butterfree in the morning; Bellsprout / Abra / Weepinbell all day; Venonat / Oddish / Venomoth at night",
+          "levels": "28–32",
+          "when": "by time",
+          "rate": "—"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c14:r24-surf",
+        "checkable": false,
+        "cells": {
+          "area": "Route 24/25",
+          "species": "Goldeen / Seaking",
+          "levels": "5–14",
+          "when": "Surf",
+          "rate": "90% / 10%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c14:r24-fish",
+        "checkable": false,
+        "cells": {
+          "area": "Route 24/25",
+          "species": "Magikarp / Goldeen · higher levels with Super Rod",
+          "levels": "10–40",
+          "when": "Fishing",
+          "rate": "—"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

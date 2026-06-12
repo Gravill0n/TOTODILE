@@ -10,6 +10,16 @@
       "deckId": "deck-rpg",
       "language": "en",
       "status": "in-compilation"
+    },
+    {
+      "id": "pokemon-crystal",
+      "title": "Pokémon Crystal — 100% Achievement Guide",
+      "game": "Pokémon Crystal",
+      "platform": "Game Boy Color",
+      "raGameId": 810,
+      "deckId": "deck-pokemon",
+      "language": "en",
+      "status": "in-compilation"
     }
   ]
 }

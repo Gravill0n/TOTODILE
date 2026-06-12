@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-c9",
+    "title": "Wild encounters — Mahogany & the lake",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c9"
+    },
+    "deckPosition": 1,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "area",
+        "label": "Area"
+      },
+      {
+        "id": "species",
+        "label": "Pokémon"
+      },
+      {
+        "id": "levels",
+        "label": "Lv."
+      },
+      {
+        "id": "when",
+        "label": "Time / Method"
+      },
+      {
+        "id": "rate",
+        "label": "Rate"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:enc-c9:r43-pidgeotto",
+        "checkable": false,
+        "cells": {
+          "area": "Route 43",
+          "species": "Pidgeotto",
+          "levels": "15–17",
+          "when": "Morning/Day",
+          "rate": "30%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:r43-sentret",
+        "checkable": false,
+        "cells": {
+          "area": "Route 43",
+          "species": "Sentret",
+          "levels": "15–17",
+          "when": "Morning/Day",
+          "rate": "30%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:r43-farfetchd",
+        "checkable": false,
+        "cells": {
+          "area": "Route 43",
+          "species": "Farfetch'd",
+          "levels": "15–17",
+          "when": "Morning/Day",
+          "rate": "20%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:r43-furret",
+        "checkable": false,
+        "cells": {
+          "area": "Route 43",
+          "species": "Furret",
+          "levels": "15–17",
+          "when": "Morning/Day",
+          "rate": "15%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:r43-raticate",
+        "checkable": false,
+        "cells": {
+          "area": "Route 43",
+          "species": "Raticate",
+          "levels": "15–17",
+          "when": "Any",
+          "rate": "5% M/D · 25% N"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:r43-venonat",
+        "checkable": false,
+        "cells": {
+          "area": "Route 43",
+          "species": "Venonat",
+          "levels": "15–17",
+          "when": "Night",
+          "rate": "40%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:r43-noctowl",
+        "checkable": false,
+        "cells": {
+          "area": "Route 43",
+          "species": "Noctowl",
+          "levels": "15–17",
+          "when": "Night",
+          "rate": "30%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:r43-venomoth",
+        "checkable": false,
+        "cells": {
+          "area": "Route 43",
+          "species": "Venomoth",
+          "levels": "15–17",
+          "when": "Night",
+          "rate": "5%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:r43-water",
+        "checkable": false,
+        "cells": {
+          "area": "Route 43",
+          "species": "Magikarp",
+          "levels": "15–24",
+          "when": "Surf",
+          "rate": "100%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:r43-hb",
+        "checkable": false,
+        "cells": {
+          "area": "Route 43",
+          "species": "Hoothoot / Pineco / Exeggcute",
+          "levels": "10",
+          "when": "Headbutt",
+          "rate": "50/30/20%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:lake-surf",
+        "checkable": false,
+        "cells": {
+          "area": "Lake of Rage",
+          "species": "Magikarp / GYARADOS",
+          "levels": "10–19",
+          "when": "Surf",
+          "rate": "90% / 10%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:lake-fish",
+        "checkable": false,
+        "cells": {
+          "area": "Lake of Rage",
+          "species": "Magikarp lines by rod (higher levels)",
+          "levels": "by rod",
+          "when": "Fishing",
+          "rate": "—"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:lake-hb",
+        "checkable": false,
+        "cells": {
+          "area": "Lake of Rage",
+          "species": "Hoothoot / Exeggcute / Venonat",
+          "levels": "10",
+          "when": "Headbutt",
+          "rate": "—"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c9:lake-red-gyarados",
+        "checkable": false,
+        "cells": {
+          "area": "Lake of Rage",
+          "species": "RED GYARADOS (interactable, shiny)",
+          "levels": "30",
+          "when": "Once",
+          "rate": "catch it! (missable)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
