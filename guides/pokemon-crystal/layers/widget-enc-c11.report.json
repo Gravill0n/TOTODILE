@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-enc-c11",
+  "generatedAt": "2026-06-12T20:55:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "f8ba5fe7e99282cba17fcbff46a52777801519e28bb362a48005ad46ae1affa8"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "ef213f8d17f3cab306e7df883682918ee40d45cb1e1a7b6ee3a72f5d609cbacc"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "a021213212d12513010bcf4ad06e718fb1a40d55622392dc9a0dca3ae1bb9860"
+    }
+  ],
+  "report": {
+    "rowCount": 14,
+    "anomalies": [
+      "pokemon-crystal:enc-c11:r44-grass / r44-water: Route 44 table from the walkthrough only (species reliable, rates pending)",
+      "pokemon-crystal:enc-c11:r46-grass: Route 46 table not captured this run — placeholder row, deepen on a re-run",
+      "Ice Path rates not listed on the location article (levels verified); Wobbuffet (Dark Cave) and the Route 45 Dratini rods are notable Crystal catches"
+    ],
+    "flaggedItemIds": [
+      "pokemon-crystal:enc-c11:r44-grass",
+      "pokemon-crystal:enc-c11:r44-water",
+      "pokemon-crystal:enc-c11:r46-grass"
+    ]
+  },
+  "notes": [
+    "Covers Route 44, Ice Path, Routes 45/46, Dark Cave (both sides) for c11's window."
+  ]
+}
