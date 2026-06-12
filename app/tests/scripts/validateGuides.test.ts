@@ -138,6 +138,26 @@ describe("validateGuides", () => {
     expect(messagesOf(root).join("\n")).toContain("invalid JSON");
   });
 
+  it("allows a missing guide.json only while the guide is in-compilation (pre-QA bootstrap)", () => {
+    const library = validLibrary();
+    if (library.guides[0]) library.guides[0].status = "in-compilation";
+    const {
+      "guides/fictional-quest/guide.json": _guide,
+      "guides/fictional-quest/ra-mapping.json": _mapping,
+      ...tree
+    } = happyTree();
+    expect(
+      validateGuides(writeTree({ ...tree, "library.json": library })).ok,
+    ).toBe(true);
+
+    // Playable says the assembled guide exists — its absence is a finding.
+    const { "guides/fictional-quest/guide.json": _g2, ...playableTree } =
+      happyTree();
+    expect(messagesOf(writeTree(playableTree)).join("\n")).toContain(
+      "[fictional-quest/guide.json] missing required file",
+    );
+  });
+
   it("requires guide.json, sources.json and deck.json but not the optional files", () => {
     const tree = happyTree();
     const {

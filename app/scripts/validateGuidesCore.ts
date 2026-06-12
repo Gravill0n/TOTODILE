@@ -125,7 +125,13 @@ function validateGuideFolder(
   library: LibraryManifest | undefined,
   findings: Finding[],
 ): void {
-  const guide = loadEntity(dir, slug, "guide.json", guideFile, findings);
+  const entry = library?.guides.find((g) => g.id === slug);
+  // guide.json only exists once the QA pass assembles the layers; a guide
+  // the library declares "in-compilation" may legitimately not have one yet
+  // (FR-E5 keeps it unplayable either way). Playable guides require it.
+  const guide = loadEntity(dir, slug, "guide.json", guideFile, findings, {
+    optional: entry?.status === "in-compilation",
+  });
   const sources = loadEntity(
     dir,
     slug,
@@ -249,7 +255,6 @@ function validateGuideFolder(
     }
   }
 
-  const entry = library?.guides.find((g) => g.id === slug);
   if (entry && deck && entry.deckId !== deck.id) {
     findings.push({
       guide: slug,
