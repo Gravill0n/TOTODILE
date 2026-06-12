@@ -42,14 +42,20 @@ const present = execFileSync(
   .split("\n")
   .filter(Boolean);
 
-if (present.length === 0) {
+// git archive hard-fails on any pathspec with zero matches (e.g. a brand-new
+// guide that only exists in the working tree), so archive only what exists.
+const archivable = wanted.filter((path) =>
+  present.some((file) => file === path || file.startsWith(`${path}/`)),
+);
+
+if (!archivable.includes(`guides/${slug}`)) {
   console.log(`i "${slug}" does not exist at ${ref} — nothing to protect yet`);
   process.exit(0);
 }
 
 const baseline = mkdtempSync(join(tmpdir(), "totodile-baseline-"));
 try {
-  const tar = execFileSync("git", ["archive", ref, "--", ...wanted], {
+  const tar = execFileSync("git", ["archive", ref, "--", ...archivable], {
     cwd: root,
     maxBuffer: 256 * 1024 * 1024,
   });
