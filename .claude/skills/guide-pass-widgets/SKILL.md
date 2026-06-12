@@ -59,5 +59,6 @@ must answer "where I currently am" (P4). Wait for sign-off.
   exactly the rows marked `flagged`, each with an anomaly line; `inputs` =
   files read with `sha256sum` digests (at minimum `layers/spine.json`,
   `deck.json`, `sources.json`).
-- `yarn validate-guides` green.
+- `yarn validate-guides` green. Re-runs also finish with
+  `yarn check-stable-ids <slug>` green — the §6.8 hard gate behind the ID rule.
 - One commit: `guide(<slug>): widget-<seg> <note>`.

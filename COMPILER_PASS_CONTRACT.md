@@ -53,8 +53,11 @@ layer per widget instance keeps each reviewable in one sitting (§15 risk 2).
    prior artifact (and the approved layer, once one exists) and re-emits every
    surviving entity under its original ID, even if the entity moved chapters or
    widgets — the ID's middle segment records where it was *minted*, nothing more.
-   Renaming or dropping an ID that an approved layer contains is a hard QA failure
-   (mechanics: Phase 2 Task 4). New entities mint new IDs under the §20.3 grammar.
+   Renaming or dropping an ID that an approved layer (or a playable guide.json)
+   contains is a hard failure: `yarn check-stable-ids <slug>` (from `app/`)
+   diffs the working tree against the shipped baseline (`main` by default) and
+   every re-run must finish with it green. New entities mint new IDs under the
+   §20.3 grammar.
 4. **`sources.json` is append-only.** A re-run may add source entries; it never
    edits or removes existing ones.
 5. **`approvals.json` is untouchable.** Only the review-lens approval flow writes

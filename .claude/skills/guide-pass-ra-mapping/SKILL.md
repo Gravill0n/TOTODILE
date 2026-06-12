@@ -58,5 +58,7 @@ wait for sign-off.
   entries; unmapped achievements → `anomalies`; doubtful targets →
   `flaggedItemIds`; `inputs` = files read with `sha256sum` digests (spine and
   widget layers at minimum).
-- `yarn validate-guides` green.
+- `yarn validate-guides` green. Re-runs also finish with
+  `yarn check-stable-ids <slug>` green (targets must keep resolving against
+  preserved IDs).
 - One commit: `guide(<slug>): ra-mapping <note>`.

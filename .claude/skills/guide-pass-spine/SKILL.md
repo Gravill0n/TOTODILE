@@ -64,5 +64,6 @@ feedback before continuing.
   `sources.json`; on a re-run, `notes` states what changed and which rejection
   note it answers.
 - `yarn validate-guides` green (it schema-checks the layer, flag parity, and
-  that every `sourceRefs` entry resolves).
+  that every `sourceRefs` entry resolves). Re-runs also finish with
+  `yarn check-stable-ids <slug>` green — the §6.8 hard gate behind the ID rule.
 - One commit: `guide(<slug>): spine <note>`.

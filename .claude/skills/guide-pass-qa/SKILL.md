@@ -33,7 +33,11 @@ nothing silently — not even a typo.
 ```bash
 yarn validate-guides            # schema + cross-file invariants, layer contract
 yarn assemble-guide <slug>      # staleness check, then merge layers → guide.json (+ ra-mapping.json)
+yarn check-stable-ids <slug>    # §6.8 hard gate: no protected ID from the shipped baseline may vanish
 ```
+`check-stable-ids` diffs against `main` by default; pass `--against <ref>` when
+the approved baseline lives elsewhere (e.g. re-running mid-branch after an
+approval that has not merged yet).
 `assemble-guide` refuses if any pass report's recorded input digest no longer
 matches the file on disk (a stale layer — contract §6) or if the merged guide
 violates `guideFile` (duplicate checkable IDs across layers, bad scope refs).
