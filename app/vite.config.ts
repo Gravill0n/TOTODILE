@@ -65,7 +65,8 @@ export default defineConfig({
         description:
           "Tracker Of Things, Order, Data, Items, Lists & Everything",
         display: "standalone",
-        // Placeholder paper tone until Task 6 lands the @theme tokens (§9.1).
+        // Mirrors --color-paper (light) in src/index.css — keep in sync;
+        // manifests can't vary by color scheme (§9.1).
         theme_color: "#f6f1e7",
         background_color: "#f6f1e7",
         icons: [
