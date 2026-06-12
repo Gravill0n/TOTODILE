@@ -47,10 +47,8 @@ layer per widget instance keeps each reviewable in one sitting (§15 risk 2).
    the doubt. A gap in the sources is an anomaly, never a guess.
 2. **Every emitted row carries `sourceRefs` (≥1, resolving in `sources.json`) and a
    `confidence` level** (FR-D2/D3). This is structural — the layer schemas reuse the
-   entity schemas (`chapter`, `widget`), which require both on every step and row.
-   Exception: `ra-mapping` rows reuse the standalone `raMapping` entry shape, which
-   carries neither (a v0 decision); doubtful mappings are flagged via the report
-   instead (§4).
+   entity schemas (`chapter`, `widget`, `raMapping`), which require both on every
+   step, widget row, and mapping entry. No exceptions.
 3. **Stable IDs are never re-minted** (§6.8). Before emitting, a pass reads its own
    prior artifact (and the approved layer, once one exists) and re-emits every
    surviving entity under its original ID, even if the entity moved chapters or
@@ -125,10 +123,11 @@ review lens's raw material (FR-E2, §7 review screen) and the editor's first rea
 - `report.anomalies` — human-readable problem lines: source conflicts, gaps,
   unreachable images, cross-reference findings (qa). Free-form but one problem per
   line, prefixed with the most specific ID available.
-- `report.flaggedItemIds` — for spine and widget layers this must equal the set of
-  rows the artifact marks `confidence: "flagged"` (validator-enforced). For
-  ra-mapping it lists the `targetItemId` of every doubtful mapping. For
-  source-gathering and qa it lists any checkable the pass wants review eyes on.
+- `report.flaggedItemIds` — for spine, widget, and ra-mapping layers this must
+  equal the set of rows the artifact marks `confidence: "flagged"`
+  (validator-enforced; for ra-mapping that set is the flagged entries'
+  `targetItemId`s). For source-gathering and qa it lists any checkable the pass
+  wants review eyes on.
 - A flagged row **must** also have an anomaly line saying why (the lens shows them
   side by side with the source excerpt, FR-E2/E3).
 

@@ -44,6 +44,13 @@ artifacts (`spineLayer`, `widgetLayer`; the ra-mapping layer reuses
 The `contentHash` algorithm is pinned: `sha256:` + hex of the artifact
 bytes (contract §5).
 
+Amended again in Phase 2 Task 3: `raMappingEntry` gains required
+`sourceRefs` + `confidence`, closing the FR-D2 exception (every emitted
+row carries both — mapping rows were the only holdouts). Existing
+ml-partners-in-time entries migrated mechanically (`sourceRefs:
+["src-ra"]`, `confidence: "normal"` — the whole mapping came from the RA
+set source during the Phase 0 translation).
+
 - The seven §6 repo-side entities: guide spine (chapters → steps with
   missable + achievement annotations), the 7 widget primitives (closed
   set), genre deck, library manifest, RA mapping, source manifest,

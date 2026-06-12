@@ -2,6 +2,15 @@ import { describe, it } from "vitest";
 import { raMapping } from "../../src/schema";
 import { expectParses, expectRejects, validRaMapping } from "./helpers";
 
+function entry(raAchievementId: number, targetItemId: string) {
+  return {
+    raAchievementId,
+    targetItemId,
+    sourceRefs: ["src-wiki"],
+    confidence: "normal",
+  };
+}
+
 describe("raMapping", () => {
   it("parses a valid mapping", () => {
     expectParses(raMapping, validRaMapping());
@@ -15,8 +24,8 @@ describe("raMapping", () => {
     expectParses(raMapping, {
       ...validRaMapping(),
       entries: [
-        { raAchievementId: 101, targetItemId: "fictional-quest:c1:s1" },
-        { raAchievementId: 102, targetItemId: "fictional-quest:c1:s1" },
+        entry(101, "fictional-quest:c1:s1"),
+        entry(102, "fictional-quest:c1:s1"),
       ],
     });
   });
@@ -25,8 +34,8 @@ describe("raMapping", () => {
     expectRejects(raMapping, {
       ...validRaMapping(),
       entries: [
-        { raAchievementId: 101, targetItemId: "fictional-quest:c1:s1" },
-        { raAchievementId: 101, targetItemId: "fictional-quest:c1:s2" },
+        entry(101, "fictional-quest:c1:s1"),
+        entry(101, "fictional-quest:c1:s2"),
       ],
     });
   });
@@ -35,9 +44,16 @@ describe("raMapping", () => {
     expectRejects(raMapping, {
       ...validRaMapping(),
       entries: [
-        { raAchievementId: "101", targetItemId: "fictional-quest:c1:s1" },
+        { ...entry(101, "fictional-quest:c1:s1"), raAchievementId: "101" },
       ],
     });
+  });
+
+  it("rejects an entry without sourceRefs or confidence (FR-D2)", () => {
+    const { sourceRefs, ...noRefs } = entry(101, "fictional-quest:c1:s1");
+    expectRejects(raMapping, { ...validRaMapping(), entries: [noRefs] });
+    const { confidence, ...noConfidence } = entry(101, "fictional-quest:c1:s1");
+    expectRejects(raMapping, { ...validRaMapping(), entries: [noConfidence] });
   });
 
   it("rejects a missing RA game ID", () => {

@@ -90,7 +90,12 @@ describe("validateGuides", () => {
   it("flags an RA-mapping target that resolves nowhere (§6.5)", () => {
     const mapping = validRaMapping();
     mapping.entries = [
-      { raAchievementId: 101, targetItemId: "fictional-quest:c9:s9" },
+      {
+        raAchievementId: 101,
+        targetItemId: "fictional-quest:c9:s9",
+        sourceRefs: ["src-wiki"],
+        confidence: "normal",
+      },
     ];
     const root = writeTree({
       ...happyTree(),
@@ -98,6 +103,18 @@ describe("validateGuides", () => {
     });
     expect(messagesOf(root).join("\n")).toContain(
       'targets unknown item "fictional-quest:c9:s9"',
+    );
+  });
+
+  it("flags a dangling sourceRef in the assembled ra-mapping.json (FR-D2/D3)", () => {
+    const mapping = validRaMapping();
+    if (mapping.entries[1]) mapping.entries[1].sourceRefs = ["src-ghost"];
+    const root = writeTree({
+      ...happyTree(),
+      "guides/fictional-quest/ra-mapping.json": mapping,
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      'achievement 102 references unknown source "src-ghost"',
     );
   });
 
@@ -294,15 +311,39 @@ describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () =>
     );
   });
 
-  it("flags ra-mapping report flags that target unmapped items", () => {
-    const report = validPassReport("ra-mapping");
-    report.report.flaggedItemIds = ["fictional-quest:c9:s9"] as never;
+  it("enforces flag parity for ra-mapping entries too (FR-D2)", () => {
+    const flaggedMapping = validRaMapping();
+    if (flaggedMapping.entries[0]) {
+      flaggedMapping.entries[0].confidence = "flagged";
+    }
     const root = writeTree({
       ...happyLayers(),
-      [`${layersBase}/ra-mapping.report.json`]: report,
+      [`${layersBase}/ra-mapping.json`]: flaggedMapping,
     });
     expect(messagesOf(root).join("\n")).toContain(
-      '"fictional-quest:c9:s9" is not a mapping target',
+      '"fictional-quest:c1:s1" is flagged but missing from flaggedItemIds',
+    );
+
+    const overReporting = validPassReport("ra-mapping");
+    overReporting.report.flaggedItemIds = ["fictional-quest:c9:s9"] as never;
+    const root2 = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/ra-mapping.report.json`]: overReporting,
+    });
+    expect(messagesOf(root2).join("\n")).toContain(
+      'lists "fictional-quest:c9:s9" but the artifact row is not flagged',
+    );
+  });
+
+  it("flags a dangling sourceRef in a ra-mapping layer entry (FR-D2/D3)", () => {
+    const mapping = validRaMapping();
+    if (mapping.entries[0]) mapping.entries[0].sourceRefs = ["src-ghost"];
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/ra-mapping.json`]: mapping,
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      '"achievement 101" references unknown source "src-ghost"',
     );
   });
 

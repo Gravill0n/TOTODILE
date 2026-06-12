@@ -213,6 +213,22 @@ function validateGuideFolder(
     }
   }
 
+  // FR-D2/D3: mapping rows are emitted rows — their sourceRefs resolve too.
+  if (mapping && sources) {
+    const sourceIds = new Set(sources.sources.map((s) => s.id));
+    for (const entry of mapping.entries) {
+      for (const ref of entry.sourceRefs) {
+        if (!sourceIds.has(ref)) {
+          findings.push({
+            guide: slug,
+            file: "ra-mapping.json",
+            message: `achievement ${entry.raAchievementId} references unknown source "${ref}"`,
+          });
+        }
+      }
+    }
+  }
+
   // §6.3: a widget instance fills an existing deck slot of its own primitive.
   if (guide && deck) {
     for (const widget of guide.widgets) {
@@ -363,21 +379,6 @@ function validateLayers(
         file,
         message: `layer "${layerId}" has no ${layerId}.report.json`,
       });
-    } else if (artifact.kind === "ra-mapping") {
-      // ra-mapping rows carry no confidence field; the report's flags point
-      // at doubtful targets and only need to address mapped items.
-      const targets = new Set(
-        artifact.value.entries.map((e) => e.targetItemId),
-      );
-      for (const id of report.report.flaggedItemIds) {
-        if (!targets.has(id)) {
-          findings.push({
-            guide: slug,
-            file: `layers/${layerId}.report.json`,
-            message: `flagged item "${id}" is not a mapping target in ${file}`,
-          });
-        }
-      }
     } else {
       const flagged = flaggedIdsOf(artifact);
       const listed = new Set(report.report.flaggedItemIds);
@@ -428,22 +429,31 @@ function validateLayers(
   }
 }
 
-function flaggedIdsOf(
-  artifact: Extract<LayerArtifact, { kind: "spine" | "widget" }>,
-): Set<string> {
-  if (artifact.kind === "spine") {
-    return new Set(
-      artifact.value.chapters
-        .flatMap((c) => c.steps)
-        .filter((s) => s.confidence === "flagged")
-        .map((s) => s.id),
-    );
+// FR-D2 flag parity is uniform across the three layer kinds; for ra-mapping
+// the flag set is the targetItemIds of flagged entries (several achievements
+// may share a target — the set semantics absorb that).
+function flaggedIdsOf(artifact: LayerArtifact): Set<string> {
+  switch (artifact.kind) {
+    case "spine":
+      return new Set(
+        artifact.value.chapters
+          .flatMap((c) => c.steps)
+          .filter((s) => s.confidence === "flagged")
+          .map((s) => s.id),
+      );
+    case "widget":
+      return new Set(
+        widgetCheckables(artifact.value.widget)
+          .filter((c) => c.confidence === "flagged")
+          .map((c) => c.itemId),
+      );
+    case "ra-mapping":
+      return new Set(
+        artifact.value.entries
+          .filter((e) => e.confidence === "flagged")
+          .map((e) => e.targetItemId),
+      );
   }
-  return new Set(
-    widgetCheckables(artifact.value.widget)
-      .filter((c) => c.confidence === "flagged")
-      .map((c) => c.itemId),
-  );
 }
 
 function sourceRefsOf(artifact: LayerArtifact): [string, string[]][] {
@@ -457,7 +467,10 @@ function sourceRefsOf(artifact: LayerArtifact): [string, string[]][] {
         (c): [string, string[]] => [c.itemId, c.sourceRefs],
       );
     case "ra-mapping":
-      return [];
+      return artifact.value.entries.map((e): [string, string[]] => [
+        `achievement ${e.raAchievementId}`,
+        e.sourceRefs,
+      ]);
   }
 }
 

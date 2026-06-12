@@ -270,8 +270,18 @@ export function validRaMapping() {
     guideId: "fictional-quest",
     raGameId: 9000,
     entries: [
-      { raAchievementId: 101, targetItemId: "fictional-quest:c1:s1" },
-      { raAchievementId: 102, targetItemId: "fictional-quest:w1:r1" },
+      {
+        raAchievementId: 101,
+        targetItemId: "fictional-quest:c1:s1",
+        sourceRefs: ["src-wiki"],
+        confidence: "normal",
+      },
+      {
+        raAchievementId: 102,
+        targetItemId: "fictional-quest:w1:r1",
+        sourceRefs: ["src-wiki"],
+        confidence: "normal",
+      },
     ],
   };
 }

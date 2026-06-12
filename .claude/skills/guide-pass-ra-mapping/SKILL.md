@@ -38,9 +38,11 @@ or widget item) where it is earned. Conventions:
 - An achievement with no natural home is **left unmapped** — listed in
   `anomalies`, never force-fitted (unmapped achievements legally surface in
   the Sync receipt's "unmapped" bucket, §6.5).
-- A mapping you are unsure about: map it, list its `targetItemId` in
-  `flaggedItemIds`, and add an anomaly line saying why (these rows carry no
-  confidence field — the report *is* the flag, contract §2.2).
+- Every entry carries `sourceRefs` (≥1: the ra-set source, plus whatever
+  source pinned the target step) and `confidence` (FR-D2).
+- A mapping you are unsure about: emit it with `confidence: "flagged"` and an
+  anomaly line saying why; its `targetItemId` lands in the report's
+  `flaggedItemIds` (the validator enforces parity, like every other layer).
 Present the full table (achievement → target, plus the unmapped list) and
 wait for sign-off.
 
