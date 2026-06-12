@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "spine",
+  "layer": "spine",
+  "generatedAt": "2026-06-12T17:30:00Z",
+  "inputs": [
+    {
+      "file": "sources.json",
+      "sha256": "a021213212d12513010bcf4ad06e718fb1a40d55622392dc9a0dca3ae1bb9860"
+    }
+  ],
+  "report": {
+    "rowCount": 159,
+    "anomalies": [
+      "pokemon-crystal:c2:s10: the Egg handover spot/timing in Violet City is not pinned by the fetched Bulbapedia text (commonly the Pokémon Center after the Falkner win) — verify",
+      "pokemon-crystal:c4:s3: Apri-Cornucopia's batch mechanic (how Kurt hands over 10+ balls at once) is unverified in the available sources — text stays vague deliberately",
+      "pokemon-crystal:c5:s5: Bill's father's appearance schedule, taught moves, and cost outside the Game Corner are unverified (not in the Bulbapedia section)",
+      "pokemon-crystal:c5:s11: the Togepi hatch window is approximate (egg given after Falkner; hatch timing depends on steps walked) — placement in c5 is editorial",
+      "pokemon-crystal:c6:s2: Cooltrainer Nick's conditions for appearing in the Bug-Catching Contest roster are unverified",
+      "pokemon-crystal:c10:s6: the exact trigger/timing of the Route 36 Suicune sighting is not pinned by the fetched sources — verify before approval",
+      "pokemon-crystal:c18:s3: the full Gift-Pokémon list is partially enumerated (Bill's Eevee gift in Goldenrod is NOT yet a route step — a spine re-run should add it around c7/c8)",
+      "pokemon-crystal:c18:s9: the Indigo Plateau rival rematch conditions (day/timing) are unverified",
+      "src-ra-wiki predates the current RA set revision: the 199xxx achievements are absent from the snapshot, so all new-set conditions were taken verbatim from the RA set page (src-ra)",
+      "Kanto gym trainer rosters are name/prize level of detail where the walkthrough summaries compressed them (Erika's gym); leader teams are exact throughout"
+    ],
+    "flaggedItemIds": [
+      "pokemon-crystal:c2:s10",
+      "pokemon-crystal:c4:s3",
+      "pokemon-crystal:c5:s5",
+      "pokemon-crystal:c5:s11",
+      "pokemon-crystal:c6:s2",
+      "pokemon-crystal:c10:s6",
+      "pokemon-crystal:c18:s3",
+      "pokemon-crystal:c18:s9"
+    ]
+  },
+  "notes": [
+    "Full spine: 18 chapters / 159 steps, per the outline Pierre approved 2026-06-12 (per-gym Set-style cap-warning steps included; caps verbatim from the RA set page).",
+    "Sample-gate calibration honored throughout: backtracking explicit — every location revisit is its own step with what is doable at that time; species enumeration deferred to the Wild encounters widgets, the spine marks catch windows.",
+    "All 113 RA achievements are anchored on exactly one step each (verified mechanically: 113/113, no duplicates).",
+    "Images: 2 maps so far (new-bark-town, violet-city); a fuller per-chapter map sweep is deferred to the widget/map passes — every current images[] ref exists on disk."
+  ]
+}
