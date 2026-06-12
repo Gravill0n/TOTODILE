@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-c6",
+    "title": "Wild encounters — National Park stretch",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c6"
+    },
+    "deckPosition": 1,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "area",
+        "label": "Area"
+      },
+      {
+        "id": "species",
+        "label": "Pokémon"
+      },
+      {
+        "id": "levels",
+        "label": "Lv."
+      },
+      {
+        "id": "when",
+        "label": "Time / Method"
+      },
+      {
+        "id": "rate",
+        "label": "Rate"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:enc-c6:r35-md",
+        "checkable": false,
+        "cells": {
+          "area": "Route 35",
+          "species": "Pidgey / Snubbull / Growlithe / Abra / Jigglypuff / Ditto / Yanma",
+          "levels": "10–14",
+          "when": "Morning/Day",
+          "rate": "30% down to 1% (Yanma rare)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r35-n",
+        "checkable": false,
+        "cells": {
+          "area": "Route 35",
+          "species": "Drowzee / Hoothoot / Snubbull / Abra / Jigglypuff / Ditto / Yanma",
+          "levels": "10–14",
+          "when": "Night",
+          "rate": "30% down to 1%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r35-surf",
+        "checkable": false,
+        "cells": {
+          "area": "Route 35",
+          "species": "Psyduck / Golduck",
+          "levels": "15–24",
+          "when": "Surf",
+          "rate": "—"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r35-fish",
+        "checkable": false,
+        "cells": {
+          "area": "Route 35",
+          "species": "Magikarp / Poliwag / Poliwhirl (Super)",
+          "levels": "10/20/40",
+          "when": "Fishing",
+          "rate": "by rod"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r35-hb",
+        "checkable": false,
+        "cells": {
+          "area": "Route 35",
+          "species": "Hoothoot / Exeggcute / Spinarak / Ledyba",
+          "levels": "10",
+          "when": "Headbutt",
+          "rate": "—"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-nidoranf",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Nidoran♀",
+          "levels": "12",
+          "when": "Morning/Day",
+          "rate": "30%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-nidoranm",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Nidoran♂",
+          "levels": "12",
+          "when": "Morning/Day",
+          "rate": "30%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-ledyba",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Ledyba",
+          "levels": "14",
+          "when": "Morning",
+          "rate": "20%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-sunkern",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Sunkern",
+          "levels": "14",
+          "when": "Day",
+          "rate": "20%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-pidgey",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Pidgey",
+          "levels": "13",
+          "when": "Morning/Day",
+          "rate": "10%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-caterpie",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Caterpie",
+          "levels": "10",
+          "when": "Morning/Day",
+          "rate": "5%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-weedle",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Weedle",
+          "levels": "10",
+          "when": "Morning/Day",
+          "rate": "5%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-hoothoot",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Hoothoot",
+          "levels": "13–15",
+          "when": "Night",
+          "rate": "40%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-psyduck",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Psyduck",
+          "levels": "12",
+          "when": "Night",
+          "rate": "30%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-spinarak",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Spinarak",
+          "levels": "14",
+          "when": "Night",
+          "rate": "20%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-venonat",
+        "checkable": false,
+        "cells": {
+          "area": "National Park",
+          "species": "Venonat",
+          "levels": "10–12",
+          "when": "Night",
+          "rate": "10%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:park-contest",
+        "checkable": false,
+        "cells": {
+          "area": "National Park — Bug-Catching Contest (Tue/Thu/Sat)",
+          "species": "Caterpie / Weedle / Metapod / Kakuna / Venonat / Paras / Butterfree / Beedrill / SCYTHER / PINSIR",
+          "levels": "7–18",
+          "when": "Contest (20 Park Balls)",
+          "rate": "Scyther & Pinsir are the judges' favorites"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r36-pidgey",
+        "checkable": false,
+        "cells": {
+          "area": "Route 36",
+          "species": "Pidgey",
+          "levels": "4–6",
+          "when": "Morning/Day",
+          "rate": "40% M · 70% D"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r36-ledyba",
+        "checkable": false,
+        "cells": {
+          "area": "Route 36",
+          "species": "Ledyba",
+          "levels": "4",
+          "when": "Morning",
+          "rate": "30%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r36-bellsprout",
+        "checkable": false,
+        "cells": {
+          "area": "Route 36",
+          "species": "Bellsprout",
+          "levels": "5",
+          "when": "Any",
+          "rate": "20%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r36-growlithe",
+        "checkable": false,
+        "cells": {
+          "area": "Route 36",
+          "species": "Growlithe",
+          "levels": "5",
+          "when": "Morning/Day",
+          "rate": "10%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r36-hoothoot",
+        "checkable": false,
+        "cells": {
+          "area": "Route 36",
+          "species": "Hoothoot",
+          "levels": "4–5",
+          "when": "Night",
+          "rate": "45%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r36-spinarak",
+        "checkable": false,
+        "cells": {
+          "area": "Route 36",
+          "species": "Spinarak",
+          "levels": "4",
+          "when": "Night",
+          "rate": "30%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r36-gastly",
+        "checkable": false,
+        "cells": {
+          "area": "Route 36",
+          "species": "Gastly",
+          "levels": "5",
+          "when": "Night",
+          "rate": "5%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r36-sudowoodo",
+        "checkable": false,
+        "cells": {
+          "area": "Route 36",
+          "species": "SUDOWOODO (interactable — SquirtBottle)",
+          "levels": "20",
+          "when": "Once",
+          "rate": "catch it! (missable)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r36-hb",
+        "checkable": false,
+        "cells": {
+          "area": "Route 36",
+          "species": "Headbutt trees",
+          "levels": "10",
+          "when": "Headbutt",
+          "rate": "—"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r37-m",
+        "checkable": false,
+        "cells": {
+          "area": "Route 37",
+          "species": "Ledyba 30% / Pidgey 20% / Growlithe 10% / Pidgeotto 5% / Ledian 5%",
+          "levels": "13–16",
+          "when": "Morning",
+          "rate": "sums short — see report"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r37-d",
+        "checkable": false,
+        "cells": {
+          "area": "Route 37",
+          "species": "Pidgey 55% / Growlithe 40% / Pidgeotto 5%",
+          "levels": "13–16",
+          "when": "Day",
+          "rate": "—"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r37-n",
+        "checkable": false,
+        "cells": {
+          "area": "Route 37",
+          "species": "Stantler 40% / Spinarak 30% / Hoothoot 20% / Noctowl 5% / Ariados 5%",
+          "levels": "14–16",
+          "when": "Night",
+          "rate": "—"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:enc-c6:r37-hb",
+        "checkable": false,
+        "cells": {
+          "area": "Route 37",
+          "species": "Hoothoot / Exeggcute / Spinarak / Ledyba",
+          "levels": "10",
+          "when": "Headbutt",
+          "rate": "50/20/15/15%"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
