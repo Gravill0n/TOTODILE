@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "qa",
+  "layer": "qa",
+  "generatedAt": "2026-06-13T00:05:00Z",
+  "inputs": [
+    {
+      "file": "layers/ra-mapping.json",
+      "sha256": "4a801f80e8fc257cf47bc0e19c96b0cf5e37f4ff40c99503a8c638814d8b06ff"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "f8ba5fe7e99282cba17fcbff46a52777801519e28bb362a48005ad46ae1affa8"
+    },
+    {
+      "file": "layers/widget-badges.json",
+      "sha256": "2dfb36b1338271dbb12dfc96ebdde51baa0dd80c6a55a043c0a13ea27aa34280"
+    },
+    {
+      "file": "layers/widget-dex.json",
+      "sha256": "6114e2853d85411ee136fd95ebdfbd2a9517d6822c8cc6a66ea31be25ba7e885"
+    },
+    {
+      "file": "layers/widget-e4-prep.json",
+      "sha256": "60173b966287167de3b909ddab51f938ad89a053d3833793ad9af1a4f22ad885"
+    },
+    {
+      "file": "layers/widget-enc-c11.json",
+      "sha256": "107ea6414fdcb10695a0aa364f17c24cff1b0569d4548f464378195d4866dc19"
+    },
+    {
+      "file": "layers/widget-enc-c12.json",
+      "sha256": "3a6f2b35328314e661e49a238a9c30b4ec7f7958b0e261cd780b39d7f943d1be"
+    },
+    {
+      "file": "layers/widget-enc-c14.json",
+      "sha256": "c4a737a4a698b7f60ed773855feb842bd9e8c100704e5f4ab5314b25048ef3db"
+    },
+    {
+      "file": "layers/widget-enc-c15.json",
+      "sha256": "a3b59b0ea27554918af192c24559c8487b87e70e5b57714cda7f112a59ade9cc"
+    },
+    {
+      "file": "layers/widget-enc-c16.json",
+      "sha256": "58240242b3c7eece6d37a75142a8ab9d744427fa31da158d21cee18951f0e528"
+    },
+    {
+      "file": "layers/widget-enc-c17.json",
+      "sha256": "45d0b8664d3f431b74e5d1f5823b81aee8472cdc3f8142b4ac0fad98756acb65"
+    },
+    {
+      "file": "layers/widget-enc-c2.json",
+      "sha256": "d1e8c1c6de12d960c49082e5774fd7b8e9087f4ce64489ca6773c909e3f4f2d6"
+    },
+    {
+      "file": "layers/widget-enc-c3.json",
+      "sha256": "6f47617fd8e231a7b2c4128e3e359350e093a120f1c19a2c4dce22a7cafc4bb1"
+    },
+    {
+      "file": "layers/widget-enc-c4.json",
+      "sha256": "2bcf95ad5da93fb37a58ade208acf6cc7f416197d7cebaf2592fc35354e067b4"
+    },
+    {
+      "file": "layers/widget-enc-c6.json",
+      "sha256": "7854180678f5f1fa82f6f57533848e974bbe3c6495770828263a728da5687267"
+    },
+    {
+      "file": "layers/widget-enc-c8.json",
+      "sha256": "93738f9dc55312ad89ec457a2fed95547989aaf9fb00e2eadc1edd54f2d2b533"
+    },
+    {
+      "file": "layers/widget-enc-c9.json",
+      "sha256": "2366b30cfeb958d95d87f9c6e3ba2c9b26cbcdcc4eccb49384def7dbcc6d24b6"
+    },
+    {
+      "file": "layers/widget-legend-map.json",
+      "sha256": "9ddd738b3fa78f43022df067c1745987cccbf92a2894fd0ff357888c1a5a56f8"
+    },
+    {
+      "file": "layers/widget-oak-c11.json",
+      "sha256": "df1e3fe7db973956a32253c42795af09efa05d12afaf0bd9eb873cbbe649cdd8"
+    },
+    {
+      "file": "layers/widget-oak-c13.json",
+      "sha256": "7c0a955c98738a0c8eb0bd6720b17472cedb9a78b0e2a229e684b8def9c49a8d"
+    },
+    {
+      "file": "layers/widget-oak-c14.json",
+      "sha256": "036cfb9f2f4cb60d9e134dd9da83700fdbc3a4af9a57b607ade00d42491c6ac4"
+    },
+    {
+      "file": "layers/widget-oak-c17.json",
+      "sha256": "d947255f113949d3300a233914d207ddf6caf1f994cfd4a45ba12a4f55baf096"
+    },
+    {
+      "file": "layers/widget-oak-c2.json",
+      "sha256": "71c9c41ba264eb536107e9dd6f9f6183c43c1131699b22b4a785b238a2f628d8"
+    },
+    {
+      "file": "layers/widget-oak-c4.json",
+      "sha256": "911413447b99f517fc93eba9a21cf84ac3ce645a8b24356ff1cdb225d22b98e8"
+    },
+    {
+      "file": "layers/widget-oak-c5.json",
+      "sha256": "5ae41f98c7f258ca39cd8e84935a0bb3d96b42692bfb0e476a976f131e0dfb1b"
+    },
+    {
+      "file": "layers/widget-oak-c7.json",
+      "sha256": "fe5e57aa4c17872bbc0e22fb6c3e85745d5f6f46e6b5703abd2ae0d4211cd143"
+    },
+    {
+      "file": "layers/widget-oak-c8.json",
+      "sha256": "f925600c11ed01eeaf51704b653756904e3b7fb6b272605f4283df640dac429a"
+    },
+    {
+      "file": "layers/widget-oak-c9.json",
+      "sha256": "9315e87afb5a0a6ab31e5ca06ad9f890ab760b48b1389d7b225df74fcd341382"
+    },
+    {
+      "file": "layers/widget-trades.json",
+      "sha256": "520c92d95d983cc8198b635cfaee66410879ffda96b6ebf8de84ef6bafb549a6"
+    },
+    {
+      "file": "guide.json",
+      "sha256": "1050873fb5330c0d50d75132d47b432b869e2d0f49c92142033abe90a789dc67"
+    },
+    {
+      "file": "ra-mapping.json",
+      "sha256": "4a801f80e8fc257cf47bc0e19c96b0cf5e37f4ff40c99503a8c638814d8b06ff"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "a021213212d12513010bcf4ad06e718fb1a40d55622392dc9a0dca3ae1bb9860"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "ef213f8d17f3cab306e7df883682918ee40d45cb1e1a7b6ee3a72f5d609cbacc"
+    }
+  ],
+  "report": {
+    "rowCount": 63,
+    "anomalies": [
+      "spine: 8 flagged steps remain open verification debt (egg spot RESOLVED by src-oak-pdf — Violet PC; Bill's Eevee CONFIRMED Goldenrod — both await a spine re-run to fold in, along with a new Bill's-Eevee step)",
+      "widget-oak-c14: Rainbow Wing giver conflict (src-oak-pdf: Eusine in Celadon · src-bulba-walkthrough: Tin Tower sage) — needs an in-game check before approval",
+      "widget-enc-c8 / widget-enc-c14: coarsest encounter instances (version-mixed source tables) — recommend deepening re-runs before approval",
+      "ra-mapping: 5 entries flagged, riding the spine flags",
+      "31 flagged rows across all layer reports = the review lens's worklist; no mechanical failures anywhere"
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "MECHANICAL: validate-guides green (2 guides) · assemble-guide wrote guide.json (159 steps, 27 widgets) + ra-mapping.json and revalidated in place · check-stable-ids vacuous-green (guide not on main yet).",
+    "SEEDED-ERROR PROOF (Phase 2 exit gate): in a scratch copy — (1) re-spelled step ID → assemble refused with 28 staleness findings; (2) ghost mapping target → validate FAIL 'targets unknown item'; (3) flag tampering → validate FAIL flag-parity. All three caught.",
+    "JUDGMENT: all image refs exist on disk · all 32 missable steps state deadlines · 113/113 achievements anchored once and mapped once · flags spot-read against their anomaly lines, all honest doubts.",
+    "VERDICT: ready for the Phase 3 review lens. Recommended re-runs before approval: spine (fold in the two resolved flags + Bill's-Eevee step, settle the Rainbow Wing conflict), enc-c8 and enc-c14 deepening."
+  ]
+}
