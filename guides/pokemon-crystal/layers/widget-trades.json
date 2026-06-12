@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:trades",
+    "title": "In-game trades",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 3,
+    "type": "flowchart",
+    "nodes": [
+      {
+        "itemId": "pokemon-crystal:trades:onix",
+        "label": "Bellsprout → Onix",
+        "note": "Violet City house (c2)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:machop",
+        "label": "Abra → Machop",
+        "note": "Goldenrod Dept. Store 5F (c5)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:dodrio",
+        "label": "Dragonair (♀) → Dodrio",
+        "note": "Blackthorn City, eastern house (c11)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:magneton",
+        "label": "Dugtrio → Magneton",
+        "note": "Route 10 area trader — Magneton holds Metal Coat (c14)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:xatu",
+        "label": "Haunter → Xatu",
+        "note": "Pewter City Pokémon Center (c15)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:aerodactyl",
+        "label": "Chansey → Aerodactyl",
+        "note": "Route 14 — Aerodactyl holds Gold Berry (c15)",
+        "sourceRefs": [
+          "src-bulba-walkthrough"
+        ],
+        "confidence": "normal"
+      }
+    ],
+    "edges": []
+  }
+}

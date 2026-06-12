@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:dex",
+    "title": "Pokédex",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 2,
+    "type": "counter",
+    "counters": [
+      {
+        "itemId": "pokemon-crystal:dex:caught",
+        "label": "Pokémon registered",
+        "target": 206,
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:dex:unown",
+        "label": "Unown forms",
+        "target": 26,
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
