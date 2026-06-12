@@ -6,6 +6,7 @@ export * from "./common.ts";
 export * from "./deck.ts";
 export * from "./guide.ts";
 export * from "./library.ts";
+export * from "./progress.ts";
 export * from "./raMapping.ts";
 export * from "./sources.ts";
 export * from "./spine.ts";

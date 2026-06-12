@@ -330,3 +330,36 @@ export function validApprovals() {
     layers: [validLayer("draft")],
   };
 }
+
+export function validProgressSlot() {
+  return {
+    guideId: "fictional-quest",
+    currentStepId: "fictional-quest:c1:s2",
+    itemStates: {
+      "fictional-quest:c1:s1": {
+        state: "done" as const,
+        at: "2026-06-12T08:00:00Z",
+      },
+      "fictional-quest:c2:s3": {
+        state: "skipped" as const,
+        at: "2026-06-12T08:01:00Z",
+      },
+    },
+    counterValues: { "fictional-quest:counters:blue-coins": 7 },
+    stats: {
+      stepsDone: 1,
+      stepsTotal: 10,
+      currentChapterTitle: "Chapter 1 — The Castle Gate",
+    },
+    lastActivityAt: "2026-06-12T08:01:00Z",
+  };
+}
+
+export function validProgressExport() {
+  return {
+    kind: "totodile-progress",
+    schemaVersion: SCHEMA_VERSION,
+    exportedAt: "2026-06-12T08:02:00Z",
+    slots: [validProgressSlot()],
+  };
+}

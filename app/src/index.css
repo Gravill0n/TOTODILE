@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+/* Paper-guide palette (§0.4, §9.1): warm neutrals after the HeartGold paper
+   guide. The token NAMES are the contract — components style only through
+   these, never literal colors (§22.1). Taste changes happen here and nowhere
+   else; index.html's theme-color metas and the PWA manifest colors in
+   vite.config.ts mirror --color-paper and must move with it. */
+@theme {
+  --color-paper: #f6f1e7;
+  --color-paper-dim: #ece4d4;
+  --color-ink: #2b2620;
+  --color-ink-soft: #6b6354;
+  --color-card: #fffdf7;
+  --color-line: #d8cdb8;
+  /* One accent, reserved for achievements / RA moments (§7). */
+  --color-accent: #a8431d;
+  /* The one unmistakable missable treatment, used everywhere (§7). */
+  --color-missable: #b3261e;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+/* Dark mode = dimmed paper, never neutral black (§7); follows the system
+   preference (§5.4). Same tokens, swapped values — components carry no
+   dark: variants. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #201c16;
+    --color-paper-dim: #181410;
+    --color-ink: #e6ddcc;
+    --color-ink-soft: #a39882;
+    --color-card: #2a241c;
+    --color-line: #443c2f;
+    --color-accent: #e0824f;
+    --color-missable: #e2574a;
+  }
+}
