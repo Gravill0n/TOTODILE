@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c5",
+    "title": "Oak catch list — before Whitney (111 cumulative)",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c5"
+    },
+    "deckPosition": 6,
+    "type": "checklist",
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c5:drowzee",
+        "label": "Drowzee → Hypno (L26)",
+        "note": "Route 34, night",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:abra",
+        "label": "Abra → Kadabra (L16)",
+        "note": "Route 34 — catch a SECOND for the Machop trade",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:ditto",
+        "label": "Ditto",
+        "note": "Route 34 — your breeding workhorse",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:snubbull",
+        "label": "Snubbull → Granbull (L23)",
+        "note": "Route 34, morning/day",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:jigglypuff",
+        "label": "Jigglypuff",
+        "note": "Route 34, any time",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:odd-egg",
+        "label": "Odd Egg → Tyrogue (soft-reset!) → Hitmonchan/Hitmonlee/Hitmontop at L20 by Def>/Atk>/Atk=Def",
+        "note": "SAVE before taking the egg from the Day-Care man — species is set at receipt; Tyrogue yields FOUR dex entries",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:igglybuff",
+        "label": "Igglybuff (breed Jigglypuff × Ditto)",
+        "note": "Day-Care",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:machop",
+        "label": "Machop → Machoke (L28) (trade your spare Abra)",
+        "note": "Goldenrod Dept. Store 5F — Machamp is a trade evo, unobtainable",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:cubone",
+        "label": "Cubone → Marowak (L28)",
+        "note": "Goldenrod Game Corner, 800 coins",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:wobbuffet",
+        "label": "Wobbuffet",
+        "note": "Goldenrod Game Corner, 1,500 coins",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:yanma",
+        "label": "Yanma",
+        "note": "Route 35 — 1% ultra-rare; a Bug Catcher calls in swarms",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:nidoran-f",
+        "label": "Nidoran♀ → Nidorina (L16)",
+        "note": "National Park, morning/day",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:nidoran-m",
+        "label": "Nidoran♂ → Nidorino (L16)",
+        "note": "National Park, morning/day",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:sunkern",
+        "label": "Sunkern",
+        "note": "National Park, daytime only",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:scyther",
+        "label": "Scyther",
+        "note": "Bug-Catching Contest (Tue/Thu/Sat) — Scizor is a trade evo, unobtainable",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:pinsir",
+        "label": "Pinsir",
+        "note": "Bug-Catching Contest",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:moon-stone-evo",
+        "label": "First Moon Stone evolution: Wigglytuff OR Nidoqueen OR Nidoking",
+        "note": "Mom's P15,000 purchase (P18,270 banked total) — two more Moon Stones come later",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:sun-stone-evos",
+        "label": "Sunflora + Bellossom (2× Sun Stone)",
+        "note": "Win the Bug-Catching Contest twice — save before entering; retry if Cooltrainer Nick is in the roster",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:leaf-stone-evos",
+        "label": "Exeggutor, Vileplume, Victreebel (Leaf Stones)",
+        "note": "Register Picnicker Gina (Route 34) — she gifts Leaf Stones by phone (DST trick speeds it up)",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:fire-stone-evo",
+        "label": "Arcanine (Fire Stone)",
+        "note": "Register Schoolboy Alan (Route 36) — Fire Stones by phone",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

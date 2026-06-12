@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c8",
+    "title": "Oak catch list — Whirl Islands window (154 cumulative)",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c8"
+    },
+    "deckPosition": 6,
+    "type": "checklist",
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c8:seel",
+        "label": "Seel → Dewgong (L34)",
+        "note": "Whirl Islands caves — not at night (needs Whirlpool: the Oak-optimal order takes Pryce BEFORE Chuck/Jasmine)",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c8:horsea",
+        "label": "Horsea → Seadra (L32)",
+        "note": "Whirl Islands, surfing — Kingdra is a trade evo, unobtainable",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-oak-c17",
+  "generatedAt": "2026-06-12T22:45:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "f8ba5fe7e99282cba17fcbff46a52777801519e28bb362a48005ad46ae1affa8"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "ef213f8d17f3cab306e7df883682918ee40d45cb1e1a7b6ee3a72f5d609cbacc"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "a021213212d12513010bcf4ad06e718fb1a40d55622392dc9a0dca3ae1bb9860"
+    }
+  ],
+  "report": {
+    "rowCount": 3,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Oak catch list segment from Mewlax's Professor Oak Challenge guide (src-oak-pdf), part mapped to c17. Cumulative dex counts per the PDF's section totals.",
+    "Confirms two spine flags en route: the Falkner Egg is collected at the Violet Pokémon Center, and Bill's Eevee is a Goldenrod pickup after the Ecruteak meeting — fold both into the next spine re-run."
+  ]
+}

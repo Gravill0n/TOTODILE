@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c13",
+    "title": "Oak catch list — before the Elite Four (174 cumulative)",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c13"
+    },
+    "deckPosition": 6,
+    "type": "checklist",
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c13:ponyta",
+        "label": "Ponyta → Rapidash (L40)",
+        "note": "Route 27 grass, morning/day — more common on Route 26",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c13:rhyhorn",
+        "label": "Rhyhorn → Rhydon (L42)",
+        "note": "Victory Road, morning/day — or hunt the 5% wild RHYDON directly",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c13:master-ball",
+        "label": "Master Ball banked (Elm, 8 badges)",
+        "note": "Hold it — the no-Master-Ball achievements want it unused; the Oak guide spends it on Lugia OR Ho-Oh",
+        "sourceRefs": [
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
