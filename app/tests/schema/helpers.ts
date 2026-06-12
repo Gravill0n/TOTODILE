@@ -363,3 +363,36 @@ export function validProgressExport() {
     slots: [validProgressSlot()],
   };
 }
+
+// ─── Compiler pass artifacts + reports (COMPILER_PASS_CONTRACT.md) ──────────
+
+export function validSpineLayer() {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    pass: "spine",
+    chapters: [validChapter()],
+  };
+}
+
+export function validWidgetLayer(n = 1) {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    pass: "widget",
+    widget: validChecklist(n),
+  };
+}
+
+export function validPassReport(layer = "spine", pass = layer) {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    pass,
+    layer,
+    generatedAt: "2026-06-12T10:00:00Z",
+    inputs: [{ file: "sources.json", sha256: "ab".repeat(32) }],
+    report: { rowCount: 2, anomalies: [], flaggedItemIds: [] },
+    notes: ["Fixture report."],
+  };
+}
