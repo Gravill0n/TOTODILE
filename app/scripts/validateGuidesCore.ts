@@ -468,7 +468,8 @@ function checkableNamespace(guide: GuideFile): Set<string> {
   ]);
 }
 
-function loadEntity<S extends z.ZodType>(
+// Shared with assembleGuideCore.ts — same loading + findings discipline.
+export function loadEntity<S extends z.ZodType>(
   dir: string,
   guide: string,
   file: string,
