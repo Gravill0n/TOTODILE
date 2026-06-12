@@ -8,8 +8,11 @@ import {
   validDeck,
   validGuide,
   validLibrary,
+  validPassReport,
   validRaMapping,
   validSources,
+  validSpineLayer,
+  validWidgetLayer,
 } from "../schema/helpers";
 
 const roots: string[] = [];
@@ -87,7 +90,12 @@ describe("validateGuides", () => {
   it("flags an RA-mapping target that resolves nowhere (§6.5)", () => {
     const mapping = validRaMapping();
     mapping.entries = [
-      { raAchievementId: 101, targetItemId: "fictional-quest:c9:s9" },
+      {
+        raAchievementId: 101,
+        targetItemId: "fictional-quest:c9:s9",
+        sourceRefs: ["src-wiki"],
+        confidence: "normal",
+      },
     ];
     const root = writeTree({
       ...happyTree(),
@@ -95,6 +103,18 @@ describe("validateGuides", () => {
     });
     expect(messagesOf(root).join("\n")).toContain(
       'targets unknown item "fictional-quest:c9:s9"',
+    );
+  });
+
+  it("flags a dangling sourceRef in the assembled ra-mapping.json (FR-D2/D3)", () => {
+    const mapping = validRaMapping();
+    if (mapping.entries[1]) mapping.entries[1].sourceRefs = ["src-ghost"];
+    const root = writeTree({
+      ...happyTree(),
+      "guides/fictional-quest/ra-mapping.json": mapping,
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      'achievement 102 references unknown source "src-ghost"',
     );
   });
 
@@ -116,6 +136,26 @@ describe("validateGuides", () => {
       "guides/fictional-quest/deck.json": "{ this is not json",
     });
     expect(messagesOf(root).join("\n")).toContain("invalid JSON");
+  });
+
+  it("allows a missing guide.json only while the guide is in-compilation (pre-QA bootstrap)", () => {
+    const library = validLibrary();
+    if (library.guides[0]) library.guides[0].status = "in-compilation";
+    const {
+      "guides/fictional-quest/guide.json": _guide,
+      "guides/fictional-quest/ra-mapping.json": _mapping,
+      ...tree
+    } = happyTree();
+    expect(
+      validateGuides(writeTree({ ...tree, "library.json": library })).ok,
+    ).toBe(true);
+
+    // Playable says the assembled guide exists — its absence is a finding.
+    const { "guides/fictional-quest/guide.json": _g2, ...playableTree } =
+      happyTree();
+    expect(messagesOf(writeTree(playableTree)).join("\n")).toContain(
+      "[fictional-quest/guide.json] missing required file",
+    );
   });
 
   it("requires guide.json, sources.json and deck.json but not the optional files", () => {
@@ -195,6 +235,173 @@ describe("validateGuides", () => {
     );
     expect(joined).toContain(
       "raGameId 9000 does not match the library entry's 1234",
+    );
+  });
+});
+
+describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () => {
+  const layersBase = "guides/fictional-quest/layers";
+
+  function happyLayers() {
+    return {
+      ...happyTree(),
+      [`${layersBase}/spine.json`]: validSpineLayer(),
+      [`${layersBase}/spine.report.json`]: validPassReport("spine"),
+      [`${layersBase}/widget-w1.json`]: validWidgetLayer(1),
+      [`${layersBase}/widget-w1.report.json`]: validPassReport(
+        "widget-w1",
+        "widget",
+      ),
+      [`${layersBase}/ra-mapping.json`]: validRaMapping(),
+      [`${layersBase}/ra-mapping.report.json`]: validPassReport("ra-mapping"),
+      [`${layersBase}/source-gathering.report.json`]:
+        validPassReport("source-gathering"),
+      [`${layersBase}/qa.report.json`]: validPassReport("qa"),
+      // Pre-contract notes stay legal — only *.json is contract-bound.
+      [`${layersBase}/translation-report.md`]: "free-form notes",
+    };
+  }
+
+  it("passes a full set of artifacts + reports, ignoring non-JSON files", () => {
+    const report = validateGuides(writeTree(happyLayers()));
+    expect(report.findings).toEqual([]);
+    expect(report.ok).toBe(true);
+  });
+
+  it("rejects a layer file outside the contract naming", () => {
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/extras.json`]: { anything: true },
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      "[fictional-quest/layers/extras.json] unrecognized layer file",
+    );
+  });
+
+  it("flags a layer guideId that contradicts the folder slug", () => {
+    const foreign = JSON.parse(
+      JSON.stringify(validSpineLayer()).replaceAll(
+        "fictional-quest",
+        "other-game",
+      ),
+    );
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/spine.json`]: foreign,
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      '[fictional-quest/layers/spine.json] guideId "other-game" does not match folder slug',
+    );
+  });
+
+  it("flags a widget layer whose widget does not match the filename", () => {
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/widget-w9.json`]: validWidgetLayer(1),
+      [`${layersBase}/widget-w9.report.json`]: validPassReport(
+        "widget-w9",
+        "widget",
+      ),
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      'widget ID "fictional-quest:w1" does not match layer "widget-w9"',
+    );
+  });
+
+  it("enforces flag parity between artifact and report (FR-D2)", () => {
+    const flaggedSpine = validSpineLayer();
+    const chapter = flaggedSpine.chapters[0];
+    if (chapter?.steps[0]) chapter.steps[0].confidence = "flagged";
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/spine.json`]: flaggedSpine,
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      '"fictional-quest:c1:s1" is flagged but missing from flaggedItemIds',
+    );
+
+    const overReporting = validPassReport("spine");
+    overReporting.report.flaggedItemIds = ["fictional-quest:c1:s1"] as never;
+    const root2 = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/spine.report.json`]: overReporting,
+    });
+    expect(messagesOf(root2).join("\n")).toContain(
+      'lists "fictional-quest:c1:s1" but the artifact row is not flagged',
+    );
+  });
+
+  it("enforces flag parity for ra-mapping entries too (FR-D2)", () => {
+    const flaggedMapping = validRaMapping();
+    if (flaggedMapping.entries[0]) {
+      flaggedMapping.entries[0].confidence = "flagged";
+    }
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/ra-mapping.json`]: flaggedMapping,
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      '"fictional-quest:c1:s1" is flagged but missing from flaggedItemIds',
+    );
+
+    const overReporting = validPassReport("ra-mapping");
+    overReporting.report.flaggedItemIds = ["fictional-quest:c9:s9"] as never;
+    const root2 = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/ra-mapping.report.json`]: overReporting,
+    });
+    expect(messagesOf(root2).join("\n")).toContain(
+      'lists "fictional-quest:c9:s9" but the artifact row is not flagged',
+    );
+  });
+
+  it("flags a dangling sourceRef in a ra-mapping layer entry (FR-D2/D3)", () => {
+    const mapping = validRaMapping();
+    if (mapping.entries[0]) mapping.entries[0].sourceRefs = ["src-ghost"];
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/ra-mapping.json`]: mapping,
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      '"achievement 101" references unknown source "src-ghost"',
+    );
+  });
+
+  it("requires the artifact ↔ report pairing both ways", () => {
+    const { [`${layersBase}/spine.report.json`]: _report, ...noReport } =
+      happyLayers();
+    expect(messagesOf(writeTree(noReport)).join("\n")).toContain(
+      'layer "spine" has no spine.report.json',
+    );
+
+    const { [`${layersBase}/widget-w1.json`]: _artifact, ...noArtifact } =
+      happyLayers();
+    expect(messagesOf(writeTree(noArtifact)).join("\n")).toContain(
+      "report has no matching layers/widget-w1.json artifact",
+    );
+  });
+
+  it("flags a report whose layer field contradicts its filename", () => {
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/qa.report.json`]: validPassReport("spine"),
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      'report layer "spine" does not match the filename',
+    );
+  });
+
+  it("flags a dangling sourceRef inside a layer artifact (§6.6)", () => {
+    const layer = validWidgetLayer(1);
+    layer.widget.rows = [
+      { ...layer.widget.rows[0], sourceRefs: ["src-ghost"] },
+    ] as never;
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/widget-w1.json`]: layer,
+    });
+    expect(messagesOf(root).join("\n")).toContain(
+      '"fictional-quest:w1:r1" references unknown source "src-ghost"',
     );
   });
 });

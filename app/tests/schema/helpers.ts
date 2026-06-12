@@ -270,8 +270,18 @@ export function validRaMapping() {
     guideId: "fictional-quest",
     raGameId: 9000,
     entries: [
-      { raAchievementId: 101, targetItemId: "fictional-quest:c1:s1" },
-      { raAchievementId: 102, targetItemId: "fictional-quest:w1:r1" },
+      {
+        raAchievementId: 101,
+        targetItemId: "fictional-quest:c1:s1",
+        sourceRefs: ["src-wiki"],
+        confidence: "normal",
+      },
+      {
+        raAchievementId: 102,
+        targetItemId: "fictional-quest:w1:r1",
+        sourceRefs: ["src-wiki"],
+        confidence: "normal",
+      },
     ],
   };
 }
@@ -361,5 +371,38 @@ export function validProgressExport() {
     schemaVersion: SCHEMA_VERSION,
     exportedAt: "2026-06-12T08:02:00Z",
     slots: [validProgressSlot()],
+  };
+}
+
+// ─── Compiler pass artifacts + reports (COMPILER_PASS_CONTRACT.md) ──────────
+
+export function validSpineLayer() {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    pass: "spine",
+    chapters: [validChapter()],
+  };
+}
+
+export function validWidgetLayer(n = 1) {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    pass: "widget",
+    widget: validChecklist(n),
+  };
+}
+
+export function validPassReport(layer = "spine", pass = layer) {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    pass,
+    layer,
+    generatedAt: "2026-06-12T10:00:00Z",
+    inputs: [{ file: "sources.json", sha256: "ab".repeat(32) }],
+    report: { rowCount: 2, anomalies: [], flaggedItemIds: [] },
+    notes: ["Fixture report."],
   };
 }

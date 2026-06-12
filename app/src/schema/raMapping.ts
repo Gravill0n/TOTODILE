@@ -1,11 +1,13 @@
 import { z } from "zod";
 import {
   checkableId,
+  confidence,
   findDuplicates,
   guideSlug,
   raAchievementId,
   raGameId,
   schemaVersion,
+  sourceRefs,
 } from "./common.ts";
 
 export const raMappingEntry = z.object({
@@ -14,6 +16,11 @@ export const raMappingEntry = z.object({
   // check owned by validate-guides. Several achievements may target the same
   // item (e.g. progression + challenge on one boss step).
   targetItemId: checkableId,
+  // FR-D2: mapping rows are emitted rows like any other — each one traces to
+  // the ra-set source (and whatever pinned the target) and carries the
+  // compiler's confidence in the placement.
+  sourceRefs,
+  confidence,
 });
 
 // guides/<slug>/ra-mapping.json — standalone and optional (§6.5). RA

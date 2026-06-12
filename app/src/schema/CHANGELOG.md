@@ -37,6 +37,20 @@ progress slot and the progress export file (`kind:
 "totodile-progress"`) — the FR-B6 backup/device-move format, part of the
 §8.2 contract. Item states are `done | skipped` (FR-B2).
 
+Amended again in Phase 2 Task 1: `layers.ts` adds the compiler pass
+artifacts (`spineLayer`, `widgetLayer`; the ra-mapping layer reuses
+`raMapping`) and the pass report file (`passReportFile`) per
+`COMPILER_PASS_CONTRACT.md`. New files only — no existing shape changed.
+The `contentHash` algorithm is pinned: `sha256:` + hex of the artifact
+bytes (contract §5).
+
+Amended again in Phase 2 Task 3: `raMappingEntry` gains required
+`sourceRefs` + `confidence`, closing the FR-D2 exception (every emitted
+row carries both — mapping rows were the only holdouts). Existing
+ml-partners-in-time entries migrated mechanically (`sourceRefs:
+["src-ra"]`, `confidence: "normal"` — the whole mapping came from the RA
+set source during the Phase 0 translation).
+
 - The seven §6 repo-side entities: guide spine (chapters → steps with
   missable + achievement annotations), the 7 widget primitives (closed
   set), genre deck, library manifest, RA mapping, source manifest,

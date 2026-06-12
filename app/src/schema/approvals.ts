@@ -39,7 +39,8 @@ export const layerRecord = z
     report: layerReport,
     // Approval hash-locks this exact content; a recompile that changes the
     // artifact produces a new draft, never mutates an approved layer (§6.8).
-    // Hash algorithm is pinned when the compiler suite lands (Phase 2).
+    // "sha256:" + hex digest of the artifact file's exact bytes
+    // (COMPILER_PASS_CONTRACT.md §5).
     contentHash: z.string().min(1),
     status: layerStatus,
     approval: approvalRecord.optional(),
