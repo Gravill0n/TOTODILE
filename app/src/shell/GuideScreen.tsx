@@ -155,8 +155,16 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
         ) : undefined
       }
     >
-      <header className="mb-4">
+      <header className="mb-4 flex items-baseline justify-between gap-3">
         <h1 className="text-xl font-bold">{entry.title}</h1>
+        {/* Hash anchor, not <Link>: GuideScreen is rendered bare in tests, so
+            it stays free of router context. The app runs on hash history. */}
+        <a
+          href={`#/guide/${entry.id}/cleanup`}
+          className="shrink-0 text-sm text-ink-soft underline"
+        >
+          Cleanup
+        </a>
       </header>
       {progress.ready ? (
         <NowScreen

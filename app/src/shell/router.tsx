@@ -16,6 +16,7 @@ import { loadLayerRoster } from "../review/layerRoster";
 import { ReviewScreen } from "../review/ReviewScreen";
 import { loadRaMapping, loadSources } from "../review/reviewLoaders";
 import { loadGuide } from "../spine/guideData";
+import { CleanupScreen } from "./CleanupScreen";
 import { GuideScreen } from "./GuideScreen";
 import { LibraryScreen } from "./LibraryScreen";
 import { loadLibrary } from "./libraryData";
@@ -93,6 +94,29 @@ const guideRoute = createRoute({
   },
 });
 
+const cleanupRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/guide/$slug/cleanup",
+  // S4 cleanup is a play-view sibling — same playable guard as the guide.
+  loader: async ({ params }) => {
+    const library = await loadLibrary();
+    const entry = library.guides.find((g) => g.id === params.slug);
+    if (!entry) throw notFound();
+    if (!isPlayable(await loadApprovals(entry.id))) {
+      throw redirect({ to: "/review/$slug", params: { slug: entry.id } });
+    }
+    const [guide, raMapping] = await Promise.all([
+      loadGuide(entry.id),
+      loadRaMapping(entry.id),
+    ]);
+    return { entry, guide, raMapping };
+  },
+  component: function CleanupRouteComponent() {
+    const { entry, guide, raMapping } = cleanupRoute.useLoaderData();
+    return <CleanupScreen entry={entry} guide={guide} raMapping={raMapping} />;
+  },
+});
+
 const reviewRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/review/$slug",
@@ -145,6 +169,7 @@ const settingsRoute = createRoute({
 const routeTree = rootRoute.addChildren([
   libraryRoute,
   guideRoute,
+  cleanupRoute,
   reviewRoute,
   settingsRoute,
 ]);
