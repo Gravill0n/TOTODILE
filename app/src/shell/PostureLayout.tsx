@@ -5,18 +5,22 @@ type PostureLayoutProps = {
   onChapters?: () => void;
   onWidgets?: () => void;
   onWhereAmI?: () => void;
+  onSync?: () => void;
+  syncing?: boolean;
   leftPanel?: ReactNode;
   rightPanel?: ReactNode;
 };
 
 // §7 S2 skeleton. Phone (play posture): single column with the bottom
 // action bar. Desktop (browse posture): walkthrough column flanked by
-// widget panel columns. 🔄 stays inert until Sync lands (Phase 4).
+// widget panel columns.
 export function PostureLayout({
   children,
   onChapters,
   onWidgets,
   onWhereAmI,
+  onSync,
+  syncing,
   leftPanel,
   rightPanel,
 }: PostureLayoutProps) {
@@ -70,11 +74,12 @@ export function PostureLayout({
         </button>
         <button
           type="button"
-          className="px-4 py-1 opacity-40"
-          title="Sync"
-          disabled
+          className="px-4 py-1 disabled:opacity-40"
+          title={syncing ? "Syncing…" : "Sync"}
+          onClick={onSync}
+          disabled={!onSync || syncing}
         >
-          🔄
+          {syncing ? "…" : "🔄"}
         </button>
       </nav>
     </div>

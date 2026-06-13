@@ -10,6 +10,9 @@ import {
   stepDomId,
 } from "../spine/guideData";
 import { NowScreen } from "../spine/NowScreen";
+import { getCredentials } from "../sync/raCredentials";
+import { SyncReceipt } from "../sync/SyncReceipt";
+import { type SyncOutcome, syncGuide } from "../sync/syncGuide";
 import { PostureLayout } from "./PostureLayout";
 import { WidgetDeck, type WidgetHandlers } from "./WidgetDeck";
 import { WidgetsSheet } from "./WidgetsSheet";
@@ -36,6 +39,32 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
   const [chaptersOpen, setChaptersOpen] = useState(false);
   const [widgetsOpen, setWidgetsOpen] = useState(false);
   const [wholeGame, setWholeGame] = useState(false);
+  const [syncing, setSyncing] = useState(false);
+  const [receipt, setReceipt] = useState<SyncOutcome | null>(null);
+
+  // FR-C: one tap fetches RA unlocks and additively marks mapped items, then
+  // shows a receipt. Atomic — marks are written only on success (§8.1).
+  const canSync = entry.raGameId !== undefined && progress.ready;
+  const handleSync = async () => {
+    if (entry.raGameId === undefined || !progress.ready) return;
+    setSyncing(true);
+    const outcome = await syncGuide({
+      slug: entry.id,
+      raGameId: entry.raGameId,
+      credentials: getCredentials(),
+      doneIds: progress.doneIds,
+    });
+    if (outcome.status === "ok") progress.markManyDone(outcome.toMark);
+    setReceipt(outcome);
+    setSyncing(false);
+  };
+
+  // §7 — a successful receipt dismisses itself; errors stay until tapped away.
+  useEffect(() => {
+    if (receipt?.status !== "ok") return;
+    const timer = setTimeout(() => setReceipt(null), 6000);
+    return () => clearTimeout(timer);
+  }, [receipt]);
 
   const currentStepId = progress.ready ? progress.currentStepId : null;
 
@@ -102,6 +131,8 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
           ? () => scrollToElement(stepDomId(currentStepId))
           : undefined
       }
+      onSync={canSync ? handleSync : undefined}
+      syncing={syncing}
       leftPanel={
         progress.ready && guide.widgets.length > 0 ? (
           <>
@@ -161,6 +192,9 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
           onClose={() => setWidgetsOpen(false)}
           {...handlers}
         />
+      ) : null}
+      {receipt ? (
+        <SyncReceipt outcome={receipt} onDismiss={() => setReceipt(null)} />
       ) : null}
     </PostureLayout>
   );

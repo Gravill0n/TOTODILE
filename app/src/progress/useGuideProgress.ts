@@ -14,6 +14,7 @@ export type GuideProgress =
       toggleDone: (itemId: string) => void;
       toggleSkip: (stepId: string) => void;
       markThrough: (stepId: string) => void;
+      markManyDone: (itemIds: string[]) => void;
       movePointer: (stepId: string) => void;
       adjustCounter: (itemId: string, delta: number) => void;
       resetCounter: (itemId: string) => void;
@@ -181,6 +182,25 @@ export function useGuideProgress(guide: GuideFile): GuideProgress {
     [mutateSlot, stepIds],
   );
 
+  // Additive bulk mark for RA Sync (FR-C2): set every given item done in one
+  // write, overriding a skip, never un-marking, and leaving the pointer where
+  // the player left it. Atomic — one slot write for the whole sync.
+  const markManyDone = useCallback(
+    (itemIds: string[]) => {
+      mutateSlot((slot) => {
+        const itemStates = { ...slot.itemStates };
+        const at = new Date().toISOString();
+        for (const id of itemIds) {
+          if (itemStates[id]?.state !== "done") {
+            itemStates[id] = { state: "done", at };
+          }
+        }
+        return { ...slot, itemStates };
+      });
+    },
+    [mutateSlot],
+  );
+
   const movePointer = useCallback(
     (stepId: string) => {
       mutateSlot((slot) => ({ ...slot, currentStepId: stepId }));
@@ -228,6 +248,7 @@ export function useGuideProgress(guide: GuideFile): GuideProgress {
     toggleDone,
     toggleSkip,
     markThrough,
+    markManyDone,
     movePointer,
     adjustCounter,
     resetCounter,
