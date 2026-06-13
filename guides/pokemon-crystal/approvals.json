@@ -1,0 +1,594 @@
+{
+  "schemaVersion": 0,
+  "guideId": "pokemon-crystal",
+  "layers": [
+    {
+      "id": "spine",
+      "kind": "spine",
+      "artifact": "layers/spine.json",
+      "report": {
+        "rowCount": 159,
+        "anomalies": [
+          "pokemon-crystal:c2:s10: the Egg handover spot/timing in Violet City is not pinned by the fetched Bulbapedia text (commonly the Pokémon Center after the Falkner win) — verify",
+          "pokemon-crystal:c4:s3: Apri-Cornucopia's batch mechanic (how Kurt hands over 10+ balls at once) is unverified in the available sources — text stays vague deliberately",
+          "pokemon-crystal:c5:s5: Bill's father's appearance schedule, taught moves, and cost outside the Game Corner are unverified (not in the Bulbapedia section)",
+          "pokemon-crystal:c5:s11: the Togepi hatch window is approximate (egg given after Falkner; hatch timing depends on steps walked) — placement in c5 is editorial",
+          "pokemon-crystal:c6:s2: Cooltrainer Nick's conditions for appearing in the Bug-Catching Contest roster are unverified",
+          "pokemon-crystal:c10:s6: the exact trigger/timing of the Route 36 Suicune sighting is not pinned by the fetched sources — verify before approval",
+          "pokemon-crystal:c18:s3: the full Gift-Pokémon list is partially enumerated (Bill's Eevee gift in Goldenrod is NOT yet a route step — a spine re-run should add it around c7/c8)",
+          "pokemon-crystal:c18:s9: the Indigo Plateau rival rematch conditions (day/timing) are unverified",
+          "src-ra-wiki predates the current RA set revision: the 199xxx achievements are absent from the snapshot, so all new-set conditions were taken verbatim from the RA set page (src-ra)",
+          "Kanto gym trainer rosters are name/prize level of detail where the walkthrough summaries compressed them (Erika's gym); leader teams are exact throughout"
+        ],
+        "flaggedItemIds": [
+          "pokemon-crystal:c2:s10",
+          "pokemon-crystal:c4:s3",
+          "pokemon-crystal:c5:s5",
+          "pokemon-crystal:c5:s11",
+          "pokemon-crystal:c6:s2",
+          "pokemon-crystal:c10:s6",
+          "pokemon-crystal:c18:s3",
+          "pokemon-crystal:c18:s9"
+        ]
+      },
+      "contentHash": "sha256:f8ba5fe7e99282cba17fcbff46a52777801519e28bb362a48005ad46ae1affa8",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:50:53.876Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-badges",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-badges.json",
+      "report": {
+        "rowCount": 16,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:2dfb36b1338271dbb12dfc96ebdde51baa0dd80c6a55a043c0a13ea27aa34280",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:50:55.553Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-dex",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-dex.json",
+      "report": {
+        "rowCount": 2,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:6114e2853d85411ee136fd95ebdfbd2a9517d6822c8cc6a66ea31be25ba7e885",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:50:57.482Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-e4-prep",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-e4-prep.json",
+      "report": {
+        "rowCount": 5,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:60173b966287167de3b909ddab51f938ad89a053d3833793ad9af1a4f22ad885",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:50:59.315Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c11",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c11.json",
+      "report": {
+        "rowCount": 14,
+        "anomalies": [
+          "pokemon-crystal:enc-c11:r44-grass / r44-water: Route 44 table from the walkthrough only (species reliable, rates pending)",
+          "pokemon-crystal:enc-c11:r46-grass: Route 46 table not captured this run — placeholder row, deepen on a re-run",
+          "Ice Path rates not listed on the location article (levels verified); Wobbuffet (Dark Cave) and the Route 45 Dratini rods are notable Crystal catches"
+        ],
+        "flaggedItemIds": [
+          "pokemon-crystal:enc-c11:r44-grass",
+          "pokemon-crystal:enc-c11:r44-water",
+          "pokemon-crystal:enc-c11:r46-grass"
+        ]
+      },
+      "contentHash": "sha256:107ea6414fdcb10695a0aa364f17c24cff1b0569d4548f464378195d4866dc19",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:01.021Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c12",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c12.json",
+      "report": {
+        "rowCount": 12,
+        "anomalies": [
+          "pokemon-crystal:enc-c12:r26-grass: Route 26's own table was not fetched separately — roster asserted to mirror Route 27, verify on a re-run"
+        ],
+        "flaggedItemIds": ["pokemon-crystal:enc-c12:r26-grass"]
+      },
+      "contentHash": "sha256:3a6f2b35328314e661e49a238a9c30b4ec7f7958b0e261cd780b39d7f943d1be",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:03.784Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c14",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c14.json",
+      "report": {
+        "rowCount": 8,
+        "anomalies": [
+          "Kanto-east tables extract poorly (version-mixed pages): species lists are reliable, most rates pending — this instance needs a dedicated deepening re-run before approval (5 of 8 rows flagged)"
+        ],
+        "flaggedItemIds": [
+          "pokemon-crystal:enc-c14:r6-grass",
+          "pokemon-crystal:enc-c14:r8-grass",
+          "pokemon-crystal:enc-c14:rt-1f",
+          "pokemon-crystal:enc-c14:rt-b1f",
+          "pokemon-crystal:enc-c14:r9-10"
+        ]
+      },
+      "contentHash": "sha256:c4a737a4a698b7f60ed773855feb842bd9e8c100704e5f4ab5314b25048ef3db",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:05.985Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c15",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c15.json",
+      "report": {
+        "rowCount": 12,
+        "anomalies": [
+          "Route 7, Route 3, Mt. Moon and Route 21 tables are exact (walkthrough Crystal tables); Routes 2, 12–15, 16–18 are species-level placeholders — deepen on a re-run",
+          "Notable Crystal catches surfaced: Houndour/Murkrow (Route 7, night), Mr. Mime & Tangela (Route 21), Lanturn line (Route 21 rods), Corsola (Routes 19/20 rods)"
+        ],
+        "flaggedItemIds": [
+          "pokemon-crystal:enc-c15:r2-grass",
+          "pokemon-crystal:enc-c15:r12-15",
+          "pokemon-crystal:enc-c15:cycling"
+        ]
+      },
+      "contentHash": "sha256:a3b59b0ea27554918af192c24559c8487b87e70e5b57714cda7f112a59ade9cc",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:09.894Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c16",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c16.json",
+      "report": {
+        "rowCount": 11,
+        "anomalies": [
+          "Mt. Mortar per-section rates partially version-mixed in extraction — Kiyo (Tyrogue) confirmed B1F",
+          "Seel (Whirl), Horsea/Seadra (Whirl water), Misdreavus (Mt. Silver — c17) are notable dex entries here"
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:58240242b3c7eece6d37a75142a8ab9d744427fa31da158d21cee18951f0e528",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:11.498Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c17",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c17.json",
+      "report": {
+        "rowCount": 4,
+        "anomalies": [
+          "Tables from the Bulbapedia walkthrough section 28 (full floor tables); rates not listed there"
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:45d0b8664d3f431b74e5d1f5823b81aee8472cdc3f8142b4ac0fad98756acb65",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:13.840Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c2",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c2.json",
+      "report": {
+        "rowCount": 42,
+        "anomalies": [
+          "pokemon-crystal:enc-c2:r30-hoppip: Pokéarth lists Hoppip on Route 30 by day only while the morning column sums to 95% — morning availability unresolved between sources; verify in-game or against the raw tables",
+          "Route 31 Surf/Fishing rows are compressed (species named, exact rates not captured this run) — deepen on a re-run if wanted"
+        ],
+        "flaggedItemIds": ["pokemon-crystal:enc-c2:r30-hoppip"]
+      },
+      "contentHash": "sha256:d1e8c1c6de12d960c49082e5774fd7b8e9087f4ce64489ca6773c909e3f4f2d6",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:15.705Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c3",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c3.json",
+      "report": {
+        "rowCount": 42,
+        "anomalies": [
+          "Union Cave B2F and the Friday Lapras are later-pass content (Surf) — rows included for completeness with the access condition stated",
+          "Ruins of Alph outside Morning/Day grass rates were not captured cleanly this run (night column verified); deepen on a re-run"
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:6f47617fd8e231a7b2c4128e3e359350e093a120f1c19a2c4dce22a7cafc4bb1",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:17.737Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c4",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c4.json",
+      "report": {
+        "rowCount": 29,
+        "anomalies": [
+          "Ilex headbutt and the Route 34 Good/Super Rod splits were captured without exact per-species rates — deepen on a re-run",
+          "The Odd Egg row lists the hatch pool (Lv. 5 babies) as Pokéarth presents it; shiny odds are the RA hook ('Served Shiny Side Up?'), not enumerated here"
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:2bcf95ad5da93fb37a58ade208acf6cc7f416197d7cebaf2592fc35354e067b4",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:19.486Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c6",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c6.json",
+      "report": {
+        "rowCount": 30,
+        "anomalies": [
+          "pokemon-crystal:enc-c6:r37-m: the Route 37 morning column sums to 70% in the extraction — at least one morning species (likely Stantler) was dropped; verify against the raw table",
+          "Route 35 morning/day rows are compressed (per-species rates not fully captured) — deepen on a re-run"
+        ],
+        "flaggedItemIds": ["pokemon-crystal:enc-c6:r37-m"]
+      },
+      "contentHash": "sha256:7854180678f5f1fa82f6f57533848e974bbe3c6495770828263a728da5687267",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:32.547Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c8",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c8.json",
+      "report": {
+        "rowCount": 17,
+        "anomalies": [
+          "pokemon-crystal:enc-c8:r38-md: Crystal morning/day rates for Route 38 were not separable from the Gold/Silver table in extraction — species list reliable, rates pending",
+          "pokemon-crystal:enc-c8:r41-fish: Route 41 fishing table not captured in detail (Chinchou/Lanturn availability unverified for Crystal)",
+          "pokemon-crystal:enc-c8:mortar-entrance: Mt. Mortar entrance-hall table not fetched this run — species are the common cave families, rates pending; deepen on a re-run",
+          "This instance is the coarsest so far (coastal pages mix versions heavily) — a dedicated re-run with the raw tables is recommended before approval"
+        ],
+        "flaggedItemIds": [
+          "pokemon-crystal:enc-c8:r38-md",
+          "pokemon-crystal:enc-c8:r41-fish",
+          "pokemon-crystal:enc-c8:mortar-entrance"
+        ]
+      },
+      "contentHash": "sha256:93738f9dc55312ad89ec457a2fed95547989aaf9fb00e2eadc1edd54f2d2b533",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:35.355Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-enc-c9",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-enc-c9.json",
+      "report": {
+        "rowCount": 14,
+        "anomalies": [
+          "Lake of Rage per-rod fishing rates not captured this run — surf table verified"
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:2366b30cfeb958d95d87f9c6e3ba2c9b26cbcdcc4eccb49384def7dbcc6d24b6",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:38.888Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-legend-map",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-legend-map.json",
+      "report": {
+        "rowCount": 15,
+        "anomalies": [
+          "Pin coordinates are mechanically derived from the crystal-ap-tracker pack's own johtokanto map locations (288×120 px, +2px center offset) — not hand-placed; Ho-Oh and the beasts are nudged ≤3px off Tin/Burned Tower so overlapping pins stay tappable",
+          "Map image reused from the tracker pack (src-ap-tracker, MIT-style licensed repo) — swap for ripped game art later if preferred"
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:9ddd738b3fa78f43022df067c1745987cccbf92a2894fd0ff357888c1a5a56f8",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:41.824Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-oak-c11",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-oak-c11.json",
+      "report": {
+        "rowCount": 12,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:df1e3fe7db973956a32253c42795af09efa05d12afaf0bd9eb873cbbe649cdd8",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:42.995Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-oak-c13",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-oak-c13.json",
+      "report": {
+        "rowCount": 3,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:7c0a955c98738a0c8eb0bd6720b17472cedb9a78b0e2a229e684b8def9c49a8d",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:44.840Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-oak-c14",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-oak-c14.json",
+      "report": {
+        "rowCount": 20,
+        "anomalies": [
+          "pokemon-crystal:oak-c14:rainbow-wing: the Rainbow Wing giver conflicts between src-oak-pdf (Eusine, Celadon) and src-bulba-walkthrough (middle Tin Tower sage) — verify in-game"
+        ],
+        "flaggedItemIds": ["pokemon-crystal:oak-c14:rainbow-wing"]
+      },
+      "contentHash": "sha256:036cfb9f2f4cb60d9e134dd9da83700fdbc3a4af9a57b607ade00d42491c6ac4",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:46.968Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-oak-c17",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-oak-c17.json",
+      "report": {
+        "rowCount": 3,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:d947255f113949d3300a233914d207ddf6caf1f994cfd4a45ba12a4f55baf096",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:48.540Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-oak-c2",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-oak-c2.json",
+      "report": {
+        "rowCount": 22,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:71c9c41ba264eb536107e9dd6f9f6183c43c1131699b22b4a785b238a2f628d8",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:50.852Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-oak-c4",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-oak-c4.json",
+      "report": {
+        "rowCount": 18,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:911413447b99f517fc93eba9a21cf84ac3ce645a8b24356ff1cdb225d22b98e8",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:51.941Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-oak-c5",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-oak-c5.json",
+      "report": {
+        "rowCount": 20,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:5ae41f98c7f258ca39cd8e84935a0bb3d96b42692bfb0e476a976f131e0dfb1b",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:53.445Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-oak-c7",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-oak-c7.json",
+      "report": {
+        "rowCount": 20,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:fe5e57aa4c17872bbc0e22fb6c3e85745d5f6f46e6b5703abd2ae0d4211cd143",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:55.629Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-oak-c8",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-oak-c8.json",
+      "report": {
+        "rowCount": 2,
+        "anomalies": [
+          "Oak-optimal badge order takes Pryce before Chuck/Jasmine (Whirlpool unlocks more catches than Fly); this widget keeps the spine's chapter mapping with the dependency stated in the row note"
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:f925600c11ed01eeaf51704b653756904e3b7fb6b272605f4283df640dac429a",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:51:56.937Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-oak-c9",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-oak-c9.json",
+      "report": {
+        "rowCount": 8,
+        "anomalies": [
+          "PDF part 5 (pre-Pryce) mapped onto c9; its Surf-era backtracks (Ruins grassy area, Tohjo Moon Stone) are reachable any time after Morty"
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:9315e87afb5a0a6ab31e5ca06ad9f890ab760b48b1389d7b225df74fcd341382",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:52:00.646Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-trades",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-trades.json",
+      "report": {
+        "rowCount": 6,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:520c92d95d983cc8198b635cfaee66410879ffda96b6ebf8de84ef6bafb549a6",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:52:02.069Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "ra-mapping",
+      "kind": "ra-mapping",
+      "artifact": "layers/ra-mapping.json",
+      "report": {
+        "rowCount": 113,
+        "anomalies": [
+          "199582 (But Which Came First?): hatch/show timing approximate (flagged spine step c5:s11)",
+          "199593 (The Thief's Last Stand): Indigo rival rematch conditions unverified (flagged step c18:s9)",
+          "199595 (Forest of Fate): R36 Suicune sighting trigger unverified (flagged step c10:s6)",
+          "199620 (Gambler's Charity): Bill's father appearance schedule unverified (flagged step c5:s5)",
+          "199624 (Earning Style Points): Cooltrainer Nick roster conditions unverified (flagged step c6:s2)",
+          "Unmapped achievements: none — all 113 of RA game 810 are mapped (the spine anchors each exactly once; this table is that anchoring inverted)"
+        ],
+        "flaggedItemIds": [
+          "pokemon-crystal:c10:s6",
+          "pokemon-crystal:c18:s9",
+          "pokemon-crystal:c5:s11",
+          "pokemon-crystal:c5:s5",
+          "pokemon-crystal:c6:s2"
+        ]
+      },
+      "contentHash": "sha256:4a801f80e8fc257cf47bc0e19c96b0cf5e37f4ff40c99503a8c638814d8b06ff",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-13T12:52:05.912Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    }
+  ]
+}
