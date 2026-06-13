@@ -356,6 +356,7 @@ export function validProgressSlot() {
       },
     },
     counterValues: { "fictional-quest:counters:blue-coins": 7 },
+    acknowledgedMissables: ["fictional-quest:c1:s2"],
     stats: {
       stepsDone: 1,
       stepsTotal: 10,

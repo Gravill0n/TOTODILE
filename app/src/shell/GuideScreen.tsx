@@ -9,6 +9,8 @@ import {
   guideAssetUrl,
   stepDomId,
 } from "../spine/guideData";
+import { MissableBanner } from "../spine/MissableBanner";
+import { upcomingMissables } from "../spine/missables";
 import { NowScreen } from "../spine/NowScreen";
 import { getCredentials } from "../sync/raCredentials";
 import { SyncReceipt } from "../sync/SyncReceipt";
@@ -166,6 +168,18 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
           Cleanup
         </a>
       </header>
+      {progress.ready ? (
+        <MissableBanner
+          items={upcomingMissables(
+            guide,
+            progress.currentStepId,
+            progress.doneIds,
+            progress.acknowledgedMissableIds,
+          )}
+          onAcknowledge={progress.acknowledgeMissable}
+          onJump={(stepId) => scrollToElement(stepDomId(stepId))}
+        />
+      ) : null}
       {progress.ready ? (
         <NowScreen
           guide={guide}

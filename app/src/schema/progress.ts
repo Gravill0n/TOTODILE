@@ -27,6 +27,10 @@ export const progressSlot = z.object({
   currentStepId: stepId.nullable(),
   itemStates: z.record(checkableId, itemState),
   counterValues: z.record(checkableId, z.int().nonnegative()),
+  // Steps whose upcoming-missable warning the player has explicitly dismissed
+  // (FR-B5) — distinct from done/skip. Additive + defaulted, so slots and
+  // exports written before this field still import (§8.2); no version bump.
+  acknowledgedMissables: z.array(stepId).default([]),
   stats: progressStats,
   lastActivityAt: z.iso.datetime(),
 });
