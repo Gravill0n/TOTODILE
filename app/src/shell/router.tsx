@@ -7,8 +7,14 @@ import {
   notFound,
   Outlet,
   type RouterHistory,
+  redirect,
 } from "@tanstack/react-router";
 import { readAllSlots } from "../progress/progressStore";
+import { isPlayable, loadApprovals } from "../review/approvalsData";
+import { getEditorMode } from "../review/editorMode";
+import { loadLayerRoster } from "../review/layerRoster";
+import { ReviewScreen } from "../review/ReviewScreen";
+import { loadRaMapping, loadSources } from "../review/reviewLoaders";
 import { loadGuide } from "../spine/guideData";
 import { GuideScreen } from "./GuideScreen";
 import { LibraryScreen } from "./LibraryScreen";
@@ -43,13 +49,27 @@ const rootRoute = createRootRoute({
 const libraryRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/",
-  loader: async () => ({
-    library: await loadLibrary(),
-    slots: await readAllSlots(),
-  }),
+  // Playability is derived from each guide's approvals.json (§10.2, FR-E5),
+  // not the library-manifest status hint — the approval records are the truth.
+  loader: async () => {
+    const library = await loadLibrary();
+    const playableEntries = await Promise.all(
+      library.guides.map(
+        async (guide) =>
+          [guide.id, isPlayable(await loadApprovals(guide.id))] as const,
+      ),
+    );
+    return {
+      library,
+      slots: await readAllSlots(),
+      playable: new Map(playableEntries),
+    };
+  },
   component: function LibraryRouteComponent() {
-    const { library, slots } = libraryRoute.useLoaderData();
-    return <LibraryScreen library={library} slots={slots} />;
+    const { library, slots, playable } = libraryRoute.useLoaderData();
+    return (
+      <LibraryScreen library={library} slots={slots} playable={playable} />
+    );
   },
 });
 
@@ -60,12 +80,59 @@ const guideRoute = createRoute({
     const library = await loadLibrary();
     const entry = library.guides.find((g) => g.id === params.slug);
     if (!entry) throw notFound();
+    // Nav map (§7): in-compilation guides open into review, not play.
+    if (!isPlayable(await loadApprovals(entry.id))) {
+      throw redirect({ to: "/review/$slug", params: { slug: entry.id } });
+    }
     const guide = await loadGuide(entry.id);
     return { entry, guide };
   },
   component: function GuideRouteComponent() {
     const { entry, guide } = guideRoute.useLoaderData();
     return <GuideScreen entry={entry} guide={guide} />;
+  },
+});
+
+const reviewRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/review/$slug",
+  // The review lens is editor-mode only (§9.3) and only for unfinished guides
+  // (§7 nav map). Player mode or an already-playable guide bounces away.
+  loader: async ({ params }) => {
+    if (!getEditorMode()) throw redirect({ to: "/" });
+    const library = await loadLibrary();
+    const entry = library.guides.find((g) => g.id === params.slug);
+    if (!entry) throw notFound();
+    const approvals = await loadApprovals(entry.id);
+    if (isPlayable(approvals)) {
+      throw redirect({ to: "/guide/$slug", params: { slug: entry.id } });
+    }
+    // The roster comes from the QA report (§ the lens reads reports, FR-E2);
+    // row content + sources are only worth loading once there are layers.
+    const roster = await loadLayerRoster(entry.id);
+    const [guide, raMapping, sources] =
+      roster.length > 0
+        ? await Promise.all([
+            loadGuide(entry.id),
+            loadRaMapping(entry.id),
+            loadSources(entry.id),
+          ])
+        : [null, null, null];
+    return { entry, approvals, roster, guide, raMapping, sources };
+  },
+  component: function ReviewRouteComponent() {
+    const { entry, approvals, roster, guide, raMapping, sources } =
+      reviewRoute.useLoaderData();
+    return (
+      <ReviewScreen
+        entry={entry}
+        approvals={approvals}
+        roster={roster}
+        guide={guide}
+        raMapping={raMapping}
+        sources={sources}
+      />
+    );
   },
 });
 
@@ -78,6 +145,7 @@ const settingsRoute = createRoute({
 const routeTree = rootRoute.addChildren([
   libraryRoute,
   guideRoute,
+  reviewRoute,
   settingsRoute,
 ]);
 

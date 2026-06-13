@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { importSlots, readAllSlots } from "../progress/progressStore";
+import { setEditorMode, useEditorMode } from "../review/editorMode";
 import { progressExport, SCHEMA_VERSION } from "../schema";
 
 type ImportResult =
@@ -19,6 +20,7 @@ async function buildExport() {
 
 export function SettingsScreen() {
   const [importResult, setImportResult] = useState<ImportResult>(null);
+  const editorMode = useEditorMode();
 
   const exportProgress = async () => {
     const payload = await buildExport();
@@ -94,6 +96,21 @@ export function SettingsScreen() {
               : importResult.message}
           </p>
         ) : null}
+      </section>
+      <section className="mt-8">
+        <h2 className="font-bold">Editor mode</h2>
+        <p className="mt-1 text-sm text-ink-soft">
+          Reveals the review lens and unfinished guides still being compiled
+          (§9.3). Player mode stays clean — off by default.
+        </p>
+        <label className="mt-3 flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={editorMode}
+            onChange={(event) => setEditorMode(event.target.checked)}
+          />
+          Editor mode
+        </label>
       </section>
       <section className="mt-8">
         <h2 className="font-bold">RetroAchievements</h2>
