@@ -12,7 +12,9 @@ import {
 import { readAllSlots } from "../progress/progressStore";
 import { isPlayable, loadApprovals } from "../review/approvalsData";
 import { getEditorMode } from "../review/editorMode";
+import { loadLayerRoster } from "../review/layerRoster";
 import { ReviewScreen } from "../review/ReviewScreen";
+import { loadRaMapping, loadSources } from "../review/reviewLoaders";
 import { loadGuide } from "../spine/guideData";
 import { GuideScreen } from "./GuideScreen";
 import { LibraryScreen } from "./LibraryScreen";
@@ -105,11 +107,32 @@ const reviewRoute = createRoute({
     if (isPlayable(approvals)) {
       throw redirect({ to: "/guide/$slug", params: { slug: entry.id } });
     }
-    return { entry, approvals };
+    // The roster comes from the QA report (§ the lens reads reports, FR-E2);
+    // row content + sources are only worth loading once there are layers.
+    const roster = await loadLayerRoster(entry.id);
+    const [guide, raMapping, sources] =
+      roster.length > 0
+        ? await Promise.all([
+            loadGuide(entry.id),
+            loadRaMapping(entry.id),
+            loadSources(entry.id),
+          ])
+        : [null, null, null];
+    return { entry, approvals, roster, guide, raMapping, sources };
   },
   component: function ReviewRouteComponent() {
-    const { entry, approvals } = reviewRoute.useLoaderData();
-    return <ReviewScreen entry={entry} approvals={approvals} />;
+    const { entry, approvals, roster, guide, raMapping, sources } =
+      reviewRoute.useLoaderData();
+    return (
+      <ReviewScreen
+        entry={entry}
+        approvals={approvals}
+        roster={roster}
+        guide={guide}
+        raMapping={raMapping}
+        sources={sources}
+      />
+    );
   },
 });
 

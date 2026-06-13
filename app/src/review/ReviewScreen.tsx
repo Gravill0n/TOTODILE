@@ -1,60 +1,55 @@
 import { Link } from "@tanstack/react-router";
-import type { ApprovalsFile, LayerRecord, LibraryEntry } from "../schema";
+import { useMemo } from "react";
+import type {
+  ApprovalsFile,
+  GuideFile,
+  LibraryEntry,
+  RaMapping,
+  SourceManifest,
+} from "../schema";
+import { buildContentIndex, resolveFlaggedRows } from "./flaggedRows";
+import { LayerReviewCard } from "./LayerReviewCard";
+import type { LayerReport } from "./layerRoster";
 
 type ReviewScreenProps = {
   entry: LibraryEntry;
+  roster: LayerReport[];
+  guide: GuideFile | null;
+  raMapping: RaMapping | null;
+  sources: SourceManifest | null;
+  // Verdict overlay; absent until the approval flow writes it (Task 4).
   approvals: ApprovalsFile | null;
 };
 
-const STATUS_LABEL: Record<LayerRecord["status"], string> = {
-  draft: "Unreviewed",
-  approved: "Approved",
-  rejected: "Rejected",
-};
-
-// FR-E1 — unapproved layers must read as visually distinct from approved
-// content. Approved layers sit calm; draft/rejected layers carry the missable
-// accent so the eye lands on what still needs review.
-function LayerCard({ layer }: { layer: LayerRecord }) {
-  const approved = layer.status === "approved";
-  return (
-    <li
-      className={`rounded-lg border p-4 ${
-        approved ? "border-line bg-card" : "border-missable bg-paper-dim"
-      }`}
-    >
-      <div className="flex items-baseline justify-between gap-2">
-        <h3 className="font-bold">{layer.id}</h3>
-        <span
-          className={`rounded px-2 py-0.5 text-xs uppercase ${
-            approved ? "text-ink-soft" : "font-bold text-missable"
-          }`}
-        >
-          {STATUS_LABEL[layer.status]}
-        </span>
-      </div>
-      <p className="mt-1 text-sm text-ink-soft">
-        {layer.kind} · {layer.report.rowCount} row(s) ·{" "}
-        {layer.report.flaggedItemIds.length} flagged ·{" "}
-        {layer.report.anomalies.length} anomaly(ies)
-      </p>
-      {layer.report.anomalies.length > 0 ? (
-        <ul className="mt-2 list-disc pl-5 text-sm text-ink-soft">
-          {layer.report.anomalies.map((anomaly) => (
-            <li key={anomaly}>{anomaly}</li>
-          ))}
-        </ul>
-      ) : null}
-    </li>
+// S5 — the review lens (desktop-first), editor mode only. Each compiled layer
+// shows its flag count; expanding a layer reveals the flagged rows beside the
+// sources they trace to (FR-E2/E3). Approve/reject lands in Task 4.
+export function ReviewScreen({
+  entry,
+  roster,
+  guide,
+  raMapping,
+  sources,
+  approvals,
+}: ReviewScreenProps) {
+  const contentIndex = useMemo(
+    () => (guide ? buildContentIndex(guide) : new Map()),
+    [guide],
   );
-}
+  const sourceById = useMemo(
+    () => new Map((sources?.sources ?? []).map((s) => [s.id, s])),
+    [sources],
+  );
+  const approvalByLayer = useMemo(
+    () => new Map((approvals?.layers ?? []).map((l) => [l.id, l])),
+    [approvals],
+  );
 
-// S5 — the review lens (desktop-first), editor mode only. Task 1 ships the
-// report-card shell; flagged-row source excerpts (Task 2), random spot-checks
-// (Task 3), and approve/reject (Task 4, the only writer of approvals.json) slot
-// in here later.
-export function ReviewScreen({ entry, approvals }: ReviewScreenProps) {
-  const layers = approvals?.layers ?? [];
+  const totalFlags = roster.reduce(
+    (sum, layer) => sum + layer.flaggedItemIds.length,
+    0,
+  );
+
   return (
     <main className="mx-auto max-w-4xl px-4 py-6">
       <header className="mb-6">
@@ -64,23 +59,34 @@ export function ReviewScreen({ entry, approvals }: ReviewScreenProps) {
         <h1 className="text-2xl font-bold">{entry.title}</h1>
         <p className="mt-1 text-sm text-ink-soft">
           A guide becomes playable only once every layer is approved (FR-E5).
+          {roster.length > 0
+            ? ` ${totalFlags} flagged row(s) to verify across ${roster.length} layer(s).`
+            : ""}
         </p>
       </header>
-      {layers.length === 0 ? (
+
+      {roster.length === 0 ? (
         <p className="text-ink-soft">
-          No compiled layers recorded yet — run the compiler passes, then review
-          them here.
+          Not compiled through QA yet — run the compiler passes, then the
+          flagged rows show up here.
         </p>
       ) : (
-        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          {layers.map((layer) => (
-            <LayerCard key={layer.id} layer={layer} />
+        <div className="space-y-4">
+          {roster.map((layer) => (
+            <LayerReviewCard
+              key={layer.id}
+              layer={layer}
+              flaggedRows={resolveFlaggedRows(layer, contentIndex, raMapping)}
+              sourceById={sourceById}
+              approval={approvalByLayer.get(layer.id)}
+            />
           ))}
-        </ul>
+        </div>
       )}
+
       <p className="mt-6 text-sm text-ink-soft">
-        Flagged-row review, spot-checks, and approve/reject arrive in the next
-        review-lens tasks.
+        Random spot-checks and approve/reject arrive in the next review-lens
+        tasks.
       </p>
       <p className="mt-8 text-sm">
         <Link to="/" className="underline">
