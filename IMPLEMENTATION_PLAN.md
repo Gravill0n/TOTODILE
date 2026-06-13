@@ -10,6 +10,7 @@ All section references (§) point into the PRD. Phases are dependency-ordered (�
 Everything else consumes this. Seed by reverse-engineering `ml-partners-in-time/build/guide.json`, then reshape to the PRD data model (§6).
 
 **Tasks**
+
 1. Bootstrap `app/` workspace: Vite + React 19 + TS strict + Tailwind 4 + Biome + Vitest + Yarn 4 (§19) — only enough to host the schema package and tests.
 2. Define Zod schemas in `app/src/schema/` (§20.2): guide spine (chapters → steps, missable + achievement annotations), the 7 widget primitives, genre deck, library manifest, RA mapping, source manifest, approvals record (§6.1–6.7).
 3. Fix the stable-ID format (`<slug>:<chapter>:<short-id>` style, §20.3) — IDs are forever (§6.8); document it in the schema.
@@ -25,6 +26,7 @@ Everything else consumes this. Seed by reverse-engineering `ml-partners-in-time/
 ## Phase 1 — Minimal app (prove the schema renders)
 
 **Tasks**
+
 1. App shell: library screen from `library.json`, TanStack routes, posture-responsive layout skeleton (§7 S1/S2).
 2. Spine rendering + explicit current-step pointer (stored, auto-advance on check, manual move — §6.7) + Now landing (FR-A4).
 3. Three renderers: checklist, data table, counter (the P1 set; matrix/map/flowchart/prep-card stubs render as degraded lists, §9.3).
@@ -42,6 +44,7 @@ Everything else consumes this. Seed by reverse-engineering `ml-partners-in-time/
 Rebuild the achievement-guide-builder skill as a multi-pass suite (FR-D). Pilot: **Pokémon Crystal** (pull source work from the `guide-improvements` branch).
 
 **Tasks**
+
 1. Design the pass contract: each pass = one skill, reads prior layer, emits `layers/<pass>.json` + report (row counts, anomalies, confidence flags) (FR-D1/D2, E2).
 2. Skills: source-gathering (writes `sources.json`) → spine extraction → widget fills → RA mapping → QA/validator (FR-D4 cross-reference checks).
 3. Confidence-flag + source-reference plumbing: every emitted datum carries `sourceRef` and a confidence level (FR-D2/D3).
@@ -55,6 +58,7 @@ Rebuild the achievement-guide-builder skill as a multi-pass suite (FR-D). Pilot:
 ## Phase 3 — Review lens (close the QA loop)
 
 **Tasks**
+
 1. Editor-mode toggle (§9.3); unapproved guides visibly "unfinished" (FR-E1, E5 AC).
 2. Flagged-row review UI: row + source excerpt side by side; flag count per layer (FR-E2, E3).
 3. Random spot-check flow with recorded verdicts (FR-E3, E4).
@@ -68,12 +72,15 @@ Rebuild the achievement-guide-builder skill as a multi-pass suite (FR-D). Pilot:
 ## Phase 4 — Sync + comfort
 
 **Tasks**
+
 1. Isolated RA client (`sync/`, §9.1): `@retroachievements/api`, key in settings only (§17.4), domain types only escape (§22.3).
 2. Sync button: backfill on first press, additive-only marking, atomic failure, receipt (FR-C, §8.1, §11.3).
 3. Crystal RA mapping verified during the pilot playthrough (§13.2 metric 5).
 4. Skip-state cleanup view grouped by location (FR-B4, P7).
 5. Missables surfacing on the current-step view (FR-B5, P3).
 6. Matrix renderer (full version).
+7. Map-pins and flowchart full renderers (upgrade from degraded lists, §9.3).
+8. Prep-card full renderer.
 
 **Exit gate:** P5/P7/P3 story ACs pass; sync tests against the fake RA client cover all three receipt buckets + atomic failure (§12.2).
 
@@ -82,18 +89,17 @@ Rebuild the achievement-guide-builder skill as a multi-pass suite (FR-D). Pilot:
 ## Phase 5 — Completers
 
 **Tasks**
-1. Map-pins and flowchart full renderers (upgrade from degraded lists, §9.3).
-2. Prep-card full renderer.
-3. Print lens: `yarn print-lens <slug>` → single self-contained HTML (§17.10).
-4. Migrate the remaining four guides (OoT, Layton MM, ML PiT formal recompile, Ranger SoA) incl. localStorage progress migration (FR-D5, E6).
-5. Retire legacy HTML guides as each replacement is approved (§18.3).
-6. GitHub Pages (or chosen host) wiring (§21.3).
+
+1. Migrate the remaining four guides (OoT, Layton MM, ML PiT formal recompile, Ranger SoA) incl. localStorage progress migration (FR-D5, E6).
+2. Retire legacy HTML guides as each replacement is approved (§18.3).
+3. GitHub Pages (or chosen host) wiring (§21.3).
 
 **Exit gate:** §13.1 metrics 1–3 — all 5 guides migrated/approved, HTML guides unopened, and one full app-only playthrough done.
 
 ---
 
 ## Standing rules while executing
+
 - The PRD is the spec; conflicts resolve in the PRD's favor until Pierre amends it (§24.1).
 - The §14.3 never-list and §24 boundaries apply to every phase.
 - `yarn check` green before any merge to `main`; AI work always lands by PR (§23.3).
