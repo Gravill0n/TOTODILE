@@ -1499,6 +1499,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@retroachievements/api@npm:^2.10.0":
+  version: 2.10.0
+  resolution: "@retroachievements/api@npm:2.10.0"
+  checksum: 10c0/cc68e666d2bc28594b3474e6a12ab54048c68d8771bc67a9a99e69b537348452047bbc8c7bc11332c6c6cbd0eb4985fc9bc165b36db25b2873c9941c290aa2a8
+  languageName: node
+  linkType: hard
+
 "@rolldown/binding-android-arm64@npm:1.0.3":
   version: 1.0.3
   resolution: "@rolldown/binding-android-arm64@npm:1.0.3"
@@ -5032,6 +5039,7 @@ __metadata:
   resolution: "totodile@workspace:."
   dependencies:
     "@biomejs/biome": "npm:^2.4.16"
+    "@retroachievements/api": "npm:^2.10.0"
     "@tailwindcss/vite": "npm:^4.3.0"
     "@tanstack/react-router": "npm:^1.170.15"
     "@testing-library/dom": "npm:^10.4.1"

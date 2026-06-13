@@ -9,11 +9,13 @@ import {
   readAllSlots,
 } from "../../src/progress/progressStore";
 import { createAppRouter } from "../../src/shell/router";
+import { getCredentials } from "../../src/sync/raCredentials";
 import { validProgressExport } from "../schema/helpers";
 
 afterEach(async () => {
   cleanup();
   vi.unstubAllGlobals();
+  localStorage.clear();
   await closeProgressDb();
   await deleteDB("totodile");
 });
@@ -68,5 +70,25 @@ describe("settings — progress backup (FR-B6)", () => {
     fireEvent.click(screen.getByText("Export progress"));
     await vi.waitFor(() => expect(createObjectURL).toHaveBeenCalledOnce());
     expect(revokeObjectURL).toHaveBeenCalledWith("blob:totodile");
+  });
+});
+
+describe("settings — RA credentials (§17.4)", () => {
+  it("saves and clears the RA username + API key", async () => {
+    await renderSettings();
+    fireEvent.change(screen.getByLabelText("RA username"), {
+      target: { value: "Pierre" },
+    });
+    const keyField = screen.getByLabelText("RA API key");
+    expect(keyField).toHaveProperty("type", "password");
+    fireEvent.change(keyField, { target: { value: "KEY-123" } });
+    fireEvent.click(screen.getByText("Save"));
+    expect(getCredentials()).toEqual({
+      username: "Pierre",
+      webApiKey: "KEY-123",
+    });
+
+    fireEvent.click(screen.getByText("Clear"));
+    expect(getCredentials()).toBeNull();
   });
 });
