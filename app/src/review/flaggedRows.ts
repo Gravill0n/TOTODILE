@@ -1,22 +1,46 @@
-import type { Confidence, GuideFile, RaMapping, Widget } from "../schema";
+import type {
+  Confidence,
+  GuideFile,
+  RaMapping,
+  RaMappingEntry,
+  Widget,
+} from "../schema";
 import type { LayerReport } from "./layerRoster";
 
 // A flagged row, normalised across spine steps, widget items, and RA-mapping
 // entries, ready to render beside its source(s) (FR-E2/E3).
 export type FlaggedRow = {
+  // Display key — unique per rendered row. For ra-mapping rows this combines
+  // the achievement and its target; elsewhere it equals itemId.
   id: string;
+  // The checkable a verdict keys on (spotCheckVerdict.itemId) — the step /
+  // widget item, or an ra-mapping row's target.
+  itemId: string;
   title: string;
   detail?: string;
   sourceRefs: string[];
   confidence: Confidence;
 };
 
-type RowContent = {
+export type RowContent = {
   title: string;
   detail?: string;
   sourceRefs: string[];
   confidence: Confidence;
 };
+
+export type ContentIndex = Map<string, RowContent>;
+
+// Build a renderable row for a checkable item, or undefined if the assembled
+// guide has no such row. Shared by the flagged worklist and the spot-check
+// sampler so both render identically.
+export function indexRow(
+  itemId: string,
+  index: ContentIndex,
+): FlaggedRow | undefined {
+  const content = index.get(itemId);
+  return content ? { id: itemId, itemId, ...content } : undefined;
+}
 
 function joinDetail(parts: (string | undefined)[]): string | undefined {
   const kept = parts.filter((part): part is string => Boolean(part));
@@ -144,30 +168,35 @@ export function buildContentIndex(guide: GuideFile): Map<string, RowContent> {
   return index;
 }
 
+// One ra-mapping row: the achievement and the target it lands on, the target's
+// content pulled through the index. Shared by the flagged worklist and the
+// spot-check sampler.
+export function raRow(entry: RaMappingEntry, index: ContentIndex): FlaggedRow {
+  const target = index.get(entry.targetItemId);
+  return {
+    id: `${entry.raAchievementId}:${entry.targetItemId}`,
+    itemId: entry.targetItemId,
+    title: `RA #${entry.raAchievementId} → ${target?.title ?? entry.targetItemId}`,
+    detail: target?.detail,
+    sourceRefs: entry.sourceRefs,
+    confidence: entry.confidence,
+  };
+}
+
 // The flagged rows for one layer. spine/widget layers map their flagged item
 // IDs straight through the content index; the ra-mapping layer turns each
 // flagged target into one row per achievement that lands on it (several may),
 // labelled "RA #<id> → <target>".
 export function resolveFlaggedRows(
   layer: LayerReport,
-  index: Map<string, RowContent>,
+  index: ContentIndex,
   raMapping: RaMapping | null,
 ): FlaggedRow[] {
   if (layer.kind === "ra-mapping") {
     const flagged = new Set(layer.flaggedItemIds);
-    const entries = (raMapping?.entries ?? []).filter((entry) =>
-      flagged.has(entry.targetItemId),
-    );
-    return entries.map((entry) => {
-      const target = index.get(entry.targetItemId);
-      return {
-        id: `${entry.raAchievementId}:${entry.targetItemId}`,
-        title: `RA #${entry.raAchievementId} → ${target?.title ?? entry.targetItemId}`,
-        detail: target?.detail,
-        sourceRefs: entry.sourceRefs,
-        confidence: entry.confidence,
-      };
-    });
+    return (raMapping?.entries ?? [])
+      .filter((entry) => flagged.has(entry.targetItemId))
+      .map((entry) => raRow(entry, index));
   }
 
   return layer.flaggedItemIds.map((id) => {
@@ -177,12 +206,13 @@ export function resolveFlaggedRows(
       // worth surfacing, never a silent drop.
       return {
         id,
+        itemId: id,
         title: id,
         detail: "(no matching row in the assembled guide)",
         sourceRefs: [],
         confidence: "flagged" as const,
       };
     }
-    return { id, ...content };
+    return { id, itemId: id, ...content };
   });
 }

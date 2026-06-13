@@ -10,6 +10,8 @@ import type {
 import { buildContentIndex, resolveFlaggedRows } from "./flaggedRows";
 import { LayerReviewCard } from "./LayerReviewCard";
 import type { LayerReport } from "./layerRoster";
+import { layerUnflaggedRows } from "./spotCheck";
+import { useSpotChecks } from "./useSpotChecks";
 
 type ReviewScreenProps = {
   entry: LibraryEntry;
@@ -44,6 +46,7 @@ export function ReviewScreen({
     () => new Map((approvals?.layers ?? []).map((l) => [l.id, l])),
     [approvals],
   );
+  const spotChecks = useSpotChecks(entry.id);
 
   const totalFlags = roster.reduce(
     (sum, layer) => sum + layer.flaggedItemIds.length,
@@ -77,7 +80,14 @@ export function ReviewScreen({
               key={layer.id}
               layer={layer}
               flaggedRows={resolveFlaggedRows(layer, contentIndex, raMapping)}
+              unflaggedRows={
+                guide
+                  ? layerUnflaggedRows(layer, contentIndex, guide, raMapping)
+                  : []
+              }
               sourceById={sourceById}
+              verdicts={spotChecks.byLayer.get(layer.id) ?? new Map()}
+              onRecord={(verdict) => spotChecks.record(layer.id, verdict)}
               approval={approvalByLayer.get(layer.id)}
             />
           ))}

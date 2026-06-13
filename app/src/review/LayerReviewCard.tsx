@@ -1,13 +1,17 @@
 import { useState } from "react";
-import type { LayerRecord, SourceEntry } from "../schema";
+import type { LayerRecord, SourceEntry, SpotCheckVerdict } from "../schema";
 import { FlaggedRowView } from "./FlaggedRowView";
 import type { FlaggedRow } from "./flaggedRows";
 import type { LayerReport } from "./layerRoster";
+import { SpotCheckPanel } from "./SpotCheckPanel";
 
 type LayerReviewCardProps = {
   layer: LayerReport;
   flaggedRows: FlaggedRow[];
+  unflaggedRows: FlaggedRow[];
   sourceById: Map<string, SourceEntry>;
+  verdicts: Map<string, SpotCheckVerdict>;
+  onRecord: (verdict: SpotCheckVerdict) => void;
   // The recorded verdict for this layer, if one exists yet (Task 4 writes it).
   approval?: LayerRecord | undefined;
 };
@@ -24,7 +28,10 @@ const STATUS_LABEL: Record<LayerRecord["status"], string> = {
 export function LayerReviewCard({
   layer,
   flaggedRows,
+  unflaggedRows,
   sourceById,
+  verdicts,
+  onRecord,
   approval,
 }: LayerReviewCardProps) {
   const [open, setOpen] = useState(false);
@@ -72,17 +79,29 @@ export function LayerReviewCard({
       ) : null}
 
       {open ? (
-        flaggedRows.length === 0 ? (
-          <p className="mt-3 text-sm text-ink-soft">
-            No flagged rows — nothing to verify on this layer.
-          </p>
-        ) : (
-          <ul className="mt-3 space-y-3">
-            {flaggedRows.map((row) => (
-              <FlaggedRowView key={row.id} row={row} sourceById={sourceById} />
-            ))}
-          </ul>
-        )
+        <>
+          {flaggedRows.length === 0 ? (
+            <p className="mt-3 text-sm text-ink-soft">
+              No flagged rows — nothing to verify on this layer.
+            </p>
+          ) : (
+            <ul className="mt-3 space-y-3">
+              {flaggedRows.map((row) => (
+                <FlaggedRowView
+                  key={row.id}
+                  row={row}
+                  sourceById={sourceById}
+                />
+              ))}
+            </ul>
+          )}
+          <SpotCheckPanel
+            unflaggedRows={unflaggedRows}
+            sourceById={sourceById}
+            verdicts={verdicts}
+            onRecord={onRecord}
+          />
+        </>
       ) : null}
     </section>
   );
