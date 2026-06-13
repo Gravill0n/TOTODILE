@@ -12,8 +12,10 @@ import {
   emptySlot,
   writeSlot,
 } from "../../src/progress/progressStore";
+import { setEditorMode } from "../../src/review/editorMode";
+import { SCHEMA_VERSION } from "../../src/schema";
 import { createAppRouter } from "../../src/shell/router";
-import { validLibrary } from "../schema/helpers";
+import { validLayer, validLibrary } from "../schema/helpers";
 
 const fixtureGuide = JSON.parse(
   readFileSync(
@@ -33,6 +35,8 @@ const fixtureGuide = JSON.parse(
 afterEach(async () => {
   cleanup();
   vi.unstubAllGlobals();
+  setEditorMode(false);
+  localStorage.clear();
   await closeProgressDb();
   await deleteDB("totodile");
 });
@@ -52,12 +56,33 @@ function libraryWithTwoGuides() {
   return library;
 }
 
-function stubContentFetch(library: unknown) {
+// An all-approved approvals record makes a guide playable (FR-E5).
+function approvedApprovals(slug: string) {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: slug,
+    layers: [{ ...validLayer("approved"), id: "layer-spine" }],
+  };
+}
+
+// Playability is derived from approvals.json, so the stub must serve it.
+// approvedSlugs are playable; every other guide reads as unfinished (404).
+function stubContentFetch(
+  library: unknown,
+  approvedSlugs = ["fictional-quest"],
+) {
   vi.stubGlobal(
     "fetch",
     vi.fn(async (input: RequestInfo | URL) => {
       const url = String(input);
       if (url.endsWith("library.json")) return Response.json(library);
+      const approvals = url.match(/guides\/([^/]+)\/approvals\.json$/);
+      if (approvals) {
+        const slug = approvals[1] ?? "";
+        return approvedSlugs.includes(slug)
+          ? Response.json(approvedApprovals(slug))
+          : new Response("not found", { status: 404 });
+      }
       if (url.endsWith("guides/fictional-quest/guide.json")) {
         return Response.json(fixtureGuide);
       }
@@ -74,15 +99,23 @@ function renderAt(path: string) {
 }
 
 describe("app shell", () => {
-  it("renders library cards from library.json, with the in-compilation treatment", async () => {
+  it("renders only playable guides in player mode (FR-E5)", async () => {
     stubContentFetch(libraryWithTwoGuides());
     renderAt("/");
     expect(
       await screen.findByText("Fictional Quest — 100% guide"),
     ).toBeDefined();
-    expect(screen.getByText("Ghost Quest — draft guide")).toBeDefined();
-    expect(screen.getByText("in compilation")).toBeDefined();
-    expect(screen.getAllByText("en")).toHaveLength(2);
+    expect(screen.queryByText("Ghost Quest — draft guide")).toBeNull();
+    expect(screen.getAllByText("en")).toHaveLength(1);
+  });
+
+  it("reveals unfinished guides with the unfinished treatment in editor mode (§9.3)", async () => {
+    setEditorMode(true);
+    stubContentFetch(libraryWithTwoGuides());
+    renderAt("/");
+    expect(await screen.findByText("Ghost Quest — draft guide")).toBeDefined();
+    expect(screen.getByText("unfinished")).toBeDefined();
+    expect(screen.getByText("editor mode")).toBeDefined();
   });
 
   it("shows completion % and current chapter, sorted by last activity (FR-A3)", async () => {
@@ -100,7 +133,10 @@ describe("app shell", () => {
       stats: { stepsDone: 2, stepsTotal: 4, currentChapterTitle: null },
       lastActivityAt: "2026-06-12T10:00:00Z",
     });
-    stubContentFetch(libraryWithTwoGuides());
+    stubContentFetch(libraryWithTwoGuides(), [
+      "fictional-quest",
+      "ghost-quest",
+    ]);
     renderAt("/");
     await screen.findByText("25%");
     expect(screen.getByText("Chapter 1 — The Castle Gate")).toBeDefined();
@@ -144,6 +180,21 @@ describe("app shell", () => {
     ).toBeDefined();
   });
 
+  it("opening an unfinished guide goes to its review lens, not play (§7)", async () => {
+    setEditorMode(true);
+    stubContentFetch(libraryWithTwoGuides());
+    renderAt("/guide/ghost-quest");
+    expect(await screen.findByText("Review lens — unfinished")).toBeDefined();
+  });
+
+  it("an unfinished guide is unreachable in player mode", async () => {
+    stubContentFetch(libraryWithTwoGuides());
+    renderAt("/guide/ghost-quest");
+    expect(
+      await screen.findByRole("heading", { name: "Library" }),
+    ).toBeDefined();
+  });
+
   it("shows a visible broken state on a malformed manifest (§11.1)", async () => {
     stubContentFetch({ schemaVersion: 0, guides: [{ id: 42 }] });
     renderAt("/");
@@ -160,9 +211,24 @@ describe("app shell", () => {
     expect(screen.getByText(/HTTP 404/)).toBeDefined();
   });
 
-  it("shows a visible broken state when a guide file is malformed or missing", async () => {
-    stubContentFetch(libraryWithTwoGuides());
-    renderAt("/guide/ghost-quest");
+  it("shows a visible broken state when a playable guide's file is malformed (§11.1)", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (input: RequestInfo | URL) => {
+        const url = String(input);
+        if (url.endsWith("library.json")) {
+          return Response.json(libraryWithTwoGuides());
+        }
+        if (/guides\/[^/]+\/approvals\.json$/.test(url)) {
+          return Response.json(approvedApprovals("fictional-quest"));
+        }
+        if (url.endsWith("guides/fictional-quest/guide.json")) {
+          return new Response("{ not json", { status: 200 });
+        }
+        return new Response("not found", { status: 404 });
+      }),
+    );
+    renderAt("/guide/fictional-quest");
     expect(await screen.findByText("Something is broken")).toBeDefined();
   });
 

@@ -38,7 +38,12 @@ function serveRepoContent(): Plugin {
       );
       res.end(body);
     } catch {
-      next();
+      // A missing content file is a real 404 (matching static hosting beside
+      // dist/), never the SPA index.html fallback — otherwise JSON loaders
+      // would parse HTML. Absent files are expected (e.g. an unapproved
+      // guide has no approvals.json, §6.7).
+      res.statusCode = 404;
+      res.end("Not found");
     }
   };
   return {

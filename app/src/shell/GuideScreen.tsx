@@ -126,12 +126,6 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
     >
       <header className="mb-4">
         <h1 className="text-xl font-bold">{entry.title}</h1>
-        {entry.status === "in-compilation" ? (
-          <p className="mt-1 text-xs text-ink-soft">
-            In compilation — opens into the review lens once it exists (Phase
-            3).
-          </p>
-        ) : null}
       </header>
       {progress.ready ? (
         <NowScreen
