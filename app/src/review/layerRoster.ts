@@ -13,6 +13,9 @@ export type LayerReport = {
   rowCount: number;
   anomalies: string[];
   flaggedItemIds: string[];
+  // "sha256:" + the artifact's digest, taken from the QA report's recorded
+  // input hash — what an approval hash-locks (§6.8, contract §5).
+  contentHash: string;
 };
 
 function kindOf(id: string): LayerKind {
@@ -43,6 +46,10 @@ export async function loadLayerRoster(slug: string): Promise<LayerReport[]> {
   }
   const qa = passReportFile.parse(await response.json());
 
+  // The QA report records each artifact's exact-bytes digest; an approval
+  // hash-locks that (checkStableIdsCore compares "sha256:" + this digest).
+  const digestByFile = new Map(qa.inputs.map((i) => [i.file, i.sha256]));
+
   const layerIds = qa.inputs
     .map((input) => input.file)
     .filter((file) => /^layers\/.+\.json$/.test(file))
@@ -66,6 +73,7 @@ export async function loadLayerRoster(slug: string): Promise<LayerReport[]> {
         rowCount: parsed.report.rowCount,
         anomalies: parsed.report.anomalies,
         flaggedItemIds: parsed.report.flaggedItemIds,
+        contentHash: `sha256:${digestByFile.get(`layers/${id}.json`) ?? ""}`,
       };
     }),
   );

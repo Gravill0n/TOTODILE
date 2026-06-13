@@ -17,7 +17,14 @@ function layer(
   kind: LayerReport["kind"],
   flaggedItemIds: string[],
 ): LayerReport {
-  return { id, kind, rowCount: 0, anomalies: [], flaggedItemIds };
+  return {
+    id,
+    kind,
+    rowCount: 0,
+    anomalies: [],
+    flaggedItemIds,
+    contentHash: `sha256:${"a".repeat(64)}`,
+  };
 }
 
 describe("layerUnflaggedRows", () => {

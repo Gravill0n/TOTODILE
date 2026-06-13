@@ -8,9 +8,11 @@ import type { SpotCheckVerdict } from "../schema";
 // approvals.json (the only writer of that file, §23.4).
 const DB_NAME = "totodile-review";
 const STORE = "spotChecks";
+const VERDICT_STORE = "layerVerdicts";
 
-// One row per verdict. The composite key keeps an upsert to a single (guide,
-// layer, item) a plain put, and lets a guide's verdicts be read in one sweep.
+// One row per spot-check verdict. The composite key keeps an upsert to a single
+// (guide, layer, item) a plain put, and lets a guide's verdicts be read in one
+// sweep.
 type SpotCheckRecord = {
   id: string;
   guideId: string;
@@ -20,12 +22,34 @@ type SpotCheckRecord = {
   note?: string;
 };
 
+// A draft approve/reject decision for one layer (Task 4), held here until the
+// editor exports approvals.json. Mirrors the eventual approvalRecord.
+export type LayerVerdict = {
+  status: "approved" | "rejected";
+  note?: string;
+  date: string;
+};
+
+type LayerVerdictRecord = {
+  id: string;
+  guideId: string;
+  layerId: string;
+  status: LayerVerdict["status"];
+  note?: string;
+  date: string;
+};
+
 let dbPromise: Promise<IDBPDatabase> | undefined;
 
 function db(): Promise<IDBPDatabase> {
-  dbPromise ??= openDB(DB_NAME, 1, {
-    upgrade(database) {
-      database.createObjectStore(STORE, { keyPath: "id" });
+  dbPromise ??= openDB(DB_NAME, 2, {
+    upgrade(database, oldVersion) {
+      if (oldVersion < 1) {
+        database.createObjectStore(STORE, { keyPath: "id" });
+      }
+      if (oldVersion < 2) {
+        database.createObjectStore(VERDICT_STORE, { keyPath: "id" });
+      }
     },
   });
   return dbPromise;
@@ -33,6 +57,10 @@ function db(): Promise<IDBPDatabase> {
 
 function recordId(guideId: string, layerId: string, itemId: string): string {
   return `${guideId}|${layerId}|${itemId}`;
+}
+
+function layerKey(guideId: string, layerId: string): string {
+  return `${guideId}|${layerId}`;
 }
 
 // Every recorded verdict for one guide, grouped by layer then item — the shape
@@ -79,6 +107,48 @@ export async function clearSpotCheck(
   itemId: string,
 ): Promise<void> {
   await (await db()).delete(STORE, recordId(guideId, layerId, itemId));
+}
+
+// Every recorded layer verdict for one guide, keyed by layerId (Task 4).
+export async function readGuideVerdicts(
+  guideId: string,
+): Promise<Map<string, LayerVerdict>> {
+  const all = (await (
+    await db()
+  ).getAll(VERDICT_STORE)) as LayerVerdictRecord[];
+  const byLayer = new Map<string, LayerVerdict>();
+  for (const row of all) {
+    if (row.guideId !== guideId) continue;
+    byLayer.set(row.layerId, {
+      status: row.status,
+      date: row.date,
+      ...(row.note !== undefined ? { note: row.note } : {}),
+    });
+  }
+  return byLayer;
+}
+
+export async function putLayerVerdict(
+  guideId: string,
+  layerId: string,
+  verdict: LayerVerdict,
+): Promise<void> {
+  const record: LayerVerdictRecord = {
+    id: layerKey(guideId, layerId),
+    guideId,
+    layerId,
+    status: verdict.status,
+    date: verdict.date,
+    ...(verdict.note !== undefined ? { note: verdict.note } : {}),
+  };
+  await (await db()).put(VERDICT_STORE, record);
+}
+
+export async function clearLayerVerdict(
+  guideId: string,
+  layerId: string,
+): Promise<void> {
+  await (await db()).delete(VERDICT_STORE, layerKey(guideId, layerId));
 }
 
 // Drops the cached connection so the next call reopens the database — tests

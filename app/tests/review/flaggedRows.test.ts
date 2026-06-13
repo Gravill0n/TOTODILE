@@ -20,6 +20,7 @@ function layer(
     rowCount: flaggedItemIds.length,
     anomalies: [],
     flaggedItemIds,
+    contentHash: `sha256:${"a".repeat(64)}`,
   };
 }
 

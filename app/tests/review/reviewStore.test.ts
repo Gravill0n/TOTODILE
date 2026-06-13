@@ -3,9 +3,12 @@ import "fake-indexeddb/auto";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
 import {
+  clearLayerVerdict,
   closeReviewDb,
+  putLayerVerdict,
   putSpotCheck,
   readGuideSpotChecks,
+  readGuideVerdicts,
 } from "../../src/review/reviewStore";
 
 afterEach(async () => {
@@ -48,5 +51,42 @@ describe("review store (FR-E3)", () => {
     });
     const spine = (await readGuideSpotChecks("g")).get("spine");
     expect([...(spine?.keys() ?? [])]).toEqual(["g:c1:s1"]);
+  });
+});
+
+describe("layer verdicts (FR-E4)", () => {
+  it("persists a verdict across connections, then upserts and clears it", async () => {
+    await putLayerVerdict("g", "spine", {
+      status: "rejected",
+      note: "step 2 contradicts the source",
+      date: "2026-06-13T10:00:00Z",
+    });
+    await closeReviewDb();
+    expect((await readGuideVerdicts("g")).get("spine")?.status).toBe(
+      "rejected",
+    );
+
+    await putLayerVerdict("g", "spine", {
+      status: "approved",
+      date: "2026-06-13T11:00:00Z",
+    });
+    const approved = (await readGuideVerdicts("g")).get("spine");
+    expect(approved?.status).toBe("approved");
+    expect(approved?.note).toBeUndefined();
+
+    await clearLayerVerdict("g", "spine");
+    expect((await readGuideVerdicts("g")).get("spine")).toBeUndefined();
+  });
+
+  it("still serves Task 3 spot-checks after the v2 upgrade", async () => {
+    await putSpotCheck("g", "spine", { itemId: "g:c1:s1", verdict: "pass" });
+    await putLayerVerdict("g", "spine", {
+      status: "approved",
+      date: "2026-06-13T11:00:00Z",
+    });
+    expect((await readGuideSpotChecks("g")).get("spine")?.size).toBe(1);
+    expect((await readGuideVerdicts("g")).get("spine")?.status).toBe(
+      "approved",
+    );
   });
 });

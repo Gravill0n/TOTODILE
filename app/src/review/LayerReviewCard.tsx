@@ -3,6 +3,7 @@ import type { LayerRecord, SourceEntry, SpotCheckVerdict } from "../schema";
 import { FlaggedRowView } from "./FlaggedRowView";
 import type { FlaggedRow } from "./flaggedRows";
 import type { LayerReport } from "./layerRoster";
+import type { LayerVerdict } from "./reviewStore";
 import { SpotCheckPanel } from "./SpotCheckPanel";
 
 type LayerReviewCardProps = {
@@ -10,10 +11,15 @@ type LayerReviewCardProps = {
   flaggedRows: FlaggedRow[];
   unflaggedRows: FlaggedRow[];
   sourceById: Map<string, SourceEntry>;
-  verdicts: Map<string, SpotCheckVerdict>;
-  onRecord: (verdict: SpotCheckVerdict) => void;
-  // The recorded verdict for this layer, if one exists yet (Task 4 writes it).
+  spotCheckVerdicts: Map<string, SpotCheckVerdict>;
+  onSpotCheck: (verdict: SpotCheckVerdict) => void;
+  // The editor's draft approve/reject decision (Task 4), if made this session.
+  verdict?: LayerVerdict | undefined;
+  // The committed verdict from approvals.json, if the guide already has one.
   approval?: LayerRecord | undefined;
+  onApprove: () => void;
+  onReject: (note: string) => void;
+  onClearVerdict: () => void;
 };
 
 const STATUS_LABEL: Record<LayerRecord["status"], string> = {
@@ -23,19 +29,29 @@ const STATUS_LABEL: Record<LayerRecord["status"], string> = {
 };
 
 // One layer's report card. FR-E1: an unapproved layer reads visually distinct
-// from an approved one (missable accent vs. calm). Flag count is always
-// visible; expanding reveals the flagged rows beside their sources (FR-E2).
+// from an approved one. Flag count is always visible; expanding reveals the
+// flagged rows (FR-E2), the spot-check panel (FR-E3), and approve/reject
+// (FR-E4). The badge shows the effective status: draft decision over committed
+// approval over "draft".
 export function LayerReviewCard({
   layer,
   flaggedRows,
   unflaggedRows,
   sourceById,
-  verdicts,
-  onRecord,
+  spotCheckVerdicts,
+  onSpotCheck,
+  verdict,
   approval,
+  onApprove,
+  onReject,
+  onClearVerdict,
 }: LayerReviewCardProps) {
   const [open, setOpen] = useState(false);
-  const approved = approval?.status === "approved";
+  const [rejecting, setRejecting] = useState(false);
+  const [note, setNote] = useState("");
+
+  const status = verdict?.status ?? approval?.status ?? "draft";
+  const approved = status === "approved";
   const flagCount = layer.flaggedItemIds.length;
 
   return (
@@ -62,10 +78,10 @@ export function LayerReviewCard({
           <span className="text-ink-soft">{layer.rowCount} rows</span>
           <span
             className={`rounded px-2 py-0.5 uppercase ${
-              approved ? "text-ink-soft" : "font-bold text-missable"
+              approved ? "font-bold text-accent" : "font-bold text-missable"
             }`}
           >
-            {STATUS_LABEL[approval?.status ?? "draft"]}
+            {STATUS_LABEL[status]}
           </span>
         </span>
       </button>
@@ -95,12 +111,84 @@ export function LayerReviewCard({
               ))}
             </ul>
           )}
+
           <SpotCheckPanel
             unflaggedRows={unflaggedRows}
             sourceById={sourceById}
-            verdicts={verdicts}
-            onRecord={onRecord}
+            verdicts={spotCheckVerdicts}
+            onRecord={onSpotCheck}
           />
+
+          <div className="mt-4 border-t border-line pt-3">
+            {verdict ? (
+              <div className="flex flex-wrap items-center gap-3 text-sm">
+                <span
+                  className={`font-bold uppercase ${
+                    verdict.status === "approved"
+                      ? "text-accent"
+                      : "text-missable"
+                  }`}
+                >
+                  {STATUS_LABEL[verdict.status]}
+                </span>
+                {verdict.note ? (
+                  <span className="text-ink-soft">“{verdict.note}”</span>
+                ) : null}
+                <button
+                  type="button"
+                  onClick={() => {
+                    onClearVerdict();
+                    setRejecting(false);
+                    setNote("");
+                  }}
+                  className="text-ink-soft underline"
+                >
+                  Change
+                </button>
+              </div>
+            ) : (
+              <div className="flex flex-wrap items-center gap-2">
+                <button
+                  type="button"
+                  onClick={onApprove}
+                  className="rounded border border-accent px-3 py-1 text-sm font-bold text-accent"
+                >
+                  ✓ Approve
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setRejecting((value) => !value)}
+                  className="rounded border border-line px-3 py-1 text-sm"
+                >
+                  ✗ Reject
+                </button>
+                {rejecting ? (
+                  <span className="flex flex-1 items-center gap-2">
+                    <input
+                      type="text"
+                      value={note}
+                      onChange={(event) => setNote(event.target.value)}
+                      placeholder="rejection note (required — feeds the recompile)"
+                      aria-label={`Rejection note for ${layer.id}`}
+                      className="flex-1 rounded border border-line bg-paper px-2 py-1 text-sm"
+                    />
+                    <button
+                      type="button"
+                      disabled={!note.trim()}
+                      onClick={() => {
+                        onReject(note);
+                        setRejecting(false);
+                        setNote("");
+                      }}
+                      className="rounded border border-missable px-2 py-1 text-sm font-bold text-missable disabled:opacity-50"
+                    >
+                      Submit
+                    </button>
+                  </span>
+                ) : null}
+              </div>
+            )}
+          </div>
         </>
       ) : null}
     </section>
