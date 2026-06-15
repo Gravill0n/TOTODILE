@@ -11,6 +11,7 @@ import {
   guideFile,
   mapPinsWidget,
   matrixWidget,
+  prepCardWidget,
   type Widget,
   type WidgetType,
 } from "../../src/schema";
@@ -319,13 +320,59 @@ describe("flowchart (full chain)", () => {
   });
 });
 
-describe("prepCard (degraded list, §9.3)", () => {
-  it("lists items with quantities and toggles by item ID", () => {
+describe("prepCard (full)", () => {
+  it("shows quantities, notes, a readiness summary and toggles by ID", () => {
     const { onToggle } = renderWidget("prepCard");
     expect(screen.getByText("×5")).toBeDefined();
+    expect(
+      screen.getByText("The flood phase is unsurvivable without it"),
+    ).toBeDefined();
+    // Nothing done yet → 0 of 3 ready.
+    expect(screen.getByText("Ready 0 / 3")).toBeDefined();
     fireEvent.click(screen.getByLabelText("Tide badge equipped"));
     expect(onToggle).toHaveBeenCalledWith(
       "fictional-quest:warden-prep:tide-badge",
     );
+  });
+
+  it("tracks readiness and shows the ready treatment when all done", () => {
+    renderWidget("prepCard", {
+      doneIds: new Set([
+        "fictional-quest:warden-prep:mushrooms",
+        "fictional-quest:warden-prep:antidotes",
+        "fictional-quest:warden-prep:tide-badge",
+      ]),
+      counterValues: {},
+    });
+    expect(screen.getByText(/Ready 3 \/ 3 ✓/)).toBeDefined();
+  });
+
+  it("marks flagged items", () => {
+    const flagged = prepCardWidget.parse({
+      id: "fictional-quest:flag-prep",
+      type: "prepCard",
+      title: "Flagged prep",
+      scope: { kind: "global" },
+      deckPosition: 9,
+      items: [
+        {
+          itemId: "fictional-quest:flag-prep:i1",
+          label: "Uncertain item",
+          sourceRefs: ["src-wiki"],
+          confidence: "flagged",
+        },
+      ],
+    });
+    render(
+      <WidgetRenderer
+        widget={flagged}
+        progress={noProgress}
+        onToggle={vi.fn()}
+        onAdjustCounter={vi.fn()}
+        onResetCounter={vi.fn()}
+        resolveAsset={(path) => path}
+      />,
+    );
+    expect(screen.getByLabelText("Flagged by the compiler")).toBeDefined();
   });
 });
