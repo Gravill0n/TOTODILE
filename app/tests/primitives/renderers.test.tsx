@@ -6,7 +6,12 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { WidgetRenderer } from "../../src/primitives/WidgetRenderer";
 import type { ProgressSlice } from "../../src/progress/progressSlice";
-import { guideFile, type Widget, type WidgetType } from "../../src/schema";
+import {
+  guideFile,
+  matrixWidget,
+  type Widget,
+  type WidgetType,
+} from "../../src/schema";
 
 const guide = guideFile.parse(
   JSON.parse(
@@ -119,12 +124,92 @@ describe("counter (full)", () => {
   });
 });
 
-describe("matrix (degraded list, §9.3)", () => {
-  it("lists every cell as row × column and toggles by cell ID", () => {
+describe("matrix (full grid)", () => {
+  it("renders a grid with row and column headers and toggles by cell ID", () => {
     const { onToggle } = renderWidget("matrix");
+    // Dense 2×2 fixture → one checkbox per cell.
     expect(screen.getAllByRole("checkbox")).toHaveLength(4);
+    expect(
+      screen.getByRole("columnheader", { name: "Fire badge" }),
+    ).toBeDefined();
+    expect(
+      screen.getByRole("columnheader", { name: "Tide badge" }),
+    ).toBeDefined();
+    expect(screen.getByRole("rowheader", { name: "Mira" })).toBeDefined();
+    expect(screen.getByRole("rowheader", { name: "Theo" })).toBeDefined();
     fireEvent.click(screen.getByLabelText("Mira × Fire badge"));
     expect(onToggle).toHaveBeenCalledWith("fictional-quest:badges:mira-fire");
+  });
+
+  it("reflects done cells from progress", () => {
+    renderWidget("matrix", {
+      doneIds: new Set(["fictional-quest:badges:mira-fire"]),
+      counterValues: {},
+    });
+    expect(
+      (screen.getByLabelText("Mira × Fire badge") as HTMLInputElement).checked,
+    ).toBe(true);
+    expect(
+      (screen.getByLabelText("Theo × Tide badge") as HTMLInputElement).checked,
+    ).toBe(false);
+  });
+
+  it("renders sparse holes as empty cells and marks flagged cells", () => {
+    const onToggle = vi.fn();
+    // Inline so the shared fixture stays dense and stable: row B × col Y has
+    // no cell (a hole), and row A × col X is compiler-flagged.
+    const sparse = matrixWidget.parse({
+      id: "fictional-quest:sparse",
+      type: "matrix",
+      title: "Sparse",
+      scope: { kind: "global" },
+      deckPosition: 9,
+      rows: [
+        { id: "row-a", label: "Row A" },
+        { id: "row-b", label: "Row B" },
+      ],
+      columns: [
+        { id: "col-x", label: "Col X" },
+        { id: "col-y", label: "Col Y" },
+      ],
+      cells: [
+        {
+          itemId: "fictional-quest:sparse:a-x",
+          rowId: "row-a",
+          columnId: "col-x",
+          sourceRefs: ["src-wiki"],
+          confidence: "flagged",
+        },
+        {
+          itemId: "fictional-quest:sparse:b-x",
+          rowId: "row-b",
+          columnId: "col-x",
+          sourceRefs: ["src-wiki"],
+          confidence: "normal",
+        },
+        {
+          itemId: "fictional-quest:sparse:a-y",
+          rowId: "row-a",
+          columnId: "col-y",
+          sourceRefs: ["src-wiki"],
+          confidence: "normal",
+        },
+      ],
+    });
+    render(
+      <WidgetRenderer
+        widget={sparse}
+        progress={noProgress}
+        onToggle={onToggle}
+        onAdjustCounter={vi.fn()}
+        onResetCounter={vi.fn()}
+        resolveAsset={(path) => path}
+      />,
+    );
+    // 3 cells present, 1 hole (Row B × Col Y) → 3 checkboxes.
+    expect(screen.getAllByRole("checkbox")).toHaveLength(3);
+    expect(screen.queryByLabelText("Row B × Col Y")).toBeNull();
+    expect(screen.getByLabelText("Flagged by the compiler")).toBeDefined();
   });
 });
 
