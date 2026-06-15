@@ -9,8 +9,10 @@ backend, ever. (Named for the Pokémon Crystal starter — Crystal is the pilot 
 1. **`prd-react-app-to-regroup-video-game-guides-trackers-FINAL.md`** — THE spec.
    25 approved sections. When code and PRD conflict, the PRD wins until Pierre
    amends it. Section 24 (AI Agent Boundaries) applies to every session.
-2. **`IMPLEMENTATION_PLAN.md`** — phases P0–P5 with hard exit gates, dependency-ordered.
-   Don't start a phase before the previous gate passes.
+2. **`docs/specs/`** — the active, gated planning: Workstream A (location/visit reframe),
+   Workstream B (shadcn migration), and the small standalone builds, each with spec, plan,
+   and task breakdown. `docs/ideas/` holds the refined direction behind them. (The old
+   `IMPLEMENTATION_PLAN.md` is retired to `docs/archive/`.)
 
 ## Hard rules (from PRD §24 — full list there)
 
@@ -46,5 +48,6 @@ backend, ever. (Named for the Pokémon Crystal starter — Crystal is the pilot 
   `ml-partners-in-time/build/guide.json` seeds schema v0.
 - `.claude/skills/achievement-guide-builder/` — current guide-building skill;
   being reworked into the multi-pass compiler suite in Phase 2.
-- Historical context: `brainstorm-*-20260609-*.md` (ideation log) and the working
-  PRD `prd-*-20260609-2128.md` (full approval history) — rarely needed.
+- Historical context (archived under `docs/archive/`): `brainstorm-*-20260609-*.md`
+  (ideation log), the working PRD `prd-*-20260609-2128.md` (full approval history), and
+  `Idea_list.md` — rarely needed. Active planning lives in `docs/specs/` and `docs/ideas/`.

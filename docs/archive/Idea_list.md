@@ -1,0 +1,14 @@
+- better widgets on mobile
+- zoom on images/maps
+- sticky widgets
+- widgets are button who open modals
+- counter for items, etc... Sync with the guide or between widgets
+- 1 skill between sources and spine to extract and classify data
+- add a list of guide to create
+- better achievements view (not linked to spine)
+- use icons (lucide-react) instead of emoji
+- use shadcn/UI for better UI/UX
+- less text more keywords on spine (with multi line)
+- better approval process (one input per flagged line)
+- widgets per location
+- no spine, just a flowchart of location/chapters ?
