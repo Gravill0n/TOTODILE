@@ -3,6 +3,83 @@ import { useState } from "react";
 import { importSlots, readAllSlots } from "../progress/progressStore";
 import { setEditorMode, useEditorMode } from "../review/editorMode";
 import { progressExport, SCHEMA_VERSION } from "../schema";
+import {
+  clearCredentials,
+  getCredentials,
+  setCredentials,
+} from "../sync/raCredentials";
+
+// RA username + API key entry. The key lives only in browser storage (§17.4):
+// never committed, logged, or written into a progress export. Kept as its own
+// component so the field state stays local.
+function RaCredentialsSection() {
+  const saved = getCredentials();
+  const [username, setUsername] = useState(saved?.username ?? "");
+  const [apiKey, setApiKey] = useState(saved?.webApiKey ?? "");
+  const [status, setStatus] = useState<"saved" | "cleared" | null>(null);
+
+  return (
+    <section className="mt-8">
+      <h2 className="font-bold">RetroAchievements</h2>
+      <p className="mt-1 text-sm text-ink-soft">
+        Username and web API key for Sync (Phase 4). Stored in this browser only
+        — never committed, exported, or logged (§5.2). Sync never runs on its
+        own; it is always an explicit action.
+      </p>
+      <div className="mt-3 flex flex-col gap-2 sm:max-w-sm">
+        <input
+          type="text"
+          value={username}
+          aria-label="RA username"
+          placeholder="RA username"
+          autoComplete="off"
+          onChange={(event) => setUsername(event.target.value)}
+          className="rounded border border-line bg-paper px-2 py-1 text-sm"
+        />
+        <input
+          type="password"
+          value={apiKey}
+          aria-label="RA API key"
+          placeholder="RA web API key"
+          autoComplete="off"
+          onChange={(event) => setApiKey(event.target.value)}
+          className="rounded border border-line bg-paper px-2 py-1 text-sm"
+        />
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={() => {
+              setCredentials({ username, webApiKey: apiKey });
+              setStatus("saved");
+            }}
+            className="rounded border border-line bg-card px-3 py-1 text-sm"
+          >
+            Save
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              clearCredentials();
+              setUsername("");
+              setApiKey("");
+              setStatus("cleared");
+            }}
+            className="text-sm text-ink-soft underline"
+          >
+            Clear
+          </button>
+          {status ? (
+            <span role="status" className="text-sm text-accent">
+              {status === "saved"
+                ? "Credentials saved."
+                : "Credentials cleared."}
+            </span>
+          ) : null}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 type ImportResult =
   | { status: "ok"; count: number }
@@ -112,13 +189,7 @@ export function SettingsScreen() {
           Editor mode
         </label>
       </section>
-      <section className="mt-8">
-        <h2 className="font-bold">RetroAchievements</h2>
-        <p className="mt-1 text-sm text-ink-soft">
-          RA username and API key arrive with Sync (Phase 4). The key lives in
-          browser storage only — never in the repo (§5.2).
-        </p>
-      </section>
+      <RaCredentialsSection />
       <p className="mt-8 text-sm">
         <Link to="/" className="underline">
           Back to the library

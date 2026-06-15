@@ -11,8 +11,10 @@ type MapPinsProps = {
   resolveAsset: (path: string) => string;
 };
 
-// §9.3 degraded list — the plain map image with the pins as a checklist
-// below it. Positioned pins arrive in Phase 5.
+// §7 S3: pins sit on the map at their authored fractional coordinates, so the
+// image can render at any size. Each pin is a tappable marker; a numbered
+// legend below repeats the labels for readability. Full version of the §9.3
+// degraded list — guide data is untouched by the upgrade (§9.2 #4).
 export function MapPins({
   widget,
   progress,
@@ -21,23 +23,41 @@ export function MapPins({
 }: MapPinsProps) {
   return (
     <div>
-      <img
-        src={resolveAsset(widget.image.src)}
-        alt={widget.image.alt}
-        className="mb-2 w-full rounded border border-line"
-      />
-      <ul className="space-y-1 text-sm">
-        {widget.pins.map((pin) => {
+      <div className="relative">
+        <img
+          src={resolveAsset(widget.image.src)}
+          alt={widget.image.alt}
+          className="w-full rounded border border-line"
+        />
+        {widget.pins.map((pin, index) => {
+          const done = progress.doneIds.has(pin.itemId);
+          return (
+            <button
+              key={pin.itemId}
+              type="button"
+              onClick={() => onToggle(pin.itemId)}
+              aria-label={pin.label}
+              aria-pressed={done}
+              style={{ left: `${pin.x * 100}%`, top: `${pin.y * 100}%` }}
+              className={`absolute flex size-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 text-sm font-bold ${
+                done
+                  ? "border-accent bg-accent text-card"
+                  : "border-accent bg-card/90 text-accent"
+              }`}
+            >
+              {done ? "✓" : index + 1}
+            </button>
+          );
+        })}
+      </div>
+      <ol className="mt-2 space-y-1 text-sm">
+        {widget.pins.map((pin, index) => {
           const done = progress.doneIds.has(pin.itemId);
           return (
             <li key={pin.itemId} className="flex items-start gap-2">
-              <input
-                type="checkbox"
-                checked={done}
-                onChange={() => onToggle(pin.itemId)}
-                aria-label={pin.label}
-                className="mt-0.5 size-4 shrink-0 accent-accent"
-              />
+              <span className="w-4 shrink-0 text-xs text-ink-soft">
+                {index + 1}.
+              </span>
               <span className={done ? "line-through opacity-60" : ""}>
                 {pin.label}
                 {pin.confidence === "flagged" ? (
@@ -50,7 +70,7 @@ export function MapPins({
             </li>
           );
         })}
-      </ul>
+      </ol>
     </div>
   );
 }

@@ -51,6 +51,12 @@ ml-partners-in-time entries migrated mechanically (`sourceRefs:
 ["src-ra"]`, `confidence: "normal"` — the whole mapping came from the RA
 set source during the Phase 0 translation).
 
+Amended again in Phase 4 Task 5: `progress.ts` adds `progressSlot.
+acknowledgedMissables` (array of step IDs) — the explicit dismissal of an
+upcoming-missable warning (FR-B5), distinct from done/skip. Additive and
+defaulted (`[]`), so slots and exports written before it still import; v0 is
+not frozen, so no bump (same in-place amendment as the earlier Phase entries).
+
 - The seven §6 repo-side entities: guide spine (chapters → steps with
   missable + achievement annotations), the 7 widget primitives (closed
   set), genre deck, library manifest, RA mapping, source manifest,

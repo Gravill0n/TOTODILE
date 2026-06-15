@@ -1,4 +1,4 @@
-import { describe, it } from "vitest";
+import { describe, expect, it } from "vitest";
 import { progressExport, progressSlot } from "../../src/schema";
 import {
   expectParses,
@@ -52,6 +52,12 @@ describe("progressSlot", () => {
   it("rejects a missing stats block", () => {
     const { stats, ...slot } = validProgressSlot();
     expectRejects(progressSlot, slot);
+  });
+
+  it("defaults acknowledgedMissables to [] for slots written before the field (FR-B5)", () => {
+    const { acknowledgedMissables, ...slot } = validProgressSlot();
+    const parsed = progressSlot.parse(slot);
+    expect(parsed.acknowledgedMissables).toEqual([]);
   });
 });
 

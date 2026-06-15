@@ -26,6 +26,7 @@ export function emptySlot(guideId: string): ProgressSlot {
     currentStepId: null,
     itemStates: {},
     counterValues: {},
+    acknowledgedMissables: [],
     stats: { stepsDone: 0, stepsTotal: 0, currentChapterTitle: null },
     lastActivityAt: new Date().toISOString(),
   };

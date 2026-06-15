@@ -10,10 +10,13 @@ export type GuideProgress =
       currentStepId: string | null;
       doneIds: ReadonlySet<string>;
       skippedIds: ReadonlySet<string>;
+      acknowledgedMissableIds: ReadonlySet<string>;
       counterValues: Readonly<Record<string, number>>;
       toggleDone: (itemId: string) => void;
       toggleSkip: (stepId: string) => void;
       markThrough: (stepId: string) => void;
+      markManyDone: (itemIds: string[]) => void;
+      acknowledgeMissable: (stepId: string) => void;
       movePointer: (stepId: string) => void;
       adjustCounter: (itemId: string, delta: number) => void;
       resetCounter: (itemId: string) => void;
@@ -181,6 +184,41 @@ export function useGuideProgress(guide: GuideFile): GuideProgress {
     [mutateSlot, stepIds],
   );
 
+  // Additive bulk mark for RA Sync (FR-C2): set every given item done in one
+  // write, overriding a skip, never un-marking, and leaving the pointer where
+  // the player left it. Atomic — one slot write for the whole sync.
+  const markManyDone = useCallback(
+    (itemIds: string[]) => {
+      mutateSlot((slot) => {
+        const itemStates = { ...slot.itemStates };
+        const at = new Date().toISOString();
+        for (const id of itemIds) {
+          if (itemStates[id]?.state !== "done") {
+            itemStates[id] = { state: "done", at };
+          }
+        }
+        return { ...slot, itemStates };
+      });
+    },
+    [mutateSlot],
+  );
+
+  // FR-B5: an explicit "I've seen this missable" — distinct from done/skip,
+  // idempotent, one slot write. The warning stays dismissed across sessions.
+  const acknowledgeMissable = useCallback(
+    (stepId: string) => {
+      mutateSlot((slot) =>
+        slot.acknowledgedMissables.includes(stepId)
+          ? slot
+          : {
+              ...slot,
+              acknowledgedMissables: [...slot.acknowledgedMissables, stepId],
+            },
+      );
+    },
+    [mutateSlot],
+  );
+
   const movePointer = useCallback(
     (stepId: string) => {
       mutateSlot((slot) => ({ ...slot, currentStepId: stepId }));
@@ -224,10 +262,13 @@ export function useGuideProgress(guide: GuideFile): GuideProgress {
     currentStepId: slot.currentStepId,
     doneIds: byState("done"),
     skippedIds: byState("skipped"),
+    acknowledgedMissableIds: new Set(slot.acknowledgedMissables),
     counterValues: slot.counterValues,
     toggleDone,
     toggleSkip,
     markThrough,
+    markManyDone,
+    acknowledgeMissable,
     movePointer,
     adjustCounter,
     resetCounter,

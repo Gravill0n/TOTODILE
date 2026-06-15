@@ -96,4 +96,7 @@ export default defineConfig({
   test: {
     environment: "node",
   },
+  define: {
+    "process.env": {},
+  },
 });

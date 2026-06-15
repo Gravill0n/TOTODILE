@@ -1,0 +1,118 @@
+// @vitest-environment jsdom
+import "fake-indexeddb/auto";
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { deleteDB } from "idb";
+import { afterEach, describe, expect, it, vi } from "vitest";
+import { closeProgressDb } from "../../src/progress/progressStore";
+import { setEditorMode } from "../../src/review/editorMode";
+import { SCHEMA_VERSION } from "../../src/schema";
+import { createAppRouter } from "../../src/shell/router";
+import { validLayer, validLibrary } from "../schema/helpers";
+
+const fixtureGuide = JSON.parse(
+  readFileSync(
+    join(
+      dirname(fileURLToPath(import.meta.url)),
+      "..",
+      "fixtures",
+      "repo",
+      "guides",
+      "fictional-quest",
+      "guide.json",
+    ),
+    "utf8",
+  ),
+);
+
+afterEach(async () => {
+  cleanup();
+  vi.unstubAllGlobals();
+  setEditorMode(false);
+  localStorage.clear();
+  await closeProgressDb();
+  await deleteDB("totodile");
+});
+
+function approvedApprovals() {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    layers: [{ ...validLayer("approved"), id: "spine" }],
+  };
+}
+
+const mapping = {
+  schemaVersion: SCHEMA_VERSION,
+  guideId: "fictional-quest",
+  raGameId: 9000,
+  entries: [
+    {
+      raAchievementId: 101,
+      targetItemId: "fictional-quest:c1:s1",
+      sourceRefs: ["src-wiki"],
+      confidence: "normal",
+    },
+  ],
+};
+
+function stubFetch({ playable = true } = {}) {
+  vi.stubGlobal(
+    "fetch",
+    vi.fn(async (input: RequestInfo | URL) => {
+      const url = String(input);
+      if (url.endsWith("library.json")) return Response.json(validLibrary());
+      if (url.endsWith("guides/fictional-quest/approvals.json")) {
+        return playable
+          ? Response.json(approvedApprovals())
+          : new Response("not found", { status: 404 });
+      }
+      if (url.endsWith("guides/fictional-quest/guide.json")) {
+        return Response.json(fixtureGuide);
+      }
+      if (url.endsWith("guides/fictional-quest/ra-mapping.json")) {
+        return Response.json(mapping);
+      }
+      return new Response("not found", { status: 404 });
+    }),
+  );
+}
+
+function renderAt(path: string) {
+  render(
+    <RouterProvider
+      router={createAppRouter(createMemoryHistory({ initialEntries: [path] }))}
+    />,
+  );
+}
+
+describe("cleanup view (S4, FR-B4/P7)", () => {
+  it("lists remaining tasks with a mastery bar and ticks them off", async () => {
+    stubFetch();
+    renderAt("/guide/fictional-quest/cleanup");
+
+    expect(await screen.findByText("Mastery")).toBeDefined();
+    const task = await screen.findByRole("checkbox", {
+      name: /Talk to the gatekeeper/,
+    });
+    fireEvent.click(task);
+
+    await vi.waitFor(() => {
+      expect(
+        screen.queryByRole("checkbox", { name: /Talk to the gatekeeper/ }),
+      ).toBeNull();
+    });
+  });
+
+  it("redirects to review when the guide is not yet playable", async () => {
+    stubFetch({ playable: false });
+    renderAt("/guide/fictional-quest/cleanup");
+    // Not playable → /review → editor mode off → library.
+    expect(
+      await screen.findByRole("heading", { name: "Library" }),
+    ).toBeDefined();
+  });
+});
