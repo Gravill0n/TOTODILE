@@ -7,7 +7,9 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { WidgetRenderer } from "../../src/primitives/WidgetRenderer";
 import type { ProgressSlice } from "../../src/progress/progressSlice";
 import {
+  flowchartWidget,
   guideFile,
+  mapPinsWidget,
   matrixWidget,
   type Widget,
   type WidgetType,
@@ -213,27 +215,107 @@ describe("matrix (full grid)", () => {
   });
 });
 
-describe("mapPins (degraded list, §9.3)", () => {
-  it("shows the map image and lists every pin", () => {
+describe("mapPins (full overlay)", () => {
+  it("shows the map and positions a tappable marker per pin", () => {
     const { onToggle } = renderWidget("mapPins");
     const image = screen.getByAltText("Map of the Sunken Vault");
     expect(image.getAttribute("src")).toBe(
       "guides/fictional-quest/images/vault-map.png",
     );
-    expect(screen.getAllByRole("checkbox")).toHaveLength(3);
-    fireEvent.click(screen.getByLabelText("Shard — east alcove"));
+    // Pins are positioned buttons (not list checkboxes) — one per pin.
+    const east = screen.getByLabelText("Shard — east alcove");
+    expect(east.style.left).toBe("78%");
+    expect(east.style.top).toBe("41%");
+    expect(east.getAttribute("aria-pressed")).toBe("false");
+    fireEvent.click(east);
     expect(onToggle).toHaveBeenCalledWith(
       "fictional-quest:vault-map:shard-east",
     );
   });
+
+  it("reflects done pins via aria-pressed", () => {
+    renderWidget("mapPins", {
+      doneIds: new Set(["fictional-quest:vault-map:shard-east"]),
+      counterValues: {},
+    });
+    expect(
+      screen.getByLabelText("Shard — east alcove").getAttribute("aria-pressed"),
+    ).toBe("true");
+  });
+
+  it("marks flagged pins in the legend", () => {
+    const flagged = mapPinsWidget.parse({
+      id: "fictional-quest:flag-map",
+      type: "mapPins",
+      title: "Flagged map",
+      scope: { kind: "global" },
+      deckPosition: 9,
+      image: { src: "images/m.png", alt: "M" },
+      pins: [
+        {
+          itemId: "fictional-quest:flag-map:p1",
+          label: "Uncertain pin",
+          x: 0.5,
+          y: 0.5,
+          sourceRefs: ["src-wiki"],
+          confidence: "flagged",
+        },
+      ],
+    });
+    render(
+      <WidgetRenderer
+        widget={flagged}
+        progress={noProgress}
+        onToggle={vi.fn()}
+        onAdjustCounter={vi.fn()}
+        onResetCounter={vi.fn()}
+        resolveAsset={(path) => path}
+      />,
+    );
+    expect(screen.getByLabelText("Flagged by the compiler")).toBeDefined();
+  });
 });
 
-describe("flowchart (degraded list, §9.3)", () => {
-  it("lists nodes in order with notes and toggles by node ID", () => {
+describe("flowchart (full chain)", () => {
+  it("renders nodes, notes, edge labels and toggles by node ID", () => {
     const { onToggle } = renderWidget("flowchart");
     expect(screen.getByText("Pick it up in the courtyard")).toBeDefined();
+    // The actual edge is rendered with its target label and edge label.
+    expect(
+      screen.getByText(/Brass badge — Give to the gatekeeper/),
+    ).toBeDefined();
     fireEvent.click(screen.getByLabelText("Vault key"));
     expect(onToggle).toHaveBeenCalledWith("fictional-quest:trade:vault-key");
+  });
+
+  it("marks flagged nodes", () => {
+    const flagged = flowchartWidget.parse({
+      id: "fictional-quest:flag-chain",
+      type: "flowchart",
+      title: "Flagged chain",
+      scope: { kind: "global" },
+      deckPosition: 9,
+      nodes: [
+        {
+          itemId: "fictional-quest:flag-chain:n1",
+          label: "Uncertain node",
+          sourceRefs: ["src-wiki"],
+          confidence: "flagged",
+        },
+      ],
+      edges: [],
+    });
+    render(
+      <WidgetRenderer
+        widget={flagged}
+        progress={noProgress}
+        onToggle={vi.fn()}
+        onAdjustCounter={vi.fn()}
+        onResetCounter={vi.fn()}
+        resolveAsset={(path) => path}
+      />,
+    );
+    expect(screen.getByLabelText("Flagged by the compiler")).toBeDefined();
   });
 });
 
