@@ -1,0 +1,5197 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "extract-data",
+  "datasets": [
+    {
+      "id": "images",
+      "label": "Available source images",
+      "records": [
+        {
+          "id": "map-azalea-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/AzaleaGym.png",
+            "kind": "location-map",
+            "depicts": "Azalea Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-azalea-town",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/AzaleaTown.png",
+            "kind": "location-map",
+            "depicts": "Azalea Town"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-blackthorn-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/BlackthornCity.png",
+            "kind": "location-map",
+            "depicts": "Blackthorn City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-blackthorn-gym-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/BlackthornGym1F.png",
+            "kind": "location-map",
+            "depicts": "Blackthorn Gym 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-blackthorn-gym-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/BlackthornGym2F.png",
+            "kind": "location-map",
+            "depicts": "Blackthorn Gym 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-burned-tower-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/BurnedTower1F.png",
+            "kind": "location-map",
+            "depicts": "Burned Tower 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-burned-tower-b-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/BurnedTowerB1F.png",
+            "kind": "location-map",
+            "depicts": "Burned Tower B 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-celadon-cafe",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/CeladonCafe.png",
+            "kind": "location-map",
+            "depicts": "Celadon Cafe"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-celadon-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/CeladonCity.png",
+            "kind": "location-map",
+            "depicts": "Celadon City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-celadon-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/CeladonGym.png",
+            "kind": "location-map",
+            "depicts": "Celadon Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-cerulean-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/CeruleanCity.png",
+            "kind": "location-map",
+            "depicts": "Cerulean City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-cerulean-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/CeruleanGym.png",
+            "kind": "location-map",
+            "depicts": "Cerulean Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-cherrygrove-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/CherrygroveCity.png",
+            "kind": "location-map",
+            "depicts": "Cherrygrove City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-cianwood-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/CianwoodCity.png",
+            "kind": "location-map",
+            "depicts": "Cianwood City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-cianwood-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/CianwoodGym.png",
+            "kind": "location-map",
+            "depicts": "Cianwood Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-cinnabar-island",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/CinnabarIsland.png",
+            "kind": "location-map",
+            "depicts": "Cinnabar Island"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-dark-cave-blackthorn-entrance",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/DarkCaveBlackthornEntrance.png",
+            "kind": "location-map",
+            "depicts": "Dark Cave Blackthorn Entrance"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-dark-cave-violet-entrance",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/DarkCaveVioletEntrance.png",
+            "kind": "location-map",
+            "depicts": "Dark Cave Violet Entrance"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-digletts-cave",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/DiglettsCave.png",
+            "kind": "location-map",
+            "depicts": "Digletts Cave"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-dragons-den-b-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/DragonsDenB1F.png",
+            "kind": "location-map",
+            "depicts": "Dragons Den B 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ecruteak-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/EcruteakCity.png",
+            "kind": "location-map",
+            "depicts": "Ecruteak City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ecruteak-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/EcruteakGym.png",
+            "kind": "location-map",
+            "depicts": "Ecruteak Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-fast-ship-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/FastShip1F.png",
+            "kind": "location-map",
+            "depicts": "Fast Ship 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-fuchsia-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/FuchsiaCity.png",
+            "kind": "location-map",
+            "depicts": "Fuchsia City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-fuchsia-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/FuchsiaGym.png",
+            "kind": "location-map",
+            "depicts": "Fuchsia Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodCity.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-dept-store-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodDeptStore1F.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Dept Store 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-dept-store-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodDeptStore2F.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Dept Store 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-dept-store-3-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodDeptStore3F.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Dept Store 3 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-dept-store-4-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodDeptStore4F.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Dept Store 4 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-dept-store-5-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodDeptStore5F.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Dept Store 5 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-dept-store-6-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodDeptStore6F.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Dept Store 6 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-dept-store-b-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodDeptStoreB1F.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Dept Store B 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-dept-store-roof",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodDeptStoreRoof.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Dept Store Roof"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodGym.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-underground",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodUnderground.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Underground"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-underground-switch-room-entrances",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodUndergroundSwitchRoomEntrances.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Underground Switch Room Entrances"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-goldenrod-underground-warehouse",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/GoldenrodUndergroundWarehouse.png",
+            "kind": "location-map",
+            "depicts": "Goldenrod Underground Warehouse"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ice-path-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/IcePath1F.png",
+            "kind": "location-map",
+            "depicts": "Ice Path 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ice-path-b-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/IcePathB1F.png",
+            "kind": "location-map",
+            "depicts": "Ice Path B 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ice-path-b-2-fblackthorn-side",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/IcePathB2FBlackthornSide.png",
+            "kind": "location-map",
+            "depicts": "Ice Path B 2 FBlackthorn Side"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ice-path-b-2-fmahogany-side",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/IcePathB2FMahoganySide.png",
+            "kind": "location-map",
+            "depicts": "Ice Path B 2 FMahogany Side"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ice-path-b-3-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/IcePathB3F.png",
+            "kind": "location-map",
+            "depicts": "Ice Path B 3 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ilex-forest",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/IlexForest.png",
+            "kind": "location-map",
+            "depicts": "Ilex Forest"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-lake-of-rage",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/LakeOfRage.png",
+            "kind": "location-map",
+            "depicts": "Lake Of Rage"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-lavender-town",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/LavenderTown.png",
+            "kind": "location-map",
+            "depicts": "Lavender Town"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-mahogany-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/MahoganyGym.png",
+            "kind": "location-map",
+            "depicts": "Mahogany Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-mahogany-town",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/MahoganyTown.png",
+            "kind": "location-map",
+            "depicts": "Mahogany Town"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-mount-moon",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/MountMoon.png",
+            "kind": "location-map",
+            "depicts": "Mount Moon"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-mount-moon-square",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/MountMoonSquare.png",
+            "kind": "location-map",
+            "depicts": "Mount Moon Square"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-mount-mortar-1-finside",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/MountMortar1FInside.png",
+            "kind": "location-map",
+            "depicts": "Mount Mortar 1 FInside"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-mount-mortar-1-foutside",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/MountMortar1FOutside.png",
+            "kind": "location-map",
+            "depicts": "Mount Mortar 1 FOutside"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-mount-mortar-2-finside",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/MountMortar2FInside.png",
+            "kind": "location-map",
+            "depicts": "Mount Mortar 2 FInside"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-mount-mortar-b-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/MountMortarB1F.png",
+            "kind": "location-map",
+            "depicts": "Mount Mortar B 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-national-park",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/NationalPark.png",
+            "kind": "location-map",
+            "depicts": "National Park"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-new-bark-town",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/NewBarkTown.png",
+            "kind": "location-map",
+            "depicts": "New Bark Town"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-olivine-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/OlivineCity.png",
+            "kind": "location-map",
+            "depicts": "Olivine City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-olivine-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/OlivineGym.png",
+            "kind": "location-map",
+            "depicts": "Olivine Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-olivine-lighthouse-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/OlivineLighthouse1F.png",
+            "kind": "location-map",
+            "depicts": "Olivine Lighthouse 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-olivine-lighthouse-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/OlivineLighthouse2F.png",
+            "kind": "location-map",
+            "depicts": "Olivine Lighthouse 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-olivine-lighthouse-3-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/OlivineLighthouse3F.png",
+            "kind": "location-map",
+            "depicts": "Olivine Lighthouse 3 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-olivine-lighthouse-4-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/OlivineLighthouse4F.png",
+            "kind": "location-map",
+            "depicts": "Olivine Lighthouse 4 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-olivine-lighthouse-5-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/OlivineLighthouse5F.png",
+            "kind": "location-map",
+            "depicts": "Olivine Lighthouse 5 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-olivine-lighthouse-6-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/OlivineLighthouse6F.png",
+            "kind": "location-map",
+            "depicts": "Olivine Lighthouse 6 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-olivine-port",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/OlivinePort.png",
+            "kind": "location-map",
+            "depicts": "Olivine Port"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-pallet-town",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/PalletTown.png",
+            "kind": "location-map",
+            "depicts": "Pallet Town"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-pewter-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/PewterCity.png",
+            "kind": "location-map",
+            "depicts": "Pewter City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-pewter-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/PewterGym.png",
+            "kind": "location-map",
+            "depicts": "Pewter Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-power-plant",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/PowerPlant.png",
+            "kind": "location-map",
+            "depicts": "Power Plant"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-radio-tower-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RadioTower1F.png",
+            "kind": "location-map",
+            "depicts": "Radio Tower 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-radio-tower-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RadioTower2F.png",
+            "kind": "location-map",
+            "depicts": "Radio Tower 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-radio-tower-3-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RadioTower3F.png",
+            "kind": "location-map",
+            "depicts": "Radio Tower 3 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-radio-tower-4-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RadioTower4F.png",
+            "kind": "location-map",
+            "depicts": "Radio Tower 4 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-radio-tower-5-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RadioTower5F.png",
+            "kind": "location-map",
+            "depicts": "Radio Tower 5 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-rock-tunnel-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RockTunnel1F.png",
+            "kind": "location-map",
+            "depicts": "Rock Tunnel 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-rock-tunnel-b-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RockTunnelB1F.png",
+            "kind": "location-map",
+            "depicts": "Rock Tunnel B 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-1",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route1.png",
+            "kind": "location-map",
+            "depicts": "Route 1"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-10",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route10.png",
+            "kind": "location-map",
+            "depicts": "Route 10"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-11",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route11.png",
+            "kind": "location-map",
+            "depicts": "Route 11"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-12-north",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route12North.png",
+            "kind": "location-map",
+            "depicts": "Route 12 North"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-12-south",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route12South.png",
+            "kind": "location-map",
+            "depicts": "Route 12 South"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-13",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route13.png",
+            "kind": "location-map",
+            "depicts": "Route 13"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-14",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route14.png",
+            "kind": "location-map",
+            "depicts": "Route 14"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-15",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route15.png",
+            "kind": "location-map",
+            "depicts": "Route 15"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-16",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route16.png",
+            "kind": "location-map",
+            "depicts": "Route 16"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-17",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route17.png",
+            "kind": "location-map",
+            "depicts": "Route 17"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-18",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route18.png",
+            "kind": "location-map",
+            "depicts": "Route 18"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-19",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route19.png",
+            "kind": "location-map",
+            "depicts": "Route 19"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-20",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route20.png",
+            "kind": "location-map",
+            "depicts": "Route 20"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-21",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route21.png",
+            "kind": "location-map",
+            "depicts": "Route 21"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-22",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route22.png",
+            "kind": "location-map",
+            "depicts": "Route 22"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-23",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route23.png",
+            "kind": "location-map",
+            "depicts": "Route 23"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-24",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route24.png",
+            "kind": "location-map",
+            "depicts": "Route 24"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-25",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route25.png",
+            "kind": "location-map",
+            "depicts": "Route 25"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-26-north",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route26North.png",
+            "kind": "location-map",
+            "depicts": "Route 26 North"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-26-south",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route26South.png",
+            "kind": "location-map",
+            "depicts": "Route 26 South"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-27",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route27.png",
+            "kind": "location-map",
+            "depicts": "Route 27"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-28",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route28.png",
+            "kind": "location-map",
+            "depicts": "Route 28"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-29",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route29.png",
+            "kind": "location-map",
+            "depicts": "Route 29"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-3",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route3.png",
+            "kind": "location-map",
+            "depicts": "Route 3"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-30",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route30.png",
+            "kind": "location-map",
+            "depicts": "Route 30"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-31",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route31.png",
+            "kind": "location-map",
+            "depicts": "Route 31"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-32-north",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route32North.png",
+            "kind": "location-map",
+            "depicts": "Route 32 North"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-32-south",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route32South.png",
+            "kind": "location-map",
+            "depicts": "Route 32 South"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-33",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route33.png",
+            "kind": "location-map",
+            "depicts": "Route 33"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-34",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route34.png",
+            "kind": "location-map",
+            "depicts": "Route 34"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-35",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route35.png",
+            "kind": "location-map",
+            "depicts": "Route 35"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-36",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route36.png",
+            "kind": "location-map",
+            "depicts": "Route 36"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-37",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route37.png",
+            "kind": "location-map",
+            "depicts": "Route 37"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-38",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route38.png",
+            "kind": "location-map",
+            "depicts": "Route 38"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-39",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route39.png",
+            "kind": "location-map",
+            "depicts": "Route 39"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-4",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route4.png",
+            "kind": "location-map",
+            "depicts": "Route 4"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-40",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route40.png",
+            "kind": "location-map",
+            "depicts": "Route 40"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-41",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route41.png",
+            "kind": "location-map",
+            "depicts": "Route 41"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-42",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route42.png",
+            "kind": "location-map",
+            "depicts": "Route 42"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-43",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route43.png",
+            "kind": "location-map",
+            "depicts": "Route 43"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-44",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route44.png",
+            "kind": "location-map",
+            "depicts": "Route 44"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-45-north",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route45North.png",
+            "kind": "location-map",
+            "depicts": "Route 45 North"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-45-south",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route45South.png",
+            "kind": "location-map",
+            "depicts": "Route 45 South"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-46",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route46.png",
+            "kind": "location-map",
+            "depicts": "Route 46"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-5",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route5.png",
+            "kind": "location-map",
+            "depicts": "Route 5"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-6",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route6.png",
+            "kind": "location-map",
+            "depicts": "Route 6"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-7",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route7.png",
+            "kind": "location-map",
+            "depicts": "Route 7"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-8",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route8.png",
+            "kind": "location-map",
+            "depicts": "Route 8"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-route-9",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/Route9.png",
+            "kind": "location-map",
+            "depicts": "Route 9"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ruins-of-alph-aerodactyl-item-room",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RuinsOfAlphAerodactylItemRoom.png",
+            "kind": "location-map",
+            "depicts": "Ruins Of Alph Aerodactyl Item Room"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ruins-of-alph-ho-oh-item-room",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RuinsOfAlphHoOhItemRoom.png",
+            "kind": "location-map",
+            "depicts": "Ruins Of Alph Ho Oh Item Room"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ruins-of-alph-inner-chamber",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RuinsOfAlphInnerChamber.png",
+            "kind": "location-map",
+            "depicts": "Ruins Of Alph Inner Chamber"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ruins-of-alph-kabuto-item-room",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RuinsOfAlphKabutoItemRoom.png",
+            "kind": "location-map",
+            "depicts": "Ruins Of Alph Kabuto Item Room"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ruins-of-alph-omanyte-item-room",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RuinsOfAlphOmanyteItemRoom.png",
+            "kind": "location-map",
+            "depicts": "Ruins Of Alph Omanyte Item Room"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-ruins-of-alph-outside",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/RuinsOfAlphOutside.png",
+            "kind": "location-map",
+            "depicts": "Ruins Of Alph Outside"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-saffron-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SaffronCity.png",
+            "kind": "location-map",
+            "depicts": "Saffron City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-saffron-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SaffronGym.png",
+            "kind": "location-map",
+            "depicts": "Saffron Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-seafoam-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SeafoamGym.png",
+            "kind": "location-map",
+            "depicts": "Seafoam Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-silver-cave-item-rooms",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SilverCaveItemRooms.png",
+            "kind": "location-map",
+            "depicts": "Silver Cave Item Rooms"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-silver-cave-outside",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SilverCaveOutside.png",
+            "kind": "location-map",
+            "depicts": "Silver Cave Outside"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-silver-cave-room-1",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SilverCaveRoom1.png",
+            "kind": "location-map",
+            "depicts": "Silver Cave Room 1"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-silver-cave-room-2",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SilverCaveRoom2.png",
+            "kind": "location-map",
+            "depicts": "Silver Cave Room 2"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-silver-cave-room-3",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SilverCaveRoom3.png",
+            "kind": "location-map",
+            "depicts": "Silver Cave Room 3"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-slowpoke-well-b-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SlowpokeWellB1F.png",
+            "kind": "location-map",
+            "depicts": "Slowpoke Well B 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-slowpoke-well-b-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SlowpokeWellB2F.png",
+            "kind": "location-map",
+            "depicts": "Slowpoke Well B 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-sprout-tower-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SproutTower1F.png",
+            "kind": "location-map",
+            "depicts": "Sprout Tower 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-sprout-tower-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SproutTower2F.png",
+            "kind": "location-map",
+            "depicts": "Sprout Tower 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-sprout-tower-3-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/SproutTower3F.png",
+            "kind": "location-map",
+            "depicts": "Sprout Tower 3 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-team-rocket-base-b-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TeamRocketBaseB1F.png",
+            "kind": "location-map",
+            "depicts": "Team Rocket Base B 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-team-rocket-base-b-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TeamRocketBaseB2F.png",
+            "kind": "location-map",
+            "depicts": "Team Rocket Base B 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-team-rocket-base-b-3-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TeamRocketBaseB3F.png",
+            "kind": "location-map",
+            "depicts": "Team Rocket Base B 3 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tin-tower-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TinTower1F.png",
+            "kind": "location-map",
+            "depicts": "Tin Tower 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tin-tower-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TinTower2F.png",
+            "kind": "location-map",
+            "depicts": "Tin Tower 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tin-tower-3-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TinTower3F.png",
+            "kind": "location-map",
+            "depicts": "Tin Tower 3 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tin-tower-4-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TinTower4F.png",
+            "kind": "location-map",
+            "depicts": "Tin Tower 4 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tin-tower-5-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TinTower5F.png",
+            "kind": "location-map",
+            "depicts": "Tin Tower 5 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tin-tower-6-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TinTower6F.png",
+            "kind": "location-map",
+            "depicts": "Tin Tower 6 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tin-tower-7-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TinTower7F.png",
+            "kind": "location-map",
+            "depicts": "Tin Tower 7 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tin-tower-8-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TinTower8F.png",
+            "kind": "location-map",
+            "depicts": "Tin Tower 8 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tin-tower-9-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TinTower9F.png",
+            "kind": "location-map",
+            "depicts": "Tin Tower 9 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tin-tower-roof",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TinTowerRoof.png",
+            "kind": "location-map",
+            "depicts": "Tin Tower Roof"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-tohjo-falls",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/TohjoFalls.png",
+            "kind": "location-map",
+            "depicts": "Tohjo Falls"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-underground-path",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/UndergroundPath.png",
+            "kind": "location-map",
+            "depicts": "Underground Path"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-union-cave-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/UnionCave1F.png",
+            "kind": "location-map",
+            "depicts": "Union Cave 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-union-cave-b-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/UnionCaveB1F.png",
+            "kind": "location-map",
+            "depicts": "Union Cave B 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-union-cave-b-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/UnionCaveB2F.png",
+            "kind": "location-map",
+            "depicts": "Union Cave B 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-vermilion-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/VermilionCity.png",
+            "kind": "location-map",
+            "depicts": "Vermilion City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-vermilion-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/VermilionGym.png",
+            "kind": "location-map",
+            "depicts": "Vermilion Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-vermilion-port",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/VermilionPort.png",
+            "kind": "location-map",
+            "depicts": "Vermilion Port"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-victory-road-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/VictoryRoad1F.png",
+            "kind": "location-map",
+            "depicts": "Victory Road 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-victory-road-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/VictoryRoad2F.png",
+            "kind": "location-map",
+            "depicts": "Victory Road 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-victory-road-3-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/VictoryRoad3F.png",
+            "kind": "location-map",
+            "depicts": "Victory Road 3 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-victory-road-gate",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/VictoryRoadGate.png",
+            "kind": "location-map",
+            "depicts": "Victory Road Gate"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-violet-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/VioletCity.png",
+            "kind": "location-map",
+            "depicts": "Violet City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-violet-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/VioletGym.png",
+            "kind": "location-map",
+            "depicts": "Violet Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-viridian-city",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/ViridianCity.png",
+            "kind": "location-map",
+            "depicts": "Viridian City"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-viridian-gym",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/ViridianGym.png",
+            "kind": "location-map",
+            "depicts": "Viridian Gym"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-whirl-island-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/WhirlIsland1F.png",
+            "kind": "location-map",
+            "depicts": "Whirl Island 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-whirl-island-b-1-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/WhirlIslandB1F.png",
+            "kind": "location-map",
+            "depicts": "Whirl Island B 1 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-whirl-island-b-2-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/WhirlIslandB2F.png",
+            "kind": "location-map",
+            "depicts": "Whirl Island B 2 F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-whirl-island-cave",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/WhirlIslandCave.png",
+            "kind": "location-map",
+            "depicts": "Whirl Island Cave"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-whirl-island-lugia-chamber",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/WhirlIslandLugiaChamber.png",
+            "kind": "location-map",
+            "depicts": "Whirl Island Lugia Chamber"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-johto",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/johto.png",
+            "kind": "location-map",
+            "depicts": "johto"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-johtokanto",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/johtokanto.png",
+            "kind": "location-map",
+            "depicts": "johtokanto"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-kanto",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/maps/kanto.png",
+            "kind": "location-map",
+            "depicts": "kanto"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-abra",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/abra.png",
+            "kind": "species-sprite",
+            "depicts": "Abra"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-aerodactyl",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/aerodactyl.png",
+            "kind": "species-sprite",
+            "depicts": "Aerodactyl"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-aipom",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/aipom.png",
+            "kind": "species-sprite",
+            "depicts": "Aipom"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-alakazam",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/alakazam.png",
+            "kind": "species-sprite",
+            "depicts": "Alakazam"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ampharos",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ampharos.png",
+            "kind": "species-sprite",
+            "depicts": "Ampharos"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-arbok",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/arbok.png",
+            "kind": "species-sprite",
+            "depicts": "Arbok"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-arcanine",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/arcanine.png",
+            "kind": "species-sprite",
+            "depicts": "Arcanine"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ariados",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ariados.png",
+            "kind": "species-sprite",
+            "depicts": "Ariados"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-articuno",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/articuno.png",
+            "kind": "species-sprite",
+            "depicts": "Articuno"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-azumarill",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/azumarill.png",
+            "kind": "species-sprite",
+            "depicts": "Azumarill"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-bayleef",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/bayleef.png",
+            "kind": "species-sprite",
+            "depicts": "Bayleef"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-beedrill",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/beedrill.png",
+            "kind": "species-sprite",
+            "depicts": "Beedrill"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-bellossom",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/bellossom.png",
+            "kind": "species-sprite",
+            "depicts": "Bellossom"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-bellsprout",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/bellsprout.png",
+            "kind": "species-sprite",
+            "depicts": "Bellsprout"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-blastoise",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/blastoise.png",
+            "kind": "species-sprite",
+            "depicts": "Blastoise"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-blissey",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/blissey.png",
+            "kind": "species-sprite",
+            "depicts": "Blissey"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-bulbasaur",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/bulbasaur.png",
+            "kind": "species-sprite",
+            "depicts": "Bulbasaur"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-butterfree",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/butterfree.png",
+            "kind": "species-sprite",
+            "depicts": "Butterfree"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-caterpie",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/caterpie.png",
+            "kind": "species-sprite",
+            "depicts": "Caterpie"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-celebi",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/celebi.png",
+            "kind": "species-sprite",
+            "depicts": "Celebi"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-chansey",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/chansey.png",
+            "kind": "species-sprite",
+            "depicts": "Chansey"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-charizard",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/charizard.png",
+            "kind": "species-sprite",
+            "depicts": "Charizard"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-charmander",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/charmander.png",
+            "kind": "species-sprite",
+            "depicts": "Charmander"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-charmeleon",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/charmeleon.png",
+            "kind": "species-sprite",
+            "depicts": "Charmeleon"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-chikorita",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/chikorita.png",
+            "kind": "species-sprite",
+            "depicts": "Chikorita"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-chinchou",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/chinchou.png",
+            "kind": "species-sprite",
+            "depicts": "Chinchou"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-clefable",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/clefable.png",
+            "kind": "species-sprite",
+            "depicts": "Clefable"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-clefairy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/clefairy.png",
+            "kind": "species-sprite",
+            "depicts": "Clefairy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-cleffa",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/cleffa.png",
+            "kind": "species-sprite",
+            "depicts": "Cleffa"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-cloyster",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/cloyster.png",
+            "kind": "species-sprite",
+            "depicts": "Cloyster"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-corsola",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/corsola.png",
+            "kind": "species-sprite",
+            "depicts": "Corsola"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-crobat",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/crobat.png",
+            "kind": "species-sprite",
+            "depicts": "Crobat"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-croconaw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/croconaw.png",
+            "kind": "species-sprite",
+            "depicts": "Croconaw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-cubone",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/cubone.png",
+            "kind": "species-sprite",
+            "depicts": "Cubone"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-cyndaquil",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/cyndaquil.png",
+            "kind": "species-sprite",
+            "depicts": "Cyndaquil"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-delibird",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/delibird.png",
+            "kind": "species-sprite",
+            "depicts": "Delibird"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-dewgong",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/dewgong.png",
+            "kind": "species-sprite",
+            "depicts": "Dewgong"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-diglett",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/diglett.png",
+            "kind": "species-sprite",
+            "depicts": "Diglett"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ditto",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ditto.png",
+            "kind": "species-sprite",
+            "depicts": "Ditto"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-dodrio",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/dodrio.png",
+            "kind": "species-sprite",
+            "depicts": "Dodrio"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-doduo",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/doduo.png",
+            "kind": "species-sprite",
+            "depicts": "Doduo"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-donphan",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/donphan.png",
+            "kind": "species-sprite",
+            "depicts": "Donphan"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-dragonair",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/dragonair.png",
+            "kind": "species-sprite",
+            "depicts": "Dragonair"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-dragonite",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/dragonite.png",
+            "kind": "species-sprite",
+            "depicts": "Dragonite"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-dratini",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/dratini.png",
+            "kind": "species-sprite",
+            "depicts": "Dratini"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-drowzee",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/drowzee.png",
+            "kind": "species-sprite",
+            "depicts": "Drowzee"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-dugtrio",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/dugtrio.png",
+            "kind": "species-sprite",
+            "depicts": "Dugtrio"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-dunsparce",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/dunsparce.png",
+            "kind": "species-sprite",
+            "depicts": "Dunsparce"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-eevee",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/eevee.png",
+            "kind": "species-sprite",
+            "depicts": "Eevee"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ekans",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ekans.png",
+            "kind": "species-sprite",
+            "depicts": "Ekans"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-electabuzz",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/electabuzz.png",
+            "kind": "species-sprite",
+            "depicts": "Electabuzz"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-electrode",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/electrode.png",
+            "kind": "species-sprite",
+            "depicts": "Electrode"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-elekid",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/elekid.png",
+            "kind": "species-sprite",
+            "depicts": "Elekid"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-entei",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/entei.png",
+            "kind": "species-sprite",
+            "depicts": "Entei"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-espeon",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/espeon.png",
+            "kind": "species-sprite",
+            "depicts": "Espeon"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-exeggcute",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/exeggcute.png",
+            "kind": "species-sprite",
+            "depicts": "Exeggcute"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-exeggutor",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/exeggutor.png",
+            "kind": "species-sprite",
+            "depicts": "Exeggutor"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-farfetch-d",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/farfetch'd.png",
+            "kind": "species-sprite",
+            "depicts": "Farfetch'd"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-fearow",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/fearow.png",
+            "kind": "species-sprite",
+            "depicts": "Fearow"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-feraligatr",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/feraligatr.png",
+            "kind": "species-sprite",
+            "depicts": "Feraligatr"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-flaaffy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/flaaffy.png",
+            "kind": "species-sprite",
+            "depicts": "Flaaffy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-flareon",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/flareon.png",
+            "kind": "species-sprite",
+            "depicts": "Flareon"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-forretress",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/forretress.png",
+            "kind": "species-sprite",
+            "depicts": "Forretress"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-furret",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/furret.png",
+            "kind": "species-sprite",
+            "depicts": "Furret"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-gastly",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/gastly.png",
+            "kind": "species-sprite",
+            "depicts": "Gastly"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-gengar",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/gengar.png",
+            "kind": "species-sprite",
+            "depicts": "Gengar"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-geodude",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/geodude.png",
+            "kind": "species-sprite",
+            "depicts": "Geodude"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-girafarig",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/girafarig.png",
+            "kind": "species-sprite",
+            "depicts": "Girafarig"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-gligar",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/gligar.png",
+            "kind": "species-sprite",
+            "depicts": "Gligar"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-gloom",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/gloom.png",
+            "kind": "species-sprite",
+            "depicts": "Gloom"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-golbat",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/golbat.png",
+            "kind": "species-sprite",
+            "depicts": "Golbat"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-goldeen",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/goldeen.png",
+            "kind": "species-sprite",
+            "depicts": "Goldeen"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-golduck",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/golduck.png",
+            "kind": "species-sprite",
+            "depicts": "Golduck"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-golem",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/golem.png",
+            "kind": "species-sprite",
+            "depicts": "Golem"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-granbull",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/granbull.png",
+            "kind": "species-sprite",
+            "depicts": "Granbull"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-graveler",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/graveler.png",
+            "kind": "species-sprite",
+            "depicts": "Graveler"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-grimer",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/grimer.png",
+            "kind": "species-sprite",
+            "depicts": "Grimer"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-growlithe",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/growlithe.png",
+            "kind": "species-sprite",
+            "depicts": "Growlithe"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-gyarados",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/gyarados.png",
+            "kind": "species-sprite",
+            "depicts": "Gyarados"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-haunter",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/haunter.png",
+            "kind": "species-sprite",
+            "depicts": "Haunter"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-heracross",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/heracross.png",
+            "kind": "species-sprite",
+            "depicts": "Heracross"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-hitmonchan",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/hitmonchan.png",
+            "kind": "species-sprite",
+            "depicts": "Hitmonchan"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-hitmonlee",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/hitmonlee.png",
+            "kind": "species-sprite",
+            "depicts": "Hitmonlee"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-hitmontop",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/hitmontop.png",
+            "kind": "species-sprite",
+            "depicts": "Hitmontop"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ho-oh",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ho-oh.png",
+            "kind": "species-sprite",
+            "depicts": "Ho-oh"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-hoothoot",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/hoothoot.png",
+            "kind": "species-sprite",
+            "depicts": "Hoothoot"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-hoppip",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/hoppip.png",
+            "kind": "species-sprite",
+            "depicts": "Hoppip"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-horsea",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/horsea.png",
+            "kind": "species-sprite",
+            "depicts": "Horsea"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-houndoom",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/houndoom.png",
+            "kind": "species-sprite",
+            "depicts": "Houndoom"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-houndour",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/houndour.png",
+            "kind": "species-sprite",
+            "depicts": "Houndour"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-hypno",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/hypno.png",
+            "kind": "species-sprite",
+            "depicts": "Hypno"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-igglybuff",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/igglybuff.png",
+            "kind": "species-sprite",
+            "depicts": "Igglybuff"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ivysaur",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ivysaur.png",
+            "kind": "species-sprite",
+            "depicts": "Ivysaur"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-jigglypuff",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/jigglypuff.png",
+            "kind": "species-sprite",
+            "depicts": "Jigglypuff"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-jolteon",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/jolteon.png",
+            "kind": "species-sprite",
+            "depicts": "Jolteon"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-jumpluff",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/jumpluff.png",
+            "kind": "species-sprite",
+            "depicts": "Jumpluff"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-jynx",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/jynx.png",
+            "kind": "species-sprite",
+            "depicts": "Jynx"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-kabuto",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/kabuto.png",
+            "kind": "species-sprite",
+            "depicts": "Kabuto"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-kabutops",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/kabutops.png",
+            "kind": "species-sprite",
+            "depicts": "Kabutops"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-kadabra",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/kadabra.png",
+            "kind": "species-sprite",
+            "depicts": "Kadabra"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-kakuna",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/kakuna.png",
+            "kind": "species-sprite",
+            "depicts": "Kakuna"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-kangaskhan",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/kangaskhan.png",
+            "kind": "species-sprite",
+            "depicts": "Kangaskhan"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-kingdra",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/kingdra.png",
+            "kind": "species-sprite",
+            "depicts": "Kingdra"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-kingler",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/kingler.png",
+            "kind": "species-sprite",
+            "depicts": "Kingler"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-koffing",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/koffing.png",
+            "kind": "species-sprite",
+            "depicts": "Koffing"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-krabby",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/krabby.png",
+            "kind": "species-sprite",
+            "depicts": "Krabby"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-lanturn",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/lanturn.png",
+            "kind": "species-sprite",
+            "depicts": "Lanturn"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-lapras",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/lapras.png",
+            "kind": "species-sprite",
+            "depicts": "Lapras"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-larvitar",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/larvitar.png",
+            "kind": "species-sprite",
+            "depicts": "Larvitar"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ledian",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ledian.png",
+            "kind": "species-sprite",
+            "depicts": "Ledian"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ledyba",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ledyba.png",
+            "kind": "species-sprite",
+            "depicts": "Ledyba"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-lickitung",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/lickitung.png",
+            "kind": "species-sprite",
+            "depicts": "Lickitung"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-lugia",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/lugia.png",
+            "kind": "species-sprite",
+            "depicts": "Lugia"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-machamp",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/machamp.png",
+            "kind": "species-sprite",
+            "depicts": "Machamp"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-machoke",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/machoke.png",
+            "kind": "species-sprite",
+            "depicts": "Machoke"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-machop",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/machop.png",
+            "kind": "species-sprite",
+            "depicts": "Machop"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-magby",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/magby.png",
+            "kind": "species-sprite",
+            "depicts": "Magby"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-magcargo",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/magcargo.png",
+            "kind": "species-sprite",
+            "depicts": "Magcargo"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-magikarp",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/magikarp.png",
+            "kind": "species-sprite",
+            "depicts": "Magikarp"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-magmar",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/magmar.png",
+            "kind": "species-sprite",
+            "depicts": "Magmar"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-magnemite",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/magnemite.png",
+            "kind": "species-sprite",
+            "depicts": "Magnemite"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-magneton",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/magneton.png",
+            "kind": "species-sprite",
+            "depicts": "Magneton"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-mankey",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/mankey.png",
+            "kind": "species-sprite",
+            "depicts": "Mankey"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-mantine",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/mantine.png",
+            "kind": "species-sprite",
+            "depicts": "Mantine"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-mareep",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/mareep.png",
+            "kind": "species-sprite",
+            "depicts": "Mareep"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-marill",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/marill.png",
+            "kind": "species-sprite",
+            "depicts": "Marill"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-marowak",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/marowak.png",
+            "kind": "species-sprite",
+            "depicts": "Marowak"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-meganium",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/meganium.png",
+            "kind": "species-sprite",
+            "depicts": "Meganium"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-meowth",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/meowth.png",
+            "kind": "species-sprite",
+            "depicts": "Meowth"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-metapod",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/metapod.png",
+            "kind": "species-sprite",
+            "depicts": "Metapod"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-mew",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/mew.png",
+            "kind": "species-sprite",
+            "depicts": "Mew"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-mewtwo",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/mewtwo.png",
+            "kind": "species-sprite",
+            "depicts": "Mewtwo"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-miltank",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/miltank.png",
+            "kind": "species-sprite",
+            "depicts": "Miltank"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-misdreavus",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/misdreavus.png",
+            "kind": "species-sprite",
+            "depicts": "Misdreavus"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-moltres",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/moltres.png",
+            "kind": "species-sprite",
+            "depicts": "Moltres"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-mrmime",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/mrmime.png",
+            "kind": "species-sprite",
+            "depicts": "Mrmime"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-muk",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/muk.png",
+            "kind": "species-sprite",
+            "depicts": "Muk"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-murkrow",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/murkrow.png",
+            "kind": "species-sprite",
+            "depicts": "Murkrow"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-natu",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/natu.png",
+            "kind": "species-sprite",
+            "depicts": "Natu"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-nidoking",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/nidoking.png",
+            "kind": "species-sprite",
+            "depicts": "Nidoking"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-nidoqueen",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/nidoqueen.png",
+            "kind": "species-sprite",
+            "depicts": "Nidoqueen"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-nidoran-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/nidoran_f.png",
+            "kind": "species-sprite",
+            "depicts": "Nidoran_f"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-nidoran-m",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/nidoran_m.png",
+            "kind": "species-sprite",
+            "depicts": "Nidoran_m"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-nidorina",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/nidorina.png",
+            "kind": "species-sprite",
+            "depicts": "Nidorina"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-nidorino",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/nidorino.png",
+            "kind": "species-sprite",
+            "depicts": "Nidorino"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ninetales",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ninetales.png",
+            "kind": "species-sprite",
+            "depicts": "Ninetales"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-noctowl",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/noctowl.png",
+            "kind": "species-sprite",
+            "depicts": "Noctowl"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-octillery",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/octillery.png",
+            "kind": "species-sprite",
+            "depicts": "Octillery"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-oddish",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/oddish.png",
+            "kind": "species-sprite",
+            "depicts": "Oddish"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-omanyte",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/omanyte.png",
+            "kind": "species-sprite",
+            "depicts": "Omanyte"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-omastar",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/omastar.png",
+            "kind": "species-sprite",
+            "depicts": "Omastar"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-onix",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/onix.png",
+            "kind": "species-sprite",
+            "depicts": "Onix"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-paras",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/paras.png",
+            "kind": "species-sprite",
+            "depicts": "Paras"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-parasect",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/parasect.png",
+            "kind": "species-sprite",
+            "depicts": "Parasect"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-persian",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/persian.png",
+            "kind": "species-sprite",
+            "depicts": "Persian"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-phanpy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/phanpy.png",
+            "kind": "species-sprite",
+            "depicts": "Phanpy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-pichu",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/pichu.png",
+            "kind": "species-sprite",
+            "depicts": "Pichu"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-pidgeot",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/pidgeot.png",
+            "kind": "species-sprite",
+            "depicts": "Pidgeot"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-pidgeotto",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/pidgeotto.png",
+            "kind": "species-sprite",
+            "depicts": "Pidgeotto"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-pidgey",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/pidgey.png",
+            "kind": "species-sprite",
+            "depicts": "Pidgey"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-pikachu",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/pikachu.png",
+            "kind": "species-sprite",
+            "depicts": "Pikachu"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-piloswine",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/piloswine.png",
+            "kind": "species-sprite",
+            "depicts": "Piloswine"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-pineco",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/pineco.png",
+            "kind": "species-sprite",
+            "depicts": "Pineco"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-pinsir",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/pinsir.png",
+            "kind": "species-sprite",
+            "depicts": "Pinsir"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-politoed",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/politoed.png",
+            "kind": "species-sprite",
+            "depicts": "Politoed"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-poliwag",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/poliwag.png",
+            "kind": "species-sprite",
+            "depicts": "Poliwag"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-poliwhirl",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/poliwhirl.png",
+            "kind": "species-sprite",
+            "depicts": "Poliwhirl"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-poliwrath",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/poliwrath.png",
+            "kind": "species-sprite",
+            "depicts": "Poliwrath"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ponyta",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ponyta.png",
+            "kind": "species-sprite",
+            "depicts": "Ponyta"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-porygon",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/porygon.png",
+            "kind": "species-sprite",
+            "depicts": "Porygon"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-porygon2",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/porygon2.png",
+            "kind": "species-sprite",
+            "depicts": "Porygon2"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-primeape",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/primeape.png",
+            "kind": "species-sprite",
+            "depicts": "Primeape"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-psyduck",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/psyduck.png",
+            "kind": "species-sprite",
+            "depicts": "Psyduck"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-pupitar",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/pupitar.png",
+            "kind": "species-sprite",
+            "depicts": "Pupitar"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-quagsire",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/quagsire.png",
+            "kind": "species-sprite",
+            "depicts": "Quagsire"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-quilava",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/quilava.png",
+            "kind": "species-sprite",
+            "depicts": "Quilava"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-qwilfish",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/qwilfish.png",
+            "kind": "species-sprite",
+            "depicts": "Qwilfish"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-raichu",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/raichu.png",
+            "kind": "species-sprite",
+            "depicts": "Raichu"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-raikou",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/raikou.png",
+            "kind": "species-sprite",
+            "depicts": "Raikou"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-rapidash",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/rapidash.png",
+            "kind": "species-sprite",
+            "depicts": "Rapidash"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-raticate",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/raticate.png",
+            "kind": "species-sprite",
+            "depicts": "Raticate"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-rattata",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/rattata.png",
+            "kind": "species-sprite",
+            "depicts": "Rattata"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-remoraid",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/remoraid.png",
+            "kind": "species-sprite",
+            "depicts": "Remoraid"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-rhydon",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/rhydon.png",
+            "kind": "species-sprite",
+            "depicts": "Rhydon"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-rhyhorn",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/rhyhorn.png",
+            "kind": "species-sprite",
+            "depicts": "Rhyhorn"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-sandshrew",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/sandshrew.png",
+            "kind": "species-sprite",
+            "depicts": "Sandshrew"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-sandslash",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/sandslash.png",
+            "kind": "species-sprite",
+            "depicts": "Sandslash"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-scizor",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/scizor.png",
+            "kind": "species-sprite",
+            "depicts": "Scizor"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-scyther",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/scyther.png",
+            "kind": "species-sprite",
+            "depicts": "Scyther"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-seadra",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/seadra.png",
+            "kind": "species-sprite",
+            "depicts": "Seadra"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-seaking",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/seaking.png",
+            "kind": "species-sprite",
+            "depicts": "Seaking"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-seel",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/seel.png",
+            "kind": "species-sprite",
+            "depicts": "Seel"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-sentret",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/sentret.png",
+            "kind": "species-sprite",
+            "depicts": "Sentret"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-shellder",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/shellder.png",
+            "kind": "species-sprite",
+            "depicts": "Shellder"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-shuckle",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/shuckle.png",
+            "kind": "species-sprite",
+            "depicts": "Shuckle"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-skarmory",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/skarmory.png",
+            "kind": "species-sprite",
+            "depicts": "Skarmory"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-skiploom",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/skiploom.png",
+            "kind": "species-sprite",
+            "depicts": "Skiploom"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-slowbro",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/slowbro.png",
+            "kind": "species-sprite",
+            "depicts": "Slowbro"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-slowking",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/slowking.png",
+            "kind": "species-sprite",
+            "depicts": "Slowking"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-slowpoke",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/slowpoke.png",
+            "kind": "species-sprite",
+            "depicts": "Slowpoke"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-slugma",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/slugma.png",
+            "kind": "species-sprite",
+            "depicts": "Slugma"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-smeargle",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/smeargle.png",
+            "kind": "species-sprite",
+            "depicts": "Smeargle"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-smoochum",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/smoochum.png",
+            "kind": "species-sprite",
+            "depicts": "Smoochum"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-sneasel",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/sneasel.png",
+            "kind": "species-sprite",
+            "depicts": "Sneasel"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-snorlax",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/snorlax.png",
+            "kind": "species-sprite",
+            "depicts": "Snorlax"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-snubbull",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/snubbull.png",
+            "kind": "species-sprite",
+            "depicts": "Snubbull"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-spearow",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/spearow.png",
+            "kind": "species-sprite",
+            "depicts": "Spearow"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-spinarak",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/spinarak.png",
+            "kind": "species-sprite",
+            "depicts": "Spinarak"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-squirtle",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/squirtle.png",
+            "kind": "species-sprite",
+            "depicts": "Squirtle"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-stantler",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/stantler.png",
+            "kind": "species-sprite",
+            "depicts": "Stantler"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-starmie",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/starmie.png",
+            "kind": "species-sprite",
+            "depicts": "Starmie"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-staryu",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/staryu.png",
+            "kind": "species-sprite",
+            "depicts": "Staryu"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-steelix",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/steelix.png",
+            "kind": "species-sprite",
+            "depicts": "Steelix"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-sudowoodo",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/sudowoodo.png",
+            "kind": "species-sprite",
+            "depicts": "Sudowoodo"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-suicune",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/suicune.png",
+            "kind": "species-sprite",
+            "depicts": "Suicune"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-sunflora",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/sunflora.png",
+            "kind": "species-sprite",
+            "depicts": "Sunflora"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-sunkern",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/sunkern.png",
+            "kind": "species-sprite",
+            "depicts": "Sunkern"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-swinub",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/swinub.png",
+            "kind": "species-sprite",
+            "depicts": "Swinub"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-tangela",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/tangela.png",
+            "kind": "species-sprite",
+            "depicts": "Tangela"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-tauros",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/tauros.png",
+            "kind": "species-sprite",
+            "depicts": "Tauros"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-teddiursa",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/teddiursa.png",
+            "kind": "species-sprite",
+            "depicts": "Teddiursa"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-tentacool",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/tentacool.png",
+            "kind": "species-sprite",
+            "depicts": "Tentacool"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-tentacruel",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/tentacruel.png",
+            "kind": "species-sprite",
+            "depicts": "Tentacruel"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-togepi",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/togepi.png",
+            "kind": "species-sprite",
+            "depicts": "Togepi"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-togetic",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/togetic.png",
+            "kind": "species-sprite",
+            "depicts": "Togetic"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-totodile",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/totodile.png",
+            "kind": "species-sprite",
+            "depicts": "Totodile"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-typhlosion",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/typhlosion.png",
+            "kind": "species-sprite",
+            "depicts": "Typhlosion"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-tyranitar",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/tyranitar.png",
+            "kind": "species-sprite",
+            "depicts": "Tyranitar"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-tyrogue",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/tyrogue.png",
+            "kind": "species-sprite",
+            "depicts": "Tyrogue"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-umbreon",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/umbreon.png",
+            "kind": "species-sprite",
+            "depicts": "Umbreon"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-unown",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/unown.png",
+            "kind": "species-sprite",
+            "depicts": "Unown"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-ursaring",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/ursaring.png",
+            "kind": "species-sprite",
+            "depicts": "Ursaring"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-vaporeon",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/vaporeon.png",
+            "kind": "species-sprite",
+            "depicts": "Vaporeon"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-venomoth",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/venomoth.png",
+            "kind": "species-sprite",
+            "depicts": "Venomoth"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-venonat",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/venonat.png",
+            "kind": "species-sprite",
+            "depicts": "Venonat"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-venusaur",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/venusaur.png",
+            "kind": "species-sprite",
+            "depicts": "Venusaur"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-victreebel",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/victreebel.png",
+            "kind": "species-sprite",
+            "depicts": "Victreebel"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-vileplume",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/vileplume.png",
+            "kind": "species-sprite",
+            "depicts": "Vileplume"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-voltorb",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/voltorb.png",
+            "kind": "species-sprite",
+            "depicts": "Voltorb"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-vulpix",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/vulpix.png",
+            "kind": "species-sprite",
+            "depicts": "Vulpix"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-wartortle",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/wartortle.png",
+            "kind": "species-sprite",
+            "depicts": "Wartortle"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-weedle",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/weedle.png",
+            "kind": "species-sprite",
+            "depicts": "Weedle"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-weepinbell",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/weepinbell.png",
+            "kind": "species-sprite",
+            "depicts": "Weepinbell"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-weezing",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/weezing.png",
+            "kind": "species-sprite",
+            "depicts": "Weezing"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-wigglytuff",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/wigglytuff.png",
+            "kind": "species-sprite",
+            "depicts": "Wigglytuff"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-wobbuffet",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/wobbuffet.png",
+            "kind": "species-sprite",
+            "depicts": "Wobbuffet"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-wooper",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/wooper.png",
+            "kind": "species-sprite",
+            "depicts": "Wooper"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-xatu",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/xatu.png",
+            "kind": "species-sprite",
+            "depicts": "Xatu"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-yanma",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/yanma.png",
+            "kind": "species-sprite",
+            "depicts": "Yanma"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-zapdos",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/zapdos.png",
+            "kind": "species-sprite",
+            "depicts": "Zapdos"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-zubat",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/pokemon/zubat.png",
+            "kind": "species-sprite",
+            "depicts": "Zubat"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        }
+      ]
+    }
+  ]
+}
