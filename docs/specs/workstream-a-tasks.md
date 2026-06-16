@@ -119,7 +119,9 @@ prose→keyword-beat splitting rules. (#6 extract/classify stays a separate pass
 **Dependencies:** Phase A. **Files:** `.claude/skills/guide-pass-spine/*`. **Scope:** M (editorial).
 
 ### ✅ Checkpoint C
-- [ ] Spine pass emits valid v1 layers on a sample chapter.
+- [x] Spine pass emits valid v1 layers on a sample chapter. _(C1 done 2026-06-16:
+  skill reworked for locations + chapter→visit→step + keyword beats; worked
+  example `examples/spine.sample.json` pinned by `tests/skills/spinePassExample.test.ts`.)_
 
 ---
 

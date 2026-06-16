@@ -82,13 +82,13 @@ Validated by `app/src/schema/layers.ts`; `yarn validate-guides` checks every
 
 | File | Schema | Content |
 |---|---|---|
-| `layers/spine.json` | `spineLayer` | `{ schemaVersion, guideId, pass: "spine", chapters: [...] }` — the full chapter/step tree, exactly the shape `guide.json.chapters` will take |
+| `layers/spine.json` | `spineLayer` | `{ schemaVersion, guideId, pass: "spine", locations: [...], chapters: [...] }` — the locations registry + the full chapter→visit→step tree, exactly the shape `guide.json.locations`/`.chapters` will take |
 | `layers/widget-<seg>.json` | `widgetLayer` | `{ schemaVersion, guideId, pass: "widget", widget: {...} }` — one widget instance, exactly the shape of a `guide.json.widgets` element; `<seg>` must equal the widget ID's second segment |
 | `layers/ra-mapping.json` | `raMapping` | identical shape to the final `ra-mapping.json` — assembly is a copy |
 
 Artifacts carry IDs in the full §20.3 grammar (guide slug first segment), so
 assembly is a mechanical merge with zero rewriting:
-`guide.json = { schemaVersion, guideId, chapters: spine.chapters, widgets: [each widget layer's widget, ordered by deckPosition] }`.
+`guide.json = { schemaVersion, guideId, locations: spine.locations, chapters: spine.chapters, widgets: [each widget layer's widget, ordered by deckPosition] }`.
 
 Anything else in `layers/` ending in `.json` is a contract violation (the validator
 rejects it). Non-JSON files (e.g. ML PiT's `translation-report.md`, a pre-contract
@@ -101,7 +101,7 @@ review lens's raw material (FR-E2, §7 review screen) and the editor's first rea
 
 ```jsonc
 {
-  "schemaVersion": 0,
+  "schemaVersion": 1,
   "guideId": "pokemon-crystal",
   "pass": "spine",                  // source-gathering | spine | widget | ra-mapping | qa
   "layer": "spine",                 // = the report's filename base, = approvals layerRecord.id
