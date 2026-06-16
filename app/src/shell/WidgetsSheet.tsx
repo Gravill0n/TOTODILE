@@ -10,8 +10,9 @@ type WidgetsSheetProps = WidgetHandlers & {
   onClose: () => void;
 };
 
-// The 🧩 bottom sheet (S3, phone posture): widgets for the current chapter
-// by default, whole-game toggle visible (FR-A5).
+// The 🧩 bottom sheet (S3, phone posture): the widgets in scope for where the
+// pointer is — chapter, location (every visit there), or visit — by default,
+// whole-game toggle visible (FR-A5). The list arrives pre-resolved (widgetScope).
 export function WidgetsSheet({
   widgets,
   progress,
