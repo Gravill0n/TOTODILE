@@ -5,6 +5,7 @@ import { afterEach, describe, expect, it } from "vitest";
 import { validateGuides } from "../../scripts/validateGuidesCore.ts";
 import {
   validApprovals,
+  validDataLayer,
   validDeck,
   validGuide,
   validLibrary,
@@ -243,6 +244,11 @@ describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () =>
   function happyLayers() {
     return {
       ...happyTree(),
+      [`${layersBase}/data.json`]: validDataLayer(),
+      [`${layersBase}/data.report.json`]: validPassReport(
+        "data",
+        "extract-data",
+      ),
       [`${layersBase}/spine.json`]: validSpineLayer(),
       [`${layersBase}/spine.report.json`]: validPassReport("spine"),
       [`${layersBase}/widget-w1.json`]: validWidgetLayer(1),
@@ -274,6 +280,17 @@ describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () =>
     expect(messagesOf(root).join("\n")).toContain(
       "[fictional-quest/layers/extras.json] unrecognized layer file",
     );
+  });
+
+  it("resolves sourceRefs in extract-data records (§6.6)", () => {
+    const data = validDataLayer();
+    const record = data.datasets[0]?.records[0];
+    if (record) record.sourceRefs = ["src-ghost"];
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/data.json`]: data,
+    });
+    expect(messagesOf(root).join("\n")).toContain('unknown source "src-ghost"');
   });
 
   it("flags a layer guideId that contradicts the folder slug", () => {
