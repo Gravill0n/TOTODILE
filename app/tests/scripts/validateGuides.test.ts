@@ -282,6 +282,29 @@ describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () =>
     );
   });
 
+  it("requires the extract-data layer once a downstream layer exists", () => {
+    // extract-data is mandatory and runs before spine/widgets; a layers/ tree
+    // with a spine/widget/ra-mapping artifact but no data.json skipped it.
+    const {
+      [`${layersBase}/data.json`]: _data,
+      [`${layersBase}/data.report.json`]: _dataReport,
+      ...withoutData
+    } = happyLayers();
+    const root = writeTree(withoutData);
+    expect(messagesOf(root).join("\n")).toContain(
+      "missing the mandatory extract-data layer",
+    );
+  });
+
+  it("allows a layers/ tree that has only run source-gathering (pre-extract-data)", () => {
+    const root = writeTree({
+      ...happyTree(),
+      [`${layersBase}/source-gathering.report.json`]:
+        validPassReport("source-gathering"),
+    });
+    expect(messagesOf(root).join("\n")).not.toContain("extract-data layer");
+  });
+
   it("resolves sourceRefs in extract-data records (§6.6)", () => {
     const data = validDataLayer();
     const record = data.datasets[0]?.records[0];

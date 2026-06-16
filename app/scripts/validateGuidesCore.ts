@@ -385,6 +385,22 @@ function validateLayers(
     }
   }
 
+  // extract-data is mandatory and runs before spine/widget/ra-mapping (pass 2
+  // of 6): if any of those downstream artifacts exist, layers/data.json must
+  // too. A tree that has only run source-gathering (no layer artifacts yet) is
+  // a legitimate pre-extract-data state and is left alone.
+  const hasDownstreamLayer = [...artifacts.keys()].some(
+    (id) => id === "spine" || id === "ra-mapping" || WIDGET_LAYER_ID.test(id),
+  );
+  if (hasDownstreamLayer && !artifacts.has("data")) {
+    findings.push({
+      guide: slug,
+      file: "layers/data.json",
+      message:
+        "missing the mandatory extract-data layer — a spine/widget/ra-mapping layer exists but layers/data.json does not (run extract-data first)",
+    });
+  }
+
   for (const [layerId, artifact] of artifacts) {
     const file = `layers/${layerId}.json`;
     const report = reports.get(layerId);
