@@ -135,9 +135,7 @@ describe("review lens — flagged rows (FR-E2/E3)", () => {
     setEditorMode(true);
     stubFetch({ approvals: approvedApprovals() });
     renderAt("/review/fictional-quest");
-    expect(
-      await screen.findByText(/Talk to the gatekeeper twice/),
-    ).toBeDefined();
+    expect(await screen.findByText(/Talk to gatekeeper ×2/)).toBeDefined();
   });
 
   it("redirects to the library when editor mode is off (§9.3)", async () => {

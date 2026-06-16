@@ -100,7 +100,7 @@ async function renderGuide() {
   );
   render(<RouterProvider router={router} />);
   // The play view renders only once progress is ready.
-  await screen.findByText(/Talk to the gatekeeper twice/);
+  await screen.findByText(/Talk to gatekeeper ×2/);
 }
 
 describe("guide Sync (FR-C2/C3/C4)", () => {
