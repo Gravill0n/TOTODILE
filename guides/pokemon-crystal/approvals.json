@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "layers": [
+    {
+      "id": "spine",
+      "kind": "spine",
+      "artifact": "layers/spine.json",
+      "report": {
+        "rowCount": 11,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:8c44492876733642dbda8ce50c4c3817a04d54e0c3365132a58c2795ad1c4116",
+      "status": "approved",
+      "approval": {
+        "date": "2026-06-16T00:00:00Z",
+        "verdict": "approved",
+        "note": "Hand-authored fixture approval for the Workstream A v1 slice (no review-lens verdict; layers/spine.json not emitted, so contentHash is of guide.json). Phase E replaces this via the real review flow."
+      },
+      "spotChecks": []
+    }
+  ]
+}

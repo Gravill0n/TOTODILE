@@ -2,16 +2,6 @@
   "schemaVersion": 1,
   "guides": [
     {
-      "id": "ml-partners-in-time",
-      "title": "Mario & Luigi: Partners in Time — Achievement Guide",
-      "game": "Mario & Luigi: Partners in Time",
-      "platform": "Nintendo DS",
-      "raGameId": 3118,
-      "deckId": "deck-rpg",
-      "language": "en",
-      "status": "in-compilation"
-    },
-    {
       "id": "pokemon-crystal",
       "title": "Pokémon Crystal — 100% Achievement Guide",
       "game": "Pokémon Crystal",
