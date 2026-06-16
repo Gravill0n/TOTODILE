@@ -17,12 +17,12 @@ passes — never their conversation context — so any pass can be re-run in a f
 session.
 
 ```
-source-gathering ──▶ spine ──▶ widget fill (×N, one per widget) ──▶ ra-mapping ──▶ qa
-     │                 │              │                                │            │
-     ▼                 ▼              ▼                                ▼            ▼
-sources.json     layers/spine    layers/widget-<id>            layers/ra-mapping   layers/qa.report.json
-+ report         .json+report    .json+report (each)           .json+report        + assembled guide.json
-                                                                                   + ra-mapping.json
+source-gathering ─▶ extract-data ─▶ spine ─▶ widget fill (×N) ─▶ ra-mapping ─▶ qa
+     │                  │             │            │                │           │
+     ▼                  ▼             ▼            ▼                ▼           ▼
+sources.json     layers/data    layers/spine  layers/widget-<id> layers/ra-  layers/qa.report.json
++ report         .json+report   .json+report  .json+report (each) mapping     + assembled guide.json
+                                                                   .json       + ra-mapping.json
 ```
 
 All paths below are relative to `guides/<slug>/`.
@@ -30,15 +30,29 @@ All paths below are relative to `guides/<slug>/`.
 | Pass | Reads | Artifact | Report |
 |---|---|---|---|
 | source-gathering | Pierre's source list, the web | `sources.json` (the artifact — no layer file) | `layers/source-gathering.report.json` |
-| spine | `sources.json`, prior `layers/spine.json` if any, rejection notes | `layers/spine.json` | `layers/spine.report.json` |
-| widget fill | `layers/spine.json`, `deck.json`, `sources.json`, prior artifact | `layers/widget-<id>.json` | `layers/widget-<id>.report.json` |
+| extract-data | `sources.json`, the source materials, prior `layers/data.json` if any | `layers/data.json` (classified facts + `images` catalog; intermediate — not assembled, not reviewed) | `layers/data.report.json` |
+| spine | `layers/data.json`, `sources.json`, prior `layers/spine.json` if any, rejection notes | `layers/spine.json` | `layers/spine.report.json` |
+| widget fill | `layers/data.json`, `layers/spine.json`, `deck.json`, `sources.json`, prior artifact | `layers/widget-<id>.json` | `layers/widget-<id>.report.json` |
 | ra-mapping | spine + widget layers, the RA set source | `layers/ra-mapping.json` | `layers/ra-mapping.report.json` |
 | qa | everything above | none — assembles `guide.json` + `ra-mapping.json` on success | `layers/qa.report.json` |
 
-`<id>` is the layer ID: `spine`, `widget-<widget-segment>` (e.g. `widget-encounters`
-for widget `pokemon-crystal:encounters`), `ra-mapping` — matching PRD §6 entity 7
-(spine / per-widget-pass / RA-mapping) and `approvals.json` `layerRecord.id`. One
-layer per widget instance keeps each reviewable in one sitting (§15 risk 2).
+`<id>` is the layer ID: `data`, `spine`, `widget-<widget-segment>` (e.g.
+`widget-encounters` for widget `pokemon-crystal:encounters`), `ra-mapping` —
+matching PRD §6 entity 7 (spine / per-widget-pass / RA-mapping) and
+`approvals.json` `layerRecord.id`. One layer per widget instance keeps each
+reviewable in one sitting (§15 risk 2). `data` has no `approvals.json` record —
+it is mechanically validated only (it is an intermediate, never assembled or
+reviewed; its record IDs are local, so it is outside the checkable namespace and
+`check-stable-ids`).
+
+**Rollout note (extract-data adoption).** `extract-data` is a mandatory pass:
+the `guide-pass-spine` / `guide-pass-widgets` skills draw their classified facts
+(and pick images from its `images` catalog) from `layers/data.json`, and
+`validate-guides` requires `data.json` once any downstream layer
+(spine/widget/ra-mapping) exists. **Remaining:** running the pass on the
+existing guides — extracting each guide's real `data.json` and recompiling its
+spine/widgets from it (the per-guide content lift, gated on Pierre's category
+sign-off) — is still to do.
 
 ## 2. Rules that bind every pass
 
@@ -82,13 +96,14 @@ Validated by `app/src/schema/layers.ts`; `yarn validate-guides` checks every
 
 | File | Schema | Content |
 |---|---|---|
-| `layers/spine.json` | `spineLayer` | `{ schemaVersion, guideId, pass: "spine", chapters: [...] }` — the full chapter/step tree, exactly the shape `guide.json.chapters` will take |
+| `layers/data.json` | `dataLayer` | `{ schemaVersion, guideId, pass: "extract-data", datasets: [...] }` — generic category tables (one dataset per fact category, each a table of key→value records) + an `images` catalog of available source assets. Intermediate: validated but **not** assembled into `guide.json` and **not** reviewed; record IDs are `localId` |
+| `layers/spine.json` | `spineLayer` | `{ schemaVersion, guideId, pass: "spine", locations: [...], chapters: [...] }` — the locations registry + the full chapter→visit→step tree, exactly the shape `guide.json.locations`/`.chapters` will take |
 | `layers/widget-<seg>.json` | `widgetLayer` | `{ schemaVersion, guideId, pass: "widget", widget: {...} }` — one widget instance, exactly the shape of a `guide.json.widgets` element; `<seg>` must equal the widget ID's second segment |
 | `layers/ra-mapping.json` | `raMapping` | identical shape to the final `ra-mapping.json` — assembly is a copy |
 
 Artifacts carry IDs in the full §20.3 grammar (guide slug first segment), so
 assembly is a mechanical merge with zero rewriting:
-`guide.json = { schemaVersion, guideId, chapters: spine.chapters, widgets: [each widget layer's widget, ordered by deckPosition] }`.
+`guide.json = { schemaVersion, guideId, locations: spine.locations, chapters: spine.chapters, widgets: [each widget layer's widget, ordered by deckPosition] }`.
 
 Anything else in `layers/` ending in `.json` is a contract violation (the validator
 rejects it). Non-JSON files (e.g. ML PiT's `translation-report.md`, a pre-contract
@@ -101,7 +116,7 @@ review lens's raw material (FR-E2, §7 review screen) and the editor's first rea
 
 ```jsonc
 {
-  "schemaVersion": 0,
+  "schemaVersion": 1,
   "guideId": "pokemon-crystal",
   "pass": "spine",                  // source-gathering | spine | widget | ra-mapping | qa
   "layer": "spine",                 // = the report's filename base, = approvals layerRecord.id
@@ -120,9 +135,9 @@ review lens's raw material (FR-E2, §7 review screen) and the editor's first rea
 }
 ```
 
-- `report.rowCount` counts the artifact's emitted rows: steps (spine), checkable
-  rows/cells (widget), entries (ra-mapping), files verified (qa), sources added
-  (source-gathering).
+- `report.rowCount` counts the artifact's emitted rows: records across all
+  datasets (extract-data), steps (spine), checkable rows/cells (widget), entries
+  (ra-mapping), files verified (qa), sources added (source-gathering).
 - `report.anomalies` — human-readable problem lines: source conflicts, gaps,
   unreachable images, cross-reference findings (qa). Free-form but one problem per
   line, prefixed with the most specific ID available.
@@ -130,7 +145,9 @@ review lens's raw material (FR-E2, §7 review screen) and the editor's first rea
   equal the set of rows the artifact marks `confidence: "flagged"`
   (validator-enforced; for ra-mapping that set is the flagged entries'
   `targetItemId`s). For source-gathering and qa it lists any checkable the pass
-  wants review eyes on.
+  wants review eyes on. The **extract-data** layer is exempt: its record IDs are
+  local (not checkables) and it is unreviewed, so `flaggedItemIds` stays empty
+  and flagged records are surfaced through `anomalies` only.
 - A flagged row **must** also have an anomaly line saying why (the lens shows them
   side by side with the source excerpt, FR-E2/E3).
 
@@ -160,6 +177,7 @@ A pass re-run (after a rejection, new sources, or a schema migration):
 ```
 .claude/skills/
 ├── guide-pass-sources/      # source-gathering
+├── guide-pass-extract-data/ # data extraction + classification (→ layers/data.json)
 ├── guide-pass-spine/        # spine extraction
 ├── guide-pass-widgets/      # widget fills (one run per widget instance)
 ├── guide-pass-ra-mapping/   # RA mapping

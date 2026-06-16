@@ -1,7 +1,7 @@
 ---
 name: guide-pass-qa
 description: >-
-  TOTODILE compiler pass 5 of 5 — QA and assembly. Use when Pierre asks to
+  TOTODILE compiler pass 6 of 6 — QA and assembly. Use when Pierre asks to
   "run QA", "run the QA pass on <slug>", "assemble <slug>", or before handing
   a guide to review. Validates every layer, checks staleness, assembles the
   draft guide.json + ra-mapping.json mechanically, spot-reads flagged rows,

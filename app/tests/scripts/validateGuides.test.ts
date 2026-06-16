@@ -5,6 +5,7 @@ import { afterEach, describe, expect, it } from "vitest";
 import { validateGuides } from "../../scripts/validateGuidesCore.ts";
 import {
   validApprovals,
+  validDataLayer,
   validDeck,
   validGuide,
   validLibrary,
@@ -75,11 +76,9 @@ describe("validateGuides", () => {
 
   it("flags a dangling sourceRef (§6.6)", () => {
     const guide = validGuide();
-    const chapter = guide.chapters[0];
-    if (chapter === undefined) return expect.fail("fixture has no chapter");
-    chapter.steps = [
-      { ...chapter.steps[0], sourceRefs: ["src-ghost"] },
-    ] as never;
+    const visit = guide.chapters[0]?.visits[0];
+    if (visit === undefined) return expect.fail("fixture has no visit");
+    visit.steps = [{ ...visit.steps[0], sourceRefs: ["src-ghost"] }] as never;
     const root = writeTree({
       ...happyTree(),
       "guides/fictional-quest/guide.json": guide,
@@ -245,6 +244,11 @@ describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () =>
   function happyLayers() {
     return {
       ...happyTree(),
+      [`${layersBase}/data.json`]: validDataLayer(),
+      [`${layersBase}/data.report.json`]: validPassReport(
+        "data",
+        "extract-data",
+      ),
       [`${layersBase}/spine.json`]: validSpineLayer(),
       [`${layersBase}/spine.report.json`]: validPassReport("spine"),
       [`${layersBase}/widget-w1.json`]: validWidgetLayer(1),
@@ -276,6 +280,40 @@ describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () =>
     expect(messagesOf(root).join("\n")).toContain(
       "[fictional-quest/layers/extras.json] unrecognized layer file",
     );
+  });
+
+  it("requires the extract-data layer once a downstream layer exists", () => {
+    // extract-data is mandatory and runs before spine/widgets; a layers/ tree
+    // with a spine/widget/ra-mapping artifact but no data.json skipped it.
+    const {
+      [`${layersBase}/data.json`]: _data,
+      [`${layersBase}/data.report.json`]: _dataReport,
+      ...withoutData
+    } = happyLayers();
+    const root = writeTree(withoutData);
+    expect(messagesOf(root).join("\n")).toContain(
+      "missing the mandatory extract-data layer",
+    );
+  });
+
+  it("allows a layers/ tree that has only run source-gathering (pre-extract-data)", () => {
+    const root = writeTree({
+      ...happyTree(),
+      [`${layersBase}/source-gathering.report.json`]:
+        validPassReport("source-gathering"),
+    });
+    expect(messagesOf(root).join("\n")).not.toContain("extract-data layer");
+  });
+
+  it("resolves sourceRefs in extract-data records (§6.6)", () => {
+    const data = validDataLayer();
+    const record = data.datasets[0]?.records[0];
+    if (record) record.sourceRefs = ["src-ghost"];
+    const root = writeTree({
+      ...happyLayers(),
+      [`${layersBase}/data.json`]: data,
+    });
+    expect(messagesOf(root).join("\n")).toContain('unknown source "src-ghost"');
   });
 
   it("flags a layer guideId that contradicts the folder slug", () => {
@@ -310,8 +348,8 @@ describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () =>
 
   it("enforces flag parity between artifact and report (FR-D2)", () => {
     const flaggedSpine = validSpineLayer();
-    const chapter = flaggedSpine.chapters[0];
-    if (chapter?.steps[0]) chapter.steps[0].confidence = "flagged";
+    const step = flaggedSpine.chapters[0]?.visits[0]?.steps[0];
+    if (step) step.confidence = "flagged";
     const root = writeTree({
       ...happyLayers(),
       [`${layersBase}/spine.json`]: flaggedSpine,

@@ -1,13 +1,15 @@
 import { z } from "zod";
 import { layerReport } from "./approvals.ts";
 import {
+  confidence,
   findDuplicates,
   guideSlug,
   idSlug,
   localId,
   schemaVersion,
+  sourceRefs,
 } from "./common.ts";
-import { chapter } from "./spine.ts";
+import { chapter, location } from "./spine.ts";
 import { widget, widgetItemIds } from "./widgets.ts";
 
 // Compiler pass artifacts and reports (COMPILER_PASS_CONTRACT.md, FR-D1/D2).
@@ -16,19 +18,69 @@ import { widget, widgetItemIds } from "./widgets.ts";
 
 export const passId = z.enum([
   "source-gathering",
+  "extract-data",
   "spine",
   "widget",
   "ra-mapping",
   "qa",
 ]);
 
-// layers/spine.json — the chapter/step tree, exactly the shape
-// guide.json.chapters takes at assembly (contract §3).
+// layers/data.json — the extract-data pass output (pass 2 of 6). A classified,
+// reusable store of facts drawn from sources, consumed by the spine + widget
+// passes (e.g. encounter tables, and an `images` catalog of available source
+// assets). NOT assembled into guide.json (it is intermediate) and NOT reviewed:
+// its record IDs are `localId` (single-segment), so they stay out of the
+// checkable namespace and §6.8 / check-stable-ids never touch them. Generic
+// "category tables" — one dataset per fact category, each a table of key→value
+// records — so the pass is game-agnostic (mirrors the dataTable primitive).
+export const dataRecord = z.object({
+  id: localId,
+  fields: z.record(localId, z.string()),
+  sourceRefs,
+  confidence,
+});
+
+export const dataset = z
+  .object({
+    id: localId,
+    label: z.string().min(1),
+    records: z.array(dataRecord).min(1),
+  })
+  .superRefine((value, ctx) => {
+    for (const id of findDuplicates(value.records.map((r) => r.id))) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["records"],
+        message: `Duplicate record ID "${id}" in dataset "${value.id}"`,
+      });
+    }
+  });
+
+export const dataLayer = z
+  .object({
+    schemaVersion,
+    guideId: guideSlug,
+    pass: z.literal("extract-data"),
+    datasets: z.array(dataset).min(1),
+  })
+  .superRefine((value, ctx) => {
+    for (const id of findDuplicates(value.datasets.map((d) => d.id))) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["datasets"],
+        message: `Duplicate dataset ID "${id}"`,
+      });
+    }
+  });
+
+// layers/spine.json — the locations + chapter/visit/step tree, exactly the
+// shape guide.json's locations/chapters take at assembly (contract §3).
 export const spineLayer = z
   .object({
     schemaVersion,
     guideId: guideSlug,
     pass: z.literal("spine"),
+    locations: z.array(location).default([]),
     chapters: z.array(chapter).min(1),
   })
   .superRefine((value, ctx) => {
@@ -39,7 +91,22 @@ export const spineLayer = z
         message: `Duplicate chapter ID "${id}"`,
       });
     }
-    const stepIds = value.chapters.flatMap((c) => c.steps.map((s) => s.id));
+    for (const id of findDuplicates(value.locations.map((l) => l.id))) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["locations"],
+        message: `Duplicate location ID "${id}"`,
+      });
+    }
+    const visits = value.chapters.flatMap((c) => c.visits);
+    for (const id of findDuplicates(visits.map((v) => v.id))) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["chapters"],
+        message: `Duplicate visit ID "${id}"`,
+      });
+    }
+    const stepIds = visits.flatMap((v) => v.steps.map((s) => s.id));
     for (const id of findDuplicates(stepIds)) {
       ctx.addIssue({
         code: "custom",
@@ -47,14 +114,40 @@ export const spineLayer = z
         message: `Duplicate step ID "${id}"`,
       });
     }
+    // FK: every visit names a location that exists.
+    const locationIds = new Set(value.locations.map((l) => l.id));
     value.chapters.forEach((c, ci) => {
-      if (idSlug(c.id) !== value.guideId) {
+      c.visits.forEach((v, vi) => {
+        if (!locationIds.has(v.locationId)) {
+          ctx.addIssue({
+            code: "custom",
+            path: ["chapters", ci, "visits", vi, "locationId"],
+            message: `Visit "${v.id}" references unknown location "${v.locationId}"`,
+          });
+        }
+      });
+    });
+    const expectSlug = (
+      id: string,
+      path: (string | number)[],
+      what: string,
+    ) => {
+      if (idSlug(id) !== value.guideId) {
         ctx.addIssue({
           code: "custom",
-          path: ["chapters", ci, "id"],
-          message: `Chapter ID "${c.id}" does not carry the guide slug "${value.guideId}"`,
+          path,
+          message: `${what} "${id}" does not carry the guide slug "${value.guideId}"`,
         });
       }
+    };
+    value.locations.forEach((l, li) => {
+      expectSlug(l.id, ["locations", li, "id"], "Location ID");
+    });
+    value.chapters.forEach((c, ci) => {
+      expectSlug(c.id, ["chapters", ci, "id"], "Chapter ID");
+      c.visits.forEach((v, vi) => {
+        expectSlug(v.id, ["chapters", ci, "visits", vi, "id"], "Visit ID");
+      });
     });
   });
 
@@ -113,7 +206,9 @@ export const passReportFile = z
     const expected =
       value.pass === "widget"
         ? /^widget-/.test(value.layer)
-        : value.layer === value.pass;
+        : value.pass === "extract-data"
+          ? value.layer === "data"
+          : value.layer === value.pass;
     if (!expected) {
       ctx.addIssue({
         code: "custom",
@@ -124,6 +219,9 @@ export const passReportFile = z
   });
 
 export type PassId = z.infer<typeof passId>;
+export type DataRecord = z.infer<typeof dataRecord>;
+export type Dataset = z.infer<typeof dataset>;
+export type DataLayer = z.infer<typeof dataLayer>;
 export type SpineLayer = z.infer<typeof spineLayer>;
 export type WidgetLayer = z.infer<typeof widgetLayer>;
 export type ReportInput = z.infer<typeof reportInput>;

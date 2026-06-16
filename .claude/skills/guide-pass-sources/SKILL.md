@@ -1,7 +1,7 @@
 ---
 name: guide-pass-sources
 description: >-
-  TOTODILE compiler pass 1 of 5 — source gathering. Use when starting a new
+  TOTODILE compiler pass 1 of 6 — source gathering. Use when starting a new
   TOTODILE guide ("start a guide for <game>", "compile <game>", "bootstrap
   <slug>") or when adding sources to an existing one ("run the sources pass",
   "add a source to <slug>"). Bootstraps guides/<slug>/ on first run, gathers

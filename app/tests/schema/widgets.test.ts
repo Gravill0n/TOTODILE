@@ -21,6 +21,40 @@ describe("widget (discriminated union)", () => {
     expectRejects(widget, { ...validChecklist(), scope: { kind: "chapter" } });
   });
 
+  it("parses all four scope kinds", () => {
+    expectParses(widget, {
+      ...validChecklist(),
+      scope: { kind: "global" },
+    });
+    expectParses(widget, {
+      ...validChecklist(),
+      scope: { kind: "chapter", chapterId: "fictional-quest:c1" },
+    });
+    expectParses(widget, {
+      ...validChecklist(),
+      scope: { kind: "location", locationId: "fictional-quest:castle-gate" },
+    });
+    expectParses(widget, {
+      ...validChecklist(),
+      scope: { kind: "visit", visitId: "fictional-quest:v1" },
+    });
+  });
+
+  it("rejects a location scope without a location ID", () => {
+    expectRejects(widget, { ...validChecklist(), scope: { kind: "location" } });
+  });
+
+  it("rejects a visit scope without a visit ID", () => {
+    expectRejects(widget, { ...validChecklist(), scope: { kind: "visit" } });
+  });
+
+  it("rejects an unknown scope kind", () => {
+    expectRejects(widget, {
+      ...validChecklist(),
+      scope: { kind: "step", stepId: "fictional-quest:c1:s1" },
+    });
+  });
+
   it("rejects a negative deck position", () => {
     expectRejects(widget, { ...validChecklist(), deckPosition: -1 });
   });

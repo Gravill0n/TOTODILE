@@ -7,35 +7,41 @@ function missableStep(id: string) {
   return {
     id,
     order: 0,
-    text: id,
+    keywords: [id],
     missable: { deadline: `deadline ${id}` },
     sourceRefs: ["src-wiki"],
     confidence: "normal" as const,
   };
 }
 
+function soloVisitChapter(n: number, title: string) {
+  return {
+    id: `fictional-quest:c${n}`,
+    title,
+    order: n - 1,
+    visits: [
+      {
+        id: `fictional-quest:v${n}`,
+        locationId: `fictional-quest:loc${n}`,
+        order: 0,
+        steps: [missableStep(`fictional-quest:c${n}:s1`)],
+      },
+    ],
+  };
+}
+
 const threeChapters = guideFile.parse({
   schemaVersion: SCHEMA_VERSION,
   guideId: "fictional-quest",
+  locations: [
+    { id: "fictional-quest:loc1", name: "One" },
+    { id: "fictional-quest:loc2", name: "Two" },
+    { id: "fictional-quest:loc3", name: "Three" },
+  ],
   chapters: [
-    {
-      id: "fictional-quest:c1",
-      title: "One",
-      order: 0,
-      steps: [missableStep("fictional-quest:c1:s1")],
-    },
-    {
-      id: "fictional-quest:c2",
-      title: "Two",
-      order: 1,
-      steps: [missableStep("fictional-quest:c2:s1")],
-    },
-    {
-      id: "fictional-quest:c3",
-      title: "Three",
-      order: 2,
-      steps: [missableStep("fictional-quest:c3:s1")],
-    },
+    soloVisitChapter(1, "One"),
+    soloVisitChapter(2, "Two"),
+    soloVisitChapter(3, "Three"),
   ],
   widgets: [],
 });

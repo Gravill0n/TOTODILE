@@ -108,15 +108,19 @@ export function collectCleanupTasks(
     }
   };
 
+  const locationName = new Map(guide.locations.map((l) => [l.id, l.name]));
   for (const chapter of guide.chapters) {
-    for (const step of chapter.steps) {
-      if (progress.doneIds.has(step.id)) continue;
-      push(step.location ?? chapter.title, {
-        itemId: step.id,
-        label: step.text,
-        kind: "step",
-        skipped: progress.skippedIds.has(step.id),
-      });
+    for (const visit of chapter.visits) {
+      const place = locationName.get(visit.locationId) ?? chapter.title;
+      for (const step of visit.steps) {
+        if (progress.doneIds.has(step.id)) continue;
+        push(place, {
+          itemId: step.id,
+          label: step.keywords.join(" · "),
+          kind: "step",
+          skipped: progress.skippedIds.has(step.id),
+        });
+      }
     }
   }
 

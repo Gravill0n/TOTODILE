@@ -150,14 +150,18 @@ function widgetRowContents(value: Widget): Map<string, RowContent> {
 // their target's title through it too.
 export function buildContentIndex(guide: GuideFile): Map<string, RowContent> {
   const index = new Map<string, RowContent>();
+  const locationName = new Map(guide.locations.map((l) => [l.id, l.name]));
   for (const chapter of guide.chapters) {
-    for (const step of chapter.steps) {
-      index.set(step.id, {
-        title: step.text,
-        detail: joinDetail([chapter.title, step.section, step.location]),
-        sourceRefs: step.sourceRefs,
-        confidence: step.confidence,
-      });
+    for (const visit of chapter.visits) {
+      const place = locationName.get(visit.locationId);
+      for (const step of visit.steps) {
+        index.set(step.id, {
+          title: step.keywords.join(" · "),
+          detail: joinDetail([chapter.title, place, step.detail]),
+          sourceRefs: step.sourceRefs,
+          confidence: step.confidence,
+        });
+      }
     }
   }
   for (const widget of guide.widgets) {

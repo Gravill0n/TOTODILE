@@ -154,16 +154,14 @@ describe("app shell", () => {
     renderAt("/");
     const card = await screen.findByText("Fictional Quest — 100% guide");
     fireEvent.click(card.closest("a") ?? card);
-    expect(
-      await screen.findByText(/Talk to the gatekeeper twice/),
-    ).toBeDefined();
+    expect(await screen.findByText(/Talk to gatekeeper ×2/)).toBeDefined();
     expect(document.querySelector("[data-current]")).not.toBeNull();
   });
 
   it("renders the posture skeleton's bottom action bar on the guide screen", async () => {
     stubContentFetch(libraryWithTwoGuides());
     renderAt("/guide/fictional-quest");
-    await screen.findByText(/Talk to the gatekeeper twice/);
+    await screen.findByText(/Talk to gatekeeper ×2/);
     expect(screen.getByTitle("Where am I")).toBeDefined();
     expect(screen.getByTitle("Sync")).toBeDefined();
   });
@@ -171,7 +169,7 @@ describe("app shell", () => {
   it("opens the chapter sheet from the ☰ action", async () => {
     stubContentFetch(libraryWithTwoGuides());
     renderAt("/guide/fictional-quest");
-    await screen.findByText(/Talk to the gatekeeper twice/);
+    await screen.findByText(/Talk to gatekeeper ×2/);
     fireEvent.click(screen.getByTitle("Chapters"));
     expect(
       await screen.findByRole("button", {

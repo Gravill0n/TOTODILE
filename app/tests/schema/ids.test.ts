@@ -5,7 +5,9 @@ import {
   guideFile,
   guideSlug,
   localId,
+  locationId,
   stepId,
+  visitId,
 } from "../../src/schema";
 import {
   expectParses,
@@ -13,7 +15,7 @@ import {
   validChapter,
   validChecklist,
   validGuide,
-  validStep,
+  validLocation,
 } from "./helpers";
 
 describe("stable-ID grammar (§20.3)", () => {
@@ -23,6 +25,24 @@ describe("stable-ID grammar (§20.3)", () => {
     expectParses(stepId, "pokemon-crystal:c2:s14");
     expectParses(checkableId, "pokemon-crystal:badges:rising");
     expectParses(localId, "src-wiki");
+  });
+
+  it("accepts well-formed location and visit IDs (2-segment, like chapters)", () => {
+    expectParses(locationId, "pokemon-crystal:azalea-town");
+    expectParses(visitId, "pokemon-crystal:v-azalea-1");
+  });
+
+  it("rejects malformed location and visit IDs", () => {
+    // Wrong segment count.
+    expectRejects(locationId, "pokemon-crystal");
+    expectRejects(locationId, "pokemon-crystal:azalea:town");
+    expectRejects(visitId, "pokemon-crystal:azalea:1");
+    // Uppercase / illegal characters.
+    expectRejects(locationId, "pokemon-crystal:Azalea-Town");
+    expectRejects(visitId, "pokemon-crystal:v_azalea_1");
+    // Empty segments.
+    expectRejects(locationId, "pokemon-crystal:");
+    expectRejects(visitId, ":v-azalea-1");
   });
 
   it("rejects uppercase segments", () => {
@@ -63,14 +83,23 @@ describe("guide-slug prefix invariant", () => {
   });
 
   it("rejects a step ID carrying a foreign slug", () => {
+    const chapter = structuredClone(validChapter());
+    const step = chapter.visits[0]?.steps[0];
+    if (step) step.id = "other-game:c1:s1";
+    expectRejects(guideFile, { ...validGuide(), chapters: [chapter] });
+  });
+
+  it("rejects a visit ID carrying a foreign slug", () => {
+    const chapter = structuredClone(validChapter());
+    const visit = chapter.visits[0];
+    if (visit) visit.id = "other-game:v1";
+    expectRejects(guideFile, { ...validGuide(), chapters: [chapter] });
+  });
+
+  it("rejects a location ID carrying a foreign slug", () => {
     expectRejects(guideFile, {
       ...validGuide(),
-      chapters: [
-        {
-          ...validChapter(),
-          steps: [{ ...validStep(1), id: "other-game:c1:s1" }, validStep(2)],
-        },
-      ],
+      locations: [{ ...validLocation(), id: "other-game:castle-gate" }],
     });
   });
 

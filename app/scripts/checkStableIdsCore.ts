@@ -80,7 +80,7 @@ export function checkStableIds(
           spineLayer,
           findings,
         );
-        if (layer) protect(record.artifact, spineIds(layer.chapters));
+        if (layer) protect(record.artifact, spineIds(layer));
       } else if (record.kind === "widget-pass") {
         const layer = loadEntity(
           baseDir,
@@ -115,7 +115,7 @@ export function checkStableIds(
     const guide = loadEntity(baseDir, slug, "guide.json", guideFile, findings);
     if (guide) {
       protect("guide.json (playable)", [
-        ...spineIds(guide.chapters),
+        ...spineIds(guide),
         ...guide.widgets.flatMap((w) => [w.id, ...widgetItemIds(w)]),
       ]);
     }
@@ -150,8 +150,23 @@ export function checkStableIds(
   return { ok: findings.length === 0, guidesChecked: 1, findings, notes };
 }
 
-function spineIds(chapters: { id: string; steps: { id: string }[] }[]) {
-  return chapters.flatMap((c) => [c.id, ...c.steps.map((s) => s.id)]);
+// Every stable ID a spine source mints: locations, chapters, visits, and steps
+// (§6.8 — none may be dropped or re-spelled across a recompile). Accepts a
+// spineLayer or a guideFile; both carry locations[] + chapters[].
+function spineIds(source: {
+  locations: { id: string }[];
+  chapters: {
+    id: string;
+    visits: { id: string; steps: { id: string }[] }[];
+  }[];
+}): string[] {
+  return [
+    ...source.locations.map((l) => l.id),
+    ...source.chapters.flatMap((c) => [
+      c.id,
+      ...c.visits.flatMap((v) => [v.id, ...v.steps.map((s) => s.id)]),
+    ]),
+  ];
 }
 
 function collectCurrentIds(
@@ -167,7 +182,7 @@ function collectCurrentIds(
   if (existsSync(join(dir, "guide.json"))) {
     const guide = loadEntity(dir, slug, "guide.json", guideFile, findings);
     if (guide) {
-      add(spineIds(guide.chapters));
+      add(spineIds(guide));
       add(guide.widgets.flatMap((w) => [w.id, ...widgetItemIds(w)]));
     }
   }
@@ -183,7 +198,7 @@ function collectCurrentIds(
         spineLayer,
         findings,
       );
-      if (layer) add(spineIds(layer.chapters));
+      if (layer) add(spineIds(layer));
     } else if (
       /^widget-.*\.json$/.test(name) &&
       !name.endsWith(".report.json")

@@ -20,6 +20,19 @@ describe("genreDeck", () => {
     });
   });
 
+  it("accepts the location default scope (Workstream A)", () => {
+    expectParses(genreDeck, {
+      ...validDeck(),
+      slots: [
+        {
+          primitive: "dataTable",
+          defaultTitle: "Encounter table",
+          defaultScope: "location",
+        },
+      ],
+    });
+  });
+
   it("rejects an unknown default scope", () => {
     expectRejects(genreDeck, {
       ...validDeck(),
@@ -28,6 +41,19 @@ describe("genreDeck", () => {
           primitive: "checklist",
           defaultTitle: "Key items",
           defaultScope: "step",
+        },
+      ],
+    });
+  });
+
+  it("rejects the visit default scope — slots name a kind, but visit binds per instance only", () => {
+    expectRejects(genreDeck, {
+      ...validDeck(),
+      slots: [
+        {
+          primitive: "dataTable",
+          defaultTitle: "Encounter table",
+          defaultScope: "visit",
         },
       ],
     });

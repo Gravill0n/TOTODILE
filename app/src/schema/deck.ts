@@ -5,9 +5,11 @@ import { widgetType } from "./widgets.ts";
 export const deckSlot = z.object({
   primitive: widgetType,
   defaultTitle: z.string().min(1),
-  // A slot's default scope can't name a chapter — concrete chapter binding
-  // happens on the widget instance (§6.3).
-  defaultScope: z.enum(["global", "chapter"]),
+  // A slot's default scope names the *kind* only — the concrete chapter /
+  // location / visit binding happens on the widget instance (§6.3). "location"
+  // joins the set in Workstream A so encounter-table-style slots default to a
+  // place across all its visits.
+  defaultScope: z.enum(["global", "chapter", "location"]),
 });
 
 // guides/<slug>/deck.json — genre deck config, reusable across guides (§6.4).

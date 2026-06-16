@@ -2,6 +2,7 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import type {
+  DataLayer,
   GuideFile,
   LibraryManifest,
   PassReportFile,
@@ -12,6 +13,7 @@ import type {
 } from "../src/schema/index.ts";
 import {
   approvalsFile,
+  dataLayer,
   genreDeck,
   guideFile,
   libraryManifest,
@@ -194,8 +196,10 @@ function validateGuideFolder(
       }
     };
     for (const chapter of guide.chapters) {
-      for (const step of chapter.steps) {
-        reportDangling("step", step.id, step.sourceRefs);
+      for (const visit of chapter.visits) {
+        for (const step of visit.steps) {
+          reportDangling("step", step.id, step.sourceRefs);
+        }
       }
     }
     for (const widget of guide.widgets) {
@@ -283,6 +287,7 @@ function validateGuideFolder(
 }
 
 type LayerArtifact =
+  | { kind: "data"; value: DataLayer }
   | { kind: "spine"; value: SpineLayer }
   | { kind: "widget"; value: WidgetLayer }
   | { kind: "ra-mapping"; value: RaMapping };
@@ -342,7 +347,12 @@ function validateLayers(
 
     const layerId = name.slice(0, -".json".length);
     const widgetSegment = layerId.match(WIDGET_LAYER_ID)?.[1];
-    if (layerId === "spine") {
+    if (layerId === "data") {
+      const value = loadEntity(dir, slug, file, dataLayer, findings);
+      if (!value) continue;
+      expectGuideId(value.guideId);
+      artifacts.set(layerId, { kind: "data", value });
+    } else if (layerId === "spine") {
       const value = loadEntity(dir, slug, file, spineLayer, findings);
       if (!value) continue;
       expectGuideId(value.guideId);
@@ -370,9 +380,25 @@ function validateLayers(
         guide: slug,
         file,
         message:
-          "unrecognized layer file — expected spine.json, widget-<seg>.json, ra-mapping.json, or <id>.report.json",
+          "unrecognized layer file — expected data.json, spine.json, widget-<seg>.json, ra-mapping.json, or <id>.report.json",
       });
     }
+  }
+
+  // extract-data is mandatory and runs before spine/widget/ra-mapping (pass 2
+  // of 6): if any of those downstream artifacts exist, layers/data.json must
+  // too. A tree that has only run source-gathering (no layer artifacts yet) is
+  // a legitimate pre-extract-data state and is left alone.
+  const hasDownstreamLayer = [...artifacts.keys()].some(
+    (id) => id === "spine" || id === "ra-mapping" || WIDGET_LAYER_ID.test(id),
+  );
+  if (hasDownstreamLayer && !artifacts.has("data")) {
+    findings.push({
+      guide: slug,
+      file: "layers/data.json",
+      message:
+        "missing the mandatory extract-data layer — a spine/widget/ra-mapping layer exists but layers/data.json does not (run extract-data first)",
+    });
   }
 
   for (const [layerId, artifact] of artifacts) {
@@ -439,10 +465,15 @@ function validateLayers(
 // may share a target — the set semantics absorb that).
 function flaggedIdsOf(artifact: LayerArtifact): Set<string> {
   switch (artifact.kind) {
+    case "data":
+      // The extract-data layer is unreviewed and its record IDs are local
+      // (not 3-segment checkables), so it carries no item-level flag parity —
+      // flagged records surface through the report's anomalies instead.
+      return new Set();
     case "spine":
       return new Set(
         artifact.value.chapters
-          .flatMap((c) => c.steps)
+          .flatMap((c) => c.visits.flatMap((v) => v.steps))
           .filter((s) => s.confidence === "flagged")
           .map((s) => s.id),
       );
@@ -463,9 +494,15 @@ function flaggedIdsOf(artifact: LayerArtifact): Set<string> {
 
 function sourceRefsOf(artifact: LayerArtifact): [string, string[]][] {
   switch (artifact.kind) {
+    case "data":
+      return artifact.value.datasets.flatMap((d) =>
+        d.records.map((r): [string, string[]] => [r.id, r.sourceRefs]),
+      );
     case "spine":
       return artifact.value.chapters.flatMap((c) =>
-        c.steps.map((s): [string, string[]] => [s.id, s.sourceRefs]),
+        c.visits.flatMap((v) =>
+          v.steps.map((s): [string, string[]] => [s.id, s.sourceRefs]),
+        ),
       );
     case "widget":
       return widgetCheckables(artifact.value.widget).map(
@@ -481,7 +518,9 @@ function sourceRefsOf(artifact: LayerArtifact): [string, string[]][] {
 
 function checkableNamespace(guide: GuideFile): Set<string> {
   return new Set([
-    ...guide.chapters.flatMap((c) => c.steps.map((s) => s.id)),
+    ...guide.chapters.flatMap((c) =>
+      c.visits.flatMap((v) => v.steps.map((s) => s.id)),
+    ),
     ...guide.widgets.flatMap(widgetItemIds),
   ]);
 }

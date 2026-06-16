@@ -1,6 +1,6 @@
-import { Fragment } from "react";
-import type { GuideFile, Step } from "../schema";
+import type { GuideFile } from "../schema";
 import { chapterDomId } from "./guideData";
+import { preferredNextVisit } from "./preferredNext";
 import { StepRow } from "./StepRow";
 
 type NowScreenProps = {
@@ -15,9 +15,10 @@ type NowScreenProps = {
   onMovePointer: (stepId: string) => void;
 };
 
-// The S2 play-view body: the full spine grouped by chapter and section,
-// with the current step rendered prominently (FR-A4 lands here). Pure —
-// progress state and callbacks come from the screen above (§22.1).
+// The S2 play-view body: the full spine grouped chapter → visit → step, with
+// each visit headed by its location and the current step rendered prominently
+// (FR-A4 lands here). Pure — progress state and callbacks come from the screen
+// above (§22.1). Rich place-first navigation is Phase D; this renders plainly.
 export function NowScreen({
   guide,
   slug,
@@ -29,8 +30,24 @@ export function NowScreen({
   onMarkThrough,
   onMovePointer,
 }: NowScreenProps) {
+  const locationName = new Map(guide.locations.map((l) => [l.id, l.name]));
+  // FR "what do I do next": the preferred-next visit (D2) — the place to head
+  // to — surfaced as a link to its place screen. Read-only over the pointer;
+  // checking/skipping is unchanged.
+  const nextVisit = preferredNextVisit(guide, currentStepId);
+  const nextName = nextVisit
+    ? (locationName.get(nextVisit.locationId) ?? nextVisit.locationId)
+    : null;
   return (
     <div className="space-y-8">
+      {nextVisit && nextName ? (
+        <a
+          href={`#/guide/${slug}/place/${nextVisit.locationId.split(":")[1] ?? ""}`}
+          className="block rounded-lg border border-accent bg-card px-3 py-2 text-sm font-bold text-accent"
+        >
+          Next up — {nextName}
+        </a>
+      ) : null}
       {guide.chapters.map((chapter) => (
         <section
           key={chapter.id}
@@ -43,42 +60,38 @@ export function NowScreen({
           {chapter.intro ? (
             <p className="mt-2 text-sm text-ink-soft">{chapter.intro}</p>
           ) : null}
-          <div className="mt-3 space-y-1">
-            {chapter.steps.map((step, index) => (
-              <Fragment key={step.id}>
-                <SectionHeading
-                  step={step}
-                  previous={chapter.steps[index - 1]}
-                />
-                <StepRow
-                  step={step}
-                  slug={slug}
-                  isCurrent={step.id === currentStepId}
-                  isDone={doneIds.has(step.id)}
-                  isSkipped={skippedIds.has(step.id)}
-                  onToggleDone={() => onToggleDone(step.id)}
-                  onToggleSkip={() => onToggleSkip(step.id)}
-                  onMarkThrough={() => onMarkThrough(step.id)}
-                  onMoveHere={() => onMovePointer(step.id)}
-                />
-              </Fragment>
-            ))}
-          </div>
+          {chapter.visits.map((visit) => (
+            <div key={visit.id} className="mt-3">
+              <h3 className="pt-2 text-sm font-bold text-ink-soft">
+                {/* Hash anchor (no router context — NowScreen renders bare in
+                    tests): opens the place screen for this location. */}
+                <a
+                  href={`#/guide/${slug}/place/${visit.locationId.split(":")[1] ?? ""}`}
+                  className="underline decoration-dotted underline-offset-2"
+                >
+                  {locationName.get(visit.locationId) ?? visit.locationId}
+                </a>
+              </h3>
+              <div className="mt-1 space-y-1">
+                {visit.steps.map((step) => (
+                  <StepRow
+                    key={step.id}
+                    step={step}
+                    slug={slug}
+                    isCurrent={step.id === currentStepId}
+                    isDone={doneIds.has(step.id)}
+                    isSkipped={skippedIds.has(step.id)}
+                    onToggleDone={() => onToggleDone(step.id)}
+                    onToggleSkip={() => onToggleSkip(step.id)}
+                    onMarkThrough={() => onMarkThrough(step.id)}
+                    onMoveHere={() => onMovePointer(step.id)}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </section>
       ))}
     </div>
-  );
-}
-
-function SectionHeading({
-  step,
-  previous,
-}: {
-  step: Step;
-  previous: Step | undefined;
-}) {
-  if (!step.section || step.section === previous?.section) return null;
-  return (
-    <h3 className="pt-3 text-sm font-bold text-ink-soft">{step.section}</h3>
   );
 }

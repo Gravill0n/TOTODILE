@@ -1,12 +1,12 @@
 ---
 name: guide-pass-widgets
 description: >-
-  TOTODILE compiler pass 3 of 5 — widget fills. Use when Pierre asks to "run
+  TOTODILE compiler pass 4 of 6 — widget fills. Use when Pierre asks to "run
   the widget pass", "fill the <name> widget / encounter table / boss board for
   <slug>", or to re-run one after a rejection. Fills ONE widget instance per
   run (one layer per widget) from the deck's slots, anchored to the spine.
-  Requires the spine pass. Not for single-file HTML guides — that is
-  achievement-guide-builder.
+  Requires the extract-data and spine passes. Not for single-file HTML guides —
+  that is achievement-guide-builder.
 ---
 
 # Compiler pass: widget fill
@@ -25,9 +25,13 @@ for the next widget.
 
 ## Reads / emits
 
-- Reads: `layers/spine.json` (step anchoring, chapter scoping), `deck.json`
-  (which slots exist and their primitives), `sources.json`, the prior version
-  of this widget's layer if any, rejection notes (read-only).
+- Reads: **`layers/data.json`** (the extract-data layer — fill rows/cells from
+  its datasets, e.g. encounter tables from the `encounters` dataset, and pull
+  `mapPins`/sprite images from its `images` catalog), `layers/spine.json` (step
+  anchoring, chapter/location/visit scoping), `deck.json` (which slots exist and
+  their primitives), `sources.json` (for `sourceRefs` and anything not in
+  `data.json`), the prior version of this widget's layer if any, rejection notes
+  (read-only).
 - Emits: `layers/widget-<seg>.json` + `layers/widget-<seg>.report.json`.
 
 ## Workflow
@@ -39,10 +43,11 @@ that slot — the validator enforces both.
 
 ### 2. Compose — gate
 Propose the widget before filling it: `id` (`<slug>:<seg>`, the `<seg>` also
-names the layer file), `title`, `scope` (`global` or a specific chapter), and
-what the rows/cells/pins will be drawn from in the sources. For scoped data
-(encounter tables, boss boards), anchor to the spine's chapters — the data
-must answer "where I currently am" (P4). Wait for sign-off.
+names the layer file), `title`, `scope` (`global`, or a specific `chapter` /
+`location` / `visit`), and which `data.json` dataset its rows/cells/pins will be
+drawn from. For place data (encounter tables, boss boards), anchor to the
+spine — a route's encounter table is `location`-scoped so it shows on every
+visit there — the data must answer "where I currently am" (P4). Wait for sign-off.
 
 ### 3. Fill
 - Every checkable row/cell/pin/counter: `itemId` (`<slug>:<seg>:<short>`),
@@ -50,8 +55,9 @@ must answer "where I currently am" (P4). Wait for sign-off.
   `checkable: false` but still carry stable IDs.
 - **IDs** (§6.8): minted once; on a re-run, read the prior artifact and keep
   every surviving item's ID — even items that move rows or sections.
-- Map images (mapPins) download into `guides/<slug>/images/`; unreachable →
-  ask Pierre.
+- Map / sprite images (mapPins, icons) come from the extract-data `images`
+  catalog — copy the catalogued source file into `guides/<slug>/images/` and
+  reference it; only download when the catalog lacks it; unreachable → ask Pierre.
 
 ### 4. Report + finish
 - `layers/widget-<seg>.report.json`: `pass` = `widget`, `layer` =

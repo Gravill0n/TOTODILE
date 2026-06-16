@@ -22,9 +22,7 @@ export function WidgetDeck({
   ...handlers
 }: WidgetDeckProps) {
   if (widgets.length === 0) {
-    return (
-      <p className="text-xs text-ink-soft">No widgets for this chapter.</p>
-    );
+    return <p className="text-xs text-ink-soft">No widgets here.</p>;
   }
   return (
     <div className="space-y-4">

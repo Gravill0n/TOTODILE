@@ -5,7 +5,7 @@ import { type SyncDeps, syncGuide } from "../../src/sync/syncGuide";
 const credentials = { username: "Pierre", webApiKey: "KEY" };
 
 const mapping = raMapping.parse({
-  schemaVersion: 0,
+  schemaVersion: 1,
   guideId: "fictional-quest",
   raGameId: 9000,
   entries: [

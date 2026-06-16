@@ -1,5 +1,6 @@
+import { useState } from "react";
 import type { Step } from "../schema";
-import { guideAssetUrl, stepDomId } from "./guideData";
+import { guideAssetUrl, stepDomId, stepHeadline } from "./guideData";
 
 type StepRowProps = {
   step: Step;
@@ -28,7 +29,26 @@ export function StepRow({
   onMarkThrough,
   onMoveHere,
 }: StepRowProps) {
-  const shortText = step.text.slice(0, 40);
+  const headline = stepHeadline(step);
+  const shortText = headline.slice(0, 40);
+  const [showDetail, setShowDetail] = useState(false);
+  // Keyword beats show by default (#11); the full prose is one tap away. The
+  // panel appends below the toggle, so opening it never reflows the rows above.
+  const detailDisclosure = step.detail ? (
+    <div className="mt-1">
+      <button
+        type="button"
+        onClick={() => setShowDetail((open) => !open)}
+        aria-expanded={showDetail}
+        className="text-xs text-ink-soft underline underline-offset-2"
+      >
+        {showDetail ? "Hide details" : "Details"}
+      </button>
+      {showDetail ? (
+        <p className="mt-1 text-sm text-ink-soft">{step.detail}</p>
+      ) : null}
+    </div>
+  ) : null;
   const skipButton = (
     <button
       type="button"
@@ -68,12 +88,13 @@ export function StepRow({
               className="mt-1 size-5 accent-accent"
             />
             <div className="min-w-0">
-              <p className="text-lg">{step.text}</p>
+              <p className="text-lg">{headline}</p>
               <StepMeta
                 step={step}
                 isSkipped={isSkipped}
                 withMissableMark={false}
               />
+              {detailDisclosure}
               {step.missable ? (
                 <p className="mt-2 text-sm font-bold text-missable">
                   ⚠ Missable — {step.missable.deadline}
@@ -99,21 +120,24 @@ export function StepRow({
             aria-label={`Done: ${shortText}`}
             className="mt-1 size-4 shrink-0 accent-accent"
           />
-          <button
-            type="button"
-            onClick={onMoveHere}
-            className="min-w-0 flex-1 text-left"
-            title="Move the current-step pointer here"
-          >
-            <p
-              className={
-                isDone ? "line-through" : isSkipped ? "italic opacity-70" : ""
-              }
+          <div className="min-w-0 flex-1">
+            <button
+              type="button"
+              onClick={onMoveHere}
+              className="w-full text-left"
+              title="Move the current-step pointer here"
             >
-              {step.text}
-            </p>
-            <StepMeta step={step} isSkipped={isSkipped} />
-          </button>
+              <p
+                className={
+                  isDone ? "line-through" : isSkipped ? "italic opacity-70" : ""
+                }
+              >
+                {headline}
+              </p>
+              <StepMeta step={step} isSkipped={isSkipped} />
+            </button>
+            {detailDisclosure}
+          </div>
           {!isDone ? skipButton : null}
           {!isDone && !isSkipped ? (
             <button
@@ -141,12 +165,7 @@ function StepMeta({
   isSkipped: boolean;
   withMissableMark?: boolean;
 }) {
-  if (
-    !step.missable &&
-    step.achievementRefs.length === 0 &&
-    !step.location &&
-    !isSkipped
-  ) {
+  if (!step.missable && step.achievementRefs.length === 0 && !isSkipped) {
     return null;
   }
   return (
@@ -155,9 +174,6 @@ function StepMeta({
         <span className="rounded border border-dashed border-ink-soft px-1">
           skipped
         </span>
-      ) : null}
-      {step.location ? (
-        <span className="rounded border border-line px-1">{step.location}</span>
       ) : null}
       {step.achievementRefs.length > 0 ? (
         <span

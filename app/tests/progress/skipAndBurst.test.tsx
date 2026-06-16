@@ -33,10 +33,14 @@ const entry =
     throw new Error("fixture library has no entry");
   })();
 
+// The play view renders a step's keyword beats joined (stepHeadline); flatten
+// the chapter's visits to address steps by their old chapter-relative index.
 const stepText = (chapterIndex: number, stepIndex: number): string => {
-  const text = guide.chapters[chapterIndex]?.steps[stepIndex]?.text;
-  if (!text) throw new Error("missing fixture step");
-  return text;
+  const steps =
+    guide.chapters[chapterIndex]?.visits.flatMap((v) => v.steps) ?? [];
+  const step = steps[stepIndex];
+  if (!step) throw new Error("missing fixture step");
+  return step.keywords.join(" · ");
 };
 const short = (text: string) => text.slice(0, 40);
 

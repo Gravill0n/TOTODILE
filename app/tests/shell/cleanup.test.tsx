@@ -96,13 +96,13 @@ describe("cleanup view (S4, FR-B4/P7)", () => {
 
     expect(await screen.findByText("Mastery")).toBeDefined();
     const task = await screen.findByRole("checkbox", {
-      name: /Talk to the gatekeeper/,
+      name: /Talk to gatekeeper/,
     });
     fireEvent.click(task);
 
     await vi.waitFor(() => {
       expect(
-        screen.queryByRole("checkbox", { name: /Talk to the gatekeeper/ }),
+        screen.queryByRole("checkbox", { name: /Talk to gatekeeper/ }),
       ).toBeNull();
     });
   });

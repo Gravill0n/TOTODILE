@@ -3,12 +3,7 @@ import type { ProgressSlice } from "../progress/progressSlice";
 import { useGuideProgress } from "../progress/useGuideProgress";
 import type { GuideFile, LibraryEntry } from "../schema";
 import { ChapterSheet } from "../spine/ChapterSheet";
-import {
-  chapterDomId,
-  chapterOf,
-  guideAssetUrl,
-  stepDomId,
-} from "../spine/guideData";
+import { chapterDomId, guideAssetUrl, stepDomId } from "../spine/guideData";
 import { MissableBanner } from "../spine/MissableBanner";
 import { upcomingMissables } from "../spine/missables";
 import { NowScreen } from "../spine/NowScreen";
@@ -18,6 +13,7 @@ import { type SyncOutcome, syncGuide } from "../sync/syncGuide";
 import { PostureLayout } from "./PostureLayout";
 import { WidgetDeck, type WidgetHandlers } from "./WidgetDeck";
 import { WidgetsSheet } from "./WidgetsSheet";
+import { widgetContextFor, widgetInScope } from "./widgetScope";
 
 type GuideScreenProps = {
   entry: LibraryEntry;
@@ -70,20 +66,22 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
 
   const currentStepId = progress.ready ? progress.currentStepId : null;
 
-  // FR-A5: widgets auto-filter to the chapter the current step is in;
-  // the whole-game toggle lifts the filter. Global widgets always show.
-  const currentChapterId = chapterOf(guide, currentStepId)?.id;
+  // FR-A5: widgets auto-filter to where the current step is — its chapter,
+  // its location (across every visit there), or its specific visit; the
+  // whole-game toggle lifts the filter. Global widgets always show.
+  const widgetContext = useMemo(
+    () => widgetContextFor(guide, currentStepId),
+    [guide, currentStepId],
+  );
   const visibleWidgets = useMemo(() => {
     const ordered = [...guide.widgets].sort(
       (a, b) => a.deckPosition - b.deckPosition,
     );
     if (wholeGame) return ordered;
-    return ordered.filter(
-      (widget) =>
-        widget.scope.kind === "global" ||
-        widget.scope.chapterId === currentChapterId,
+    return ordered.filter((widget) =>
+      widgetInScope(widget.scope, widgetContext),
     );
-  }, [guide, wholeGame, currentChapterId]);
+  }, [guide, wholeGame, widgetContext]);
 
   // FR-A4: opening the guide lands on the current step — once, not on
   // every pointer move.

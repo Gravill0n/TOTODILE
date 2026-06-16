@@ -1,66 +1,109 @@
 {
-  "schemaVersion": 0,
+  "schemaVersion": 1,
   "guideId": "fictional-quest",
+  "locations": [
+    {
+      "id": "fictional-quest:castle-gate",
+      "name": "Castle Gate",
+      "mapImage": {
+        "src": "images/castle-gate.png",
+        "alt": "Castle gate and wall route",
+        "credit": "Fictional Quest wiki"
+      }
+    },
+    { "id": "fictional-quest:castle-wall", "name": "Castle Wall" },
+    { "id": "fictional-quest:courtyard", "name": "Courtyard" },
+    { "id": "fictional-quest:docks", "name": "Docks" },
+    { "id": "fictional-quest:sunken-vault", "name": "Sunken Vault" },
+    { "id": "fictional-quest:vault-antechamber", "name": "Vault Antechamber" },
+    { "id": "fictional-quest:vault-heart", "name": "Vault Heart" }
+  ],
   "chapters": [
     {
       "id": "fictional-quest:c1",
       "title": "Chapter 1 — The Castle Gate",
       "intro": "The road ends at the portcullis. Everything in this chapter happens before the gate closes for the night.",
       "order": 0,
-      "steps": [
+      "visits": [
         {
-          "id": "fictional-quest:c1:s1",
+          "id": "fictional-quest:v-castle-gate-1",
+          "locationId": "fictional-quest:castle-gate",
           "order": 0,
-          "text": "Talk to the gatekeeper twice; he hands over the rusty lantern you need for the cellar.",
-          "location": "Castle Gate",
-          "section": "1.1 · Outside the Walls",
-          "sourceRefs": ["src-wiki"],
-          "confidence": "normal"
-        },
-        {
-          "id": "fictional-quest:c1:s2",
-          "order": 1,
-          "text": "Pry the Old Coin from behind the loose brick left of the portcullis.",
-          "location": "Castle Gate",
-          "section": "1.1 · Outside the Walls",
-          "missable": {
-            "deadline": "Before opening the gate — the courtyard locks behind you"
-          },
-          "sourceRefs": ["src-wiki", "src-manual"],
-          "confidence": "normal"
-        },
-        {
-          "id": "fictional-quest:c1:s3",
-          "order": 2,
-          "text": "Beat the Sentry Captain on the wall. Jump his lance sweep, counter the second thrust.",
-          "location": "Castle Wall",
-          "achievementRefs": [101],
-          "images": [
+          "steps": [
             {
-              "src": "images/castle-gate.png",
-              "alt": "Castle gate and wall route",
-              "caption": "The wall route to the Sentry Captain",
-              "credit": "Fictional Quest wiki"
+              "id": "fictional-quest:c1:s1",
+              "order": 0,
+              "keywords": ["Talk to gatekeeper ×2", "Take rusty lantern"],
+              "detail": "Talk to the gatekeeper twice; he hands over the rusty lantern you need for the cellar.",
+              "sourceRefs": ["src-wiki"],
+              "confidence": "normal"
+            },
+            {
+              "id": "fictional-quest:c1:s2",
+              "order": 1,
+              "keywords": ["Pry Old Coin from loose brick"],
+              "detail": "Pry the Old Coin from behind the loose brick left of the portcullis.",
+              "missable": {
+                "deadline": "Before opening the gate — the courtyard locks behind you"
+              },
+              "sourceRefs": ["src-wiki", "src-manual"],
+              "confidence": "normal"
             }
-          ],
-          "sourceRefs": ["src-wiki", "src-ra"],
-          "confidence": "normal"
+          ]
         },
         {
-          "id": "fictional-quest:c1:s4",
+          "id": "fictional-quest:v-castle-wall-1",
+          "locationId": "fictional-quest:castle-wall",
+          "order": 1,
+          "steps": [
+            {
+              "id": "fictional-quest:c1:s3",
+              "order": 0,
+              "keywords": ["Beat Sentry Captain", "Jump sweep, counter thrust"],
+              "detail": "Beat the Sentry Captain on the wall. Jump his lance sweep, counter the second thrust.",
+              "achievementRefs": [101],
+              "images": [
+                {
+                  "src": "images/castle-gate.png",
+                  "alt": "Castle gate and wall route",
+                  "caption": "The wall route to the Sentry Captain",
+                  "credit": "Fictional Quest wiki"
+                }
+              ],
+              "sourceRefs": ["src-wiki", "src-ra"],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "fictional-quest:v-courtyard-1",
+          "locationId": "fictional-quest:courtyard",
+          "order": 2,
+          "steps": [
+            {
+              "id": "fictional-quest:c1:s4",
+              "order": 0,
+              "keywords": ["Sweep courtyard for 8 blue coins"],
+              "detail": "Sweep the courtyard for blue coins — eight are reachable now; the rest need the Tide badge.",
+              "sourceRefs": ["src-wiki"],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "fictional-quest:v-docks-1",
+          "locationId": "fictional-quest:docks",
           "order": 3,
-          "text": "Sweep the courtyard for blue coins — eight are reachable now; the rest need the Tide badge.",
-          "location": "Courtyard",
-          "sourceRefs": ["src-wiki"],
-          "confidence": "normal"
-        },
-        {
-          "id": "fictional-quest:c1:s5",
-          "order": 4,
-          "text": "Take the east stairs down to the docks and ring the bell to call the ferry.",
-          "location": "Docks",
-          "sourceRefs": ["src-manual"],
-          "confidence": "normal"
+          "steps": [
+            {
+              "id": "fictional-quest:c1:s5",
+              "order": 0,
+              "keywords": ["East stairs to docks", "Ring bell for ferry"],
+              "detail": "Take the east stairs down to the docks and ring the bell to call the ferry.",
+              "sourceRefs": ["src-manual"],
+              "confidence": "normal"
+            }
+          ]
         }
       ]
     },
@@ -68,56 +111,80 @@
       "id": "fictional-quest:c2",
       "title": "Chapter 2 — The Sunken Vault",
       "order": 1,
-      "steps": [
+      "visits": [
         {
-          "id": "fictional-quest:c2:s1",
+          "id": "fictional-quest:v-sunken-vault-1",
+          "locationId": "fictional-quest:sunken-vault",
           "order": 0,
-          "text": "Dive at the buoy and swim through the cracked grate into the vault antechamber.",
-          "location": "Sunken Vault",
-          "images": [
+          "steps": [
             {
-              "src": "images/vault-entrance.png",
-              "alt": "Vault entrance under the buoy"
+              "id": "fictional-quest:c2:s1",
+              "order": 0,
+              "keywords": ["Dive at buoy", "Swim through cracked grate"],
+              "detail": "Dive at the buoy and swim through the cracked grate into the vault antechamber.",
+              "images": [
+                {
+                  "src": "images/vault-entrance.png",
+                  "alt": "Vault entrance under the buoy"
+                }
+              ],
+              "sourceRefs": ["src-wiki"],
+              "confidence": "normal"
+            },
+            {
+              "id": "fictional-quest:c2:s2",
+              "order": 1,
+              "keywords": ["Pull levers west, east, center"],
+              "detail": "Pull the levers west, east, then center to drain the hall. Some sources list east first.",
+              "sourceRefs": ["src-wiki", "src-manual"],
+              "confidence": "flagged"
+            },
+            {
+              "id": "fictional-quest:c2:s3",
+              "order": 2,
+              "keywords": ["Feed moray eel a mushroom"],
+              "detail": "Feed the moray eel a mushroom so it leaves the east alcove.",
+              "missable": {
+                "deadline": "Before draining the vault — the eel flees once the water drops"
+              },
+              "sourceRefs": ["src-wiki"],
+              "confidence": "normal"
             }
-          ],
-          "sourceRefs": ["src-wiki"],
-          "confidence": "normal"
+          ]
         },
         {
-          "id": "fictional-quest:c2:s2",
+          "id": "fictional-quest:v-vault-antechamber-1",
+          "locationId": "fictional-quest:vault-antechamber",
           "order": 1,
-          "text": "Pull the levers west, east, then center to drain the hall. Some sources list east first.",
-          "location": "Sunken Vault",
-          "sourceRefs": ["src-wiki", "src-manual"],
-          "confidence": "flagged"
+          "steps": [
+            {
+              "id": "fictional-quest:c2:s4",
+              "order": 0,
+              "keywords": ["Stock up at diver's cache", "Check prep card"],
+              "detail": "Stock up at the diver's cache and check your prep card before the sealed door.",
+              "sourceRefs": ["src-manual"],
+              "confidence": "normal"
+            }
+          ]
         },
         {
-          "id": "fictional-quest:c2:s3",
+          "id": "fictional-quest:v-vault-heart-1",
+          "locationId": "fictional-quest:vault-heart",
           "order": 2,
-          "text": "Feed the moray eel a mushroom so it leaves the east alcove.",
-          "location": "Sunken Vault",
-          "missable": {
-            "deadline": "Before draining the vault — the eel flees once the water drops"
-          },
-          "sourceRefs": ["src-wiki"],
-          "confidence": "normal"
-        },
-        {
-          "id": "fictional-quest:c2:s4",
-          "order": 3,
-          "text": "Stock up at the diver's cache and check your prep card before the sealed door.",
-          "location": "Vault Antechamber",
-          "sourceRefs": ["src-manual"],
-          "confidence": "normal"
-        },
-        {
-          "id": "fictional-quest:c2:s5",
-          "order": 4,
-          "text": "Defeat the Vault Warden. Stay off the center tiles during the flood phase.",
-          "location": "Vault Heart",
-          "achievementRefs": [102],
-          "sourceRefs": ["src-wiki", "src-ra"],
-          "confidence": "normal"
+          "steps": [
+            {
+              "id": "fictional-quest:c2:s5",
+              "order": 0,
+              "keywords": [
+                "Defeat Vault Warden",
+                "Avoid center tiles in flood"
+              ],
+              "detail": "Defeat the Vault Warden. Stay off the center tiles during the flood phase.",
+              "achievementRefs": [102],
+              "sourceRefs": ["src-wiki", "src-ra"],
+              "confidence": "normal"
+            }
+          ]
         }
       ]
     }
@@ -310,7 +377,10 @@
       "id": "fictional-quest:vault-map",
       "type": "mapPins",
       "title": "Vault shard locations",
-      "scope": { "kind": "chapter", "chapterId": "fictional-quest:c2" },
+      "scope": {
+        "kind": "location",
+        "locationId": "fictional-quest:sunken-vault"
+      },
       "deckPosition": 5,
       "image": {
         "src": "images/vault-map.png",
@@ -348,7 +418,10 @@
       "id": "fictional-quest:warden-prep",
       "type": "prepCard",
       "title": "Before the Vault Warden",
-      "scope": { "kind": "chapter", "chapterId": "fictional-quest:c2" },
+      "scope": {
+        "kind": "visit",
+        "visitId": "fictional-quest:v-vault-heart-1"
+      },
       "deckPosition": 6,
       "items": [
         {
