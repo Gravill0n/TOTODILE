@@ -9272,6 +9272,4730 @@
           "confidence": "normal"
         }
       ]
+    },
+    {
+      "id": "achievements",
+      "label": "RetroAchievements",
+      "records": [
+        {
+          "id": "ach-5636",
+          "fields": {
+            "ra-id": "5636",
+            "title": "The Silver Case",
+            "description": "Give your rival's name to the officer at Professor Elm's lab.",
+            "points": "1",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5637",
+          "fields": {
+            "ra-id": "5637",
+            "title": "Flying in Father's Footsteps",
+            "description": "Defeat Falkner in Violet City and earn the Zephyr Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199603",
+          "fields": {
+            "ra-id": "199603",
+            "title": "Clipping the Pigeon's Wings",
+            "description": "Defeat\n Falkner in the Set battle style using only Johto Pokémon that do not \nexceed level 9 during battle and without using any Pack items - no \nexternal trade-only Pokémon.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5934",
+          "fields": {
+            "ra-id": "5934",
+            "title": "Criminal Underground",
+            "description": "Defeat the Rocket Grunt leading the raid on the Slowpoke Well.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5638",
+          "fields": {
+            "ra-id": "5638",
+            "title": "Entomology Prodigy",
+            "description": "Defeat Bugsy in Azalea Town and earn the Hive Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199604",
+          "fields": {
+            "ra-id": "199604",
+            "title": "Did Someone Call an Exterminator?",
+            "description": "Defeat\n Bugsy in the Set battle style using only Johto Pokémon that do not \nexceed level 16 during battle and without using any Pack items - no \nexternal trade-only Pokémon.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5639",
+          "fields": {
+            "ra-id": "5639",
+            "title": "No Crying over Spilt Milk",
+            "description": "Defeat Whitney in Goldenrod City and earn the Plain Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199605",
+          "fields": {
+            "ra-id": "199605",
+            "title": "Attack of the Mad Cow",
+            "description": "Defeat\n Whitney in the Set battle style using only Johto Pokémon that do not \nexceed level 20 during battle and without using any Pack items - no \nexternal trade-only Pokémon.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199564",
+          "fields": {
+            "ra-id": "199564",
+            "title": "Falsa Wood",
+            "description": "Catch the Sudowoodo on Route 36 and register it in the Pokédex.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199566",
+          "fields": {
+            "ra-id": "199566",
+            "title": "Have Eusine What I've Seen?!",
+            "description": "Complete the Eusine sidequest in the Burned Tower.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5640",
+          "fields": {
+            "ra-id": "5640",
+            "title": "The Future Is Fright",
+            "description": "Defeat Morty in Ecruteak City and earn the Fog Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199606",
+          "fields": {
+            "ra-id": "199606",
+            "title": "In the Spirit of Battle",
+            "description": "Defeat\n Morty in the Set battle style using only Johto Pokémon that do not \nexceed level 25 during battle and without using any Pack items - no \nexternal trade-only Pokémon.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199568",
+          "fields": {
+            "ra-id": "199568",
+            "title": "The Dashing Dog-Chaser",
+            "description": "Defeat Eusine in Cianwood City.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5641",
+          "fields": {
+            "ra-id": "5641",
+            "title": "Bare-Fisted Beast Taming",
+            "description": "Defeat Chuck in Cianwood City and earn the Storm Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199607",
+          "fields": {
+            "ra-id": "199607",
+            "title": "Black Belt in Training",
+            "description": "Defeat\n Chuck in the Set battle style using only Johto Pokémon that do not \nexceed level 30 during battle and without using any Pack items - no \nexternal trade-only Pokémon.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199569",
+          "fields": {
+            "ra-id": "199569",
+            "title": "Working the Light Shift",
+            "description": "Cure Amphy at the top of the Olivine Lighthouse.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5642",
+          "fields": {
+            "ra-id": "5642",
+            "title": "Iron Maiden",
+            "description": "Defeat Jasmine in Olivine City and earn the Mineral Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199608",
+          "fields": {
+            "ra-id": "199608",
+            "title": "Stainless Stealing Victory",
+            "description": "Defeat\n Jasmine in the Set battle style using only Johto Pokémon that do not \nexceed level 35 during battle and without using any Pack items - no \nexternal trade-only Pokémon.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199594",
+          "fields": {
+            "ra-id": "199594",
+            "title": "Life, the Universe, and Aurorae",
+            "description": "Encounter Suicune on Route 42.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199570",
+          "fields": {
+            "ra-id": "199570",
+            "title": "Everybody Gets One",
+            "description": "Catch the red Gyarados in the Lake of Rage.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5946",
+          "fields": {
+            "ra-id": "5946",
+            "title": "Evil Makes Waves",
+            "description": "Thwart the efforts of Team Rocket at their hideout in Mahogany Town.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199571",
+          "fields": {
+            "ra-id": "199571",
+            "title": "Calling Off the Launch",
+            "description": "Defeat every Trainer at Team Rocket's Hideout in Mahogany Town.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5643",
+          "fields": {
+            "ra-id": "5643",
+            "title": "Out with the Cold, In with the New",
+            "description": "Defeat Pryce in Mahogany Town and earn the Glacier Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199609",
+          "fields": {
+            "ra-id": "199609",
+            "title": "Braving a Brutal Blizzard",
+            "description": "Defeat\n Pryce in the Set battle style using only Johto Pokémon that do not \nexceed level 31 during battle and without using any Pack items - no \nexternal trade-only Pokémon.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5947",
+          "fields": {
+            "ra-id": "5947",
+            "title": "Taken Off the Air",
+            "description": "Defeat every Rocket Executive in the Goldenrod Radio Tower.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199572",
+          "fields": {
+            "ra-id": "199572",
+            "title": "Golden-Rocket Roundup",
+            "description": "Defeat every Trainer in the Goldenrod Radio Tower and the Underground.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199595",
+          "fields": {
+            "ra-id": "199595",
+            "title": "Forest of Fate",
+            "description": "Encounter Suicune on Route 36.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5948",
+          "fields": {
+            "ra-id": "5948",
+            "title": "Calming the Northern Winds",
+            "description": "Catch Suicune, the Aurora Pokémon.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199573",
+          "fields": {
+            "ra-id": "199573",
+            "title": "Crystalline Catch",
+            "description": "Catch Suicune and register it in the Pokédex without using a Master Ball.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5644",
+          "fields": {
+            "ra-id": "5644",
+            "title": "Dragon's Destiny",
+            "description": "Defeat Clair in Blackthorn City and earn the Rising Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199610",
+          "fields": {
+            "ra-id": "199610",
+            "title": "Down to the Last Breath",
+            "description": "Defeat\n Clair in the Set battle style using only Johto Pokémon that do not \nexceed level 40 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199576",
+          "fields": {
+            "ra-id": "199576",
+            "title": "Truthfulness Bears Rewards",
+            "description": "Receive\n a Dratini with ExtremeSpeed at the Dragon Shrine by correctly answering\n every question of the Master's quiz on the first attempt.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5949",
+          "fields": {
+            "ra-id": "5949",
+            "title": "The Johto Journey's End",
+            "description": "Defeat the Elite Four and Champion Lance at the Pokémon League, and be crowned as the new Pokémon League Champion!",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199611",
+          "fields": {
+            "ra-id": "199611",
+            "title": "Overcoming the Heavenly Kings",
+            "description": "Defeat\n the Elite Four and Lance in a single session in the Set battle style \nusing only Johto Pokémon that do not exceed level 44 during battle and \nwithout using any Pack items - no external trade-only Pokémon or \nLegendaries other than the Beasts.",
+            "points": "25",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5950",
+          "fields": {
+            "ra-id": "5950",
+            "title": "Struggle to the Top",
+            "description": "Defeat the Elite Four and Lance using only a single Pokémon.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5647",
+          "fields": {
+            "ra-id": "5647",
+            "title": "The Other Electric Soldier",
+            "description": "Defeat Lt. Surge in Vermillion City and earn the Thunder Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199612",
+          "fields": {
+            "ra-id": "199612",
+            "title": "Shock to the System",
+            "description": "Defeat\n Lt. Surge in the Set battle style using only Johto Pokémon that do not \nexceed level 46 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5650",
+          "fields": {
+            "ra-id": "5650",
+            "title": "Born with a Twisted Spoon",
+            "description": "Defeat Sabrina in Saffron City and earn the Marsh Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199613",
+          "fields": {
+            "ra-id": "199613",
+            "title": "Telepathic Miscommunications",
+            "description": "Defeat\n Sabrina in the Set battle style using only Johto Pokémon that do not \nexceed level 48 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199585",
+          "fields": {
+            "ra-id": "199585",
+            "title": "We're Gonna Give You the Power",
+            "description": "Return the stolen Machine Part to the staff of the Kanto Power Plant.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5646",
+          "fields": {
+            "ra-id": "5646",
+            "title": "The Third Water Wheel",
+            "description": "Defeat Misty in Cerulean City and earn the Cascade Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199614",
+          "fields": {
+            "ra-id": "199614",
+            "title": "Poor, Washed-Up Mermaid",
+            "description": "Defeat\n Misty in the Set battle style using only Johto Pokémon that do not \nexceed level 47 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5648",
+          "fields": {
+            "ra-id": "5648",
+            "title": "Two Green Thumbs Up",
+            "description": "Defeat Erika in Celadon City and earn the Rainbow Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199615",
+          "fields": {
+            "ra-id": "199615",
+            "title": "Slicing the Blades of Yesterday",
+            "description": "Defeat\n Erika in the Set battle style using only Johto Pokémon that do not \nexceed level 46 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5649",
+          "fields": {
+            "ra-id": "5649",
+            "title": "'Cause You Know That You're Toxic",
+            "description": "Defeat Janine in Fuchsia City and earn the Soul Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199616",
+          "fields": {
+            "ra-id": "199616",
+            "title": "Separating the \"Ill\" from \"Illusions\"",
+            "description": "Defeat\n Janine in the Set battle style using only Johto Pokémon that do not \nexceed level 39 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199586",
+          "fields": {
+            "ra-id": "199586",
+            "title": "The Lazy Song",
+            "description": "Catch the Snorlax in Vermillion City and register it in the Pokédex.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5645",
+          "fields": {
+            "ra-id": "5645",
+            "title": "Rock-Solid Reunion",
+            "description": "Defeat Brock in Pewter City and earn the Boulder Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199632",
+          "fields": {
+            "ra-id": "199632",
+            "title": "Gneiss Try, Mr. Jelly Donut!",
+            "description": "Defeat\n Brock in the Set battle style using only Johto Pokémon that do not \nexceed level 44 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5651",
+          "fields": {
+            "ra-id": "5651",
+            "title": "Home Is Where the Hot Is",
+            "description": "Defeat Blaine on Cinnabar Island and earn the Volcano Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199617",
+          "fields": {
+            "ra-id": "199617",
+            "title": "Frying Up the Egg-Head",
+            "description": "Defeat\n Blaine in the Set battle style using only Johto Pokémon that do not \nexceed level 50 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5652",
+          "fields": {
+            "ra-id": "5652",
+            "title": "The Fallen Rival Returns",
+            "description": "Defeat Blue in Viridian City and earn the Earth Badge.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199618",
+          "fields": {
+            "ra-id": "199618",
+            "title": "Until Next Time... Smell Ya Later!",
+            "description": "Defeat\n Blue in the Set battle style using only Johto Pokémon that do not \nexceed level 58 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5958",
+          "fields": {
+            "ra-id": "5958",
+            "title": "Clash of the Champions",
+            "description": "Defeat Pokémon Trainer Red at the summit of Mt. Silver!",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199619",
+          "fields": {
+            "ra-id": "199619",
+            "title": "To Train Them Is My Cause",
+            "description": "Defeat\n Red in the Set battle style using only Johto Pokémon that do not exceed\n level 65 during battle and without using any Pack items - no external \ntrade-only Pokémon; all Johto Legendaries allowed.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5959",
+          "fields": {
+            "ra-id": "5959",
+            "title": "A League of Your Own",
+            "description": "Defeat Red using only a single Pokémon.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5951",
+          "fields": {
+            "ra-id": "5951",
+            "title": "Beasts of the Brass",
+            "description": "Catch Entei and Raikou, the Volcano and Thunder Pokémon.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199574",
+          "fields": {
+            "ra-id": "199574",
+            "title": "Lightning in a Ball",
+            "description": "Catch Raikou and register it in the Pokédex without using a Master Ball.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199575",
+          "fields": {
+            "ra-id": "199575",
+            "title": "Pyroplastic Pacifier",
+            "description": "Catch Entei and register it in the Pokédex without using a Master Ball.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5952",
+          "fields": {
+            "ra-id": "5952",
+            "title": "Fateful Eye-to-Eye",
+            "description": "Catch Lugia, the Diving Pokémon, at the Whirl Islands.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199589",
+          "fields": {
+            "ra-id": "199589",
+            "title": "Serenity Beyond the Storm",
+            "description": "Catch Lugia and register it in the Pokédex without using a Master Ball.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5953",
+          "fields": {
+            "ra-id": "5953",
+            "title": "Phoenix of a Pure Heart",
+            "description": "Catch Ho-Oh, the Rainbow Pokémon, at the Tin Tower.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199590",
+          "fields": {
+            "ra-id": "199590",
+            "title": "At the End of the Rainbow",
+            "description": "Catch Ho-Oh and register it in the Pokédex without using a Master Ball.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199582",
+          "fields": {
+            "ra-id": "199582",
+            "title": "But Which Came First?",
+            "description": "Receive an Everstone from Professor Elm by showing him the hatched Mystery Egg.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199601",
+          "fields": {
+            "ra-id": "199601",
+            "title": "Apri-Cornucopia",
+            "description": "Receive a batch of at least 10 special Poké Balls at once from Kurt in Azalea Town.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199596",
+          "fields": {
+            "ra-id": "199596",
+            "title": "I Slept Like a Log...",
+            "description": "Encounter a sleeping Pokémon by using Headbutt on a tree.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199561",
+          "fields": {
+            "ra-id": "199561",
+            "title": "Served Shiny Side Up?",
+            "description": "Receive the Odd Egg from the Day-Care Man on Route 34.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199634",
+          "fields": {
+            "ra-id": "199634",
+            "title": "Megaton Chances",
+            "description": "See Golem by lining up two 7s on a slot machine at a Game Corner.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199635",
+          "fields": {
+            "ra-id": "199635",
+            "title": "Underage Gambling Pays Off!",
+            "description": "Earn a 7-7-7 on a slot machine at a Game Corner.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199627",
+          "fields": {
+            "ra-id": "199627",
+            "title": "Double Dozen Deduction",
+            "description": "Win a x24 bet in the Card Flip minigame at a Game Corner.",
+            "points": "3",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199622",
+          "fields": {
+            "ra-id": "199622",
+            "title": "Cast Your Net Far & Wide",
+            "description": "Win the Bug-Catching Contest at the National Park.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199623",
+          "fields": {
+            "ra-id": "199623",
+            "title": "Cuddly Crawlie Challenge",
+            "description": "Win the Bug-Catching Contest without catching a Butterfree, a Beedrill, a Scyther, or a Pinsir.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199624",
+          "fields": {
+            "ra-id": "199624",
+            "title": "Earning Style Points",
+            "description": "Win the Bug-Catching Contest with Cooltrainer Nick as a participant.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199580",
+          "fields": {
+            "ra-id": "199580",
+            "title": "Udder Selflessness",
+            "description": "Nurse Moomoo back to health at Moomoo Farm.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199633",
+          "fields": {
+            "ra-id": "199633",
+            "title": "Sorry, No Rare Candies!",
+            "description": "Have a Shuckle turn a Berry into Berry Juice after a battle.",
+            "points": "1",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199630",
+          "fields": {
+            "ra-id": "199630",
+            "title": "Worth Its Weight in Mold",
+            "description": "Get Mania of Cianwood City's permission to keep Shuckie by raising its Friendship high enough.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199591",
+          "fields": {
+            "ra-id": "199591",
+            "title": "Ferry Fountain Fridays",
+            "description": "Catch the Lapras in Union Cave and register it in the Pokédex.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199636",
+          "fields": {
+            "ra-id": "199636",
+            "title": "Let the Unown Be Known",
+            "description": "Solve each of the puzzle chambers and collect every hidden item in the Ruins of Alph.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5955",
+          "fields": {
+            "ra-id": "5955",
+            "title": "Alphabet Scoop",
+            "description": "Catch all 26 forms of Unown.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199578",
+          "fields": {
+            "ra-id": "199578",
+            "title": "Scaling for Scaling",
+            "description": "Trade the Red Scale to Mr. Pokémon on Route 30 for the EXP Share.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199581",
+          "fields": {
+            "ra-id": "199581",
+            "title": "That Bass's Too Fat!",
+            "description": "Receive an Elixir from the Fishing Guru at the Lake of Rage by breaking the Magikarp size record.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199559",
+          "fields": {
+            "ra-id": "199559",
+            "title": "Go Ahead, Make My Day",
+            "description": "Receive all 7 gifts from each of the Week Siblings.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199620",
+          "fields": {
+            "ra-id": "199620",
+            "title": "Gambler's Charity",
+            "description": "Learn a new move from Bill's father outside the Goldenrod City Game Corner.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199637",
+          "fields": {
+            "ra-id": "199637",
+            "title": "Cruisin' for a Bruisin'",
+            "description": "Defeat every possible Trainer aboard the S.S. Aqua excluding those from the first voyage.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199588",
+          "fields": {
+            "ra-id": "199588",
+            "title": "Pokémania Runs in the Family",
+            "description": "Show all 5 requested Pokémon to Bill's grandfather on Route 25.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199640",
+          "fields": {
+            "ra-id": "199640",
+            "title": "This One's For You, Doll",
+            "description": "Receive a Pass for the Magnet Train from the Copycat in Saffron City.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199639",
+          "fields": {
+            "ra-id": "199639",
+            "title": "The Reel Pokédex",
+            "description": "Collect all 3 of the fishing rods.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199587",
+          "fields": {
+            "ra-id": "199587",
+            "title": "Lunatical Onlooker",
+            "description": "Receive a Moon Stone after witnessing the Clefairy ritual at Mt. Moon Square.",
+            "points": "3",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199593",
+          "fields": {
+            "ra-id": "199593",
+            "title": "The Thief's Last Stand",
+            "description": "Win the optional battle against your rival at Indigo Plateau.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199625",
+          "fields": {
+            "ra-id": "199625",
+            "title": "For That Nice & Shiny Coat",
+            "description": "Have Daisy Oak comb your Pokémon in Pallet Town.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199629",
+          "fields": {
+            "ra-id": "199629",
+            "title": "Cute, Soft, & Made with Love",
+            "description": "Own every Poké Doll purchased by Mom.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199621",
+          "fields": {
+            "ra-id": "199621",
+            "title": "The Anger of a Gentle 'Mon",
+            "description": "Have your Pokémon in the first slot use Frustration or Return at its maximum power.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199626",
+          "fields": {
+            "ra-id": "199626",
+            "title": "Didn't Know You Had It in You!",
+            "description": "Deal super effective damage with Hidden Power.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199567",
+          "fields": {
+            "ra-id": "199567",
+            "title": "Element of Generosity",
+            "description": "Receive an Evolution stone from a registered Pokégear Trainer.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199638",
+          "fields": {
+            "ra-id": "199638",
+            "title": "Deals on Wheels",
+            "description": "Promote the Miracle Cycle bike shop in Goldenrod City and be allowed to keep the bike.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199631",
+          "fields": {
+            "ra-id": "199631",
+            "title": "Our Store's Up High, But Our Prices Are Low",
+            "description": "Make a purchase in the Rooftop Sale on the roof of the Goldenrod Department Store.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199597",
+          "fields": {
+            "ra-id": "199597",
+            "title": "Password Perfectionist",
+            "description": "Add Buena's phone number to your Pokégear after earning 30 Blue Card points.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199579",
+          "fields": {
+            "ra-id": "199579",
+            "title": "Fun to Sell Off, Not to Eat",
+            "description": "Receive a Nugget from either Pokéfan Beverly or Pokéfan Derek.",
+            "points": "2",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199577",
+          "fields": {
+            "ra-id": "199577",
+            "title": "Practicing 1 Move 10,000 Times",
+            "description": "Receive a PP Up from Blackbelt Kenji.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199602",
+          "fields": {
+            "ra-id": "199602",
+            "title": "Strength from Numbers",
+            "description": "Receive a vitamin from every possible Trainer rematch that rewards one.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199565",
+          "fields": {
+            "ra-id": "199565",
+            "title": "More Valuable than Any Dollar",
+            "description": "Receive every in-game Gift Pokémon.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199592",
+          "fields": {
+            "ra-id": "199592",
+            "title": "Link Cable Not Included",
+            "description": "Complete every in-game trade.",
+            "points": "5",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199560",
+          "fields": {
+            "ra-id": "199560",
+            "title": "Landly Legend",
+            "description": "Defeat every non-missable Trainer in Johto.",
+            "points": "25",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199562",
+          "fields": {
+            "ra-id": "199562",
+            "title": "Flourishing Findings",
+            "description": "Collect every visible and hidden field item in Johto.",
+            "points": "25",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199583",
+          "fields": {
+            "ra-id": "199583",
+            "title": "Urban Underdog",
+            "description": "Defeat every non-missable Trainer in Kanto.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199584",
+          "fields": {
+            "ra-id": "199584",
+            "title": "Colorful Collector",
+            "description": "Collect every visible and hidden field item in Kanto.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199563",
+          "fields": {
+            "ra-id": "199563",
+            "title": "Machine Learning",
+            "description": "Collect every finite TM and HM.",
+            "points": "25",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199598",
+          "fields": {
+            "ra-id": "199598",
+            "title": "Don't Give Them the Stick!",
+            "description": "Obtain a Stick from a wild Farfetch'd by either catching the Pokémon or stealing it.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199599",
+          "fields": {
+            "ra-id": "199599",
+            "title": "More Like the Orphan Club!",
+            "description": "Obtain a Thick Club from a wild Cubone or Marowak.",
+            "points": "10",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199600",
+          "fields": {
+            "ra-id": "199600",
+            "title": "Easter Surprise",
+            "description": "Obtain a Lucky Egg from a wild Chansey by either catching the Pokémon or stealing it.",
+            "points": "50",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5936",
+          "fields": {
+            "ra-id": "5936",
+            "title": "Game of Death-Defiance",
+            "description": "Clear the Battle Tower by defeating 7 Trainers in a row.",
+            "points": "25",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-199628",
+          "fields": {
+            "ra-id": "199628",
+            "title": "Local Competition",
+            "description": "Clear the Battle Tower using only Johto Pokémon - no Lugia or Ho-Oh.",
+            "points": "25",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-5954",
+          "fields": {
+            "ra-id": "5954",
+            "title": "Gotta Catch 'Em All - Crystal",
+            "description": "Catch all 206 possible Pokémon that are obtainable in-game without external devices.",
+            "points": "50",
+            "set": "main"
+          },
+          "sourceRefs": [
+            "src-ra"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315085",
+          "fields": {
+            "ra-id": "315085",
+            "title": "Chikorita, Cyndaquil or Totodile",
+            "description": "Obtain your starter.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315086",
+          "fields": {
+            "ra-id": "315086",
+            "title": "Bayleef, Quilava or Croconaw",
+            "description": "Evolve your starter.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315087",
+          "fields": {
+            "ra-id": "315087",
+            "title": "Meganium, Typhlosion or Feraligatr",
+            "description": "Evolve your starter to its third form.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315088",
+          "fields": {
+            "ra-id": "315088",
+            "title": "Rattata",
+            "description": "Catch a Rattata.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315092",
+          "fields": {
+            "ra-id": "315092",
+            "title": "Raticate",
+            "description": "Evolve Rattata to Raticate.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315089",
+          "fields": {
+            "ra-id": "315089",
+            "title": "Pidgey",
+            "description": "Catch a Pidgey.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315090",
+          "fields": {
+            "ra-id": "315090",
+            "title": "Pidgeotto",
+            "description": "Evolve Pidgey to Pidgeotto.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315091",
+          "fields": {
+            "ra-id": "315091",
+            "title": "Pidgeot",
+            "description": "Evolve Pidgeotto to Pidgeot.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315093",
+          "fields": {
+            "ra-id": "315093",
+            "title": "Hoppip",
+            "description": "Catch a Hoppip.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315094",
+          "fields": {
+            "ra-id": "315094",
+            "title": "Skiploom",
+            "description": "Evolve Hoppip to Skiploom.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315095",
+          "fields": {
+            "ra-id": "315095",
+            "title": "Jumpluff",
+            "description": "Evolve Skiploom to Jumpluff.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315096",
+          "fields": {
+            "ra-id": "315096",
+            "title": "Sentret",
+            "description": "Catch a Sentret.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315097",
+          "fields": {
+            "ra-id": "315097",
+            "title": "Furret",
+            "description": "Evolve Sentret to Furret.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315098",
+          "fields": {
+            "ra-id": "315098",
+            "title": "Hoothoot",
+            "description": "Catch a Hoothoot.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315099",
+          "fields": {
+            "ra-id": "315099",
+            "title": "Noctowl",
+            "description": "Evolve Hoothoot to Noctowl.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315100",
+          "fields": {
+            "ra-id": "315100",
+            "title": "Geodude",
+            "description": "Catch a Geodude.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315101",
+          "fields": {
+            "ra-id": "315101",
+            "title": "Graveler",
+            "description": "Evolve Geodude to Graveler.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315102",
+          "fields": {
+            "ra-id": "315102",
+            "title": "Phanpy",
+            "description": "Catch a Phanpy.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315103",
+          "fields": {
+            "ra-id": "315103",
+            "title": "Donphan",
+            "description": "Evolve Phanpy to Donphan.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315104",
+          "fields": {
+            "ra-id": "315104",
+            "title": "Spearow",
+            "description": "Catch a Spearow.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315105",
+          "fields": {
+            "ra-id": "315105",
+            "title": "Fearow",
+            "description": "Evolve Spearow to Fearow.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315106",
+          "fields": {
+            "ra-id": "315106",
+            "title": "Caterpie",
+            "description": "Catch a Caterpie.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315107",
+          "fields": {
+            "ra-id": "315107",
+            "title": "Metapod",
+            "description": "Evolve Caterpie to Metapod.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315108",
+          "fields": {
+            "ra-id": "315108",
+            "title": "Butterfree",
+            "description": "Evolve Metapod to Butterfree.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315109",
+          "fields": {
+            "ra-id": "315109",
+            "title": "Weedle",
+            "description": "Catch a Weedle.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315110",
+          "fields": {
+            "ra-id": "315110",
+            "title": "Kakuna",
+            "description": "Evolve Weedle to Kakuna.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315111",
+          "fields": {
+            "ra-id": "315111",
+            "title": "Beedrill",
+            "description": "Evolve Kakuna to Beedrill.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315112",
+          "fields": {
+            "ra-id": "315112",
+            "title": "Spinarak",
+            "description": "Catch a Spinarak.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315113",
+          "fields": {
+            "ra-id": "315113",
+            "title": "Ariados",
+            "description": "Evolve Spinarak to Ariados.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315114",
+          "fields": {
+            "ra-id": "315114",
+            "title": "Ledyba",
+            "description": "Catch a Ledyba.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315115",
+          "fields": {
+            "ra-id": "315115",
+            "title": "Ledian",
+            "description": "Evolve Ledyba to Ledian.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315116",
+          "fields": {
+            "ra-id": "315116",
+            "title": "Zubat",
+            "description": "Catch a Zubat.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315117",
+          "fields": {
+            "ra-id": "315117",
+            "title": "Golbat",
+            "description": "Evolve Zubat to Golbat.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315118",
+          "fields": {
+            "ra-id": "315118",
+            "title": "Crobat",
+            "description": "Evolve Golbat to Crobat.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315119",
+          "fields": {
+            "ra-id": "315119",
+            "title": "Poliwag",
+            "description": "Catch a Poliwag.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315120",
+          "fields": {
+            "ra-id": "315120",
+            "title": "Poliwhirl",
+            "description": "Evolve Poliwag to Poliwhirl.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315121",
+          "fields": {
+            "ra-id": "315121",
+            "title": "Bellsprout",
+            "description": "Catch a Bellsprout.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315122",
+          "fields": {
+            "ra-id": "315122",
+            "title": "Weepinbell",
+            "description": "Evolve Bellsprout to Weepinbell.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315123",
+          "fields": {
+            "ra-id": "315123",
+            "title": "Gastly",
+            "description": "Catch a Gastly.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315124",
+          "fields": {
+            "ra-id": "315124",
+            "title": "Haunter",
+            "description": "Evolve Gastly to Haunter.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315125",
+          "fields": {
+            "ra-id": "315125",
+            "title": "Dunsparce",
+            "description": "Catch a Dunsparce.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315126",
+          "fields": {
+            "ra-id": "315126",
+            "title": "Teddiursa",
+            "description": "Catch a Teddiursa.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315127",
+          "fields": {
+            "ra-id": "315127",
+            "title": "Ursaring",
+            "description": "Evolve Teddiursa to Ursaring.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315128",
+          "fields": {
+            "ra-id": "315128",
+            "title": "Onix",
+            "description": "Trade Bellsprout for Onix.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315129",
+          "fields": {
+            "ra-id": "315129",
+            "title": "Growlithe",
+            "description": "Catch a Growlithe.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315130",
+          "fields": {
+            "ra-id": "315130",
+            "title": "Unown",
+            "description": "Catch an Unown.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315131",
+          "fields": {
+            "ra-id": "315131",
+            "title": "Zephyr Badge",
+            "description": "Defeat Falkner with all 46 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315132",
+          "fields": {
+            "ra-id": "315132",
+            "title": "Togepi",
+            "description": "Hatch a Togepi.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315133",
+          "fields": {
+            "ra-id": "315133",
+            "title": "Togetic",
+            "description": "Evolve Togepi to Togetic.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315134",
+          "fields": {
+            "ra-id": "315134",
+            "title": "Wooper",
+            "description": "Catch a Wooper.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315135",
+          "fields": {
+            "ra-id": "315135",
+            "title": "Quagsire",
+            "description": "Evolve Wooper to Quagsire.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315136",
+          "fields": {
+            "ra-id": "315136",
+            "title": "Ekans",
+            "description": "Catch an Ekans.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315137",
+          "fields": {
+            "ra-id": "315137",
+            "title": "Arbok",
+            "description": "Evolve Ekans to Arbok.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315138",
+          "fields": {
+            "ra-id": "315138",
+            "title": "Magikarp",
+            "description": "Catch a Magikarp.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315139",
+          "fields": {
+            "ra-id": "315139",
+            "title": "Gyarados",
+            "description": "Evolve Magikarp to Gyarados.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315140",
+          "fields": {
+            "ra-id": "315140",
+            "title": "Tentacool",
+            "description": "Catch a Tentacool.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315141",
+          "fields": {
+            "ra-id": "315141",
+            "title": "Tentacruel",
+            "description": "Evolve Tentacool to Tentacruel.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315142",
+          "fields": {
+            "ra-id": "315142",
+            "title": "Krabby",
+            "description": "Catch a Krabby.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315143",
+          "fields": {
+            "ra-id": "315143",
+            "title": "Kingler",
+            "description": "Evolve Krabby to Kingler.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315144",
+          "fields": {
+            "ra-id": "315144",
+            "title": "Goldeen",
+            "description": "Catch a Goldeen.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315145",
+          "fields": {
+            "ra-id": "315145",
+            "title": "Seaking",
+            "description": "Evolve Goldeen to Seaking.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315146",
+          "fields": {
+            "ra-id": "315146",
+            "title": "Qwilfish",
+            "description": "Catch a Qwilfish.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315147",
+          "fields": {
+            "ra-id": "315147",
+            "title": "Sandshrew",
+            "description": "Catch a Sandshrew.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315148",
+          "fields": {
+            "ra-id": "315148",
+            "title": "Sandslash",
+            "description": "Evolve Sandshrew to Sandslash.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315149",
+          "fields": {
+            "ra-id": "315149",
+            "title": "Slowpoke",
+            "description": "Catch a Slowpoke.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315150",
+          "fields": {
+            "ra-id": "315150",
+            "title": "Slowbro",
+            "description": "Evolve Slowpoke to Slowbro.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315151",
+          "fields": {
+            "ra-id": "315151",
+            "title": "Oddish",
+            "description": "Catch an Oddish.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315152",
+          "fields": {
+            "ra-id": "315152",
+            "title": "Gloom",
+            "description": "Evolve Oddish to Gloom.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315153",
+          "fields": {
+            "ra-id": "315153",
+            "title": "Paras",
+            "description": "Catch a Paras.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315154",
+          "fields": {
+            "ra-id": "315154",
+            "title": "Parasect",
+            "description": "Evolve Paras to Parasect.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315155",
+          "fields": {
+            "ra-id": "315155",
+            "title": "Psyduck",
+            "description": "Catch a Psyduck.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315156",
+          "fields": {
+            "ra-id": "315156",
+            "title": "Golduck",
+            "description": "Evolve Psyduck to Golduck.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315157",
+          "fields": {
+            "ra-id": "315157",
+            "title": "Venonat",
+            "description": "Catch a Venonat.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315158",
+          "fields": {
+            "ra-id": "315158",
+            "title": "Venomoth",
+            "description": "Evolve Venonat to Venomoth.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315159",
+          "fields": {
+            "ra-id": "315159",
+            "title": "Pineco",
+            "description": "Catch a Pineco.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315160",
+          "fields": {
+            "ra-id": "315160",
+            "title": "Forretress",
+            "description": "Evolve Pineco to Forretress.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315161",
+          "fields": {
+            "ra-id": "315161",
+            "title": "Exeggcute",
+            "description": "Catch an Exeggcute.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315163",
+          "fields": {
+            "ra-id": "315163",
+            "title": "Aipom",
+            "description": "Catch an Aipom.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315164",
+          "fields": {
+            "ra-id": "315164",
+            "title": "Hive Badge",
+            "description": "Defeat Bugsy with all 77 possible Pokémon in the Pokédex; Heracross is not required.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315165",
+          "fields": {
+            "ra-id": "315165",
+            "title": "Abra",
+            "description": "Catch an Abra or receive one from the Game Corner.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315166",
+          "fields": {
+            "ra-id": "315166",
+            "title": "Kadabra",
+            "description": "Evolve Abra to Kadabra.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315167",
+          "fields": {
+            "ra-id": "315167",
+            "title": "Ditto",
+            "description": "Catch a Ditto.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315168",
+          "fields": {
+            "ra-id": "315168",
+            "title": "Snubbull",
+            "description": "Catch a Snubbull.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315169",
+          "fields": {
+            "ra-id": "315169",
+            "title": "Granbull",
+            "description": "Evolve Snubbull to Granbull.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315170",
+          "fields": {
+            "ra-id": "315170",
+            "title": "Jigglypuff",
+            "description": "Catch a Jigglypuff.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315171",
+          "fields": {
+            "ra-id": "315171",
+            "title": "Igglybuff",
+            "description": "Hatch an Igglybuff.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315172",
+          "fields": {
+            "ra-id": "315172",
+            "title": "Tyrogue",
+            "description": "Hatch a Tyrogue. (SAVE before you obtain the odd egg from the couple, read comments).",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315173",
+          "fields": {
+            "ra-id": "315173",
+            "title": "Hitmonlee",
+            "description": "Evolve Tyrogue to Hitmonlee.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315174",
+          "fields": {
+            "ra-id": "315174",
+            "title": "Hitmonchan",
+            "description": "Evolve Tyrogue to Hitmonchan.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315175",
+          "fields": {
+            "ra-id": "315175",
+            "title": "Hitmontop",
+            "description": "Evolve Tyrogue to Hitmontop.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315176",
+          "fields": {
+            "ra-id": "315176",
+            "title": "Machop",
+            "description": "Trade Abra for Machop.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315177",
+          "fields": {
+            "ra-id": "315177",
+            "title": "Machoke",
+            "description": "Evolve Machop to Machoke.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315178",
+          "fields": {
+            "ra-id": "315178",
+            "title": "Cubone",
+            "description": "Obtain a Cubone from the Game Corner.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315179",
+          "fields": {
+            "ra-id": "315179",
+            "title": "Marowak",
+            "description": "Evolve Cubone to Marowak.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315180",
+          "fields": {
+            "ra-id": "315180",
+            "title": "Wobbuffet",
+            "description": "Obtain a Wobbuffet from the Game Corner.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315181",
+          "fields": {
+            "ra-id": "315181",
+            "title": "Yanma",
+            "description": "Catch a Yanma.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315182",
+          "fields": {
+            "ra-id": "315182",
+            "title": "Nidoran F",
+            "description": "Catch a Nidoran F.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315183",
+          "fields": {
+            "ra-id": "315183",
+            "title": "Nidorina",
+            "description": "Evolve Nidoran F to Nidorina.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315184",
+          "fields": {
+            "ra-id": "315184",
+            "title": "Nidoran M",
+            "description": "Catch a Nidoran M.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315185",
+          "fields": {
+            "ra-id": "315185",
+            "title": "Nidorino",
+            "description": "Evolve Nidoran M to Nidorino.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315186",
+          "fields": {
+            "ra-id": "315186",
+            "title": "Sunkern",
+            "description": "Catch a Sunkern.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315187",
+          "fields": {
+            "ra-id": "315187",
+            "title": "Sunflora",
+            "description": "Evolve Sunkern to Sunflora.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315188",
+          "fields": {
+            "ra-id": "315188",
+            "title": "Scyther",
+            "description": "Catch a Scyther.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315189",
+          "fields": {
+            "ra-id": "315189",
+            "title": "Pinsir",
+            "description": "Catch a Pinsir.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315190",
+          "fields": {
+            "ra-id": "315190",
+            "title": "Bellossom",
+            "description": "Evolve Gloom to Bellossom.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315191",
+          "fields": {
+            "ra-id": "315191",
+            "title": "Vileplume",
+            "description": "Evolve Gloom to Vileplume.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315192",
+          "fields": {
+            "ra-id": "315192",
+            "title": "Exeggcutor",
+            "description": "Evolve Exeggcute to Exeggcutor.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315193",
+          "fields": {
+            "ra-id": "315193",
+            "title": "Victreebel",
+            "description": "Evolve Weepinbell to Victreebel.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315194",
+          "fields": {
+            "ra-id": "315194",
+            "title": "Arcanine",
+            "description": "Evolve Growlithe to Arcanine.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315195",
+          "fields": {
+            "ra-id": "315195",
+            "title": "Drowzee",
+            "description": "Catch a Drowzee.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315196",
+          "fields": {
+            "ra-id": "315196",
+            "title": "Hypno",
+            "description": "Evolve Drowzee to Hypno.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315197",
+          "fields": {
+            "ra-id": "315197",
+            "title": "Plain Badge",
+            "description": "Defeat Whitney with all 109 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315162",
+          "fields": {
+            "ra-id": "315162",
+            "title": "Heracross",
+            "description": "Catch a Heracross.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315198",
+          "fields": {
+            "ra-id": "315198",
+            "title": "Sudowoodo",
+            "description": "Catch a Sudowoodo.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315199",
+          "fields": {
+            "ra-id": "315199",
+            "title": "Stantler",
+            "description": "Catch a Stantler.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315200",
+          "fields": {
+            "ra-id": "315200",
+            "title": "Eevee",
+            "description": "Obtain an Eevee.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315201",
+          "fields": {
+            "ra-id": "315201",
+            "title": "Vaporeon",
+            "description": "Evolve Eevee to Vaporeon.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315202",
+          "fields": {
+            "ra-id": "315202",
+            "title": "Jolteon",
+            "description": "Evolve Eevee to Jolteon.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315203",
+          "fields": {
+            "ra-id": "315203",
+            "title": "Flareon",
+            "description": "Evolve Eevee to Flareon.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315204",
+          "fields": {
+            "ra-id": "315204",
+            "title": "Espeon",
+            "description": "Evolve Eevee to Espeon.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315205",
+          "fields": {
+            "ra-id": "315205",
+            "title": "Umbreon",
+            "description": "Evolve Eevee to Umbreon.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315206",
+          "fields": {
+            "ra-id": "315206",
+            "title": "Koffing",
+            "description": "Catch a Koffing.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315207",
+          "fields": {
+            "ra-id": "315207",
+            "title": "Weezing",
+            "description": "Evolve Koffing or catch a Weezing.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315208",
+          "fields": {
+            "ra-id": "315208",
+            "title": "Magnemite",
+            "description": "Catch a Magnemite.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315209",
+          "fields": {
+            "ra-id": "315209",
+            "title": "Magneton",
+            "description": "Evolve Magnemite to Magneton.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315210",
+          "fields": {
+            "ra-id": "315210",
+            "title": "Miltank",
+            "description": "Catch a Miltank.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315211",
+          "fields": {
+            "ra-id": "315211",
+            "title": "Tauros",
+            "description": "Catch a Tauros.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315212",
+          "fields": {
+            "ra-id": "315212",
+            "title": "Meowth",
+            "description": "Catch a Meowth.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315213",
+          "fields": {
+            "ra-id": "315213",
+            "title": "Persian",
+            "description": "Evolve Meowth to Persian.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315214",
+          "fields": {
+            "ra-id": "315214",
+            "title": "Voltorb",
+            "description": "Trade a Krabby for Voltorb.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315215",
+          "fields": {
+            "ra-id": "315215",
+            "title": "Electrode",
+            "description": "Evolve Voltorb to Electrode.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315216",
+          "fields": {
+            "ra-id": "315216",
+            "title": "Shuckle",
+            "description": "Catch a Shuckle.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315217",
+          "fields": {
+            "ra-id": "315217",
+            "title": "Shellder",
+            "description": "Catch a Shellder.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315218",
+          "fields": {
+            "ra-id": "315218",
+            "title": "Cloyster",
+            "description": "Evolve Shellder to Cloyster.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315219",
+          "fields": {
+            "ra-id": "315219",
+            "title": "Lanturn",
+            "description": "Evolve Chinchou to Lanturn.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315220",
+          "fields": {
+            "ra-id": "315220",
+            "title": "Staryu",
+            "description": "Catch a Staryu.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315221",
+          "fields": {
+            "ra-id": "315221",
+            "title": "Starmie",
+            "description": "Evolve Staryu to Starmie.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315287",
+          "fields": {
+            "ra-id": "315287",
+            "title": "Marill",
+            "description": "Catch a Marill.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315222",
+          "fields": {
+            "ra-id": "315222",
+            "title": "Azumarill",
+            "description": "Evolve Marill to Azumarill.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315223",
+          "fields": {
+            "ra-id": "315223",
+            "title": "Poliwrath",
+            "description": "Evolve Poliwhirl to Poliwrath.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315224",
+          "fields": {
+            "ra-id": "315224",
+            "title": "Raikou",
+            "description": "Catch a Raikou.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315289",
+          "fields": {
+            "ra-id": "315289",
+            "title": "Entei",
+            "description": "Catch an Entei.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315285",
+          "fields": {
+            "ra-id": "315285",
+            "title": "Chinchou",
+            "description": "Catch a Chinchou.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315286",
+          "fields": {
+            "ra-id": "315286",
+            "title": "Corsola",
+            "description": "Catch a Corsola.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315288",
+          "fields": {
+            "ra-id": "315288",
+            "title": "Farfetch'd",
+            "description": "Catch a Farfetch'd.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315225",
+          "fields": {
+            "ra-id": "315225",
+            "title": "Fog Badge",
+            "description": "Defeat Morty with all 142 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315226",
+          "fields": {
+            "ra-id": "315226",
+            "title": "Wigglytuff",
+            "description": "Evolve Jigglypuff to Wigglytuff.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315227",
+          "fields": {
+            "ra-id": "315227",
+            "title": "Nidoking",
+            "description": "Evolve Nidorino to Nidoking.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315290",
+          "fields": {
+            "ra-id": "315290",
+            "title": "Nidoqueen",
+            "description": "Evolve Nidorina to Nidoqueen.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315291",
+          "fields": {
+            "ra-id": "315291",
+            "title": "Natu",
+            "description": "Catch a Natu.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315228",
+          "fields": {
+            "ra-id": "315228",
+            "title": "Xatu",
+            "description": "Evolve Natu to Xatu.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315292",
+          "fields": {
+            "ra-id": "315292",
+            "title": "Smeargle",
+            "description": "Catch a Smeargle.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315229",
+          "fields": {
+            "ra-id": "315229",
+            "title": "Lapras",
+            "description": "Catch a Lapras.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315293",
+          "fields": {
+            "ra-id": "315293",
+            "title": "Mantine",
+            "description": "Catch a Mantine.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315230",
+          "fields": {
+            "ra-id": "315230",
+            "title": "Glacier Badge",
+            "description": "Defeat Pryce with all 150 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315231",
+          "fields": {
+            "ra-id": "315231",
+            "title": "Seel",
+            "description": "Catch a Seel.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315232",
+          "fields": {
+            "ra-id": "315232",
+            "title": "Dewgong",
+            "description": "Evolve Seel to Dewgong.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315294",
+          "fields": {
+            "ra-id": "315294",
+            "title": "Horsea",
+            "description": "Catch a Horsea.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315233",
+          "fields": {
+            "ra-id": "315233",
+            "title": "Seadra",
+            "description": "Catch a Seadra or evolve Horsea to Seadra.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315234",
+          "fields": {
+            "ra-id": "315234",
+            "title": "Mineral Badge",
+            "description": "Defeat Jasmine with all 154 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315295",
+          "fields": {
+            "ra-id": "315295",
+            "title": "Storm Badge",
+            "description": "Defeat Chuck with all 154 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315235",
+          "fields": {
+            "ra-id": "315235",
+            "title": "Suicune",
+            "description": "Catch a Suicune.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315236",
+          "fields": {
+            "ra-id": "315236",
+            "title": "Tangela",
+            "description": "Catch a Tangela.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315237",
+          "fields": {
+            "ra-id": "315237",
+            "title": "Jynx",
+            "description": "Catch a Jynx.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315297",
+          "fields": {
+            "ra-id": "315297",
+            "title": "Swinub",
+            "description": "Catch a Swinub.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315238",
+          "fields": {
+            "ra-id": "315238",
+            "title": "Piloswine",
+            "description": "Evolve Swinub to Piloswine.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315298",
+          "fields": {
+            "ra-id": "315298",
+            "title": "Delibird",
+            "description": "Catch a Delibird.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315239",
+          "fields": {
+            "ra-id": "315239",
+            "title": "Sneasel",
+            "description": "Catch a Sneasel.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315240",
+          "fields": {
+            "ra-id": "315240",
+            "title": "Skarmory",
+            "description": "Catch a Skarmory.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315299",
+          "fields": {
+            "ra-id": "315299",
+            "title": "Gligar",
+            "description": "Catch a Gligar.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315296",
+          "fields": {
+            "ra-id": "315296",
+            "title": "Lickitung",
+            "description": "Catch a Lickitung.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315300",
+          "fields": {
+            "ra-id": "315300",
+            "title": "Dratini",
+            "description": "Catch a Dratini.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315241",
+          "fields": {
+            "ra-id": "315241",
+            "title": "Dragonair",
+            "description": "Evolve Dratini to Dragonair.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315242",
+          "fields": {
+            "ra-id": "315242",
+            "title": "Dragonite",
+            "description": "Evolve Dragonair to Dragonite.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315243",
+          "fields": {
+            "ra-id": "315243",
+            "title": "Dodrio",
+            "description": "Trade a Dragonair for Dodrio.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315244",
+          "fields": {
+            "ra-id": "315244",
+            "title": "Doduo",
+            "description": "Hatch a Doduo.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315245",
+          "fields": {
+            "ra-id": "315245",
+            "title": "Smoochum",
+            "description": "Hatch a Smoochum.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315246",
+          "fields": {
+            "ra-id": "315246",
+            "title": "Rising Badge",
+            "description": "Obtain the badge from Clair with all 170 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315247",
+          "fields": {
+            "ra-id": "315247",
+            "title": "Ponyta",
+            "description": "Catch a Ponyta.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315248",
+          "fields": {
+            "ra-id": "315248",
+            "title": "Rapidash",
+            "description": "Evolve Ponyta to Rapidash.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315249",
+          "fields": {
+            "ra-id": "315249",
+            "title": "Rhyhorn",
+            "description": "Catch a Rhyhorn.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315250",
+          "fields": {
+            "ra-id": "315250",
+            "title": "Rhydon",
+            "description": "Catch a Rhydon or evolve Rhyhorn to Rhydon.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315251",
+          "fields": {
+            "ra-id": "315251",
+            "title": "Elite Four",
+            "description": "Defeat the Elite Four with all 174 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315252",
+          "fields": {
+            "ra-id": "315252",
+            "title": "Electabuzz",
+            "description": "Catch a Electabuzz.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315253",
+          "fields": {
+            "ra-id": "315253",
+            "title": "Kangaskhan",
+            "description": "Catch a Kangaskhan.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315254",
+          "fields": {
+            "ra-id": "315254",
+            "title": "Murkrow",
+            "description": "Catch a Murkrow.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315255",
+          "fields": {
+            "ra-id": "315255",
+            "title": "Houndour",
+            "description": "Catch a Houndour.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315256",
+          "fields": {
+            "ra-id": "315256",
+            "title": "Houndoom",
+            "description": "Evolve Houndour to Houndoom.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315257",
+          "fields": {
+            "ra-id": "315257",
+            "title": "Grimer",
+            "description": "Catch a Grimer.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315258",
+          "fields": {
+            "ra-id": "315258",
+            "title": "Muk",
+            "description": "Catch a Muk or evolve Grimer to Muk.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315259",
+          "fields": {
+            "ra-id": "315259",
+            "title": "Porygon",
+            "description": "Obtain a Porygon at the Game Corner.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315301",
+          "fields": {
+            "ra-id": "315301",
+            "title": "Larvitar",
+            "description": "Obtain a Larvitar at the Game Corner.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315260",
+          "fields": {
+            "ra-id": "315260",
+            "title": "Pupitar",
+            "description": "Evolve Larvitar to Pupitar.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315261",
+          "fields": {
+            "ra-id": "315261",
+            "title": "Tyranitar",
+            "description": "Evolve Pupitar to Tyranitar.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315302",
+          "fields": {
+            "ra-id": "315302",
+            "title": "Slugma",
+            "description": "Catch a Slugma.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315262",
+          "fields": {
+            "ra-id": "315262",
+            "title": "Magcargo",
+            "description": "Evolve Slugma to Magcargo.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315263",
+          "fields": {
+            "ra-id": "315263",
+            "title": "Chansey",
+            "description": "Catch a Chansey.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315264",
+          "fields": {
+            "ra-id": "315264",
+            "title": "Blissey",
+            "description": "Evolve Chansey to Blissey.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315265",
+          "fields": {
+            "ra-id": "315265",
+            "title": "Snorlax",
+            "description": "Catch a Snorlax.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315266",
+          "fields": {
+            "ra-id": "315266",
+            "title": "Diglett",
+            "description": "Catch a Diglett.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315267",
+          "fields": {
+            "ra-id": "315267",
+            "title": "Dugtrio",
+            "description": "Catch a Dugtrio or evolve Diglett to Dugtrio.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315268",
+          "fields": {
+            "ra-id": "315268",
+            "title": "Pikachu",
+            "description": "Catch a Pikachu or receive one from the Game Corner.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315304",
+          "fields": {
+            "ra-id": "315304",
+            "title": "Raichu",
+            "description": "Evolve Pikachu to Raichu.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315269",
+          "fields": {
+            "ra-id": "315269",
+            "title": "Clefairy",
+            "description": "Catch a Clefairy.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315305",
+          "fields": {
+            "ra-id": "315305",
+            "title": "Clefable",
+            "description": "Evolve Clefairy to Clefable.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315270",
+          "fields": {
+            "ra-id": "315270",
+            "title": "Mr. Mime",
+            "description": "Catch a Mr. Mime.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315271",
+          "fields": {
+            "ra-id": "315271",
+            "title": "Cleffa",
+            "description": "Hatch a Cleffa.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315306",
+          "fields": {
+            "ra-id": "315306",
+            "title": "Pichu",
+            "description": "Hatch a Pichu.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315307",
+          "fields": {
+            "ra-id": "315307",
+            "title": "Elekid",
+            "description": "Hatch a Elekid.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315303",
+          "fields": {
+            "ra-id": "315303",
+            "title": "Aerodactyl",
+            "description": "Trade Chansey for Aerodactyl.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315272",
+          "fields": {
+            "ra-id": "315272",
+            "title": "Ho-Oh",
+            "description": "Catch Ho-Oh.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315273",
+          "fields": {
+            "ra-id": "315273",
+            "title": "Lugia",
+            "description": "Catch Lugia.",
+            "points": "3",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315274",
+          "fields": {
+            "ra-id": "315274",
+            "title": "Boulder Badge",
+            "description": "Defeat Brock with all 203 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315275",
+          "fields": {
+            "ra-id": "315275",
+            "title": "Cascade Badge",
+            "description": "Defeat Misty with all 203 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315276",
+          "fields": {
+            "ra-id": "315276",
+            "title": "Rainbow Badge",
+            "description": "Defeat Erika with all 203 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315308",
+          "fields": {
+            "ra-id": "315308",
+            "title": "Thunder Badge",
+            "description": "Defeat Lt. Surge with all 203 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315277",
+          "fields": {
+            "ra-id": "315277",
+            "title": "Soul Badge",
+            "description": "Defeat Janine with all 203 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315278",
+          "fields": {
+            "ra-id": "315278",
+            "title": "Marsh Badge",
+            "description": "Defeat Sabrina with all 203 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315279",
+          "fields": {
+            "ra-id": "315279",
+            "title": "Volcano Badge",
+            "description": "Defeat Blaine with all 203 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315280",
+          "fields": {
+            "ra-id": "315280",
+            "title": "Earth Badge",
+            "description": "Defeat Blue with all 203 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315281",
+          "fields": {
+            "ra-id": "315281",
+            "title": "Misdreavus",
+            "description": "Catch a Misdreavus.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315282",
+          "fields": {
+            "ra-id": "315282",
+            "title": "Magmar",
+            "description": "Catch a Magmar.",
+            "points": "1",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315283",
+          "fields": {
+            "ra-id": "315283",
+            "title": "Magby",
+            "description": "Hatch a Magby.",
+            "points": "2",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ach-315284",
+          "fields": {
+            "ra-id": "315284",
+            "title": "Trainer Red",
+            "description": "Defeat Red with all 206 possible Pokémon in the Pokédex.",
+            "points": "10",
+            "set": "oak"
+          },
+          "sourceRefs": [
+            "src-ra-oak"
+          ],
+          "confidence": "normal"
+        }
+      ]
     }
   ]
 }
