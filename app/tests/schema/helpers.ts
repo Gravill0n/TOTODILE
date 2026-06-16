@@ -14,14 +14,17 @@ export function expectRejects(schema: z.ZodType, value: unknown): void {
 }
 
 // Builders return fresh plain objects so each test can mutate its own copy.
-// IDs follow the fictional fixture guide that Task 6 fleshes out.
+// IDs follow the fictional fixture guide. Step IDs keep their `c1` mint
+// segment (the middle segment is a minting convention, not validated
+// containment — common.ts), so progress/RA/approval fixtures that key on
+// "fictional-quest:c1:sN" survive the chapter→visit→step reframe.
 
 export function validStep(n = 1) {
   return {
     id: `fictional-quest:c1:s${n}`,
     order: n - 1,
-    text: "Cross the drawbridge and stomp the sentry.",
-    location: "Castle Gate",
+    keywords: ["Cross drawbridge", "Stomp sentry"],
+    detail: "Cross the drawbridge and stomp the sentry before it raises the alarm.",
     missable: { deadline: "Before raising the drawbridge in chapter 2" },
     achievementRefs: [101],
     images: [{ src: "images/castle-gate.png", alt: "Castle gate map" }],
@@ -30,12 +33,29 @@ export function validStep(n = 1) {
   };
 }
 
+export function validLocation() {
+  return {
+    id: "fictional-quest:castle-gate",
+    name: "Castle Gate",
+    mapImage: { src: "images/castle-gate.png", alt: "Castle gate map" },
+  };
+}
+
+export function validVisit() {
+  return {
+    id: "fictional-quest:v1",
+    locationId: "fictional-quest:castle-gate",
+    order: 0,
+    steps: [validStep(1), validStep(2)],
+  };
+}
+
 export function validChapter() {
   return {
     id: "fictional-quest:c1",
     title: "Chapter 1 — The Castle Gate",
     order: 0,
-    steps: [validStep(1), validStep(2)],
+    visits: [validVisit()],
   };
 }
 
