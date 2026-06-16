@@ -74,7 +74,10 @@ describe("guideFile", () => {
       widgets: [
         {
           ...validChecklist(1),
-          scope: { kind: "location", locationId: "fictional-quest:castle-gate" },
+          scope: {
+            kind: "location",
+            locationId: "fictional-quest:castle-gate",
+          },
         },
         {
           ...validChecklist(2),
@@ -110,8 +113,9 @@ describe("guideFile", () => {
 
   it("rejects a visit referencing an unknown location", () => {
     const value = validGuide();
-    const chapter = structuredClone(value.chapters[0]);
-    chapter.visits[0].locationId = "fictional-quest:nowhere";
+    const chapter = structuredClone(validChapter());
+    const visit = chapter.visits[0];
+    if (visit) visit.locationId = "fictional-quest:nowhere";
     expectRejects(guideFile, { ...value, chapters: [chapter] });
   });
 

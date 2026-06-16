@@ -84,13 +84,15 @@ describe("guide-slug prefix invariant", () => {
 
   it("rejects a step ID carrying a foreign slug", () => {
     const chapter = structuredClone(validChapter());
-    chapter.visits[0].steps[0].id = "other-game:c1:s1";
+    const step = chapter.visits[0]?.steps[0];
+    if (step) step.id = "other-game:c1:s1";
     expectRejects(guideFile, { ...validGuide(), chapters: [chapter] });
   });
 
   it("rejects a visit ID carrying a foreign slug", () => {
     const chapter = structuredClone(validChapter());
-    chapter.visits[0].id = "other-game:v1";
+    const visit = chapter.visits[0];
+    if (visit) visit.id = "other-game:v1";
     expectRejects(guideFile, { ...validGuide(), chapters: [chapter] });
   });
 

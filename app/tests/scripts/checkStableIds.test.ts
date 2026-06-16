@@ -68,8 +68,8 @@ function approvedSpineBaseline(contentHash?: string): string {
 
 function spineWithoutStep2() {
   const layer = validSpineLayer();
-  const chapter = layer.chapters[0];
-  if (chapter) chapter.steps = chapter.steps.slice(0, 1);
+  const visit = layer.chapters[0]?.visits[0];
+  if (visit) visit.steps = visit.steps.slice(0, 1);
   return layer;
 }
 
@@ -95,7 +95,7 @@ describe("checkStableIds", () => {
   it("hard-fails on a re-spelled ID — a rename is a drop plus an add", () => {
     const baseline = approvedSpineBaseline();
     const layer = validSpineLayer();
-    const step = layer.chapters[0]?.steps[1];
+    const step = layer.chapters[0]?.visits[0]?.steps[1];
     if (step) step.id = "fictional-quest:c1:s2-final";
     const current = writeTree({ [`${GUIDE}/layers/spine.json`]: layer });
     expect(messagesOf(baseline, current)).toContain(
@@ -106,8 +106,9 @@ describe("checkStableIds", () => {
   it("passes when the recompile only adds new content", () => {
     const baseline = approvedSpineBaseline();
     const layer = validSpineLayer();
-    layer.chapters[0]?.steps.push({
-      ...layer.chapters[0].steps[0],
+    const visit = layer.chapters[0]?.visits[0];
+    visit?.steps.push({
+      ...visit.steps[0],
       id: "fictional-quest:c1:s3",
       order: 2,
     } as never);

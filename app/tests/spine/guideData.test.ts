@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
+import { advancePointer } from "../../src/progress/pointer";
 import { guideFile } from "../../src/schema";
 import { chapterOf, guideStepIds, visitOf } from "../../src/spine/guideData";
-import { advancePointer } from "../../src/progress/pointer";
 import { validGuide, validLocation } from "../schema/helpers";
 
 // A two-chapter, three-visit guide so ordering and advance can cross both a

@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ProgressSlice } from "../progress/progressSlice";
 import { useGuideProgress } from "../progress/useGuideProgress";
-import type { GuideFile, LibraryEntry } from "../schema";
+import type { GuideFile, LibraryEntry, WidgetScope } from "../schema";
 import { ChapterSheet } from "../spine/ChapterSheet";
 import {
   chapterDomId,
   chapterOf,
   guideAssetUrl,
   stepDomId,
+  visitOf,
 } from "../spine/guideData";
 import { MissableBanner } from "../spine/MissableBanner";
 import { upcomingMissables } from "../spine/missables";
@@ -23,6 +24,29 @@ type GuideScreenProps = {
   entry: LibraryEntry;
   guide: GuideFile;
 };
+
+// Is a widget in scope for where the pointer currently is? Global always;
+// chapter/location/visit match the current step's chapter, its visit's
+// location (so location widgets show across every visit there), or its visit.
+function widgetInContext(
+  scope: WidgetScope,
+  context: {
+    chapterId: string | undefined;
+    locationId: string | undefined;
+    visitId: string | undefined;
+  },
+): boolean {
+  switch (scope.kind) {
+    case "global":
+      return true;
+    case "chapter":
+      return scope.chapterId === context.chapterId;
+    case "location":
+      return scope.locationId === context.locationId;
+    case "visit":
+      return scope.visitId === context.visitId;
+  }
+}
 
 // "center" suits small targets (step rows). Whole chapters are taller than
 // the viewport, and centering a too-tall element scrolls to its middle —
@@ -70,20 +94,24 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
 
   const currentStepId = progress.ready ? progress.currentStepId : null;
 
-  // FR-A5: widgets auto-filter to the chapter the current step is in;
-  // the whole-game toggle lifts the filter. Global widgets always show.
+  // FR-A5: widgets auto-filter to where the current step is — its chapter,
+  // its location (across every visit there), or its specific visit; the
+  // whole-game toggle lifts the filter. Global widgets always show.
   const currentChapterId = chapterOf(guide, currentStepId)?.id;
+  const currentVisit = visitOf(guide, currentStepId);
   const visibleWidgets = useMemo(() => {
     const ordered = [...guide.widgets].sort(
       (a, b) => a.deckPosition - b.deckPosition,
     );
     if (wholeGame) return ordered;
-    return ordered.filter(
-      (widget) =>
-        widget.scope.kind === "global" ||
-        widget.scope.chapterId === currentChapterId,
+    return ordered.filter((widget) =>
+      widgetInContext(widget.scope, {
+        chapterId: currentChapterId,
+        locationId: currentVisit?.locationId,
+        visitId: currentVisit?.id,
+      }),
     );
-  }, [guide, wholeGame, currentChapterId]);
+  }, [guide, wholeGame, currentChapterId, currentVisit]);
 
   // FR-A4: opening the guide lands on the current step — once, not on
   // every pointer move.

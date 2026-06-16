@@ -1,5 +1,5 @@
 import type { Step } from "../schema";
-import { guideAssetUrl, stepDomId } from "./guideData";
+import { guideAssetUrl, stepDomId, stepHeadline } from "./guideData";
 
 type StepRowProps = {
   step: Step;
@@ -28,7 +28,8 @@ export function StepRow({
   onMarkThrough,
   onMoveHere,
 }: StepRowProps) {
-  const shortText = step.text.slice(0, 40);
+  const headline = stepHeadline(step);
+  const shortText = headline.slice(0, 40);
   const skipButton = (
     <button
       type="button"
@@ -68,7 +69,10 @@ export function StepRow({
               className="mt-1 size-5 accent-accent"
             />
             <div className="min-w-0">
-              <p className="text-lg">{step.text}</p>
+              <p className="text-lg">{headline}</p>
+              {step.detail ? (
+                <p className="mt-1 text-sm text-ink-soft">{step.detail}</p>
+              ) : null}
               <StepMeta
                 step={step}
                 isSkipped={isSkipped}
@@ -110,7 +114,7 @@ export function StepRow({
                 isDone ? "line-through" : isSkipped ? "italic opacity-70" : ""
               }
             >
-              {step.text}
+              {headline}
             </p>
             <StepMeta step={step} isSkipped={isSkipped} />
           </button>
@@ -141,12 +145,7 @@ function StepMeta({
   isSkipped: boolean;
   withMissableMark?: boolean;
 }) {
-  if (
-    !step.missable &&
-    step.achievementRefs.length === 0 &&
-    !step.location &&
-    !isSkipped
-  ) {
+  if (!step.missable && step.achievementRefs.length === 0 && !isSkipped) {
     return null;
   }
   return (
@@ -155,9 +154,6 @@ function StepMeta({
         <span className="rounded border border-dashed border-ink-soft px-1">
           skipped
         </span>
-      ) : null}
-      {step.location ? (
-        <span className="rounded border border-line px-1">{step.location}</span>
       ) : null}
       {step.achievementRefs.length > 0 ? (
         <span

@@ -25,7 +25,10 @@ describe("fictional-quest fixture guide (§12.3)", () => {
       ),
     );
     expect(guide.chapters).toHaveLength(2);
-    const stepCount = guide.chapters.reduce((n, c) => n + c.steps.length, 0);
+    const stepCount = guide.chapters.reduce(
+      (n, c) => n + c.visits.reduce((m, v) => m + v.steps.length, 0),
+      0,
+    );
     expect(stepCount).toBeGreaterThanOrEqual(10);
     expect(new Set(guide.widgets.map((w) => w.type))).toEqual(
       new Set(widgetType.options),

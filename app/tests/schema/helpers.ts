@@ -24,7 +24,8 @@ export function validStep(n = 1) {
     id: `fictional-quest:c1:s${n}`,
     order: n - 1,
     keywords: ["Cross drawbridge", "Stomp sentry"],
-    detail: "Cross the drawbridge and stomp the sentry before it raises the alarm.",
+    detail:
+      "Cross the drawbridge and stomp the sentry before it raises the alarm.",
     missable: { deadline: "Before raising the drawbridge in chapter 2" },
     achievementRefs: [101],
     images: [{ src: "images/castle-gate.png", alt: "Castle gate map" }],

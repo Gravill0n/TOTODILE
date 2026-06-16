@@ -16,7 +16,9 @@ export const DEFAULT_SAMPLE = 5;
 // is "<slug>:<seg>" (the assembly convention, verified across guides).
 function layerAllItemIds(layer: LayerReport, guide: GuideFile): string[] {
   if (layer.kind === "spine") {
-    return guide.chapters.flatMap((c) => c.steps.map((s) => s.id));
+    return guide.chapters.flatMap((c) =>
+      c.visits.flatMap((v) => v.steps.map((s) => s.id)),
+    );
   }
   if (layer.kind === "widget") {
     const widgetId = `${guide.guideId}:${layer.id.slice("widget-".length)}`;

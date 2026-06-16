@@ -75,11 +75,9 @@ describe("validateGuides", () => {
 
   it("flags a dangling sourceRef (§6.6)", () => {
     const guide = validGuide();
-    const chapter = guide.chapters[0];
-    if (chapter === undefined) return expect.fail("fixture has no chapter");
-    chapter.steps = [
-      { ...chapter.steps[0], sourceRefs: ["src-ghost"] },
-    ] as never;
+    const visit = guide.chapters[0]?.visits[0];
+    if (visit === undefined) return expect.fail("fixture has no visit");
+    visit.steps = [{ ...visit.steps[0], sourceRefs: ["src-ghost"] }] as never;
     const root = writeTree({
       ...happyTree(),
       "guides/fictional-quest/guide.json": guide,
@@ -310,8 +308,8 @@ describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () =>
 
   it("enforces flag parity between artifact and report (FR-D2)", () => {
     const flaggedSpine = validSpineLayer();
-    const chapter = flaggedSpine.chapters[0];
-    if (chapter?.steps[0]) chapter.steps[0].confidence = "flagged";
+    const step = flaggedSpine.chapters[0]?.visits[0]?.steps[0];
+    if (step) step.confidence = "flagged";
     const root = writeTree({
       ...happyLayers(),
       [`${layersBase}/spine.json`]: flaggedSpine,

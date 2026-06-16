@@ -29,10 +29,12 @@ const guide = guideFile.parse(readJson("guides/fictional-quest/guide.json"));
 const entry = libraryManifest.parse(readJson("library.json")).guides[0];
 if (!entry) throw new Error("fixture library has no entry");
 
-const S1_TEXT = /Talk to the gatekeeper twice/;
-const S2_TEXT = /Pry the Old Coin/;
-const S3_TEXT = /Beat the Sentry Captain/;
-const WARDEN_TEXT = /Defeat the Vault Warden/;
+// The play view renders a step's keyword beats joined (stepHeadline); the
+// full prose shows as `detail` only on the current step.
+const S1_TEXT = /Talk to gatekeeper ×2/;
+const S2_TEXT = /Pry Old Coin from loose brick/;
+const S3_TEXT = /Beat Sentry Captain/;
+const WARDEN_TEXT = /Defeat Vault Warden/;
 
 afterEach(async () => {
   cleanup();
@@ -48,10 +50,9 @@ function checkboxFor(stepText: string) {
   return screen.getByLabelText(`Done: ${stepText.slice(0, 40)}`);
 }
 
-const s1Full =
-  "Talk to the gatekeeper twice; he hands over the rusty lantern you need for the cellar.";
-const s2Full =
-  "Pry the Old Coin from behind the loose brick left of the portcullis.";
+// The keyword headlines, matching what StepRow renders and labels with.
+const s1Full = "Talk to gatekeeper ×2 · Take rusty lantern";
+const s2Full = "Pry Old Coin from loose brick";
 
 describe("spine play view", () => {
   it("lands with the first step current on first open (FR-A4)", async () => {
@@ -90,7 +91,7 @@ describe("spine play view", () => {
     render(<GuideScreen entry={entry} guide={guide} />);
     await screen.findByText(S1_TEXT);
     fireEvent.click(
-      screen.getByRole("button", { name: /^Defeat the Vault Warden/ }),
+      screen.getByRole("button", { name: /^Defeat Vault Warden/ }),
     );
     await waitFor(() => expect(currentText()).toMatch(WARDEN_TEXT));
   });
@@ -105,11 +106,12 @@ describe("spine play view", () => {
     await waitFor(() => expect(currentText()).toMatch(S2_TEXT));
   });
 
-  it("renders chapter intros, section headings, and missable treatment", async () => {
+  it("renders chapter intros, visit location headings, and missable treatment", async () => {
     render(<GuideScreen entry={entry} guide={guide} />);
     await screen.findByText(S1_TEXT);
     expect(screen.getByText(/The road ends at the portcullis/)).toBeDefined();
-    expect(screen.getByText("1.1 · Outside the Walls")).toBeDefined();
+    // Visits are headed by their location name (sections are gone in v1).
+    expect(screen.getByText("Castle Gate")).toBeDefined();
     expect(screen.getAllByText(/missable/i).length).toBeGreaterThan(0);
   });
 });

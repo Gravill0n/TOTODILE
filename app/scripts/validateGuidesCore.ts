@@ -194,8 +194,10 @@ function validateGuideFolder(
       }
     };
     for (const chapter of guide.chapters) {
-      for (const step of chapter.steps) {
-        reportDangling("step", step.id, step.sourceRefs);
+      for (const visit of chapter.visits) {
+        for (const step of visit.steps) {
+          reportDangling("step", step.id, step.sourceRefs);
+        }
       }
     }
     for (const widget of guide.widgets) {
@@ -442,7 +444,7 @@ function flaggedIdsOf(artifact: LayerArtifact): Set<string> {
     case "spine":
       return new Set(
         artifact.value.chapters
-          .flatMap((c) => c.steps)
+          .flatMap((c) => c.visits.flatMap((v) => v.steps))
           .filter((s) => s.confidence === "flagged")
           .map((s) => s.id),
       );
@@ -465,7 +467,9 @@ function sourceRefsOf(artifact: LayerArtifact): [string, string[]][] {
   switch (artifact.kind) {
     case "spine":
       return artifact.value.chapters.flatMap((c) =>
-        c.steps.map((s): [string, string[]] => [s.id, s.sourceRefs]),
+        c.visits.flatMap((v) =>
+          v.steps.map((s): [string, string[]] => [s.id, s.sourceRefs]),
+        ),
       );
     case "widget":
       return widgetCheckables(artifact.value.widget).map(
@@ -481,7 +485,9 @@ function sourceRefsOf(artifact: LayerArtifact): [string, string[]][] {
 
 function checkableNamespace(guide: GuideFile): Set<string> {
   return new Set([
-    ...guide.chapters.flatMap((c) => c.steps.map((s) => s.id)),
+    ...guide.chapters.flatMap((c) =>
+      c.visits.flatMap((v) => v.steps.map((s) => s.id)),
+    ),
     ...guide.widgets.flatMap(widgetItemIds),
   ]);
 }

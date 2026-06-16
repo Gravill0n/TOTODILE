@@ -76,7 +76,11 @@ export const spineLayer = z
         }
       });
     });
-    const expectSlug = (id: string, path: (string | number)[], what: string) => {
+    const expectSlug = (
+      id: string,
+      path: (string | number)[],
+      what: string,
+    ) => {
       if (idSlug(id) !== value.guideId) {
         ctx.addIssue({
           code: "custom",

@@ -20,8 +20,15 @@ export function upcomingMissables(
   acknowledgedIds: ReadonlySet<string>,
   lookaheadChapters = 1,
 ): UpcomingMissable[] {
+  const locationName = new Map(guide.locations.map((l) => [l.id, l.name]));
   const flat = guide.chapters.flatMap((chapter, chapterIndex) =>
-    chapter.steps.map((step) => ({ step, chapterIndex })),
+    chapter.visits.flatMap((visit) =>
+      visit.steps.map((step) => ({
+        step,
+        chapterIndex,
+        location: locationName.get(visit.locationId),
+      })),
+    ),
   );
   const currentIndex = currentStepId
     ? flat.findIndex(({ step }) => step.id === currentStepId)
@@ -31,7 +38,7 @@ export function upcomingMissables(
   const maxChapter = (currentChapter ?? -1) + lookaheadChapters;
 
   const upcoming: UpcomingMissable[] = [];
-  flat.forEach(({ step, chapterIndex }, index) => {
+  flat.forEach(({ step, chapterIndex, location }, index) => {
     if (!step.missable) return;
     if (index <= currentIndex) return;
     if (chapterIndex > maxChapter) return;
@@ -39,7 +46,7 @@ export function upcomingMissables(
     upcoming.push({
       stepId: step.id,
       deadline: step.missable.deadline,
-      ...(step.location ? { location: step.location } : {}),
+      ...(location ? { location } : {}),
     });
   });
   return upcoming;

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { GuideFile } from "../schema";
+import { chapterOf, guideStepIds } from "../spine/guideData";
 import { advancePointer } from "./pointer";
 import { type ProgressSlot, readSlot, writeSlot } from "./progressStore";
 
@@ -32,9 +33,7 @@ function withStats(
   const stepsDone = stepIds.filter(
     (id) => slot.itemStates[id]?.state === "done",
   ).length;
-  const chapter = guide.chapters.find((c) =>
-    c.steps.some((s) => s.id === slot.currentStepId),
-  );
+  const chapter = chapterOf(guide, slot.currentStepId);
   return {
     ...slot,
     stats: {
@@ -49,10 +48,7 @@ function withStats(
 // components stay pure (data + callbacks in, UI out, §22.1). Every change
 // is written immediately (FR-B1).
 export function useGuideProgress(guide: GuideFile): GuideProgress {
-  const stepIds = useMemo(
-    () => guide.chapters.flatMap((c) => c.steps.map((s) => s.id)),
-    [guide],
-  );
+  const stepIds = useMemo(() => guideStepIds(guide), [guide]);
   const [slot, setSlot] = useState<ProgressSlot | null>(null);
 
   useEffect(() => {

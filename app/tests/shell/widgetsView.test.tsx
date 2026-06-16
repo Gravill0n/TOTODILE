@@ -29,7 +29,7 @@ const guide = guideFile.parse(readJson("guides/fictional-quest/guide.json"));
 const entry = libraryManifest.parse(readJson("library.json")).guides[0];
 if (!entry) throw new Error("fixture library has no entry");
 
-const S1_TEXT = /Talk to the gatekeeper twice/;
+const S1_TEXT = /Talk to gatekeeper ×2/;
 
 afterEach(async () => {
   cleanup();
@@ -62,11 +62,11 @@ describe("widget view (S3)", () => {
     expect(screen.getAllByText("Before the Vault Warden")).not.toHaveLength(0);
   });
 
-  it("moving the pointer to chapter 2 switches the chapter context", async () => {
+  it("moving the pointer into the Sunken Vault reveals its location-scoped map", async () => {
     await renderGuide();
-    fireEvent.click(
-      screen.getByRole("button", { name: /^Defeat the Vault Warden/ }),
-    );
+    // The vault map is scoped to the Sunken Vault location; moving the pointer
+    // to a step there reveals it and drops the chapter-1 checklist.
+    fireEvent.click(screen.getByRole("button", { name: /^Dive at buoy/ }));
     await waitFor(() => {
       expect(screen.getAllByText("Vault shard locations")).not.toHaveLength(0);
     });
