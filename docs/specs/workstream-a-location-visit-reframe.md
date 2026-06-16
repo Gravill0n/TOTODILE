@@ -1,6 +1,6 @@
 # Spec: Workstream A — Location/Visit Reframe
 
-_Status: DRAFT (Phase 1 of spec-driven-development). Awaiting Pierre's review before Plan._
+_Status: APPROVED (2026-06-16 — Pierre signed off spec, plan, tasks, and PRD §6/§9.x/§14.2 amendments). Phase A in implementation._
 _Source idea: `docs/ideas/spine-widget-reframe.md`. Decisions: 2026-06-15._
 
 ## Objective
@@ -217,7 +217,7 @@ Vitest, tests beside source (`*.test.ts`). Cover:
 
 # Implementation Plan (Phase 2)
 
-_Status: DRAFT — awaiting review before Phase 3 (Tasks)._
+_Status: APPROVED 2026-06-16._
 
 ## Components & dependencies
 

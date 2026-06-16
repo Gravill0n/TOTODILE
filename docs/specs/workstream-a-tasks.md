@@ -1,7 +1,7 @@
 # Implementation Tasks: Workstream A — Location/Visit Reframe
 
 _Phase 3 of spec-driven-development. Source: `workstream-a-location-visit-reframe.md`._
-_Status: DRAFT — awaiting review before implementation._
+_Status: APPROVED 2026-06-16 — Phase A in implementation on `feat/workstream-a`._
 
 ## Overview
 Break the approved 5-phase plan into S/M tasks. Each leaves the repo in a working state
