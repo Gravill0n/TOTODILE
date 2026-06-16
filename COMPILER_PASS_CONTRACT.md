@@ -31,8 +31,8 @@ All paths below are relative to `guides/<slug>/`.
 |---|---|---|---|
 | source-gathering | Pierre's source list, the web | `sources.json` (the artifact — no layer file) | `layers/source-gathering.report.json` |
 | extract-data | `sources.json`, the source materials, prior `layers/data.json` if any | `layers/data.json` (classified facts + `images` catalog; intermediate — not assembled, not reviewed) | `layers/data.report.json` |
-| spine | `sources.json`, prior `layers/spine.json` if any, rejection notes | `layers/spine.json` | `layers/spine.report.json` |
-| widget fill | `layers/spine.json`, `deck.json`, `sources.json`, prior artifact | `layers/widget-<id>.json` | `layers/widget-<id>.report.json` |
+| spine | `layers/data.json`, `sources.json`, prior `layers/spine.json` if any, rejection notes | `layers/spine.json` | `layers/spine.report.json` |
+| widget fill | `layers/data.json`, `layers/spine.json`, `deck.json`, `sources.json`, prior artifact | `layers/widget-<id>.json` | `layers/widget-<id>.report.json` |
 | ra-mapping | spine + widget layers, the RA set source | `layers/ra-mapping.json` | `layers/ra-mapping.report.json` |
 | qa | everything above | none — assembles `guide.json` + `ra-mapping.json` on success | `layers/qa.report.json` |
 
@@ -45,15 +45,14 @@ it is mechanically validated only (it is an intermediate, never assembled or
 reviewed; its record IDs are local, so it is outside the checkable namespace and
 `check-stable-ids`).
 
-**Rollout note (extract-data adoption).** `extract-data` is a mandatory pass and
-the spine + widget passes are intended to draw their classified facts (and pick
-images from its `images` catalog) from `layers/data.json`. That consumer wiring
-is staged: this introduces the pass, its schema, and validation (validate-guides
-*recognises* `data.json` when present). Rewiring the `guide-pass-spine` /
-`guide-pass-widgets` skills to read it, and *requiring* `data.json` once a guide
-has any layer, land in the follow-up slice — until then those passes still read
-`sources.json` directly. (Staged like the v1 schema cutover: contract first,
-consumers next.)
+**Rollout note (extract-data adoption).** `extract-data` is a mandatory pass:
+the `guide-pass-spine` / `guide-pass-widgets` skills draw their classified facts
+(and pick images from its `images` catalog) from `layers/data.json`, and
+`validate-guides` requires `data.json` once any downstream layer
+(spine/widget/ra-mapping) exists. **Remaining:** running the pass on the
+existing guides — extracting each guide's real `data.json` and recompiling its
+spine/widgets from it (the per-guide content lift, gated on Pierre's category
+sign-off) — is still to do.
 
 ## 2. Rules that bind every pass
 

@@ -6,8 +6,8 @@ description: >-
   re-run it after a rejection. Extracts locations + the chapter→visit→step tree
   from the route source(s) into layers/spine.json with keyword beats, sourceRefs
   and confidence on every step, through outline and sample gates. Requires the
-  sources pass to have run. Not for single-file HTML guides — that is
-  achievement-guide-builder.
+  sources and extract-data passes to have run. Not for single-file HTML guides —
+  that is achievement-guide-builder.
 ---
 
 # Compiler pass: spine extraction (schema v1)
@@ -46,9 +46,12 @@ The spine is now **locations + chapter → visit → step**:
 
 ## Reads / emits
 
-- Reads: `sources.json` (route + map sources), the prior `layers/spine.json`
-  if any (ID preservation, §6.8), rejection notes for the spine layer in
-  `approvals.json` (read-only — they are the work order).
+- Reads: **`layers/data.json`** (the extract-data layer — draw place/route
+  facts from its datasets and location maps from its `images` catalog rather
+  than re-reading raw sources), `sources.json` (for `sourceRefs` and anything
+  not yet in `data.json`), the prior `layers/spine.json` if any (ID
+  preservation, §6.8), rejection notes for the spine layer in `approvals.json`
+  (read-only — they are the work order).
 - Emits: `layers/spine.json` + `layers/spine.report.json`; images into
   `guides/<slug>/images/`.
 
@@ -116,9 +119,12 @@ summary); adjust to feedback before continuing.
     to "clean up"; `yarn check-stable-ids` is the hard gate.
 - `visit.order` is sequential within its chapter; `step.order` is sequential
   within its visit.
-- **Images**: download (curl) into `guides/<slug>/images/`, reference by
-  relative path with real alt text; a location may carry a `mapImage`.
-  Unreachable → ask Pierre for the file; never emit a broken ref.
+- **Images**: a location's `mapImage` comes from the extract-data `images`
+  catalog — find the `kind: location-map` record for the place, copy its
+  catalogued source file into `guides/<slug>/images/`, and reference it by
+  relative path with real alt text. Only fall back to downloading (curl) when
+  the catalog has no record for it; unreachable → ask Pierre. Never emit a
+  broken ref.
 
 ### 4. Report + finish
 - `layers/spine.report.json`: `pass`/`layer` = `spine`; `rowCount` = total
