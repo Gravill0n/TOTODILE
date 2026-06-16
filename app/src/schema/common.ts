@@ -5,7 +5,7 @@ import { z } from "zod";
 // recompile, never in the browser.
 
 // The version the compiler emits.
-export const SCHEMA_VERSION = 0;
+export const SCHEMA_VERSION = 1;
 
 // The versions the app and validate-guides read. Holds two versions only
 // during a declared vN → vN+1 transition window (§18.3), then drops back

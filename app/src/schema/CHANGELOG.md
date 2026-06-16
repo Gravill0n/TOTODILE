@@ -22,6 +22,41 @@ the app declares what it reads via `SUPPORTED_SCHEMA_VERSIONS` in `common.ts`.
   regenerate or re-spell existing IDs (§6.8); the grammar in `common.ts` is
   fixed forever.
 
+## v1 — 2026-06-16 — Location/Visit reframe (Workstream A)
+
+First real version bump (v0 was never frozen — there is no installed base, so
+no in-browser migration and **no transition window**: `SUPPORTED_SCHEMA_VERSIONS`
+goes straight to `[1]`, dropping v0). Guides are recompiled from scratch under
+v1; the v0 compiled artifacts are retired (their `sources.json` is preserved).
+
+Contract changes (PRD §6 / §9.x amendments, approved 2026-06-16):
+
+- **New `location` entity** and a top-level `locations[]` on `guideFile` and
+  `spineLayer`: a stable place (`<slug>:<loc>` id, name, optional `mapImage`)
+  the location index aggregates around.
+- **New `visit` entity**: one occurrence of being at a location within a
+  chapter (`<slug>:<visit>` id, `locationId` FK, `order`, `steps[]`). Revisits
+  are multiple visits sharing a `locationId`. Visits are structure, not
+  checkable.
+- **`chapter` now holds `visits[]`** (was `steps[]`). Steps mint under their
+  visit (`<slug>:<visit>:<short>`); the ID grammar is unchanged (the middle
+  segment is still a minting convention, not validated containment).
+- **`step` reshaped**: `text` → `keywords[]` (min 1, terse beats shown by
+  default, #11) + optional `detail` (full prose, expandable). Free-text
+  `location` and the `section` grouping label are **removed** — place identity
+  lives on `visit.locationId`, grouping on the visit.
+- **`widgetScope`** gains `{ location, locationId }` and `{ visit, visitId }`
+  alongside `global`/`chapter`; **`deckSlot.defaultScope`** gains `"location"`
+  (visit stays instance-only).
+- New cross-file invariants (validated in `guide.ts` / `layers.ts`):
+  `visit.locationId` resolves; location-/visit-scoped widgets resolve;
+  location and visit ids are unique per guide; the step + widget-item checkable
+  namespace stays unique across the deeper nesting.
+
+Migration: none in the browser. Recompile each guide's spine under v1
+(`guide-pass-spine`), authoring locations + visits + keyword beats. Stable IDs
+are preserved across the recompile per §6.8.
+
 ## v0 — 2026-06-11
 
 Baseline. No migration — first version.

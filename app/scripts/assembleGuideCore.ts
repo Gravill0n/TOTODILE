@@ -121,6 +121,7 @@ export function assembleGuide(
   const assembled = {
     schemaVersion: spine.schemaVersion,
     guideId: spine.guideId,
+    locations: spine.locations,
     chapters: spine.chapters,
     widgets: widgets
       .map((layer) => layer.widget)

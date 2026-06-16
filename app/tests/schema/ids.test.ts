@@ -15,7 +15,7 @@ import {
   validChapter,
   validChecklist,
   validGuide,
-  validStep,
+  validLocation,
 } from "./helpers";
 
 describe("stable-ID grammar (§20.3)", () => {
@@ -83,14 +83,21 @@ describe("guide-slug prefix invariant", () => {
   });
 
   it("rejects a step ID carrying a foreign slug", () => {
+    const chapter = structuredClone(validChapter());
+    chapter.visits[0].steps[0].id = "other-game:c1:s1";
+    expectRejects(guideFile, { ...validGuide(), chapters: [chapter] });
+  });
+
+  it("rejects a visit ID carrying a foreign slug", () => {
+    const chapter = structuredClone(validChapter());
+    chapter.visits[0].id = "other-game:v1";
+    expectRejects(guideFile, { ...validGuide(), chapters: [chapter] });
+  });
+
+  it("rejects a location ID carrying a foreign slug", () => {
     expectRejects(guideFile, {
       ...validGuide(),
-      chapters: [
-        {
-          ...validChapter(),
-          steps: [{ ...validStep(1), id: "other-game:c1:s1" }, validStep(2)],
-        },
-      ],
+      locations: [{ ...validLocation(), id: "other-game:castle-gate" }],
     });
   });
 

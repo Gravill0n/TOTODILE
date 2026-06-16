@@ -21,10 +21,17 @@ describe("spineLayer", () => {
     expectRejects(spineLayer, { ...validSpineLayer(), chapters: [] });
   });
 
-  it("rejects duplicate step IDs across chapters", () => {
+  it("rejects duplicate step IDs across visits", () => {
     const layer = validSpineLayer();
-    const chapter = layer.chapters[0];
-    if (chapter) chapter.steps[1] = { ...chapter.steps[0] } as never;
+    const visit = layer.chapters[0]?.visits[0];
+    if (visit) visit.steps[1] = { ...visit.steps[0] } as never;
+    expectRejects(spineLayer, layer);
+  });
+
+  it("rejects a visit referencing an unknown location", () => {
+    const layer = validSpineLayer();
+    const visit = layer.chapters[0]?.visits[0];
+    if (visit) visit.locationId = "fictional-quest:nowhere";
     expectRejects(spineLayer, layer);
   });
 

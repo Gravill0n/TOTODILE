@@ -7,7 +7,7 @@ import {
   localId,
   schemaVersion,
 } from "./common.ts";
-import { chapter } from "./spine.ts";
+import { chapter, location } from "./spine.ts";
 import { widget, widgetItemIds } from "./widgets.ts";
 
 // Compiler pass artifacts and reports (COMPILER_PASS_CONTRACT.md, FR-D1/D2).
@@ -22,13 +22,14 @@ export const passId = z.enum([
   "qa",
 ]);
 
-// layers/spine.json — the chapter/step tree, exactly the shape
-// guide.json.chapters takes at assembly (contract §3).
+// layers/spine.json — the locations + chapter/visit/step tree, exactly the
+// shape guide.json's locations/chapters take at assembly (contract §3).
 export const spineLayer = z
   .object({
     schemaVersion,
     guideId: guideSlug,
     pass: z.literal("spine"),
+    locations: z.array(location).default([]),
     chapters: z.array(chapter).min(1),
   })
   .superRefine((value, ctx) => {
@@ -39,7 +40,22 @@ export const spineLayer = z
         message: `Duplicate chapter ID "${id}"`,
       });
     }
-    const stepIds = value.chapters.flatMap((c) => c.steps.map((s) => s.id));
+    for (const id of findDuplicates(value.locations.map((l) => l.id))) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["locations"],
+        message: `Duplicate location ID "${id}"`,
+      });
+    }
+    const visits = value.chapters.flatMap((c) => c.visits);
+    for (const id of findDuplicates(visits.map((v) => v.id))) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["chapters"],
+        message: `Duplicate visit ID "${id}"`,
+      });
+    }
+    const stepIds = visits.flatMap((v) => v.steps.map((s) => s.id));
     for (const id of findDuplicates(stepIds)) {
       ctx.addIssue({
         code: "custom",
@@ -47,14 +63,36 @@ export const spineLayer = z
         message: `Duplicate step ID "${id}"`,
       });
     }
+    // FK: every visit names a location that exists.
+    const locationIds = new Set(value.locations.map((l) => l.id));
     value.chapters.forEach((c, ci) => {
-      if (idSlug(c.id) !== value.guideId) {
+      c.visits.forEach((v, vi) => {
+        if (!locationIds.has(v.locationId)) {
+          ctx.addIssue({
+            code: "custom",
+            path: ["chapters", ci, "visits", vi, "locationId"],
+            message: `Visit "${v.id}" references unknown location "${v.locationId}"`,
+          });
+        }
+      });
+    });
+    const expectSlug = (id: string, path: (string | number)[], what: string) => {
+      if (idSlug(id) !== value.guideId) {
         ctx.addIssue({
           code: "custom",
-          path: ["chapters", ci, "id"],
-          message: `Chapter ID "${c.id}" does not carry the guide slug "${value.guideId}"`,
+          path,
+          message: `${what} "${id}" does not carry the guide slug "${value.guideId}"`,
         });
       }
+    };
+    value.locations.forEach((l, li) => {
+      expectSlug(l.id, ["locations", li, "id"], "Location ID");
+    });
+    value.chapters.forEach((c, ci) => {
+      expectSlug(c.id, ["chapters", ci, "id"], "Chapter ID");
+      c.visits.forEach((v, vi) => {
+        expectSlug(v.id, ["chapters", ci, "visits", vi, "id"], "Visit ID");
+      });
     });
   });
 

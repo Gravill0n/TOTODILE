@@ -207,6 +207,7 @@ export function validGuide() {
   return {
     schemaVersion: SCHEMA_VERSION,
     guideId: "fictional-quest",
+    locations: [validLocation()],
     chapters: [validChapter()],
     widgets: [
       {
@@ -402,6 +403,7 @@ export function validSpineLayer() {
     schemaVersion: SCHEMA_VERSION,
     guideId: "fictional-quest",
     pass: "spine",
+    locations: [validLocation()],
     chapters: [validChapter()],
   };
 }
