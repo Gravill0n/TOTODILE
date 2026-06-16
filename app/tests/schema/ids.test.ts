@@ -5,7 +5,9 @@ import {
   guideFile,
   guideSlug,
   localId,
+  locationId,
   stepId,
+  visitId,
 } from "../../src/schema";
 import {
   expectParses,
@@ -23,6 +25,24 @@ describe("stable-ID grammar (§20.3)", () => {
     expectParses(stepId, "pokemon-crystal:c2:s14");
     expectParses(checkableId, "pokemon-crystal:badges:rising");
     expectParses(localId, "src-wiki");
+  });
+
+  it("accepts well-formed location and visit IDs (2-segment, like chapters)", () => {
+    expectParses(locationId, "pokemon-crystal:azalea-town");
+    expectParses(visitId, "pokemon-crystal:v-azalea-1");
+  });
+
+  it("rejects malformed location and visit IDs", () => {
+    // Wrong segment count.
+    expectRejects(locationId, "pokemon-crystal");
+    expectRejects(locationId, "pokemon-crystal:azalea:town");
+    expectRejects(visitId, "pokemon-crystal:azalea:1");
+    // Uppercase / illegal characters.
+    expectRejects(locationId, "pokemon-crystal:Azalea-Town");
+    expectRejects(visitId, "pokemon-crystal:v_azalea_1");
+    // Empty segments.
+    expectRejects(locationId, "pokemon-crystal:");
+    expectRejects(visitId, ":v-azalea-1");
   });
 
   it("rejects uppercase segments", () => {

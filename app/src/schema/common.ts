@@ -23,7 +23,9 @@ export const schemaVersion = z.literal(SUPPORTED_SCHEMA_VERSIONS);
 //   segment      [a-z0-9]+(-[a-z0-9]+)*
 //   guide slug   <slug>                        pokemon-crystal
 //   chapter ID   <slug>:<chapter>              pokemon-crystal:c2
-//   step ID      <slug>:<chapter>:<short-id>   pokemon-crystal:c2:s14
+//   location ID  <slug>:<loc>                  pokemon-crystal:azalea-town
+//   visit ID     <slug>:<visit>                pokemon-crystal:v-azalea-1
+//   step ID      <slug>:<visit>:<short-id>     pokemon-crystal:v-azalea-1:s3
 //   widget ID    <slug>:<widget>               pokemon-crystal:badges
 //   item ID      <slug>:<widget>:<short-id>    pokemon-crystal:badges:rising
 //   local ID     <segment>                     src-wiki — sources, layers,
@@ -32,10 +34,11 @@ export const schemaVersion = z.literal(SUPPORTED_SCHEMA_VERSIONS);
 // IDs are never regenerated across recompiles (§6.8): progress data, RA
 // mappings, and approvals key on them. The first segment is always the guide
 // slug (enforced in guide.ts — slugs are stable forever). The middle segment
-// records where the entity was *minted*: if a recompile later moves a step to
-// another chapter (or an item to another widget), the ID keeps its original
-// spelling. Containment is a minting convention, not a validated invariant,
-// precisely so IDs can survive restructuring.
+// records where the entity was *minted*: steps now mint under their visit, and
+// if a recompile later moves a step to another visit (or an item to another
+// widget), the ID keeps its original spelling. Containment is a minting
+// convention, not a validated invariant, precisely so IDs can survive
+// restructuring. locationId and visitId share the 2-segment shape of chapterId.
 
 const SEGMENT = "[a-z0-9]+(?:-[a-z0-9]+)*";
 const oneSegment = new RegExp(`^${SEGMENT}$`);
@@ -51,9 +54,15 @@ export const guideSlug = z
 export const chapterId = z
   .string()
   .regex(twoSegments, 'Expected "<slug>:<chapter>"');
+export const locationId = z
+  .string()
+  .regex(twoSegments, 'Expected "<slug>:<location>"');
+export const visitId = z
+  .string()
+  .regex(twoSegments, 'Expected "<slug>:<visit>"');
 export const stepId = z
   .string()
-  .regex(threeSegments, 'Expected "<slug>:<chapter>:<short-id>"');
+  .regex(threeSegments, 'Expected "<slug>:<visit>:<short-id>"');
 export const widgetId = z
   .string()
   .regex(twoSegments, 'Expected "<slug>:<widget>"');
@@ -104,6 +113,8 @@ export const raAchievementId = z.int().positive();
 
 export type GuideSlug = z.infer<typeof guideSlug>;
 export type ChapterId = z.infer<typeof chapterId>;
+export type LocationId = z.infer<typeof locationId>;
+export type VisitId = z.infer<typeof visitId>;
 export type StepId = z.infer<typeof stepId>;
 export type WidgetId = z.infer<typeof widgetId>;
 export type ItemId = z.infer<typeof itemId>;
