@@ -1,5 +1,6 @@
 import type { GuideFile } from "../schema";
 import { chapterDomId } from "./guideData";
+import { preferredNextVisit } from "./preferredNext";
 import { StepRow } from "./StepRow";
 
 type NowScreenProps = {
@@ -30,8 +31,23 @@ export function NowScreen({
   onMovePointer,
 }: NowScreenProps) {
   const locationName = new Map(guide.locations.map((l) => [l.id, l.name]));
+  // FR "what do I do next": the preferred-next visit (D2) — the place to head
+  // to — surfaced as a link to its place screen. Read-only over the pointer;
+  // checking/skipping is unchanged.
+  const nextVisit = preferredNextVisit(guide, currentStepId);
+  const nextName = nextVisit
+    ? (locationName.get(nextVisit.locationId) ?? nextVisit.locationId)
+    : null;
   return (
     <div className="space-y-8">
+      {nextVisit && nextName ? (
+        <a
+          href={`#/guide/${slug}/place/${nextVisit.locationId.split(":")[1] ?? ""}`}
+          className="block rounded-lg border border-accent bg-card px-3 py-2 text-sm font-bold text-accent"
+        >
+          Next up — {nextName}
+        </a>
+      ) : null}
       {guide.chapters.map((chapter) => (
         <section
           key={chapter.id}

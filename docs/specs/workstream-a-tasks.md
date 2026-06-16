@@ -163,7 +163,10 @@ reachable from navigation.
 **Verification:** manual + existing pointer tests stay green. **Dependencies:** D2. **Files:** `spine/NowScreen.tsx` + test. **Scope:** S.
 
 ### ✅ Checkpoint D
-- [ ] Place-first UX works on the fixture · `yarn check` green · review before E.
+- [x] Place-first UX works on the fixture · `yarn check` green · review before E.
+  _(D1–D6 done 2026-06-16 on `feat/workstream-a`: location index + builder,
+  preferred-next selector, expandable keyword/detail rows, centralized widget
+  scope resolution, the place screen + route, and the "what next" affordance.)_
 
 ---
 
