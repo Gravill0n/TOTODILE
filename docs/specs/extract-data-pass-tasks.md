@@ -103,14 +103,18 @@ read sprites/icons. Ship
 
 ---
 
-## Deferred — follow-up slice (own plan, NOT this build)
+## Follow-up slice — `extract-data` adoption
 
-"`extract-data` adoption":
-- Rewire `guide-pass-spine` + `guide-pass-widgets` SKILLs to read `data.json`
-  (mandatory consumption; stop re-reading raw `sources.json` for classified facts).
-- Make `validate-guides` *require* `data.json` once a guide has any `layers/`.
-- Run the new pass on Crystal sources → `data.json`; recompile its spine/widgets
-  from it (re-anchoring to the on-disk source maps/sprites).
+- [x] **AD1** — `validate-guides` *requires* `data.json` once a downstream layer
+  (spine/widget/ra-mapping) exists. _(done 2026-06-16; source-gathering-only and
+  no-layers trees are left alone.)_
+- [x] **AD2** — Rewire `guide-pass-spine` + `guide-pass-widgets` SKILLs to read
+  `data.json` (facts from its datasets, images from its catalog); contract
+  Reads + rollout note updated. _(done 2026-06-16; editorial.)_
+- [ ] **AD3 (content lift — Pierre's category gate)** — Run the pass on Crystal
+  sources → `data.json`; recompile its spine/widgets from it (re-anchoring to the
+  on-disk source maps/sprites). **Not yet built** — needs the category sign-off
+  and is source-by-source content work.
 
 ## Risks & mitigations
 
