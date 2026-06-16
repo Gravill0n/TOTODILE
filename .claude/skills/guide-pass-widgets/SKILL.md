@@ -1,7 +1,7 @@
 ---
 name: guide-pass-widgets
 description: >-
-  TOTODILE compiler pass 3 of 5 — widget fills. Use when Pierre asks to "run
+  TOTODILE compiler pass 4 of 6 — widget fills. Use when Pierre asks to "run
   the widget pass", "fill the <name> widget / encounter table / boss board for
   <slug>", or to re-run one after a rejection. Fills ONE widget instance per
   run (one layer per widget) from the deck's slots, anchored to the spine.

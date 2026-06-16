@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "guideId": "sample-quest",
+  "pass": "extract-data",
+  "datasets": [
+    {
+      "id": "encounters",
+      "label": "Wild encounters",
+      "records": [
+        {
+          "id": "harbor-shoals-crab",
+          "fields": {
+            "location": "Harbor Shoals",
+            "species": "Sand Crab",
+            "levels": "2-4",
+            "method": "tall-grass"
+          },
+          "sourceRefs": ["src-locations"],
+          "confidence": "normal"
+        },
+        {
+          "id": "sea-cave-eel",
+          "fields": {
+            "location": "Sea Cave",
+            "species": "Moray Eel",
+            "levels": "6-8",
+            "method": "surf"
+          },
+          "sourceRefs": ["src-locations"],
+          "confidence": "flagged"
+        }
+      ]
+    },
+    {
+      "id": "trades",
+      "label": "In-game trades",
+      "records": [
+        {
+          "id": "harbor-shell-for-pearl",
+          "fields": {
+            "npc": "Harbormaster",
+            "give": "Spiral Shell",
+            "get": "Tide Pearl",
+            "location": "Harbor Town"
+          },
+          "sourceRefs": ["src-route"],
+          "confidence": "normal"
+        }
+      ]
+    },
+    {
+      "id": "images",
+      "label": "Available source images",
+      "records": [
+        {
+          "id": "map-harbor-town",
+          "fields": {
+            "path": "asset-tracker/images/maps/HarborTown.png",
+            "kind": "location-map",
+            "depicts": "Harbor Town"
+          },
+          "sourceRefs": ["src-tracker"],
+          "confidence": "normal"
+        },
+        {
+          "id": "map-sea-cave",
+          "fields": {
+            "path": "asset-tracker/images/maps/SeaCave.png",
+            "kind": "location-map",
+            "depicts": "Sea Cave"
+          },
+          "sourceRefs": ["src-tracker"],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprite-moray-eel",
+          "fields": {
+            "path": "asset-tracker/images/species/MorayEel.png",
+            "kind": "species-sprite",
+            "depicts": "Moray Eel"
+          },
+          "sourceRefs": ["src-tracker"],
+          "confidence": "normal"
+        }
+      ]
+    }
+  ]
+}

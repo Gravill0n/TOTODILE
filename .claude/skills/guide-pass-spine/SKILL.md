@@ -1,7 +1,7 @@
 ---
 name: guide-pass-spine
 description: >-
-  TOTODILE compiler pass 2 of 5 — spine extraction. Use when Pierre asks to
+  TOTODILE compiler pass 3 of 6 — spine extraction. Use when Pierre asks to
   "run the spine pass", "extract the spine/route/walkthrough for <slug>", or to
   re-run it after a rejection. Extracts locations + the chapter→visit→step tree
   from the route source(s) into layers/spine.json with keyword beats, sourceRefs

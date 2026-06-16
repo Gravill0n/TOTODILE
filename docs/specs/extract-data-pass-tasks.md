@@ -97,9 +97,9 @@ read sprites/icons. Ship
 `app/tests/skills/extractDataExample.test.ts`. **Scope:** M (editorial).
 
 ### ✅ Checkpoint ED
-- [ ] `yarn check` green · a `data.json` validates end-to-end (schema +
+- [x] `yarn check` green · a `data.json` validates end-to-end (schema +
   validate-guides) · the skill's worked example is schema-pinned · **review
-  before the follow-up slice.**
+  before the follow-up slice.** _(ED1–ED3 done 2026-06-16 on `feat/workstream-a`.)_
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: guide-pass-ra-mapping
 description: >-
-  TOTODILE compiler pass 4 of 5 — RA mapping. Use when Pierre asks to "run the
+  TOTODILE compiler pass 5 of 6 — RA mapping. Use when Pierre asks to "run the
   RA mapping pass", "map the achievements for <slug>", or to re-run it after a
   rejection. Maps each RetroAchievements achievement to the checkable step or
   widget item where it is earned, from the ra-set source on file — never the
