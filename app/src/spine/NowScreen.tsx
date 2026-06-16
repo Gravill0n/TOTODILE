@@ -47,7 +47,14 @@ export function NowScreen({
           {chapter.visits.map((visit) => (
             <div key={visit.id} className="mt-3">
               <h3 className="pt-2 text-sm font-bold text-ink-soft">
-                {locationName.get(visit.locationId) ?? visit.locationId}
+                {/* Hash anchor (no router context — NowScreen renders bare in
+                    tests): opens the place screen for this location. */}
+                <a
+                  href={`#/guide/${slug}/place/${visit.locationId.split(":")[1] ?? ""}`}
+                  className="underline decoration-dotted underline-offset-2"
+                >
+                  {locationName.get(visit.locationId) ?? visit.locationId}
+                </a>
               </h3>
               <div className="mt-1 space-y-1">
                 {visit.steps.map((step) => (

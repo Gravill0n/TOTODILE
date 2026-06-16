@@ -16,9 +16,11 @@ import { loadLayerRoster } from "../review/layerRoster";
 import { ReviewScreen } from "../review/ReviewScreen";
 import { loadRaMapping, loadSources } from "../review/reviewLoaders";
 import { loadGuide } from "../spine/guideData";
+import { buildLocationIndex } from "../spine/locationIndex";
 import { CleanupScreen } from "./CleanupScreen";
 import { GuideScreen } from "./GuideScreen";
 import { LibraryScreen } from "./LibraryScreen";
+import { LocationScreen } from "./LocationScreen";
 import { loadLibrary } from "./libraryData";
 import { SettingsScreen } from "./SettingsScreen";
 
@@ -117,6 +119,31 @@ const cleanupRoute = createRoute({
   },
 });
 
+const placeRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/guide/$slug/place/$loc",
+  // The place screen (#8) is a play-view sibling — same playable guard. `$loc`
+  // is the location ID's second segment; the full ID is `<slug>:<loc>`.
+  loader: async ({ params }) => {
+    const library = await loadLibrary();
+    const entry = library.guides.find((g) => g.id === params.slug);
+    if (!entry) throw notFound();
+    if (!isPlayable(await loadApprovals(entry.id))) {
+      throw redirect({ to: "/review/$slug", params: { slug: entry.id } });
+    }
+    const guide = await loadGuide(entry.id);
+    const indexEntry = buildLocationIndex(guide).get(
+      `${params.slug}:${params.loc}`,
+    );
+    if (!indexEntry) throw notFound();
+    return { entry, indexEntry };
+  },
+  component: function PlaceRouteComponent() {
+    const { entry, indexEntry } = placeRoute.useLoaderData();
+    return <LocationScreen entry={entry} indexEntry={indexEntry} />;
+  },
+});
+
 const reviewRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/review/$slug",
@@ -170,6 +197,7 @@ const routeTree = rootRoute.addChildren([
   libraryRoute,
   guideRoute,
   cleanupRoute,
+  placeRoute,
   reviewRoute,
   settingsRoute,
 ]);

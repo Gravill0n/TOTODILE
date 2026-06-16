@@ -110,8 +110,12 @@ describe("spine play view", () => {
     render(<GuideScreen entry={entry} guide={guide} />);
     await screen.findByText(S1_TEXT);
     expect(screen.getByText(/The road ends at the portcullis/)).toBeDefined();
-    // Visits are headed by their location name (sections are gone in v1).
-    expect(screen.getByText("Castle Gate")).toBeDefined();
+    // Visits are headed by their location name (sections are gone in v1),
+    // which links to the place screen (#8, reachable from navigation).
+    const placeLink = screen.getByRole("link", { name: "Castle Gate" });
+    expect(placeLink.getAttribute("href")).toBe(
+      "#/guide/fictional-quest/place/castle-gate",
+    );
     expect(screen.getAllByText(/missable/i).length).toBeGreaterThan(0);
   });
 });
