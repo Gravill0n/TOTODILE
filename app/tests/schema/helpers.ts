@@ -399,6 +399,44 @@ export function validProgressExport() {
 
 // ─── Compiler pass artifacts + reports (COMPILER_PASS_CONTRACT.md) ──────────
 
+export function validDataLayer() {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    pass: "extract-data",
+    datasets: [
+      {
+        id: "encounters",
+        label: "Wild encounters",
+        records: [
+          {
+            id: "gate-rat",
+            fields: { location: "Castle Gate", species: "Rat", levels: "2-3" },
+            sourceRefs: ["src-wiki"],
+            confidence: "normal",
+          },
+        ],
+      },
+      {
+        id: "images",
+        label: "Available source images",
+        records: [
+          {
+            id: "map-castle-gate",
+            fields: {
+              path: "images/maps/CastleGate.png",
+              kind: "location-map",
+              depicts: "Castle Gate",
+            },
+            sourceRefs: ["src-wiki"],
+            confidence: "normal",
+          },
+        ],
+      },
+    ],
+  };
+}
+
 export function validSpineLayer() {
   return {
     schemaVersion: SCHEMA_VERSION,
