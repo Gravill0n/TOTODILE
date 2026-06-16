@@ -3,7 +3,7 @@
   "guideId": "pokemon-crystal",
   "pass": "extract-data",
   "layer": "data",
-  "generatedAt": "2026-06-16T12:00:00Z",
+  "generatedAt": "2026-06-16T12:30:00Z",
   "inputs": [
     {
       "file": "sources.json",
@@ -11,11 +11,11 @@
     }
   ],
   "report": {
-    "rowCount": 432,
+    "rowCount": 772,
     "anomalies": [],
     "flaggedItemIds": []
   },
   "notes": [
-    "Images catalog increment: location maps + species sprites from the crystal-ap-tracker snapshot (src-ap-tracker). Trainer/item/gift images and the wiki-sourced datasets (encounters, items, trainers, trades, achievements) land in later increments."
+    "Images catalog complete: location maps + species sprites + trainer/item/gift icons from the crystal-ap-tracker snapshot (src-ap-tracker). Wiki/PDF-sourced datasets (encounters, items, trainers, trades, achievements) follow in later increments."
   ]
 }

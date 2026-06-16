@@ -5190,6 +5190,4086 @@
             "src-ap-tracker"
           ],
           "confidence": "normal"
+        },
+        {
+          "id": "trainer-beauty",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/beauty.png",
+            "kind": "trainer",
+            "depicts": "Beauty"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-beauty-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/beauty_bw.png",
+            "kind": "trainer",
+            "depicts": "Beauty Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-biker",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/biker.png",
+            "kind": "trainer",
+            "depicts": "Biker"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-biker-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/biker_bw.png",
+            "kind": "trainer",
+            "depicts": "Biker Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-blackbelt",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/blackbelt.png",
+            "kind": "trainer",
+            "depicts": "Blackbelt"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-blackbelt-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/blackbelt_bw.png",
+            "kind": "trainer",
+            "depicts": "Blackbelt Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-blaine",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/blaine.png",
+            "kind": "trainer",
+            "depicts": "Blaine"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-blaine-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/blaine_bw.png",
+            "kind": "trainer",
+            "depicts": "Blaine Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-blue",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/blue.png",
+            "kind": "trainer",
+            "depicts": "Blue"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-blue-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/blue_bw.png",
+            "kind": "trainer",
+            "depicts": "Blue Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-blue-dude",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/blue_dude.png",
+            "kind": "trainer",
+            "depicts": "Blue Dude"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-blue-dude-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/blue_dude_bw.png",
+            "kind": "trainer",
+            "depicts": "Blue Dude Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-blue-fisher",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/blue_fisher.png",
+            "kind": "trainer",
+            "depicts": "Blue Fisher"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-blue-fisher-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/blue_fisher_bw.png",
+            "kind": "trainer",
+            "depicts": "Blue Fisher Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-boarder",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/boarder.png",
+            "kind": "trainer",
+            "depicts": "Boarder"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-boarder-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/boarder_bw.png",
+            "kind": "trainer",
+            "depicts": "Boarder Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-brock",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/brock.png",
+            "kind": "trainer",
+            "depicts": "Brock"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-brock-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/brock_bw.png",
+            "kind": "trainer",
+            "depicts": "Brock Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-bruno",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/bruno.png",
+            "kind": "trainer",
+            "depicts": "Bruno"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-bruno-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/bruno_bw.png",
+            "kind": "trainer",
+            "depicts": "Bruno Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-bug-catcher",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/bug_catcher.png",
+            "kind": "trainer",
+            "depicts": "Bug Catcher"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-bug-catcher-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/bug_catcher_bw.png",
+            "kind": "trainer",
+            "depicts": "Bug Catcher Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-bugsy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/bugsy.png",
+            "kind": "trainer",
+            "depicts": "Bugsy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-bugsy-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/bugsy_bw.png",
+            "kind": "trainer",
+            "depicts": "Bugsy Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-burglar",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/burglar.png",
+            "kind": "trainer",
+            "depicts": "Burglar"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-burglar-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/burglar_bw.png",
+            "kind": "trainer",
+            "depicts": "Burglar Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-cal",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/cal.png",
+            "kind": "trainer",
+            "depicts": "Cal"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-cal-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/cal_bw.png",
+            "kind": "trainer",
+            "depicts": "Cal Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-camper",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/camper.png",
+            "kind": "trainer",
+            "depicts": "Camper"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-camper-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/camper_bw.png",
+            "kind": "trainer",
+            "depicts": "Camper Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-chuck",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/chuck.png",
+            "kind": "trainer",
+            "depicts": "Chuck"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-chuck-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/chuck_bw.png",
+            "kind": "trainer",
+            "depicts": "Chuck Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-clair",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/clair.png",
+            "kind": "trainer",
+            "depicts": "Clair"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-clair-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/clair_bw.png",
+            "kind": "trainer",
+            "depicts": "Clair Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-cool-trainer-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/cool_trainer_f.png",
+            "kind": "trainer",
+            "depicts": "Cool Trainer F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-cool-trainer-f-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/cool_trainer_f_bw.png",
+            "kind": "trainer",
+            "depicts": "Cool Trainer F Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-cool-trainer-m",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/cool_trainer_m.png",
+            "kind": "trainer",
+            "depicts": "Cool Trainer M"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-cool-trainer-m-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/cool_trainer_m_bw.png",
+            "kind": "trainer",
+            "depicts": "Cool Trainer M Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-dwayne",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/dwayne.png",
+            "kind": "trainer",
+            "depicts": "Dwayne"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-dwayne-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/dwayne_bw.png",
+            "kind": "trainer",
+            "depicts": "Dwayne Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-erika",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/erika.png",
+            "kind": "trainer",
+            "depicts": "Erika"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-erika-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/erika_bw.png",
+            "kind": "trainer",
+            "depicts": "Erika Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-falkner",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/falkner.png",
+            "kind": "trainer",
+            "depicts": "Falkner"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-falkner-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/falkner_bw.png",
+            "kind": "trainer",
+            "depicts": "Falkner Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-firebreather",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/firebreather.png",
+            "kind": "trainer",
+            "depicts": "Firebreather"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-firebreather-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/firebreather_bw.png",
+            "kind": "trainer",
+            "depicts": "Firebreather Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-fisher",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/fisher.png",
+            "kind": "trainer",
+            "depicts": "Fisher"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-fisher-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/fisher_bw.png",
+            "kind": "trainer",
+            "depicts": "Fisher Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-gentleman",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/gentleman.png",
+            "kind": "trainer",
+            "depicts": "Gentleman"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-gentleman-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/gentleman_bw.png",
+            "kind": "trainer",
+            "depicts": "Gentleman Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-green-pokemaniac",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/green_pokemaniac.png",
+            "kind": "trainer",
+            "depicts": "Green Pokemaniac"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-green-pokemaniac-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/green_pokemaniac_bw.png",
+            "kind": "trainer",
+            "depicts": "Green Pokemaniac Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-guitarist",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/guitarist.png",
+            "kind": "trainer",
+            "depicts": "Guitarist"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-guitarist-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/guitarist_bw.png",
+            "kind": "trainer",
+            "depicts": "Guitarist Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-harris",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/harris.png",
+            "kind": "trainer",
+            "depicts": "Harris"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-harris-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/harris_bw.png",
+            "kind": "trainer",
+            "depicts": "Harris Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-hiker",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/hiker.png",
+            "kind": "trainer",
+            "depicts": "Hiker"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-hiker-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/hiker_bw.png",
+            "kind": "trainer",
+            "depicts": "Hiker Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-janine",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/janine.png",
+            "kind": "trainer",
+            "depicts": "Janine"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-janine-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/janine_bw.png",
+            "kind": "trainer",
+            "depicts": "Janine Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-jasmine",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/jasmine.png",
+            "kind": "trainer",
+            "depicts": "Jasmine"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-jasmine-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/jasmine_bw.png",
+            "kind": "trainer",
+            "depicts": "Jasmine Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-juggler-pokemaniac",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/juggler_pokemaniac.png",
+            "kind": "trainer",
+            "depicts": "Juggler Pokemaniac"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-juggler-pokemaniac-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/juggler_pokemaniac_bw.png",
+            "kind": "trainer",
+            "depicts": "Juggler Pokemaniac Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-karen",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/karen.png",
+            "kind": "trainer",
+            "depicts": "Karen"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-karen-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/karen_bw.png",
+            "kind": "trainer",
+            "depicts": "Karen Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-koga",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/koga.png",
+            "kind": "trainer",
+            "depicts": "Koga"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-koga-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/koga_bw.png",
+            "kind": "trainer",
+            "depicts": "Koga Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-kuni-sayo",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/kuni_sayo.png",
+            "kind": "trainer",
+            "depicts": "Kuni Sayo"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-kuni-sayo-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/kuni_sayo_bw.png",
+            "kind": "trainer",
+            "depicts": "Kuni Sayo Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-lance",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/lance.png",
+            "kind": "trainer",
+            "depicts": "Lance"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-lance-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/lance_bw.png",
+            "kind": "trainer",
+            "depicts": "Lance Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-lass",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/lass.png",
+            "kind": "trainer",
+            "depicts": "Lass"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-lass-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/lass_bw.png",
+            "kind": "trainer",
+            "depicts": "Lass Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-medium",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/medium.png",
+            "kind": "trainer",
+            "depicts": "Medium"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-medium-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/medium_bw.png",
+            "kind": "trainer",
+            "depicts": "Medium Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-miki-naoko",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/miki_naoko.png",
+            "kind": "trainer",
+            "depicts": "Miki Naoko"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-miki-naoko-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/miki_naoko_bw.png",
+            "kind": "trainer",
+            "depicts": "Miki Naoko Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-misty",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/misty.png",
+            "kind": "trainer",
+            "depicts": "Misty"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-misty-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/misty_bw.png",
+            "kind": "trainer",
+            "depicts": "Misty Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-morty",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/morty.png",
+            "kind": "trainer",
+            "depicts": "Morty"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-morty-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/morty_bw.png",
+            "kind": "trainer",
+            "depicts": "Morty Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-officer",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/officer.png",
+            "kind": "trainer",
+            "depicts": "Officer"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-officer-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/officer_bw.png",
+            "kind": "trainer",
+            "depicts": "Officer Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-picnicker",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/picnicker.png",
+            "kind": "trainer",
+            "depicts": "Picnicker"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-picnicker-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/picnicker_bw.png",
+            "kind": "trainer",
+            "depicts": "Picnicker Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-pokefan-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/pokefan_f.png",
+            "kind": "trainer",
+            "depicts": "Pokefan F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-pokefan-f-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/pokefan_f_bw.png",
+            "kind": "trainer",
+            "depicts": "Pokefan F Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-pokefan-m",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/pokefan_m.png",
+            "kind": "trainer",
+            "depicts": "Pokefan M"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-pokefan-m-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/pokefan_m_bw.png",
+            "kind": "trainer",
+            "depicts": "Pokefan M Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-pryce",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/pryce.png",
+            "kind": "trainer",
+            "depicts": "Pryce"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-pryce-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/pryce_bw.png",
+            "kind": "trainer",
+            "depicts": "Pryce Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-rival",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/rival.png",
+            "kind": "trainer",
+            "depicts": "Rival"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-rival-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/rival_bw.png",
+            "kind": "trainer",
+            "depicts": "Rival Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-rocket-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/rocket_f.png",
+            "kind": "trainer",
+            "depicts": "Rocket F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-rocket-f-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/rocket_f_bw.png",
+            "kind": "trainer",
+            "depicts": "Rocket F Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-rocket-m",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/rocket_m.png",
+            "kind": "trainer",
+            "depicts": "Rocket M"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-rocket-m-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/rocket_m_bw.png",
+            "kind": "trainer",
+            "depicts": "Rocket M Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-sabrina",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/sabrina.png",
+            "kind": "trainer",
+            "depicts": "Sabrina"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-sabrina-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/sabrina_bw.png",
+            "kind": "trainer",
+            "depicts": "Sabrina Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-sage",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/sage.png",
+            "kind": "trainer",
+            "depicts": "Sage"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-sage-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/sage_bw.png",
+            "kind": "trainer",
+            "depicts": "Sage Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-sailor",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/sailor.png",
+            "kind": "trainer",
+            "depicts": "Sailor"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-sailor-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/sailor_bw.png",
+            "kind": "trainer",
+            "depicts": "Sailor Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-scientist",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/scientist.png",
+            "kind": "trainer",
+            "depicts": "Scientist"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-scientist-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/scientist_bw.png",
+            "kind": "trainer",
+            "depicts": "Scientist Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-skier",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/skier.png",
+            "kind": "trainer",
+            "depicts": "Skier"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-skier-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/skier_bw.png",
+            "kind": "trainer",
+            "depicts": "Skier Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-super-nerd",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/super_nerd.png",
+            "kind": "trainer",
+            "depicts": "Super Nerd"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-super-nerd-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/super_nerd_bw.png",
+            "kind": "trainer",
+            "depicts": "Super Nerd Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-surge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/surge.png",
+            "kind": "trainer",
+            "depicts": "Surge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-surge-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/surge_bw.png",
+            "kind": "trainer",
+            "depicts": "Surge Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-swimmer-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/swimmer_f.png",
+            "kind": "trainer",
+            "depicts": "Swimmer F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-swimmer-f-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/swimmer_f_bw.png",
+            "kind": "trainer",
+            "depicts": "Swimmer F Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-swimmer-m",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/swimmer_m.png",
+            "kind": "trainer",
+            "depicts": "Swimmer M"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-swimmer-m-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/swimmer_m_bw.png",
+            "kind": "trainer",
+            "depicts": "Swimmer M Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-teacher",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/teacher.png",
+            "kind": "trainer",
+            "depicts": "Teacher"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-teacher-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/teacher_bw.png",
+            "kind": "trainer",
+            "depicts": "Teacher Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-twins",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/twins.png",
+            "kind": "trainer",
+            "depicts": "Twins"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-twins-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/twins_bw.png",
+            "kind": "trainer",
+            "depicts": "Twins Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-whitney",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/whitney.png",
+            "kind": "trainer",
+            "depicts": "Whitney"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-whitney-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/whitney_bw.png",
+            "kind": "trainer",
+            "depicts": "Whitney Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-will",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/will.png",
+            "kind": "trainer",
+            "depicts": "Will"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-will-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/will_bw.png",
+            "kind": "trainer",
+            "depicts": "Will Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-wise-trio",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/wise_trio.png",
+            "kind": "trainer",
+            "depicts": "Wise Trio"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-wise-trio-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/wise_trio_bw.png",
+            "kind": "trainer",
+            "depicts": "Wise Trio Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-zeke",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/zeke.png",
+            "kind": "trainer",
+            "depicts": "Zeke"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-zeke-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/zeke_bw.png",
+            "kind": "trainer",
+            "depicts": "Zeke Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-zuki",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/zuki.png",
+            "kind": "trainer",
+            "depicts": "Zuki"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "trainer-zuki-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/trainers/zuki_bw.png",
+            "kind": "trainer",
+            "depicts": "Zuki Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-aerodactyl-tile",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/AERODACTYL_TILE.png",
+            "kind": "item-icon",
+            "depicts": "Aerodactyl Tile"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-ho-oh-tile",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/HO-OH_TILE.png",
+            "kind": "item-icon",
+            "depicts": "Ho-oh Tile"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-kabuto-tile",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/KABUTO_TILE.png",
+            "kind": "item-icon",
+            "depicts": "Kabuto Tile"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-omanyte-tile",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/OMANYTE_TILE.png",
+            "kind": "item-icon",
+            "depicts": "Omanyte Tile"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-basementkey",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/basementkey.png",
+            "kind": "item-icon",
+            "depicts": "Basementkey"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-berry-tree",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/berry_tree.png",
+            "kind": "item-icon",
+            "depicts": "Berry Tree"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-berry-tree-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/berry_tree_bw.png",
+            "kind": "item-icon",
+            "depicts": "Berry Tree Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-bicycle",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/bicycle.png",
+            "kind": "item-icon",
+            "depicts": "Bicycle"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-bluecard",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/bluecard.png",
+            "kind": "item-icon",
+            "depicts": "Bluecard"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-boulderbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/boulderbadge.png",
+            "kind": "item-icon",
+            "depicts": "Boulderbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-cardkey",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/cardkey.png",
+            "kind": "item-icon",
+            "depicts": "Cardkey"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-cascadebadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/cascadebadge.png",
+            "kind": "item-icon",
+            "depicts": "Cascadebadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-clearbell",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/clearbell.png",
+            "kind": "item-icon",
+            "depicts": "Clearbell"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-earthbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/earthbadge.png",
+            "kind": "item-icon",
+            "depicts": "Earthbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-escaperope",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/escaperope.png",
+            "kind": "item-icon",
+            "depicts": "Escaperope"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-expncard",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/expncard.png",
+            "kind": "item-icon",
+            "depicts": "Expncard"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-fogbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/fogbadge.png",
+            "kind": "item-icon",
+            "depicts": "Fogbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-free",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/free.png",
+            "kind": "item-icon",
+            "depicts": "Free"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-glacierbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/glacierbadge.png",
+            "kind": "item-icon",
+            "depicts": "Glacierbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-goodrod",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/goodrod.png",
+            "kind": "item-icon",
+            "depicts": "Goodrod"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-gsball",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/gsball.png",
+            "kind": "item-icon",
+            "depicts": "Gsball"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-hidden-item",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/hidden_item.png",
+            "kind": "item-icon",
+            "depicts": "Hidden Item"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-hidden-item-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/hidden_item_open.png",
+            "kind": "item-icon",
+            "depicts": "Hidden Item Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-hivebadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/hivebadge.png",
+            "kind": "item-icon",
+            "depicts": "Hivebadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-hm01",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/hm01.png",
+            "kind": "item-icon",
+            "depicts": "Hm 01"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-hm02",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/hm02.png",
+            "kind": "item-icon",
+            "depicts": "Hm 02"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-hm03",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/hm03.png",
+            "kind": "item-icon",
+            "depicts": "Hm 03"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-hm04",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/hm04.png",
+            "kind": "item-icon",
+            "depicts": "Hm 04"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-hm05",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/hm05.png",
+            "kind": "item-icon",
+            "depicts": "Hm 05"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-hm06",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/hm06.png",
+            "kind": "item-icon",
+            "depicts": "Hm 06"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-hm07",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/hm07.png",
+            "kind": "item-icon",
+            "depicts": "Hm 07"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-itemfinder",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/itemfinder.png",
+            "kind": "item-icon",
+            "depicts": "Itemfinder"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-lostitem",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/lostitem.png",
+            "kind": "item-icon",
+            "depicts": "Lostitem"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-machinepart",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/machinepart.png",
+            "kind": "item-icon",
+            "depicts": "Machinepart"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-mapcard",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/mapcard.png",
+            "kind": "item-icon",
+            "depicts": "Mapcard"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-marshbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/marshbadge.png",
+            "kind": "item-icon",
+            "depicts": "Marshbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-mineralbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/mineralbadge.png",
+            "kind": "item-icon",
+            "depicts": "Mineralbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-mysteryegg",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/mysteryegg.png",
+            "kind": "item-icon",
+            "depicts": "Mysteryegg"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-oldrod",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/oldrod.png",
+            "kind": "item-icon",
+            "depicts": "Oldrod"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-pass",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/pass.png",
+            "kind": "item-icon",
+            "depicts": "Pass"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-phonecard",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/phonecard.png",
+            "kind": "item-icon",
+            "depicts": "Phonecard"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-plainbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/plainbadge.png",
+            "kind": "item-icon",
+            "depicts": "Plainbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-pokeball",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/pokeball.png",
+            "kind": "item-icon",
+            "depicts": "Pokeball"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-pokeball-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/pokeball_bw.png",
+            "kind": "item-icon",
+            "depicts": "Pokeball Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-pokeball-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/pokeball_open.png",
+            "kind": "item-icon",
+            "depicts": "Pokeball Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-pokegear",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/pokegear.png",
+            "kind": "item-icon",
+            "depicts": "Pokegear"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-radiocard",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/radiocard.png",
+            "kind": "item-icon",
+            "depicts": "Radiocard"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-rainbowbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/rainbowbadge.png",
+            "kind": "item-icon",
+            "depicts": "Rainbowbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-rainbowwing",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/rainbowwing.png",
+            "kind": "item-icon",
+            "depicts": "Rainbowwing"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-redscale",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/redscale.png",
+            "kind": "item-icon",
+            "depicts": "Redscale"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-risingbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/risingbadge.png",
+            "kind": "item-icon",
+            "depicts": "Risingbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-secretpotion",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/secretpotion.png",
+            "kind": "item-icon",
+            "depicts": "Secretpotion"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-silverwing",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/silverwing.png",
+            "kind": "item-icon",
+            "depicts": "Silverwing"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-soulbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/soulbadge.png",
+            "kind": "item-icon",
+            "depicts": "Soulbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-squirtbottle",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/squirtbottle.png",
+            "kind": "item-icon",
+            "depicts": "Squirtbottle"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-ssticket",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/ssticket.png",
+            "kind": "item-icon",
+            "depicts": "Ssticket"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-stormbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/stormbadge.png",
+            "kind": "item-icon",
+            "depicts": "Stormbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-superrod",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/superrod.png",
+            "kind": "item-icon",
+            "depicts": "Superrod"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-tea",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/tea.png",
+            "kind": "item-icon",
+            "depicts": "Tea"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-thunderbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/thunderbadge.png",
+            "kind": "item-icon",
+            "depicts": "Thunderbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-tm02",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/tm02.png",
+            "kind": "item-icon",
+            "depicts": "Tm 02"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-tm08",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/tm08.png",
+            "kind": "item-icon",
+            "depicts": "Tm 08"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-volcanobadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/volcanobadge.png",
+            "kind": "item-icon",
+            "depicts": "Volcanobadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-waterstone",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/waterstone.png",
+            "kind": "item-icon",
+            "depicts": "Waterstone"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "item-zephyrbadge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/items/zephyrbadge.png",
+            "kind": "item-icon",
+            "depicts": "Zephyrbadge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-bike-shop-owner",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/bike_shop_owner.png",
+            "kind": "gift",
+            "depicts": "Bike Shop Owner"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-bike-shop-owner-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/bike_shop_owner_open.png",
+            "kind": "gift",
+            "depicts": "Bike Shop Owner Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blackbelt-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blackbelt_phonecall.png",
+            "kind": "gift",
+            "depicts": "Blackbelt Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blackbelt-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blackbelt_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Blackbelt Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blaine",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blaine.png",
+            "kind": "gift",
+            "depicts": "Blaine"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blaine-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blaine_open.png",
+            "kind": "gift",
+            "depicts": "Blaine Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue.png",
+            "kind": "gift",
+            "depicts": "Blue"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-dude",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_dude.png",
+            "kind": "gift",
+            "depicts": "Blue Dude"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-dude-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_dude_open.png",
+            "kind": "gift",
+            "depicts": "Blue Dude Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-dude-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_dude_phonecall.png",
+            "kind": "gift",
+            "depicts": "Blue Dude Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-dude-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_dude_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Blue Dude Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-fishing-guru",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_fishing_guru.png",
+            "kind": "gift",
+            "depicts": "Blue Fishing Guru"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-fishing-guru-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_fishing_guru_open.png",
+            "kind": "gift",
+            "depicts": "Blue Fishing Guru Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-guy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_guy.png",
+            "kind": "gift",
+            "depicts": "Blue Guy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-guy-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_guy_open.png",
+            "kind": "gift",
+            "depicts": "Blue Guy Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_open.png",
+            "kind": "gift",
+            "depicts": "Blue Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-shades-dude",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_shades_dude.png",
+            "kind": "gift",
+            "depicts": "Blue Shades Dude"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-blue-shades-dude-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/blue_shades_dude_open.png",
+            "kind": "gift",
+            "depicts": "Blue Shades Dude Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-brock",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/brock.png",
+            "kind": "gift",
+            "depicts": "Brock"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-brock-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/brock_open.png",
+            "kind": "gift",
+            "depicts": "Brock Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-buena",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/buena.png",
+            "kind": "gift",
+            "depicts": "Buena"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-buena-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/buena_open.png",
+            "kind": "gift",
+            "depicts": "Buena Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-bug-catcher-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/bug_catcher_phonecall.png",
+            "kind": "gift",
+            "depicts": "Bug Catcher Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-bug-catcher-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/bug_catcher_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Bug Catcher Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-bugsy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/bugsy.png",
+            "kind": "gift",
+            "depicts": "Bugsy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-bugsy-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/bugsy_open.png",
+            "kind": "gift",
+            "depicts": "Bugsy Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-camper-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/camper_phonecall.png",
+            "kind": "gift",
+            "depicts": "Camper Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-camper-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/camper_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Camper Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-cherrygrove-guide",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/cherrygrove_guide.png",
+            "kind": "gift",
+            "depicts": "Cherrygrove Guide"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-cherrygrove-guide-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/cherrygrove_guide_open.png",
+            "kind": "gift",
+            "depicts": "Cherrygrove Guide Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-chuck",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/chuck.png",
+            "kind": "gift",
+            "depicts": "Chuck"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-chuck-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/chuck_open.png",
+            "kind": "gift",
+            "depicts": "Chuck Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-clair",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/clair.png",
+            "kind": "gift",
+            "depicts": "Clair"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-clair-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/clair_open.png",
+            "kind": "gift",
+            "depicts": "Clair Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-cool-trainer-f",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/cool_trainer_f.png",
+            "kind": "gift",
+            "depicts": "Cool Trainer F"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-cool-trainer-f-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/cool_trainer_f_open.png",
+            "kind": "gift",
+            "depicts": "Cool Trainer F Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-cool-trainer-m",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/cool_trainer_m.png",
+            "kind": "gift",
+            "depicts": "Cool Trainer M"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-cool-trainer-m-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/cool_trainer_m_open.png",
+            "kind": "gift",
+            "depicts": "Cool Trainer M Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-elm",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/elm.png",
+            "kind": "gift",
+            "depicts": "Elm"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-elm-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/elm_open.png",
+            "kind": "gift",
+            "depicts": "Elm Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-erika",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/erika.png",
+            "kind": "gift",
+            "depicts": "Erika"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-erika-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/erika_open.png",
+            "kind": "gift",
+            "depicts": "Erika Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-falkner",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/falkner.png",
+            "kind": "gift",
+            "depicts": "Falkner"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-falkner-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/falkner_open.png",
+            "kind": "gift",
+            "depicts": "Falkner Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-fisher-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/fisher_phonecall.png",
+            "kind": "gift",
+            "depicts": "Fisher Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-fisher-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/fisher_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Fisher Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-frieda",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/frieda.png",
+            "kind": "gift",
+            "depicts": "Frieda"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-frieda-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/frieda_open.png",
+            "kind": "gift",
+            "depicts": "Frieda Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-gate-guard",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/gate_guard.png",
+            "kind": "gift",
+            "depicts": "Gate Guard"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-gate-guard-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/gate_guard_open.png",
+            "kind": "gift",
+            "depicts": "Gate Guard Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-gentleman",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/gentleman.png",
+            "kind": "gift",
+            "depicts": "Gentleman"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-gentleman-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/gentleman_open.png",
+            "kind": "gift",
+            "depicts": "Gentleman Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-granny",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/granny.png",
+            "kind": "gift",
+            "depicts": "Granny"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-granny-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/granny_open.png",
+            "kind": "gift",
+            "depicts": "Granny Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-green-fishing-guru",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/green_fishing_guru.png",
+            "kind": "gift",
+            "depicts": "Green Fishing Guru"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-green-fishing-guru-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/green_fishing_guru_open.png",
+            "kind": "gift",
+            "depicts": "Green Fishing Guru Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-green-guy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/green_guy.png",
+            "kind": "gift",
+            "depicts": "Green Guy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-green-guy-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/green_guy_open.png",
+            "kind": "gift",
+            "depicts": "Green Guy Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-green-lady",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/green_lady.png",
+            "kind": "gift",
+            "depicts": "Green Lady"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-green-lady-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/green_lady_open.png",
+            "kind": "gift",
+            "depicts": "Green Lady Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-green-shades-dude",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/green_shades_dude.png",
+            "kind": "gift",
+            "depicts": "Green Shades Dude"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-green-shades-dude-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/green_shades_dude_open.png",
+            "kind": "gift",
+            "depicts": "Green Shades Dude Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-headbutt-guy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/headbutt_guy.png",
+            "kind": "gift",
+            "depicts": "Headbutt Guy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-headbutt-guy-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/headbutt_guy_open.png",
+            "kind": "gift",
+            "depicts": "Headbutt Guy Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-hiker",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/hiker.png",
+            "kind": "gift",
+            "depicts": "Hiker"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-hiker-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/hiker_open.png",
+            "kind": "gift",
+            "depicts": "Hiker Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-hiker-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/hiker_phonecall.png",
+            "kind": "gift",
+            "depicts": "Hiker Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-hiker-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/hiker_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Hiker Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-janine",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/janine.png",
+            "kind": "gift",
+            "depicts": "Janine"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-janine-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/janine_open.png",
+            "kind": "gift",
+            "depicts": "Janine Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-jasmine",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/jasmine.png",
+            "kind": "gift",
+            "depicts": "Jasmine"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-jasmine-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/jasmine_open.png",
+            "kind": "gift",
+            "depicts": "Jasmine Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-kings-rock-guy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/kings_rock_guy.png",
+            "kind": "gift",
+            "depicts": "Kings Rock Guy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-kings-rock-guy-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/kings_rock_guy_open.png",
+            "kind": "gift",
+            "depicts": "Kings Rock Guy Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-kurt",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/kurt.png",
+            "kind": "gift",
+            "depicts": "Kurt"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-kurt-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/kurt_open.png",
+            "kind": "gift",
+            "depicts": "Kurt Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-lance",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/lance.png",
+            "kind": "gift",
+            "depicts": "Lance"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-lance-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/lance_open.png",
+            "kind": "gift",
+            "depicts": "Lance Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-lass-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/lass_phonecall.png",
+            "kind": "gift",
+            "depicts": "Lass Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-lass-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/lass_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Lass Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-misty",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/misty.png",
+            "kind": "gift",
+            "depicts": "Misty"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-misty-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/misty_open.png",
+            "kind": "gift",
+            "depicts": "Misty Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-mom",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/mom.png",
+            "kind": "gift",
+            "depicts": "Mom"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-mom-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/mom_open.png",
+            "kind": "gift",
+            "depicts": "Mom Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-monica",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/monica.png",
+            "kind": "gift",
+            "depicts": "Monica"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-monica-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/monica_open.png",
+            "kind": "gift",
+            "depicts": "Monica Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-moomoo-farmer",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/moomoo_farmer.png",
+            "kind": "gift",
+            "depicts": "Moomoo Farmer"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-moomoo-farmer-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/moomoo_farmer_open.png",
+            "kind": "gift",
+            "depicts": "Moomoo Farmer Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-morty",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/morty.png",
+            "kind": "gift",
+            "depicts": "Morty"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-morty-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/morty_open.png",
+            "kind": "gift",
+            "depicts": "Morty Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-oak",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/oak.png",
+            "kind": "gift",
+            "depicts": "Oak"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-oak-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/oak_open.png",
+            "kind": "gift",
+            "depicts": "Oak Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-old-man",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/old_man.png",
+            "kind": "gift",
+            "depicts": "Old Man"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-old-man-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/old_man_open.png",
+            "kind": "gift",
+            "depicts": "Old Man Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-overlay-ball",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/overlay_ball.png",
+            "kind": "gift",
+            "depicts": "Overlay Ball"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-overlay-ball-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/overlay_ball_open.png",
+            "kind": "gift",
+            "depicts": "Overlay Ball Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-overlay-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/overlay_phonecall.png",
+            "kind": "gift",
+            "depicts": "Overlay Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-pharmacist",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/pharmacist.png",
+            "kind": "gift",
+            "depicts": "Pharmacist"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-pharmacist-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/pharmacist_open.png",
+            "kind": "gift",
+            "depicts": "Pharmacist Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-picnicker-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/picnicker_phonecall.png",
+            "kind": "gift",
+            "depicts": "Picnicker Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-picnicker-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/picnicker_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Picnicker Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-pokefan-f-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/pokefan_f_phonecall.png",
+            "kind": "gift",
+            "depicts": "Pokefan F Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-pokefan-f-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/pokefan_f_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Pokefan F Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-pokefan-m",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/pokefan_m.png",
+            "kind": "gift",
+            "depicts": "Pokefan M"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-pokefan-m-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/pokefan_m_open.png",
+            "kind": "gift",
+            "depicts": "Pokefan M Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-pokefan-m-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/pokefan_m_phonecall.png",
+            "kind": "gift",
+            "depicts": "Pokefan M Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-pokefan-m-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/pokefan_m_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Pokefan M Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-pryce",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/pryce.png",
+            "kind": "gift",
+            "depicts": "Pryce"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-pryce-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/pryce_open.png",
+            "kind": "gift",
+            "depicts": "Pryce Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-radio-tower-woman",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/radio_tower_woman.png",
+            "kind": "gift",
+            "depicts": "Radio Tower Woman"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-radio-tower-woman-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/radio_tower_woman_open.png",
+            "kind": "gift",
+            "depicts": "Radio Tower Woman Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-receptionist",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/receptionist.png",
+            "kind": "gift",
+            "depicts": "Receptionist"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-receptionist-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/receptionist_open.png",
+            "kind": "gift",
+            "depicts": "Receptionist Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-red-fishing-guru",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/red_fishing_guru.png",
+            "kind": "gift",
+            "depicts": "Red Fishing Guru"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-red-fishing-guru-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/red_fishing_guru_open.png",
+            "kind": "gift",
+            "depicts": "Red Fishing Guru Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-red-guy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/red_guy.png",
+            "kind": "gift",
+            "depicts": "Red Guy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-red-guy-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/red_guy_open.png",
+            "kind": "gift",
+            "depicts": "Red Guy Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-red-lady",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/red_lady.png",
+            "kind": "gift",
+            "depicts": "Red Lady"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-red-lady-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/red_lady_open.png",
+            "kind": "gift",
+            "depicts": "Red Lady Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-route-32-guy",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/route_32_guy.png",
+            "kind": "gift",
+            "depicts": "Route 32 Guy"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-route-32-guy-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/route_32_guy_open.png",
+            "kind": "gift",
+            "depicts": "Route 32 Guy Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-sage",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/sage.png",
+            "kind": "gift",
+            "depicts": "Sage"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-sage-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/sage_open.png",
+            "kind": "gift",
+            "depicts": "Sage Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-sailor",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/sailor.png",
+            "kind": "gift",
+            "depicts": "Sailor"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-sailor-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/sailor_open.png",
+            "kind": "gift",
+            "depicts": "Sailor Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-sailor-phonecall",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/sailor_phonecall.png",
+            "kind": "gift",
+            "depicts": "Sailor Phonecall"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-sailor-phonecall-bw",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/sailor_phonecall_bw.png",
+            "kind": "gift",
+            "depicts": "Sailor Phonecall Bw"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-scientist",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/scientist.png",
+            "kind": "gift",
+            "depicts": "Scientist"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-scientist-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/scientist_open.png",
+            "kind": "gift",
+            "depicts": "Scientist Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-sunny",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/sunny.png",
+            "kind": "gift",
+            "depicts": "Sunny"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-sunny-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/sunny_open.png",
+            "kind": "gift",
+            "depicts": "Sunny Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-surge",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/surge.png",
+            "kind": "gift",
+            "depicts": "Surge"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-surge-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/surge_open.png",
+            "kind": "gift",
+            "depicts": "Surge Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-tm12-lady",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/tm12_lady.png",
+            "kind": "gift",
+            "depicts": "Tm 12 Lady"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-tm12-lady-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/tm12_lady_open.png",
+            "kind": "gift",
+            "depicts": "Tm 12 Lady Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-trade-corner-receptionist",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/trade_corner_receptionist.png",
+            "kind": "gift",
+            "depicts": "Trade Corner Receptionist"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-trade-corner-receptionist-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/trade_corner_receptionist_open.png",
+            "kind": "gift",
+            "depicts": "Trade Corner Receptionist Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-wesley",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/wesley.png",
+            "kind": "gift",
+            "depicts": "Wesley"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-wesley-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/wesley_open.png",
+            "kind": "gift",
+            "depicts": "Wesley Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-whitney",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/whitney.png",
+            "kind": "gift",
+            "depicts": "Whitney"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-whitney-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/whitney_open.png",
+            "kind": "gift",
+            "depicts": "Whitney Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-wife",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/wife.png",
+            "kind": "gift",
+            "depicts": "Wife"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-wife-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/wife_open.png",
+            "kind": "gift",
+            "depicts": "Wife Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-wise-trio",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/wise_trio.png",
+            "kind": "gift",
+            "depicts": "Wise Trio"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "gift-wise-trio-open",
+          "fields": {
+            "path": "crystal-ap-tracker-11.0.4/images/gift/wise_trio_open.png",
+            "kind": "gift",
+            "depicts": "Wise Trio Open"
+          },
+          "sourceRefs": [
+            "src-ap-tracker"
+          ],
+          "confidence": "normal"
         }
       ]
     }
