@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "spine",
+  "layer": "spine",
+  "generatedAt": "2026-06-17T23:55:00Z",
+  "inputs": [
+    { "file": "sources.json", "sha256": "8e002ed9dc3d40005fcdfe8007e302df85e0713ee3368efb4430aa075f390283" },
+    { "file": "layers/data.json", "sha256": "8f672a8b9493d62ab0dfc6f39c0a8b3c6b297baf2dac90b830ab24644aaddfcf" }
+  ],
+  "report": {
+    "rowCount": 184,
+    "anomalies": [
+      "indigo-plateau, route-2: no location-map exists in the data layer's image catalog (crystal-ap-tracker), so mapImage was omitted rather than guessed — not a content gap.",
+      "c10 (S.S. Aqua): the route source (src-bulba-walkthrough Part 16) heads the boarding step under \"New Bark Town\" while its own S.S. Aqua description states the ship runs between Olivine City and Vermilion City — a minor internal inconsistency in the source; the boarding is reproduced as the S.S. Aqua to Vermilion without over-specifying the dock town."
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Full extraction of all 20 chapters (c1–c20) from src-bulba-walkthrough Parts 1–29, cross-checked against the data layer (locations, achievements) and the RA wiki. 92 locations, 117 visits, 184 steps.",
+    "Chapter granularity = one badge/story arc per chapter (20 total); multi-floor dungeons and gyms fold into their parent place — both confirmed by Pierre 2026-06-17. Location maps drawn from the data layer's location-map catalog (crystal-ap-tracker) and copied into images/.",
+    "Source-order correction vs. the provisional outline: Pryce's Glacier Badge falls in Part 11 (c6, Mahogany), and the Kanto badge order is Volcano (Blaine, c17) before Earth (Blue, c18), matching the walkthrough's pagination. Chapter titles were adjusted accordingly.",
+    "Revisits modelled as new visits sharing a locationId: New Bark Town (v1–v4), Goldenrod City (v1–v3), Ecruteak City (v1–v3), Olivine City (v1–v2), Mahogany Town (v1–v4), Cherrygrove/Violet/Cerulean/Saffron/Vermilion/Lavender/Viridian/Pallet/Tin Tower/Mt. Mortar all revisited. The Team Rocket hideout, Sprout Tower, Slowpoke Well, Dragon's Den, Whirl Islands, etc. are their own locations; gyms and Mr. Pokémon's house fold into their city/route, matching how the data layer files trainers/items.",
+    "91 achievementRefs attached only where the earning step is unambiguous (gym/badge clears, story beats, gift/trade/static-catch achievements). Catch-based Oak achievements tied to wild encounters, and the conditional set-style/single-Pokémon challenge achievements, are left for the ra-mapping pass to place precisely.",
+    "6 missable steps flagged with deadlines: starter choice (c1), red Gyarados catch (c6), Suicune at Tin Tower (c7), the Dragon Shrine ExtremeSpeed Dratini (c8), and the Ho-Oh and Lugia catches (c20). No source gaps, so no steps carry confidence: flagged.",
+    "SAMPLE GATE (c1) was signed off by Pierre before full extraction."
+  ]
+}
