@@ -43184,6 +43184,4779 @@
           "confidence": "normal"
         }
       ]
+    },
+    {
+      "id": "trainers",
+      "label": "Trainers",
+      "records": [
+        {
+          "id": "azalea-town-bug-catcher-al",
+          "fields": {
+            "location": "Azalea Town",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Al",
+            "party": "Caterpie L12; Weedle L12",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-bug-catcher-benny",
+          "fields": {
+            "location": "Azalea Town",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Benny",
+            "party": "Weedle L7; Kakuna L9; Beedrill L12",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-bug-catcher-josh",
+          "fields": {
+            "location": "Azalea Town",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Josh",
+            "party": "Paras L13",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-gym-leader-bugsy",
+          "fields": {
+            "location": "Azalea Town",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Bugsy",
+            "party": "Metapod L14; Kakuna L14; Scyther L16",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-twins-amy-may",
+          "fields": {
+            "location": "Azalea Town",
+            "trainer-class": "Twins",
+            "trainer-name": "Amy & May",
+            "party": "Ledyba L10; Spinarak L10",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "blackthorn-city-cool-trainer-fran",
+          "fields": {
+            "location": "Blackthorn City",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Fran",
+            "party": "Seadra L37",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "blackthorn-city-cool-trainer-lola",
+          "fields": {
+            "location": "Blackthorn City",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Lola",
+            "party": "Dratini L34; Dragonair L36",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "blackthorn-city-cool-trainer-mike",
+          "fields": {
+            "location": "Blackthorn City",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Mike",
+            "party": "Dragonair L37",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "blackthorn-city-cool-trainer-paul",
+          "fields": {
+            "location": "Blackthorn City",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Paul",
+            "party": "Dratini L34; Dratini L34; Dratini L34",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "blackthorn-city-gym-leader-clair",
+          "fields": {
+            "location": "Blackthorn City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Clair",
+            "party": "Dragonair L37; Dragonair L37; Dragonair L37; Kingdra L40",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "burned-tower-rival-silver",
+          "fields": {
+            "location": "Burned Tower",
+            "trainer-class": "Rival",
+            "trainer-name": "Silver",
+            "party": "Haunter L20; Magnemite L18; Zubat L20; Bayleef L22",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "3 team variants"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "celadon-city-beauty-julia",
+          "fields": {
+            "location": "Celadon City",
+            "trainer-class": "Beauty",
+            "trainer-name": "Julia",
+            "party": "Paras L32; Exeggcute L32; Parasect L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "celadon-city-gym-leader-erika",
+          "fields": {
+            "location": "Celadon City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Erika",
+            "party": "Tangela L42; Jumpluff L41; Victreebel L46; Bellossom L46",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "celadon-city-lass-michelle",
+          "fields": {
+            "location": "Celadon City",
+            "trainer-class": "Lass",
+            "trainer-name": "Michelle",
+            "party": "Skiploom L32; Hoppip L33; Jumpluff L34",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "celadon-city-picnicker-tanya",
+          "fields": {
+            "location": "Celadon City",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Tanya",
+            "party": "Exeggutor L37",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "celadon-city-twins-jo-zoe",
+          "fields": {
+            "location": "Celadon City",
+            "trainer-class": "Twins",
+            "trainer-name": "Jo & Zoe",
+            "party": "Victreebel L35; Vileplume L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cerulean-city-gym-leader-misty",
+          "fields": {
+            "location": "Cerulean City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Misty",
+            "party": "Golduck L42; Quagsire L42; Lapras L44; Starmie L47",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cerulean-city-swimmer-briana",
+          "fields": {
+            "location": "Cerulean City",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Briana",
+            "party": "Seaking L35; Seaking L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cerulean-city-swimmer-diana",
+          "fields": {
+            "location": "Cerulean City",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Diana",
+            "party": "Golduck L37",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cerulean-city-swimmer-parker",
+          "fields": {
+            "location": "Cerulean City",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Parker",
+            "party": "Horsea L32; Horsea L32; Seadra L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cherrygrove-city-rival-silver",
+          "fields": {
+            "location": "Cherrygrove City",
+            "trainer-class": "Rival",
+            "trainer-name": "Silver",
+            "party": "Chikorita L5",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "3 team variants"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cianwood-city-black-belt-lao",
+          "fields": {
+            "location": "Cianwood City",
+            "trainer-class": "Black Belt",
+            "trainer-name": "Lao",
+            "party": "Hitmonchan L27",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cianwood-city-black-belt-lung",
+          "fields": {
+            "location": "Cianwood City",
+            "trainer-class": "Black Belt",
+            "trainer-name": "Lung",
+            "party": "Mankey L23; Mankey L23; Primeape L25",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cianwood-city-black-belt-nob",
+          "fields": {
+            "location": "Cianwood City",
+            "trainer-class": "Black Belt",
+            "trainer-name": "Nob",
+            "party": "Machop L25; Machoke L25",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cianwood-city-black-belt-yoshi",
+          "fields": {
+            "location": "Cianwood City",
+            "trainer-class": "Black Belt",
+            "trainer-name": "Yoshi",
+            "party": "Hitmonlee L27",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cianwood-city-gym-leader-chuck",
+          "fields": {
+            "location": "Cianwood City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Chuck",
+            "party": "Primeape L27; Poliwrath L30",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "dragon-s-den-cool-trainer-cara",
+          "fields": {
+            "location": "Dragon's Den",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Cara",
+            "party": "Horsea L33; Horsea L33; Horsea L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "dragon-s-den-cool-trainer-darin",
+          "fields": {
+            "location": "Dragon's Den",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Darin",
+            "party": "Dragonair L37",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "dragon-s-den-twins-lea-pia",
+          "fields": {
+            "location": "Dragon's Den",
+            "trainer-class": "Twins",
+            "trainer-name": "Lea & Pia",
+            "party": "Dratini L35; Dratini L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ecruteak-city-gym-leader-morty",
+          "fields": {
+            "location": "Ecruteak City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Morty",
+            "party": "Gastly L21; Haunter L21; Gengar L25; Haunter L23",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ecruteak-city-medium-grace",
+          "fields": {
+            "location": "Ecruteak City",
+            "trainer-class": "Medium",
+            "trainer-name": "Grace",
+            "party": "Haunter L20; Haunter L20",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ecruteak-city-medium-martha",
+          "fields": {
+            "location": "Ecruteak City",
+            "trainer-class": "Medium",
+            "trainer-name": "Martha",
+            "party": "Gastly L18; Haunter L20; Gastly L20",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ecruteak-city-sage-jeffrey",
+          "fields": {
+            "location": "Ecruteak City",
+            "trainer-class": "Sage",
+            "trainer-name": "Jeffrey",
+            "party": "Haunter L22",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ecruteak-city-sage-ping",
+          "fields": {
+            "location": "Ecruteak City",
+            "trainer-class": "Sage",
+            "trainer-name": "Ping",
+            "party": "Gastly L16; Gastly L16; Gastly L16; Gastly L16; Gastly L16",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "fuchsia-city-camper-barry",
+          "fields": {
+            "location": "Fuchsia City",
+            "trainer-class": "Camper",
+            "trainer-name": "Barry",
+            "party": "Nidoking L36",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "fuchsia-city-gym-leader-janine",
+          "fields": {
+            "location": "Fuchsia City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Janine",
+            "party": "Crobat L36; Weezing L36; Weezing L36; Ariados L33; Venomoth L39",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "fuchsia-city-lass-alice",
+          "fields": {
+            "location": "Fuchsia City",
+            "trainer-class": "Lass",
+            "trainer-name": "Alice",
+            "party": "Gloom L30; Arbok L34; Gloom L30",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "fuchsia-city-lass-linda",
+          "fields": {
+            "location": "Fuchsia City",
+            "trainer-class": "Lass",
+            "trainer-name": "Linda",
+            "party": "Bulbasaur L30; Ivysaur L32; Venusaur L34",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "fuchsia-city-picnicker-cindy",
+          "fields": {
+            "location": "Fuchsia City",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Cindy",
+            "party": "Nidoqueen L36",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-beauty-samantha",
+          "fields": {
+            "location": "Goldenrod City",
+            "trainer-class": "Beauty",
+            "trainer-name": "Samantha",
+            "party": "Meowth L16; Meowth L16",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-beauty-victoria",
+          "fields": {
+            "location": "Goldenrod City",
+            "trainer-class": "Beauty",
+            "trainer-name": "Victoria",
+            "party": "Sentret L9; Sentret L13; Sentret L17",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-gym-leader-whitney",
+          "fields": {
+            "location": "Goldenrod City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Whitney",
+            "party": "Clefairy L18; Miltank L20",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-lass-bridget",
+          "fields": {
+            "location": "Goldenrod City",
+            "trainer-class": "Lass",
+            "trainer-name": "Bridget",
+            "party": "Jigglypuff L15; Jigglypuff L15; Jigglypuff L15",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-lass-carrie",
+          "fields": {
+            "location": "Goldenrod City",
+            "trainer-class": "Lass",
+            "trainer-name": "Carrie",
+            "party": "Snubbull L18",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-underground-rocket-grunt",
+          "fields": {
+            "location": "Goldenrod Underground",
+            "trainer-class": "Rocket Grunt",
+            "trainer-name": "",
+            "party": "Raticate L24; Golbat L24",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "3 team variants"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ilex-forest-bug-catcher-wayne",
+          "fields": {
+            "location": "Ilex Forest",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Wayne",
+            "party": "Ledyba L8; Paras L10",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "indigo-plateau-champion-lance",
+          "fields": {
+            "location": "Indigo Plateau",
+            "trainer-class": "Champion",
+            "trainer-name": "Lance",
+            "party": "Gyarados L44; Dragonite L47; Dragonite L47; Aerodactyl L46; Charizard L46; Dragonite L50",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "indigo-plateau-elite-four-bruno",
+          "fields": {
+            "location": "Indigo Plateau",
+            "trainer-class": "Elite Four",
+            "trainer-name": "Bruno",
+            "party": "Hitmontop L42; Hitmonlee L42; Hitmonchan L42; Onix L43; Machamp L46",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "indigo-plateau-elite-four-karen",
+          "fields": {
+            "location": "Indigo Plateau",
+            "trainer-class": "Elite Four",
+            "trainer-name": "Karen",
+            "party": "Umbreon L42; Vileplume L42; Gengar L45; Murkrow L44; Houndoom L47",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "indigo-plateau-elite-four-koga",
+          "fields": {
+            "location": "Indigo Plateau",
+            "trainer-class": "Elite Four",
+            "trainer-name": "Koga",
+            "party": "Ariados L40; Venomoth L41; Forretress L43; Muk L42; Crobat L44",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "indigo-plateau-elite-four-will",
+          "fields": {
+            "location": "Indigo Plateau",
+            "trainer-class": "Elite Four",
+            "trainer-name": "Will",
+            "party": "Xatu L40; Jynx L41; Exeggutor L41; Slowbro L41; Xatu L42",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "indigo-plateau-rival-silver",
+          "fields": {
+            "location": "Indigo Plateau",
+            "trainer-class": "Rival",
+            "trainer-name": "Silver",
+            "party": "Sneasel L45; Crobat L48; Magneton L45; Gengar L46; Alakazam L46; Meganium L50",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "3 team variants"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-cool-trainer-aaron",
+          "fields": {
+            "location": "Lake of Rage",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Aaron",
+            "party": "Ivysaur L24; Charmeleon L24; Wartortle L24",
+            "battle-type": "Single",
+            "reward": "$1152",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-cool-trainer-lois",
+          "fields": {
+            "location": "Lake of Rage",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Lois",
+            "party": "Skiploom L25; Ninetales L25",
+            "battle-type": "Single",
+            "reward": "$1200",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-fisherman-andre",
+          "fields": {
+            "location": "Lake of Rage",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Andre",
+            "party": "Gyarados L27",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-fisherman-raymond",
+          "fields": {
+            "location": "Lake of Rage",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Raymond",
+            "party": "Magikarp L22; Magikarp L22; Magikarp L22; Magikarp L22",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mahogany-town-boarder-brad",
+          "fields": {
+            "location": "Mahogany Town",
+            "trainer-class": "Boarder",
+            "trainer-name": "Brad",
+            "party": "Swinub L26; Swinub L26",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mahogany-town-boarder-douglas",
+          "fields": {
+            "location": "Mahogany Town",
+            "trainer-class": "Boarder",
+            "trainer-name": "Douglas",
+            "party": "Shellder L24; Cloyster L25; Shellder L24",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mahogany-town-boarder-ronald",
+          "fields": {
+            "location": "Mahogany Town",
+            "trainer-class": "Boarder",
+            "trainer-name": "Ronald",
+            "party": "Seel L24; Dewgong L25; Seel L24",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mahogany-town-gym-leader-pryce",
+          "fields": {
+            "location": "Mahogany Town",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Pryce",
+            "party": "Seel L27; Dewgong L29; Piloswine L31",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mahogany-town-skier-clarissa",
+          "fields": {
+            "location": "Mahogany Town",
+            "trainer-class": "Skier",
+            "trainer-name": "Clarissa",
+            "party": "Dewgong L28",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mahogany-town-skier-roxanne",
+          "fields": {
+            "location": "Mahogany Town",
+            "trainer-class": "Skier",
+            "trainer-name": "Roxanne",
+            "party": "Jynx L28",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mt-moon-rival-silver",
+          "fields": {
+            "location": "Mt. Moon",
+            "trainer-class": "Rival",
+            "trainer-name": "Silver",
+            "party": "Sneasel L41; Golbat L42; Magneton L41; Gengar L43; Alakazam L43; Meganium L45",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "3 team variants"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mt-mortar-black-belt-kiyo",
+          "fields": {
+            "location": "Mt. Mortar",
+            "trainer-class": "Black Belt",
+            "trainer-name": "Kiyo",
+            "party": "Hitmonlee L34; Hitmonchan L34",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-lass-krise",
+          "fields": {
+            "location": "National Park",
+            "trainer-class": "Lass",
+            "trainer-name": "Krise",
+            "party": "Oddish L12; Cubone L15",
+            "battle-type": "Single",
+            "reward": "$360",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-pok-fan-beverly",
+          "fields": {
+            "location": "National Park",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Beverly",
+            "party": "Snubbull L14",
+            "battle-type": "Single",
+            "reward": "$1120",
+            "notes": "Phone rematches (×2, up to L30)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-pok-fan-william",
+          "fields": {
+            "location": "National Park",
+            "trainer-class": "PokéFan",
+            "trainer-name": "William",
+            "party": "Raichu L14",
+            "battle-type": "Single",
+            "reward": "$1120",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-school-kid-jack",
+          "fields": {
+            "location": "National Park",
+            "trainer-class": "School Kid",
+            "trainer-name": "Jack",
+            "party": "Oddish L12; Voltorb L15",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "Phone rematches (×4, up to L37)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "olivine-city-gym-leader-jasmine",
+          "fields": {
+            "location": "Olivine City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Jasmine",
+            "party": "Magnemite L30; Magnemite L30; Steelix L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "pewter-city-camper-jerry",
+          "fields": {
+            "location": "Pewter City",
+            "trainer-class": "Camper",
+            "trainer-name": "Jerry",
+            "party": "Sandslash L37",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "pewter-city-gym-leader-brock",
+          "fields": {
+            "location": "Pewter City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Brock",
+            "party": "Graveler L41; Rhyhorn L41; Omastar L42; Onix L44; Kabutops L42",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "radio-tower-rocket-executive",
+          "fields": {
+            "location": "Radio Tower",
+            "trainer-class": "Rocket Executive",
+            "trainer-name": "",
+            "party": "Koffing L30; Koffing L30; Koffing L30; Weezing L32; Koffing L30; Koffing L30",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "3 team variants"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rocket-hideout-rocket-executive",
+          "fields": {
+            "location": "Rocket Hideout",
+            "trainer-class": "Rocket Executive",
+            "trainer-name": "",
+            "party": "Zubat L22; Raticate L24; Koffing L22",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rocket-hideout-rocket-grunt",
+          "fields": {
+            "location": "Rocket Hideout",
+            "trainer-class": "Rocket Grunt",
+            "trainer-name": "",
+            "party": "Ekans L18; Gloom L18",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rocket-hideout-rocket-grunt-2",
+          "fields": {
+            "location": "Rocket Hideout",
+            "trainer-class": "Rocket Grunt",
+            "trainer-name": "",
+            "party": "Raticate L19",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rocket-hideout-scientist-mitch",
+          "fields": {
+            "location": "Rocket Hideout",
+            "trainer-class": "Scientist",
+            "trainer-name": "Mitch",
+            "party": "Ditto L24",
+            "battle-type": "Single",
+            "reward": "$2400",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rocket-hideout-scientist-ross",
+          "fields": {
+            "location": "Rocket Hideout",
+            "trainer-class": "Scientist",
+            "trainer-name": "Ross",
+            "party": "Koffing L22; Koffing L22",
+            "battle-type": "Single",
+            "reward": "$2200",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-1-cool-trainer-quinn",
+          "fields": {
+            "location": "Route 1",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Quinn",
+            "party": "Ivysaur L38; Starmie L38",
+            "battle-type": "Single",
+            "reward": "$1824",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-1-school-kid-danny",
+          "fields": {
+            "location": "Route 1",
+            "trainer-class": "School Kid",
+            "trainer-name": "Danny",
+            "party": "Jynx L31; Electabuzz L31; Magmar L31",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-10-hiker-jim",
+          "fields": {
+            "location": "Route 10",
+            "trainer-class": "Hiker",
+            "trainer-name": "Jim",
+            "party": "Machamp L35",
+            "battle-type": "Single",
+            "reward": "$1120",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-10-pok-fan-robert",
+          "fields": {
+            "location": "Route 10",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Robert",
+            "party": "Quagsire L33",
+            "battle-type": "Single",
+            "reward": "$2640",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-11-psychic-fidel",
+          "fields": {
+            "location": "Route 11",
+            "trainer-class": "Psychic",
+            "trainer-name": "Fidel",
+            "party": "Xatu L34",
+            "battle-type": "Single",
+            "reward": "$1088",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-11-psychic-herman",
+          "fields": {
+            "location": "Route 11",
+            "trainer-class": "Psychic",
+            "trainer-name": "Herman",
+            "party": "Exeggcute L30; Exeggcute L30; Exeggutor L30",
+            "battle-type": "Single",
+            "reward": "$960",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-11-youngster-jason",
+          "fields": {
+            "location": "Route 11",
+            "trainer-class": "Youngster",
+            "trainer-name": "Jason",
+            "party": "Sandshrew L33; Crobat L33",
+            "battle-type": "Single",
+            "reward": "$528",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-11-youngster-owen",
+          "fields": {
+            "location": "Route 11",
+            "trainer-class": "Youngster",
+            "trainer-name": "Owen",
+            "party": "Growlithe L35",
+            "battle-type": "Single",
+            "reward": "$560",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-12-fisherman-barney",
+          "fields": {
+            "location": "Route 12",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Barney",
+            "party": "Gyarados L30; Gyarados L30; Gyarados L30",
+            "battle-type": "Single",
+            "reward": "$1184",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-12-fisherman-kyle",
+          "fields": {
+            "location": "Route 12",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Kyle",
+            "party": "Seaking L28; Poliwhirl L31; Seaking L31",
+            "battle-type": "Single",
+            "reward": "$1248",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-12-fisherman-martin",
+          "fields": {
+            "location": "Route 12",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Martin",
+            "party": "Remoraid L32; Remoraid L32",
+            "battle-type": "Single",
+            "reward": "$1344",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-12-fisherman-stephen",
+          "fields": {
+            "location": "Route 12",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Stephen",
+            "party": "Magikarp L25; Magikarp L25; Qwilfish L31; Tentacruel L31",
+            "battle-type": "Single",
+            "reward": "$1216",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-13-bird-keeper-bret",
+          "fields": {
+            "location": "Route 13",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Bret",
+            "party": "Pidgeotto L32; Fearow L32",
+            "battle-type": "Single",
+            "reward": "$768",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-13-bird-keeper-perry",
+          "fields": {
+            "location": "Route 13",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Perry",
+            "party": "Farfetch'd L34",
+            "battle-type": "Single",
+            "reward": "$816",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-13-hiker-kenny",
+          "fields": {
+            "location": "Route 13",
+            "trainer-class": "Hiker",
+            "trainer-name": "Kenny",
+            "party": "Sandslash L27; Graveler L29; Golem L31; Graveler L29",
+            "battle-type": "Single",
+            "reward": "$1056",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-13-pok-fan-alex",
+          "fields": {
+            "location": "Route 13",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Alex",
+            "party": "Nidoking L29; Slowking L29; Seaking L29",
+            "battle-type": "Single",
+            "reward": "$2320",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-13-pok-fan-joshua",
+          "fields": {
+            "location": "Route 13",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Joshua",
+            "party": "Pikachu L23; Pikachu L23; Pikachu L23; Pikachu L23; Pikachu L23; Pikachu L23",
+            "battle-type": "Single",
+            "reward": "$1840",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-14-bird-keeper-roy",
+          "fields": {
+            "location": "Route 14",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Roy",
+            "party": "Fearow L29; Fearow L35",
+            "battle-type": "Single",
+            "reward": "$840",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-14-pok-fan-carter",
+          "fields": {
+            "location": "Route 14",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Carter",
+            "party": "Bulbasaur L29; Charmander L29; Squirtle L29",
+            "battle-type": "Single",
+            "reward": "$2320",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-14-pok-fan-trevor",
+          "fields": {
+            "location": "Route 14",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Trevor",
+            "party": "Psyduck L33",
+            "battle-type": "Single",
+            "reward": "$2640",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-15-school-kid-billy",
+          "fields": {
+            "location": "Route 15",
+            "trainer-class": "School Kid",
+            "trainer-name": "Billy",
+            "party": "Paras L27; Paras L27; Poliwhirl L27; Ditto L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-15-school-kid-johnny",
+          "fields": {
+            "location": "Route 15",
+            "trainer-class": "School Kid",
+            "trainer-name": "Johnny",
+            "party": "Bellsprout L29; Weepinbell L33; Victreebel L31",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-15-school-kid-kipp",
+          "fields": {
+            "location": "Route 15",
+            "trainer-class": "School Kid",
+            "trainer-name": "Kipp",
+            "party": "Voltorb L27; Magnemite L27; Voltorb L31; Magneton L31",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-15-school-kid-tommy",
+          "fields": {
+            "location": "Route 15",
+            "trainer-class": "School Kid",
+            "trainer-name": "Tommy",
+            "party": "Xatu L32; Alakazam L32",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-15-teacher-colette",
+          "fields": {
+            "location": "Route 15",
+            "trainer-class": "Teacher",
+            "trainer-name": "Colette",
+            "party": "Clefairy L36",
+            "battle-type": "Single",
+            "reward": "$2592",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-15-teacher-hillary",
+          "fields": {
+            "location": "Route 15",
+            "trainer-class": "Teacher",
+            "trainer-name": "Hillary",
+            "party": "Aipom L32; Cubone L36",
+            "battle-type": "Single",
+            "reward": "$2592",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-17-biker-charles",
+          "fields": {
+            "location": "Route 17",
+            "trainer-class": "Biker",
+            "trainer-name": "Charles",
+            "party": "Koffing L30; Charmeleon L30; Weezing L30",
+            "battle-type": "Single",
+            "reward": "$960",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-17-biker-glenn",
+          "fields": {
+            "location": "Route 17",
+            "trainer-class": "Biker",
+            "trainer-name": "Glenn",
+            "party": "Koffing L28; Magmar L30; Weezing L32",
+            "battle-type": "Single",
+            "reward": "$1024",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-17-biker-joel",
+          "fields": {
+            "location": "Route 17",
+            "trainer-class": "Biker",
+            "trainer-name": "Joel",
+            "party": "Magmar L32; Magmar L32",
+            "battle-type": "Single",
+            "reward": "$1024",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-17-biker-riley",
+          "fields": {
+            "location": "Route 17",
+            "trainer-class": "Biker",
+            "trainer-name": "Riley",
+            "party": "Weezing L34",
+            "battle-type": "Single",
+            "reward": "$1088",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-18-bird-keeper-bob",
+          "fields": {
+            "location": "Route 18",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Bob",
+            "party": "Noctowl L34",
+            "battle-type": "Single",
+            "reward": "$816",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-18-bird-keeper-boris",
+          "fields": {
+            "location": "Route 18",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Boris",
+            "party": "Doduo L30; Doduo L28; Doduo L32",
+            "battle-type": "Single",
+            "reward": "$768",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-19-swimmer-dawn",
+          "fields": {
+            "location": "Route 19",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Dawn",
+            "party": "Seaking L34",
+            "battle-type": "Single",
+            "reward": "$680",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-19-swimmer-harold",
+          "fields": {
+            "location": "Route 19",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Harold",
+            "party": "Remoraid L32; Seadra L30",
+            "battle-type": "Single",
+            "reward": "$240",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-19-swimmer-jerome",
+          "fields": {
+            "location": "Route 19",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Jerome",
+            "party": "Seadra L26; Tentacool L28; Tentacruel L30; Goldeen L28",
+            "battle-type": "Single",
+            "reward": "$224",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-19-swimmer-tucker",
+          "fields": {
+            "location": "Route 19",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Tucker",
+            "party": "Shellder L30; Cloyster L34",
+            "battle-type": "Single",
+            "reward": "$272",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-bug-catcher-doug",
+          "fields": {
+            "location": "Route 2",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Doug",
+            "party": "Ariados L34",
+            "battle-type": "Single",
+            "reward": "$544",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-bug-catcher-ed",
+          "fields": {
+            "location": "Route 2",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Ed",
+            "party": "Beedrill L30; Beedrill L30; Beedrill L30",
+            "battle-type": "Single",
+            "reward": "$480",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-bug-catcher-rob",
+          "fields": {
+            "location": "Route 2",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Rob",
+            "party": "Beedrill L32; Butterfree L32",
+            "battle-type": "Single",
+            "reward": "$512",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-20-swimmer-cameron",
+          "fields": {
+            "location": "Route 20",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Cameron",
+            "party": "Azumarill L34",
+            "battle-type": "Single",
+            "reward": "$272",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-20-swimmer-lori",
+          "fields": {
+            "location": "Route 20",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Lori",
+            "party": "Starmie L32; Starmie L32",
+            "battle-type": "Single",
+            "reward": "$640",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-20-swimmer-nicole",
+          "fields": {
+            "location": "Route 20",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Nicole",
+            "party": "Marill L29; Marill L29; Lapras L32",
+            "battle-type": "Single",
+            "reward": "$640",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-21-fisherman-arnold",
+          "fields": {
+            "location": "Route 21",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Arnold",
+            "party": "Tentacruel L34",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-21-swimmer-nikki",
+          "fields": {
+            "location": "Route 21",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Nikki",
+            "party": "Seel L28; Seel L28; Seel L28; Dewgong L28",
+            "battle-type": "Single",
+            "reward": "$560",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-21-swimmer-seth",
+          "fields": {
+            "location": "Route 21",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Seth",
+            "party": "Quagsire L29; Octillery L29; Quagsire L32",
+            "battle-type": "Single",
+            "reward": "$256",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-24-rocket-grunt",
+          "fields": {
+            "location": "Route 24",
+            "trainer-class": "Rocket Grunt",
+            "trainer-name": "",
+            "party": "Golbat L30",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-camper-lloyd",
+          "fields": {
+            "location": "Route 25",
+            "trainer-class": "Camper",
+            "trainer-name": "Lloyd",
+            "party": "Nidoking L34",
+            "battle-type": "Single",
+            "reward": "$680",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-cool-trainer-kevin",
+          "fields": {
+            "location": "Route 25",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Kevin",
+            "party": "Rhyhorn L38; Charmeleon L35; Wartortle L35",
+            "battle-type": "Single",
+            "reward": "$1680",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-lass-ellen",
+          "fields": {
+            "location": "Route 25",
+            "trainer-class": "Lass",
+            "trainer-name": "Ellen",
+            "party": "Wigglytuff L30; Granbull L34",
+            "battle-type": "Single",
+            "reward": "$816",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-lass-laura",
+          "fields": {
+            "location": "Route 25",
+            "trainer-class": "Lass",
+            "trainer-name": "Laura",
+            "party": "Gloom L28; Pidgeotto L31; Bellossom L31",
+            "battle-type": "Single",
+            "reward": "$744",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-lass-shannon",
+          "fields": {
+            "location": "Route 25",
+            "trainer-class": "Lass",
+            "trainer-name": "Shannon",
+            "party": "Paras L29; Paras L29; Parasect L32",
+            "battle-type": "Single",
+            "reward": "$768",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-school-kid-dudley",
+          "fields": {
+            "location": "Route 25",
+            "trainer-class": "School Kid",
+            "trainer-name": "Dudley",
+            "party": "Oddish L35",
+            "battle-type": "Single",
+            "reward": "$900",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-25-school-kid-joe",
+          "fields": {
+            "location": "Route 25",
+            "trainer-class": "School Kid",
+            "trainer-name": "Joe",
+            "party": "Tangela L33; Vaporeon L33",
+            "battle-type": "Single",
+            "reward": "$840",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-25-super-nerd-pat",
+          "fields": {
+            "location": "Route 25",
+            "trainer-class": "Super Nerd",
+            "trainer-name": "Pat",
+            "party": "Porygon L36",
+            "battle-type": "Single",
+            "reward": "$1152",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-26-cool-trainer-beth",
+          "fields": {
+            "location": "Route 26",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Beth",
+            "party": "Rapidash L36",
+            "battle-type": "Single",
+            "reward": "$1728",
+            "notes": "Phone rematches (×2, up to L43)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-26-cool-trainer-gaven",
+          "fields": {
+            "location": "Route 26",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Gaven",
+            "party": "Victreebel L32; Kingler L32; Flareon L32",
+            "battle-type": "Single",
+            "reward": "$1536",
+            "notes": "Phone rematches (×1, up to L35)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-26-cool-trainer-jake",
+          "fields": {
+            "location": "Route 26",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Jake",
+            "party": "Parasect L33; Golduck L35",
+            "battle-type": "Single",
+            "reward": "$1680",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-26-cool-trainer-joyce",
+          "fields": {
+            "location": "Route 26",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Joyce",
+            "party": "Pikachu L36; Blastoise L32",
+            "battle-type": "Single",
+            "reward": "$1536",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-26-fisherman-scott",
+          "fields": {
+            "location": "Route 26",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Scott",
+            "party": "Qwilfish L30; Qwilfish L30; Seaking L34",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-26-psychic-richard",
+          "fields": {
+            "location": "Route 26",
+            "trainer-class": "Psychic",
+            "trainer-name": "Richard",
+            "party": "Sunkern L36",
+            "battle-type": "Single",
+            "reward": "$1152",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-27-bird-keeper-jose",
+          "fields": {
+            "location": "Route 27",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Jose",
+            "party": "Farfetch'd L35",
+            "battle-type": "Single",
+            "reward": "$840",
+            "notes": "Phone rematches (×2, up to L40)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-27-cool-trainer-blake",
+          "fields": {
+            "location": "Route 27",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Blake",
+            "party": "Magneton L33; Quagsire L31; Exeggcute L31",
+            "battle-type": "Single",
+            "reward": "$1488",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-27-cool-trainer-brian",
+          "fields": {
+            "location": "Route 27",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Brian",
+            "party": "Sandslash L35",
+            "battle-type": "Single",
+            "reward": "$1680",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-27-cool-trainer-megan",
+          "fields": {
+            "location": "Route 27",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Megan",
+            "party": "Bulbasaur L32; Ivysaur L32; Venusaur L32",
+            "battle-type": "Single",
+            "reward": "$1536",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-27-cool-trainer-reena",
+          "fields": {
+            "location": "Route 27",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Reena",
+            "party": "Starmie L31; Nidoqueen L33; Starmie L31",
+            "battle-type": "Single",
+            "reward": "$1488",
+            "notes": "Phone rematches (×2, up to L37)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-27-psychic-gilbert",
+          "fields": {
+            "location": "Route 27",
+            "trainer-class": "Psychic",
+            "trainer-name": "Gilbert",
+            "party": "Starmie L30; Exeggcute L30; Girafarig L34",
+            "battle-type": "Single",
+            "reward": "$1088",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-3-firebreather-burt",
+          "fields": {
+            "location": "Route 3",
+            "trainer-class": "Firebreather",
+            "trainer-name": "Burt",
+            "party": "Weezing L32; Slugma L32",
+            "battle-type": "Single",
+            "reward": "$1536",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-3-firebreather-otis",
+          "fields": {
+            "location": "Route 3",
+            "trainer-class": "Firebreather",
+            "trainer-name": "Otis",
+            "party": "Magmar L29; Weezing L32; Magmar L29",
+            "battle-type": "Single",
+            "reward": "$1392",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-3-jimmy",
+          "fields": {
+            "location": "Route 3",
+            "trainer-class": "",
+            "trainer-name": "Jimmy",
+            "party": "Raticate L33; Arbok L33",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-3-youngster-warren",
+          "fields": {
+            "location": "Route 3",
+            "trainer-class": "Youngster",
+            "trainer-name": "Warren",
+            "party": "Fearow L35",
+            "battle-type": "Single",
+            "reward": "$560",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-30-bug-catcher-don",
+          "fields": {
+            "location": "Route 30",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Don",
+            "party": "Caterpie L3; Caterpie L3",
+            "battle-type": "Single",
+            "reward": "$48",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-30-youngster-joey",
+          "fields": {
+            "location": "Route 30",
+            "trainer-class": "Youngster",
+            "trainer-name": "Joey",
+            "party": "Rattata L4",
+            "battle-type": "Single",
+            "reward": "$64",
+            "notes": "Phone rematches (×4, up to L34)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-30-youngster-mikey",
+          "fields": {
+            "location": "Route 30",
+            "trainer-class": "Youngster",
+            "trainer-name": "Mikey",
+            "party": "Pidgey L2; Rattata L4",
+            "battle-type": "Single",
+            "reward": "$64",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-31-bug-catcher-wade",
+          "fields": {
+            "location": "Route 31",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Wade",
+            "party": "Caterpie L2; Caterpie L2; Weedle L3; Caterpie L2",
+            "battle-type": "Single",
+            "reward": "$32",
+            "notes": "Phone rematches (×4, up to L34)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-bird-keeper-peter",
+          "fields": {
+            "location": "Route 32",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Peter",
+            "party": "Pidgey L6; Pidgey L6; Spearow L8",
+            "battle-type": "Single",
+            "reward": "$192",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-camper-roland",
+          "fields": {
+            "location": "Route 32",
+            "trainer-class": "Camper",
+            "trainer-name": "Roland",
+            "party": "Nidoran♂ L9",
+            "battle-type": "Single",
+            "reward": "$180",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-fisherman-henry",
+          "fields": {
+            "location": "Route 32",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Henry",
+            "party": "Poliwag L8; Poliwag L8",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-fisherman-justin",
+          "fields": {
+            "location": "Route 32",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Justin",
+            "party": "Magikarp L5; Magikarp L5; Magikarp L15; Magikarp L5",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-fisherman-ralph",
+          "fields": {
+            "location": "Route 32",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Ralph",
+            "party": "Goldeen L10",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "Phone rematches (×4, up to L39)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-picnicker-liz",
+          "fields": {
+            "location": "Route 32",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Liz",
+            "party": "Nidoran♀ L9",
+            "battle-type": "Single",
+            "reward": "$180",
+            "notes": "Phone rematches (×3, up to L26)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-youngster-albert",
+          "fields": {
+            "location": "Route 32",
+            "trainer-class": "Youngster",
+            "trainer-name": "Albert",
+            "party": "Rattata L6; Zubat L8",
+            "battle-type": "Single",
+            "reward": "$128",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-youngster-gordon",
+          "fields": {
+            "location": "Route 32",
+            "trainer-class": "Youngster",
+            "trainer-name": "Gordon",
+            "party": "Wooper L10",
+            "battle-type": "Single",
+            "reward": "$160",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-33-hiker-anthony",
+          "fields": {
+            "location": "Route 33",
+            "trainer-class": "Hiker",
+            "trainer-name": "Anthony",
+            "party": "Geodude L11; Machop L11",
+            "battle-type": "Single",
+            "reward": "$352",
+            "notes": "Phone rematches (×4, up to L34)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-camper-todd",
+          "fields": {
+            "location": "Route 34",
+            "trainer-class": "Camper",
+            "trainer-name": "Todd",
+            "party": "Psyduck L14",
+            "battle-type": "Single",
+            "reward": "$280",
+            "notes": "Phone rematches (×4, up to L34)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-cool-trainer-irene",
+          "fields": {
+            "location": "Route 34",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Irene",
+            "party": "Goldeen L22; Seaking L24",
+            "battle-type": "Single",
+            "reward": "$1152",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-cool-trainer-jenn",
+          "fields": {
+            "location": "Route 34",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Jenn",
+            "party": "Staryu L24; Starmie L26",
+            "battle-type": "Single",
+            "reward": "$1248",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-cool-trainer-kate",
+          "fields": {
+            "location": "Route 34",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Kate",
+            "party": "Shellder L26; Cloyster L28",
+            "battle-type": "Single",
+            "reward": "$1344",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-officer-keith",
+          "fields": {
+            "location": "Route 34",
+            "trainer-class": "Officer",
+            "trainer-name": "Keith",
+            "party": "Growlithe L17",
+            "battle-type": "Single",
+            "reward": "$680",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-picnicker-gina",
+          "fields": {
+            "location": "Route 34",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Gina",
+            "party": "Hoppip L9; Hoppip L9; Bulbasaur L12",
+            "battle-type": "Single",
+            "reward": "$240",
+            "notes": "Phone rematches (×4, up to L38)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-pok-fan-brandon",
+          "fields": {
+            "location": "Route 34",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Brandon",
+            "party": "Snubbull L13",
+            "battle-type": "Single",
+            "reward": "$1040",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-youngster-ian",
+          "fields": {
+            "location": "Route 34",
+            "trainer-class": "Youngster",
+            "trainer-name": "Ian",
+            "party": "Mankey L10; Diglett L12",
+            "battle-type": "Single",
+            "reward": "$192",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-youngster-samuel",
+          "fields": {
+            "location": "Route 34",
+            "trainer-class": "Youngster",
+            "trainer-name": "Samuel",
+            "party": "Rattata L7; Sandshrew L10; Spearow L8; Spearow L8",
+            "battle-type": "Single",
+            "reward": "$128",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-bird-keeper-bryan",
+          "fields": {
+            "location": "Route 35",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Bryan",
+            "party": "Pidgey L12; Pidgeotto L14",
+            "battle-type": "Single",
+            "reward": "$336",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-bug-catcher-arnie",
+          "fields": {
+            "location": "Route 35",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Arnie",
+            "party": "Venonat L15",
+            "battle-type": "Single",
+            "reward": "$240",
+            "notes": "Phone rematches (×4, up to L40)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-bug-catcher-walt",
+          "fields": {
+            "location": "Route 35",
+            "trainer-class": "Bug Catcher",
+            "trainer-name": "Walt",
+            "party": "Magmar L13; Magmar L13",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-camper-elliot",
+          "fields": {
+            "location": "Route 35",
+            "trainer-class": "Camper",
+            "trainer-name": "Elliot",
+            "party": "Sandshrew L13; Marill L15",
+            "battle-type": "Single",
+            "reward": "$300",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-camper-ivan",
+          "fields": {
+            "location": "Route 35",
+            "trainer-class": "Camper",
+            "trainer-name": "Ivan",
+            "party": "Diglett L10; Zubat L10; Diglett L14",
+            "battle-type": "Single",
+            "reward": "$280",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-juggler-irwin",
+          "fields": {
+            "location": "Route 35",
+            "trainer-class": "Juggler",
+            "trainer-name": "Irwin",
+            "party": "Voltorb L2; Voltorb L6; Voltorb L10; Voltorb L14",
+            "battle-type": "Single",
+            "reward": "$560",
+            "notes": "Phone rematches (×2, up to L30)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-officer-dirk",
+          "fields": {
+            "location": "Route 35",
+            "trainer-class": "Officer",
+            "trainer-name": "Dirk",
+            "party": "Growlithe L14; Growlithe L14",
+            "battle-type": "Single",
+            "reward": "$560",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-picnicker-brooke",
+          "fields": {
+            "location": "Route 35",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Brooke",
+            "party": "Pikachu L16",
+            "battle-type": "Single",
+            "reward": "$320",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-picnicker-kim",
+          "fields": {
+            "location": "Route 35",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Kim",
+            "party": "Vulpix L15",
+            "battle-type": "Single",
+            "reward": "$300",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-36-psychic-mark",
+          "fields": {
+            "location": "Route 36",
+            "trainer-class": "Psychic",
+            "trainer-name": "Mark",
+            "party": "Abra L13; Abra L13; Kadabra L15",
+            "battle-type": "Single",
+            "reward": "$544",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-36-school-kid-alan",
+          "fields": {
+            "location": "Route 36",
+            "trainer-class": "School Kid",
+            "trainer-name": "Alan",
+            "party": "Tangela L16",
+            "battle-type": "Single",
+            "reward": "$340",
+            "notes": "Phone rematches (×4, up to L35)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-37-psychic-greg",
+          "fields": {
+            "location": "Route 37",
+            "trainer-class": "Psychic",
+            "trainer-name": "Greg",
+            "party": "Drowzee L17",
+            "battle-type": "Single",
+            "reward": "$544",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-37-twins-ann-anne",
+          "fields": {
+            "location": "Route 37",
+            "trainer-class": "Twins",
+            "trainer-name": "Ann & Anne",
+            "party": "Clefairy L16; Jigglypuff L16",
+            "battle-type": "Single",
+            "reward": "$320",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-38-beauty-olivia",
+          "fields": {
+            "location": "Route 38",
+            "trainer-class": "Beauty",
+            "trainer-name": "Olivia",
+            "party": "Corsola L19",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-38-beauty-valerie",
+          "fields": {
+            "location": "Route 38",
+            "trainer-class": "Beauty",
+            "trainer-name": "Valerie",
+            "party": "Hoppip L17; Skiploom L17",
+            "battle-type": "Single",
+            "reward": "$1496",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-38-bird-keeper-toby",
+          "fields": {
+            "location": "Route 38",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Toby",
+            "party": "Doduo L15; Doduo L16; Doduo L17",
+            "battle-type": "Single",
+            "reward": "$408",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-38-lass-dana",
+          "fields": {
+            "location": "Route 38",
+            "trainer-class": "Lass",
+            "trainer-name": "Dana",
+            "party": "Flaaffy L18; Psyduck L18",
+            "battle-type": "Single",
+            "reward": "$432",
+            "notes": "Phone rematches (×4, up to L36)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-38-sailor-harry",
+          "fields": {
+            "location": "Route 38",
+            "trainer-class": "Sailor",
+            "trainer-name": "Harry",
+            "party": "Wooper L19",
+            "battle-type": "Single",
+            "reward": "$760",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-38-school-kid-chad",
+          "fields": {
+            "location": "Route 38",
+            "trainer-class": "School Kid",
+            "trainer-name": "Chad",
+            "party": "Mr. Mime L19",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "Phone rematches (×3, up to L34)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-39-pok-fan-derek",
+          "fields": {
+            "location": "Route 39",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Derek",
+            "party": "Pikachu L17",
+            "battle-type": "Single",
+            "reward": "$1360",
+            "notes": "Phone rematches (×2, up to L36)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-39-pok-fan-jamie",
+          "fields": {
+            "location": "Route 39",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Jamie",
+            "party": "Meowth L16",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-39-pok-fan-ruth",
+          "fields": {
+            "location": "Route 39",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Ruth",
+            "party": "Pikachu L17",
+            "battle-type": "Single",
+            "reward": "$1360",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-39-psychic-norman",
+          "fields": {
+            "location": "Route 39",
+            "trainer-class": "Psychic",
+            "trainer-name": "Norman",
+            "party": "Slowpoke L17; Slowpoke L20",
+            "battle-type": "Single",
+            "reward": "$640",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-39-sailor-eugene",
+          "fields": {
+            "location": "Route 39",
+            "trainer-class": "Sailor",
+            "trainer-name": "Eugene",
+            "party": "Poliwhirl L17; Raticate L17; Krabby L19",
+            "battle-type": "Single",
+            "reward": "$760",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-4-bird-keeper-hank",
+          "fields": {
+            "location": "Route 4",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Hank",
+            "party": "Pidgey L12; Pidgeot L34",
+            "battle-type": "Single",
+            "reward": "$816",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-4-picnicker-hope",
+          "fields": {
+            "location": "Route 4",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Hope",
+            "party": "Flaaffy L34",
+            "battle-type": "Single",
+            "reward": "$680",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-4-picnicker-sharon",
+          "fields": {
+            "location": "Route 4",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Sharon",
+            "party": "Furret L31; Rapidash L33",
+            "battle-type": "Single",
+            "reward": "$660",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-40-swimmer-elaine",
+          "fields": {
+            "location": "Route 40",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Elaine",
+            "party": "Staryu L21",
+            "battle-type": "Single",
+            "reward": "$420",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-40-swimmer-paula",
+          "fields": {
+            "location": "Route 40",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Paula",
+            "party": "Staryu L19; Shellder L19",
+            "battle-type": "Single",
+            "reward": "$380",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-40-swimmer-randall",
+          "fields": {
+            "location": "Route 40",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Randall",
+            "party": "Shellder L18; Wartortle L20; Shellder L18",
+            "battle-type": "Single",
+            "reward": "$144",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-40-swimmer-simon",
+          "fields": {
+            "location": "Route 40",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Simon",
+            "party": "Tentacool L20; Tentacool L20",
+            "battle-type": "Single",
+            "reward": "$160",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-41-swimmer-berke",
+          "fields": {
+            "location": "Route 41",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Berke",
+            "party": "Qwilfish L23",
+            "battle-type": "Single",
+            "reward": "$184",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-41-swimmer-charlie",
+          "fields": {
+            "location": "Route 41",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Charlie",
+            "party": "Shellder L21; Tentacool L19; Tentacruel L19",
+            "battle-type": "Single",
+            "reward": "$152",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-41-swimmer-denise",
+          "fields": {
+            "location": "Route 41",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Denise",
+            "party": "Seel L22",
+            "battle-type": "Single",
+            "reward": "$440",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-41-swimmer-george",
+          "fields": {
+            "location": "Route 41",
+            "trainer-class": "Swimmer",
+            "trainer-name": "George",
+            "party": "Tentacool L16; Tentacool L17; Tentacool L16; Staryu L19; Tentacool L17; Remoraid L19",
+            "battle-type": "Single",
+            "reward": "$152",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-41-swimmer-kara",
+          "fields": {
+            "location": "Route 41",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Kara",
+            "party": "Staryu L20; Starmie L20",
+            "battle-type": "Single",
+            "reward": "$400",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-41-swimmer-kaylee",
+          "fields": {
+            "location": "Route 41",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Kaylee",
+            "party": "Goldeen L18; Goldeen L20; Seaking L20",
+            "battle-type": "Single",
+            "reward": "$400",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-41-swimmer-kirk",
+          "fields": {
+            "location": "Route 41",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Kirk",
+            "party": "Gyarados L20; Gyarados L20",
+            "battle-type": "Single",
+            "reward": "$180",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-41-swimmer-mathew",
+          "fields": {
+            "location": "Route 41",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Mathew",
+            "party": "Krabby L23",
+            "battle-type": "Single",
+            "reward": "$184",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-41-swimmer-susie",
+          "fields": {
+            "location": "Route 41",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Susie",
+            "party": "Psyduck L20; Goldeen L22",
+            "battle-type": "Single",
+            "reward": "$440",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-41-swimmer-wendy",
+          "fields": {
+            "location": "Route 41",
+            "trainer-class": "Swimmer",
+            "trainer-name": "Wendy",
+            "party": "Horsea L21; Horsea L21",
+            "battle-type": "Single",
+            "reward": "$420",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-42-fisherman-tully",
+          "fields": {
+            "location": "Route 42",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Tully",
+            "party": "Qwilfish L18",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "Phone rematches (×3, up to L37)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-42-hiker-benjamin",
+          "fields": {
+            "location": "Route 42",
+            "trainer-class": "Hiker",
+            "trainer-name": "Benjamin",
+            "party": "Diglett L14; Geodude L14; Dugtrio L16",
+            "battle-type": "Single",
+            "reward": "$512",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-42-pok-maniac-shane",
+          "fields": {
+            "location": "Route 42",
+            "trainer-class": "PokéManiac",
+            "trainer-name": "Shane",
+            "party": "Nidorina L16; Nidorino L16",
+            "battle-type": "Single",
+            "reward": "$960",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-43-camper-spencer",
+          "fields": {
+            "location": "Route 43",
+            "trainer-class": "Camper",
+            "trainer-name": "Spencer",
+            "party": "Sandshrew L17; Sandslash L17; Zubat L19",
+            "battle-type": "Single",
+            "reward": "$380",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-43-fisherman-marvin",
+          "fields": {
+            "location": "Route 43",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Marvin",
+            "party": "Magikarp L10; Gyarados L10; Magikarp L15; Gyarados L15",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-43-picnicker-tiffany",
+          "fields": {
+            "location": "Route 43",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Tiffany",
+            "party": "Clefairy L20",
+            "battle-type": "Single",
+            "reward": "$400",
+            "notes": "Phone rematches (×3, up to L43)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-43-pok-maniac-ben",
+          "fields": {
+            "location": "Route 43",
+            "trainer-class": "PokéManiac",
+            "trainer-name": "Ben",
+            "party": "Slowbro L19",
+            "battle-type": "Single",
+            "reward": "$1140",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-43-pok-maniac-brent",
+          "fields": {
+            "location": "Route 43",
+            "trainer-class": "PokéManiac",
+            "trainer-name": "Brent",
+            "party": "Lickitung L19",
+            "battle-type": "Single",
+            "reward": "$1140",
+            "notes": "Phone rematches (×3, up to L41)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-43-pok-maniac-ron",
+          "fields": {
+            "location": "Route 43",
+            "trainer-class": "PokéManiac",
+            "trainer-name": "Ron",
+            "party": "Nidoking L19",
+            "battle-type": "Single",
+            "reward": "$1140",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-44-bird-keeper-vance",
+          "fields": {
+            "location": "Route 44",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Vance",
+            "party": "Pidgeotto L25; Pidgeotto L25",
+            "battle-type": "Single",
+            "reward": "$600",
+            "notes": "Phone rematches (×2, up to L32)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-44-cool-trainer-allen",
+          "fields": {
+            "location": "Route 44",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Allen",
+            "party": "Charmeleon L27",
+            "battle-type": "Single",
+            "reward": "$1296",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-44-cool-trainer-cybil",
+          "fields": {
+            "location": "Route 44",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Cybil",
+            "party": "Butterfree L25; Bellossom L25",
+            "battle-type": "Single",
+            "reward": "$1200",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-44-fisherman-edgar",
+          "fields": {
+            "location": "Route 44",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Edgar",
+            "party": "Remoraid L25; Remoraid L25",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-44-fisherman-wilton",
+          "fields": {
+            "location": "Route 44",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Wilton",
+            "party": "Goldeen L23; Goldeen L23; Seaking L25",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "Phone rematches (×2, up to L38)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-44-pok-maniac-zach",
+          "fields": {
+            "location": "Route 44",
+            "trainer-class": "PokéManiac",
+            "trainer-name": "Zach",
+            "party": "Rhyhorn L27",
+            "battle-type": "Single",
+            "reward": "$1620",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-44-psychic-phil",
+          "fields": {
+            "location": "Route 44",
+            "trainer-class": "Psychic",
+            "trainer-name": "Phil",
+            "party": "Natu L24; Kadabra L26",
+            "battle-type": "Single",
+            "reward": "$972",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-black-belt-kenji",
+          "fields": {
+            "location": "Route 45",
+            "trainer-class": "Black Belt",
+            "trainer-name": "Kenji",
+            "party": "Machoke L28",
+            "battle-type": "Single",
+            "reward": "$672",
+            "notes": "Phone rematches (×2, up to L36)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-camper-quentin",
+          "fields": {
+            "location": "Route 45",
+            "trainer-class": "Camper",
+            "trainer-name": "Quentin",
+            "party": "Fearow L30; Primeape L30; Tauros L30",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-cool-trainer-kelly",
+          "fields": {
+            "location": "Route 45",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Kelly",
+            "party": "Marill L27; Wartortle L24; Wartortle L24",
+            "battle-type": "Single",
+            "reward": "$1152",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-cool-trainer-ryan",
+          "fields": {
+            "location": "Route 45",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Ryan",
+            "party": "Pidgeot L25; Electabuzz L27",
+            "battle-type": "Single",
+            "reward": "$1296",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-hiker-erik",
+          "fields": {
+            "location": "Route 45",
+            "trainer-class": "Hiker",
+            "trainer-name": "Erik",
+            "party": "Machop L24; Geodude L27; Machop L27",
+            "battle-type": "Single",
+            "reward": "$864",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-45-hiker-michael",
+          "fields": {
+            "location": "Route 45",
+            "trainer-class": "Hiker",
+            "trainer-name": "Michael",
+            "party": "Geodude L25; Graveler L25; Golem L25",
+            "battle-type": "Single",
+            "reward": "$800",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-hiker-parry",
+          "fields": {
+            "location": "Route 45",
+            "trainer-class": "Hiker",
+            "trainer-name": "Parry",
+            "party": "Onix L29",
+            "battle-type": "Single",
+            "reward": "$928",
+            "notes": "Phone rematches (×2, up to L38)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-hiker-timothy",
+          "fields": {
+            "location": "Route 45",
+            "trainer-class": "Hiker",
+            "trainer-name": "Timothy",
+            "party": "Diglett L27; Dugtrio L27",
+            "battle-type": "Single",
+            "reward": "$864",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-46-camper-ted",
+          "fields": {
+            "location": "Route 46",
+            "trainer-class": "Camper",
+            "trainer-name": "Ted",
+            "party": "Mankey L17",
+            "battle-type": "Single",
+            "reward": "$340",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-46-hiker-bailey",
+          "fields": {
+            "location": "Route 46",
+            "trainer-class": "Hiker",
+            "trainer-name": "Bailey",
+            "party": "Geodude L13; Geodude L13; Geodude L13; Geodude L13; Geodude L13",
+            "battle-type": "Single",
+            "reward": "$416",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-46-picnicker-erin",
+          "fields": {
+            "location": "Route 46",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Erin",
+            "party": "Ponyta L16; Ponyta L16",
+            "battle-type": "Single",
+            "reward": "$320",
+            "notes": "Phone rematches (×2, up to L36)"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-6-pok-fan-allan",
+          "fields": {
+            "location": "Route 6",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Allan",
+            "party": "Teddiursa L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-6-pok-fan-rex",
+          "fields": {
+            "location": "Route 6",
+            "trainer-class": "PokéFan",
+            "trainer-name": "Rex",
+            "party": "Phanpy L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-8-biker-dwayne",
+          "fields": {
+            "location": "Route 8",
+            "trainer-class": "Biker",
+            "trainer-name": "Dwayne",
+            "party": "Koffing L27; Koffing L28; Koffing L29; Koffing L30",
+            "battle-type": "Single",
+            "reward": "$960",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-8-biker-harris",
+          "fields": {
+            "location": "Route 8",
+            "trainer-class": "Biker",
+            "trainer-name": "Harris",
+            "party": "Flareon L34",
+            "battle-type": "Single",
+            "reward": "$1088",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-8-biker-zeke",
+          "fields": {
+            "location": "Route 8",
+            "trainer-class": "Biker",
+            "trainer-name": "Zeke",
+            "party": "Koffing L32; Koffing L32",
+            "battle-type": "Single",
+            "reward": "$1024",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-8-super-nerd-sam",
+          "fields": {
+            "location": "Route 8",
+            "trainer-class": "Super Nerd",
+            "trainer-name": "Sam",
+            "party": "Grimer L34; Muk L34",
+            "battle-type": "Single",
+            "reward": "$1088",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-8-super-nerd-tom",
+          "fields": {
+            "location": "Route 8",
+            "trainer-class": "Super Nerd",
+            "trainer-name": "Tom",
+            "party": "Magnemite L32; Magnemite L32; Magnemite L32",
+            "battle-type": "Single",
+            "reward": "$1024",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-9-camper-dean",
+          "fields": {
+            "location": "Route 9",
+            "trainer-class": "Camper",
+            "trainer-name": "Dean",
+            "party": "Golduck L33; Sandslash L31",
+            "battle-type": "Single",
+            "reward": "$620",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-9-camper-sid",
+          "fields": {
+            "location": "Route 9",
+            "trainer-class": "Camper",
+            "trainer-name": "Sid",
+            "party": "Dugtrio L32; Primeape L29; Poliwrath L29",
+            "battle-type": "Single",
+            "reward": "$580",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-9-hiker-sidney",
+          "fields": {
+            "location": "Route 9",
+            "trainer-class": "Hiker",
+            "trainer-name": "Sidney",
+            "party": "Dugtrio L34; Onix L92",
+            "battle-type": "Single",
+            "reward": "$1024",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "route-9-hiker-tim",
+          "fields": {
+            "location": "Route 9",
+            "trainer-class": "Hiker",
+            "trainer-name": "Tim",
+            "party": "Graveler L31; Graveler L31; Graveler L31",
+            "battle-type": "Single",
+            "reward": "$992",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-9-picnicker-edna",
+          "fields": {
+            "location": "Route 9",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Edna",
+            "party": "Nidorina L30; Raichu L34",
+            "battle-type": "Single",
+            "reward": "$680",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-9-picnicker-heidi",
+          "fields": {
+            "location": "Route 9",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Heidi",
+            "party": "Skiploom L32; Skiploom L32",
+            "battle-type": "Single",
+            "reward": "$640",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ruins-of-alph-psychic-nathan",
+          "fields": {
+            "location": "Ruins of Alph",
+            "trainer-class": "Psychic",
+            "trainer-name": "Nathan",
+            "party": "Girafarig L16",
+            "battle-type": "Single",
+            "reward": "$832",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "saffron-city-gym-leader-sabrina",
+          "fields": {
+            "location": "Saffron City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Sabrina",
+            "party": "Espeon L46; Mr. Mime L46; Alakazam L48",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "saffron-city-medium-doris",
+          "fields": {
+            "location": "Saffron City",
+            "trainer-class": "Medium",
+            "trainer-name": "Doris",
+            "party": "Slowpoke L34; Slowbro L36",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "saffron-city-medium-rebecca",
+          "fields": {
+            "location": "Saffron City",
+            "trainer-class": "Medium",
+            "trainer-name": "Rebecca",
+            "party": "Drowzee L35; Hypno L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "saffron-city-psychic-franklin",
+          "fields": {
+            "location": "Saffron City",
+            "trainer-class": "Psychic",
+            "trainer-name": "Franklin",
+            "party": "Kadabra L37",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "saffron-city-psychic-jared",
+          "fields": {
+            "location": "Saffron City",
+            "trainer-class": "Psychic",
+            "trainer-name": "Jared",
+            "party": "Mr. Mime L32; Exeggcute L32; Exeggutor L35",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "seafoam-islands-gym-leader-blaine",
+          "fields": {
+            "location": "Seafoam Islands",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Blaine",
+            "party": "Magcargo L45; Magmar L45; Rapidash L50",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "shining-lighthouse-bird-keeper-denis",
+          "fields": {
+            "location": "Shining Lighthouse",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Denis",
+            "party": "Spearow L18; Fearow L20; Spearow L18",
+            "battle-type": "Single",
+            "reward": "$432",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "shining-lighthouse-sailor-ernest",
+          "fields": {
+            "location": "Shining Lighthouse",
+            "trainer-class": "Sailor",
+            "trainer-name": "Ernest",
+            "party": "Machop L18; Machop L18; Poliwhirl L18",
+            "battle-type": "Single",
+            "reward": "$720",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "silver-cave-pok-mon-trainer-red",
+          "fields": {
+            "location": "Silver Cave",
+            "trainer-class": "Pokémon",
+            "trainer-name": "Trainer Red",
+            "party": "Pikachu L81; Espeon L73; Snorlax L75; Venusaur L77; Charizard L77; Blastoise L77",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "slowpoke-well-rocket-grunt",
+          "fields": {
+            "location": "Slowpoke Well",
+            "trainer-class": "Rocket Grunt",
+            "trainer-name": "",
+            "party": "Rattata L9; Rattata L9",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "4 team variants"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprout-tower-sage-jin",
+          "fields": {
+            "location": "Sprout Tower",
+            "trainer-class": "Sage",
+            "trainer-name": "Jin",
+            "party": "Bellsprout L6",
+            "battle-type": "Single",
+            "reward": "$192",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprout-tower-sage-li",
+          "fields": {
+            "location": "Sprout Tower",
+            "trainer-class": "Sage",
+            "trainer-name": "Li",
+            "party": "Bellsprout L7; Bellsprout L7; Hoothoot L10",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprout-tower-sage-neal",
+          "fields": {
+            "location": "Sprout Tower",
+            "trainer-class": "Sage",
+            "trainer-name": "Neal",
+            "party": "Bellsprout L6",
+            "battle-type": "Single",
+            "reward": "$192",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprout-tower-sage-troy",
+          "fields": {
+            "location": "Sprout Tower",
+            "trainer-class": "Sage",
+            "trainer-name": "Troy",
+            "party": "Bellsprout L7; Hoothoot L7",
+            "battle-type": "Single",
+            "reward": "$224",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ss-aqua-black-belt-wai",
+          "fields": {
+            "location": "SS Aqua",
+            "trainer-class": "Black Belt",
+            "trainer-name": "Wai",
+            "party": "Machoke L30; Machoke L32; Machoke L34",
+            "battle-type": "Single",
+            "reward": "$816",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ss-aqua-fisherman-jonah",
+          "fields": {
+            "location": "SS Aqua",
+            "trainer-class": "Fisherman",
+            "trainer-name": "Jonah",
+            "party": "Shellder L25; Octillery L29; Remoraid L25; Cloyster L29",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ss-aqua-juggler-fritz",
+          "fields": {
+            "location": "SS Aqua",
+            "trainer-class": "Juggler",
+            "trainer-name": "Fritz",
+            "party": "Mr. Mime L29; Magmar L29; Machoke L29",
+            "battle-type": "Single",
+            "reward": "$1150",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ss-aqua-picnicker-debra",
+          "fields": {
+            "location": "SS Aqua",
+            "trainer-class": "Picnicker",
+            "trainer-name": "Debra",
+            "party": "Seaking L33",
+            "battle-type": "Single",
+            "reward": "$660",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ss-aqua-sailor-garrett",
+          "fields": {
+            "location": "SS Aqua",
+            "trainer-class": "Sailor",
+            "trainer-name": "Garrett",
+            "party": "Kingler L34",
+            "battle-type": "Single",
+            "reward": "$1360",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ss-aqua-sailor-jeff",
+          "fields": {
+            "location": "SS Aqua",
+            "trainer-class": "Sailor",
+            "trainer-name": "Jeff",
+            "party": "Raticate L32; Raticate L32",
+            "battle-type": "Single",
+            "reward": "$1280",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ss-aqua-sailor-kenneth",
+          "fields": {
+            "location": "SS Aqua",
+            "trainer-class": "Sailor",
+            "trainer-name": "Kenneth",
+            "party": "Machop L28; Machop L28; Poliwrath L28; Machop L28",
+            "battle-type": "Single",
+            "reward": "$1120",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ss-aqua-school-kid-nate",
+          "fields": {
+            "location": "SS Aqua",
+            "trainer-class": "School Kid",
+            "trainer-name": "Nate",
+            "party": "Ledian L32; Exeggutor L32",
+            "battle-type": "Single",
+            "reward": "$800",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "ss-aqua-school-kid-ricky",
+          "fields": {
+            "location": "SS Aqua",
+            "trainer-class": "School Kid",
+            "trainer-name": "Ricky",
+            "party": "Aipom L32; Ditto L32",
+            "battle-type": "Single",
+            "reward": "$800",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "flagged"
+        },
+        {
+          "id": "ss-aqua-teacher-shirley",
+          "fields": {
+            "location": "SS Aqua",
+            "trainer-class": "Teacher",
+            "trainer-name": "Shirley",
+            "party": "Jigglypuff L35",
+            "battle-type": "Single",
+            "reward": "$2520",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "union-cave-cool-trainer-emma",
+          "fields": {
+            "location": "Union Cave",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Emma",
+            "party": "Poliwhirl L28",
+            "battle-type": "Single",
+            "reward": "$1344",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "union-cave-cool-trainer-gwen",
+          "fields": {
+            "location": "Union Cave",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Gwen",
+            "party": "Eevee L26; Flareon L22; Vaporeon L22; Jolteon L22",
+            "battle-type": "Single",
+            "reward": "$1248",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "union-cave-cool-trainer-nick",
+          "fields": {
+            "location": "Union Cave",
+            "trainer-class": "Cool Trainer",
+            "trainer-name": "Nick",
+            "party": "Charmander L26; Squirtle L26; Bulbasaur L26",
+            "battle-type": "Single",
+            "reward": "$1248",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "vermilion-city-gentleman-gregory",
+          "fields": {
+            "location": "Vermilion City",
+            "trainer-class": "Gentleman",
+            "trainer-name": "Gregory",
+            "party": "Pikachu L37; Flaaffy L33",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "vermilion-city-guitarist-vincent",
+          "fields": {
+            "location": "Vermilion City",
+            "trainer-class": "Guitarist",
+            "trainer-name": "Vincent",
+            "party": "Magnemite L27; Voltorb L33; Magnemite L32; Magnemite L32",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "vermilion-city-gym-leader-lt-surge",
+          "fields": {
+            "location": "Vermilion City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Lt. Surge",
+            "party": "Raichu L44; Electrode L40; Magneton L40; Electrode L40; Electabuzz L46",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "vermilion-city-juggler-horton",
+          "fields": {
+            "location": "Vermilion City",
+            "trainer-class": "Juggler",
+            "trainer-name": "Horton",
+            "party": "Electrode L33; Electrode L33; Electrode L33; Electrode L33",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "victory-road-rival-silver",
+          "fields": {
+            "location": "Victory Road",
+            "trainer-class": "Rival",
+            "trainer-name": "Silver",
+            "party": "Sneasel L34; Golbat L36; Magneton L35; Haunter L35; Kadabra L35; Meganium L38",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": "3 team variants"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "violet-city-bird-keeper-abe",
+          "fields": {
+            "location": "Violet City",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Abe",
+            "party": "Spearow L9",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "violet-city-bird-keeper-rod",
+          "fields": {
+            "location": "Violet City",
+            "trainer-class": "Bird Keeper",
+            "trainer-name": "Rod",
+            "party": "Pidgey L7; Pidgey L7",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "violet-city-gym-leader-falkner",
+          "fields": {
+            "location": "Violet City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Falkner",
+            "party": "Pidgey L7; Pidgeotto L9",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "viridian-city-gym-leader-blue",
+          "fields": {
+            "location": "Viridian City",
+            "trainer-class": "Gym Leader",
+            "trainer-name": "Blue",
+            "party": "Pidgeot L56; Alakazam L54; Rhydon L56; Gyarados L58; Exeggutor L58; Arcanine L58",
+            "battle-type": "Single",
+            "reward": "",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        }
+      ]
     }
   ]
 }
