@@ -3,7 +3,7 @@
   "guideId": "pokemon-crystal",
   "pass": "extract-data",
   "layer": "data",
-  "generatedAt": "2026-06-16T13:00:00Z",
+  "generatedAt": "2026-06-17T10:00:00Z",
   "inputs": [
     {
       "file": "sources.json",
@@ -11,11 +11,17 @@
     }
   ],
   "report": {
-    "rowCount": 1109,
-    "anomalies": [],
+    "rowCount": 3030,
+    "anomalies": [
+      "route-33-rattata-grass-nite: serebii 40%/7 vs bulba [('40%', '6-7')]",
+      "route-37-growlithe-grass-morn: serebii 10%/16 vs bulba [('40%', '')]",
+      "route-42-raticate-grass-morn: serebii 10%/6-16 vs bulba [('10%', '16')]",
+      "route-42-raticate-grass-day: serebii 10%/6-16 vs bulba [('10%', '16')]"
+    ],
     "flaggedItemIds": []
   },
   "notes": [
-    "Added the achievements dataset: 113 main-set + 224 Oak-subset achievements parsed from the RA HTML snapshots (src-ra, src-ra-oak). Images dataset preserved. Remaining: encounters, items, trainers, trades (Bulbapedia/Serebii)."
+    "Added the encounters dataset: 1921 Crystal wild encounters across 79 areas (Johto+Kanto), one record per location×species×method×time-of-day. Source: Serebii Pokéarth Gen-II Crystal sections (src-serebii-pokearth, primary); cross-checked against Bulbapedia location articles (src-bulba-locations): 363 corroborated, 1554 Serebii-only, 4 disagreements flagged (confidence:flagged). Methods: grass (time-of-day morn/day/nite), surf, old/good/super-rod, headbutt-special/regular, rock-smash. Gift/static Pokémon (no rate%) and interactables excluded — those belong to a later dataset. Multi-area pages split into sub-locations via Serebii area anchors (e.g. 'Union Cave (B1F)', 'Mt. Mortar (1F #2)').",
+    "Images (772) and achievements (337) datasets preserved unchanged. Remaining: items, trainers, trades (Bulbapedia/Serebii)."
   ]
 }
