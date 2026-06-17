@@ -47957,6 +47957,3122 @@
           "confidence": "normal"
         }
       ]
+    },
+    {
+      "id": "items",
+      "label": "Items",
+      "records": [
+        {
+          "id": "azalea-town-charcoal-gift",
+          "fields": {
+            "location": "Azalea Town",
+            "item": "Charcoal",
+            "method": "gift",
+            "notes": "Charcoal Maker, Save apprentice"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-fast-ball-gift",
+          "fields": {
+            "location": "Azalea Town",
+            "item": "Fast ball",
+            "method": "gift",
+            "notes": "Kurt"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-friend-ball-gift",
+          "fields": {
+            "location": "Azalea Town",
+            "item": "Friend ball",
+            "method": "gift",
+            "notes": "Kurt"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-full-heal-hidden",
+          "fields": {
+            "location": "Azalea Town",
+            "item": "Full Heal",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-heavy-ball-gift",
+          "fields": {
+            "location": "Azalea Town",
+            "item": "Heavy ball",
+            "method": "gift",
+            "notes": "Kurt"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-love-ball-gift",
+          "fields": {
+            "location": "Azalea Town",
+            "item": "Love ball",
+            "method": "gift",
+            "notes": "Kurt"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-lure-ball-gift",
+          "fields": {
+            "location": "Azalea Town",
+            "item": "Lure ball",
+            "method": "gift",
+            "notes": "Kurt"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-moon-ball-gift",
+          "fields": {
+            "location": "Azalea Town",
+            "item": "Moon ball",
+            "method": "gift",
+            "notes": "Kurt"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-repeat-ball-gift",
+          "fields": {
+            "location": "Azalea Town",
+            "item": "Repeat ball",
+            "method": "gift",
+            "notes": "Kurt"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "azalea-town-wht-apricorn-tree",
+          "fields": {
+            "location": "Azalea Town",
+            "item": "WHT Apricorn",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "blackthorn-city-spell-tag-gift",
+          "fields": {
+            "location": "Blackthorn City",
+            "item": "Spell Tag",
+            "method": "gift",
+            "notes": "Santos, Saturday only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "burned-tower-burn-heal-overworld",
+          "fields": {
+            "location": "Burned Tower",
+            "item": "Burn Heal",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "burned-tower-x-speed-overworld",
+          "fields": {
+            "location": "Burned Tower",
+            "item": "X Speed",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "celadon-city-leftovers-overworld",
+          "fields": {
+            "location": "Celadon City",
+            "item": "Leftovers",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "celadon-city-pp-up-hidden",
+          "fields": {
+            "location": "Celadon City",
+            "item": "PP Up",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "celadon-city-tm03-curse-gift",
+          "fields": {
+            "location": "Celadon City",
+            "item": "TM03 - Curse",
+            "method": "gift",
+            "notes": "Man on 4F"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cerulean-city-beserk-gene-hidden",
+          "fields": {
+            "location": "Cerulean City",
+            "item": "Beserk Gene",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cherrygrove-city-mystic-water-gift",
+          "fields": {
+            "location": "Cherrygrove City",
+            "item": "Mystic Water",
+            "method": "gift",
+            "notes": "Fisherman, Requires Surf"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cianwood-city-berry-juice-gift",
+          "fields": {
+            "location": "Cianwood City",
+            "item": "Berry Juice",
+            "method": "gift",
+            "notes": "Attached to Shuckle"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cianwood-city-hm02-fly-gift",
+          "fields": {
+            "location": "Cianwood City",
+            "item": "HM02 - Fly",
+            "method": "gift",
+            "notes": "Chuck's Wife"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cianwood-city-max-ether-hidden",
+          "fields": {
+            "location": "Cianwood City",
+            "item": "Max Ether",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cianwood-city-revive-hidden",
+          "fields": {
+            "location": "Cianwood City",
+            "item": "Revive",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cianwood-city-secret-potion-gift",
+          "fields": {
+            "location": "Cianwood City",
+            "item": "Secret Potion",
+            "method": "gift",
+            "notes": "Medicine Store"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "cinnabar-island-rare-candy-hidden",
+          "fields": {
+            "location": "Cinnabar Island",
+            "item": "Rare Candy",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "diglett-s-cave-max-revive-hidden",
+          "fields": {
+            "location": "Diglett's Cave",
+            "item": "Max Revive",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "dragon-s-den-dragon-fang-overworld",
+          "fields": {
+            "location": "Dragon's Den",
+            "item": "Dragon Fang",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "dragon-s-den-max-elixir-hidden",
+          "fields": {
+            "location": "Dragon's Den",
+            "item": "Max Elixir",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "dragon-s-den-max-potion-hidden",
+          "fields": {
+            "location": "Dragon's Den",
+            "item": "Max Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "dragon-s-den-revive-hidden",
+          "fields": {
+            "location": "Dragon's Den",
+            "item": "Revive",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "dragon-s-den-tm24-dragonbreath-gift",
+          "fields": {
+            "location": "Dragon's Den",
+            "item": "TM24 - Dragonbreath",
+            "method": "gift",
+            "notes": "Clair"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ecruteak-city-hm03-surf-gift",
+          "fields": {
+            "location": "Ecruteak City",
+            "item": "HM03 - Surf",
+            "method": "gift",
+            "notes": "Old Man - After beating the kimono girls"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ecruteak-city-hyper-potion-hidden",
+          "fields": {
+            "location": "Ecruteak City",
+            "item": "Hyper Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ecruteak-city-itemfinder-gift",
+          "fields": {
+            "location": "Ecruteak City",
+            "item": "Itemfinder",
+            "method": "gift",
+            "notes": "House to the right of the Gym"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ecruteak-city-rainbow-wing-gift",
+          "fields": {
+            "location": "Ecruteak City",
+            "item": "Rainbow Wing",
+            "method": "gift",
+            "notes": "Wise Trio - All three Beasts caught Crystal Only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "fuchsia-city-burnt-berry-tree",
+          "fields": {
+            "location": "Fuchsia City",
+            "item": "Burnt Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-bicycle-gift",
+          "fields": {
+            "location": "Goldenrod City",
+            "item": "Bicycle",
+            "method": "gift",
+            "notes": "Shop Owner"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-gold-berry-gift",
+          "fields": {
+            "location": "Goldenrod City",
+            "item": "Gold Berry",
+            "method": "gift",
+            "notes": "Dept. Store - 5F Trade Drowze for Machop"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-gold-berry-gift-2",
+          "fields": {
+            "location": "Goldenrod City",
+            "item": "Gold Berry",
+            "method": "gift",
+            "notes": "Dept. Store - 5F Trade Abra for Machop Crystal Only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-gs-ball-gift",
+          "fields": {
+            "location": "Goldenrod City",
+            "item": "GS Ball",
+            "method": "gift",
+            "notes": "Defeat Elite Four and go to Pokémon Center Crystal Only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-squirtbottle-gift",
+          "fields": {
+            "location": "Goldenrod City",
+            "item": "Squirtbottle",
+            "method": "gift",
+            "notes": "Building West of Gym - with Plain Badge"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-tm21-frustration-gift",
+          "fields": {
+            "location": "Goldenrod City",
+            "item": "TM21 - Frustration",
+            "method": "gift",
+            "notes": "Dept. Store- Sunday, Lead Pokémon Unhappy"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-city-tm27-return-gift",
+          "fields": {
+            "location": "Goldenrod City",
+            "item": "TM27 - Return",
+            "method": "gift",
+            "notes": "Dept. Store- Sunday, Lead Pokémon Happy"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-underground-antidote-hidden",
+          "fields": {
+            "location": "Goldenrod Underground",
+            "item": "Antidote",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-underground-coincase-overworld",
+          "fields": {
+            "location": "Goldenrod Underground",
+            "item": "Coincase",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-underground-paralyze-heal-hidden",
+          "fields": {
+            "location": "Goldenrod Underground",
+            "item": "Paralyze Heal",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "goldenrod-underground-super-potion-hidden",
+          "fields": {
+            "location": "Goldenrod Underground",
+            "item": "Super Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ice-path-hm07-waterfall-overworld",
+          "fields": {
+            "location": "Ice Path",
+            "item": "HM07 - Waterfall",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ice-path-pp-up-overworld",
+          "fields": {
+            "location": "Ice Path",
+            "item": "PP Up",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ilex-forest-ether-hidden",
+          "fields": {
+            "location": "Ilex Forest",
+            "item": "Ether",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ilex-forest-full-heal-hidden",
+          "fields": {
+            "location": "Ilex Forest",
+            "item": "Full Heal",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ilex-forest-hm01-cut-gift",
+          "fields": {
+            "location": "Ilex Forest",
+            "item": "HM01 - Cut",
+            "method": "gift",
+            "notes": "Charcoal Maker, Catch Farfetch'd"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ilex-forest-super-potion-hidden",
+          "fields": {
+            "location": "Ilex Forest",
+            "item": "Super Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ilex-forest-tm02-headbutt-gift",
+          "fields": {
+            "location": "Ilex Forest",
+            "item": "TM02 - Headbutt",
+            "method": "gift",
+            "notes": "Trainer in the woods"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ilex-forest-tm12-sweet-scent-gift",
+          "fields": {
+            "location": "Ilex Forest",
+            "item": "TM12 - Sweet Scent",
+            "method": "gift",
+            "notes": "Girl in Guardhouse"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-black-belt-gift",
+          "fields": {
+            "location": "Lake of Rage",
+            "item": "Black Belt",
+            "method": "gift",
+            "notes": "Wesley, Wednesday only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-ether-overworld",
+          "fields": {
+            "location": "Lake of Rage",
+            "item": "Ether",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-full-restore-hidden",
+          "fields": {
+            "location": "Lake of Rage",
+            "item": "Full Restore",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-max-ether-overworld",
+          "fields": {
+            "location": "Lake of Rage",
+            "item": "Max Ether",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-max-potion-hidden",
+          "fields": {
+            "location": "Lake of Rage",
+            "item": "Max Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-rare-candy-hidden",
+          "fields": {
+            "location": "Lake of Rage",
+            "item": "Rare Candy",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-red-scale-gift",
+          "fields": {
+            "location": "Lake of Rage",
+            "item": "Red Scale",
+            "method": "gift",
+            "notes": "Attached to Red Gyarados"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-tm10-hidden-power-overworld",
+          "fields": {
+            "location": "Lake of Rage",
+            "item": "TM10 - Hidden Power",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "lake-of-rage-tm43-detect-overworld",
+          "fields": {
+            "location": "Lake of Rage",
+            "item": "TM43 - Detect",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mahogany-town-tm16-icy-wind-gift",
+          "fields": {
+            "location": "Mahogany Town",
+            "item": "TM16 - Icy Wind",
+            "method": "gift",
+            "notes": "Pryce"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mt-mortar-ether-overworld",
+          "fields": {
+            "location": "Mt. Mortar",
+            "item": "Ether",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mt-mortar-guard-special-overworld",
+          "fields": {
+            "location": "Mt. Mortar",
+            "item": "Guard Special",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "mt-mortar-hyper-potion-hidden",
+          "fields": {
+            "location": "Mt. Mortar",
+            "item": "Hyper Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-berry-gift",
+          "fields": {
+            "location": "National Park",
+            "item": "Berry",
+            "method": "gift",
+            "notes": "Consolation Prize in Bug Catching"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-everstone-gift",
+          "fields": {
+            "location": "National Park",
+            "item": "Everstone",
+            "method": "gift",
+            "notes": "2nd Prize in Bug Catching"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-full-heal-hidden",
+          "fields": {
+            "location": "National Park",
+            "item": "Full Heal",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-gold-berry-gift",
+          "fields": {
+            "location": "National Park",
+            "item": "Gold Berry",
+            "method": "gift",
+            "notes": "3rd Prize in Bug Catching"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-paralyze-heal-overworld",
+          "fields": {
+            "location": "National Park",
+            "item": "Paralyze Heal",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-quick-claw-gift",
+          "fields": {
+            "location": "National Park",
+            "item": "Quick Claw",
+            "method": "gift",
+            "notes": "Woman at Park entrance"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-sun-stone-gift",
+          "fields": {
+            "location": "National Park",
+            "item": "Sun Stone",
+            "method": "gift",
+            "notes": "1st Prize in Bug Catching"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "national-park-tm28-dig-overworld",
+          "fields": {
+            "location": "National Park",
+            "item": "TM28 - Dig",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "new-bark-town-everstone-gift",
+          "fields": {
+            "location": "New Bark Town",
+            "item": "Everstone",
+            "method": "gift",
+            "notes": "Prof. Elm"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "new-bark-town-master-ball-gift",
+          "fields": {
+            "location": "New Bark Town",
+            "item": "Master ball",
+            "method": "gift",
+            "notes": "Prof. Elm"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "new-bark-town-pok-ball-x5-gift",
+          "fields": {
+            "location": "New Bark Town",
+            "item": "Poké ball x5",
+            "method": "gift",
+            "notes": "Prof. Elm"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "new-bark-town-potion-gift",
+          "fields": {
+            "location": "New Bark Town",
+            "item": "Potion",
+            "method": "gift",
+            "notes": "Prof. Elm"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "new-bark-town-s-s-ticket-gift",
+          "fields": {
+            "location": "New Bark Town",
+            "item": "S.S. Ticket",
+            "method": "gift",
+            "notes": "Prof. Elm"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "olivine-city-good-rod-gift",
+          "fields": {
+            "location": "Olivine City",
+            "item": "Good Rod",
+            "method": "gift",
+            "notes": "Sailor - House by the Pokemart"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "olivine-city-hm04-strength-gift",
+          "fields": {
+            "location": "Olivine City",
+            "item": "HM04 - Strength",
+            "method": "gift",
+            "notes": "Sailor - House by the Pokecenter"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "pewter-city-ice-berry-tree",
+          "fields": {
+            "location": "Pewter City",
+            "item": "Ice Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "pewter-city-mint-berry-tree",
+          "fields": {
+            "location": "Pewter City",
+            "item": "Mint Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "pewter-city-rainbow-wing-gift",
+          "fields": {
+            "location": "Pewter City",
+            "item": "Rainbow Wing",
+            "method": "gift",
+            "notes": "Old Man Silver Only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "pewter-city-silver-wing-gift",
+          "fields": {
+            "location": "Pewter City",
+            "item": "Silver Wing",
+            "method": "gift",
+            "notes": "Old Man Gold Only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "radio-tower-blue-card-gift",
+          "fields": {
+            "location": "Radio Tower",
+            "item": "Blue Card",
+            "method": "gift",
+            "notes": "Buena Crystal Only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "radio-tower-tm11-sunny-day-gift",
+          "fields": {
+            "location": "Radio Tower",
+            "item": "TM11 - Sunny Day",
+            "method": "gift",
+            "notes": "Woman after beating Team Rocket"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rock-tunnel-elixir-overworld",
+          "fields": {
+            "location": "Rock Tunnel",
+            "item": "Elixir",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rock-tunnel-tm47-steel-wing-overworld",
+          "fields": {
+            "location": "Rock Tunnel",
+            "item": "TM47 - Steel Wing",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rock-tunnel-x-accuracy-hidden",
+          "fields": {
+            "location": "Rock Tunnel",
+            "item": "X Accuracy",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rock-tunnel-x-defend-hidden",
+          "fields": {
+            "location": "Rock Tunnel",
+            "item": "X Defend",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rocket-hideout-hyper-potion-overworld",
+          "fields": {
+            "location": "Rocket Hideout",
+            "item": "Hyper Potion",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rocket-hideout-nugget-overworld",
+          "fields": {
+            "location": "Rocket Hideout",
+            "item": "Nugget",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rocket-hideout-revive-hidden",
+          "fields": {
+            "location": "Rocket Hideout",
+            "item": "Revive",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "rocket-hideout-x-accuracy-overworld",
+          "fields": {
+            "location": "Rocket Hideout",
+            "item": "X Accuracy",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-1-bitter-berry-tree",
+          "fields": {
+            "location": "Route 1",
+            "item": "Bitter Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-11-berry-tree",
+          "fields": {
+            "location": "Route 11",
+            "item": "Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-11-revive-hidden",
+          "fields": {
+            "location": "Route 11",
+            "item": "Revive",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-12-calcium-overworld",
+          "fields": {
+            "location": "Route 12",
+            "item": "Calcium",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-12-elixir-hidden",
+          "fields": {
+            "location": "Route 12",
+            "item": "Elixir",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-12-nugget-overworld",
+          "fields": {
+            "location": "Route 12",
+            "item": "Nugget",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-12-super-rod-gift",
+          "fields": {
+            "location": "Route 12",
+            "item": "Super Rod",
+            "method": "gift",
+            "notes": "Fisherman in the house"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-13-calcium-hidden",
+          "fields": {
+            "location": "Route 13",
+            "item": "Calcium",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-15-pp-up-overworld",
+          "fields": {
+            "location": "Route 15",
+            "item": "PP Up",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-17-max-elixir-hidden",
+          "fields": {
+            "location": "Route 17",
+            "item": "Max Elixir",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-17-max-ether-hidden",
+          "fields": {
+            "location": "Route 17",
+            "item": "Max Ether",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-carbos-overworld",
+          "fields": {
+            "location": "Route 2",
+            "item": "Carbos",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-dire-hit-overworld",
+          "fields": {
+            "location": "Route 2",
+            "item": "Dire Hit",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-elixir-overworld",
+          "fields": {
+            "location": "Route 2",
+            "item": "Elixir",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-full-heal-hidden",
+          "fields": {
+            "location": "Route 2",
+            "item": "Full Heal",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-full-restore-hidden",
+          "fields": {
+            "location": "Route 2",
+            "item": "Full Restore",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-max-ether-hidden",
+          "fields": {
+            "location": "Route 2",
+            "item": "Max Ether",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-max-potion-overworld",
+          "fields": {
+            "location": "Route 2",
+            "item": "Max Potion",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-nugget-overworld",
+          "fields": {
+            "location": "Route 2",
+            "item": "Nugget",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-psncureberry-tree",
+          "fields": {
+            "location": "Route 2",
+            "item": "PSNCUREBERRY",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-2-revive-hidden",
+          "fields": {
+            "location": "Route 2",
+            "item": "Revive",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-everstone-gift",
+          "fields": {
+            "location": "Route 25",
+            "item": "Everstone",
+            "method": "gift",
+            "notes": "Bill's Grandfather"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-fire-stone-gift",
+          "fields": {
+            "location": "Route 25",
+            "item": "Fire Stone",
+            "method": "gift",
+            "notes": "Bill's Grandfather"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-leaf-stone-gift",
+          "fields": {
+            "location": "Route 25",
+            "item": "Leaf Stone",
+            "method": "gift",
+            "notes": "Bill's Grandfather"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-nugget-gift",
+          "fields": {
+            "location": "Route 25",
+            "item": "Nugget",
+            "method": "gift",
+            "notes": "Beat All Trainers"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-potion-hidden",
+          "fields": {
+            "location": "Route 25",
+            "item": "Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-protien-overworld",
+          "fields": {
+            "location": "Route 25",
+            "item": "Protien",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-thunderstone-gift",
+          "fields": {
+            "location": "Route 25",
+            "item": "ThunderStone",
+            "method": "gift",
+            "notes": "Bill's Grandfather"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-25-water-stone-gift",
+          "fields": {
+            "location": "Route 25",
+            "item": "Water Stone",
+            "method": "gift",
+            "notes": "Bill's Grandfather"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-26-ice-berry-tree",
+          "fields": {
+            "location": "Route 26",
+            "item": "Ice Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-26-max-elixir-overworld",
+          "fields": {
+            "location": "Route 26",
+            "item": "Max Elixir",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-27-moonstone-overworld",
+          "fields": {
+            "location": "Route 27",
+            "item": "Moonstone",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-27-race-candy-overworld",
+          "fields": {
+            "location": "Route 27",
+            "item": "Race Candy",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-27-tm22-solarbeam-overworld",
+          "fields": {
+            "location": "Route 27",
+            "item": "TM22 - Solarbeam",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-27-tm37-sandstorm-gift",
+          "fields": {
+            "location": "Route 27",
+            "item": "TM37 - Sandstorm",
+            "method": "gift",
+            "notes": "Woman in house, lead pokemon happy"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-28-rare-candy-hidden",
+          "fields": {
+            "location": "Route 28",
+            "item": "Rare Candy",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-28-tm47-steel-wing-gift",
+          "fields": {
+            "location": "Route 28",
+            "item": "TM47 - Steel Wing",
+            "method": "gift",
+            "notes": "The Famous Recluse"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-29-berry-tree",
+          "fields": {
+            "location": "Route 29",
+            "item": "Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-29-pink-bow-gift",
+          "fields": {
+            "location": "Route 29",
+            "item": "Pink Bow",
+            "method": "gift",
+            "notes": "Tuscany, Tuesday only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-29-potion-overworld",
+          "fields": {
+            "location": "Route 29",
+            "item": "Potion",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-30-berry-tree",
+          "fields": {
+            "location": "Route 30",
+            "item": "Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-30-exp-share-gift",
+          "fields": {
+            "location": "Route 30",
+            "item": "EXP. Share",
+            "method": "gift",
+            "notes": "Mr. Pokémon, traded for Red Scale"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-30-potion-hidden",
+          "fields": {
+            "location": "Route 30",
+            "item": "Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-30-psncureberry-tree",
+          "fields": {
+            "location": "Route 30",
+            "item": "PSNCUREBERRY",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-31-antidote-overworld",
+          "fields": {
+            "location": "Route 31",
+            "item": "Antidote",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-31-bitter-berry-tree",
+          "fields": {
+            "location": "Route 31",
+            "item": "Bitter Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-31-pok-ball-overworld",
+          "fields": {
+            "location": "Route 31",
+            "item": "Poké ball",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-31-tm50-nightmare-gift",
+          "fields": {
+            "location": "Route 31",
+            "item": "TM50 - Nightmare",
+            "method": "gift",
+            "notes": "Man by the Water"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-great-ball-hidden",
+          "fields": {
+            "location": "Route 32",
+            "item": "Great ball",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-great-ball-overworld",
+          "fields": {
+            "location": "Route 32",
+            "item": "Great ball",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-miracle-seed-gift",
+          "fields": {
+            "location": "Route 32",
+            "item": "Miracle Seed",
+            "method": "gift",
+            "notes": "Trainer near the ruins"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-old-rod-gift",
+          "fields": {
+            "location": "Route 32",
+            "item": "Old Rod",
+            "method": "gift",
+            "notes": "Man inside Pokémon Center"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-poison-barb-gift",
+          "fields": {
+            "location": "Route 32",
+            "item": "Poison Barb",
+            "method": "gift",
+            "notes": "Frieda, Friday Only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-potion-overworld",
+          "fields": {
+            "location": "Route 32",
+            "item": "Potion",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-super-potion-hidden",
+          "fields": {
+            "location": "Route 32",
+            "item": "Super Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-32-tm05-roar-gift",
+          "fields": {
+            "location": "Route 32",
+            "item": "TM05 - Roar",
+            "method": "gift",
+            "notes": "Requires Cut"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-33-psncureberry-tree",
+          "fields": {
+            "location": "Route 33",
+            "item": "PSNCUREBERRY",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-rare-candy-hidden",
+          "fields": {
+            "location": "Route 34",
+            "item": "Rare Candy",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-sorf-sand-gift",
+          "fields": {
+            "location": "Route 34",
+            "item": "Sorf Sand",
+            "method": "gift",
+            "notes": "Southernmost Girl, Requires Surf"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-34-super-potion-hidden",
+          "fields": {
+            "location": "Route 34",
+            "item": "Super Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-hp-up-gift",
+          "fields": {
+            "location": "Route 35",
+            "item": "HP Up",
+            "method": "gift",
+            "notes": "Southern Guardhouse"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-mysteryberry-overworld",
+          "fields": {
+            "location": "Route 35",
+            "item": "Mysteryberry",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-35-tm04-rollout-overworld",
+          "fields": {
+            "location": "Route 35",
+            "item": "TM04 - Rollout",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-36-hard-stone-gift",
+          "fields": {
+            "location": "Route 36",
+            "item": "Hard Stone",
+            "method": "gift",
+            "notes": "Arthur, Thursday only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-36-ice-berry-tree",
+          "fields": {
+            "location": "Route 36",
+            "item": "Ice Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-36-tm08-rocksmash-gift",
+          "fields": {
+            "location": "Route 36",
+            "item": "TM08 - Rocksmash",
+            "method": "gift",
+            "notes": "Man to the right of Sudowoodo"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-37-blk-apricorn-tree",
+          "fields": {
+            "location": "Route 37",
+            "item": "Blk Apricorn",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-37-blu-apricorn-tree",
+          "fields": {
+            "location": "Route 37",
+            "item": "Blu Apricorn",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-37-ether-hidden",
+          "fields": {
+            "location": "Route 37",
+            "item": "Ether",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-37-magnet-gift",
+          "fields": {
+            "location": "Route 37",
+            "item": "Magnet",
+            "method": "gift",
+            "notes": "Sunny, Sunday only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-37-red-apricorn-tree",
+          "fields": {
+            "location": "Route 37",
+            "item": "Red Apricorn",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-39-berry-tree",
+          "fields": {
+            "location": "Route 39",
+            "item": "Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-39-mint-berry-tree",
+          "fields": {
+            "location": "Route 39",
+            "item": "Mint berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-39-nugget-hidden",
+          "fields": {
+            "location": "Route 39",
+            "item": "Nugget",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-39-tm13-snore-gift",
+          "fields": {
+            "location": "Route 39",
+            "item": "TM13 - Snore",
+            "method": "gift",
+            "notes": "Miltank Lady - Cure the Sick Miltank"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-4-hp-up-overworld",
+          "fields": {
+            "location": "Route 4",
+            "item": "HP Up",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-4-ultra-ball-hidden",
+          "fields": {
+            "location": "Route 4",
+            "item": "Ultra ball",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-40-hyper-potion-hidden",
+          "fields": {
+            "location": "Route 40",
+            "item": "Hyper Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-40-max-ether-hidden",
+          "fields": {
+            "location": "Route 40",
+            "item": "Max Ether",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-40-sharp-beak-gift",
+          "fields": {
+            "location": "Route 40",
+            "item": "Sharp Beak",
+            "method": "gift",
+            "notes": "Monica - Monday only"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-42-grn-apricorn-tree",
+          "fields": {
+            "location": "Route 42",
+            "item": "GRN Apricorn",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-42-max-potion-hidden",
+          "fields": {
+            "location": "Route 42",
+            "item": "Max Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-42-pnk-apricorn-tree",
+          "fields": {
+            "location": "Route 42",
+            "item": "PNK Apricorn",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-42-super-potion-overworld",
+          "fields": {
+            "location": "Route 42",
+            "item": "Super Potion",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-42-ultra-ball-overworld",
+          "fields": {
+            "location": "Route 42",
+            "item": "Ultra ball",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-42-ylw-apricorn-tree",
+          "fields": {
+            "location": "Route 42",
+            "item": "YLW Apricorn",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-43-bitter-berry-tree",
+          "fields": {
+            "location": "Route 43",
+            "item": "Bitter Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-43-max-ether-overworld",
+          "fields": {
+            "location": "Route 43",
+            "item": "Max Ether",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-43-tm36-sludge-bomb-gift",
+          "fields": {
+            "location": "Route 43",
+            "item": "TM36 - Sludge Bomb",
+            "method": "gift",
+            "notes": "Gatekeeper"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-44-burnt-berry-overworld",
+          "fields": {
+            "location": "Route 44",
+            "item": "Burnt Berry",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-44-max-revive-overworld",
+          "fields": {
+            "location": "Route 44",
+            "item": "Max Revive",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-44-ultra-ball-overworld",
+          "fields": {
+            "location": "Route 44",
+            "item": "Ultra ball",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-elixir-overworld",
+          "fields": {
+            "location": "Route 45",
+            "item": "Elixir",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-max-potion-overworld",
+          "fields": {
+            "location": "Route 45",
+            "item": "Max Potion",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-pp-up-hidden",
+          "fields": {
+            "location": "Route 45",
+            "item": "PP Up",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-revive-overworld",
+          "fields": {
+            "location": "Route 45",
+            "item": "Revive",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-45-x-special-overworld",
+          "fields": {
+            "location": "Route 45",
+            "item": "X Special",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-46-berry-tree",
+          "fields": {
+            "location": "Route 46",
+            "item": "Berry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-46-dire-hit-overworld",
+          "fields": {
+            "location": "Route 46",
+            "item": "Dire Hit",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-46-mysteryberry-tree",
+          "fields": {
+            "location": "Route 46",
+            "item": "Mysteryberry",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-46-przcureberry-tree",
+          "fields": {
+            "location": "Route 46",
+            "item": "PRZCUREBERRY",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-5-cleanse-tag-gift",
+          "fields": {
+            "location": "Route 5",
+            "item": "Cleanse Tag",
+            "method": "gift",
+            "notes": "Woman inside House"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-8-przcureberry-tree",
+          "fields": {
+            "location": "Route 8",
+            "item": "PRZCUREBERRY",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-9-ether-hidden",
+          "fields": {
+            "location": "Route 9",
+            "item": "Ether",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "route-9-tm7-zap-cannon-gift",
+          "fields": {
+            "location": "Route 9",
+            "item": "TM7 - Zap Cannon",
+            "method": "gift",
+            "notes": "Power Plant Manager"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "saffron-city-focus-band-gift",
+          "fields": {
+            "location": "Saffron City",
+            "item": "Focus Band",
+            "method": "gift",
+            "notes": "Dojo Master"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "saffron-city-pass-gift",
+          "fields": {
+            "location": "Saffron City",
+            "item": "Pass",
+            "method": "gift",
+            "notes": "Copycat Girl"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "shining-lighthouse-either-overworld",
+          "fields": {
+            "location": "Shining Lighthouse",
+            "item": "Either",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "silver-cave-full-restore-hidden",
+          "fields": {
+            "location": "Silver Cave",
+            "item": "Full Restore",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "slowpoke-well-super-potion-overworld",
+          "fields": {
+            "location": "Slowpoke Well",
+            "item": "Super Potion",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "sprout-tower-paralyze-heal-overworld",
+          "fields": {
+            "location": "Sprout Tower",
+            "item": "Paralyze Heal",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "ss-aqua-metal-coat-gift",
+          "fields": {
+            "location": "SS Aqua",
+            "item": "Metal Coat",
+            "method": "gift",
+            "notes": "Man in lower right room"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "tin-tower-full-heal-overworld",
+          "fields": {
+            "location": "Tin Tower",
+            "item": "Full Heal",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "underground-path-5-6-full-restore-hidden",
+          "fields": {
+            "location": "Underground Path 5-6",
+            "item": "Full Restore",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "underground-path-5-6-x-special-hidden",
+          "fields": {
+            "location": "Underground Path 5-6",
+            "item": "X Special",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "union-cave-awakening-overworld",
+          "fields": {
+            "location": "Union Cave",
+            "item": "Awakening",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "union-cave-great-ball-overworld",
+          "fields": {
+            "location": "Union Cave",
+            "item": "Great ball",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "union-cave-potion-overworld",
+          "fields": {
+            "location": "Union Cave",
+            "item": "Potion",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "union-cave-x-attack-overworld",
+          "fields": {
+            "location": "Union Cave",
+            "item": "X Attack",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "vermilion-city-full-heal-hidden",
+          "fields": {
+            "location": "Vermilion City",
+            "item": "Full Heal",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "vermilion-city-hp-up-gift",
+          "fields": {
+            "location": "Vermilion City",
+            "item": "HP Up",
+            "method": "gift",
+            "notes": "Man by Snorelax"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "vermilion-city-iron-hidden",
+          "fields": {
+            "location": "Vermilion City",
+            "item": "Iron",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "vermilion-city-pokedoll-gift",
+          "fields": {
+            "location": "Vermilion City",
+            "item": "Pokedoll",
+            "method": "gift",
+            "notes": "Pokemon Fan"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "vermilion-city-race-candy-gift",
+          "fields": {
+            "location": "Vermilion City",
+            "item": "Race Candy",
+            "method": "gift",
+            "notes": "Pokemon Fan Club President"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "violet-city-hyper-potion-hidden",
+          "fields": {
+            "location": "Violet City",
+            "item": "Hyper Potion",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "violet-city-przcureberry-tree",
+          "fields": {
+            "location": "Violet City",
+            "item": "PRZCUREBERRY",
+            "method": "tree",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "violet-city-rare-candy-overworld",
+          "fields": {
+            "location": "Violet City",
+            "item": "Rare Candy",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "viridian-city-tm42-dream-eater-gift",
+          "fields": {
+            "location": "Viridian City",
+            "item": "TM42 - Dream Eater",
+            "method": "gift",
+            "notes": "Snoozing Man, Requires Surf"
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "whirl-islands-rare-candy-hidden",
+          "fields": {
+            "location": "Whirl Islands",
+            "item": "Rare Candy",
+            "method": "hidden",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        },
+        {
+          "id": "whirl-islands-ultra-ball-overworld",
+          "fields": {
+            "location": "Whirl Islands",
+            "item": "Ultra ball",
+            "method": "overworld",
+            "notes": ""
+          },
+          "sourceRefs": [
+            "src-serebii-pokearth",
+            "src-bulba-locations"
+          ],
+          "confidence": "normal"
+        }
+      ]
     }
   ]
 }

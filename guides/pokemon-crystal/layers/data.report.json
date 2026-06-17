@@ -3,7 +3,7 @@
   "guideId": "pokemon-crystal",
   "pass": "extract-data",
   "layer": "data",
-  "generatedAt": "2026-06-17T12:00:00Z",
+  "generatedAt": "2026-06-17T14:00:00Z",
   "inputs": [
     {
       "file": "sources.json",
@@ -11,7 +11,7 @@
     }
   ],
   "report": {
-    "rowCount": 3317,
+    "rowCount": 3543,
     "anomalies": [
       "route-33-rattata-grass-nite: serebii 40%/7 vs bulba [('40%', '6-7')]",
       "route-37-growlithe-grass-morn: serebii 10%/16 vs bulba [('40%', '')]",
@@ -40,6 +40,7 @@
   "notes": [
     "Added the encounters dataset: 1921 Crystal wild encounters across 79 areas (Johto+Kanto), one record per location×species×method×time-of-day. Source: Serebii Pokéarth Gen-II Crystal sections (src-serebii-pokearth, primary); cross-checked against Bulbapedia location articles (src-bulba-locations): 363 corroborated, 1554 Serebii-only, 4 disagreements flagged (confidence:flagged). Methods: grass (time-of-day morn/day/nite), surf, old/good/super-rod, headbutt-special/regular, rock-smash. Gift/static Pokémon (no rate%) and interactables excluded — those belong to a later dataset. Multi-area pages split into sub-locations via Serebii area anchors (e.g. 'Union Cave (B1F)', 'Mt. Mortar (1F #2)').",
     "Added the trainers dataset: 287 Crystal trainers across 75 areas, one record per trainer (party=initial team; phone rematches and starter-dependent variants summarised in notes). Source: Serebii Pokéarth Gen-II Crystal trainer sections (src-serebii-pokearth, primary); cross-checked against Bulbapedia Gen-II trainer tables (src-bulba-locations): 158 corroborated (party+levels), 112 Serebii-only, 17 disagreements flagged. Reward $ pulled from Bulbapedia where matched; gym leaders/Elite Four/Champion/Rival have no reward in source. Fields: location, trainer-class, trainer-name, party, battle-type, reward, notes.",
-    "Images (772) and achievements (337) datasets preserved unchanged. Remaining: items, trades (Bulbapedia/Serebii)."
+    "Added the items dataset: 226 Crystal items across 70 areas, one record per item pickup. Source: Serebii Pokéarth Gen-II item sections (src-serebii-pokearth, primary); item-name presence cross-checked against Bulbapedia item sections (src-bulba-locations): 172 corroborated, 54 Serebii-only. Methods: overworld (item ball on the ground), hidden (Itemfinder), tree (berry tree), gift (from an NPC/shop — giver/conditions in notes). Fields: location, item, method, notes.",
+    "Images (772) and achievements (337) datasets preserved unchanged. Remaining: trades (Bulbapedia/Serebii)."
   ]
 }
