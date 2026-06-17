@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "deck-pokemon",
+  "slots": [
+    {
+      "primitive": "checklist",
+      "defaultTitle": "Gym Badges",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "counter",
+      "defaultTitle": "Pokédex",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "dataTable",
+      "defaultTitle": "Wild Encounters",
+      "defaultScope": "location"
+    },
+    {
+      "primitive": "dataTable",
+      "defaultTitle": "Area Trainers",
+      "defaultScope": "location"
+    },
+    {
+      "primitive": "mapPins",
+      "defaultTitle": "Items & Hidden Spots",
+      "defaultScope": "location"
+    },
+    {
+      "primitive": "prepCard",
+      "defaultTitle": "Gym Leader & Elite Four Prep",
+      "defaultScope": "chapter"
+    },
+    {
+      "primitive": "flowchart",
+      "defaultTitle": "In-game Trades",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "checklist",
+      "defaultTitle": "RetroAchievements",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "checklist",
+      "defaultTitle": "Oak Challenge Catch List",
+      "defaultScope": "chapter"
+    }
+  ]
+}
