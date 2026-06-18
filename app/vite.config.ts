@@ -8,7 +8,8 @@ import { VitePWA } from "vite-plugin-pwa";
 import { defineConfig } from "vitest/config";
 import { collectContentManifestEntries } from "./scripts/contentPrecache.ts";
 
-const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const appRoot = dirname(fileURLToPath(import.meta.url));
+const repoRoot = resolve(appRoot, "..");
 
 const CONTENT_TYPES: Record<string, string> = {
   ".json": "application/json",
@@ -58,6 +59,12 @@ function serveRepoContent(): Plugin {
 }
 
 export default defineConfig({
+  // `@`→ src; shared by vite dev, build, and vitest (F1).
+  resolve: {
+    alias: {
+      "@": resolve(appRoot, "src"),
+    },
+  },
   plugins: [
     react(),
     tailwindcss(),
