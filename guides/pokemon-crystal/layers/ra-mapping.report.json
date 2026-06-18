@@ -10,10 +10,6 @@
       "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e"
     },
     {
-      "file": "library.json",
-      "sha256": "4bb2b91365d2ad03992637b9543d9c3a7f35f77bd51eb31e0abcad66a36bb7c4"
-    },
-    {
       "file": "layers/spine.json",
       "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf"
     },

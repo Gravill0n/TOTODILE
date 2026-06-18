@@ -7,11 +7,7 @@
   "inputs": [
     {
       "file": "sources.json",
-      "sha256": "8e002ed9dc3d40005fcdfe8007e302df85e0713ee3368efb4430aa075f390283"
-    },
-    {
-      "file": "pokemon-crystal/sources/crystal-ap-tracker-11.0.4/locations/dungeons.json",
-      "sha256": "57ff843987b87fb9dcddaa65ac3702d0409a2b9a42692336e67a06e7e23e6bb5"
+      "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e"
     }
   ],
   "report": {

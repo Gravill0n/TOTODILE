@@ -1,0 +1,1338 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "qa",
+  "layer": "qa",
+  "generatedAt": "2026-06-18T04:30:00Z",
+  "inputs": [
+    {
+      "file": "layers/data.json",
+      "sha256": "4d97a78b9445c7d8d6ebd3dc86c2fdc8f1cdd864006328fcc60b72d2c9c0df4c"
+    },
+    {
+      "file": "layers/ra-mapping.json",
+      "sha256": "60bded61416b92606d49f70d765c07ec31fee141d59da649e9fbf93cb5240d28"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf"
+    },
+    {
+      "file": "layers/widget-enc-azalea-town.json",
+      "sha256": "6f39c2903c5a836e89875a819288658927c937c7dd08c701f52ddf1e35917198"
+    },
+    {
+      "file": "layers/widget-enc-blackthorn-city.json",
+      "sha256": "7e6009fd86ff3e51c07e775b6db71281ae63fa8d270148fdd39919baa77edb75"
+    },
+    {
+      "file": "layers/widget-enc-burned-tower.json",
+      "sha256": "0bc40e8ebbf4b340fcc8b4bd698bf41d69237a060df68da0b9712e3a9da8b374"
+    },
+    {
+      "file": "layers/widget-enc-celadon-city.json",
+      "sha256": "ad6bf8460cea502fe7841b42c3397f95df3c9ccabd358d94fd8ac849e93f064b"
+    },
+    {
+      "file": "layers/widget-enc-cerulean-city.json",
+      "sha256": "ec66720d519c08451ec5f8b2e88d56708e5096becb7f2b26538241bcad37584d"
+    },
+    {
+      "file": "layers/widget-enc-cherrygrove-city.json",
+      "sha256": "46520332f69346de19b5bd96e3972c645fb5a3df8e8959f862bf79aa299a13d2"
+    },
+    {
+      "file": "layers/widget-enc-cianwood-city.json",
+      "sha256": "60b3e1ef156646ae1d92f7a9502a8c8a9f2db4f691ec571af5c16e71d9d558fe"
+    },
+    {
+      "file": "layers/widget-enc-cinnabar-island.json",
+      "sha256": "76bc9c874c46ce7c7e7e83e02c29a9c3d0b62a8b6ddeeca41cf631223b8e6d13"
+    },
+    {
+      "file": "layers/widget-enc-dark-cave.json",
+      "sha256": "db4602b0900ce9b4ebef3794336e9fa9969cc50a8658d203bcbf58c7e71caaf2"
+    },
+    {
+      "file": "layers/widget-enc-digletts-cave.json",
+      "sha256": "c40edc49a485f990e3e43032ef9d00971ba640d427b26c30db36f1f65b9afea0"
+    },
+    {
+      "file": "layers/widget-enc-dragons-den.json",
+      "sha256": "4efb602d8f9714fad4f3d049f69c6b151e292ede43d5007e55b5c7e0c34ed14b"
+    },
+    {
+      "file": "layers/widget-enc-ecruteak-city.json",
+      "sha256": "7113f752bc831077965c1f2ea7b0c49f91ec8fd0e701e9ba280a0ea41c869982"
+    },
+    {
+      "file": "layers/widget-enc-fuchsia-city.json",
+      "sha256": "51afe8c181a0eef979bc2e771acc81046bd1dab2d81138c576de2a51ce7e53b6"
+    },
+    {
+      "file": "layers/widget-enc-ice-path.json",
+      "sha256": "e48e397a915b250dfad411ed9ea4c53c89c3ade7441a7c321692acc3af312fa0"
+    },
+    {
+      "file": "layers/widget-enc-ilex-forest.json",
+      "sha256": "5068fe749d555efece4942aa68b954b5a11ed8ac6cbd896d6b02fbd8621b4799"
+    },
+    {
+      "file": "layers/widget-enc-lake-of-rage.json",
+      "sha256": "f83487026d61db9a0400de7f4fcd31d34f123044273b5b6198bb80dc8b29aa35"
+    },
+    {
+      "file": "layers/widget-enc-mt-moon.json",
+      "sha256": "db4f5cff1687874b1850cd156ab6c1490b6c0a8530a2a3019dd4fe7a1848d9d6"
+    },
+    {
+      "file": "layers/widget-enc-mt-mortar.json",
+      "sha256": "fe30c141881b6ffd9dfca515c44506a0ebcf0c85829358ec76f0f0153eb5a20f"
+    },
+    {
+      "file": "layers/widget-enc-mt-silver-cave.json",
+      "sha256": "d1f66ef3cbf64a83028b6f4f9267e59916d62864e284900955c3707df988d32e"
+    },
+    {
+      "file": "layers/widget-enc-national-park.json",
+      "sha256": "7b53553b191b643ba44dc44b5b1676e24764f0e13c5dd4a336f3743851bfe639"
+    },
+    {
+      "file": "layers/widget-enc-new-bark-town.json",
+      "sha256": "6a79558c2f90f9cbb5181360b9e03e9ca9a9228e37bbf0290294945943f02f99"
+    },
+    {
+      "file": "layers/widget-enc-olivine-city.json",
+      "sha256": "747f061ed6dd7c05c3b5a2f421fe7024dacf749aaa35cd929da930c6e1064529"
+    },
+    {
+      "file": "layers/widget-enc-pallet-town.json",
+      "sha256": "6dcdd967f3f886f4e161b9f07ef75be280bbbdbe1211fc8433e5e3a7cb1673b2"
+    },
+    {
+      "file": "layers/widget-enc-rock-tunnel.json",
+      "sha256": "abbb83e1941bb865895c8bfea2b539be288af1002ba9ee43cde98e764787a2ee"
+    },
+    {
+      "file": "layers/widget-enc-route-1.json",
+      "sha256": "e6adff3302d8ec662b2fb3fc27d138eca228a66c4f4447118ff36e924f636460"
+    },
+    {
+      "file": "layers/widget-enc-route-10.json",
+      "sha256": "89413a5200a4a33174eddb9e44682074354dfd775814eb2a1f6197bfa4d2faf2"
+    },
+    {
+      "file": "layers/widget-enc-route-11.json",
+      "sha256": "c12cf227c333c8a1c4b3ab96f7644379f59cda1b748a0ad71686dafc43d3109e"
+    },
+    {
+      "file": "layers/widget-enc-route-12.json",
+      "sha256": "508d9e18a2925674f72fe7dd42fde2c671ca38e24a8d28cd98468a7c2afed816"
+    },
+    {
+      "file": "layers/widget-enc-route-13.json",
+      "sha256": "556f99aca40fde606d263a6aee7cf2163ac8ad694188587571c6673000e0d1b9"
+    },
+    {
+      "file": "layers/widget-enc-route-14.json",
+      "sha256": "cff235bb0a1dd5aca2aacd32a9dedcdcc54f81ab70d666e63043d53dbdaec105"
+    },
+    {
+      "file": "layers/widget-enc-route-15.json",
+      "sha256": "d6c14c4165f49164e06a47a7e1af4a5d189139dfe49474c6f020f7da769521db"
+    },
+    {
+      "file": "layers/widget-enc-route-17.json",
+      "sha256": "7f0b34ba220eef0867337e2adf65c2278c958844d85b55aacc939f1b7bd7467d"
+    },
+    {
+      "file": "layers/widget-enc-route-18.json",
+      "sha256": "aab7b85d169c88e3a33a3064209927984703518e193f1e293d0e888ff04972fb"
+    },
+    {
+      "file": "layers/widget-enc-route-19.json",
+      "sha256": "08e2f42936cff8011fb7021df5e0a409a56e33111e82329211fcd579e24dbb99"
+    },
+    {
+      "file": "layers/widget-enc-route-2.json",
+      "sha256": "eefcfbbd326cd57046c0bba9c0a9ffd457cf192c7ee495c6fc11ab91500400a6"
+    },
+    {
+      "file": "layers/widget-enc-route-20.json",
+      "sha256": "b7438bbf776674431a23ce083abe492428daabf0d11a3e6455a6539de2e7a220"
+    },
+    {
+      "file": "layers/widget-enc-route-21.json",
+      "sha256": "a368d29724c5cbd12adc69cba1135c8b7f7b97dd59f0b59f3673c36cd552d633"
+    },
+    {
+      "file": "layers/widget-enc-route-22.json",
+      "sha256": "60b8dd564274b30a1b1d14832561db54cb742b87353e995cda29204f1bcb0f11"
+    },
+    {
+      "file": "layers/widget-enc-route-24.json",
+      "sha256": "070b7b7aa59c5968673f9a838d8554150d519fe9b0b2c1a2f08f3e6c1c81b6ed"
+    },
+    {
+      "file": "layers/widget-enc-route-25.json",
+      "sha256": "9b16adcb9578e63554850bf0392fdb0d4fb723f9e2c64238c00d4a7875dccdd4"
+    },
+    {
+      "file": "layers/widget-enc-route-26.json",
+      "sha256": "80ecb86912567c89005dbe29311689837456f147c2059179ec0b0082a90f7b48"
+    },
+    {
+      "file": "layers/widget-enc-route-27.json",
+      "sha256": "b5639a62adead91d4f5f4504840915e5f9dfe13cb3aaf68022242951d71d1d72"
+    },
+    {
+      "file": "layers/widget-enc-route-28.json",
+      "sha256": "42774f59cbb9f2cd41d1731207a75838f38dc9c7833553e399864e09204e731c"
+    },
+    {
+      "file": "layers/widget-enc-route-29.json",
+      "sha256": "c75738330e8241fb5f37f08e49836ebf186bd796b395b1cdf4eb038d8d8e15d9"
+    },
+    {
+      "file": "layers/widget-enc-route-3.json",
+      "sha256": "af4e2e5274b2442c47ae5a1edd24b6cf28525bcc0f2761f01ef13704fbb59824"
+    },
+    {
+      "file": "layers/widget-enc-route-30.json",
+      "sha256": "5a60b5a71580cabf3e206327a123caff8417688d8ffcec04d7a8242feec75018"
+    },
+    {
+      "file": "layers/widget-enc-route-31.json",
+      "sha256": "4ca91c533271480098902a1468f6c352cfeb9afedd591eff13b665b42ff413bd"
+    },
+    {
+      "file": "layers/widget-enc-route-32.json",
+      "sha256": "8922e475810adb4c4a135c7e11336b1e4e7dd0a67362221e93600e6373c42391"
+    },
+    {
+      "file": "layers/widget-enc-route-33.json",
+      "sha256": "4be0bcfeac4ca5e500a1b9b8372bcbdb01c7c39264b9ede8a522d42ca7653dd3"
+    },
+    {
+      "file": "layers/widget-enc-route-34.json",
+      "sha256": "70a9f70a412b61c73d2024735af2a8fc7b98937ae65bc582866a69e37df1faf1"
+    },
+    {
+      "file": "layers/widget-enc-route-35.json",
+      "sha256": "fac7ade81adf35934791d7800934d92c47b47750c3e72142963671be17798d95"
+    },
+    {
+      "file": "layers/widget-enc-route-36.json",
+      "sha256": "3bbb5b338f075cfe7f473d558b4824059f1ddf35c176b9a38ae89bda5586be5a"
+    },
+    {
+      "file": "layers/widget-enc-route-37.json",
+      "sha256": "386c2509c62931848bf6e51a62a25aba2227e66fbd7639ca25eb1e182b4eb68c"
+    },
+    {
+      "file": "layers/widget-enc-route-38.json",
+      "sha256": "7b00e77ca1f0acd98dbd95319031b74b03b4e6da3d9dfa64d9f2ecde2cfbeec9"
+    },
+    {
+      "file": "layers/widget-enc-route-39.json",
+      "sha256": "76897c4c75fe688f1ac7443afe056d21b6a9c1d35b0c4cb803784f7f030b2557"
+    },
+    {
+      "file": "layers/widget-enc-route-4.json",
+      "sha256": "520ea2ccbf4f039b3e8ac28a56f5ab1704a3a76415b6bd61a4d47981cf1bff26"
+    },
+    {
+      "file": "layers/widget-enc-route-40.json",
+      "sha256": "cf591b642b65b0b43cdda406e2cb2e7f437779ac991f47045a596e3acc42a007"
+    },
+    {
+      "file": "layers/widget-enc-route-41.json",
+      "sha256": "553e4d2006372157a896f4adbed2574879452196a0861213a8bc03e43a737be1"
+    },
+    {
+      "file": "layers/widget-enc-route-42.json",
+      "sha256": "da7d83e532701d86c3b9fbb3a2446b0680ef28359f42acee7f4e61f89c3443b2"
+    },
+    {
+      "file": "layers/widget-enc-route-43.json",
+      "sha256": "3e9ad45a079ed9e8c07e462e7001e87c1235fa0a2f828f5a17426a8f2cb1aa71"
+    },
+    {
+      "file": "layers/widget-enc-route-44.json",
+      "sha256": "866d58c0ba50b94788936e27f3d6311bffc1915c373207abf61315b275bf27e7"
+    },
+    {
+      "file": "layers/widget-enc-route-45.json",
+      "sha256": "613866ad23d43112e56ded772b9bd3bbfb9d9d41e3cb5792fa4e311f7f3eb646"
+    },
+    {
+      "file": "layers/widget-enc-route-46.json",
+      "sha256": "035b74d19ce60c4f5bfa162c5b2eb8b5338fb3aecc685d5bf532ef5961431ce3"
+    },
+    {
+      "file": "layers/widget-enc-route-5.json",
+      "sha256": "47a54fe6ce3b7bc3ee9fbf4c7b916546246b0993684e06f7f6308466a4aba779"
+    },
+    {
+      "file": "layers/widget-enc-route-6.json",
+      "sha256": "63738577782853d5e05287235d5af4f901b3270ff94f9115474dbf93dc4a6d1e"
+    },
+    {
+      "file": "layers/widget-enc-route-7.json",
+      "sha256": "285050b7cf8c02e6ccc9c359db3d6a7ded28021e979434f85b67519acff865fd"
+    },
+    {
+      "file": "layers/widget-enc-route-8.json",
+      "sha256": "eea2490f95755bc4901aa80293474d0285cb9f5174f8f76e2f541f296b559bc7"
+    },
+    {
+      "file": "layers/widget-enc-route-9.json",
+      "sha256": "d48c6f4fcf5729b49d81565dc35ec55f9c09995350764072123940d06f2c9edc"
+    },
+    {
+      "file": "layers/widget-enc-ruins-of-alph.json",
+      "sha256": "53bfb290cd373a40dbb9c7f4173ca5797458adce2d529efac4ddb6723c203110"
+    },
+    {
+      "file": "layers/widget-enc-slowpoke-well.json",
+      "sha256": "b3e3bf0580b7ef6a0d7c426e7fd1b148fab6aa9957495b6b56f2bc6b374436e2"
+    },
+    {
+      "file": "layers/widget-enc-sprout-tower.json",
+      "sha256": "b8f9b08986bfb0740b08009557bce0629a771052cc0567f17e800df848c52121"
+    },
+    {
+      "file": "layers/widget-enc-tin-tower.json",
+      "sha256": "8f342915fe00b91a1bee06833751aeeb63d38b52d36faef1255122ed4b6d43b8"
+    },
+    {
+      "file": "layers/widget-enc-union-cave.json",
+      "sha256": "cf224702f1bddb9df59fa502992d761d8e179d3cc05f434e707667ae6bedac54"
+    },
+    {
+      "file": "layers/widget-enc-vermilion-city.json",
+      "sha256": "d986c2c40cd62ef182b2dd334a890ded3b600d5129f84080cc1e3fbfb1c47b17"
+    },
+    {
+      "file": "layers/widget-enc-victory-road.json",
+      "sha256": "6d8499159dc55338eca0c477bc547f9ece43961615052c57033e3e5306cae2e0"
+    },
+    {
+      "file": "layers/widget-enc-violet-city.json",
+      "sha256": "f6b624c2b65c8cfabc206086e7e20cfe862f51c8b21a85400cf7f9daeae9d815"
+    },
+    {
+      "file": "layers/widget-enc-viridian-city.json",
+      "sha256": "bbec85ba917e416049c43e2bd97bc061086df6f4896750b9ae46dc6a2e150f47"
+    },
+    {
+      "file": "layers/widget-enc-whirl-islands.json",
+      "sha256": "d7f261c700ab83cb79c315994b658ee0245d83f85db8a56d56cef16deff5d884"
+    },
+    {
+      "file": "layers/widget-gym-badges.json",
+      "sha256": "5812d0bd5ee07f6285bfcce89b34fa6afabce79b89d37a44cd7679884264c2eb"
+    },
+    {
+      "file": "layers/widget-items-azalea-town.json",
+      "sha256": "d00b60c298b52f43727e7704908f5d90b76493274ee1f75e05da14e08131f0c3"
+    },
+    {
+      "file": "layers/widget-items-blackthorn-city.json",
+      "sha256": "57e3b50029b85393ab5d40f33957bd2f37a14ad8d59a239a557a34dd362790b4"
+    },
+    {
+      "file": "layers/widget-items-burned-tower-1-f.json",
+      "sha256": "e85c9418afde935f8914a562a1d43d6652872f0c53e68f08173dd7f92de1c098"
+    },
+    {
+      "file": "layers/widget-items-burned-tower-b-1-f.json",
+      "sha256": "e787cece80d500a05c24af1a7224a7d74decd4c865d05a520e80213bac5a6a4b"
+    },
+    {
+      "file": "layers/widget-items-celadon-cafe.json",
+      "sha256": "e589cccd03e01f6f8339c29b5a915e8107610a95317fe185670b65521dfc6076"
+    },
+    {
+      "file": "layers/widget-items-celadon-city.json",
+      "sha256": "4bce5bdbf7aa371cbb138408b8271a447c2a7c6ca09b56ee6109657a0d535fcc"
+    },
+    {
+      "file": "layers/widget-items-cerulean-city.json",
+      "sha256": "907b1da440e6d878147c93e61cc7b47a599a0ab4d4e472c7a7ff13df56afefd0"
+    },
+    {
+      "file": "layers/widget-items-cerulean-gym.json",
+      "sha256": "007fe291827d92700d471c9ecd872f084274cd67d3d4dea2589815a95ae90cea"
+    },
+    {
+      "file": "layers/widget-items-cherrygrove-city.json",
+      "sha256": "5d08250771d8186d5d2856813d9e13c132d25d7bf322306ec95f9e74a862afcd"
+    },
+    {
+      "file": "layers/widget-items-cianwood-city.json",
+      "sha256": "29bd0d8f2f628d92028d4fc6019d48d0bfa06e39807be8b00989f36cb84a4fa0"
+    },
+    {
+      "file": "layers/widget-items-cinnabar-island.json",
+      "sha256": "174360f9837b119711c43888b01a06beb9efa1d9b251f849d7b44282ccccf54f"
+    },
+    {
+      "file": "layers/widget-items-dark-cave-blackthorn-entrance.json",
+      "sha256": "563cc4cca653041df8cfa74604a042162435a139a92405d86937cb6bb1cfb061"
+    },
+    {
+      "file": "layers/widget-items-dark-cave-violet-entrance.json",
+      "sha256": "4121c8f6e63cc8695e850e7b4187b29990b60cf32f744d9e9d6bf8ae8d5fb22e"
+    },
+    {
+      "file": "layers/widget-items-digletts-cave.json",
+      "sha256": "37be76df9886a3e6b3cabfc0428ab91b21d8d4bc4d94ffc351740509bfabc6f8"
+    },
+    {
+      "file": "layers/widget-items-dragons-den-b-1-f.json",
+      "sha256": "f2d8eca8b08a1b11c3a963624c5d8b8739402502ccd6422bc1099bacd20db748"
+    },
+    {
+      "file": "layers/widget-items-ecruteak-city.json",
+      "sha256": "bc5d0bbfad57b1f81c8e586cf6ec86f83d23b825876733ee9f009352b7c0a6f4"
+    },
+    {
+      "file": "layers/widget-items-fast-ship-cabins-overview.json",
+      "sha256": "f43e1d7ca780443e1391bc026ae198e51e376b45d07053ffbbbd12650e79de17"
+    },
+    {
+      "file": "layers/widget-items-fuchsia-city.json",
+      "sha256": "a72e8c7c1cf256019ed00e1b5e558fdbbcbd141abb136515ebca930de36b2638"
+    },
+    {
+      "file": "layers/widget-items-goldenrod-city.json",
+      "sha256": "8227d13d6bbc96a4ae733279308f1fdff0c2553bb70c0df23eb81d2a6a0fb13d"
+    },
+    {
+      "file": "layers/widget-items-goldenrod-dept-store-1-f.json",
+      "sha256": "32c83c13c619a0ecce0085e9d02e9fe8f4e945d2143343c9e13a4c61c17a68b7"
+    },
+    {
+      "file": "layers/widget-items-goldenrod-dept-store-5-f.json",
+      "sha256": "f216bb3711786f6820460db66d26c8aa7d6b8db6682ee98592c2696136711b67"
+    },
+    {
+      "file": "layers/widget-items-goldenrod-dept-store-b-1-f.json",
+      "sha256": "41ce5bd2d81fef3f7dd923f6b78b94feebfa05a6bc6d81767acf848fd3814a7c"
+    },
+    {
+      "file": "layers/widget-items-goldenrod-underground-switch-room-entrances.json",
+      "sha256": "a4abb680d0187dfaa1453bd401395f71c6d8cc4d5a6650fcddc16e6aad0f5f9f"
+    },
+    {
+      "file": "layers/widget-items-goldenrod-underground-warehouse.json",
+      "sha256": "906af2cb2992134cb0359e14dfcae326660a6719a4b3fcb182d60bd9b1fe027d"
+    },
+    {
+      "file": "layers/widget-items-goldenrod-underground.json",
+      "sha256": "66d3cf31df3c11670f72f20fc28280f2cbe70fae2092ec616188baa23a95c25b"
+    },
+    {
+      "file": "layers/widget-items-ice-path-1-f.json",
+      "sha256": "0586f83a89051bfda4e6e0ebbd403349e8174e8b61a7a89b9fa1bf70d0aa27ad"
+    },
+    {
+      "file": "layers/widget-items-ice-path-b-1-f.json",
+      "sha256": "6de7d4e78656f658cd49b8c4fc28baed2c44ccf8ac21976fdd21cf6f335666aa"
+    },
+    {
+      "file": "layers/widget-items-ice-path-b-2-fblackthorn-side.json",
+      "sha256": "ba02b774275f3e591fc4074194800f72d523a515b1d6adf9bf562d822d69077d"
+    },
+    {
+      "file": "layers/widget-items-ice-path-b-2-fmahogany-side.json",
+      "sha256": "fe18864b4e78ad4223e734318887166fa8e6685af985cb4e6a0f63849afe960c"
+    },
+    {
+      "file": "layers/widget-items-ice-path-b-3-f.json",
+      "sha256": "c7863dc9a8166afcdae58f6a7470f76a60939dd52ad6f348c96637899f537f12"
+    },
+    {
+      "file": "layers/widget-items-ilex-forest.json",
+      "sha256": "14eeaf20a10cb42c140da631a07d3643653ada4d6308a530f01ba1e20710d027"
+    },
+    {
+      "file": "layers/widget-items-lake-of-rage.json",
+      "sha256": "0ba718bf7a2106315d357615022285831ebfa74e08508a9a5316be5692c50d92"
+    },
+    {
+      "file": "layers/widget-items-lavender-town.json",
+      "sha256": "a2b223df3b8ccf6011ba2a669dc480af5c8f395a256dd834679665916697c646"
+    },
+    {
+      "file": "layers/widget-items-mount-moon-square.json",
+      "sha256": "22d041ae5e9af4c93d80f0fc0519c72447224395fb46538e288fa448c1baaf88"
+    },
+    {
+      "file": "layers/widget-items-mount-mortar-1-finside.json",
+      "sha256": "be4621166cd9cc6d297cad7c32c7fe3c80e5e906698ecb74829fbdb221f62338"
+    },
+    {
+      "file": "layers/widget-items-mount-mortar-1-foutside.json",
+      "sha256": "2fa8052ffd21408ef1e88e9561dd47861287b083259ae2a8a875f260aa90f43c"
+    },
+    {
+      "file": "layers/widget-items-mount-mortar-2-finside.json",
+      "sha256": "73d9e7e4f3514f131af13fb9ee2afd54e41b55da3a4cef795b345f2dfb7942c0"
+    },
+    {
+      "file": "layers/widget-items-mount-mortar-b-1-f.json",
+      "sha256": "5f641560d624770716f84cbe8c55c2a90cd4a622a4ee5aacc6e63211b2186923"
+    },
+    {
+      "file": "layers/widget-items-national-park.json",
+      "sha256": "89aa341e13582f37b619d43163adf3993cb4d155b8e8f5053b3da0daf792a8e9"
+    },
+    {
+      "file": "layers/widget-items-new-bark-town.json",
+      "sha256": "133df8936f91bb07929872cbc7f7d45e1dc60815a8ba490b17fe42c7050345c8"
+    },
+    {
+      "file": "layers/widget-items-olivine-city.json",
+      "sha256": "4696f46112d87cc7a35c6b0af4d14b0ea8b355e809d604e0376b0aab5534ae0c"
+    },
+    {
+      "file": "layers/widget-items-olivine-lighthouse-2-f.json",
+      "sha256": "89a163b36fd1bef34c76a61e13bcdcedad5396ba500eb45324d7e5470f03c89c"
+    },
+    {
+      "file": "layers/widget-items-olivine-lighthouse-3-f.json",
+      "sha256": "7dd1e22d18ee651aaa7bfb798928126e35fa91722603ceebca117391fb630021"
+    },
+    {
+      "file": "layers/widget-items-olivine-lighthouse-5-f.json",
+      "sha256": "d0a3168b114c1d88469099111bc08380a9858f6a6b5280cf0e8de789f5734763"
+    },
+    {
+      "file": "layers/widget-items-olivine-lighthouse-6-f.json",
+      "sha256": "c8768dd3fac7b62885885f9b98325c9fb5239f580a55842cd7b0314b74600691"
+    },
+    {
+      "file": "layers/widget-items-olivine-port.json",
+      "sha256": "398f59d067cdc1ff8605042aac1a062f3140c72a89518d4f743e3b3ce4815f8c"
+    },
+    {
+      "file": "layers/widget-items-pewter-city.json",
+      "sha256": "af51bd4e7e7ee3f5882d8df359077d940a0441c33d52cb79f924f17385f8d978"
+    },
+    {
+      "file": "layers/widget-items-power-plant.json",
+      "sha256": "f1296bc3e8a8c64f86361800757f2bd69539703fadb90403a8034b58885d2d51"
+    },
+    {
+      "file": "layers/widget-items-radio-tower-1-f.json",
+      "sha256": "dd8b056350f18da63716f443ce04cf65d5fe7a1d3be8b248b9eae0df767fe3e1"
+    },
+    {
+      "file": "layers/widget-items-radio-tower-2-f.json",
+      "sha256": "77669e55b350abcc0eec6d8acde35ef653a56ba8fa448893637e5ec15d22b56e"
+    },
+    {
+      "file": "layers/widget-items-radio-tower-3-f.json",
+      "sha256": "d69635d9b352e68b51a63a176b402fb3b978498a06d680f0ce6d0d754f762808"
+    },
+    {
+      "file": "layers/widget-items-radio-tower-4-f.json",
+      "sha256": "9c76a3542c03960c6d8a17c58af00989dfa0c78aba815bcba7e44a8c78fdc4a6"
+    },
+    {
+      "file": "layers/widget-items-radio-tower-5-f.json",
+      "sha256": "3c0c6559258ba1982f29616ff7e74454fb26f5ed2700f72694f095db4d7db29e"
+    },
+    {
+      "file": "layers/widget-items-rock-tunnel-1-f.json",
+      "sha256": "86aad7c4b409ebecea813eaf4ac6db3e9d0f0a4c72051aa251b6b020523dc143"
+    },
+    {
+      "file": "layers/widget-items-rock-tunnel-b-1-f.json",
+      "sha256": "e75a15013785909f453ce9eed413b24c608388b8cd0b44470eef52aee9ec80c3"
+    },
+    {
+      "file": "layers/widget-items-route-1.json",
+      "sha256": "b26587f8c833ed516694b171855ec3f1cc18be43f607c0ccf3942414068a7346"
+    },
+    {
+      "file": "layers/widget-items-route-10.json",
+      "sha256": "472ac63ee494f7bd26224bd248534353decf5deb4c76863e0c4dc1a2a5887029"
+    },
+    {
+      "file": "layers/widget-items-route-11.json",
+      "sha256": "cc073e613a8bcc5471e1c948a00dcc8c6eafad41a94d460b006f34d50e7e709e"
+    },
+    {
+      "file": "layers/widget-items-route-12-north.json",
+      "sha256": "7da554aa4acba84ba413560130bb602c3acbc34fef8e308a2f18d4c3d3b5304e"
+    },
+    {
+      "file": "layers/widget-items-route-12-south.json",
+      "sha256": "9c7cda66bf3867927d490b9d2ae53c8243711745d7dc6d87132ddb1e2f74507d"
+    },
+    {
+      "file": "layers/widget-items-route-13.json",
+      "sha256": "1bf71eebf67a30030747dc4454709845350ac829c934d0c05bd1368593fca654"
+    },
+    {
+      "file": "layers/widget-items-route-15.json",
+      "sha256": "c59269e144c91dac894d3b62b03d8dc7fec3d4cc28a55297358d4ae2e74ecd5c"
+    },
+    {
+      "file": "layers/widget-items-route-17.json",
+      "sha256": "a1aa815d89a70b80fda2802a691d86fb21ccf1061cfca34a294373dbb657ea8a"
+    },
+    {
+      "file": "layers/widget-items-route-25.json",
+      "sha256": "907b3d19b5c5a8f1e08d79b32868753dbb2a9e25a7ab9a307009013c7ccc2691"
+    },
+    {
+      "file": "layers/widget-items-route-26-north.json",
+      "sha256": "86e5fe9fba119ce8fc32b9031541eb373dfd792e7a9e47398363374ce1cbc95b"
+    },
+    {
+      "file": "layers/widget-items-route-26-south.json",
+      "sha256": "9eed8c78691d6c678d5743eda2073f1a5601168dd51ae6b64b94ff77468ff6a9"
+    },
+    {
+      "file": "layers/widget-items-route-27.json",
+      "sha256": "01c04335fe77afa28a050b7d1f034b90458676ba1436819d1b21d04b1ced5d9d"
+    },
+    {
+      "file": "layers/widget-items-route-28.json",
+      "sha256": "5a7fd4bf4ed92a82242443523e654793edf8b0178583904be562dc8883a2ebea"
+    },
+    {
+      "file": "layers/widget-items-route-29.json",
+      "sha256": "53fc57de78adde2693e1e226f89a2e8afbb858f10bf29479d7a02ee7108e51f3"
+    },
+    {
+      "file": "layers/widget-items-route-30.json",
+      "sha256": "7211008a90e23b0cb7984e84e4c15cc11173e526b4c249a65e7686b6e0eeca4a"
+    },
+    {
+      "file": "layers/widget-items-route-31.json",
+      "sha256": "a868eeda9372ab31d273b4f8014a6b98e36fd93c779da8c686c6e976f9f78078"
+    },
+    {
+      "file": "layers/widget-items-route-32-north.json",
+      "sha256": "b687fb62b22388cbfd9d39d12a075c4d1b4d8490a063252ad6b46f25df5cf4b6"
+    },
+    {
+      "file": "layers/widget-items-route-32-south.json",
+      "sha256": "c5dc7b14536bb32350c1a88c0459cb803eaef6e45bf57fe83e6d43491c1780fd"
+    },
+    {
+      "file": "layers/widget-items-route-33.json",
+      "sha256": "13107c51e1a46bef34f02c17ac0ec1bde4d75dd4566263b3433e5b657c2b442f"
+    },
+    {
+      "file": "layers/widget-items-route-34.json",
+      "sha256": "de8708181591221e369d8a7781517d38e6da81307133b21b3cbc6ad51b57f01f"
+    },
+    {
+      "file": "layers/widget-items-route-35.json",
+      "sha256": "723a28e8aab358fb46581c3d2b03143587a0aed1dd724bc89ad753946eb33d95"
+    },
+    {
+      "file": "layers/widget-items-route-36.json",
+      "sha256": "3568887d97277dd22013415a8b9831a73c502d444b5eb9dfeb6ee122274269c5"
+    },
+    {
+      "file": "layers/widget-items-route-37.json",
+      "sha256": "d9832e6e1cc44882afa89993d0d3e13364e2515ef947d93e5a6501b224abfab9"
+    },
+    {
+      "file": "layers/widget-items-route-38.json",
+      "sha256": "0d34372accd8fe85e08d99a1ebcc0462b9ceeeabf1f3083f98cc25b3dfd5c95a"
+    },
+    {
+      "file": "layers/widget-items-route-39.json",
+      "sha256": "13591e04228f64d0224ec8b51294fa49537d8073c0453b60f7cb396284b23815"
+    },
+    {
+      "file": "layers/widget-items-route-4.json",
+      "sha256": "911ce4e66324295b42abf24b0206904b39116e30df6909761a57d261666145b5"
+    },
+    {
+      "file": "layers/widget-items-route-40.json",
+      "sha256": "dde22249d70ef624ad4e12456a86b821b07349fa075f9dc9f4f9ceb00a921324"
+    },
+    {
+      "file": "layers/widget-items-route-41.json",
+      "sha256": "6c9cf52c5ad13986ac799d709f7486e096f3ad2faecf6de6c35dcf66f92b802b"
+    },
+    {
+      "file": "layers/widget-items-route-42.json",
+      "sha256": "0a2e6fb5f5ce6cd5220d362050dd34da69e7f442f23b74ac561109c9c4d4c78f"
+    },
+    {
+      "file": "layers/widget-items-route-43.json",
+      "sha256": "8f9e1b7dc4ab3c5adae88331a592ca99897876ddfae455073d9c701c181be666"
+    },
+    {
+      "file": "layers/widget-items-route-44.json",
+      "sha256": "6c32c9eb1c8289345776a2191aaff7f031e42192efeb0ae028b8fa3398fe0ca3"
+    },
+    {
+      "file": "layers/widget-items-route-45-north.json",
+      "sha256": "9731e1ae3dc39384941ee4e07b5d7464828f98bc613dafdae61695649f2d836c"
+    },
+    {
+      "file": "layers/widget-items-route-45-south.json",
+      "sha256": "d082dc32782db0adb768f4e79baed3fdd55153664e403906b2895c4f25f12b0d"
+    },
+    {
+      "file": "layers/widget-items-route-46.json",
+      "sha256": "917875ede08d10256414722e90d3cc259f396ba0aeddd5e29f9ca5df57d32104"
+    },
+    {
+      "file": "layers/widget-items-route-5.json",
+      "sha256": "a2dd8206012c500cd8d6d455576ae5e68dbf95f51d0eeaf0a65839e237a2b824"
+    },
+    {
+      "file": "layers/widget-items-route-6.json",
+      "sha256": "2499280baa0cb546533bf8566a11d445138222d2f60a6f0dffa76cdfad1afc05"
+    },
+    {
+      "file": "layers/widget-items-route-8.json",
+      "sha256": "08a272f4b752d1007e0627ee28879126294e844fbf4ca6952173be7d94cdf80e"
+    },
+    {
+      "file": "layers/widget-items-route-9.json",
+      "sha256": "921914ccb4b86f72a9c2561f2d72a7faebb940eb0d68908ead80be4f0283caf9"
+    },
+    {
+      "file": "layers/widget-items-ruins-of-alph-aerodactyl-item-room.json",
+      "sha256": "9cd2b287d539accaa692823bee3f6db09792bc92b2d621c4bbfac7c7a98b1a01"
+    },
+    {
+      "file": "layers/widget-items-ruins-of-alph-ho-oh-item-room.json",
+      "sha256": "3a727ad2f62cf4e29e2914cf254d66149cfacb973277b406bf6ae4836fd2fd26"
+    },
+    {
+      "file": "layers/widget-items-ruins-of-alph-kabuto-item-room.json",
+      "sha256": "2eefa20f6ca9aee3cf1c870e1083b79c9205176f7dd410a651370a225e67aea2"
+    },
+    {
+      "file": "layers/widget-items-ruins-of-alph-omanyte-item-room.json",
+      "sha256": "2d885674c959d876f366e726189eede539a3f08d4e08546f031a3b96450de25e"
+    },
+    {
+      "file": "layers/widget-items-ruins-of-alph-outside.json",
+      "sha256": "0f4bfa154b94c70aca739341780e805bce0c6d74f528269f190c80e3975a479f"
+    },
+    {
+      "file": "layers/widget-items-saffron-city.json",
+      "sha256": "67fea21925e51c9ca91bec2654b9268f20ed5d39d69b8fa5fe60e9286c046b1e"
+    },
+    {
+      "file": "layers/widget-items-silver-cave-item-rooms.json",
+      "sha256": "e306b516c7e41cc2f00a5aad3e6430b420b9342f42d5acccc2c60eef455ad62c"
+    },
+    {
+      "file": "layers/widget-items-silver-cave-outside.json",
+      "sha256": "39b0998d8045c9d9cbdd19b29ab58348ef0cca8b5f3e7d7bd5de9cc5d3cfbbb6"
+    },
+    {
+      "file": "layers/widget-items-silver-cave-room-1.json",
+      "sha256": "201a03c5746590ddf308a259262b2b9f87e0c3027f683d8fbba009f7df947c68"
+    },
+    {
+      "file": "layers/widget-items-silver-cave-room-2.json",
+      "sha256": "97089955433a6f23b78bbf1288517a9a223b3d1a9ecfee09c71eb895cc287b73"
+    },
+    {
+      "file": "layers/widget-items-slowpoke-well-b-1-f.json",
+      "sha256": "0da5ebed8220513d14c573cab221a48ac3cc20e8c162ff86fdfce67fc46771bd"
+    },
+    {
+      "file": "layers/widget-items-slowpoke-well-b-2-f.json",
+      "sha256": "658b9ff1a9db0f003956f8805dcda2f7e940e70e1328880058a757dc8e565a35"
+    },
+    {
+      "file": "layers/widget-items-sprout-tower-1-f.json",
+      "sha256": "a5c29298cdb8c1e09f67255af27e325c7dc59385db31b5c948d7957a5c48cc8a"
+    },
+    {
+      "file": "layers/widget-items-sprout-tower-2-f.json",
+      "sha256": "d1dd9911eb233b3848e42694ea235650c798c8e29bb6351d9222facf21305e20"
+    },
+    {
+      "file": "layers/widget-items-sprout-tower-3-f.json",
+      "sha256": "119d1de1efd0e749acad1e5719e65223f0d05f70774a74863314b036cc6bb69f"
+    },
+    {
+      "file": "layers/widget-items-tin-tower-1-f.json",
+      "sha256": "6e8cb247d1c10d71213b654dd3af8acdfa41aaf598c17a461b12aec086baeedc"
+    },
+    {
+      "file": "layers/widget-items-tin-tower-3-f.json",
+      "sha256": "25282734de774ce4314806050a3b0fea9865bc0f42bed47a3a074761f8e0e833"
+    },
+    {
+      "file": "layers/widget-items-tin-tower-4-f.json",
+      "sha256": "cdc10b45b26e65ecd5ed888adb4a1cdb51e2875fd1d18183d97c47c511549d8f"
+    },
+    {
+      "file": "layers/widget-items-tin-tower-5-f.json",
+      "sha256": "cdd2af9402a356cb4dcdbfcaafc2282b7d118df9b863629dce29cd27f7cf1e18"
+    },
+    {
+      "file": "layers/widget-items-tin-tower-6-f.json",
+      "sha256": "c44d1dedeecc077e453858287592f2e093fbaae4e8319697eddbe32f60d5ec03"
+    },
+    {
+      "file": "layers/widget-items-tin-tower-7-f.json",
+      "sha256": "9b5283727419f269a68acbc29e13f350cf7a863eabfc7946dcd14f04421bc504"
+    },
+    {
+      "file": "layers/widget-items-tin-tower-8-f.json",
+      "sha256": "fcf157a2719ef54740196deba1cf25e2874177feb11c4557e7f69a104203a351"
+    },
+    {
+      "file": "layers/widget-items-tin-tower-9-f.json",
+      "sha256": "f487d3a1d90b673cb5d9aace66084e687e59ac787bfa2fa1465bf77af2d00acf"
+    },
+    {
+      "file": "layers/widget-items-underground-path.json",
+      "sha256": "c2292b29eaca262a16431f2219893ae030f0dec3f842dba5c4b2f48a87f13ea9"
+    },
+    {
+      "file": "layers/widget-items-union-cave-1-f.json",
+      "sha256": "7c1a21de3034c54fee3272a345c29e1bf67843ad715edc409c6f7f7465f853bc"
+    },
+    {
+      "file": "layers/widget-items-union-cave-b-1-f.json",
+      "sha256": "c12b764c7de6067bb854a92dc3cf0ee8318bdfa044020b13b3623e74369bc3c7"
+    },
+    {
+      "file": "layers/widget-items-union-cave-b-2-f.json",
+      "sha256": "3e19d66ee20777c3b4708f7869c94bd4e12ef5b437edd05e17bb2e9991e0193e"
+    },
+    {
+      "file": "layers/widget-items-vermilion-city.json",
+      "sha256": "8ab58db682221e1897255a32e03a4da178d95600910eca86f41fcd9266c5492d"
+    },
+    {
+      "file": "layers/widget-items-vermilion-port.json",
+      "sha256": "0f2437b1b24b9f20e979481bb06f9f8fa6a6625e501fe1767c84da1d3736945a"
+    },
+    {
+      "file": "layers/widget-items-victory-road-1-f.json",
+      "sha256": "f2c0a2cee32659756ada79897d508bcde359c560d9f77e45c37606f615efa740"
+    },
+    {
+      "file": "layers/widget-items-victory-road-2-f.json",
+      "sha256": "d042f614f6b455d4b45ed55d7841671f88c68dabf523b16664f75474e6e3b834"
+    },
+    {
+      "file": "layers/widget-items-violet-city.json",
+      "sha256": "0be19e767f45445705eddcbdfc539c389d19c781851200d28e54dfdcccffb500"
+    },
+    {
+      "file": "layers/widget-items-viridian-city.json",
+      "sha256": "e6f6bd4be4f1168a1d7ef75045d21432902b0be1ddaa88055d8e6e8c010a5f02"
+    },
+    {
+      "file": "layers/widget-items-whirl-island-1-f.json",
+      "sha256": "b1f4872a29d1f8f4ce82fb4fe27d00db4739d3f9224c354583e0b446641cff79"
+    },
+    {
+      "file": "layers/widget-items-whirl-island-b-1-f.json",
+      "sha256": "e62074e43707bb5621c1591638d784c65c72b90d4d8904b1c069f60ca41ca490"
+    },
+    {
+      "file": "layers/widget-items-whirl-island-b-2-f.json",
+      "sha256": "20b47902570f191b2f2e316ec3bd291b8e2c5a9dfb8cd6e818140715aa113d59"
+    },
+    {
+      "file": "layers/widget-oak-c1.json",
+      "sha256": "9e202e8dfa0ab3b8b7010c215b46d40a859a662f8fbf12cdf28dbadc4b60accf"
+    },
+    {
+      "file": "layers/widget-oak-c10.json",
+      "sha256": "06806b82170eb62d83126ba1cbf565513378760a0f419373a7280760615e18b6"
+    },
+    {
+      "file": "layers/widget-oak-c11.json",
+      "sha256": "16178d33a1ad4e9ab9e845d7a3dcc19656ff54eda89ead06dbedebaae2354c11"
+    },
+    {
+      "file": "layers/widget-oak-c13.json",
+      "sha256": "bed17bb5a535da3c5d01c32c6ef4c7ca98ed7cb85da9bb4b5136a99152c4e8b5"
+    },
+    {
+      "file": "layers/widget-oak-c14.json",
+      "sha256": "e42c7e10a91d0c74f644f8e2a44b16e1c46caadad247064ab1f36c1e62c00959"
+    },
+    {
+      "file": "layers/widget-oak-c15.json",
+      "sha256": "9e5e62b3d36a4e89498a20f84549ca407952e18fd693b6d2ea3631a573088d68"
+    },
+    {
+      "file": "layers/widget-oak-c16.json",
+      "sha256": "792bcdb435bda494ae8f8a7db2a9b824cbe725d04cbf1d3ec64f9d86e39d23b9"
+    },
+    {
+      "file": "layers/widget-oak-c17.json",
+      "sha256": "56c3b3d7f26e539ceda8dde9dfa83ce15edfd291742533f9b2f463970bbf5090"
+    },
+    {
+      "file": "layers/widget-oak-c18.json",
+      "sha256": "019413cbfd762e5cb0e22647a10c8808ac7b486f2a9a0e9cd8201762e4ed3f7c"
+    },
+    {
+      "file": "layers/widget-oak-c19.json",
+      "sha256": "0578c47be48f00500c397a008a24dc63d5885667b0ea1523194a8c99d38382b4"
+    },
+    {
+      "file": "layers/widget-oak-c2.json",
+      "sha256": "3b36b0d4963b7e59304b797410ac8eb836e9aa93e752200e5aa6f1e026dedc52"
+    },
+    {
+      "file": "layers/widget-oak-c3.json",
+      "sha256": "738f692d040e3abb89694161d6fbeececb249a420ab4030e1565115aee470bc7"
+    },
+    {
+      "file": "layers/widget-oak-c4.json",
+      "sha256": "1ceb42f0dee472c999c438cd4c246e77acbec20d129c94bf549bc35fcd6c1d53"
+    },
+    {
+      "file": "layers/widget-oak-c5.json",
+      "sha256": "17c2f23a787a2dc476b7640fe0c671fe1b26346795d172a058b04d42ad73a452"
+    },
+    {
+      "file": "layers/widget-oak-c6.json",
+      "sha256": "23a9a07b1d5e434bf0b049578023f68a112be77c732323c5b4660424460f22fd"
+    },
+    {
+      "file": "layers/widget-oak-c8.json",
+      "sha256": "360a24594bcf54727fcef271b80f2b0f51429939d827e985fe3636d6317e6abd"
+    },
+    {
+      "file": "layers/widget-oak-c9.json",
+      "sha256": "3297058d77f677e90593f503f7b1ba107e74975c859067018227d4657c766eaf"
+    },
+    {
+      "file": "layers/widget-pokedex.json",
+      "sha256": "279bc2538532e9b79a6fb2637d5c93f3eb3c59925adcdfe1584f960360781de1"
+    },
+    {
+      "file": "layers/widget-prep-c1.json",
+      "sha256": "5cde3dc2eeacfc0c08fb4f5981140adfa1b1b98573cc5c9c3940a0d0180a201c"
+    },
+    {
+      "file": "layers/widget-prep-c10.json",
+      "sha256": "b15d59ab8f297e04c4bf0384981de42e0b1ee205dbf97ebbcb4567ded2d76e47"
+    },
+    {
+      "file": "layers/widget-prep-c11.json",
+      "sha256": "8f820b671f6197ee23e070315f7daca744a0cb8419b85eb20a0734e017839221"
+    },
+    {
+      "file": "layers/widget-prep-c13.json",
+      "sha256": "7386b6946af6f6fdd941b3bd43617973212116ea3087a8e7ac43c6ba8deab515"
+    },
+    {
+      "file": "layers/widget-prep-c14.json",
+      "sha256": "176b9132d0c056943affea73cce7dacdb4ff2e9757f8a61fc26c6bc21d85024a"
+    },
+    {
+      "file": "layers/widget-prep-c15.json",
+      "sha256": "a4aefa0dab788db1f396f93b69e659d74c595c3c6762555cbcdec2d98572abff"
+    },
+    {
+      "file": "layers/widget-prep-c16.json",
+      "sha256": "445fc87e99c6eae630717b79dd8ef894a56775a9c9b2a0cf41096a4db917c17b"
+    },
+    {
+      "file": "layers/widget-prep-c17.json",
+      "sha256": "cff875eb80c8f3aa3a3af1623afee3f9e037838ee15e44e068a65bcfd7b1f037"
+    },
+    {
+      "file": "layers/widget-prep-c18.json",
+      "sha256": "e7103cf137160560d9ff44f796f548e1cdd05da69b6aad1254db7a74b217e65e"
+    },
+    {
+      "file": "layers/widget-prep-c19.json",
+      "sha256": "bd0255cf1d69e02cd3968e41cf43090c5958f971234a7dd15c3fe828ba87d352"
+    },
+    {
+      "file": "layers/widget-prep-c2.json",
+      "sha256": "01e01a4404d070f5f2be0702597ddd7745f0f114744971845ef207f8d6a3e1ab"
+    },
+    {
+      "file": "layers/widget-prep-c3.json",
+      "sha256": "b6a2a4595b8b7ca29a77c5ba00f918c5becd0e4c7ccaa9e66962f5e2a17ae23d"
+    },
+    {
+      "file": "layers/widget-prep-c4.json",
+      "sha256": "c6cb08bb763c190fc2237f21ae1dc35b7428ead94175adf87615dc4091a0bdd1"
+    },
+    {
+      "file": "layers/widget-prep-c5.json",
+      "sha256": "94b153476f72680e5a09f40d8060c9edc21873720bf9503de2a85e6372c08b53"
+    },
+    {
+      "file": "layers/widget-prep-c6.json",
+      "sha256": "d24916fb6f6fa69cc11cfef36e4135a9d9bb7827d49f9cc1abbca3657584eb30"
+    },
+    {
+      "file": "layers/widget-prep-c8.json",
+      "sha256": "122773a5dfbb3b7f044abcc481217794dafeaa5a07dc275bb2eaa597c2d80142"
+    },
+    {
+      "file": "layers/widget-prep-c9.json",
+      "sha256": "1d76cb6c543f7b42f3c3204bbe78ff96b786bc957b3e8b4d5d8b25650bb37205"
+    },
+    {
+      "file": "layers/widget-ra.json",
+      "sha256": "1d09b2f910f2ab97037bab5ec91d58042dba252975160120cab46d6f265f379f"
+    },
+    {
+      "file": "layers/widget-tr-azalea-town.json",
+      "sha256": "edfcc479e285a205d32c09a11e66352aef156792bbaa9e8b03de0079314a938b"
+    },
+    {
+      "file": "layers/widget-tr-blackthorn-city.json",
+      "sha256": "c9cbc67a4448ccac5af314617ca4db9ad7b0a0576cd28ba1a3099f3518ec1d8b"
+    },
+    {
+      "file": "layers/widget-tr-burned-tower.json",
+      "sha256": "e260780e1df3f4b7a5dae5c535e6506c60f0e41581cbe581904a23e32f6203c3"
+    },
+    {
+      "file": "layers/widget-tr-celadon-city.json",
+      "sha256": "258d60d442fef2a5d4b0577e049b00cf81185565fd52a9710eb342ff65dd2d26"
+    },
+    {
+      "file": "layers/widget-tr-cerulean-city.json",
+      "sha256": "fff75fe7355dbcc4a7636ad2db0820f8e136f01e11b32bbfff1f37926be15b77"
+    },
+    {
+      "file": "layers/widget-tr-cherrygrove-city.json",
+      "sha256": "bd2c87843636e5419e7495007f39a9dda6708648ef7545be9fdd8ad2cd24ec1e"
+    },
+    {
+      "file": "layers/widget-tr-cianwood-city.json",
+      "sha256": "43085266284eaa5786f03627a955b1e59b402768169e77684790e5956dd18d7a"
+    },
+    {
+      "file": "layers/widget-tr-dragons-den.json",
+      "sha256": "36e9ad84d2b1d8834fb680b663b3b5b92bffd40bcbaf3bbb07761581d1e862c8"
+    },
+    {
+      "file": "layers/widget-tr-ecruteak-city.json",
+      "sha256": "0b835e61f178a027ecc06d09d1e09bc5eb9c006ba89e4a4dde96bfe4b0bf2ecd"
+    },
+    {
+      "file": "layers/widget-tr-fuchsia-city.json",
+      "sha256": "a864dca70e5b92ab57a2a1bf827c5bb4b0e8899ea31fa6cb9799ff3b9ded1bff"
+    },
+    {
+      "file": "layers/widget-tr-goldenrod-city.json",
+      "sha256": "430c5cabe372f55cf6c105f7c69f40aeb07698478d68d21b7912c0e3f430111b"
+    },
+    {
+      "file": "layers/widget-tr-goldenrod-underground.json",
+      "sha256": "a2615d32c7e42c0bbea99080ac3cd3704e3b2c4046a8e99af5c33a2cd9882096"
+    },
+    {
+      "file": "layers/widget-tr-ilex-forest.json",
+      "sha256": "d670ca4aa8ab47336dc0bead26a68a737f1dbbc675c6671ec40b0dc1a6745578"
+    },
+    {
+      "file": "layers/widget-tr-indigo-plateau.json",
+      "sha256": "be890234692936c7906a5d7b578bd6a6aa7b01b19f1c9c4743a06d0911b1ecba"
+    },
+    {
+      "file": "layers/widget-tr-lake-of-rage.json",
+      "sha256": "b8d4683e0ef61e27689c427a1e08634950a2f9fe9f982586d8b5b5c554f0664d"
+    },
+    {
+      "file": "layers/widget-tr-mahogany-town.json",
+      "sha256": "fa13c6501e79edbcac8658455984020e0e42e59722b71d106d53cb4a903dce18"
+    },
+    {
+      "file": "layers/widget-tr-mt-moon.json",
+      "sha256": "b50b36a3328f1131f9c503b7cf384d43c45e06ffed21d801569ed62746fad27b"
+    },
+    {
+      "file": "layers/widget-tr-mt-mortar.json",
+      "sha256": "41adc78898b038d5e4019147d079428676f497aef598f663bf92e78ef9c9f886"
+    },
+    {
+      "file": "layers/widget-tr-mt-silver-cave.json",
+      "sha256": "ee2bf7b3f2a53fd33c2a305bdc60e8f5a981009c323ac0014a60ba3b127b1420"
+    },
+    {
+      "file": "layers/widget-tr-national-park.json",
+      "sha256": "ef750611e83d4ce04bdd6ec14a894558d61bd5f811020b008f7931851d13b56a"
+    },
+    {
+      "file": "layers/widget-tr-olivine-city.json",
+      "sha256": "a1de5737af7546f9320856ab13b9e2b2d37602e4d30723b93859e49fe696238c"
+    },
+    {
+      "file": "layers/widget-tr-pewter-city.json",
+      "sha256": "a777bdc44802605dd4e734bd5f561cd74da067c86f82580a5299a5fdeb535eee"
+    },
+    {
+      "file": "layers/widget-tr-rocket-hideout.json",
+      "sha256": "876e30ebe40d6edba0e86f9d31edc85260a7bd4e44a47112c26c1862ccada88f"
+    },
+    {
+      "file": "layers/widget-tr-route-1.json",
+      "sha256": "0cc2eec7c4c5fb02d77d78a69664e215280f369449246efec5265356014f4107"
+    },
+    {
+      "file": "layers/widget-tr-route-10.json",
+      "sha256": "0f145656146ca3c0253a860c4ed991313ffb1ecd7b92b5064d65ad5d877c590c"
+    },
+    {
+      "file": "layers/widget-tr-route-11.json",
+      "sha256": "4e4bc240f165ac184a68a3aa55e846c4797527c6d9d734383f07bdd9a0375d63"
+    },
+    {
+      "file": "layers/widget-tr-route-12.json",
+      "sha256": "08691b2d83dbb4ce80898b582130956305bfcd2a42bb6098c886e9d85f08c818"
+    },
+    {
+      "file": "layers/widget-tr-route-13.json",
+      "sha256": "f8b73988e05f46db8567864733de8c008c707d491a58c1d0683189fe912d23a3"
+    },
+    {
+      "file": "layers/widget-tr-route-14.json",
+      "sha256": "2e43f0e3c579d206a2f94d69aeb9fc5abee1314450d6602793a32f2a898c69a8"
+    },
+    {
+      "file": "layers/widget-tr-route-15.json",
+      "sha256": "c633126d7fa2e1069ecb53b55109c2e57d9bfc2d2c4f4bf0095d8af0c85ff3d0"
+    },
+    {
+      "file": "layers/widget-tr-route-17.json",
+      "sha256": "bb6f382729a1646699dc7958eedcadafaedd7105cab89bfbfde153db6b1a68e8"
+    },
+    {
+      "file": "layers/widget-tr-route-18.json",
+      "sha256": "46c9c248d218d79dcd3cd26e6b0c2181a6b738ef46d7996b4967893793305f4b"
+    },
+    {
+      "file": "layers/widget-tr-route-19.json",
+      "sha256": "4d4cdef07760b8f8393a5e001fe24e1c0f6b37d9b6b927b3a1e423c5c571519b"
+    },
+    {
+      "file": "layers/widget-tr-route-2.json",
+      "sha256": "54c467630e69a150f7c67152e2f7d209464b99d657bf629044e1898a984ef81c"
+    },
+    {
+      "file": "layers/widget-tr-route-20.json",
+      "sha256": "7123560acfa11d61de5dc19b79fba36c916a101bb84afdc3c5de63d9b565cf43"
+    },
+    {
+      "file": "layers/widget-tr-route-21.json",
+      "sha256": "d244e6e540d0fa75eb61389649bbf1337dceae05b0ebc7c46f98f6e6cd55ebf3"
+    },
+    {
+      "file": "layers/widget-tr-route-24.json",
+      "sha256": "28bd4e45f1bd794cd067b51cb8bb7c77411d72716df78f931e581b7f957be1a4"
+    },
+    {
+      "file": "layers/widget-tr-route-25.json",
+      "sha256": "cb68b61ac5252171427379f43cd9348fb94347b95820db856df4f7b3ba6ee16a"
+    },
+    {
+      "file": "layers/widget-tr-route-26.json",
+      "sha256": "19dbfb87a75e748c2346b6f5915a6f357dbbcdf6872a5e0ecd52a027ef1c992c"
+    },
+    {
+      "file": "layers/widget-tr-route-27.json",
+      "sha256": "189bc97921efdfa93019dc20b042f774a7fe2f769e3d97ef6ffa45ee3ccd6674"
+    },
+    {
+      "file": "layers/widget-tr-route-3.json",
+      "sha256": "0c601dc96027630abb75703a56e79c8678848f72828bfff99d969d8c0cea67c0"
+    },
+    {
+      "file": "layers/widget-tr-route-30.json",
+      "sha256": "4ff3499905563e81bf3c76393a420ffa00a88a980fdf392a40a9fbbffd6171d6"
+    },
+    {
+      "file": "layers/widget-tr-route-31.json",
+      "sha256": "0dc4ae34220d9f70b1b5855a986fda52efe7a2c3a73f9845365864c34270d0a3"
+    },
+    {
+      "file": "layers/widget-tr-route-32.json",
+      "sha256": "48d151b102c72012a18d21cbfeb7285370ad7e75c0f61d701b94ee26c045fadc"
+    },
+    {
+      "file": "layers/widget-tr-route-33.json",
+      "sha256": "7a4573d55661bbbfa527690a918ad75b35b90910370521d99e07d0bf7b082bea"
+    },
+    {
+      "file": "layers/widget-tr-route-34.json",
+      "sha256": "509c2dd9d312ba4d153bffa32537557a13e9aacec16bb78042a04db0c2ea1383"
+    },
+    {
+      "file": "layers/widget-tr-route-35.json",
+      "sha256": "396964cf0b018d8a83b1aee2c29037fecfd4a0f68eb5ab9f877f0c59386e420e"
+    },
+    {
+      "file": "layers/widget-tr-route-36.json",
+      "sha256": "f68982f4fbc3938fcdf7d8f25ecd12ef37edaeca619003c36760d8c0a08dbe65"
+    },
+    {
+      "file": "layers/widget-tr-route-37.json",
+      "sha256": "0bb6b592ea189a686323b5ee42ae5fcaef53dee9c22c5407c897095439510e44"
+    },
+    {
+      "file": "layers/widget-tr-route-38.json",
+      "sha256": "a7c39c2cca1f5434e6a3d5c2ccdf3b4aa88fc217db7acef8bad5dd4e226dd0e4"
+    },
+    {
+      "file": "layers/widget-tr-route-39.json",
+      "sha256": "3da97ba3603887cb6748287c03beaeda57650efaec52540523b836ccf7d7f9f3"
+    },
+    {
+      "file": "layers/widget-tr-route-4.json",
+      "sha256": "5ae1fe522f3c3c5f4928a2c0b8108d7747c70e5c4627ad984a7065c8403d692f"
+    },
+    {
+      "file": "layers/widget-tr-route-40.json",
+      "sha256": "3ea1bd143dc955a839e0de6101bd543a752042948a83f8a35d22d836ec1ecbdd"
+    },
+    {
+      "file": "layers/widget-tr-route-41.json",
+      "sha256": "439a8be73a948220d7383bbe17552f1fa22a20851f6fecbaa564d6efdef6a345"
+    },
+    {
+      "file": "layers/widget-tr-route-42.json",
+      "sha256": "8ce420939d2476afb76b55e2c4cbe5071658b410bfa79ea8a5b4f29021aff0aa"
+    },
+    {
+      "file": "layers/widget-tr-route-43.json",
+      "sha256": "2fc88c4e99bbbfa623c5a73673e581e0201c8eb415263177130cefc0c14614ad"
+    },
+    {
+      "file": "layers/widget-tr-route-44.json",
+      "sha256": "daa621a73e21aad7950696dd092224ee2a75d0edd530b78cf5583be9f9a5d61b"
+    },
+    {
+      "file": "layers/widget-tr-route-45.json",
+      "sha256": "ab6bf2e34c7008d8d15680ebd1353e23b5ee7ef4f3dcc3570492bfcb5ae0a5d2"
+    },
+    {
+      "file": "layers/widget-tr-route-46.json",
+      "sha256": "923c1059f435981f42bf3a8aad73f0d9441c2bb00fc39de57aef04725573970b"
+    },
+    {
+      "file": "layers/widget-tr-route-6.json",
+      "sha256": "613c383de9c8db6e08f9af40ac2778b254a3bf7359c18d180a686bbc38fec622"
+    },
+    {
+      "file": "layers/widget-tr-route-8.json",
+      "sha256": "edccaa0143016e687f660cb8c59224e38f51066d28fde306a9706ec8494f5840"
+    },
+    {
+      "file": "layers/widget-tr-route-9.json",
+      "sha256": "718da46f52f2f23c1eb7034f5230dc093aab66c051275512719f7ac1f35c65b4"
+    },
+    {
+      "file": "layers/widget-tr-ruins-of-alph.json",
+      "sha256": "c9bc621b4193c6412b36c7dab4aadb03ddb9b7fb24c3e22d3a8ce392cd258252"
+    },
+    {
+      "file": "layers/widget-tr-saffron-city.json",
+      "sha256": "52a92b6abe20d393ff7fd633b403b735dc5e65ceae5ca5352772c9343db80c9c"
+    },
+    {
+      "file": "layers/widget-tr-seafoam-islands.json",
+      "sha256": "12aebb50e2189d0e8ac48878dbf26770c7d53cf597e3f84b70f7324a69489797"
+    },
+    {
+      "file": "layers/widget-tr-slowpoke-well.json",
+      "sha256": "6873c4000ac35f80a2b55199fc1de854e920d50567348392dac9030da1d04903"
+    },
+    {
+      "file": "layers/widget-tr-sprout-tower.json",
+      "sha256": "c915a26da72d6a3f505070074a879f9049b5d3705f112532878a3e1185ef3b25"
+    },
+    {
+      "file": "layers/widget-tr-ss-aqua.json",
+      "sha256": "b3ebce3e2fed5d4f390b6663a3355a21e630edd4b78fedb93aead32b958f48a1"
+    },
+    {
+      "file": "layers/widget-tr-union-cave.json",
+      "sha256": "df96597005078d7d903645108a3d72370985c2f39b281f503780a79ae0f74dde"
+    },
+    {
+      "file": "layers/widget-tr-vermilion-city.json",
+      "sha256": "ce20cea01c8af81f370c0b325e40cc8550663dc275f61941f96a48739d9317ac"
+    },
+    {
+      "file": "layers/widget-tr-victory-road.json",
+      "sha256": "e5eead31dad4d374b13ef0fe26fb4355563337f7e9f5520116b131a67e2ee939"
+    },
+    {
+      "file": "layers/widget-tr-violet-city.json",
+      "sha256": "d4a7d0a1affec156e962e31c8fe907ba951bfd9af575400d1ce64174fe45a77a"
+    },
+    {
+      "file": "layers/widget-tr-viridian-city.json",
+      "sha256": "a959443626219068c50a1de0fe49fe91fbf835675b95d70ec9a660bd1b12406e"
+    },
+    {
+      "file": "layers/widget-trades.json",
+      "sha256": "1093b3c9b9eee7473e2f883501bf30e4c9e13e8379b14c6aaee2c2530ccec572"
+    },
+    {
+      "file": "guide.json",
+      "sha256": "5857c74a234391de943c517a600322841f7e4e52ed47ff5e462aafaa302d4de7"
+    },
+    {
+      "file": "ra-mapping.json",
+      "sha256": "60bded61416b92606d49f70d765c07ec31fee141d59da649e9fbf93cb5240d28"
+    }
+  ],
+  "report": {
+    "rowCount": 323,
+    "anomalies": [
+      "check-stable-ids: the §6.8 gate could not run — the main baseline's pokemon-crystal/approvals.json and library/library.json are schemaVersion 0 (pre-v1) and the checker cannot parse them. This is the first v1 recompile, so no approved v1 baseline of stable IDs exists yet and no protected ID can be dropped; the gate becomes meaningful once the review lens approves this compile and writes a v1 approvals baseline. approvals.json is §24-untouchable and was left unmodified.",
+      "provenance: the mid-pipeline extract-data re-run (added the map-pins dataset) and the slot-6 sources.json append (added src-serebii-trades) bumped data.json/sources.json digests. All pre-existing layers were re-verified as content-unaffected — the additions are orthogonal new dataset/source entries appended after the original data — and their report input digests were refreshed to current. No layer content was regenerated. The data.report and ra-mapping.report input lists were trimmed to guide-dir-relative files (external source snapshots are tracked via sources.json).",
+      "flags: 23 flagged rows across widgets — 17 trainer-party and 4 wild-encounter rate/level disagreements (Serebii vs Bulbapedia, carried from the extract-data layer), 1 in-game-trade held-item conflict (Serebii Bitter Berry vs Bulbapedia Smoke Ball), and 1 ambiguous item check ('Pokémon Request Rewards', Route 25). Spot-read confirms each is an honest flag with an explanatory anomaly in its owning layer report; surfaced for review-lens eyes."
+    ],
+    "flaggedItemIds": [
+      "pokemon-crystal:enc-route-33:rattata-grass-nite",
+      "pokemon-crystal:enc-route-37:growlithe-grass-morn",
+      "pokemon-crystal:enc-route-42:raticate-grass-day",
+      "pokemon-crystal:enc-route-42:raticate-grass-morn",
+      "pokemon-crystal:items-route-25:pok-mon-request-rewards",
+      "pokemon-crystal:tr-route-11:youngster-jason",
+      "pokemon-crystal:tr-route-12:fisherman-barney",
+      "pokemon-crystal:tr-route-12:fisherman-kyle",
+      "pokemon-crystal:tr-route-12:fisherman-martin",
+      "pokemon-crystal:tr-route-12:fisherman-stephen",
+      "pokemon-crystal:tr-route-18:bird-keeper-boris",
+      "pokemon-crystal:tr-route-20:swimmer-cameron",
+      "pokemon-crystal:tr-route-25:school-kid-dudley",
+      "pokemon-crystal:tr-route-25:school-kid-joe",
+      "pokemon-crystal:tr-route-26:psychic-richard",
+      "pokemon-crystal:tr-route-36:school-kid-alan",
+      "pokemon-crystal:tr-route-3:firebreather-burt",
+      "pokemon-crystal:tr-route-45:hiker-erik",
+      "pokemon-crystal:tr-route-9:hiker-sidney",
+      "pokemon-crystal:tr-ruins-of-alph:psychic-nathan",
+      "pokemon-crystal:tr-ss-aqua:school-kid-nate",
+      "pokemon-crystal:tr-ss-aqua:school-kid-ricky",
+      "pokemon-crystal:trades:dragonair-dodrio"
+    ]
+  },
+  "notes": [
+    "QA / assembly pass (6 of 6). yarn validate-guides green on the assembled guide.json; yarn assemble-guide wrote guide.json (20 chapters, 92 locations, 318 widgets) + ra-mapping.json after the staleness check passed. Coverage: 337/337 achievements mapped (0 unmapped). Images: 146 referenced map images all present on disk. Missables: all 6 missable steps state a deadline.",
+    "Verdict: content is ready for review-lens approval. The only open item is the check-stable-ids transition artifact (non-content) — it resolves once an approval establishes the v1 stable-ID baseline. No pass needs a re-run; QA edited no guide content (only refreshed stale provenance digests and trimmed two external input paths)."
+  ]
+}
