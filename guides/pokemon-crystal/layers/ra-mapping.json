@@ -1,0 +1,2703 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "raGameId": 810,
+  "entries": [
+    {
+      "raAchievementId": 5636,
+      "targetItemId": "pokemon-crystal:ra:a5636",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5637,
+      "targetItemId": "pokemon-crystal:ra:a5637",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5638,
+      "targetItemId": "pokemon-crystal:ra:a5638",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5639,
+      "targetItemId": "pokemon-crystal:ra:a5639",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5640,
+      "targetItemId": "pokemon-crystal:ra:a5640",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5641,
+      "targetItemId": "pokemon-crystal:ra:a5641",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5642,
+      "targetItemId": "pokemon-crystal:ra:a5642",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5643,
+      "targetItemId": "pokemon-crystal:ra:a5643",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5644,
+      "targetItemId": "pokemon-crystal:ra:a5644",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5645,
+      "targetItemId": "pokemon-crystal:ra:a5645",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5646,
+      "targetItemId": "pokemon-crystal:ra:a5646",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5647,
+      "targetItemId": "pokemon-crystal:ra:a5647",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5648,
+      "targetItemId": "pokemon-crystal:ra:a5648",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5649,
+      "targetItemId": "pokemon-crystal:ra:a5649",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5650,
+      "targetItemId": "pokemon-crystal:ra:a5650",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5651,
+      "targetItemId": "pokemon-crystal:ra:a5651",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5652,
+      "targetItemId": "pokemon-crystal:ra:a5652",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5934,
+      "targetItemId": "pokemon-crystal:ra:a5934",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5936,
+      "targetItemId": "pokemon-crystal:ra:a5936",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5946,
+      "targetItemId": "pokemon-crystal:ra:a5946",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5947,
+      "targetItemId": "pokemon-crystal:ra:a5947",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5948,
+      "targetItemId": "pokemon-crystal:ra:a5948",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5949,
+      "targetItemId": "pokemon-crystal:ra:a5949",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5950,
+      "targetItemId": "pokemon-crystal:ra:a5950",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5951,
+      "targetItemId": "pokemon-crystal:ra:a5951",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5952,
+      "targetItemId": "pokemon-crystal:ra:a5952",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5953,
+      "targetItemId": "pokemon-crystal:ra:a5953",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5954,
+      "targetItemId": "pokemon-crystal:ra:a5954",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5955,
+      "targetItemId": "pokemon-crystal:ra:a5955",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5958,
+      "targetItemId": "pokemon-crystal:ra:a5958",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 5959,
+      "targetItemId": "pokemon-crystal:ra:a5959",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199559,
+      "targetItemId": "pokemon-crystal:ra:a199559",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199560,
+      "targetItemId": "pokemon-crystal:ra:a199560",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199561,
+      "targetItemId": "pokemon-crystal:ra:a199561",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199562,
+      "targetItemId": "pokemon-crystal:ra:a199562",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199563,
+      "targetItemId": "pokemon-crystal:ra:a199563",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199564,
+      "targetItemId": "pokemon-crystal:ra:a199564",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199565,
+      "targetItemId": "pokemon-crystal:ra:a199565",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199566,
+      "targetItemId": "pokemon-crystal:ra:a199566",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199567,
+      "targetItemId": "pokemon-crystal:ra:a199567",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199568,
+      "targetItemId": "pokemon-crystal:ra:a199568",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199569,
+      "targetItemId": "pokemon-crystal:ra:a199569",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199570,
+      "targetItemId": "pokemon-crystal:ra:a199570",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199571,
+      "targetItemId": "pokemon-crystal:ra:a199571",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199572,
+      "targetItemId": "pokemon-crystal:ra:a199572",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199573,
+      "targetItemId": "pokemon-crystal:ra:a199573",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199574,
+      "targetItemId": "pokemon-crystal:ra:a199574",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199575,
+      "targetItemId": "pokemon-crystal:ra:a199575",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199576,
+      "targetItemId": "pokemon-crystal:ra:a199576",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199577,
+      "targetItemId": "pokemon-crystal:ra:a199577",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199578,
+      "targetItemId": "pokemon-crystal:ra:a199578",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199579,
+      "targetItemId": "pokemon-crystal:ra:a199579",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199580,
+      "targetItemId": "pokemon-crystal:ra:a199580",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199581,
+      "targetItemId": "pokemon-crystal:ra:a199581",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199582,
+      "targetItemId": "pokemon-crystal:ra:a199582",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199583,
+      "targetItemId": "pokemon-crystal:ra:a199583",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199584,
+      "targetItemId": "pokemon-crystal:ra:a199584",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199585,
+      "targetItemId": "pokemon-crystal:ra:a199585",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199586,
+      "targetItemId": "pokemon-crystal:ra:a199586",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199587,
+      "targetItemId": "pokemon-crystal:ra:a199587",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199588,
+      "targetItemId": "pokemon-crystal:ra:a199588",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199589,
+      "targetItemId": "pokemon-crystal:ra:a199589",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199590,
+      "targetItemId": "pokemon-crystal:ra:a199590",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199591,
+      "targetItemId": "pokemon-crystal:ra:a199591",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199592,
+      "targetItemId": "pokemon-crystal:ra:a199592",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199593,
+      "targetItemId": "pokemon-crystal:ra:a199593",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199594,
+      "targetItemId": "pokemon-crystal:ra:a199594",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199595,
+      "targetItemId": "pokemon-crystal:ra:a199595",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199596,
+      "targetItemId": "pokemon-crystal:ra:a199596",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199597,
+      "targetItemId": "pokemon-crystal:ra:a199597",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199598,
+      "targetItemId": "pokemon-crystal:ra:a199598",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199599,
+      "targetItemId": "pokemon-crystal:ra:a199599",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199600,
+      "targetItemId": "pokemon-crystal:ra:a199600",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199601,
+      "targetItemId": "pokemon-crystal:ra:a199601",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199602,
+      "targetItemId": "pokemon-crystal:ra:a199602",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199603,
+      "targetItemId": "pokemon-crystal:ra:a199603",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199604,
+      "targetItemId": "pokemon-crystal:ra:a199604",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199605,
+      "targetItemId": "pokemon-crystal:ra:a199605",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199606,
+      "targetItemId": "pokemon-crystal:ra:a199606",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199607,
+      "targetItemId": "pokemon-crystal:ra:a199607",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199608,
+      "targetItemId": "pokemon-crystal:ra:a199608",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199609,
+      "targetItemId": "pokemon-crystal:ra:a199609",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199610,
+      "targetItemId": "pokemon-crystal:ra:a199610",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199611,
+      "targetItemId": "pokemon-crystal:ra:a199611",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199612,
+      "targetItemId": "pokemon-crystal:ra:a199612",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199613,
+      "targetItemId": "pokemon-crystal:ra:a199613",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199614,
+      "targetItemId": "pokemon-crystal:ra:a199614",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199615,
+      "targetItemId": "pokemon-crystal:ra:a199615",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199616,
+      "targetItemId": "pokemon-crystal:ra:a199616",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199617,
+      "targetItemId": "pokemon-crystal:ra:a199617",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199618,
+      "targetItemId": "pokemon-crystal:ra:a199618",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199619,
+      "targetItemId": "pokemon-crystal:ra:a199619",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199620,
+      "targetItemId": "pokemon-crystal:ra:a199620",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199621,
+      "targetItemId": "pokemon-crystal:ra:a199621",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199622,
+      "targetItemId": "pokemon-crystal:ra:a199622",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199623,
+      "targetItemId": "pokemon-crystal:ra:a199623",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199624,
+      "targetItemId": "pokemon-crystal:ra:a199624",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199625,
+      "targetItemId": "pokemon-crystal:ra:a199625",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199626,
+      "targetItemId": "pokemon-crystal:ra:a199626",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199627,
+      "targetItemId": "pokemon-crystal:ra:a199627",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199628,
+      "targetItemId": "pokemon-crystal:ra:a199628",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199629,
+      "targetItemId": "pokemon-crystal:ra:a199629",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199630,
+      "targetItemId": "pokemon-crystal:ra:a199630",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199631,
+      "targetItemId": "pokemon-crystal:ra:a199631",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199632,
+      "targetItemId": "pokemon-crystal:ra:a199632",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199633,
+      "targetItemId": "pokemon-crystal:ra:a199633",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199634,
+      "targetItemId": "pokemon-crystal:ra:a199634",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199635,
+      "targetItemId": "pokemon-crystal:ra:a199635",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199636,
+      "targetItemId": "pokemon-crystal:ra:a199636",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199637,
+      "targetItemId": "pokemon-crystal:ra:a199637",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199638,
+      "targetItemId": "pokemon-crystal:ra:a199638",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199639,
+      "targetItemId": "pokemon-crystal:ra:a199639",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 199640,
+      "targetItemId": "pokemon-crystal:ra:a199640",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315085,
+      "targetItemId": "pokemon-crystal:oak-c1:a315085",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315086,
+      "targetItemId": "pokemon-crystal:oak-c1:a315086",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315087,
+      "targetItemId": "pokemon-crystal:oak-c1:a315087",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315088,
+      "targetItemId": "pokemon-crystal:oak-c1:a315088",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315089,
+      "targetItemId": "pokemon-crystal:oak-c1:a315089",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315090,
+      "targetItemId": "pokemon-crystal:oak-c1:a315090",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315091,
+      "targetItemId": "pokemon-crystal:oak-c1:a315091",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315092,
+      "targetItemId": "pokemon-crystal:oak-c1:a315092",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315093,
+      "targetItemId": "pokemon-crystal:oak-c1:a315093",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315094,
+      "targetItemId": "pokemon-crystal:oak-c1:a315094",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315095,
+      "targetItemId": "pokemon-crystal:oak-c1:a315095",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315096,
+      "targetItemId": "pokemon-crystal:oak-c1:a315096",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315097,
+      "targetItemId": "pokemon-crystal:oak-c1:a315097",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315098,
+      "targetItemId": "pokemon-crystal:oak-c1:a315098",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315099,
+      "targetItemId": "pokemon-crystal:oak-c1:a315099",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315100,
+      "targetItemId": "pokemon-crystal:oak-c1:a315100",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315101,
+      "targetItemId": "pokemon-crystal:oak-c1:a315101",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315102,
+      "targetItemId": "pokemon-crystal:oak-c1:a315102",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315103,
+      "targetItemId": "pokemon-crystal:oak-c1:a315103",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315104,
+      "targetItemId": "pokemon-crystal:oak-c1:a315104",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315105,
+      "targetItemId": "pokemon-crystal:oak-c1:a315105",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315106,
+      "targetItemId": "pokemon-crystal:oak-c1:a315106",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315107,
+      "targetItemId": "pokemon-crystal:oak-c1:a315107",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315108,
+      "targetItemId": "pokemon-crystal:oak-c1:a315108",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315109,
+      "targetItemId": "pokemon-crystal:oak-c1:a315109",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315110,
+      "targetItemId": "pokemon-crystal:oak-c1:a315110",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315111,
+      "targetItemId": "pokemon-crystal:oak-c1:a315111",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315112,
+      "targetItemId": "pokemon-crystal:oak-c1:a315112",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315113,
+      "targetItemId": "pokemon-crystal:oak-c1:a315113",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315114,
+      "targetItemId": "pokemon-crystal:oak-c1:a315114",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315115,
+      "targetItemId": "pokemon-crystal:oak-c1:a315115",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315116,
+      "targetItemId": "pokemon-crystal:oak-c1:a315116",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315117,
+      "targetItemId": "pokemon-crystal:oak-c1:a315117",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315118,
+      "targetItemId": "pokemon-crystal:oak-c1:a315118",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315119,
+      "targetItemId": "pokemon-crystal:oak-c1:a315119",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315120,
+      "targetItemId": "pokemon-crystal:oak-c1:a315120",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315121,
+      "targetItemId": "pokemon-crystal:oak-c1:a315121",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315122,
+      "targetItemId": "pokemon-crystal:oak-c1:a315122",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315123,
+      "targetItemId": "pokemon-crystal:oak-c1:a315123",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315124,
+      "targetItemId": "pokemon-crystal:oak-c1:a315124",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315125,
+      "targetItemId": "pokemon-crystal:oak-c1:a315125",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315126,
+      "targetItemId": "pokemon-crystal:oak-c1:a315126",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315127,
+      "targetItemId": "pokemon-crystal:oak-c1:a315127",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315128,
+      "targetItemId": "pokemon-crystal:oak-c1:a315128",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315129,
+      "targetItemId": "pokemon-crystal:oak-c1:a315129",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315130,
+      "targetItemId": "pokemon-crystal:oak-c1:a315130",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315131,
+      "targetItemId": "pokemon-crystal:oak-c1:a315131",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315132,
+      "targetItemId": "pokemon-crystal:oak-c2:a315132",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315133,
+      "targetItemId": "pokemon-crystal:oak-c2:a315133",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315134,
+      "targetItemId": "pokemon-crystal:oak-c2:a315134",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315135,
+      "targetItemId": "pokemon-crystal:oak-c2:a315135",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315136,
+      "targetItemId": "pokemon-crystal:oak-c2:a315136",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315137,
+      "targetItemId": "pokemon-crystal:oak-c2:a315137",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315138,
+      "targetItemId": "pokemon-crystal:oak-c2:a315138",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315139,
+      "targetItemId": "pokemon-crystal:oak-c2:a315139",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315140,
+      "targetItemId": "pokemon-crystal:oak-c2:a315140",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315141,
+      "targetItemId": "pokemon-crystal:oak-c2:a315141",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315142,
+      "targetItemId": "pokemon-crystal:oak-c2:a315142",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315143,
+      "targetItemId": "pokemon-crystal:oak-c2:a315143",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315144,
+      "targetItemId": "pokemon-crystal:oak-c2:a315144",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315145,
+      "targetItemId": "pokemon-crystal:oak-c2:a315145",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315146,
+      "targetItemId": "pokemon-crystal:oak-c2:a315146",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315147,
+      "targetItemId": "pokemon-crystal:oak-c2:a315147",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315148,
+      "targetItemId": "pokemon-crystal:oak-c2:a315148",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315149,
+      "targetItemId": "pokemon-crystal:oak-c2:a315149",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315150,
+      "targetItemId": "pokemon-crystal:oak-c2:a315150",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315151,
+      "targetItemId": "pokemon-crystal:oak-c2:a315151",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315152,
+      "targetItemId": "pokemon-crystal:oak-c2:a315152",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315153,
+      "targetItemId": "pokemon-crystal:oak-c2:a315153",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315154,
+      "targetItemId": "pokemon-crystal:oak-c2:a315154",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315155,
+      "targetItemId": "pokemon-crystal:oak-c2:a315155",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315156,
+      "targetItemId": "pokemon-crystal:oak-c2:a315156",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315157,
+      "targetItemId": "pokemon-crystal:oak-c2:a315157",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315158,
+      "targetItemId": "pokemon-crystal:oak-c2:a315158",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315159,
+      "targetItemId": "pokemon-crystal:oak-c2:a315159",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315160,
+      "targetItemId": "pokemon-crystal:oak-c2:a315160",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315161,
+      "targetItemId": "pokemon-crystal:oak-c2:a315161",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315162,
+      "targetItemId": "pokemon-crystal:oak-c4:a315162",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315163,
+      "targetItemId": "pokemon-crystal:oak-c2:a315163",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315164,
+      "targetItemId": "pokemon-crystal:oak-c2:a315164",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315165,
+      "targetItemId": "pokemon-crystal:oak-c3:a315165",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315166,
+      "targetItemId": "pokemon-crystal:oak-c3:a315166",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315167,
+      "targetItemId": "pokemon-crystal:oak-c3:a315167",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315168,
+      "targetItemId": "pokemon-crystal:oak-c3:a315168",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315169,
+      "targetItemId": "pokemon-crystal:oak-c3:a315169",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315170,
+      "targetItemId": "pokemon-crystal:oak-c3:a315170",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315171,
+      "targetItemId": "pokemon-crystal:oak-c3:a315171",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315172,
+      "targetItemId": "pokemon-crystal:oak-c3:a315172",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315173,
+      "targetItemId": "pokemon-crystal:oak-c3:a315173",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315174,
+      "targetItemId": "pokemon-crystal:oak-c3:a315174",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315175,
+      "targetItemId": "pokemon-crystal:oak-c3:a315175",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315176,
+      "targetItemId": "pokemon-crystal:oak-c3:a315176",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315177,
+      "targetItemId": "pokemon-crystal:oak-c3:a315177",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315178,
+      "targetItemId": "pokemon-crystal:oak-c3:a315178",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315179,
+      "targetItemId": "pokemon-crystal:oak-c3:a315179",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315180,
+      "targetItemId": "pokemon-crystal:oak-c3:a315180",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315181,
+      "targetItemId": "pokemon-crystal:oak-c3:a315181",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315182,
+      "targetItemId": "pokemon-crystal:oak-c3:a315182",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315183,
+      "targetItemId": "pokemon-crystal:oak-c3:a315183",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315184,
+      "targetItemId": "pokemon-crystal:oak-c3:a315184",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315185,
+      "targetItemId": "pokemon-crystal:oak-c3:a315185",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315186,
+      "targetItemId": "pokemon-crystal:oak-c3:a315186",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315187,
+      "targetItemId": "pokemon-crystal:oak-c3:a315187",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315188,
+      "targetItemId": "pokemon-crystal:oak-c3:a315188",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315189,
+      "targetItemId": "pokemon-crystal:oak-c3:a315189",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315190,
+      "targetItemId": "pokemon-crystal:oak-c3:a315190",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315191,
+      "targetItemId": "pokemon-crystal:oak-c3:a315191",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315192,
+      "targetItemId": "pokemon-crystal:oak-c3:a315192",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315193,
+      "targetItemId": "pokemon-crystal:oak-c3:a315193",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315194,
+      "targetItemId": "pokemon-crystal:oak-c3:a315194",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315195,
+      "targetItemId": "pokemon-crystal:oak-c3:a315195",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315196,
+      "targetItemId": "pokemon-crystal:oak-c3:a315196",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315197,
+      "targetItemId": "pokemon-crystal:oak-c3:a315197",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315198,
+      "targetItemId": "pokemon-crystal:oak-c4:a315198",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315199,
+      "targetItemId": "pokemon-crystal:oak-c4:a315199",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315200,
+      "targetItemId": "pokemon-crystal:oak-c4:a315200",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315201,
+      "targetItemId": "pokemon-crystal:oak-c4:a315201",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315202,
+      "targetItemId": "pokemon-crystal:oak-c4:a315202",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315203,
+      "targetItemId": "pokemon-crystal:oak-c4:a315203",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315204,
+      "targetItemId": "pokemon-crystal:oak-c4:a315204",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315205,
+      "targetItemId": "pokemon-crystal:oak-c4:a315205",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315206,
+      "targetItemId": "pokemon-crystal:oak-c4:a315206",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315207,
+      "targetItemId": "pokemon-crystal:oak-c4:a315207",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315208,
+      "targetItemId": "pokemon-crystal:oak-c4:a315208",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315209,
+      "targetItemId": "pokemon-crystal:oak-c4:a315209",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315210,
+      "targetItemId": "pokemon-crystal:oak-c4:a315210",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315211,
+      "targetItemId": "pokemon-crystal:oak-c4:a315211",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315212,
+      "targetItemId": "pokemon-crystal:oak-c4:a315212",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315213,
+      "targetItemId": "pokemon-crystal:oak-c4:a315213",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315214,
+      "targetItemId": "pokemon-crystal:oak-c4:a315214",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315215,
+      "targetItemId": "pokemon-crystal:oak-c4:a315215",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315216,
+      "targetItemId": "pokemon-crystal:oak-c4:a315216",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315217,
+      "targetItemId": "pokemon-crystal:oak-c4:a315217",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315218,
+      "targetItemId": "pokemon-crystal:oak-c4:a315218",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315219,
+      "targetItemId": "pokemon-crystal:oak-c4:a315219",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315220,
+      "targetItemId": "pokemon-crystal:oak-c4:a315220",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315221,
+      "targetItemId": "pokemon-crystal:oak-c4:a315221",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315222,
+      "targetItemId": "pokemon-crystal:oak-c4:a315222",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315223,
+      "targetItemId": "pokemon-crystal:oak-c4:a315223",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315224,
+      "targetItemId": "pokemon-crystal:oak-c4:a315224",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315225,
+      "targetItemId": "pokemon-crystal:oak-c4:a315225",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315226,
+      "targetItemId": "pokemon-crystal:oak-c6:a315226",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315227,
+      "targetItemId": "pokemon-crystal:oak-c6:a315227",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315228,
+      "targetItemId": "pokemon-crystal:oak-c6:a315228",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315229,
+      "targetItemId": "pokemon-crystal:oak-c6:a315229",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315230,
+      "targetItemId": "pokemon-crystal:oak-c6:a315230",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315231,
+      "targetItemId": "pokemon-crystal:oak-c5:a315231",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315232,
+      "targetItemId": "pokemon-crystal:oak-c5:a315232",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315233,
+      "targetItemId": "pokemon-crystal:oak-c5:a315233",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315234,
+      "targetItemId": "pokemon-crystal:oak-c5:a315234",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315235,
+      "targetItemId": "pokemon-crystal:oak-c8:a315235",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315236,
+      "targetItemId": "pokemon-crystal:oak-c8:a315236",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315237,
+      "targetItemId": "pokemon-crystal:oak-c8:a315237",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315238,
+      "targetItemId": "pokemon-crystal:oak-c8:a315238",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315239,
+      "targetItemId": "pokemon-crystal:oak-c8:a315239",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315240,
+      "targetItemId": "pokemon-crystal:oak-c8:a315240",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315241,
+      "targetItemId": "pokemon-crystal:oak-c8:a315241",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315242,
+      "targetItemId": "pokemon-crystal:oak-c8:a315242",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315243,
+      "targetItemId": "pokemon-crystal:oak-c8:a315243",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315244,
+      "targetItemId": "pokemon-crystal:oak-c8:a315244",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315245,
+      "targetItemId": "pokemon-crystal:oak-c8:a315245",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315246,
+      "targetItemId": "pokemon-crystal:oak-c8:a315246",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315247,
+      "targetItemId": "pokemon-crystal:oak-c9:a315247",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315248,
+      "targetItemId": "pokemon-crystal:oak-c9:a315248",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315249,
+      "targetItemId": "pokemon-crystal:oak-c9:a315249",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315250,
+      "targetItemId": "pokemon-crystal:oak-c9:a315250",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315251,
+      "targetItemId": "pokemon-crystal:oak-c9:a315251",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315252,
+      "targetItemId": "pokemon-crystal:oak-c10:a315252",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315253,
+      "targetItemId": "pokemon-crystal:oak-c10:a315253",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315254,
+      "targetItemId": "pokemon-crystal:oak-c10:a315254",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315255,
+      "targetItemId": "pokemon-crystal:oak-c10:a315255",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315256,
+      "targetItemId": "pokemon-crystal:oak-c10:a315256",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315257,
+      "targetItemId": "pokemon-crystal:oak-c10:a315257",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315258,
+      "targetItemId": "pokemon-crystal:oak-c10:a315258",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315259,
+      "targetItemId": "pokemon-crystal:oak-c10:a315259",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315260,
+      "targetItemId": "pokemon-crystal:oak-c10:a315260",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315261,
+      "targetItemId": "pokemon-crystal:oak-c10:a315261",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315262,
+      "targetItemId": "pokemon-crystal:oak-c10:a315262",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315263,
+      "targetItemId": "pokemon-crystal:oak-c10:a315263",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315264,
+      "targetItemId": "pokemon-crystal:oak-c10:a315264",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315265,
+      "targetItemId": "pokemon-crystal:oak-c10:a315265",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315266,
+      "targetItemId": "pokemon-crystal:oak-c10:a315266",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315267,
+      "targetItemId": "pokemon-crystal:oak-c10:a315267",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315268,
+      "targetItemId": "pokemon-crystal:oak-c10:a315268",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315269,
+      "targetItemId": "pokemon-crystal:oak-c10:a315269",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315270,
+      "targetItemId": "pokemon-crystal:oak-c10:a315270",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315271,
+      "targetItemId": "pokemon-crystal:oak-c10:a315271",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315272,
+      "targetItemId": "pokemon-crystal:oak-c10:a315272",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315273,
+      "targetItemId": "pokemon-crystal:oak-c10:a315273",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315274,
+      "targetItemId": "pokemon-crystal:oak-c16:a315274",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315275,
+      "targetItemId": "pokemon-crystal:oak-c13:a315275",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315276,
+      "targetItemId": "pokemon-crystal:oak-c14:a315276",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315277,
+      "targetItemId": "pokemon-crystal:oak-c15:a315277",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315278,
+      "targetItemId": "pokemon-crystal:oak-c11:a315278",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315279,
+      "targetItemId": "pokemon-crystal:oak-c17:a315279",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315280,
+      "targetItemId": "pokemon-crystal:oak-c18:a315280",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315281,
+      "targetItemId": "pokemon-crystal:oak-c19:a315281",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315282,
+      "targetItemId": "pokemon-crystal:oak-c19:a315282",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315283,
+      "targetItemId": "pokemon-crystal:oak-c19:a315283",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315284,
+      "targetItemId": "pokemon-crystal:oak-c19:a315284",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315285,
+      "targetItemId": "pokemon-crystal:oak-c4:a315285",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315286,
+      "targetItemId": "pokemon-crystal:oak-c4:a315286",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315287,
+      "targetItemId": "pokemon-crystal:oak-c4:a315287",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315288,
+      "targetItemId": "pokemon-crystal:oak-c4:a315288",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315289,
+      "targetItemId": "pokemon-crystal:oak-c4:a315289",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315290,
+      "targetItemId": "pokemon-crystal:oak-c6:a315290",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315291,
+      "targetItemId": "pokemon-crystal:oak-c6:a315291",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315292,
+      "targetItemId": "pokemon-crystal:oak-c6:a315292",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315293,
+      "targetItemId": "pokemon-crystal:oak-c6:a315293",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315294,
+      "targetItemId": "pokemon-crystal:oak-c5:a315294",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315295,
+      "targetItemId": "pokemon-crystal:oak-c5:a315295",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315296,
+      "targetItemId": "pokemon-crystal:oak-c8:a315296",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315297,
+      "targetItemId": "pokemon-crystal:oak-c8:a315297",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315298,
+      "targetItemId": "pokemon-crystal:oak-c8:a315298",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315299,
+      "targetItemId": "pokemon-crystal:oak-c8:a315299",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315300,
+      "targetItemId": "pokemon-crystal:oak-c8:a315300",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315301,
+      "targetItemId": "pokemon-crystal:oak-c10:a315301",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315302,
+      "targetItemId": "pokemon-crystal:oak-c10:a315302",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315303,
+      "targetItemId": "pokemon-crystal:oak-c10:a315303",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315304,
+      "targetItemId": "pokemon-crystal:oak-c10:a315304",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315305,
+      "targetItemId": "pokemon-crystal:oak-c10:a315305",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315306,
+      "targetItemId": "pokemon-crystal:oak-c10:a315306",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315307,
+      "targetItemId": "pokemon-crystal:oak-c10:a315307",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 315308,
+      "targetItemId": "pokemon-crystal:oak-c10:a315308",
+      "sourceRefs": [
+        "src-ra-oak"
+      ],
+      "confidence": "normal"
+    }
+  ]
+}
