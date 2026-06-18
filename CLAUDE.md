@@ -9,10 +9,11 @@ backend, ever. (Named for the Pokémon Crystal starter — Crystal is the pilot 
 1. **`prd-react-app-to-regroup-video-game-guides-trackers-FINAL.md`** — THE spec.
    25 approved sections. When code and PRD conflict, the PRD wins until Pierre
    amends it. Section 24 (AI Agent Boundaries) applies to every session.
-2. **`docs/specs/`** — the active, gated planning: Workstream A (location/visit reframe),
-   Workstream B (shadcn migration), and the small standalone builds, each with spec, plan,
-   and task breakdown. `docs/ideas/` holds the refined direction behind them. (The old
-   `IMPLEMENTATION_PLAN.md` is retired to `docs/archive/`.)
+2. **`docs/specs/`** — the active, gated planning: Workstream B (shadcn migration) and the
+   small standalone builds, each with spec, plan, and task breakdown. `docs/ideas/` holds
+   the refined direction behind them. (Completed work — the Workstream A location/visit
+   reframe and the extract-data pass — is retired to `docs/archive/`, alongside the old
+   `IMPLEMENTATION_PLAN.md`.)
 
 ## Hard rules (from PRD §24 — full list there)
 
