@@ -11,7 +11,12 @@ import { dirname, join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import { checkStableIds } from "../../scripts/checkStableIdsCore.ts";
 import { SCHEMA_VERSION } from "../../src/schema";
-import { validGuide, validLibrary, validSpineLayer } from "../schema/helpers";
+import {
+  validDataLayer,
+  validGuide,
+  validLibrary,
+  validSpineLayer,
+} from "../schema/helpers";
 
 const roots: string[] = [];
 
@@ -206,6 +211,57 @@ describe("checkStableIds", () => {
     ]) {
       expect(joined).toContain(`"${id}" is gone`);
     }
+  });
+
+  it("skips an extract-data layer recorded as widget-pass in approvals (no crash, nothing to protect)", () => {
+    // The extract-data layer (layers/data.json) has no layerKind of its own, so
+    // the review flow records it as "widget-pass". It must not be parsed as a
+    // widget (it is pass: "extract-data") — its IDs are local, §6.8-exempt.
+    const baseline = writeTree({
+      [`${GUIDE}/layers/spine.json`]: validSpineLayer(),
+      [`${GUIDE}/layers/data.json`]: validDataLayer(),
+    });
+    const digest = (rel: string) =>
+      `sha256:${createHash("sha256")
+        .update(readFileSync(join(baseline, GUIDE, rel)))
+        .digest("hex")}`;
+    const report = { rowCount: 2, anomalies: [], flaggedItemIds: [] };
+    const approval = { date: "2026-06-12T10:00:00Z", verdict: "approved" };
+    writeFileSync(
+      join(baseline, GUIDE, "approvals.json"),
+      JSON.stringify({
+        schemaVersion: SCHEMA_VERSION,
+        guideId: "fictional-quest",
+        layers: [
+          {
+            id: "spine",
+            kind: "spine",
+            artifact: "layers/spine.json",
+            report,
+            contentHash: digest("layers/spine.json"),
+            status: "approved",
+            approval,
+            spotChecks: [],
+          },
+          {
+            id: "data",
+            kind: "widget-pass",
+            artifact: "layers/data.json",
+            report,
+            contentHash: digest("layers/data.json"),
+            status: "approved",
+            approval,
+            spotChecks: [],
+          },
+        ],
+      }),
+    );
+    const current = writeTree({
+      [`${GUIDE}/layers/spine.json`]: validSpineLayer(),
+    });
+    const result = checkStableIds(baseline, current, "fictional-quest");
+    expect(result.findings).toEqual([]);
+    expect(result.ok).toBe(true);
   });
 
   it("flags an approved layer whose baseline artifact is missing", () => {
