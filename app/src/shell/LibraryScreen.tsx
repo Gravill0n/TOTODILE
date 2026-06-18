@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { Badge } from "@/components/ui/badge";
 import { useEditorMode } from "../review/editorMode";
 import type { LibraryManifest, ProgressSlot } from "../schema";
 import { GuideCard } from "./GuideCard";
@@ -38,9 +39,9 @@ export function LibraryScreen({
         <h1 className="text-2xl font-bold">Library</h1>
         <span className="flex items-center gap-3 text-sm">
           {editorMode ? (
-            <span className="rounded bg-paper-dim px-1 text-xs uppercase text-ink-soft">
+            <Badge variant="secondary" className="uppercase">
               editor mode
-            </span>
+            </Badge>
           ) : null}
           <Link to="/settings" className="text-ink-soft underline">
             Settings
