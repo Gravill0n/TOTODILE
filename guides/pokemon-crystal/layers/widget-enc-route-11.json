@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-route-11",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-11"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:drowzee-grass-nite",
+        "cells": {
+          "species": "Drowzee",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:hoppip-grass-day",
+        "cells": {
+          "species": "Hoppip",
+          "levels": "14-16",
+          "method": "grass",
+          "rarity": "35%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:hoppip-grass-morn",
+        "cells": {
+          "species": "Hoppip",
+          "levels": "14-16",
+          "method": "grass",
+          "rarity": "35%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:hypno-grass-nite",
+        "cells": {
+          "species": "Hypno",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:magnemite-grass-day",
+        "cells": {
+          "species": "Magnemite",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:magnemite-grass-morn",
+        "cells": {
+          "species": "Magnemite",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:magnemite-grass-nite",
+        "cells": {
+          "species": "Magnemite",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:meowth-grass-nite",
+        "cells": {
+          "species": "Meowth",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:noctowl-grass-nite",
+        "cells": {
+          "species": "Noctowl",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:pidgeotto-grass-day",
+        "cells": {
+          "species": "Pidgeotto",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:pidgeotto-grass-morn",
+        "cells": {
+          "species": "Pidgeotto",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:raticate-grass-day",
+        "cells": {
+          "species": "Raticate",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:raticate-grass-morn",
+        "cells": {
+          "species": "Raticate",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:raticate-grass-nite",
+        "cells": {
+          "species": "Raticate",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:rattata-grass-day",
+        "cells": {
+          "species": "Rattata",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-11:rattata-grass-morn",
+        "cells": {
+          "species": "Rattata",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

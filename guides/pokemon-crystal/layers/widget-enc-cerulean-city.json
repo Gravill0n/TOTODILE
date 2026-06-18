@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-cerulean-city",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:cerulean-city"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-cerulean-city:goldeen-surf-any",
+        "cells": {
+          "species": "Goldeen",
+          "levels": "5-14",
+          "method": "surf",
+          "rarity": "90%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-cerulean-city:kingler-super-rod-any",
+        "cells": {
+          "species": "Kingler",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-cerulean-city:krabby-good-rod-any",
+        "cells": {
+          "species": "Krabby",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "55%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-cerulean-city:krabby-old-rod-any",
+        "cells": {
+          "species": "Krabby",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-cerulean-city:krabby-super-rod-any",
+        "cells": {
+          "species": "Krabby",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-cerulean-city:magikarp-good-rod-any",
+        "cells": {
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-cerulean-city:magikarp-old-rod-any",
+        "cells": {
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-cerulean-city:seaking-surf-any",
+        "cells": {
+          "species": "Seaking",
+          "levels": "10-14",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

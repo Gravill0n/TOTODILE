@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-route-3",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-3"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:arbok-grass-day",
+        "cells": {
+          "species": "Arbok",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:arbok-grass-morn",
+        "cells": {
+          "species": "Arbok",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:clefairy-grass-nite",
+        "cells": {
+          "species": "Clefairy",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:ekans-grass-day",
+        "cells": {
+          "species": "Ekans",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:ekans-grass-morn",
+        "cells": {
+          "species": "Ekans",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:raticate-grass-day",
+        "cells": {
+          "species": "Raticate",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:raticate-grass-morn",
+        "cells": {
+          "species": "Raticate",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:raticate-grass-nite",
+        "cells": {
+          "species": "Raticate",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:rattata-grass-day",
+        "cells": {
+          "species": "Rattata",
+          "levels": "5",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:rattata-grass-morn",
+        "cells": {
+          "species": "Rattata",
+          "levels": "5",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:rattata-grass-nite",
+        "cells": {
+          "species": "Rattata",
+          "levels": "5-10",
+          "method": "grass",
+          "rarity": "65%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:sandshrew-grass-day",
+        "cells": {
+          "species": "Sandshrew",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:sandshrew-grass-morn",
+        "cells": {
+          "species": "Sandshrew",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:spearow-grass-day",
+        "cells": {
+          "species": "Spearow",
+          "levels": "5",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:spearow-grass-morn",
+        "cells": {
+          "species": "Spearow",
+          "levels": "5",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-3:zubat-grass-nite",
+        "cells": {
+          "species": "Zubat",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,610 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-route-35",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-35"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:abra-grass-day",
+        "cells": {
+          "species": "Abra",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:abra-grass-morn",
+        "cells": {
+          "species": "Abra",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:abra-grass-nite",
+        "cells": {
+          "species": "Abra",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:ditto-grass-day",
+        "cells": {
+          "species": "Ditto",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "4%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:ditto-grass-morn",
+        "cells": {
+          "species": "Ditto",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "4%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:ditto-grass-nite",
+        "cells": {
+          "species": "Ditto",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "4%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:drowzee-grass-nite",
+        "cells": {
+          "species": "Drowzee",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:exeggcute-headbutt-regular-any",
+        "cells": {
+          "species": "Exeggcute",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:exeggcute-headbutt-special-any",
+        "cells": {
+          "species": "Exeggcute",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:golduck-surf-any",
+        "cells": {
+          "species": "Golduck",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:growlithe-grass-day",
+        "cells": {
+          "species": "Growlithe",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:growlithe-grass-morn",
+        "cells": {
+          "species": "Growlithe",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:hoothoot-grass-nite",
+        "cells": {
+          "species": "Hoothoot",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:hoothoot-headbutt-regular-any",
+        "cells": {
+          "species": "Hoothoot",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "50%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:hoothoot-headbutt-special-any",
+        "cells": {
+          "species": "Hoothoot",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "50%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:jigglypuff-grass-day",
+        "cells": {
+          "species": "Jigglypuff",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:jigglypuff-grass-morn",
+        "cells": {
+          "species": "Jigglypuff",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:jigglypuff-grass-nite",
+        "cells": {
+          "species": "Jigglypuff",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:ledyba-headbutt-regular-any",
+        "cells": {
+          "species": "Ledyba",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:magikarp-good-rod-any",
+        "cells": {
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:magikarp-old-rod-any",
+        "cells": {
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:magikarp-super-rod-any",
+        "cells": {
+          "species": "Magikarp",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:pidgey-grass-day",
+        "cells": {
+          "species": "Pidgey",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:pidgey-grass-morn",
+        "cells": {
+          "species": "Pidgey",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:pineco-headbutt-special-any",
+        "cells": {
+          "species": "Pineco",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:poliwag-good-rod-any",
+        "cells": {
+          "species": "Poliwag",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:poliwag-old-rod-any",
+        "cells": {
+          "species": "Poliwag",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:poliwag-super-rod-any",
+        "cells": {
+          "species": "Poliwag",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "70%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:poliwhirl-super-rod-any",
+        "cells": {
+          "species": "Poliwhirl",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:psyduck-grass-nite",
+        "cells": {
+          "species": "Psyduck",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:psyduck-surf-any",
+        "cells": {
+          "species": "Psyduck",
+          "levels": "15-24",
+          "method": "surf",
+          "rarity": "90%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:snubbull-grass-day",
+        "cells": {
+          "species": "Snubbull",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:snubbull-grass-morn",
+        "cells": {
+          "species": "Snubbull",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:spinarak-headbutt-regular-any",
+        "cells": {
+          "species": "Spinarak",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:yanma-grass-day",
+        "cells": {
+          "species": "Yanma",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:yanma-grass-morn",
+        "cells": {
+          "species": "Yanma",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-35:yanma-grass-nite",
+        "cells": {
+          "species": "Yanma",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

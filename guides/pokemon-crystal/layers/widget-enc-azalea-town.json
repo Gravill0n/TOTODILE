@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-azalea-town",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:azalea-town"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-azalea-town:aipom-headbutt-regular-any",
+        "cells": {
+          "species": "Aipom",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-azalea-town:aipom-headbutt-special-any",
+        "cells": {
+          "species": "Aipom",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-azalea-town:ekans-headbutt-regular-any",
+        "cells": {
+          "species": "Ekans",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-azalea-town:heracross-headbutt-special-any",
+        "cells": {
+          "species": "Heracross",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-azalea-town:spearow-headbutt-regular-any",
+        "cells": {
+          "species": "Spearow",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-azalea-town:spearow-headbutt-special-any",
+        "cells": {
+          "species": "Spearow",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "50%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

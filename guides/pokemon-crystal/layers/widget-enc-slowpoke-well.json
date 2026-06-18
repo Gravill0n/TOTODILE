@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-slowpoke-well",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:slowpoke-well"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:1f-goldeen-good-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Goldeen",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:1f-goldeen-old-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Goldeen",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:1f-goldeen-super-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Goldeen",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "70%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:1f-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:1f-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:1f-magikarp-super-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Magikarp",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:1f-seaking-super-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Seaking",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:1f-slowpoke-grass-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Slowpoke",
+          "levels": "6-8",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:1f-slowpoke-surf-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Slowpoke",
+          "levels": "10-24",
+          "method": "surf",
+          "rarity": "100%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:1f-zubat-grass-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "5-8",
+          "method": "grass",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-golbat-grass-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-goldeen-good-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Goldeen",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-goldeen-old-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Goldeen",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-goldeen-super-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Goldeen",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "70%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-magikarp-super-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Magikarp",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-seaking-super-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Seaking",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-slowbro-surf-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Slowbro",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-slowpoke-grass-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Slowpoke",
+          "levels": "21-23",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-slowpoke-surf-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Slowpoke",
+          "levels": "15-24",
+          "method": "surf",
+          "rarity": "90%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-slowpoke-well:b1f-zubat-grass-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "19-23",
+          "method": "grass",
+          "rarity": "80%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

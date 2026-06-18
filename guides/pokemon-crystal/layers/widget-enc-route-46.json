@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-route-46",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-46"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:aipom-headbutt-regular-any",
+        "cells": {
+          "species": "Aipom",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:aipom-headbutt-special-any",
+        "cells": {
+          "species": "Aipom",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:geodude-grass-day",
+        "cells": {
+          "species": "Geodude",
+          "levels": "2-3",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:geodude-grass-morn",
+        "cells": {
+          "species": "Geodude",
+          "levels": "2-3",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:geodude-grass-nite",
+        "cells": {
+          "species": "Geodude",
+          "levels": "2-3",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:heracross-headbutt-special-any",
+        "cells": {
+          "species": "Heracross",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:phanpy-grass-morn",
+        "cells": {
+          "species": "Phanpy",
+          "levels": "2",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:rattata-grass-day",
+        "cells": {
+          "species": "Rattata",
+          "levels": "2-3",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:rattata-grass-morn",
+        "cells": {
+          "species": "Rattata",
+          "levels": "2-3",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:rattata-grass-nite",
+        "cells": {
+          "species": "Rattata",
+          "levels": "2-3",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:spearow-grass-day",
+        "cells": {
+          "species": "Spearow",
+          "levels": "2",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:spearow-grass-morn",
+        "cells": {
+          "species": "Spearow",
+          "levels": "2",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:spearow-headbutt-regular-any",
+        "cells": {
+          "species": "Spearow",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "80%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-46:spearow-headbutt-special-any",
+        "cells": {
+          "species": "Spearow",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "50%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

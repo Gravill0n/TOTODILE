@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-ruins-of-alph",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ruins-of-alph"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:inside-unown-grass-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Unown",
+          "levels": "5",
+          "method": "grass",
+          "rarity": "100%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-magikarp-super-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Magikarp",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-natu-grass-day",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Natu",
+          "levels": "18-24",
+          "method": "grass",
+          "rarity": "90%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-natu-grass-morn",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Natu",
+          "levels": "18-24",
+          "method": "grass",
+          "rarity": "90%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-natu-grass-nite",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Natu",
+          "levels": "18-24",
+          "method": "grass",
+          "rarity": "90%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-poliwag-good-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwag",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-poliwag-old-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwag",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-poliwag-super-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwag",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "70%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-poliwhirl-super-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwhirl",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-quagsire-grass-nite",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Quagsire",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-quagsire-surf-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Quagsire",
+          "levels": "15-24",
+          "method": "surf",
+          "rarity": "40%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-smeargle-grass-day",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Smeargle",
+          "levels": "20-22",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-smeargle-grass-morn",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Smeargle",
+          "levels": "20-22",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-wooper-grass-nite",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Wooper",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ruins-of-alph:outside-wooper-surf-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Wooper",
+          "levels": "15-19",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

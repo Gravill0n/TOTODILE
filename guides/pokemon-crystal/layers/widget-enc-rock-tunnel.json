@@ -1,0 +1,555 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-rock-tunnel",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:rock-tunnel"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-cubone-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Cubone",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-cubone-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Cubone",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-geodude-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "11",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-geodude-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "11",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-geodude-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "11-12",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-haunter-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Haunter",
+          "levels": "17",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-machoke-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Machoke",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-machoke-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Machoke",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-machop-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Machop",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-machop-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Machop",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-marowak-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Marowak",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-marowak-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Marowak",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "12-15",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-cubone-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Cubone",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-cubone-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Cubone",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-geodude-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Geodude",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-geodude-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Geodude",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-geodude-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Geodude",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-haunter-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Haunter",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-kangaskhan-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Kangaskhan",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-kangaskhan-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Kangaskhan",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-marowak-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Marowak",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-marowak-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Marowak",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-onix-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Onix",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-onix-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Onix",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-onix-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Onix",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-rock-tunnel:b1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "12-15",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

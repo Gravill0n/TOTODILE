@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-enc-tin-tower",
+  "generatedAt": "2026-06-18T00:30:00Z",
+  "inputs": [
+    {
+      "file": "deck.json",
+      "sha256": "cf161824ea7e5516d3d8fd9be56bd84995087368cfab8f94f73381bee1e1239e"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "8e002ed9dc3d40005fcdfe8007e302df85e0713ee3368efb4430aa075f390283"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "8f672a8b9493d62ab0dfc6f39c0a8b3c6b297baf2dac90b830ab24644aaddfcf"
+    }
+  ],
+  "report": {
+    "rowCount": 0,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Location-scoped Wild Encounters table (deck slot 2) for pokemon-crystal:tin-tower; 32 informational rows (checkable:false) reproduced verbatim from the data layer encounters dataset.",
+    "Sub-area column distinguishes folded source areas: 1F, 2F, 3F, 4F, 5F, 6F, 7F, 8F."
+  ]
+}

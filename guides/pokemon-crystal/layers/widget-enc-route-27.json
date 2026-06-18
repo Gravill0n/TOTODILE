@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-route-27",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-27"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:arbok-grass-day",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Arbok",
+          "levels": "28",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:arbok-grass-morn",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Arbok",
+          "levels": "28",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:chinchou-good-rod-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Chinchou",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:chinchou-super-rod-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Chinchou",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "40%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:dodrio-grass-day",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Dodrio",
+          "levels": "30",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:dodrio-grass-morn",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Dodrio",
+          "levels": "30",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:doduo-grass-day",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Doduo",
+          "levels": "28-30",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:doduo-grass-morn",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Doduo",
+          "levels": "28-30",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:ekans-headbutt-regular-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Ekans",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:exeggcute-headbutt-regular-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Exeggcute",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:exeggcute-headbutt-special-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Exeggcute",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:hoothoot-headbutt-regular-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Hoothoot",
+          "levels": "10",
+          "method": "headbutt-regular",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:hoothoot-headbutt-special-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Hoothoot",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "50%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:lanturn-super-rod-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Lanturn",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:noctowl-grass-nite",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Noctowl",
+          "levels": "28-32",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:pineco-headbutt-special-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Pineco",
+          "levels": "10",
+          "method": "headbutt-special",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:ponyta-grass-day",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Ponyta",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:ponyta-grass-morn",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Ponyta",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:quagsire-grass-nite",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Quagsire",
+          "levels": "28-30",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:raticate-grass-day",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Raticate",
+          "levels": "30",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:raticate-grass-morn",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Raticate",
+          "levels": "30",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:raticate-grass-nite",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Raticate",
+          "levels": "30",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:shellder-good-rod-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Shellder",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:shellder-super-rod-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Shellder",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tentacool-good-rod-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Tentacool",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tentacool-old-rod-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Tentacool",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tentacool-surf-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Tentacool",
+          "levels": "15-24",
+          "method": "surf",
+          "rarity": "90%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tentacruel-super-rod-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Tentacruel",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tentacruel-surf-any",
+        "cells": {
+          "sub-area": "Route 27",
+          "species": "Tentacruel",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tohjo-falls-golbat-grass-any",
+        "cells": {
+          "sub-area": "Tohjo Falls",
+          "species": "Golbat",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tohjo-falls-goldeen-surf-any",
+        "cells": {
+          "sub-area": "Tohjo Falls",
+          "species": "Goldeen",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tohjo-falls-raticate-grass-any",
+        "cells": {
+          "sub-area": "Tohjo Falls",
+          "species": "Raticate",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tohjo-falls-rattata-grass-any",
+        "cells": {
+          "sub-area": "Tohjo Falls",
+          "species": "Rattata",
+          "levels": "20",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tohjo-falls-seaking-surf-any",
+        "cells": {
+          "sub-area": "Tohjo Falls",
+          "species": "Seaking",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tohjo-falls-slowpoke-grass-any",
+        "cells": {
+          "sub-area": "Tohjo Falls",
+          "species": "Slowpoke",
+          "levels": "21-23",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tohjo-falls-slowpoke-surf-any",
+        "cells": {
+          "sub-area": "Tohjo Falls",
+          "species": "Slowpoke",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-route-27:tohjo-falls-zubat-grass-any",
+        "cells": {
+          "sub-area": "Tohjo Falls",
+          "species": "Zubat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

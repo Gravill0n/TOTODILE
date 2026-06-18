@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-olivine-city",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:olivine-city"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:corsola-good-rod-day",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Corsola",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:corsola-good-rod-morn",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Corsola",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-chinchou-good-rod-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Chinchou",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-chinchou-super-rod-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Chinchou",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "40%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-lanturn-super-rod-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Lanturn",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-shellder-good-rod-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Shellder",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-shellder-super-rod-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Shellder",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-tentacool-good-rod-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Tentacool",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-tentacool-old-rod-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Tentacool",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-tentacool-surf-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Tentacool",
+          "levels": "15-24",
+          "method": "surf",
+          "rarity": "90%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-tentacruel-super-rod-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Tentacruel",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:harbor-tentacruel-surf-any",
+        "cells": {
+          "sub-area": "Harbor",
+          "species": "Tentacruel",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:krabby-good-rod-day",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Krabby",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "55%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:krabby-good-rod-morn",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Krabby",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "55%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:krabby-good-rod-nite",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Krabby",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "55%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:krabby-old-rod-any",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Krabby",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:krabby-super-rod-any",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Krabby",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:magikarp-good-rod-day",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:magikarp-good-rod-morn",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:magikarp-good-rod-nite",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:staryu-good-rod-nite",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Staryu",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:tentacool-surf-any",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Tentacool",
+          "levels": "15-24",
+          "method": "surf",
+          "rarity": "90%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-olivine-city:tentacruel-surf-any",
+        "cells": {
+          "sub-area": "Olivine City",
+          "species": "Tentacruel",
+          "levels": "20-40",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

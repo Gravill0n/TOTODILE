@@ -1,0 +1,485 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-national-park",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:national-park"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:bug-catching-contest-beedrill-grass-any",
+        "cells": {
+          "sub-area": "Bug Catching Contest",
+          "species": "Beedrill",
+          "levels": "12-15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:bug-catching-contest-butterfree-grass-any",
+        "cells": {
+          "sub-area": "Bug Catching Contest",
+          "species": "Butterfree",
+          "levels": "12-15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:bug-catching-contest-caterpie-grass-any",
+        "cells": {
+          "sub-area": "Bug Catching Contest",
+          "species": "Caterpie",
+          "levels": "7-18",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:bug-catching-contest-kakuna-grass-any",
+        "cells": {
+          "sub-area": "Bug Catching Contest",
+          "species": "Kakuna",
+          "levels": "9-18",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:bug-catching-contest-metapod-grass-any",
+        "cells": {
+          "sub-area": "Bug Catching Contest",
+          "species": "Metapod",
+          "levels": "9-18",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:bug-catching-contest-paras-grass-any",
+        "cells": {
+          "sub-area": "Bug Catching Contest",
+          "species": "Paras",
+          "levels": "10-17",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:bug-catching-contest-pinsir-grass-any",
+        "cells": {
+          "sub-area": "Bug Catching Contest",
+          "species": "Pinsir",
+          "levels": "13-14",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:bug-catching-contest-scyther-grass-any",
+        "cells": {
+          "sub-area": "Bug Catching Contest",
+          "species": "Scyther",
+          "levels": "13-14",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:bug-catching-contest-venonat-grass-any",
+        "cells": {
+          "sub-area": "Bug Catching Contest",
+          "species": "Venonat",
+          "levels": "10-16",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:bug-catching-contest-weedle-grass-any",
+        "cells": {
+          "sub-area": "Bug Catching Contest",
+          "species": "Weedle",
+          "levels": "7-18",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:caterpie-grass-day",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Caterpie",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:caterpie-grass-morn",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Caterpie",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:hoothoot-grass-nite",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Hoothoot",
+          "levels": "13-15",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:ledyba-grass-morn",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Ledyba",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:nidoran-f-grass-day",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Nidoran♀",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:nidoran-f-grass-morn",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Nidoran♀",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:nidoran-m-grass-day",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Nidoran♂",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:nidoran-m-grass-morn",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Nidoran♂",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:pidgey-grass-day",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Pidgey",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:pidgey-grass-morn",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Pidgey",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:psyduck-grass-nite",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Psyduck",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:spinarak-grass-nite",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Spinarak",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:sunkern-grass-day",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Sunkern",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:venonat-grass-nite",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Venonat",
+          "levels": "10-12",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:weedle-grass-day",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Weedle",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-national-park:weedle-grass-morn",
+        "cells": {
+          "sub-area": "National Park",
+          "species": "Weedle",
+          "levels": "10",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
