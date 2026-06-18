@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-lake-of-rage",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:lake-of-rage"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-lake-of-rage:cool-trainer-aaron",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Aaron",
+          "party": "Ivysaur L24; Charmeleon L24; Wartortle L24",
+          "battle-type": "Single",
+          "reward": "$1152"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-lake-of-rage:cool-trainer-lois",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Lois",
+          "party": "Skiploom L25; Ninetales L25",
+          "battle-type": "Single",
+          "reward": "$1200"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-lake-of-rage:fisherman-andre",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Andre",
+          "party": "Gyarados L27",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-lake-of-rage:fisherman-raymond",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Raymond",
+          "party": "Magikarp L22; Magikarp L22; Magikarp L22; Magikarp L22",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-cianwood-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:cianwood-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/CianwoodCity.png",
+      "alt": "Cianwood City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-cianwood-city:hidden-item-in-west-rock",
+        "label": "Hidden Item in West Rock",
+        "x": 0.1833,
+        "y": 0.5463,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-cianwood-city:hidden-item-in-north-rock",
+        "label": "Hidden Item in North Rock",
+        "x": 0.15,
+        "y": 0.3611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-cianwood-city:secretpotion",
+        "label": "Secretpotion",
+        "x": 0.5167,
+        "y": 0.8796,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

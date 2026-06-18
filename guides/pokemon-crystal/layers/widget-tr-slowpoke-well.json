@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-slowpoke-well",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:slowpoke-well"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-slowpoke-well:rocket-grunt",
+        "cells": {
+          "trainer-class": "Rocket Grunt",
+          "party": "Rattata L9; Rattata L9",
+          "battle-type": "Single",
+          "notes": "4 team variants"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

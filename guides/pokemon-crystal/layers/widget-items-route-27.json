@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-27",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-27"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route27.png",
+      "alt": "Route 27 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-27:item",
+        "label": "Item",
+        "x": 0.3312,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-27:sandstorm-from-woman-in-house",
+        "label": "Sandstorm from Woman in House",
+        "x": 0.4188,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-27:west-item-across-water",
+        "label": "West Item across Water",
+        "x": 0.6687,
+        "y": 0.6944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-27:east-item-behind-whirlpool",
+        "label": "East Item behind Whirlpool",
+        "x": 0.7562,
+        "y": 0.6944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-27:star-piece-from-jose",
+        "label": "Star Piece from Jose",
+        "x": 0.7312,
+        "y": 0.75,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

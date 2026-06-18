@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-lake-of-rage",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:lake-of-rage"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/LakeOfRage.png",
+      "alt": "Lake Of Rage map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-lake-of-rage:hidden-item-in-west-path",
+        "label": "Hidden Item in West Path",
+        "x": 0.2875,
+        "y": 0.7917,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-lake-of-rage:magikarp-prize",
+        "label": "Magikarp Prize",
+        "x": 0.6875,
+        "y": 0.875,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-lake-of-rage:hidden-item-behind-cut-tree",
+        "label": "Hidden Item behind Cut Tree",
+        "x": 0.1125,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-lake-of-rage:northwest-item",
+        "label": "Northwest Item",
+        "x": 0.1875,
+        "y": 0.2917,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-lake-of-rage:northeast-item",
+        "label": "Northeast Item",
+        "x": 0.8875,
+        "y": 0.0694,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-lake-of-rage:tm10",
+        "label": "TM10",
+        "x": 0.1875,
+        "y": 0.0972,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-lake-of-rage:red-scale",
+        "label": "Red Scale",
+        "x": 0.4625,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-lake-of-rage:red-scale-2",
+        "label": "Red Scale",
+        "x": 0.4625,
+        "y": 0.625,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-lake-of-rage:northeast-hidden-item",
+        "label": "Northeast Hidden Item",
+        "x": 0.8875,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

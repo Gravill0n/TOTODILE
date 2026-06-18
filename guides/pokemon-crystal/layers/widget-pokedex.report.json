@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-pokedex",
+  "generatedAt": "2026-06-18T00:10:00Z",
+  "inputs": [
+    { "file": "deck.json", "sha256": "cf161824ea7e5516d3d8fd9be56bd84995087368cfab8f94f73381bee1e1239e" },
+    { "file": "sources.json", "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e" },
+    { "file": "layers/data.json", "sha256": "4d97a78b9445c7d8d6ebd3dc86c2fdc8f1cdd864006328fcc60b72d2c9c0df4c" }
+  ],
+  "report": {
+    "rowCount": 1,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Fills deck slot 1 (counter, global, defaultTitle \"Pokédex\"). One counter, target 206 = the maximum number of species obtainable in a single Crystal cartridge without trading, chosen by Pierre 2026-06-18 over the 251 full-dex figure.",
+    "Target sourced from src-ra-oak: the Oak Challenge subset's \"Trainer Red\" achievement (ra-id 315284) reads \"Defeat Red with all 206 possible Pokémon in the Pokédex\", and the Oak badge ladder climbs 46→77→109→142→150→154→170→174→203→206. 206 is the terminal obtainable count.",
+    "Single counter (label \"Pokédex (species owned)\"); confidence normal, no source gap, flaggedItemIds empty."
+  ]
+}

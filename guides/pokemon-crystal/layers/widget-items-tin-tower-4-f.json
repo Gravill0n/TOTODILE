@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-tin-tower-4-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:tin-tower"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/TinTower4F.png",
+      "alt": "Tin Tower 4 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-tin-tower-4-f:southwest-item",
+        "label": "Southwest Item",
+        "x": 0.125,
+        "y": 0.6944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-tin-tower-4-f:hidden-item",
+        "label": "Hidden Item",
+        "x": 0.575,
+        "y": 0.3611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-tin-tower-4-f:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.875,
+        "y": 0.8056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-tin-tower-4-f:east-item",
+        "label": "East Item",
+        "x": 0.725,
+        "y": 0.5833,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

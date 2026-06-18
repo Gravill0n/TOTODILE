@@ -1,0 +1,2011 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-whirl-islands",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:whirl-islands"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-golbat-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "26",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "26",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "25-26",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-krabby-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Krabby",
+          "levels": "23-25",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-krabby-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Krabby",
+          "levels": "23-25",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-krabby-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Krabby",
+          "levels": "23-25",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-golbat-grass-day",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-golbat-grass-morn",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Golbat",
+          "levels": "24-25",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-krabby-grass-day",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-krabby-grass-morn",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-krabby-grass-nite",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-seel-grass-day",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Seel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-seel-grass-morn",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Seel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-zubat-grass-day",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-middle-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B1F Middle",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-seel-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Seel",
+          "levels": "23-25",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-seel-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Seel",
+          "levels": "23-25",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-golbat-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Golbat",
+          "levels": "27",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Golbat",
+          "levels": "27",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Golbat",
+          "levels": "26-27",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-horsea-good-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Horsea",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-horsea-super-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Horsea",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-horsea-surf-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Horsea",
+          "levels": "15-24",
+          "method": "surf",
+          "rarity": "90%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-golbat-grass-day",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Golbat",
+          "levels": "28",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-golbat-grass-morn",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Golbat",
+          "levels": "28",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Golbat",
+          "levels": "27-28",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-horsea-good-rod-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Horsea",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-horsea-super-rod-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Horsea",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-horsea-surf-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Horsea",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-kingler-super-rod-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Kingler",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-krabby-good-rod-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Krabby",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "55%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-krabby-grass-day",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Krabby",
+          "levels": "25-27",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-krabby-grass-morn",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Krabby",
+          "levels": "25-27",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-krabby-grass-nite",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Krabby",
+          "levels": "25-27",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-krabby-old-rod-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Krabby",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-krabby-super-rod-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Krabby",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "40%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-seadra-super-rod-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Seadra",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-seadra-surf-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Seadra",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-seel-grass-day",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Seel",
+          "levels": "25-27",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-seel-grass-morn",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Seel",
+          "levels": "25-27",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-tentacruel-surf-any",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Tentacruel",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-zubat-grass-day",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Zubat",
+          "levels": "26",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Zubat",
+          "levels": "26",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-inner-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B2F Inner",
+          "species": "Zubat",
+          "levels": "26",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-kingler-super-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Kingler",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-krabby-good-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Krabby",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "55%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-krabby-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Krabby",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-krabby-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Krabby",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-krabby-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Krabby",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-krabby-old-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Krabby",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-krabby-super-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Krabby",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "40%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-seadra-super-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Seadra",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-seel-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Seel",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-seel-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Seel",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-tentacruel-surf-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Tentacruel",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-zubat-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Zubat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Zubat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:b2f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Zubat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-golbat-grass-day",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-golbat-grass-morn",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-golbat-grass-nite",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Golbat",
+          "levels": "24-25",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-horsea-good-rod-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Horsea",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-horsea-super-rod-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Horsea",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-horsea-surf-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Horsea",
+          "levels": "15-19",
+          "method": "surf",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-kingler-super-rod-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Kingler",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-krabby-good-rod-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Krabby",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "55%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-krabby-grass-day",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-krabby-grass-morn",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-krabby-grass-nite",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-krabby-old-rod-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Krabby",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-krabby-super-rod-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Krabby",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "40%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-seadra-super-rod-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Seadra",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-seel-grass-day",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Seel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-seel-grass-morn",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Seel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-tentacool-surf-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Tentacool",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-tentacruel-surf-any",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Tentacruel",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-zubat-grass-day",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-zubat-grass-morn",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-left-zubat-grass-nite",
+        "cells": {
+          "sub-area": "Lower Left",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-golbat-grass-day",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-golbat-grass-morn",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-golbat-grass-nite",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Golbat",
+          "levels": "24-25",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-krabby-grass-day",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-krabby-grass-morn",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-krabby-grass-nite",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-seel-grass-day",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Seel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-seel-grass-morn",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Seel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-zubat-grass-day",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-zubat-grass-morn",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:lower-right-zubat-grass-nite",
+        "cells": {
+          "sub-area": "Lower Right",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-golbat-grass-day",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-golbat-grass-morn",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-golbat-grass-nite",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Golbat",
+          "levels": "24-25",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-krabby-grass-day",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-krabby-grass-morn",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-krabby-grass-nite",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-seel-grass-day",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Seel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-seel-grass-morn",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Seel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-zubat-grass-day",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-zubat-grass-morn",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-left-zubat-grass-nite",
+        "cells": {
+          "sub-area": "Upper Left",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-golbat-grass-day",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-golbat-grass-morn",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-golbat-grass-nite",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Golbat",
+          "levels": "24-25",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-krabby-grass-day",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-krabby-grass-morn",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-krabby-grass-nite",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Krabby",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-seel-grass-day",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Seel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-seel-grass-morn",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Seel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-zubat-grass-day",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-zubat-grass-morn",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-whirl-islands:upper-right-zubat-grass-nite",
+        "cells": {
+          "sub-area": "Upper Right",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

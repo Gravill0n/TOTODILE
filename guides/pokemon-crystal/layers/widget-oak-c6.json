@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c6",
+    "title": "Oak Challenge Catch List",
+    "type": "checklist",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c6"
+    },
+    "deckPosition": 8,
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c6:a315226",
+        "label": "Wigglytuff",
+        "note": "Evolve Jigglypuff to Wigglytuff. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c6:a315227",
+        "label": "Nidoking",
+        "note": "Evolve Nidorino to Nidoking. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c6:a315290",
+        "label": "Nidoqueen",
+        "note": "Evolve Nidorina to Nidoqueen. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c6:a315291",
+        "label": "Natu",
+        "note": "Catch a Natu. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c6:a315228",
+        "label": "Xatu",
+        "note": "Evolve Natu to Xatu. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c6:a315292",
+        "label": "Smeargle",
+        "note": "Catch a Smeargle. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c6:a315229",
+        "label": "Lapras",
+        "note": "Catch a Lapras. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c6:a315293",
+        "label": "Mantine",
+        "note": "Catch a Mantine. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c6:a315230",
+        "label": "Glacier Badge",
+        "note": "Defeat Pryce with all 150 possible Pokémon in the Pokédex. · 10 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

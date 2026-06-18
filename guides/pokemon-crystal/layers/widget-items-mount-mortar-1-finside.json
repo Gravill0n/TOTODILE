@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-mount-mortar-1-finside",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mt-mortar"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/MountMortar1FInside.png",
+      "alt": "Mount Mortar 1 FInside map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-finside:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.8875,
+        "y": 0.713,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-finside:west-item",
+        "label": "West Item",
+        "x": 0.2625,
+        "y": 0.5093,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-finside:east-item",
+        "label": "East Item",
+        "x": 0.8875,
+        "y": 0.3611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-finside:center-item-left",
+        "label": "Center Item (Left)",
+        "x": 0.4375,
+        "y": 0.3241,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-finside:northwest-item",
+        "label": "Northwest Item",
+        "x": 0.2125,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-finside:center-item-right",
+        "label": "Center Item (Right)",
+        "x": 0.5625,
+        "y": 0.3796,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-finside:north-item",
+        "label": "North Item",
+        "x": 0.4125,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-finside:hidden-item",
+        "label": "Hidden Item",
+        "x": 0.7625,
+        "y": 0.213,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

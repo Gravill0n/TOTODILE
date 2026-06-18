@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-ecruteak-city",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ecruteak-city"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ecruteak-city:gym-leader-morty",
+        "cells": {
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Morty",
+          "party": "Gastly L21; Haunter L21; Gengar L25; Haunter L23",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ecruteak-city:medium-grace",
+        "cells": {
+          "trainer-class": "Medium",
+          "trainer-name": "Grace",
+          "party": "Haunter L20; Haunter L20",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ecruteak-city:medium-martha",
+        "cells": {
+          "trainer-class": "Medium",
+          "trainer-name": "Martha",
+          "party": "Gastly L18; Haunter L20; Gastly L20",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ecruteak-city:sage-jeffrey",
+        "cells": {
+          "trainer-class": "Sage",
+          "trainer-name": "Jeffrey",
+          "party": "Haunter L22",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ecruteak-city:sage-ping",
+        "cells": {
+          "trainer-class": "Sage",
+          "trainer-name": "Ping",
+          "party": "Gastly L16; Gastly L16; Gastly L16; Gastly L16; Gastly L16",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

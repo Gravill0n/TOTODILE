@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "extract-data",
+  "layer": "data",
+  "generatedAt": "2026-06-18T01:00:00Z",
+  "inputs": [
+    {
+      "file": "sources.json",
+      "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e"
+    }
+  ],
+  "report": {
+    "rowCount": 5006,
+    "anomalies": [
+      "route-33-rattata-grass-nite: serebii 40%/7 vs bulba [('40%', '6-7')]",
+      "route-37-growlithe-grass-morn: serebii 10%/16 vs bulba [('40%', '')]",
+      "route-42-raticate-grass-morn: serebii 10%/6-16 vs bulba [('10%', '16')]",
+      "route-42-raticate-grass-day: serebii 10%/6-16 vs bulba [('10%', '16')]",
+      "trainer: Route 36/School Kid Alan: serebii [('Tangela', '16')] vs bulba [('Tangela', '17')]",
+      "trainer: Route 45/Hiker Erik: serebii [('Geodude', '27'), ('Machop', '24'), ('Machop', '27')] vs bulba [('Graveler', '27'), ('Machop', '24'), ('Machop', '27')]",
+      "trainer: Ruins of Alph/Psychic Nathan: serebii [('Girafarig', '16')] vs bulba [('Girafarig', '26')]",
+      "trainer: SS Aqua/School Kid Nate: serebii [('Exeggutor', '32'), ('Ledian', '32')] vs bulba [('Exeggutor', '40'), ('Ledian', '40')]",
+      "trainer: SS Aqua/School Kid Ricky: serebii [('Aipom', '32'), ('Ditto', '32')] vs bulba [('Aipom', '40'), ('Ditto', '40')]",
+      "trainer: Route 11/Youngster Jason: serebii [('Crobat', '33'), ('Sandshrew', '33')] vs bulba [('Crobat', '33'), ('Sandslash', '33')]",
+      "trainer: Route 12/Fisherman Kyle: serebii [('Poliwhirl', '31'), ('Seaking', '28'), ('Seaking', '31')] vs bulba [('Goldeen', '39'), ('Goldeen', '39'), ('Qwilfish', '35')]",
+      "trainer: Route 12/Fisherman Martin: serebii [('Remoraid', '32'), ('Remoraid', '32')] vs bulba [('Octillery', '42'), ('Remoraid', '36')]",
+      "trainer: Route 12/Fisherman Stephen: serebii [('Magikarp', '25'), ('Magikarp', '25'), ('Qwilfish', '31'), ('Tentacruel', '31')] vs bulba [('Quagsire', '43'), ('Qwilfish', '38'), ('Tentacruel', '38')]",
+      "trainer: Route 12/Fisherman Barney: serebii [('Gyarados', '30'), ('Gyarados', '30'), ('Gyarados', '30')] vs bulba [('Gyarados', '37'), ('Gyarados', '37'), ('Gyarados', '40')]",
+      "trainer: Route 18/Bird Keeper Boris: serebii [('Doduo', '28'), ('Doduo', '30'), ('Doduo', '32')] vs bulba [('Dodrio', '32'), ('Doduo', '28'), ('Doduo', '30')]",
+      "trainer: Route 20/Swimmer Cameron: serebii [('Azumarill', '34')] vs bulba [('Marill', '34')]",
+      "trainer: Route 25/School Kid Dudley: serebii [('Oddish', '35')] vs bulba [('Oddish', '45')]",
+      "trainer: Route 25/School Kid Joe: serebii [('Tangela', '33'), ('Vaporeon', '33')] vs bulba [('Tangela', '44'), ('Vaporeon', '42')]",
+      "trainer: Route 26/Psychic Richard: serebii [('Sunkern', '36')] vs bulba [('Espeon', '36')]",
+      "trainer: Route 3/Firebreather Burt: serebii [('Slugma', '32'), ('Weezing', '32')] vs bulba [('Koffing', '32'), ('Slugma', '32')]",
+      "trainer: Route 9/Hiker Sidney: serebii [('Dugtrio', '34'), ('Onix', '92')] vs bulba [('Dugtrio', '34'), ('Onix', '32')]",
+      "johto-kanto-route-2-nugget-from-guy: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-northeast-item: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-bug-catcher-ed: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-center-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-north-hidden-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-east-hidden-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-berry-tree: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-southeast-hidden-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-west-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-west-hidden-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-bug-catcher-doug: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-bug-catcher-rob: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-southeast-item: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly)."
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Added the encounters dataset: 1921 Crystal wild encounters across 79 areas (Johto+Kanto), one record per location×species×method×time-of-day. Source: Serebii Pokéarth Gen-II Crystal sections (src-serebii-pokearth, primary); cross-checked against Bulbapedia location articles (src-bulba-locations): 363 corroborated, 1554 Serebii-only, 4 disagreements flagged (confidence:flagged). Methods: grass (time-of-day morn/day/nite), surf, old/good/super-rod, headbutt-special/regular, rock-smash. Gift/static Pokémon (no rate%) and interactables excluded — those belong to a later dataset. Multi-area pages split into sub-locations via Serebii area anchors (e.g. 'Union Cave (B1F)', 'Mt. Mortar (1F #2)').",
+    "Added the trainers dataset: 287 Crystal trainers across 75 areas, one record per trainer (party=initial team; phone rematches and starter-dependent variants summarised in notes). Source: Serebii Pokéarth Gen-II Crystal trainer sections (src-serebii-pokearth, primary); cross-checked against Bulbapedia Gen-II trainer tables (src-bulba-locations): 158 corroborated (party+levels), 112 Serebii-only, 17 disagreements flagged. Reward $ pulled from Bulbapedia where matched; gym leaders/Elite Four/Champion/Rival have no reward in source. Fields: location, trainer-class, trainer-name, party, battle-type, reward, notes.",
+    "Added the items dataset: 226 Crystal items across 70 areas, one record per item pickup. Source: Serebii Pokéarth Gen-II item sections (src-serebii-pokearth, primary); item-name presence cross-checked against Bulbapedia item sections (src-bulba-locations): 172 corroborated, 54 Serebii-only. Methods: overworld (item ball on the ground), hidden (Itemfinder), tree (berry tree), gift (from an NPC/shop — giver/conditions in notes). Fields: location, item, method, notes.",
+    "Images (772) and achievements (337) datasets preserved unchanged. Remaining: trades (Bulbapedia/Serebii).",
+    "Re-run: added the map-pins dataset (1457 records) — one record per AP-tracker check (locations/dungeons.json), each carrying its spot map-marker pixel coordinates (x,y) on the named AP area map, plus area/spot/check/ref. Source: src-ap-tracker. All spots, per-check granularity (Pierre 2026-06-18). Coordinates are raw pixels in the AP map image space; the widget pass converts to [0,1] fractions via each PNG dimension. Also added 6 FastShip (S.S. Aqua) map images to the images catalog that exist on disk but were previously uncatalogued. 13 pins flagged (Route 2 map PNG missing)."
+  ]
+}

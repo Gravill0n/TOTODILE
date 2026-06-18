@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:trades",
+    "title": "In-game Trades",
+    "type": "flowchart",
+    "scope": { "kind": "global" },
+    "deckPosition": 6,
+    "nodes": [
+      {
+        "itemId": "pokemon-crystal:trades:bellsprout-onix",
+        "label": "Bellsprout → Onix",
+        "note": "Violet City — Kyle trades an Onix (nicknamed ROCKY ♂, holding a Bitter Berry) for your Bellsprout.",
+        "sourceRefs": ["src-serebii-trades", "src-bulba-locations"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:abra-machop",
+        "label": "Abra → Machop",
+        "note": "Goldenrod City — Mike trades a Machop (nicknamed MUSCLE ♀, holding a Gold Berry) for your Abra.",
+        "sourceRefs": ["src-serebii-trades"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:krabby-voltorb",
+        "label": "Krabby → Voltorb",
+        "note": "Olivine City — Tim trades a Voltorb (nicknamed VOLTY, holding a PrzCureBerry) for your Krabby.",
+        "sourceRefs": ["src-serebii-trades", "src-bulba-locations"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:dragonair-dodrio",
+        "label": "Dragonair → Dodrio",
+        "note": "Blackthorn City — Emy trades a Dodrio (nicknamed DORIS ♂) for your female Dragonair. Held item disputed: Serebii lists a Bitter Berry, Bulbapedia lists a Smoke Ball.",
+        "sourceRefs": ["src-serebii-trades", "src-bulba-locations"],
+        "confidence": "flagged"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:haunter-xatu",
+        "label": "Haunter → Xatu",
+        "note": "Pewter City — Chris trades an Xatu (nicknamed PAUL ♂, holding a Mystery Berry) for your Haunter.",
+        "sourceRefs": ["src-serebii-trades"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:dugtrio-magneton",
+        "label": "Dugtrio → Magneton",
+        "note": "Kanto Power Plant — Forest trades a Magneton (nicknamed MAGGIE, holding a Mystery Berry) for your Dugtrio.",
+        "sourceRefs": ["src-serebii-trades"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:trades:chansey-aerodactyl",
+        "label": "Chansey → Aerodactyl",
+        "note": "Route 14 — Kim trades an Aerodactyl (nicknamed AEROY ♂, holding a Gold Berry) for your Chansey.",
+        "sourceRefs": ["src-serebii-trades"],
+        "confidence": "normal"
+      }
+    ],
+    "edges": []
+  }
+}

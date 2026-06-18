@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c16",
+    "title": "Oak Challenge Catch List",
+    "type": "checklist",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c16"
+    },
+    "deckPosition": 8,
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c16:a315274",
+        "label": "Boulder Badge",
+        "note": "Defeat Brock with all 203 possible Pokémon in the Pokédex. · 10 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c14",
+    "title": "Oak Challenge Catch List",
+    "type": "checklist",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c14"
+    },
+    "deckPosition": 8,
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c14:a315276",
+        "label": "Rainbow Badge",
+        "note": "Defeat Erika with all 203 possible Pokémon in the Pokédex. · 10 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

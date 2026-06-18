@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-silver-cave-outside",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mt-silver-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/SilverCaveOutside.png",
+      "alt": "Silver Cave Outside map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:1f-southeast-item",
+        "label": "1F - Southeast Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:1f-southwest-item",
+        "label": "1F - Southwest Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:1f-center-item",
+        "label": "1F - Center Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:1f-southeast-hidden-item",
+        "label": "1F - Southeast Hidden Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:1f-northwest-item",
+        "label": "1F - Northwest Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:1f-northeast-hidden-item",
+        "label": "1F - Northeast Hidden Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:2f-hidden-item",
+        "label": "2F - Hidden Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:2f-east-item",
+        "label": "2F - East Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:2f-west-item",
+        "label": "2F - West Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:2f-south-chamber-item",
+        "label": "2F - South Chamber Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:2f-northeast-item",
+        "label": "2F - Northeast Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:2f-north-chamber-item",
+        "label": "2F - North Chamber Item",
+        "x": 0.4625,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-outside:hidden-item-across-water",
+        "label": "Hidden Item across Water",
+        "x": 0.2375,
+        "y": 0.7083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

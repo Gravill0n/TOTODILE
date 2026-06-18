@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c18",
+    "title": "Gym Prep — Blue",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c18"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c18:blue-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 58",
+        "note": "For 'Until Next Time... Smell Ya Later!' — defeat Blue in Set battle style, using only Johto Pokémon that never exceed Lv 58 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c18:blue-recommended",
+        "label": "Recommended counter",
+        "note": "Lv 58 is a high cap, so use your main team. Blue mirrors his Gen-1 roster across many types, so come with a diverse, multi-type team.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

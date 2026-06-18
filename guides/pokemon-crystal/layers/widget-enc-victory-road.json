@@ -1,0 +1,763 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-victory-road",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:victory-road"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-golbat-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Golbat",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Golbat",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Golbat",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-graveler-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Graveler",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-graveler-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Graveler",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-graveler-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Graveler",
+          "levels": "34-40",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-onix-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Onix",
+          "levels": "33",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-onix-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Onix",
+          "levels": "33",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-onix-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Onix",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-rhydon-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rhydon",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-rhydon-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rhydon",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-rhyhorn-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rhyhorn",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-rhyhorn-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rhyhorn",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-sandslash-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Sandslash",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:1f-sandslash-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Sandslash",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-golbat-grass-day",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Golbat",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Golbat",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Golbat",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-graveler-grass-day",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Graveler",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-graveler-grass-morn",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Graveler",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-graveler-grass-nite",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Graveler",
+          "levels": "34-40",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-onix-grass-day",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Onix",
+          "levels": "33",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-onix-grass-morn",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Onix",
+          "levels": "33",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-onix-grass-nite",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Onix",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-rhydon-grass-day",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Rhydon",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-rhydon-grass-morn",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Rhydon",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-rhyhorn-grass-day",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Rhyhorn",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-rhyhorn-grass-morn",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Rhyhorn",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-sandslash-grass-day",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Sandslash",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:2f-sandslash-grass-morn",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Sandslash",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-golbat-grass-day",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Golbat",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Golbat",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Golbat",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-graveler-grass-day",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Graveler",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-graveler-grass-morn",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Graveler",
+          "levels": "34",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-graveler-grass-nite",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Graveler",
+          "levels": "34-40",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-onix-grass-day",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Onix",
+          "levels": "33",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-onix-grass-morn",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Onix",
+          "levels": "33",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-onix-grass-nite",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Onix",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-rhydon-grass-day",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Rhydon",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-rhydon-grass-morn",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Rhydon",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-rhyhorn-grass-day",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Rhyhorn",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-rhyhorn-grass-morn",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Rhyhorn",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-sandslash-grass-day",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Sandslash",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-victory-road:3f-sandslash-grass-morn",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Sandslash",
+          "levels": "35",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

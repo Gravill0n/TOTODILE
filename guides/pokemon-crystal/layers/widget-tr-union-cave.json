@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-union-cave",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:union-cave"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-union-cave:cool-trainer-emma",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Emma",
+          "party": "Poliwhirl L28",
+          "battle-type": "Single",
+          "reward": "$1344"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-union-cave:cool-trainer-gwen",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Gwen",
+          "party": "Eevee L26; Flareon L22; Vaporeon L22; Jolteon L22",
+          "battle-type": "Single",
+          "reward": "$1248"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-union-cave:cool-trainer-nick",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Nick",
+          "party": "Charmander L26; Squirtle L26; Bulbasaur L26",
+          "battle-type": "Single",
+          "reward": "$1248"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

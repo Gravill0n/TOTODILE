@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-prep-c14",
+  "generatedAt": "2026-06-18T02:10:00Z",
+  "inputs": [
+    {
+      "file": "deck.json",
+      "sha256": "cf161824ea7e5516d3d8fd9be56bd84995087368cfab8f94f73381bee1e1239e"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "4d97a78b9445c7d8d6ebd3dc86c2fdc8f1cdd864006328fcc60b72d2c9c0df4c"
+    }
+  ],
+  "report": {
+    "rowCount": 2,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Chapter-scoped Gym/E4 Prep (deck slot 5) for c14: 1 leader(s). Per leader, one challenge-constraint item (level cap + Set/Johto-only/no-Pack-items rules; sourced from the achievements dataset, src-ra) and one recommended-counter item paraphrased from the RA community wiki (src-ra-wiki).",
+    "Level caps and challenge framing are the per-leader Johto-only achievements (ra-id 199603-199619/199632). Recommendations reproduce the wiki's advice faithfully; none invented where the wiki gives none."
+  ]
+}

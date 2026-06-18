@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c2",
+    "title": "Gym Prep — Bugsy",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c2"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c2:bugsy-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 16",
+        "note": "For 'Did Someone Call an Exterminator?' — defeat Bugsy in Set battle style, using only Johto Pokémon that never exceed Lv 16 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c2:bugsy-recommended",
+        "label": "Recommended counter",
+        "note": "If you didn't pick Cyndaquil, the Dunsparce from earlier still shreds this gym; a Hoothoot and/or Wooper also help and spread out levels.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

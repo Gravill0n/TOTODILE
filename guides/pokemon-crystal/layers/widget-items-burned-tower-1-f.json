@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-burned-tower-1-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:burned-tower"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/BurnedTower1F.png",
+      "alt": "Burned Tower 1 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-burned-tower-1-f:southeast-hidden-item",
+        "label": "Southeast Hidden Item",
+        "x": 0.675,
+        "y": 0.6389,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-burned-tower-1-f:item",
+        "label": "Item",
+        "x": 0.725,
+        "y": 0.1389,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

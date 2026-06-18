@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c5",
+    "title": "Oak Challenge Catch List",
+    "type": "checklist",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c5"
+    },
+    "deckPosition": 8,
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c5:a315231",
+        "label": "Seel",
+        "note": "Catch a Seel. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:a315232",
+        "label": "Dewgong",
+        "note": "Evolve Seel to Dewgong. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:a315294",
+        "label": "Horsea",
+        "note": "Catch a Horsea. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:a315233",
+        "label": "Seadra",
+        "note": "Catch a Seadra or evolve Horsea to Seadra. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:a315234",
+        "label": "Mineral Badge",
+        "note": "Defeat Jasmine with all 154 possible Pokémon in the Pokédex. · 10 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c5:a315295",
+        "label": "Storm Badge",
+        "note": "Defeat Chuck with all 154 possible Pokémon in the Pokédex. · 10 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

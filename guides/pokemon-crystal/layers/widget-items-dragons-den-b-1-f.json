@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-dragons-den-b-1-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:blackthorn-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/DragonsDenB1F.png",
+      "alt": "Dragons Den B 1 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-dragons-den-b-1-f:northeast-item",
+        "label": "Northeast Item",
+        "x": 0.7625,
+        "y": 0.125,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dragons-den-b-1-f:hidden-item-in-water",
+        "label": "Hidden Item in Water",
+        "x": 0.5375,
+        "y": 0.4861,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dragons-den-b-1-f:west-item",
+        "label": "West Item",
+        "x": 0.1375,
+        "y": 0.5694,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dragons-den-b-1-f:east-item",
+        "label": "East Item",
+        "x": 0.8875,
+        "y": 0.4583,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dragons-den-b-1-f:east-hidden-item-in-water",
+        "label": "East Hidden Item in Water",
+        "x": 0.7875,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dragons-den-b-1-f:southeast-hidden-item",
+        "label": "Southeast Hidden Item",
+        "x": 0.8375,
+        "y": 0.8194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

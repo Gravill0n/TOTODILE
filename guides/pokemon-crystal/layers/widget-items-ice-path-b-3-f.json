@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-ice-path-b-3-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ice-path"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/IcePathB3F.png",
+      "alt": "Ice Path B 3 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-ice-path-b-3-f:item-behind-smashable-rock",
+        "label": "Item behind Smashable Rock",
+        "x": 0.275,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

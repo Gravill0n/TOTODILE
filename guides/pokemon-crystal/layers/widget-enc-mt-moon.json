@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-mt-moon",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mt-moon"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-clefairy-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Clefairy",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-clefairy-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Clefairy",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-clefairy-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Clefairy",
+          "levels": "8-12",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-geodude-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "8-10",
+          "method": "grass",
+          "rarity": "35%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-geodude-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "8-10",
+          "method": "grass",
+          "rarity": "35%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-geodude-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "8-10",
+          "method": "grass",
+          "rarity": "35%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-paras-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Paras",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-paras-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Paras",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-paras-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Paras",
+          "levels": "12",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-sandshrew-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Sandshrew",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-sandshrew-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Sandshrew",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-moon:1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

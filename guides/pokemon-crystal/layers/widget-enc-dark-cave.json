@@ -1,0 +1,783 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-dark-cave",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:dark-cave"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-dunsparce-grass-day",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Dunsparce",
+          "levels": "4",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-dunsparce-grass-morn",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Dunsparce",
+          "levels": "4",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-dunsparce-grass-nite",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Dunsparce",
+          "levels": "4",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-geodude-grass-day",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Geodude",
+          "levels": "2-4",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-geodude-grass-morn",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Geodude",
+          "levels": "2-4",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-geodude-grass-nite",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Geodude",
+          "levels": "2-4",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-goldeen-good-rod-any",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Goldeen",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-goldeen-old-rod-any",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Goldeen",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-goldeen-super-rod-any",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Goldeen",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "70%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-krabby-rock-smash-any",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Krabby",
+          "levels": "15",
+          "method": "rock-smash",
+          "rarity": "90%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-magikarp-super-rod-any",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Magikarp",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-magikarp-surf-any",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Magikarp",
+          "levels": "5-19",
+          "method": "surf",
+          "rarity": "100%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-seaking-super-rod-any",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Seaking",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-shuckle-rock-smash-any",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Shuckle",
+          "levels": "15",
+          "method": "rock-smash",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-teddiursa-grass-morn",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Teddiursa",
+          "levels": "2",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-zubat-grass-day",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Zubat",
+          "levels": "2-4",
+          "method": "grass",
+          "rarity": "39%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-zubat-grass-morn",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Zubat",
+          "levels": "2-4",
+          "method": "grass",
+          "rarity": "34%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-31-zubat-grass-nite",
+        "cells": {
+          "sub-area": "Route 31",
+          "species": "Zubat",
+          "levels": "2-4",
+          "method": "grass",
+          "rarity": "39%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-geodude-grass-day",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Geodude",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-geodude-grass-morn",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Geodude",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-geodude-grass-nite",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Geodude",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-golbat-grass-day",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Golbat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-golbat-grass-morn",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Golbat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-golbat-grass-nite",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Golbat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-goldeen-good-rod-any",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Goldeen",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-goldeen-old-rod-any",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Goldeen",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-goldeen-super-rod-any",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Goldeen",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "70%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-graveler-grass-day",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Graveler",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-graveler-grass-morn",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Graveler",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-graveler-grass-nite",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Graveler",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-krabby-rock-smash-any",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Krabby",
+          "levels": "15",
+          "method": "rock-smash",
+          "rarity": "90%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-magikarp-super-rod-any",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Magikarp",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-magikarp-surf-any",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Magikarp",
+          "levels": "5-19",
+          "method": "surf",
+          "rarity": "100%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-seaking-super-rod-any",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Seaking",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-shuckle-rock-smash-any",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Shuckle",
+          "levels": "15",
+          "method": "rock-smash",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-teddiursa-grass-morn",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Teddiursa",
+          "levels": "20",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-ursaring-grass-day",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Ursaring",
+          "levels": "25-30",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-ursaring-grass-morn",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Ursaring",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-wobbuffet-grass-nite",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Wobbuffet",
+          "levels": "20-25",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-zubat-grass-day",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-zubat-grass-morn",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-dark-cave:route-45-zubat-grass-nite",
+        "cells": {
+          "sub-area": "Route 45",
+          "species": "Zubat",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

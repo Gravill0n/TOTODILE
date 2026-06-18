@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-38",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-38"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-38:beauty-olivia",
+        "cells": {
+          "trainer-class": "Beauty",
+          "trainer-name": "Olivia",
+          "party": "Corsola L19",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-38:beauty-valerie",
+        "cells": {
+          "trainer-class": "Beauty",
+          "trainer-name": "Valerie",
+          "party": "Hoppip L17; Skiploom L17",
+          "battle-type": "Single",
+          "reward": "$1496"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-38:bird-keeper-toby",
+        "cells": {
+          "trainer-class": "Bird Keeper",
+          "trainer-name": "Toby",
+          "party": "Doduo L15; Doduo L16; Doduo L17",
+          "battle-type": "Single",
+          "reward": "$408"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-38:lass-dana",
+        "cells": {
+          "trainer-class": "Lass",
+          "trainer-name": "Dana",
+          "party": "Flaaffy L18; Psyduck L18",
+          "battle-type": "Single",
+          "reward": "$432",
+          "notes": "Phone rematches (×4, up to L36)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-38:sailor-harry",
+        "cells": {
+          "trainer-class": "Sailor",
+          "trainer-name": "Harry",
+          "party": "Wooper L19",
+          "battle-type": "Single",
+          "reward": "$760"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-38:school-kid-chad",
+        "cells": {
+          "trainer-class": "School Kid",
+          "trainer-name": "Chad",
+          "party": "Mr. Mime L19",
+          "battle-type": "Single",
+          "notes": "Phone rematches (×3, up to L34)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

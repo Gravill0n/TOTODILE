@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-goldenrod-underground-warehouse",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:goldenrod-underground"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/GoldenrodUndergroundWarehouse.png",
+      "alt": "Goldenrod Underground Warehouse map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-underground-warehouse:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.925,
+        "y": 0.8611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-underground-warehouse:center-item",
+        "label": "Center Item",
+        "x": 0.675,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-underground-warehouse:northwest-item",
+        "label": "Northwest Item",
+        "x": 0.125,
+        "y": 0.0833,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-underground-warehouse:card-key-from-director",
+        "label": "Card Key from Director",
+        "x": 0.625,
+        "y": 0.4722,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-radio-tower-3-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:goldenrod-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/RadioTower3F.png",
+      "alt": "Radio Tower 3 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-radio-tower-3-f:tm11-from-woman",
+        "label": "TM11 from Woman",
+        "x": 0.6389,
+        "y": 0.4375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-11",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-11"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-11:psychic-fidel",
+        "cells": {
+          "trainer-class": "Psychic",
+          "trainer-name": "Fidel",
+          "party": "Xatu L34",
+          "battle-type": "Single",
+          "reward": "$1088"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-11:psychic-herman",
+        "cells": {
+          "trainer-class": "Psychic",
+          "trainer-name": "Herman",
+          "party": "Exeggcute L30; Exeggcute L30; Exeggutor L30",
+          "battle-type": "Single",
+          "reward": "$960"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-11:youngster-jason",
+        "cells": {
+          "trainer-class": "Youngster",
+          "trainer-name": "Jason",
+          "party": "Sandshrew L33; Crobat L33",
+          "battle-type": "Single",
+          "reward": "$528"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-11:youngster-owen",
+        "cells": {
+          "trainer-class": "Youngster",
+          "trainer-name": "Owen",
+          "party": "Growlithe L35",
+          "battle-type": "Single",
+          "reward": "$560"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

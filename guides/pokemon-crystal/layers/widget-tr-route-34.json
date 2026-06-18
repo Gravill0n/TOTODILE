@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-34",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-34"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-34:camper-todd",
+        "cells": {
+          "trainer-class": "Camper",
+          "trainer-name": "Todd",
+          "party": "Psyduck L14",
+          "battle-type": "Single",
+          "reward": "$280",
+          "notes": "Phone rematches (×4, up to L34)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-34:cool-trainer-irene",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Irene",
+          "party": "Goldeen L22; Seaking L24",
+          "battle-type": "Single",
+          "reward": "$1152"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-34:cool-trainer-jenn",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Jenn",
+          "party": "Staryu L24; Starmie L26",
+          "battle-type": "Single",
+          "reward": "$1248"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-34:cool-trainer-kate",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Kate",
+          "party": "Shellder L26; Cloyster L28",
+          "battle-type": "Single",
+          "reward": "$1344"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-34:officer-keith",
+        "cells": {
+          "trainer-class": "Officer",
+          "trainer-name": "Keith",
+          "party": "Growlithe L17",
+          "battle-type": "Single",
+          "reward": "$680"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-34:picnicker-gina",
+        "cells": {
+          "trainer-class": "Picnicker",
+          "trainer-name": "Gina",
+          "party": "Hoppip L9; Hoppip L9; Bulbasaur L12",
+          "battle-type": "Single",
+          "reward": "$240",
+          "notes": "Phone rematches (×4, up to L38)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-34:pok-fan-brandon",
+        "cells": {
+          "trainer-class": "PokéFan",
+          "trainer-name": "Brandon",
+          "party": "Snubbull L13",
+          "battle-type": "Single",
+          "reward": "$1040"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-34:youngster-ian",
+        "cells": {
+          "trainer-class": "Youngster",
+          "trainer-name": "Ian",
+          "party": "Mankey L10; Diglett L12",
+          "battle-type": "Single",
+          "reward": "$192"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-34:youngster-samuel",
+        "cells": {
+          "trainer-class": "Youngster",
+          "trainer-name": "Samuel",
+          "party": "Rattata L7; Sandshrew L10; Spearow L8; Spearow L8",
+          "battle-type": "Single",
+          "reward": "$128"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

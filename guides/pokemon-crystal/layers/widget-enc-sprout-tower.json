@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-sprout-tower",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:sprout-tower"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-sprout-tower:2f-gastly-grass-nite",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Gastly",
+          "levels": "4-6",
+          "method": "grass",
+          "rarity": "85%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-sprout-tower:2f-rattata-grass-day",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Rattata",
+          "levels": "3-6",
+          "method": "grass",
+          "rarity": "100%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-sprout-tower:2f-rattata-grass-morn",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Rattata",
+          "levels": "3-6",
+          "method": "grass",
+          "rarity": "100%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-sprout-tower:2f-rattata-grass-nite",
+        "cells": {
+          "sub-area": "2F",
+          "species": "Rattata",
+          "levels": "3-5",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-sprout-tower:3f-gastly-grass-nite",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Gastly",
+          "levels": "4-6",
+          "method": "grass",
+          "rarity": "85%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-sprout-tower:3f-rattata-grass-day",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Rattata",
+          "levels": "3-6",
+          "method": "grass",
+          "rarity": "100%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-sprout-tower:3f-rattata-grass-morn",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Rattata",
+          "levels": "3-6",
+          "method": "grass",
+          "rarity": "100%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-sprout-tower:3f-rattata-grass-nite",
+        "cells": {
+          "sub-area": "3F",
+          "species": "Rattata",
+          "levels": "3-5",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

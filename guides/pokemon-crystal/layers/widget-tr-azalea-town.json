@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-azalea-town",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:azalea-town"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-azalea-town:bug-catcher-al",
+        "cells": {
+          "trainer-class": "Bug Catcher",
+          "trainer-name": "Al",
+          "party": "Caterpie L12; Weedle L12",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-azalea-town:bug-catcher-benny",
+        "cells": {
+          "trainer-class": "Bug Catcher",
+          "trainer-name": "Benny",
+          "party": "Weedle L7; Kakuna L9; Beedrill L12",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-azalea-town:bug-catcher-josh",
+        "cells": {
+          "trainer-class": "Bug Catcher",
+          "trainer-name": "Josh",
+          "party": "Paras L13",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-azalea-town:gym-leader-bugsy",
+        "cells": {
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Bugsy",
+          "party": "Metapod L14; Kakuna L14; Scyther L16",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-azalea-town:twins-amy-may",
+        "cells": {
+          "trainer-class": "Twins",
+          "trainer-name": "Amy & May",
+          "party": "Ledyba L10; Spinarak L10",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

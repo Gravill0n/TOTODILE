@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-32-north",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-32"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route32North.png",
+      "alt": "Route 32 North map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-32-north:miracle-seed-from-man-in-north",
+        "label": "Miracle Seed from Man in North",
+        "x": 0.925,
+        "y": 0.2125,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-north:tm05-from-roar-guy",
+        "label": "TM05 from Roar Guy",
+        "x": 0.775,
+        "y": 0.3375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-north:north-item",
+        "label": "North Item",
+        "x": 0.175,
+        "y": 0.7625,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

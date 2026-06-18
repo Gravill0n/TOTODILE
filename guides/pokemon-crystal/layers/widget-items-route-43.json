@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-43",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-43"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route43.png",
+      "alt": "Route 43 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-43:sludge-bomb-from-guard-in-gate",
+        "label": "Sludge Bomb from Guard in Gate",
+        "x": 0.875,
+        "y": 0.6574,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-43:item",
+        "label": "Item",
+        "x": 0.625,
+        "y": 0.6019,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-43:berry-tree",
+        "label": "Berry Tree",
+        "x": 0.075,
+        "y": 0.4907,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-43:pink-bow-from-tiffany",
+        "label": "Pink Bow from Tiffany",
+        "x": 0.475,
+        "y": 0.4722,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

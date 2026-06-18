@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-trades",
+  "generatedAt": "2026-06-18T02:45:00Z",
+  "inputs": [
+    { "file": "deck.json", "sha256": "cf161824ea7e5516d3d8fd9be56bd84995087368cfab8f94f73381bee1e1239e" },
+    { "file": "sources.json", "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e" }
+  ],
+  "report": {
+    "rowCount": 7,
+    "anomalies": [
+      "pokemon-crystal:trades:dragonair-dodrio: source disagreement on the Dodrio's held item — Serebii (src-serebii-trades) lists a Bitter Berry, Bulbapedia (src-bulba-locations) lists a Smoke Ball. Flagged for review; Serebii used as primary per Pierre's direction.",
+      "Trades sourced from the Serebii Crystal in-game trades page (src-serebii-trades, fetched 2026-06-18 at Pierre's direction; snapshot saved at pokemon-crystal/sources/serebii-crystal-trades.md). Serebii's Crystal list contains exactly these 7 trades; the Vermilion Farfetch'd-for-Spearow trade (Bulbapedia, tagged R/B/Y and FR/LG) is not a Crystal trade and is excluded."
+    ],
+    "flaggedItemIds": ["pokemon-crystal:trades:dragonair-dodrio"]
+  },
+  "notes": [
+    "Fills deck slot 6 (flowchart, global, defaultTitle \"In-game Trades\"). 7 nodes, one per Crystal in-game NPC trade (give → receive), each checkable. No edges — in-game trades are independent, not a chained flow.",
+    "Trades: Violet (Bellsprout→Onix/Kyle), Goldenrod (Abra→Machop/Mike), Olivine (Krabby→Voltorb/Tim), Blackthorn (Dragonair→Dodrio/Emy), Pewter (Haunter→Xatu/Chris), Power Plant (Dugtrio→Magneton/Forest), Route 14 (Chansey→Aerodactyl/Kim). NPC names, nicknames, and held items reproduced from Serebii; the three Johto trades also corroborated by the Bulbapedia city pages (src-bulba-locations).",
+    "Per Pierre (2026-06-18), this slot is filled directly from source rather than from a data.json trades dataset; src-serebii-trades was appended to sources.json (append-only) and a snapshot saved. If a trades dataset is later added in extract-data, re-run this widget to consume it (keeping these node IDs)."
+  ]
+}

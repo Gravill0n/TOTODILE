@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-45",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-45"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-45:black-belt-kenji",
+        "cells": {
+          "trainer-class": "Black Belt",
+          "trainer-name": "Kenji",
+          "party": "Machoke L28",
+          "battle-type": "Single",
+          "reward": "$672",
+          "notes": "Phone rematches (×2, up to L36)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-45:camper-quentin",
+        "cells": {
+          "trainer-class": "Camper",
+          "trainer-name": "Quentin",
+          "party": "Fearow L30; Primeape L30; Tauros L30",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-45:cool-trainer-kelly",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Kelly",
+          "party": "Marill L27; Wartortle L24; Wartortle L24",
+          "battle-type": "Single",
+          "reward": "$1152"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-45:cool-trainer-ryan",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Ryan",
+          "party": "Pidgeot L25; Electabuzz L27",
+          "battle-type": "Single",
+          "reward": "$1296"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-45:hiker-erik",
+        "cells": {
+          "trainer-class": "Hiker",
+          "trainer-name": "Erik",
+          "party": "Machop L24; Geodude L27; Machop L27",
+          "battle-type": "Single",
+          "reward": "$864"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-45:hiker-michael",
+        "cells": {
+          "trainer-class": "Hiker",
+          "trainer-name": "Michael",
+          "party": "Geodude L25; Graveler L25; Golem L25",
+          "battle-type": "Single",
+          "reward": "$800"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-45:hiker-parry",
+        "cells": {
+          "trainer-class": "Hiker",
+          "trainer-name": "Parry",
+          "party": "Onix L29",
+          "battle-type": "Single",
+          "reward": "$928",
+          "notes": "Phone rematches (×2, up to L38)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-45:hiker-timothy",
+        "cells": {
+          "trainer-class": "Hiker",
+          "trainer-name": "Timothy",
+          "party": "Diglett L27; Dugtrio L27",
+          "battle-type": "Single",
+          "reward": "$864"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

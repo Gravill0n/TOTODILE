@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-burned-tower",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:burned-tower"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:1f-koffing-grass-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Koffing",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:1f-raticate-grass-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Raticate",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:1f-rattata-grass-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rattata",
+          "levels": "13-15",
+          "method": "grass",
+          "rarity": "55%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:1f-zubat-grass-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-koffing-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Koffing",
+          "levels": "12-16",
+          "method": "grass",
+          "rarity": "59%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-koffing-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Koffing",
+          "levels": "12-16",
+          "method": "grass",
+          "rarity": "59%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-koffing-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Koffing",
+          "levels": "12-16",
+          "method": "grass",
+          "rarity": "59%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-rattata-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Rattata",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-rattata-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Rattata",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-rattata-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Rattata",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-weezing-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Weezing",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-weezing-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Weezing",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-weezing-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Weezing",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-burned-tower:b1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

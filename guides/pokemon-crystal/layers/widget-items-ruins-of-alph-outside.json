@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-ruins-of-alph-outside",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ruins-of-alph"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/RuinsOfAlphOutside.png",
+      "alt": "Ruins Of Alph Outside map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:bottom-right-item",
+        "label": "Bottom Right Item",
+        "x": 0.825,
+        "y": 0.9306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:bottom-left-item",
+        "label": "Bottom Left Item",
+        "x": 0.825,
+        "y": 0.9306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:top-right-item",
+        "label": "Top Right Item",
+        "x": 0.825,
+        "y": 0.9306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:top-left-item",
+        "label": "Top Left Item",
+        "x": 0.825,
+        "y": 0.9306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:bottom-left-item-2",
+        "label": "Bottom Left Item",
+        "x": 0.725,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:top-right-item-2",
+        "label": "Top Right Item",
+        "x": 0.725,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:top-left-item-2",
+        "label": "Top Left Item",
+        "x": 0.725,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:bottom-right-item-2",
+        "label": "Bottom Right Item",
+        "x": 0.725,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:bottom-left-item-3",
+        "label": "Bottom Left Item",
+        "x": 0.125,
+        "y": 0.8194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:bottom-right-item-3",
+        "label": "Bottom Right Item",
+        "x": 0.125,
+        "y": 0.8194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:top-right-item-3",
+        "label": "Top Right Item",
+        "x": 0.125,
+        "y": 0.8194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:top-left-item-3",
+        "label": "Top Left Item",
+        "x": 0.125,
+        "y": 0.8194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:top-right-item-4",
+        "label": "Top Right Item",
+        "x": 0.125,
+        "y": 0.4861,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:bottom-left-item-4",
+        "label": "Bottom Left Item",
+        "x": 0.125,
+        "y": 0.4861,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:bottom-right-item-4",
+        "label": "Bottom Right Item",
+        "x": 0.125,
+        "y": 0.4861,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-outside:top-left-item-4",
+        "label": "Top Left Item",
+        "x": 0.125,
+        "y": 0.4861,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

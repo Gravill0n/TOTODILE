@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-whirl-island-1-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:whirl-islands"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/WhirlIsland1F.png",
+      "alt": "Whirl Island 1 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-1-f:item-in-northeast-island",
+        "label": "Item in Northeast Island",
+        "x": 0.7258,
+        "y": 0.3108,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-1-f:item-in-southwest-island",
+        "label": "Item in Southwest Island",
+        "x": 0.5,
+        "y": 0.5811,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

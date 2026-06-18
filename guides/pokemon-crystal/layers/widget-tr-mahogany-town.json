@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-mahogany-town",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mahogany-town"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-mahogany-town:boarder-brad",
+        "cells": {
+          "trainer-class": "Boarder",
+          "trainer-name": "Brad",
+          "party": "Swinub L26; Swinub L26",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-mahogany-town:boarder-douglas",
+        "cells": {
+          "trainer-class": "Boarder",
+          "trainer-name": "Douglas",
+          "party": "Shellder L24; Cloyster L25; Shellder L24",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-mahogany-town:boarder-ronald",
+        "cells": {
+          "trainer-class": "Boarder",
+          "trainer-name": "Ronald",
+          "party": "Seel L24; Dewgong L25; Seel L24",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-mahogany-town:gym-leader-pryce",
+        "cells": {
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Pryce",
+          "party": "Seel L27; Dewgong L29; Piloswine L31",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-mahogany-town:skier-clarissa",
+        "cells": {
+          "trainer-class": "Skier",
+          "trainer-name": "Clarissa",
+          "party": "Dewgong L28",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-mahogany-town:skier-roxanne",
+        "cells": {
+          "trainer-class": "Skier",
+          "trainer-name": "Roxanne",
+          "party": "Jynx L28",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

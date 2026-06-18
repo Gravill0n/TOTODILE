@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-union-cave-b-2-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:union-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/UnionCaveB2F.png",
+      "alt": "Union Cave B 2 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-union-cave-b-2-f:north-item",
+        "label": "North Item",
+        "x": 0.825,
+        "y": 0.0694,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-union-cave-b-2-f:center-item",
+        "label": "Center Item",
+        "x": 0.625,
+        "y": 0.5417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

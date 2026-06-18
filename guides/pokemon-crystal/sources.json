@@ -56,6 +56,13 @@
       "url": "https://www.serebii.net/pokearth/johto/",
       "type": "map",
       "retrievedAt": "2026-06-12"
+    },
+    {
+      "id": "src-serebii-trades",
+      "title": "Serebii.net — Pokémon Crystal in-game NPC trades (local snapshot: pokemon-crystal/sources/serebii-crystal-trades.md)",
+      "url": "https://www.serebii.net/crystal/trades.shtml",
+      "type": "other",
+      "retrievedAt": "2026-06-18"
     }
   ]
 }

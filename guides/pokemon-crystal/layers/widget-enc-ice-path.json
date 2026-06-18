@@ -1,0 +1,955 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-ice-path",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ice-path"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:1f-delibird-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Delibird",
+          "levels": "21-23",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:1f-golbat-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Golbat",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:1f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Golbat",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:1f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Golbat",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:1f-swinub-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Swinub",
+          "levels": "21-23",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:1f-swinub-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Swinub",
+          "levels": "21-23",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-delibird-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Delibird",
+          "levels": "21-23",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-golbat-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "29%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "29%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "29%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-jynx-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Jynx",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-jynx-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Jynx",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-sneasel-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Sneasel",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-swinub-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Swinub",
+          "levels": "21-23",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-swinub-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Swinub",
+          "levels": "21-23",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-delibird-grass-nite",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Delibird",
+          "levels": "23-25",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-golbat-grass-day",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Golbat",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-golbat-grass-morn",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Golbat",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Golbat",
+          "levels": "4-26",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-jynx-grass-day",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Jynx",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-jynx-grass-morn",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Jynx",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-sneasel-grass-nite",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Sneasel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-swinub-grass-day",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Swinub",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-swinub-grass-morn",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Swinub",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-zubat-grass-day",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Zubat",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Zubat",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-2-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B2F #2",
+          "species": "Zubat",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-delibird-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Delibird",
+          "levels": "23-25",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-golbat-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Golbat",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Golbat",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Golbat",
+          "levels": "4-26",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-jynx-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Jynx",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-jynx-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Jynx",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-sneasel-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Sneasel",
+          "levels": "22-24",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-swinub-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Swinub",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-swinub-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Swinub",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-zubat-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Zubat",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Zubat",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b2f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Zubat",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-delibird-grass-nite",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Delibird",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-golbat-grass-day",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Golbat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-jynx-grass-day",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Jynx",
+          "levels": "22-26",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-jynx-grass-morn",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Jynx",
+          "levels": "22-26",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-sneasel-grass-nite",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Sneasel",
+          "levels": "22-26",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-swinub-grass-day",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Swinub",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-swinub-grass-morn",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Swinub",
+          "levels": "24-26",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-zubat-grass-day",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Zubat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Zubat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-ice-path:b3f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B3F",
+          "species": "Zubat",
+          "levels": "25",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

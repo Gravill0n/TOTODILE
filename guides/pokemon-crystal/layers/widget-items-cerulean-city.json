@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-cerulean-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:cerulean-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/CeruleanCity.png",
+      "alt": "Cerulean City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-cerulean-city:hidden-item-in-water",
+        "label": "Hidden Item in Water",
+        "x": 0.0625,
+        "y": 0.3472,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-cerulean-city:machine-part-in-water",
+        "label": "Machine Part in Water",
+        "x": 0.7625,
+        "y": 0.6528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

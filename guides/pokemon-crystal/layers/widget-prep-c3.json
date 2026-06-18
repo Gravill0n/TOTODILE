@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c3",
+    "title": "Gym Prep — Whitney",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c3"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c3:whitney-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 20",
+        "note": "For 'Attack of the Mad Cow' — defeat Whitney in Set battle style, using only Johto Pokémon that never exceed Lv 20 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c3:whitney-recommended",
+        "label": "Recommended counter",
+        "note": "Dunsparce again — lead with it, take a hit and use Rage, and even Miltank falls. A Headbutt-caught Heracross from Azalea Town is another good option.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

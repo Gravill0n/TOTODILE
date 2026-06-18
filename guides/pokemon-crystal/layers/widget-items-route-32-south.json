@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-32-south",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:union-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route32South.png",
+      "alt": "Route 32 South map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:hidden-item-north-of-bridge",
+        "label": "Hidden Item North of Bridge",
+        "x": 0.575,
+        "y": 0.0109,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:south-item",
+        "label": "South Item",
+        "x": 0.325,
+        "y": 0.2935,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:hidden-item-by-frieda",
+        "label": "Hidden Item by Frieda",
+        "x": 0.575,
+        "y": 0.5978,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:poison-barb-from-frieda",
+        "label": "Poison Barb from Frieda",
+        "x": 0.625,
+        "y": 0.5978,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:1f-north-item",
+        "label": "1F - North Item",
+        "x": 0.325,
+        "y": 0.8587,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:1f-east-item",
+        "label": "1F - East Item",
+        "x": 0.325,
+        "y": 0.8587,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:1f-west-item",
+        "label": "1F - West Item",
+        "x": 0.325,
+        "y": 0.8587,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:b1f-west-item",
+        "label": "B1F - West Item",
+        "x": 0.325,
+        "y": 0.8587,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:b1f-east-item",
+        "label": "B1F - East Item",
+        "x": 0.325,
+        "y": 0.8587,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:b2f-north-item",
+        "label": "B2F - North Item",
+        "x": 0.325,
+        "y": 0.8587,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:b2f-center-item",
+        "label": "B2F - Center Item",
+        "x": 0.325,
+        "y": 0.8587,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-32-south:1f-south-item",
+        "label": "1F - South Item",
+        "x": 0.325,
+        "y": 0.8587,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

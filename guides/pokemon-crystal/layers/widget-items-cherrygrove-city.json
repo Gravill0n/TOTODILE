@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-cherrygrove-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:cherrygrove-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/CherrygroveCity.png",
+      "alt": "Cherrygrove City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-cherrygrove-city:mystic-water-from-island-man",
+        "label": "Mystic Water from Island Man",
+        "x": 0.1875,
+        "y": 0.6944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-cherrygrove-city:map-card-from-guide",
+        "label": "Map Card from Guide",
+        "x": 0.8125,
+        "y": 0.3611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-cherrygrove-city:map-card-from-guide-2",
+        "label": "Map Card from Guide",
+        "x": 0.8125,
+        "y": 0.3611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

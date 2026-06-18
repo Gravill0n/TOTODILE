@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-celadon-city",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:celadon-city"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-celadon-city:beauty-julia",
+        "cells": {
+          "trainer-class": "Beauty",
+          "trainer-name": "Julia",
+          "party": "Paras L32; Exeggcute L32; Parasect L35",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-celadon-city:gym-leader-erika",
+        "cells": {
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Erika",
+          "party": "Tangela L42; Jumpluff L41; Victreebel L46; Bellossom L46",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-celadon-city:lass-michelle",
+        "cells": {
+          "trainer-class": "Lass",
+          "trainer-name": "Michelle",
+          "party": "Skiploom L32; Hoppip L33; Jumpluff L34",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-celadon-city:picnicker-tanya",
+        "cells": {
+          "trainer-class": "Picnicker",
+          "trainer-name": "Tanya",
+          "party": "Exeggutor L37",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-celadon-city:twins-jo-zoe",
+        "cells": {
+          "trainer-class": "Twins",
+          "trainer-name": "Jo & Zoe",
+          "party": "Victreebel L35; Vileplume L35",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

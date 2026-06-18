@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-rock-tunnel-1-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:rock-tunnel"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/RockTunnel1F.png",
+      "alt": "Rock Tunnel 1 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-rock-tunnel-1-f:1f-west-item",
+        "label": "1F - West Item",
+        "x": 0.15,
+        "y": 0.5139,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-rock-tunnel-1-f:center-item",
+        "label": "Center Item",
+        "x": 0.35,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-rock-tunnel-1-f:southeast-hidden-item",
+        "label": "Southeast Hidden Item",
+        "x": 0.7167,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-rock-tunnel-1-f:northeast-hidden-item",
+        "label": "Northeast Hidden Item",
+        "x": 0.8167,
+        "y": 0.125,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

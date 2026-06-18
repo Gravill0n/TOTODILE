@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-2",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-2"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-2:bug-catcher-doug",
+        "cells": {
+          "trainer-class": "Bug Catcher",
+          "trainer-name": "Doug",
+          "party": "Ariados L34",
+          "battle-type": "Single",
+          "reward": "$544"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-2:bug-catcher-ed",
+        "cells": {
+          "trainer-class": "Bug Catcher",
+          "trainer-name": "Ed",
+          "party": "Beedrill L30; Beedrill L30; Beedrill L30",
+          "battle-type": "Single",
+          "reward": "$480"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-2:bug-catcher-rob",
+        "cells": {
+          "trainer-class": "Bug Catcher",
+          "trainer-name": "Rob",
+          "party": "Beedrill L32; Butterfree L32",
+          "battle-type": "Single",
+          "reward": "$512"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

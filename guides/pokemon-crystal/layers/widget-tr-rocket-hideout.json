@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-rocket-hideout",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:rocket-hideout"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-rocket-hideout:rocket-executive",
+        "cells": {
+          "trainer-class": "Rocket Executive",
+          "party": "Zubat L22; Raticate L24; Koffing L22",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-rocket-hideout:rocket-grunt",
+        "cells": {
+          "trainer-class": "Rocket Grunt",
+          "party": "Ekans L18; Gloom L18",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-rocket-hideout:rocket-grunt-2",
+        "cells": {
+          "trainer-class": "Rocket Grunt",
+          "party": "Raticate L19",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-rocket-hideout:scientist-mitch",
+        "cells": {
+          "trainer-class": "Scientist",
+          "trainer-name": "Mitch",
+          "party": "Ditto L24",
+          "battle-type": "Single",
+          "reward": "$2400"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-rocket-hideout:scientist-ross",
+        "cells": {
+          "trainer-class": "Scientist",
+          "trainer-name": "Ross",
+          "party": "Koffing L22; Koffing L22",
+          "battle-type": "Single",
+          "reward": "$2200"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

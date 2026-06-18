@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c8",
+    "title": "Gym Prep — Clair",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c8"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c8:clair-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 40",
+        "note": "For 'Down to the Last Breath' — defeat Clair in Set battle style, using only Johto Pokémon that never exceed Lv 40 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c8:clair-recommended",
+        "label": "Recommended counter",
+        "note": "Swinub from the cave right before Blackthorn City is part Ice — Clair's worst nightmare, and a great pick for the rest of the game. Grab one, or two.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-olivine-lighthouse-2-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:olivine-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/OlivineLighthouse2F.png",
+      "alt": "Olivine Lighthouse 2 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-olivine-lighthouse-2-f:protein-from-huey",
+        "label": "Protein from Huey",
+        "x": 0.475,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

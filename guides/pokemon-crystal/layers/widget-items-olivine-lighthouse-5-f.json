@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-olivine-lighthouse-5-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:olivine-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/OlivineLighthouse5F.png",
+      "alt": "Olivine Lighthouse 5 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-olivine-lighthouse-5-f:east-item",
+        "label": "East Item",
+        "x": 0.775,
+        "y": 0.6944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-lighthouse-5-f:center-item",
+        "label": "Center Item",
+        "x": 0.325,
+        "y": 0.8611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-lighthouse-5-f:southwest-item",
+        "label": "Southwest Item",
+        "x": 0.125,
+        "y": 0.75,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-lighthouse-5-f:hidden-item",
+        "label": "Hidden Item",
+        "x": 0.175,
+        "y": 0.75,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

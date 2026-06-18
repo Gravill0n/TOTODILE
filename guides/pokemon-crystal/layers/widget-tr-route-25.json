@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-25",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-25"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-25:camper-lloyd",
+        "cells": {
+          "trainer-class": "Camper",
+          "trainer-name": "Lloyd",
+          "party": "Nidoking L34",
+          "battle-type": "Single",
+          "reward": "$680"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-25:cool-trainer-kevin",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Kevin",
+          "party": "Rhyhorn L38; Charmeleon L35; Wartortle L35",
+          "battle-type": "Single",
+          "reward": "$1680"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-25:lass-ellen",
+        "cells": {
+          "trainer-class": "Lass",
+          "trainer-name": "Ellen",
+          "party": "Wigglytuff L30; Granbull L34",
+          "battle-type": "Single",
+          "reward": "$816"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-25:lass-laura",
+        "cells": {
+          "trainer-class": "Lass",
+          "trainer-name": "Laura",
+          "party": "Gloom L28; Pidgeotto L31; Bellossom L31",
+          "battle-type": "Single",
+          "reward": "$744"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-25:lass-shannon",
+        "cells": {
+          "trainer-class": "Lass",
+          "trainer-name": "Shannon",
+          "party": "Paras L29; Paras L29; Parasect L32",
+          "battle-type": "Single",
+          "reward": "$768"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-25:school-kid-dudley",
+        "cells": {
+          "trainer-class": "School Kid",
+          "trainer-name": "Dudley",
+          "party": "Oddish L35",
+          "battle-type": "Single",
+          "reward": "$900"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-25:school-kid-joe",
+        "cells": {
+          "trainer-class": "School Kid",
+          "trainer-name": "Joe",
+          "party": "Tangela L33; Vaporeon L33",
+          "battle-type": "Single",
+          "reward": "$840"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-25:super-nerd-pat",
+        "cells": {
+          "trainer-class": "Super Nerd",
+          "trainer-name": "Pat",
+          "party": "Porygon L36",
+          "battle-type": "Single",
+          "reward": "$1152"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

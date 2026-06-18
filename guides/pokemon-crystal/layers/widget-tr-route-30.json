@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-30",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-30"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-30:bug-catcher-don",
+        "cells": {
+          "trainer-class": "Bug Catcher",
+          "trainer-name": "Don",
+          "party": "Caterpie L3; Caterpie L3",
+          "battle-type": "Single",
+          "reward": "$48"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-30:youngster-joey",
+        "cells": {
+          "trainer-class": "Youngster",
+          "trainer-name": "Joey",
+          "party": "Rattata L4",
+          "battle-type": "Single",
+          "reward": "$64",
+          "notes": "Phone rematches (×4, up to L34)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-30:youngster-mikey",
+        "cells": {
+          "trainer-class": "Youngster",
+          "trainer-name": "Mikey",
+          "party": "Pidgey L2; Rattata L4",
+          "battle-type": "Single",
+          "reward": "$64"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

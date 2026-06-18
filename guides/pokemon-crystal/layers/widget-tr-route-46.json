@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-46",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-46"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-46:camper-ted",
+        "cells": {
+          "trainer-class": "Camper",
+          "trainer-name": "Ted",
+          "party": "Mankey L17",
+          "battle-type": "Single",
+          "reward": "$340"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-46:hiker-bailey",
+        "cells": {
+          "trainer-class": "Hiker",
+          "trainer-name": "Bailey",
+          "party": "Geodude L13; Geodude L13; Geodude L13; Geodude L13; Geodude L13",
+          "battle-type": "Single",
+          "reward": "$416"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-46:picnicker-erin",
+        "cells": {
+          "trainer-class": "Picnicker",
+          "trainer-name": "Erin",
+          "party": "Ponyta L16; Ponyta L16",
+          "battle-type": "Single",
+          "reward": "$320",
+          "notes": "Phone rematches (×2, up to L36)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

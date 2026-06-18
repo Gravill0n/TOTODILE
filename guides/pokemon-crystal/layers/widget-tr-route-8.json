@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-8",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-8"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-8:biker-dwayne",
+        "cells": {
+          "trainer-class": "Biker",
+          "trainer-name": "Dwayne",
+          "party": "Koffing L27; Koffing L28; Koffing L29; Koffing L30",
+          "battle-type": "Single",
+          "reward": "$960"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-8:biker-harris",
+        "cells": {
+          "trainer-class": "Biker",
+          "trainer-name": "Harris",
+          "party": "Flareon L34",
+          "battle-type": "Single",
+          "reward": "$1088"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-8:biker-zeke",
+        "cells": {
+          "trainer-class": "Biker",
+          "trainer-name": "Zeke",
+          "party": "Koffing L32; Koffing L32",
+          "battle-type": "Single",
+          "reward": "$1024"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-8:super-nerd-sam",
+        "cells": {
+          "trainer-class": "Super Nerd",
+          "trainer-name": "Sam",
+          "party": "Grimer L34; Muk L34",
+          "battle-type": "Single",
+          "reward": "$1088"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-8:super-nerd-tom",
+        "cells": {
+          "trainer-class": "Super Nerd",
+          "trainer-name": "Tom",
+          "party": "Magnemite L32; Magnemite L32; Magnemite L32",
+          "battle-type": "Single",
+          "reward": "$1024"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

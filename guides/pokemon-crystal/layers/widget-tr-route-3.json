@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-3",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-3"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-3:firebreather-burt",
+        "cells": {
+          "trainer-class": "Firebreather",
+          "trainer-name": "Burt",
+          "party": "Weezing L32; Slugma L32",
+          "battle-type": "Single",
+          "reward": "$1536"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-3:firebreather-otis",
+        "cells": {
+          "trainer-class": "Firebreather",
+          "trainer-name": "Otis",
+          "party": "Magmar L29; Weezing L32; Magmar L29",
+          "battle-type": "Single",
+          "reward": "$1392"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-3:jimmy",
+        "cells": {
+          "trainer-name": "Jimmy",
+          "party": "Raticate L33; Arbok L33",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-3:youngster-warren",
+        "cells": {
+          "trainer-class": "Youngster",
+          "trainer-name": "Warren",
+          "party": "Fearow L35",
+          "battle-type": "Single",
+          "reward": "$560"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

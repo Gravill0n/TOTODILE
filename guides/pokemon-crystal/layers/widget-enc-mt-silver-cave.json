@@ -1,0 +1,1435 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-mt-silver-cave",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mt-silver-cave"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-golbat-grass-day",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Golbat",
+          "levels": "51",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-golbat-grass-morn",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Golbat",
+          "levels": "51",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-golbat-grass-nite",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Golbat",
+          "levels": "49-53",
+          "method": "grass",
+          "rarity": "45%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-golduck-grass-nite",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Golduck",
+          "levels": "45",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-graveler-grass-day",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Graveler",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-graveler-grass-morn",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Graveler",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-graveler-grass-nite",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Graveler",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-larvitar-grass-day",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Larvitar",
+          "levels": "15-20",
+          "method": "grass",
+          "rarity": "9%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-larvitar-grass-morn",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Larvitar",
+          "levels": "15-20",
+          "method": "grass",
+          "rarity": "9%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-onix-grass-day",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Onix",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-onix-grass-morn",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Onix",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-onix-grass-nite",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Onix",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-pupitar-grass-day",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Pupitar",
+          "levels": "20",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-pupitar-grass-morn",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Pupitar",
+          "levels": "20",
+          "method": "grass",
+          "rarity": "1%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-ursaring-grass-day",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Ursaring",
+          "levels": "50",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-deepest-ursaring-grass-morn",
+        "cells": {
+          "sub-area": "Deepest",
+          "species": "Ursaring",
+          "levels": "50",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-golbat-grass-day",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Golbat",
+          "levels": "45",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-golbat-grass-morn",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Golbat",
+          "levels": "45",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-golbat-grass-nite",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Golbat",
+          "levels": "42-46",
+          "method": "grass",
+          "rarity": "45%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-golduck-grass-nite",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Golduck",
+          "levels": "45",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-graveler-grass-day",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Graveler",
+          "levels": "43",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-graveler-grass-morn",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Graveler",
+          "levels": "43",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-graveler-grass-nite",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Graveler",
+          "levels": "43",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-larvitar-grass-day",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Larvitar",
+          "levels": "15-20",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-larvitar-grass-morn",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Larvitar",
+          "levels": "15-20",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-magmar-grass-day",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Magmar",
+          "levels": "45",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-magmar-grass-morn",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Magmar",
+          "levels": "45",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-onix-grass-day",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Onix",
+          "levels": "42",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-onix-grass-morn",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Onix",
+          "levels": "42",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-onix-grass-nite",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Onix",
+          "levels": "42",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-ursaring-grass-day",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Ursaring",
+          "levels": "44",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-entrance-ursaring-grass-morn",
+        "cells": {
+          "sub-area": "Entrance",
+          "species": "Ursaring",
+          "levels": "44",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-golbat-grass-day",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Golbat",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-golbat-grass-morn",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Golbat",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-golbat-grass-nite",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Golbat",
+          "levels": "46-48",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-goldeen-good-rod-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Goldeen",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-goldeen-old-rod-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Goldeen",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-goldeen-super-rod-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Goldeen",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "70%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-goldeen-surf-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Goldeen",
+          "levels": "35-39",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-golduck-grass-nite",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Golduck",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-golduck-surf-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Golduck",
+          "levels": "35-39",
+          "method": "surf",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-larvitar-grass-day",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Larvitar",
+          "levels": "15-20",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-larvitar-grass-morn",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Larvitar",
+          "levels": "15-20",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-machoke-grass-day",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Machoke",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-machoke-grass-morn",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Machoke",
+          "levels": "48",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-magikarp-super-rod-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Magikarp",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-misdreavus-grass-nite",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Misdreavus",
+          "levels": "45",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-parasect-grass-day",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Parasect",
+          "levels": "46-48",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-parasect-grass-morn",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Parasect",
+          "levels": "46-48",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-parasect-grass-nite",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Parasect",
+          "levels": "46-48",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-seaking-super-rod-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Seaking",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-seaking-surf-any",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Seaking",
+          "levels": "35-44",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-ursaring-grass-day",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Ursaring",
+          "levels": "47",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-inside-ursaring-grass-morn",
+        "cells": {
+          "sub-area": "Inside",
+          "species": "Ursaring",
+          "levels": "47",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-arbok-grass-day",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Arbok",
+          "levels": "42",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-arbok-grass-morn",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Arbok",
+          "levels": "42",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-dodrio-grass-day",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Dodrio",
+          "levels": "43",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-dodrio-grass-morn",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Dodrio",
+          "levels": "43",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-doduo-grass-day",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Doduo",
+          "levels": "41",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-doduo-grass-morn",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Doduo",
+          "levels": "41",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-golbat-grass-nite",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Golbat",
+          "levels": "40-44",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-magikarp-super-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Magikarp",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-poliwag-good-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwag",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-poliwag-old-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwag",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-poliwag-super-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwag",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "70%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-poliwag-surf-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwag",
+          "levels": "35-39",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-poliwhirl-grass-nite",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwhirl",
+          "levels": "42-44",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-poliwhirl-super-rod-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwhirl",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-poliwhirl-surf-any",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Poliwhirl",
+          "levels": "35-44",
+          "method": "surf",
+          "rarity": "90%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-ponyta-grass-day",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Ponyta",
+          "levels": "42",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-ponyta-grass-morn",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Ponyta",
+          "levels": "42",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-rapidash-grass-day",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Rapidash",
+          "levels": "44",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-rapidash-grass-morn",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Rapidash",
+          "levels": "44",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-tangela-grass-day",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Tangela",
+          "levels": "41",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-tangela-grass-morn",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Tangela",
+          "levels": "41",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-outside-tangela-grass-nite",
+        "cells": {
+          "sub-area": "Outside",
+          "species": "Tangela",
+          "levels": "41",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-waterfall-cave-golbat-grass-day",
+        "cells": {
+          "sub-area": "Waterfall Cave",
+          "species": "Golbat",
+          "levels": "46-50",
+          "method": "grass",
+          "rarity": "80%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-waterfall-cave-golbat-grass-morn",
+        "cells": {
+          "sub-area": "Waterfall Cave",
+          "species": "Golbat",
+          "levels": "46-50",
+          "method": "grass",
+          "rarity": "80%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-waterfall-cave-golbat-grass-nite",
+        "cells": {
+          "sub-area": "Waterfall Cave",
+          "species": "Golbat",
+          "levels": "48-50",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-waterfall-cave-misdreavus-grass-nite",
+        "cells": {
+          "sub-area": "Waterfall Cave",
+          "species": "Misdreavus",
+          "levels": "45",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-waterfall-cave-parasect-grass-day",
+        "cells": {
+          "sub-area": "Waterfall Cave",
+          "species": "Parasect",
+          "levels": "46-50",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-waterfall-cave-parasect-grass-morn",
+        "cells": {
+          "sub-area": "Waterfall Cave",
+          "species": "Parasect",
+          "levels": "46-50",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-silver-cave:silver-cave-waterfall-cave-parasect-grass-nite",
+        "cells": {
+          "sub-area": "Waterfall Cave",
+          "species": "Parasect",
+          "levels": "46-52",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

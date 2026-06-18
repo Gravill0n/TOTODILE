@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-32",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-32"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-32:bird-keeper-peter",
+        "cells": {
+          "trainer-class": "Bird Keeper",
+          "trainer-name": "Peter",
+          "party": "Pidgey L6; Pidgey L6; Spearow L8",
+          "battle-type": "Single",
+          "reward": "$192"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-32:camper-roland",
+        "cells": {
+          "trainer-class": "Camper",
+          "trainer-name": "Roland",
+          "party": "Nidoran♂ L9",
+          "battle-type": "Single",
+          "reward": "$180"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-32:fisherman-henry",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Henry",
+          "party": "Poliwag L8; Poliwag L8",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-32:fisherman-justin",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Justin",
+          "party": "Magikarp L5; Magikarp L5; Magikarp L15; Magikarp L5",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-32:fisherman-ralph",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Ralph",
+          "party": "Goldeen L10",
+          "battle-type": "Single",
+          "notes": "Phone rematches (×4, up to L39)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-32:picnicker-liz",
+        "cells": {
+          "trainer-class": "Picnicker",
+          "trainer-name": "Liz",
+          "party": "Nidoran♀ L9",
+          "battle-type": "Single",
+          "reward": "$180",
+          "notes": "Phone rematches (×3, up to L26)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-32:youngster-albert",
+        "cells": {
+          "trainer-class": "Youngster",
+          "trainer-name": "Albert",
+          "party": "Rattata L6; Zubat L8",
+          "battle-type": "Single",
+          "reward": "$128"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-32:youngster-gordon",
+        "cells": {
+          "trainer-class": "Youngster",
+          "trainer-name": "Gordon",
+          "party": "Wooper L10",
+          "battle-type": "Single",
+          "reward": "$160"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

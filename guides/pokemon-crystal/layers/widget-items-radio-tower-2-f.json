@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-radio-tower-2-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:goldenrod-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/RadioTower2F.png",
+      "alt": "Radio Tower 2 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-radio-tower-2-f:2f-blue-card-from-buena",
+        "label": "2F - Blue Card from Buena",
+        "x": 0.8056,
+        "y": 0.6875,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-radio-tower-2-f:2f-blue-card-shop-2-points",
+        "label": "2F - Blue Card Shop - 2 Points",
+        "x": 0.6944,
+        "y": 0.9375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-radio-tower-2-f:2f-blue-card-shop-3-points",
+        "label": "2F - Blue Card Shop - 3 Points",
+        "x": 0.6944,
+        "y": 0.9375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-radio-tower-2-f:2f-blue-card-shop-5-points",
+        "label": "2F - Blue Card Shop - 5 Points",
+        "x": 0.6944,
+        "y": 0.9375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

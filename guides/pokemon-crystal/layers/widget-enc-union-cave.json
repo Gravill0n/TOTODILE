@@ -1,0 +1,1243 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-union-cave",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:union-cave"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-geodude-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-geodude-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-geodude-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-goldeen-good-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Goldeen",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-goldeen-old-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Goldeen",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-goldeen-super-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Goldeen",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "70%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-magikarp-super-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Magikarp",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-onix-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Onix",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-onix-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Onix",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-onix-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Onix",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-quagsire-surf-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Quagsire",
+          "levels": "15-24",
+          "method": "surf",
+          "rarity": "40%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-rattata-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rattata",
+          "levels": "4",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-rattata-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rattata",
+          "levels": "4",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-rattata-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rattata",
+          "levels": "4-6",
+          "method": "grass",
+          "rarity": "40%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-sandshrew-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Sandshrew",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-sandshrew-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Sandshrew",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-seaking-super-rod-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Seaking",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-wooper-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Wooper",
+          "levels": "5",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-wooper-surf-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Wooper",
+          "levels": "15-19",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "5-7",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "5-7",
+          "method": "grass",
+          "rarity": "25%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "7",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-geodude-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Geodude",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-geodude-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Geodude",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-geodude-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Geodude",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-goldeen-good-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Goldeen",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "65%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-goldeen-old-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Goldeen",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-goldeen-super-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Goldeen",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "70%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-magikarp-super-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Magikarp",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-onix-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Onix",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-onix-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Onix",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-onix-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Onix",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-quagsire-surf-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Quagsire",
+          "levels": "15-24",
+          "method": "surf",
+          "rarity": "40%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-rattata-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Rattata",
+          "levels": "6-8",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-rattata-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Rattata",
+          "levels": "6-8",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-rattata-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Rattata",
+          "levels": "6-8",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-seaking-super-rod-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Seaking",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-wooper-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Wooper",
+          "levels": "8",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-wooper-surf-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Wooper",
+          "levels": "15-19",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "6-8",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "6-8",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "6",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-chinchou-good-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Chinchou",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-chinchou-super-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Chinchou",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "40%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-geodude-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Geodude",
+          "levels": "20",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-geodude-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Geodude",
+          "levels": "20",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-geodude-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Geodude",
+          "levels": "20",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-golbat-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Golbat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Golbat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Golbat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-lanturn-super-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Lanturn",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-magikarp-good-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Magikarp",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-magikarp-old-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Magikarp",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "85%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-onix-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Onix",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-onix-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Onix",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-onix-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Onix",
+          "levels": "23",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-quagsire-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Quagsire",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-quagsire-surf-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Quagsire",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-raticate-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Raticate",
+          "levels": "21",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-raticate-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Raticate",
+          "levels": "21",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-raticate-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Raticate",
+          "levels": "21",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-shellder-good-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Shellder",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-shellder-super-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Shellder",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-tentacool-good-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Tentacool",
+          "levels": "20",
+          "method": "good-rod",
+          "rarity": "35%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-tentacool-old-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Tentacool",
+          "levels": "10",
+          "method": "old-rod",
+          "rarity": "15%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-tentacool-surf-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Tentacool",
+          "levels": "15-19",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-tentacruel-super-rod-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Tentacruel",
+          "levels": "40",
+          "method": "super-rod",
+          "rarity": "20%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-tentacruel-surf-any",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Tentacruel",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-zubat-grass-day",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Zubat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Zubat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "50%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-union-cave:b2f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B2F",
+          "species": "Zubat",
+          "levels": "22",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

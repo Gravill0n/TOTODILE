@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-31",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:dark-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route31.png",
+      "alt": "Route 31 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-31:hidden-item",
+        "label": "Hidden Item",
+        "x": 0.8625,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-31:southeast-item-left",
+        "label": "Southeast Item (Left)",
+        "x": 0.8625,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-31:southeast-item-right",
+        "label": "Southeast Item (Right)",
+        "x": 0.8625,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-31:northeast-item",
+        "label": "Northeast Item",
+        "x": 0.8625,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-31:west-item",
+        "label": "West Item",
+        "x": 0.8625,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-31:northeast-item-2",
+        "label": "Northeast Item",
+        "x": 0.7375,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-31:berry-tree",
+        "label": "Berry Tree",
+        "x": 0.4125,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-31:berry-from-wade",
+        "label": "Berry from Wade",
+        "x": 0.5375,
+        "y": 0.75,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-31:south-item",
+        "label": "South Item",
+        "x": 0.4875,
+        "y": 0.8611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-31:tm50-for-delivering-kenya",
+        "label": "TM50 for delivering Kenya",
+        "x": 0.4375,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

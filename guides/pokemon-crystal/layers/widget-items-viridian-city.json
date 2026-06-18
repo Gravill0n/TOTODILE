@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-viridian-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:viridian-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/ViridianCity.png",
+      "alt": "Viridian City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-viridian-city:tm42-from-sleepy-guy",
+        "label": "TM42 from Sleepy Guy",
+        "x": 0.1625,
+        "y": 0.6528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

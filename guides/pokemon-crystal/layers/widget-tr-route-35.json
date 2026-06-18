@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-35",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-35"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-35:bird-keeper-bryan",
+        "cells": {
+          "trainer-class": "Bird Keeper",
+          "trainer-name": "Bryan",
+          "party": "Pidgey L12; Pidgeotto L14",
+          "battle-type": "Single",
+          "reward": "$336"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-35:bug-catcher-arnie",
+        "cells": {
+          "trainer-class": "Bug Catcher",
+          "trainer-name": "Arnie",
+          "party": "Venonat L15",
+          "battle-type": "Single",
+          "reward": "$240",
+          "notes": "Phone rematches (×4, up to L40)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-35:bug-catcher-walt",
+        "cells": {
+          "trainer-class": "Bug Catcher",
+          "trainer-name": "Walt",
+          "party": "Magmar L13; Magmar L13",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-35:camper-elliot",
+        "cells": {
+          "trainer-class": "Camper",
+          "trainer-name": "Elliot",
+          "party": "Sandshrew L13; Marill L15",
+          "battle-type": "Single",
+          "reward": "$300"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-35:camper-ivan",
+        "cells": {
+          "trainer-class": "Camper",
+          "trainer-name": "Ivan",
+          "party": "Diglett L10; Zubat L10; Diglett L14",
+          "battle-type": "Single",
+          "reward": "$280"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-35:juggler-irwin",
+        "cells": {
+          "trainer-class": "Juggler",
+          "trainer-name": "Irwin",
+          "party": "Voltorb L2; Voltorb L6; Voltorb L10; Voltorb L14",
+          "battle-type": "Single",
+          "reward": "$560",
+          "notes": "Phone rematches (×2, up to L30)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-35:officer-dirk",
+        "cells": {
+          "trainer-class": "Officer",
+          "trainer-name": "Dirk",
+          "party": "Growlithe L14; Growlithe L14",
+          "battle-type": "Single",
+          "reward": "$560"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-35:picnicker-brooke",
+        "cells": {
+          "trainer-class": "Picnicker",
+          "trainer-name": "Brooke",
+          "party": "Pikachu L16",
+          "battle-type": "Single",
+          "reward": "$320"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-35:picnicker-kim",
+        "cells": {
+          "trainer-class": "Picnicker",
+          "trainer-name": "Kim",
+          "party": "Vulpix L15",
+          "battle-type": "Single",
+          "reward": "$300"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

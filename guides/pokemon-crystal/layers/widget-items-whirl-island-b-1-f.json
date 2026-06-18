@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-whirl-island-b-1-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:whirl-islands"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/WhirlIslandB1F.png",
+      "alt": "Whirl Island B 1 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-1-f:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.8375,
+        "y": 0.6528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-1-f:southwest-item",
+        "label": "Southwest Item",
+        "x": 0.0625,
+        "y": 0.5139,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-1-f:south-item",
+        "label": "South Item",
+        "x": 0.4875,
+        "y": 0.7361,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-1-f:northwest-item",
+        "label": "Northwest Item",
+        "x": 0.1875,
+        "y": 0.375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-1-f:hidden-item-on-boulder-in-west",
+        "label": "Hidden Item on Boulder in West",
+        "x": 0.0625,
+        "y": 0.6528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-1-f:northeast-hidden-item",
+        "label": "Northeast Hidden Item",
+        "x": 0.7625,
+        "y": 0.125,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-1-f:southeast-hidden-item",
+        "label": "Southeast Hidden Item",
+        "x": 0.9125,
+        "y": 0.5139,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-1-f:north-item",
+        "label": "North Item",
+        "x": 0.4375,
+        "y": 0.2361,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

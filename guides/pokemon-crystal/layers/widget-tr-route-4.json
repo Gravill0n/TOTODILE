@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-4",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-4"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-4:bird-keeper-hank",
+        "cells": {
+          "trainer-class": "Bird Keeper",
+          "trainer-name": "Hank",
+          "party": "Pidgey L12; Pidgeot L34",
+          "battle-type": "Single",
+          "reward": "$816"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-4:picnicker-hope",
+        "cells": {
+          "trainer-class": "Picnicker",
+          "trainer-name": "Hope",
+          "party": "Flaaffy L34",
+          "battle-type": "Single",
+          "reward": "$680"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-4:picnicker-sharon",
+        "cells": {
+          "trainer-class": "Picnicker",
+          "trainer-name": "Sharon",
+          "party": "Furret L31; Rapidash L33",
+          "battle-type": "Single",
+          "reward": "$660"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

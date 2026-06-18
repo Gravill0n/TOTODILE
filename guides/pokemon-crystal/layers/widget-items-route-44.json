@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-44",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ice-path"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route44.png",
+      "alt": "Route 44 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-44:1f-hm07-in-itemball",
+        "label": "1F - HM07 in Itemball",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:1f-southeast-item",
+        "label": "1F - Southeast Item",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:1f-east-item",
+        "label": "1F - East Item",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:b1f-hidden-item-on-boulder",
+        "label": "B1F - Hidden Item on Boulder",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:b1f-item",
+        "label": "B1F - Item",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:b2f-hidden-item-on-boulder",
+        "label": "B2F - Hidden Item on Boulder",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:b2f-southeast-item",
+        "label": "B2F - Southeast Item",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:b2f-hidden-item-in-corner",
+        "label": "B2F - Hidden Item in Corner",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:b2f-northwest-item",
+        "label": "B2F - Northwest Item",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:b2f-center-item",
+        "label": "B2F - Center Item",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:b3f-item",
+        "label": "B3F - Item",
+        "x": 0.9417,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:berry-tree",
+        "label": "Berry Tree",
+        "x": 0.1583,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:west-item",
+        "label": "West Item",
+        "x": 0.2417,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:center-item-across-water",
+        "label": "Center Item across Water",
+        "x": 0.5083,
+        "y": 0.4722,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:hidden-item-across-water",
+        "label": "Hidden Item across Water",
+        "x": 0.5417,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:poke-ball-from-wilton",
+        "label": "Poke Ball from Wilton",
+        "x": 0.5917,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:east-item",
+        "label": "East Item",
+        "x": 0.7583,
+        "y": 0.25,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-44:carbos-from-vance",
+        "label": "Carbos from Vance",
+        "x": 0.8583,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

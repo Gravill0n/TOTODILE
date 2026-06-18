@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-25",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-25"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route25.png",
+      "alt": "Route 25 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-25:hidden-item-in-tree",
+        "label": "Hidden Item in Tree",
+        "x": 0.075,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-25:item-behind-cut-tree",
+        "label": "Item behind Cut Tree",
+        "x": 0.5417,
+        "y": 0.25,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-25:nugget-bridge-prize",
+        "label": "Nugget Bridge Prize",
+        "x": 0.625,
+        "y": 0.4722,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-25:pok-mon-request-rewards",
+        "label": "Pokémon Request Rewards",
+        "x": 0.7917,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "flagged"
+      }
+    ]
+  }
+}

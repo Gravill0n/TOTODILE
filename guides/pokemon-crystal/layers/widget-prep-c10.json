@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c10",
+    "title": "Gym Prep — Lt. Surge",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c10"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c10:surge-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 46",
+        "note": "For 'Shock to the System' — defeat Lt. Surge in Set battle style, using only Johto Pokémon that never exceed Lv 46 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c10:surge-recommended",
+        "label": "Recommended counter",
+        "note": "The cap is higher than the League's, so reuse your League team — especially Piloswine. Low difficulty, unlikely to give trouble.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-blackthorn-city",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:blackthorn-city"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-blackthorn-city:cool-trainer-fran",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Fran",
+          "party": "Seadra L37",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-blackthorn-city:cool-trainer-lola",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Lola",
+          "party": "Dratini L34; Dragonair L36",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-blackthorn-city:cool-trainer-mike",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Mike",
+          "party": "Dragonair L37",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-blackthorn-city:cool-trainer-paul",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Paul",
+          "party": "Dratini L34; Dratini L34; Dratini L34",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-blackthorn-city:gym-leader-clair",
+        "cells": {
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Clair",
+          "party": "Dragonair L37; Dragonair L37; Dragonair L37; Kingdra L40",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

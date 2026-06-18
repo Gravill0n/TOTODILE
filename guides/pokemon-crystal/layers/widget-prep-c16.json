@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c16",
+    "title": "Gym Prep — Brock",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c16"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c16:brock-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 44",
+        "note": "For 'Gneiss Try, Mr. Jelly Donut!' — defeat Brock in Set battle style, using only Johto Pokémon that never exceed Lv 44 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c16:brock-recommended",
+        "label": "Recommended counter",
+        "note": "Likely over-levelled here — catch Lanturns with a Super Rod or a Skarmory; an unused Suicune is a top pick.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

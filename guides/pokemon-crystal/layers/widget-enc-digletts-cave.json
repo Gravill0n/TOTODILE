@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-digletts-cave",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:digletts-cave"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-digletts-cave:diglett-s-cave-diglett-grass-day",
+        "cells": {
+          "species": "Diglett",
+          "levels": "2-16",
+          "method": "grass",
+          "rarity": "90%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-digletts-cave:diglett-s-cave-diglett-grass-morn",
+        "cells": {
+          "species": "Diglett",
+          "levels": "3-24",
+          "method": "grass",
+          "rarity": "90%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-digletts-cave:diglett-s-cave-diglett-grass-nite",
+        "cells": {
+          "species": "Diglett",
+          "levels": "4-32",
+          "method": "grass",
+          "rarity": "90%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-digletts-cave:diglett-s-cave-dugtrio-grass-day",
+        "cells": {
+          "species": "Dugtrio",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-digletts-cave:diglett-s-cave-dugtrio-grass-morn",
+        "cells": {
+          "species": "Dugtrio",
+          "levels": "24",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-digletts-cave:diglett-s-cave-dugtrio-grass-nite",
+        "cells": {
+          "species": "Dugtrio",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

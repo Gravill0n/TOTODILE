@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-celadon-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:celadon-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/CeladonCity.png",
+      "alt": "Celadon City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-celadon-city:hidden-item-at-dead-end",
+        "label": "Hidden Item at Dead End",
+        "x": 0.9375,
+        "y": 0.5972,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-celadon-city:tm03-from-man-on-mansion-roof",
+        "label": "TM03 from Man on Mansion Roof",
+        "x": 0.425,
+        "y": 0.0972,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-celadon-city:leftovers-from-cafe",
+        "label": "Leftovers from Cafe",
+        "x": 0.6375,
+        "y": 0.8194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-celadon-city:1f-buy-water-stone",
+        "label": "1F - Buy Water Stone",
+        "x": 0.1125,
+        "y": 0.2639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

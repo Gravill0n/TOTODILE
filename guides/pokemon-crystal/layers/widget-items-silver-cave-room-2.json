@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-silver-cave-room-2",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mt-silver-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/SilverCaveRoom2.png",
+      "alt": "Silver Cave Room 2 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-room-2:northeast-item",
+        "label": "Northeast Item",
+        "x": 0.8167,
+        "y": 0.2917,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-room-2:hidden-item",
+        "label": "Hidden Item",
+        "x": 0.4833,
+        "y": 0.875,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-room-2:west-item",
+        "label": "West Item",
+        "x": 0.15,
+        "y": 0.5694,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-room-2:east-item",
+        "label": "East Item",
+        "x": 0.75,
+        "y": 0.6806,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

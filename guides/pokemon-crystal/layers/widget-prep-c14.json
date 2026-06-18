@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c14",
+    "title": "Gym Prep — Erika",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c14"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c14:erika-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 46",
+        "note": "For 'Slicing the Blades of Yesterday' — defeat Erika in Set battle style, using only Johto Pokémon that never exceed Lv 46 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c14:erika-recommended",
+        "label": "Recommended counter",
+        "note": "If over the cap, catch a Skarmory, use the Legendary Beasts, or bring a high-friendship Pokémon with Return.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

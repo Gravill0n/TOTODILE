@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c10",
+    "title": "Oak Challenge Catch List",
+    "type": "checklist",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c10"
+    },
+    "deckPosition": 8,
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315252",
+        "label": "Electabuzz",
+        "note": "Catch a Electabuzz. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315253",
+        "label": "Kangaskhan",
+        "note": "Catch a Kangaskhan. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315254",
+        "label": "Murkrow",
+        "note": "Catch a Murkrow. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315255",
+        "label": "Houndour",
+        "note": "Catch a Houndour. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315256",
+        "label": "Houndoom",
+        "note": "Evolve Houndour to Houndoom. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315257",
+        "label": "Grimer",
+        "note": "Catch a Grimer. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315258",
+        "label": "Muk",
+        "note": "Catch a Muk or evolve Grimer to Muk. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315259",
+        "label": "Porygon",
+        "note": "Obtain a Porygon at the Game Corner. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315301",
+        "label": "Larvitar",
+        "note": "Obtain a Larvitar at the Game Corner. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315260",
+        "label": "Pupitar",
+        "note": "Evolve Larvitar to Pupitar. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315261",
+        "label": "Tyranitar",
+        "note": "Evolve Pupitar to Tyranitar. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315302",
+        "label": "Slugma",
+        "note": "Catch a Slugma. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315262",
+        "label": "Magcargo",
+        "note": "Evolve Slugma to Magcargo. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315263",
+        "label": "Chansey",
+        "note": "Catch a Chansey. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315264",
+        "label": "Blissey",
+        "note": "Evolve Chansey to Blissey. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315265",
+        "label": "Snorlax",
+        "note": "Catch a Snorlax. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315266",
+        "label": "Diglett",
+        "note": "Catch a Diglett. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315267",
+        "label": "Dugtrio",
+        "note": "Catch a Dugtrio or evolve Diglett to Dugtrio. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315268",
+        "label": "Pikachu",
+        "note": "Catch a Pikachu or receive one from the Game Corner. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315304",
+        "label": "Raichu",
+        "note": "Evolve Pikachu to Raichu. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315269",
+        "label": "Clefairy",
+        "note": "Catch a Clefairy. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315305",
+        "label": "Clefable",
+        "note": "Evolve Clefairy to Clefable. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315270",
+        "label": "Mr. Mime",
+        "note": "Catch a Mr. Mime. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315271",
+        "label": "Cleffa",
+        "note": "Hatch a Cleffa. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315306",
+        "label": "Pichu",
+        "note": "Hatch a Pichu. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315307",
+        "label": "Elekid",
+        "note": "Hatch a Elekid. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315303",
+        "label": "Aerodactyl",
+        "note": "Trade Chansey for Aerodactyl. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315272",
+        "label": "Ho-Oh",
+        "note": "Catch Ho-Oh. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315273",
+        "label": "Lugia",
+        "note": "Catch Lugia. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c10:a315308",
+        "label": "Thunder Badge",
+        "note": "Defeat Lt. Surge with all 203 possible Pokémon in the Pokédex. · 10 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

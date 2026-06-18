@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c13",
+    "title": "Gym Prep — Misty",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c13"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c13:misty-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 47",
+        "note": "For 'Poor, Washed-Up Mermaid' — defeat Misty in Set battle style, using only Johto Pokémon that never exceed Lv 47 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c13:misty-recommended",
+        "label": "Recommended counter",
+        "note": "If over the cap, use the Legendary Beasts or a caught Skarmory; a Lv 40 Lanturn from a Super Rod also destroys Misty.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

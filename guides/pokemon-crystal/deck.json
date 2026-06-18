@@ -4,13 +4,8 @@
   "slots": [
     {
       "primitive": "checklist",
-      "defaultTitle": "Gym badges",
+      "defaultTitle": "Gym Badges",
       "defaultScope": "global"
-    },
-    {
-      "primitive": "dataTable",
-      "defaultTitle": "Wild encounters",
-      "defaultScope": "chapter"
     },
     {
       "primitive": "counter",
@@ -18,23 +13,38 @@
       "defaultScope": "global"
     },
     {
-      "primitive": "flowchart",
-      "defaultTitle": "In-game trades",
-      "defaultScope": "global"
+      "primitive": "dataTable",
+      "defaultTitle": "Wild Encounters",
+      "defaultScope": "location"
+    },
+    {
+      "primitive": "dataTable",
+      "defaultTitle": "Area Trainers",
+      "defaultScope": "location"
     },
     {
       "primitive": "mapPins",
-      "defaultTitle": "Item & legendary map",
-      "defaultScope": "global"
+      "defaultTitle": "Items & Hidden Spots",
+      "defaultScope": "location"
     },
     {
       "primitive": "prepCard",
-      "defaultTitle": "Elite Four prep",
+      "defaultTitle": "Gym Leader & Elite Four Prep",
       "defaultScope": "chapter"
     },
     {
+      "primitive": "flowchart",
+      "defaultTitle": "In-game Trades",
+      "defaultScope": "global"
+    },
+    {
       "primitive": "checklist",
-      "defaultTitle": "Oak catch list",
+      "defaultTitle": "RetroAchievements",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "checklist",
+      "defaultTitle": "Oak Challenge Catch List",
       "defaultScope": "chapter"
     }
   ]

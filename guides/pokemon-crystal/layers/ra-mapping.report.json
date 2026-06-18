@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "ra-mapping",
+  "layer": "ra-mapping",
+  "generatedAt": "2026-06-18T04:00:00Z",
+  "inputs": [
+    {
+      "file": "sources.json",
+      "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "4d97a78b9445c7d8d6ebd3dc86c2fdc8f1cdd864006328fcc60b72d2c9c0df4c"
+    },
+    {
+      "file": "layers/widget-ra.json",
+      "sha256": "1d09b2f910f2ab97037bab5ec91d58042dba252975160120cab46d6f265f379f"
+    }
+  ],
+  "report": {
+    "rowCount": 337,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Maps all 337 RetroAchievements (raGameId 810 main set + Oak subset 24140, from the achievements dataset / ra-set sources) to their dedicated checklist rows: main -> RetroAchievements checklist (slot 7, pokemon-crystal:ra:a<id>, src-ra), Oak -> Oak Catch List (slot 8, pokemon-crystal:oak-<chapter>:a<id>, src-ra-oak).",
+    "Target philosophy chosen by Pierre 2026-06-18: every achievement targets its own checklist row, so the RetroAchievements and Oak Catch List widgets are fully RA-synced. Gameplay steps keep their forward achievementRefs for inline badge display (set during the spine pass); the reverse sync link goes to the checklists.",
+    "0 unmapped, 0 flagged: every achievement has a 1:1 checklist row. raGameId 810 matches the library entry. The RA API is never called; the achievement list comes from the on-file ra-set sources."
+  ]
+}

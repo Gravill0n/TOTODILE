@@ -1,0 +1,1275 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:enc-mt-mortar",
+    "title": "Wild Encounters",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mt-mortar"
+    },
+    "deckPosition": 2,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "species",
+        "label": "Species"
+      },
+      {
+        "id": "levels",
+        "label": "Levels"
+      },
+      {
+        "id": "method",
+        "label": "Method"
+      },
+      {
+        "id": "rarity",
+        "label": "Rarity"
+      },
+      {
+        "id": "time",
+        "label": "Time"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-geodude-grass-day",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Geodude",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-geodude-grass-morn",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Geodude",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-geodude-grass-nite",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Geodude",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-golbat-grass-day",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Golbat",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-golbat-grass-morn",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Golbat",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-golbat-grass-nite",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Golbat",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-goldeen-surf-any",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Goldeen",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-machop-grass-day",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Machop",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-machop-grass-morn",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Machop",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-marill-grass-nite",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Marill",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-marill-surf-any",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Marill",
+          "levels": "25-29",
+          "method": "surf",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-raticate-grass-day",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Raticate",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-raticate-grass-morn",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Raticate",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-raticate-grass-nite",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Raticate",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-rattata-grass-day",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Rattata",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-rattata-grass-morn",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Rattata",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-rattata-grass-nite",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Rattata",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-seaking-surf-any",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Seaking",
+          "levels": "25-29",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-zubat-grass-day",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Zubat",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-zubat-grass-morn",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Zubat",
+          "levels": "15",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-2-zubat-grass-nite",
+        "cells": {
+          "sub-area": "1F #2",
+          "species": "Zubat",
+          "levels": "14-15",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-geodude-grass-day",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Geodude",
+          "levels": "31",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-geodude-grass-morn",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Geodude",
+          "levels": "31",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-geodude-grass-nite",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Geodude",
+          "levels": "31",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-golbat-grass-day",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Golbat",
+          "levels": "30",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-golbat-grass-morn",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Golbat",
+          "levels": "30",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-golbat-grass-nite",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Golbat",
+          "levels": "30-32",
+          "method": "grass",
+          "rarity": "15%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-graveler-grass-day",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Graveler",
+          "levels": "31",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-graveler-grass-morn",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Graveler",
+          "levels": "31",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-graveler-grass-nite",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Graveler",
+          "levels": "31",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-machoke-grass-day",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Machoke",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-machoke-grass-morn",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Machoke",
+          "levels": "32",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-machop-grass-day",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Machop",
+          "levels": "28",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-machop-grass-morn",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Machop",
+          "levels": "28",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-marill-grass-nite",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Marill",
+          "levels": "28",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-raticate-grass-day",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Raticate",
+          "levels": "30",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-raticate-grass-morn",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Raticate",
+          "levels": "30",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-3-raticate-grass-nite",
+        "cells": {
+          "sub-area": "1F #3",
+          "species": "Raticate",
+          "levels": "30",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-geodude-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-geodude-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-geodude-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Geodude",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-golbat-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Golbat",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Golbat",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Golbat",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-goldeen-surf-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Goldeen",
+          "levels": "15-19",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-machop-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Machop",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-machop-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Machop",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-marill-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Marill",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-marill-surf-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Marill",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-raticate-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Raticate",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-raticate-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Raticate",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-raticate-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Raticate",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-rattata-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rattata",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-rattata-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rattata",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-rattata-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Rattata",
+          "levels": "14",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-seaking-surf-any",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Seaking",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "1F",
+          "species": "Zubat",
+          "levels": "13",
+          "method": "grass",
+          "rarity": "30%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-geodude-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Geodude",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-geodude-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Geodude",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-geodude-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Geodude",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-golbat-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "17",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-golbat-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "17",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-golbat-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Golbat",
+          "levels": "17",
+          "method": "grass",
+          "rarity": "20%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-goldeen-surf-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Goldeen",
+          "levels": "15-19",
+          "method": "surf",
+          "rarity": "60%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-machop-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Machop",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-machop-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Machop",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-marill-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Marill",
+          "levels": "16",
+          "method": "grass",
+          "rarity": "10%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-marill-surf-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Marill",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "30%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-raticate-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Raticate",
+          "levels": "18",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-raticate-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Raticate",
+          "levels": "18",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-raticate-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Raticate",
+          "levels": "18",
+          "method": "grass",
+          "rarity": "5%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-seaking-surf-any",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Seaking",
+          "levels": "20-24",
+          "method": "surf",
+          "rarity": "10%",
+          "time": "any"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-zubat-grass-day",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "15-17",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "day"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-zubat-grass-morn",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "15-17",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "morn"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": false,
+        "itemId": "pokemon-crystal:enc-mt-mortar:b1f-zubat-grass-nite",
+        "cells": {
+          "sub-area": "B1F",
+          "species": "Zubat",
+          "levels": "15-17",
+          "method": "grass",
+          "rarity": "60%",
+          "time": "nite"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

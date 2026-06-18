@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-dark-cave-blackthorn-entrance",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:dark-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/DarkCaveBlackthornEntrance.png",
+      "alt": "Dark Cave Blackthorn Entrance map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-dark-cave-blackthorn-entrance:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.7167,
+        "y": 0.6806,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dark-cave-blackthorn-entrance:southwest-item",
+        "label": "Southwest Item",
+        "x": 0.25,
+        "y": 0.625,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dark-cave-blackthorn-entrance:blackglasses-from-man",
+        "label": "Blackglasses from Man",
+        "x": 0.25,
+        "y": 0.0972,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
