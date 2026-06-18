@@ -191,7 +191,7 @@ visit scope only where a widget is occurrence-specific.
 **Verification:** `yarn assemble-guide`, `yarn check`. **Dependencies:** E1, E2. **Files:** `guides/pokemon-crystal/guide.json`, `ra-mapping.json`. **Scope:** M.
 
 ### ✅ Checkpoint E (Complete)
-- [ ] Crystal plays end-to-end under v1 · all spec success criteria met · ready for review.
+- [x] Crystal plays end-to-end under v1 · all spec success criteria met · ready for review. _(PR #8 merged + review-lens approved 2026-06-18 — guide.json assembled, library status `playable`. SC3's `check-stable-ids` gate restored by `fix/check-stable-ids-extract-data-layer`.)_
 
 ---
 
