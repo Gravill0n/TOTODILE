@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { Checkbox } from "@/components/ui/checkbox";
 import { useGuideProgress } from "../progress/useGuideProgress";
 import type { GuideFile, LibraryEntry, RaMapping } from "../schema";
 import { type CleanupItem, collectCleanupTasks, mastery } from "./cleanupTasks";
@@ -23,12 +24,11 @@ function TaskRow({
           {item.counter?.value}/{item.counter?.target}
         </span>
       ) : (
-        <input
-          type="checkbox"
+        <Checkbox
           checked={false}
           aria-label={`Done: ${item.label.slice(0, 40)}`}
-          onChange={() => onToggleDone(item.itemId)}
-          className="mt-1 size-4 shrink-0 accent-accent"
+          onCheckedChange={() => onToggleDone(item.itemId)}
+          className="mt-1"
         />
       )}
       <span className="min-w-0">
@@ -95,7 +95,7 @@ export function CleanupScreen({ entry, guide, raMapping }: CleanupScreenProps) {
           </div>
           <div className="mt-1 h-2 overflow-hidden rounded bg-paper-dim">
             <div
-              className="h-full bg-accent"
+              className="h-full bg-primary"
               style={{ width: `${m.total ? (m.earned / m.total) * 100 : 0}%` }}
             />
           </div>
