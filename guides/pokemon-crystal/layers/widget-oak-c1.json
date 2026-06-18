@@ -1,0 +1,487 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c1",
+    "title": "Oak Challenge Catch List",
+    "type": "checklist",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c1"
+    },
+    "deckPosition": 8,
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315085",
+        "label": "Chikorita, Cyndaquil or Totodile",
+        "note": "Obtain your starter. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315086",
+        "label": "Bayleef, Quilava or Croconaw",
+        "note": "Evolve your starter. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315087",
+        "label": "Meganium, Typhlosion or Feraligatr",
+        "note": "Evolve your starter to its third form. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315088",
+        "label": "Rattata",
+        "note": "Catch a Rattata. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315092",
+        "label": "Raticate",
+        "note": "Evolve Rattata to Raticate. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315089",
+        "label": "Pidgey",
+        "note": "Catch a Pidgey. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315090",
+        "label": "Pidgeotto",
+        "note": "Evolve Pidgey to Pidgeotto. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315091",
+        "label": "Pidgeot",
+        "note": "Evolve Pidgeotto to Pidgeot. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315093",
+        "label": "Hoppip",
+        "note": "Catch a Hoppip. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315094",
+        "label": "Skiploom",
+        "note": "Evolve Hoppip to Skiploom. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315095",
+        "label": "Jumpluff",
+        "note": "Evolve Skiploom to Jumpluff. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315096",
+        "label": "Sentret",
+        "note": "Catch a Sentret. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315097",
+        "label": "Furret",
+        "note": "Evolve Sentret to Furret. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315098",
+        "label": "Hoothoot",
+        "note": "Catch a Hoothoot. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315099",
+        "label": "Noctowl",
+        "note": "Evolve Hoothoot to Noctowl. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315100",
+        "label": "Geodude",
+        "note": "Catch a Geodude. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315101",
+        "label": "Graveler",
+        "note": "Evolve Geodude to Graveler. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315102",
+        "label": "Phanpy",
+        "note": "Catch a Phanpy. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315103",
+        "label": "Donphan",
+        "note": "Evolve Phanpy to Donphan. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315104",
+        "label": "Spearow",
+        "note": "Catch a Spearow. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315105",
+        "label": "Fearow",
+        "note": "Evolve Spearow to Fearow. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315106",
+        "label": "Caterpie",
+        "note": "Catch a Caterpie. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315107",
+        "label": "Metapod",
+        "note": "Evolve Caterpie to Metapod. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315108",
+        "label": "Butterfree",
+        "note": "Evolve Metapod to Butterfree. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315109",
+        "label": "Weedle",
+        "note": "Catch a Weedle. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315110",
+        "label": "Kakuna",
+        "note": "Evolve Weedle to Kakuna. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315111",
+        "label": "Beedrill",
+        "note": "Evolve Kakuna to Beedrill. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315112",
+        "label": "Spinarak",
+        "note": "Catch a Spinarak. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315113",
+        "label": "Ariados",
+        "note": "Evolve Spinarak to Ariados. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315114",
+        "label": "Ledyba",
+        "note": "Catch a Ledyba. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315115",
+        "label": "Ledian",
+        "note": "Evolve Ledyba to Ledian. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315116",
+        "label": "Zubat",
+        "note": "Catch a Zubat. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315117",
+        "label": "Golbat",
+        "note": "Evolve Zubat to Golbat. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315118",
+        "label": "Crobat",
+        "note": "Evolve Golbat to Crobat. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315119",
+        "label": "Poliwag",
+        "note": "Catch a Poliwag. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315120",
+        "label": "Poliwhirl",
+        "note": "Evolve Poliwag to Poliwhirl. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315121",
+        "label": "Bellsprout",
+        "note": "Catch a Bellsprout. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315122",
+        "label": "Weepinbell",
+        "note": "Evolve Bellsprout to Weepinbell. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315123",
+        "label": "Gastly",
+        "note": "Catch a Gastly. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315124",
+        "label": "Haunter",
+        "note": "Evolve Gastly to Haunter. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315125",
+        "label": "Dunsparce",
+        "note": "Catch a Dunsparce. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315126",
+        "label": "Teddiursa",
+        "note": "Catch a Teddiursa. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315127",
+        "label": "Ursaring",
+        "note": "Evolve Teddiursa to Ursaring. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315128",
+        "label": "Onix",
+        "note": "Trade Bellsprout for Onix. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315129",
+        "label": "Growlithe",
+        "note": "Catch a Growlithe. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315130",
+        "label": "Unown",
+        "note": "Catch an Unown. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c1:a315131",
+        "label": "Zephyr Badge",
+        "note": "Defeat Falkner with all 46 possible Pokémon in the Pokédex. · 10 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

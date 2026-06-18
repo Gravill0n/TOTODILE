@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-oak-c10",
+  "generatedAt": "2026-06-18T03:30:00Z",
+  "inputs": [
+    {
+      "file": "deck.json",
+      "sha256": "cf161824ea7e5516d3d8fd9be56bd84995087368cfab8f94f73381bee1e1239e"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "4d97a78b9445c7d8d6ebd3dc86c2fdc8f1cdd864006328fcc60b72d2c9c0df4c"
+    }
+  ],
+  "report": {
+    "rowCount": 30,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Chapter-scoped Oak Challenge Catch List (deck slot 8) for c10: 30 rows = the Professor Oak Challenge achievements (src-ra-oak, game 24140) that must be completed before that chapter's badge milestone.",
+    "Chapter placement follows the C Oak Guide (src-oak-pdf): catches are segmented by the badge before which they count, verified against each badge achievement's 'all N possible Pokémon' requirement (46/77/109/142/150/154/154/170/174/203/206). Badge order per the Oak guide: Pryce's Glacier badge segment -> c6, Jasmine+Chuck's Mineral/Storm -> c5.",
+    "This chapter holds the Oak guide's 'Pre Kanto Badges' block (caught before any Kanto badge), anchored to the first Kanto gym chapter (c10). It includes Ho-Oh and Lugia, which the Oak run catches during the Kanto preparation — distinct from the story spine, which catches them in c20."
+  ]
+}

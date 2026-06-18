@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:oak-c4",
+    "title": "Oak Challenge Catch List",
+    "type": "checklist",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c4"
+    },
+    "deckPosition": 8,
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315162",
+        "label": "Heracross",
+        "note": "Catch a Heracross. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315198",
+        "label": "Sudowoodo",
+        "note": "Catch a Sudowoodo. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315199",
+        "label": "Stantler",
+        "note": "Catch a Stantler. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315200",
+        "label": "Eevee",
+        "note": "Obtain an Eevee. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315201",
+        "label": "Vaporeon",
+        "note": "Evolve Eevee to Vaporeon. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315202",
+        "label": "Jolteon",
+        "note": "Evolve Eevee to Jolteon. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315203",
+        "label": "Flareon",
+        "note": "Evolve Eevee to Flareon. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315204",
+        "label": "Espeon",
+        "note": "Evolve Eevee to Espeon. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315205",
+        "label": "Umbreon",
+        "note": "Evolve Eevee to Umbreon. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315206",
+        "label": "Koffing",
+        "note": "Catch a Koffing. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315207",
+        "label": "Weezing",
+        "note": "Evolve Koffing or catch a Weezing. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315208",
+        "label": "Magnemite",
+        "note": "Catch a Magnemite. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315209",
+        "label": "Magneton",
+        "note": "Evolve Magnemite to Magneton. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315210",
+        "label": "Miltank",
+        "note": "Catch a Miltank. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315211",
+        "label": "Tauros",
+        "note": "Catch a Tauros. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315212",
+        "label": "Meowth",
+        "note": "Catch a Meowth. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315213",
+        "label": "Persian",
+        "note": "Evolve Meowth to Persian. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315214",
+        "label": "Voltorb",
+        "note": "Trade a Krabby for Voltorb. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315215",
+        "label": "Electrode",
+        "note": "Evolve Voltorb to Electrode. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315216",
+        "label": "Shuckle",
+        "note": "Catch a Shuckle. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315217",
+        "label": "Shellder",
+        "note": "Catch a Shellder. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315218",
+        "label": "Cloyster",
+        "note": "Evolve Shellder to Cloyster. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315219",
+        "label": "Lanturn",
+        "note": "Evolve Chinchou to Lanturn. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315220",
+        "label": "Staryu",
+        "note": "Catch a Staryu. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315221",
+        "label": "Starmie",
+        "note": "Evolve Staryu to Starmie. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315287",
+        "label": "Marill",
+        "note": "Catch a Marill. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315222",
+        "label": "Azumarill",
+        "note": "Evolve Marill to Azumarill. · 2 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315223",
+        "label": "Poliwrath",
+        "note": "Evolve Poliwhirl to Poliwrath. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315224",
+        "label": "Raikou",
+        "note": "Catch a Raikou. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315289",
+        "label": "Entei",
+        "note": "Catch an Entei. · 3 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315285",
+        "label": "Chinchou",
+        "note": "Catch a Chinchou. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315286",
+        "label": "Corsola",
+        "note": "Catch a Corsola. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315288",
+        "label": "Farfetch'd",
+        "note": "Catch a Farfetch'd. · 1 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:oak-c4:a315225",
+        "label": "Fog Badge",
+        "note": "Defeat Morty with all 142 possible Pokémon in the Pokédex. · 10 pts",
+        "sourceRefs": [
+          "src-ra-oak",
+          "src-oak-pdf"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
