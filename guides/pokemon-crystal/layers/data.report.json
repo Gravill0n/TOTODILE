@@ -3,15 +3,19 @@
   "guideId": "pokemon-crystal",
   "pass": "extract-data",
   "layer": "data",
-  "generatedAt": "2026-06-17T14:00:00Z",
+  "generatedAt": "2026-06-18T01:00:00Z",
   "inputs": [
     {
       "file": "sources.json",
       "sha256": "8e002ed9dc3d40005fcdfe8007e302df85e0713ee3368efb4430aa075f390283"
+    },
+    {
+      "file": "pokemon-crystal/sources/crystal-ap-tracker-11.0.4/locations/dungeons.json",
+      "sha256": "57ff843987b87fb9dcddaa65ac3702d0409a2b9a42692336e67a06e7e23e6bb5"
     }
   ],
   "report": {
-    "rowCount": 3543,
+    "rowCount": 5006,
     "anomalies": [
       "route-33-rattata-grass-nite: serebii 40%/7 vs bulba [('40%', '6-7')]",
       "route-37-growlithe-grass-morn: serebii 10%/16 vs bulba [('40%', '')]",
@@ -33,7 +37,20 @@
       "trainer: Route 25/School Kid Joe: serebii [('Tangela', '33'), ('Vaporeon', '33')] vs bulba [('Tangela', '44'), ('Vaporeon', '42')]",
       "trainer: Route 26/Psychic Richard: serebii [('Sunkern', '36')] vs bulba [('Espeon', '36')]",
       "trainer: Route 3/Firebreather Burt: serebii [('Slugma', '32'), ('Weezing', '32')] vs bulba [('Koffing', '32'), ('Slugma', '32')]",
-      "trainer: Route 9/Hiker Sidney: serebii [('Dugtrio', '34'), ('Onix', '92')] vs bulba [('Dugtrio', '34'), ('Onix', '32')]"
+      "trainer: Route 9/Hiker Sidney: serebii [('Dugtrio', '34'), ('Onix', '92')] vs bulba [('Dugtrio', '34'), ('Onix', '32')]",
+      "johto-kanto-route-2-nugget-from-guy: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-northeast-item: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-bug-catcher-ed: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-center-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-north-hidden-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-east-hidden-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-berry-tree: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-southeast-hidden-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-west-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-west-hidden-item-in-forest: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-bug-catcher-doug: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-bug-catcher-rob: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly).",
+      "johto-kanto-route-2-southeast-item: AP-tracker map \"Route2\" PNG is absent from the snapshot, so the pin image is unavailable (Route 2 has no map — consistent with the spine route-2 anomaly)."
     ],
     "flaggedItemIds": []
   },
@@ -41,6 +58,7 @@
     "Added the encounters dataset: 1921 Crystal wild encounters across 79 areas (Johto+Kanto), one record per location×species×method×time-of-day. Source: Serebii Pokéarth Gen-II Crystal sections (src-serebii-pokearth, primary); cross-checked against Bulbapedia location articles (src-bulba-locations): 363 corroborated, 1554 Serebii-only, 4 disagreements flagged (confidence:flagged). Methods: grass (time-of-day morn/day/nite), surf, old/good/super-rod, headbutt-special/regular, rock-smash. Gift/static Pokémon (no rate%) and interactables excluded — those belong to a later dataset. Multi-area pages split into sub-locations via Serebii area anchors (e.g. 'Union Cave (B1F)', 'Mt. Mortar (1F #2)').",
     "Added the trainers dataset: 287 Crystal trainers across 75 areas, one record per trainer (party=initial team; phone rematches and starter-dependent variants summarised in notes). Source: Serebii Pokéarth Gen-II Crystal trainer sections (src-serebii-pokearth, primary); cross-checked against Bulbapedia Gen-II trainer tables (src-bulba-locations): 158 corroborated (party+levels), 112 Serebii-only, 17 disagreements flagged. Reward $ pulled from Bulbapedia where matched; gym leaders/Elite Four/Champion/Rival have no reward in source. Fields: location, trainer-class, trainer-name, party, battle-type, reward, notes.",
     "Added the items dataset: 226 Crystal items across 70 areas, one record per item pickup. Source: Serebii Pokéarth Gen-II item sections (src-serebii-pokearth, primary); item-name presence cross-checked against Bulbapedia item sections (src-bulba-locations): 172 corroborated, 54 Serebii-only. Methods: overworld (item ball on the ground), hidden (Itemfinder), tree (berry tree), gift (from an NPC/shop — giver/conditions in notes). Fields: location, item, method, notes.",
-    "Images (772) and achievements (337) datasets preserved unchanged. Remaining: trades (Bulbapedia/Serebii)."
+    "Images (772) and achievements (337) datasets preserved unchanged. Remaining: trades (Bulbapedia/Serebii).",
+    "Re-run: added the map-pins dataset (1457 records) — one record per AP-tracker check (locations/dungeons.json), each carrying its spot map-marker pixel coordinates (x,y) on the named AP area map, plus area/spot/check/ref. Source: src-ap-tracker. All spots, per-check granularity (Pierre 2026-06-18). Coordinates are raw pixels in the AP map image space; the widget pass converts to [0,1] fractions via each PNG dimension. Also added 6 FastShip (S.S. Aqua) map images to the images catalog that exist on disk but were previously uncatalogued. 13 pins flagged (Route 2 map PNG missing)."
   ]
 }
