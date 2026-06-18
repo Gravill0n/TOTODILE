@@ -52,14 +52,14 @@
 
 /* Expose the semantic tokens (and the radius scale) as Tailwind utilities so
    bg-background / text-foreground / rounded-md etc. exist.
-   NOTE on the two collisions with the paper palette: `--color-card` and
-   `--color-accent` are NOT re-mapped here. `card` already resolves to the
-   paper card surface (same value), and `accent` stays the paper achievement
-   color (#a8431d) because feature components still use `*-accent` for it.
-   shadcn's `accent` semantic (the subtle hover surface = --color-paper-dim)
-   takes over the `accent` utility in Phase R, once those components migrate
-   their achievement usages to `*-primary`. Until then the `--accent` CSS var
-   exists but the `accent` utility keeps its paper meaning. */
+   The achievement orange stays `--color-accent: #a8431d` (the §9.1 palette
+   contract) and is reached only through `--primary`/`--ring`. We deliberately
+   do NOT re-map `--color-accent` here: in Tailwind v4 `@theme inline` overrides
+   the `@theme` value, which would turn `--primary` into paper-dim. Instead, the
+   shadcn primitives that wanted a subtle hover surface use `muted`
+   (= --color-paper-dim) directly, so nothing renders the `accent` utility and
+   there is no collision to resolve. `--color-card` likewise stays the paper
+   card surface (same value as shadcn's). */
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
