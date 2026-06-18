@@ -1,3 +1,5 @@
+import { Checkbox } from "@/components/ui/checkbox";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import type { ProgressSlice } from "../../progress/progressSlice";
 import type { DataTableWidget } from "../../schema";
 import { FlagMark } from "../FlagMark";
@@ -17,54 +19,58 @@ export function DataTable({ widget, progress, onToggle }: DataTableProps) {
   const hasCheckable = widget.rows.some((row) => row.checkable);
 
   const rowCheckbox = (row: (typeof widget.rows)[number]) => (
-    <input
-      type="checkbox"
+    <Checkbox
       checked={progress.doneIds.has(row.itemId)}
-      onChange={() => onToggle(row.itemId)}
+      onCheckedChange={() => onToggle(row.itemId)}
       aria-label={`Done: ${row.cells[firstColumn.id] ?? row.itemId}`}
-      className="size-4 accent-accent"
     />
   );
 
   return (
     <>
-      <table className="hidden w-full text-sm md:table">
-        <thead>
-          <tr>
-            {hasCheckable ? <th aria-label="Done" /> : null}
-            {widget.columns.map((column) => (
-              <th
-                key={column.id}
-                className="border-b border-line px-2 py-1 text-left text-xs text-ink-soft"
-              >
-                {column.label}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {widget.rows.map((row) => (
-            <tr key={row.itemId}>
-              {hasCheckable ? (
-                <td className="border-b border-line px-1">
-                  {row.checkable ? rowCheckbox(row) : null}
-                </td>
-              ) : null}
-              {widget.columns.map((column, index) => (
-                <td key={column.id} className="border-b border-line px-2 py-1">
-                  {row.cells[column.id] ?? ""}
-                  {index === 0 && row.confidence === "flagged" ? (
-                    <>
-                      {" "}
-                      <FlagMark />
-                    </>
-                  ) : null}
-                </td>
+      <ScrollArea className="hidden w-full md:block">
+        <table className="w-full text-sm">
+          <thead>
+            <tr>
+              {hasCheckable ? <th aria-label="Done" /> : null}
+              {widget.columns.map((column) => (
+                <th
+                  key={column.id}
+                  className="border-b border-line px-2 py-1 text-left text-xs text-ink-soft"
+                >
+                  {column.label}
+                </th>
               ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {widget.rows.map((row) => (
+              <tr key={row.itemId}>
+                {hasCheckable ? (
+                  <td className="border-b border-line px-1">
+                    {row.checkable ? rowCheckbox(row) : null}
+                  </td>
+                ) : null}
+                {widget.columns.map((column, index) => (
+                  <td
+                    key={column.id}
+                    className="border-b border-line px-2 py-1"
+                  >
+                    {row.cells[column.id] ?? ""}
+                    {index === 0 && row.confidence === "flagged" ? (
+                      <>
+                        {" "}
+                        <FlagMark />
+                      </>
+                    ) : null}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <ScrollBar orientation="horizontal" />
+      </ScrollArea>
       <ul className="space-y-2 md:hidden">
         {widget.rows.map((row) => (
           <li

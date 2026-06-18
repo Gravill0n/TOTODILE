@@ -149,12 +149,13 @@ describe("matrix (full grid)", () => {
       doneIds: new Set(["fictional-quest:badges:mira-fire"]),
       counterValues: {},
     });
+    // shadcn Checkbox is a button[role=checkbox]; done state is aria-checked.
     expect(
-      (screen.getByLabelText("Mira × Fire badge") as HTMLInputElement).checked,
-    ).toBe(true);
+      screen.getByLabelText("Mira × Fire badge").getAttribute("aria-checked"),
+    ).toBe("true");
     expect(
-      (screen.getByLabelText("Theo × Tide badge") as HTMLInputElement).checked,
-    ).toBe(false);
+      screen.getByLabelText("Theo × Tide badge").getAttribute("aria-checked"),
+    ).toBe("false");
   });
 
   it("renders sparse holes as empty cells and marks flagged cells", () => {
