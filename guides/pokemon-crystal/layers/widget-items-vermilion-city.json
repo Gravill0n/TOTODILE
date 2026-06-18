@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-vermilion-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:vermilion-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/VermilionCity.png",
+      "alt": "Vermilion City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-vermilion-city:lost-item-from-guy-in-fan-club",
+        "label": "Lost Item from Guy in Fan Club",
+        "x": 0.1875,
+        "y": 0.375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-vermilion-city:rare-candy-from-fan-club-president",
+        "label": "Rare Candy from Fan Club President",
+        "x": 0.1875,
+        "y": 0.375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-vermilion-city:hidden-item-by-gym",
+        "label": "Hidden Item by Gym",
+        "x": 0.3125,
+        "y": 0.5417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-vermilion-city:hp-up-from-man-nowhere-near-pokecenter",
+        "label": "HP Up from Man nowhere near PokeCenter",
+        "x": 0.7875,
+        "y": 0.3472,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-vermilion-city:hidden-item-in-buoy",
+        "label": "Hidden Item in Buoy",
+        "x": 0.5,
+        "y": 0.875,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-vermilion-city:ss-aqua-metal-coat-from-grandpa",
+        "label": "S.S. Aqua - Metal Coat from Grandpa",
+        "x": 0.5,
+        "y": 0.875,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

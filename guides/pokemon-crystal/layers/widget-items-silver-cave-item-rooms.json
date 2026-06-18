@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-silver-cave-item-rooms",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mt-silver-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/SilverCaveItemRooms.png",
+      "alt": "Silver Cave Item Rooms map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-item-rooms:north-chamber-item",
+        "label": "North Chamber Item",
+        "x": 0.775,
+        "y": 0.6389,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-item-rooms:south-chamber-item",
+        "label": "South Chamber Item",
+        "x": 0.325,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

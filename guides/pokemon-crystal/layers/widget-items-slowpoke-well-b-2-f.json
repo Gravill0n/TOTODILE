@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-slowpoke-well-b-2-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:slowpoke-well"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/SlowpokeWellB2F.png",
+      "alt": "Slowpoke Well B 2 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-slowpoke-well-b-2-f:item",
+        "label": "Item",
+        "x": 0.775,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-slowpoke-well-b-2-f:kings-rock-from-man",
+        "label": "Kings Rock from Man",
+        "x": 0.275,
+        "y": 0.25,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

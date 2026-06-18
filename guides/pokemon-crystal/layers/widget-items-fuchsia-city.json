@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-fuchsia-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:fuchsia-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/FuchsiaCity.png",
+      "alt": "Fuchsia City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-fuchsia-city:berry-tree",
+        "label": "Berry Tree",
+        "x": 0.2125,
+        "y": 0.0417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

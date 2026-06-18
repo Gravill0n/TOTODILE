@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-olivine-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:olivine-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/OlivineCity.png",
+      "alt": "Olivine City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-olivine-city:2f-protein-from-huey",
+        "label": "2F - Protein from Huey",
+        "x": 0.7375,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-city:3f-item",
+        "label": "3F - Item",
+        "x": 0.7375,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-city:5f-southwest-item",
+        "label": "5F - Southwest Item",
+        "x": 0.7375,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-city:5f-hidden-item",
+        "label": "5F - Hidden Item",
+        "x": 0.7375,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-city:5f-east-item",
+        "label": "5F - East Item",
+        "x": 0.7375,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-city:5f-center-item",
+        "label": "5F - Center Item",
+        "x": 0.7375,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-city:6f-item",
+        "label": "6F - Item",
+        "x": 0.7375,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-city:6f-heal-amphy",
+        "label": "6F - Heal Amphy",
+        "x": 0.7375,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-city:hidden-item-in-buoy",
+        "label": "Hidden Item in Buoy",
+        "x": 0.5,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-city:ss-aqua-metal-coat-from-grandpa",
+        "label": "S.S. Aqua - Metal Coat from Grandpa",
+        "x": 0.5,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

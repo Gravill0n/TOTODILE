@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-ilex-forest",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ilex-forest"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/IlexForest.png",
+      "alt": "Ilex Forest map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-ilex-forest:north-item",
+        "label": "North Item",
+        "x": 0.5833,
+        "y": 0.1705,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ilex-forest:northeast-item",
+        "label": "Northeast Item",
+        "x": 0.9167,
+        "y": 0.0341,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ilex-forest:north-hidden-item",
+        "label": "North Hidden Item",
+        "x": 0.3833,
+        "y": 0.1705,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ilex-forest:west-hidden-item",
+        "label": "West Hidden Item",
+        "x": 0.05,
+        "y": 0.3977,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ilex-forest:east-hidden-item",
+        "label": "East Hidden Item",
+        "x": 0.75,
+        "y": 0.3295,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ilex-forest:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.6833,
+        "y": 0.7386,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ilex-forest:west-item",
+        "label": "West Item",
+        "x": 0.3167,
+        "y": 0.3977,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ilex-forest:hm01-from-farfetchd-guy",
+        "label": "HM01 from Farfetch'd Guy",
+        "x": 0.1833,
+        "y": 0.6477,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ilex-forest:tm02-from-headbutt-guy",
+        "label": "TM02 from Headbutt Guy",
+        "x": 0.5167,
+        "y": 0.3295,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

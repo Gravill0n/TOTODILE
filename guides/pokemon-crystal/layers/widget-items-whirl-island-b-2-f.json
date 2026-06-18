@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-whirl-island-b-2-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:whirl-islands"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/WhirlIslandB2F.png",
+      "alt": "Whirl Island B 2 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-2-f:east-item",
+        "label": "East Item",
+        "x": 0.525,
+        "y": 0.3194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-2-f:west-item",
+        "label": "West Item",
+        "x": 0.275,
+        "y": 0.3472,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-whirl-island-b-2-f:north-item",
+        "label": "North Item",
+        "x": 0.325,
+        "y": 0.125,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

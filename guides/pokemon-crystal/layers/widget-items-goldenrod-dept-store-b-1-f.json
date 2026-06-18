@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-goldenrod-dept-store-b-1-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:goldenrod-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/GoldenrodDeptStoreB1F.png",
+      "alt": "Goldenrod Dept Store B 1 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-dept-store-b-1-f:northwest-item",
+        "label": "Northwest Item",
+        "x": 0.325,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-dept-store-b-1-f:south-item",
+        "label": "South Item",
+        "x": 0.525,
+        "y": 0.8611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-dept-store-b-1-f:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.775,
+        "y": 0.8611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-dept-store-b-1-f:item-behind-card-key-door",
+        "label": "Item behind Card Key Door",
+        "x": 0.725,
+        "y": 0.1389,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

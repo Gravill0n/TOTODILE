@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-goldenrod-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:goldenrod-underground"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/GoldenrodCity.png",
+      "alt": "Goldenrod City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:bicycle-from-bike-shop",
+        "label": "Bicycle from Bike Shop",
+        "x": 0.7375,
+        "y": 0.8194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:post-e4-gs-ball-from-trade-corner-receptionist",
+        "label": "Post-E4 GS-Ball from Trade Corner Receptionist",
+        "x": 0.3875,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:1f-buy-water-stone",
+        "label": "1F - Buy Water Stone",
+        "x": 0.6125,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:5f-tm21-from-receptionist",
+        "label": "5F - TM21 from Receptionist",
+        "x": 0.6125,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:5f-tm27-from-receptionist",
+        "label": "5F - TM27 from Receptionist",
+        "x": 0.6125,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:b1f-northwest-item",
+        "label": "B1F - Northwest Item",
+        "x": 0.6125,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:b1f-south-item",
+        "label": "B1F - South Item",
+        "x": 0.6125,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:b1f-southeast-item",
+        "label": "B1F - Southeast Item",
+        "x": 0.6125,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:b1f-item-behind-card-key-door",
+        "label": "B1F - Item behind Card Key Door",
+        "x": 0.6125,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:squirtbottle-from-flower-shop",
+        "label": "Squirtbottle from Flower Shop",
+        "x": 0.7375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:hidden-item-between-tables",
+        "label": "Hidden Item between Tables",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:hidden-item-by-blue-door",
+        "label": "Hidden Item by Blue Door",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:center-hidden-item",
+        "label": "Center Hidden Item",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:item",
+        "label": "Item",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:b2f-west-hidden-item",
+        "label": "B2F - West Hidden Item",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:b2f-east-item",
+        "label": "B2F - East Item",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:b2f-center-hidden-item",
+        "label": "B2F - Center Hidden Item",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:b2f-southwest-item",
+        "label": "B2F - Southwest Item",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:warehouse-northwest-item",
+        "label": "Warehouse - Northwest Item",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:warehouse-southeast-item",
+        "label": "Warehouse - Southeast Item",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:warehouse-card-key-from-director",
+        "label": "Warehouse - Card Key from Director",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:warehouse-center-item",
+        "label": "Warehouse - Center Item",
+        "x": 0.2375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:1f-radio-card-from-quiz",
+        "label": "1F - Radio Card from Quiz",
+        "x": 0.1375,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:1f-radio-card-from-quiz-2",
+        "label": "1F - Radio Card from Quiz",
+        "x": 0.1375,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:2f-blue-card-from-buena",
+        "label": "2F - Blue Card from Buena",
+        "x": 0.1375,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:2f-blue-card-shop-2-points",
+        "label": "2F - Blue Card Shop - 2 Points",
+        "x": 0.1375,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:2f-blue-card-shop-3-points",
+        "label": "2F - Blue Card Shop - 3 Points",
+        "x": 0.1375,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:2f-blue-card-shop-5-points",
+        "label": "2F - Blue Card Shop - 5 Points",
+        "x": 0.1375,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:3f-tm11-from-woman",
+        "label": "3F - TM11 from Woman",
+        "x": 0.1375,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:4f-pink-bow-from-mary",
+        "label": "4F - Pink Bow from Mary",
+        "x": 0.1375,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-city:5f-item",
+        "label": "5F - Item",
+        "x": 0.1375,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

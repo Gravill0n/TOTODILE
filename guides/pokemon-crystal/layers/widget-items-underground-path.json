@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-underground-path",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-5"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/UndergroundPath.png",
+      "alt": "Underground Path map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-underground-path:north-hidden-item",
+        "label": "North Hidden Item",
+        "x": 0.5833,
+        "y": 0.3393,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-underground-path:south-hidden-item",
+        "label": "South Hidden Item",
+        "x": 0.25,
+        "y": 0.6964,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

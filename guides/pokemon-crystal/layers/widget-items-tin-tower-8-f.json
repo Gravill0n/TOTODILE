@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-tin-tower-8-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:tin-tower"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/TinTower8F.png",
+      "alt": "Tin Tower 8 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-tin-tower-8-f:northwest-item",
+        "label": "Northwest Item",
+        "x": 0.175,
+        "y": 0.0833,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-tin-tower-8-f:center-item",
+        "label": "Center Item",
+        "x": 0.575,
+        "y": 0.3611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-tin-tower-8-f:south-item",
+        "label": "South Item",
+        "x": 0.375,
+        "y": 0.75,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-silver-cave-room-1",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mt-silver-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/SilverCaveRoom1.png",
+      "alt": "Silver Cave Room 1 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-room-1:southwest-item",
+        "label": "Southwest Item",
+        "x": 0.275,
+        "y": 0.8472,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-room-1:southeast-hidden-item",
+        "label": "Southeast Hidden Item",
+        "x": 0.825,
+        "y": 0.6528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-room-1:northeast-hidden-item",
+        "label": "Northeast Hidden Item",
+        "x": 0.875,
+        "y": 0.3472,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-room-1:northwest-item",
+        "label": "Northwest Item",
+        "x": 0.225,
+        "y": 0.2639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-room-1:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.775,
+        "y": 0.8194,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-silver-cave-room-1:center-item",
+        "label": "Center Item",
+        "x": 0.375,
+        "y": 0.5139,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

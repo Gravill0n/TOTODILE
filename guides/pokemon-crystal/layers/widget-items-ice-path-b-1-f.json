@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-ice-path-b-1-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ice-path"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/IcePathB1F.png",
+      "alt": "Ice Path B 1 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-ice-path-b-1-f:hidden-item-on-boulder",
+        "label": "Hidden Item on Boulder",
+        "x": 0.875,
+        "y": 0.8472,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ice-path-b-1-f:item",
+        "label": "Item",
+        "x": 0.275,
+        "y": 0.9861,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

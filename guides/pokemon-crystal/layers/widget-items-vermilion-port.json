@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-vermilion-port",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:vermilion-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/VermilionPort.png",
+      "alt": "Vermilion Port map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-vermilion-port:hidden-item-in-buoy",
+        "label": "Hidden Item in Buoy",
+        "x": 0.825,
+        "y": 0.4318,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

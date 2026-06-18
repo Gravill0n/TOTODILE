@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-ice-path-b-2-fblackthorn-side",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ice-path"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/IcePathB2FBlackthornSide.png",
+      "alt": "Ice Path B 2 FBlackthorn Side map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-ice-path-b-2-fblackthorn-side:hidden-item-on-boulder",
+        "label": "Hidden Item on Boulder",
+        "x": 0.25,
+        "y": 0.5833,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ice-path-b-2-fblackthorn-side:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.85,
+        "y": 0.9167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

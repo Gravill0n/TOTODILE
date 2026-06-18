@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-ruins-of-alph-ho-oh-item-room",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ruins-of-alph"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/RuinsOfAlphHoOhItemRoom.png",
+      "alt": "Ruins Of Alph Ho Oh Item Room map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-ho-oh-item-room:bottom-left-item",
+        "label": "Bottom Left Item",
+        "x": 0.3125,
+        "y": 0.65,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-ho-oh-item-room:bottom-right-item",
+        "label": "Bottom Right Item",
+        "x": 0.6875,
+        "y": 0.65,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-ho-oh-item-room:top-right-item",
+        "label": "Top Right Item",
+        "x": 0.3125,
+        "y": 0.45,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ruins-of-alph-ho-oh-item-room:top-right-item-2",
+        "label": "Top Right Item",
+        "x": 0.6875,
+        "y": 0.45,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

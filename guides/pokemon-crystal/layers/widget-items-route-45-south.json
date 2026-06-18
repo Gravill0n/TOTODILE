@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-45-south",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-45"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route45South.png",
+      "alt": "Route 45 South map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-45-south:center-item-bottom",
+        "label": "Center Item (Bottom)",
+        "x": 0.325,
+        "y": 0.1979,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-45-south:pp-up-from-kenji",
+        "label": "PP Up from Kenji",
+        "x": 0.575,
+        "y": 0.1771,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-45-south:southwest-item",
+        "label": "Southwest Item",
+        "x": 0.275,
+        "y": 0.5104,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-45-south:hidden-item-in-southeast-pond",
+        "label": "Hidden Item in Southeast Pond",
+        "x": 0.675,
+        "y": 0.8021,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-45-south:berry-tree",
+        "label": "Berry Tree",
+        "x": 0.825,
+        "y": 0.8438,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

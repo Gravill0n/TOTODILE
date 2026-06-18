@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-new-bark-town",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:new-bark-town"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/NewBarkTown.png",
+      "alt": "New Bark Town map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-new-bark-town:potion-from-aide",
+        "label": "Potion from Aide",
+        "x": 0.325,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-new-bark-town:gift-from-aide-after-returning-mystery-egg",
+        "label": "Gift from Aide after returning Mystery Egg",
+        "x": 0.325,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-new-bark-town:everstone-from-elm",
+        "label": "Everstone from Elm",
+        "x": 0.325,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-new-bark-town:master-ball-from-elm",
+        "label": "Master Ball from Elm",
+        "x": 0.325,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-new-bark-town:ss-ticket-from-elm",
+        "label": "S.S. Ticket from Elm",
+        "x": 0.325,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-new-bark-town:pokegear-from-mom",
+        "label": "Pokegear from Mom",
+        "x": 0.675,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-new-bark-town:pokegear-from-mom-2",
+        "label": "Pokegear from Mom",
+        "x": 0.675,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-new-bark-town:phone-card-from-mom",
+        "label": "Phone Card from Mom",
+        "x": 0.675,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-new-bark-town:phone-card-from-mom-2",
+        "label": "Phone Card from Mom",
+        "x": 0.675,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-36",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-36"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route36.png",
+      "alt": "Route 36 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-36:tm08-from-rock-smash-guy",
+        "label": "TM08 from Rock Smash Guy",
+        "x": 0.7417,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-36:hard-stone-from-arthur",
+        "label": "Hard Stone from Arthur",
+        "x": 0.775,
+        "y": 0.3611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-36:berry-tree",
+        "label": "Berry Tree",
+        "x": 0.3583,
+        "y": 0.25,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-36:fire-stone-from-alan",
+        "label": "Fire Stone from Alan",
+        "x": 0.525,
+        "y": 0.8056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

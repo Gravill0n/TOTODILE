@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-45-north",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:dark-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route45North.png",
+      "alt": "Route 45 North map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-45-north:blackglasses-from-man",
+        "label": "Blackglasses from Man",
+        "x": 0.125,
+        "y": 0.131,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-45-north:southwest-item",
+        "label": "Southwest Item",
+        "x": 0.125,
+        "y": 0.131,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-45-north:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.125,
+        "y": 0.131,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-45-north:north-item",
+        "label": "North Item",
+        "x": 0.325,
+        "y": 0.4881,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-45-north:center-item-top",
+        "label": "Center Item (Top)",
+        "x": 0.375,
+        "y": 0.7976,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-45-north:iron-from-parry",
+        "label": "Iron from Parry",
+        "x": 0.275,
+        "y": 0.6786,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

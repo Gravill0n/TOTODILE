@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-goldenrod-dept-store-5-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:goldenrod-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/GoldenrodDeptStore5F.png",
+      "alt": "Goldenrod Dept Store 5 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-dept-store-5-f:tm21-from-receptionist",
+        "label": "TM21 from Receptionist",
+        "x": 0.4688,
+        "y": 0.6875,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-dept-store-5-f:tm27-from-receptionist",
+        "label": "TM27 from Receptionist",
+        "x": 0.4688,
+        "y": 0.6875,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

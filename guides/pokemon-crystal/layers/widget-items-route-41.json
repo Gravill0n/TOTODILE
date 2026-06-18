@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-41",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:whirl-islands"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route41.png",
+      "alt": "Route 41 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-41:hidden-item-on-southwest-island",
+        "label": "Hidden Item on Southwest Island",
+        "x": 0.19,
+        "y": 0.6574,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

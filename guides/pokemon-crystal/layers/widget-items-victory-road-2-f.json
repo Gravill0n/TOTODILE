@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-victory-road-2-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:victory-road"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/VictoryRoad2F.png",
+      "alt": "Victory Road 2 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-victory-road-2-f:northeast-item",
+        "label": "Northeast Item",
+        "x": 0.881,
+        "y": 0.25,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-victory-road-2-f:hidden-item-on-northwest-boulder",
+        "label": "Hidden Item on Northwest Boulder",
+        "x": 0.1667,
+        "y": 0.25,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-victory-road-2-f:south-item",
+        "label": "South Item",
+        "x": 0.3571,
+        "y": 0.6591,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-victory-road-2-f:northwest-item",
+        "label": "Northwest Item",
+        "x": 0.1667,
+        "y": 0.2045,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

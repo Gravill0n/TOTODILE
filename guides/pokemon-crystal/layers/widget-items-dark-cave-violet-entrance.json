@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-dark-cave-violet-entrance",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:dark-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/DarkCaveVioletEntrance.png",
+      "alt": "Dark Cave Violet Entrance map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-dark-cave-violet-entrance:southeast-item-left",
+        "label": "Southeast Item (Left)",
+        "x": 0.7625,
+        "y": 0.7917,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dark-cave-violet-entrance:southeast-item-right",
+        "label": "Southeast Item (Right)",
+        "x": 0.9125,
+        "y": 0.625,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dark-cave-violet-entrance:hidden-item",
+        "label": "Hidden Item",
+        "x": 0.6625,
+        "y": 0.0972,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dark-cave-violet-entrance:northeast-item",
+        "label": "Northeast Item",
+        "x": 0.8875,
+        "y": 0.2639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-dark-cave-violet-entrance:west-item",
+        "label": "West Item",
+        "x": 0.1625,
+        "y": 0.2361,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

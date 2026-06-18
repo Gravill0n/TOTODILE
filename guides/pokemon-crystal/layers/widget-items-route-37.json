@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-37",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-37"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route37.png",
+      "alt": "Route 37 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-37:berry-tree-1",
+        "label": "Berry Tree 1",
+        "x": 0.675,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-37:red-apricorn-from-apricorn-tree",
+        "label": "Red Apricorn from Apricorn Tree",
+        "x": 0.675,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-37:berry-tree-2",
+        "label": "Berry Tree 2",
+        "x": 0.825,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-37:blue-apricorn-from-apricorn-tree",
+        "label": "Blue Apricorn from Apricorn Tree",
+        "x": 0.825,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-37:berry-tree-3",
+        "label": "Berry Tree 3",
+        "x": 0.775,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-37:black-apricorn-from-apricorn-tree",
+        "label": "Black Apricorn from Apricorn Tree",
+        "x": 0.775,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-37:magnet-from-sunny",
+        "label": "Magnet from Sunny",
+        "x": 0.825,
+        "y": 0.4722,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-37:hidden-item",
+        "label": "Hidden Item",
+        "x": 0.225,
+        "y": 0.1389,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

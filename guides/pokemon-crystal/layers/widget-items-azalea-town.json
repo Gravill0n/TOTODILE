@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-azalea-town",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:azalea-town"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/AzaleaTown.png",
+      "alt": "Azalea Town map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:hidden-item-by-well",
+        "label": "Hidden Item by well",
+        "x": 0.7875,
+        "y": 0.3611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:charcoal-from-charcoal-kiln",
+        "label": "Charcoal from Charcoal Kiln",
+        "x": 0.5375,
+        "y": 0.75,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:berry-tree",
+        "label": "Berry Tree",
+        "x": 0.2125,
+        "y": 0.1389,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:white-apricorn-from-apricorn-tree",
+        "label": "White Apricorn from Apricorn Tree",
+        "x": 0.2125,
+        "y": 0.1389,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:lure-ball-from-kurt",
+        "label": "Lure Ball from Kurt",
+        "x": 0.2375,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:kurts-ball-shop-red-apricorn",
+        "label": "Kurt's Ball Shop - Red Apricorn",
+        "x": 0.2375,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:kurts-ball-shop-grn-apricorn",
+        "label": "Kurt's Ball Shop - Grn Apricorn",
+        "x": 0.2375,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:kurts-ball-shop-blu-apricorn",
+        "label": "Kurt's Ball Shop - Blu Apricorn",
+        "x": 0.2375,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:kurts-ball-shop-ylw-apricorn",
+        "label": "Kurt's Ball Shop - Ylw Apricorn",
+        "x": 0.2375,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:kurts-ball-shop-blk-apricorn",
+        "label": "Kurt's Ball Shop - Blk Apricorn",
+        "x": 0.2375,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:kurts-ball-shop-wht-apricorn",
+        "label": "Kurt's Ball Shop - Wht Apricorn",
+        "x": 0.2375,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:kurts-ball-shop-pnk-apricorn",
+        "label": "Kurt's Ball Shop - Pnk Apricorn",
+        "x": 0.2375,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:b1f-item",
+        "label": "B1F - Item",
+        "x": 0.7875,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:b2f-item",
+        "label": "B2F - Item",
+        "x": 0.7875,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-azalea-town:b2f-kings-rock-from-man",
+        "label": "B2F - Kings Rock from Man",
+        "x": 0.7875,
+        "y": 0.4167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

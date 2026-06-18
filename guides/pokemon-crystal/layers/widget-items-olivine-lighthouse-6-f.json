@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-olivine-lighthouse-6-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:olivine-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/OlivineLighthouse6F.png",
+      "alt": "Olivine Lighthouse 6 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-olivine-lighthouse-6-f:item",
+        "label": "Item",
+        "x": 0.175,
+        "y": 0.25,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-olivine-lighthouse-6-f:heal-amphy",
+        "label": "Heal Amphy",
+        "x": 0.425,
+        "y": 0.4722,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

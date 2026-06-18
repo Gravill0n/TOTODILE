@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-national-park",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:national-park"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/NationalPark.png",
+      "alt": "National Park map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-national-park:hidden-item-behind-fence",
+        "label": "Hidden Item behind Fence",
+        "x": 0.1625,
+        "y": 0.8796,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-national-park:northeast-item",
+        "label": "Northeast Item",
+        "x": 0.8875,
+        "y": 0.2315,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-national-park:southwest-item",
+        "label": "Southwest Item",
+        "x": 0.0375,
+        "y": 0.8056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-national-park:quick-claw-from-lady",
+        "label": "Quick Claw from Lady",
+        "x": 0.6875,
+        "y": 0.75,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-national-park:nugget-from-beverly",
+        "label": "Nugget from Beverly",
+        "x": 0.4625,
+        "y": 0.5463,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-national-park:bug-catching-contest-first-place-prize",
+        "label": "Bug Catching Contest - First Place Prize",
+        "x": 0.9625,
+        "y": 0.0278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-national-park:bug-catching-contest-second-place-prize",
+        "label": "Bug Catching Contest - Second Place Prize",
+        "x": 0.9625,
+        "y": 0.0278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-national-park:bug-catching-contest-third-place-prize",
+        "label": "Bug Catching Contest - Third Place Prize",
+        "x": 0.9625,
+        "y": 0.0278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-national-park:bug-catching-contest-consolation-prize",
+        "label": "Bug Catching Contest - Consolation Prize",
+        "x": 0.9625,
+        "y": 0.0278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-national-park:bug-catching-contest-second-or-third-place-prize",
+        "label": "Bug Catching Contest - Second or Third Place Prize",
+        "x": 0.9625,
+        "y": 0.0278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-national-park:bug-catching-contest-participation-prize",
+        "label": "Bug Catching Contest - Participation Prize",
+        "x": 0.9625,
+        "y": 0.0278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

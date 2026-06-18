@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-42",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mt-mortar"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route42.png",
+      "alt": "Route 42 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-outside-item-up-west-ladder",
+        "label": "1F Outside - Item up West Ladder",
+        "x": 0.175,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-outside-item-up-east-ladder",
+        "label": "1F Outside - Item up East Ladder",
+        "x": 0.175,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-outside-hidden-item",
+        "label": "1F Outside - Hidden Item",
+        "x": 0.175,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-inside-west-item",
+        "label": "1F Inside - West Item",
+        "x": 0.175,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-inside-center-item-left",
+        "label": "1F Inside - Center Item (Left)",
+        "x": 0.175,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-inside-east-item",
+        "label": "1F Inside - East Item",
+        "x": 0.175,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-inside-southeast-item",
+        "label": "1F Inside - Southeast Item",
+        "x": 0.175,
+        "y": 0.3056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-inside-northwest-item",
+        "label": "1F Inside - Northwest Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-inside-north-item",
+        "label": "1F Inside - North Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-inside-center-item-right",
+        "label": "1F Inside - Center Item (Right)",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:1f-inside-hidden-item",
+        "label": "1F Inside - Hidden Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:2f-southwest-item",
+        "label": "2F - Southwest Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:2f-northwest-item",
+        "label": "2F - Northwest Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:2f-northeast-item",
+        "label": "2F - Northeast Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:2f-east-item",
+        "label": "2F - East Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:2f-north-item",
+        "label": "2F - North Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:2f-center-item",
+        "label": "2F - Center Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:2f-hidden-item",
+        "label": "2F - Hidden Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:b1f-southeast-item",
+        "label": "B1F - Southeast Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:b1f-east-item",
+        "label": "B1F - East Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:b1f-northeast-item",
+        "label": "B1F - Northeast Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:b1f-south-item",
+        "label": "B1F - South Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:b1f-west-item",
+        "label": "B1F - West Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:b1f-hidden-item-on-boulder",
+        "label": "B1F - Hidden Item on Boulder",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:west-item",
+        "label": "West Item",
+        "x": 0.1083,
+        "y": 0.25,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:hidden-item-in-pond-rock",
+        "label": "Hidden Item in Pond Rock",
+        "x": 0.275,
+        "y": 0.6389,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:item-across-water",
+        "label": "Item across Water",
+        "x": 0.5583,
+        "y": 0.4722,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:berry-tree-1",
+        "label": "Berry Tree 1",
+        "x": 0.4583,
+        "y": 0.9167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:pink-apricorn-from-apricorn-tree",
+        "label": "Pink Apricorn from Apricorn Tree",
+        "x": 0.4583,
+        "y": 0.9167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:berry-tree-2",
+        "label": "Berry Tree 2",
+        "x": 0.475,
+        "y": 0.9167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:green-apricorn-from-apricorn-tree",
+        "label": "Green Apricorn from Apricorn Tree",
+        "x": 0.475,
+        "y": 0.9167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:berry-tree-3",
+        "label": "Berry Tree 3",
+        "x": 0.4917,
+        "y": 0.9167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:yellow-apricorn-from-apricorn-tree",
+        "label": "Yellow Apricorn from Apricorn Tree",
+        "x": 0.4917,
+        "y": 0.9167,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-42:water-stone-from-tully",
+        "label": "Water Stone from Tully",
+        "x": 0.675,
+        "y": 0.5833,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-mount-mortar-1-foutside",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:mt-mortar"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/MountMortar1FOutside.png",
+      "alt": "Mount Mortar 1 FOutside map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-foutside:hidden-item",
+        "label": "Hidden Item",
+        "x": 0.6375,
+        "y": 0.625,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-foutside:item-up-west-ladder",
+        "label": "Item up West Ladder",
+        "x": 0.3375,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-mount-mortar-1-foutside:item-up-east-ladder",
+        "label": "Item up East Ladder",
+        "x": 0.7875,
+        "y": 0.5139,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-17",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-17"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route17.png",
+      "alt": "Route 17 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-17:hidden-item-in-fence",
+        "label": "Hidden Item in Fence",
+        "x": 0.425,
+        "y": 0.8611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-17:hidden-item-at-corner",
+        "label": "Hidden Item at Corner",
+        "x": 0.475,
+        "y": 0.6056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

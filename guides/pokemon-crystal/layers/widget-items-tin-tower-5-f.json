@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-tin-tower-5-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:tin-tower"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/TinTower5F.png",
+      "alt": "Tin Tower 5 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-tin-tower-5-f:soutwest-hidden-item",
+        "label": "Soutwest Hidden Item",
+        "x": 0.175,
+        "y": 0.8611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-tin-tower-5-f:southeast-hidden-item",
+        "label": "Southeast Hidden Item",
+        "x": 0.825,
+        "y": 0.8056,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-tin-tower-5-f:item",
+        "label": "Item",
+        "x": 0.475,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-blackthorn-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:blackthorn-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/BlackthornCity.png",
+      "alt": "Blackthorn City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-blackthorn-city:spell-tag-from-santos",
+        "label": "Spell Tag from Santos",
+        "x": 0.5625,
+        "y": 0.5694,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-blackthorn-city:b1f-northeast-item",
+        "label": "B1F - Northeast Item",
+        "x": 0.5125,
+        "y": 0.0417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-blackthorn-city:b1f-center-hidden-item-in-water",
+        "label": "B1F - Center Hidden Item in Water",
+        "x": 0.5125,
+        "y": 0.0417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-blackthorn-city:b1f-west-item",
+        "label": "B1F - West Item",
+        "x": 0.5125,
+        "y": 0.0417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-blackthorn-city:b1f-southeast-hidden-item",
+        "label": "B1F - Southeast Hidden Item",
+        "x": 0.5125,
+        "y": 0.0417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-blackthorn-city:b1f-east-item",
+        "label": "B1F - East Item",
+        "x": 0.5125,
+        "y": 0.0417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-blackthorn-city:b1f-east-hidden-item-in-water",
+        "label": "B1F - East Hidden Item in Water",
+        "x": 0.5125,
+        "y": 0.0417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-30",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-30"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route30.png",
+      "alt": "Route 30 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-30:berry-tree-1",
+        "label": "Berry Tree 1",
+        "x": 0.275,
+        "y": 0.7315,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-30:berry-from-house",
+        "label": "Berry from House",
+        "x": 0.375,
+        "y": 0.7315,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-30:item",
+        "label": "Item",
+        "x": 0.425,
+        "y": 0.6574,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-30:hidden-item-in-flowers",
+        "label": "Hidden Item in Flowers",
+        "x": 0.725,
+        "y": 0.1759,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-30:berry-tree-2",
+        "label": "Berry Tree 2",
+        "x": 0.575,
+        "y": 0.1019,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-30:mystery-egg-from-mr-pokemon",
+        "label": "Mystery Egg from Mr. Pokemon",
+        "x": 0.875,
+        "y": 0.1019,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-30:exp-share-from-mr-pokemon",
+        "label": "Exp Share from Mr. Pokemon",
+        "x": 0.875,
+        "y": 0.1019,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-30:hp-up-from-joey",
+        "label": "HP Up from Joey",
+        "x": 0.125,
+        "y": 0.5278,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

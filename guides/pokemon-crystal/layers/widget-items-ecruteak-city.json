@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-ecruteak-city",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:tin-tower"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/EcruteakCity.png",
+      "alt": "Ecruteak City map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:hm03-from-theater-director",
+        "label": "HM03 from Theater Director",
+        "x": 0.5875,
+        "y": 0.5972,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:hidden-item-by-pond",
+        "label": "Hidden Item by Pond",
+        "x": 0.5875,
+        "y": 0.4028,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:itemfinder-from-itemfinder-guy",
+        "label": "Itemfinder from Itemfinder Guy",
+        "x": 0.3375,
+        "y": 0.7639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:1f-rainbow-wing",
+        "label": "1F - Rainbow Wing",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:3f-item",
+        "label": "3F - Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:4f-hidden-item",
+        "label": "4F - Hidden Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:4f-east-item",
+        "label": "4F - East Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:4f-southeast-item",
+        "label": "4F - Southeast Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:4f-southwest-item",
+        "label": "4F - Southwest Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:5f-item",
+        "label": "5F - Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:5f-southwest-hidden-item",
+        "label": "5F - Southwest Hidden Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:5f-southeast-hidden-item",
+        "label": "5F - Southeast Hidden Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:6f-item",
+        "label": "6F - Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:7f-item",
+        "label": "7F - Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:8f-northwest-item",
+        "label": "8F - Northwest Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:8f-center-item",
+        "label": "8F - Center Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:8f-south-item",
+        "label": "8F - South Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ecruteak-city:9f-item",
+        "label": "9F - Item",
+        "x": 0.9375,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

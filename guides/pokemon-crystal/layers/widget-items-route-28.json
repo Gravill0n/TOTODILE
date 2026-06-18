@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-28",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-28"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route28.png",
+      "alt": "Route 28 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-28:steel-wing-from-celebrity-in-house",
+        "label": "Steel Wing from Celebrity in House",
+        "x": 0.1875,
+        "y": 0.1944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-28:hidden-item-behind-cut-tree",
+        "label": "Hidden Item behind Cut Tree",
+        "x": 0.6375,
+        "y": 0.1389,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

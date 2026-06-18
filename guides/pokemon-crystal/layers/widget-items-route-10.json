@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-10",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:rock-tunnel"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route10.png",
+      "alt": "Route 10 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-10:1f-west-item",
+        "label": "1F - West Item",
+        "x": 0.325,
+        "y": 0.5417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-10:1f-center-item",
+        "label": "1F - Center Item",
+        "x": 0.325,
+        "y": 0.5417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-10:1f-southeast-hidden-item",
+        "label": "1F - Southeast Hidden Item",
+        "x": 0.325,
+        "y": 0.5417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-10:1f-northeast-hidden-item",
+        "label": "1F - Northeast Hidden Item",
+        "x": 0.325,
+        "y": 0.5417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-10:b1f-hidden-item",
+        "label": "B1F - Hidden Item",
+        "x": 0.325,
+        "y": 0.5417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-10:b1f-south-item",
+        "label": "B1F - South Item",
+        "x": 0.325,
+        "y": 0.5417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-10:b1f-west-item",
+        "label": "B1F - West Item",
+        "x": 0.325,
+        "y": 0.5417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-10:b1f-north-item",
+        "label": "B1F - North Item",
+        "x": 0.325,
+        "y": 0.5417,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

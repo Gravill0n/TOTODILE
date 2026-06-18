@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-ice-path-1-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ice-path"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/IcePath1F.png",
+      "alt": "Ice Path 1 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-ice-path-1-f:hm07-in-itemball",
+        "label": "HM07 in Itemball",
+        "x": 0.7875,
+        "y": 0.2083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ice-path-1-f:southeast-item",
+        "label": "Southeast Item",
+        "x": 0.8125,
+        "y": 0.6528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-ice-path-1-f:east-item",
+        "label": "East Item",
+        "x": 0.8875,
+        "y": 0.2639,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

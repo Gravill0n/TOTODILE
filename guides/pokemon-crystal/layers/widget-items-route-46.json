@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-46",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:dark-cave"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route46.png",
+      "alt": "Route 46 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-46:west-item",
+        "label": "West Item",
+        "x": 0.725,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-46:hidden-item",
+        "label": "Hidden Item",
+        "x": 0.725,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-46:northeast-item",
+        "label": "Northeast Item",
+        "x": 0.725,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-46:southeast-item-right",
+        "label": "Southeast Item (Right)",
+        "x": 0.725,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-46:southeast-item-left",
+        "label": "Southeast Item (Left)",
+        "x": 0.725,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-46:berry-tree-1",
+        "label": "Berry Tree 1",
+        "x": 0.375,
+        "y": 0.1528,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-46:berry-tree-2",
+        "label": "Berry Tree 2",
+        "x": 0.425,
+        "y": 0.1806,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-46:item",
+        "label": "Item",
+        "x": 0.075,
+        "y": 0.4306,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-46:calcium-from-erin",
+        "label": "Calcium from Erin",
+        "x": 0.125,
+        "y": 0.375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

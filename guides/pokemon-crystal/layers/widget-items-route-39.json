@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-39",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-39"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route39.png",
+      "alt": "Route 39 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-39:berry-tree",
+        "label": "Berry Tree",
+        "x": 0.475,
+        "y": 0.0972,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-39:moomoo-milk-after-feeding-moomoo",
+        "label": "Moomoo Milk after feeding Moomoo",
+        "x": 0.275,
+        "y": 0.0972,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-39:tm13-after-feeding-moomoo",
+        "label": "TM13 after feeding Moomoo",
+        "x": 0.275,
+        "y": 0.0972,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-39:hidden-item-between-miltank",
+        "label": "Hidden Item between Miltank",
+        "x": 0.275,
+        "y": 0.375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-39:nugget-from-derek",
+        "label": "Nugget from Derek",
+        "x": 0.525,
+        "y": 0.625,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-goldenrod-underground",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:goldenrod-underground"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/GoldenrodUnderground.png",
+      "alt": "Goldenrod Underground map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-underground:item",
+        "label": "Item",
+        "x": 0.3738,
+        "y": 0.7083,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-underground:hidden-item-by-blue-door",
+        "label": "Hidden Item by Blue Door",
+        "x": 0.8723,
+        "y": 0.2361,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-underground:hidden-item-between-tables",
+        "label": "Hidden Item between Tables",
+        "x": 0.324,
+        "y": 0.375,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-goldenrod-underground:center-hidden-item",
+        "label": "Center Hidden Item",
+        "x": 0.2243,
+        "y": 0.5139,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

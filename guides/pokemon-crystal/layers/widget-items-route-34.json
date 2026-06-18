@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-route-34",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-34"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/Route34.png",
+      "alt": "Route 34 map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-route-34:tm12-from-woman-in-gate",
+        "label": "TM12 from Woman in Gate",
+        "x": 0.7,
+        "y": 0.6944,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-34:leaf-stone-from-gina",
+        "label": "Leaf Stone from Gina",
+        "x": 0.525,
+        "y": 0.4907,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-34:hidden-item-in-day-care-yard",
+        "label": "Hidden Item in Day-Care Yard",
+        "x": 0.875,
+        "y": 0.3611,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-34:item-across-water",
+        "label": "Item across Water",
+        "x": 0.375,
+        "y": 0.5648,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-34:hidden-item-across-water",
+        "label": "Hidden Item across Water",
+        "x": 0.425,
+        "y": 0.6019,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:items-route-34:soft-sand-from-kate",
+        "label": "Soft Sand from Kate",
+        "x": 0.325,
+        "y": 0.9537,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

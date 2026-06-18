@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-radio-tower-5-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:goldenrod-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/RadioTower5F.png",
+      "alt": "Radio Tower 5 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-radio-tower-5-f:item",
+        "label": "Item",
+        "x": 0.4722,
+        "y": 0.6875,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

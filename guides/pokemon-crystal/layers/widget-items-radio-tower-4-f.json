@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:items-radio-tower-4-f",
+    "title": "Items & Hidden Spots",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:goldenrod-city"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/RadioTower4F.png",
+      "alt": "Radio Tower 4 F map showing item and hidden-spot locations",
+      "credit": "crystal-ap-tracker"
+    },
+    "pins": [
+      {
+        "itemId": "pokemon-crystal:items-radio-tower-4-f:pink-bow-from-mary",
+        "label": "Pink Bow from Mary",
+        "x": 0.8056,
+        "y": 0.8125,
+        "sourceRefs": [
+          "src-ap-tracker"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
