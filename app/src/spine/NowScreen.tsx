@@ -43,7 +43,7 @@ export function NowScreen({
       {nextVisit && nextName ? (
         <a
           href={`#/guide/${slug}/place/${nextVisit.locationId.split(":")[1] ?? ""}`}
-          className="block rounded-lg border border-accent bg-card px-3 py-2 text-sm font-bold text-accent"
+          className="block rounded-lg border border-primary bg-card px-3 py-2 text-sm font-bold text-primary"
         >
           Next up — {nextName}
         </a>

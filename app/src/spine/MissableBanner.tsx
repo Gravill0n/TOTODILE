@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import type { UpcomingMissable } from "./missables";
 
 type MissableBannerProps = {
@@ -18,10 +20,11 @@ export function MissableBanner({
   if (items.length === 0) return null;
   return (
     <aside
+      role="alert"
       aria-label="Upcoming missables"
       className="sticky top-0 z-20 mb-4 rounded-lg border border-missable bg-paper-dim p-3 shadow"
     >
-      <p className="text-xs font-bold uppercase text-missable">
+      <p className="text-xs font-bold text-missable uppercase">
         ⚠ Upcoming missable{items.length > 1 ? "s" : ""}
       </p>
       <ul className="mt-2 space-y-2">
@@ -30,29 +33,35 @@ export function MissableBanner({
             key={item.stepId}
             className="flex items-start justify-between gap-3 text-sm"
           >
-            <span className="min-w-0">
-              <span className="text-missable">{item.deadline}</span>
+            <span className="flex min-w-0 flex-wrap items-center gap-2">
+              <Badge
+                variant="outline"
+                className="border-missable text-missable"
+              >
+                {item.deadline}
+              </Badge>
               {item.location ? (
-                <span className="ml-2 text-ink-soft">· {item.location}</span>
+                <span className="text-ink-soft">· {item.location}</span>
               ) : null}
             </span>
             <span className="flex shrink-0 gap-2">
-              <button
-                type="button"
+              <Button
+                variant="outline"
+                size="sm"
                 onClick={() => onJump(item.stepId)}
                 aria-label={`Go to missable: ${item.deadline}`}
-                className="rounded border border-line px-2 py-0.5 text-xs text-ink-soft"
               >
                 Go
-              </button>
-              <button
-                type="button"
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
                 onClick={() => onAcknowledge(item.stepId)}
                 aria-label={`Acknowledge missable: ${item.deadline}`}
-                className="rounded border border-missable px-2 py-0.5 text-xs font-bold text-missable"
+                className="border-missable font-bold text-missable"
               >
                 Acknowledge
-              </button>
+              </Button>
             </span>
           </li>
         ))}
