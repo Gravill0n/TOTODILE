@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-gym-badges",
+  "generatedAt": "2026-06-18T00:00:00Z",
+  "inputs": [
+    { "file": "deck.json", "sha256": "cf161824ea7e5516d3d8fd9be56bd84995087368cfab8f94f73381bee1e1239e" },
+    { "file": "layers/spine.json", "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf" },
+    { "file": "sources.json", "sha256": "8e002ed9dc3d40005fcdfe8007e302df85e0713ee3368efb4430aa075f390283" },
+    { "file": "layers/data.json", "sha256": "8f672a8b9493d62ab0dfc6f39c0a8b3c6b297baf2dac90b830ab24644aaddfcf" }
+  ],
+  "report": {
+    "rowCount": 16,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Fills deck slot 0 (checklist, global, defaultTitle \"Gym Badges\"). Single 16-row checklist: 8 Johto + 8 Kanto badges in canonical Trainer-Card order, each row tracing to its spine badge-clear step in src-bulba-walkthrough and named against the data layer's achievements dataset (Oak set, ach-315131…315280).",
+    "Each badge row anchors to a spine step (verified present): zephyr→v-violet-city-2:s1, hive→v-azalea-town-2:s2, plain→v-goldenrod-city-1:s5, fog→v-ecruteak-city-2:s2, storm→v-cianwood-city-1:s3, mineral→v-olivine-city-2:s2, glacier→v-mahogany-town-3:s1, rising→v-dragons-den-1:s2 (earned after the elder's quiz), boulder→v-pewter-city-1:s2, cascade→v-cerulean-city-3:s1, thunder→v-vermilion-city-1:s2, rainbow→v-celadon-city-1:s2, soul→v-fuchsia-city-1:s1, marsh→v-saffron-city-1:s2, volcano→v-seafoam-islands-1:s1, earth→v-viridian-city-2:s1.",
+    "Volcano Badge note records the source detail that Blaine's gym is on Cinnabar Island but he is fought inside the Seafoam Islands cave in Crystal (matching the spine's c17 modelling).",
+    "Achievement linkage is deferred to the ra-mapping pass: each itemId will be the target of both the main flavor set (ach-5637…5652) and the Oak badge set (ach-315131…315280). Checklist rows carry no achievementRefs by design (§6.5 — the reverse link lives in the RA mapping).",
+    "No source gaps: all 16 badge/leader/city facts are stated in src-bulba-walkthrough; confidence normal throughout, flaggedItemIds empty."
+  ]
+}

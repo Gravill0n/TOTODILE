@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:gym-badges",
+    "title": "Gym Badges",
+    "type": "checklist",
+    "scope": { "kind": "global" },
+    "deckPosition": 0,
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:badge:zephyr",
+        "label": "Zephyr Badge",
+        "note": "Falkner — Violet City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:hive",
+        "label": "Hive Badge",
+        "note": "Bugsy — Azalea Town Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:plain",
+        "label": "Plain Badge",
+        "note": "Whitney — Goldenrod City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:fog",
+        "label": "Fog Badge",
+        "note": "Morty — Ecruteak City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:storm",
+        "label": "Storm Badge",
+        "note": "Chuck — Cianwood City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:mineral",
+        "label": "Mineral Badge",
+        "note": "Jasmine — Olivine City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:glacier",
+        "label": "Glacier Badge",
+        "note": "Pryce — Mahogany Town Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:rising",
+        "label": "Rising Badge",
+        "note": "Clair — Blackthorn City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:boulder",
+        "label": "Boulder Badge",
+        "note": "Brock — Pewter City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:cascade",
+        "label": "Cascade Badge",
+        "note": "Misty — Cerulean City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:thunder",
+        "label": "Thunder Badge",
+        "note": "Lt. Surge — Vermilion City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:rainbow",
+        "label": "Rainbow Badge",
+        "note": "Erika — Celadon City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:soul",
+        "label": "Soul Badge",
+        "note": "Janine — Fuchsia City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:marsh",
+        "label": "Marsh Badge",
+        "note": "Sabrina — Saffron City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:volcano",
+        "label": "Volcano Badge",
+        "note": "Blaine — Cinnabar Island Gym (fought in Seafoam Islands)",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:badge:earth",
+        "label": "Earth Badge",
+        "note": "Blue — Viridian City Gym",
+        "sourceRefs": ["src-bulba-walkthrough", "src-ra-oak"],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
