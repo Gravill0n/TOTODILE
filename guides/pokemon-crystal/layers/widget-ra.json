@@ -1,0 +1,1033 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:ra",
+    "title": "RetroAchievements",
+    "type": "checklist",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 7,
+    "rows": [
+      {
+        "itemId": "pokemon-crystal:ra:a5636",
+        "label": "The Silver Case",
+        "note": "Give your rival's name to the officer at Professor Elm's lab. · 1 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5637",
+        "label": "Flying in Father's Footsteps",
+        "note": "Defeat Falkner in Violet City and earn the Zephyr Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199603",
+        "label": "Clipping the Pigeon's Wings",
+        "note": "Defeat\n Falkner in the Set battle style using only Johto Pokémon that do not \nexceed level 9 during battle and without using any Pack items - no \nexternal trade-only Pokémon. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5934",
+        "label": "Criminal Underground",
+        "note": "Defeat the Rocket Grunt leading the raid on the Slowpoke Well. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5638",
+        "label": "Entomology Prodigy",
+        "note": "Defeat Bugsy in Azalea Town and earn the Hive Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199604",
+        "label": "Did Someone Call an Exterminator?",
+        "note": "Defeat\n Bugsy in the Set battle style using only Johto Pokémon that do not \nexceed level 16 during battle and without using any Pack items - no \nexternal trade-only Pokémon. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5639",
+        "label": "No Crying over Spilt Milk",
+        "note": "Defeat Whitney in Goldenrod City and earn the Plain Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199605",
+        "label": "Attack of the Mad Cow",
+        "note": "Defeat\n Whitney in the Set battle style using only Johto Pokémon that do not \nexceed level 20 during battle and without using any Pack items - no \nexternal trade-only Pokémon. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199564",
+        "label": "Falsa Wood",
+        "note": "Catch the Sudowoodo on Route 36 and register it in the Pokédex. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199566",
+        "label": "Have Eusine What I've Seen?!",
+        "note": "Complete the Eusine sidequest in the Burned Tower. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5640",
+        "label": "The Future Is Fright",
+        "note": "Defeat Morty in Ecruteak City and earn the Fog Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199606",
+        "label": "In the Spirit of Battle",
+        "note": "Defeat\n Morty in the Set battle style using only Johto Pokémon that do not \nexceed level 25 during battle and without using any Pack items - no \nexternal trade-only Pokémon. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199568",
+        "label": "The Dashing Dog-Chaser",
+        "note": "Defeat Eusine in Cianwood City. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5641",
+        "label": "Bare-Fisted Beast Taming",
+        "note": "Defeat Chuck in Cianwood City and earn the Storm Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199607",
+        "label": "Black Belt in Training",
+        "note": "Defeat\n Chuck in the Set battle style using only Johto Pokémon that do not \nexceed level 30 during battle and without using any Pack items - no \nexternal trade-only Pokémon. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199569",
+        "label": "Working the Light Shift",
+        "note": "Cure Amphy at the top of the Olivine Lighthouse. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5642",
+        "label": "Iron Maiden",
+        "note": "Defeat Jasmine in Olivine City and earn the Mineral Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199608",
+        "label": "Stainless Stealing Victory",
+        "note": "Defeat\n Jasmine in the Set battle style using only Johto Pokémon that do not \nexceed level 35 during battle and without using any Pack items - no \nexternal trade-only Pokémon. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199594",
+        "label": "Life, the Universe, and Aurorae",
+        "note": "Encounter Suicune on Route 42. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199570",
+        "label": "Everybody Gets One",
+        "note": "Catch the red Gyarados in the Lake of Rage. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5946",
+        "label": "Evil Makes Waves",
+        "note": "Thwart the efforts of Team Rocket at their hideout in Mahogany Town. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199571",
+        "label": "Calling Off the Launch",
+        "note": "Defeat every Trainer at Team Rocket's Hideout in Mahogany Town. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5643",
+        "label": "Out with the Cold, In with the New",
+        "note": "Defeat Pryce in Mahogany Town and earn the Glacier Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199609",
+        "label": "Braving a Brutal Blizzard",
+        "note": "Defeat\n Pryce in the Set battle style using only Johto Pokémon that do not \nexceed level 31 during battle and without using any Pack items - no \nexternal trade-only Pokémon. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5947",
+        "label": "Taken Off the Air",
+        "note": "Defeat every Rocket Executive in the Goldenrod Radio Tower. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199572",
+        "label": "Golden-Rocket Roundup",
+        "note": "Defeat every Trainer in the Goldenrod Radio Tower and the Underground. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199595",
+        "label": "Forest of Fate",
+        "note": "Encounter Suicune on Route 36. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5948",
+        "label": "Calming the Northern Winds",
+        "note": "Catch Suicune, the Aurora Pokémon. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199573",
+        "label": "Crystalline Catch",
+        "note": "Catch Suicune and register it in the Pokédex without using a Master Ball. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5644",
+        "label": "Dragon's Destiny",
+        "note": "Defeat Clair in Blackthorn City and earn the Rising Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199610",
+        "label": "Down to the Last Breath",
+        "note": "Defeat\n Clair in the Set battle style using only Johto Pokémon that do not \nexceed level 40 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199576",
+        "label": "Truthfulness Bears Rewards",
+        "note": "Receive\n a Dratini with ExtremeSpeed at the Dragon Shrine by correctly answering\n every question of the Master's quiz on the first attempt. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5949",
+        "label": "The Johto Journey's End",
+        "note": "Defeat the Elite Four and Champion Lance at the Pokémon League, and be crowned as the new Pokémon League Champion! · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199611",
+        "label": "Overcoming the Heavenly Kings",
+        "note": "Defeat\n the Elite Four and Lance in a single session in the Set battle style \nusing only Johto Pokémon that do not exceed level 44 during battle and \nwithout using any Pack items - no external trade-only Pokémon or \nLegendaries other than the Beasts. · 25 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5950",
+        "label": "Struggle to the Top",
+        "note": "Defeat the Elite Four and Lance using only a single Pokémon. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5647",
+        "label": "The Other Electric Soldier",
+        "note": "Defeat Lt. Surge in Vermillion City and earn the Thunder Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199612",
+        "label": "Shock to the System",
+        "note": "Defeat\n Lt. Surge in the Set battle style using only Johto Pokémon that do not \nexceed level 46 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5650",
+        "label": "Born with a Twisted Spoon",
+        "note": "Defeat Sabrina in Saffron City and earn the Marsh Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199613",
+        "label": "Telepathic Miscommunications",
+        "note": "Defeat\n Sabrina in the Set battle style using only Johto Pokémon that do not \nexceed level 48 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199585",
+        "label": "We're Gonna Give You the Power",
+        "note": "Return the stolen Machine Part to the staff of the Kanto Power Plant. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5646",
+        "label": "The Third Water Wheel",
+        "note": "Defeat Misty in Cerulean City and earn the Cascade Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199614",
+        "label": "Poor, Washed-Up Mermaid",
+        "note": "Defeat\n Misty in the Set battle style using only Johto Pokémon that do not \nexceed level 47 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5648",
+        "label": "Two Green Thumbs Up",
+        "note": "Defeat Erika in Celadon City and earn the Rainbow Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199615",
+        "label": "Slicing the Blades of Yesterday",
+        "note": "Defeat\n Erika in the Set battle style using only Johto Pokémon that do not \nexceed level 46 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5649",
+        "label": "'Cause You Know That You're Toxic",
+        "note": "Defeat Janine in Fuchsia City and earn the Soul Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199616",
+        "label": "Separating the \"Ill\" from \"Illusions\"",
+        "note": "Defeat\n Janine in the Set battle style using only Johto Pokémon that do not \nexceed level 39 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199586",
+        "label": "The Lazy Song",
+        "note": "Catch the Snorlax in Vermillion City and register it in the Pokédex. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5645",
+        "label": "Rock-Solid Reunion",
+        "note": "Defeat Brock in Pewter City and earn the Boulder Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199632",
+        "label": "Gneiss Try, Mr. Jelly Donut!",
+        "note": "Defeat\n Brock in the Set battle style using only Johto Pokémon that do not \nexceed level 44 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5651",
+        "label": "Home Is Where the Hot Is",
+        "note": "Defeat Blaine on Cinnabar Island and earn the Volcano Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199617",
+        "label": "Frying Up the Egg-Head",
+        "note": "Defeat\n Blaine in the Set battle style using only Johto Pokémon that do not \nexceed level 50 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5652",
+        "label": "The Fallen Rival Returns",
+        "note": "Defeat Blue in Viridian City and earn the Earth Badge. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199618",
+        "label": "Until Next Time... Smell Ya Later!",
+        "note": "Defeat\n Blue in the Set battle style using only Johto Pokémon that do not \nexceed level 58 during battle and without using any Pack items - no \nexternal trade-only Pokémon or Legendaries other than the Beasts. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5958",
+        "label": "Clash of the Champions",
+        "note": "Defeat Pokémon Trainer Red at the summit of Mt. Silver! · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199619",
+        "label": "To Train Them Is My Cause",
+        "note": "Defeat\n Red in the Set battle style using only Johto Pokémon that do not exceed\n level 65 during battle and without using any Pack items - no external \ntrade-only Pokémon; all Johto Legendaries allowed. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5959",
+        "label": "A League of Your Own",
+        "note": "Defeat Red using only a single Pokémon. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5951",
+        "label": "Beasts of the Brass",
+        "note": "Catch Entei and Raikou, the Volcano and Thunder Pokémon. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199574",
+        "label": "Lightning in a Ball",
+        "note": "Catch Raikou and register it in the Pokédex without using a Master Ball. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199575",
+        "label": "Pyroplastic Pacifier",
+        "note": "Catch Entei and register it in the Pokédex without using a Master Ball. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5952",
+        "label": "Fateful Eye-to-Eye",
+        "note": "Catch Lugia, the Diving Pokémon, at the Whirl Islands. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199589",
+        "label": "Serenity Beyond the Storm",
+        "note": "Catch Lugia and register it in the Pokédex without using a Master Ball. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5953",
+        "label": "Phoenix of a Pure Heart",
+        "note": "Catch Ho-Oh, the Rainbow Pokémon, at the Tin Tower. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199590",
+        "label": "At the End of the Rainbow",
+        "note": "Catch Ho-Oh and register it in the Pokédex without using a Master Ball. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199582",
+        "label": "But Which Came First?",
+        "note": "Receive an Everstone from Professor Elm by showing him the hatched Mystery Egg. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199601",
+        "label": "Apri-Cornucopia",
+        "note": "Receive a batch of at least 10 special Poké Balls at once from Kurt in Azalea Town. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199596",
+        "label": "I Slept Like a Log...",
+        "note": "Encounter a sleeping Pokémon by using Headbutt on a tree. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199561",
+        "label": "Served Shiny Side Up?",
+        "note": "Receive the Odd Egg from the Day-Care Man on Route 34. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199634",
+        "label": "Megaton Chances",
+        "note": "See Golem by lining up two 7s on a slot machine at a Game Corner. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199635",
+        "label": "Underage Gambling Pays Off!",
+        "note": "Earn a 7-7-7 on a slot machine at a Game Corner. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199627",
+        "label": "Double Dozen Deduction",
+        "note": "Win a x24 bet in the Card Flip minigame at a Game Corner. · 3 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199622",
+        "label": "Cast Your Net Far & Wide",
+        "note": "Win the Bug-Catching Contest at the National Park. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199623",
+        "label": "Cuddly Crawlie Challenge",
+        "note": "Win the Bug-Catching Contest without catching a Butterfree, a Beedrill, a Scyther, or a Pinsir. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199624",
+        "label": "Earning Style Points",
+        "note": "Win the Bug-Catching Contest with Cooltrainer Nick as a participant. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199580",
+        "label": "Udder Selflessness",
+        "note": "Nurse Moomoo back to health at Moomoo Farm. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199633",
+        "label": "Sorry, No Rare Candies!",
+        "note": "Have a Shuckle turn a Berry into Berry Juice after a battle. · 1 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199630",
+        "label": "Worth Its Weight in Mold",
+        "note": "Get Mania of Cianwood City's permission to keep Shuckie by raising its Friendship high enough. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199591",
+        "label": "Ferry Fountain Fridays",
+        "note": "Catch the Lapras in Union Cave and register it in the Pokédex. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199636",
+        "label": "Let the Unown Be Known",
+        "note": "Solve each of the puzzle chambers and collect every hidden item in the Ruins of Alph. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5955",
+        "label": "Alphabet Scoop",
+        "note": "Catch all 26 forms of Unown. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199578",
+        "label": "Scaling for Scaling",
+        "note": "Trade the Red Scale to Mr. Pokémon on Route 30 for the EXP Share. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199581",
+        "label": "That Bass's Too Fat!",
+        "note": "Receive an Elixir from the Fishing Guru at the Lake of Rage by breaking the Magikarp size record. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199559",
+        "label": "Go Ahead, Make My Day",
+        "note": "Receive all 7 gifts from each of the Week Siblings. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199620",
+        "label": "Gambler's Charity",
+        "note": "Learn a new move from Bill's father outside the Goldenrod City Game Corner. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199637",
+        "label": "Cruisin' for a Bruisin'",
+        "note": "Defeat every possible Trainer aboard the S.S. Aqua excluding those from the first voyage. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199588",
+        "label": "Pokémania Runs in the Family",
+        "note": "Show all 5 requested Pokémon to Bill's grandfather on Route 25. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199640",
+        "label": "This One's For You, Doll",
+        "note": "Receive a Pass for the Magnet Train from the Copycat in Saffron City. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199639",
+        "label": "The Reel Pokédex",
+        "note": "Collect all 3 of the fishing rods. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199587",
+        "label": "Lunatical Onlooker",
+        "note": "Receive a Moon Stone after witnessing the Clefairy ritual at Mt. Moon Square. · 3 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199593",
+        "label": "The Thief's Last Stand",
+        "note": "Win the optional battle against your rival at Indigo Plateau. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199625",
+        "label": "For That Nice & Shiny Coat",
+        "note": "Have Daisy Oak comb your Pokémon in Pallet Town. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199629",
+        "label": "Cute, Soft, & Made with Love",
+        "note": "Own every Poké Doll purchased by Mom. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199621",
+        "label": "The Anger of a Gentle 'Mon",
+        "note": "Have your Pokémon in the first slot use Frustration or Return at its maximum power. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199626",
+        "label": "Didn't Know You Had It in You!",
+        "note": "Deal super effective damage with Hidden Power. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199567",
+        "label": "Element of Generosity",
+        "note": "Receive an Evolution stone from a registered Pokégear Trainer. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199638",
+        "label": "Deals on Wheels",
+        "note": "Promote the Miracle Cycle bike shop in Goldenrod City and be allowed to keep the bike. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199631",
+        "label": "Our Store's Up High, But Our Prices Are Low",
+        "note": "Make a purchase in the Rooftop Sale on the roof of the Goldenrod Department Store. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199597",
+        "label": "Password Perfectionist",
+        "note": "Add Buena's phone number to your Pokégear after earning 30 Blue Card points. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199579",
+        "label": "Fun to Sell Off, Not to Eat",
+        "note": "Receive a Nugget from either Pokéfan Beverly or Pokéfan Derek. · 2 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199577",
+        "label": "Practicing 1 Move 10,000 Times",
+        "note": "Receive a PP Up from Blackbelt Kenji. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199602",
+        "label": "Strength from Numbers",
+        "note": "Receive a vitamin from every possible Trainer rematch that rewards one. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199565",
+        "label": "More Valuable than Any Dollar",
+        "note": "Receive every in-game Gift Pokémon. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199592",
+        "label": "Link Cable Not Included",
+        "note": "Complete every in-game trade. · 5 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199560",
+        "label": "Landly Legend",
+        "note": "Defeat every non-missable Trainer in Johto. · 25 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199562",
+        "label": "Flourishing Findings",
+        "note": "Collect every visible and hidden field item in Johto. · 25 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199583",
+        "label": "Urban Underdog",
+        "note": "Defeat every non-missable Trainer in Kanto. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199584",
+        "label": "Colorful Collector",
+        "note": "Collect every visible and hidden field item in Kanto. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199563",
+        "label": "Machine Learning",
+        "note": "Collect every finite TM and HM. · 25 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199598",
+        "label": "Don't Give Them the Stick!",
+        "note": "Obtain a Stick from a wild Farfetch'd by either catching the Pokémon or stealing it. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199599",
+        "label": "More Like the Orphan Club!",
+        "note": "Obtain a Thick Club from a wild Cubone or Marowak. · 10 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199600",
+        "label": "Easter Surprise",
+        "note": "Obtain a Lucky Egg from a wild Chansey by either catching the Pokémon or stealing it. · 50 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5936",
+        "label": "Game of Death-Defiance",
+        "note": "Clear the Battle Tower by defeating 7 Trainers in a row. · 25 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a199628",
+        "label": "Local Competition",
+        "note": "Clear the Battle Tower using only Johto Pokémon - no Lugia or Ho-Oh. · 25 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:ra:a5954",
+        "label": "Gotta Catch 'Em All - Crystal",
+        "note": "Catch all 206 possible Pokémon that are obtainable in-game without external devices. · 50 pts",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

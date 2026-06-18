@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "layer": "widget-ra",
+  "generatedAt": "2026-06-18T03:00:00Z",
+  "inputs": [
+    {
+      "file": "deck.json",
+      "sha256": "cf161824ea7e5516d3d8fd9be56bd84995087368cfab8f94f73381bee1e1239e"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "4d97a78b9445c7d8d6ebd3dc86c2fdc8f1cdd864006328fcc60b72d2c9c0df4c"
+    }
+  ],
+  "report": {
+    "rowCount": 113,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Fills deck slot 7 (checklist, global, defaultTitle \"RetroAchievements\"). 113 rows = the RA main set (game 810, src-ra) from the achievements dataset; each row label=title, note=description + points.",
+    "Scope split with slot 8: this widget is the main set (src-ra, game 810); the Professor Oak Challenge subset (game 24140, src-ra-oak, 224 achievements) is the separate Oak Catch List (slot 8). No overlap — the two RA games partition the achievement namespace.",
+    "Achievement→guide-step linkage (which step earns each) is the ra-mapping pass's job; this checklist is the user-facing earn list."
+  ]
+}
