@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-39",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-39"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-39:pok-fan-derek",
+        "cells": {
+          "trainer-class": "PokéFan",
+          "trainer-name": "Derek",
+          "party": "Pikachu L17",
+          "battle-type": "Single",
+          "reward": "$1360",
+          "notes": "Phone rematches (×2, up to L36)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-39:pok-fan-jamie",
+        "cells": {
+          "trainer-class": "PokéFan",
+          "trainer-name": "Jamie",
+          "party": "Meowth L16",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-39:pok-fan-ruth",
+        "cells": {
+          "trainer-class": "PokéFan",
+          "trainer-name": "Ruth",
+          "party": "Pikachu L17",
+          "battle-type": "Single",
+          "reward": "$1360"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-39:psychic-norman",
+        "cells": {
+          "trainer-class": "Psychic",
+          "trainer-name": "Norman",
+          "party": "Slowpoke L17; Slowpoke L20",
+          "battle-type": "Single",
+          "reward": "$640"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-39:sailor-eugene",
+        "cells": {
+          "trainer-class": "Sailor",
+          "trainer-name": "Eugene",
+          "party": "Poliwhirl L17; Raticate L17; Krabby L19",
+          "battle-type": "Single",
+          "reward": "$760"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

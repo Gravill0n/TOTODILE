@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-ss-aqua",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:ss-aqua"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ss-aqua:black-belt-wai",
+        "cells": {
+          "trainer-class": "Black Belt",
+          "trainer-name": "Wai",
+          "party": "Machoke L30; Machoke L32; Machoke L34",
+          "battle-type": "Single",
+          "reward": "$816"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ss-aqua:fisherman-jonah",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Jonah",
+          "party": "Shellder L25; Octillery L29; Remoraid L25; Cloyster L29",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ss-aqua:juggler-fritz",
+        "cells": {
+          "trainer-class": "Juggler",
+          "trainer-name": "Fritz",
+          "party": "Mr. Mime L29; Magmar L29; Machoke L29",
+          "battle-type": "Single",
+          "reward": "$1150"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ss-aqua:picnicker-debra",
+        "cells": {
+          "trainer-class": "Picnicker",
+          "trainer-name": "Debra",
+          "party": "Seaking L33",
+          "battle-type": "Single",
+          "reward": "$660"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ss-aqua:sailor-garrett",
+        "cells": {
+          "trainer-class": "Sailor",
+          "trainer-name": "Garrett",
+          "party": "Kingler L34",
+          "battle-type": "Single",
+          "reward": "$1360"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ss-aqua:sailor-jeff",
+        "cells": {
+          "trainer-class": "Sailor",
+          "trainer-name": "Jeff",
+          "party": "Raticate L32; Raticate L32",
+          "battle-type": "Single",
+          "reward": "$1280"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ss-aqua:sailor-kenneth",
+        "cells": {
+          "trainer-class": "Sailor",
+          "trainer-name": "Kenneth",
+          "party": "Machop L28; Machop L28; Poliwrath L28; Machop L28",
+          "battle-type": "Single",
+          "reward": "$1120"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ss-aqua:school-kid-nate",
+        "cells": {
+          "trainer-class": "School Kid",
+          "trainer-name": "Nate",
+          "party": "Ledian L32; Exeggutor L32",
+          "battle-type": "Single",
+          "reward": "$800"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ss-aqua:school-kid-ricky",
+        "cells": {
+          "trainer-class": "School Kid",
+          "trainer-name": "Ricky",
+          "party": "Aipom L32; Ditto L32",
+          "battle-type": "Single",
+          "reward": "$800"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-ss-aqua:teacher-shirley",
+        "cells": {
+          "trainer-class": "Teacher",
+          "trainer-name": "Shirley",
+          "party": "Jigglypuff L35",
+          "battle-type": "Single",
+          "reward": "$2520"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

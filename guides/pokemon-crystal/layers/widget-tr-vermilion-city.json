@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-vermilion-city",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:vermilion-city"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-vermilion-city:gentleman-gregory",
+        "cells": {
+          "trainer-class": "Gentleman",
+          "trainer-name": "Gregory",
+          "party": "Pikachu L37; Flaaffy L33",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-vermilion-city:guitarist-vincent",
+        "cells": {
+          "trainer-class": "Guitarist",
+          "trainer-name": "Vincent",
+          "party": "Magnemite L27; Voltorb L33; Magnemite L32; Magnemite L32",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-vermilion-city:gym-leader-lt-surge",
+        "cells": {
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Lt. Surge",
+          "party": "Raichu L44; Electrode L40; Magneton L40; Electrode L40; Electabuzz L46",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-vermilion-city:juggler-horton",
+        "cells": {
+          "trainer-class": "Juggler",
+          "trainer-name": "Horton",
+          "party": "Electrode L33; Electrode L33; Electrode L33; Electrode L33",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

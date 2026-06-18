@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-sprout-tower",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:sprout-tower"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-sprout-tower:sage-jin",
+        "cells": {
+          "trainer-class": "Sage",
+          "trainer-name": "Jin",
+          "party": "Bellsprout L6",
+          "battle-type": "Single",
+          "reward": "$192"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-sprout-tower:sage-li",
+        "cells": {
+          "trainer-class": "Sage",
+          "trainer-name": "Li",
+          "party": "Bellsprout L7; Bellsprout L7; Hoothoot L10",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-sprout-tower:sage-neal",
+        "cells": {
+          "trainer-class": "Sage",
+          "trainer-name": "Neal",
+          "party": "Bellsprout L6",
+          "battle-type": "Single",
+          "reward": "$192"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-sprout-tower:sage-troy",
+        "cells": {
+          "trainer-class": "Sage",
+          "trainer-name": "Troy",
+          "party": "Bellsprout L7; Hoothoot L7",
+          "battle-type": "Single",
+          "reward": "$224"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

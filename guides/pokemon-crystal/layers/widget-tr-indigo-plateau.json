@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-indigo-plateau",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:indigo-plateau"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-indigo-plateau:champion-lance",
+        "cells": {
+          "trainer-class": "Champion",
+          "trainer-name": "Lance",
+          "party": "Gyarados L44; Dragonite L47; Dragonite L47; Aerodactyl L46; Charizard L46; Dragonite L50",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-indigo-plateau:elite-four-bruno",
+        "cells": {
+          "trainer-class": "Elite Four",
+          "trainer-name": "Bruno",
+          "party": "Hitmontop L42; Hitmonlee L42; Hitmonchan L42; Onix L43; Machamp L46",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-indigo-plateau:elite-four-karen",
+        "cells": {
+          "trainer-class": "Elite Four",
+          "trainer-name": "Karen",
+          "party": "Umbreon L42; Vileplume L42; Gengar L45; Murkrow L44; Houndoom L47",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-indigo-plateau:elite-four-koga",
+        "cells": {
+          "trainer-class": "Elite Four",
+          "trainer-name": "Koga",
+          "party": "Ariados L40; Venomoth L41; Forretress L43; Muk L42; Crobat L44",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-indigo-plateau:elite-four-will",
+        "cells": {
+          "trainer-class": "Elite Four",
+          "trainer-name": "Will",
+          "party": "Xatu L40; Jynx L41; Exeggutor L41; Slowbro L41; Xatu L42",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-indigo-plateau:rival-silver",
+        "cells": {
+          "trainer-class": "Rival",
+          "trainer-name": "Silver",
+          "party": "Sneasel L45; Crobat L48; Magneton L45; Gengar L46; Alakazam L46; Meganium L50",
+          "battle-type": "Single",
+          "notes": "3 team variants"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

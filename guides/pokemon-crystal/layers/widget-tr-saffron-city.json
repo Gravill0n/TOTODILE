@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-saffron-city",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:saffron-city"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-saffron-city:gym-leader-sabrina",
+        "cells": {
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Sabrina",
+          "party": "Espeon L46; Mr. Mime L46; Alakazam L48",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-saffron-city:medium-doris",
+        "cells": {
+          "trainer-class": "Medium",
+          "trainer-name": "Doris",
+          "party": "Slowpoke L34; Slowbro L36",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-saffron-city:medium-rebecca",
+        "cells": {
+          "trainer-class": "Medium",
+          "trainer-name": "Rebecca",
+          "party": "Drowzee L35; Hypno L35",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-saffron-city:psychic-franklin",
+        "cells": {
+          "trainer-class": "Psychic",
+          "trainer-name": "Franklin",
+          "party": "Kadabra L37",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-saffron-city:psychic-jared",
+        "cells": {
+          "trainer-class": "Psychic",
+          "trainer-name": "Jared",
+          "party": "Mr. Mime L32; Exeggcute L32; Exeggutor L35",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

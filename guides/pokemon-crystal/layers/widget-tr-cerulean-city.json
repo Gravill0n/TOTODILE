@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-cerulean-city",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:cerulean-city"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-cerulean-city:gym-leader-misty",
+        "cells": {
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Misty",
+          "party": "Golduck L42; Quagsire L42; Lapras L44; Starmie L47",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-cerulean-city:swimmer-briana",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Briana",
+          "party": "Seaking L35; Seaking L35",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-cerulean-city:swimmer-diana",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Diana",
+          "party": "Golduck L37",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-cerulean-city:swimmer-parker",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Parker",
+          "party": "Horsea L32; Horsea L32; Seadra L35",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-cianwood-city",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:cianwood-city"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-cianwood-city:black-belt-lao",
+        "cells": {
+          "trainer-class": "Black Belt",
+          "trainer-name": "Lao",
+          "party": "Hitmonchan L27",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-cianwood-city:black-belt-lung",
+        "cells": {
+          "trainer-class": "Black Belt",
+          "trainer-name": "Lung",
+          "party": "Mankey L23; Mankey L23; Primeape L25",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-cianwood-city:black-belt-nob",
+        "cells": {
+          "trainer-class": "Black Belt",
+          "trainer-name": "Nob",
+          "party": "Machop L25; Machoke L25",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-cianwood-city:black-belt-yoshi",
+        "cells": {
+          "trainer-class": "Black Belt",
+          "trainer-name": "Yoshi",
+          "party": "Hitmonlee L27",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-cianwood-city:gym-leader-chuck",
+        "cells": {
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Chuck",
+          "party": "Primeape L27; Poliwrath L30",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

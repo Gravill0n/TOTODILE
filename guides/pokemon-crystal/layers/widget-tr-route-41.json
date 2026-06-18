@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-41",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-41"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-41:swimmer-berke",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Berke",
+          "party": "Qwilfish L23",
+          "battle-type": "Single",
+          "reward": "$184"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-41:swimmer-charlie",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Charlie",
+          "party": "Shellder L21; Tentacool L19; Tentacruel L19",
+          "battle-type": "Single",
+          "reward": "$152"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-41:swimmer-denise",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Denise",
+          "party": "Seel L22",
+          "battle-type": "Single",
+          "reward": "$440"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-41:swimmer-george",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "George",
+          "party": "Tentacool L16; Tentacool L17; Tentacool L16; Staryu L19; Tentacool L17; Remoraid L19",
+          "battle-type": "Single",
+          "reward": "$152"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-41:swimmer-kara",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Kara",
+          "party": "Staryu L20; Starmie L20",
+          "battle-type": "Single",
+          "reward": "$400"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-41:swimmer-kaylee",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Kaylee",
+          "party": "Goldeen L18; Goldeen L20; Seaking L20",
+          "battle-type": "Single",
+          "reward": "$400"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-41:swimmer-kirk",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Kirk",
+          "party": "Gyarados L20; Gyarados L20",
+          "battle-type": "Single",
+          "reward": "$180"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-41:swimmer-mathew",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Mathew",
+          "party": "Krabby L23",
+          "battle-type": "Single",
+          "reward": "$184"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-41:swimmer-susie",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Susie",
+          "party": "Psyduck L20; Goldeen L22",
+          "battle-type": "Single",
+          "reward": "$440"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-41:swimmer-wendy",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Wendy",
+          "party": "Horsea L21; Horsea L21",
+          "battle-type": "Single",
+          "reward": "$420"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

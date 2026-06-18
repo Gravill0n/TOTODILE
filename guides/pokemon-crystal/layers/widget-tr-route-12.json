@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-12",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-12"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-12:fisherman-barney",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Barney",
+          "party": "Gyarados L30; Gyarados L30; Gyarados L30",
+          "battle-type": "Single",
+          "reward": "$1184"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-12:fisherman-kyle",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Kyle",
+          "party": "Seaking L28; Poliwhirl L31; Seaking L31",
+          "battle-type": "Single",
+          "reward": "$1248"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-12:fisherman-martin",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Martin",
+          "party": "Remoraid L32; Remoraid L32",
+          "battle-type": "Single",
+          "reward": "$1344"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-12:fisherman-stephen",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Stephen",
+          "party": "Magikarp L25; Magikarp L25; Qwilfish L31; Tentacruel L31",
+          "battle-type": "Single",
+          "reward": "$1216"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      }
+    ]
+  }
+}

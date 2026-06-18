@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-fuchsia-city",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:fuchsia-city"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-fuchsia-city:camper-barry",
+        "cells": {
+          "trainer-class": "Camper",
+          "trainer-name": "Barry",
+          "party": "Nidoking L36",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-fuchsia-city:gym-leader-janine",
+        "cells": {
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Janine",
+          "party": "Crobat L36; Weezing L36; Weezing L36; Ariados L33; Venomoth L39",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-fuchsia-city:lass-alice",
+        "cells": {
+          "trainer-class": "Lass",
+          "trainer-name": "Alice",
+          "party": "Gloom L30; Arbok L34; Gloom L30",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-fuchsia-city:lass-linda",
+        "cells": {
+          "trainer-class": "Lass",
+          "trainer-name": "Linda",
+          "party": "Bulbasaur L30; Ivysaur L32; Venusaur L34",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-fuchsia-city:picnicker-cindy",
+        "cells": {
+          "trainer-class": "Picnicker",
+          "trainer-name": "Cindy",
+          "party": "Nidoqueen L36",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

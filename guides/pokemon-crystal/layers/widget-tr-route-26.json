@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-26",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-26"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-26:cool-trainer-beth",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Beth",
+          "party": "Rapidash L36",
+          "battle-type": "Single",
+          "reward": "$1728",
+          "notes": "Phone rematches (×2, up to L43)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-26:cool-trainer-gaven",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Gaven",
+          "party": "Victreebel L32; Kingler L32; Flareon L32",
+          "battle-type": "Single",
+          "reward": "$1536",
+          "notes": "Phone rematches (×1, up to L35)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-26:cool-trainer-jake",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Jake",
+          "party": "Parasect L33; Golduck L35",
+          "battle-type": "Single",
+          "reward": "$1680"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-26:cool-trainer-joyce",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Joyce",
+          "party": "Pikachu L36; Blastoise L32",
+          "battle-type": "Single",
+          "reward": "$1536"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-26:fisherman-scott",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Scott",
+          "party": "Qwilfish L30; Qwilfish L30; Seaking L34",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-26:psychic-richard",
+        "cells": {
+          "trainer-class": "Psychic",
+          "trainer-name": "Richard",
+          "party": "Sunkern L36",
+          "battle-type": "Single",
+          "reward": "$1152"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "flagged"
+      }
+    ]
+  }
+}

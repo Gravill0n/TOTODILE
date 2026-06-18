@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-goldenrod-city",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:goldenrod-city"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "sub-area",
+        "label": "Sub-area"
+      },
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-goldenrod-city:beauty-samantha",
+        "cells": {
+          "sub-area": "Goldenrod City",
+          "trainer-class": "Beauty",
+          "trainer-name": "Samantha",
+          "party": "Meowth L16; Meowth L16",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-goldenrod-city:beauty-victoria",
+        "cells": {
+          "sub-area": "Goldenrod City",
+          "trainer-class": "Beauty",
+          "trainer-name": "Victoria",
+          "party": "Sentret L9; Sentret L13; Sentret L17",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-goldenrod-city:gym-leader-whitney",
+        "cells": {
+          "sub-area": "Goldenrod City",
+          "trainer-class": "Gym Leader",
+          "trainer-name": "Whitney",
+          "party": "Clefairy L18; Miltank L20",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-goldenrod-city:lass-bridget",
+        "cells": {
+          "sub-area": "Goldenrod City",
+          "trainer-class": "Lass",
+          "trainer-name": "Bridget",
+          "party": "Jigglypuff L15; Jigglypuff L15; Jigglypuff L15",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-goldenrod-city:lass-carrie",
+        "cells": {
+          "sub-area": "Goldenrod City",
+          "trainer-class": "Lass",
+          "trainer-name": "Carrie",
+          "party": "Snubbull L18",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-goldenrod-city:radio-tower-rocket-executive",
+        "cells": {
+          "sub-area": "Radio Tower",
+          "trainer-class": "Rocket Executive",
+          "party": "Koffing L30; Koffing L30; Koffing L30; Weezing L32; Koffing L30; Koffing L30",
+          "battle-type": "Single",
+          "notes": "3 team variants"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

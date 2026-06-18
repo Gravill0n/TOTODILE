@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-14",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-14"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-14:bird-keeper-roy",
+        "cells": {
+          "trainer-class": "Bird Keeper",
+          "trainer-name": "Roy",
+          "party": "Fearow L29; Fearow L35",
+          "battle-type": "Single",
+          "reward": "$840"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-14:pok-fan-carter",
+        "cells": {
+          "trainer-class": "PokéFan",
+          "trainer-name": "Carter",
+          "party": "Bulbasaur L29; Charmander L29; Squirtle L29",
+          "battle-type": "Single",
+          "reward": "$2320"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-14:pok-fan-trevor",
+        "cells": {
+          "trainer-class": "PokéFan",
+          "trainer-name": "Trevor",
+          "party": "Psyduck L33",
+          "battle-type": "Single",
+          "reward": "$2640"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

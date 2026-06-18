@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-15",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-15"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-15:school-kid-billy",
+        "cells": {
+          "trainer-class": "School Kid",
+          "trainer-name": "Billy",
+          "party": "Paras L27; Paras L27; Poliwhirl L27; Ditto L35",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-15:school-kid-johnny",
+        "cells": {
+          "trainer-class": "School Kid",
+          "trainer-name": "Johnny",
+          "party": "Bellsprout L29; Weepinbell L33; Victreebel L31",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-15:school-kid-kipp",
+        "cells": {
+          "trainer-class": "School Kid",
+          "trainer-name": "Kipp",
+          "party": "Voltorb L27; Magnemite L27; Voltorb L31; Magneton L31",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-15:school-kid-tommy",
+        "cells": {
+          "trainer-class": "School Kid",
+          "trainer-name": "Tommy",
+          "party": "Xatu L32; Alakazam L32",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-15:teacher-colette",
+        "cells": {
+          "trainer-class": "Teacher",
+          "trainer-name": "Colette",
+          "party": "Clefairy L36",
+          "battle-type": "Single",
+          "reward": "$2592"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-15:teacher-hillary",
+        "cells": {
+          "trainer-class": "Teacher",
+          "trainer-name": "Hillary",
+          "party": "Aipom L32; Cubone L36",
+          "battle-type": "Single",
+          "reward": "$2592"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

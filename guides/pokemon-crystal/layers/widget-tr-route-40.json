@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-40",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-40"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-40:swimmer-elaine",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Elaine",
+          "party": "Staryu L21",
+          "battle-type": "Single",
+          "reward": "$420"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-40:swimmer-paula",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Paula",
+          "party": "Staryu L19; Shellder L19",
+          "battle-type": "Single",
+          "reward": "$380"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-40:swimmer-randall",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Randall",
+          "party": "Shellder L18; Wartortle L20; Shellder L18",
+          "battle-type": "Single",
+          "reward": "$144"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-40:swimmer-simon",
+        "cells": {
+          "trainer-class": "Swimmer",
+          "trainer-name": "Simon",
+          "party": "Tentacool L20; Tentacool L20",
+          "battle-type": "Single",
+          "reward": "$160"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

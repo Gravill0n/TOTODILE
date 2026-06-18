@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:tr-route-44",
+    "title": "Area Trainers",
+    "type": "dataTable",
+    "scope": {
+      "kind": "location",
+      "locationId": "pokemon-crystal:route-44"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "trainer-class",
+        "label": "Class"
+      },
+      {
+        "id": "trainer-name",
+        "label": "Trainer"
+      },
+      {
+        "id": "party",
+        "label": "Party"
+      },
+      {
+        "id": "battle-type",
+        "label": "Type"
+      },
+      {
+        "id": "reward",
+        "label": "Reward"
+      },
+      {
+        "id": "notes",
+        "label": "Notes"
+      }
+    ],
+    "rows": [
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-44:bird-keeper-vance",
+        "cells": {
+          "trainer-class": "Bird Keeper",
+          "trainer-name": "Vance",
+          "party": "Pidgeotto L25; Pidgeotto L25",
+          "battle-type": "Single",
+          "reward": "$600",
+          "notes": "Phone rematches (×2, up to L32)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-44:cool-trainer-allen",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Allen",
+          "party": "Charmeleon L27",
+          "battle-type": "Single",
+          "reward": "$1296"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-44:cool-trainer-cybil",
+        "cells": {
+          "trainer-class": "Cool Trainer",
+          "trainer-name": "Cybil",
+          "party": "Butterfree L25; Bellossom L25",
+          "battle-type": "Single",
+          "reward": "$1200"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-44:fisherman-edgar",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Edgar",
+          "party": "Remoraid L25; Remoraid L25",
+          "battle-type": "Single"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-44:fisherman-wilton",
+        "cells": {
+          "trainer-class": "Fisherman",
+          "trainer-name": "Wilton",
+          "party": "Goldeen L23; Goldeen L23; Seaking L25",
+          "battle-type": "Single",
+          "notes": "Phone rematches (×2, up to L38)"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-44:pok-maniac-zach",
+        "cells": {
+          "trainer-class": "PokéManiac",
+          "trainer-name": "Zach",
+          "party": "Rhyhorn L27",
+          "battle-type": "Single",
+          "reward": "$1620"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "checkable": true,
+        "itemId": "pokemon-crystal:tr-route-44:psychic-phil",
+        "cells": {
+          "trainer-class": "Psychic",
+          "trainer-name": "Phil",
+          "party": "Natu L24; Kadabra L26",
+          "battle-type": "Single",
+          "reward": "$972"
+        },
+        "sourceRefs": [
+          "src-serebii-pokearth",
+          "src-bulba-locations"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
