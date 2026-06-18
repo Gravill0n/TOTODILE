@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c19",
+    "title": "Red Prep (Mt. Silver)",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c19"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c19:red-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 65",
+        "note": "For 'To Train Them Is My Cause' — defeat Red in Set battle style, using only Johto Pokémon that never exceed Lv 65 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c19:red-recommended",
+        "label": "Recommended counter",
+        "note": "Red can be rematched after each League clear, so refine later if needed. A diverse high-level team is recommended — Piloswine, Skarmory, Crobat, the Legendary Beasts, or your starter.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

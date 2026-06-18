@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c11",
+    "title": "Gym Prep — Sabrina",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c11"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c11:sabrina-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 48",
+        "note": "For 'Telepathic Miscommunications' — defeat Sabrina in Set battle style, using only Johto Pokémon that never exceed Lv 48 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c11:sabrina-recommended",
+        "label": "Recommended counter",
+        "note": "You'll likely be under the cap with your current team; if over-levelled, train a Houndour found right next to Saffron City.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

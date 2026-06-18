@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c9",
+    "title": "Elite Four & Lance Prep",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c9"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c9:elite-four-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 44",
+        "note": "For 'Overcoming the Heavenly Kings' — defeat the Elite Four and Lance in a single session in Set battle style, using only Johto Pokémon that never exceed Lv 44 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c9:elite-four-recommended",
+        "label": "Recommended counter",
+        "note": "Swinub/Piloswine and Skarmory excel here, especially against Lance; a caught Suicune (and possibly Entei/Raikou) is great across the Elite Four.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

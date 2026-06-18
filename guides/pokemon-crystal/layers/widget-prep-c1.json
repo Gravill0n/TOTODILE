@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c1",
+    "title": "Gym Prep — Falkner",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c1"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c1:falkner-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 9",
+        "note": "For 'Clipping the Pigeon's Wings' — defeat Falkner in Set battle style, using only Johto Pokémon that never exceed Lv 9 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c1:falkner-recommended",
+        "label": "Recommended counter",
+        "note": "Dunsparce from Dark Cave just before Violet City — Normal type, and its move Rage hits harder each time it is struck, letting it shred the gym.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

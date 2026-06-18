@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c15",
+    "title": "Gym Prep — Janine",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c15"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c15:janine-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 39",
+        "note": "For 'Separating the \"Ill\" from \"Illusions\"' — defeat Janine in Set battle style, using only Johto Pokémon that never exceed Lv 39 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c15:janine-recommended",
+        "label": "Recommended counter",
+        "note": "Low cap (below anything since Clair) rules out higher-level Beasts; train caught Skarmory, Swinub, or Houndour instead.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

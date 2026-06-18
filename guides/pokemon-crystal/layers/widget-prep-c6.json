@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c6",
+    "title": "Gym Prep — Pryce",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c6"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c6:pryce-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 31",
+        "note": "For 'Braving a Brutal Blizzard' — defeat Pryce in Set battle style, using only Johto Pokémon that never exceed Lv 31 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c6:pryce-recommended",
+        "label": "Recommended counter",
+        "note": "Dunsparce can shine again here; the Cyndaquil line shreds it, and Piloswine being part Ground lets Water Pokémon like Quagsire avoid trouble too.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

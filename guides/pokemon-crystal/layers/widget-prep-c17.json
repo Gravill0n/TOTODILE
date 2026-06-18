@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c17",
+    "title": "Gym Prep — Blaine",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c17"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c17:blaine-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 50",
+        "note": "For 'Frying Up the Egg-Head' — defeat Blaine in Set battle style, using only Johto Pokémon that never exceed Lv 50 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c17:blaine-recommended",
+        "label": "Recommended counter",
+        "note": "If under the cap, use your main team; otherwise the Legendary Beasts (Suicune) or Lv 40 Lanturns from the Super Rod.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

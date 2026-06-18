@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c4",
+    "title": "Gym Prep — Morty",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c4"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c4:morty-challenge",
+        "label": "Johto-only challenge: team ≤ Lv 25",
+        "note": "For 'In the Spirit of Battle' — defeat Morty in Set battle style, using only Johto Pokémon that never exceed Lv 25 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c4:morty-recommended",
+        "label": "Recommended counter",
+        "note": "Dunsparce has outlived its use here. With Totodile you'll have Bite/Crunch; otherwise evolve Zubat into Golbat (Lv 22) for a super-effective hit on the Ghosts.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

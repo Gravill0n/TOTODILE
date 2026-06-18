@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:prep-c5",
+    "title": "Gym Prep — Chuck & Jasmine",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "pokemon-crystal:c5"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "pokemon-crystal:prep-c5:chuck-challenge",
+        "label": "Chuck: Johto-only challenge, team ≤ Lv 30",
+        "note": "For 'Black Belt in Training' — defeat Chuck in Set battle style, using only Johto Pokémon that never exceed Lv 30 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c5:chuck-recommended",
+        "label": "Recommended counter (Chuck)",
+        "note": "A Flying move carries this gym — the Chinchou line, Togetic, Mantine, or Crobat all work well.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c5:jasmine-challenge",
+        "label": "Jasmine: Johto-only challenge, team ≤ Lv 35",
+        "note": "For 'Stainless Stealing Victory' — defeat Jasmine in Set battle style, using only Johto Pokémon that never exceed Lv 35 in battle, and without using any Pack items.",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "pokemon-crystal:prep-c5:jasmine-recommended",
+        "label": "Recommended counter (Jasmine)",
+        "note": "Your pool hasn't grown much since Chuck. Mind that the next gym (Pryce) has a lower Lv 31 cap, so don't grind Pokémon meant for there — you can even take Pryce's gym first.",
+        "sourceRefs": [
+          "src-ra-wiki"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
