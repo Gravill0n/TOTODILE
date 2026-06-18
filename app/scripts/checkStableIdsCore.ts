@@ -81,7 +81,10 @@ export function checkStableIds(
           findings,
         );
         if (layer) protect(record.artifact, spineIds(layer));
-      } else if (record.kind === "widget-pass") {
+      } else if (
+        record.kind === "widget-pass" &&
+        /(^|\/)widget-[^/]*\.json$/.test(record.artifact)
+      ) {
         const layer = loadEntity(
           baseDir,
           slug,
@@ -96,8 +99,15 @@ export function checkStableIds(
           ]);
         }
       }
-      // record.kind === "ra-mapping": entries key on external RA IDs and
-      // target other layers' checkables — nothing minted, nothing to protect.
+      // record.kind === "ra-mapping": entries key on external RA IDs and target
+      // other layers' checkables — nothing minted, nothing to protect.
+      //
+      // A "widget-pass" record whose artifact is not a layers/widget-*.json file
+      // is the intermediate extract-data layer (layers/data.json) — which has no
+      // valid layerKind of its own, so the review flow records it as widget-pass.
+      // Its records carry only local (single-segment) IDs, outside the checkable
+      // namespace and §6.8-exempt, so it is skipped here rather than parsed as a
+      // widget (which would fail — data.json is pass: "extract-data").
     }
   }
 
