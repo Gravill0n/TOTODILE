@@ -1,4 +1,6 @@
+import { MapPin, Menu, Puzzle, RefreshCw } from "lucide-react";
 import type { ReactNode } from "react";
+import { Button } from "@/components/ui/button";
 
 type PostureLayoutProps = {
   children: ReactNode;
@@ -45,42 +47,46 @@ export function PostureLayout({
         aria-label="Guide actions"
         className="fixed inset-x-0 bottom-0 flex justify-around border-t border-line bg-card py-2 lg:hidden"
       >
-        <button
-          type="button"
-          className="px-4 py-1 disabled:opacity-40"
+        <Button
+          variant="ghost"
+          size="icon"
           title="Chapters"
+          aria-label="Chapters"
           onClick={onChapters}
           disabled={!onChapters}
         >
-          ☰
-        </button>
-        <button
-          type="button"
-          className="px-4 py-1 disabled:opacity-40"
+          <Menu />
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon"
           title="Widgets"
+          aria-label="Widgets"
           onClick={onWidgets}
           disabled={!onWidgets}
         >
-          🧩
-        </button>
-        <button
-          type="button"
-          className="px-4 py-1 disabled:opacity-40"
+          <Puzzle />
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon"
           title="Where am I"
+          aria-label="Where am I"
           onClick={onWhereAmI}
           disabled={!onWhereAmI}
         >
-          📍
-        </button>
-        <button
-          type="button"
-          className="px-4 py-1 disabled:opacity-40"
+          <MapPin />
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon"
           title={syncing ? "Syncing…" : "Sync"}
+          aria-label={syncing ? "Syncing…" : "Sync"}
           onClick={onSync}
           disabled={!onSync || syncing}
         >
-          {syncing ? "…" : "🔄"}
-        </button>
+          <RefreshCw className={syncing ? "animate-spin" : undefined} />
+        </Button>
       </nav>
     </div>
   );
