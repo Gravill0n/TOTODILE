@@ -1,11 +1,13 @@
+import { ExternalLink } from "lucide-react";
+import type { ReactNode } from "react";
 import type { SourceEntry } from "../schema";
 import type { FlaggedRow } from "./flaggedRows";
 
 type RowSourceColumnsProps = {
   row: FlaggedRow;
   sourceById: Map<string, SourceEntry>;
-  // Small label over the row (e.g. "⚠ flagged"); colour set by the caller.
-  eyebrow?: string;
+  // Small label over the row (e.g. a "flagged" eyebrow); colour set by caller.
+  eyebrow?: ReactNode;
   eyebrowClassName?: string;
 };
 
@@ -32,9 +34,10 @@ function SourceCard({ id, source }: { id: string; source?: SourceEntry }) {
           href={source.url}
           target="_blank"
           rel="noreferrer"
-          className="mt-1 inline-block text-sm text-primary underline"
+          className="mt-1 inline-flex items-center gap-1 text-sm text-primary underline"
         >
-          Open source ↗
+          Open source
+          <ExternalLink className="size-3" aria-hidden />
         </a>
       ) : null}
     </li>

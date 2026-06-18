@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { cn } from "@/lib/utils";
@@ -25,12 +26,12 @@ export function PrepCard({ widget, progress, onToggle }: PrepCardProps) {
     <div>
       <p
         className={cn(
-          "mb-2 text-xs font-bold",
+          "mb-2 flex items-center gap-1 text-xs font-bold",
           ready ? "text-primary" : "text-ink-soft",
         )}
       >
         Ready {doneCount} / {widget.items.length}
-        {ready ? " ✓" : null}
+        {ready ? <Check className="size-3" aria-hidden /> : null}
       </p>
       <ul className="space-y-1 text-sm">
         {widget.items.map((item) => {

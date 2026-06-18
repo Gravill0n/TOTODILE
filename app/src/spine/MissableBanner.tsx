@@ -1,3 +1,4 @@
+import { TriangleAlert } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import type { UpcomingMissable } from "./missables";
@@ -9,8 +10,8 @@ type MissableBannerProps = {
 };
 
 // §7 S2 — the sticky banner that warns about upcoming missables before the
-// point of no return (FR-B5). Consistent missable treatment (⚠ + missable
-// colour). Pure: callbacks in, no router context, so the guide screen stays
+// point of no return (FR-B5). Consistent missable treatment (alert icon +
+// missable colour). Pure: callbacks in, no router context, so the guide stays
 // renderable bare in tests. Acknowledge is the explicit dismissal.
 export function MissableBanner({
   items,
@@ -24,8 +25,9 @@ export function MissableBanner({
       aria-label="Upcoming missables"
       className="sticky top-0 z-20 mb-4 rounded-lg border border-missable bg-paper-dim p-3 shadow"
     >
-      <p className="text-xs font-bold text-missable uppercase">
-        ⚠ Upcoming missable{items.length > 1 ? "s" : ""}
+      <p className="flex items-center gap-1 text-xs font-bold text-missable uppercase">
+        <TriangleAlert className="size-3.5" aria-hidden />
+        Upcoming missable{items.length > 1 ? "s" : ""}
       </p>
       <ul className="mt-2 space-y-2">
         {items.map((item) => (

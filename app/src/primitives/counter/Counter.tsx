@@ -1,3 +1,4 @@
+import { Check, Minus, Plus, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { ProgressSlice } from "../../progress/progressSlice";
@@ -26,12 +27,12 @@ export function Counter({ widget, progress, onAdjust, onReset }: CounterProps) {
               <p className="text-sm">{counter.label}</p>
               <p
                 className={cn(
-                  "text-xs",
+                  "flex items-center gap-1 text-xs",
                   complete ? "font-bold text-primary" : "text-ink-soft",
                 )}
               >
                 {value} / {counter.target}
-                {complete ? " ✓" : ""}
+                {complete ? <Check className="size-3" aria-hidden /> : null}
               </p>
             </div>
             <Button
@@ -41,7 +42,7 @@ export function Counter({ widget, progress, onAdjust, onReset }: CounterProps) {
               onClick={() => onAdjust(counter.itemId, -1)}
               aria-label={`Decrement ${counter.label}`}
             >
-              −
+              <Minus />
             </Button>
             <Button
               type="button"
@@ -49,9 +50,8 @@ export function Counter({ widget, progress, onAdjust, onReset }: CounterProps) {
               size="icon"
               onClick={() => onAdjust(counter.itemId, 1)}
               aria-label={`Increment ${counter.label}`}
-              className="text-lg font-bold"
             >
-              +
+              <Plus />
             </Button>
             <Button
               type="button"
@@ -59,9 +59,8 @@ export function Counter({ widget, progress, onAdjust, onReset }: CounterProps) {
               size="icon-sm"
               onClick={() => onReset(counter.itemId)}
               aria-label={`Reset ${counter.label}`}
-              className="text-xs"
             >
-              ↺
+              <RotateCcw />
             </Button>
           </li>
         );

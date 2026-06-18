@@ -1,3 +1,4 @@
+import { Dices } from "lucide-react";
 import { useState } from "react";
 import type { SourceEntry, SpotCheckVerdict } from "../schema";
 import type { FlaggedRow } from "./flaggedRows";
@@ -11,7 +12,7 @@ type SpotCheckPanelProps = {
   onRecord: (verdict: SpotCheckVerdict) => void;
 };
 
-// FR-E3/E4 — "🎲 spot-check N": draw N random confident rows, show each beside
+// FR-E3/E4 — "spot-check N": draw N random confident rows, show each beside
 // its source, record pass/fail. Recorded verdicts persist across re-rolls and
 // reloads (keyed by itemId in the review store).
 export function SpotCheckPanel({
@@ -35,9 +36,10 @@ export function SpotCheckPanel({
           type="button"
           disabled={sampleSize === 0}
           onClick={() => setSampled(sampleRows(unflaggedRows, DEFAULT_SAMPLE))}
-          className="rounded border border-line bg-card px-3 py-1 text-sm disabled:opacity-50"
+          className="inline-flex items-center gap-1 rounded border border-line bg-card px-3 py-1 text-sm disabled:opacity-50"
         >
-          🎲 Spot-check {sampleSize}
+          <Dices className="size-4" aria-hidden />
+          Spot-check {sampleSize}
         </button>
         {sampled.length > 0 ? (
           <button

@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import type { ProgressSlice } from "../../progress/progressSlice";
 import type { MapPinsWidget } from "../../schema";
 import { FlagMark } from "../FlagMark";
@@ -45,7 +46,7 @@ export function MapPins({
                   : "border-primary bg-card/90 text-primary"
               }`}
             >
-              {done ? "✓" : index + 1}
+              {done ? <Check className="size-5" aria-hidden /> : index + 1}
             </button>
           );
         })}

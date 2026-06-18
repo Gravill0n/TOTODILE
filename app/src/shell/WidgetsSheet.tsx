@@ -19,7 +19,7 @@ type WidgetsSheetProps = WidgetHandlers & {
   onClose: () => void;
 };
 
-// The 🧩 bottom sheet (S3, phone posture): the widgets in scope for where the
+// The widgets bottom sheet (S3, phone posture): the widgets in scope for where
 // pointer is — chapter, location (every visit there), or visit — by default,
 // whole-game toggle visible (FR-A5). The list arrives pre-resolved (widgetScope).
 // Radix Sheet supplies the focus trap, scroll lock and escape-to-close (#4).

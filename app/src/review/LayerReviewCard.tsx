@@ -1,3 +1,4 @@
+import { Check, X } from "lucide-react";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -159,7 +160,8 @@ export function LayerReviewCard({
             ) : (
               <div className="flex flex-wrap items-center gap-2">
                 <Button type="button" size="sm" onClick={onApprove}>
-                  ✓ Approve
+                  <Check aria-hidden />
+                  Approve
                 </Button>
                 <Button
                   type="button"
@@ -167,7 +169,8 @@ export function LayerReviewCard({
                   size="sm"
                   onClick={() => setRejecting((value) => !value)}
                 >
-                  ✗ Reject
+                  <X aria-hidden />
+                  Reject
                 </Button>
                 {rejecting ? (
                   <span className="flex flex-1 items-center gap-2">

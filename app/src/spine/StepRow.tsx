@@ -1,3 +1,4 @@
+import { CheckCheck, SkipForward, TriangleAlert, Trophy } from "lucide-react";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -21,9 +22,10 @@ type StepRowProps = {
 };
 
 // Pure renderer (§22.1): data + callbacks in, UI out. The checkbox toggles
-// done; tapping the step text moves the pointer here (§6.7 manual move);
-// ⏭ is the skip-for-later secondary action (FR-B2) and ✓✓ the P2 burst —
-// separate tap targets so nothing happens by accident.
+// done; tapping the step text moves the pointer here (§6.7 manual move); the
+// skip icon is the skip-for-later secondary action (FR-B2) and the
+// mark-through icon the P2 burst — separate tap targets so nothing happens by
+// accident.
 export function StepRow({
   step,
   slug,
@@ -61,11 +63,11 @@ export function StepRow({
       onClick={onToggleSkip}
       aria-label={`${isSkipped ? "Unskip" : "Skip for later"}: ${shortText}`}
       title={isSkipped ? "Unskip" : "Skip for later"}
-      className={`shrink-0 rounded border px-1.5 py-0.5 text-xs ${
+      className={`shrink-0 rounded border px-1.5 py-1 ${
         isSkipped ? "border-ink-soft text-ink" : "border-line text-ink-soft"
       }`}
     >
-      ⏭
+      <SkipForward className="size-3.5" aria-hidden />
     </button>
   );
 
@@ -102,8 +104,9 @@ export function StepRow({
               />
               {detailDisclosure}
               {step.missable ? (
-                <p className="mt-2 text-sm font-bold text-missable">
-                  ⚠ Missable — {step.missable.deadline}
+                <p className="mt-2 flex items-center gap-1 text-sm font-bold text-missable">
+                  <TriangleAlert className="size-4" aria-hidden />
+                  Missable — {step.missable.deadline}
                 </p>
               ) : null}
               {step.images.map((image) => (
@@ -151,9 +154,9 @@ export function StepRow({
               onClick={onMarkThrough}
               aria-label={`Mark all through here: ${shortText}`}
               title="Mark every step up to and including this one done"
-              className="shrink-0 rounded border border-line px-1.5 py-0.5 text-xs text-ink-soft"
+              className="shrink-0 rounded border border-line px-1.5 py-1 text-ink-soft"
             >
-              ✓✓
+              <CheckCheck className="size-3.5" aria-hidden />
             </button>
           ) : null}
         </>
@@ -185,15 +188,16 @@ function StepMeta({
         <Badge
           aria-label={`${step.achievementRefs.length} achievement(s) here`}
         >
-          🏆
+          <Trophy className="size-3" aria-hidden />
           {step.achievementRefs.length > 1
-            ? ` ×${step.achievementRefs.length}`
+            ? `×${step.achievementRefs.length}`
             : ""}
         </Badge>
       ) : null}
       {step.missable && withMissableMark ? (
         <Badge variant="outline" className="border-missable text-missable">
-          ⚠ missable
+          <TriangleAlert className="size-3" aria-hidden />
+          missable
         </Badge>
       ) : null}
     </p>

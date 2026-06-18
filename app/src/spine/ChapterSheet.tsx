@@ -13,7 +13,7 @@ type ChapterSheetProps = {
   onClose: () => void;
 };
 
-// The ☰ bottom sheet: jump to a chapter without losing the pointer. Radix
+// The chapters bottom sheet: jump to a chapter without losing the pointer. Radix
 // Sheet gives the focus trap, scroll lock and escape-to-close (#4); the parent
 // mounts it only while open, so onOpenChange(false) maps to onClose.
 export function ChapterSheet({ chapters, onJump, onClose }: ChapterSheetProps) {

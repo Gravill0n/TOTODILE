@@ -123,7 +123,8 @@ describe("counter (full)", () => {
       doneIds: new Set(),
       counterValues: { "fictional-quest:counters:blue-coins": 40 },
     });
-    expect(screen.getByText(/40 \/ 40 ✓/)).toBeDefined();
+    // Done treatment is now a lucide check icon beside the value, not a glyph.
+    expect(screen.getByText("40 / 40")).toBeDefined();
   });
 });
 
@@ -345,7 +346,8 @@ describe("prepCard (full)", () => {
       ]),
       counterValues: {},
     });
-    expect(screen.getByText(/Ready 3 \/ 3 ✓/)).toBeDefined();
+    // Ready treatment is now a lucide check icon, not a glyph.
+    expect(screen.getByText("Ready 3 / 3")).toBeDefined();
   });
 
   it("marks flagged items", () => {
