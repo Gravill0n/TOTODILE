@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "guideId": "pokemon-crystal",
+  "pass": "widget",
+  "widget": {
+    "id": "pokemon-crystal:pokedex",
+    "title": "Pokédex",
+    "type": "counter",
+    "scope": { "kind": "global" },
+    "deckPosition": 1,
+    "counters": [
+      {
+        "itemId": "pokemon-crystal:pokedex:own",
+        "label": "Pokédex (species owned)",
+        "target": 206,
+        "sourceRefs": ["src-ra-oak"],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
