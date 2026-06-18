@@ -41,7 +41,7 @@ export function SpotCheckRow({
           aria-pressed={current === "pass"}
           className={`rounded border px-2 py-0.5 text-sm ${
             current === "pass"
-              ? "border-accent bg-accent/10 font-bold text-accent"
+              ? "border-primary bg-primary/10 font-bold text-primary"
               : "border-line"
           }`}
         >

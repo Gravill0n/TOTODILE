@@ -32,7 +32,7 @@ function SourceCard({ id, source }: { id: string; source?: SourceEntry }) {
           href={source.url}
           target="_blank"
           rel="noreferrer"
-          className="mt-1 inline-block text-sm text-accent underline"
+          className="mt-1 inline-block text-sm text-primary underline"
         >
           Open source ↗
         </a>

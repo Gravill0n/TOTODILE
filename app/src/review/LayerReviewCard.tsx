@@ -1,4 +1,9 @@
 import { useState } from "react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 import type { LayerRecord, SourceEntry, SpotCheckVerdict } from "../schema";
 import { FlaggedRowView } from "./FlaggedRowView";
 import type { FlaggedRow } from "./flaggedRows";
@@ -55,10 +60,11 @@ export function LayerReviewCard({
   const flagCount = layer.flaggedItemIds.length;
 
   return (
-    <section
-      className={`rounded-lg border p-4 ${
-        approved ? "border-line bg-card" : "border-missable bg-paper-dim"
-      }`}
+    <Card
+      className={cn(
+        "gap-2 p-4",
+        approved ? "border-line bg-card" : "border-missable bg-paper-dim",
+      )}
     >
       <button
         type="button"
@@ -68,21 +74,22 @@ export function LayerReviewCard({
       >
         <span className="font-bold">{layer.id}</span>
         <span className="flex items-center gap-2 text-xs">
-          <span
-            className={`rounded px-2 py-0.5 font-bold ${
-              flagCount > 0 ? "text-missable" : "text-ink-soft"
-            }`}
+          <Badge
+            variant="outline"
+            className={cn(
+              "font-bold",
+              flagCount > 0 ? "text-missable" : "text-ink-soft",
+            )}
           >
             {flagCount} flagged
-          </span>
+          </Badge>
           <span className="text-ink-soft">{layer.rowCount} rows</span>
-          <span
-            className={`rounded px-2 py-0.5 uppercase ${
-              approved ? "font-bold text-accent" : "font-bold text-missable"
-            }`}
+          <Badge
+            variant={approved ? "default" : "outline"}
+            className={cn("uppercase", !approved && "text-missable")}
           >
             {STATUS_LABEL[status]}
-          </span>
+          </Badge>
         </span>
       </button>
 
@@ -123,67 +130,69 @@ export function LayerReviewCard({
             {verdict ? (
               <div className="flex flex-wrap items-center gap-3 text-sm">
                 <span
-                  className={`font-bold uppercase ${
+                  className={cn(
+                    "font-bold uppercase",
                     verdict.status === "approved"
-                      ? "text-accent"
-                      : "text-missable"
-                  }`}
+                      ? "text-primary"
+                      : "text-missable",
+                  )}
                 >
                   {STATUS_LABEL[verdict.status]}
                 </span>
                 {verdict.note ? (
                   <span className="text-ink-soft">“{verdict.note}”</span>
                 ) : null}
-                <button
+                <Button
                   type="button"
+                  variant="link"
+                  size="sm"
+                  className="text-ink-soft"
                   onClick={() => {
                     onClearVerdict();
                     setRejecting(false);
                     setNote("");
                   }}
-                  className="text-ink-soft underline"
                 >
                   Change
-                </button>
+                </Button>
               </div>
             ) : (
               <div className="flex flex-wrap items-center gap-2">
-                <button
-                  type="button"
-                  onClick={onApprove}
-                  className="rounded border border-accent px-3 py-1 text-sm font-bold text-accent"
-                >
+                <Button type="button" size="sm" onClick={onApprove}>
                   ✓ Approve
-                </button>
-                <button
+                </Button>
+                <Button
                   type="button"
+                  variant="outline"
+                  size="sm"
                   onClick={() => setRejecting((value) => !value)}
-                  className="rounded border border-line px-3 py-1 text-sm"
                 >
                   ✗ Reject
-                </button>
+                </Button>
                 {rejecting ? (
                   <span className="flex flex-1 items-center gap-2">
-                    <input
+                    <Input
                       type="text"
                       value={note}
                       onChange={(event) => setNote(event.target.value)}
                       placeholder="rejection note (required — feeds the recompile)"
                       aria-label={`Rejection note for ${layer.id}`}
-                      className="flex-1 rounded border border-line bg-paper px-2 py-1 text-sm"
+                      className="flex-1"
                     />
-                    <button
+                    <Button
                       type="button"
+                      variant="outline"
+                      size="sm"
                       disabled={!note.trim()}
+                      className="border-missable font-bold text-missable"
                       onClick={() => {
                         onReject(note);
                         setRejecting(false);
                         setNote("");
                       }}
-                      className="rounded border border-missable px-2 py-1 text-sm font-bold text-missable disabled:opacity-50"
                     >
                       Submit
-                    </button>
+                    </Button>
                   </span>
                 ) : null}
               </div>
@@ -191,6 +200,6 @@ export function LayerReviewCard({
           </div>
         </>
       ) : null}
-    </section>
+    </Card>
   );
 }
