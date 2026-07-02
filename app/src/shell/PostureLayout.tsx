@@ -15,7 +15,7 @@ type PostureLayoutProps = {
 
 // §7 S2 skeleton. Phone (play posture): single column with the bottom
 // action bar. Desktop (browse posture): walkthrough column flanked by
-// widget panel columns.
+// slim widget-launcher rails (WidgetRail); widgets open in WidgetDialog.
 export function PostureLayout({
   children,
   onChapters,
@@ -33,15 +33,15 @@ export function PostureLayout({
             so sticky bites in the stretch-aligned flex row, and an internal
             scroll cap so a tall panel never outgrows the viewport. */}
         <aside
-          aria-label="Widget panel"
-          className="hidden w-64 shrink-0 lg:sticky lg:top-4 lg:block lg:max-h-[calc(100dvh-2rem)] lg:self-start lg:overflow-y-auto"
+          aria-label="Global widgets"
+          className="hidden w-40 shrink-0 lg:sticky lg:top-4 lg:block lg:max-h-[calc(100dvh-2rem)] lg:self-start lg:overflow-y-auto"
         >
           {leftPanel}
         </aside>
         <main className="min-w-0 flex-1">{children}</main>
         <aside
-          aria-label="Widget panel"
-          className="hidden w-64 shrink-0 lg:sticky lg:top-4 lg:block lg:max-h-[calc(100dvh-2rem)] lg:self-start lg:overflow-y-auto"
+          aria-label="Widgets in scope"
+          className="hidden w-40 shrink-0 lg:sticky lg:top-4 lg:block lg:max-h-[calc(100dvh-2rem)] lg:self-start lg:overflow-y-auto"
         >
           {rightPanel}
         </aside>

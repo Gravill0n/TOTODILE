@@ -39,8 +39,10 @@ describe("sticky widgets (Build 4)", () => {
         main
       </PostureLayout>,
     );
-    const asides = screen.getAllByLabelText("Widget panel");
-    expect(asides).toHaveLength(2);
+    const asides = [
+      screen.getByLabelText("Global widgets"),
+      screen.getByLabelText("Widgets in scope"),
+    ];
     for (const aside of asides) {
       expect(aside.className).toContain("sticky");
       // Required for sticky to bite inside a stretch-aligned flex row.

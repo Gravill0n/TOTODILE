@@ -9,6 +9,7 @@ import {
   render,
   screen,
   waitFor,
+  within,
 } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
@@ -80,25 +81,46 @@ describe("widget view (S3)", () => {
     expect(screen.getAllByText("Widgets")).not.toHaveLength(0);
   });
 
+  it("a rail launcher opens the widget full-size in a dialog", async () => {
+    await renderGuide();
+    fireEvent.click(screen.getByRole("button", { name: "Bestiary" }));
+    const dialog = await screen.findByRole("dialog");
+    expect(within(dialog).getByText("Bestiary")).toBeDefined();
+    // The body renders live inside the dialog, not in the rail.
+    expect(within(dialog).getByText("HP")).toBeDefined();
+  });
+
   it("counter values persist across a remount (FR-B3)", async () => {
     const first = render(<GuideScreen entry={entry} guide={guide} />);
     await screen.findByText(S1_TEXT);
     fireEvent.click(
-      screen.getAllByLabelText("Increment Blue coins")[0] as Element,
+      screen.getByRole("button", { name: "Collectible counters" }),
+    );
+    fireEvent.click(
+      (await screen.findAllByLabelText("Increment Blue coins"))[0] as Element,
     );
     await waitFor(() => {
       expect(screen.getAllByText("1 / 40")).not.toHaveLength(0);
     });
     first.unmount();
     render(<GuideScreen entry={entry} guide={guide} />);
+    await screen.findByText(S1_TEXT);
+    fireEvent.click(
+      screen.getByRole("button", { name: "Collectible counters" }),
+    );
     await waitFor(() => {
       expect(screen.getAllByText("1 / 40")).not.toHaveLength(0);
     });
   });
 
-  it("toggling a checklist row marks it done in the deck", async () => {
+  it("toggling a checklist row in the dialog marks it done", async () => {
     await renderGuide();
-    const checkbox = screen.getAllByLabelText("Gate key")[0] as HTMLElement;
+    fireEvent.click(
+      screen.getByRole("button", { name: "Castle treasure checklist" }),
+    );
+    const checkbox = (
+      await screen.findAllByLabelText("Gate key")
+    )[0] as HTMLElement;
     fireEvent.click(checkbox);
     await waitFor(() => {
       // shadcn Checkbox is a button[role=checkbox]; done state is aria-checked.
