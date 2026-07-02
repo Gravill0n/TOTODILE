@@ -15,7 +15,10 @@ const fixtureRoot = join(
 );
 const guide = guideFile.parse(
   JSON.parse(
-    readFileSync(join(fixtureRoot, "guides/fictional-quest/guide.json"), "utf8"),
+    readFileSync(
+      join(fixtureRoot, "guides/fictional-quest/guide.json"),
+      "utf8",
+    ),
   ),
 );
 
@@ -24,7 +27,11 @@ afterEach(cleanup);
 describe("WidgetRail", () => {
   it("renders one launcher button per widget, named by its title", () => {
     render(
-      <WidgetRail widgets={guide.widgets} emptyLabel="Empty" onOpen={() => {}} />,
+      <WidgetRail
+        widgets={guide.widgets}
+        emptyLabel="Empty"
+        onOpen={() => {}}
+      />,
     );
     expect(screen.getAllByRole("button")).toHaveLength(guide.widgets.length);
     for (const widget of guide.widgets) {
@@ -44,7 +51,13 @@ describe("WidgetRail", () => {
   });
 
   it("renders the empty label and no buttons when nothing is in scope", () => {
-    render(<WidgetRail widgets={[]} emptyLabel="Nothing in scope" onOpen={() => {}} />);
+    render(
+      <WidgetRail
+        widgets={[]}
+        emptyLabel="Nothing in scope"
+        onOpen={() => {}}
+      />,
+    );
     expect(screen.getByText("Nothing in scope")).toBeDefined();
     expect(screen.queryAllByRole("button")).toHaveLength(0);
   });

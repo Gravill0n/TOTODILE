@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
 import type { ProgressSlice } from "../progress/progressSlice";
 import { useGuideProgress } from "../progress/useGuideProgress";
 import type { GuideFile, LibraryEntry } from "../schema";
@@ -11,7 +13,9 @@ import { getCredentials } from "../sync/raCredentials";
 import { SyncReceipt } from "../sync/SyncReceipt";
 import { type SyncOutcome, syncGuide } from "../sync/syncGuide";
 import { PostureLayout } from "./PostureLayout";
-import { WidgetDeck, type WidgetHandlers } from "./WidgetDeck";
+import type { WidgetHandlers } from "./WidgetDeck";
+import { WidgetDialog } from "./WidgetDialog";
+import { WidgetRail } from "./WidgetRail";
 import { WidgetsSheet } from "./WidgetsSheet";
 import { widgetContextFor, widgetInScope } from "./widgetScope";
 
@@ -37,6 +41,7 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
   const [chaptersOpen, setChaptersOpen] = useState(false);
   const [widgetsOpen, setWidgetsOpen] = useState(false);
   const [wholeGame, setWholeGame] = useState(false);
+  const [openWidgetId, setOpenWidgetId] = useState<string | null>(null);
   const [syncing, setSyncing] = useState(false);
   const [receipt, setReceipt] = useState<SyncOutcome | null>(null);
 
@@ -104,20 +109,32 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
     resolveAsset: (path) => guideAssetUrl(entry.id, path),
   };
 
-  // Browse posture: widgets alternate across the two side columns in deck
-  // order (the §6.4 deck order is the contract; the split is presentation).
-  const leftWidgets = visibleWidgets.filter((_, index) => index % 2 === 0);
-  const rightWidgets = visibleWidgets.filter((_, index) => index % 2 === 1);
+  // Browse posture: the side rails are launchers split by scope — global
+  // widgets left, in-scope contextual ones right (§6.4 deck order holds
+  // within each rail; the split is presentation). A launcher opens the
+  // widget full-size in WidgetDialog. The open widget is looked up in the
+  // full deck, not visibleWidgets, so it survives the pointer moving it
+  // out of scope mid-interaction.
+  const globalWidgets = visibleWidgets.filter(
+    (widget) => widget.scope.kind === "global",
+  );
+  const contextWidgets = visibleWidgets.filter(
+    (widget) => widget.scope.kind !== "global",
+  );
+  const openWidget =
+    openWidgetId === null
+      ? null
+      : (guide.widgets.find((widget) => widget.id === openWidgetId) ?? null);
+  // Whole-game only affects the contextual rail — global always shows.
   const wholeGameToggle = (
-    <label className="mb-3 flex items-center gap-1 text-xs text-ink-soft">
-      <input
-        type="checkbox"
+    <Label className="flex items-center gap-2 text-xs font-normal text-ink-soft">
+      <Switch
         checked={wholeGame}
-        onChange={(event) => setWholeGame(event.target.checked)}
+        onCheckedChange={setWholeGame}
         aria-label="Whole game"
       />
       Whole game
-    </label>
+    </Label>
   );
 
   return (
@@ -135,22 +152,20 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
       syncing={syncing}
       leftPanel={
         progress.ready && guide.widgets.length > 0 ? (
-          <>
-            {wholeGameToggle}
-            <WidgetDeck
-              widgets={leftWidgets}
-              progress={progressSlice}
-              {...handlers}
-            />
-          </>
+          <WidgetRail
+            widgets={globalWidgets}
+            emptyLabel="No global widgets"
+            onOpen={setOpenWidgetId}
+          />
         ) : undefined
       }
       rightPanel={
-        progress.ready && rightWidgets.length > 0 ? (
-          <WidgetDeck
-            widgets={rightWidgets}
-            progress={progressSlice}
-            {...handlers}
+        progress.ready && guide.widgets.length > 0 ? (
+          <WidgetRail
+            widgets={contextWidgets}
+            header={wholeGameToggle}
+            emptyLabel="Nothing in scope"
+            onOpen={setOpenWidgetId}
           />
         ) : undefined
       }
@@ -201,6 +216,14 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
             scrollToElement(chapterDomId(chapterId), "start");
           }}
           onClose={() => setChaptersOpen(false)}
+        />
+      ) : null}
+      {openWidget !== null && progress.ready ? (
+        <WidgetDialog
+          widget={openWidget}
+          progress={progressSlice}
+          onClose={() => setOpenWidgetId(null)}
+          {...handlers}
         />
       ) : null}
       {widgetsOpen && progress.ready ? (

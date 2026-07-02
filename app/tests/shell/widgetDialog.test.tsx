@@ -2,7 +2,13 @@
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
+import {
+  cleanup,
+  fireEvent,
+  render,
+  screen,
+  within,
+} from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import type { ProgressSlice } from "@/progress/progressSlice";
 import { guideFile } from "@/schema";
@@ -16,7 +22,10 @@ const fixtureRoot = join(
 );
 const guide = guideFile.parse(
   JSON.parse(
-    readFileSync(join(fixtureRoot, "guides/fictional-quest/guide.json"), "utf8"),
+    readFileSync(
+      join(fixtureRoot, "guides/fictional-quest/guide.json"),
+      "utf8",
+    ),
   ),
 );
 const checklist = guide.widgets.find((w) => w.type === "checklist");
