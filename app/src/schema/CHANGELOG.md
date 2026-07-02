@@ -22,6 +22,22 @@ the app declares what it reads via `SUPPORTED_SCHEMA_VERSIONS` in `common.ts`.
   regenerate or re-spell existing IDs (§6.8); the grammar in `common.ts` is
   fixed forever.
 
+## v2 — 2026-07-02 — Small builds (backlog entries; unreleased, amendable in place)
+
+Contract changes from `docs/specs/small-builds-tasks.md` (approved 2026-07-02).
+While the `feat/small-builds` PR is open v2 has no installed base, so later
+tasks in the same PR amend this entry in place (v0 precedent).
+
+- **`guideStatus` gains `"planned"`** (Build 1): a backlog row in
+  `library.json` — planned but not compiled. `validate-guides` does not
+  require a `guides/<slug>/` folder for planned entries; if one exists it is
+  validated normally. The app renders planned entries de-emphasized and
+  non-navigable.
+
+Migration: none — purely additive/loosening; every valid v1 file is a valid
+v2 file. Transition window `[1, 2]` until the next recompile of each guide
+(and the library manifest) stamps `schemaVersion: 2`, then drop v1.
+
 ## v1 — 2026-06-16 — Location/Visit reframe (Workstream A)
 
 First real version bump (v0 was never frozen — there is no installed base, so

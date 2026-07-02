@@ -9,7 +9,9 @@ import {
 } from "./common.ts";
 
 // In-compilation guides open into the review lens, never play (§7 S1).
-export const guideStatus = z.enum(["in-compilation", "playable"]);
+// Planned guides are backlog entries: a manifest row with no compiled
+// content (and possibly no guides/<slug>/ folder) yet.
+export const guideStatus = z.enum(["planned", "in-compilation", "playable"]);
 
 export const libraryEntry = z.object({
   // The guide slug (kebab-case, §20.3) — also the guides/<slug>/ folder name
