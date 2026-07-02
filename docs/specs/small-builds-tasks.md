@@ -2,7 +2,9 @@
 
 _From the idea-refine triage (`docs/ideas/spine-widget-reframe.md`). The four small builds that
 sit outside Workstreams A & B._
-_Status: APPROVED 2026-07-02 — all four builds greenlit (schema changes 1.1/2.1 included)._
+_Status: DONE 2026-07-02 — all four builds implemented on `feat/small-builds`
+(tasks 1.1, 1.2, 2.1, 2.2, 3.1, 3.2, 4.1 — one commit each, `yarn check` green).
+Schema bump v1 → v2 (see `app/src/schema/CHANGELOG.md`)._
 _**Prerequisite: Workstreams A and B merged.** These build on the v1 schema (A) and the
 shadcn component base (B) — renderers below assume shadcn primitives + lucide exist._
 
