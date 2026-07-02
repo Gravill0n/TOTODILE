@@ -5,6 +5,7 @@ import {
   expectRejects,
   validChapter,
   validChecklist,
+  validCounter,
   validGuide,
   validLocation,
 } from "./helpers";
@@ -53,6 +54,38 @@ describe("guideFile", () => {
           rows: [{ ...collision.rows[0], itemId: "fictional-quest:c1:s1" }],
         },
       ],
+    });
+  });
+
+  it("accepts a derived counter whose derivedFrom ids are existing checkables", () => {
+    const value = validGuide();
+    const counter = validCounter(4);
+    counter.counters = [
+      {
+        ...counter.counters[0],
+        // One step id and one widget item id — both live in the shared
+        // checkable namespace.
+        derivedFrom: ["fictional-quest:c1:s1", "fictional-quest:w1:r1"],
+      },
+    ] as never;
+    expectParses(guideFile, {
+      ...value,
+      widgets: value.widgets.map((w) => (w.id === counter.id ? counter : w)),
+    });
+  });
+
+  it("rejects a derived counter referencing an unknown checkable id (FK)", () => {
+    const value = validGuide();
+    const counter = validCounter(4);
+    counter.counters = [
+      {
+        ...counter.counters[0],
+        derivedFrom: ["fictional-quest:c9:ghost"],
+      },
+    ] as never;
+    expectRejects(guideFile, {
+      ...value,
+      widgets: value.widgets.map((w) => (w.id === counter.id ? counter : w)),
     });
   });
 

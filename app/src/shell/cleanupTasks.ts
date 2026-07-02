@@ -1,4 +1,9 @@
-import type { GuideFile, RaMapping, Widget } from "../schema";
+import {
+  counterTarget,
+  type GuideFile,
+  type RaMapping,
+  type Widget,
+} from "../schema";
 
 // One leftover task in the cleanup view (FR-B4): a non-done step or widget
 // item. Counters carry their progress; everything binary is tappable to done.
@@ -74,14 +79,15 @@ function widgetCleanupItems(
     }
     case "counter":
       for (const counter of widget.counters) {
+        const target = counterTarget(counter);
         const value = progress.counterValues[counter.itemId] ?? 0;
-        if (value >= counter.target) continue;
+        if (value >= target) continue;
         items.push({
           itemId: counter.itemId,
           label: counter.label,
           kind: "counter",
           skipped: false,
-          counter: { value, target: counter.target },
+          counter: { value, target },
         });
       }
       break;

@@ -33,6 +33,14 @@ tasks in the same PR amend this entry in place (v0 precedent).
   require a `guides/<slug>/` folder for planned entries; if one exists it is
   validated normally. The app renders planned entries de-emphasized and
   non-navigable.
+- **Counter entries gain optional `derivedFrom: itemId[]`** (Build 2, §14.2
+  gate met): a derived entry is read-only — its value is the count of checked
+  `derivedFrom` ids, it never writes `counterValues`, and `target` defaults
+  to `derivedFrom.length` when omitted (`counterTarget()` in `widgets.ts`).
+  `target` is now optional on derived entries only; manual counters still
+  require it. FK: every `derivedFrom` id resolves in the guide's checkable
+  namespace (validated in `guide.ts`). The counter stays one of the closed
+  7 primitives (§14.3).
 
 Migration: none — purely additive/loosening; every valid v1 file is a valid
 v2 file. Transition window `[1, 2]` until the next recompile of each guide

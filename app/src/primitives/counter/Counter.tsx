@@ -2,7 +2,7 @@ import { Check, Minus, Plus, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { ProgressSlice } from "../../progress/progressSlice";
-import type { CounterWidget } from "../../schema";
+import { type CounterWidget, counterTarget } from "../../schema";
 
 type CounterProps = {
   widget: CounterWidget;
@@ -20,7 +20,8 @@ export function Counter({ widget, progress, onAdjust, onReset }: CounterProps) {
     <ul className="space-y-2">
       {widget.counters.map((counter) => {
         const value = progress.counterValues[counter.itemId] ?? 0;
-        const complete = value >= counter.target;
+        const target = counterTarget(counter);
+        const complete = value >= target;
         return (
           <li key={counter.itemId} className="flex items-center gap-1">
             <div className="min-w-0 flex-1">
@@ -31,7 +32,7 @@ export function Counter({ widget, progress, onAdjust, onReset }: CounterProps) {
                   complete ? "font-bold text-primary" : "text-ink-soft",
                 )}
               >
-                {value} / {counter.target}
+                {value} / {target}
                 {complete ? <Check className="size-3" aria-hidden /> : null}
               </p>
             </div>
