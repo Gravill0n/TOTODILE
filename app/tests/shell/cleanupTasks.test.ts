@@ -71,6 +71,42 @@ describe("collectCleanupTasks (FR-B4)", () => {
     ).find((i) => i.itemId === "fictional-quest:w4:coins");
     expect(reached).toBeUndefined();
   });
+
+  it("derives a derived counter's value from doneIds, never counterValues (#5)", () => {
+    const derivedGuide = guideFile.parse({
+      ...validGuide(),
+      widgets: validGuide().widgets.map((w) =>
+        w.id === "fictional-quest:w4"
+          ? {
+              ...w,
+              counters: [
+                {
+                  itemId: "fictional-quest:w4:coins",
+                  label: "Blue coins",
+                  derivedFrom: [
+                    "fictional-quest:c1:s1",
+                    "fictional-quest:c1:s2",
+                  ],
+                  sourceRefs: ["src-wiki"],
+                  confidence: "normal",
+                },
+              ],
+            }
+          : w,
+      ),
+    });
+    const item = allItems(
+      collectCleanupTasks(
+        derivedGuide,
+        progress({
+          doneIds: new Set(["fictional-quest:c1:s1"]),
+          // A stray stored value must be ignored for derived entries.
+          counterValues: { "fictional-quest:w4:coins": 99 },
+        }),
+      ),
+    ).find((i) => i.itemId === "fictional-quest:w4:coins");
+    expect(item?.counter).toEqual({ value: 1, target: 2 });
+  });
 });
 
 describe("mastery (§7 S4)", () => {

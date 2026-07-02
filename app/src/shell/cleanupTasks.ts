@@ -80,7 +80,11 @@ function widgetCleanupItems(
     case "counter":
       for (const counter of widget.counters) {
         const target = counterTarget(counter);
-        const value = progress.counterValues[counter.itemId] ?? 0;
+        // Derived entries (#5) count their checked derivedFrom ids; manual
+        // entries read the stored value.
+        const value = counter.derivedFrom
+          ? counter.derivedFrom.filter((id) => progress.doneIds.has(id)).length
+          : (progress.counterValues[counter.itemId] ?? 0);
         if (value >= target) continue;
         items.push({
           itemId: counter.itemId,
