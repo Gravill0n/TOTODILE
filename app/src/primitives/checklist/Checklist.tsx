@@ -1,3 +1,5 @@
+import { Checkbox } from "@/components/ui/checkbox";
+import { cn } from "@/lib/utils";
 import type { ProgressSlice } from "../../progress/progressSlice";
 import type { ChecklistWidget } from "../../schema";
 import { FlagMark } from "../FlagMark";
@@ -15,14 +17,13 @@ export function Checklist({ widget, progress, onToggle }: ChecklistProps) {
         const done = progress.doneIds.has(row.itemId);
         return (
           <li key={row.itemId} className="flex items-start gap-2">
-            <input
-              type="checkbox"
+            <Checkbox
               checked={done}
-              onChange={() => onToggle(row.itemId)}
+              onCheckedChange={() => onToggle(row.itemId)}
               aria-label={row.label}
-              className="mt-0.5 size-4 shrink-0 accent-accent"
+              className="mt-0.5"
             />
-            <span className={done ? "line-through opacity-60" : ""}>
+            <span className={cn(done && "line-through opacity-60")}>
               {row.label}
               {row.confidence === "flagged" ? (
                 <>

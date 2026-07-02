@@ -1,4 +1,11 @@
+import { CheckCheck, SkipForward, TriangleAlert, Trophy } from "lucide-react";
 import { useState } from "react";
+import { Badge } from "@/components/ui/badge";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 import type { Step } from "../schema";
 import { guideAssetUrl, stepDomId, stepHeadline } from "./guideData";
 
@@ -15,9 +22,10 @@ type StepRowProps = {
 };
 
 // Pure renderer (§22.1): data + callbacks in, UI out. The checkbox toggles
-// done; tapping the step text moves the pointer here (§6.7 manual move);
-// ⏭ is the skip-for-later secondary action (FR-B2) and ✓✓ the P2 burst —
-// separate tap targets so nothing happens by accident.
+// done; tapping the step text moves the pointer here (§6.7 manual move); the
+// skip icon is the skip-for-later secondary action (FR-B2) and the
+// mark-through icon the P2 burst — separate tap targets so nothing happens by
+// accident.
 export function StepRow({
   step,
   slug,
@@ -32,22 +40,22 @@ export function StepRow({
   const headline = stepHeadline(step);
   const shortText = headline.slice(0, 40);
   const [showDetail, setShowDetail] = useState(false);
-  // Keyword beats show by default (#11); the full prose is one tap away. The
-  // panel appends below the toggle, so opening it never reflows the rows above.
+  // Keyword beats show by default (#11); the full prose is one tap away via a
+  // Collapsible, which appends below the toggle so opening it never reflows the
+  // rows above.
   const detailDisclosure = step.detail ? (
-    <div className="mt-1">
-      <button
-        type="button"
-        onClick={() => setShowDetail((open) => !open)}
-        aria-expanded={showDetail}
-        className="text-xs text-ink-soft underline underline-offset-2"
-      >
+    <Collapsible
+      open={showDetail}
+      onOpenChange={setShowDetail}
+      className="mt-1"
+    >
+      <CollapsibleTrigger className="text-xs text-ink-soft underline underline-offset-2">
         {showDetail ? "Hide details" : "Details"}
-      </button>
-      {showDetail ? (
+      </CollapsibleTrigger>
+      <CollapsibleContent>
         <p className="mt-1 text-sm text-ink-soft">{step.detail}</p>
-      ) : null}
-    </div>
+      </CollapsibleContent>
+    </Collapsible>
   ) : null;
   const skipButton = (
     <button
@@ -55,11 +63,11 @@ export function StepRow({
       onClick={onToggleSkip}
       aria-label={`${isSkipped ? "Unskip" : "Skip for later"}: ${shortText}`}
       title={isSkipped ? "Unskip" : "Skip for later"}
-      className={`shrink-0 rounded border px-1.5 py-0.5 text-xs ${
+      className={`shrink-0 rounded border px-1.5 py-1 ${
         isSkipped ? "border-ink-soft text-ink" : "border-line text-ink-soft"
       }`}
     >
-      ⏭
+      <SkipForward className="size-3.5" aria-hidden />
     </button>
   );
 
@@ -69,13 +77,13 @@ export function StepRow({
       data-current={isCurrent || undefined}
       className={
         isCurrent
-          ? "rounded-lg border-2 border-accent bg-card p-4 shadow-sm"
+          ? "rounded-lg border-2 border-primary bg-card p-4 shadow-sm"
           : `flex items-start gap-3 rounded px-2 py-2 ${isDone ? "opacity-50" : ""}`
       }
     >
       {isCurrent ? (
         <>
-          <p className="mb-1 flex items-center justify-between text-xs font-bold text-accent uppercase">
+          <p className="mb-1 flex items-center justify-between text-xs font-bold text-primary uppercase">
             Now
             {skipButton}
           </p>
@@ -85,7 +93,7 @@ export function StepRow({
               checked={isDone}
               onChange={onToggleDone}
               aria-label={`Done: ${shortText}`}
-              className="mt-1 size-5 accent-accent"
+              className="mt-1 size-5 accent-primary"
             />
             <div className="min-w-0">
               <p className="text-lg">{headline}</p>
@@ -96,8 +104,9 @@ export function StepRow({
               />
               {detailDisclosure}
               {step.missable ? (
-                <p className="mt-2 text-sm font-bold text-missable">
-                  ⚠ Missable — {step.missable.deadline}
+                <p className="mt-2 flex items-center gap-1 text-sm font-bold text-missable">
+                  <TriangleAlert className="size-4" aria-hidden />
+                  Missable — {step.missable.deadline}
                 </p>
               ) : null}
               {step.images.map((image) => (
@@ -118,7 +127,7 @@ export function StepRow({
             checked={isDone}
             onChange={onToggleDone}
             aria-label={`Done: ${shortText}`}
-            className="mt-1 size-4 shrink-0 accent-accent"
+            className="mt-1 size-4 shrink-0 accent-primary"
           />
           <div className="min-w-0 flex-1">
             <button
@@ -145,9 +154,9 @@ export function StepRow({
               onClick={onMarkThrough}
               aria-label={`Mark all through here: ${shortText}`}
               title="Mark every step up to and including this one done"
-              className="shrink-0 rounded border border-line px-1.5 py-0.5 text-xs text-ink-soft"
+              className="shrink-0 rounded border border-line px-1.5 py-1 text-ink-soft"
             >
-              ✓✓
+              <CheckCheck className="size-3.5" aria-hidden />
             </button>
           ) : null}
         </>
@@ -171,24 +180,25 @@ function StepMeta({
   return (
     <p className="mt-1 flex flex-wrap items-center gap-2 text-xs text-ink-soft">
       {isSkipped ? (
-        <span className="rounded border border-dashed border-ink-soft px-1">
+        <Badge variant="outline" className="border-dashed">
           skipped
-        </span>
+        </Badge>
       ) : null}
       {step.achievementRefs.length > 0 ? (
-        <span
-          role="img"
-          className="font-bold text-accent"
+        <Badge
           aria-label={`${step.achievementRefs.length} achievement(s) here`}
         >
-          🏆
+          <Trophy className="size-3" aria-hidden />
           {step.achievementRefs.length > 1
-            ? ` ×${step.achievementRefs.length}`
+            ? `×${step.achievementRefs.length}`
             : ""}
-        </span>
+        </Badge>
       ) : null}
       {step.missable && withMissableMark ? (
-        <span className="text-missable">⚠ missable</span>
+        <Badge variant="outline" className="border-missable text-missable">
+          <TriangleAlert className="size-3" aria-hidden />
+          missable
+        </Badge>
       ) : null}
     </p>
   );

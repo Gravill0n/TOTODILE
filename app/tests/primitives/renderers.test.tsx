@@ -123,7 +123,8 @@ describe("counter (full)", () => {
       doneIds: new Set(),
       counterValues: { "fictional-quest:counters:blue-coins": 40 },
     });
-    expect(screen.getByText(/40 \/ 40 ✓/)).toBeDefined();
+    // Done treatment is now a lucide check icon beside the value, not a glyph.
+    expect(screen.getByText("40 / 40")).toBeDefined();
   });
 });
 
@@ -149,12 +150,13 @@ describe("matrix (full grid)", () => {
       doneIds: new Set(["fictional-quest:badges:mira-fire"]),
       counterValues: {},
     });
+    // shadcn Checkbox is a button[role=checkbox]; done state is aria-checked.
     expect(
-      (screen.getByLabelText("Mira × Fire badge") as HTMLInputElement).checked,
-    ).toBe(true);
+      screen.getByLabelText("Mira × Fire badge").getAttribute("aria-checked"),
+    ).toBe("true");
     expect(
-      (screen.getByLabelText("Theo × Tide badge") as HTMLInputElement).checked,
-    ).toBe(false);
+      screen.getByLabelText("Theo × Tide badge").getAttribute("aria-checked"),
+    ).toBe("false");
   });
 
   it("renders sparse holes as empty cells and marks flagged cells", () => {
@@ -344,7 +346,8 @@ describe("prepCard (full)", () => {
       ]),
       counterValues: {},
     });
-    expect(screen.getByText(/Ready 3 \/ 3 ✓/)).toBeDefined();
+    // Ready treatment is now a lucide check icon, not a glyph.
+    expect(screen.getByText("Ready 3 / 3")).toBeDefined();
   });
 
   it("marks flagged items", () => {

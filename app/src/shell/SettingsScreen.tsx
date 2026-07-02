@@ -1,5 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
 import { importSlots, readAllSlots } from "../progress/progressStore";
 import { setEditorMode, useEditorMode } from "../review/editorMode";
 import { progressExport, SCHEMA_VERSION } from "../schema";
@@ -27,49 +31,50 @@ function RaCredentialsSection() {
         own; it is always an explicit action.
       </p>
       <div className="mt-3 flex flex-col gap-2 sm:max-w-sm">
-        <input
+        <Input
           type="text"
           value={username}
           aria-label="RA username"
           placeholder="RA username"
           autoComplete="off"
           onChange={(event) => setUsername(event.target.value)}
-          className="rounded border border-line bg-paper px-2 py-1 text-sm"
         />
-        <input
+        <Input
           type="password"
           value={apiKey}
           aria-label="RA API key"
           placeholder="RA web API key"
           autoComplete="off"
           onChange={(event) => setApiKey(event.target.value)}
-          className="rounded border border-line bg-paper px-2 py-1 text-sm"
         />
         <div className="flex items-center gap-3">
-          <button
+          <Button
             type="button"
+            variant="outline"
+            size="sm"
             onClick={() => {
               setCredentials({ username, webApiKey: apiKey });
               setStatus("saved");
             }}
-            className="rounded border border-line bg-card px-3 py-1 text-sm"
           >
             Save
-          </button>
-          <button
+          </Button>
+          <Button
             type="button"
+            variant="link"
+            size="sm"
+            className="text-ink-soft"
             onClick={() => {
               clearCredentials();
               setUsername("");
               setApiKey("");
               setStatus("cleared");
             }}
-            className="text-sm text-ink-soft underline"
           >
             Clear
-          </button>
+          </Button>
           {status ? (
-            <span role="status" className="text-sm text-accent">
+            <span role="status" className="text-sm text-primary">
               {status === "saved"
                 ? "Credentials saved."
                 : "Credentials cleared."}
@@ -140,32 +145,30 @@ export function SettingsScreen() {
           progress wholesale.
         </p>
         <div className="mt-3 flex items-center gap-3">
-          <button
-            type="button"
-            onClick={exportProgress}
-            className="rounded border border-line bg-card px-3 py-1"
-          >
+          <Button type="button" variant="outline" onClick={exportProgress}>
             Export progress
-          </button>
-          <label className="rounded border border-line bg-card px-3 py-1">
-            Import progress
-            <input
-              type="file"
-              accept=".json,application/json"
-              className="hidden"
-              onChange={(event) => {
-                const file = event.target.files?.[0];
-                if (file) void importProgress(file);
-                event.target.value = "";
-              }}
-            />
-          </label>
+          </Button>
+          <Button asChild variant="outline">
+            <label>
+              Import progress
+              <input
+                type="file"
+                accept=".json,application/json"
+                className="hidden"
+                onChange={(event) => {
+                  const file = event.target.files?.[0];
+                  if (file) void importProgress(file);
+                  event.target.value = "";
+                }}
+              />
+            </label>
+          </Button>
         </div>
         {importResult ? (
           <p
             role="status"
             className={`mt-3 text-sm ${
-              importResult.status === "error" ? "text-missable" : "text-accent"
+              importResult.status === "error" ? "text-missable" : "text-primary"
             }`}
           >
             {importResult.status === "ok"
@@ -180,14 +183,14 @@ export function SettingsScreen() {
           Reveals the review lens and unfinished guides still being compiled
           (§9.3). Player mode stays clean — off by default.
         </p>
-        <label className="mt-3 flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
+        <Label className="mt-3 flex w-fit items-center gap-2 text-sm font-normal">
+          <Switch
             checked={editorMode}
-            onChange={(event) => setEditorMode(event.target.checked)}
+            onCheckedChange={setEditorMode}
+            aria-label="Editor mode"
           />
           Editor mode
-        </label>
+        </Label>
       </section>
       <RaCredentialsSection />
       <p className="mt-8 text-sm">

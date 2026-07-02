@@ -98,14 +98,13 @@ describe("widget view (S3)", () => {
 
   it("toggling a checklist row marks it done in the deck", async () => {
     await renderGuide();
-    const checkbox = screen.getAllByLabelText(
-      "Gate key",
-    )[0] as HTMLInputElement;
+    const checkbox = screen.getAllByLabelText("Gate key")[0] as HTMLElement;
     fireEvent.click(checkbox);
     await waitFor(() => {
+      // shadcn Checkbox is a button[role=checkbox]; done state is aria-checked.
       expect(
-        (screen.getAllByLabelText("Gate key")[0] as HTMLInputElement).checked,
-      ).toBe(true);
+        screen.getAllByLabelText("Gate key")[0]?.getAttribute("aria-checked"),
+      ).toBe("true");
     });
   });
 });

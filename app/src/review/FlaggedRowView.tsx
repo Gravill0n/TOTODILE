@@ -1,3 +1,4 @@
+import { TriangleAlert } from "lucide-react";
 import type { SourceEntry } from "../schema";
 import type { FlaggedRow } from "./flaggedRows";
 import { RowSourceColumns } from "./RowSourceColumns";
@@ -14,7 +15,12 @@ export function FlaggedRowView({ row, sourceById }: FlaggedRowViewProps) {
       <RowSourceColumns
         row={row}
         sourceById={sourceById}
-        eyebrow="⚠ flagged"
+        eyebrow={
+          <span className="inline-flex items-center gap-1">
+            <TriangleAlert className="size-3" aria-hidden />
+            flagged
+          </span>
+        }
         eyebrowClassName="text-missable"
       />
     </li>

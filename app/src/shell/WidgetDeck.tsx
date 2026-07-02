@@ -1,3 +1,4 @@
+import { Card } from "@/components/ui/card";
 import { WidgetRenderer } from "../primitives/WidgetRenderer";
 import type { ProgressSlice } from "../progress/progressSlice";
 import type { Widget } from "../schema";
@@ -27,13 +28,10 @@ export function WidgetDeck({
   return (
     <div className="space-y-4">
       {widgets.map((widget) => (
-        <section
-          key={widget.id}
-          className="rounded-lg border border-line bg-card p-3"
-        >
-          <h3 className="mb-2 text-sm font-bold">{widget.title}</h3>
+        <Card key={widget.id} className="gap-2 border-line bg-card p-3">
+          <h3 className="text-sm font-bold">{widget.title}</h3>
           <WidgetRenderer widget={widget} progress={progress} {...handlers} />
-        </section>
+        </Card>
       ))}
     </div>
   );

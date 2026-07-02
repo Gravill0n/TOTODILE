@@ -1,4 +1,7 @@
 import { Link } from "@tanstack/react-router";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 import type { LibraryEntry, ProgressSlot } from "../schema";
 
 type GuideCardProps = {
@@ -22,38 +25,34 @@ export function GuideCard({ entry, slot, playable }: GuideCardProps) {
     <Link
       to={playable ? "/guide/$slug" : "/review/$slug"}
       params={{ slug: entry.id }}
-      className={`block rounded-lg border border-line bg-card p-4 shadow-sm ${
-        playable ? "" : "opacity-70"
-      }`}
+      className={cn("block", !playable && "opacity-70")}
     >
-      {entry.cover ? (
-        <img
-          src={entry.cover}
-          alt=""
-          className="mb-3 aspect-video w-full rounded object-cover"
-        />
-      ) : null}
-      <h2 className="font-bold">{entry.title}</h2>
-      <p className="text-sm text-ink-soft">
-        {entry.game} · {entry.platform}
-      </p>
-      <p className="mt-2 flex flex-wrap items-center gap-2 text-xs">
-        <span className="rounded border border-line px-1 uppercase">
-          {entry.language}
-        </span>
-        {playable ? null : (
-          <span className="rounded bg-paper-dim px-1">unfinished</span>
-        )}
-        {completion !== null ? (
-          <span className="font-bold text-accent">{completion}%</span>
+      <Card className="gap-2 p-4 shadow-sm transition hover:border-primary">
+        {entry.cover ? (
+          <img
+            src={entry.cover}
+            alt=""
+            className="mb-1 aspect-video w-full rounded object-cover"
+          />
         ) : null}
-        {stats?.currentChapterTitle ? (
-          <span className="text-ink-soft">{stats.currentChapterTitle}</span>
-        ) : null}
-        {playable && !slot ? (
-          <span className="text-ink-soft">not started</span>
-        ) : null}
-      </p>
+        <h2 className="font-bold">{entry.title}</h2>
+        <p className="text-sm text-ink-soft">
+          {entry.game} · {entry.platform}
+        </p>
+        <div className="flex flex-wrap items-center gap-2 text-xs">
+          <Badge variant="outline" className="uppercase">
+            {entry.language}
+          </Badge>
+          {playable ? null : <Badge variant="secondary">unfinished</Badge>}
+          {completion !== null ? <Badge>{completion}%</Badge> : null}
+          {stats?.currentChapterTitle ? (
+            <span className="text-ink-soft">{stats.currentChapterTitle}</span>
+          ) : null}
+          {playable && !slot ? (
+            <span className="text-ink-soft">not started</span>
+          ) : null}
+        </div>
+      </Card>
     </Link>
   );
 }

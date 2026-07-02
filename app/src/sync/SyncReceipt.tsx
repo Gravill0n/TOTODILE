@@ -1,4 +1,8 @@
 import { Link } from "@tanstack/react-router";
+import { X } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import type { SyncOutcome } from "./syncGuide";
 
 type SyncReceiptProps = {
@@ -30,23 +34,30 @@ const ERROR: Record<
 
 // §7 — the Sync receipt toast above the bottom bar. Success reads its three
 // buckets and is auto-dismissed by the caller's timer; an error stays until
-// dismissed.
+// dismissed. Kept as a status/alert toast (not a modal Dialog): it must not
+// trap focus and the success case self-dismisses.
 export function SyncReceipt({ outcome, onDismiss }: SyncReceiptProps) {
   const isError = outcome.status === "error";
   return (
     <div
       role={isError ? "alert" : "status"}
-      className={`fixed inset-x-0 bottom-16 z-10 mx-auto flex max-w-md items-center justify-between gap-3 rounded border px-4 py-2 text-sm shadow lg:bottom-4 ${
+      className={cn(
+        "fixed inset-x-0 bottom-16 z-10 mx-auto flex max-w-md items-center justify-between gap-3 rounded-lg border px-4 py-2 text-sm shadow lg:bottom-4",
         isError
           ? "border-missable bg-paper-dim text-missable"
-          : "border-line bg-card text-ink"
-      }`}
+          : "border-line bg-card text-ink",
+      )}
     >
       {outcome.status === "ok" ? (
-        <span className="text-accent">
-          Synced — {outcome.receipt.newlyMarked} newly marked ·{" "}
-          {outcome.receipt.alreadyDone} already done ·{" "}
-          {outcome.receipt.unmapped} unmapped
+        <span className="flex flex-wrap items-center gap-2">
+          <span className="text-ink-soft">Synced</span>
+          <Badge>{outcome.receipt.newlyMarked} newly marked</Badge>
+          <Badge variant="secondary">
+            {outcome.receipt.alreadyDone} already done
+          </Badge>
+          <Badge variant="outline" className="text-ink-soft">
+            {outcome.receipt.unmapped} unmapped
+          </Badge>
         </span>
       ) : (
         <span>
@@ -62,14 +73,16 @@ export function SyncReceipt({ outcome, onDismiss }: SyncReceiptProps) {
           ) : null}
         </span>
       )}
-      <button
+      <Button
         type="button"
+        variant="ghost"
+        size="icon-sm"
         onClick={onDismiss}
         aria-label="Dismiss"
-        className="shrink-0 px-1 text-ink-soft"
+        className="shrink-0 text-ink-soft"
       >
-        ✕
-      </button>
+        <X />
+      </Button>
     </div>
   );
 }

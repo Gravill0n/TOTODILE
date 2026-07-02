@@ -1,3 +1,7 @@
+import { Check } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Checkbox } from "@/components/ui/checkbox";
+import { cn } from "@/lib/utils";
 import type { ProgressSlice } from "../../progress/progressSlice";
 import type { PrepCardWidget } from "../../schema";
 import { FlagMark } from "../FlagMark";
@@ -21,44 +25,43 @@ export function PrepCard({ widget, progress, onToggle }: PrepCardProps) {
   return (
     <div>
       <p
-        className={`mb-2 text-xs font-bold ${ready ? "text-accent" : "text-ink-soft"}`}
+        className={cn(
+          "mb-2 flex items-center gap-1 text-xs font-bold",
+          ready ? "text-primary" : "text-ink-soft",
+        )}
       >
         Ready {doneCount} / {widget.items.length}
-        {ready ? " ✓" : null}
+        {ready ? <Check className="size-3" aria-hidden /> : null}
       </p>
       <ul className="space-y-1 text-sm">
         {widget.items.map((item) => {
           const done = progress.doneIds.has(item.itemId);
           return (
-            <li key={item.itemId}>
-              <label className="flex min-h-11 cursor-pointer items-center gap-2">
-                <input
-                  type="checkbox"
-                  checked={done}
-                  onChange={() => onToggle(item.itemId)}
-                  aria-label={item.label}
-                  className="size-4 shrink-0 accent-accent"
-                />
-                {item.quantity !== undefined ? (
-                  <span className="shrink-0 rounded border border-line px-1 text-xs font-bold">
-                    ×{item.quantity}
+            <li key={item.itemId} className="flex min-h-11 items-center gap-2">
+              <Checkbox
+                checked={done}
+                onCheckedChange={() => onToggle(item.itemId)}
+                aria-label={item.label}
+              />
+              {item.quantity !== undefined ? (
+                <Badge variant="outline" className="shrink-0 font-bold">
+                  ×{item.quantity}
+                </Badge>
+              ) : null}
+              <span className={cn(done && "line-through opacity-60")}>
+                {item.label}
+                {item.confidence === "flagged" ? (
+                  <>
+                    {" "}
+                    <FlagMark />
+                  </>
+                ) : null}
+                {item.note ? (
+                  <span className="block text-xs text-ink-soft">
+                    {item.note}
                   </span>
                 ) : null}
-                <span className={done ? "line-through opacity-60" : ""}>
-                  {item.label}
-                  {item.confidence === "flagged" ? (
-                    <>
-                      {" "}
-                      <FlagMark />
-                    </>
-                  ) : null}
-                  {item.note ? (
-                    <span className="block text-xs text-ink-soft">
-                      {item.note}
-                    </span>
-                  ) : null}
-                </span>
-              </label>
+              </span>
             </li>
           );
         })}

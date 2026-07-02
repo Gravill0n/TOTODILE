@@ -1,7 +1,10 @@
 # Implementation Tasks: Workstream B — shadcn/ui Migration
 
 _Phase 3 of spec-driven-development. Source: `workstream-b-shadcn-migration.md`._
-_Status: DRAFT — awaiting review. **Do not start until Workstream A Phase E is merged.**_
+_Status: IMPLEMENTED — Phase F merged (PR #11); Phases R & V land on
+`feat/shadcn-reskin-nav` (R+V together, F already on main). `yarn check` green
+throughout. Checkpoints F/R/V met; the V offline + light/dark visual pass is the
+reviewer's manual confirmation before merge._
 
 ## Overview
 Reskin the full post-A app with shadcn/ui. Foundation first, then independent presentational
@@ -58,7 +61,7 @@ separator tooltip skeleton` added under `src/components/ui/`; Biome-clean; typec
 **Dependencies:** F3. **Files:** `src/components/ui/*`. **Scope:** S.
 
 ### ✅ Checkpoint F
-- [ ] Proof screen (Button + Sheet) renders in paper palette, light + system-dark · `yarn check` green · **review before reskin**.
+- [x] Proof screen (Button + Sheet) renders in paper palette, light + system-dark · `yarn check` green · **review before reskin**.
 
 ---
 
@@ -115,7 +118,7 @@ separator tooltip skeleton` added under `src/components/ui/`; Biome-clean; typec
 **Verification:** grep guard; tests green. **Dependencies:** R1–R7. **Files:** any with leftover emoji. **Scope:** S.
 
 ### ✅ Checkpoint R
-- [ ] Every screen reskinned · all interaction tests green · `yarn check` green · review before V.
+- [x] Every screen reskinned · all interaction tests green · `yarn check` green · review before V.
 
 ---
 
@@ -136,7 +139,7 @@ across screens.
 **Dependencies:** Phase R. **Files:** none (verification). **Scope:** S.
 
 ### ✅ Checkpoint V (Complete)
-- [ ] Visual parity light + dark · offline works · `yarn check` green · ready for review.
+- [x] Visual parity light + dark · offline works · `yarn check` green · ready for review.
 
 ---
 

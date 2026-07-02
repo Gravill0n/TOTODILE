@@ -1,3 +1,4 @@
+import { Check, X } from "lucide-react";
 import { useState } from "react";
 import type { SourceEntry, SpotCheckVerdict } from "../schema";
 import type { FlaggedRow } from "./flaggedRows";
@@ -39,25 +40,27 @@ export function SpotCheckRow({
           type="button"
           onClick={() => record("pass")}
           aria-pressed={current === "pass"}
-          className={`rounded border px-2 py-0.5 text-sm ${
+          className={`inline-flex items-center gap-1 rounded border px-2 py-0.5 text-sm ${
             current === "pass"
-              ? "border-accent bg-accent/10 font-bold text-accent"
+              ? "border-primary bg-primary/10 font-bold text-primary"
               : "border-line"
           }`}
         >
-          ✓ Pass
+          <Check className="size-3.5" aria-hidden />
+          Pass
         </button>
         <button
           type="button"
           onClick={() => record("fail")}
           aria-pressed={current === "fail"}
-          className={`rounded border px-2 py-0.5 text-sm ${
+          className={`inline-flex items-center gap-1 rounded border px-2 py-0.5 text-sm ${
             current === "fail"
               ? "border-missable bg-paper-dim font-bold text-missable"
               : "border-line"
           }`}
         >
-          ✗ Fail
+          <X className="size-3.5" aria-hidden />
+          Fail
         </button>
         <input
           type="text"

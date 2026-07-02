@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import type { ProgressSlice } from "../../progress/progressSlice";
 import type { MapPinsWidget } from "../../schema";
 import { FlagMark } from "../FlagMark";
@@ -41,11 +42,11 @@ export function MapPins({
               style={{ left: `${pin.x * 100}%`, top: `${pin.y * 100}%` }}
               className={`absolute flex size-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 text-sm font-bold ${
                 done
-                  ? "border-accent bg-accent text-card"
-                  : "border-accent bg-card/90 text-accent"
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : "border-primary bg-card/90 text-primary"
               }`}
             >
-              {done ? "✓" : index + 1}
+              {done ? <Check className="size-5" aria-hidden /> : index + 1}
             </button>
           );
         })}
