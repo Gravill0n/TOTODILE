@@ -2,7 +2,7 @@
 
 Plan: [plan.md](plan.md) · Branch: `feat/desktop-widget-rails` · Commands from `app/`
 
-- [ ] **Task 1 (S)** — `WidgetRail` (`app/src/shell/WidgetRail.tsx`) + `tests/shell/widgetRail.test.tsx`
+- [x] **Task 1 (S)** — `WidgetRail` (`app/src/shell/WidgetRail.tsx`) + `tests/shell/widgetRail.test.tsx`
   - Verify: `yarn vitest run tests/shell/widgetRail.test.tsx tests/shell/styleGuards.test.ts tests/shell/emojiSweep.test.ts tests/shell/accentRetired.test.ts`
 - [ ] **Task 2 (S)** — `WidgetDialog` (`app/src/shell/WidgetDialog.tsx`) + `tests/shell/widgetDialog.test.tsx` (parallel with Task 1)
   - Verify: `yarn vitest run tests/shell/widgetDialog.test.tsx`
