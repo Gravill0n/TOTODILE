@@ -108,6 +108,23 @@ export const guideFile = z
         });
       }
     });
+    // FK (#5): a derived counter counts checkable ids that exist in the
+    // guide's shared step + widget-item namespace.
+    const checkableIdSet = new Set(checkableIds);
+    value.widgets.forEach((w, wi) => {
+      if (w.type !== "counter") return;
+      w.counters.forEach((entry, ei) => {
+        for (const ref of entry.derivedFrom ?? []) {
+          if (!checkableIdSet.has(ref)) {
+            ctx.addIssue({
+              code: "custom",
+              path: ["widgets", wi, "counters", ei, "derivedFrom"],
+              message: `Counter "${entry.itemId}" derives from unknown item "${ref}"`,
+            });
+          }
+        }
+      });
+    });
     // Slugs are forever, so the first segment must match the guide — unlike
     // the middle segment, which only records where the entity was minted
     // (see the grammar note in common.ts).

@@ -89,7 +89,9 @@ export function validateGuides(rootDir: string): Report {
   if (library) {
     const folderSet = new Set(folders);
     for (const entry of library.guides) {
-      if (!folderSet.has(entry.id)) {
+      // Planned entries are backlog rows — no build exists yet, so no folder
+      // is required. (If one does exist, it is validated like any other.)
+      if (!folderSet.has(entry.id) && entry.status !== "planned") {
         findings.push({
           guide: entry.id,
           file: "library.json",

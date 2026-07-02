@@ -178,6 +178,34 @@ describe("counter", () => {
       counters: [{ ...value.counters[0], target: 39.5 }],
     });
   });
+
+  it("parses a derived counter without a target (defaults to derivedFrom.length)", () => {
+    const value = validCounter();
+    const { target, ...entry } = { ...value.counters[0] };
+    expectParses(widget, {
+      ...value,
+      counters: [
+        {
+          ...entry,
+          derivedFrom: ["fictional-quest:c1:s1", "fictional-quest:c1:s2"],
+        },
+      ],
+    });
+  });
+
+  it("rejects a manual counter without a target", () => {
+    const value = validCounter();
+    const { target, ...entry } = { ...value.counters[0] };
+    expectRejects(widget, { ...value, counters: [entry] });
+  });
+
+  it("rejects an empty derivedFrom", () => {
+    const value = validCounter();
+    expectRejects(widget, {
+      ...value,
+      counters: [{ ...value.counters[0], derivedFrom: [] }],
+    });
+  });
 });
 
 describe("flowchart", () => {

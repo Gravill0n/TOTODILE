@@ -13,6 +13,14 @@ describe("libraryManifest", () => {
     expectParses(libraryManifest, { ...value, guides: [entry] });
   });
 
+  it("parses a planned entry (backlog — no compiled content yet)", () => {
+    const value = validLibrary();
+    expectParses(libraryManifest, {
+      ...value,
+      guides: [{ ...value.guides[0], status: "planned" }],
+    });
+  });
+
   it("rejects an unknown status", () => {
     const value = validLibrary();
     expectRejects(libraryManifest, {

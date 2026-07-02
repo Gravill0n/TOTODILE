@@ -29,16 +29,19 @@ export function PostureLayout({
   return (
     <div className="min-h-dvh">
       <div className="mx-auto flex max-w-6xl gap-6 px-4 pt-4 pb-20 lg:pb-4">
+        {/* Sticky panels (#3): stay in view on long-page scroll; self-start
+            so sticky bites in the stretch-aligned flex row, and an internal
+            scroll cap so a tall panel never outgrows the viewport. */}
         <aside
           aria-label="Widget panel"
-          className="hidden w-64 shrink-0 lg:block"
+          className="hidden w-64 shrink-0 lg:sticky lg:top-4 lg:block lg:max-h-[calc(100dvh-2rem)] lg:self-start lg:overflow-y-auto"
         >
           {leftPanel}
         </aside>
         <main className="min-w-0 flex-1">{children}</main>
         <aside
           aria-label="Widget panel"
-          className="hidden w-64 shrink-0 lg:block"
+          className="hidden w-64 shrink-0 lg:sticky lg:top-4 lg:block lg:max-h-[calc(100dvh-2rem)] lg:self-start lg:overflow-y-auto"
         >
           {rightPanel}
         </aside>

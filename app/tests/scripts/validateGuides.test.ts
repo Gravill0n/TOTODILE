@@ -157,6 +157,33 @@ describe("validateGuides", () => {
     );
   });
 
+  it("does not require a guides/<slug>/ folder for a planned entry", () => {
+    const library = validLibrary();
+    library.guides.push({
+      ...library.guides[0],
+      id: "future-quest",
+      status: "planned",
+    } as never);
+    const report = validateGuides(
+      writeTree({ ...happyTree(), "library.json": library }),
+    );
+    expect(report.findings).toEqual([]);
+    expect(report.ok).toBe(true);
+  });
+
+  it("still requires the folder for a non-planned entry", () => {
+    const library = validLibrary();
+    library.guides.push({
+      ...library.guides[0],
+      id: "future-quest",
+      status: "in-compilation",
+    } as never);
+    const root = writeTree({ ...happyTree(), "library.json": library });
+    expect(messagesOf(root).join("\n")).toContain(
+      'library entry "future-quest" has no guides/future-quest/ folder',
+    );
+  });
+
   it("requires guide.json, sources.json and deck.json but not the optional files", () => {
     const tree = happyTree();
     const {

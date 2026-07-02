@@ -2,7 +2,9 @@
 
 _From the idea-refine triage (`docs/ideas/spine-widget-reframe.md`). The four small builds that
 sit outside Workstreams A & B._
-_Status: DRAFT — awaiting review._
+_Status: DONE 2026-07-02 — all four builds implemented on `feat/small-builds`
+(tasks 1.1, 1.2, 2.1, 2.2, 3.1, 3.2, 4.1 — one commit each, `yarn check` green).
+Schema bump v1 → v2 (see `app/src/schema/CHANGELOG.md`)._
 _**Prerequisite: Workstreams A and B merged.** These build on the v1 schema (A) and the
 shadcn component base (B) — renderers below assume shadcn primitives + lucide exist._
 
@@ -101,8 +103,8 @@ Keep widgets in view while scrolling.
 
 ---
 
-## Open Questions
-1. **Build 3 dependency:** in-house zoom vs `react-zoom-pan-pinch`? Default in-house (no dep);
-   confirm if you'd rather add the library.
-2. **Build 1:** should `planned` entries be orderable/grouped separately in the library, or
-   just appear de-emphasized inline? Assume inline, de-emphasized.
+## Open Questions — resolved 2026-07-02
+1. **Build 3 dependency:** `react-zoom-pan-pinch` approved (Pierre, ask-first per §24).
+2. **Build 1:** `planned` entries appear inline, de-emphasized (confirmed).
+
+All four builds land on a single branch `feat/small-builds`, one commit per task, one PR.

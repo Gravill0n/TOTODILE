@@ -5,12 +5,13 @@ import { z } from "zod";
 // recompile, never in the browser.
 
 // The version the compiler emits.
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 // The versions the app and validate-guides read. Holds two versions only
 // during a declared vN → vN+1 transition window (§18.3), then drops back
-// to one.
-export const SUPPORTED_SCHEMA_VERSIONS = [SCHEMA_VERSION] as const;
+// to one. v1 → v2 window open: pokemon-crystal (and library.json) still
+// declare v1 until their next recompile stamps v2.
+export const SUPPORTED_SCHEMA_VERSIONS = [1, SCHEMA_VERSION] as const;
 
 // Every repo-side guide file declares the schema version it was compiled
 // against (§8.2 — the files are the API).

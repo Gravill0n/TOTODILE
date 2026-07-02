@@ -21,10 +21,17 @@ export function LibraryScreen({
 }: LibraryScreenProps) {
   const editorMode = useEditorMode();
   const slotsByGuide = new Map(slots.map((slot) => [slot.guideId, slot]));
-  // Player mode stays clean: only playable guides show. Editor mode reveals
-  // unfinished guides too, with the in-compilation treatment (§9.3, FR-E1).
+  // Player mode stays clean: only playable guides show — plus planned
+  // backlog rows (#7), which are the point of the backlog and render
+  // de-emphasized. Editor mode reveals unfinished guides too, with the
+  // in-compilation treatment (§9.3, FR-E1).
   const guides = [...library.guides]
-    .filter((entry) => editorMode || playable.get(entry.id) === true)
+    .filter(
+      (entry) =>
+        editorMode ||
+        entry.status === "planned" ||
+        playable.get(entry.id) === true,
+    )
     .sort((a, b) => {
       const lastA = slotsByGuide.get(a.id)?.lastActivityAt;
       const lastB = slotsByGuide.get(b.id)?.lastActivityAt;
