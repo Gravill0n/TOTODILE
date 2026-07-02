@@ -12,7 +12,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { cn } from "@/lib/utils";
 
 type ZoomableImageProps = {
   src: string;
@@ -48,7 +47,7 @@ export function ZoomableImage({
             className="block w-full cursor-zoom-in"
             aria-label={`Zoom: ${alt}`}
           >
-            <img src={src} alt={alt} className={cn("w-full", className)} />
+            <img src={src} alt={alt} className={className} />
           </button>
         </DialogTrigger>
         {overlay}

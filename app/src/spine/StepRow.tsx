@@ -6,6 +6,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { ZoomableImage } from "@/components/ZoomableImage";
 import type { Step } from "../schema";
 import { guideAssetUrl, stepDomId, stepHeadline } from "./guideData";
 
@@ -110,10 +111,12 @@ export function StepRow({
                 </p>
               ) : null}
               {step.images.map((image) => (
-                <img
+                <ZoomableImage
                   key={image.src}
                   src={guideAssetUrl(slug, image.src)}
                   alt={image.alt}
+                  caption={image.caption}
+                  credit={image.credit}
                   className="mt-3 max-h-72 rounded border border-line"
                 />
               ))}
