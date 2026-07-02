@@ -11,4 +11,6 @@ Plan: [plan.md](plan.md) · Branch: `feat/desktop-widget-rails` · Commands from
   - Verify: `yarn vitest run tests/shell/widgetsView.test.tsx tests/shell/appShell.test.tsx tests/shell/sheets.test.tsx`
 - [x] **Task 4 (S)** — `PostureLayout` asides `w-64` → `w-40`, labels "Global widgets" / "Widgets in scope"; update `stickyWidgets.test.tsx`
   - Verify: `yarn vitest run tests/shell/stickyWidgets.test.tsx tests/shell/postureLayout.test.tsx`
-- [ ] **Checkpoint B / Task 5 (S)** — `yarn check` green; manual eyeball ≥1024px (rails, wide scrolling dialog, mapPins nested-dialog stacking, whole-game switch, keyboard flow, phone sheet intact); refresh stale comments; open PR
+- [x] **Checkpoint B / Task 5 (S)** — `yarn check` green; verified in headless Chromium at 1400×900 and 390×844 (rails split by scope, 854px modal, nested mapPins zoom dialog stacks/unstacks correctly, whole-game switch works, Enter opens launchers, phone sheet intact); comments refreshed in Tasks 3-4; PR opened
+  - Known wart: focus falls to `<body>` after Escape (conditional-unmount pattern shared with ChapterSheet/WidgetsSheet)
+  - Observation: whole-game mode lists all 314 contextual launchers for Crystal (280 location-scoped widgets) — grouping is a possible follow-up
