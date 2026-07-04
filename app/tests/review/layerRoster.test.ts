@@ -6,24 +6,41 @@ import { SCHEMA_VERSION } from "../../src/schema";
 afterEach(() => vi.unstubAllGlobals());
 
 const HEX64 = "a".repeat(64);
+const HEX64_B = "b".repeat(64);
 
-function qaReport() {
+function manifest() {
   return {
     schemaVersion: SCHEMA_VERSION,
     guideId: "pokemon-crystal",
-    pass: "qa",
-    layer: "qa",
-    generatedAt: "2026-06-13T00:00:00Z",
-    inputs: [
-      { file: "layers/spine.json", sha256: HEX64 },
-      { file: "layers/widget-badges.json", sha256: HEX64 },
-      { file: "layers/ra-mapping.json", sha256: HEX64 },
-      // Assembled outputs and reports must be filtered out of the roster.
-      { file: "guide.json", sha256: HEX64 },
-      { file: "sources.json", sha256: HEX64 },
+    entries: [
+      // Deliberately not in roster order — the loader owns the sort.
+      {
+        id: "ra-mapping",
+        kind: "ra-mapping",
+        artifact: "layers/ra-mapping.json",
+        report: "layers/ra-mapping.report.json",
+        sha256: HEX64,
+      },
+      {
+        id: "widget-badges",
+        kind: "widget",
+        artifact: "layers/widget-badges.json",
+        report: "layers/widget-badges.report.json",
+        sha256: HEX64_B,
+        widget: {
+          deckPosition: 0,
+          scope: { kind: "global" },
+          title: "Gym Badges",
+        },
+      },
+      {
+        id: "spine",
+        kind: "spine",
+        artifact: "layers/spine.json",
+        report: "layers/spine.report.json",
+        sha256: HEX64,
+      },
     ],
-    report: { rowCount: 1, anomalies: [], flaggedItemIds: [] },
-    notes: [],
   };
 }
 
@@ -40,13 +57,13 @@ function report(layer: string, pass: string, flagged: string[]) {
   };
 }
 
-function stubReports() {
+function stubReports(manifestBody: unknown = manifest()) {
   vi.stubGlobal(
     "fetch",
     vi.fn(async (input: RequestInfo | URL) => {
       const url = String(input);
-      if (url.endsWith("layers/qa.report.json"))
-        return Response.json(qaReport());
+      if (url.endsWith("layers/manifest.json"))
+        return Response.json(manifestBody);
       if (url.endsWith("layers/spine.report.json")) {
         return Response.json(
           report("spine", "spine", ["pokemon-crystal:c1:s2"]),
@@ -64,7 +81,7 @@ function stubReports() {
 }
 
 describe("loadLayerRoster", () => {
-  it("derives the roster from qa.report.json inputs, spine first and ra-mapping last", async () => {
+  it("derives the roster from layers/manifest.json, spine first and ra-mapping last", async () => {
     stubReports();
     const roster = await loadLayerRoster("pokemon-crystal");
     expect(roster.map((l) => l.id)).toEqual([
@@ -80,11 +97,58 @@ describe("loadLayerRoster", () => {
     expect(roster[0]?.flaggedItemIds).toEqual(["pokemon-crystal:c1:s2"]);
   });
 
-  it("returns an empty roster when the guide has no QA report", async () => {
+  it("hash-locks each layer from its manifest digest", async () => {
+    stubReports();
+    const roster = await loadLayerRoster("pokemon-crystal");
+    expect(roster.find((l) => l.id === "spine")?.contentHash).toBe(
+      `sha256:${HEX64}`,
+    );
+    expect(roster.find((l) => l.id === "widget-badges")?.contentHash).toBe(
+      `sha256:${HEX64_B}`,
+    );
+  });
+
+  it("passes widget metadata through for slot grouping", async () => {
+    stubReports();
+    const roster = await loadLayerRoster("pokemon-crystal");
+    expect(roster.find((l) => l.id === "widget-badges")?.widget).toEqual({
+      deckPosition: 0,
+      scope: { kind: "global" },
+      title: "Gym Badges",
+    });
+    expect(roster.find((l) => l.id === "spine")?.widget).toBeUndefined();
+  });
+
+  it("returns an empty roster when the guide has no manifest yet", async () => {
     vi.stubGlobal(
       "fetch",
       vi.fn(async () => new Response("not found", { status: 404 })),
     );
     expect(await loadLayerRoster("ghost-quest")).toEqual([]);
+  });
+
+  it("throws on a malformed manifest (a real fault, not an empty state)", async () => {
+    stubReports({
+      schemaVersion: SCHEMA_VERSION,
+      guideId: "pokemon-crystal",
+      entries: [{ id: "data" }],
+    });
+    await expect(loadLayerRoster("pokemon-crystal")).rejects.toThrow();
+  });
+
+  it("throws when a listed report is missing", async () => {
+    const partial = manifest();
+    partial.entries = partial.entries.filter((e) => e.id === "spine");
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (input: RequestInfo | URL) => {
+        const url = String(input);
+        if (url.endsWith("layers/manifest.json")) return Response.json(partial);
+        return new Response("not found", { status: 404 });
+      }),
+    );
+    await expect(loadLayerRoster("pokemon-crystal")).rejects.toThrow(
+      /Could not load report/,
+    );
   });
 });

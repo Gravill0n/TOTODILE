@@ -44,8 +44,20 @@ function stubFetch() {
     vi.fn(async (input: RequestInfo | URL) => {
       const url = String(input);
       if (url.endsWith("library.json")) return Response.json(validLibrary());
-      if (url.endsWith("guides/fictional-quest/layers/qa.report.json")) {
-        return Response.json(reportFile("qa", "qa", []));
+      if (url.endsWith("guides/fictional-quest/layers/manifest.json")) {
+        return Response.json({
+          schemaVersion: SCHEMA_VERSION,
+          guideId: "fictional-quest",
+          entries: [
+            {
+              id: "spine",
+              kind: "spine",
+              artifact: "layers/spine.json",
+              report: "layers/spine.report.json",
+              sha256: HEX64,
+            },
+          ],
+        });
       }
       if (url.endsWith("guides/fictional-quest/layers/spine.report.json")) {
         return Response.json(reportFile("spine", "spine", []));

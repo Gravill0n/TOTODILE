@@ -39,16 +39,19 @@ afterEach(async () => {
 
 const HEX64 = "a".repeat(64);
 
-function qaReport() {
+function manifest() {
   return {
     schemaVersion: SCHEMA_VERSION,
     guideId: "fictional-quest",
-    pass: "qa",
-    layer: "qa",
-    generatedAt: "2026-06-13T00:00:00Z",
-    inputs: [{ file: "layers/spine.json", sha256: HEX64 }],
-    report: { rowCount: 1, anomalies: [], flaggedItemIds: [] },
-    notes: [],
+    entries: [
+      {
+        id: "spine",
+        kind: "spine",
+        artifact: "layers/spine.json",
+        report: "layers/spine.report.json",
+        sha256: HEX64,
+      },
+    ],
   };
 }
 
@@ -89,8 +92,8 @@ function stubFetch({ approvals }: { approvals?: unknown } = {}) {
           ? Response.json(approvals)
           : new Response("not found", { status: 404 });
       }
-      if (url.endsWith("guides/fictional-quest/layers/qa.report.json")) {
-        return Response.json(qaReport());
+      if (url.endsWith("guides/fictional-quest/layers/manifest.json")) {
+        return Response.json(manifest());
       }
       if (url.endsWith("guides/fictional-quest/layers/spine.report.json")) {
         return Response.json(spineReport());
