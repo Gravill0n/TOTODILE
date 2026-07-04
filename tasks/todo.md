@@ -23,13 +23,13 @@ Every task ends with `yarn check` green (from `app/`). Work on a `feat/` branch,
 - [x] **T3 — Playability requires pipeline completion** (M) — done 2026-07-04, commit 89b50e0
   - `isPlayable(approvals, manifest, qaComplete)` + `loadPlayability(slug)`; all 4 router guards updated
   - Regression pinned: spine-only all-approved export ≠ playable; Crystal's data orphan tolerated
-- [ ] **T4 — Mid-pipeline content resolution** (M) — depends T2
-  - `app/src/review/reviewContent.ts` (new): guide.json passthrough or in-memory spine+widgets assembly (skip `guideFile.parse`)
-  - `reviewLoaders.ts`: ra-mapping `layers/` fallback; wire review route loader
-  - Tests: `reviewContent.test.ts`
+- [x] **T4 — Mid-pipeline content resolution** (M) — done 2026-07-04, commit 9da1e8c
+  - `reviewContent.ts`: guide.json passthrough or in-memory spine+widgets merge (no `guideFile.parse`)
+  - `loadRaMapping` falls back to `layers/ra-mapping.json`; review route wired
+  - Tests: `reviewContent.test.ts` (7) + reviewLens spine-stage end-to-end case
 
 ### Checkpoint B
-- [ ] Spine-stage fixture guide is reviewable end-to-end and NOT playable
+- [x] Spine-stage fixture guide is reviewable end-to-end (reviewLens mid-pipeline test) and NOT playable (approvalsData regression tests)
 
 ## Phase 3: Merged slot cards
 
