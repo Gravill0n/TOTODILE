@@ -20,9 +20,9 @@ Every task ends with `yarn check` green (from `app/`). Work on a `feat/` branch,
 
 ## Phase 2: Per-stage review paths (T3 ∥ T4 after their deps)
 
-- [ ] **T3 — Playability requires pipeline completion** (M) — depends T1
-  - `isPlayable(approvals, manifest, qaComplete)` + `loadPlayability(slug)` in `approvalsData.ts`
-  - Update all `router.tsx` call sites; regression test: spine-only approvals ≠ playable
+- [x] **T3 — Playability requires pipeline completion** (M) — done 2026-07-04, commit 89b50e0
+  - `isPlayable(approvals, manifest, qaComplete)` + `loadPlayability(slug)`; all 4 router guards updated
+  - Regression pinned: spine-only all-approved export ≠ playable; Crystal's data orphan tolerated
 - [ ] **T4 — Mid-pipeline content resolution** (M) — depends T2
   - `app/src/review/reviewContent.ts` (new): guide.json passthrough or in-memory spine+widgets assembly (skip `guideFile.parse`)
   - `reviewLoaders.ts`: ra-mapping `layers/` fallback; wire review route loader
