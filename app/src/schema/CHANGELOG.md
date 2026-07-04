@@ -22,6 +22,24 @@ the app declares what it reads via `SUPPORTED_SCHEMA_VERSIONS` in `common.ts`.
   regenerate or re-spell existing IDs (§6.8); the grammar in `common.ts` is
   fixed forever.
 
+## v2 amendment — 2026-07-04 — `layers/manifest.json` (review-lens stage gating)
+
+New file kind only — no existing file's shape or meaning changes, so no
+version bump (the v0 "new files only" precedent; Pierre may still call a v3
+if he prefers a strict reading of the bump rule). Approved 2026-07-04 with
+the review-lens stage-gating plan (`tasks/plan.md`).
+
+- **New `guides/<slug>/layers/manifest.json`** (`layersManifest` in
+  `manifest.ts`): the review-lens roster source at any pipeline point. Each
+  reviewable pass run (spine, widget fill, ra-mapping) upserts its entry
+  `{id, kind, artifact, report, sha256}`, widget entries additionally carrying
+  denormalized `{deckPosition, scope, title}` for slot-card grouping.
+  source-gathering, extract-data, and qa never appear. `validate-guides`
+  enforces manifest ↔ disk parity (paths, digests, widget metadata).
+
+Migration: `yarn build-layers-manifest <slug>` for every guide with compiled
+layers (done for pokemon-crystal in the same change-set).
+
 ## v2 — 2026-07-02 — Small builds (backlog entries; unreleased, amendable in place)
 
 Contract changes from `docs/specs/small-builds-tasks.md` (approved 2026-07-02).

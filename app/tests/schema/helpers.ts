@@ -456,6 +456,39 @@ export function validWidgetLayer(n = 1) {
   };
 }
 
+export function validManifestEntry(id = "spine") {
+  const kind =
+    id === "ra-mapping" ? id : id.startsWith("widget-") ? "widget" : "spine";
+  return {
+    id,
+    kind,
+    artifact: `layers/${id}.json`,
+    report: `layers/${id}.report.json`,
+    sha256: "ab".repeat(32),
+    ...(kind === "widget"
+      ? {
+          widget: {
+            deckPosition: 0,
+            scope: { kind: "global" },
+            title: "Treasure checklist",
+          },
+        }
+      : {}),
+  };
+}
+
+export function validManifest() {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    entries: [
+      validManifestEntry("spine"),
+      validManifestEntry("widget-w1"),
+      validManifestEntry("ra-mapping"),
+    ],
+  };
+}
+
 export function validPassReport(layer = "spine", pass = layer) {
   return {
     schemaVersion: SCHEMA_VERSION,

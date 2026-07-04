@@ -7,6 +7,7 @@ export * from "./deck.ts";
 export * from "./guide.ts";
 export * from "./layers.ts";
 export * from "./library.ts";
+export * from "./manifest.ts";
 export * from "./progress.ts";
 export * from "./raMapping.ts";
 export * from "./sources.ts";
