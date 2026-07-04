@@ -11,12 +11,12 @@ Every task ends with `yarn check` green (from `app/`). Work on a `feat/` branch,
   - `app/scripts/buildLayersManifestCore.ts` + CLI + `build-layers-manifest` package script
   - Generate + commit `guides/pokemon-crystal/layers/manifest.json` (320 entries)
   - Tests: `schema/manifest.test.ts`, `scripts/buildLayersManifest.test.ts`, extend `validateGuides.test.ts`
-- [ ] **T2 — Roster cutover to manifest** (S) — depends T1
-  - `app/src/review/layerRoster.ts` reads manifest (404→[]); `LayerReport.widget?` added
-  - Rewrite `layerRoster.test.ts`; update `reviewLens`/`reviewReskin` stubs
+- [x] **T2 — Roster cutover to manifest** (S) — done 2026-07-04, commit 2ffc5b8
+  - `layerRoster.ts` reads manifest (404→[]); `LayerReport.widget?` added
+  - `layerRoster.test.ts` rewritten; `reviewLens`/`approveFlow`/`spotCheckFlow` stubs updated (reviewReskin needed none)
 
 ### Checkpoint A
-- [ ] Crystal lens renders identically to before; manifest committed and validator-enforced
+- [x] Crystal lens renders identically to before (roster verified: 320 ids + digests match the qa-derived one); manifest committed and validator-enforced
 
 ## Phase 2: Per-stage review paths (T3 ∥ T4 after their deps)
 
