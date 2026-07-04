@@ -5,7 +5,7 @@ Every task ends with `yarn check` green (from `app/`). Work on a `feat/` branch,
 
 ## Phase 1: Foundation (manifest)
 
-- [ ] **T1 — Manifest schema + validator + backfill script** (M)
+- [x] **T1 — Manifest schema + validator + backfill script** (M) — done 2026-07-04, branch `feat/review-lens-manifest` (commits ce9557e, cc3c82a, fe608a8)
   - `app/src/schema/manifest.ts` (new) + export from `index.ts` + `CHANGELOG.md`
   - `app/scripts/validateGuidesCore.ts` — manifest checks (bytes hash, entry↔artifact parity, widget meta match)
   - `app/scripts/buildLayersManifestCore.ts` + CLI + `build-layers-manifest` package script
