@@ -1,9 +1,11 @@
+import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import type {
   DataLayer,
   GuideFile,
+  LayersManifest,
   LibraryManifest,
   PassReportFile,
   RaMapping,
@@ -16,6 +18,7 @@ import {
   dataLayer,
   genreDeck,
   guideFile,
+  layersManifest,
   libraryManifest,
   passReportFile,
   raMapping,
@@ -315,6 +318,7 @@ function validateLayers(
 
   const artifacts = new Map<string, LayerArtifact>();
   const reports = new Map<string, PassReportFile>();
+  let manifest: LayersManifest | undefined;
 
   const names = readdirSync(layersDir)
     .filter((name) => name.endsWith(".json"))
@@ -330,6 +334,14 @@ function validateLayers(
         });
       }
     };
+
+    if (name === "manifest.json") {
+      const value = loadEntity(dir, slug, file, layersManifest, findings);
+      if (!value) continue;
+      expectGuideId(value.guideId);
+      manifest = value;
+      continue;
+    }
 
     if (name.endsWith(".report.json")) {
       const layerId = name.slice(0, -".report.json".length);
@@ -458,6 +470,92 @@ function validateLayers(
         file: `layers/${layerId}.report.json`,
         message: `report has no matching layers/${layerId}.json artifact`,
       });
+    }
+  }
+
+  validateManifest(dir, slug, manifest, artifacts, findings);
+}
+
+// Contract §2 rule 9: layers/manifest.json mirrors the reviewable artifacts on
+// disk — every reviewable pass upserts its entry, so the review lens can build
+// its roster at any pipeline point. The digest and widget metadata are checked
+// against the artifact bytes so the denormalization cannot drift silently
+// (repair: yarn build-layers-manifest <slug>).
+function validateManifest(
+  dir: string,
+  slug: string,
+  manifest: LayersManifest | undefined,
+  artifacts: Map<string, LayerArtifact>,
+  findings: Finding[],
+): void {
+  const reviewableIds = [...artifacts.keys()].filter((id) => id !== "data");
+
+  if (manifest === undefined) {
+    // A parse failure already produced its own finding via loadEntity; only
+    // an absent file is reported here.
+    if (
+      reviewableIds.length > 0 &&
+      !existsSync(join(dir, "layers/manifest.json"))
+    ) {
+      findings.push({
+        guide: slug,
+        file: "layers/manifest.json",
+        message: `missing layers/manifest.json — reviewable layers exist but the review lens has no roster (run yarn build-layers-manifest ${slug})`,
+      });
+    }
+    return;
+  }
+
+  const entryIds = new Set(manifest.entries.map((e) => e.id));
+  for (const id of reviewableIds) {
+    if (!entryIds.has(id)) {
+      findings.push({
+        guide: slug,
+        file: `layers/${id}.json`,
+        message: `layer "${id}" has no layers/manifest.json entry (contract §2 rule 9)`,
+      });
+    }
+  }
+
+  for (const entry of manifest.entries) {
+    const artifact = artifacts.get(entry.id);
+    const path = join(dir, entry.artifact);
+    if (artifact === undefined) {
+      if (!existsSync(path)) {
+        findings.push({
+          guide: slug,
+          file: "layers/manifest.json",
+          message: `manifest entry "${entry.id}" has no ${entry.artifact} artifact`,
+        });
+      }
+      // An existing-but-invalid artifact already produced its own finding.
+      continue;
+    }
+
+    const digest = createHash("sha256")
+      .update(readFileSync(path))
+      .digest("hex");
+    if (digest !== entry.sha256) {
+      findings.push({
+        guide: slug,
+        file: "layers/manifest.json",
+        message: `manifest digest for "${entry.id}" is stale — the artifact changed since its pass upserted the entry (re-run the pass or yarn build-layers-manifest ${slug})`,
+      });
+    }
+
+    if (artifact.kind === "widget" && entry.widget !== undefined) {
+      const widget = artifact.value.widget;
+      const matches =
+        entry.widget.deckPosition === widget.deckPosition &&
+        entry.widget.title === widget.title &&
+        JSON.stringify(entry.widget.scope) === JSON.stringify(widget.scope);
+      if (!matches) {
+        findings.push({
+          guide: slug,
+          file: "layers/manifest.json",
+          message: `manifest widget metadata for "${entry.id}" does not match the artifact (deckPosition/scope/title)`,
+        });
+      }
     }
   }
 }
