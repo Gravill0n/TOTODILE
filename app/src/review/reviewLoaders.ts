@@ -42,13 +42,18 @@ export async function qaReportExists(slug: string): Promise<boolean> {
 }
 
 // ra-mapping.json is optional — a guide with no RA set has none (§6.5).
+// Mid-pipeline the top-level copy does not exist yet (assembly is the file
+// copy, contract §3), so the layer artifact is checked next — same schema.
 export async function loadRaMapping(slug: string): Promise<RaMapping | null> {
-  const response = await fetch(`guides/${slug}/ra-mapping.json`);
-  if (response.status === 404) return null;
-  if (!response.ok) {
-    throw new Error(
-      `Could not load RA mapping for "${slug}" (HTTP ${response.status})`,
-    );
+  for (const path of ["ra-mapping.json", "layers/ra-mapping.json"]) {
+    const response = await fetch(`guides/${slug}/${path}`);
+    if (response.status === 404) continue;
+    if (!response.ok) {
+      throw new Error(
+        `Could not load RA mapping for "${slug}" (HTTP ${response.status})`,
+      );
+    }
+    return raMapping.parse(await response.json());
   }
-  return raMapping.parse(await response.json());
+  return null;
 }

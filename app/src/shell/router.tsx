@@ -14,6 +14,7 @@ import { loadApprovals, loadPlayability } from "../review/approvalsData";
 import { getEditorMode } from "../review/editorMode";
 import { loadLayerRoster } from "../review/layerRoster";
 import { ReviewScreen } from "../review/ReviewScreen";
+import { loadReviewGuide } from "../review/reviewContent";
 import { loadRaMapping, loadSources } from "../review/reviewLoaders";
 import { loadGuide } from "../spine/guideData";
 import { buildLocationIndex } from "../spine/locationIndex";
@@ -167,7 +168,7 @@ const reviewRoute = createRoute({
     const [guide, raMapping, sources] =
       roster.length > 0
         ? await Promise.all([
-            loadGuide(entry.id),
+            loadReviewGuide(entry.id, roster),
             loadRaMapping(entry.id),
             loadSources(entry.id),
           ])

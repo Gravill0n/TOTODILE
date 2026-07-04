@@ -81,7 +81,13 @@ function approvedApprovals() {
   };
 }
 
-function stubFetch({ approvals }: { approvals?: unknown } = {}) {
+function stubFetch({
+  approvals,
+  assembled = true,
+}: {
+  approvals?: unknown;
+  assembled?: boolean;
+} = {}) {
   vi.stubGlobal(
     "fetch",
     vi.fn(async (input: RequestInfo | URL) => {
@@ -95,15 +101,30 @@ function stubFetch({ approvals }: { approvals?: unknown } = {}) {
       if (url.endsWith("guides/fictional-quest/layers/manifest.json")) {
         return Response.json(manifest());
       }
-      // Pipeline completion signal — playability checks only that it exists.
+      // Pipeline completion signal — only exists once QA has run.
       if (url.endsWith("guides/fictional-quest/layers/qa.report.json")) {
-        return new Response("{}", { status: 200 });
+        return assembled
+          ? new Response("{}", { status: 200 })
+          : new Response("not found", { status: 404 });
       }
       if (url.endsWith("guides/fictional-quest/layers/spine.report.json")) {
         return Response.json(spineReport());
       }
+      // Mid-pipeline (pre-QA) there is no guide.json — the lens assembles
+      // in-memory from the spine layer instead.
       if (url.endsWith("guides/fictional-quest/guide.json")) {
-        return Response.json(fixtureGuide);
+        return assembled
+          ? Response.json(fixtureGuide)
+          : new Response("not found", { status: 404 });
+      }
+      if (url.endsWith("guides/fictional-quest/layers/spine.json")) {
+        return Response.json({
+          schemaVersion: fixtureGuide.schemaVersion,
+          guideId: "fictional-quest",
+          pass: "spine",
+          locations: fixtureGuide.locations,
+          chapters: fixtureGuide.chapters,
+        });
       }
       if (url.endsWith("guides/fictional-quest/sources.json")) {
         return Response.json(fixtureSources);
@@ -136,6 +157,17 @@ describe("review lens — flagged rows (FR-E2/E3)", () => {
     expect(link.getAttribute("href")).toBe(
       "https://example.org/fictional-quest/walkthrough",
     );
+  });
+
+  it("renders flagged rows mid-pipeline, before guide.json exists (spine stage)", async () => {
+    setEditorMode(true);
+    stubFetch({ assembled: false });
+    renderAt("/review/fictional-quest");
+
+    const layerToggle = await screen.findByRole("button", { name: /spine/ });
+    fireEvent.click(layerToggle);
+    // Row content resolved through the in-memory spine assembly.
+    expect(await screen.findByText(/Pry the Old Coin/)).toBeDefined();
   });
 
   it("redirects an already-playable guide away from review to play", async () => {
