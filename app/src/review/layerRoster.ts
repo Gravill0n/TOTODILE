@@ -1,5 +1,6 @@
 import type { ManifestWidgetMeta } from "../schema";
-import { layersManifest, passReportFile } from "../schema";
+import { passReportFile } from "../schema";
+import { loadLayersManifest } from "./reviewLoaders";
 
 // The content-bearing layers a guide exposes to the review lens, each with the
 // flag worklist its pass recorded (FR-E2). source-gathering and qa are process
@@ -34,14 +35,8 @@ function rosterRank(kind: LayerKind): number {
 // what makes per-stage review possible. A guide with no manifest has not
 // compiled any reviewable layer yet → an empty roster, not an error.
 export async function loadLayerRoster(slug: string): Promise<LayerReport[]> {
-  const response = await fetch(`guides/${slug}/layers/manifest.json`);
-  if (response.status === 404) return [];
-  if (!response.ok) {
-    throw new Error(
-      `Could not load layers manifest for "${slug}" (HTTP ${response.status})`,
-    );
-  }
-  const manifest = layersManifest.parse(await response.json());
+  const manifest = await loadLayersManifest(slug);
+  if (manifest === null) return [];
 
   const reports = await Promise.all(
     manifest.entries.map(async (entry): Promise<LayerReport> => {
