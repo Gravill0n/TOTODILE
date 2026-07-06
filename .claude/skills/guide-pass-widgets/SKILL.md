@@ -36,6 +36,18 @@ for the next widget.
 
 ## Workflow
 
+### 0. Gate — spine approved (contract §2 Rule 10)
+Before anything else, verify **read-only** against `approvals.json`:
+- a record with `id: "spine"` exists with `status: "approved"`;
+- it is hash-current: its `contentHash` equals `sha256:` +
+  `sha256sum guides/<slug>/layers/spine.json` of the bytes on disk.
+
+Missing record, `draft`, `rejected`, or a stale hash → **stop** and tell
+Pierre: "The spine stage is not approved (state: `<missing | draft | rejected
+| stale>`). Review it at `/review/<slug>`, export `approvals.json`, commit it,
+then re-run this pass." Never write `approvals.json` and never work around
+the gate.
+
 ### 1. Pick the slot — gate
 Ask which deck slot to fill (or propose the next empty one). The widget's
 `type` must match the slot's `primitive` and its `deckPosition` must point at
@@ -65,6 +77,13 @@ visit there — the data must answer "where I currently am" (P4). Wait for sign-
   exactly the rows marked `flagged`, each with an anomaly line; `inputs` =
   files read with `sha256sum` digests (at minimum `layers/spine.json`,
   `deck.json`, `sources.json`).
-- `yarn validate-guides` green. Re-runs also finish with
-  `yarn check-stable-ids <slug>` green — the §6.8 hard gate behind the ID rule.
-- One commit: `guide(<slug>): widget-<seg> <note>`.
+- **Upsert the manifest** (contract §2 Rule 9): `yarn build-layers-manifest
+  <slug>` (from `app/`). The widget entry carries the denormalized
+  `widget: { deckPosition, scope, title }` — the script derives it from the
+  artifact; the review lens groups its slot cards from that meta.
+- `yarn validate-guides` green (includes manifest↔artifact parity and
+  widget-meta match). Re-runs also finish with `yarn check-stable-ids <slug>`
+  green — the §6.8 hard gate behind the ID rule.
+- One commit (manifest included): `guide(<slug>): widget-<seg> <note>`. Once
+  **all** slots are filled and Pierre approves the widget stage in the lens
+  (export + commit), `guide-pass-ra-mapping` unlocks.

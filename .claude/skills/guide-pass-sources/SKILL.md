@@ -25,6 +25,8 @@ primary truth · invent nothing · `sources.json` is append-only · never touch
 - Reads: Pierre's source list (links, files), the existing `sources.json` if any.
 - Emits: `guides/<slug>/sources.json` + `guides/<slug>/layers/source-gathering.report.json`.
 - First run also bootstraps the guide (below).
+- This pass never appears in `layers/manifest.json` and has no stage gate
+  (contract §2 Rules 9–10 — only spine/widget/ra-mapping are reviewable).
 
 ## Workflow
 

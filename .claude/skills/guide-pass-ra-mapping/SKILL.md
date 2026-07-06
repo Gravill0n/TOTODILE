@@ -31,6 +31,18 @@ provides. Missing or stale ra-set source → back to the sources pass.
 
 ## Workflow
 
+### 0. Gate — spine + widgets approved (contract §2 Rule 10)
+Before anything else, verify **read-only** against `approvals.json`, for the
+spine **and every `widget-*` entry in `layers/manifest.json`**:
+- a record with that `id` exists with `status: "approved"`;
+- it is hash-current: its `contentHash` equals `sha256:` +
+  `sha256sum guides/<slug>/layers/<id>.json` of the bytes on disk.
+
+Any layer missing, `draft`, `rejected`, or hash-stale → **stop** and tell
+Pierre: "The `<layer(s)>` are not approved (state: `<…>`). Review at
+`/review/<slug>`, export `approvals.json`, commit it, then re-run this pass."
+Never write `approvals.json` and never work around the gate.
+
 ### 1. Build the mapping table — gate
 For every achievement in the ra-set source, propose the `targetItemId` (a step
 or widget item) where it is earned. Conventions:
@@ -43,6 +55,12 @@ or widget item) where it is earned. Conventions:
 - A mapping you are unsure about: emit it with `confidence: "flagged"` and an
   anomaly line saying why; its `targetItemId` lands in the report's
   `flaggedItemIds` (the validator enforces parity, like every other layer).
+- **Flag hygiene**: a flag states doubt about the *mapping* — the choice of
+  target — never about the target row's content. That row already passed
+  review in its own layer (this pass runs behind the widget gate), and the
+  lens badges such rows "target already approved" so Pierre judges only the
+  mapping. Do not suppress the flag either: `flaggedItemIds` must stay equal
+  to the flagged entries' targets (contract §4 parity).
 Present the full table (achievement → target, plus the unmapped list) and
 wait for sign-off.
 
@@ -58,7 +76,11 @@ wait for sign-off.
   entries; unmapped achievements → `anomalies`; doubtful targets →
   `flaggedItemIds`; `inputs` = files read with `sha256sum` digests (spine and
   widget layers at minimum).
-- `yarn validate-guides` green. Re-runs also finish with
-  `yarn check-stable-ids <slug>` green (targets must keep resolving against
-  preserved IDs).
-- One commit: `guide(<slug>): ra-mapping <note>`.
+- **Upsert the manifest** (contract §2 Rule 9): `yarn build-layers-manifest
+  <slug>` (from `app/`) — refreshes the `ra-mapping` entry's `sha256`.
+- `yarn validate-guides` green (includes manifest↔artifact parity). Re-runs
+  also finish with `yarn check-stable-ids <slug>` green (targets must keep
+  resolving against preserved IDs).
+- One commit (manifest included): `guide(<slug>): ra-mapping <note>`. Then
+  hand the stage to Pierre: approve in the lens, export, commit — that
+  unlocks `guide-pass-qa`.

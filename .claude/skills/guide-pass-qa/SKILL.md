@@ -29,9 +29,22 @@ nothing silently — not even a typo.
 
 ## Workflow
 
+### 0. Gate — every reviewable layer approved (contract §2 Rule 10)
+Before anything else, verify **read-only** against `approvals.json`, for
+**every entry in `layers/manifest.json`** (spine, all widgets, ra-mapping):
+- a record with that `id` exists with `status: "approved"`;
+- it is hash-current: its `contentHash` equals `sha256:` +
+  `sha256sum guides/<slug>/layers/<id>.json` of the bytes on disk.
+
+Any layer missing, `draft`, `rejected`, or hash-stale → **stop** and tell
+Pierre: "The `<layer(s)>` are not approved (state: `<…>`). Review at
+`/review/<slug>`, export `approvals.json`, commit it, then re-run QA."
+Never write `approvals.json` and never work around the gate. QA itself adds
+**no** manifest entry (Rule 9 — spine/widget/ra-mapping only).
+
 ### 1. Mechanical checks (scripts, from `app/`)
 ```bash
-yarn validate-guides            # schema + cross-file invariants, layer contract
+yarn validate-guides            # schema + cross-file invariants, layer contract, manifest parity + digests
 yarn assemble-guide <slug>      # staleness check, then merge layers → guide.json (+ ra-mapping.json)
 yarn check-stable-ids <slug>    # §6.8 hard gate: no protected ID from the shipped baseline may vanish
 ```
