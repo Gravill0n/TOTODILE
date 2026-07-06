@@ -29,6 +29,23 @@ async function mountLoaded() {
   return rendered;
 }
 
+describe("useLayerVerdicts — load/record race", () => {
+  it("a verdict recorded while the initial load is in flight survives it", async () => {
+    await putLayerVerdict("fictional-quest", "seed", {
+      status: "approved",
+      date: "2026-07-06T00:00:00Z",
+    });
+    const { result } = renderHook(() => useLayerVerdicts("fictional-quest"));
+    // Record before the store load has resolved — the load must merge under
+    // this decision, not clobber it back to draft.
+    act(() => {
+      result.current.record("spine", "approved");
+    });
+    await waitFor(() => expect(result.current.byLayer.has("seed")).toBe(true));
+    expect(result.current.byLayer.get("spine")?.status).toBe("approved");
+  });
+});
+
 describe("useLayerVerdicts — group verdicts (T5b)", () => {
   it("recordAll gives every member one identical verdict (same date, same note)", async () => {
     const { result } = await mountLoaded();

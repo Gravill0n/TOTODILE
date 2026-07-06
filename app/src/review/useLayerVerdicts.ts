@@ -34,7 +34,10 @@ export function useLayerVerdicts(guideId: string): GuideVerdicts {
   useEffect(() => {
     let cancelled = false;
     void readGuideVerdicts(guideId).then((loaded) => {
-      if (!cancelled) setByLayer(loaded);
+      // Merge under anything recorded while the read was in flight — a
+      // decision made this session must never be clobbered back to draft.
+      if (!cancelled)
+        setByLayer((previous) => new Map([...loaded, ...previous]));
     });
     return () => {
       cancelled = true;
