@@ -48,10 +48,11 @@ Every task ends with `yarn check` green (from `app/`). Work on a `feat/` branch,
 
 ## Phase 4: Stage sections + contract
 
-- [ ] **T6 — Stage sections + waiting states + export copy + target-approved badge** (S/M) — depends T5
-  - `stages.ts` (new); `ReviewScreen.tsx` 3 fixed sections + placeholders naming unlock skill
+- [x] **T6 — Stage sections + waiting states + export copy + target-approved badge** (S/M) — done 2026-07-06, commits 32b1eed (stages.ts), f50b4ca (sections + export copy), 992d4f1 (badge)
+  - `stages.ts` (new); `ReviewScreen.tsx` 3 fixed sections + placeholders naming unlock skill; export helper names the earliest incomplete stage
   - ra-mapping flagged row targeting an approved layer gets "target already approved" badge
-  - Tests: `stages.test.ts`, reviewLens additions
+  - Tests: `stages.test.ts` (7), reviewLens ×3 (placeholders, section badges, target-approved), flaggedRows unit case
+  - Bonus fix bcf3952: both review hooks' initial IndexedDB load could clobber verdicts recorded while it was in flight (surfaced as a flaky T5b flow test) — load now merges under in-session recordings
 - [ ] **T7 — Compiler contract + skill gates (docs only)** (S) — depends T1, ∥ Phases 2-3
   - `COMPILER_PASS_CONTRACT.md`: gate markers in §1, Rules 9 (manifest upsert) + 10 (stage gate, read-only approvals check), §3 table row, §6 re-run note
   - 6 × `.claude/skills/guide-pass-*/SKILL.md`: gates + manifest upsert steps (spine/widgets/ra-mapping/qa), never-in-manifest notes (sources/extract-data)
