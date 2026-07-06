@@ -33,10 +33,11 @@ Every task ends with `yarn check` green (from `app/`). Work on a `feat/` branch,
 
 ## Phase 3: Merged slot cards
 
-- [ ] **T5a — Slot groups render** (M) — depends T2, T4
+- [x] **T5a — Slot groups render** (M) — done 2026-07-06, commits f8a806e (slotGroups), 6ef5512 (VerdictControls), 7c4512a (SlotGroupCard + wiring)
   - `slotGroups.ts` (new, model on `buildLocationIndex`), `SlotGroupCard.tsx` (new, all widget slots), `VerdictControls.tsx` (extracted), `ReviewScreen.tsx` wiring + deck load
   - Crystal: 318 widget cards → 9 slot cards
-  - Tests: `slotGroups.test.ts`, reviewLens same-slot→one-card assertion
+  - Tests: `slotGroups.test.ts` (7), reviewLens same-slot→one-card assertion
+  - Note: group verdict fans out via a per-member loop for now — T5b replaces it with atomic `recordAll`/`clearAll`
 - [ ] **T5b — Group verdict fan-out + group spot-check** (M) — depends T5a
   - `useLayerVerdicts.ts`: `recordAll`/`clearAll`; `spotCheck.ts`: `groupUnflaggedRows` + owning-layer routing
   - `buildApprovals.ts` unchanged; note fans out to every member record
