@@ -22,7 +22,10 @@ export const libraryEntry = z.object({
   platform: z.string().min(1),
   // Absent for guides without an RA set; Sync is unavailable for them.
   raGameId: raGameId.optional(),
-  deckId: localId,
+  // Absent until the sources-pass bootstrap picks the deck (Pierre's call) —
+  // a planned backlog entry has no deck yet. Once guides/<slug>/deck.json
+  // exists, validate-guides requires it and cross-checks it.
+  deckId: localId.optional(),
   language,
   status: guideStatus,
   cover: z.string().min(1).optional(),

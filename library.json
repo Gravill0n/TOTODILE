@@ -10,6 +10,91 @@
       "deckId": "deck-pokemon",
       "language": "en",
       "status": "playable"
+    },
+    {
+      "id": "zelda-oot",
+      "title": "Ocarina of Time — 100% Achievement Guide",
+      "game": "The Legend of Zelda: Ocarina of Time",
+      "platform": "Nintendo 64",
+      "raGameId": 10113,
+      "language": "en",
+      "status": "planned"
+    },
+    {
+      "id": "layton-mm",
+      "title": "Miracle Mask — Any% spoiler-free Guide",
+      "game": "Professor Layton and the Miracle Mask",
+      "platform": "Nintendo 3DS",
+      "language": "en",
+      "status": "planned"
+    },
+    {
+      "id": "ml-pit",
+      "title": "M&L Partners in Time — 100% Achievement Guide",
+      "game": "Mario & Luigi: Partners in Time",
+      "platform": "Nintendo DS",
+      "raGameId": 3118,
+      "language": "en",
+      "status": "planned"
+    },
+    {
+      "id": "pokemon-ranger-soa",
+      "title": "Shadow of Almia — 100% Achievement Guide",
+      "game": "Pokemon Ranger: Shadow of Almia",
+      "platform": "Nintendo DS",
+      "raGameId": 16296,
+      "language": "en",
+      "status": "planned"
+    },
+    {
+      "id": "celeste",
+      "title": "Celeste — 100% Guide",
+      "game": "Celeste",
+      "platform": "PC",
+      "language": "en",
+      "status": "planned"
+    },
+    {
+      "id": "pokemon-legends-za",
+      "title": "Pokémon Legends Z-A — 100% Guide",
+      "game": "Pokémon Legends Z-A",
+      "platform": "Nintendo Switch 2",
+      "language": "en",
+      "status": "planned"
+    },
+    {
+      "id": "pokemon-pokopia",
+      "title": "Pokémon Pokopia — 100% Guide",
+      "game": "Pokémon Pokopia",
+      "platform": "Nintendo Switch 2",
+      "language": "en",
+      "status": "planned"
+    },
+    {
+      "id": "zelda-totk",
+      "title": "Tears of the Kingdom — 100% Guide",
+      "game": "The Legend of Zelda: Tears of the Kingdom",
+      "platform": "Nintendo Switch 2",
+      "language": "en",
+      "status": "planned"
+    },
+    {
+      "id": "pokemon-unbound",
+      "title": "Pokemon Unbound — 100% Achievement Guide",
+      "game": "Pokemon Unbound",
+      "platform": "Game Boy Advance (ROM Hack)",
+      "raGameId": 17530,
+      "language": "en",
+      "status": "planned"
+    },
+    {
+      "id": "lego-sw-complete-saga",
+      "title": "Lego Star Wars: The Complete Saga — 100% Achievement Guide",
+      "game": "Lego Star Wars: The Complete Saga",
+      "platform": "Nintendo DS",
+      "raGameId": 15351,
+      "language": "en",
+      "status": "planned"
     }
   ]
 }

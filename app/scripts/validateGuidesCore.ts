@@ -264,7 +264,15 @@ function validateGuideFolder(
     }
   }
 
-  if (entry && deck && entry.deckId !== deck.id) {
+  // deckId is optional schema-side (planned guides have no deck yet), but a
+  // compiled guide must declare it — absence past bootstrap is drift.
+  if (entry && deck && entry.deckId === undefined) {
+    findings.push({
+      guide: slug,
+      file: "library.json",
+      message: "deck.json exists but the library entry declares no deckId",
+    });
+  } else if (entry && deck && entry.deckId !== deck.id) {
     findings.push({
       guide: slug,
       file: "library.json",

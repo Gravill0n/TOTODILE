@@ -21,6 +21,15 @@ describe("libraryManifest", () => {
     });
   });
 
+  it("parses a planned entry without a deckId (deck chosen at bootstrap)", () => {
+    const value = validLibrary();
+    const { deckId, ...entry } = value.guides[0] ?? {};
+    expectParses(libraryManifest, {
+      ...value,
+      guides: [{ ...entry, status: "planned" }],
+    });
+  });
+
   it("rejects an unknown status", () => {
     const value = validLibrary();
     expectRejects(libraryManifest, {

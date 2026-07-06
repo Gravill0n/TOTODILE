@@ -22,6 +22,21 @@ the app declares what it reads via `SUPPORTED_SCHEMA_VERSIONS` in `common.ts`.
   regenerate or re-spell existing IDs (§6.8); the grammar in `common.ts` is
   fixed forever.
 
+## v2 amendment — 2026-07-06 — `library.json` `deckId` optional
+
+Loosening only — every existing file stays valid, no reader behavior changes,
+so no version bump (same reasoning as the manifest amendment below; Pierre
+may still call a v3 for a strict reading). Approved by Pierre 2026-07-06 when
+adding planned backlog entries.
+
+- **`libraryEntry.deckId` is now optional**: a `planned` guide has no deck
+  yet — the deck is chosen at the sources-pass bootstrap (Pierre's call,
+  `guide-pass-sources` step 0). Absence past bootstrap is still an error:
+  `validate-guides` flags a guide whose `deck.json` exists but whose library
+  entry declares no `deckId`, and keeps the id cross-check when present.
+
+Migration: none — existing entries all carry `deckId`.
+
 ## v2 amendment — 2026-07-04 — `layers/manifest.json` (review-lens stage gating)
 
 New file kind only — no existing file's shape or meaning changes, so no

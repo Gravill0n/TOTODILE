@@ -265,6 +265,16 @@ describe("validateGuides", () => {
       "raGameId 9000 does not match the library entry's 1234",
     );
   });
+
+  it("flags a compiled guide (deck.json exists) whose entry lacks a deckId", () => {
+    const library = validLibrary();
+    const { deckId, ...entry } = library.guides[0] ?? {};
+    library.guides = [entry] as never;
+    const root = writeTree({ ...happyTree(), "library.json": library });
+    expect(messagesOf(root).join("\n")).toContain(
+      "deck.json exists but the library entry declares no deckId",
+    );
+  });
 });
 
 describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () => {
