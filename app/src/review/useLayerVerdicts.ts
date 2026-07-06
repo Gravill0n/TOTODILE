@@ -15,6 +15,15 @@ export type GuideVerdicts = {
     note?: string,
   ) => void;
   clear: (layerId: string) => void;
+  // Group verdicts (T5b): one decision fans out to every member — a single
+  // shared date/note and one state update, so N members never render as N
+  // half-applied verdicts.
+  recordAll: (
+    layerIds: string[],
+    status: LayerVerdict["status"],
+    note?: string,
+  ) => void;
+  clearAll: (layerIds: string[]) => void;
 };
 
 // Owns a guide's draft approve/reject decisions (FR-E4), loaded on mount and
@@ -32,30 +41,49 @@ export function useLayerVerdicts(guideId: string): GuideVerdicts {
     };
   }, [guideId]);
 
-  const record = useCallback(
-    (layerId: string, status: LayerVerdict["status"], note?: string) => {
+  const recordAll = useCallback(
+    (layerIds: string[], status: LayerVerdict["status"], note?: string) => {
       const verdict: LayerVerdict = {
         status,
         date: new Date().toISOString(),
         ...(note?.trim() ? { note: note.trim() } : {}),
       };
-      setByLayer((previous) => new Map(previous).set(layerId, verdict));
-      void putLayerVerdict(guideId, layerId, verdict);
+      setByLayer((previous) => {
+        const next = new Map(previous);
+        for (const layerId of layerIds) next.set(layerId, verdict);
+        return next;
+      });
+      for (const layerId of layerIds) {
+        void putLayerVerdict(guideId, layerId, verdict);
+      }
     },
     [guideId],
+  );
+
+  const clearAll = useCallback(
+    (layerIds: string[]) => {
+      setByLayer((previous) => {
+        const next = new Map(previous);
+        for (const layerId of layerIds) next.delete(layerId);
+        return next;
+      });
+      for (const layerId of layerIds) {
+        void clearLayerVerdict(guideId, layerId);
+      }
+    },
+    [guideId],
+  );
+
+  const record = useCallback(
+    (layerId: string, status: LayerVerdict["status"], note?: string) =>
+      recordAll([layerId], status, note),
+    [recordAll],
   );
 
   const clear = useCallback(
-    (layerId: string) => {
-      setByLayer((previous) => {
-        const next = new Map(previous);
-        next.delete(layerId);
-        return next;
-      });
-      void clearLayerVerdict(guideId, layerId);
-    },
-    [guideId],
+    (layerId: string) => clearAll([layerId]),
+    [clearAll],
   );
 
-  return { byLayer, record, clear };
+  return { byLayer, record, clear, recordAll, clearAll };
 }
