@@ -1,8 +1,10 @@
+import { createHash } from "node:crypto";
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import { validateGuides } from "../../scripts/validateGuidesCore.ts";
+import { SCHEMA_VERSION } from "../../src/schema";
 import {
   validApprovals,
   validDataLayer,
@@ -268,9 +270,48 @@ describe("validateGuides", () => {
 describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () => {
   const layersBase = "guides/fictional-quest/layers";
 
+  // Digest of the bytes writeTree() will produce for a fixture value — the
+  // manifest must hash the exact artifact bytes (contract §5).
+  function shaOf(value: unknown): string {
+    return createHash("sha256").update(JSON.stringify(value)).digest("hex");
+  }
+
+  function manifestEntryFor(
+    id: string,
+    kind: "spine" | "widget" | "ra-mapping",
+    artifactValue: unknown,
+    widget?: { deckPosition: number; scope: unknown; title: string },
+  ) {
+    return {
+      id,
+      kind,
+      artifact: `layers/${id}.json`,
+      report: `layers/${id}.report.json`,
+      sha256: shaOf(artifactValue),
+      ...(widget ? { widget } : {}),
+    };
+  }
+
+  function happyManifest() {
+    return {
+      schemaVersion: SCHEMA_VERSION,
+      guideId: "fictional-quest",
+      entries: [
+        manifestEntryFor("spine", "spine", validSpineLayer()),
+        manifestEntryFor("widget-w1", "widget", validWidgetLayer(1), {
+          deckPosition: 0,
+          scope: { kind: "global" },
+          title: "Treasure checklist",
+        }),
+        manifestEntryFor("ra-mapping", "ra-mapping", validRaMapping()),
+      ],
+    };
+  }
+
   function happyLayers() {
     return {
       ...happyTree(),
+      [`${layersBase}/manifest.json`]: happyManifest(),
       [`${layersBase}/data.json`]: validDataLayer(),
       [`${layersBase}/data.report.json`]: validPassReport(
         "data",
@@ -468,5 +509,103 @@ describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () =>
     expect(messagesOf(root).join("\n")).toContain(
       '"fictional-quest:w1:r1" references unknown source "src-ghost"',
     );
+  });
+
+  describe("layers/manifest.json (contract §2 rule 9)", () => {
+    it("requires a manifest once a reviewable layer exists", () => {
+      const { [`${layersBase}/manifest.json`]: _manifest, ...withoutManifest } =
+        happyLayers();
+      expect(messagesOf(writeTree(withoutManifest)).join("\n")).toContain(
+        "missing layers/manifest.json",
+      );
+    });
+
+    it("does not require a manifest before any reviewable layer exists", () => {
+      const root = writeTree({
+        ...happyTree(),
+        [`${layersBase}/source-gathering.report.json`]:
+          validPassReport("source-gathering"),
+      });
+      expect(messagesOf(root).join("\n")).not.toContain("manifest");
+    });
+
+    it("flags a stale digest (artifact changed since the manifest entry)", () => {
+      const manifest = happyManifest();
+      const entry = manifest.entries.find((e) => e.id === "spine");
+      if (entry) entry.sha256 = "0".repeat(64);
+      const root = writeTree({
+        ...happyLayers(),
+        [`${layersBase}/manifest.json`]: manifest,
+      });
+      expect(messagesOf(root).join("\n")).toContain(
+        'manifest digest for "spine" is stale',
+      );
+    });
+
+    it("flags widget metadata that drifted from the artifact", () => {
+      const manifest = happyManifest();
+      const entry = manifest.entries.find((e) => e.id === "widget-w1");
+      if (entry?.widget) {
+        entry.widget.title = "Renamed";
+        entry.widget.deckPosition = 5;
+      }
+      const root = writeTree({
+        ...happyLayers(),
+        [`${layersBase}/manifest.json`]: manifest,
+      });
+      const joined = messagesOf(root).join("\n");
+      expect(joined).toContain(
+        'manifest widget metadata for "widget-w1" does not match the artifact',
+      );
+    });
+
+    it("flags a manifest entry with no artifact on disk", () => {
+      const manifest = happyManifest();
+      manifest.entries.push(
+        manifestEntryFor(
+          "widget-ghost",
+          "widget",
+          { any: true },
+          {
+            deckPosition: 1,
+            scope: { kind: "global" },
+            title: "Ghost",
+          },
+        ),
+      );
+      const root = writeTree({
+        ...happyLayers(),
+        [`${layersBase}/manifest.json`]: manifest,
+      });
+      expect(messagesOf(root).join("\n")).toContain(
+        'manifest entry "widget-ghost" has no layers/widget-ghost.json artifact',
+      );
+    });
+
+    it("flags a reviewable artifact missing from the manifest", () => {
+      const manifest = happyManifest();
+      manifest.entries = manifest.entries.filter((e) => e.id !== "widget-w1");
+      const root = writeTree({
+        ...happyLayers(),
+        [`${layersBase}/manifest.json`]: manifest,
+      });
+      expect(messagesOf(root).join("\n")).toContain(
+        'layer "widget-w1" has no layers/manifest.json entry',
+      );
+    });
+
+    it("flags a manifest guideId that contradicts the folder slug", () => {
+      const manifest = happyManifest();
+      const foreign = JSON.parse(
+        JSON.stringify(manifest).replaceAll("fictional-quest", "other-game"),
+      );
+      const root = writeTree({
+        ...happyLayers(),
+        [`${layersBase}/manifest.json`]: foreign,
+      });
+      expect(messagesOf(root).join("\n")).toContain(
+        '[fictional-quest/layers/manifest.json] guideId "other-game" does not match folder slug',
+      );
+    });
   });
 });

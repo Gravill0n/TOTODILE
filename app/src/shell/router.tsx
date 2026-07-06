@@ -10,11 +10,12 @@ import {
   redirect,
 } from "@tanstack/react-router";
 import { readAllSlots } from "../progress/progressStore";
-import { isPlayable, loadApprovals } from "../review/approvalsData";
+import { loadApprovals, loadPlayability } from "../review/approvalsData";
 import { getEditorMode } from "../review/editorMode";
 import { loadLayerRoster } from "../review/layerRoster";
 import { ReviewScreen } from "../review/ReviewScreen";
-import { loadRaMapping, loadSources } from "../review/reviewLoaders";
+import { loadReviewGuide } from "../review/reviewContent";
+import { loadDeck, loadRaMapping, loadSources } from "../review/reviewLoaders";
 import { loadGuide } from "../spine/guideData";
 import { buildLocationIndex } from "../spine/locationIndex";
 import { CleanupScreen } from "./CleanupScreen";
@@ -52,14 +53,14 @@ const rootRoute = createRootRoute({
 const libraryRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/",
-  // Playability is derived from each guide's approvals.json (§10.2, FR-E5),
-  // not the library-manifest status hint — the approval records are the truth.
+  // Playability is derived from each guide's approvals.json + layers manifest
+  // + QA completion (§10.2, FR-E5), not the library-manifest status hint —
+  // the approval records are the truth.
   loader: async () => {
     const library = await loadLibrary();
     const playableEntries = await Promise.all(
       library.guides.map(
-        async (guide) =>
-          [guide.id, isPlayable(await loadApprovals(guide.id))] as const,
+        async (guide) => [guide.id, await loadPlayability(guide.id)] as const,
       ),
     );
     return {
@@ -84,7 +85,7 @@ const guideRoute = createRoute({
     const entry = library.guides.find((g) => g.id === params.slug);
     if (!entry) throw notFound();
     // Nav map (§7): in-compilation guides open into review, not play.
-    if (!isPlayable(await loadApprovals(entry.id))) {
+    if (!(await loadPlayability(entry.id))) {
       throw redirect({ to: "/review/$slug", params: { slug: entry.id } });
     }
     const guide = await loadGuide(entry.id);
@@ -104,7 +105,7 @@ const cleanupRoute = createRoute({
     const library = await loadLibrary();
     const entry = library.guides.find((g) => g.id === params.slug);
     if (!entry) throw notFound();
-    if (!isPlayable(await loadApprovals(entry.id))) {
+    if (!(await loadPlayability(entry.id))) {
       throw redirect({ to: "/review/$slug", params: { slug: entry.id } });
     }
     const [guide, raMapping] = await Promise.all([
@@ -128,7 +129,7 @@ const placeRoute = createRoute({
     const library = await loadLibrary();
     const entry = library.guides.find((g) => g.id === params.slug);
     if (!entry) throw notFound();
-    if (!isPlayable(await loadApprovals(entry.id))) {
+    if (!(await loadPlayability(entry.id))) {
       throw redirect({ to: "/review/$slug", params: { slug: entry.id } });
     }
     const guide = await loadGuide(entry.id);
@@ -154,25 +155,29 @@ const reviewRoute = createRoute({
     const library = await loadLibrary();
     const entry = library.guides.find((g) => g.id === params.slug);
     if (!entry) throw notFound();
-    const approvals = await loadApprovals(entry.id);
-    if (isPlayable(approvals)) {
+    const [approvals, playable] = await Promise.all([
+      loadApprovals(entry.id),
+      loadPlayability(entry.id),
+    ]);
+    if (playable) {
       throw redirect({ to: "/guide/$slug", params: { slug: entry.id } });
     }
-    // The roster comes from the QA report (§ the lens reads reports, FR-E2);
+    // The roster comes from the layers manifest (contract §2 rule 9);
     // row content + sources are only worth loading once there are layers.
     const roster = await loadLayerRoster(entry.id);
-    const [guide, raMapping, sources] =
+    const [guide, deck, raMapping, sources] =
       roster.length > 0
         ? await Promise.all([
-            loadGuide(entry.id),
+            loadReviewGuide(entry.id, roster),
+            loadDeck(entry.id),
             loadRaMapping(entry.id),
             loadSources(entry.id),
           ])
-        : [null, null, null];
-    return { entry, approvals, roster, guide, raMapping, sources };
+        : [null, null, null, null];
+    return { entry, approvals, roster, guide, deck, raMapping, sources };
   },
   component: function ReviewRouteComponent() {
-    const { entry, approvals, roster, guide, raMapping, sources } =
+    const { entry, approvals, roster, guide, deck, raMapping, sources } =
       reviewRoute.useLoaderData();
     return (
       <ReviewScreen
@@ -180,6 +185,7 @@ const reviewRoute = createRoute({
         approvals={approvals}
         roster={roster}
         guide={guide}
+        deck={deck}
         raMapping={raMapping}
         sources={sources}
       />

@@ -20,6 +20,9 @@ export type FlaggedRow = {
   detail?: string;
   sourceRefs: string[];
   confidence: Confidence;
+  // ra-mapping rows only: the target row passed review in its own layer, so
+  // only the mapping itself is in question (T6 — the flag-dedupe payoff).
+  targetApproved?: boolean;
 };
 
 export type RowContent = {
@@ -195,12 +198,20 @@ export function resolveFlaggedRows(
   layer: LayerReport,
   index: ContentIndex,
   raMapping: RaMapping | null,
+  // ra-mapping only: whether a target's owning layer is already approved —
+  // such rows get the "target already approved" marker.
+  isTargetApproved?: (itemId: string) => boolean,
 ): FlaggedRow[] {
   if (layer.kind === "ra-mapping") {
     const flagged = new Set(layer.flaggedItemIds);
     return (raMapping?.entries ?? [])
       .filter((entry) => flagged.has(entry.targetItemId))
-      .map((entry) => raRow(entry, index));
+      .map((entry) => ({
+        ...raRow(entry, index),
+        ...(isTargetApproved?.(entry.targetItemId)
+          ? { targetApproved: true }
+          : {}),
+      }));
   }
 
   return layer.flaggedItemIds.map((id) => {

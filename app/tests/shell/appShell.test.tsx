@@ -83,6 +83,13 @@ function stubContentFetch(
           ? Response.json(approvedApprovals(slug))
           : new Response("not found", { status: 404 });
       }
+      // Pipeline completion signal — playability checks only that it exists.
+      const qa = url.match(/guides\/([^/]+)\/layers\/qa\.report\.json$/);
+      if (qa) {
+        return approvedSlugs.includes(qa[1] ?? "")
+          ? new Response("{}", { status: 200 })
+          : new Response("not found", { status: 404 });
+      }
       if (url.endsWith("guides/fictional-quest/guide.json")) {
         return Response.json(fixtureGuide);
       }
@@ -219,6 +226,9 @@ describe("app shell", () => {
         }
         if (/guides\/[^/]+\/approvals\.json$/.test(url)) {
           return Response.json(approvedApprovals("fictional-quest"));
+        }
+        if (url.endsWith("guides/fictional-quest/layers/qa.report.json")) {
+          return new Response("{}", { status: 200 });
         }
         if (url.endsWith("guides/fictional-quest/guide.json")) {
           return new Response("{ not json", { status: 200 });

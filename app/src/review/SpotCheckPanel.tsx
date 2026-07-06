@@ -10,6 +10,8 @@ type SpotCheckPanelProps = {
   sourceById: Map<string, SourceEntry>;
   verdicts: Map<string, SpotCheckVerdict>;
   onRecord: (verdict: SpotCheckVerdict) => void;
+  // Names the pool when it isn't obvious ("sampled across N member layers").
+  caption?: string | undefined;
 };
 
 // FR-E3/E4 — "spot-check N": draw N random confident rows, show each beside
@@ -20,6 +22,7 @@ export function SpotCheckPanel({
   sourceById,
   verdicts,
   onRecord,
+  caption,
 }: SpotCheckPanelProps) {
   const [sampled, setSampled] = useState<FlaggedRow[]>([]);
   const sampleSize = Math.min(DEFAULT_SAMPLE, unflaggedRows.length);
@@ -41,6 +44,9 @@ export function SpotCheckPanel({
           <Dices className="size-4" aria-hidden />
           Spot-check {sampleSize}
         </button>
+        {caption ? (
+          <span className="text-sm text-ink-soft">{caption}</span>
+        ) : null}
         {sampled.length > 0 ? (
           <button
             type="button"

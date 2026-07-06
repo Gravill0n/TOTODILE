@@ -24,7 +24,19 @@ export function useSpotChecks(guideId: string): GuideSpotChecks {
   useEffect(() => {
     let cancelled = false;
     void readGuideSpotChecks(guideId).then((loaded) => {
-      if (!cancelled) setByLayer(loaded);
+      // Merge under anything recorded while the read was in flight — a
+      // verdict made this session must never be lost to the stale load.
+      if (cancelled) return;
+      setByLayer((previous) => {
+        const next = new Map(loaded);
+        for (const [layerId, layerVerdicts] of previous) {
+          next.set(
+            layerId,
+            new Map([...(next.get(layerId) ?? []), ...layerVerdicts]),
+          );
+        }
+        return next;
+      });
     });
     return () => {
       cancelled = true;

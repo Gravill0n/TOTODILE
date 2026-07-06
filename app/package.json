@@ -14,6 +14,7 @@
     "validate-guides": "node scripts/validateGuides.ts",
     "assemble-guide": "node scripts/assembleGuide.ts",
     "check-stable-ids": "node scripts/checkStableIds.ts",
+    "build-layers-manifest": "node scripts/buildLayersManifest.ts",
     "check": "yarn lint && yarn typecheck && yarn test && yarn validate-guides"
   },
   "packageManager": "yarn@4.16.0+sha512.5374c94eb4ef6aa8188fb112f20c1aa6569f248d676c5e576e1fd2a1a4d8d87a96df65d9dfe1c2a0252cbe38bda46cf18d955005b81b43cc7607a5c9d56fd2b6",

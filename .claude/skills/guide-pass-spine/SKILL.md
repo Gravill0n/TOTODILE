@@ -133,8 +133,15 @@ summary); adjust to feedback before continuing.
   `inputs` = the files read, with digests (`sha256sum <file>`), at minimum
   `sources.json`; on a re-run, `notes` states what changed and which rejection
   note it answers.
+- **Upsert the manifest** (contract §2 Rule 9): `yarn build-layers-manifest
+  <slug>` (from `app/`) — creates `layers/manifest.json` on the first run,
+  refreshes the spine entry's `sha256` on every re-run. This pass has **no
+  stage gate** — the spine is stage 1; the gate it *feeds* is the widget
+  pass's (Rule 10).
 - `yarn validate-guides` green (it schema-checks the layer, the visit→location
-  FK, location/visit ID uniqueness, flag parity, and that every `sourceRefs`
-  entry resolves). Re-runs also finish with `yarn check-stable-ids <slug>`
-  green — the §6.8 hard gate behind the ID rule.
-- One commit: `guide(<slug>): spine <note>`.
+  FK, location/visit ID uniqueness, flag parity, manifest↔artifact parity, and
+  that every `sourceRefs` entry resolves). Re-runs also finish with
+  `yarn check-stable-ids <slug>` green — the §6.8 hard gate behind the ID rule.
+- One commit (manifest included): `guide(<slug>): spine <note>`. Then hand the
+  stage to Pierre: review at `/review/<slug>`, approve, export
+  `approvals.json`, commit — that unlocks `guide-pass-widgets`.

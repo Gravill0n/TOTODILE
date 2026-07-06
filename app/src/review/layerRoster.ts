@@ -1,4 +1,6 @@
+import type { ManifestWidgetMeta } from "../schema";
 import { passReportFile } from "../schema";
+import { loadLayersManifest } from "./reviewLoaders";
 
 // The content-bearing layers a guide exposes to the review lens, each with the
 // flag worklist its pass recorded (FR-E2). source-gathering and qa are process
@@ -13,16 +15,13 @@ export type LayerReport = {
   rowCount: number;
   anomalies: string[];
   flaggedItemIds: string[];
-  // "sha256:" + the artifact's digest, taken from the QA report's recorded
-  // input hash — what an approval hash-locks (§6.8, contract §5).
+  // "sha256:" + the artifact's digest, taken from the manifest entry — what an
+  // approval hash-locks (§6.8, contract §5).
   contentHash: string;
+  // Denormalized deck-slot metadata carried by widget manifest entries — the
+  // grouping key for merged slot cards. Absent on spine/ra-mapping.
+  widget?: ManifestWidgetMeta;
 };
-
-function kindOf(id: string): LayerKind {
-  if (id === "spine") return "spine";
-  if (id === "ra-mapping") return "ra-mapping";
-  return "widget";
-}
 
 // Roster order: spine first, ra-mapping last, widgets alphabetical between —
 // the order an editor walks the guide (route → tables → achievement links).
@@ -30,50 +29,32 @@ function rosterRank(kind: LayerKind): number {
   return kind === "spine" ? 0 : kind === "widget" ? 1 : 2;
 }
 
-// The app cannot list layers/ over HTTP, and approvals.json (the eventual
-// roster) is not written until a layer is approved (§23.4) — yet review must
-// happen first. The QA pass already records every layer artifact it read in
-// qa.report.json's `inputs`, so that list is the roster (Pierre's call). A
-// guide with no qa.report.json has not been compiled through QA and has
-// nothing to review yet → an empty roster, not an error.
+// The app cannot list layers/ over HTTP, so every reviewable pass upserts its
+// entry into layers/manifest.json (contract §2 rule 9) and that file is the
+// roster — available right after the spine pass, not only after QA, which is
+// what makes per-stage review possible. A guide with no manifest has not
+// compiled any reviewable layer yet → an empty roster, not an error.
 export async function loadLayerRoster(slug: string): Promise<LayerReport[]> {
-  const response = await fetch(`guides/${slug}/layers/qa.report.json`);
-  if (response.status === 404) return [];
-  if (!response.ok) {
-    throw new Error(
-      `Could not load QA report for "${slug}" (HTTP ${response.status})`,
-    );
-  }
-  const qa = passReportFile.parse(await response.json());
-
-  // The QA report records each artifact's exact-bytes digest; an approval
-  // hash-locks that (checkStableIdsCore compares "sha256:" + this digest).
-  const digestByFile = new Map(qa.inputs.map((i) => [i.file, i.sha256]));
-
-  const layerIds = qa.inputs
-    .map((input) => input.file)
-    .filter((file) => /^layers\/.+\.json$/.test(file))
-    .filter((file) => !file.endsWith(".report.json"))
-    .map((file) => file.slice("layers/".length, -".json".length));
+  const manifest = await loadLayersManifest(slug);
+  if (manifest === null) return [];
 
   const reports = await Promise.all(
-    layerIds.map(async (id): Promise<LayerReport> => {
-      const reportResponse = await fetch(
-        `guides/${slug}/layers/${id}.report.json`,
-      );
+    manifest.entries.map(async (entry): Promise<LayerReport> => {
+      const reportResponse = await fetch(`guides/${slug}/${entry.report}`);
       if (!reportResponse.ok) {
         throw new Error(
-          `Could not load report for layer "${id}" (HTTP ${reportResponse.status})`,
+          `Could not load report for layer "${entry.id}" (HTTP ${reportResponse.status})`,
         );
       }
       const parsed = passReportFile.parse(await reportResponse.json());
       return {
-        id,
-        kind: kindOf(id),
+        id: entry.id,
+        kind: entry.kind,
         rowCount: parsed.report.rowCount,
         anomalies: parsed.report.anomalies,
         flaggedItemIds: parsed.report.flaggedItemIds,
-        contentHash: `sha256:${digestByFile.get(`layers/${id}.json`) ?? ""}`,
+        contentHash: `sha256:${entry.sha256}`,
+        ...(entry.widget ? { widget: entry.widget } : {}),
       };
     }),
   );

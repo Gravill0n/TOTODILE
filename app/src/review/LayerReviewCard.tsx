@@ -1,9 +1,6 @@
-import { Check, X } from "lucide-react";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import type { LayerRecord, SourceEntry, SpotCheckVerdict } from "../schema";
 import { FlaggedRowView } from "./FlaggedRowView";
@@ -11,6 +8,7 @@ import type { FlaggedRow } from "./flaggedRows";
 import type { LayerReport } from "./layerRoster";
 import type { LayerVerdict } from "./reviewStore";
 import { SpotCheckPanel } from "./SpotCheckPanel";
+import { VerdictControls } from "./VerdictControls";
 
 type LayerReviewCardProps = {
   layer: LayerReport;
@@ -53,8 +51,6 @@ export function LayerReviewCard({
   onClearVerdict,
 }: LayerReviewCardProps) {
   const [open, setOpen] = useState(false);
-  const [rejecting, setRejecting] = useState(false);
-  const [note, setNote] = useState("");
 
   const status = verdict?.status ?? approval?.status ?? "draft";
   const approved = status === "approved";
@@ -127,80 +123,13 @@ export function LayerReviewCard({
             onRecord={onSpotCheck}
           />
 
-          <div className="mt-4 border-t border-line pt-3">
-            {verdict ? (
-              <div className="flex flex-wrap items-center gap-3 text-sm">
-                <span
-                  className={cn(
-                    "font-bold uppercase",
-                    verdict.status === "approved"
-                      ? "text-primary"
-                      : "text-missable",
-                  )}
-                >
-                  {STATUS_LABEL[verdict.status]}
-                </span>
-                {verdict.note ? (
-                  <span className="text-ink-soft">“{verdict.note}”</span>
-                ) : null}
-                <Button
-                  type="button"
-                  variant="link"
-                  size="sm"
-                  className="text-ink-soft"
-                  onClick={() => {
-                    onClearVerdict();
-                    setRejecting(false);
-                    setNote("");
-                  }}
-                >
-                  Change
-                </Button>
-              </div>
-            ) : (
-              <div className="flex flex-wrap items-center gap-2">
-                <Button type="button" size="sm" onClick={onApprove}>
-                  <Check aria-hidden />
-                  Approve
-                </Button>
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setRejecting((value) => !value)}
-                >
-                  <X aria-hidden />
-                  Reject
-                </Button>
-                {rejecting ? (
-                  <span className="flex flex-1 items-center gap-2">
-                    <Input
-                      type="text"
-                      value={note}
-                      onChange={(event) => setNote(event.target.value)}
-                      placeholder="rejection note (required — feeds the recompile)"
-                      aria-label={`Rejection note for ${layer.id}`}
-                      className="flex-1"
-                    />
-                    <Button
-                      type="button"
-                      variant="outline"
-                      size="sm"
-                      disabled={!note.trim()}
-                      className="border-missable font-bold text-missable"
-                      onClick={() => {
-                        onReject(note);
-                        setRejecting(false);
-                        setNote("");
-                      }}
-                    >
-                      Submit
-                    </Button>
-                  </span>
-                ) : null}
-              </div>
-            )}
-          </div>
+          <VerdictControls
+            verdict={verdict}
+            subject={layer.id}
+            onApprove={onApprove}
+            onReject={onReject}
+            onClear={onClearVerdict}
+          />
         </>
       ) : null}
     </Card>

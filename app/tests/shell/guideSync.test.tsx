@@ -83,6 +83,10 @@ function stubFetch() {
       if (url.endsWith("guides/fictional-quest/approvals.json")) {
         return Response.json(approvedApprovals());
       }
+      // Pipeline completion signal — playability checks only that it exists.
+      if (url.endsWith("guides/fictional-quest/layers/qa.report.json")) {
+        return new Response("{}", { status: 200 });
+      }
       if (url.endsWith("guides/fictional-quest/guide.json")) {
         return Response.json(fixtureGuide);
       }

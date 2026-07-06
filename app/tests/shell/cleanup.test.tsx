@@ -70,6 +70,12 @@ function stubFetch({ playable = true } = {}) {
           ? Response.json(approvedApprovals())
           : new Response("not found", { status: 404 });
       }
+      // Pipeline completion signal — playability checks only that it exists.
+      if (url.endsWith("guides/fictional-quest/layers/qa.report.json")) {
+        return playable
+          ? new Response("{}", { status: 200 })
+          : new Response("not found", { status: 404 });
+      }
       if (url.endsWith("guides/fictional-quest/guide.json")) {
         return Response.json(fixtureGuide);
       }

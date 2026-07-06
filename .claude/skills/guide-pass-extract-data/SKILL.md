@@ -45,6 +45,8 @@ no per-game typed schemas.
 - Reads: `sources.json`, the prior `layers/data.json` if any (ID preservation),
   the source materials themselves (the snapshot files `sources.json` points at).
 - Emits: `layers/data.json` + `layers/data.report.json`.
+- This pass never appears in `layers/manifest.json` and has no stage gate
+  (contract §2 Rules 9–10 — only spine/widget/ra-mapping are reviewable).
 
 ## The `images` catalog (a standard dataset)
 

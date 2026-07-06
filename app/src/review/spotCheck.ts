@@ -49,6 +49,27 @@ export function layerUnflaggedRows(
     .filter((row): row is FlaggedRow => row !== undefined);
 }
 
+// A slot group's spot-check pool: the union of its members' confident rows,
+// in member order. Item IDs are unique per widget, so no dedupe is needed.
+export function groupUnflaggedRows(
+  layers: LayerReport[],
+  index: ContentIndex,
+  guide: GuideFile,
+  raMapping: RaMapping | null,
+): FlaggedRow[] {
+  return layers.flatMap((layer) =>
+    layerUnflaggedRows(layer, index, guide, raMapping),
+  );
+}
+
+// The widget layer a sampled row's verdict belongs to — the inverse of the
+// layerAllItemIds convention: item "<slug>:<seg>:…" lives in layer
+// "widget-<seg>". Group spot-check verdicts are recorded per owning member,
+// never on the group (grouping is UI-only).
+export function owningWidgetLayerId(itemId: string): string {
+  return `widget-${itemId.split(":")[1] ?? itemId}`;
+}
+
 // Up to N distinct random rows. The rng is injectable so tests are
 // deterministic; a partial Fisher–Yates avoids copying the whole pool when N is
 // small relative to it.

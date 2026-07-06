@@ -11,6 +11,7 @@ const REVIEW_FILES = [
   "review/LayerReviewCard.tsx",
   "review/SpotCheckRow.tsx",
   "review/RowSourceColumns.tsx",
+  "review/VerdictControls.tsx",
 ];
 
 describe("review lens reskin (R6)", () => {
@@ -20,10 +21,12 @@ describe("review lens reskin (R6)", () => {
     });
   }
 
-  it("LayerReviewCard adopts shadcn Button + Badge + Input", () => {
-    const src = source("review/LayerReviewCard.tsx");
-    expect(src).toContain('from "@/components/ui/button"');
-    expect(src).toContain('from "@/components/ui/badge"');
-    expect(src).toContain('from "@/components/ui/input"');
+  it("the review cards adopt shadcn Badge, with Button + Input in the shared verdict controls", () => {
+    expect(source("review/LayerReviewCard.tsx")).toContain(
+      'from "@/components/ui/badge"',
+    );
+    const controls = source("review/VerdictControls.tsx");
+    expect(controls).toContain('from "@/components/ui/button"');
+    expect(controls).toContain('from "@/components/ui/input"');
   });
 });

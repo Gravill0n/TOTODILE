@@ -46,6 +46,10 @@ function stubContentFetch(library: unknown) {
           layers: [{ ...validLayer("approved"), id: "layer-spine" }],
         });
       }
+      // Pipeline completion signal — playability checks only that it exists.
+      if (url.endsWith("guides/fictional-quest/layers/qa.report.json")) {
+        return new Response("{}", { status: 200 });
+      }
       return new Response("not found", { status: 404 });
     }),
   );

@@ -25,6 +25,18 @@ sources.json     layers/data    layers/spine  layers/widget-<id> layers/ra-  lay
                                                                    .json       + ra-mapping.json
 ```
 
+The three reviewable stages are separated by **review gates** (Rule 10) — the
+pipeline pauses after each for Pierre's approval in the review lens:
+
+```
+spine ─▶ [review gate] ─▶ widget fill (×N) ─▶ [review gate] ─▶ ra-mapping ─▶ [review gate] ─▶ qa
+```
+
+Passing a gate means: Pierre reviews the stage at `/review/<slug>`, approves it,
+exports `approvals.json`, and commits it. The next pass verifies that state
+before running (Rule 10) — per-stage review keeps each sitting small and stops
+later passes from re-flagging rows Pierre already judged.
+
 All paths below are relative to `guides/<slug>/`.
 
 | Pass | Reads | Artifact | Report |
@@ -88,6 +100,36 @@ sign-off) — is still to do.
    classification, widget composition beyond the deck — Pierre's calls. A pass
    pauses and asks rather than choosing silently (carried over from the legacy
    builder skill's operating constraints).
+9. **Every reviewable pass upserts its `layers/manifest.json` entry.** The
+   manifest (schema `layersManifest`, `app/src/schema/manifest.ts`) is the
+   review lens's roster — it makes a guide reviewable at any pipeline point,
+   not just after QA. One entry per reviewable layer:
+   `{ id, kind: "spine" | "widget" | "ra-mapping", artifact, report, sha256 }`,
+   where `sha256` is the 64-hex digest of the artifact's exact bytes (no
+   prefix); widget entries also carry the denormalized
+   `widget: { deckPosition, scope, title }` so the lens groups slot cards
+   without fetching artifacts. After emitting artifact + report, regenerate it
+   with `yarn build-layers-manifest <slug>` (from `app/`) — it derives every
+   entry from the files on disk and creates `layers/manifest.json` on the
+   first spine run. `source-gathering`, `extract-data`, and `qa` **never**
+   appear in it. `yarn validate-guides` enforces entry↔artifact parity (both
+   directions), byte-accurate digests, and widget-meta match.
+10. **Stage gates: a pass verifies the previous stage before running.** The
+    check is read-only against `approvals.json` (Rule 5 stands — passes never
+    write it). A dependency layer passes the gate when its approvals record
+    has `status: "approved"` **and** is hash-current: the record's
+    `contentHash` equals `sha256:` + `sha256sum guides/<slug>/layers/<id>.json`
+    of the bytes on disk.
+    - **widget fill** requires the spine approved + hash-current;
+    - **ra-mapping** requires that, plus every `widget-*` entry in
+      `layers/manifest.json` approved + hash-current;
+    - **qa** requires every manifest entry approved + hash-current;
+    - source-gathering, extract-data, and spine have no gate.
+    A missing record, `draft`, `rejected`, or a stale hash → **stop and hand
+    back to Pierre**: name the blocking layer(s) and their state, and point
+    him at the lens — "review at `/review/<slug>`, export `approvals.json`,
+    commit it, then re-run this pass". Never work around a gate and never
+    write `approvals.json` to open one.
 
 ## 3. Layer artifacts
 
@@ -100,14 +142,16 @@ Validated by `app/src/schema/layers.ts`; `yarn validate-guides` checks every
 | `layers/spine.json` | `spineLayer` | `{ schemaVersion, guideId, pass: "spine", locations: [...], chapters: [...] }` — the locations registry + the full chapter→visit→step tree, exactly the shape `guide.json.locations`/`.chapters` will take |
 | `layers/widget-<seg>.json` | `widgetLayer` | `{ schemaVersion, guideId, pass: "widget", widget: {...} }` — one widget instance, exactly the shape of a `guide.json.widgets` element; `<seg>` must equal the widget ID's second segment |
 | `layers/ra-mapping.json` | `raMapping` | identical shape to the final `ra-mapping.json` — assembly is a copy |
+| `layers/manifest.json` | `layersManifest` | the reviewable-layer roster (Rule 9), regenerated per pass run via `yarn build-layers-manifest <slug>` — one entry per spine / widget / ra-mapping layer with its byte digest and, for widgets, the denormalized deck meta |
 
 Artifacts carry IDs in the full §20.3 grammar (guide slug first segment), so
 assembly is a mechanical merge with zero rewriting:
 `guide.json = { schemaVersion, guideId, locations: spine.locations, chapters: spine.chapters, widgets: [each widget layer's widget, ordered by deckPosition] }`.
 
-Anything else in `layers/` ending in `.json` is a contract violation (the validator
-rejects it). Non-JSON files (e.g. ML PiT's `translation-report.md`, a pre-contract
-artifact) are ignored.
+Anything else in `layers/` ending in `.json` — beyond these artifacts, their
+`.report.json` companions, and `manifest.json` — is a contract violation (the
+validator rejects it). Non-JSON files (e.g. ML PiT's `translation-report.md`,
+a pre-contract artifact) are ignored.
 
 ## 4. Reports
 
@@ -154,10 +198,12 @@ review lens's raw material (FR-E2, §7 review screen) and the editor's first rea
 ## 5. Hashing
 
 `contentHash` in `approvals.json` is **`sha256:` + lowercase hex SHA-256 of the
-artifact file's exact bytes** as committed. Report `inputs[].sha256` uses the same
-digest (without the prefix). The review lens computes the hash at approval; the
-recompile check (Task 4) and any reader recompute and compare — no canonicalization,
-the bytes are the truth, so passes must not rewrite files they didn't change.
+artifact file's exact bytes** as committed. Report `inputs[].sha256` and the
+manifest entries' `sha256` (Rule 9) use the same digest (without the prefix).
+The review lens carries the hash from the layer's manifest entry into the
+approval record; the stage gates (Rule 10) and any reader recompute and
+compare — no canonicalization, the bytes are the truth, so passes must not
+rewrite files they didn't change.
 
 ## 6. Re-runs and rejections
 
@@ -168,7 +214,12 @@ A pass re-run (after a rejection, new sources, or a schema migration):
 2. Reads its prior artifact for ID preservation (§2.3).
 3. Overwrites artifact + report; the report's `notes` must state what changed and
    which rejection note it answers.
-4. Downstream layers whose inputs changed are stale: QA fails if a layer's recorded
+4. Refreshes the layer's `layers/manifest.json` entry (Rule 9 —
+   `yarn build-layers-manifest <slug>`), so the manifest `sha256` always matches
+   the bytes on disk. The layer's old approval is now hash-stale by design:
+   that is exactly what the next stage's gate (Rule 10) catches, forcing the
+   re-run back through review before the pipeline continues.
+5. Downstream layers whose inputs changed are stale: QA fails if a layer's recorded
    input hash no longer matches the current file, so staleness is caught
    mechanically, not by memory.
 
