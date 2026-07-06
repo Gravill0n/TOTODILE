@@ -27,6 +27,9 @@ const fixtureGuide = JSON.parse(
 const fixtureSources = JSON.parse(
   readFileSync(join(fixtureDir, "sources.json"), "utf8"),
 );
+const fixtureRaMapping = JSON.parse(
+  readFileSync(join(fixtureDir, "ra-mapping.json"), "utf8"),
+);
 
 afterEach(async () => {
   cleanup();
@@ -39,7 +42,7 @@ afterEach(async () => {
 
 const HEX64 = "a".repeat(64);
 
-function manifest({ sameSlotWidgets = false } = {}) {
+function manifest({ sameSlotWidgets = false, raMappingStage = false } = {}) {
   const widgetEntry = (seg: string, locationId: string) => ({
     id: `widget-${seg}`,
     kind: "widget",
@@ -67,6 +70,17 @@ function manifest({ sameSlotWidgets = false } = {}) {
         ? [
             widgetEntry("enc-gate", "fictional-quest:castle-gate"),
             widgetEntry("enc-yard", "fictional-quest:courtyard"),
+          ]
+        : []),
+      ...(raMappingStage
+        ? [
+            {
+              id: "ra-mapping",
+              kind: "ra-mapping",
+              artifact: "layers/ra-mapping.json",
+              report: "layers/ra-mapping.report.json",
+              sha256: HEX64,
+            },
           ]
         : []),
     ],
@@ -141,10 +155,12 @@ function stubFetch({
   approvals,
   assembled = true,
   sameSlotWidgets = false,
+  raMappingStage = false,
 }: {
   approvals?: unknown;
   assembled?: boolean;
   sameSlotWidgets?: boolean;
+  raMappingStage?: boolean;
 } = {}) {
   vi.stubGlobal(
     "fetch",
@@ -157,7 +173,29 @@ function stubFetch({
           : new Response("not found", { status: 404 });
       }
       if (url.endsWith("guides/fictional-quest/layers/manifest.json")) {
-        return Response.json(manifest({ sameSlotWidgets }));
+        return Response.json(manifest({ sameSlotWidgets, raMappingStage }));
+      }
+      if (url.endsWith("guides/fictional-quest/ra-mapping.json")) {
+        return raMappingStage
+          ? Response.json(fixtureRaMapping)
+          : new Response("not found", { status: 404 });
+      }
+      if (url.endsWith("layers/ra-mapping.report.json")) {
+        return Response.json({
+          schemaVersion: SCHEMA_VERSION,
+          guideId: "fictional-quest",
+          pass: "ra-mapping",
+          layer: "ra-mapping",
+          generatedAt: "2026-06-13T00:00:00Z",
+          inputs: [],
+          report: {
+            rowCount: 6,
+            anomalies: [],
+            // RA #101's target is a spine step — the target-approved case.
+            flaggedItemIds: ["fictional-quest:c1:s3"],
+          },
+          notes: [],
+        });
       }
       if (url.endsWith("layers/widget-enc-gate.json")) {
         return Response.json(
@@ -268,6 +306,41 @@ describe("review lens — flagged rows (FR-E2/E3)", () => {
     expect(screen.getByText(/Castle Gate/)).toBeDefined();
     // …the clean member collapses to a count line.
     expect(screen.getByText(/1 member layer\(s\) with no flags/)).toBeDefined();
+  });
+
+  it("shows waiting placeholders naming the unlock passes at spine stage (T6)", async () => {
+    setEditorMode(true);
+    stubFetch({ assembled: false });
+    renderAt("/review/fictional-quest");
+
+    await screen.findByRole("button", { name: /spine/ });
+    // The two later stages have not run — each placeholder names the skill
+    // that unlocks it once the current stage is approved and committed.
+    expect(screen.getByText(/guide-pass-widgets/)).toBeDefined();
+    expect(screen.getByText(/guide-pass-ra-mapping/)).toBeDefined();
+    // The export helper names the earliest incomplete stage.
+    expect(screen.getByText(/Spine stage is not fully approved/)).toBeDefined();
+  });
+
+  it("renders the three stage sections with folded status badges (T6)", async () => {
+    setEditorMode(true);
+    stubFetch({
+      approvals: approvedApprovals(),
+      assembled: false,
+      sameSlotWidgets: true,
+      raMappingStage: true,
+    });
+    renderAt("/review/fictional-quest");
+
+    expect(
+      await screen.findByRole("heading", { name: /Spine.*Approved/ }),
+    ).toBeDefined();
+    expect(
+      screen.getByRole("heading", { name: /Widgets.*In review/ }),
+    ).toBeDefined();
+    expect(
+      screen.getByRole("heading", { name: /RA mapping.*In review/ }),
+    ).toBeDefined();
   });
 
   it("redirects an already-playable guide away from review to play", async () => {
