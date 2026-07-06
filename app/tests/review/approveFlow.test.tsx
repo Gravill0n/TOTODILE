@@ -38,7 +38,23 @@ function reportFile(layer: string, pass: string, flagged: string[]) {
   };
 }
 
-function stubFetch() {
+// Two widgets sharing deck slot 2 — the merged-card shape (T5).
+function widgetEntry(seg: string) {
+  return {
+    id: `widget-${seg}`,
+    kind: "widget",
+    artifact: `layers/widget-${seg}.json`,
+    report: `layers/widget-${seg}.report.json`,
+    sha256: HEX64,
+    widget: {
+      deckPosition: 2,
+      scope: { kind: "location", locationId: `fictional-quest:${seg}` },
+      title: "Wild Encounters",
+    },
+  };
+}
+
+function stubFetch({ sameSlotWidgets = false } = {}) {
   vi.stubGlobal(
     "fetch",
     vi.fn(async (input: RequestInfo | URL) => {
@@ -56,11 +72,20 @@ function stubFetch() {
               report: "layers/spine.report.json",
               sha256: HEX64,
             },
+            ...(sameSlotWidgets
+              ? [widgetEntry("enc-gate"), widgetEntry("enc-yard")]
+              : []),
           ],
         });
       }
       if (url.endsWith("guides/fictional-quest/layers/spine.report.json")) {
         return Response.json(reportFile("spine", "spine", []));
+      }
+      if (url.endsWith("layers/widget-enc-gate.report.json")) {
+        return Response.json(reportFile("widget-enc-gate", "widget", []));
+      }
+      if (url.endsWith("layers/widget-enc-yard.report.json")) {
+        return Response.json(reportFile("widget-enc-yard", "widget", []));
       }
       if (url.endsWith("guides/fictional-quest/guide.json")) {
         return Response.json(validGuide());
@@ -71,6 +96,23 @@ function stubFetch() {
       return new Response("not found", { status: 404 });
     }),
   );
+}
+
+// Stub the export path and hand back the assembled approvals file. URL is
+// only stubbed here — replacing it earlier breaks new URL(...) in the loader.
+async function exportApprovals() {
+  let captured: Blob | undefined;
+  vi.stubGlobal("URL", {
+    ...URL,
+    createObjectURL: vi.fn((blob: Blob) => {
+      captured = blob;
+      return "blob:totodile";
+    }),
+    revokeObjectURL: vi.fn(),
+  });
+  fireEvent.click(screen.getByRole("button", { name: /Export approvals/ }));
+  await vi.waitFor(() => expect(captured).toBeDefined());
+  return approvalsFile.parse(JSON.parse(await (captured as Blob).text()));
 }
 
 function renderReview() {
@@ -111,6 +153,51 @@ describe("approve/reject flow (FR-E4)", () => {
     expect(file.layers.find((l) => l.id === "spine")?.contentHash).toBe(
       `sha256:${HEX64}`,
     );
+  });
+
+  it("fans a group approval out to every member with one shared date (T5b)", async () => {
+    setEditorMode(true);
+    stubFetch({ sameSlotWidgets: true });
+    renderReview();
+
+    fireEvent.click(
+      await screen.findByRole("button", { name: /Wild Encounters/ }),
+    );
+    fireEvent.click(await screen.findByRole("button", { name: /Approve/ }));
+    expect(await screen.findByText(/1\/1 slot/)).toBeDefined();
+
+    const file = await exportApprovals();
+    const gate = file.layers.find((l) => l.id === "widget-enc-gate");
+    const yard = file.layers.find((l) => l.id === "widget-enc-yard");
+    expect(gate?.status).toBe("approved");
+    expect(yard?.status).toBe("approved");
+    expect(yard?.approval?.date).toBe(gate?.approval?.date);
+    // The group verdict never touches the other layers.
+    expect(file.layers.find((l) => l.id === "spine")?.status).toBe("draft");
+  });
+
+  it("fans a group rejection note out to every member record (T5b)", async () => {
+    setEditorMode(true);
+    stubFetch({ sameSlotWidgets: true });
+    renderReview();
+
+    fireEvent.click(
+      await screen.findByRole("button", { name: /Wild Encounters/ }),
+    );
+    fireEvent.click(await screen.findByRole("button", { name: /Reject/ }));
+    fireEvent.change(
+      screen.getByLabelText(/Rejection note for Wild Encounters slot/),
+      { target: { value: "enc-gate lists the wrong levels" } },
+    );
+    fireEvent.click(screen.getByRole("button", { name: /Submit/ }));
+    expect((await screen.findAllByText("Rejected")).length).toBeGreaterThan(0);
+
+    const file = await exportApprovals();
+    for (const id of ["widget-enc-gate", "widget-enc-yard"]) {
+      const record = file.layers.find((l) => l.id === id);
+      expect(record?.status).toBe("rejected");
+      expect(record?.approval?.note).toBe("enc-gate lists the wrong levels");
+    }
   });
 
   it("requires a note to reject (FR-E4)", async () => {

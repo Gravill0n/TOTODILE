@@ -2,10 +2,16 @@ import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import type { GuideFile, LayerRecord, SourceEntry } from "../schema";
+import type {
+  GuideFile,
+  LayerRecord,
+  SourceEntry,
+  SpotCheckVerdict,
+} from "../schema";
 import { FlaggedRowView } from "./FlaggedRowView";
 import type { FlaggedRow } from "./flaggedRows";
 import type { LayerReport } from "./layerRoster";
+import { SpotCheckPanel } from "./SpotCheckPanel";
 import { type SlotGroup, scopeLabel } from "./slotGroups";
 import type { VerdictState } from "./VerdictControls";
 import { VerdictControls } from "./VerdictControls";
@@ -18,6 +24,11 @@ type SlotGroupCardProps = {
   sourceById: Map<string, SourceEntry>;
   // Effective status per member: draft verdict over committed approval.
   statusOf: (layerId: string) => LayerRecord["status"];
+  // Spot-check pool: the union of the members' confident rows (T5b). Verdicts
+  // are merged across members for display; each records on its owning layer.
+  unflaggedRows: FlaggedRow[];
+  spotCheckVerdicts: Map<string, SpotCheckVerdict>;
+  onSpotCheck: (verdict: SpotCheckVerdict) => void;
   // The shared draft verdict when every member agrees, else undefined.
   groupVerdict: VerdictState | undefined;
   // One decision for the whole slot — fans out to every member layer.
@@ -37,6 +48,9 @@ export function SlotGroupCard({
   flaggedRowsOf,
   sourceById,
   statusOf,
+  unflaggedRows,
+  spotCheckVerdicts,
+  onSpotCheck,
   groupVerdict,
   onApprove,
   onReject,
@@ -151,6 +165,18 @@ export function SlotGroupCard({
               {cleanCount} member layer(s) with no flags.
             </p>
           ) : null}
+
+          <SpotCheckPanel
+            unflaggedRows={unflaggedRows}
+            sourceById={sourceById}
+            verdicts={spotCheckVerdicts}
+            onRecord={onSpotCheck}
+            caption={
+              group.layers.length > 1
+                ? `sampled across ${group.layers.length} member layers`
+                : undefined
+            }
+          />
 
           <VerdictControls
             verdict={groupVerdict}

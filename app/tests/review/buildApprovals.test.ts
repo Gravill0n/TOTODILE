@@ -69,6 +69,26 @@ describe("buildApprovalsFile (FR-E4)", () => {
     );
   });
 
+  // Per-stage gating exports mid-pipeline files: the roster may hold only the
+  // stages compiled so far. Each member resolves its own (identical, group
+  // fan-out) verdict from the map — no group record exists in the file.
+  it("exports a partial mid-pipeline roster (spine + widgets, no ra-mapping)", () => {
+    const date = "2026-07-06T10:00:00Z";
+    const partial = [layer("spine", "spine"), layer("widget-badges", "widget")];
+    const verdicts = new Map<string, LayerVerdict>([
+      ["spine", { status: "approved", date }],
+      ["widget-badges", { status: "approved", date }],
+    ]);
+    const file = buildApprovalsFile(
+      "fictional-quest",
+      partial,
+      verdicts,
+      new Map(),
+    );
+    expect(file.layers.map((l) => l.id)).toEqual(["spine", "widget-badges"]);
+    expect(file.layers.every((l) => l.status === "approved")).toBe(true);
+  });
+
   it("refuses to build a rejection without a note (FR-E4)", () => {
     const verdicts = new Map<string, LayerVerdict>([
       ["spine", { status: "rejected", date: "2026-06-13T10:00:00Z" }],

@@ -14,7 +14,11 @@ import { LayerReviewCard } from "./LayerReviewCard";
 import type { LayerReport } from "./layerRoster";
 import { SlotGroupCard } from "./SlotGroupCard";
 import { buildSlotGroups, type SlotGroup } from "./slotGroups";
-import { layerUnflaggedRows } from "./spotCheck";
+import {
+  groupUnflaggedRows,
+  layerUnflaggedRows,
+  owningWidgetLayerId,
+} from "./spotCheck";
 import { useLayerVerdicts } from "./useLayerVerdicts";
 import { useSpotChecks } from "./useSpotChecks";
 import type { VerdictState } from "./VerdictControls";
@@ -191,22 +195,46 @@ export function ReviewScreen({
                 }
                 sourceById={sourceById}
                 statusOf={statusOf}
+                unflaggedRows={
+                  guide
+                    ? groupUnflaggedRows(
+                        group.layers,
+                        contentIndex,
+                        guide,
+                        raMapping,
+                      )
+                    : []
+                }
+                spotCheckVerdicts={
+                  new Map(
+                    group.layers.flatMap((layer) => [
+                      ...(spotChecks.byLayer.get(layer.id) ?? new Map()),
+                    ]),
+                  )
+                }
+                onSpotCheck={(verdict) =>
+                  spotChecks.record(
+                    owningWidgetLayerId(verdict.itemId),
+                    verdict,
+                  )
+                }
                 groupVerdict={groupVerdictOf(group)}
-                onApprove={() => {
-                  for (const layer of group.layers) {
-                    verdicts.record(layer.id, "approved");
-                  }
-                }}
-                onReject={(note) => {
-                  for (const layer of group.layers) {
-                    verdicts.record(layer.id, "rejected", note);
-                  }
-                }}
-                onClearVerdict={() => {
-                  for (const layer of group.layers) {
-                    verdicts.clear(layer.id);
-                  }
-                }}
+                onApprove={() =>
+                  verdicts.recordAll(
+                    group.layers.map((layer) => layer.id),
+                    "approved",
+                  )
+                }
+                onReject={(note) =>
+                  verdicts.recordAll(
+                    group.layers.map((layer) => layer.id),
+                    "rejected",
+                    note,
+                  )
+                }
+                onClearVerdict={() =>
+                  verdicts.clearAll(group.layers.map((layer) => layer.id))
+                }
               />
             ))}
 
