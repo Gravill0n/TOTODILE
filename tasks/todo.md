@@ -38,10 +38,10 @@ Every task ends with `yarn check` green (from `app/`). Work on a `feat/` branch,
   - Crystal: 318 widget cards → 9 slot cards
   - Tests: `slotGroups.test.ts` (7), reviewLens same-slot→one-card assertion
   - Note: group verdict fans out via a per-member loop for now — T5b replaces it with atomic `recordAll`/`clearAll`
-- [ ] **T5b — Group verdict fan-out + group spot-check** (M) — depends T5a
-  - `useLayerVerdicts.ts`: `recordAll`/`clearAll`; `spotCheck.ts`: `groupUnflaggedRows` + owning-layer routing
-  - `buildApprovals.ts` unchanged; note fans out to every member record
-  - Tests: `approveFlow`, `spotCheckFlow`/`spotCheck`, `buildApprovals` partial-roster case
+- [x] **T5b — Group verdict fan-out + group spot-check** (M) — done 2026-07-06, commits fe7a99a (spot-check helpers), faba59d (recordAll/clearAll), 2c0a83d (wiring)
+  - `useLayerVerdicts.ts`: `recordAll`/`clearAll` (one date, single state update); `spotCheck.ts`: `groupUnflaggedRows` + `owningWidgetLayerId` routing
+  - `buildApprovals.ts` unchanged (pinned by partial-roster test); note fans out to every member record
+  - Tests: `useLayerVerdicts` (new), `approveFlow` group fan-out ×2, `spotCheckFlow` group routing, `spotCheck` ×3, `buildApprovals` partial-roster case
 
 ### Checkpoint C
 - [ ] Group-approve slot 5 → 17 identical verdicts; export diffs cleanly vs committed approvals.json (dropped `data` orphan expected — flag in PR, never hand-edit)
