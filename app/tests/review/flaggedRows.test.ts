@@ -71,6 +71,20 @@ describe("resolveFlaggedRows", () => {
     expect(rows[0]?.title).toMatch(/^RA #101 → /);
   });
 
+  it("marks ra-mapping rows whose target lives in an approved layer (T6)", () => {
+    const mapping = raMappingSchema.parse(validRaMapping());
+    const rows = resolveFlaggedRows(
+      layer("ra-mapping", ["fictional-quest:c1:s1", "fictional-quest:w1:r1"]),
+      index,
+      mapping,
+      (itemId) => itemId === "fictional-quest:c1:s1",
+    );
+    const spineTarget = rows.find((r) => r.itemId === "fictional-quest:c1:s1");
+    const widgetTarget = rows.find((r) => r.itemId === "fictional-quest:w1:r1");
+    expect(spineTarget?.targetApproved).toBe(true);
+    expect(widgetTarget?.targetApproved).toBeUndefined();
+  });
+
   it("surfaces a flagged id with no matching row rather than dropping it", () => {
     const rows = resolveFlaggedRows(
       layer("spine", ["fictional-quest:c9:s9"]),

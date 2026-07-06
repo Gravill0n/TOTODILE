@@ -343,6 +343,23 @@ describe("review lens — flagged rows (FR-E2/E3)", () => {
     ).toBeDefined();
   });
 
+  it("badges a flagged ra-mapping row whose target is already approved (T6)", async () => {
+    setEditorMode(true);
+    // Spine approved and committed; the ra-mapping pass re-flags one of its
+    // steps as a mapping target. Pierre judges the mapping only — the row
+    // content already passed review.
+    stubFetch({
+      approvals: approvedApprovals(),
+      assembled: false,
+      raMappingStage: true,
+    });
+    renderAt("/review/fictional-quest");
+
+    fireEvent.click(await screen.findByRole("button", { name: /ra-mapping/ }));
+    expect(await screen.findByText(/RA #101/)).toBeDefined();
+    expect(screen.getByText(/target already approved/)).toBeDefined();
+  });
+
   it("redirects an already-playable guide away from review to play", async () => {
     setEditorMode(true);
     stubFetch({ approvals: approvedApprovals() });

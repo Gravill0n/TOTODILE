@@ -120,6 +120,16 @@ export function ReviewScreen({
     return agrees ? { status: first.status, note: first.note } : undefined;
   };
 
+  // Whether an ra-mapping target's owning layer is already approved — the
+  // owning layer is the widget the item-id convention names, or the spine
+  // for step targets (steps are the only non-widget checkables).
+  const rosterIds = new Set(roster.map((layer) => layer.id));
+  const isTargetApproved = (itemId: string) => {
+    const widgetLayer = owningWidgetLayerId(itemId);
+    const owner = rosterIds.has(widgetLayer) ? widgetLayer : "spine";
+    return statusOf(owner) === "approved";
+  };
+
   const stageHeading = (label: string, state: StageState) => (
     <h2 className="mb-3 flex items-center gap-2 text-lg font-bold">
       {label}
@@ -138,7 +148,12 @@ export function ReviewScreen({
     <LayerReviewCard
       key={layer.id}
       layer={layer}
-      flaggedRows={resolveFlaggedRows(layer, contentIndex, raMapping)}
+      flaggedRows={resolveFlaggedRows(
+        layer,
+        contentIndex,
+        raMapping,
+        layer.kind === "ra-mapping" ? isTargetApproved : undefined,
+      )}
       unflaggedRows={
         guide ? layerUnflaggedRows(layer, contentIndex, guide, raMapping) : []
       }
