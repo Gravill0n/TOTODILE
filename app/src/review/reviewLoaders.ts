@@ -1,5 +1,15 @@
-import type { LayersManifest, RaMapping, SourceManifest } from "../schema";
-import { layersManifest, raMapping, sourceManifest } from "../schema";
+import type {
+  GenreDeck,
+  LayersManifest,
+  RaMapping,
+  SourceManifest,
+} from "../schema";
+import {
+  genreDeck,
+  layersManifest,
+  raMapping,
+  sourceManifest,
+} from "../schema";
 
 // Same content-fetch contract as loadGuide/loadApprovals: a 404 is the
 // expected "absent" case (resolved to null); a present-but-malformed file
@@ -16,6 +26,19 @@ export async function loadSources(
     );
   }
   return sourceManifest.parse(await response.json());
+}
+
+// deck.json names the slots the slot-group cards are titled after (§6.4).
+// Tolerant 404 → null: the lens falls back to member widget titles.
+export async function loadDeck(slug: string): Promise<GenreDeck | null> {
+  const response = await fetch(`guides/${slug}/deck.json`);
+  if (response.status === 404) return null;
+  if (!response.ok) {
+    throw new Error(
+      `Could not load deck for "${slug}" (HTTP ${response.status})`,
+    );
+  }
+  return genreDeck.parse(await response.json());
 }
 
 // layers/manifest.json is the reviewable-layer roster, upserted per pass run

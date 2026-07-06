@@ -39,7 +39,19 @@ afterEach(async () => {
 
 const HEX64 = "a".repeat(64);
 
-function manifest() {
+function manifest({ sameSlotWidgets = false } = {}) {
+  const widgetEntry = (seg: string, locationId: string) => ({
+    id: `widget-${seg}`,
+    kind: "widget",
+    artifact: `layers/widget-${seg}.json`,
+    report: `layers/widget-${seg}.report.json`,
+    sha256: HEX64,
+    widget: {
+      deckPosition: 2,
+      scope: { kind: "location", locationId },
+      title: "Wild Encounters",
+    },
+  });
   return {
     schemaVersion: SCHEMA_VERSION,
     guideId: "fictional-quest",
@@ -51,7 +63,51 @@ function manifest() {
         report: "layers/spine.report.json",
         sha256: HEX64,
       },
+      ...(sameSlotWidgets
+        ? [
+            widgetEntry("enc-gate", "fictional-quest:castle-gate"),
+            widgetEntry("enc-yard", "fictional-quest:courtyard"),
+          ]
+        : []),
     ],
+  };
+}
+
+// Two dataTable widgets filling the same deck slot at different locations —
+// the Crystal encounter-table shape, minimally.
+function encWidgetLayer(seg: string, locationId: string, flagged: boolean) {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    pass: "widget",
+    widget: {
+      id: `fictional-quest:${seg}`,
+      title: "Wild Encounters",
+      scope: { kind: "location", locationId },
+      deckPosition: 2,
+      type: "checklist",
+      rows: [
+        {
+          itemId: `fictional-quest:${seg}:r1`,
+          label: `Rat swarm at ${seg}`,
+          sourceRefs: ["src-wiki"],
+          confidence: flagged ? "flagged" : "normal",
+        },
+      ],
+    },
+  };
+}
+
+function widgetReport(seg: string, flagged: string[]) {
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    guideId: "fictional-quest",
+    pass: "widget",
+    layer: `widget-${seg}`,
+    generatedAt: "2026-06-13T00:00:00Z",
+    inputs: [],
+    report: { rowCount: 1, anomalies: [], flaggedItemIds: flagged },
+    notes: [],
   };
 }
 
@@ -84,9 +140,11 @@ function approvedApprovals() {
 function stubFetch({
   approvals,
   assembled = true,
+  sameSlotWidgets = false,
 }: {
   approvals?: unknown;
   assembled?: boolean;
+  sameSlotWidgets?: boolean;
 } = {}) {
   vi.stubGlobal(
     "fetch",
@@ -99,7 +157,25 @@ function stubFetch({
           : new Response("not found", { status: 404 });
       }
       if (url.endsWith("guides/fictional-quest/layers/manifest.json")) {
-        return Response.json(manifest());
+        return Response.json(manifest({ sameSlotWidgets }));
+      }
+      if (url.endsWith("layers/widget-enc-gate.json")) {
+        return Response.json(
+          encWidgetLayer("enc-gate", "fictional-quest:castle-gate", true),
+        );
+      }
+      if (url.endsWith("layers/widget-enc-yard.json")) {
+        return Response.json(
+          encWidgetLayer("enc-yard", "fictional-quest:courtyard", false),
+        );
+      }
+      if (url.endsWith("layers/widget-enc-gate.report.json")) {
+        return Response.json(
+          widgetReport("enc-gate", ["fictional-quest:enc-gate:r1"]),
+        );
+      }
+      if (url.endsWith("layers/widget-enc-yard.report.json")) {
+        return Response.json(widgetReport("enc-yard", []));
       }
       // Pipeline completion signal — only exists once QA has run.
       if (url.endsWith("guides/fictional-quest/layers/qa.report.json")) {
@@ -168,6 +244,30 @@ describe("review lens — flagged rows (FR-E2/E3)", () => {
     fireEvent.click(layerToggle);
     // Row content resolved through the in-memory spine assembly.
     expect(await screen.findByText(/Pry the Old Coin/)).toBeDefined();
+  });
+
+  it("merges same-slot widgets into one card with per-member flagged rows", async () => {
+    setEditorMode(true);
+    // Mid-pipeline: two encounter widgets share deck slot 2 at different
+    // locations. The lens shows ONE slot card, not one card per widget.
+    stubFetch({ assembled: false, sameSlotWidgets: true });
+    renderAt("/review/fictional-quest");
+
+    const slotToggle = await screen.findByRole("button", {
+      name: /Wild Encounters/,
+    });
+    expect(
+      screen.getAllByRole("button", { name: /Wild Encounters/ }),
+    ).toHaveLength(1);
+    expect(slotToggle.textContent).toMatch(/2 members/);
+    expect(slotToggle.textContent).toMatch(/1 flagged/);
+
+    fireEvent.click(slotToggle);
+    // The flagged member gets a subsection named by its location…
+    expect(await screen.findByText(/Rat swarm at enc-gate/)).toBeDefined();
+    expect(screen.getByText(/Castle Gate/)).toBeDefined();
+    // …the clean member collapses to a count line.
+    expect(screen.getByText(/1 member layer\(s\) with no flags/)).toBeDefined();
   });
 
   it("redirects an already-playable guide away from review to play", async () => {

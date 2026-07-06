@@ -15,7 +15,7 @@ import { getEditorMode } from "../review/editorMode";
 import { loadLayerRoster } from "../review/layerRoster";
 import { ReviewScreen } from "../review/ReviewScreen";
 import { loadReviewGuide } from "../review/reviewContent";
-import { loadRaMapping, loadSources } from "../review/reviewLoaders";
+import { loadDeck, loadRaMapping, loadSources } from "../review/reviewLoaders";
 import { loadGuide } from "../spine/guideData";
 import { buildLocationIndex } from "../spine/locationIndex";
 import { CleanupScreen } from "./CleanupScreen";
@@ -165,18 +165,19 @@ const reviewRoute = createRoute({
     // The roster comes from the layers manifest (contract §2 rule 9);
     // row content + sources are only worth loading once there are layers.
     const roster = await loadLayerRoster(entry.id);
-    const [guide, raMapping, sources] =
+    const [guide, deck, raMapping, sources] =
       roster.length > 0
         ? await Promise.all([
             loadReviewGuide(entry.id, roster),
+            loadDeck(entry.id),
             loadRaMapping(entry.id),
             loadSources(entry.id),
           ])
-        : [null, null, null];
-    return { entry, approvals, roster, guide, raMapping, sources };
+        : [null, null, null, null];
+    return { entry, approvals, roster, guide, deck, raMapping, sources };
   },
   component: function ReviewRouteComponent() {
-    const { entry, approvals, roster, guide, raMapping, sources } =
+    const { entry, approvals, roster, guide, deck, raMapping, sources } =
       reviewRoute.useLoaderData();
     return (
       <ReviewScreen
@@ -184,6 +185,7 @@ const reviewRoute = createRoute({
         approvals={approvals}
         roster={roster}
         guide={guide}
+        deck={deck}
         raMapping={raMapping}
         sources={sources}
       />
