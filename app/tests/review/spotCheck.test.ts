@@ -4,7 +4,12 @@ import {
   type FlaggedRow,
 } from "../../src/review/flaggedRows";
 import type { LayerReport } from "../../src/review/layerRoster";
-import { layerUnflaggedRows, sampleRows } from "../../src/review/spotCheck";
+import {
+  groupUnflaggedRows,
+  layerUnflaggedRows,
+  owningWidgetLayerId,
+  sampleRows,
+} from "../../src/review/spotCheck";
 import { guideFile, raMapping as raMappingSchema } from "../../src/schema";
 import { validGuide, validRaMapping } from "../schema/helpers";
 
@@ -57,6 +62,42 @@ describe("layerUnflaggedRows", () => {
     );
     expect(rows.map((r) => r.itemId)).toEqual(["fictional-quest:w1:r1"]);
     expect(rows[0]?.title).toMatch(/^RA #102 → /);
+  });
+});
+
+describe("groupUnflaggedRows", () => {
+  it("unions the members' unflagged pools in member order", () => {
+    const rows = groupUnflaggedRows(
+      [layer("widget-w1", "widget", []), layer("widget-w4", "widget", [])],
+      index,
+      guide,
+      null,
+    );
+    expect(rows.map((r) => r.itemId)).toEqual([
+      "fictional-quest:w1:r1",
+      "fictional-quest:w4:coins",
+    ]);
+  });
+
+  it("excludes each member's own flagged rows from the pool", () => {
+    const rows = groupUnflaggedRows(
+      [
+        layer("widget-w1", "widget", ["fictional-quest:w1:r1"]),
+        layer("widget-w4", "widget", []),
+      ],
+      index,
+      guide,
+      null,
+    );
+    expect(rows.map((r) => r.itemId)).toEqual(["fictional-quest:w4:coins"]);
+  });
+});
+
+describe("owningWidgetLayerId", () => {
+  it("maps an item id back to its widget layer via the segment convention", () => {
+    expect(owningWidgetLayerId("fictional-quest:enc-gate:r1")).toBe(
+      "widget-enc-gate",
+    );
   });
 });
 
