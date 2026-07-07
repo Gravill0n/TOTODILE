@@ -9,14 +9,14 @@ import {
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
-import { checkStableIds } from "../../scripts/checkStableIdsCore.ts";
-import { SCHEMA_VERSION } from "../../src/schema";
 import {
   validDataLayer,
   validGuide,
   validLibrary,
   validSpineLayer,
-} from "../schema/helpers";
+} from "@/testing/helpers";
+import { checkStableIds } from "../../scripts/checkStableIdsCore.ts";
+import { SCHEMA_VERSION } from "../../src/schema";
 
 const roots: string[] = [];
 

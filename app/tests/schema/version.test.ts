@@ -1,12 +1,17 @@
 import { describe, expect, it } from "vitest";
 import {
+  expectParses,
+  expectRejects,
+  validGuide,
+  validStep,
+} from "@/testing/helpers";
+import {
   guideFile,
   SCHEMA_VERSION,
   SUPPORTED_SCHEMA_VERSIONS,
   schemaVersion,
   step,
 } from "../../src/schema";
-import { expectParses, expectRejects, validGuide, validStep } from "./helpers";
 
 describe("schema versioning (§8.2, §18.3)", () => {
   it("the emitted version is always among the readable ones", () => {

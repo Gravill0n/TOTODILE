@@ -1,6 +1,6 @@
 import { expect } from "vitest";
 import type { z } from "zod";
-import { SCHEMA_VERSION } from "../../src/schema";
+import { SCHEMA_VERSION } from "@/schema";
 
 export function expectParses(schema: z.ZodType, value: unknown): void {
   const result = schema.safeParse(value);

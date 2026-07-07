@@ -9,15 +9,15 @@ import {
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
-import { buildLayersManifest } from "../../scripts/buildLayersManifestCore.ts";
-import { layersManifest } from "../../src/schema";
 import {
   validDataLayer,
   validPassReport,
   validRaMapping,
   validSpineLayer,
   validWidgetLayer,
-} from "../schema/helpers";
+} from "@/testing/helpers";
+import { buildLayersManifest } from "../../scripts/buildLayersManifestCore.ts";
+import { layersManifest } from "../../src/schema";
 
 const roots: string[] = [];
 

@@ -1,8 +1,5 @@
 // @vitest-environment jsdom
 import "fake-indexeddb/auto";
-import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 
 vi.mock("@retroachievements/api", () => ({
   buildAuthorization: vi.fn((options) => options),
@@ -21,26 +18,14 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { readFixtureJson } from "@/testing/fixtureRepo";
+import { validLayer, validLibrary } from "@/testing/helpers";
 import { closeProgressDb, readSlot } from "../../src/progress/progressStore";
 import { SCHEMA_VERSION } from "../../src/schema";
 import { createAppRouter } from "../../src/shell/router";
 import { clearCredentials, setCredentials } from "../../src/sync/raCredentials";
-import { validLayer, validLibrary } from "../schema/helpers";
 
-const fixtureGuide = JSON.parse(
-  readFileSync(
-    join(
-      dirname(fileURLToPath(import.meta.url)),
-      "..",
-      "fixtures",
-      "repo",
-      "guides",
-      "fictional-quest",
-      "guide.json",
-    ),
-    "utf8",
-  ),
-);
+const fixtureGuide = readFixtureJson("guides/fictional-quest/guide.json");
 
 const TARGET = "fictional-quest:c1:s1";
 

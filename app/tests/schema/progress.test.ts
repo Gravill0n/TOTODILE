@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { progressExport, progressSlot } from "../../src/schema";
 import {
   expectParses,
   expectRejects,
   validProgressExport,
   validProgressSlot,
-} from "./helpers";
+} from "@/testing/helpers";
+import { progressExport, progressSlot } from "../../src/schema";
 
 describe("progressSlot", () => {
   it("parses a populated slot", () => {

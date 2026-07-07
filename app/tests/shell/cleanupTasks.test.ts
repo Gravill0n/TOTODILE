@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
+import { validGuide, validRaMapping } from "@/testing/helpers";
 import { guideFile, raMapping as raMappingSchema } from "../../src/schema";
 import {
   type CleanupProgress,
   collectCleanupTasks,
   mastery,
 } from "../../src/shell/cleanupTasks";
-import { validGuide, validRaMapping } from "../schema/helpers";
 
 const guide = guideFile.parse(validGuide());
 

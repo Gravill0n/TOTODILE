@@ -1,34 +1,22 @@
 // @vitest-environment jsdom
 import "fake-indexeddb/auto";
-import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { readFixtureJson } from "@/testing/fixtureRepo";
+import { validLayer, validLibrary } from "@/testing/helpers";
 import { closeProgressDb } from "../../src/progress/progressStore";
 import { setEditorMode } from "../../src/review/editorMode";
 import { SCHEMA_VERSION } from "../../src/schema";
 import { createAppRouter } from "../../src/shell/router";
-import { validLayer, validLibrary } from "../schema/helpers";
 
-const fixtureDir = join(
-  dirname(fileURLToPath(import.meta.url)),
-  "..",
-  "fixtures",
-  "repo",
-  "guides",
-  "fictional-quest",
-);
-const fixtureGuide = JSON.parse(
-  readFileSync(join(fixtureDir, "guide.json"), "utf8"),
-);
-const fixtureSources = JSON.parse(
-  readFileSync(join(fixtureDir, "sources.json"), "utf8"),
-);
-const fixtureRaMapping = JSON.parse(
-  readFileSync(join(fixtureDir, "ra-mapping.json"), "utf8"),
+const fixtureGuide = readFixtureJson(
+  "guides/fictional-quest/guide.json",
+) as Record<string, unknown>;
+const fixtureSources = readFixtureJson("guides/fictional-quest/sources.json");
+const fixtureRaMapping = readFixtureJson(
+  "guides/fictional-quest/ra-mapping.json",
 );
 
 afterEach(async () => {

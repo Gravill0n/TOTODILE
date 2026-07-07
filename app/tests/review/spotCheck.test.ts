@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { validGuide, validRaMapping } from "@/testing/helpers";
 import {
   buildContentIndex,
   type FlaggedRow,
@@ -11,7 +12,6 @@ import {
   sampleRows,
 } from "../../src/review/spotCheck";
 import { guideFile, raMapping as raMappingSchema } from "../../src/schema";
-import { validGuide, validRaMapping } from "../schema/helpers";
 
 const guide = guideFile.parse(validGuide());
 const index = buildContentIndex(guide);

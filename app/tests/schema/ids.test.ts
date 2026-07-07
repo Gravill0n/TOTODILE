@@ -1,5 +1,13 @@
 import { describe, it } from "vitest";
 import {
+  expectParses,
+  expectRejects,
+  validChapter,
+  validChecklist,
+  validGuide,
+  validLocation,
+} from "@/testing/helpers";
+import {
   chapterId,
   checkableId,
   guideFile,
@@ -9,14 +17,6 @@ import {
   stepId,
   visitId,
 } from "../../src/schema";
-import {
-  expectParses,
-  expectRejects,
-  validChapter,
-  validChecklist,
-  validGuide,
-  validLocation,
-} from "./helpers";
 
 describe("stable-ID grammar (§20.3)", () => {
   it("accepts well-formed IDs of each class", () => {

@@ -1,18 +1,18 @@
 import { describe, it } from "vitest";
 import {
-  dataLayer,
-  passReportFile,
-  spineLayer,
-  widgetLayer,
-} from "../../src/schema";
-import {
   expectParses,
   expectRejects,
   validDataLayer,
   validPassReport,
   validSpineLayer,
   validWidgetLayer,
-} from "./helpers";
+} from "@/testing/helpers";
+import {
+  dataLayer,
+  passReportFile,
+  spineLayer,
+  widgetLayer,
+} from "../../src/schema";
 
 describe("spineLayer", () => {
   it("parses a valid spine artifact", () => {

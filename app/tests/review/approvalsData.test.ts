@@ -1,5 +1,6 @@
 // @vitest-environment jsdom
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { validLayer } from "@/testing/helpers";
 import {
   isPlayable,
   loadApprovals,
@@ -11,7 +12,6 @@ import {
   layersManifest,
   SCHEMA_VERSION,
 } from "../../src/schema";
-import { validLayer } from "../schema/helpers";
 
 afterEach(() => vi.unstubAllGlobals());
 

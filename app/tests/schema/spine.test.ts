@@ -1,5 +1,4 @@
 import { describe, it } from "vitest";
-import { chapter, location, step, visit } from "../../src/schema";
 import {
   expectParses,
   expectRejects,
@@ -7,7 +6,8 @@ import {
   validLocation,
   validStep,
   validVisit,
-} from "./helpers";
+} from "@/testing/helpers";
+import { chapter, location, step, visit } from "../../src/schema";
 
 describe("step", () => {
   it("parses a full step", () => {

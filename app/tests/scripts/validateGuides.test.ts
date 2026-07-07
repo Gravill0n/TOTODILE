@@ -3,8 +3,6 @@ import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
-import { validateGuides } from "../../scripts/validateGuidesCore.ts";
-import { SCHEMA_VERSION } from "../../src/schema";
 import {
   validApprovals,
   validDataLayer,
@@ -16,7 +14,9 @@ import {
   validSources,
   validSpineLayer,
   validWidgetLayer,
-} from "../schema/helpers";
+} from "@/testing/helpers";
+import { validateGuides } from "../../scripts/validateGuidesCore.ts";
+import { SCHEMA_VERSION } from "../../src/schema";
 
 const roots: string[] = [];
 

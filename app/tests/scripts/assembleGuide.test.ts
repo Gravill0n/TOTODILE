@@ -10,7 +10,6 @@ import {
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
-import { assembleGuide } from "../../scripts/assembleGuideCore.ts";
 import {
   validMatrix,
   validPassReport,
@@ -18,7 +17,8 @@ import {
   validSources,
   validSpineLayer,
   validWidgetLayer,
-} from "../schema/helpers";
+} from "@/testing/helpers";
+import { assembleGuide } from "../../scripts/assembleGuideCore.ts";
 
 const roots: string[] = [];
 

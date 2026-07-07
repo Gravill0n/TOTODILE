@@ -1,25 +1,12 @@
 // @vitest-environment jsdom
-import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { guideFile } from "@/schema";
 import { WidgetRail } from "@/shell/WidgetRail";
+import { readFixtureJson } from "@/testing/fixtureRepo";
 
-const fixtureRoot = join(
-  dirname(fileURLToPath(import.meta.url)),
-  "..",
-  "fixtures",
-  "repo",
-);
 const guide = guideFile.parse(
-  JSON.parse(
-    readFileSync(
-      join(fixtureRoot, "guides/fictional-quest/guide.json"),
-      "utf8",
-    ),
-  ),
+  readFixtureJson("guides/fictional-quest/guide.json"),
 );
 
 afterEach(cleanup);

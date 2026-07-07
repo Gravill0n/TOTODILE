@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
+import { validGuide, validRaMapping } from "@/testing/helpers";
 import {
   buildContentIndex,
   resolveFlaggedRows,
 } from "../../src/review/flaggedRows";
 import type { LayerReport } from "../../src/review/layerRoster";
 import { guideFile, raMapping as raMappingSchema } from "../../src/schema";
-import { validGuide, validRaMapping } from "../schema/helpers";
 
 const guide = guideFile.parse(validGuide());
 const index = buildContentIndex(guide);

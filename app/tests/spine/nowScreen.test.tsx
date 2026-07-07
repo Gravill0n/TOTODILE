@@ -1,8 +1,5 @@
 // @vitest-environment jsdom
 import "fake-indexeddb/auto";
-import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 import {
   cleanup,
   fireEvent,
@@ -12,21 +9,15 @@ import {
 } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
+import { readFixtureJson } from "@/testing/fixtureRepo";
 import { closeProgressDb } from "../../src/progress/progressStore";
 import { guideFile, libraryManifest } from "../../src/schema";
 import { GuideScreen } from "../../src/shell/GuideScreen";
 
-const fixtureRoot = join(
-  dirname(fileURLToPath(import.meta.url)),
-  "..",
-  "fixtures",
-  "repo",
+const guide = guideFile.parse(
+  readFixtureJson("guides/fictional-quest/guide.json"),
 );
-const readJson = (path: string) =>
-  JSON.parse(readFileSync(join(fixtureRoot, path), "utf8"));
-
-const guide = guideFile.parse(readJson("guides/fictional-quest/guide.json"));
-const entry = libraryManifest.parse(readJson("library.json")).guides[0];
+const entry = libraryManifest.parse(readFixtureJson("library.json")).guides[0];
 if (!entry) throw new Error("fixture library has no entry");
 
 // The play view renders a step's keyword beats joined (stepHeadline); the

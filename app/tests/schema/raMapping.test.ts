@@ -1,6 +1,6 @@
 import { describe, it } from "vitest";
+import { expectParses, expectRejects, validRaMapping } from "@/testing/helpers";
 import { raMapping } from "../../src/schema";
-import { expectParses, expectRejects, validRaMapping } from "./helpers";
 
 function entry(raAchievementId: number, targetItemId: string) {
   return {

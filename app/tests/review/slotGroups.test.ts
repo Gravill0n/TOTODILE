@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
+import { validDeck, validGuide } from "@/testing/helpers";
 import type { LayerReport } from "../../src/review/layerRoster";
 import { buildSlotGroups, scopeLabel } from "../../src/review/slotGroups";
 import type { GuideFile, WidgetScope } from "../../src/schema";
 import { genreDeck, guideFile } from "../../src/schema";
-import { validDeck, validGuide } from "../schema/helpers";
 
 function widgetLayerReport(
   id: string,

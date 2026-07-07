@@ -1,6 +1,6 @@
 import { describe, it } from "vitest";
+import { expectParses, expectRejects, validSources } from "@/testing/helpers";
 import { sourceManifest } from "../../src/schema";
-import { expectParses, expectRejects, validSources } from "./helpers";
 
 describe("sourceManifest", () => {
   it("parses a valid manifest", () => {

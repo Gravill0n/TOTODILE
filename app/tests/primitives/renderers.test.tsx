@@ -1,9 +1,7 @@
 // @vitest-environment jsdom
-import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { readFixtureJson } from "@/testing/fixtureRepo";
 import { WidgetRenderer } from "../../src/primitives/WidgetRenderer";
 import type { ProgressSlice } from "../../src/progress/progressSlice";
 import {
@@ -17,20 +15,7 @@ import {
 } from "../../src/schema";
 
 const guide = guideFile.parse(
-  JSON.parse(
-    readFileSync(
-      join(
-        dirname(fileURLToPath(import.meta.url)),
-        "..",
-        "fixtures",
-        "repo",
-        "guides",
-        "fictional-quest",
-        "guide.json",
-      ),
-      "utf8",
-    ),
-  ),
+  readFixtureJson("guides/fictional-quest/guide.json"),
 );
 
 function widgetOf(type: WidgetType): Widget {
