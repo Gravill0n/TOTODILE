@@ -2,14 +2,10 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 import type { MatrixWidget } from "@/schema";
-import type { ProgressSlice } from "@/types/progressSlice";
 import { FlagMark } from "../FlagMark";
+import type { WidgetProps } from "../widgetProps";
 
-type MatrixProps = {
-  widget: MatrixWidget;
-  progress: ProgressSlice;
-  onToggle: (itemId: string) => void;
-};
+type MatrixProps = WidgetProps<MatrixWidget>;
 
 type Cell = MatrixWidget["cells"][number];
 

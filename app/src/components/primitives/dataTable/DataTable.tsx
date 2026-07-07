@@ -1,14 +1,10 @@
 import { Checkbox } from "@/components/ui/checkbox";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import type { DataTableWidget } from "@/schema";
-import type { ProgressSlice } from "@/types/progressSlice";
 import { FlagMark } from "../FlagMark";
+import type { WidgetProps } from "../widgetProps";
 
-type DataTableProps = {
-  widget: DataTableWidget;
-  progress: ProgressSlice;
-  onToggle: (itemId: string) => void;
-};
+type DataTableProps = WidgetProps<DataTableWidget>;
 
 // §7 S3: tables render as a real table in the browse posture and as
 // stacked cards in the play posture. Only rows with `checkable: true`

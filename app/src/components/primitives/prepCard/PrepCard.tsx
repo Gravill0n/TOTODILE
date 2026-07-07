@@ -3,14 +3,10 @@ import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { cn } from "@/lib/utils";
 import type { PrepCardWidget } from "@/schema";
-import type { ProgressSlice } from "@/types/progressSlice";
 import { FlagMark } from "../FlagMark";
+import type { WidgetProps } from "../widgetProps";
 
-type PrepCardProps = {
-  widget: PrepCardWidget;
-  progress: ProgressSlice;
-  onToggle: (itemId: string) => void;
-};
+type PrepCardProps = WidgetProps<PrepCardWidget>;
 
 // §7 S3: the loadout you gather before a boss / point of no return. A readiness
 // summary gives the glanceable "am I prepared" sense (P3 spirit); items render

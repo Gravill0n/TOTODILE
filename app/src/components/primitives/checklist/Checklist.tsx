@@ -1,14 +1,10 @@
 import { Checkbox } from "@/components/ui/checkbox";
 import { cn } from "@/lib/utils";
 import type { ChecklistWidget } from "@/schema";
-import type { ProgressSlice } from "@/types/progressSlice";
 import { FlagMark } from "../FlagMark";
+import type { WidgetProps } from "../widgetProps";
 
-type ChecklistProps = {
-  widget: ChecklistWidget;
-  progress: ProgressSlice;
-  onToggle: (itemId: string) => void;
-};
+type ChecklistProps = WidgetProps<ChecklistWidget>;
 
 export function Checklist({ widget, progress, onToggle }: ChecklistProps) {
   return (
