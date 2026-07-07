@@ -29,36 +29,36 @@ on PR #15.
 
 ## Phase 2: Untangle in place (branch `chore/bulletproof-restructure`, PR-2)
 
-- [ ] **T2.1 — Pure guide helpers → `lib/guide.ts`** (S) — kills progress→spine
-- [ ] **T2.2 — `lib/content/`: fetchJson + hoist loadLibrary/loadGuide/loadRaMapping; review loaders rebuilt** (M)
+- [x] **T2.1 — Pure guide helpers → `lib/guide.ts`** (S) — kills progress→spine
+- [x] **T2.2 — `lib/content/`: fetchJson + hoist loadLibrary/loadGuide/loadRaMapping; review loaders rebuilt** (M)
       — kills sync→review; error strings byte-identical; loader tests pass unmodified
-- [ ] **T2.3 — `ProgressSlice` → `types/progressSlice.ts`** (S) — kills primitives→progress (11 importers)
+- [x] **T2.3 — `ProgressSlice` → `types/progressSlice.ts`** (S) — kills primitives→progress (11 importers)
 
 ### Checkpoint 2
-- [ ] `yarn check` + `yarn build` green; all three tangles gone before any folder moves
+- [x] `yarn check` + `yarn build` green; all three tangles gone before any folder moves
 
 ## Phase 3: The restructure (move-only + import-fix commits)
 
-- [ ] **T3.1 — `primitives/` → `components/primitives/`** (S)
-- [ ] **T3.2 — `spine/` + shell widget chrome (PostureLayout, WidgetDeck/Dialog/Rail/Sheet, widgetScope) → `features/spine/`** (M)
-- [ ] **T3.3 — `progress/`, `sync/` → `features/`** (S) — verify RA isolation grep
-- [ ] **T3.4 — `review/` → `features/review/`** (S)
-- [ ] **T3.5 — Dissolve `shell/`: router → `app/`, screens + GuideCard + cleanupTasks → `app/routes/`, persistentStorage → `lib/`** (M)
+- [x] **T3.1 — `primitives/` → `components/primitives/`** (S)
+- [x] **T3.2 — `spine/` + shell widget chrome (PostureLayout, WidgetDeck/Dialog/Rail/Sheet, widgetScope) → `features/spine/`** (M)
+- [x] **T3.3 — `progress/`, `sync/` → `features/`** (S) — verify RA isolation grep
+- [x] **T3.4 — `review/` → `features/review/`** (S)
+- [x] **T3.5 — Dissolve `shell/`: router → `app/`, screens + GuideCard + cleanupTasks → `app/routes/`, persistentStorage → `lib/`** (M)
       — main.tsx stays at src root; `yarn build` + `yarn preview` smoke
-- [ ] **T3.6 — Alias sweep: no cross-folder relative imports** (XS)
+- [x] **T3.6 — Alias sweep: no cross-folder relative imports** (XS)
 
 ### Checkpoint 3
-- [ ] `yarn check` + `yarn build` green; tree = amended PRD §20.1; test count = baseline
+- [x] `yarn check` + `yarn build` green; tree = amended PRD §20.1; test count = baseline (544)
 
 ## Phase 4: Boundary enforcement
 
-- [ ] **T4.1 — `src/testing/guards/importBoundaries.test.ts`** (M) — 6 rules (feature→feature,
+- [x] **T4.1 — `src/testing/guards/importBoundaries.test.ts`** (M) — 6 rules (feature→feature,
       shared→feature/app, →app except main.tsx, relative escaping scope, schema isolation,
       RA client isolation); mutation demo in PR description
-- [ ] **T4.2 — Docs/config reconciliation** (XS) — PRD tree vs reality, components.json, coverage exclude if needed
+- [x] **T4.2 — Docs/config reconciliation** (XS) — PRD tree vs reality, components.json, coverage exclude if needed
 
 ### Checkpoint 4 — PR-2 boundary
-- [ ] `yarn check` + `yarn build` green; boundaries machine-enforced
+- [x] `yarn check` + `yarn build` green; boundaries machine-enforced (550 tests) — PR #17
 
 ## Phase 5: Simplifications (branch `chore/simplification-pass`, PR-3)
 
