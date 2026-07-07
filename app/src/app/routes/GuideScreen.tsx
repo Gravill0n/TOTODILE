@@ -1,4 +1,6 @@
+import { RefreshCw } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { useGuideProgress } from "@/features/progress/useGuideProgress";
@@ -170,16 +172,38 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
         ) : undefined
       }
     >
-      <header className="mb-4 flex items-baseline justify-between gap-3">
+      <header className="mb-4 flex items-center justify-between gap-3">
         <h1 className="text-xl font-bold">{entry.title}</h1>
-        {/* Hash anchor, not <Link>: GuideScreen is rendered bare in tests, so
-            it stays free of router context. The app runs on hash history. */}
-        <a
-          href={`#/guide/${entry.id}/cleanup`}
-          className="shrink-0 text-sm text-ink-soft underline"
-        >
-          Cleanup
-        </a>
+        <span className="flex shrink-0 items-center gap-3">
+          {/* The bottom action bar is phone-only (lg:hidden), so the browse
+              posture carries its Sync affordance here — same handler, same
+              in-flight disable. */}
+          {canSync ? (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={handleSync}
+              disabled={syncing}
+              aria-label="Sync with RetroAchievements"
+              className="hidden lg:inline-flex"
+            >
+              <RefreshCw
+                className={syncing ? "animate-spin" : undefined}
+                aria-hidden
+              />
+              Sync
+            </Button>
+          ) : null}
+          {/* Hash anchor, not <Link>: GuideScreen is rendered bare in tests, so
+              it stays free of router context. The app runs on hash history. */}
+          <a
+            href={`#/guide/${entry.id}/cleanup`}
+            className="text-sm text-ink-soft underline"
+          >
+            Cleanup
+          </a>
+        </span>
       </header>
       {progress.ready ? (
         <MissableBanner

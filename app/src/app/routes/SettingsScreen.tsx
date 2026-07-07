@@ -130,7 +130,19 @@ export function SettingsScreen() {
       });
       return;
     }
-    await importSlots(slots);
+    // The write can fail too (quota, private mode). importSlots is a single
+    // transaction, so existing progress is untouched — say so instead of
+    // failing silently (the caller void-drops this promise).
+    try {
+      await importSlots(slots);
+    } catch {
+      setImportResult({
+        status: "error",
+        message:
+          "Could not write the imported progress — your existing progress is unchanged.",
+      });
+      return;
+    }
     setImportResult({ status: "ok", count: slots.length });
   };
 
