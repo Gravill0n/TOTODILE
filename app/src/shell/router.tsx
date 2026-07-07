@@ -9,11 +9,11 @@ import {
   type RouterHistory,
   redirect,
 } from "@tanstack/react-router";
+import { readAllSlots } from "@/features/progress/progressStore";
 import { buildLocationIndex } from "@/features/spine/locationIndex";
 import { loadGuide } from "@/lib/content/guide";
 import { loadLibrary } from "@/lib/content/library";
 import { loadRaMapping } from "@/lib/content/raMapping";
-import { readAllSlots } from "../progress/progressStore";
 import { loadApprovals, loadPlayability } from "../review/approvalsData";
 import { getEditorMode } from "../review/editorMode";
 import { loadLayerRoster } from "../review/layerRoster";

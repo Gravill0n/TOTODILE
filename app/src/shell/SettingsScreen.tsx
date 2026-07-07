@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
-import { importSlots, readAllSlots } from "../progress/progressStore";
-import { setEditorMode, useEditorMode } from "../review/editorMode";
-import { progressExport, SCHEMA_VERSION } from "../schema";
+import { importSlots, readAllSlots } from "@/features/progress/progressStore";
 import {
   clearCredentials,
   getCredentials,
   setCredentials,
-} from "../sync/raCredentials";
+} from "@/features/sync/raCredentials";
+import { setEditorMode, useEditorMode } from "../review/editorMode";
+import { progressExport, SCHEMA_VERSION } from "../schema";
 
 // RA username + API key entry. The key lives only in browser storage (§17.4):
 // never committed, logged, or written into a progress export. Kept as its own

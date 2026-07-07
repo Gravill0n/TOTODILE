@@ -9,7 +9,7 @@ import {
 } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
-import { closeProgressDb, readSlot } from "@/progress/progressStore";
+import { closeProgressDb, readSlot } from "@/features/progress/progressStore";
 import { guideFile, libraryManifest } from "@/schema";
 import { GuideScreen } from "@/shell/GuideScreen";
 import { readFixtureJson } from "@/testing/fixtureRepo";

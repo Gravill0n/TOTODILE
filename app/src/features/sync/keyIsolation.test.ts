@@ -7,9 +7,9 @@ import {
   emptySlot,
   readAllSlots,
   writeSlot,
-} from "@/progress/progressStore";
+} from "@/features/progress/progressStore";
+import { setCredentials } from "@/features/sync/raCredentials";
 import { progressExport, SCHEMA_VERSION } from "@/schema";
-import { setCredentials } from "@/sync/raCredentials";
 
 afterEach(async () => {
   localStorage.clear();

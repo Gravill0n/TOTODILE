@@ -9,7 +9,7 @@ import {
   buildAuthorization,
   getGameInfoAndUserProgress,
 } from "@retroachievements/api";
-import { fetchUnlocks } from "@/sync/raClient";
+import { fetchUnlocks } from "@/features/sync/raClient";
 
 const credentials = { username: "Pierre", webApiKey: "SECRET-KEY-123" };
 

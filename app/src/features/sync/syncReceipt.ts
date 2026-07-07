@@ -1,4 +1,4 @@
-import type { RaMappingEntry } from "../schema";
+import type { RaMappingEntry } from "@/schema";
 import type { AchievementId } from "./types";
 
 // FR-C3: every unlocked achievement falls into exactly one bucket, so the three

@@ -18,10 +18,13 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { closeProgressDb, readSlot } from "@/progress/progressStore";
+import { closeProgressDb, readSlot } from "@/features/progress/progressStore";
+import {
+  clearCredentials,
+  setCredentials,
+} from "@/features/sync/raCredentials";
 import { SCHEMA_VERSION } from "@/schema";
 import { createAppRouter } from "@/shell/router";
-import { clearCredentials, setCredentials } from "@/sync/raCredentials";
 import { readFixtureJson } from "@/testing/fixtureRepo";
 import { validLayer, validLibrary } from "@/testing/helpers";
 

@@ -1,10 +1,10 @@
 import { type IDBPDatabase, openDB } from "idb";
-import type { ProgressSlot } from "../schema";
+import type { ProgressSlot } from "@/schema";
 
 // §6.8 browser-side progress slots on IndexedDB — exactly one per guide
 // (FR-B7), never in the repo. The record shape is the schema's
 // progressSlot (§22.1: types come from Zod, the export file is contract).
-export type { ItemState, ProgressSlot } from "../schema";
+export type { ItemState, ProgressSlot } from "@/schema";
 
 const DB_NAME = "totodile";
 const STORE = "progress";

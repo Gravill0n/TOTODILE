@@ -2,8 +2,8 @@
 import { readFileSync } from "node:fs";
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import { SyncReceipt } from "@/sync/SyncReceipt";
-import type { SyncOutcome } from "@/sync/syncGuide";
+import { SyncReceipt } from "@/features/sync/SyncReceipt";
+import type { SyncOutcome } from "@/features/sync/syncGuide";
 
 const LEGACY_ACCENT =
   /\b(?:text|border|bg)-accent(?!-foreground)\b|\baccent-accent\b/;
@@ -28,8 +28,8 @@ describe("SyncReceipt reskin (R7)", () => {
   });
 
   it("drops the legacy accent utility", () => {
-    expect(readFileSync("src/sync/SyncReceipt.tsx", "utf8")).not.toMatch(
-      LEGACY_ACCENT,
-    );
+    expect(
+      readFileSync("src/features/sync/SyncReceipt.tsx", "utf8"),
+    ).not.toMatch(LEGACY_ACCENT);
   });
 });

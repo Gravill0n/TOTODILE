@@ -4,7 +4,7 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { closeProgressDb } from "@/progress/progressStore";
+import { closeProgressDb } from "@/features/progress/progressStore";
 import { setEditorMode } from "@/review/editorMode";
 import { closeReviewDb } from "@/review/reviewStore";
 import { approvalsFile, SCHEMA_VERSION } from "@/schema";

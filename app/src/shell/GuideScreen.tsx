@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
+import { useGuideProgress } from "@/features/progress/useGuideProgress";
 import { ChapterSheet } from "@/features/spine/ChapterSheet";
 import { MissableBanner } from "@/features/spine/MissableBanner";
 import { upcomingMissables } from "@/features/spine/missables";
@@ -11,13 +12,12 @@ import { WidgetDialog } from "@/features/spine/WidgetDialog";
 import { WidgetRail } from "@/features/spine/WidgetRail";
 import { WidgetsSheet } from "@/features/spine/WidgetsSheet";
 import { widgetContextFor, widgetInScope } from "@/features/spine/widgetScope";
+import { getCredentials } from "@/features/sync/raCredentials";
+import { SyncReceipt } from "@/features/sync/SyncReceipt";
+import { type SyncOutcome, syncGuide } from "@/features/sync/syncGuide";
 import { chapterDomId, guideAssetUrl, stepDomId } from "@/lib/guide";
 import type { ProgressSlice } from "@/types/progressSlice";
-import { useGuideProgress } from "../progress/useGuideProgress";
 import type { GuideFile, LibraryEntry } from "../schema";
-import { getCredentials } from "../sync/raCredentials";
-import { SyncReceipt } from "../sync/SyncReceipt";
-import { type SyncOutcome, syncGuide } from "../sync/syncGuide";
 
 type GuideScreenProps = {
   entry: LibraryEntry;

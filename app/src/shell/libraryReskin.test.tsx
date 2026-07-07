@@ -5,7 +5,7 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
-import { closeProgressDb } from "@/progress/progressStore";
+import { closeProgressDb } from "@/features/progress/progressStore";
 import { createAppRouter } from "@/shell/router";
 
 const LEGACY_ACCENT =

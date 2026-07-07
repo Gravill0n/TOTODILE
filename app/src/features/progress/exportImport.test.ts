@@ -7,7 +7,7 @@ import {
   importSlots,
   readAllSlots,
   writeSlot,
-} from "@/progress/progressStore";
+} from "@/features/progress/progressStore";
 import { progressExport, SCHEMA_VERSION } from "@/schema";
 import { validProgressSlot } from "@/testing/helpers";
 

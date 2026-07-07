@@ -1,5 +1,5 @@
 import { loadRaMapping } from "@/lib/content/raMapping";
-import type { RaMapping } from "../schema";
+import type { RaMapping } from "@/schema";
 import { fetchUnlocks } from "./raClient";
 import { computeSync, type SyncReceipt } from "./syncReceipt";
 import type { GameId, RaCredentials } from "./types";

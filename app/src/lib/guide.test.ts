@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { advancePointer } from "@/features/progress/pointer";
 import { chapterOf, guideStepIds, visitOf } from "@/lib/guide";
-import { advancePointer } from "@/progress/pointer";
 import { guideFile } from "@/schema";
 import { validGuide, validLocation } from "@/testing/helpers";
 

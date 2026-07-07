@@ -6,7 +6,7 @@ import {
   emptySlot,
   readSlot,
   writeSlot,
-} from "@/progress/progressStore";
+} from "@/features/progress/progressStore";
 
 afterEach(async () => {
   await closeProgressDb();

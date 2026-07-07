@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { chapterOf, guideStepIds } from "@/lib/guide";
-import type { GuideFile } from "../schema";
+import type { GuideFile } from "@/schema";
 import { advancePointer } from "./pointer";
 import { type ProgressSlot, readSlot, writeSlot } from "./progressStore";
 

@@ -8,7 +8,7 @@ import {
   closeProgressDb,
   emptySlot,
   writeSlot,
-} from "@/progress/progressStore";
+} from "@/features/progress/progressStore";
 import { setEditorMode } from "@/review/editorMode";
 import { SCHEMA_VERSION } from "@/schema";
 import { createAppRouter } from "@/shell/router";
