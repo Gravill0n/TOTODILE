@@ -1,0 +1,69 @@
+# Deploy TOTODILE to GitHub Pages (PRD §21.3: deploy = copy app/dist/ +
+# guides/ + library.json to a static host; Pages wiring decided here).
+# Gate first (yarn check = what CI runs, §21.4), then build with the
+# project-site base path and publish the assembled site.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; a newer push supersedes a queued one.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # Yarn 4 is pinned via package.json "packageManager"; corepack reads it.
+      - run: corepack enable
+
+      - run: yarn install --immutable
+
+      - name: Gate — lint + typecheck + tests + guide validation
+        run: yarn check
+
+      - name: Build (served under /TOTODILE/ on Pages)
+        run: yarn build
+        env:
+          TOTODILE_BASE: /TOTODILE/
+
+      - name: Assemble site — dist + guides/ + library.json (§21.3)
+        working-directory: ${{ github.workspace }}
+        run: |
+          mkdir site
+          cp -r app/dist/. site/
+          cp -r guides site/guides
+          cp library.json site/
+          touch site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
