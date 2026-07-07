@@ -5,8 +5,7 @@ description: >-
   RA mapping pass", "map the achievements for <slug>", or to re-run it after a
   rejection. Maps each RetroAchievements achievement to the checkable step or
   widget item where it is earned, from the ra-set source on file — never the
-  RA API. Requires the spine pass (and ideally the widget passes). Not for
-  single-file HTML guides — that is achievement-guide-builder.
+  RA API. Requires the spine pass (and ideally the widget passes).
 ---
 
 # Compiler pass: RA mapping

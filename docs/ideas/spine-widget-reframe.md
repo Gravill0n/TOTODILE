@@ -2,6 +2,11 @@
 
 _Source: idea-refine session on `Idea_list.md` (2026-06-15). Decisions made by Pierre._
 
+_Status (2026-07-07): landed. Workstream A (location/visit reframe), Workstream B
+(shadcn migration), and all four small builds are merged; their specs and task
+files are retired to `docs/archive/`. Only the backlog item (#12 per-line
+approval) remains open. Kept as the decision record behind that work._
+
 ## Problem Statement
 How might we make TOTODILE **place-first** — you navigate by *where you are*, get the
 reference data, steps, and achievements for that place — without throwing away the

@@ -1,19 +1,21 @@
 # TOTODILE — Tracker Of Things, Order, Data, Items, Lists & Everything
 
-Personal project (single user: Pierre). Hand-built HTML achievement guides are being
-replaced by **TOTODILE**, a React PWA that renders guides from static JSON. No
-backend, ever. (Named for the Pokémon Crystal starter — Crystal is the pilot guide.)
+Personal project (single user: Pierre). **TOTODILE** is a React PWA that renders
+game-completion guides from static JSON. No backend, ever. (Named for the Pokémon
+Crystal starter — Crystal was the pilot guide and is playable; its predecessors,
+Pierre's hand-built HTML guides, are retired.) Current phase: compiling the
+remaining `library.json` guides through the pass pipeline.
 
 ## Read these before doing anything
 
 1. **`prd-react-app-to-regroup-video-game-guides-trackers-FINAL.md`** — THE spec.
    25 approved sections. When code and PRD conflict, the PRD wins until Pierre
    amends it. Section 24 (AI Agent Boundaries) applies to every session.
-2. **`docs/specs/`** — the active, gated planning: Workstream B (shadcn migration) and the
-   small standalone builds, each with spec, plan, and task breakdown. `docs/ideas/` holds
-   the refined direction behind them. (Completed work — the Workstream A location/visit
-   reframe and the extract-data pass — is retired to `docs/archive/`, alongside the old
-   `IMPLEMENTATION_PLAN.md`.)
+2. **`COMPILER_PASS_CONTRACT.md`** — normative for every compiler pass run (any
+   `guide-pass-*` skill). A pass that violates it is broken even if its output
+   looks right.
+3. There is no active planning doc: completed specs, plans, and task files live in
+   `docs/archive/`; `docs/ideas/` holds the decision records behind them.
 
 ## Hard rules (from PRD §24 — full list there)
 
@@ -38,17 +40,18 @@ backend, ever. (Named for the Pokémon Crystal starter — Crystal is the pilot 
   Router, Zod 4, IndexedDB via `idb`, Biome, Vitest, Yarn 4. Naming: PRD §20.3
   (camelCase files, PascalCase components, kebab-case guide slugs).
 
-## Repo layout (target — `app/` and `guides/` may not exist yet)
+## Repo layout
 
 - `app/` — the React PWA (§20.1 for the full tree; bulletproof-react layout, tests
   colocated in `src/`); schemas in `app/src/schema/` are the single source of truth.
-- `guides/<slug>/` — compiled guide data (content truth); `library.json` — manifest.
-- `ocarina-of-time/`, `layton-miracle-mask/`, `ml-partners-in-time/`,
-  `pokemon-crystal/`, `pokemon-ranger-soa/` — legacy single-file HTML guides.
-  **Read-only** until each is migrated and approved (PRD §18.3).
-  `ml-partners-in-time/build/guide.json` seeds schema v0.
-- `.claude/skills/achievement-guide-builder/` — current guide-building skill;
-  being reworked into the multi-pass compiler suite in Phase 2.
-- Historical context (archived under `docs/archive/`): `brainstorm-*-20260609-*.md`
-  (ideation log), the working PRD `prd-*-20260609-2128.md` (full approval history), and
-  `Idea_list.md` — rarely needed. Active planning lives in `docs/specs/` and `docs/ideas/`.
+- `guides/<slug>/` — compiled guide data (content truth); `library.json` — the
+  manifest (`pokemon-crystal` playable; the rest `planned`).
+- `.claude/skills/guide-pass-*/` — the six-pass compiler suite (sources,
+  extract-data, spine, widgets, ra-mapping, qa), bound by
+  `COMPILER_PASS_CONTRACT.md`.
+- `docs/ideas/` — refined-direction decision records. `docs/archive/` — completed
+  plans and historical context (brainstorms, the working PRD with full approval
+  history, `IMPLEMENTATION_PLAN.md`, workstream and small-build task files) —
+  rarely needed.
+- The legacy single-file HTML guides and their `achievement-guide-builder` skill
+  were removed in July 2026 (git history has them).

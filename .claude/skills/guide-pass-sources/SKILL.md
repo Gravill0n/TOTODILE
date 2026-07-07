@@ -6,8 +6,7 @@ description: >-
   <slug>") or when adding sources to an existing one ("run the sources pass",
   "add a source to <slug>"). Bootstraps guides/<slug>/ on first run, gathers
   and classifies sources with Pierre's sign-off, and writes the append-only
-  sources.json plus its pass report. Not for single-file HTML guides — that is
-  achievement-guide-builder.
+  sources.json plus its pass report.
 ---
 
 # Compiler pass: source gathering

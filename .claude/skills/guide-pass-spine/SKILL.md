@@ -6,8 +6,7 @@ description: >-
   re-run it after a rejection. Extracts locations + the chapter→visit→step tree
   from the route source(s) into layers/spine.json with keyword beats, sourceRefs
   and confidence on every step, through outline and sample gates. Requires the
-  sources and extract-data passes to have run. Not for single-file HTML guides —
-  that is achievement-guide-builder.
+  sources and extract-data passes to have run.
 ---
 
 # Compiler pass: spine extraction (schema v1)
