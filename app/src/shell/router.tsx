@@ -9,20 +9,21 @@ import {
   type RouterHistory,
   redirect,
 } from "@tanstack/react-router";
+import { loadGuide } from "@/lib/content/guide";
+import { loadLibrary } from "@/lib/content/library";
+import { loadRaMapping } from "@/lib/content/raMapping";
 import { readAllSlots } from "../progress/progressStore";
 import { loadApprovals, loadPlayability } from "../review/approvalsData";
 import { getEditorMode } from "../review/editorMode";
 import { loadLayerRoster } from "../review/layerRoster";
 import { ReviewScreen } from "../review/ReviewScreen";
 import { loadReviewGuide } from "../review/reviewContent";
-import { loadDeck, loadRaMapping, loadSources } from "../review/reviewLoaders";
-import { loadGuide } from "../spine/guideData";
+import { loadDeck, loadSources } from "../review/reviewLoaders";
 import { buildLocationIndex } from "../spine/locationIndex";
 import { CleanupScreen } from "./CleanupScreen";
 import { GuideScreen } from "./GuideScreen";
 import { LibraryScreen } from "./LibraryScreen";
 import { LocationScreen } from "./LocationScreen";
-import { loadLibrary } from "./libraryData";
 import { SettingsScreen } from "./SettingsScreen";
 
 const rootRoute = createRootRoute({

@@ -1,4 +1,4 @@
-import { loadRaMapping } from "../review/reviewLoaders";
+import { loadRaMapping } from "@/lib/content/raMapping";
 import type { RaMapping } from "../schema";
 import { fetchUnlocks } from "./raClient";
 import { computeSync, type SyncReceipt } from "./syncReceipt";

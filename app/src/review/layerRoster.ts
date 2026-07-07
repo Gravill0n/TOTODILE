@@ -1,3 +1,4 @@
+import { fetchJson } from "@/lib/content/fetchJson";
 import type { ManifestWidgetMeta } from "../schema";
 import { passReportFile } from "../schema";
 import { loadLayersManifest } from "./reviewLoaders";
@@ -40,13 +41,11 @@ export async function loadLayerRoster(slug: string): Promise<LayerReport[]> {
 
   const reports = await Promise.all(
     manifest.entries.map(async (entry): Promise<LayerReport> => {
-      const reportResponse = await fetch(`guides/${slug}/${entry.report}`);
-      if (!reportResponse.ok) {
-        throw new Error(
-          `Could not load report for layer "${entry.id}" (HTTP ${reportResponse.status})`,
-        );
-      }
-      const parsed = passReportFile.parse(await reportResponse.json());
+      const parsed = await fetchJson(
+        `guides/${slug}/${entry.report}`,
+        passReportFile,
+        `report for layer "${entry.id}"`,
+      );
       return {
         id: entry.id,
         kind: entry.kind,

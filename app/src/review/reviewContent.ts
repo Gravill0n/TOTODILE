@@ -1,3 +1,4 @@
+import { fetchJson, fetchOptionalJson } from "@/lib/content/fetchJson";
 import type { GuideFile, Widget } from "../schema";
 import { guideFile, spineLayer, widgetLayer } from "../schema";
 import type { LayerReport } from "./layerRoster";
@@ -13,34 +14,30 @@ export async function loadReviewGuide(
   slug: string,
   roster: LayerReport[],
 ): Promise<GuideFile | null> {
-  const response = await fetch(`guides/${slug}/guide.json`);
-  if (response.ok) return guideFile.parse(await response.json());
-  if (response.status !== 404) {
-    throw new Error(`Could not load guide "${slug}" (HTTP ${response.status})`);
-  }
+  const assembled = await fetchOptionalJson(
+    `guides/${slug}/guide.json`,
+    guideFile,
+    `guide "${slug}"`,
+  );
+  if (assembled !== null) return assembled;
 
-  const spineResponse = await fetch(`guides/${slug}/layers/spine.json`);
-  if (spineResponse.status === 404) return null;
-  if (!spineResponse.ok) {
-    throw new Error(
-      `Could not load spine layer for "${slug}" (HTTP ${spineResponse.status})`,
-    );
-  }
-  const spine = spineLayer.parse(await spineResponse.json());
+  const spine = await fetchOptionalJson(
+    `guides/${slug}/layers/spine.json`,
+    spineLayer,
+    `spine layer for "${slug}"`,
+  );
+  if (spine === null) return null;
 
   const widgets: Widget[] = await Promise.all(
     roster
       .filter((layer) => layer.kind === "widget")
       .map(async (layer) => {
-        const artifactResponse = await fetch(
+        const artifact = await fetchJson(
           `guides/${slug}/layers/${layer.id}.json`,
+          widgetLayer,
+          `widget layer "${layer.id}"`,
         );
-        if (!artifactResponse.ok) {
-          throw new Error(
-            `Could not load widget layer "${layer.id}" (HTTP ${artifactResponse.status})`,
-          );
-        }
-        return widgetLayer.parse(await artifactResponse.json()).widget;
+        return artifact.widget;
       }),
   );
 
