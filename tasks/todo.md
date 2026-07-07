@@ -1,64 +1,76 @@
-# TODO — Review Lens: Per-Stage Gating + Merged Slot Cards
+# TODO — Bulletproof-React Restructure + Simplification Pass
 
-Full plan with acceptance criteria and file lists: [plan.md](plan.md).
-Every task ends with `yarn check` green (from `app/`). Work on a `feat/` branch, land by PR.
+Full plan with acceptance criteria, placement map, and risks: [plan.md](plan.md).
+Every task ends with `yarn check` green (from `app/`). Move-only commits separate from
+edit commits. Three PRs at the marked boundaries — never direct to `main`.
 
-## Phase 1: Foundation (manifest)
+Previous cycle (review-lens stage gating) retired to git history (`a926dec`); its two
+open manual checkpoints (Checkpoint C export diff, Crystal review walk) remain tracked
+on PR #15.
 
-- [x] **T1 — Manifest schema + validator + backfill script** (M) — done 2026-07-04, branch `feat/review-lens-manifest` (commits ce9557e, cc3c82a, fe608a8)
-  - `app/src/schema/manifest.ts` (new) + export from `index.ts` + `CHANGELOG.md`
-  - `app/scripts/validateGuidesCore.ts` — manifest checks (bytes hash, entry↔artifact parity, widget meta match)
-  - `app/scripts/buildLayersManifestCore.ts` + CLI + `build-layers-manifest` package script
-  - Generate + commit `guides/pokemon-crystal/layers/manifest.json` (320 entries)
-  - Tests: `schema/manifest.test.ts`, `scripts/buildLayersManifest.test.ts`, extend `validateGuides.test.ts`
-- [x] **T2 — Roster cutover to manifest** (S) — done 2026-07-04, commit 2ffc5b8
-  - `layerRoster.ts` reads manifest (404→[]); `LayerReport.widget?` added
-  - `layerRoster.test.ts` rewritten; `reviewLens`/`approveFlow`/`spotCheckFlow` stubs updated (reviewReskin needed none)
+## Phase 0: Gate — PRD amendment (branch `chore/colocate-tests`, PR-1)
 
-### Checkpoint A
-- [x] Crystal lens renders identically to before (roster verified: 320 ids + digests match the qa-derived one); manifest committed and validator-enforced
+- [x] **T0.1 — Amend PRD §20.1 + CLAUDE.md** (S) — target tree, colocated tests,
+      boundary-guard note. Approving PR-1 = Pierre's §20.1 sign-off; no src moves before it.
 
-## Phase 2: Per-stage review paths (T3 ∥ T4 after their deps)
+### Checkpoint 0
+- [x] `yarn check` green; baseline recorded: 87 test files / 544 tests
 
-- [x] **T3 — Playability requires pipeline completion** (M) — done 2026-07-04, commit 89b50e0
-  - `isPlayable(approvals, manifest, qaComplete)` + `loadPlayability(slug)`; all 4 router guards updated
-  - Regression pinned: spine-only all-approved export ≠ playable; Crystal's data orphan tolerated
-- [x] **T4 — Mid-pipeline content resolution** (M) — done 2026-07-04, commit 9da1e8c
-  - `reviewContent.ts`: guide.json passthrough or in-memory spine+widgets merge (no `guideFile.parse`)
-  - `loadRaMapping` falls back to `layers/ra-mapping.json`; review route wired
-  - Tests: `reviewContent.test.ts` (7) + reviewLens spine-stage end-to-end case
+## Phase 1: Test colocation (same PR-1)
 
-### Checkpoint B
-- [x] Spine-stage fixture guide is reviewable end-to-end (reviewLens mid-pipeline test) and NOT playable (approvalsData regression tests)
+- [x] **T1.1 — Scaffold `src/testing/`** (M) — fixtures/repo + helpers moved; new
+      `fixtureRepo.ts` centralizes fixture paths; ~34 import sites → `@/testing/*`
+- [x] **T1.2 — Colocate schema/components/lib/primitives/scripts tests; guards → `src/testing/guards/`** (M)
+      — re-check tree-walking guards (styleGuards, emojiSweep, themeTokens) after colocation
+- [x] **T1.3 — Colocate shell/spine/progress/review/sync tests; delete `app/tests/`; tsconfig include** (M)
 
-## Phase 3: Merged slot cards
+### Checkpoint 1 — PR-1 boundary
+- [x] `yarn check` green; 87 test files / 544 tests, all colocated — PR #16
 
-- [x] **T5a — Slot groups render** (M) — done 2026-07-06, commits f8a806e (slotGroups), 6ef5512 (VerdictControls), 7c4512a (SlotGroupCard + wiring)
-  - `slotGroups.ts` (new, model on `buildLocationIndex`), `SlotGroupCard.tsx` (new, all widget slots), `VerdictControls.tsx` (extracted), `ReviewScreen.tsx` wiring + deck load
-  - Crystal: 318 widget cards → 9 slot cards
-  - Tests: `slotGroups.test.ts` (7), reviewLens same-slot→one-card assertion
-  - Note: group verdict fans out via a per-member loop for now — T5b replaces it with atomic `recordAll`/`clearAll`
-- [x] **T5b — Group verdict fan-out + group spot-check** (M) — done 2026-07-06, commits fe7a99a (spot-check helpers), faba59d (recordAll/clearAll), 2c0a83d (wiring)
-  - `useLayerVerdicts.ts`: `recordAll`/`clearAll` (one date, single state update); `spotCheck.ts`: `groupUnflaggedRows` + `owningWidgetLayerId` routing
-  - `buildApprovals.ts` unchanged (pinned by partial-roster test); note fans out to every member record
-  - Tests: `useLayerVerdicts` (new), `approveFlow` group fan-out ×2, `spotCheckFlow` group routing, `spotCheck` ×3, `buildApprovals` partial-roster case
+## Phase 2: Untangle in place (branch `chore/bulletproof-restructure`, PR-2)
 
-### Checkpoint C
-- [ ] Group-approve slot 5 → 17 identical verdicts; export diffs cleanly vs committed approvals.json (dropped `data` orphan expected — flag in PR, never hand-edit)
+- [ ] **T2.1 — Pure guide helpers → `lib/guide.ts`** (S) — kills progress→spine
+- [ ] **T2.2 — `lib/content/`: fetchJson + hoist loadLibrary/loadGuide/loadRaMapping; review loaders rebuilt** (M)
+      — kills sync→review; error strings byte-identical; loader tests pass unmodified
+- [ ] **T2.3 — `ProgressSlice` → `types/progressSlice.ts`** (S) — kills primitives→progress (11 importers)
 
-## Phase 4: Stage sections + contract
+### Checkpoint 2
+- [ ] `yarn check` + `yarn build` green; all three tangles gone before any folder moves
 
-- [x] **T6 — Stage sections + waiting states + export copy + target-approved badge** (S/M) — done 2026-07-06, commits 32b1eed (stages.ts), f50b4ca (sections + export copy), 992d4f1 (badge)
-  - `stages.ts` (new); `ReviewScreen.tsx` 3 fixed sections + placeholders naming unlock skill; export helper names the earliest incomplete stage
-  - ra-mapping flagged row targeting an approved layer gets "target already approved" badge
-  - Tests: `stages.test.ts` (7), reviewLens ×3 (placeholders, section badges, target-approved), flaggedRows unit case
-  - Bonus fix bcf3952: both review hooks' initial IndexedDB load could clobber verdicts recorded while it was in flight (surfaced as a flaky T5b flow test) — load now merges under in-session recordings
-- [x] **T7 — Compiler contract + skill gates (docs only)** (S) — done 2026-07-06, commit 75eb1d4
-  - `COMPILER_PASS_CONTRACT.md`: gate markers in §1, Rules 9 (manifest upsert via `build-layers-manifest`) + 10 (stage gate, read-only approvals check, stop wording), §3 table row + exemption, §5 lens carries manifest hash, §6 re-run refreshes manifest
-  - 6 × `.claude/skills/guide-pass-*/SKILL.md`: step-0 gates (widgets/ra-mapping/qa) + manifest upsert steps (spine/widgets/ra-mapping) + ra-mapping flag-hygiene note, never-in-manifest notes (sources/extract-data)
+## Phase 3: The restructure (move-only + import-fix commits)
 
-### Checkpoint: Complete
-- [ ] `yarn check` green
-- [ ] Manual walk of `/review/pokemon-crystal` (stages, 9 cards, group approve, export diff)
-- [ ] Spine-stage fixture: reviewable, not playable, correct placeholders
-- [ ] PR opened; `data` orphan record flagged in description
+- [ ] **T3.1 — `primitives/` → `components/primitives/`** (S)
+- [ ] **T3.2 — `spine/` + shell widget chrome (PostureLayout, WidgetDeck/Dialog/Rail/Sheet, widgetScope) → `features/spine/`** (M)
+- [ ] **T3.3 — `progress/`, `sync/` → `features/`** (S) — verify RA isolation grep
+- [ ] **T3.4 — `review/` → `features/review/`** (S)
+- [ ] **T3.5 — Dissolve `shell/`: router → `app/`, screens + GuideCard + cleanupTasks → `app/routes/`, persistentStorage → `lib/`** (M)
+      — main.tsx stays at src root; `yarn build` + `yarn preview` smoke
+- [ ] **T3.6 — Alias sweep: no cross-folder relative imports** (XS)
+
+### Checkpoint 3
+- [ ] `yarn check` + `yarn build` green; tree = amended PRD §20.1; test count = baseline
+
+## Phase 4: Boundary enforcement
+
+- [ ] **T4.1 — `src/testing/guards/importBoundaries.test.ts`** (M) — 6 rules (feature→feature,
+      shared→feature/app, →app except main.tsx, relative escaping scope, schema isolation,
+      RA client isolation); mutation demo in PR description
+- [ ] **T4.2 — Docs/config reconciliation** (XS) — PRD tree vs reality, components.json, coverage exclude if needed
+
+### Checkpoint 4 — PR-2 boundary
+- [ ] `yarn check` + `yarn build` green; boundaries machine-enforced
+
+## Phase 5: Simplifications (branch `chore/simplification-pass`, PR-3)
+
+Rule: no existing-test edits in this phase — additions only.
+
+- [ ] **T5.1 — `lib/idb.ts` lazy-DB factory; adopt in progressStore + reviewStore** (S)
+- [ ] **T5.2 — Shared `WidgetProps<W>` for primitives** (S) — types only, zero JSX change
+- [ ] **T5.3 — `lib/widgetItems.ts` shared binary-item enumerator for flaggedRows + cleanupTasks** (M)
+      — WidgetRenderer switch intentionally untouched (closed-set dispatcher)
+- [ ] **T5.4 — Extract pure `slotMutations.ts` from `useGuideProgress`** (M) — hook ≤ ~120 lines
+
+### Checkpoint 5: Complete — PR-3 boundary
+- [ ] `yarn check` + `yarn build` green; test count = baseline + new guard/unit tests
+- [ ] `yarn preview` full smoke: library → guide → widgets sheet → cleanup → settings export → review lens (editor mode)
+- [ ] All three PRs merged; PRD §20.1 matches `find src -maxdepth 2 -type d`

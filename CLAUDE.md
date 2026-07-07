@@ -40,8 +40,8 @@ backend, ever. (Named for the Pokémon Crystal starter — Crystal is the pilot 
 
 ## Repo layout (target — `app/` and `guides/` may not exist yet)
 
-- `app/` — the React PWA (§20.1 for the full tree); schemas in `app/src/schema/`
-  are the single source of truth.
+- `app/` — the React PWA (§20.1 for the full tree; bulletproof-react layout, tests
+  colocated in `src/`); schemas in `app/src/schema/` are the single source of truth.
 - `guides/<slug>/` — compiled guide data (content truth); `library.json` — manifest.
 - `ocarina-of-time/`, `layton-miracle-mask/`, `ml-partners-in-time/`,
   `pokemon-crystal/`, `pokemon-ranger-soa/` — legacy single-file HTML guides.

@@ -1,173 +1,143 @@
-# Review Lens Improvements: Per-Stage Gating + Merged Slot Cards
+# TOTODILE — Bulletproof-React Restructure + Simplification Pass
 
 ## Context
 
-Two pain points from the Crystal pilot review experience:
+Pierre wants `app/` reworked to follow [bulletproof-react](https://github.com/alan2207/bulletproof-react) (feature folders, unidirectional deps `shared → features → app`, no cross-feature imports, absolute `@/` imports, enforced boundaries) plus a behavior-preserving code-simplification pass. The app today (~92 files / 8.1k lines, 87 test files mirrored under `app/tests/`) is already feature-*shaped* but has three dependency tangles (`progress→spine`, `sync→review`, `primitives→progress`), mixed relative/alias imports, and duplicated patterns (8× fetch→parse loaders, 2× idb boilerplate, 7× identical primitive prop types, widget-union enumerated by hand in two places, a 272-line progress hook).
 
-1. **Review only starts after the whole pipeline runs.** The roster is derived from `qa.report.json` (`app/src/review/layerRoster.ts:39-41`), so nothing is reviewable until the final QA pass. By then, ra-mapping has re-flagged target items that live in spine/widget layers, so the same lines get flagged across multiple cards.
-2. **~318 widget layers = ~318 review cards.** Crystal has 78 `widget-enc-*`, 129 `widget-items-*`, 73 `widget-tr-*`, 17+17 chapter-scoped, plus singletons — each its own `LayerReviewCard`. This is exactly PRD §15 risk 2 (editor fatigue).
+**Decisions made by Pierre (2026-07-07):** full bulletproof-react layout (requires PRD §20.1 amendment — the PRD wins until amended, so that lands first as the gate); boundary enforcement via a Vitest guard test (no new dependency); tests colocated in `src/` (moving all 87 from `tests/`).
 
-**Decisions made by Pierre (2026-07-04):**
-- **Per-stage gating**: pipeline pauses for review-lens approval after each reviewable stage: spine → [gate] → all widget passes → [gate] → ra-mapping → [gate] → qa. Enforced in the compiler skill contract (skills read `approvals.json`, never write it — PRD §23.4 unchanged).
-- **One group verdict** per merged slot card: approve/reject applies to all members; note fans out to every member `layerRecord`. Grouping is UI-only — `approvals.json` keeps one hash-locked record per layer (schema unchanged).
-- **Roster from a new `guides/<slug>/layers/manifest.json`** that each reviewable pass upserts, so the lens can build the roster at any pipeline point.
+**Hard constraints:** behavior-preserving; no schema content changes (`src/schema/` path frozen — `app/scripts/` validators import it); no new dependencies; never touch `guides/*/approvals.json`; `yarn check` green at every checkpoint; move-only commits separated from edit commits; work by PR, never direct to main.
 
-Crystal is already fully approved (321 records, all `approved`), so this lands for future guides and Crystal re-runs. Note: Crystal's committed `approvals.json` contains an out-of-contract `data` record — the next lens export will silently drop it (correct behavior; surface to Pierre, don't hand-edit).
+After plan approval, first action: copy this plan to `tasks/plan.md` and the task list to `tasks/todo.md` (requested by the /plan invocation), then branch.
 
-## Architecture decisions
+## Target tree
 
-- **Manifest is denormalized**: widget entries carry `{deckPosition, scope, title}` so grouping needs no per-artifact fetches (~318 avoided).
-- **Hard cutover** of the roster to manifest (no qa.report.json fallback) — one guide exists and gets backfilled in the same change-set.
-- **Playability fix**: `isPlayable` currently returns true for a partial (e.g. spine-only) all-approved `approvals.json` — with per-stage exports this becomes a real bug (guide goes "playable" after stage 1, review route redirects to play). New rule: playable iff QA complete AND every manifest entry has an approved record.
-- **No flag suppression in ra-mapping**: `flaggedItemIds` must stay equal to flagged-confidence rows (contract §4, validator parity). Per-stage timing plus a lens-side "target already approved" badge handles the dedupe pain.
-- **Stages don't UI-block**: the lens organizes cards into stage sections and shows waiting placeholders; enforcement is the skill gates' job (backfilled guides show everything at once).
+```
+app/src/
+├── main.tsx, index.css          # stay at src root (index.html entry)
+├── app/
+│   ├── router.tsx               # from shell/router.tsx
+│   └── routes/                  # LibraryScreen, GuideCard, GuideScreen, CleanupScreen,
+│                                # cleanupTasks.ts, LocationScreen, SettingsScreen
+├── features/
+│   ├── spine/                   # NowScreen, StepRow, ChapterSheet, MissableBanner, missables,
+│   │                            # preferredNext, locationIndex + widget chrome from shell:
+│   │                            # PostureLayout, WidgetDeck/Dialog/Rail/Sheet, widgetScope
+│   ├── progress/                # progressStore, useGuideProgress, pointer (+ slotMutations)
+│   ├── review/                  # all 20 files minus loadRaMapping
+│   └── sync/                    # raClient, raCredentials, syncGuide, syncReceipt, SyncReceipt, types
+├── components/
+│   ├── ui/                      # shadcn — path unchanged (components.json aliases hold)
+│   ├── primitives/              # 7 renderer folders + WidgetRenderer + FlagMark (+ widgetProps.ts)
+│   └── ZoomableImage.tsx
+├── lib/                         # utils.ts (cn), persistentStorage, guide.ts (pure helpers),
+│   │                            # idb.ts, widgetItems.ts
+│   └── content/                 # fetchJson.ts, library.ts, guide.ts, raMapping.ts
+├── types/progressSlice.ts       # kills primitives→progress (type-only)
+├── schema/                      # UNTOUCHED — contract, scripts import it
+└── testing/                     # helpers.ts, fixtureRepo.ts, fixtures/repo/…, guards/
+```
 
----
+Placement rationale (verified consumers): widget chrome + `widgetScope` are imported only by GuideScreen → `features/spine`; `GuideCard` only by LibraryScreen, `cleanupTasks` only by CleanupScreen → colocate in `app/routes/` (no one-file features); `libraryData` → `lib/content/library.ts`; `persistentStorage` → `lib/` (imported by main.tsx). `guideData.ts` splits: pure helpers (`chapterOf`, `visitOf`, `guideStepIds`, `stepHeadline`, DOM-id/asset helpers) → `lib/guide.ts` so progress and spine both reach them without a feature edge; `loadGuide` → `lib/content/guide.ts`. `loadRaMapping` → `lib/content/raMapping.ts` (sync and router need it; kills `sync→review`). Feature folders stay flat; no new barrels; `schema/index.ts` barrel stays.
 
-## Task list
+## Phases & tasks
 
-### Phase 1: Foundation (manifest)
+Commit discipline for every move task: **commit 1 = `git mv` only; commit 2 = import fixes + `yarn format`** (keeps `git diff -M` reviewable). Phase 0 records the baseline (87 test files, N tests from `yarn test`); every checkpoint re-asserts it.
 
-#### Task 1: Manifest schema + validator + backfill script
-**Description:** New Zod schema `layersManifest`; `yarn validate-guides` verifies it; a permanent script generates it from disk; commit Crystal's backfilled manifest.
+### Phase 0 — Gate: PRD amendment (PR-1 opens)
 
-Files:
-- `app/src/schema/manifest.ts` (new): `manifestLayerKind = ["spine","widget","ra-mapping"]`; `manifestEntry = {id, kind, artifact, report, sha256 (64-hex), widget?: {deckPosition, scope, title}}` (reuse `widgetScope` from `widgets.ts`, `sha256` regex per `layers.ts` reportInput); `layersManifest = {schemaVersion, guideId, entries[]}` with superRefine: no duplicate ids, kind↔id consistency, `widget` meta required iff kind is `widget`. Export from `schema/index.ts`; note in `schema/CHANGELOG.md`.
-- `app/scripts/validateGuidesCore.ts`: stop treating `manifest.json` as "unrecognized layer file" (~:380-387); add checks — entry artifact/report exist on disk, `sha256` matches actual bytes, widget meta matches the parsed widget layer, every reviewable artifact on disk has an entry and vice versa.
-- `app/scripts/buildLayersManifestCore.ts` + `buildLayersManifest.ts` (new, follow validateGuidesCore pattern): enumerate `layers/`, take spine / `widget-*` / `ra-mapping` artifacts, parse widget layers for meta, hash bytes, emit via `layersManifest.parse`. Add `build-layers-manifest` to `app/package.json`.
-- Run it for Crystal; commit `guides/pokemon-crystal/layers/manifest.json` (320 entries).
+- **T0.1 (S)** Amend PRD §20.1 to the target tree (note colocated tests, `src/testing/`, boundary guard enforcement; §20.2/§20.3 unchanged); touch CLAUDE.md repo-layout line. Approving PR-1 **is** Pierre's §20.1 sign-off — no src moves land before it.
+  - AC: PRD tree matches target verbatim; CLAUDE.md accurate; Pierre approved.
+  - Verify: `yarn check` (sanity); manual read.
 
-**Acceptance criteria:**
-- [ ] `yarn build-layers-manifest pokemon-crystal` produces a manifest with 320 entries (spine + 318 widgets + ra-mapping), widget entries carrying correct deckPosition/scope/title
-- [ ] `yarn validate-guides` passes with the manifest committed; fails with findings on stale sha256 / missing entry / meta mismatch
-**Verification:** new `app/tests/schema/manifest.test.ts` (superRefine cases), `app/tests/scripts/buildLayersManifest.test.ts` (fixture dir → entries+digests), extend `validateGuides.test.ts`; `yarn check` green.
-**Dependencies:** none. **Scope:** M (5 files + tests)
+### Phase 1 — Test colocation (before src moves, so folders carry tests along)
 
-#### Task 2: Roster cutover to manifest
-**Description:** `loadLayerRoster` reads `layers/manifest.json` instead of `qa.report.json`; `LayerReport` gains `widget?` metadata.
+- **T1.1 (M)** Scaffold `src/testing/`: `git mv tests/fixtures/repo → src/testing/fixtures/repo`, `tests/schema/helpers.ts → src/testing/helpers.ts`; new `fixtureRepo.ts` (central `fixtureRepoRoot` via `import.meta.url` + `readFixtureJson`) replacing ~13 hand-built path hops; update ~34 import sites to `@/testing/*`.
+  - AC: no test resolves fixture paths by relative hops except `fixtureRepo.ts`; test count = baseline.
+  - Verify: `yarn check`; `grep -rn "fixtures/repo\|schema/helpers" tests/ src/ | grep -v testing` → empty.
+- **T1.2 (M)** Colocate schema/components/lib/primitives tests beside subjects (current layout); `tests/scripts/*` → `scripts/`; guard-style tests (styleGuards, emojiSweep, themeTokens, accentRetired, tokenAliasLayer, componentsConfig, skills examples) → `src/testing/guards/`. Re-check tree-walking guards don't newly match colocated `*.test.*` files.
+  - AC: vitest default globs discover everything (zero config change); count = baseline.
+  - Verify: `yarn check`; `find src scripts tests -name '*.test.*' | wc -l` = 87.
+- **T1.3 (M)** Colocate shell/spine/progress/review/sync tests; delete empty `app/tests/`; drop `"tests"` from tsconfig include (same commit). jsdom pragmas untouched.
+  - AC: `tests/` gone; count = baseline; every test beside its subject.
+  - Verify: `yarn check`.
 
-Files: `app/src/review/layerRoster.ts` (fetch manifest, 404→`[]`, parse, fetch each entry's `.report.json` as today, `contentHash = "sha256:"+entry.sha256`, drop `kindOf`, keep sort), `app/tests/review/layerRoster.test.ts` (rewrite stubs), `reviewLens.test.tsx` / `reviewReskin.test.tsx` stubs gain `manifest.json`.
+**Checkpoint 1:** green; **PR-1 boundary** (PRD amendment + test colocation — zero production-code surface).
 
-**Acceptance criteria:**
-- [ ] Roster for Crystal is identical to today's (same ids, order, hashes) — lens renders unchanged
-- [ ] No manifest → empty roster; malformed manifest → throw
-**Verification:** updated tests pass; manual: `/review/<slug>` on a manifest-backed fixture. `yarn check`.
-**Dependencies:** T1. **Scope:** S
+### Phase 2 — Untangle in place (old layout; includes fetchJson simplification)
 
-### Checkpoint A
-- [ ] `yarn check` green; Crystal lens renders as before the change; manifest committed and validator-enforced.
+- **T2.1 (S)** Extract pure guide helpers verbatim to `src/lib/guide.ts`; update 5 importers incl. `progress/useGuideProgress.ts` (**kills progress→spine**); split guideData tests.
+  - AC: no `../spine/guideData` imports outside spine; functions byte-identical.
+  - Verify: `yarn check`.
+- **T2.2 (M)** `lib/content/`: `fetchJson`/`fetchOptionalJson` (404→null; error strings reproduce today's exactly, per-call-site `what` phrase); hoist `loadLibrary`, `loadGuide`, `loadRaMapping` (keep its two-path fallback; `qaReportExists` stays bare fetch); rebuild remaining review loaders on the helper in place; `sync/syncGuide.ts` → `@/lib/content/raMapping` (**kills sync→review**); delete `shell/libraryData.ts`, `spine/guideData.ts`.
+  - AC: `await fetch(` only in `fetchJson.ts`, `qaReportExists`, sync client; loader tests pass **unmodified**.
+  - Verify: `yarn check`; `yarn test src/review src/sync src/lib`.
+- **T2.3 (S)** `git mv progressSlice.ts → src/types/progressSlice.ts`; update 11 importers to `import type … from "@/types/progressSlice"` (**kills primitives→progress**).
+  - AC: `grep -rn "progress/" src/primitives` → empty.
+  - Verify: `yarn check`.
 
-### Phase 2: Per-stage review paths
+**Checkpoint 2:** green + `yarn build`; all three tangles dead before any folder moves. (PR-2 opens here.)
 
-#### Task 3: Playability requires pipeline completion
-**Description:** Fix the latent partial-approvals bug. `isPlayable(approvals, manifest, qaComplete)`: true iff qaComplete && approvals non-empty && all approved && every manifest entry id approved (manifest `null` → legacy behavior). Add `loadPlayability(slug)` fetching approvals + manifest + `qa.report.json` existence (status-only check).
+### Phase 3 — The restructure (move-only + import-fix commits)
 
-Files: `app/src/review/approvalsData.ts`, `app/src/shell/router.tsx` (library loader :57-70, guide/cleanup/place guards :87/:107/:131, review bounce :158-160), `app/tests/review/approvalsData.test.ts`, affected shell router tests.
+- **T3.1 (S)** `git mv src/primitives → src/components/primitives` (tests travel); retarget ~4 importers.
+- **T3.2 (M)** `git mv src/spine → src/features/spine`; move widget chrome + `widgetScope` (+ 7 tests) from shell into it; within-feature imports relative, cross-folder `@/`; retarget GuideScreen/LocationScreen/router.
+  - AC: no `../` import escapes `features/spine/`.
+- **T3.3 (S)** `git mv` progress and sync → `features/`; retarget ~5 importers.
+  - Verify: `grep -rln "@retroachievements" src | grep -v features/sync` → empty.
+- **T3.4 (S)** `git mv src/review → src/features/review`; retarget router/LibraryScreen/SettingsScreen.
+- **T3.5 (M)** Dissolve shell: `router.tsx` → `src/app/`; screens + GuideCard + cleanupTasks (+ tests) → `src/app/routes/`; `persistentStorage` → `src/lib/`; update `main.tsx`; delete `src/shell/`.
+  - AC: `main.tsx` stays at src root; `yarn build` succeeds; nothing outside main.tsx imports `src/app/**`.
+  - Verify: `yarn check`; `yarn build`; `yarn preview` smoke (library → guide → review lens in editor mode).
+- **T3.6 (XS)** Alias sweep: convert any remaining cross-top-level-folder `../` import to `@/`.
+  - Verify: `yarn check`; grep evidence in commit message.
 
-**Acceptance criteria:**
-- [ ] Spine-only all-approved approvals + no qa report → NOT playable (regression-pinned)
-- [ ] Manifest entry missing from approvals → not playable; Crystal remains playable
-**Verification:** truth-table tests; `yarn check`.
-**Dependencies:** T1 (parallel with T4). **Scope:** M
+**Checkpoint 3:** green + build; tree matches amended PRD §20.1; test count = baseline.
 
-#### Task 4: Mid-pipeline content resolution
-**Description:** The lens must render flagged rows before `guide.json` exists. New `app/src/review/reviewContent.ts` — `loadReviewGuide(slug, roster)`: try `loadGuide`; on 404 assemble in-memory from `layers/spine.json` + roster widget artifacts (same mechanical merge as `assembleGuideCore.ts:121-129`, widgets sorted by deckPosition, **skip** `guideFile.parse` — cross-layer invariants are QA's job; verify no lens code depends on guideFile-only refinements). No spine → null. Extend `reviewLoaders.ts` ra-mapping loader with `layers/ra-mapping.json` fallback. Wire into review route loader (`router.tsx:163-171`).
+### Phase 4 — Boundary enforcement
 
-**Acceptance criteria:**
-- [ ] guide.json present → identical behavior to today
-- [ ] Spine-only pipeline state: spine card renders flagged rows; widget stage shows nothing broken
-**Verification:** new `app/tests/review/reviewContent.test.ts` (passthrough / assembled / spine-only); `yarn check`.
-**Dependencies:** T2. **Scope:** M
+- **T4.1 (M)** `src/testing/guards/importBoundaries.test.ts` (node env, walk + import-regex, styleGuards precedent). One `it()` per rule, offenders listed file:line; production files only (`*.test.*` and `src/testing/**` exempt). Rules: ① feature→feature ② shared→{features,app} ③ anyone→`src/app/**` except `main.tsx` ④ relative import escaping its top-level scope (forces `@/`) ⑤ schema→anything in src outside schema ⑥ `@retroachievements/api` outside `features/sync`.
+  - AC: passes on Phase-3 tree; demonstrated red on an injected feature→feature import (shown in PR, not committed).
+  - Verify: `yarn check`; mutation demo.
+- **T4.2 (XS)** Reconciliation: PRD tree vs `find src -maxdepth 2 -type d`; components.json aliases; coverage exclude for `src/testing/**` only if the report shows pollution.
 
-### Checkpoint B
-- [ ] A fixture guide at spine-stage (manifest with 1 entry, no guide.json, no qa report) is reviewable and NOT playable end-to-end.
+**Checkpoint 4:** green + build; boundaries machine-enforced. **PR-2 boundary** (untangle + restructure + guard).
 
-### Phase 3: Merged slot cards
+### Phase 5 — Behavior-preserving simplifications (PR-3)
 
-#### Task 5a: Slot groups render
-**Description:** Group widget layers by `widget.deckPosition` into one card per deck slot.
+- **T5.1 (S)** `src/lib/idb.ts` `createLazyDb(name, version, upgrade)` → `{db(), close()}`; adopt in progressStore + reviewStore. DB names/versions/keyPaths/upgrade bodies byte-identical; `closeProgressDb`/`closeReviewDb` exports kept.
+  - AC: store/exportImport tests pass unmodified; no public signature changes.
+- **T5.2 (S)** `components/primitives/widgetProps.ts`: generic `WidgetProps<W>` for the 5 toggle-shaped renderers; MapPins extends with `resolveAsset`; Counter keeps its distinct shape. Types only, zero JSX changes.
+- **T5.3 (M)** `src/lib/widgetItems.ts`: `widgetBinaryItems(widget)` — one switch over the 6 binary-item widget types (matrix/dataTable label derivations moved verbatim; counters excluded). `flaggedRows.ts` and `cleanupTasks.ts` source rows/labels from it, keeping their counter cases and composition. **WidgetRenderer's switch is left alone** — closed-set dispatcher, not duplication.
+  - AC: `flaggedRows.test.ts` and `cleanupTasks.test.ts` pass **unmodified** (fixture guide pins all 7 widget label derivations).
+- **T5.4 (M)** `features/progress/slotMutations.ts`: pure mutators (toggleDone/toggleSkip/markThrough/markManyDone/acknowledgeMissable/movePointer/adjustCounter/resetCounter) extracted verbatim from `useGuideProgress`, shared advance-pointer fragment factored once, timestamp as explicit `at` param. Hook shrinks to load effect + `mutateSlot` write-through + `withStats` (recompute kept — FR-A3 contract) + thin wrappers.
+  - AC: pointer/progressStore/exportImport/skipAndBurst/nowScreen/guideSync/cleanup tests pass unmodified; hook ≤ ~120 lines; mutators pure.
 
-Files:
-- `app/src/review/slotGroups.ts` (new): `buildSlotGroups(widgets: LayerReport[]): SlotGroup[]` — model on `spine/locationIndex.ts:18-47`; `SlotGroup = {deckPosition, title, layers[]}`; title from `deck.json` slot `defaultTitle` (load deck in review route loader), fallback first member's `widget.title`; a widget layer missing meta → singleton group, never dropped.
-- `app/src/review/SlotGroupCard.tsx` (new): used for every widget slot (singletons too — one code path). Header: title, `slot N`, member count, summed flags/rows, folded group status (all approved→Approved, any rejected→Rejected, all draft→Unreviewed, else Mixed). Body: per flagged member a subsection (member id + scope label resolved via guide + `FlaggedRowView`s via existing `resolveFlaggedRows`), flag-free members collapsed to one count line; member anomalies inside subsections.
-- `app/src/review/VerdictControls.tsx` (new): extract approve/reject/change block from `LayerReviewCard.tsx:130-203`; both cards use it. `LayerReviewCard` remains for spine/ra-mapping.
-- `app/src/review/ReviewScreen.tsx`: widgets render via `buildSlotGroups` → `SlotGroupCard`; add deck prop; progress line adds "K/N slots".
+**Checkpoint 5 (final):** `yarn check` + `yarn build` + `yarn preview` full smoke (library → guide → widgets sheet → cleanup → settings export → review lens); test count = baseline + new guard/unit tests. **PR-3 boundary.**
 
-**Acceptance criteria:**
-- [ ] Crystal shows 9 widget cards instead of 318 (slots 0,1,6,7 singletons; 2×78, 3×73, 4×129, 5×17, 8×17)
-- [ ] Flagged members visible inside their group card with source-linked rows
-**Verification:** new `slotGroups.test.ts`; `reviewLens.test.tsx` asserts two same-slot widgets → one card; `yarn check`.
-**Dependencies:** T2, T4. **Scope:** M
+## PR strategy
 
-#### Task 5b: Group verdict fan-out + group spot-check
-**Description:** One verdict click writes N member verdicts; spot-check samples across the group.
+Three PRs at checkpoint boundaries — homogeneous diffs over small ones for solo review:
+1. **PR-1** `chore/colocate-tests` — PRD amendment (commit 1 = the §20.1 sign-off gate) + test colocation. No production code.
+2. **PR-2** `chore/bulletproof-restructure` — untangle + moves + boundary guard (guard lands with the structure so main is never unenforced). Split at Checkpoint 2 if too big.
+3. **PR-3** `chore/simplification-pass` — logic diffs (idb, widgetProps, widgetItems, slotMutations), each verified by unmodified existing tests.
 
-Files:
-- `app/src/review/useLayerVerdicts.ts`: add `recordAll(layerIds, status, note?)` / `clearAll(layerIds)` — one date, N `putLayerVerdict` calls, single state update. `reviewStore.ts` unchanged.
-- `app/src/review/spotCheck.ts`: `groupUnflaggedRows(layers, index)` = union of members' unflagged pools; existing `sampleRows` unchanged. Verdicts route to the owning layer: map itemId prefix `<slug>:<seg>:` → `widget-<seg>` (same convention as `spotCheck.ts:24`); `SlotGroupCard` records under the owning layerId. Panel header: "sampled across N member layers".
-- `SlotGroupCard.tsx`: wire `VerdictControls` to `recordAll`/`clearAll`; rejection note placeholder tells Pierre to name the failing members (widget-pass re-run reads notes per layer).
-- `buildApprovals.ts`: **no change** — each member id resolves its own (identical) verdict from the map.
+## Risks (top ones)
 
-**Acceptance criteria:**
-- [ ] Group approve → every member has an identical draft verdict (via `readGuideVerdicts`); export contains all members approved with same date/note
-- [ ] Group reject requires a note; note appears on every member record; export still schema-valid
-- [ ] Spot-check verdicts land on the owning member's `layerRecord.spotChecks`
-**Verification:** `approveFlow.test.tsx`, `spotCheckFlow.test.tsx`/`spotCheck.test.ts`, `buildApprovals.test.ts` (add partial-roster export case); `yarn check`.
-**Dependencies:** T5a. **Scope:** M
+| Risk | Mitigation |
+|------|-----------|
+| Vitest silently drops moved tests | No custom include exists (defaults cover src+scripts); baseline count asserted at every checkpoint |
+| Biome format churn poisons rename detection | Move-only commits byte-identical; format only in edit commits |
+| fetchJson drifts error messages/404 semantics | Strings passed verbatim per call site; loader tests must pass unmodified |
+| Tree-walking guard tests (styleGuards etc.) newly match colocated tests | T1.2 re-checks predicates after colocation |
+| scripts/ break if schema moves | schema/ frozen in place; `yarn validate-guides` in every checkpoint |
+| Entry breaks (`index.html` → `/src/main.tsx`) | main.tsx/index.css stay at src root; `yarn build` at Checkpoints 2–5 |
+| Simplifications drift labels/pointer semantics | Phase 5 rule: no existing-test edits allowed, additions only |
+| Content contamination | No task touches `guides/**`, `library.json`, `approvals.json`; RA key stays in localStorage |
 
-### Checkpoint C
-- [ ] Crystal walk-through: 9 slot cards; group-approve slot 5 (17 members) → 17 identical verdicts; export diffs cleanly against committed approvals.json (modulo the dropped `data` orphan — expected).
+## Verification (end-to-end)
 
-### Phase 4: Stage sections + contract
-
-#### Task 6: Stage sections, waiting states, export copy, target-approved badge
-**Description:** Organize the lens into 3 fixed stage sections and message the gate workflow.
-
-Files:
-- `app/src/review/stages.ts` (new): `ReviewStage = "spine"|"widgets"|"ra-mapping"`, `STAGE_ORDER`, `stageOf(kind)`, `stageStates(roster, effectiveStatus)` → empty | in-review | approved | rejected per stage.
-- `ReviewScreen.tsx`: three sections in order, header badges; empty stage → waiting placeholder naming the unlock ("Approve the spine, export approvals.json, commit, then run `guide-pass-widgets`" / same for `guide-pass-ra-mapping`). Existing later-stage cards are never UI-blocked. Export button helper copy: stage fully approved → "…export and commit to unlock the next stage"; otherwise name the incomplete stage.
-- `flaggedRows.ts` / `FlaggedRowView`: ra-mapping flagged row whose `targetItemId` belongs to an approved layer gets a "target already approved" badge — Pierre judges only the mapping, not the row content (the flag-dedupe payoff).
-
-**Acceptance criteria:**
-- [ ] Spine-only fixture: widgets + ra-mapping sections show waiting placeholders; spine section reviewable
-- [ ] Fully-populated guide renders all three sections with correct status badges
-- [ ] Flagged ra-mapping row targeting an approved item shows the badge
-**Verification:** new `stages.test.ts`; `reviewLens.test.tsx` additions; `yarn check`.
-**Dependencies:** T5. **Scope:** S/M
-
-#### Task 7: Compiler contract + skill gates (docs only)
-**Description:** Make the pipeline actually wait.
-
-Files:
-- `COMPILER_PASS_CONTRACT.md`: §1 pipeline diagram gains `[review gate]` markers after spine / widget fill / ra-mapping. §2 new Rule 9 (every reviewable pass upserts its `layers/manifest.json` entry; sources/extract-data/qa never appear) and Rule 10 (before running, a pass verifies the previous stage in `approvals.json` read-only: widgets need spine approved + hash-current; ra-mapping needs that + every `widget-*` manifest entry approved + hash-current; qa needs everything; missing/rejected/draft/stale → stop, hand back to Pierre; passes never write approvals.json). §3 table: add `manifest.json` row, exempt from "anything else is a violation". §6: re-runs refresh the manifest sha256.
-- `.claude/skills/guide-pass-spine/SKILL.md`: finish step upserts manifest entry (create file on first run); no entry gate.
-- `.claude/skills/guide-pass-widgets/SKILL.md`: new "0. Gate — spine approved" before "1. Pick the slot"; finish upserts entry incl. `widget` meta.
-- `.claude/skills/guide-pass-ra-mapping/SKILL.md`: gate (spine + all widgets approved, hash-current); manifest upsert; flag-hygiene note: flags state *mapping* doubt, never re-litigate approved target rows.
-- `.claude/skills/guide-pass-qa/SKILL.md`: gate (all manifest entries approved + hash-current); note validate-guides now checks manifest; QA adds no entry.
-- `guide-pass-sources` / `guide-pass-extract-data` SKILL.md: one line each — never in the manifest, no gate.
-
-**Acceptance criteria:**
-- [ ] Contract and all 6 skills consistent with each other and with the manifest schema field names
-- [ ] Gates specify exact check (record status + `contentHash` vs `sha256sum` of current bytes) and the stop message
-**Verification:** doc review; `yarn check` (unchanged code). **Dependencies:** T1 (parallel with Phases 2-3). **Scope:** S
-
-### Checkpoint: Complete
-- [ ] `yarn check` green from `app/`
-- [ ] Manual walk of `/review/pokemon-crystal`: stage sections, 9 slot cards, group approve, export, diff vs committed approvals.json
-- [ ] Spine-stage fixture: reviewable, not playable, correct waiting placeholders
-- [ ] PR per workflow (branch `feat/review-lens-stage-gating` or similar); flag the dropped `data` orphan record in the PR description
-
-## Risks
-
-| Risk | Impact | Mitigation |
-|---|---|---|
-| Partial approvals makes guide playable early | High | T3 fixes + regression test (do it before any per-stage export is possible) |
-| Group note fans out verbatim to up to 129 layers; re-runs read notes per layer | Med | Card copy instructs naming failing members; revisit per-member reject if it bites |
-| Mid-pipeline fetch volume (~320 reports + ~320 artifacts once) | Low | Accept for local editor tool; lazy-load later only if needed |
-| Post-approval artifact drift blocks next stage via hash gate | Low (by design) | Fix path is re-run + re-review, documented in contract §6 |
-| ra-mapping flag noise persists despite staging | Low | Target-approved badge (T6); only then consider suppression (would break contract §4 parity) |
-
-## Notes for implementation
-- On approval, first copy this plan to `tasks/plan.md` and the task list to `tasks/todo.md` (per the /plan command), then start T1 on a `feat/` branch.
-- Never touch `guides/*/approvals.json` by hand at any point (PRD §23.4) — including the `data` orphan.
-- Schema changes are limited to the new `manifest.ts` (approved by Pierre 2026-07-04); `approvals.ts` is untouched.
+- Every task: `yarn check` from `app/` (lint + typecheck + tests + validate-guides).
+- Checkpoints 2/3/5: `yarn build`; 3/5: `yarn preview` manual smoke on the Crystal guide (library loads, guide opens, widgets sheet, progress persists across reload, cleanup screen, settings export, review lens reachable in editor mode).
+- Phase 4: mutation demo — inject a feature→feature import, watch the guard fail, revert.
+- Baseline discipline: 87 test files / N tests recorded in Phase 0, re-asserted at every checkpoint.
