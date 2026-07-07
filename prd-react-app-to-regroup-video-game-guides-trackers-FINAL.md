@@ -683,20 +683,33 @@ Versions pinned at major level; exact minors lock in the Yarn lockfile at implem
 The app lives in this existing repo (the repo is the content store, §10.2), beside the legacy game folders.
 
 ### 20.1 Directory Tree
+
+*Amended 2026-07-07: `app/src/` reorganized to the bulletproof-react layout; tests are
+colocated in `src/` next to their subjects (test infra in `src/testing/`, script tests
+in `scripts/`); module boundaries are enforced by a Vitest guard test
+(`src/testing/guards/importBoundaries.test.ts`): **shared (`components`, `lib`, `types`,
+`schema`) → `features` → `app`** — features never import other features, shared never
+imports features or app, `src/app/` is imported only by `main.tsx`, and `schema/`
+imports nothing outside itself.*
+
 ```
 Guides/                          # this repo
 ├── app/                         # the React PWA (all §19 tooling scoped here)
-│   ├── src/
-│   │   ├── shell/               # app shell: library screen, routing, postures, theme
-│   │   ├── primitives/          # exactly 7 folders, one per primitive renderer
-│   │   ├── spine/               # spine rendering, current-step pointer, Now screen
-│   │   ├── progress/            # IndexedDB store, done/skip semantics, export/import
-│   │   ├── sync/                # the isolated RA client module (§9.1) + receipt UI
-│   │   ├── review/              # review lens (editor mode only)
-│   │   └── schema/              # Zod schemas — THE schema source of truth
-│   ├── scripts/                 # validate-guides CLI (used by CI), print-lens generator
-│   ├── public/
-│   └── tests/                   # fixtures incl. the tiny fictional guide (§12.3)
+│   ├── src/                     # *.test.ts(x) colocated beside their subjects
+│   │   ├── main.tsx             # entry — stays at src root (index.html references it)
+│   │   ├── app/                 # app layer: router + route screens (routes/)
+│   │   ├── features/
+│   │   │   ├── spine/           # spine rendering, current-step pointer, Now screen, widget chrome
+│   │   │   ├── progress/        # IndexedDB store, done/skip semantics, export/import
+│   │   │   ├── review/          # review lens (editor mode only)
+│   │   │   └── sync/            # the isolated RA client module (§9.1) + receipt UI
+│   │   ├── components/          # shared UI: ui/ (shadcn) + primitives/ (exactly 7 renderers)
+│   │   ├── lib/                 # shared helpers: content loaders, pure guide helpers, idb
+│   │   ├── types/               # shared view types (e.g. ProgressSlice)
+│   │   ├── schema/              # Zod schemas — THE schema source of truth (path frozen)
+│   │   └── testing/             # test infra: fixtures incl. the tiny fictional guide (§12.3), guard tests
+│   ├── scripts/                 # validate-guides CLI (used by CI), print-lens generator (+ colocated tests)
+│   └── public/
 ├── guides/                      # compiled guide data — content truth (§10.2)
 │   └── <game-slug>/
 │       ├── guide.json           # spine + widget instances
