@@ -59,6 +59,11 @@ function serveRepoContent(): Plugin {
 }
 
 export default defineConfig({
+  // Set only by the Pages deploy workflow (e.g. "/TOTODILE/") — the app's
+  // routes (hash history), content fetches, and precache entries are all
+  // relative, so base is the one build-time knob a subpath host needs.
+  // Never set it for dev/preview: serveRepoContent serves content at "/".
+  base: process.env.TOTODILE_BASE ?? "/",
   // `@`→ src; shared by vite dev, build, and vitest (F1).
   resolve: {
     alias: {

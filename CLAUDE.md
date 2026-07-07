@@ -29,6 +29,12 @@ remaining `library.json` guides through the pass pipeline.
   accounts, gamification, reminders, telemetry, third-party use) is final.
 - Stable entity IDs are never regenerated across recompiles (§6.8).
 - Ask before: adding dependencies, any schema change, touching the §14.2 deferred list.
+- **Deployed origin is shared.** The app lives at `gravill0n.github.io/TOTODILE/`;
+  every other GitHub Pages project on that account shares the origin, so its
+  localStorage/IndexedDB (including the RA key at `totodile.ra`) is readable by
+  any sibling project's JS. Never deploy untrusted or third-party code to another
+  Pages project on this account; if that ever changes, move TOTODILE to its own
+  origin first.
 
 ## Workflow
 

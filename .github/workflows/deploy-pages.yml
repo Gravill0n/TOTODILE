@@ -1,0 +1,79 @@
+# Deploy TOTODILE to GitHub Pages (PRD §21.3: deploy = copy app/dist/ +
+# guides/ + library.json to a static host; Pages wiring decided here).
+# Gate first (yarn check = what CI runs, §21.4), then build with the
+# project-site base path and publish the assembled site.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One deploy at a time; a newer push waits rather than cancelling a deploy
+# already in flight (an interrupted deploy-pages run can leave Pages stale).
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      # Yarn 4 is pinned via package.json "packageManager"; corepack must be
+      # enabled before setup-node so its yarn cache probe hits Yarn 4, not 1.x.
+      - run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+          cache-dependency-path: app/yarn.lock
+
+      - run: yarn install --immutable
+
+      - name: Gate — lint + typecheck + tests + guide validation
+        run: yarn check
+
+      - name: Build (served under /TOTODILE/ on Pages)
+        run: yarn build
+        env:
+          TOTODILE_BASE: /TOTODILE/
+
+      - name: Sanity — built assets carry the /TOTODILE/ base
+        run: grep -q 'src="/TOTODILE/assets/' dist/index.html
+
+      - name: Assemble site — dist + guides/ + library.json (§21.3)
+        working-directory: ${{ github.workspace }}
+        run: |
+          mkdir site
+          cp -r app/dist/. site/
+          cp -r guides site/guides
+          cp library.json site/
+          touch site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
