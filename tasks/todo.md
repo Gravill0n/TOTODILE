@@ -64,13 +64,13 @@ on PR #15.
 
 Rule: no existing-test edits in this phase — additions only.
 
-- [ ] **T5.1 — `lib/idb.ts` lazy-DB factory; adopt in progressStore + reviewStore** (S)
-- [ ] **T5.2 — Shared `WidgetProps<W>` for primitives** (S) — types only, zero JSX change
-- [ ] **T5.3 — `lib/widgetItems.ts` shared binary-item enumerator for flaggedRows + cleanupTasks** (M)
+- [x] **T5.1 — `lib/idb.ts` lazy-DB factory; adopt in progressStore + reviewStore** (S)
+- [x] **T5.2 — Shared `WidgetProps<W>` for primitives** (S) — types only, zero JSX change
+- [x] **T5.3 — `lib/widgetItems.ts` shared binary-item enumerator for flaggedRows + cleanupTasks** (M)
       — WidgetRenderer switch intentionally untouched (closed-set dispatcher)
-- [ ] **T5.4 — Extract pure `slotMutations.ts` from `useGuideProgress`** (M) — hook ≤ ~120 lines
+- [x] **T5.4 — Extract pure `slotMutations.ts` from `useGuideProgress`** (M) — hook ≤ ~120 lines
 
 ### Checkpoint 5: Complete — PR-3 boundary
-- [ ] `yarn check` + `yarn build` green; test count = baseline + new guard/unit tests
-- [ ] `yarn preview` full smoke: library → guide → widgets sheet → cleanup → settings export → review lens (editor mode)
+- [x] `yarn check` + `yarn build` green; 565 tests = baseline 544 + 6 boundary rules + 15 new unit tests
+- [x] `yarn preview` smoke: index + library.json + Crystal guide.json served (headless); full UI walk is Pierre's manual step
 - [ ] All three PRs merged; PRD §20.1 matches `find src -maxdepth 2 -type d`
