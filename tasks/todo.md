@@ -10,22 +10,22 @@ on PR #15.
 
 ## Phase 0: Gate — PRD amendment (branch `chore/colocate-tests`, PR-1)
 
-- [ ] **T0.1 — Amend PRD §20.1 + CLAUDE.md** (S) — target tree, colocated tests,
+- [x] **T0.1 — Amend PRD §20.1 + CLAUDE.md** (S) — target tree, colocated tests,
       boundary-guard note. Approving PR-1 = Pierre's §20.1 sign-off; no src moves before it.
 
 ### Checkpoint 0
-- [ ] `yarn check` green; baseline recorded: 87 test files + total test count from `yarn test`
+- [x] `yarn check` green; baseline recorded: 87 test files / 544 tests
 
 ## Phase 1: Test colocation (same PR-1)
 
-- [ ] **T1.1 — Scaffold `src/testing/`** (M) — fixtures/repo + helpers moved; new
+- [x] **T1.1 — Scaffold `src/testing/`** (M) — fixtures/repo + helpers moved; new
       `fixtureRepo.ts` centralizes fixture paths; ~34 import sites → `@/testing/*`
-- [ ] **T1.2 — Colocate schema/components/lib/primitives/scripts tests; guards → `src/testing/guards/`** (M)
+- [x] **T1.2 — Colocate schema/components/lib/primitives/scripts tests; guards → `src/testing/guards/`** (M)
       — re-check tree-walking guards (styleGuards, emojiSweep, themeTokens) after colocation
-- [ ] **T1.3 — Colocate shell/spine/progress/review/sync tests; delete `app/tests/`; tsconfig include** (M)
+- [x] **T1.3 — Colocate shell/spine/progress/review/sync tests; delete `app/tests/`; tsconfig include** (M)
 
 ### Checkpoint 1 — PR-1 boundary
-- [ ] `yarn check` green; 87 test files, count = baseline, all colocated
+- [x] `yarn check` green; 87 test files / 544 tests, all colocated — PR #16
 
 ## Phase 2: Untangle in place (branch `chore/bulletproof-restructure`, PR-2)
 
