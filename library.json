@@ -25,8 +25,9 @@
       "title": "Miracle Mask — Any% spoiler-free Guide",
       "game": "Professor Layton and the Miracle Mask",
       "platform": "Nintendo 3DS",
+      "deckId": "deck-puzzle-adventure",
       "language": "en",
-      "status": "planned"
+      "status": "in-compilation"
     },
     {
       "id": "ml-pit",

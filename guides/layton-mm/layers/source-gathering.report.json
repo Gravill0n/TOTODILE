@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "source-gathering",
+  "layer": "source-gathering",
+  "generatedAt": "2026-07-07T18:35:00Z",
+  "inputs": [],
+  "report": {
+    "rowCount": 3,
+    "anomalies": [
+      "sources: no dedicated map source — no fetchable Monte d'Or map found (layton.fandom.com HTTP 402, layton.neoseeker.com and gamefaqs.gamespot.com HTTP 403 from the compile machine); navigation relies on the route PDF's directional cues plus src-pl5-walkthrough per-location screenshots. Gap accepted by Pierre 2026-07-07."
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Bootstrap run: slug layton-mm kept from the existing planned library entry (Pierre 2026-07-07); new deck deck-puzzle-adventure (counter / dataTable / prepCard), Pierre's pick from proposed compositions.",
+    "No ra-set source by design: RetroAchievements does not support Nintendo 3DS (checked 2026-07-07); library entry carries no raGameId and the ra-mapping pass will be skipped.",
+    "Guide premise (Pierre 2026-07-07): Any% spoiler-free story guide. Hard constraint for downstream passes: NO puzzle solutions visible in the spine; the Chapter Puzzles table carries a pointer to the src-pl5-walkthrough puzzle page, never the answer inline.",
+    "src-any-route retrievedAt is the file's retrieval date by Pierre (2026-06-05); catalogued into the manifest 2026-07-07.",
+    "Local snapshots in layton-mm/sources/ (gitignored): the route PDF and the Nintendo e-manual. src-pl5-walkthrough is fetched live (verified reachable 2026-07-07); snapshot pages at extract time as needed."
+  ]
+}
