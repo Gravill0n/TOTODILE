@@ -6,7 +6,7 @@ import { describe, expect, it } from "vitest";
 // palette, and keeps dark as a media query (no `.dark` class). This guards the
 // token contract (§9.1/§22.1) and the dark model (§5.4).
 const css = readFileSync(
-  fileURLToPath(new URL("../../src/index.css", import.meta.url)),
+  fileURLToPath(new URL("../../../src/index.css", import.meta.url)),
   "utf8",
 );
 // Comments may legitimately mention `.dark` while explaining the media-query

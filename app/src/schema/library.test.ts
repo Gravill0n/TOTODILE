@@ -1,6 +1,6 @@
 import { describe, it } from "vitest";
+import { libraryManifest } from "@/schema";
 import { expectParses, expectRejects, validLibrary } from "@/testing/helpers";
-import { libraryManifest } from "../../src/schema";
 
 describe("libraryManifest", () => {
   it("parses a valid library", () => {

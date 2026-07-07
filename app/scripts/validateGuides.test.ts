@@ -15,8 +15,8 @@ import {
   validSpineLayer,
   validWidgetLayer,
 } from "@/testing/helpers";
-import { validateGuides } from "../../scripts/validateGuidesCore.ts";
-import { SCHEMA_VERSION } from "../../src/schema";
+import { SCHEMA_VERSION } from "../src/schema";
+import { validateGuides } from "./validateGuidesCore.ts";
 
 const roots: string[] = [];
 

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { widget, widgetItemIds } from "@/schema";
 import {
   expectParses,
   expectRejects,
@@ -10,7 +11,6 @@ import {
   validMatrix,
   validPrepCard,
 } from "@/testing/helpers";
-import { widget, widgetItemIds } from "../../src/schema";
 
 describe("widget (discriminated union)", () => {
   it("rejects an unknown primitive type — the 7 are a closed set (§14.3)", () => {

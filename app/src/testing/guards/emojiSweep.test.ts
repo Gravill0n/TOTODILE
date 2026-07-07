@@ -20,8 +20,11 @@ function walk(dir: string): string[] {
 }
 
 describe("emoji sweep (R8)", () => {
-  // Source only — guide content/data (guides/*, fixtures) is exempt (§0.2).
-  const files = walk("src");
+  // Source only — guide content/data (guides/*, fixtures) is exempt (§0.2),
+  // as are colocated tests and src/testing/ (production source only).
+  const files = walk("src").filter(
+    (f) => !/\.test\.tsx?$/.test(f) && !f.includes("src/testing/"),
+  );
 
   it("has no emoji affordances left in src", () => {
     const offenders = files.filter((f) => EMOJI.test(readFileSync(f, "utf8")));

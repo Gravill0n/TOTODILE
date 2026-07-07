@@ -1,11 +1,11 @@
 import { describe, it } from "vitest";
+import { approvalsFile, layerRecord } from "@/schema";
 import {
   expectParses,
   expectRejects,
   validApprovals,
   validLayer,
 } from "@/testing/helpers";
-import { approvalsFile, layerRecord } from "../../src/schema";
 
 describe("layerRecord", () => {
   it("parses a draft layer", () => {

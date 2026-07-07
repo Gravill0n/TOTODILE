@@ -1,11 +1,11 @@
 import { describe, it } from "vitest";
+import { layersManifest } from "@/schema";
 import {
   expectParses,
   expectRejects,
   validManifest,
   validManifestEntry,
 } from "@/testing/helpers";
-import { layersManifest } from "../../src/schema";
 
 describe("layersManifest", () => {
   it("parses a valid manifest (spine + widget + ra-mapping)", () => {

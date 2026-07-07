@@ -20,9 +20,10 @@ function walk(dir: string): string[] {
 
 describe("accent utility retired (F3 closure)", () => {
   it("no source file uses the achievement-accent utility", () => {
-    const offenders = walk("src").filter((f) =>
-      ACCENT_UTILITY.test(readFileSync(f, "utf8")),
-    );
+    // Production source only — colocated tests and src/testing/ are exempt.
+    const offenders = walk("src")
+      .filter((f) => !/\.test\.tsx?$/.test(f) && !f.includes("src/testing/"))
+      .filter((f) => ACCENT_UTILITY.test(readFileSync(f, "utf8")));
     expect(offenders).toEqual([]);
   });
 });

@@ -2,10 +2,10 @@
 import { readFileSync } from "node:fs";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { DataTable } from "../../src/primitives/dataTable/DataTable";
-import { Matrix } from "../../src/primitives/matrix/Matrix";
-import type { ProgressSlice } from "../../src/progress/progressSlice";
-import { dataTableWidget, matrixWidget } from "../../src/schema";
+import { DataTable } from "@/primitives/dataTable/DataTable";
+import { Matrix } from "@/primitives/matrix/Matrix";
+import type { ProgressSlice } from "@/progress/progressSlice";
+import { dataTableWidget, matrixWidget } from "@/schema";
 
 const noProgress: ProgressSlice = { doneIds: new Set(), counterValues: {} };
 const LEGACY_ACCENT =

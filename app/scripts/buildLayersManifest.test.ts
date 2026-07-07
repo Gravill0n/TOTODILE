@@ -16,8 +16,8 @@ import {
   validSpineLayer,
   validWidgetLayer,
 } from "@/testing/helpers";
-import { buildLayersManifest } from "../../scripts/buildLayersManifestCore.ts";
-import { layersManifest } from "../../src/schema";
+import { layersManifest } from "../src/schema";
+import { buildLayersManifest } from "./buildLayersManifestCore.ts";
 
 const roots: string[] = [];
 

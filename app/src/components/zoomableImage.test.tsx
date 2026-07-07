@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import { ZoomableImage } from "../../src/components/ZoomableImage";
+import { ZoomableImage } from "@/components/ZoomableImage";
 
 afterEach(cleanup);
 

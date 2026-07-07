@@ -1,6 +1,6 @@
 import { describe, it } from "vitest";
+import { genreDeck } from "@/schema";
 import { expectParses, expectRejects, validDeck } from "@/testing/helpers";
-import { genreDeck } from "../../src/schema";
 
 describe("genreDeck", () => {
   it("parses a valid deck", () => {

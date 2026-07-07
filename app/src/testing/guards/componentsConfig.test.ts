@@ -7,7 +7,7 @@ import { describe, expect, it } from "vitest";
 // aliases F1 wired.
 const config = JSON.parse(
   readFileSync(
-    fileURLToPath(new URL("../../components.json", import.meta.url)),
+    fileURLToPath(new URL("../../../components.json", import.meta.url)),
     "utf8",
   ),
 );

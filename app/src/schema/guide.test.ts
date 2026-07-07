@@ -1,4 +1,5 @@
 import { describe, it } from "vitest";
+import { guideFile } from "@/schema";
 import {
   expectParses,
   expectRejects,
@@ -8,7 +9,6 @@ import {
   validGuide,
   validLocation,
 } from "@/testing/helpers";
-import { guideFile } from "../../src/schema";
 
 describe("guideFile", () => {
   it("parses a guide exercising all 7 primitives", () => {

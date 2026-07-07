@@ -6,7 +6,7 @@ import { describe, expect, it } from "vitest";
 // set under prefers-color-scheme — a token defined in only one mode would
 // silently fall back to the other palette's value. Guard the parity.
 const css = readFileSync(
-  join(import.meta.dirname, "../../src/index.css"),
+  join(import.meta.dirname, "../../../src/index.css"),
   "utf8",
 );
 

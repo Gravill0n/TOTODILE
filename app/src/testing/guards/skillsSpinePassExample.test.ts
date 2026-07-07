@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
-import { spineLayer } from "../../src/schema";
+import { spineLayer } from "@/schema";
 
 // The guide-pass-spine skill ships a worked example of the layer it emits. This
 // test is the executable half of Task C1's acceptance ("skill instructions
@@ -12,6 +12,7 @@ import { spineLayer } from "../../src/schema";
 // (two visits sharing one locationId) — not just parse.
 const examplePath = join(
   dirname(fileURLToPath(import.meta.url)),
+  "..",
   "..",
   "..",
   "..",

@@ -23,8 +23,12 @@ function walk(dir: string, pred: (f: string) => boolean): string[] {
 }
 
 const isUi = (f: string) => f.includes("/components/ui/");
-const featureFiles = walk("src", (f) => !isUi(f));
-const allTsx = walk("src", () => true);
+// Production source only — colocated tests and src/testing/ are exempt, as
+// they were before test colocation moved them inside src/.
+const isTest = (f: string) =>
+  /\.test\.tsx?$/.test(f) || f.includes("src/testing/");
+const featureFiles = walk("src", (f) => !isUi(f) && !isTest(f));
+const allTsx = walk("src", (f) => !isTest(f));
 
 describe("style guards (V1)", () => {
   it("no feature component carries a `dark:` variant", () => {

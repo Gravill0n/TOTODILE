@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
-import { dataLayer } from "../../src/schema";
+import { dataLayer } from "@/schema";
 
 // The guide-pass-extract-data skill ships a worked example of the layer it
 // emits. This is the executable half of Task ED3's acceptance ("the example
@@ -11,6 +11,7 @@ import { dataLayer } from "../../src/schema";
 // datasets including the `images` catalog that spine/widgets reuse.
 const examplePath = join(
   dirname(fileURLToPath(import.meta.url)),
+  "..",
   "..",
   "..",
   "..",

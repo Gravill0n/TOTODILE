@@ -15,8 +15,8 @@ import {
   validLibrary,
   validSpineLayer,
 } from "@/testing/helpers";
-import { checkStableIds } from "../../scripts/checkStableIdsCore.ts";
-import { SCHEMA_VERSION } from "../../src/schema";
+import { SCHEMA_VERSION } from "../src/schema";
+import { checkStableIds } from "./checkStableIdsCore.ts";
 
 const roots: string[] = [];
 

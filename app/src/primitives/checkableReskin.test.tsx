@@ -2,15 +2,11 @@
 import { readFileSync } from "node:fs";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { Checklist } from "../../src/primitives/checklist/Checklist";
-import { Counter } from "../../src/primitives/counter/Counter";
-import { PrepCard } from "../../src/primitives/prepCard/PrepCard";
-import type { ProgressSlice } from "../../src/progress/progressSlice";
-import {
-  checklistWidget,
-  counterWidget,
-  prepCardWidget,
-} from "../../src/schema";
+import { Checklist } from "@/primitives/checklist/Checklist";
+import { Counter } from "@/primitives/counter/Counter";
+import { PrepCard } from "@/primitives/prepCard/PrepCard";
+import type { ProgressSlice } from "@/progress/progressSlice";
+import { checklistWidget, counterWidget, prepCardWidget } from "@/schema";
 
 // A feature component must no longer style with the legacy achievement-accent
 // utilities (text/border/bg-accent or the accent-accent checkbox colour) — that

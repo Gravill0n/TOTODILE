@@ -2,12 +2,12 @@
 import { readFileSync } from "node:fs";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { FlagMark } from "../../src/primitives/FlagMark";
-import { Flowchart } from "../../src/primitives/flowchart/Flowchart";
-import { MapPins } from "../../src/primitives/mapPins/MapPins";
-import type { ProgressSlice } from "../../src/progress/progressSlice";
-import { flowchartWidget, mapPinsWidget, type Widget } from "../../src/schema";
-import { WidgetDeck } from "../../src/shell/WidgetDeck";
+import { FlagMark } from "@/primitives/FlagMark";
+import { Flowchart } from "@/primitives/flowchart/Flowchart";
+import { MapPins } from "@/primitives/mapPins/MapPins";
+import type { ProgressSlice } from "@/progress/progressSlice";
+import { flowchartWidget, mapPinsWidget, type Widget } from "@/schema";
+import { WidgetDeck } from "@/shell/WidgetDeck";
 
 const noProgress: ProgressSlice = { doneIds: new Set(), counterValues: {} };
 const LEGACY_ACCENT =

@@ -18,7 +18,7 @@ import {
   validSpineLayer,
   validWidgetLayer,
 } from "@/testing/helpers";
-import { assembleGuide } from "../../scripts/assembleGuideCore.ts";
+import { assembleGuide } from "./assembleGuideCore.ts";
 
 const roots: string[] = [];
 
