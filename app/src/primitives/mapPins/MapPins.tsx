@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
 import { ZoomableImage } from "@/components/ZoomableImage";
-import type { ProgressSlice } from "../../progress/progressSlice";
+import type { ProgressSlice } from "@/types/progressSlice";
 import type { MapPinsWidget } from "../../schema";
 import { FlagMark } from "../FlagMark";
 

@@ -7,10 +7,10 @@ import {
   within,
 } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import type { ProgressSlice } from "@/progress/progressSlice";
 import { guideFile } from "@/schema";
 import { WidgetDialog } from "@/shell/WidgetDialog";
 import { readFixtureJson } from "@/testing/fixtureRepo";
+import type { ProgressSlice } from "@/types/progressSlice";
 
 const guide = guideFile.parse(
   readFixtureJson("guides/fictional-quest/guide.json"),

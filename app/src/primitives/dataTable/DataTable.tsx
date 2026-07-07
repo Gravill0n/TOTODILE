@@ -1,6 +1,6 @@
 import { Checkbox } from "@/components/ui/checkbox";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import type { ProgressSlice } from "../../progress/progressSlice";
+import type { ProgressSlice } from "@/types/progressSlice";
 import type { DataTableWidget } from "../../schema";
 import { FlagMark } from "../FlagMark";
 

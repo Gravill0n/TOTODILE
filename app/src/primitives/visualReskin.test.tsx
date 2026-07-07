@@ -5,9 +5,9 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { FlagMark } from "@/primitives/FlagMark";
 import { Flowchart } from "@/primitives/flowchart/Flowchart";
 import { MapPins } from "@/primitives/mapPins/MapPins";
-import type { ProgressSlice } from "@/progress/progressSlice";
 import { flowchartWidget, mapPinsWidget, type Widget } from "@/schema";
 import { WidgetDeck } from "@/shell/WidgetDeck";
+import type { ProgressSlice } from "@/types/progressSlice";
 
 const noProgress: ProgressSlice = { doneIds: new Set(), counterValues: {} };
 const LEGACY_ACCENT =

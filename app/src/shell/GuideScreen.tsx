@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { chapterDomId, guideAssetUrl, stepDomId } from "@/lib/guide";
-import type { ProgressSlice } from "../progress/progressSlice";
+import type { ProgressSlice } from "@/types/progressSlice";
 import { useGuideProgress } from "../progress/useGuideProgress";
 import type { GuideFile, LibraryEntry } from "../schema";
 import { ChapterSheet } from "../spine/ChapterSheet";

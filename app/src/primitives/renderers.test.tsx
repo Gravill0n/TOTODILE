@@ -2,7 +2,6 @@
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { WidgetRenderer } from "@/primitives/WidgetRenderer";
-import type { ProgressSlice } from "@/progress/progressSlice";
 import {
   flowchartWidget,
   guideFile,
@@ -13,6 +12,7 @@ import {
   type WidgetType,
 } from "@/schema";
 import { readFixtureJson } from "@/testing/fixtureRepo";
+import type { ProgressSlice } from "@/types/progressSlice";
 
 const guide = guideFile.parse(
   readFixtureJson("guides/fictional-quest/guide.json"),

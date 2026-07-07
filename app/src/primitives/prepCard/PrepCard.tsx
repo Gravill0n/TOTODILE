@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { cn } from "@/lib/utils";
-import type { ProgressSlice } from "../../progress/progressSlice";
+import type { ProgressSlice } from "@/types/progressSlice";
 import type { PrepCardWidget } from "../../schema";
 import { FlagMark } from "../FlagMark";
 

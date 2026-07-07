@@ -1,4 +1,4 @@
-import type { ProgressSlice } from "../progress/progressSlice";
+import type { ProgressSlice } from "@/types/progressSlice";
 import type { Widget } from "../schema";
 import { Checklist } from "./checklist/Checklist";
 import { Counter } from "./counter/Counter";

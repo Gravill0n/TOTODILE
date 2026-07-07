@@ -5,8 +5,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import type { ProgressSlice } from "@/types/progressSlice";
 import { WidgetRenderer } from "../primitives/WidgetRenderer";
-import type { ProgressSlice } from "../progress/progressSlice";
 import type { Widget } from "../schema";
 import type { WidgetHandlers } from "./WidgetDeck";
 

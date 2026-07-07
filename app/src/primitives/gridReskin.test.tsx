@@ -4,8 +4,8 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { DataTable } from "@/primitives/dataTable/DataTable";
 import { Matrix } from "@/primitives/matrix/Matrix";
-import type { ProgressSlice } from "@/progress/progressSlice";
 import { dataTableWidget, matrixWidget } from "@/schema";
+import type { ProgressSlice } from "@/types/progressSlice";
 
 const noProgress: ProgressSlice = { doneIds: new Set(), counterValues: {} };
 const LEGACY_ACCENT =
