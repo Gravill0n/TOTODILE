@@ -9,7 +9,7 @@ import type {
   LibraryEntry,
   RaMapping,
   SourceManifest,
-} from "../schema";
+} from "@/schema";
 import { buildApprovalsFile, downloadApprovals } from "./buildApprovals";
 import { buildContentIndex, resolveFlaggedRows } from "./flaggedRows";
 import { LayerReviewCard } from "./LayerReviewCard";

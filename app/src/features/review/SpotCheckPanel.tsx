@@ -1,6 +1,6 @@
 import { Dices } from "lucide-react";
 import { useState } from "react";
-import type { SourceEntry, SpotCheckVerdict } from "../schema";
+import type { SourceEntry, SpotCheckVerdict } from "@/schema";
 import type { FlaggedRow } from "./flaggedRows";
 import { SpotCheckRow } from "./SpotCheckRow";
 import { DEFAULT_SAMPLE, sampleRows } from "./spotCheck";

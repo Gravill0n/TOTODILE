@@ -10,16 +10,19 @@ import {
   redirect,
 } from "@tanstack/react-router";
 import { readAllSlots } from "@/features/progress/progressStore";
+import {
+  loadApprovals,
+  loadPlayability,
+} from "@/features/review/approvalsData";
+import { getEditorMode } from "@/features/review/editorMode";
+import { loadLayerRoster } from "@/features/review/layerRoster";
+import { ReviewScreen } from "@/features/review/ReviewScreen";
+import { loadReviewGuide } from "@/features/review/reviewContent";
+import { loadDeck, loadSources } from "@/features/review/reviewLoaders";
 import { buildLocationIndex } from "@/features/spine/locationIndex";
 import { loadGuide } from "@/lib/content/guide";
 import { loadLibrary } from "@/lib/content/library";
 import { loadRaMapping } from "@/lib/content/raMapping";
-import { loadApprovals, loadPlayability } from "../review/approvalsData";
-import { getEditorMode } from "../review/editorMode";
-import { loadLayerRoster } from "../review/layerRoster";
-import { ReviewScreen } from "../review/ReviewScreen";
-import { loadReviewGuide } from "../review/reviewContent";
-import { loadDeck, loadSources } from "../review/reviewLoaders";
 import { CleanupScreen } from "./CleanupScreen";
 import { GuideScreen } from "./GuideScreen";
 import { LibraryScreen } from "./LibraryScreen";

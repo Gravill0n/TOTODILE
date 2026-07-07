@@ -1,6 +1,6 @@
 import { fetchOptionalJson } from "@/lib/content/fetchJson";
-import type { ApprovalsFile, LayersManifest } from "../schema";
-import { approvalsFile } from "../schema";
+import type { ApprovalsFile, LayersManifest } from "@/schema";
+import { approvalsFile } from "@/schema";
 import { loadLayersManifest, qaReportExists } from "./reviewLoaders";
 
 // A guide with no approvals.json simply has nothing approved yet — that is the

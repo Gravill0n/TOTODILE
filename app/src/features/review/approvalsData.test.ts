@@ -4,7 +4,7 @@ import {
   isPlayable,
   loadApprovals,
   loadPlayability,
-} from "@/review/approvalsData";
+} from "@/features/review/approvalsData";
 import type { LayersManifest } from "@/schema";
 import { approvalsFile, layersManifest, SCHEMA_VERSION } from "@/schema";
 import { validLayer } from "@/testing/helpers";

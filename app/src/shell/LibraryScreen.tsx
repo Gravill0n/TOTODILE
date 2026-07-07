@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Badge } from "@/components/ui/badge";
-import { useEditorMode } from "../review/editorMode";
+import { useEditorMode } from "@/features/review/editorMode";
 import type { LibraryManifest, ProgressSlot } from "../schema";
 import { GuideCard } from "./GuideCard";
 

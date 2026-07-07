@@ -1,5 +1,5 @@
-import type { GuideFile, RaMapping } from "../schema";
-import { widgetItemIds } from "../schema";
+import type { GuideFile, RaMapping } from "@/schema";
+import { widgetItemIds } from "@/schema";
 import {
   type ContentIndex,
   type FlaggedRow,

@@ -1,5 +1,5 @@
 import { type IDBPDatabase, openDB } from "idb";
-import type { SpotCheckVerdict } from "../schema";
+import type { SpotCheckVerdict } from "@/schema";
 
 // Editor-only review working state — spot-check verdicts recorded before a
 // layer is approved (FR-E3). It lives in its own IndexedDB database, separate

@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { buildContentIndex, resolveFlaggedRows } from "@/review/flaggedRows";
-import type { LayerReport } from "@/review/layerRoster";
+import {
+  buildContentIndex,
+  resolveFlaggedRows,
+} from "@/features/review/flaggedRows";
+import type { LayerReport } from "@/features/review/layerRoster";
 import { guideFile, raMapping as raMappingSchema } from "@/schema";
 import { validGuide, validRaMapping } from "@/testing/helpers";
 

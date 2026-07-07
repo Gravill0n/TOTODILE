@@ -4,7 +4,7 @@ import type {
   RaMapping,
   RaMappingEntry,
   Widget,
-} from "../schema";
+} from "@/schema";
 import type { LayerReport } from "./layerRoster";
 
 // A flagged row, normalised across spine steps, widget items, and RA-mapping

@@ -1,6 +1,6 @@
 import { fetchJson } from "@/lib/content/fetchJson";
-import type { ManifestWidgetMeta } from "../schema";
-import { passReportFile } from "../schema";
+import type { ManifestWidgetMeta } from "@/schema";
+import { passReportFile } from "@/schema";
 import { loadLayersManifest } from "./reviewLoaders";
 
 // The content-bearing layers a guide exposes to the review lens, each with the

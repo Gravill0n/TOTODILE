@@ -8,10 +8,10 @@ const LEGACY_ACCENT =
 const source = (p: string) => readFileSync(`src/${p}`, "utf8");
 
 const REVIEW_FILES = [
-  "review/LayerReviewCard.tsx",
-  "review/SpotCheckRow.tsx",
-  "review/RowSourceColumns.tsx",
-  "review/VerdictControls.tsx",
+  "features/review/LayerReviewCard.tsx",
+  "features/review/SpotCheckRow.tsx",
+  "features/review/RowSourceColumns.tsx",
+  "features/review/VerdictControls.tsx",
 ];
 
 describe("review lens reskin (R6)", () => {
@@ -22,10 +22,10 @@ describe("review lens reskin (R6)", () => {
   }
 
   it("the review cards adopt shadcn Badge, with Button + Input in the shared verdict controls", () => {
-    expect(source("review/LayerReviewCard.tsx")).toContain(
+    expect(source("features/review/LayerReviewCard.tsx")).toContain(
       'from "@/components/ui/badge"',
     );
-    const controls = source("review/VerdictControls.tsx");
+    const controls = source("features/review/VerdictControls.tsx");
     expect(controls).toContain('from "@/components/ui/button"');
     expect(controls).toContain('from "@/components/ui/input"');
   });

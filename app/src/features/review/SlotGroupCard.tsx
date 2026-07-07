@@ -7,7 +7,7 @@ import type {
   LayerRecord,
   SourceEntry,
   SpotCheckVerdict,
-} from "../schema";
+} from "@/schema";
 import { FlaggedRowView } from "./FlaggedRowView";
 import type { FlaggedRow } from "./flaggedRows";
 import type { LayerReport } from "./layerRoster";

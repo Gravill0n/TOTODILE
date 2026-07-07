@@ -1,12 +1,15 @@
 import { describe, expect, it } from "vitest";
-import { buildContentIndex, type FlaggedRow } from "@/review/flaggedRows";
-import type { LayerReport } from "@/review/layerRoster";
+import {
+  buildContentIndex,
+  type FlaggedRow,
+} from "@/features/review/flaggedRows";
+import type { LayerReport } from "@/features/review/layerRoster";
 import {
   groupUnflaggedRows,
   layerUnflaggedRows,
   owningWidgetLayerId,
   sampleRows,
-} from "@/review/spotCheck";
+} from "@/features/review/spotCheck";
 import { guideFile, raMapping as raMappingSchema } from "@/schema";
 import { validGuide, validRaMapping } from "@/testing/helpers";
 

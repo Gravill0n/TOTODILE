@@ -9,7 +9,7 @@ import {
   emptySlot,
   writeSlot,
 } from "@/features/progress/progressStore";
-import { setEditorMode } from "@/review/editorMode";
+import { setEditorMode } from "@/features/review/editorMode";
 import { SCHEMA_VERSION } from "@/schema";
 import { createAppRouter } from "@/shell/router";
 import { readFixtureJson } from "@/testing/fixtureRepo";

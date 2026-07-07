@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import type { LayerRecord, SourceEntry, SpotCheckVerdict } from "../schema";
+import type { LayerRecord, SourceEntry, SpotCheckVerdict } from "@/schema";
 import { FlaggedRowView } from "./FlaggedRowView";
 import type { FlaggedRow } from "./flaggedRows";
 import type { LayerReport } from "./layerRoster";

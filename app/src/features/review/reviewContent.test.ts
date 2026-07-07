@@ -1,8 +1,8 @@
 // @vitest-environment jsdom
 import { afterEach, describe, expect, it, vi } from "vitest";
+import type { LayerReport } from "@/features/review/layerRoster";
+import { loadReviewGuide } from "@/features/review/reviewContent";
 import { loadRaMapping } from "@/lib/content/raMapping";
-import type { LayerReport } from "@/review/layerRoster";
-import { loadReviewGuide } from "@/review/reviewContent";
 import {
   validGuide,
   validRaMapping,

@@ -1,6 +1,6 @@
 import { Check, X } from "lucide-react";
 import { useState } from "react";
-import type { SourceEntry, SpotCheckVerdict } from "../schema";
+import type { SourceEntry, SpotCheckVerdict } from "@/schema";
 import type { FlaggedRow } from "./flaggedRows";
 import { RowSourceColumns } from "./RowSourceColumns";
 

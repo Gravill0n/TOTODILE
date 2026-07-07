@@ -1,6 +1,6 @@
 import { fetchJson, fetchOptionalJson } from "@/lib/content/fetchJson";
-import type { GuideFile, Widget } from "../schema";
-import { guideFile, spineLayer, widgetLayer } from "../schema";
+import type { GuideFile, Widget } from "@/schema";
+import { guideFile, spineLayer, widgetLayer } from "@/schema";
 import type { LayerReport } from "./layerRoster";
 
 // The lens resolves row content through the assembled guide, but mid-pipeline

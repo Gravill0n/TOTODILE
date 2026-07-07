@@ -1,4 +1,4 @@
-import type { GenreDeck, GuideFile, WidgetScope } from "../schema";
+import type { GenreDeck, GuideFile, WidgetScope } from "@/schema";
 import type { LayerReport } from "./layerRoster";
 
 // One review card per deck slot (§15 risk 2 — editor fatigue): the ~318

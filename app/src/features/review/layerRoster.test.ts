@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { loadLayerRoster } from "@/review/layerRoster";
+import { loadLayerRoster } from "@/features/review/layerRoster";
 import { SCHEMA_VERSION } from "@/schema";
 
 afterEach(() => vi.unstubAllGlobals());

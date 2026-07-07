@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import type { LayerReport } from "@/review/layerRoster";
-import { buildSlotGroups, scopeLabel } from "@/review/slotGroups";
+import type { LayerReport } from "@/features/review/layerRoster";
+import { buildSlotGroups, scopeLabel } from "@/features/review/slotGroups";
 import type { GuideFile, WidgetScope } from "@/schema";
 import { genreDeck, guideFile } from "@/schema";
 import { validDeck, validGuide } from "@/testing/helpers";

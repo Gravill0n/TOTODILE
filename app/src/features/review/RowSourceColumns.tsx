@@ -1,6 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import type { ReactNode } from "react";
-import type { SourceEntry } from "../schema";
+import type { SourceEntry } from "@/schema";
 import type { FlaggedRow } from "./flaggedRows";
 
 type RowSourceColumnsProps = {

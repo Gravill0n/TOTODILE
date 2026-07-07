@@ -1,5 +1,5 @@
-import type { ApprovalsFile, LayerRecord, SpotCheckVerdict } from "../schema";
-import { approvalsFile, SCHEMA_VERSION } from "../schema";
+import type { ApprovalsFile, LayerRecord, SpotCheckVerdict } from "@/schema";
+import { approvalsFile, SCHEMA_VERSION } from "@/schema";
 import type { LayerReport } from "./layerRoster";
 import type { LayerVerdict } from "./reviewStore";
 

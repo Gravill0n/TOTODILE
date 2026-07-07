@@ -1,4 +1,4 @@
-import type { LayerRecord } from "../schema";
+import type { LayerRecord } from "@/schema";
 import type { LayerReport } from "./layerRoster";
 
 // The three reviewable pipeline stages, in pass order (contract §1): each is

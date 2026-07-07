@@ -5,7 +5,7 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { closeProgressDb } from "@/features/progress/progressStore";
-import { setEditorMode } from "@/review/editorMode";
+import { setEditorMode } from "@/features/review/editorMode";
 import { SCHEMA_VERSION } from "@/schema";
 import { createAppRouter } from "@/shell/router";
 import { readFixtureJson } from "@/testing/fixtureRepo";

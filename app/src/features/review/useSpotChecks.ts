@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import type { SpotCheckVerdict } from "../schema";
+import type { SpotCheckVerdict } from "@/schema";
 import {
   clearSpotCheck,
   putSpotCheck,

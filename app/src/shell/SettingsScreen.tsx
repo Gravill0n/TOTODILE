@@ -5,12 +5,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { importSlots, readAllSlots } from "@/features/progress/progressStore";
+import { setEditorMode, useEditorMode } from "@/features/review/editorMode";
 import {
   clearCredentials,
   getCredentials,
   setCredentials,
 } from "@/features/sync/raCredentials";
-import { setEditorMode, useEditorMode } from "../review/editorMode";
 import { progressExport, SCHEMA_VERSION } from "../schema";
 
 // RA username + API key entry. The key lives only in browser storage (§17.4):

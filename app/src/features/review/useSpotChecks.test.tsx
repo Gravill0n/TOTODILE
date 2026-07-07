@@ -3,8 +3,8 @@ import "fake-indexeddb/auto";
 import { act, renderHook, waitFor } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
-import { closeReviewDb, putSpotCheck } from "@/review/reviewStore";
-import { useSpotChecks } from "@/review/useSpotChecks";
+import { closeReviewDb, putSpotCheck } from "@/features/review/reviewStore";
+import { useSpotChecks } from "@/features/review/useSpotChecks";
 
 afterEach(async () => {
   await closeReviewDb();

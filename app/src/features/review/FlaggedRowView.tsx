@@ -1,6 +1,6 @@
 import { TriangleAlert } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import type { SourceEntry } from "../schema";
+import type { SourceEntry } from "@/schema";
 import type { FlaggedRow } from "./flaggedRows";
 import { RowSourceColumns } from "./RowSourceColumns";
 
