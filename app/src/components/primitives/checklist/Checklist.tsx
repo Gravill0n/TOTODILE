@@ -1,7 +1,7 @@
 import { Checkbox } from "@/components/ui/checkbox";
 import { cn } from "@/lib/utils";
+import type { ChecklistWidget } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
-import type { ChecklistWidget } from "../../schema";
 import { FlagMark } from "../FlagMark";
 
 type ChecklistProps = {

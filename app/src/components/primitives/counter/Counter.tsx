@@ -1,8 +1,8 @@
 import { Check, Minus, Plus, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { type CounterWidget, counterTarget } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
-import { type CounterWidget, counterTarget } from "../../schema";
 
 type CounterProps = {
   widget: CounterWidget;

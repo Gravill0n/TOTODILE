@@ -1,5 +1,5 @@
+import type { Widget } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
-import type { Widget } from "../schema";
 import { Checklist } from "./checklist/Checklist";
 import { Counter } from "./counter/Counter";
 import { DataTable } from "./dataTable/DataTable";

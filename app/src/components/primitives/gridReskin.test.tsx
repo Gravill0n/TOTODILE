@@ -2,8 +2,8 @@
 import { readFileSync } from "node:fs";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { DataTable } from "@/primitives/dataTable/DataTable";
-import { Matrix } from "@/primitives/matrix/Matrix";
+import { DataTable } from "@/components/primitives/dataTable/DataTable";
+import { Matrix } from "@/components/primitives/matrix/Matrix";
 import { dataTableWidget, matrixWidget } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
 
@@ -64,7 +64,9 @@ describe("Matrix reskin (R4b)", () => {
   });
 
   it("uses primary, not the legacy accent utility", () => {
-    expect(source("primitives/matrix/Matrix.tsx")).not.toMatch(LEGACY_ACCENT);
+    expect(source("components/primitives/matrix/Matrix.tsx")).not.toMatch(
+      LEGACY_ACCENT,
+    );
   });
 });
 
@@ -78,7 +80,7 @@ describe("DataTable reskin (R4b)", () => {
     expect(
       container.querySelectorAll('[data-slot="checkbox"]').length,
     ).toBeGreaterThan(0);
-    expect(source("primitives/dataTable/DataTable.tsx")).not.toMatch(
+    expect(source("components/primitives/dataTable/DataTable.tsx")).not.toMatch(
       LEGACY_ACCENT,
     );
   });

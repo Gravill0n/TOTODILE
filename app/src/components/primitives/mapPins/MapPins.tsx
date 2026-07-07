@@ -1,7 +1,7 @@
 import { Check } from "lucide-react";
 import { ZoomableImage } from "@/components/ZoomableImage";
+import type { MapPinsWidget } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
-import type { MapPinsWidget } from "../../schema";
 import { FlagMark } from "../FlagMark";
 
 type MapPinsProps = {

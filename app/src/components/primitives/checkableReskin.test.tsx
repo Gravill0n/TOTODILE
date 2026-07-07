@@ -2,9 +2,9 @@
 import { readFileSync } from "node:fs";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { Checklist } from "@/primitives/checklist/Checklist";
-import { Counter } from "@/primitives/counter/Counter";
-import { PrepCard } from "@/primitives/prepCard/PrepCard";
+import { Checklist } from "@/components/primitives/checklist/Checklist";
+import { Counter } from "@/components/primitives/counter/Counter";
+import { PrepCard } from "@/components/primitives/prepCard/PrepCard";
 import { checklistWidget, counterWidget, prepCardWidget } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
 
@@ -101,7 +101,9 @@ describe("Counter reskin (R4a)", () => {
       />,
     );
     expect(container.innerHTML).toContain("primary");
-    expect(source("primitives/counter/Counter.tsx")).not.toMatch(LEGACY_ACCENT);
+    expect(source("components/primitives/counter/Counter.tsx")).not.toMatch(
+      LEGACY_ACCENT,
+    );
   });
 });
 
@@ -117,7 +119,7 @@ describe("PrepCard reskin (R4a)", () => {
     expect(container.querySelector('[data-slot="checkbox"]')).not.toBeNull();
     expect(container.querySelector('[data-slot="badge"]')).not.toBeNull();
     expect(container.innerHTML).toContain("primary");
-    expect(source("primitives/prepCard/PrepCard.tsx")).not.toMatch(
+    expect(source("components/primitives/prepCard/PrepCard.tsx")).not.toMatch(
       LEGACY_ACCENT,
     );
   });

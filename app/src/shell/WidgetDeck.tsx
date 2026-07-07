@@ -1,6 +1,6 @@
+import { WidgetRenderer } from "@/components/primitives/WidgetRenderer";
 import { Card } from "@/components/ui/card";
 import type { ProgressSlice } from "@/types/progressSlice";
-import { WidgetRenderer } from "../primitives/WidgetRenderer";
 import type { Widget } from "../schema";
 
 export type WidgetHandlers = {

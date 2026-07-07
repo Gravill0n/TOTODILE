@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { Counter } from "@/primitives/counter/Counter";
+import { Counter } from "@/components/primitives/counter/Counter";
 import type { CounterWidget } from "@/schema";
 
 afterEach(cleanup);

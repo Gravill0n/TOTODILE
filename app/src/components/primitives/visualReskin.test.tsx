@@ -2,9 +2,9 @@
 import { readFileSync } from "node:fs";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { FlagMark } from "@/primitives/FlagMark";
-import { Flowchart } from "@/primitives/flowchart/Flowchart";
-import { MapPins } from "@/primitives/mapPins/MapPins";
+import { FlagMark } from "@/components/primitives/FlagMark";
+import { Flowchart } from "@/components/primitives/flowchart/Flowchart";
+import { MapPins } from "@/components/primitives/mapPins/MapPins";
 import { flowchartWidget, mapPinsWidget, type Widget } from "@/schema";
 import { WidgetDeck } from "@/shell/WidgetDeck";
 import type { ProgressSlice } from "@/types/progressSlice";
@@ -70,7 +70,9 @@ describe("MapPins reskin (R4c)", () => {
         resolveAsset={(p) => p}
       />,
     );
-    expect(source("primitives/mapPins/MapPins.tsx")).not.toMatch(LEGACY_ACCENT);
+    expect(source("components/primitives/mapPins/MapPins.tsx")).not.toMatch(
+      LEGACY_ACCENT,
+    );
   });
 });
 
