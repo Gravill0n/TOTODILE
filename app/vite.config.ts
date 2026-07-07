@@ -102,6 +102,10 @@ export default defineConfig({
   ],
   test: {
     environment: "node",
+    coverage: {
+      // Test infra is not product code — keep the report about src proper.
+      exclude: ["src/testing/**", "**/*.test.*"],
+    },
   },
   define: {
     "process.env": {},
