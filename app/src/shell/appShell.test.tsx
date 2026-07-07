@@ -4,16 +4,16 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { readFixtureJson } from "@/testing/fixtureRepo";
-import { validLayer, validLibrary } from "@/testing/helpers";
 import {
   closeProgressDb,
   emptySlot,
   writeSlot,
-} from "../../src/progress/progressStore";
-import { setEditorMode } from "../../src/review/editorMode";
-import { SCHEMA_VERSION } from "../../src/schema";
-import { createAppRouter } from "../../src/shell/router";
+} from "@/progress/progressStore";
+import { setEditorMode } from "@/review/editorMode";
+import { SCHEMA_VERSION } from "@/schema";
+import { createAppRouter } from "@/shell/router";
+import { readFixtureJson } from "@/testing/fixtureRepo";
+import { validLayer, validLibrary } from "@/testing/helpers";
 
 const fixtureGuide = readFixtureJson("guides/fictional-quest/guide.json");
 

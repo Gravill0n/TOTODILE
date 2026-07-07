@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { advancePointer } from "../../src/progress/pointer";
+import { advancePointer } from "@/progress/pointer";
 
 const spine = ["a", "b", "c", "d"];
 

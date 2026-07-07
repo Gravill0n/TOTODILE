@@ -9,7 +9,7 @@ import {
   putSpotCheck,
   readGuideSpotChecks,
   readGuideVerdicts,
-} from "../../src/review/reviewStore";
+} from "@/review/reviewStore";
 
 afterEach(async () => {
   await closeReviewDb();

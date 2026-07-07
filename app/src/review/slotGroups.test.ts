@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
+import type { LayerReport } from "@/review/layerRoster";
+import { buildSlotGroups, scopeLabel } from "@/review/slotGroups";
+import type { GuideFile, WidgetScope } from "@/schema";
+import { genreDeck, guideFile } from "@/schema";
 import { validDeck, validGuide } from "@/testing/helpers";
-import type { LayerReport } from "../../src/review/layerRoster";
-import { buildSlotGroups, scopeLabel } from "../../src/review/slotGroups";
-import type { GuideFile, WidgetScope } from "../../src/schema";
-import { genreDeck, guideFile } from "../../src/schema";
 
 function widgetLayerReport(
   id: string,

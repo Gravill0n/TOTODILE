@@ -1,14 +1,14 @@
 // @vitest-environment jsdom
 import { afterEach, describe, expect, it, vi } from "vitest";
+import type { LayerReport } from "@/review/layerRoster";
+import { loadReviewGuide } from "@/review/reviewContent";
+import { loadRaMapping } from "@/review/reviewLoaders";
 import {
   validGuide,
   validRaMapping,
   validSpineLayer,
   validWidgetLayer,
 } from "@/testing/helpers";
-import type { LayerReport } from "../../src/review/layerRoster";
-import { loadReviewGuide } from "../../src/review/reviewContent";
-import { loadRaMapping } from "../../src/review/reviewLoaders";
 
 afterEach(() => vi.unstubAllGlobals());
 

@@ -1,9 +1,9 @@
 // @vitest-environment jsdom
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import { guideFile, type LibraryEntry } from "../../src/schema";
-import { LocationScreen } from "../../src/shell/LocationScreen";
-import { buildLocationIndex } from "../../src/spine/locationIndex";
+import { guideFile, type LibraryEntry } from "@/schema";
+import { LocationScreen } from "@/shell/LocationScreen";
+import { buildLocationIndex } from "@/spine/locationIndex";
 
 const entry: LibraryEntry = {
   id: "sample-quest",

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { guideFile } from "../../src/schema";
-import { buildLocationIndex } from "../../src/spine/locationIndex";
+import { guideFile } from "@/schema";
+import { buildLocationIndex } from "@/spine/locationIndex";
 
 // A guide where Harbor Town is visited twice (a revisit) with a global, a
 // harbor-scoped and a cave-scoped widget, so the index has to aggregate steps

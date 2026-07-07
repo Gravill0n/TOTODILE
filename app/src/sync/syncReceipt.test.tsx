@@ -2,8 +2,8 @@
 import { readFileSync } from "node:fs";
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import { SyncReceipt } from "../../src/sync/SyncReceipt";
-import type { SyncOutcome } from "../../src/sync/syncGuide";
+import { SyncReceipt } from "@/sync/SyncReceipt";
+import type { SyncOutcome } from "@/sync/syncGuide";
 
 const LEGACY_ACCENT =
   /\b(?:text|border|bg)-accent(?!-foreground)\b|\baccent-accent\b/;

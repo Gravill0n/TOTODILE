@@ -5,7 +5,7 @@ import {
   getEditorMode,
   setEditorMode,
   useEditorMode,
-} from "../../src/review/editorMode";
+} from "@/review/editorMode";
 
 afterEach(() => {
   cleanup();

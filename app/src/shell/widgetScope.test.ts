@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import type { WidgetScope } from "../../src/schema";
-import { guideFile } from "../../src/schema";
-import { widgetContextFor, widgetInScope } from "../../src/shell/widgetScope";
+import type { WidgetScope } from "@/schema";
+import { guideFile } from "@/schema";
+import { widgetContextFor, widgetInScope } from "@/shell/widgetScope";
 
 const global: WidgetScope = { kind: "global" };
 const chapter: WidgetScope = { kind: "chapter", chapterId: "g:c1" };

@@ -4,13 +4,10 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { closeProgressDb, readAllSlots } from "@/progress/progressStore";
+import { createAppRouter } from "@/shell/router";
+import { getCredentials } from "@/sync/raCredentials";
 import { validProgressExport } from "@/testing/helpers";
-import {
-  closeProgressDb,
-  readAllSlots,
-} from "../../src/progress/progressStore";
-import { createAppRouter } from "../../src/shell/router";
-import { getCredentials } from "../../src/sync/raCredentials";
 
 afterEach(async () => {
   cleanup();

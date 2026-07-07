@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import type { LayerReport } from "../../src/review/layerRoster";
+import type { LayerReport } from "@/review/layerRoster";
 import {
   firstIncompleteStage,
   STAGE_ORDER,
   stageOf,
   stageStates,
-} from "../../src/review/stages";
+} from "@/review/stages";
 
 function layer(id: string, kind: LayerReport["kind"]): LayerReport {
   return {

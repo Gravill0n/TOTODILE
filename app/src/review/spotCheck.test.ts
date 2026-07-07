@@ -1,17 +1,14 @@
 import { describe, expect, it } from "vitest";
-import { validGuide, validRaMapping } from "@/testing/helpers";
-import {
-  buildContentIndex,
-  type FlaggedRow,
-} from "../../src/review/flaggedRows";
-import type { LayerReport } from "../../src/review/layerRoster";
+import { buildContentIndex, type FlaggedRow } from "@/review/flaggedRows";
+import type { LayerReport } from "@/review/layerRoster";
 import {
   groupUnflaggedRows,
   layerUnflaggedRows,
   owningWidgetLayerId,
   sampleRows,
-} from "../../src/review/spotCheck";
-import { guideFile, raMapping as raMappingSchema } from "../../src/schema";
+} from "@/review/spotCheck";
+import { guideFile, raMapping as raMappingSchema } from "@/schema";
+import { validGuide, validRaMapping } from "@/testing/helpers";
 
 const guide = guideFile.parse(validGuide());
 const index = buildContentIndex(guide);

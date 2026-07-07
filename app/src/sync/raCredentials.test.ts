@@ -5,7 +5,7 @@ import {
   getCredentials,
   hasCredentials,
   setCredentials,
-} from "../../src/sync/raCredentials";
+} from "@/sync/raCredentials";
 
 afterEach(() => localStorage.clear());
 

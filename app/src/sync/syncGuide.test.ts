@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { raMapping } from "../../src/schema";
-import { type SyncDeps, syncGuide } from "../../src/sync/syncGuide";
+import { raMapping } from "@/schema";
+import { type SyncDeps, syncGuide } from "@/sync/syncGuide";
 
 const credentials = { username: "Pierre", webApiKey: "KEY" };
 

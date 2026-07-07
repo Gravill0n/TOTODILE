@@ -7,8 +7,8 @@ import {
   closeReviewDb,
   putLayerVerdict,
   readGuideVerdicts,
-} from "../../src/review/reviewStore";
-import { useLayerVerdicts } from "../../src/review/useLayerVerdicts";
+} from "@/review/reviewStore";
+import { useLayerVerdicts } from "@/review/useLayerVerdicts";
 
 afterEach(async () => {
   await closeReviewDb();

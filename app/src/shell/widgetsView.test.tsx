@@ -10,10 +10,10 @@ import {
 } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
+import { closeProgressDb } from "@/progress/progressStore";
+import { guideFile, libraryManifest } from "@/schema";
+import { GuideScreen } from "@/shell/GuideScreen";
 import { readFixtureJson } from "@/testing/fixtureRepo";
-import { closeProgressDb } from "../../src/progress/progressStore";
-import { guideFile, libraryManifest } from "../../src/schema";
-import { GuideScreen } from "../../src/shell/GuideScreen";
 
 const guide = guideFile.parse(
   readFixtureJson("guides/fictional-quest/guide.json"),

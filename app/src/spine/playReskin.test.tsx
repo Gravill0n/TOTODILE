@@ -1,9 +1,9 @@
 // @vitest-environment jsdom
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import { step as stepSchema } from "../../src/schema";
-import { MissableBanner } from "../../src/spine/MissableBanner";
-import { StepRow } from "../../src/spine/StepRow";
+import { step as stepSchema } from "@/schema";
+import { MissableBanner } from "@/spine/MissableBanner";
+import { StepRow } from "@/spine/StepRow";
 
 const noop = () => {};
 

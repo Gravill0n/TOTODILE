@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { buildApprovalsFile } from "../../src/review/buildApprovals";
-import type { LayerReport } from "../../src/review/layerRoster";
-import type { LayerVerdict } from "../../src/review/reviewStore";
-import type { SpotCheckVerdict } from "../../src/schema";
+import { buildApprovalsFile } from "@/review/buildApprovals";
+import type { LayerReport } from "@/review/layerRoster";
+import type { LayerVerdict } from "@/review/reviewStore";
+import type { SpotCheckVerdict } from "@/schema";
 
 function layer(
   id: string,

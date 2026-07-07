@@ -1,15 +1,15 @@
 import "fake-indexeddb/auto";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
-import { validProgressSlot } from "@/testing/helpers";
 import {
   closeProgressDb,
   emptySlot,
   importSlots,
   readAllSlots,
   writeSlot,
-} from "../../src/progress/progressStore";
-import { progressExport, SCHEMA_VERSION } from "../../src/schema";
+} from "@/progress/progressStore";
+import { progressExport, SCHEMA_VERSION } from "@/schema";
+import { validProgressSlot } from "@/testing/helpers";
 
 afterEach(async () => {
   await closeProgressDb();

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import type { RaMappingEntry } from "../../src/schema";
-import { computeSync } from "../../src/sync/syncReceipt";
+import type { RaMappingEntry } from "@/schema";
+import { computeSync } from "@/sync/syncReceipt";
 
 function entry(raAchievementId: number, targetItemId: string): RaMappingEntry {
   return {

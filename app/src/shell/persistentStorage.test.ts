@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { requestPersistentStorage } from "../../src/shell/persistentStorage";
+import { requestPersistentStorage } from "@/shell/persistentStorage";
 
 function stubNavigator(value: unknown): void {
   vi.stubGlobal("navigator", value);
