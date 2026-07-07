@@ -1,0 +1,5676 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "spine",
+  "locations": [
+    {
+      "id": "layton-mm:monte-dor",
+      "name": "Monte d'Or"
+    },
+    {
+      "id": "layton-mm:carnival-square",
+      "name": "Carnival Square"
+    },
+    {
+      "id": "layton-mm:carnival-arcade",
+      "name": "Carnival Arcade"
+    },
+    {
+      "id": "layton-mm:gallery-plaza",
+      "name": "Gallery Plaza"
+    },
+    {
+      "id": "layton-mm:knickknack-alley",
+      "name": "Knickknack Alley"
+    },
+    {
+      "id": "layton-mm:oasis-street",
+      "name": "Oasis Street"
+    },
+    {
+      "id": "layton-mm:ledore-mansion-gate",
+      "name": "Ledore Mansion Gate"
+    },
+    {
+      "id": "layton-mm:ledore-mansion-garden",
+      "name": "Ledore Mansion Garden"
+    },
+    {
+      "id": "layton-mm:ledore-parlor",
+      "name": "Ledore Parlor"
+    },
+    {
+      "id": "layton-mm:merchant-district",
+      "name": "Merchant District"
+    },
+    {
+      "id": "layton-mm:madame-lapushkas",
+      "name": "Madame Lapushka's"
+    },
+    {
+      "id": "layton-mm:city-monument",
+      "name": "City Monument"
+    },
+    {
+      "id": "layton-mm:dromedary-plaza",
+      "name": "Dromedary Plaza"
+    },
+    {
+      "id": "layton-mm:dromedary-lobby",
+      "name": "Dromedary Lobby"
+    },
+    {
+      "id": "layton-mm:laytons-room",
+      "name": "Layton's Room"
+    },
+    {
+      "id": "layton-mm:classroom",
+      "name": "Classroom"
+    },
+    {
+      "id": "layton-mm:kingsbrook-academy",
+      "name": "Kingsbrook Academy"
+    },
+    {
+      "id": "layton-mm:academy-gate",
+      "name": "Academy Gate"
+    },
+    {
+      "id": "layton-mm:layton-home",
+      "name": "Layton Home"
+    },
+    {
+      "id": "layton-mm:living-room",
+      "name": "Living Room"
+    },
+    {
+      "id": "layton-mm:pebble-lane",
+      "name": "Pebble Lane"
+    },
+    {
+      "id": "layton-mm:market-street",
+      "name": "Market Street"
+    },
+    {
+      "id": "layton-mm:old-towne",
+      "name": "Old Towne"
+    },
+    {
+      "id": "layton-mm:edge-of-town",
+      "name": "Edge of Town"
+    },
+    {
+      "id": "layton-mm:hershels-room",
+      "name": "Hershel's Room"
+    },
+    {
+      "id": "layton-mm:memory-knoll",
+      "name": "Memory Knoll"
+    },
+    {
+      "id": "layton-mm:ascot-house",
+      "name": "Ascot House"
+    },
+    {
+      "id": "layton-mm:henrys-study",
+      "name": "Henry's Study"
+    },
+    {
+      "id": "layton-mm:city-hall-steps",
+      "name": "City Hall Steps"
+    },
+    {
+      "id": "layton-mm:briefing-room",
+      "name": "Briefing Room"
+    },
+    {
+      "id": "layton-mm:montsarton-gallery",
+      "name": "Montsarton Gallery"
+    },
+    {
+      "id": "layton-mm:big-top",
+      "name": "Big Top"
+    },
+    {
+      "id": "layton-mm:randalls-room",
+      "name": "Randall's Room"
+    },
+    {
+      "id": "layton-mm:winding-road",
+      "name": "Winding Road"
+    },
+    {
+      "id": "layton-mm:norwell",
+      "name": "Norwell"
+    },
+    {
+      "id": "layton-mm:racetrack",
+      "name": "Racetrack"
+    },
+    {
+      "id": "layton-mm:casino",
+      "name": "Casino"
+    },
+    {
+      "id": "layton-mm:pumpkin-park",
+      "name": "Pumpkin Park"
+    },
+    {
+      "id": "layton-mm:akbadain-b1",
+      "name": "Ruins of Akbadain — Level B1"
+    },
+    {
+      "id": "layton-mm:akbadain-b2",
+      "name": "Ruins of Akbadain — Level B2"
+    },
+    {
+      "id": "layton-mm:akbadain-b3",
+      "name": "Ruins of Akbadain — Level B3"
+    },
+    {
+      "id": "layton-mm:akbadain-b4",
+      "name": "Ruins of Akbadain — Level B4"
+    },
+    {
+      "id": "layton-mm:akbadain-b5",
+      "name": "Ruins of Akbadain — Level B5"
+    },
+    {
+      "id": "layton-mm:akbadain-b6",
+      "name": "Ruins of Akbadain — Level B6"
+    },
+    {
+      "id": "layton-mm:akbadain-b7",
+      "name": "Ruins of Akbadain — Level B7"
+    },
+    {
+      "id": "layton-mm:reunion-inn",
+      "name": "Reunion Inn"
+    },
+    {
+      "id": "layton-mm:office",
+      "name": "Office"
+    },
+    {
+      "id": "layton-mm:front-desk",
+      "name": "Front Desk"
+    },
+    {
+      "id": "layton-mm:emerald-suite",
+      "name": "Emerald Suite"
+    },
+    {
+      "id": "layton-mm:conservatory",
+      "name": "Conservatory"
+    },
+    {
+      "id": "layton-mm:grand-hall",
+      "name": "Grand Hall"
+    },
+    {
+      "id": "layton-mm:auditorium",
+      "name": "Auditorium"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "layton-mm:c0",
+      "title": "Prologue - The Dark Parade",
+      "order": 0,
+      "visits": [
+        {
+          "id": "layton-mm:v-monte-dor-1",
+          "locationId": "layton-mm:monte-dor",
+          "order": 0,
+          "steps": [
+            {
+              "id": "layton-mm:v-monte-dor-1:s1",
+              "order": 0,
+              "keywords": [
+                "Timer Starts on Selecting OK on the Naming Screen",
+                "Watch the cutscene",
+                "New Mystery recorded",
+                "Chat"
+              ],
+              "detail": "Route: Timer Starts on Selecting OK on the Naming Screen; Cutscene; Mystery; Chat.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-1:s2",
+              "order": 1,
+              "keywords": [
+                "Tap on Floating Clown Stumble (Top Right)"
+              ],
+              "detail": "Route: Tap on Floating Clown Stumble (Top Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-1:s3",
+              "order": 2,
+              "keywords": [
+                "Solve 001 Stumble's Balloons"
+              ],
+              "detail": "Puzzle 001 — \"Stumble's Balloons\" (UK: \"Bungle's Balloons\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-1:s4",
+              "order": 3,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat"
+              ],
+              "detail": "Route: Cutscene; Chat; Cutscene.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-1:s5",
+              "order": 4,
+              "keywords": [
+                "Minigame: Follow the Masked Gentleman"
+              ],
+              "detail": "Route: Minigame - Follow the Masked Gentleman.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-1:s6",
+              "order": 5,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat",
+                "New Mystery recorded"
+              ],
+              "detail": "Route: Cutscene; Chat; Mystery.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-1:s7",
+              "order": 6,
+              "keywords": [
+                "Save (Select Right Option)"
+              ],
+              "detail": "Route: Save (Select Right Option).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layton-mm:c1",
+      "title": "Chapter 1 - The Mask of Chaos",
+      "order": 1,
+      "visits": [
+        {
+          "id": "layton-mm:v-carnival-square-1",
+          "locationId": "layton-mm:carnival-square",
+          "order": 0,
+          "steps": [
+            {
+              "id": "layton-mm:v-carnival-square-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "New Mystery recorded",
+                "Tap on Statues"
+              ],
+              "detail": "Route: Chat; Mystery; Chat; Tap on Statues.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-carnival-square-1:s2",
+              "order": 1,
+              "keywords": [
+                "Tap on Aldus",
+                "Zoom (Left of Fountain)",
+                "Chat",
+                "Tap on Wooden Box"
+              ],
+              "detail": "Route: Tap on Aldus; Zoom (Left of Fountain); Chat; Tap on Wooden Box.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-carnival-square-1:s3",
+              "order": 2,
+              "keywords": [
+                "Tap on Zoom Out (Bottom Mid)",
+                "Tap on Tent (Top Mid)",
+                "Tap on Back to Map (Bottom Mid)",
+                "Move to Carnival Arcade (Up)"
+              ],
+              "detail": "Route: Tap on Zoom Out (Bottom Mid); Tap on Tent (Top Mid); Tap on Back to Map (Bottom Mid); Move to Carnival Arcade (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-carnival-arcade-1",
+          "locationId": "layton-mm:carnival-arcade",
+          "order": 1,
+          "steps": [
+            {
+              "id": "layton-mm:v-carnival-arcade-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Clown Float",
+                "Zoom on Clown Float",
+                "Tap on Crying Kid"
+              ],
+              "detail": "Route: Chat; Tap on Clown Float; Zoom on Clown Float; Tap on Crying Kid.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-carnival-arcade-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 002 Where's Mother?"
+              ],
+              "detail": "Puzzle 002 — \"Where's Mother?\" (UK: \"Where's Mum?\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-carnival-arcade-1:s3",
+              "order": 2,
+              "keywords": [
+                "Tap on Zoom Out (Bottom Mid)",
+                "Tap on Back to Map (Bottom Mid)",
+                "Move to Gallery Plaza (Up)"
+              ],
+              "detail": "Route: Tap on Zoom Out (Bottom Mid); Tap on Back to Map (Bottom Mid); Move to Gallery Plaza (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-gallery-plaza-1",
+          "locationId": "layton-mm:gallery-plaza",
+          "order": 2,
+          "steps": [
+            {
+              "id": "layton-mm:v-gallery-plaza-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Policeman",
+                "Move to Knickknack Alley (Up)"
+              ],
+              "detail": "Route: Chat; Tap on Policeman; Move to Knickknack Alley (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-knickknack-alley-1",
+          "locationId": "layton-mm:knickknack-alley",
+          "order": 3,
+          "steps": [
+            {
+              "id": "layton-mm:v-knickknack-alley-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Toy Car"
+              ],
+              "detail": "Route: Chat; Tap on Toy Car.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-knickknack-alley-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 004 Bumper Perspective"
+              ],
+              "detail": "Puzzle 004 — \"Bumper Perspective\" (UK: \"Dodgem Detective\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-knickknack-alley-1:s3",
+              "order": 2,
+              "keywords": [
+                "Tap on Guy (Behind the Booth)"
+              ],
+              "detail": "Route: Tap on Guy (Behind the Booth).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-knickknack-alley-1:s4",
+              "order": 3,
+              "keywords": [
+                "Solve 005 Robot Factory"
+              ],
+              "detail": "Puzzle 005 — \"Robot Factory\" (UK: \"Robot Factory\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-knickknack-alley-1:s5",
+              "order": 4,
+              "keywords": [
+                "Move to Oasis Street (Up)"
+              ],
+              "detail": "Route: Move to Oasis Street (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-oasis-street-1",
+          "locationId": "layton-mm:oasis-street",
+          "order": 4,
+          "steps": [
+            {
+              "id": "layton-mm:v-oasis-street-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat"
+              ],
+              "detail": "Route: Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-oasis-street-1:s2",
+              "order": 1,
+              "keywords": [
+                "Minigame: Pick a Random Cup twice",
+                "Minigame: Pay attention to his finger"
+              ],
+              "detail": "Route: Minigame - Pick a Random Cup twice; Minigame - Pay attention to his finger.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-oasis-street-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move to Ledore Mansion Gate (Up)"
+              ],
+              "detail": "Route: Move to Ledore Mansion Gate (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-ledore-mansion-gate-1",
+          "locationId": "layton-mm:ledore-mansion-gate",
+          "order": 5,
+          "steps": [
+            {
+              "id": "layton-mm:v-ledore-mansion-gate-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move to Ledore Mansion Garden (Top Right)"
+              ],
+              "detail": "Route: Chat; Move to Ledore Mansion Garden (Top Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-ledore-mansion-garden-1",
+          "locationId": "layton-mm:ledore-mansion-garden",
+          "order": 6,
+          "steps": [
+            {
+              "id": "layton-mm:v-ledore-mansion-garden-1:s1",
+              "order": 0,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat",
+                "Move to Ledore Parlor (Top Right)"
+              ],
+              "detail": "Route: Cutscene; Chat; Move to Ledore Parlor (Top Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-ledore-parlor-1",
+          "locationId": "layton-mm:ledore-parlor",
+          "order": 7,
+          "steps": [
+            {
+              "id": "layton-mm:v-ledore-parlor-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "New Mystery recorded",
+                "Move Back (Out of the Ledore Parlor)"
+              ],
+              "detail": "Route: Chat; Mystery; Chat; Move Back (Out of the Ledore Parlor).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-ledore-mansion-garden-2",
+          "locationId": "layton-mm:ledore-mansion-garden",
+          "order": 8,
+          "steps": [
+            {
+              "id": "layton-mm:v-ledore-mansion-garden-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move Back (Out of the Ledore Mansion Garden)"
+              ],
+              "detail": "Route: Chat; Move Back (Out of the Ledore Mansion Garden).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-ledore-mansion-gate-2",
+          "locationId": "layton-mm:ledore-mansion-gate",
+          "order": 9,
+          "steps": [
+            {
+              "id": "layton-mm:v-ledore-mansion-gate-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move Back (Bottom Mid) x2"
+              ],
+              "detail": "Route: Chat; Move Back (Bottom Mid) x2.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-knickknack-alley-2",
+          "locationId": "layton-mm:knickknack-alley",
+          "order": 10,
+          "steps": [
+            {
+              "id": "layton-mm:v-knickknack-alley-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Zoom on Right Edge",
+                "Tap on Aldus"
+              ],
+              "detail": "Route: Chat; Zoom on Right Edge; Chat; Tap on Aldus.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-knickknack-alley-2:s2",
+              "order": 1,
+              "keywords": [
+                "Tap on Metal Box",
+                "Tap on Zoom Out",
+                "Tap on Back to Map",
+                "Move Back (Bottom Mid) x3"
+              ],
+              "detail": "Route: Tap on Metal Box; Tap on Zoom Out; Tap on Back to Map; Move Back (Bottom Mid) x3.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-carnival-square-2",
+          "locationId": "layton-mm:carnival-square",
+          "order": 11,
+          "steps": [
+            {
+              "id": "layton-mm:v-carnival-square-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Policeman",
+                "Move to Gallery Plaza (Up) x2"
+              ],
+              "detail": "Route: Chat; Tap on Policeman; Move to Gallery Plaza (Up) x2.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-gallery-plaza-2",
+          "locationId": "layton-mm:gallery-plaza",
+          "order": 12,
+          "steps": [
+            {
+              "id": "layton-mm:v-gallery-plaza-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move to Merchant District (Top Left)"
+              ],
+              "detail": "Route: Chat; Move to Merchant District (Top Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-merchant-district-1",
+          "locationId": "layton-mm:merchant-district",
+          "order": 13,
+          "steps": [
+            {
+              "id": "layton-mm:v-merchant-district-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Nils",
+                "Move to Madame Lapushka’s (Right)"
+              ],
+              "detail": "Route: Tap on Nils; Move to Madame Lapushka’s (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-madame-lapushkas-1",
+          "locationId": "layton-mm:madame-lapushkas",
+          "order": 14,
+          "steps": [
+            {
+              "id": "layton-mm:v-madame-lapushkas-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Madame Lapushka"
+              ],
+              "detail": "Route: Tap on Madame Lapushka.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-madame-lapushkas-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 010 The Place To Be"
+              ],
+              "detail": "Puzzle 010 — \"The Place To Be\" (UK: \"The Long Wait\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-madame-lapushkas-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move Back (Left)"
+              ],
+              "detail": "Route: Move Back (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-merchant-district-2",
+          "locationId": "layton-mm:merchant-district",
+          "order": 15,
+          "steps": [
+            {
+              "id": "layton-mm:v-merchant-district-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move to City Monument (Up)"
+              ],
+              "detail": "Route: Chat; Move to City Monument (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-city-monument-1",
+          "locationId": "layton-mm:city-monument",
+          "order": 16,
+          "steps": [
+            {
+              "id": "layton-mm:v-city-monument-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Juggles"
+              ],
+              "detail": "Route: Tap on Juggles.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-city-monument-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 011 Backstage Blunder"
+              ],
+              "detail": "Puzzle 011 — \"Backstage Blunder\" (UK: \"Backstage Blunder\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-city-monument-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move to Dromedary Plaza (Left)"
+              ],
+              "detail": "Route: Move to Dromedary Plaza (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-dromedary-plaza-1",
+          "locationId": "layton-mm:dromedary-plaza",
+          "order": 17,
+          "steps": [
+            {
+              "id": "layton-mm:v-dromedary-plaza-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Tyrone",
+                "Choose the rabbit - Give a name",
+                "Move to Dromedary Lobby (Up)"
+              ],
+              "detail": "Route: Chat; Tap on Tyrone; Choose the rabbit - Give a name; Move to Dromedary Lobby (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-dromedary-lobby-1",
+          "locationId": "layton-mm:dromedary-lobby",
+          "order": 18,
+          "steps": [
+            {
+              "id": "layton-mm:v-dromedary-lobby-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Yuming",
+                "Tap on Pascal"
+              ],
+              "detail": "Route: Chatm; Tap on Yuming; Tap on Pascal.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 012 Sharing the Burden"
+              ],
+              "detail": "Puzzle 012 — \"Sharing the Burden\" (UK: \"Sharing the Burden\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move to Layton’s Room (Left)"
+              ],
+              "detail": "Route: Move to Layton’s Room (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-laytons-room-1",
+          "locationId": "layton-mm:laytons-room",
+          "order": 19,
+          "steps": [
+            {
+              "id": "layton-mm:v-laytons-room-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat"
+              ],
+              "detail": "Route: Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-laytons-room-1:s2",
+              "order": 1,
+              "keywords": [
+                "Save (Select Right Option)"
+              ],
+              "detail": "Route: Save (Select Right Option).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layton-mm:c2",
+      "title": "Chapter 2 - The Secret of Norwell",
+      "order": 2,
+      "visits": [
+        {
+          "id": "layton-mm:v-classroom-1",
+          "locationId": "layton-mm:classroom",
+          "order": 0,
+          "steps": [
+            {
+              "id": "layton-mm:v-classroom-1:s1",
+              "order": 0,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat",
+                "Tap on Mr. Collins"
+              ],
+              "detail": "Route: Cutscene; Chat; Tap on Mr. Collins.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-classroom-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 013 Ancient Arti-facts"
+              ],
+              "detail": "Puzzle 013 — \"Ancient Arti-facts\" (UK: \"Ancient Arte-facts\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-classroom-1:s3",
+              "order": 2,
+              "keywords": [
+                "Solve 014 Bite of Bygone Days"
+              ],
+              "detail": "Puzzle 014 — \"Bite of Bygone Days\" (UK: \"Bite of Bygone Days\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-classroom-1:s4",
+              "order": 3,
+              "keywords": [
+                "Solve 015 Fix the Fossil"
+              ],
+              "detail": "Puzzle 015 — \"Fix the Fossil\" (UK: \"Fix the Fossil\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-classroom-1:s5",
+              "order": 4,
+              "keywords": [
+                "Move to Kingsbrook Academy (Right)"
+              ],
+              "detail": "Route: Move to Kingsbrook Academy (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-kingsbrook-academy-1",
+          "locationId": "layton-mm:kingsbrook-academy",
+          "order": 1,
+          "steps": [
+            {
+              "id": "layton-mm:v-kingsbrook-academy-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Alphonse",
+                "Move to Academy Gate (Down)"
+              ],
+              "detail": "Route: Tap on Alphonse; Move to Academy Gate (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-academy-gate-1",
+          "locationId": "layton-mm:academy-gate",
+          "order": 2,
+          "steps": [
+            {
+              "id": "layton-mm:v-academy-gate-1:s1",
+              "order": 0,
+              "keywords": [
+                "Watch the cutscene",
+                "Move to Layton Home (Down)"
+              ],
+              "detail": "Route: Cutscene; Move to Layton Home (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-layton-home-1",
+          "locationId": "layton-mm:layton-home",
+          "order": 3,
+          "steps": [
+            {
+              "id": "layton-mm:v-layton-home-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move to Living Room (Left)"
+              ],
+              "detail": "Route: Chat; Move to Living Room (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-living-room-1",
+          "locationId": "layton-mm:living-room",
+          "order": 4,
+          "steps": [
+            {
+              "id": "layton-mm:v-living-room-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Zoom on Bookcase",
+                "Tap on Wine Bottle"
+              ],
+              "detail": "Route: Chat; Zoom on Bookcase; Tap on Wine Bottle.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-living-room-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 018 That's Juicy"
+              ],
+              "detail": "Puzzle 018 — \"That's Juicy\" (UK: \"That's Juicy\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-living-room-1:s3",
+              "order": 2,
+              "keywords": [
+                "Tap on Lucille",
+                "Tap on Zoom Out",
+                "Move Back (Down)"
+              ],
+              "detail": "Route: Tap on Lucille; Tap on Zoom Out; Move Back (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-layton-home-2",
+          "locationId": "layton-mm:layton-home",
+          "order": 5,
+          "steps": [
+            {
+              "id": "layton-mm:v-layton-home-2:s1",
+              "order": 0,
+              "keywords": [
+                "Move to Academy Gate (Up)"
+              ],
+              "detail": "Route: Move to Academy Gate (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-academy-gate-2",
+          "locationId": "layton-mm:academy-gate",
+          "order": 6,
+          "steps": [
+            {
+              "id": "layton-mm:v-academy-gate-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move to Pebble Lane (Right)"
+              ],
+              "detail": "Route: Chat; Move to Pebble Lane (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-pebble-lane-1",
+          "locationId": "layton-mm:pebble-lane",
+          "order": 7,
+          "steps": [
+            {
+              "id": "layton-mm:v-pebble-lane-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Esther"
+              ],
+              "detail": "Route: Tap on Esther.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pebble-lane-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 019 Spinning Maize"
+              ],
+              "detail": "Puzzle 019 — \"Spinning Maize\" (UK: \"Spinning Maize\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pebble-lane-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move to Market Street (Right)"
+              ],
+              "detail": "Route: Move to Market Street (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-market-street-1",
+          "locationId": "layton-mm:market-street",
+          "order": 8,
+          "steps": [
+            {
+              "id": "layton-mm:v-market-street-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move to Old Towne (Up)"
+              ],
+              "detail": "Route: Chat; Move to Old Towne (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-old-towne-1",
+          "locationId": "layton-mm:old-towne",
+          "order": 9,
+          "steps": [
+            {
+              "id": "layton-mm:v-old-towne-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Doug"
+              ],
+              "detail": "Route: Tap on Doug.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-old-towne-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 021 A Lick of Paint"
+              ],
+              "detail": "Puzzle 021 — \"A Lick of Paint\" (UK: \"A Lick of Paint\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-old-towne-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move to Edge of Town (Right)"
+              ],
+              "detail": "Route: Move to Edge of Town (Right). Solution steps omitted here (spoiler-free rule) — the route PDF spells them out; use hints or the walkthrough link if stuck.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "flagged"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-edge-of-town-1",
+          "locationId": "layton-mm:edge-of-town",
+          "order": 10,
+          "steps": [
+            {
+              "id": "layton-mm:v-edge-of-town-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Roland",
+                "Move Back (Left)",
+                "Move Back (Down)"
+              ],
+              "detail": "Route: Tap on Roland; Move Back (Left); Move Back (Down); Move Back (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-edge-of-town-1:s2",
+              "order": 1,
+              "keywords": [
+                "Move Back (Down) x2",
+                "Move Back (Left)"
+              ],
+              "detail": "Route: Move Back (Down) x2; Move Back (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-living-room-2",
+          "locationId": "layton-mm:living-room",
+          "order": 11,
+          "steps": [
+            {
+              "id": "layton-mm:v-living-room-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move to Hershel’s Room (Left)"
+              ],
+              "detail": "Route: Chat; Move to Hershel’s Room (Left).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-hershels-room-1",
+          "locationId": "layton-mm:hershels-room",
+          "order": 12,
+          "steps": [
+            {
+              "id": "layton-mm:v-hershels-room-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Chair",
+                "Move to Layton Home (Down)"
+              ],
+              "detail": "Route: Tap on Chair; Move to Layton Home (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-layton-home-3",
+          "locationId": "layton-mm:layton-home",
+          "order": 13,
+          "steps": [
+            {
+              "id": "layton-mm:v-layton-home-3:s1",
+              "order": 0,
+              "keywords": [
+                "Move to Academy Gate (Up)"
+              ],
+              "detail": "Route: Move to Academy Gate (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-academy-gate-3",
+          "locationId": "layton-mm:academy-gate",
+          "order": 14,
+          "steps": [
+            {
+              "id": "layton-mm:v-academy-gate-3:s1",
+              "order": 0,
+              "keywords": [
+                "Move to Pebble Lane (Right)"
+              ],
+              "detail": "Route: Move to Pebble Lane (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-pebble-lane-2",
+          "locationId": "layton-mm:pebble-lane",
+          "order": 15,
+          "steps": [
+            {
+              "id": "layton-mm:v-pebble-lane-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Alphonse"
+              ],
+              "detail": "Route: Chat; Tap on Alphonse.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pebble-lane-2:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 026 Mangled Math"
+              ],
+              "detail": "Puzzle 026 — \"Mangled Math\" (UK: \"Mangled Math\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pebble-lane-2:s3",
+              "order": 2,
+              "keywords": [
+                "Move to Memory Knoll (Left)"
+              ],
+              "detail": "Route: Move to Memory Knoll (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-memory-knoll-1",
+          "locationId": "layton-mm:memory-knoll",
+          "order": 16,
+          "steps": [
+            {
+              "id": "layton-mm:v-memory-knoll-1:s1",
+              "order": 0,
+              "keywords": [
+                "Watch the cutscene",
+                "Move to Ascot House (Left)"
+              ],
+              "detail": "Route: Cutscene; Move to Ascot House (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-ascot-house-1",
+          "locationId": "layton-mm:ascot-house",
+          "order": 17,
+          "steps": [
+            {
+              "id": "layton-mm:v-ascot-house-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Window (Top Left)"
+              ],
+              "detail": "Route: Chat; Tap on Window (Top Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-ascot-house-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 027 That Rings a Bell"
+              ],
+              "detail": "Puzzle 027 — \"That Rings a Bell\" (UK: \"That Rings a Bell\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-ascot-house-1:s3",
+              "order": 2,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat"
+              ],
+              "detail": "Route: Cutscene; Chat; Cutscene.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-ascot-house-1:s4",
+              "order": 3,
+              "keywords": [
+                "Save (Select Right Option)"
+              ],
+              "detail": "Route: Save (Select Right Option).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layton-mm:c3",
+      "title": "Chapter 3 - The Battle for Monte d’Or",
+      "order": 3,
+      "visits": [
+        {
+          "id": "layton-mm:v-laytons-room-2",
+          "locationId": "layton-mm:laytons-room",
+          "order": 0,
+          "steps": [
+            {
+              "id": "layton-mm:v-laytons-room-2:s1",
+              "order": 0,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat",
+                "Move to Dromedary Lobby (Right)"
+              ],
+              "detail": "Route: Cutscene; Chat; Move to Dromedary Lobby (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-dromedary-lobby-2",
+          "locationId": "layton-mm:dromedary-lobby",
+          "order": 1,
+          "steps": [
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Nanna Grams x2"
+              ],
+              "detail": "Route: Chat; Tap on Nanna Grams x2.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 003 Stumble's Banners"
+              ],
+              "detail": "Puzzle 003 — \"Stumble's Banners\" (UK: \"Bungle's Banners\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s3",
+              "order": 2,
+              "keywords": [
+                "Solve 007 A Toasty Toast"
+              ],
+              "detail": "Puzzle 007 — \"A Toasty Toast\" (UK: \"A Toasty Toast\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s4",
+              "order": 3,
+              "keywords": [
+                "Solve 008 Carnival Colors"
+              ],
+              "detail": "Puzzle 008 — \"Carnival Colors\" (UK: \"Carnival Colours\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s5",
+              "order": 4,
+              "keywords": [
+                "Solve 016 Wandering Watches"
+              ],
+              "detail": "Puzzle 016 — \"Wandering Watches\" (UK: \"Wandering Watches\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s6",
+              "order": 5,
+              "keywords": [
+                "Solve 017 Busted Umbrella"
+              ],
+              "detail": "Puzzle 017 — \"Busted Umbrella\" (UK: \"The Broken Brolly\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s7",
+              "order": 6,
+              "keywords": [
+                "Solve 020 Nine Red Bricks"
+              ],
+              "detail": "Puzzle 020 — \"Nine Red Bricks\" (UK: \"Nine Red Bricks\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s8",
+              "order": 7,
+              "keywords": [
+                "Solve 023 Fairway Fibber"
+              ],
+              "detail": "Puzzle 023 — \"Fairway Fibber\" (UK: \"Fairway Fibber\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s9",
+              "order": 8,
+              "keywords": [
+                "Solve 024 Patterned Apron"
+              ],
+              "detail": "Puzzle 024 — \"Patterned Apron\" (UK: \"Patterned Apron\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s10",
+              "order": 9,
+              "keywords": [
+                "Solve 025 Brave the Caves"
+              ],
+              "detail": "Puzzle 025 — \"Brave the Caves\" (UK: \"Brave the Caves\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-2:s11",
+              "order": 10,
+              "keywords": [
+                "Tap on Back to Map",
+                "Move to Dromedary Plaza (Down)"
+              ],
+              "detail": "Route: Tap on Back to Map; Move to Dromedary Plaza (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-dromedary-plaza-2",
+          "locationId": "layton-mm:dromedary-plaza",
+          "order": 2,
+          "steps": [
+            {
+              "id": "layton-mm:v-dromedary-plaza-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Cookie",
+                "Move Right"
+              ],
+              "detail": "Route: Chat; Tap on Cookie; Move Right.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-monte-dor-2",
+          "locationId": "layton-mm:monte-dor",
+          "order": 3,
+          "steps": [
+            {
+              "id": "layton-mm:v-monte-dor-2:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Esther",
+                "Move Down",
+                "Tap on Sterling (Left)"
+              ],
+              "detail": "Route: Tap on Esther; Move Down; Tap on Sterling (Left); Move Down.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-2:s2",
+              "order": 1,
+              "keywords": [
+                "Chat",
+                "Move Down"
+              ],
+              "detail": "Route: Chat; Move Down; Chat; Move Down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-2:s3",
+              "order": 2,
+              "keywords": [
+                "Tap on Tanya (Right)",
+                "Move Up x2",
+                "Move Right",
+                "Move Up"
+              ],
+              "detail": "Route: Tap on Tanya (Right); Move Up x2; Move Right; Move Up.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-2:s4",
+              "order": 3,
+              "keywords": [
+                "Move Left",
+                "Move Up x2",
+                "Tap on Angela",
+                "Move Right"
+              ],
+              "detail": "Route: Move Left; Move Up x2; Tap on Angela; Move Right.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-henrys-study-1",
+          "locationId": "layton-mm:henrys-study",
+          "order": 4,
+          "steps": [
+            {
+              "id": "layton-mm:v-henrys-study-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Plate (Right Edge)"
+              ],
+              "detail": "Route: Chat; Tap on Plate (Right Edge).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-henrys-study-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 034 The Cat's Trophy"
+              ],
+              "detail": "Puzzle 034 — \"The Cat's Trophy\" (UK: \"The Cat's Trophy\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-henrys-study-1:s3",
+              "order": 2,
+              "keywords": [
+                "Tap on Chair (Middle, Under Painting)",
+                "Tap on Desk (Right)",
+                "Tap on Angela",
+                "Move Left"
+              ],
+              "detail": "Route: Tap on Chair (Middle, Under Painting); Tap on Desk (Right); Tap on Angela; Move Left.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-monte-dor-3",
+          "locationId": "layton-mm:monte-dor",
+          "order": 5,
+          "steps": [
+            {
+              "id": "layton-mm:v-monte-dor-3:s1",
+              "order": 0,
+              "keywords": [
+                "Move Down",
+                "Move Left",
+                "Move Right",
+                "Move Down x2"
+              ],
+              "detail": "Route: Move Down; Move Left; Move Right; Move Down x2.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-3:s2",
+              "order": 1,
+              "keywords": [
+                "Move Left",
+                "Move Up",
+                "Chat"
+              ],
+              "detail": "Route: Move Left; Move Up; Move Left; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-3:s3",
+              "order": 2,
+              "keywords": [
+                "Move Left",
+                "Chat",
+                "New Mystery recorded"
+              ],
+              "detail": "Route: Move Left; Chat; Mystery; Move Left.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-3:s4",
+              "order": 3,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat",
+                "Move Right x3",
+                "Move Down x2"
+              ],
+              "detail": "Route: Cutscene; Chat; Move Right x3; Move Down x2.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-3:s5",
+              "order": 4,
+              "keywords": [
+                "Move Right",
+                "Move Up",
+                "Move Left",
+                "Chat"
+              ],
+              "detail": "Route: Move Right; Move Up; Move Left; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-3:s6",
+              "order": 5,
+              "keywords": [
+                "Move Up",
+                "Chat",
+                "Move Right"
+              ],
+              "detail": "Route: Move Up; Chat; Move Right.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-city-hall-steps-1",
+          "locationId": "layton-mm:city-hall-steps",
+          "order": 6,
+          "steps": [
+            {
+              "id": "layton-mm:v-city-hall-steps-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Policeman",
+                "Tap on Mayor Billson",
+                "Move Right"
+              ],
+              "detail": "Route: Chat; Tap on Policeman; Tap on Mayor Billson; Move Right.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-briefing-room-1",
+          "locationId": "layton-mm:briefing-room",
+          "order": 7,
+          "steps": [
+            {
+              "id": "layton-mm:v-briefing-room-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Sheffield",
+                "Press OK (Left Choice)",
+                "Watch the cutscene",
+                "Briefing 1:"
+              ],
+              "detail": "Route: Tap on Sheffield; Press OK (Left Choice); Cutscene; Briefing 1:.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-briefing-room-1:s2",
+              "order": 1,
+              "keywords": [
+                "Tap on Sheffield",
+                "Briefing 2:",
+                "Briefing 3:"
+              ],
+              "detail": "Route: Tap on Sheffield; Briefing 2:; Tap on Sheffield; Briefing 3:.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-briefing-room-1:s3",
+              "order": 2,
+              "keywords": [
+                "Chat",
+                "Move Left"
+              ],
+              "detail": "Route: Chat; Move Left.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-monte-dor-4",
+          "locationId": "layton-mm:monte-dor",
+          "order": 8,
+          "steps": [
+            {
+              "id": "layton-mm:v-monte-dor-4:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move Down",
+                "Tap on Hanna"
+              ],
+              "detail": "Route: Chat; Move Down; Tap on Hanna.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-4:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 042 Couple at the Cafe"
+              ],
+              "detail": "Puzzle 042 — \"Couple at the Cafe\" (UK: \"Couple at the Cafe\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-4:s3",
+              "order": 2,
+              "keywords": [
+                "Move Down",
+                "Move Right",
+                "Move Down x2",
+                "Chat"
+              ],
+              "detail": "Route: Move Down; Move Right; Move Down x2; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-4:s4",
+              "order": 3,
+              "keywords": [
+                "Move Up"
+              ],
+              "detail": "Route: Move Up.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-montsarton-gallery-1",
+          "locationId": "layton-mm:montsarton-gallery",
+          "order": 9,
+          "steps": [
+            {
+              "id": "layton-mm:v-montsarton-gallery-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Artie"
+              ],
+              "detail": "Route: Chat; Tap on Artie.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-montsarton-gallery-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 046 Toppings Up"
+              ],
+              "detail": "Puzzle 046 — \"Toppings Up\" (UK: \"Toppings Up\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-montsarton-gallery-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move Down"
+              ],
+              "detail": "Route: Move Down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-madame-lapushkas-2",
+          "locationId": "layton-mm:madame-lapushkas",
+          "order": 10,
+          "steps": [
+            {
+              "id": "layton-mm:v-madame-lapushkas-2:s1",
+              "order": 0,
+              "keywords": [
+                "Move Left",
+                "Move Right",
+                "Tap on M. Lapushka"
+              ],
+              "detail": "Route: Move Left; Move Right; Tap on M. Lapushka.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-madame-lapushkas-2:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 047 Trial By Tennis"
+              ],
+              "detail": "Puzzle 047 — \"Trial By Tennis\" (UK: \"Trial By Tennis\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-madame-lapushkas-2:s3",
+              "order": 2,
+              "keywords": [
+                "Move Left"
+              ],
+              "detail": "Route: Move Left.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-big-top-1",
+          "locationId": "layton-mm:big-top",
+          "order": 11,
+          "steps": [
+            {
+              "id": "layton-mm:v-big-top-1:s1",
+              "order": 0,
+              "keywords": [
+                "Move Up",
+                "Move Left x2",
+                "Chat"
+              ],
+              "detail": "Route: Move Up; Move Left x2; Chat; Move Up.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-big-top-1:s2",
+              "order": 1,
+              "keywords": [
+                "Tap on Tyrone"
+              ],
+              "detail": "Route: Tap on Tyrone.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-big-top-1:s3",
+              "order": 2,
+              "keywords": [
+                "Solve 049 Floor Seats"
+              ],
+              "detail": "Puzzle 049 — \"Floor Seats\" (UK: \"A Whinger’s Tale\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-big-top-1:s4",
+              "order": 3,
+              "keywords": [
+                "Tap on Tiger (Right Edge)"
+              ],
+              "detail": "Route: Tap on Tiger (Right Edge).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-big-top-1:s5",
+              "order": 4,
+              "keywords": [
+                "Solve 050 Kitty Solitaire"
+              ],
+              "detail": "Puzzle 050 — \"Kitty Solitaire\" (UK: \"Kitty Solitaire\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-big-top-1:s6",
+              "order": 5,
+              "keywords": [
+                "Move Down",
+                "Chat",
+                "Move Right x2",
+                "Move Down x2"
+              ],
+              "detail": "Route: Move Down; Chat; Move Right x2; Move Down x2.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-big-top-1:s7",
+              "order": 6,
+              "keywords": [
+                "Chat",
+                "Tap on Angela",
+                "Watch the cutscene"
+              ],
+              "detail": "Route: Chat; Tap on Angela; Cutscene; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-big-top-1:s8",
+              "order": 7,
+              "keywords": [
+                "New Mystery recorded",
+                "Watch the cutscene",
+                "Chat",
+                "Tap on Bloom"
+              ],
+              "detail": "Route: Mystery; Cutscene; Chat; Tap on Bloom.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-big-top-1:s9",
+              "order": 8,
+              "keywords": [
+                "Save (Select Right Option)"
+              ],
+              "detail": "Route: Save (Select Right Option).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layton-mm:c4",
+      "title": "Chapter 4 - Angela’s Tears",
+      "order": 4,
+      "visits": [
+        {
+          "id": "layton-mm:v-randalls-room-1",
+          "locationId": "layton-mm:randalls-room",
+          "order": 0,
+          "steps": [
+            {
+              "id": "layton-mm:v-randalls-room-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move Right"
+              ],
+              "detail": "Route: Chat; Move Right.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-winding-road-1",
+          "locationId": "layton-mm:winding-road",
+          "order": 1,
+          "steps": [
+            {
+              "id": "layton-mm:v-winding-road-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move Right x2",
+                "Move Up x2"
+              ],
+              "detail": "Route: Chat; Move Right x2; Chat; Move Up x2.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-winding-road-1:s2",
+              "order": 1,
+              "keywords": [
+                "Move Right",
+                "Chat",
+                "Tap on Fence"
+              ],
+              "detail": "Route: Move Right; Chat; Tap on Fence.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-winding-road-1:s3",
+              "order": 2,
+              "keywords": [
+                "Solve 061 Padlocked Fence"
+              ],
+              "detail": "Puzzle 061 — \"Padlocked Fence\" (UK: \"Padlocked Fence\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-winding-road-1:s4",
+              "order": 3,
+              "keywords": [
+                "Move Up",
+                "Chat",
+                "Tap on Sign (Right Edge)"
+              ],
+              "detail": "Route: Move Up; Chat; Tap on Sign (Right Edge). Solution steps omitted here (spoiler-free rule) — the route PDF spells them out; use hints or the walkthrough link if stuck.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-winding-road-1:s5",
+              "order": 4,
+              "keywords": [
+                "Solve 062 Shattered Sign"
+              ],
+              "detail": "Puzzle 062 — \"Shattered Sign\" (UK: \"Shattered Sign\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-norwell-1",
+          "locationId": "layton-mm:norwell",
+          "order": 2,
+          "steps": [
+            {
+              "id": "layton-mm:v-norwell-1:s1",
+              "order": 0,
+              "keywords": [
+                "Move Up",
+                "Chat",
+                "Tap on Randall"
+              ],
+              "detail": "Route: Move Up; Chat; Tap on Randall.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-norwell-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 063 A Muddy Mess"
+              ],
+              "detail": "Puzzle 063 — \"A Muddy Mess\" (UK: \"A Muddy Mess\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-norwell-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move Up",
+                "Watch the cutscene",
+                "Tap on Door"
+              ],
+              "detail": "Route: Move Up; Cutscene; Tap on Door.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-norwell-1:s4",
+              "order": 3,
+              "keywords": [
+                "Solve 064 Norwell's Secret"
+              ],
+              "detail": "Puzzle 064 — \"Norwell's Secret\" (UK: \"Norwell's Secret\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-winding-road-2",
+          "locationId": "layton-mm:winding-road",
+          "order": 3,
+          "steps": [
+            {
+              "id": "layton-mm:v-winding-road-2:s1",
+              "order": 0,
+              "keywords": [
+                "Move Down",
+                "Move Left",
+                "Chat"
+              ],
+              "detail": "Route: Move Down; Move Left; Move Down; Chat.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-winding-road-2:s2",
+              "order": 1,
+              "keywords": [
+                "Move Left",
+                "Move Down x2",
+                "Watch the cutscene"
+              ],
+              "detail": "Route: Move Left; Move Down x2; Move Left; Cutscene.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-winding-road-2:s3",
+              "order": 2,
+              "keywords": [
+                "Chat",
+                "Move Left x2"
+              ],
+              "detail": "Route: Chat; Move Left x2; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-winding-road-2:s4",
+              "order": 3,
+              "keywords": [
+                "Save (Select Right Option)"
+              ],
+              "detail": "Route: Save (Select Right Option).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layton-mm:c5",
+      "title": "Chapter 5 - Miracles Unmasked",
+      "order": 5,
+      "visits": [
+        {
+          "id": "layton-mm:v-laytons-room-3",
+          "locationId": "layton-mm:laytons-room",
+          "order": 0,
+          "steps": [
+            {
+              "id": "layton-mm:v-laytons-room-3:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move Right"
+              ],
+              "detail": "Route: Chat; Move Right.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-dromedary-lobby-3",
+          "locationId": "layton-mm:dromedary-lobby",
+          "order": 1,
+          "steps": [
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Nanna Grams"
+              ],
+              "detail": "Route: Tap on Nanna Grams.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 029 Tenth-Round Ace"
+              ],
+              "detail": "Puzzle 029 — \"Tenth-Round Ace\" (UK: \"Tenth-Round Ace\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s3",
+              "order": 2,
+              "keywords": [
+                "Solve 030 Big Cake, Little Cake"
+              ],
+              "detail": "Puzzle 030 — \"Big Cake, Little Cake\" (UK: \"Big Cake, Little Cake\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s4",
+              "order": 3,
+              "keywords": [
+                "Solve 032 Target Practice"
+              ],
+              "detail": "Puzzle 032 — \"Target Practice\" (UK: \"Target Practice\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s5",
+              "order": 4,
+              "keywords": [
+                "Solve 033 Chained Circle"
+              ],
+              "detail": "Puzzle 033 — \"Chained Circle\" (UK: \"Chained Circle\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s6",
+              "order": 5,
+              "keywords": [
+                "Solve 035 Guess Stars"
+              ],
+              "detail": "Puzzle 035 — \"Guess Stars\" (UK: \"Twinkle Tops\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s7",
+              "order": 6,
+              "keywords": [
+                "Solve 036 Going Dough-Nuts"
+              ],
+              "detail": "Puzzle 036 — \"Going Dough-Nuts\" (UK: \"Going Dough-Nuts\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s8",
+              "order": 7,
+              "keywords": [
+                "Solve 037 Spin Shenanigans"
+              ],
+              "detail": "Puzzle 037 — \"Spin Shenanigans\" (UK: \"Spin Shenanigans\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s9",
+              "order": 8,
+              "keywords": [
+                "Solve 038 Pattern Pending"
+              ],
+              "detail": "Puzzle 038 — \"Pattern Pending\" (UK: \"Pattern Pending\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s10",
+              "order": 9,
+              "keywords": [
+                "Solve 041 From the Sidelines"
+              ],
+              "detail": "Puzzle 041 — \"From the Sidelines\" (UK: \"From the Sidelines\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s11",
+              "order": 10,
+              "keywords": [
+                "Solve 051 Dandy Bears"
+              ],
+              "detail": "Puzzle 051 — \"Dandy Bears\" (UK: \"Dandy Bears\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s12",
+              "order": 11,
+              "keywords": [
+                "Solve 052 Spectacular Views"
+              ],
+              "detail": "Puzzle 052 — \"Spectacular Views\" (UK: \"Spectacular Views\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s13",
+              "order": 12,
+              "keywords": [
+                "Solve 054 Archaeological Feet"
+              ],
+              "detail": "Puzzle 054 — \"Archaeological Feet\" (UK: \"Archaeological Feet\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s14",
+              "order": 13,
+              "keywords": [
+                "Solve 056 Clear-Cut Contrasts"
+              ],
+              "detail": "Puzzle 056 — \"Clear-Cut Contrasts\" (UK: \"Clear-Cut Contrasts\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s15",
+              "order": 14,
+              "keywords": [
+                "Solve 058 Sorting Blocks"
+              ],
+              "detail": "Puzzle 058 — \"Sorting Blocks\" (UK: \"Sorting Blocks\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s16",
+              "order": 15,
+              "keywords": [
+                "Solve 060 Dangerous Holes"
+              ],
+              "detail": "Puzzle 060 — \"Dangerous Holes\" (UK: \"A Ropey System\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-3:s17",
+              "order": 16,
+              "keywords": [
+                "Tap on Back Button (Bottom Right)",
+                "Tap on Back to Map"
+              ],
+              "detail": "Route: Tap on Back Button (Bottom Right); Tap on Back to Map.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-monte-dor-5",
+          "locationId": "layton-mm:monte-dor",
+          "order": 2,
+          "steps": [
+            {
+              "id": "layton-mm:v-monte-dor-5:s1",
+              "order": 0,
+              "keywords": [
+                "Move Down",
+                "Move Right",
+                "Move Down x2"
+              ],
+              "detail": "Route: Move Down; Move Right; Move Down x2; Move Right.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-5:s2",
+              "order": 1,
+              "keywords": [
+                "Move Up",
+                "Move Left",
+                "Move Right x2"
+              ],
+              "detail": "Route: Move Up; Move Left; Move Up; Move Right x2.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-5:s3",
+              "order": 2,
+              "keywords": [
+                "Chat",
+                "New Mystery recorded",
+                "Move Left",
+                "Move Down"
+              ],
+              "detail": "Route: Chat; Mystery; Move Left; Move Down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-5:s4",
+              "order": 3,
+              "keywords": [
+                "Chat",
+                "Move Up"
+              ],
+              "detail": "Route: Chat; Move Up.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-racetrack-1",
+          "locationId": "layton-mm:racetrack",
+          "order": 3,
+          "steps": [
+            {
+              "id": "layton-mm:v-racetrack-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Arch (Top Mid)",
+                "Move Up",
+                "Watch the cutscene",
+                "Tap on Gustav"
+              ],
+              "detail": "Route: Tap on Arch (Top Mid); Move Up; Cutscene; Tap on Gustav.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-racetrack-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 075 Grand Horse Race"
+              ],
+              "detail": "Puzzle 075 — \"Grand Horse Race\" (UK: \"Grand Horse Race\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-racetrack-1:s3",
+              "order": 2,
+              "keywords": [
+                "Tap on Door",
+                "Tap on Cart (Right Side)",
+                "Tap on Gustav",
+                "Move Down"
+              ],
+              "detail": "Route: Tap on Door; Tap on Cart (Right Side); Tap on Gustav; Move Down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-racetrack-1:s4",
+              "order": 3,
+              "keywords": [
+                "Chat"
+              ],
+              "detail": "Route: Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-monte-dor-6",
+          "locationId": "layton-mm:monte-dor",
+          "order": 4,
+          "steps": [
+            {
+              "id": "layton-mm:v-monte-dor-6:s1",
+              "order": 0,
+              "keywords": [
+                "Move Down x2",
+                "Move Up-Right",
+                "Move Up",
+                "Tap on Angela"
+              ],
+              "detail": "Route: Move Down x2; Move Up-Right; Move Up; Tap on Angela.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-6:s2",
+              "order": 1,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat",
+                "New Mystery recorded",
+                "Move Down"
+              ],
+              "detail": "Route: Cutscene; Chat; Mystery; Move Down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-6:s3",
+              "order": 2,
+              "keywords": [
+                "Chat",
+                "New Mystery recorded",
+                "Move Down"
+              ],
+              "detail": "Route: Chat; Mystery; Move Down; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-6:s4",
+              "order": 3,
+              "keywords": [
+                "Move Down x2"
+              ],
+              "detail": "Route: Move Down x2.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-casino-1",
+          "locationId": "layton-mm:casino",
+          "order": 5,
+          "steps": [
+            {
+              "id": "layton-mm:v-casino-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Firth"
+              ],
+              "detail": "Route: Tap on Firth.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-casino-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 077 Mishmash Map"
+              ],
+              "detail": "Puzzle 077 — \"Mishmash Map\" (UK: \"Mishmash Map\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-casino-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move Down x3",
+                "Chat",
+                "Zoom on Left Side"
+              ],
+              "detail": "Route: Move Down x3; Chat; Zoom on Left Side; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-casino-1:s4",
+              "order": 3,
+              "keywords": [
+                "Tap on Zoom Out",
+                "Tap on Back to Map",
+                "Move Up x2",
+                "Chat"
+              ],
+              "detail": "Route: Tap on Zoom Out; Tap on Back to Map; Move Up x2; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-casino-1:s5",
+              "order": 4,
+              "keywords": [
+                "Move Left",
+                "Move Up",
+                "Chat",
+                "Tap on Murphy"
+              ],
+              "detail": "Route: Move Left; Move Up; Chat; Tap on Murphy.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-casino-1:s6",
+              "order": 5,
+              "keywords": [
+                "Solve 079 The Shopkeepers"
+              ],
+              "detail": "Puzzle 079 — \"The Shopkeepers\" (UK: \"The Shopkeepers\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-casino-1:s7",
+              "order": 6,
+              "keywords": [
+                "Move Up",
+                "Tap on Humbert (Right Side)",
+                "Chat"
+              ],
+              "detail": "Route: Move Up; Tap on Humbert (Right Side); Move Up; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-casino-1:s8",
+              "order": 7,
+              "keywords": [
+                "Move Up",
+                "Chat"
+              ],
+              "detail": "Route: Move Up; Chat. Solution steps omitted here (spoiler-free rule) — the route PDF spells them out; use hints or the walkthrough link if stuck.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-casino-1:s9",
+              "order": 8,
+              "keywords": [
+                "Solve the on-screen puzzle"
+              ],
+              "detail": "Solution steps omitted here (spoiler-free rule) — the route PDF spells them out; use hints or the walkthrough link if stuck.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "flagged"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-pumpkin-park-1",
+          "locationId": "layton-mm:pumpkin-park",
+          "order": 6,
+          "steps": [
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s1",
+              "order": 0,
+              "keywords": [
+                "Move Down",
+                "Chat",
+                "Move Left",
+                "Tap on Yukkles"
+              ],
+              "detail": "Route: Move Down; Chat; Move Left; Tap on Yukkles.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s2",
+              "order": 1,
+              "keywords": [
+                "Move Up",
+                "Watch the cutscene",
+                "Chat",
+                "Tap on the Merry-go-round"
+              ],
+              "detail": "Route: Move Up; Cutscene; Chat; Tap on the Merry-go-round.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s3",
+              "order": 2,
+              "keywords": [
+                "Solve 087 Merry-Go-Tiles"
+              ],
+              "detail": "Puzzle 087 — \"Merry-Go-Tiles\" (UK: \"Merry-Go-Tiles\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s4",
+              "order": 3,
+              "keywords": [
+                "Tap on Building (Right Edge)"
+              ],
+              "detail": "Route: Tap on Building (Right Edge).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s5",
+              "order": 4,
+              "keywords": [
+                "Solve 088 Glass Arrows"
+              ],
+              "detail": "Puzzle 088 — \"Glass Arrows\" (UK: \"Glass Arrows\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s6",
+              "order": 5,
+              "keywords": [
+                "Move Right",
+                "Tap on Spinning Cups"
+              ],
+              "detail": "Route: Move Right; Tap on Spinning Cups.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s7",
+              "order": 6,
+              "keywords": [
+                "Solve 089 Pumpkin Spinners"
+              ],
+              "detail": "Puzzle 089 — \"Pumpkin Spinners\" (UK: \"Pumpkin Spinners\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s8",
+              "order": 7,
+              "keywords": [
+                "Tap on Ferris Wheel"
+              ],
+              "detail": "Route: Tap on Ferris Wheel.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s9",
+              "order": 8,
+              "keywords": [
+                "Solve 090 Loose Connection"
+              ],
+              "detail": "Puzzle 090 — \"Loose Connection\" (UK: \"Loose Connection\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s10",
+              "order": 9,
+              "keywords": [
+                "Move Up",
+                "Tap on Door",
+                "Move Down",
+                "Chat"
+              ],
+              "detail": "Route: Move Up; Tap on Door; Move Down; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s11",
+              "order": 10,
+              "keywords": [
+                "Move Down",
+                "Chat",
+                "New Mystery recorded"
+              ],
+              "detail": "Route: Move Down; Chat; Mystery.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-pumpkin-park-1:s12",
+              "order": 11,
+              "keywords": [
+                "Save (Select Right Option)"
+              ],
+              "detail": "Route: Save (Select Right Option).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layton-mm:c6",
+      "title": "Chapter 6 - The Ghosts of Akbadain",
+      "order": 6,
+      "visits": [
+        {
+          "id": "layton-mm:v-akbadain-b1-1",
+          "locationId": "layton-mm:akbadain-b1",
+          "order": 0,
+          "steps": [
+            {
+              "id": "layton-mm:v-akbadain-b1-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Watch the cutscene"
+              ],
+              "detail": "Route: Chat; Cutscene; Chat; Cutscene.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b1-1:s2",
+              "order": 1,
+              "keywords": [
+                "Chat",
+                "Move Up until Randall talks to you",
+                "Tap on Dig Hole (Bottom Mid) on the Top Right dirt patch",
+                "Move Up to change room"
+              ],
+              "detail": "Route: Chat; Move Up until Randall talks to you; Tap on Dig Hole (Bottom Mid) on the Top Right dirt patch; Move Up to change room.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b1-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move Right until you find a Glowing Spot",
+                "Tap on Dig Hole on the Glowing Spot",
+                "Chat",
+                "Tap on Fill Hole"
+              ],
+              "detail": "Route: Move Right until you find a Glowing Spot; Tap on Dig Hole on the Glowing Spot; Chat; Tap on Fill Hole.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b1-1:s4",
+              "order": 3,
+              "keywords": [
+                "Move Right to change room",
+                "Move Up",
+                "Chat",
+                "Move Right to press the other button"
+              ],
+              "detail": "Route: Move Right to change room; Move Up; Chat; Move Right to press the other button.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b1-1:s5",
+              "order": 4,
+              "keywords": [
+                "Move Up",
+                "Chat",
+                "Move Left all the way",
+                "Move Up all the way"
+              ],
+              "detail": "Route: Move Up; Chat; Move Left all the way; Move Up all the way.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b1-1:s6",
+              "order": 5,
+              "keywords": [
+                "Move Right one step",
+                "Tap on Dig Hole",
+                "Move to the Button",
+                "Move to the next Floor (B2)"
+              ],
+              "detail": "Route: Move Right one step; Tap on Dig Hole; Move to the Button; Move to the next Floor (B2).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-akbadain-b2-1",
+          "locationId": "layton-mm:akbadain-b2",
+          "order": 1,
+          "steps": [
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s1",
+              "order": 0,
+              "keywords": [
+                "Move Left",
+                "Move Up until you find a rock",
+                "Tap on Push (Bottom Mid)"
+              ],
+              "detail": "Route: Move Left; Move Up until you find a rock; Tap on Push (Bottom Mid); Move Left.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s2",
+              "order": 1,
+              "keywords": [
+                "Move Up until you find two rock",
+                "Tap on Push looking at the left rock",
+                "Move Left",
+                "Move Down"
+              ],
+              "detail": "Route: Move Up until you find two rock; Tap on Push looking at the left rock; Move Left; Move Down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move Left",
+                "Move Up until you find a rock",
+                "Chat",
+                "Move Up all the way"
+              ],
+              "detail": "Route: Move Left; Move Up until you find a rock; Chat; Move Up all the way.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s4",
+              "order": 3,
+              "keywords": [
+                "Tap on Push",
+                "Move Up all the way",
+                "Move Right one step",
+                "Move Up one step"
+              ],
+              "detail": "Route: Tap on Push; Move Up all the way; Move Right one step; Move Up one step.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s5",
+              "order": 4,
+              "keywords": [
+                "Move Left one step",
+                "Tap on Push",
+                "Move Left all the way",
+                "Move Up one step"
+              ],
+              "detail": "Route: Move Left one step; Tap on Push; Move Left all the way; Move Up one step.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s6",
+              "order": 5,
+              "keywords": [
+                "Move Left one step",
+                "Move Down one step",
+                "Tap on Push",
+                "Move Down all the way"
+              ],
+              "detail": "Route: Move Left one step; Move Down one step; Tap on Push; Move Down all the way.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s7",
+              "order": 6,
+              "keywords": [
+                "Move Left one step",
+                "Move Down one step",
+                "Move Right one step",
+                "Tap on Push"
+              ],
+              "detail": "Route: Move Left one step; Move Down one step; Move Right one step; Tap on Push.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s8",
+              "order": 7,
+              "keywords": [
+                "Move Right all the way",
+                "Move Down one step",
+                "Move Right one step",
+                "Move Up one step"
+              ],
+              "detail": "Route: Move Right all the way; Move Down one step; Move Right one step; Move Up one step.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s9",
+              "order": 8,
+              "keywords": [
+                "Tap on Push",
+                "Move Up to the exit",
+                "Chat",
+                "Move Up all the way"
+              ],
+              "detail": "Route: Tap on Push; Move Up to the exit; Chat; Move Up all the way.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s10",
+              "order": 9,
+              "keywords": [
+                "Tap on Push",
+                "Move Up one step",
+                "Move Left all the way",
+                "Move Down all the way"
+              ],
+              "detail": "Route: Tap on Push; Move Up one step; Move Left all the way; Move Down all the way.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s11",
+              "order": 10,
+              "keywords": [
+                "Move Left all the way",
+                "Move Up one step",
+                "Move Down all the way",
+                "Move Right all the way"
+              ],
+              "detail": "Route: Move Left all the way; Move Up one step; Move Down all the way; Move Right all the way.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s12",
+              "order": 11,
+              "keywords": [
+                "Move Up all the way",
+                "Move Down two steps",
+                "Move Right two steps"
+              ],
+              "detail": "Route: Move Up all the way; Move Down two steps; Move Right two steps; Move Up all the way.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b2-1:s13",
+              "order": 12,
+              "keywords": [
+                "Move Left all the way",
+                "Move to the button",
+                "Chat",
+                "Move to the exit"
+              ],
+              "detail": "Route: Move Left all the way; Move to the button; Chat; Move to the exit.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-akbadain-b3-1",
+          "locationId": "layton-mm:akbadain-b3",
+          "order": 2,
+          "steps": [
+            {
+              "id": "layton-mm:v-akbadain-b3-1:s1",
+              "order": 0,
+              "keywords": [
+                "Move Right",
+                "Move Up to the third level",
+                "Chat",
+                "Move Down"
+              ],
+              "detail": "Route: Move Right; Move Up to the third level; Chat; Move Down.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b3-1:s2",
+              "order": 1,
+              "keywords": [
+                "Move Right",
+                "Move Up",
+                "Tap on Push"
+              ],
+              "detail": "Route: Move Right; Move Up; Tap on Push; Move Up.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b3-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move Down",
+                "Tap on Push (Right)",
+                "Tap on Push (Up)",
+                "Move Up"
+              ],
+              "detail": "Route: Move Down; Tap on Push (Right); Tap on Push (Up); Move Up.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b3-1:s4",
+              "order": 3,
+              "keywords": [
+                "Follow the path",
+                "Chat",
+                "Move Up to the glowing spots",
+                "Move Left"
+              ],
+              "detail": "Route: Follow the path; Chat; Move Up to the glowing spots; Move Left.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b3-1:s5",
+              "order": 4,
+              "keywords": [
+                "Tap on Push (Up)",
+                "Tap on Push (Down)",
+                "Tap on Push (Right)",
+                "Move Right"
+              ],
+              "detail": "Route: Tap on Push (Up); Tap on Push (Down); Tap on Push (Right); Move Right.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b3-1:s6",
+              "order": 5,
+              "keywords": [
+                "Chat",
+                "Move Up two steps",
+                "Move Right three steps"
+              ],
+              "detail": "Route: Chat; Move Up two steps; Move Right three steps; Move Up two steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b3-1:s7",
+              "order": 6,
+              "keywords": [
+                "Move Left three steps",
+                "Move Up two steps"
+              ],
+              "detail": "Route: Move Left three steps; Move Up two steps; Move Left three steps; Move Up two steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b3-1:s8",
+              "order": 7,
+              "keywords": [
+                "Move Left two steps",
+                "Move to the button",
+                "Chat",
+                "Follow the path"
+              ],
+              "detail": "Route: Move Left two steps; Move to the button; Chat; Follow the path.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b3-1:s9",
+              "order": 8,
+              "keywords": [
+                "Chat",
+                "Tap on Push (Right)",
+                "Move to the stairs and press the button"
+              ],
+              "detail": "Route: Chat; Tap on Push (Right); Move to the stairs and press the button; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b3-1:s10",
+              "order": 9,
+              "keywords": [
+                "Move down the stairs"
+              ],
+              "detail": "Route: Move down the stairs.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-akbadain-b4-1",
+          "locationId": "layton-mm:akbadain-b4",
+          "order": 3,
+          "steps": [
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Push (Down)",
+                "Move to the stairs",
+                "Tap on Pull",
+                "Chat"
+              ],
+              "detail": "Route: Tap on Push (Down); Move to the stairs; Tap on Pull; Chat.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s2",
+              "order": 1,
+              "keywords": [
+                "Follow the path",
+                "Move Up",
+                "Chat"
+              ],
+              "detail": "Route: Follow the path; Move Up; Chat; Follow the path.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s3",
+              "order": 2,
+              "keywords": [
+                "Chat",
+                "Watch the cutscene"
+              ],
+              "detail": "Route: Chat; Cutscene.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s4",
+              "order": 3,
+              "keywords": [
+                "Solve 093 Hershel vs Mummies"
+              ],
+              "detail": "Puzzle 093 — \"Hershel vs Mummies\" (UK: \"Hershel vs Mummies\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s5",
+              "order": 4,
+              "keywords": [
+                "Move Right",
+                "Move Down",
+                "Move Up"
+              ],
+              "detail": "Route: Move Right; Move Down; Move Right; Move Up.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s6",
+              "order": 5,
+              "keywords": [
+                "Move Left",
+                "Move Down",
+                "Move Right"
+              ],
+              "detail": "Route: Move Left; Move Down; Move Right; Move Down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s7",
+              "order": 6,
+              "keywords": [
+                "Wait for the mummy to fall into the hole",
+                "Move Left",
+                "Move Up"
+              ],
+              "detail": "Route: Wait for the mummy to fall into the hole; Move Left; Move Up; Move Left.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s8",
+              "order": 7,
+              "keywords": [
+                "Wait for the mummy to move along the top horizontal track",
+                "Move Up"
+              ],
+              "detail": "Route: Wait for the mummy to move along the top horizontal track; Move Up; Move Up; Move Up.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s9",
+              "order": 8,
+              "keywords": [
+                "Move Right",
+                "Move Down",
+                "Move Left"
+              ],
+              "detail": "Route: Move Right; Move Down; Move Down; Move Left.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s10",
+              "order": 9,
+              "keywords": [
+                "Move Up",
+                "Move Right",
+                "Move Down"
+              ],
+              "detail": "Route: Move Up; Move Right; Move Down; Move Right.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s11",
+              "order": 10,
+              "keywords": [
+                "Wait for the mummy to fall into the hole",
+                "Watch the cutscene",
+                "Follow the path",
+                "Chat"
+              ],
+              "detail": "Route: Wait for the mummy to fall into the hole; Cutscene; Follow the path; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s12",
+              "order": 11,
+              "keywords": [
+                "Tap on Push (Down)",
+                "Tap on Push (Left)",
+                "Tap on Push (Up)",
+                "Tap on Push (Right)"
+              ],
+              "detail": "Route: Tap on Push (Down); Tap on Push (Left); Tap on Push (Up); Tap on Push (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s13",
+              "order": 12,
+              "keywords": [
+                "Chat",
+                "Follow the path to the right",
+                "Tap on Push (Right)",
+                "Tap on Push (Down)"
+              ],
+              "detail": "Route: Chat; Follow the path to the right; Tap on Push (Right); Tap on Push (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s14",
+              "order": 13,
+              "keywords": [
+                "Tap on Push (Right)",
+                "Tap on Push (Left)",
+                "Tap on Push (Up)"
+              ],
+              "detail": "Route: Tap on Push (Right); Tap on Push (Left); Tap on Push (Up); Tap on Push (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b4-1:s15",
+              "order": 14,
+              "keywords": [
+                "Tap on Push (Right)",
+                "Follow the path",
+                "Move to the door"
+              ],
+              "detail": "Route: Tap on Push (Right); Follow the path; Move to the door.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-akbadain-b5-1",
+          "locationId": "layton-mm:akbadain-b5",
+          "order": 4,
+          "steps": [
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s1",
+              "order": 0,
+              "keywords": [
+                "Chat"
+              ],
+              "detail": "Route: Chat.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 095 Snakes and Keys"
+              ],
+              "detail": "Puzzle 095 — \"Snakes and Keys\" (UK: \"Snakes and Keys\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s3",
+              "order": 2,
+              "keywords": [
+                "Move Up",
+                "Tap on Push (Down)",
+                "Tap on Push (Left)"
+              ],
+              "detail": "Route: Move Up; Tap on Push (Down); Tap on Push (Down); Tap on Push (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s4",
+              "order": 3,
+              "keywords": [
+                "Tap on Push (Up)",
+                "Tap on Push (Left)",
+                "Tap on Push (Down)",
+                "Tap on Push (Right)"
+              ],
+              "detail": "Route: Tap on Push (Up); Tap on Push (Left); Tap on Push (Down); Tap on Push (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s5",
+              "order": 4,
+              "keywords": [
+                "Follow the path",
+                "Chat",
+                "Move Left two steps",
+                "Move Up two steps"
+              ],
+              "detail": "Route: Follow the path; Chat; Move Left two steps; Move Up two steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s6",
+              "order": 5,
+              "keywords": [
+                "Move Left one step",
+                "Move Right three steps",
+                "Move Down all the way",
+                "Move Left four steps"
+              ],
+              "detail": "Route: Move Left one step; Move Right three steps; Move Down all the way; Move Left four steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s7",
+              "order": 6,
+              "keywords": [
+                "Move Up four steps",
+                "Move Left four steps",
+                "Move Up all the way",
+                "Move Right four steps"
+              ],
+              "detail": "Route: Move Up four steps; Move Left four steps; Move Up all the way; Move Right four steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s8",
+              "order": 7,
+              "keywords": [
+                "Move Down four steps",
+                "Move Left four steps",
+                "Move Down two steps",
+                "Move to the button"
+              ],
+              "detail": "Route: Move Down four steps; Move Left four steps; Move Down two steps; Move to the button.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s9",
+              "order": 8,
+              "keywords": [
+                "Chat",
+                "Follow the path",
+                "Move Right"
+              ],
+              "detail": "Route: Chat; Follow the path; Chat; Move Right.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s10",
+              "order": 9,
+              "keywords": [
+                "Tap on Push (Down)",
+                "Tap on Push (Right)",
+                "Tap on Push (Up)"
+              ],
+              "detail": "Route: Tap on Push (Down); Tap on Push (Right); Tap on Push (Up); Tap on Push (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s11",
+              "order": 10,
+              "keywords": [
+                "Tap on Push (Left)",
+                "Tap on Push (Right)",
+                "Tap on Push (Down)"
+              ],
+              "detail": "Route: Tap on Push (Left); Tap on Push (Right); Tap on Push (Down); Tap on Push (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s12",
+              "order": 11,
+              "keywords": [
+                "Follow the path",
+                "Move Up",
+                "Chat"
+              ],
+              "detail": "Route: Follow the path; Move Up; Chat; Move Up.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s13",
+              "order": 12,
+              "keywords": [
+                "Tap on Push (Up)",
+                "Tap on Push (Right)"
+              ],
+              "detail": "Route: Tap on Push (Up); Tap on Push (Up); Tap on Push (Up); Tap on Push (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s14",
+              "order": 13,
+              "keywords": [
+                "Tap on Push (Down)",
+                "Tap on Push (Left)",
+                "Tap on Push (Up)",
+                "Follow the path"
+              ],
+              "detail": "Route: Tap on Push (Down); Tap on Push (Left); Tap on Push (Up); Follow the path.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s15",
+              "order": 14,
+              "keywords": [
+                "Tap on Push (Up)",
+                "Tap on Push (Left)",
+                "Tap on Push (Down)"
+              ],
+              "detail": "Route: Tap on Push (Up); Tap on Push (Left); Tap on Push (Left); Tap on Push (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s16",
+              "order": 15,
+              "keywords": [
+                "Tap on Push (Left)",
+                "Tap on Push (Down)"
+              ],
+              "detail": "Route: Tap on Push (Left); Tap on Push (Down); Tap on Push (Left); Tap on Push (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s17",
+              "order": 16,
+              "keywords": [
+                "Tap on Push (Right)",
+                "Tap on Push (Up)",
+                "Follow the path",
+                "Move Up one step"
+              ],
+              "detail": "Route: Tap on Push (Right); Tap on Push (Up); Follow the path; Move Up one step.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s18",
+              "order": 17,
+              "keywords": [
+                "Move Left two steps",
+                "Move Up two steps",
+                "Chat"
+              ],
+              "detail": "Route: Move Left two steps; Move Up two steps; Chat; Move Up two steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s19",
+              "order": 18,
+              "keywords": [
+                "Move right two steps",
+                "Move Up one steps",
+                "Chat",
+                "Move to the top button"
+              ],
+              "detail": "Route: Move right two steps; Move Up one steps; Chat; Move to the top button.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s20",
+              "order": 19,
+              "keywords": [
+                "Chat",
+                "Tap on Push (Up)",
+                "Tap on Push (Right)",
+                "Move to the top button"
+              ],
+              "detail": "Route: Chat; Tap on Push (Up); Tap on Push (Right); Move to the top button.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s21",
+              "order": 20,
+              "keywords": [
+                "Chat",
+                "Follow the path",
+                "Move Right"
+              ],
+              "detail": "Route: Chat; Follow the path; Move Right; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s22",
+              "order": 21,
+              "keywords": [
+                "Solve 096 Arach-attack"
+              ],
+              "detail": "Puzzle 096 — \"Arach-attack\" (UK: \"Arach-attack\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s23",
+              "order": 22,
+              "keywords": [
+                "Follow the path to the right",
+                "Move Down",
+                "Chat"
+              ],
+              "detail": "Route: Follow the path to the right; Move Down; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b5-1:s24",
+              "order": 23,
+              "keywords": [
+                "Solve 097 Tilt to Traverse"
+              ],
+              "detail": "Puzzle 097 — \"Tilt to Traverse\" (UK: \"Tilt to Traverse\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-akbadain-b6-1",
+          "locationId": "layton-mm:akbadain-b6",
+          "order": 5,
+          "steps": [
+            {
+              "id": "layton-mm:v-akbadain-b6-1:s1",
+              "order": 0,
+              "keywords": [
+                "IMPORTANT: TO “TILT” YOUR 3DS ON EMULATOR, YOU NEED TO HOLD THE RIGHT MOUSE CLICK (M2) AND THEN YOU CAN MOVE IT AS YOU NEED",
+                "Tilt the 3DS up and move Layton as much as you can",
+                "Tilt the 3DS down",
+                "Tilt the 3DS to the left"
+              ],
+              "detail": "Route: IMPORTANT: TO “TILT” YOUR 3DS ON EMULATOR, YOU NEED TO HOLD THE RIGHT MOUSE CLICK (M2) AND THEN YOU CAN MOVE IT AS YOU NEED; Tilt the 3DS up and move Layton as much as you can; Tilt the 3DS down; Tilt the 3DS to the left.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b6-1:s2",
+              "order": 1,
+              "keywords": [
+                "Tilt the 3DS down",
+                "Tilt the 3DS up",
+                "Tilt the 3DS to the right"
+              ],
+              "detail": "Route: Tilt the 3DS down; Tilt the 3DS up; Tilt the 3DS to the right; Tilt the 3DS down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b6-1:s3",
+              "order": 2,
+              "keywords": [
+                "Tilt the 3DS to the right",
+                "Tilt the 3DS up"
+              ],
+              "detail": "Route: Tilt the 3DS to the right; Tilt the 3DS up; Tilt the 3DS to the right; Tilt the 3DS up.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b6-1:s4",
+              "order": 3,
+              "keywords": [
+                "Tilt the 3DS to the right",
+                "Tilt the 3DS up",
+                "Get Hershel to Randall"
+              ],
+              "detail": "Route: Tilt the 3DS to the right; Tilt the 3DS up; Get Hershel to Randall.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-akbadain-b7-1",
+          "locationId": "layton-mm:akbadain-b7",
+          "order": 6,
+          "steps": [
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s1",
+              "order": 0,
+              "keywords": [
+                "Move Up",
+                "Chat",
+                "Follow the path up",
+                "Tap on Push (Down)"
+              ],
+              "detail": "Route: Move Up; Chat; Follow the path up; Tap on Push (Down).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s2",
+              "order": 1,
+              "keywords": [
+                "Tap on Push (Right)",
+                "Tap on Push (Up)"
+              ],
+              "detail": "Route: Tap on Push (Right); Tap on Push (Up); Tap on Push (Up); Tap on Push (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s3",
+              "order": 2,
+              "keywords": [
+                "Tap on Push (Right)",
+                "Tap on Push (Up)"
+              ],
+              "detail": "Route: Tap on Push (Right); Tap on Push (Up); Tap on Push (Right); Tap on Push (Up).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s4",
+              "order": 3,
+              "keywords": [
+                "Follow the path",
+                "Tap on Push (Left)",
+                "Tap on Push (Down)"
+              ],
+              "detail": "Route: Follow the path; Tap on Push (Left); Tap on Push (Down); Tap on Push (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s5",
+              "order": 4,
+              "keywords": [
+                "Tap on Push (Left)",
+                "Tap on Push (Up)"
+              ],
+              "detail": "Route: Tap on Push (Left); Tap on Push (Left); Tap on Push (Up); Tap on Push (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s6",
+              "order": 5,
+              "keywords": [
+                "Follow the path",
+                "Chat",
+                "Follow the path up-right",
+                "Tap on Push (Left)"
+              ],
+              "detail": "Route: Follow the path; Chat; Follow the path up-right; Tap on Push (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s7",
+              "order": 6,
+              "keywords": [
+                "Tap on Push (Down)",
+                "Tap on Push (Right)"
+              ],
+              "detail": "Route: Tap on Push (Down); Tap on Push (Right); Tap on Push (Down); Tap on Push (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s8",
+              "order": 7,
+              "keywords": [
+                "Tap on Push (Down)",
+                "Tap on Push (Left)"
+              ],
+              "detail": "Route: Tap on Push (Down); Tap on Push (Down); Tap on Push (Left); Tap on Push (Down).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s9",
+              "order": 8,
+              "keywords": [
+                "Tap on Push (Left)",
+                "Tap on Push (Up)",
+                "Follow the path",
+                "Chat"
+              ],
+              "detail": "Route: Tap on Push (Left); Tap on Push (Up); Follow the path; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s10",
+              "order": 9,
+              "keywords": [
+                "Move Left one step",
+                "Move Right two steps",
+                "Move Up one step"
+              ],
+              "detail": "Route: Move Left one step; Move Right two steps; Move Up one step; Move Right two steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s11",
+              "order": 10,
+              "keywords": [
+                "Move Up one step",
+                "Move Right two steps",
+                "Tap on Top Left Botton twice to face left",
+                "Tap on Dig Hole"
+              ],
+              "detail": "Route: Move Up one step; Move Right two steps; Tap on Top Left Botton twice to face left; Tap on Dig Hole.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s12",
+              "order": 11,
+              "keywords": [
+                "Move Down two steps",
+                "Move Left two steps",
+                "Move Up one step"
+              ],
+              "detail": "Route: Move Down two steps; Move Left two steps; Move Up one step; Move Left two steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s13",
+              "order": 12,
+              "keywords": [
+                "Move Up one step",
+                "Move Left one step",
+                "Move Up two steps",
+                "Move Right one step"
+              ],
+              "detail": "Route: Move Up one step; Move Left one step; Move Up two steps; Move Right one step.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s14",
+              "order": 13,
+              "keywords": [
+                "Move Left one step",
+                "Move Down two steps",
+                "Move Right one step"
+              ],
+              "detail": "Route: Move Left one step; Move Down two steps; Move Right one step; Move Down two steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s15",
+              "order": 14,
+              "keywords": [
+                "Move Left two steps",
+                "Move Up two steps",
+                "Move Right one step",
+                "Move Up one step"
+              ],
+              "detail": "Route: Move Left two steps; Move Up two steps; Move Right one step; Move Up one step.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s16",
+              "order": 15,
+              "keywords": [
+                "Tap on Top Left Botton twice to face down",
+                "Tap on Dig Hole",
+                "Move Up one step",
+                "Move Left one step"
+              ],
+              "detail": "Route: Tap on Top Left Botton twice to face down; Tap on Dig Hole; Move Up one step; Move Left one step.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s17",
+              "order": 16,
+              "keywords": [
+                "Move Up two steps",
+                "Move Right one step",
+                "Move Down two steps"
+              ],
+              "detail": "Route: Move Up two steps; Move Right one step; Move Up two steps; Move Down two steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s18",
+              "order": 17,
+              "keywords": [
+                "Move Right one step",
+                "Move Down two steps",
+                "Move Left two steps",
+                "Move Up two steps"
+              ],
+              "detail": "Route: Move Right one step; Move Down two steps; Move Left two steps; Move Up two steps.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s19",
+              "order": 18,
+              "keywords": [
+                "Move Right one step",
+                "Move Up two steps",
+                "Move Left to the button",
+                "Chat"
+              ],
+              "detail": "Route: Move Right one step; Move Up two steps; Move Left to the button; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s20",
+              "order": 19,
+              "keywords": [
+                "Follow the path",
+                "Chat"
+              ],
+              "detail": "Route: Follow the path; Chat; Follow the path; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s21",
+              "order": 20,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat"
+              ],
+              "detail": "Route: Cutscene; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s22",
+              "order": 21,
+              "keywords": [
+                "Solve 100 Gate to the Ruins"
+              ],
+              "detail": "Puzzle 100 — \"Gate to the Ruins\" (UK: \"The Last Door\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s23",
+              "order": 22,
+              "keywords": [
+                "Chat",
+                "Watch the cutscene"
+              ],
+              "detail": "Route: Chat; Cutscene; Chat; Cutscene.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-akbadain-b7-1:s24",
+              "order": 23,
+              "keywords": [
+                "Save (Select Right Option)"
+              ],
+              "detail": "Route: Save (Select Right Option).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layton-mm:c7",
+      "title": "Chapter 7 - The Reunion Inn",
+      "order": 7,
+      "visits": [
+        {
+          "id": "layton-mm:v-laytons-room-4",
+          "locationId": "layton-mm:laytons-room",
+          "order": 0,
+          "steps": [
+            {
+              "id": "layton-mm:v-laytons-room-4:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Move Right"
+              ],
+              "detail": "Route: Chat; Move Right.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-dromedary-lobby-4",
+          "locationId": "layton-mm:dromedary-lobby",
+          "order": 1,
+          "steps": [
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Nanna Grams"
+              ],
+              "detail": "Route: Tap on Nanna Grams.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 066 A Trip to the Hospital"
+              ],
+              "detail": "Puzzle 066 — \"A Trip to the Hospital\" (UK: \"A Trip to the Hospital\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s3",
+              "order": 2,
+              "keywords": [
+                "Solve 067 Language of Love"
+              ],
+              "detail": "Puzzle 067 — \"Language of Love\" (UK: \"Language of Love\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s4",
+              "order": 3,
+              "keywords": [
+                "Solve 068 Days of Rest"
+              ],
+              "detail": "Puzzle 068 — \"Days of Rest\" (UK: \"Days of Rest\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s5",
+              "order": 4,
+              "keywords": [
+                "Solve 070 A Perilous Adventure"
+              ],
+              "detail": "Puzzle 070 — \"A Perilous Adventure\" (UK: \"A Perilous Adventure\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s6",
+              "order": 5,
+              "keywords": [
+                "Solve 073 Ancient Arithmetic"
+              ],
+              "detail": "Puzzle 073 — \"Ancient Arithmetic\" (UK: \"Rock Hard Sums\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s7",
+              "order": 6,
+              "keywords": [
+                "Solve 076 Painstaking Packing"
+              ],
+              "detail": "Puzzle 076 — \"Painstaking Packing\" (UK: \"Painstaking Packing\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s8",
+              "order": 7,
+              "keywords": [
+                "Solve 078 Three Clowns"
+              ],
+              "detail": "Puzzle 078 — \"Three Clowns\" (UK: \"Three Clowns\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s9",
+              "order": 8,
+              "keywords": [
+                "Solve 081 King Arthur's Sword"
+              ],
+              "detail": "Puzzle 081 — \"King Arthur's Sword\" (UK: \"King Arthur's Sword\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s10",
+              "order": 9,
+              "keywords": [
+                "Solve 083 Settle the Scores"
+              ],
+              "detail": "Puzzle 083 — \"Settle the Scores\" (UK: \"Settle the Scores\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s11",
+              "order": 10,
+              "keywords": [
+                "Solve 092 Ancient Artistry"
+              ],
+              "detail": "Puzzle 092 — \"Ancient Artistry\" (UK: \"Ancient Artistry\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s12",
+              "order": 11,
+              "keywords": [
+                "Solve 098 Watertight Code"
+              ],
+              "detail": "Puzzle 098 — \"Watertight Code\" (UK: \"Watertight Code\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s13",
+              "order": 12,
+              "keywords": [
+                "Solve 099 Ancient Artistry 2"
+              ],
+              "detail": "Puzzle 099 — \"Ancient Artistry 2\" (UK: \"Ancient Artistry 2\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-dromedary-lobby-4:s14",
+              "order": 13,
+              "keywords": [
+                "Tap on Back Button (Bottom Right)",
+                "Tap on Back to Map"
+              ],
+              "detail": "Route: Tap on Back Button (Bottom Right); Tap on Back to Map.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-monte-dor-7",
+          "locationId": "layton-mm:monte-dor",
+          "order": 2,
+          "steps": [
+            {
+              "id": "layton-mm:v-monte-dor-7:s1",
+              "order": 0,
+              "keywords": [
+                "Move Down",
+                "Chat",
+                "Move Left x2",
+                "Tap on Gonzales"
+              ],
+              "detail": "Route: Move Down; Chat; Move Left x2; Tap on Gonzales.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-7:s2",
+              "order": 1,
+              "keywords": [
+                "Move Up",
+                "Tap on Alphonse",
+                "Move Down",
+                "Move Right x3"
+              ],
+              "detail": "Route: Move Up; Tap on Alphonse; Move Down; Move Right x3.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-7:s3",
+              "order": 2,
+              "keywords": [
+                "Chat",
+                "Move Up x2",
+                "Move Left",
+                "Move Up"
+              ],
+              "detail": "Route: Chat; Move Up x2; Move Left; Move Up.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-7:s4",
+              "order": 3,
+              "keywords": [
+                "Chat",
+                "Move Right",
+                "Move Up",
+                "Tap on Door"
+              ],
+              "detail": "Route: Chat; Move Right; Move Up; Tap on Door.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-7:s5",
+              "order": 4,
+              "keywords": [
+                "Chat",
+                "New Mystery recorded",
+                "Move Down"
+              ],
+              "detail": "Route: Chat; Mystery; Move Down; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-7:s6",
+              "order": 5,
+              "keywords": [
+                "Tap on Murphy"
+              ],
+              "detail": "Route: Tap on Murphy.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-7:s7",
+              "order": 6,
+              "keywords": [
+                "Solve 117 Ride Rotation"
+              ],
+              "detail": "Puzzle 117 — \"Ride Rotation\" (UK: \"Ride Rotation\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-7:s8",
+              "order": 7,
+              "keywords": [
+                "Move Left",
+                "Move Down"
+              ],
+              "detail": "Route: Move Left; Move Down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-monte-dor-8",
+          "locationId": "layton-mm:monte-dor",
+          "order": 3,
+          "steps": [
+            {
+              "id": "layton-mm:v-monte-dor-8:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Train (Left Option)",
+                "Move Down x2",
+                "Move Up-Right",
+                "Move Up"
+              ],
+              "detail": "Route: Tap on Train (Left Option); Move Down x2; Move Up-Right; Move Up.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-8:s2",
+              "order": 1,
+              "keywords": [
+                "Chat",
+                "Move Right",
+                "Tap on Henry",
+                "Tap on Mrs. Ascot"
+              ],
+              "detail": "Route: Chat; Move Right; Tap on Henry; Tap on Mrs. Ascot.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-8:s3",
+              "order": 2,
+              "keywords": [
+                "Move Left",
+                "Chat",
+                "Move Down"
+              ],
+              "detail": "Route: Move Left; Chat; Move Down; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-8:s4",
+              "order": 3,
+              "keywords": [
+                "Move Left",
+                "Move Up",
+                "Move Right",
+                "Tap on Mayor Billson"
+              ],
+              "detail": "Route: Move Left; Move Up; Move Right; Tap on Mayor Billson.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-8:s5",
+              "order": 4,
+              "keywords": [
+                "Solve 118 Evenly Matched 3"
+              ],
+              "detail": "Puzzle 118 — \"Evenly Matched 3\" (UK: \"Pawn Portions 3\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-8:s6",
+              "order": 5,
+              "keywords": [
+                "Move Right",
+                "Tap on Sheffield",
+                "Move Left",
+                "Move Down"
+              ],
+              "detail": "Route: Move Right; Tap on Sheffield; Move Left; Move Down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-8:s7",
+              "order": 6,
+              "keywords": [
+                "Chat",
+                "Move Up x2",
+                "Tap on Bloom",
+                "Move Down"
+              ],
+              "detail": "Route: Chat; Move Up x2; Tap on Bloom; Move Down.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-8:s8",
+              "order": 7,
+              "keywords": [
+                "Chat"
+              ],
+              "detail": "Route: Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-reunion-inn-1",
+          "locationId": "layton-mm:reunion-inn",
+          "order": 4,
+          "steps": [
+            {
+              "id": "layton-mm:v-reunion-inn-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Train (Right Option)",
+                "Watch the cutscene",
+                "Tap on Aldus",
+                "Move Up"
+              ],
+              "detail": "Route: Tap on Train (Right Option); Cutscene; Tap on Aldus; Move Up.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-reunion-inn-1:s2",
+              "order": 1,
+              "keywords": [
+                "Chat",
+                "Tap on Mordy"
+              ],
+              "detail": "Route: Chat; Tap on Mordy.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-reunion-inn-1:s3",
+              "order": 2,
+              "keywords": [
+                "Solve 126 Mystery Room"
+              ],
+              "detail": "Puzzle 126 — \"Mystery Room\" (UK: \"Room 2134 Mystery\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-office-1",
+          "locationId": "layton-mm:office",
+          "order": 5,
+          "steps": [
+            {
+              "id": "layton-mm:v-office-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Office",
+                "Chat",
+                "Tap on Books (Table on the Right)"
+              ],
+              "detail": "Route: Tap on Office; Chat; Tap on Books (Table on the Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-office-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 128 Faded Photos"
+              ],
+              "detail": "Puzzle 128 — \"Faded Photos\" (UK: \"Faded Photos\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-office-1:s3",
+              "order": 2,
+              "keywords": [
+                "Chat",
+                "Tap on Left Bookcase",
+                "Tap on Map (Left)",
+                "Tap on Robot (Left)"
+              ],
+              "detail": "Route: Chat; Tap on Left Bookcase; Tap on Map (Left); Tap on Robot (Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-front-desk-1",
+          "locationId": "layton-mm:front-desk",
+          "order": 6,
+          "steps": [
+            {
+              "id": "layton-mm:v-front-desk-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Front Desk",
+                "Chat"
+              ],
+              "detail": "Route: Tap on Front Desk; Chat.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-emerald-suite-1",
+          "locationId": "layton-mm:emerald-suite",
+          "order": 7,
+          "steps": [
+            {
+              "id": "layton-mm:v-emerald-suite-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Emerald Suite",
+                "Chat",
+                "Tap on Frankie"
+              ],
+              "detail": "Route: Tap on Emerald Suite; Chat; Tap on Frankie.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-emerald-suite-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 130 Water, Wood, Fire"
+              ],
+              "detail": "Puzzle 130 — \"Water, Wood, Fire\" (UK: \"Water, Wood, Fire\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-emerald-suite-1:s3",
+              "order": 2,
+              "keywords": [
+                "Tap on Painting (Left Edge)"
+              ],
+              "detail": "Route: Tap on Painting (Left Edge).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-conservatory-1",
+          "locationId": "layton-mm:conservatory",
+          "order": 8,
+          "steps": [
+            {
+              "id": "layton-mm:v-conservatory-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Conservatory",
+                "Chat",
+                "Tap on Bird (Top Left)",
+                "Tap on Red Flower x2"
+              ],
+              "detail": "Route: Tap on Conservatory; Chat; Tap on Bird (Top Left); Tap on Red Flower x2.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-conservatory-1:s2",
+              "order": 1,
+              "keywords": [
+                "Tap on Fruit",
+                "Tap on Book (Top Left)"
+              ],
+              "detail": "Route: Tap on Fruit; Tap on Book (Top Left).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-grand-hall-1",
+          "locationId": "layton-mm:grand-hall",
+          "order": 9,
+          "steps": [
+            {
+              "id": "layton-mm:v-grand-hall-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Grand Hall",
+                "Watch the cutscene",
+                "Chat",
+                "Tap on Plant (Right)"
+              ],
+              "detail": "Route: Tap on Grand Hall; Cutscene; Chat; Tap on Plant (Right).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-grand-hall-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 131 Jewels to the Lock"
+              ],
+              "detail": "Puzzle 131 — \"Jewels to the Lock\" (UK: \"Jewels to the Lock\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-auditorium-1",
+          "locationId": "layton-mm:auditorium",
+          "order": 10,
+          "steps": [
+            {
+              "id": "layton-mm:v-auditorium-1:s1",
+              "order": 0,
+              "keywords": [
+                "Tap on Auditorium",
+                "Chat",
+                "Tap on Screen",
+                "Watch the cutscene"
+              ],
+              "detail": "Route: Tap on Auditorium; Chat; Tap on Screen; Cutscene.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-auditorium-1:s2",
+              "order": 1,
+              "keywords": [
+                "Solve 133 Grand Hall Rescue"
+              ],
+              "detail": "Puzzle 133 — \"Grand Hall Rescue\" (UK: \"Grand Hall Rescue\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-auditorium-1:s3",
+              "order": 2,
+              "keywords": [
+                "Tap on Rescue Luke",
+                "Tap on Drop down when you see the J letter",
+                "Tap on Drop down when you see the L letter",
+                "Watch the cutscene"
+              ],
+              "detail": "Route: Tap on Rescue Luke; Tap on Drop down when you see the J letter; Tap on Drop down when you see the L letter; Cutscene.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-auditorium-1:s4",
+              "order": 3,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat",
+                "New Mystery recorded"
+              ],
+              "detail": "Route: Cutscene; Chat; Mystery.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-auditorium-1:s5",
+              "order": 4,
+              "keywords": [
+                "Save (Select Right Option)"
+              ],
+              "detail": "Route: Save (Select Right Option).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layton-mm:c8",
+      "title": "Chapter 8 - The Final Miracle",
+      "order": 8,
+      "visits": [
+        {
+          "id": "layton-mm:v-reunion-inn-2",
+          "locationId": "layton-mm:reunion-inn",
+          "order": 0,
+          "steps": [
+            {
+              "id": "layton-mm:v-reunion-inn-2:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Door (Top Right Corner)",
+                "Watch the cutscene"
+              ],
+              "detail": "Route: Chat; Tap on Door (Top Right Corner); Cutscene; Chat.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-reunion-inn-2:s2",
+              "order": 1,
+              "keywords": [
+                "Tap on Train"
+              ],
+              "detail": "Route: Tap on Train.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        },
+        {
+          "id": "layton-mm:v-city-monument-2",
+          "locationId": "layton-mm:city-monument",
+          "order": 1,
+          "steps": [
+            {
+              "id": "layton-mm:v-city-monument-2:s1",
+              "order": 0,
+              "keywords": [
+                "Move Down x3",
+                "Chat",
+                "New Mystery recorded"
+              ],
+              "detail": "Route: Move Down x3; Chat; Mystery; Chat.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-city-monument-2:s2",
+              "order": 1,
+              "keywords": [
+                "Zoom on Monument",
+                "Tap on Manhole"
+              ],
+              "detail": "Route: Zoom on Monument; Tap on Manhole.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-city-monument-2:s3",
+              "order": 2,
+              "keywords": [
+                "Solve 134 Breaking the Seal"
+              ],
+              "detail": "Puzzle 134 — \"Breaking the Seal\" (UK: \"Breaking the Seal\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-city-monument-2:s4",
+              "order": 3,
+              "keywords": [
+                "Chat",
+                "Watch the cutscene"
+              ],
+              "detail": "Route: Chat; Cutscene.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-city-monument-2:s5",
+              "order": 4,
+              "keywords": [
+                "Solve 135 Mask Pedestal"
+              ],
+              "detail": "Puzzle 135 — \"Mask Pedestal\" (UK: \"Wind-Up Chamber\"). The route solves it here. The solution is deliberately not shown; if stuck, use in-game hint coins or the spoiler-free walkthrough page for this puzzle (see the Chapter Puzzles table).",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-city-monument-2:s6",
+              "order": 5,
+              "keywords": [
+                "Solve the on-screen puzzle"
+              ],
+              "detail": "Solution steps omitted here (spoiler-free rule) — the route PDF spells them out; use hints or the walkthrough link if stuck.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-city-monument-2:s7",
+              "order": 6,
+              "keywords": [
+                "Watch the cutscene",
+                "New Mystery recorded"
+              ],
+              "detail": "Route: Cutscene; Mystery.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-city-monument-2:s8",
+              "order": 7,
+              "keywords": [
+                "Save (Select Right Option)"
+              ],
+              "detail": "Route: Save (Select Right Option).",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layton-mm:c9",
+      "title": "Epilogue - The City of Miracles",
+      "order": 9,
+      "visits": [
+        {
+          "id": "layton-mm:v-monte-dor-9",
+          "locationId": "layton-mm:monte-dor",
+          "order": 0,
+          "steps": [
+            {
+              "id": "layton-mm:v-monte-dor-9:s1",
+              "order": 0,
+              "keywords": [
+                "Chat",
+                "Tap on Randall",
+                "Tap on Left Option"
+              ],
+              "detail": "Route: Chat; Tap on Randall; Tap on Left Option; Chat.",
+              "sourceRefs": [
+                "src-any-route",
+                "src-pl5-walkthrough"
+              ],
+              "confidence": "flagged"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-9:s2",
+              "order": 1,
+              "keywords": [
+                "Watch the cutscene",
+                "Chat",
+                "New Mystery recorded"
+              ],
+              "detail": "Route: Cutscene; Chat; Mystery; Cutscene.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "layton-mm:v-monte-dor-9:s3",
+              "order": 2,
+              "keywords": [
+                "Chat",
+                "New Mystery recorded",
+                "Time Ends on Pressing Okay on Mystery Screen"
+              ],
+              "detail": "Route: Chat; Mystery; Time Ends on Pressing Okay on Mystery Screen.",
+              "sourceRefs": [
+                "src-any-route"
+              ],
+              "confidence": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

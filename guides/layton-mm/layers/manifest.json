@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "entries": [
+    {
+      "id": "spine",
+      "kind": "spine",
+      "artifact": "layers/spine.json",
+      "report": "layers/spine.report.json",
+      "sha256": "74f90cd27c0b4dce9ec83871548604ed01377b828f4d450908dcbbea22cb963a"
+    }
+  ]
+}
