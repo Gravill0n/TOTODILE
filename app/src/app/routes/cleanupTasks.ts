@@ -1,3 +1,4 @@
+import { widgetBinaryItems } from "@/lib/widgetItems";
 import {
   counterTarget,
   type GuideFile,
@@ -30,73 +31,37 @@ function widgetCleanupItems(
   widget: Widget,
   progress: CleanupProgress,
 ): CleanupItem[] {
-  const items: CleanupItem[] = [];
-  const binary = (itemId: string, label: string) => {
-    if (!progress.doneIds.has(itemId)) {
+  if (widget.type === "counter") {
+    const items: CleanupItem[] = [];
+    for (const counter of widget.counters) {
+      const target = counterTarget(counter);
+      // Derived entries (#5) count their checked derivedFrom ids; manual
+      // entries read the stored value.
+      const value = counter.derivedFrom
+        ? counter.derivedFrom.filter((id) => progress.doneIds.has(id)).length
+        : (progress.counterValues[counter.itemId] ?? 0);
+      if (value >= target) continue;
       items.push({
-        itemId,
-        label,
-        kind: "item",
-        skipped: progress.skippedIds.has(itemId),
+        itemId: counter.itemId,
+        label: counter.label,
+        kind: "counter",
+        skipped: false,
+        counter: { value, target },
       });
     }
-  };
-
-  switch (widget.type) {
-    case "checklist":
-      for (const row of widget.rows) binary(row.itemId, row.label);
-      break;
-    case "flowchart":
-      for (const node of widget.nodes) binary(node.itemId, node.label);
-      break;
-    case "mapPins":
-      for (const pin of widget.pins) binary(pin.itemId, pin.label);
-      break;
-    case "prepCard":
-      for (const item of widget.items) binary(item.itemId, item.label);
-      break;
-    case "matrix": {
-      const rowLabel = new Map(widget.rows.map((r) => [r.id, r.label]));
-      const colLabel = new Map(widget.columns.map((c) => [c.id, c.label]));
-      for (const cell of widget.cells) {
-        binary(
-          cell.itemId,
-          `${rowLabel.get(cell.rowId) ?? cell.rowId} × ${colLabel.get(cell.columnId) ?? cell.columnId}`,
-        );
-      }
-      break;
-    }
-    case "dataTable": {
-      const colLabel = new Map(widget.columns.map((c) => [c.id, c.label]));
-      for (const row of widget.rows) {
-        if (!row.checkable) continue;
-        const cells = Object.entries(row.cells)
-          .map(([col, val]) => `${colLabel.get(col) ?? col}: ${val}`)
-          .join(" · ");
-        binary(row.itemId, cells);
-      }
-      break;
-    }
-    case "counter":
-      for (const counter of widget.counters) {
-        const target = counterTarget(counter);
-        // Derived entries (#5) count their checked derivedFrom ids; manual
-        // entries read the stored value.
-        const value = counter.derivedFrom
-          ? counter.derivedFrom.filter((id) => progress.doneIds.has(id)).length
-          : (progress.counterValues[counter.itemId] ?? 0);
-        if (value >= target) continue;
-        items.push({
-          itemId: counter.itemId,
-          label: counter.label,
-          kind: "counter",
-          skipped: false,
-          counter: { value, target },
-        });
-      }
-      break;
+    return items;
   }
-  return items;
+
+  // Binary items and their labels come from the shared enumerator; only
+  // checkable ones are tasks (dataTable rows may be informational-only).
+  return widgetBinaryItems(widget)
+    .filter((item) => item.checkable && !progress.doneIds.has(item.itemId))
+    .map((item) => ({
+      itemId: item.itemId,
+      label: item.label,
+      kind: "item" as const,
+      skipped: progress.skippedIds.has(item.itemId),
+    }));
 }
 
 // Every non-done task, grouped (P7): steps by location in chapter order, then
