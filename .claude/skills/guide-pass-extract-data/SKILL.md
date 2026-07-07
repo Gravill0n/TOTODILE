@@ -6,8 +6,7 @@ description: >-
   after a change. Classifies raw source facts ONCE into layers/data.json — generic
   category tables (encounters, items, trades, …) plus an `images` catalog of the
   assets already in the sources — so the spine and widget passes draw from it
-  instead of each re-reading sources. Requires the sources pass. Not for
-  single-file HTML guides — that is achievement-guide-builder.
+  instead of each re-reading sources. Requires the sources pass.
 ---
 
 # Compiler pass: data extraction (schema v1)

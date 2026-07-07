@@ -6,8 +6,7 @@ description: >-
   a guide to review. Validates every layer, checks staleness, assembles the
   draft guide.json + ra-mapping.json mechanically, spot-reads flagged rows,
   and writes the QA report. Rejects problems back to the owning pass — it
-  never edits content itself. Not for single-file HTML guides — that is
-  achievement-guide-builder.
+  never edits content itself.
 ---
 
 # Compiler pass: QA / assembly

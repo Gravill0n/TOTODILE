@@ -5,8 +5,7 @@ description: >-
   the widget pass", "fill the <name> widget / encounter table / boss board for
   <slug>", or to re-run one after a rejection. Fills ONE widget instance per
   run (one layer per widget) from the deck's slots, anchored to the spine.
-  Requires the extract-data and spine passes. Not for single-file HTML guides —
-  that is achievement-guide-builder.
+  Requires the extract-data and spine passes.
 ---
 
 # Compiler pass: widget fill

@@ -6,8 +6,9 @@ contract is broken even if its output looks right. Schemas referenced here live 
 (§20.2); this document is the prose half. `yarn validate-guides` enforces the
 mechanical clauses in CI.
 
-Companion documents: the PRD (FR-D/FR-E, §6, §23) governs; `IMPLEMENTATION_PLAN.md`
-Phase 2 sequences the build.
+Companion document: the PRD (FR-D/FR-E, §6, §23) governs. (The plan that
+sequenced the suite's build, `IMPLEMENTATION_PLAN.md`, is retired to
+`docs/archive/`.)
 
 ## 1. Pipeline
 
@@ -150,8 +151,7 @@ assembly is a mechanical merge with zero rewriting:
 
 Anything else in `layers/` ending in `.json` — beyond these artifacts, their
 `.report.json` companions, and `manifest.json` — is a contract violation (the
-validator rejects it). Non-JSON files (e.g. ML PiT's `translation-report.md`,
-a pre-contract artifact) are ignored.
+validator rejects it). Non-JSON files in `layers/` are ignored.
 
 ## 4. Reports
 
@@ -236,5 +236,5 @@ A pass re-run (after a rejection, new sources, or a schema migration):
 ```
 
 Each SKILL.md links to this contract and restates only its own pass spec. The
-legacy `achievement-guide-builder` skill remains until the suite replaces it
-(§18.3 spirit: nothing breaks half-done).
+legacy `achievement-guide-builder` skill the suite replaced was retired and
+removed in July 2026, along with the single-file HTML guides it produced.
