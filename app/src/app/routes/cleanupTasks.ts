@@ -3,7 +3,7 @@ import {
   type GuideFile,
   type RaMapping,
   type Widget,
-} from "../schema";
+} from "@/schema";
 
 // One leftover task in the cleanup view (FR-B4): a non-done step or widget
 // item. Counters carry their progress; everything binary is tappable to done.

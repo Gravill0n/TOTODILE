@@ -4,12 +4,12 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { createAppRouter } from "@/app/router";
 import {
   closeProgressDb,
   readAllSlots,
 } from "@/features/progress/progressStore";
 import { getCredentials } from "@/features/sync/raCredentials";
-import { createAppRouter } from "@/shell/router";
 import { validProgressExport } from "@/testing/helpers";
 
 afterEach(async () => {

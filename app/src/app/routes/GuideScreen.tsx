@@ -16,8 +16,8 @@ import { getCredentials } from "@/features/sync/raCredentials";
 import { SyncReceipt } from "@/features/sync/SyncReceipt";
 import { type SyncOutcome, syncGuide } from "@/features/sync/syncGuide";
 import { chapterDomId, guideAssetUrl, stepDomId } from "@/lib/guide";
+import type { GuideFile, LibraryEntry } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
-import type { GuideFile, LibraryEntry } from "../schema";
 
 type GuideScreenProps = {
   entry: LibraryEntry;

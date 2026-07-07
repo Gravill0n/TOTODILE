@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useGuideProgress } from "@/features/progress/useGuideProgress";
-import type { GuideFile, LibraryEntry, RaMapping } from "../schema";
+import type { GuideFile, LibraryEntry, RaMapping } from "@/schema";
 import { type CleanupItem, collectCleanupTasks, mastery } from "./cleanupTasks";
 
 type CleanupScreenProps = {

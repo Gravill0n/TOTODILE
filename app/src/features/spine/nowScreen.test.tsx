@@ -9,9 +9,9 @@ import {
 } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
+import { GuideScreen } from "@/app/routes/GuideScreen";
 import { closeProgressDb } from "@/features/progress/progressStore";
 import { guideFile, libraryManifest } from "@/schema";
-import { GuideScreen } from "@/shell/GuideScreen";
 import { readFixtureJson } from "@/testing/fixtureRepo";
 
 const guide = guideFile.parse(

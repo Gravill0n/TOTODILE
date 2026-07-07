@@ -5,8 +5,8 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
+import { createAppRouter } from "@/app/router";
 import { closeProgressDb } from "@/features/progress/progressStore";
-import { createAppRouter } from "@/shell/router";
 
 const LEGACY_ACCENT =
   /\b(?:text|border|bg)-accent(?!-foreground)\b|\baccent-accent\b/;
@@ -21,7 +21,7 @@ afterEach(async () => {
 
 describe("GuideCard reskin (R5)", () => {
   it("renders through shadcn Card + Badge and drops the legacy accent", () => {
-    const src = source("shell/GuideCard.tsx");
+    const src = source("app/routes/GuideCard.tsx");
     expect(src).toContain('from "@/components/ui/card"');
     expect(src).toContain('from "@/components/ui/badge"');
     expect(src).not.toMatch(LEGACY_ACCENT);
@@ -41,6 +41,6 @@ describe("SettingsScreen reskin (R5)", () => {
     await renderSettings();
     expect(document.querySelector('[data-slot="input"]')).not.toBeNull();
     expect(document.querySelector('[data-slot="switch"]')).not.toBeNull();
-    expect(source("shell/SettingsScreen.tsx")).not.toMatch(LEGACY_ACCENT);
+    expect(source("app/routes/SettingsScreen.tsx")).not.toMatch(LEGACY_ACCENT);
   });
 });

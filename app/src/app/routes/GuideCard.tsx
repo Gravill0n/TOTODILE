@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import type { LibraryEntry, ProgressSlot } from "../schema";
+import type { LibraryEntry, ProgressSlot } from "@/schema";
 
 type GuideCardProps = {
   entry: LibraryEntry;

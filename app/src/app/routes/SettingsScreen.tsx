@@ -11,7 +11,7 @@ import {
   getCredentials,
   setCredentials,
 } from "@/features/sync/raCredentials";
-import { progressExport, SCHEMA_VERSION } from "../schema";
+import { progressExport, SCHEMA_VERSION } from "@/schema";
 
 // RA username + API key entry. The key lives only in browser storage (§17.4):
 // never committed, logged, or written into a progress export. Kept as its own

@@ -4,6 +4,7 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { createAppRouter } from "@/app/router";
 import {
   closeProgressDb,
   emptySlot,
@@ -11,7 +12,6 @@ import {
 } from "@/features/progress/progressStore";
 import { setEditorMode } from "@/features/review/editorMode";
 import { SCHEMA_VERSION } from "@/schema";
-import { createAppRouter } from "@/shell/router";
 import { readFixtureJson } from "@/testing/fixtureRepo";
 import { validLayer, validLibrary } from "@/testing/helpers";
 

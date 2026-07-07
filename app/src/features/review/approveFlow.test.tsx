@@ -4,11 +4,11 @@ import { createMemoryHistory, RouterProvider } from "@tanstack/react-router";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { createAppRouter } from "@/app/router";
 import { closeProgressDb } from "@/features/progress/progressStore";
 import { setEditorMode } from "@/features/review/editorMode";
 import { closeReviewDb } from "@/features/review/reviewStore";
 import { approvalsFile, SCHEMA_VERSION } from "@/schema";
-import { createAppRouter } from "@/shell/router";
 import { validGuide, validLibrary, validSources } from "@/testing/helpers";
 
 afterEach(async () => {

@@ -23,11 +23,11 @@ import { buildLocationIndex } from "@/features/spine/locationIndex";
 import { loadGuide } from "@/lib/content/guide";
 import { loadLibrary } from "@/lib/content/library";
 import { loadRaMapping } from "@/lib/content/raMapping";
-import { CleanupScreen } from "./CleanupScreen";
-import { GuideScreen } from "./GuideScreen";
-import { LibraryScreen } from "./LibraryScreen";
-import { LocationScreen } from "./LocationScreen";
-import { SettingsScreen } from "./SettingsScreen";
+import { CleanupScreen } from "./routes/CleanupScreen";
+import { GuideScreen } from "./routes/GuideScreen";
+import { LibraryScreen } from "./routes/LibraryScreen";
+import { LocationScreen } from "./routes/LocationScreen";
+import { SettingsScreen } from "./routes/SettingsScreen";
 
 const rootRoute = createRootRoute({
   component: () => (
