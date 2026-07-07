@@ -1,4 +1,4 @@
-import { type IDBPDatabase, openDB } from "idb";
+import { createLazyDb } from "@/lib/idb";
 import type { ProgressSlot } from "@/schema";
 
 // §6.8 browser-side progress slots on IndexedDB — exactly one per guide
@@ -9,16 +9,10 @@ export type { ItemState, ProgressSlot } from "@/schema";
 const DB_NAME = "totodile";
 const STORE = "progress";
 
-let dbPromise: Promise<IDBPDatabase> | undefined;
-
-function db(): Promise<IDBPDatabase> {
-  dbPromise ??= openDB(DB_NAME, 1, {
-    upgrade(database) {
-      database.createObjectStore(STORE, { keyPath: "guideId" });
-    },
-  });
-  return dbPromise;
-}
+const lazy = createLazyDb(DB_NAME, 1, (database) => {
+  database.createObjectStore(STORE, { keyPath: "guideId" });
+});
+const db = lazy.db;
 
 export function emptySlot(guideId: string): ProgressSlot {
   return {
@@ -67,8 +61,4 @@ export async function importSlots(slots: ProgressSlot[]): Promise<void> {
 
 // Drops the cached connection so the next call reopens the database.
 // Used by tests to prove persistence across connections.
-export async function closeProgressDb(): Promise<void> {
-  const open = dbPromise;
-  dbPromise = undefined;
-  if (open) (await open).close();
-}
+export const closeProgressDb = lazy.close;

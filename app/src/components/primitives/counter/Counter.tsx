@@ -1,15 +1,8 @@
 import { Check, Minus, Plus, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { type CounterWidget, counterTarget } from "@/schema";
-import type { ProgressSlice } from "@/types/progressSlice";
-
-type CounterProps = {
-  widget: CounterWidget;
-  progress: ProgressSlice;
-  onAdjust: (itemId: string, delta: number) => void;
-  onReset: (itemId: string) => void;
-};
+import { counterTarget } from "@/schema";
+import type { CounterProps } from "../widgetProps";
 
 // FR-B3: increment / decrement / reset, values persist like checkboxes.
 // Reaching the target shows a done treatment; the value itself never

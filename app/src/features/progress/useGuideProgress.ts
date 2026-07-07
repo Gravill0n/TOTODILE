@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { chapterOf, guideStepIds } from "@/lib/guide";
 import type { GuideFile } from "@/schema";
-import { advancePointer } from "./pointer";
 import { type ProgressSlot, readSlot, writeSlot } from "./progressStore";
+import * as mutations from "./slotMutations";
 
 export type GuideProgress =
   | { ready: false }
@@ -46,7 +46,8 @@ function withStats(
 
 // Owns the progress slot for one guide. Lives at the screen level — spine
 // components stay pure (data + callbacks in, UI out, §22.1). Every change
-// is written immediately (FR-B1).
+// is written immediately (FR-B1); the transitions themselves are the pure
+// functions in slotMutations.
 export function useGuideProgress(guide: GuideFile): GuideProgress {
   const stepIds = useMemo(() => guideStepIds(guide), [guide]);
   const [slot, setSlot] = useState<ProgressSlot | null>(null);
@@ -74,12 +75,15 @@ export function useGuideProgress(guide: GuideFile): GuideProgress {
     };
   }, [guide, stepIds]);
 
+  // One timestamp per user action, taken here so the pure mutators stay
+  // date-free and the StrictMode double-invoke writes identical values.
   const mutateSlot = useCallback(
-    (mutate: (slot: ProgressSlot) => ProgressSlot) => {
+    (mutate: (slot: ProgressSlot, at: string) => ProgressSlot) => {
+      const at = new Date().toISOString();
       setSlot((previous) => {
         if (!previous) return previous;
         const next = withStats(
-          { ...mutate(previous), lastActivityAt: new Date().toISOString() },
+          { ...mutate(previous, at), lastActivityAt: at },
           guide,
           stepIds,
         );
@@ -93,156 +97,52 @@ export function useGuideProgress(guide: GuideFile): GuideProgress {
   );
 
   const toggleDone = useCallback(
-    (itemId: string) => {
-      mutateSlot((slot) => {
-        const itemStates = { ...slot.itemStates };
-        const wasDone = itemStates[itemId]?.state === "done";
-        if (wasDone) {
-          delete itemStates[itemId];
-        } else {
-          // Done replaces a skip — the two are exclusive (FR-B2).
-          itemStates[itemId] = { state: "done", at: new Date().toISOString() };
-        }
-        let currentStepId = slot.currentStepId;
-        if (!wasDone && itemId === slot.currentStepId) {
-          currentStepId = advancePointer(
-            stepIds,
-            new Set(Object.keys(itemStates)),
-            itemId,
-          );
-        }
-        return { ...slot, itemStates, currentStepId };
-      });
-    },
+    (itemId: string) =>
+      mutateSlot((slot, at) => mutations.toggleDone(slot, stepIds, itemId, at)),
     [mutateSlot, stepIds],
   );
 
   const toggleSkip = useCallback(
-    (stepId: string) => {
-      mutateSlot((slot) => {
-        const existing = slot.itemStates[stepId];
-        // Skip on a done step is a no-op; uncheck first.
-        if (existing?.state === "done") return slot;
-        const itemStates = { ...slot.itemStates };
-        if (existing?.state === "skipped") {
-          delete itemStates[stepId];
-        } else {
-          itemStates[stepId] = {
-            state: "skipped",
-            at: new Date().toISOString(),
-          };
-        }
-        let currentStepId = slot.currentStepId;
-        // Skipping the step under the pointer moves on, same as checking it.
-        if (
-          itemStates[stepId]?.state === "skipped" &&
-          stepId === slot.currentStepId
-        ) {
-          currentStepId = advancePointer(
-            stepIds,
-            new Set(Object.keys(itemStates)),
-            stepId,
-          );
-        }
-        return { ...slot, itemStates, currentStepId };
-      });
-    },
+    (stepId: string) =>
+      mutateSlot((slot, at) => mutations.toggleSkip(slot, stepIds, stepId, at)),
     [mutateSlot, stepIds],
   );
 
-  // P2 burst: one tap marks every untouched step between the pointer and
-  // the tapped step (inclusive) done — deliberate skips survive — then the
-  // pointer advances past. One slot write.
   const markThrough = useCallback(
-    (stepId: string) => {
-      mutateSlot((slot) => {
-        const to = stepIds.indexOf(stepId);
-        if (to === -1) return slot;
-        const fromIndex = slot.currentStepId
-          ? stepIds.indexOf(slot.currentStepId)
-          : 0;
-        const start = fromIndex === -1 ? 0 : Math.min(fromIndex, to);
-        const end = fromIndex === -1 ? to : Math.max(fromIndex, to);
-        const itemStates = { ...slot.itemStates };
-        const at = new Date().toISOString();
-        for (const id of stepIds.slice(start, end + 1)) {
-          if (!itemStates[id]) {
-            itemStates[id] = { state: "done", at };
-          }
-        }
-        const endId = stepIds[end];
-        const currentStepId = endId
-          ? advancePointer(stepIds, new Set(Object.keys(itemStates)), endId)
-          : slot.currentStepId;
-        return { ...slot, itemStates, currentStepId };
-      });
-    },
+    (stepId: string) =>
+      mutateSlot((slot, at) =>
+        mutations.markThrough(slot, stepIds, stepId, at),
+      ),
     [mutateSlot, stepIds],
   );
 
-  // Additive bulk mark for RA Sync (FR-C2): set every given item done in one
-  // write, overriding a skip, never un-marking, and leaving the pointer where
-  // the player left it. Atomic — one slot write for the whole sync.
   const markManyDone = useCallback(
-    (itemIds: string[]) => {
-      mutateSlot((slot) => {
-        const itemStates = { ...slot.itemStates };
-        const at = new Date().toISOString();
-        for (const id of itemIds) {
-          if (itemStates[id]?.state !== "done") {
-            itemStates[id] = { state: "done", at };
-          }
-        }
-        return { ...slot, itemStates };
-      });
-    },
+    (itemIds: string[]) =>
+      mutateSlot((slot, at) => mutations.markManyDone(slot, itemIds, at)),
     [mutateSlot],
   );
 
-  // FR-B5: an explicit "I've seen this missable" — distinct from done/skip,
-  // idempotent, one slot write. The warning stays dismissed across sessions.
   const acknowledgeMissable = useCallback(
-    (stepId: string) => {
-      mutateSlot((slot) =>
-        slot.acknowledgedMissables.includes(stepId)
-          ? slot
-          : {
-              ...slot,
-              acknowledgedMissables: [...slot.acknowledgedMissables, stepId],
-            },
-      );
-    },
+    (stepId: string) =>
+      mutateSlot((slot) => mutations.acknowledgeMissable(slot, stepId)),
     [mutateSlot],
   );
 
   const movePointer = useCallback(
-    (stepId: string) => {
-      mutateSlot((slot) => ({ ...slot, currentStepId: stepId }));
-    },
+    (stepId: string) =>
+      mutateSlot((slot) => mutations.movePointer(slot, stepId)),
     [mutateSlot],
   );
 
   const adjustCounter = useCallback(
-    (itemId: string, delta: number) => {
-      mutateSlot((slot) => ({
-        ...slot,
-        counterValues: {
-          ...slot.counterValues,
-          [itemId]: Math.max(0, (slot.counterValues[itemId] ?? 0) + delta),
-        },
-      }));
-    },
+    (itemId: string, delta: number) =>
+      mutateSlot((slot) => mutations.adjustCounter(slot, itemId, delta)),
     [mutateSlot],
   );
 
   const resetCounter = useCallback(
-    (itemId: string) => {
-      mutateSlot((slot) => {
-        const counterValues = { ...slot.counterValues };
-        delete counterValues[itemId];
-        return { ...slot, counterValues };
-      });
-    },
+    (itemId: string) =>
+      mutateSlot((slot) => mutations.resetCounter(slot, itemId)),
     [mutateSlot],
   );
 

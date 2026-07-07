@@ -1,4 +1,4 @@
-import { type IDBPDatabase, openDB } from "idb";
+import { createLazyDb } from "@/lib/idb";
 import type { SpotCheckVerdict } from "@/schema";
 
 // Editor-only review working state — spot-check verdicts recorded before a
@@ -39,21 +39,15 @@ type LayerVerdictRecord = {
   date: string;
 };
 
-let dbPromise: Promise<IDBPDatabase> | undefined;
-
-function db(): Promise<IDBPDatabase> {
-  dbPromise ??= openDB(DB_NAME, 2, {
-    upgrade(database, oldVersion) {
-      if (oldVersion < 1) {
-        database.createObjectStore(STORE, { keyPath: "id" });
-      }
-      if (oldVersion < 2) {
-        database.createObjectStore(VERDICT_STORE, { keyPath: "id" });
-      }
-    },
-  });
-  return dbPromise;
-}
+const lazy = createLazyDb(DB_NAME, 2, (database, oldVersion) => {
+  if (oldVersion < 1) {
+    database.createObjectStore(STORE, { keyPath: "id" });
+  }
+  if (oldVersion < 2) {
+    database.createObjectStore(VERDICT_STORE, { keyPath: "id" });
+  }
+});
+const db = lazy.db;
 
 function recordId(guideId: string, layerId: string, itemId: string): string {
   return `${guideId}|${layerId}|${itemId}`;
@@ -153,8 +147,4 @@ export async function clearLayerVerdict(
 
 // Drops the cached connection so the next call reopens the database — tests
 // use this to prove verdicts persist across connections.
-export async function closeReviewDb(): Promise<void> {
-  const open = dbPromise;
-  dbPromise = undefined;
-  if (open) (await open).close();
-}
+export const closeReviewDb = lazy.close;

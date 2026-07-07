@@ -1,3 +1,4 @@
+import { joinDetail, widgetBinaryItems } from "@/lib/widgetItems";
 import type {
   Confidence,
   GuideFile,
@@ -45,104 +46,32 @@ export function indexRow(
   return content ? { id: itemId, itemId, ...content } : undefined;
 }
 
-function joinDetail(parts: (string | undefined)[]): string | undefined {
-  const kept = parts.filter((part): part is string => Boolean(part));
-  return kept.length > 0 ? kept.join(" · ") : undefined;
-}
-
-// One row per checkable item a widget exposes, with a human label derived per
-// primitive — matrix/dataTable items have no label of their own, so they are
-// built from the axes / cell values.
+// One row per checkable item a widget exposes; labels come from the shared
+// enumerator (lib/widgetItems). Counters stay local: the review lens shows
+// their target as detail, which is this lens's concern, not the enumerator's.
 function widgetRowContents(value: Widget): Map<string, RowContent> {
   const rows = new Map<string, RowContent>();
-  const add = (itemId: string, content: RowContent) =>
-    rows.set(itemId, content);
   const withWidget = (detail?: string) => joinDetail([value.title, detail]);
 
-  switch (value.type) {
-    case "checklist":
-      for (const row of value.rows) {
-        add(row.itemId, {
-          title: row.label,
-          detail: withWidget(row.note),
-          sourceRefs: row.sourceRefs,
-          confidence: row.confidence,
-        });
-      }
-      break;
-    case "counter":
-      for (const counter of value.counters) {
-        add(counter.itemId, {
-          title: counter.label,
-          detail: withWidget(`target ${counter.target}`),
-          sourceRefs: counter.sourceRefs,
-          confidence: counter.confidence,
-        });
-      }
-      break;
-    case "flowchart":
-      for (const node of value.nodes) {
-        add(node.itemId, {
-          title: node.label,
-          detail: withWidget(node.note),
-          sourceRefs: node.sourceRefs,
-          confidence: node.confidence,
-        });
-      }
-      break;
-    case "mapPins":
-      for (const pin of value.pins) {
-        add(pin.itemId, {
-          title: pin.label,
-          detail: withWidget(undefined),
-          sourceRefs: pin.sourceRefs,
-          confidence: pin.confidence,
-        });
-      }
-      break;
-    case "prepCard":
-      for (const item of value.items) {
-        add(item.itemId, {
-          title: item.label,
-          detail: withWidget(
-            joinDetail([
-              item.quantity ? `×${item.quantity}` : undefined,
-              item.note,
-            ]),
-          ),
-          sourceRefs: item.sourceRefs,
-          confidence: item.confidence,
-        });
-      }
-      break;
-    case "matrix": {
-      const rowLabel = new Map(value.rows.map((r) => [r.id, r.label]));
-      const colLabel = new Map(value.columns.map((c) => [c.id, c.label]));
-      for (const cell of value.cells) {
-        add(cell.itemId, {
-          title: `${rowLabel.get(cell.rowId) ?? cell.rowId} × ${colLabel.get(cell.columnId) ?? cell.columnId}`,
-          detail: withWidget(undefined),
-          sourceRefs: cell.sourceRefs,
-          confidence: cell.confidence,
-        });
-      }
-      break;
+  if (value.type === "counter") {
+    for (const counter of value.counters) {
+      rows.set(counter.itemId, {
+        title: counter.label,
+        detail: withWidget(`target ${counter.target}`),
+        sourceRefs: counter.sourceRefs,
+        confidence: counter.confidence,
+      });
     }
-    case "dataTable": {
-      const colLabel = new Map(value.columns.map((c) => [c.id, c.label]));
-      for (const row of value.rows) {
-        const cells = Object.entries(row.cells)
-          .map(([col, val]) => `${colLabel.get(col) ?? col}: ${val}`)
-          .join(" · ");
-        add(row.itemId, {
-          title: cells,
-          detail: withWidget(undefined),
-          sourceRefs: row.sourceRefs,
-          confidence: row.confidence,
-        });
-      }
-      break;
-    }
+    return rows;
+  }
+
+  for (const item of widgetBinaryItems(value)) {
+    rows.set(item.itemId, {
+      title: item.label,
+      detail: withWidget(item.note),
+      sourceRefs: item.sourceRefs,
+      confidence: item.confidence,
+    });
   }
   return rows;
 }

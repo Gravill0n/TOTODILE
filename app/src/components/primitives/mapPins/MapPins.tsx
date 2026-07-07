@@ -1,13 +1,10 @@
 import { Check } from "lucide-react";
 import { ZoomableImage } from "@/components/ZoomableImage";
 import type { MapPinsWidget } from "@/schema";
-import type { ProgressSlice } from "@/types/progressSlice";
 import { FlagMark } from "../FlagMark";
+import type { WidgetProps } from "../widgetProps";
 
-type MapPinsProps = {
-  widget: MapPinsWidget;
-  progress: ProgressSlice;
-  onToggle: (itemId: string) => void;
+type MapPinsProps = WidgetProps<MapPinsWidget> & {
   // Image srcs are guide-folder-relative; resolution stays outside the
   // renderer (§22.1 purity).
   resolveAsset: (path: string) => string;
