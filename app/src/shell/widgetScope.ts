@@ -1,5 +1,5 @@
+import { chapterOf, visitOf } from "@/lib/guide";
 import type { GuideFile, WidgetScope } from "../schema";
-import { chapterOf, visitOf } from "../spine/guideData";
 
 // Where the pointer currently is, as the three IDs a widget scope can bind to
 // (Workstream A). Derived from the current step; all undefined before play.

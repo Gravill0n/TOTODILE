@@ -7,8 +7,8 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { ZoomableImage } from "@/components/ZoomableImage";
+import { guideAssetUrl, stepDomId, stepHeadline } from "@/lib/guide";
 import type { Step } from "../schema";
-import { guideAssetUrl, stepDomId, stepHeadline } from "./guideData";
 
 type StepRowProps = {
   step: Step;
