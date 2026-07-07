@@ -1,8 +1,8 @@
 // @vitest-environment jsdom
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { WidgetRail } from "@/features/spine/WidgetRail";
 import { guideFile } from "@/schema";
-import { WidgetRail } from "@/shell/WidgetRail";
 import { readFixtureJson } from "@/testing/fixtureRepo";
 
 const guide = guideFile.parse(

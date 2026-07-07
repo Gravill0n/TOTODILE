@@ -1,5 +1,5 @@
 import { chapterDomId } from "@/lib/guide";
-import type { GuideFile } from "../schema";
+import type { GuideFile } from "@/schema";
 import { preferredNextVisit } from "./preferredNext";
 import { StepRow } from "./StepRow";
 

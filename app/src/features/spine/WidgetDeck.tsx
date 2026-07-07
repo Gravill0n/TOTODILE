@@ -1,7 +1,7 @@
 import { WidgetRenderer } from "@/components/primitives/WidgetRenderer";
 import { Card } from "@/components/ui/card";
+import type { Widget } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
-import type { Widget } from "../schema";
 
 export type WidgetHandlers = {
   onToggle: (itemId: string) => void;

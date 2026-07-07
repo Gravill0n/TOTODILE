@@ -1,8 +1,8 @@
 // @vitest-environment jsdom
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
+import { NowScreen } from "@/features/spine/NowScreen";
 import { guideFile } from "@/schema";
-import { NowScreen } from "@/spine/NowScreen";
 
 const noop = () => {};
 

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { upcomingMissables } from "@/features/spine/missables";
 import { guideFile, SCHEMA_VERSION } from "@/schema";
-import { upcomingMissables } from "@/spine/missables";
 import { validGuide } from "@/testing/helpers";
 
 function missableStep(id: string) {

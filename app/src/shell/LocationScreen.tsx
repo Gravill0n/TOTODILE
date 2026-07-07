@@ -1,6 +1,6 @@
+import type { LocationIndexEntry } from "@/features/spine/locationIndex";
 import { guideAssetUrl, stepHeadline } from "@/lib/guide";
 import type { LibraryEntry } from "../schema";
-import type { LocationIndexEntry } from "../spine/locationIndex";
 
 type LocationScreenProps = {
   entry: LibraryEntry;

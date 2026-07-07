@@ -6,8 +6,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import type { Widget } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
-import type { Widget } from "../schema";
 import type { WidgetHandlers } from "./WidgetDeck";
 
 type WidgetDialogProps = WidgetHandlers & {

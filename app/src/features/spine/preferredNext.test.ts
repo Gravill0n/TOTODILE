@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { preferredNextVisit } from "@/features/spine/preferredNext";
 import { guideFile } from "@/schema";
-import { preferredNextVisit } from "@/spine/preferredNext";
 
 // One chapter, three visits — Harbor Town visited twice around a Sea Cave trip —
 // so "next visit" can be exercised mid-visit, at a visit boundary, and at the

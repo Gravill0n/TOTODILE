@@ -1,8 +1,8 @@
 // @vitest-environment jsdom
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import { PostureLayout } from "@/shell/PostureLayout";
-import { WidgetsSheet } from "@/shell/WidgetsSheet";
+import { PostureLayout } from "@/features/spine/PostureLayout";
+import { WidgetsSheet } from "@/features/spine/WidgetsSheet";
 import type { ProgressSlice } from "@/types/progressSlice";
 
 afterEach(cleanup);

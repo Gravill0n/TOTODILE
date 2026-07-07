@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/collapsible";
 import { ZoomableImage } from "@/components/ZoomableImage";
 import { guideAssetUrl, stepDomId, stepHeadline } from "@/lib/guide";
-import type { Step } from "../schema";
+import type { Step } from "@/schema";
 
 type StepRowProps = {
   step: Step;

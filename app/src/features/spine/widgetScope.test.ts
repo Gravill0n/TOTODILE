@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
+import { widgetContextFor, widgetInScope } from "@/features/spine/widgetScope";
 import type { WidgetScope } from "@/schema";
 import { guideFile } from "@/schema";
-import { widgetContextFor, widgetInScope } from "@/shell/widgetScope";
 
 const global: WidgetScope = { kind: "global" };
 const chapter: WidgetScope = { kind: "chapter", chapterId: "g:c1" };

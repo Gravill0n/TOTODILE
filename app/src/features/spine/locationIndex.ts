@@ -1,4 +1,4 @@
-import type { GuideFile, Location, Step, Visit, Widget } from "../schema";
+import type { GuideFile, Location, Step, Visit, Widget } from "@/schema";
 
 // The derived location index (§8 / Workstream A): everything a place gathers
 // across the whole route. For each location it aggregates every visit to it

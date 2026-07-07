@@ -9,6 +9,7 @@ import {
   type RouterHistory,
   redirect,
 } from "@tanstack/react-router";
+import { buildLocationIndex } from "@/features/spine/locationIndex";
 import { loadGuide } from "@/lib/content/guide";
 import { loadLibrary } from "@/lib/content/library";
 import { loadRaMapping } from "@/lib/content/raMapping";
@@ -19,7 +20,6 @@ import { loadLayerRoster } from "../review/layerRoster";
 import { ReviewScreen } from "../review/ReviewScreen";
 import { loadReviewGuide } from "../review/reviewContent";
 import { loadDeck, loadSources } from "../review/reviewLoaders";
-import { buildLocationIndex } from "../spine/locationIndex";
 import { CleanupScreen } from "./CleanupScreen";
 import { GuideScreen } from "./GuideScreen";
 import { LibraryScreen } from "./LibraryScreen";

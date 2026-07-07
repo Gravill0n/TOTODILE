@@ -1,23 +1,23 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
+import { ChapterSheet } from "@/features/spine/ChapterSheet";
+import { MissableBanner } from "@/features/spine/MissableBanner";
+import { upcomingMissables } from "@/features/spine/missables";
+import { NowScreen } from "@/features/spine/NowScreen";
+import { PostureLayout } from "@/features/spine/PostureLayout";
+import type { WidgetHandlers } from "@/features/spine/WidgetDeck";
+import { WidgetDialog } from "@/features/spine/WidgetDialog";
+import { WidgetRail } from "@/features/spine/WidgetRail";
+import { WidgetsSheet } from "@/features/spine/WidgetsSheet";
+import { widgetContextFor, widgetInScope } from "@/features/spine/widgetScope";
 import { chapterDomId, guideAssetUrl, stepDomId } from "@/lib/guide";
 import type { ProgressSlice } from "@/types/progressSlice";
 import { useGuideProgress } from "../progress/useGuideProgress";
 import type { GuideFile, LibraryEntry } from "../schema";
-import { ChapterSheet } from "../spine/ChapterSheet";
-import { MissableBanner } from "../spine/MissableBanner";
-import { upcomingMissables } from "../spine/missables";
-import { NowScreen } from "../spine/NowScreen";
 import { getCredentials } from "../sync/raCredentials";
 import { SyncReceipt } from "../sync/SyncReceipt";
 import { type SyncOutcome, syncGuide } from "../sync/syncGuide";
-import { PostureLayout } from "./PostureLayout";
-import type { WidgetHandlers } from "./WidgetDeck";
-import { WidgetDialog } from "./WidgetDialog";
-import { WidgetRail } from "./WidgetRail";
-import { WidgetsSheet } from "./WidgetsSheet";
-import { widgetContextFor, widgetInScope } from "./widgetScope";
 
 type GuideScreenProps = {
   entry: LibraryEntry;

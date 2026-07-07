@@ -5,8 +5,8 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { FlagMark } from "@/components/primitives/FlagMark";
 import { Flowchart } from "@/components/primitives/flowchart/Flowchart";
 import { MapPins } from "@/components/primitives/mapPins/MapPins";
+import { WidgetDeck } from "@/features/spine/WidgetDeck";
 import { flowchartWidget, mapPinsWidget, type Widget } from "@/schema";
-import { WidgetDeck } from "@/shell/WidgetDeck";
 import type { ProgressSlice } from "@/types/progressSlice";
 
 const noProgress: ProgressSlice = { doneIds: new Set(), counterValues: {} };

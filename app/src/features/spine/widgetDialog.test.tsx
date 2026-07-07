@@ -7,8 +7,8 @@ import {
   within,
 } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { WidgetDialog } from "@/features/spine/WidgetDialog";
 import { guideFile } from "@/schema";
-import { WidgetDialog } from "@/shell/WidgetDialog";
 import { readFixtureJson } from "@/testing/fixtureRepo";
 import type { ProgressSlice } from "@/types/progressSlice";
 

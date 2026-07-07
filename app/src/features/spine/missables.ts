@@ -1,4 +1,4 @@
-import type { GuideFile } from "../schema";
+import type { GuideFile } from "@/schema";
 
 export type UpcomingMissable = {
   stepId: string;

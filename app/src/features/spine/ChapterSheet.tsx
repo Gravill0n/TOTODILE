@@ -5,7 +5,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import type { Chapter } from "../schema";
+import type { Chapter } from "@/schema";
 
 type ChapterSheetProps = {
   chapters: Chapter[];

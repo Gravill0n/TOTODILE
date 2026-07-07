@@ -7,8 +7,8 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { Switch } from "@/components/ui/switch";
+import type { Widget } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
-import type { Widget } from "../schema";
 import { WidgetDeck, type WidgetHandlers } from "./WidgetDeck";
 
 type WidgetsSheetProps = WidgetHandlers & {

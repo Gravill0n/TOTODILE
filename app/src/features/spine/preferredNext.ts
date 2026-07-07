@@ -1,4 +1,4 @@
-import type { GuideFile, Visit } from "../schema";
+import type { GuideFile, Visit } from "@/schema";
 
 // The "what do I do next" affordance (§6 / Workstream A): from the pointer's
 // current step, the visit to head to next. While the current visit still has

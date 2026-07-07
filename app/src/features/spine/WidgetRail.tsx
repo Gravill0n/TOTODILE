@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import type { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
-import type { Widget, WidgetType } from "../schema";
+import type { Widget, WidgetType } from "@/schema";
 
 // One glyph per primitive — the closed §14.3 set, so the record is exhaustive.
 const typeIcons: Record<WidgetType, LucideIcon> = {
