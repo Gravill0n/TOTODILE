@@ -41,14 +41,34 @@ describe("collectContentManifestEntries", () => {
     ]);
   });
 
-  it("excludes editor-side files the app never fetches", () => {
+  it("includes every player-fetched JSON so offline playability works", () => {
+    const root = writeTree({
+      "library.json": "{}",
+      "guides/mlpit/guide.json": "{}",
+      "guides/mlpit/approvals.json": "{}",
+      "guides/mlpit/ra-mapping.json": "{}",
+      "guides/mlpit/layers/manifest.json": "{}",
+      "guides/mlpit/layers/qa.report.json": "{}",
+    });
+    const urls = collectContentManifestEntries(root).map((e) => e.url);
+    expect(urls).toEqual([
+      "guides/mlpit/approvals.json",
+      "guides/mlpit/guide.json",
+      "guides/mlpit/layers/manifest.json",
+      "guides/mlpit/layers/qa.report.json",
+      "guides/mlpit/ra-mapping.json",
+      "library.json",
+    ]);
+  });
+
+  it("excludes editor-only files the play routes never fetch", () => {
     const root = writeTree({
       "library.json": "{}",
       "guides/mlpit/guide.json": "{}",
       "guides/mlpit/sources.json": "{}",
       "guides/mlpit/deck.json": "{}",
-      "guides/mlpit/ra-mapping.json": "{}",
-      "guides/mlpit/approvals.json": "{}",
+      "guides/mlpit/layers/spine.json": "{}",
+      "guides/mlpit/layers/spine.report.json": "{}",
       "guides/mlpit/layers/translation-report.md": "notes",
     });
     const urls = collectContentManifestEntries(root).map((e) => e.url);

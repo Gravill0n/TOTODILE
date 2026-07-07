@@ -9,10 +9,25 @@ export type ManifestEntry = {
 
 const IMAGE_EXTENSIONS = new Set([".png", ".gif", ".jpg", ".webp"]);
 
+// Every JSON the player-facing routes fetch per guide — offline must cover
+// all of them (§5.3): guide.json, the three playability inputs loadPlayability
+// reads on every route (FR-E5 — approvals + layers manifest + QA signal), and
+// ra-mapping.json (cleanup mastery + Sync). Offline, a non-precached fetch
+// rejects with a network error — not a 404 — so absence handling never
+// engages and the route loader throws.
+const PLAYER_JSON_FILES = [
+  "guide.json",
+  "approvals.json",
+  "ra-mapping.json",
+  "layers/manifest.json",
+  "layers/qa.report.json",
+];
+
 // Workbox precache entries for the player-facing repo content: library.json
-// plus, per guide folder, guide.json and its images (§5.3 "assets + guide
-// data cached"). Editor-side files (sources.json, deck.json, ra-mapping.json,
-// approvals.json, layers/) are never fetched by the app and stay out of the
+// plus, per guide folder, the player-fetched JSONs and the guide images
+// (§5.3 "assets + guide data cached"). Editor-only files (sources.json,
+// deck.json, layer artifacts and pass reports) are fetched by the review
+// lens alone — an online, editor-mode activity — and stay out of the
 // offline cache. Content-hash revisions make a recompiled guide bust the
 // cache on the next service-worker update.
 export function collectContentManifestEntries(
@@ -33,9 +48,11 @@ export function collectContentManifestEntries(
     : [];
 
   for (const slug of slugs) {
-    const guidePath = join(guidesDir, slug, "guide.json");
-    if (existsSync(guidePath)) {
-      entries.push(entryFor(guidePath, `guides/${slug}/guide.json`));
+    for (const relative of PLAYER_JSON_FILES) {
+      const path = join(guidesDir, slug, relative);
+      if (existsSync(path)) {
+        entries.push(entryFor(path, `guides/${slug}/${relative}`));
+      }
     }
     for (const relative of imageFiles(join(guidesDir, slug))) {
       entries.push(

@@ -110,6 +110,22 @@ describe("guide Sync (FR-C2/C3/C4)", () => {
     });
   });
 
+  it("exposes Sync in the header for the desktop posture (bottom bar is phone-only)", async () => {
+    setCredentials({ username: "Pierre", webApiKey: "KEY" });
+    stubFetch();
+    await renderGuide();
+
+    fireEvent.click(
+      screen.getByRole("button", { name: "Sync with RetroAchievements" }),
+    );
+
+    expect(await screen.findByText(/1 newly marked/)).toBeDefined();
+    await vi.waitFor(async () => {
+      const slot = await readSlot("fictional-quest");
+      expect(slot.itemStates[TARGET]?.state).toBe("done");
+    });
+  });
+
   it("shows the Settings-pointing error and marks nothing without a key", async () => {
     clearCredentials();
     stubFetch();
