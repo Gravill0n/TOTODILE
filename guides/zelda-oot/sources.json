@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "sources": [
+    {
+      "id": "src-ra",
+      "title": "RetroAchievements — The Legend of Zelda: Ocarina of Time, main set (game 10113; local snapshot in zelda-oot/sources/ra-set/)",
+      "url": "https://retroachievements.org/game/10113",
+      "type": "ra-set",
+      "retrievedAt": "2026-07-08"
+    },
+    {
+      "id": "src-ra-wiki",
+      "title": "RA community guide — The Legend of Zelda: Ocarina of Time (guides wiki; achievement-ordered walkthrough, 8 acts, missables flagged; local snapshot in zelda-oot/sources/ra-wiki/)",
+      "url": "https://github.com/RetroAchievements/guides/wiki/The-Legend-of-Zelda:-Ocarina-of-Time-(Nintendo-64)",
+      "type": "wiki",
+      "retrievedAt": "2026-07-08"
+    },
+    {
+      "id": "src-zd-walkthrough",
+      "title": "Zelda Dungeon — Ocarina of Time Walkthrough (TOC + 15 chapter pages; local snapshots in zelda-oot/sources/zelda-dungeon/)",
+      "url": "https://www.zeldadungeon.net/ocarina-of-time-walkthrough/",
+      "type": "wiki",
+      "retrievedAt": "2026-07-08"
+    },
+    {
+      "id": "src-zd-skulltulas",
+      "title": "Zelda Dungeon Wiki — Ocarina of Time Gold Skulltulas, all 100 with per-area locations (local snapshot in zelda-oot/sources/zelda-dungeon/)",
+      "url": "https://www.zeldadungeon.net/wiki/Ocarina_of_Time_Gold_Skulltulas",
+      "type": "other",
+      "retrievedAt": "2026-07-08"
+    },
+    {
+      "id": "src-zd-heart-pieces",
+      "title": "Zelda Dungeon Wiki — Ocarina of Time Heart Pieces, all 36 with locations (local snapshot in zelda-oot/sources/zelda-dungeon/)",
+      "url": "https://www.zeldadungeon.net/wiki/Ocarina_of_Time_Heart_Pieces",
+      "type": "other",
+      "retrievedAt": "2026-07-08"
+    },
+    {
+      "id": "src-checklist-pdf",
+      "title": "LanPartyGuide — Ocarina of Time 100% Checklist, 11 pages, area-ordered (local PDF: zelda-oot/sources/ocarina_of_time_checklist.pdf)",
+      "url": "https://www.lanpartyguide.com/downloads/ocarina_of_time_checklist.pdf",
+      "type": "manual",
+      "retrievedAt": "2026-07-08"
+    },
+    {
+      "id": "src-oot-tracker",
+      "title": "oot-tracker by StripesOO7 — PopTracker pack with area maps and per-area location data (local copy in zelda-oot/sources/oot-tracker-main/)",
+      "url": "https://github.com/StripesOO7/oot-tracker",
+      "type": "map",
+      "retrievedAt": "2026-05-23"
+    }
+  ]
+}

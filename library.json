@@ -17,8 +17,9 @@
       "game": "The Legend of Zelda: Ocarina of Time",
       "platform": "Nintendo 64",
       "raGameId": 10113,
+      "deckId": "deck-action-adventure",
       "language": "en",
-      "status": "planned"
+      "status": "in-compilation"
     },
     {
       "id": "layton-mm",

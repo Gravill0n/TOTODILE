@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "source-gathering",
+  "layer": "source-gathering",
+  "generatedAt": "2026-07-08T18:59:11Z",
+  "inputs": [],
+  "report": {
+    "rowCount": 7,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "First run: bootstrapped guides/zelda-oot/ — new deck deck-action-adventure (6 slots) and library.json entry set to in-compilation, both per Pierre 2026-07-08.",
+    "All 7 sources were gathered by Pierre and verified present under zelda-oot/sources/ (local-only; sources/ is gitignored repo-wide, so only this manifest is committed — same convention as pokemon-crystal).",
+    "RetroAchievements and Zelda Dungeon sit behind a Cloudflare JS challenge, so snapshots are browser saves (scripts/snapshot-zelda-oot-sources.sh can refetch via the Wayback Machine if needed).",
+    "Scope: RA main set only — the Glitch Showcase subset (game 17444) is out of scope, per Pierre 2026-07-08.",
+    "No video source; route (src-ra-wiki, src-zd-walkthrough), ra-set, map, and manual dimensions are all covered."
+  ]
+}
