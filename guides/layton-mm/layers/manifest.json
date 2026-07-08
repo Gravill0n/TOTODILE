@@ -100,6 +100,21 @@
       }
     },
     {
+      "id": "widget-puzzles-c6",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c6.json",
+      "report": "layers/widget-puzzles-c6.report.json",
+      "sha256": "636d0311f446f7a2a5c46a5ac5361691187adace118baec9a5628f6ae69c1486",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c6"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
       "id": "widget-puzzles-solved",
       "kind": "widget",
       "artifact": "layers/widget-puzzles-solved.json",
