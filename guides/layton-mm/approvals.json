@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "layers": [
+    {
+      "id": "spine",
+      "kind": "spine",
+      "artifact": "layers/spine.json",
+      "report": {
+        "rowCount": 352,
+        "anomalies": [
+          "layton-mm:v-monte-dor-1:s1: route names no location for this span — umbrella location used",
+          "layton-mm:v-carnival-square-1:s1: location \"Carnival Square\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-classroom-1:s1: location \"Classroom\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-old-towne-1:s3: inline solution line(s) omitted per the spoiler-free rule (ch2-a031)",
+          "layton-mm:v-living-room-2:s1: location \"Living Room\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-monte-dor-2:s1: route names no location for this span — umbrella location used",
+          "layton-mm:v-henrys-study-1:s1: location \"Henry's Study\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-monte-dor-3:s1: route names no location for this span — umbrella location used",
+          "layton-mm:v-city-hall-steps-1:s1: location \"City Hall Steps\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-briefing-room-1:s1: route instruction depends on a solution screenshot in the PDF that was not extracted (spoiler rule); location \"Briefing Room\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-briefing-room-1:s2: route instruction depends on a solution screenshot in the PDF that was not extracted (spoiler rule)",
+          "layton-mm:v-monte-dor-4:s1: route names no location for this span — umbrella location used",
+          "layton-mm:v-montsarton-gallery-1:s1: location \"Montsarton Gallery\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-madame-lapushkas-2:s1: location \"Madame Lapushka's\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-big-top-1:s1: location \"Big Top\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-randalls-room-1:s1: location \"Randall's Room\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-winding-road-1:s1: location \"Winding Road\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-winding-road-1:s4: inline solution line(s) omitted per the spoiler-free rule (ch4-a011)",
+          "layton-mm:v-norwell-1:s1: location \"Norwell\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-winding-road-2:s1: location \"Winding Road\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-monte-dor-5:s1: route names no location for this span — umbrella location used",
+          "layton-mm:v-racetrack-1:s1: location \"Racetrack\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-monte-dor-6:s1: route names no location for this span — umbrella location used",
+          "layton-mm:v-casino-1:s1: location \"Casino\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-casino-1:s8: inline solution line(s) omitted per the spoiler-free rule (ch5-a079, ch5-a080); route instruction depends on a solution screenshot in the PDF that was not extracted (spoiler rule)",
+          "layton-mm:v-casino-1:s9: inline solution line(s) omitted per the spoiler-free rule (ch5-a081); route instruction depends on a solution screenshot in the PDF that was not extracted (spoiler rule)",
+          "layton-mm:v-pumpkin-park-1:s1: location \"Pumpkin Park\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-akbadain-b1-1:s1: location \"Ruins of Akbadain — Level B1\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-akbadain-b3-1:s1: location \"Ruins of Akbadain — Level B3\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-akbadain-b4-1:s1: location \"Ruins of Akbadain — Level B4\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-akbadain-b5-1:s1: location \"Ruins of Akbadain — Level B5\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-akbadain-b6-1:s1: location \"Ruins of Akbadain — Level B6\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-akbadain-b7-1:s1: location \"Ruins of Akbadain — Level B7\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-monte-dor-7:s1: route names no location for this span — umbrella location used",
+          "layton-mm:v-monte-dor-8:s1: route names no location for this span — umbrella location used",
+          "layton-mm:v-reunion-inn-1:s1: location \"Reunion Inn\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-reunion-inn-2:s1: location \"Reunion Inn\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-city-monument-2:s1: location \"City Monument\" aligned from the walkthrough's hint-coin location index (src-pl5-hintcoins) — the route does not name this place here",
+          "layton-mm:v-city-monument-2:s6: inline solution line(s) omitted per the spoiler-free rule (ch8-a016, ch8-a017, ch8-a018, ch8-a019)",
+          "layton-mm:v-monte-dor-9:s1: route names no location for this span — umbrella location used"
+        ],
+        "flaggedItemIds": [
+          "layton-mm:v-monte-dor-1:s1",
+          "layton-mm:v-carnival-square-1:s1",
+          "layton-mm:v-classroom-1:s1",
+          "layton-mm:v-old-towne-1:s3",
+          "layton-mm:v-living-room-2:s1",
+          "layton-mm:v-monte-dor-2:s1",
+          "layton-mm:v-henrys-study-1:s1",
+          "layton-mm:v-monte-dor-3:s1",
+          "layton-mm:v-city-hall-steps-1:s1",
+          "layton-mm:v-briefing-room-1:s1",
+          "layton-mm:v-briefing-room-1:s2",
+          "layton-mm:v-monte-dor-4:s1",
+          "layton-mm:v-montsarton-gallery-1:s1",
+          "layton-mm:v-madame-lapushkas-2:s1",
+          "layton-mm:v-big-top-1:s1",
+          "layton-mm:v-randalls-room-1:s1",
+          "layton-mm:v-winding-road-1:s1",
+          "layton-mm:v-winding-road-1:s4",
+          "layton-mm:v-norwell-1:s1",
+          "layton-mm:v-winding-road-2:s1",
+          "layton-mm:v-monte-dor-5:s1",
+          "layton-mm:v-racetrack-1:s1",
+          "layton-mm:v-monte-dor-6:s1",
+          "layton-mm:v-casino-1:s1",
+          "layton-mm:v-casino-1:s8",
+          "layton-mm:v-casino-1:s9",
+          "layton-mm:v-pumpkin-park-1:s1",
+          "layton-mm:v-akbadain-b1-1:s1",
+          "layton-mm:v-akbadain-b3-1:s1",
+          "layton-mm:v-akbadain-b4-1:s1",
+          "layton-mm:v-akbadain-b5-1:s1",
+          "layton-mm:v-akbadain-b6-1:s1",
+          "layton-mm:v-akbadain-b7-1:s1",
+          "layton-mm:v-monte-dor-7:s1",
+          "layton-mm:v-monte-dor-8:s1",
+          "layton-mm:v-reunion-inn-1:s1",
+          "layton-mm:v-reunion-inn-2:s1",
+          "layton-mm:v-city-monument-2:s1",
+          "layton-mm:v-city-monument-2:s6",
+          "layton-mm:v-monte-dor-9:s1"
+        ]
+      },
+      "contentHash": "sha256:8942e0f5ff7604265390811ddafded5c399324268c764d6507d6e6122f257c2c",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-07T19:38:30.732Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-puzzles-c0",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-puzzles-c0.json",
+      "report": {
+        "rowCount": 0,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:a575d30e5b3e9a1007f601cd087efeeef528b85661c387a8a6e54ffc7ea69d9a",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-08T16:09:42.649Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-puzzles-c1",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-puzzles-c1.json",
+      "report": {
+        "rowCount": 0,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:f98b27bdaae1de0d0727cd47202f355898d00e3f469dbad85712edade62dc5fa",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-08T16:09:42.649Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-puzzles-c2",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-puzzles-c2.json",
+      "report": {
+        "rowCount": 0,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:f6d45115ed2269e18af31b619267ac675ea7fd9985a6bf399337d10fa508567c",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-08T16:09:42.649Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-puzzles-c3",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-puzzles-c3.json",
+      "report": {
+        "rowCount": 0,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:dc7f322c7bb14dd29918534c4c421475e77dd3f44e88a331fda4accf0746e428",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-08T16:09:42.649Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-puzzles-c4",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-puzzles-c4.json",
+      "report": {
+        "rowCount": 0,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:10ccb71eb1897fe49a87889fc1817c067fae367fdd622447601844a3285b3fcc",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-08T16:09:42.649Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-puzzles-c5",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-puzzles-c5.json",
+      "report": {
+        "rowCount": 0,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:e2fb83abb7973a1c0b07fcdc45549ad624ec4ab2c087432621e1a57fa0026dbc",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-08T16:09:42.649Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-puzzles-c6",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-puzzles-c6.json",
+      "report": {
+        "rowCount": 0,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:636d0311f446f7a2a5c46a5ac5361691187adace118baec9a5628f6ae69c1486",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-08T16:09:42.649Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-puzzles-c7",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-puzzles-c7.json",
+      "report": {
+        "rowCount": 0,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:2c8759d11d95bf20a1869b67fa1ee66f8c32ff84e5aa9b0ca861f1dd0a76fbbd",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-08T16:09:42.649Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-puzzles-c8",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-puzzles-c8.json",
+      "report": {
+        "rowCount": 0,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:0faba91c3e72d2052568f28a04670bf5e85e5c6870328fe13da708161494c686",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-08T16:09:42.649Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-puzzles-solved",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-puzzles-solved.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:1434d41fdcd1a0a1c93a02042df432425934ca5a95969a941dba16a801837c64",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-08T16:09:24.410Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    }
+  ]
+}

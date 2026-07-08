@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "qa",
+  "layer": "qa",
+  "generatedAt": "2026-07-08T17:27:11Z",
+  "inputs": [
+    {
+      "file": "deck.json",
+      "sha256": "8028edb3db14f32c7d49cf85da9f5177ebeb877b961204301adaffb4e28f1e29"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "4118ef8421340c94b5feb8762bb205f91d714cf56f77905ef899bb6cea35d5e3"
+    },
+    {
+      "file": "layers/manifest.json",
+      "sha256": "6c598ad0862067255af68ba71e0f986b9cf604820430ceb48f44bc2896abd48c"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "b140b5a46a2382226f95da31706fb1b8f2f221ad6cf7b299375fb1921aa656cc"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "8942e0f5ff7604265390811ddafded5c399324268c764d6507d6e6122f257c2c"
+    },
+    {
+      "file": "layers/widget-puzzles-c0.json",
+      "sha256": "a575d30e5b3e9a1007f601cd087efeeef528b85661c387a8a6e54ffc7ea69d9a"
+    },
+    {
+      "file": "layers/widget-puzzles-c1.json",
+      "sha256": "f98b27bdaae1de0d0727cd47202f355898d00e3f469dbad85712edade62dc5fa"
+    },
+    {
+      "file": "layers/widget-puzzles-c2.json",
+      "sha256": "f6d45115ed2269e18af31b619267ac675ea7fd9985a6bf399337d10fa508567c"
+    },
+    {
+      "file": "layers/widget-puzzles-c3.json",
+      "sha256": "dc7f322c7bb14dd29918534c4c421475e77dd3f44e88a331fda4accf0746e428"
+    },
+    {
+      "file": "layers/widget-puzzles-c4.json",
+      "sha256": "10ccb71eb1897fe49a87889fc1817c067fae367fdd622447601844a3285b3fcc"
+    },
+    {
+      "file": "layers/widget-puzzles-c5.json",
+      "sha256": "e2fb83abb7973a1c0b07fcdc45549ad624ec4ab2c087432621e1a57fa0026dbc"
+    },
+    {
+      "file": "layers/widget-puzzles-c6.json",
+      "sha256": "636d0311f446f7a2a5c46a5ac5361691187adace118baec9a5628f6ae69c1486"
+    },
+    {
+      "file": "layers/widget-puzzles-c7.json",
+      "sha256": "2c8759d11d95bf20a1869b67fa1ee66f8c32ff84e5aa9b0ca861f1dd0a76fbbd"
+    },
+    {
+      "file": "layers/widget-puzzles-c8.json",
+      "sha256": "0faba91c3e72d2052568f28a04670bf5e85e5c6870328fe13da708161494c686"
+    },
+    {
+      "file": "layers/widget-puzzles-solved.json",
+      "sha256": "1434d41fdcd1a0a1c93a02042df432425934ca5a95969a941dba16a801837c64"
+    },
+    {
+      "file": "guide.json",
+      "sha256": "9d37c135ab2ad95b697d1143f039b5cf73e2ce1775faa1c83550fa59692b2d26"
+    }
+  ],
+  "report": {
+    "rowCount": 29,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "QA PASSED. Third run; resolves 964db76 (location-name provenance — fixed by src-pl5-hintcoins, spine 556c1e9, re-approved 5a61cb6) and 79730d7 (stale report input digests — fixed by the 11 refresh re-runs 8d56706..a4e1bb9).",
+    "Gate: 11/11 manifest entries approved + hash-current. Mechanical: validate-guides green, assemble-guide wrote guide.json, check-stable-ids green against HEAD, post-assembly validate green. Cross-checks: the counter's 82 derivedFrom step IDs all resolve in the assembled spine; all 9 dataTable chapter scopes resolve.",
+    "Judgment: all 40 spine flags spot-read against sources across this QA cycle — umbrella-location, solution-screenshot, and omitted-solution flags verified against the route PDF and data.json; all 25 vocabulary-aligned names verified against the src-pl5-hintcoins capture (Akbadain as \"Ruins of Akbadain : Level Bn\"). Flags stay: they record the visit-location assignment inference, reviewed and approved by Pierre twice.",
+    "No ra-mapping.json: no ra-set source exists (RetroAchievements has no 3DS support) — deliberate, not an omission. No images referenced; no missable steps (Any% + Puzzle Palace), so no deadlines owed. The prepCard deck slot is deliberately unfilled (Pierre 2026-07-08).",
+    "library.json still says in-compilation — flipping layton-mm to playable is Pierre's call (FR-E5), suggested at PR time."
+  ]
+}

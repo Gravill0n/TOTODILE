@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "extract-data",
+  "layer": "data",
+  "generatedAt": "2026-07-08T17:25:09Z",
+  "inputs": [
+    {
+      "file": "sources.json",
+      "sha256": "4118ef8421340c94b5feb8762bb205f91d714cf56f77905ef899bb6cea35d5e3"
+    },
+    {
+      "file": "sources/Professor Layton and the Miracle Mask US Any% Guide.pdf",
+      "sha256": "1b09df13e727af817553caa0c2f3604a9a206e9d03f4b55cc092447354020351"
+    },
+    {
+      "file": "sources/nintendo-e-manual-en.pdf",
+      "sha256": "3f2a64774b1901a4fc8ef72ad4d95e6ca5b4dd8bb11073d3523b7561421316d9"
+    },
+    {
+      "file": "sources/pl5-walkthrough/pl5-feed-1.json",
+      "sha256": "59b311f52a5d338ca84f003a30119164e3237a69570c7d7f5cec99ad84be64aa"
+    },
+    {
+      "file": "sources/pl5-walkthrough/pl5-feed-151.json",
+      "sha256": "b8bf188afffe0182d13f180583236543015a5c8c5d6f144c1ffe5d26bf7908c2"
+    },
+    {
+      "file": "sources/pl5-walkthrough/pl5-feed-301.json",
+      "sha256": "49aa9f1ec92a829f40c708095ebe253d615c19a4c55095df06a9be9377d801fd"
+    },
+    {
+      "file": "sources/pl5-walkthrough/pl5-feed-451.json",
+      "sha256": "a8d526e058c8e1720738fce5023de83343ce6f3b868a319f27d8db128c190a03"
+    },
+    {
+      "file": "sources/pl5-walkthrough/pl5-feed-601.json",
+      "sha256": "f0f48e2a1c46801a02fbb8eeaeeb98d1d1b8a09aca1532db77d5ece86ac1a8ae"
+    },
+    {
+      "file": "sources/pl5-walkthrough/pl5-hintcoins.html",
+      "sha256": "e22a5289478f4e6c86695b0375174f41afe7862a542fa9c4649b6bb3a4c1a396"
+    }
+  ],
+  "report": {
+    "rowCount": 1009,
+    "anomalies": [
+      "images: dataset omitted — the source snapshots contain no standalone image files, and the route PDF's embedded screenshots are predominantly puzzle solutions, excluded by the spoiler-free constraint (schema forbids an empty dataset). Approved by Pierre 2026-07-07.",
+      "puzzles: per-puzzle picarat values are not in any reachable source (the blogspot lists only cumulative progress; layton.fandom.com is HTTP-blocked) — the field is omitted rather than guessed.",
+      "ch3-a073: \"Briefing 1:\" relies on an adjacent solution screenshot in the route PDF, not extracted (spoiler rule) — instruction incomplete as text.",
+      "ch3-a075: \"Briefing 2:\" — same screenshot dependency as ch3-a073.",
+      "ch3-a077: \"Briefing 3:\" — same screenshot dependency as ch3-a073.",
+      "ch5-a079: \"Magic Square Puzzle:\" relies on adjacent solution screenshots in the route PDF, not extracted (spoiler rule).",
+      "ch5-a080: \"First Move\" — same screenshot dependency as ch5-a079.",
+      "ch5-a081: \"Second Move\" — same screenshot dependency as ch5-a079."
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "First run. Dataset set (chapters, route-actions, puzzles, mechanics; puzzles limited to the 82 on the any% route; images omitted) approved by Pierre 2026-07-07.",
+    "route-actions IDs are chapter + zero-padded sequence (e.g. ch1-a012) — a deviation from content-key minting approved at the category gate: route lines repeat verbatim constantly, and the source PDF is frozen, so sequence within chapter is deterministic across re-runs.",
+    "82 puzzles on the route, not the 70 first estimated — the early count missed puzzle lines at PDF page breaks (form feed broke the regex anchor).",
+    "prologue-a001..a003 (timer-start note, opening Cutscene and Mystery) precede the Prologue heading in the PDF; assigned to the prologue.",
+    "\"IMPORTANT: TO TILT...\" emulator note wraps across two PDF lines; merged into one record (ch6-a251).",
+    "No puzzle-solution content was extracted anywhere (Pierre's spoiler-free constraint): puzzle records carry the blogspot post URL as a pointer only; route puzzle lines are the bare number as printed.",
+    "mechanics facts quoted from the Nintendo e-manual with pdftotext letter-spacing artifacts normalized; wording otherwise preserved.",
+    "Blogspot puzzle names/URLs read from the Blogger posts feed (5 pages, snapshots in sources/pl5-walkthrough/).",
+    "Refresh re-run 2026-07-08 answering QA 79730d7 (stale sources.json digest after fb6da77): datasets re-verified, layers/data.json byte-identical (b140b5a46a2382226f95da31706fb1b8f2f221ad6cf7b299375fb1921aa656cc). The new src-pl5-hintcoins capture was read and deliberately NOT classified into a dataset — its location-name vocabulary already serves the spine via sourceRefs, and extracting its per-location hint-coin data would be a new category needing Pierre's sign-off (and would change data.json bytes, input-staling the approved spine)."
+  ]
+}

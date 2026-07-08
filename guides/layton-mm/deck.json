@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "id": "deck-puzzle-adventure",
+  "slots": [
+    {
+      "primitive": "counter",
+      "defaultTitle": "Puzzles Solved",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "dataTable",
+      "defaultTitle": "Chapter Puzzles",
+      "defaultScope": "chapter"
+    },
+    {
+      "primitive": "prepCard",
+      "defaultTitle": "Chapter Briefing",
+      "defaultScope": "chapter"
+    }
+  ]
+}

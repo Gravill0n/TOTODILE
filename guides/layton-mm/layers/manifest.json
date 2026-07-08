@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "entries": [
+    {
+      "id": "spine",
+      "kind": "spine",
+      "artifact": "layers/spine.json",
+      "report": "layers/spine.report.json",
+      "sha256": "8942e0f5ff7604265390811ddafded5c399324268c764d6507d6e6122f257c2c"
+    },
+    {
+      "id": "widget-puzzles-c0",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c0.json",
+      "report": "layers/widget-puzzles-c0.report.json",
+      "sha256": "a575d30e5b3e9a1007f601cd087efeeef528b85661c387a8a6e54ffc7ea69d9a",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c0"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
+      "id": "widget-puzzles-c1",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c1.json",
+      "report": "layers/widget-puzzles-c1.report.json",
+      "sha256": "f98b27bdaae1de0d0727cd47202f355898d00e3f469dbad85712edade62dc5fa",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c1"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
+      "id": "widget-puzzles-c2",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c2.json",
+      "report": "layers/widget-puzzles-c2.report.json",
+      "sha256": "f6d45115ed2269e18af31b619267ac675ea7fd9985a6bf399337d10fa508567c",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c2"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
+      "id": "widget-puzzles-c3",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c3.json",
+      "report": "layers/widget-puzzles-c3.report.json",
+      "sha256": "dc7f322c7bb14dd29918534c4c421475e77dd3f44e88a331fda4accf0746e428",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c3"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
+      "id": "widget-puzzles-c4",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c4.json",
+      "report": "layers/widget-puzzles-c4.report.json",
+      "sha256": "10ccb71eb1897fe49a87889fc1817c067fae367fdd622447601844a3285b3fcc",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c4"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
+      "id": "widget-puzzles-c5",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c5.json",
+      "report": "layers/widget-puzzles-c5.report.json",
+      "sha256": "e2fb83abb7973a1c0b07fcdc45549ad624ec4ab2c087432621e1a57fa0026dbc",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c5"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
+      "id": "widget-puzzles-c6",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c6.json",
+      "report": "layers/widget-puzzles-c6.report.json",
+      "sha256": "636d0311f446f7a2a5c46a5ac5361691187adace118baec9a5628f6ae69c1486",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c6"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
+      "id": "widget-puzzles-c7",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c7.json",
+      "report": "layers/widget-puzzles-c7.report.json",
+      "sha256": "2c8759d11d95bf20a1869b67fa1ee66f8c32ff84e5aa9b0ca861f1dd0a76fbbd",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c7"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
+      "id": "widget-puzzles-c8",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c8.json",
+      "report": "layers/widget-puzzles-c8.report.json",
+      "sha256": "0faba91c3e72d2052568f28a04670bf5e85e5c6870328fe13da708161494c686",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c8"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
+      "id": "widget-puzzles-solved",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-solved.json",
+      "report": "layers/widget-puzzles-solved.report.json",
+      "sha256": "1434d41fdcd1a0a1c93a02042df432425934ca5a95969a941dba16a801837c64",
+      "widget": {
+        "deckPosition": 0,
+        "scope": {
+          "kind": "global"
+        },
+        "title": "Puzzles Solved"
+      }
+    }
+  ]
+}

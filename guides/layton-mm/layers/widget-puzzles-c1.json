@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "widget",
+  "widget": {
+    "id": "layton-mm:puzzles-c1",
+    "title": "Chapter Puzzles",
+    "type": "dataTable",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "layton-mm:c1"
+    },
+    "deckPosition": 1,
+    "columns": [
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "name-us",
+        "label": "Name (US)"
+      },
+      {
+        "id": "name-uk",
+        "label": "Name (UK)"
+      },
+      {
+        "id": "solution",
+        "label": "Solution"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "layton-mm:puzzles-c1:p002",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "002",
+          "name-us": "Where's Mother?",
+          "name-uk": "Where's Mum?",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle002.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c1:p004",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "004",
+          "name-us": "Bumper Perspective",
+          "name-uk": "Dodgem Detective",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle004.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c1:p005",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "005",
+          "name-us": "Robot Factory",
+          "name-uk": "Robot Factory",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle005.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c1:p010",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "010",
+          "name-us": "The Place To Be",
+          "name-uk": "The Long Wait",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle010.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c1:p011",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "011",
+          "name-us": "Backstage Blunder",
+          "name-uk": "Backstage Blunder",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle011.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c1:p012",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "012",
+          "name-us": "Sharing the Burden",
+          "name-uk": "Sharing the Burden",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle012.html"
+        }
+      }
+    ]
+  }
+}

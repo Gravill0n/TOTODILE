@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "widget",
+  "widget": {
+    "id": "layton-mm:puzzles-c8",
+    "title": "Chapter Puzzles",
+    "type": "dataTable",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "layton-mm:c8"
+    },
+    "deckPosition": 1,
+    "columns": [
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "name-us",
+        "label": "Name (US)"
+      },
+      {
+        "id": "name-uk",
+        "label": "Name (UK)"
+      },
+      {
+        "id": "solution",
+        "label": "Solution"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "layton-mm:puzzles-c8:p134",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "134",
+          "name-us": "Breaking the Seal",
+          "name-uk": "Breaking the Seal",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle134.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c8:p135",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "135",
+          "name-us": "Mask Pedestal",
+          "name-uk": "Wind-Up Chamber",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle135.html"
+        }
+      }
+    ]
+  }
+}

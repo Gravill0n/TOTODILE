@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "source-gathering",
+  "layer": "source-gathering",
+  "generatedAt": "2026-07-08T16:40:43Z",
+  "inputs": [],
+  "report": {
+    "rowCount": 1,
+    "anomalies": [
+      "src-pl5-walkthrough: the Blogger feed capture truncates the \"Hint Coin Locations\" post at 397 chars (cuts off mid-Chapter-1), which is why QA (964db76) could not verify 10 location names against it — src-pl5-hintcoins supplements it with the full page; no existing entry is superseded"
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Re-run appending one source, per Pierre 2026-07-08, answering QA finding 964db76 (10 spine location names with unverifiable walkthrough provenance).",
+    "src-pl5-hintcoins is the full Hint Coin Locations index page fetched 2026-07-08; all 10 QA-flagged names (Classroom, Living Room, Henry's Study, City Hall Steps, Briefing Room, Montsarton Gallery, Big Top, Randall's Room, Winding Road, City Monument) verified present in the capture.",
+    "Per-location hint-coin picture pages were not captured — the location-name vocabulary QA needs lives on the index page itself."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "sources": [
+    {
+      "id": "src-any-route",
+      "title": "Professor Layton and the Miracle Mask US Any% Guide — route by tutelarfiber7, formatting by StarrlightSims (70-page PDF with action-by-action route, puzzle numbers and solution screenshots; local PDF: layton-mm/sources/Professor Layton and the Miracle Mask US Any% Guide.pdf)",
+      "type": "wiki",
+      "retrievedAt": "2026-06-05"
+    },
+    {
+      "id": "src-pl5-walkthrough",
+      "title": "Professor Layton 5 Walkthrough (blogspot) — spoiler-free illustrated walkthrough: all 150 puzzles with solutions and staged hints, hint coin locations with screenshots, minigames, organized by chapter and puzzle number",
+      "url": "https://professorlayton5walkthrough.blogspot.com/",
+      "type": "wiki",
+      "retrievedAt": "2026-07-07"
+    },
+    {
+      "id": "src-manual",
+      "title": "Nintendo 3DS electronic manual — Professor Layton and the Miracle Mask (EN): controls, movement mode, Professor's Trunk, hint coin mechanics (local PDF: layton-mm/sources/nintendo-e-manual-en.pdf)",
+      "url": "https://www.nintendo.com/eu/media/downloads/games_8/emanuals/nintendo_3ds_2/professor_layton_and_the_miracle_mask/ElectronicManual_Nintendo3DS_ProfessorLaytonAndTheMiracleMask_EN.pdf",
+      "type": "manual",
+      "retrievedAt": "2026-07-07"
+    },
+    {
+      "id": "src-pl5-hintcoins",
+      "title": "Professor Layton 5 Walkthrough (blogspot) — Hint Coin Locations index: the per-chapter list of every visitable location (US and UK names), linking to per-location hint-coin picture pages (local capture: layton-mm/sources/pl5-walkthrough/pl5-hintcoins.html)",
+      "url": "https://professorlayton5walkthrough.blogspot.com/2012/12/hintcoins.html",
+      "type": "wiki",
+      "retrievedAt": "2026-07-08"
+    }
+  ]
+}

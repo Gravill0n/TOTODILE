@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "widget",
+  "layer": "widget-puzzles-c0",
+  "generatedAt": "2026-07-08T17:25:27Z",
+  "inputs": [
+    {
+      "file": "deck.json",
+      "sha256": "8028edb3db14f32c7d49cf85da9f5177ebeb877b961204301adaffb4e28f1e29"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "4118ef8421340c94b5feb8762bb205f91d714cf56f77905ef899bb6cea35d5e3"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "b140b5a46a2382226f95da31706fb1b8f2f221ad6cf7b299375fb1921aa656cc"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "8942e0f5ff7604265390811ddafded5c399324268c764d6507d6e6122f257c2c"
+    }
+  ],
+  "report": {
+    "rowCount": 0,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Chapter-scoped Chapter Puzzles table (deck slot 1) for layton-mm:c0 (\"Prologue - The Dark Parade\"); 1 informational row(s) (checkable: false) reproduced verbatim from the data layer puzzles dataset — the spine's \"Solve NNN\" steps are the checkables, per Pierre 2026-07-08.",
+    "Columns: puzzle #, US name, UK name, and an opt-in Solution link to the puzzle's PL5-walkthrough page (Pierre 2026-07-08) — nothing is shown inline, keeping the spoiler-free rule.",
+    "The Epilogue (layton-mm:c9) has no route puzzles, so slot 1 gets no instance there.",
+    "Refresh re-run 2026-07-08 answering QA 79730d7 (stale sources.json/spine.json digests after fb6da77/556c1e9): rows re-verified against the re-approved spine (all referenced step IDs present), artifact byte-identical (a575d30e5b3e9a1007f601cd087efeeef528b85661c387a8a6e54ffc7ea69d9a)."
+  ]
+}

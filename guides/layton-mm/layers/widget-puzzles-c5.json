@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "widget",
+  "widget": {
+    "id": "layton-mm:puzzles-c5",
+    "title": "Chapter Puzzles",
+    "type": "dataTable",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "layton-mm:c5"
+    },
+    "deckPosition": 1,
+    "columns": [
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "name-us",
+        "label": "Name (US)"
+      },
+      {
+        "id": "name-uk",
+        "label": "Name (UK)"
+      },
+      {
+        "id": "solution",
+        "label": "Solution"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "layton-mm:puzzles-c5:p029",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "029",
+          "name-us": "Tenth-Round Ace",
+          "name-uk": "Tenth-Round Ace",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle029.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p030",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "030",
+          "name-us": "Big Cake, Little Cake",
+          "name-uk": "Big Cake, Little Cake",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle030.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p032",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "032",
+          "name-us": "Target Practice",
+          "name-uk": "Target Practice",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle032.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p033",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "033",
+          "name-us": "Chained Circle",
+          "name-uk": "Chained Circle",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle033.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p035",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "035",
+          "name-us": "Guess Stars",
+          "name-uk": "Twinkle Tops",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle035.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p036",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "036",
+          "name-us": "Going Dough-Nuts",
+          "name-uk": "Going Dough-Nuts",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle036.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p037",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "037",
+          "name-us": "Spin Shenanigans",
+          "name-uk": "Spin Shenanigans",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle037.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p038",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "038",
+          "name-us": "Pattern Pending",
+          "name-uk": "Pattern Pending",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle038.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p041",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "041",
+          "name-us": "From the Sidelines",
+          "name-uk": "From the Sidelines",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle041.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p051",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "051",
+          "name-us": "Dandy Bears",
+          "name-uk": "Dandy Bears",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle051.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p052",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "052",
+          "name-us": "Spectacular Views",
+          "name-uk": "Spectacular Views",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle052.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p054",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "054",
+          "name-us": "Archaeological Feet",
+          "name-uk": "Archaeological Feet",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle054.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p056",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "056",
+          "name-us": "Clear-Cut Contrasts",
+          "name-uk": "Clear-Cut Contrasts",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle056.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p058",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "058",
+          "name-us": "Sorting Blocks",
+          "name-uk": "Sorting Blocks",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle058.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p060",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "060",
+          "name-us": "Dangerous Holes",
+          "name-uk": "A Ropey System",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle060.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p075",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "075",
+          "name-us": "Grand Horse Race",
+          "name-uk": "Grand Horse Race",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle075.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p077",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "077",
+          "name-us": "Mishmash Map",
+          "name-uk": "Mishmash Map",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle077.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p079",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "079",
+          "name-us": "The Shopkeepers",
+          "name-uk": "The Shopkeepers",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle079.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p087",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "087",
+          "name-us": "Merry-Go-Tiles",
+          "name-uk": "Merry-Go-Tiles",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle087.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p088",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "088",
+          "name-us": "Glass Arrows",
+          "name-uk": "Glass Arrows",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle088.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p089",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "089",
+          "name-us": "Pumpkin Spinners",
+          "name-uk": "Pumpkin Spinners",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle089.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c5:p090",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "090",
+          "name-us": "Loose Connection",
+          "name-uk": "Loose Connection",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle090.html"
+        }
+      }
+    ]
+  }
+}

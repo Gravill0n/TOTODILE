@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "widget",
+  "widget": {
+    "id": "layton-mm:puzzles-c3",
+    "title": "Chapter Puzzles",
+    "type": "dataTable",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "layton-mm:c3"
+    },
+    "deckPosition": 1,
+    "columns": [
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "name-us",
+        "label": "Name (US)"
+      },
+      {
+        "id": "name-uk",
+        "label": "Name (UK)"
+      },
+      {
+        "id": "solution",
+        "label": "Solution"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "layton-mm:puzzles-c3:p003",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "003",
+          "name-us": "Stumble's Banners",
+          "name-uk": "Bungle's Banners",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle003.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p007",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "007",
+          "name-us": "A Toasty Toast",
+          "name-uk": "A Toasty Toast",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle007.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p008",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "008",
+          "name-us": "Carnival Colors",
+          "name-uk": "Carnival Colours",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle008.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p016",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "016",
+          "name-us": "Wandering Watches",
+          "name-uk": "Wandering Watches",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle016.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p017",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "017",
+          "name-us": "Busted Umbrella",
+          "name-uk": "The Broken Brolly",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle017.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p020",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "020",
+          "name-us": "Nine Red Bricks",
+          "name-uk": "Nine Red Bricks",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle020.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p023",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "023",
+          "name-us": "Fairway Fibber",
+          "name-uk": "Fairway Fibber",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle023.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p024",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "024",
+          "name-us": "Patterned Apron",
+          "name-uk": "Patterned Apron",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle024.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p025",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "025",
+          "name-us": "Brave the Caves",
+          "name-uk": "Brave the Caves",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle025.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p034",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "034",
+          "name-us": "The Cat's Trophy",
+          "name-uk": "The Cat's Trophy",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle034.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p042",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "042",
+          "name-us": "Couple at the Cafe",
+          "name-uk": "Couple at the Cafe",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle042.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p046",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "046",
+          "name-us": "Toppings Up",
+          "name-uk": "Toppings Up",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle046.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p047",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "047",
+          "name-us": "Trial By Tennis",
+          "name-uk": "Trial By Tennis",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle047.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p049",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "049",
+          "name-us": "Floor Seats",
+          "name-uk": "A Whinger’s Tale",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle049.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c3:p050",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "050",
+          "name-us": "Kitty Solitaire",
+          "name-uk": "Kitty Solitaire",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle050.html"
+        }
+      }
+    ]
+  }
+}
