@@ -85,6 +85,21 @@
       }
     },
     {
+      "id": "widget-puzzles-c5",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c5.json",
+      "report": "layers/widget-puzzles-c5.report.json",
+      "sha256": "e2fb83abb7973a1c0b07fcdc45549ad624ec4ab2c087432621e1a57fa0026dbc",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c5"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
       "id": "widget-puzzles-solved",
       "kind": "widget",
       "artifact": "layers/widget-puzzles-solved.json",
