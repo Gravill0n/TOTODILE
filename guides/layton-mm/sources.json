@@ -21,6 +21,13 @@
       "url": "https://www.nintendo.com/eu/media/downloads/games_8/emanuals/nintendo_3ds_2/professor_layton_and_the_miracle_mask/ElectronicManual_Nintendo3DS_ProfessorLaytonAndTheMiracleMask_EN.pdf",
       "type": "manual",
       "retrievedAt": "2026-07-07"
+    },
+    {
+      "id": "src-pl5-hintcoins",
+      "title": "Professor Layton 5 Walkthrough (blogspot) — Hint Coin Locations index: the per-chapter list of every visitable location (US and UK names), linking to per-location hint-coin picture pages (local capture: layton-mm/sources/pl5-walkthrough/pl5-hintcoins.html)",
+      "url": "https://professorlayton5walkthrough.blogspot.com/2012/12/hintcoins.html",
+      "type": "wiki",
+      "retrievedAt": "2026-07-08"
     }
   ]
 }
