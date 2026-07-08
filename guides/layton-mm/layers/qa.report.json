@@ -3,7 +3,7 @@
   "guideId": "layton-mm",
   "pass": "qa",
   "layer": "qa",
-  "generatedAt": "2026-07-08T16:17:22Z",
+  "generatedAt": "2026-07-08T17:21:28Z",
   "inputs": [
     {
       "file": "deck.json",
@@ -11,11 +11,11 @@
     },
     {
       "file": "sources.json",
-      "sha256": "e61964b185e2d896e4644b68e213c1a159a307ce0feb71e9f4f8d308160fd48e"
+      "sha256": "4118ef8421340c94b5feb8762bb205f91d714cf56f77905ef899bb6cea35d5e3"
     },
     {
       "file": "layers/manifest.json",
-      "sha256": "cf4d9fd700dbcdbd3bf761d1cfc3981ce83d86cf691ebb52e8856ad1c41e00f8"
+      "sha256": "6c598ad0862067255af68ba71e0f986b9cf604820430ceb48f44bc2896abd48c"
     },
     {
       "file": "layers/data.json",
@@ -23,7 +23,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "74f90cd27c0b4dce9ec83871548604ed01377b828f4d450908dcbbea22cb963a"
+      "sha256": "8942e0f5ff7604265390811ddafded5c399324268c764d6507d6e6122f257c2c"
     },
     {
       "file": "layers/widget-puzzles-c0.json",
@@ -69,38 +69,24 @@
   "report": {
     "rowCount": 28,
     "anomalies": [
-      "spine: layton-mm:v-classroom-1:s1: anomaly claims location \"Classroom\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
-      "spine: layton-mm:v-living-room-2:s1: anomaly claims location \"Living Room\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
-      "spine: layton-mm:v-henrys-study-1:s1: anomaly claims location \"Henry's Study\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
-      "spine: layton-mm:v-city-hall-steps-1:s1: anomaly claims location \"City Hall Steps\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
-      "spine: layton-mm:v-briefing-room-1:s1: anomaly claims location \"Briefing Room\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
-      "spine: layton-mm:v-montsarton-gallery-1:s1: anomaly claims location \"Montsarton Gallery\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
-      "spine: layton-mm:v-big-top-1:s1: anomaly claims location \"Big Top\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
-      "spine: layton-mm:v-randalls-room-1:s1: anomaly claims location \"Randall's Room\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
-      "spine: layton-mm:v-winding-road-1:s1: anomaly claims location \"Winding Road\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
-      "spine: layton-mm:v-winding-road-2:s1: anomaly claims location \"Winding Road\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
-      "spine: layton-mm:v-city-monument-2:s1: anomaly claims location \"City Monument\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)"
+      "data: layers/data.report.json records a sources.json input digest from before src-pl5-hintcoins was appended (fb6da77) — stale per contract §6; extract-data needs a refresh re-run (artifact bytes must stay identical or the approved spine goes input-stale in turn)",
+      "widget-puzzles-c0: layers/widget-puzzles-c0.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
+      "widget-puzzles-c1: layers/widget-puzzles-c1.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
+      "widget-puzzles-c2: layers/widget-puzzles-c2.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
+      "widget-puzzles-c3: layers/widget-puzzles-c3.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
+      "widget-puzzles-c4: layers/widget-puzzles-c4.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
+      "widget-puzzles-c5: layers/widget-puzzles-c5.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
+      "widget-puzzles-c6: layers/widget-puzzles-c6.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
+      "widget-puzzles-c7: layers/widget-puzzles-c7.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
+      "widget-puzzles-c8: layers/widget-puzzles-c8.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
+      "widget-puzzles-solved: layers/widget-puzzles-solved.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)"
     ],
-    "flaggedItemIds": [
-      "layton-mm:v-classroom-1:s1",
-      "layton-mm:v-living-room-2:s1",
-      "layton-mm:v-henrys-study-1:s1",
-      "layton-mm:v-city-hall-steps-1:s1",
-      "layton-mm:v-briefing-room-1:s1",
-      "layton-mm:v-montsarton-gallery-1:s1",
-      "layton-mm:v-big-top-1:s1",
-      "layton-mm:v-randalls-room-1:s1",
-      "layton-mm:v-winding-road-1:s1",
-      "layton-mm:v-winding-road-2:s1",
-      "layton-mm:v-city-monument-2:s1"
-    ]
+    "flaggedItemIds": []
   },
   "notes": [
-    "Gate: all 11 manifest entries approved + hash-current. Mechanical checks green: validate-guides, assemble-guide (guide.json merged cleanly), check-stable-ids (no baseline at main yet), validate-guides re-run after assembly.",
-    "QA verdict: NOT ready — 11 spine anomaly lines (10 locations) cite walkthrough hint-coin vocabulary the captured source does not contain. Root-cause hypothesis: sources/pl5-walkthrough holds only the 5 puzzle feed pages + index; the blog's hint-coin/location pages were never captured. Fix path: sources pass appends those pages, spine re-run re-verifies the 10 names (IDs must survive per §6.8), then re-review.",
-    "Verified honest by spot-read against sources: umbrella-location flags (route PDF p.1 names no location at run start), solution-screenshot flags (route conveys solutions as screenshots, e.g. puzzle 001 p.1), omitted-solution flags (data.json ch2-a031/ch4-a011/ch5-a079..081/ch8-a016..019 hold the inline answers the spine omitted). Aligned names Carnival Square, Madame Lapushka's, Norwell, Racetrack, Casino, Pumpkin Park, Akbadain B1-B7, Reunion Inn verified present in the walkthrough capture.",
-    "RA coverage: no ra-set source exists (RetroAchievements has no 3DS support) — zero achievements to map is deliberate, not an omission. Images: no layer references images/. Missables: no spine step carries a missable flag (Any% route; the manual's Puzzle Palace recovers lost puzzles), so no deadlines are owed.",
-    "Widget layers: no flagged rows anywhere; counter derivedFrom (82) matches the 82 informational puzzle rows across the 9 chapter tables 1:1. The prepCard deck slot is deliberately unfilled (Pierre 2026-07-08).",
-    "Assembled guide.json withheld from this commit because QA did not pass; assembly itself succeeded and will be re-emitted on the next QA run."
+    "Re-run after spine re-approval 5a61cb6; answers prior QA finding 964db76, which is RESOLVED: all 25 vocabulary-aligned steps now cite src-pl5-hintcoins and every name (incl. the Akbadain \"Ruins of Akbadain : Level Bn\" forms) verifies against the capture on disk.",
+    "Gate passed (11/11 manifest entries approved + hash-current) and validate-guides is green, but assemble-guide refused: 24 stale input digests across layers/data.report.json and the 10 widget reports, a mechanical consequence of the sources append (fb6da77) and spine re-run (556c1e9). No content defect found — the widget artifacts reference only step IDs, which the spine re-run preserved.",
+    "Verdict: NOT assembled. Fix path: refresh re-runs of extract-data and the 10 widget passes that re-emit byte-identical artifacts with fresh report input digests, then re-run QA. Approvals should remain hash-current throughout since only reports change.",
+    "Prior qa.report.json staleness (also listed by assemble-guide) is superseded by this report."
   ]
 }
