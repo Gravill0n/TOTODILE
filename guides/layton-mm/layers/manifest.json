@@ -10,6 +10,21 @@
       "sha256": "74f90cd27c0b4dce9ec83871548604ed01377b828f4d450908dcbbea22cb963a"
     },
     {
+      "id": "widget-puzzles-c0",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c0.json",
+      "report": "layers/widget-puzzles-c0.report.json",
+      "sha256": "a575d30e5b3e9a1007f601cd087efeeef528b85661c387a8a6e54ffc7ea69d9a",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c0"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
       "id": "widget-puzzles-solved",
       "kind": "widget",
       "artifact": "layers/widget-puzzles-solved.json",
