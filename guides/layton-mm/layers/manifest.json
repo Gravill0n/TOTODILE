@@ -8,6 +8,20 @@
       "artifact": "layers/spine.json",
       "report": "layers/spine.report.json",
       "sha256": "74f90cd27c0b4dce9ec83871548604ed01377b828f4d450908dcbbea22cb963a"
+    },
+    {
+      "id": "widget-puzzles-solved",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-solved.json",
+      "report": "layers/widget-puzzles-solved.report.json",
+      "sha256": "1434d41fdcd1a0a1c93a02042df432425934ca5a95969a941dba16a801837c64",
+      "widget": {
+        "deckPosition": 0,
+        "scope": {
+          "kind": "global"
+        },
+        "title": "Puzzles Solved"
+      }
     }
   ]
 }

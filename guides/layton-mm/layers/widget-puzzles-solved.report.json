@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "widget",
+  "layer": "widget-puzzles-solved",
+  "generatedAt": "2026-07-08T15:49:26Z",
+  "inputs": [
+    {
+      "file": "deck.json",
+      "sha256": "8028edb3db14f32c7d49cf85da9f5177ebeb877b961204301adaffb4e28f1e29"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "e61964b185e2d896e4644b68e213c1a159a307ce0feb71e9f4f8d308160fd48e"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "b140b5a46a2382226f95da31706fb1b8f2f221ad6cf7b299375fb1921aa656cc"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "74f90cd27c0b4dce9ec83871548604ed01377b828f4d450908dcbbea22cb963a"
+    }
+  ],
+  "report": {
+    "rowCount": 1,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Fills deck slot 0 (counter, global, defaultTitle \"Puzzles Solved\"). Shape signed off by Pierre 2026-07-08: derived counter, not manual.",
+    "Single derived entry layton-mm:puzzles-solved:route — derivedFrom lists the 82 \"Solve NNN\" spine steps in route order; target omitted, so it defaults to derivedFrom.length = 82. Read-only in the tracker: it counts checked route steps.",
+    "The 82-step set matches the extract-data puzzles dataset 1:1 (82 records, no gaps either way; no multi-puzzle steps; none flagged). The set is the Any% route's solved puzzles, not the game's full puzzle list — hence the \"(route)\" label."
+  ]
+}
