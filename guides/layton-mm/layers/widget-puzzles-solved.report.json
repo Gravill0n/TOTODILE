@@ -3,7 +3,7 @@
   "guideId": "layton-mm",
   "pass": "widget",
   "layer": "widget-puzzles-solved",
-  "generatedAt": "2026-07-08T15:49:26Z",
+  "generatedAt": "2026-07-08T17:25:27Z",
   "inputs": [
     {
       "file": "deck.json",
@@ -11,7 +11,7 @@
     },
     {
       "file": "sources.json",
-      "sha256": "e61964b185e2d896e4644b68e213c1a159a307ce0feb71e9f4f8d308160fd48e"
+      "sha256": "4118ef8421340c94b5feb8762bb205f91d714cf56f77905ef899bb6cea35d5e3"
     },
     {
       "file": "layers/data.json",
@@ -19,7 +19,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "74f90cd27c0b4dce9ec83871548604ed01377b828f4d450908dcbbea22cb963a"
+      "sha256": "8942e0f5ff7604265390811ddafded5c399324268c764d6507d6e6122f257c2c"
     }
   ],
   "report": {
@@ -30,6 +30,7 @@
   "notes": [
     "Fills deck slot 0 (counter, global, defaultTitle \"Puzzles Solved\"). Shape signed off by Pierre 2026-07-08: derived counter, not manual.",
     "Single derived entry layton-mm:puzzles-solved:route — derivedFrom lists the 82 \"Solve NNN\" spine steps in route order; target omitted, so it defaults to derivedFrom.length = 82. Read-only in the tracker: it counts checked route steps.",
-    "The 82-step set matches the extract-data puzzles dataset 1:1 (82 records, no gaps either way; no multi-puzzle steps; none flagged). The set is the Any% route's solved puzzles, not the game's full puzzle list — hence the \"(route)\" label."
+    "The 82-step set matches the extract-data puzzles dataset 1:1 (82 records, no gaps either way; no multi-puzzle steps; none flagged). The set is the Any% route's solved puzzles, not the game's full puzzle list — hence the \"(route)\" label.",
+    "Refresh re-run 2026-07-08 answering QA 79730d7 (stale sources.json/spine.json digests after fb6da77/556c1e9): rows re-verified against the re-approved spine (all referenced step IDs present), artifact byte-identical (1434d41fdcd1a0a1c93a02042df432425934ca5a95969a941dba16a801837c64)."
   ]
 }
