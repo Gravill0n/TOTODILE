@@ -340,7 +340,8 @@
               "detail": "Route: Chat; Mystery; Chat; Tap on Statues.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -989,7 +990,8 @@
               "detail": "Route: Cutscene; Chat; Tap on Mr. Collins.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -1350,7 +1352,8 @@
               "detail": "Route: Chat; Move to Hershel’s Room (Left).",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             }
@@ -1816,7 +1819,8 @@
               "detail": "Route: Chat; Tap on Plate (Right Edge).",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -1962,7 +1966,8 @@
               "detail": "Route: Chat; Tap on Policeman; Tap on Mayor Billson; Move Right.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             }
@@ -1985,7 +1990,8 @@
               "detail": "Route: Tap on Sheffield; Press OK (Left Choice); Cutscene; Briefing 1:.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -2095,7 +2101,8 @@
               "detail": "Route: Chat; Tap on Artie.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -2142,7 +2149,8 @@
               "detail": "Route: Move Left; Move Right; Tap on M. Lapushka.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -2189,7 +2197,8 @@
               "detail": "Route: Move Up; Move Left x2; Chat; Move Up.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -2323,7 +2332,8 @@
               "detail": "Route: Chat; Move Right.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             }
@@ -2345,7 +2355,8 @@
               "detail": "Route: Chat; Move Right x2; Chat; Move Up x2.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -2421,7 +2432,8 @@
               "detail": "Route: Move Up; Chat; Tap on Randall.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -2483,7 +2495,8 @@
               "detail": "Route: Move Down; Move Left; Move Down; Chat.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -2863,7 +2876,8 @@
               "detail": "Route: Tap on Arch (Top Mid); Move Up; Cutscene; Tap on Gustav.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -2987,7 +3001,8 @@
               "detail": "Route: Tap on Firth.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -3119,7 +3134,8 @@
               "detail": "Route: Move Down; Chat; Move Left; Tap on Yukkles.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -3292,7 +3308,8 @@
               "detail": "Route: Chat; Cutscene; Chat; Cutscene.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -3590,7 +3607,8 @@
               "detail": "Route: Move Right; Move Up to the third level; Chat; Move Down.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -3740,7 +3758,8 @@
               "detail": "Route: Tap on Push (Down); Move to the stairs; Tap on Pull; Chat.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -3956,7 +3975,8 @@
               "detail": "Route: Chat.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -4305,7 +4325,8 @@
               "detail": "Route: IMPORTANT: TO “TILT” YOUR 3DS ON EMULATOR, YOU NEED TO HOLD THE RIGHT MOUSE CLICK (M2) AND THEN YOU CAN MOVE IT AS YOU NEED; Tilt the 3DS up and move Layton as much as you can; Tilt the 3DS down; Tilt the 3DS to the left.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -4369,7 +4390,8 @@
               "detail": "Route: Move Up; Chat; Follow the path up; Tap on Push (Down).",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -5168,7 +5190,8 @@
               "detail": "Route: Tap on Train (Right Option); Cutscene; Tap on Aldus; Move Up.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -5484,7 +5507,8 @@
               "detail": "Route: Chat; Tap on Door (Top Right Corner); Cutscene; Chat.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
@@ -5518,7 +5542,8 @@
               "detail": "Route: Move Down x3; Chat; Mystery; Chat.",
               "sourceRefs": [
                 "src-any-route",
-                "src-pl5-walkthrough"
+                "src-pl5-walkthrough",
+                "src-pl5-hintcoins"
               ],
               "confidence": "flagged"
             },
