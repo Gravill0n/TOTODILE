@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "widget",
+  "layer": "widget-puzzles-c8",
+  "generatedAt": "2026-07-08T16:05:35Z",
+  "inputs": [
+    {
+      "file": "deck.json",
+      "sha256": "8028edb3db14f32c7d49cf85da9f5177ebeb877b961204301adaffb4e28f1e29"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "e61964b185e2d896e4644b68e213c1a159a307ce0feb71e9f4f8d308160fd48e"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "b140b5a46a2382226f95da31706fb1b8f2f221ad6cf7b299375fb1921aa656cc"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "74f90cd27c0b4dce9ec83871548604ed01377b828f4d450908dcbbea22cb963a"
+    }
+  ],
+  "report": {
+    "rowCount": 0,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Chapter-scoped Chapter Puzzles table (deck slot 1) for layton-mm:c8 (\"Chapter 8 - The Final Miracle\"); 2 informational row(s) (checkable: false) reproduced verbatim from the data layer puzzles dataset — the spine's \"Solve NNN\" steps are the checkables, per Pierre 2026-07-08.",
+    "Columns: puzzle #, US name, UK name, and an opt-in Solution link to the puzzle's PL5-walkthrough page (Pierre 2026-07-08) — nothing is shown inline, keeping the spoiler-free rule.",
+    "The Epilogue (layton-mm:c9) has no route puzzles, so slot 1 gets no instance there."
+  ]
+}
