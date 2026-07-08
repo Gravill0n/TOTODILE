@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "widget",
+  "widget": {
+    "id": "layton-mm:puzzles-c2",
+    "title": "Chapter Puzzles",
+    "type": "dataTable",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "layton-mm:c2"
+    },
+    "deckPosition": 1,
+    "columns": [
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "name-us",
+        "label": "Name (US)"
+      },
+      {
+        "id": "name-uk",
+        "label": "Name (UK)"
+      },
+      {
+        "id": "solution",
+        "label": "Solution"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "layton-mm:puzzles-c2:p013",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "013",
+          "name-us": "Ancient Arti-facts",
+          "name-uk": "Ancient Arte-facts",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle013.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c2:p014",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "014",
+          "name-us": "Bite of Bygone Days",
+          "name-uk": "Bite of Bygone Days",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle014.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c2:p015",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "015",
+          "name-us": "Fix the Fossil",
+          "name-uk": "Fix the Fossil",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle015.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c2:p018",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "018",
+          "name-us": "That's Juicy",
+          "name-uk": "That's Juicy",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle018.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c2:p019",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "019",
+          "name-us": "Spinning Maize",
+          "name-uk": "Spinning Maize",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle019.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c2:p021",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "021",
+          "name-us": "A Lick of Paint",
+          "name-uk": "A Lick of Paint",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle021.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c2:p026",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "026",
+          "name-us": "Mangled Math",
+          "name-uk": "Mangled Math",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle026.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c2:p027",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "027",
+          "name-us": "That Rings a Bell",
+          "name-uk": "That Rings a Bell",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle027.html"
+        }
+      }
+    ]
+  }
+}
