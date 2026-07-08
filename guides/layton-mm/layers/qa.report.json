@@ -3,7 +3,7 @@
   "guideId": "layton-mm",
   "pass": "qa",
   "layer": "qa",
-  "generatedAt": "2026-07-08T17:21:28Z",
+  "generatedAt": "2026-07-08T17:27:11Z",
   "inputs": [
     {
       "file": "deck.json",
@@ -64,29 +64,22 @@
     {
       "file": "layers/widget-puzzles-solved.json",
       "sha256": "1434d41fdcd1a0a1c93a02042df432425934ca5a95969a941dba16a801837c64"
+    },
+    {
+      "file": "guide.json",
+      "sha256": "9d37c135ab2ad95b697d1143f039b5cf73e2ce1775faa1c83550fa59692b2d26"
     }
   ],
   "report": {
-    "rowCount": 28,
-    "anomalies": [
-      "data: layers/data.report.json records a sources.json input digest from before src-pl5-hintcoins was appended (fb6da77) — stale per contract §6; extract-data needs a refresh re-run (artifact bytes must stay identical or the approved spine goes input-stale in turn)",
-      "widget-puzzles-c0: layers/widget-puzzles-c0.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
-      "widget-puzzles-c1: layers/widget-puzzles-c1.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
-      "widget-puzzles-c2: layers/widget-puzzles-c2.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
-      "widget-puzzles-c3: layers/widget-puzzles-c3.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
-      "widget-puzzles-c4: layers/widget-puzzles-c4.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
-      "widget-puzzles-c5: layers/widget-puzzles-c5.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
-      "widget-puzzles-c6: layers/widget-puzzles-c6.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
-      "widget-puzzles-c7: layers/widget-puzzles-c7.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
-      "widget-puzzles-c8: layers/widget-puzzles-c8.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)",
-      "widget-puzzles-solved: layers/widget-puzzles-solved.report.json records input digests for sources.json and layers/spine.json from before fb6da77/556c1e9 — stale per contract §6; widget pass needs a refresh re-run (artifact bytes must stay identical to keep its approval hash-current)"
-    ],
+    "rowCount": 29,
+    "anomalies": [],
     "flaggedItemIds": []
   },
   "notes": [
-    "Re-run after spine re-approval 5a61cb6; answers prior QA finding 964db76, which is RESOLVED: all 25 vocabulary-aligned steps now cite src-pl5-hintcoins and every name (incl. the Akbadain \"Ruins of Akbadain : Level Bn\" forms) verifies against the capture on disk.",
-    "Gate passed (11/11 manifest entries approved + hash-current) and validate-guides is green, but assemble-guide refused: 24 stale input digests across layers/data.report.json and the 10 widget reports, a mechanical consequence of the sources append (fb6da77) and spine re-run (556c1e9). No content defect found — the widget artifacts reference only step IDs, which the spine re-run preserved.",
-    "Verdict: NOT assembled. Fix path: refresh re-runs of extract-data and the 10 widget passes that re-emit byte-identical artifacts with fresh report input digests, then re-run QA. Approvals should remain hash-current throughout since only reports change.",
-    "Prior qa.report.json staleness (also listed by assemble-guide) is superseded by this report."
+    "QA PASSED. Third run; resolves 964db76 (location-name provenance — fixed by src-pl5-hintcoins, spine 556c1e9, re-approved 5a61cb6) and 79730d7 (stale report input digests — fixed by the 11 refresh re-runs 8d56706..a4e1bb9).",
+    "Gate: 11/11 manifest entries approved + hash-current. Mechanical: validate-guides green, assemble-guide wrote guide.json, check-stable-ids green against HEAD, post-assembly validate green. Cross-checks: the counter's 82 derivedFrom step IDs all resolve in the assembled spine; all 9 dataTable chapter scopes resolve.",
+    "Judgment: all 40 spine flags spot-read against sources across this QA cycle — umbrella-location, solution-screenshot, and omitted-solution flags verified against the route PDF and data.json; all 25 vocabulary-aligned names verified against the src-pl5-hintcoins capture (Akbadain as \"Ruins of Akbadain : Level Bn\"). Flags stay: they record the visit-location assignment inference, reviewed and approved by Pierre twice.",
+    "No ra-mapping.json: no ra-set source exists (RetroAchievements has no 3DS support) — deliberate, not an omission. No images referenced; no missable steps (Any% + Puzzle Palace), so no deadlines owed. The prepCard deck slot is deliberately unfilled (Pierre 2026-07-08).",
+    "library.json still says in-compilation — flipping layton-mm to playable is Pierre's call (FR-E5), suggested at PR time."
   ]
 }
