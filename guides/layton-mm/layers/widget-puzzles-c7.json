@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "widget",
+  "widget": {
+    "id": "layton-mm:puzzles-c7",
+    "title": "Chapter Puzzles",
+    "type": "dataTable",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "layton-mm:c7"
+    },
+    "deckPosition": 1,
+    "columns": [
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "name-us",
+        "label": "Name (US)"
+      },
+      {
+        "id": "name-uk",
+        "label": "Name (UK)"
+      },
+      {
+        "id": "solution",
+        "label": "Solution"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "layton-mm:puzzles-c7:p066",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "066",
+          "name-us": "A Trip to the Hospital",
+          "name-uk": "A Trip to the Hospital",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle066.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p067",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "067",
+          "name-us": "Language of Love",
+          "name-uk": "Language of Love",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle067.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p068",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "068",
+          "name-us": "Days of Rest",
+          "name-uk": "Days of Rest",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle068.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p070",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "070",
+          "name-us": "A Perilous Adventure",
+          "name-uk": "A Perilous Adventure",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle070.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p073",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "073",
+          "name-us": "Ancient Arithmetic",
+          "name-uk": "Rock Hard Sums",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle073.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p076",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "076",
+          "name-us": "Painstaking Packing",
+          "name-uk": "Painstaking Packing",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle076.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p078",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "078",
+          "name-us": "Three Clowns",
+          "name-uk": "Three Clowns",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle078.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p081",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "081",
+          "name-us": "King Arthur's Sword",
+          "name-uk": "King Arthur's Sword",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle081.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p083",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "083",
+          "name-us": "Settle the Scores",
+          "name-uk": "Settle the Scores",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle083.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p092",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "092",
+          "name-us": "Ancient Artistry",
+          "name-uk": "Ancient Artistry",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle092.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p098",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "098",
+          "name-us": "Watertight Code",
+          "name-uk": "Watertight Code",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle098.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p099",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "099",
+          "name-us": "Ancient Artistry 2",
+          "name-uk": "Ancient Artistry 2",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle099.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p117",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "117",
+          "name-us": "Ride Rotation",
+          "name-uk": "Ride Rotation",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle117.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p118",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "118",
+          "name-us": "Evenly Matched 3",
+          "name-uk": "Pawn Portions 3",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle118.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p126",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "126",
+          "name-us": "Mystery Room",
+          "name-uk": "Room 2134 Mystery",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle126.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p128",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "128",
+          "name-us": "Faded Photos",
+          "name-uk": "Faded Photos",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle128.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p130",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "130",
+          "name-us": "Water, Wood, Fire",
+          "name-uk": "Water, Wood, Fire",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle130.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p131",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "131",
+          "name-us": "Jewels to the Lock",
+          "name-uk": "Jewels to the Lock",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle131.html"
+        }
+      },
+      {
+        "itemId": "layton-mm:puzzles-c7:p133",
+        "sourceRefs": [
+          "src-any-route",
+          "src-pl5-walkthrough"
+        ],
+        "confidence": "normal",
+        "checkable": false,
+        "cells": {
+          "num": "133",
+          "name-us": "Grand Hall Rescue",
+          "name-uk": "Grand Hall Rescue",
+          "solution": "https://professorlayton5walkthrough.blogspot.com/2012/09/puzzle133.html"
+        }
+      }
+    ]
+  }
+}

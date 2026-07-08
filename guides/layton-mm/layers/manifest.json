@@ -115,6 +115,21 @@
       }
     },
     {
+      "id": "widget-puzzles-c7",
+      "kind": "widget",
+      "artifact": "layers/widget-puzzles-c7.json",
+      "report": "layers/widget-puzzles-c7.report.json",
+      "sha256": "2c8759d11d95bf20a1869b67fa1ee66f8c32ff84e5aa9b0ca861f1dd0a76fbbd",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "layton-mm:c7"
+        },
+        "title": "Chapter Puzzles"
+      }
+    },
+    {
       "id": "widget-puzzles-solved",
       "kind": "widget",
       "artifact": "layers/widget-puzzles-solved.json",
