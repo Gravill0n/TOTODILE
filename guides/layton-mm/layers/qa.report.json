@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "guideId": "layton-mm",
+  "pass": "qa",
+  "layer": "qa",
+  "generatedAt": "2026-07-08T16:17:22Z",
+  "inputs": [
+    {
+      "file": "deck.json",
+      "sha256": "8028edb3db14f32c7d49cf85da9f5177ebeb877b961204301adaffb4e28f1e29"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "e61964b185e2d896e4644b68e213c1a159a307ce0feb71e9f4f8d308160fd48e"
+    },
+    {
+      "file": "layers/manifest.json",
+      "sha256": "cf4d9fd700dbcdbd3bf761d1cfc3981ce83d86cf691ebb52e8856ad1c41e00f8"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "b140b5a46a2382226f95da31706fb1b8f2f221ad6cf7b299375fb1921aa656cc"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "74f90cd27c0b4dce9ec83871548604ed01377b828f4d450908dcbbea22cb963a"
+    },
+    {
+      "file": "layers/widget-puzzles-c0.json",
+      "sha256": "a575d30e5b3e9a1007f601cd087efeeef528b85661c387a8a6e54ffc7ea69d9a"
+    },
+    {
+      "file": "layers/widget-puzzles-c1.json",
+      "sha256": "f98b27bdaae1de0d0727cd47202f355898d00e3f469dbad85712edade62dc5fa"
+    },
+    {
+      "file": "layers/widget-puzzles-c2.json",
+      "sha256": "f6d45115ed2269e18af31b619267ac675ea7fd9985a6bf399337d10fa508567c"
+    },
+    {
+      "file": "layers/widget-puzzles-c3.json",
+      "sha256": "dc7f322c7bb14dd29918534c4c421475e77dd3f44e88a331fda4accf0746e428"
+    },
+    {
+      "file": "layers/widget-puzzles-c4.json",
+      "sha256": "10ccb71eb1897fe49a87889fc1817c067fae367fdd622447601844a3285b3fcc"
+    },
+    {
+      "file": "layers/widget-puzzles-c5.json",
+      "sha256": "e2fb83abb7973a1c0b07fcdc45549ad624ec4ab2c087432621e1a57fa0026dbc"
+    },
+    {
+      "file": "layers/widget-puzzles-c6.json",
+      "sha256": "636d0311f446f7a2a5c46a5ac5361691187adace118baec9a5628f6ae69c1486"
+    },
+    {
+      "file": "layers/widget-puzzles-c7.json",
+      "sha256": "2c8759d11d95bf20a1869b67fa1ee66f8c32ff84e5aa9b0ca861f1dd0a76fbbd"
+    },
+    {
+      "file": "layers/widget-puzzles-c8.json",
+      "sha256": "0faba91c3e72d2052568f28a04670bf5e85e5c6870328fe13da708161494c686"
+    },
+    {
+      "file": "layers/widget-puzzles-solved.json",
+      "sha256": "1434d41fdcd1a0a1c93a02042df432425934ca5a95969a941dba16a801837c64"
+    }
+  ],
+  "report": {
+    "rowCount": 28,
+    "anomalies": [
+      "spine: layton-mm:v-classroom-1:s1: anomaly claims location \"Classroom\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
+      "spine: layton-mm:v-living-room-2:s1: anomaly claims location \"Living Room\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
+      "spine: layton-mm:v-henrys-study-1:s1: anomaly claims location \"Henry's Study\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
+      "spine: layton-mm:v-city-hall-steps-1:s1: anomaly claims location \"City Hall Steps\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
+      "spine: layton-mm:v-briefing-room-1:s1: anomaly claims location \"Briefing Room\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
+      "spine: layton-mm:v-montsarton-gallery-1:s1: anomaly claims location \"Montsarton Gallery\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
+      "spine: layton-mm:v-big-top-1:s1: anomaly claims location \"Big Top\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
+      "spine: layton-mm:v-randalls-room-1:s1: anomaly claims location \"Randall's Room\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
+      "spine: layton-mm:v-winding-road-1:s1: anomaly claims location \"Winding Road\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
+      "spine: layton-mm:v-winding-road-2:s1: anomaly claims location \"Winding Road\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)",
+      "spine: layton-mm:v-city-monument-2:s1: anomaly claims location \"City Monument\" was aligned from the walkthrough's hint-coin location vocabulary, but the name appears nowhere in the captured src-pl5-walkthrough files (sources/pl5-walkthrough/*) — provenance unverifiable; likely the capture lacks the blog's hint-coin/location pages (sources pass to append, then spine re-run)"
+    ],
+    "flaggedItemIds": [
+      "layton-mm:v-classroom-1:s1",
+      "layton-mm:v-living-room-2:s1",
+      "layton-mm:v-henrys-study-1:s1",
+      "layton-mm:v-city-hall-steps-1:s1",
+      "layton-mm:v-briefing-room-1:s1",
+      "layton-mm:v-montsarton-gallery-1:s1",
+      "layton-mm:v-big-top-1:s1",
+      "layton-mm:v-randalls-room-1:s1",
+      "layton-mm:v-winding-road-1:s1",
+      "layton-mm:v-winding-road-2:s1",
+      "layton-mm:v-city-monument-2:s1"
+    ]
+  },
+  "notes": [
+    "Gate: all 11 manifest entries approved + hash-current. Mechanical checks green: validate-guides, assemble-guide (guide.json merged cleanly), check-stable-ids (no baseline at main yet), validate-guides re-run after assembly.",
+    "QA verdict: NOT ready — 11 spine anomaly lines (10 locations) cite walkthrough hint-coin vocabulary the captured source does not contain. Root-cause hypothesis: sources/pl5-walkthrough holds only the 5 puzzle feed pages + index; the blog's hint-coin/location pages were never captured. Fix path: sources pass appends those pages, spine re-run re-verifies the 10 names (IDs must survive per §6.8), then re-review.",
+    "Verified honest by spot-read against sources: umbrella-location flags (route PDF p.1 names no location at run start), solution-screenshot flags (route conveys solutions as screenshots, e.g. puzzle 001 p.1), omitted-solution flags (data.json ch2-a031/ch4-a011/ch5-a079..081/ch8-a016..019 hold the inline answers the spine omitted). Aligned names Carnival Square, Madame Lapushka's, Norwell, Racetrack, Casino, Pumpkin Park, Akbadain B1-B7, Reunion Inn verified present in the walkthrough capture.",
+    "RA coverage: no ra-set source exists (RetroAchievements has no 3DS support) — zero achievements to map is deliberate, not an omission. Images: no layer references images/. Missables: no spine step carries a missable flag (Any% route; the manual's Puzzle Palace recovers lost puzzles), so no deadlines are owed.",
+    "Widget layers: no flagged rows anywhere; counter derivedFrom (82) matches the 82 informational puzzle rows across the 9 chapter tables 1:1. The prepCard deck slot is deliberately unfilled (Pierre 2026-07-08).",
+    "Assembled guide.json withheld from this commit because QA did not pass; assembly itself succeeded and will be re-emitted on the next QA run."
+  ]
+}
