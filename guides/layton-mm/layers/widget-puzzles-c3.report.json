@@ -3,7 +3,7 @@
   "guideId": "layton-mm",
   "pass": "widget",
   "layer": "widget-puzzles-c3",
-  "generatedAt": "2026-07-08T16:05:30Z",
+  "generatedAt": "2026-07-08T17:25:27Z",
   "inputs": [
     {
       "file": "deck.json",
@@ -11,7 +11,7 @@
     },
     {
       "file": "sources.json",
-      "sha256": "e61964b185e2d896e4644b68e213c1a159a307ce0feb71e9f4f8d308160fd48e"
+      "sha256": "4118ef8421340c94b5feb8762bb205f91d714cf56f77905ef899bb6cea35d5e3"
     },
     {
       "file": "layers/data.json",
@@ -19,7 +19,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "74f90cd27c0b4dce9ec83871548604ed01377b828f4d450908dcbbea22cb963a"
+      "sha256": "8942e0f5ff7604265390811ddafded5c399324268c764d6507d6e6122f257c2c"
     }
   ],
   "report": {
@@ -30,6 +30,7 @@
   "notes": [
     "Chapter-scoped Chapter Puzzles table (deck slot 1) for layton-mm:c3 (\"Chapter 3 - The Battle for Monte d’Or\"); 15 informational row(s) (checkable: false) reproduced verbatim from the data layer puzzles dataset — the spine's \"Solve NNN\" steps are the checkables, per Pierre 2026-07-08.",
     "Columns: puzzle #, US name, UK name, and an opt-in Solution link to the puzzle's PL5-walkthrough page (Pierre 2026-07-08) — nothing is shown inline, keeping the spoiler-free rule.",
-    "The Epilogue (layton-mm:c9) has no route puzzles, so slot 1 gets no instance there."
+    "The Epilogue (layton-mm:c9) has no route puzzles, so slot 1 gets no instance there.",
+    "Refresh re-run 2026-07-08 answering QA 79730d7 (stale sources.json/spine.json digests after fb6da77/556c1e9): rows re-verified against the re-approved spine (all referenced step IDs present), artifact byte-identical (dc7f322c7bb14dd29918534c4c421475e77dd3f44e88a331fda4accf0746e428)."
   ]
 }
