@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "layers": [
+    {
+      "id": "spine",
+      "kind": "spine",
+      "artifact": "layers/spine.json",
+      "report": {
+        "rowCount": 587,
+        "anomalies": [
+          "v-ganons-castle-1:s19 (Plenty of Hearts, 49287): RA marks this cumulative 'obtain all 20 hearts' achievement as missable. It is earned the instant the 20th heart is completed, not at a specific route step, so it is attached to the pre-tower stock-up step as the last guaranteed point on the ZD 100% route. Flagged as an approximate placement.",
+          "v-ganons-tower-1:s6 (Blind Explorer 49293 and Cartographer 49294): both are attached to the final seal step. They are mutually exclusive (no maps/compasses vs every map/compass) and, like the several 3-hearts-only challenge achievements, expect a dedicated challenge save — they cannot both be earned on the single ZD 100% playthrough this route describes. Flagged.",
+          "route-actions carried 10 leaked ad-player fragments ('Powered By … ShareNextStay') from the Zelda Dungeon pages; 4 were ad-only (dropped) and 6 had real route prose after the ad prefix (prefix stripped). Carried over from the extract-data anomalies; none reached the spine text.",
+          "Some ZD <ul> list content was missing from the extract-data route-actions (Zora's Domain 5-torch order, Forest Temple basement counter-clockwise rotation) and was recovered from the raw ZD snapshots in guides/zelda-oot/sources/zelda-dungeon/ for the spine detail."
+        ],
+        "flaggedItemIds": [
+          "zelda-oot:v-ganons-castle-1:s19",
+          "zelda-oot:v-ganons-tower-1:s6"
+        ]
+      },
+      "contentHash": "sha256:94f5ed4cfa3228f7c99d3a2181665f54ef1fdd8d281bb2310126c4383f7f3123",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-09T13:22:06.896Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    }
+  ]
+}
