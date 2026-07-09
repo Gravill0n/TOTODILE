@@ -45,6 +45,28 @@ remaining `library.json` guides through the pass pipeline.
 - Stack (pinned, PRD §19): TypeScript strict, React 19, Vite, Tailwind 4, TanStack
   Router, Zod 4, IndexedDB via `idb`, Biome, Vitest, Yarn 4. Naming: PRD §20.3
   (camelCase files, PascalCase components, kebab-case guide slugs).
+- Plan first: write a task plan and get it approved before implementing; then build
+  each task with tests and verify green before committing. (This is the plan-first
+  flow, **not** the retired bon-cop-bad-cop schema TDD loop — build schemas directly
+  with Zod, PRD §22.1.)
+
+## Validation / Data Modeling
+
+- Use Zod for all schema validation. Never hand-roll validators. Schemas in
+  `app/src/schema/` are the single source of truth (PRD §19/§22.1).
+
+## Testing / Commits
+
+- Run each shell command separately — avoid chaining with `&&`, where a failure in an
+  earlier command gets swallowed by a later one.
+- Always confirm tests pass green before committing. Never commit on a red or
+  unverified suite.
+
+## Guide Compiler Notes
+
+- Spine/location logic must account for backtracking: a location can appear multiple
+  times across the chapter→visit→step tree. See `COMPILER_PASS_CONTRACT.md` and the
+  `guide-pass-spine` skill.
 
 ## Repo layout
 
