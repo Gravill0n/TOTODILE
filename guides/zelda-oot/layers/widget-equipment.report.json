@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "layer": "widget-equipment",
+  "generatedAt": "2026-07-09T13:43:43Z",
+  "inputs": [
+    {
+      "file": "layers/data.json",
+      "sha256": "ad27a0ee90401b02856116880c1febeabcc69f70701c93b5cf877eb33d1b2850"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "94f5ed4cfa3228f7c99d3a2181665f54ef1fdd8d281bb2310126c4383f7f3123"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "54512053dc611e25bd0017fc42464131112be282656845a5c12b814abd98adf6"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "c5f63992198ff323ecfbb80ca474de3a2c3509dd6ff0ec011723f70279fbf6fe"
+    }
+  ],
+  "report": {
+    "rowCount": 160,
+    "anomalies": [
+      "eq-heart-container, eq-heart-container-shadow-temple, eq-lense-of-truth, eq-hoover-boots: flagged — the checklist PDF's spellings/values conflict with ZD/RA (Queen Ghoma vs Gohma, Bongo Dongo vs Bongo Bongo, Lense vs Lens of Truth, Hoover vs Hover Boots). Reproduced verbatim from the extract-data layer and carried as flagged."
+    ],
+    "flaggedItemIds": [
+      "zelda-oot:equipment:eq-heart-container",
+      "zelda-oot:equipment:eq-lense-of-truth",
+      "zelda-oot:equipment:eq-hoover-boots",
+      "zelda-oot:equipment:eq-heart-container-shadow-temple"
+    ]
+  },
+  "notes": [
+    "Slot 2 (checklist, global). All 160 rows from the equipment-upgrades dataset (Pierre: include everything), across 20 categories; note = category · area · how. 4 rows inherit the extract-data flags for verbatim source spelling conflicts."
+  ]
+}

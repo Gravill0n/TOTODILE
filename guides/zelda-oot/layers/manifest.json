@@ -8,6 +8,48 @@
       "artifact": "layers/spine.json",
       "report": "layers/spine.report.json",
       "sha256": "94f5ed4cfa3228f7c99d3a2181665f54ef1fdd8d281bb2310126c4383f7f3123"
+    },
+    {
+      "id": "widget-equipment",
+      "kind": "widget",
+      "artifact": "layers/widget-equipment.json",
+      "report": "layers/widget-equipment.report.json",
+      "sha256": "1f087bcd29cafc57eb15db1e833b040be06232cd4a5f78766a342361e321efb6",
+      "widget": {
+        "deckPosition": 2,
+        "scope": {
+          "kind": "global"
+        },
+        "title": "Equipment & Upgrades"
+      }
+    },
+    {
+      "id": "widget-gold-skulltulas",
+      "kind": "widget",
+      "artifact": "layers/widget-gold-skulltulas.json",
+      "report": "layers/widget-gold-skulltulas.report.json",
+      "sha256": "11a50aafa88d2ae42fdd7603a74df8e9369fe7b4fa9255332d55ee77fd1b9f7c",
+      "widget": {
+        "deckPosition": 0,
+        "scope": {
+          "kind": "global"
+        },
+        "title": "Gold Skulltulas"
+      }
+    },
+    {
+      "id": "widget-heart-pieces",
+      "kind": "widget",
+      "artifact": "layers/widget-heart-pieces.json",
+      "report": "layers/widget-heart-pieces.report.json",
+      "sha256": "6f0a7e5eafa5bbe8820953eec957a85ef0866389115169593c385f1f2fce7fea",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "global"
+        },
+        "title": "Heart Pieces"
+      }
     }
   ]
 }

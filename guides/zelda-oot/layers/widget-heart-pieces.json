@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:heart-pieces",
+    "title": "Heart Pieces",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 1,
+    "type": "checklist",
+    "rows": [
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-01",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #1",
+        "note": "Graveyard (Learn the Sun's Song (Child)) — Go up to the giant tombstone (Royal Family's Tomb) and turn back to the exit. There are five tombstones on your left side dire…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-02",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #2",
+        "note": "Graveyard (Enough Rupees (10 per dig)) — Once you have a lot of Rupees to throw around, enter the Graveyard between 18:00 and 21:00 (you can talk to the guard at the ent…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-03",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #3",
+        "note": "Lon Lon Ranch (Reach Lon Lon Ranch (Child)) — As a child, go to Lon Lon Ranch and enter the storage building at the back of the ranch. Pull the crates back to reach the…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-04",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #4",
+        "note": "Gerudo Valley (Reach Gerudo Valley) — In Gerudo Valley, there is a giant waterfall to the north. In the center of the waterfall is an alcove with a Piece of Heart. There…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-05",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #5",
+        "note": "Gerudo Valley (Reach Gerudo Valley) — When standing on the bridge, if you look towards the \"Gerudo side\" of the bridge and look off to the left, you will see a platform…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-06",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #6",
+        "note": "Lake Hylia (Reach Lake Hylia (Child)) — In the Fishing Pond game, catch a 10-pound fish as a child and show it to the Fishing Hole Man to get a Piece of Heart."
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-07",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #7",
+        "note": "Lost Woods (Acquire the Fairy Ocarina (Child)) — When you enter the Lost Woods as a child, go right one screen then jump down into the lower area. Stand on the stump off…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-08",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #8",
+        "note": "Lost Woods (Learn Saria's Song (Child)) — Enter the Lost Woods as a child and go left one screen. Stand on the stump, pull out your Ocarina and play Saria's Song once yo…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-09",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #9",
+        "note": "Back Alley (Reach the Market (Child)) — During the night, there are lots of dogs roaming the streets. If you touch one, it will follow you until you enter a building or…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-10",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #10",
+        "note": "Goron City (Acquire the Goron's Bracelet) — At the lowest level of the city, light all the torches using Deku Sticks (and the lit torch in Darunia's chamber). Alternativ…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-11",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #11",
+        "note": "Death Mountain Crater (Reach Death Mountain Crater) — The wall that leads up to the large area at the entrance of Death Mountain Crater is climbable and it has an alcove…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-12",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #12",
+        "note": "Kakariko Village (Reach Kakariko Village (Child)) — To get this Piece of Heart, you need to get on top of a ledge above the Cucco pen behind Impa's House (the building t…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-13",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #13",
+        "note": "Market (Acquire Bombs (Child)) — During the day, the Bombchu Bowling Alley is open and ready for business! The game cycles through five different prizes, in this order:…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-14",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #14",
+        "note": "Hyrule Field (Acquire Bombs) — In the southwest corner of Hyrule Field is the entrance to Lake Hylia. Just before the entrance itself are four fences that form a square.…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-15",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #15",
+        "note": "Zora's River (Reach Zora's River) — The heart piece is located on a pillar found right in the center of Zora's River region. There are a few different ways to get to it:…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-16",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #16",
+        "note": "Zora's River (Reach Zora's River) — At the end of Zora's River, near the Sleepless Waterfall - the entrance to Zora's Domain - there is a platform in the corner with a P…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-17",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #17",
+        "note": "Zora's Domain (Reach Zora's Domain (Child)) — There are five unlit torches in Zora's Domain: As a child, run up to the Throne Room and light a Deku Stick, then run down…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-18",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #18",
+        "note": "Graveyard (Plant a Magic Bean) — On the left side of the Graveyard as a child, there is a soft soil location. Plant a Magic Bean and return as an adult later on. Ride th…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-19",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #19",
+        "note": "Kakariko Village (Acquire the Boomerang as a Child (or race Dampé as an Adult)) — Within the Windmill is a ledge with a Piece of Heart resting atop it. After you race ag…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-20",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #20",
+        "note": "Graveyard (Acquire the Hookshot) — Once you have acquired the Hookshot from Dampé's Crypt, you can race against Dampé's ghost again anytime you like. If you can complete…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-21",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #21",
+        "note": "Kakariko Village (Acquire the Hookshot) — When you are an adult, use the Hookshot to get on top of the roof of Granny's Potion Shop and then talk to the guy up there and…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-22",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #22",
+        "note": "Kakariko Village (Collect 50 Gold Skulltulas) — Once you have collected 50 Gold Skulltulas, go into the House of Skulltula and claim your prize."
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-23",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #23",
+        "note": "Lake Hylia (Plant a Magic Bean (or learn the Scarecrow's Song)) — At the very top of the Lakeside Laboratory is a Piece of Heart. To get up there, you can either plant a…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-24",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #24",
+        "note": "Lake Hylia (Acquire the Golden Scale) — Once you win the Golden Scale from the Fishing Pond, you can enter the Lakeside Laboratory and use it to dive down as far as you…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-25",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #25",
+        "note": "Hyrule Field (Acquire the Golden Scale (or Iron Boots)) — Northwest of Lon Lon Ranch, between Gerudo Valley and Hyrule Castle, there is a tree. Once you walk by it the S…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-26",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #26",
+        "note": "Death Mountain Trail (Plant a Magic Bean) — As a child, plant a Magic Bean in the soft soil at the entrance of Dodongo's Cavern. When you return as an adult, you can rid…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-27",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #27",
+        "note": "Death Mountain Crater (Learn the Bolero of Fire, plant a Magic Bean) — As a child, warp to Death Mountain Crater and plant a Magic Bean in the soft soil next to the Trif…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-28",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #28",
+        "note": "Zora's Fountain (None) — When you return to Zora's Domain as an adult, Lord Jabu-Jabu is no longer here and there are now a bunch of icebergs floating around. Jump acros…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-29",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #29",
+        "note": "Ice Cavern (Acquire some Blue Fire) — In the far right room of the Ice Cavern, which is the same room where you can acquire some Blue Fire and find the Compass, there ar…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-30",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #30",
+        "note": "Zora's Fountain (Acquire the Iron Boots) — Located at the very bottom of Zora's Fountain. Use the Iron Boots to reach the ground floor and collect the heart piece."
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-31",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #31",
+        "note": "Zora's River (Learn the Song of Storms (Child)) — At Zora's River as a child, near the center of the map, step on the nearby log that sticks out into the water. Pull out…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-32",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #32",
+        "note": "Zora's River (Learn Epona's Song, Sun's Song, Song of Storms (Child)) — At Zora's River as a child, when you meet the five frogs, play Zelda's Lullaby, Saria's Song, Epo…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-33",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #33",
+        "note": "Market (Acquire the Lens of Truth (Child)) — The Treasure Chest Shop is open only at night. Enter and you can play this game for 10 Rupees a try. In each room, you are g…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-34",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #34",
+        "note": "Gerudo's Fortress (Acquire the Gerudo Token, Longshot) — At the very top of the fortress is a large treasure chest. One of the doors to the south takes you to an upper l…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-35",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #35",
+        "note": "Horseback Archery Range (Acquire the Gerudo Token, Epona) — Once you have saved all the carpenters and acquired the Gerudo Token, you can bring Epona to the far east and…"
+      },
+      {
+        "itemId": "zelda-oot:heart-pieces:hp-36",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "label": "Heart Piece #36",
+        "note": "Desert Colossus (Learn the Requiem of Spirit, plant a Magic Bean) — Next to the entrance of the Spirit Temple is a soft soil location. Plant a Magic Bean as a child (you…"
+      }
+    ]
+  }
+}
