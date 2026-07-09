@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "guideId": "zelda-oot",
+  "pass": "qa",
+  "layer": "qa",
+  "generatedAt": "2026-07-09T14:11:20Z",
+  "inputs": [
+    {
+      "file": "layers/data.json",
+      "sha256": "ad27a0ee90401b02856116880c1febeabcc69f70701c93b5cf877eb33d1b2850"
+    },
+    {
+      "file": "layers/ra-mapping.json",
+      "sha256": "17c25846d8719c46f2a1373402948969d421c3ce6bbe6ce3041d1696703fb5bb"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "94f5ed4cfa3228f7c99d3a2181665f54ef1fdd8d281bb2310126c4383f7f3123"
+    },
+    {
+      "file": "layers/widget-achievements.json",
+      "sha256": "f410a7c9a949d7c8f0e7d15218797de9d009af3266ed8536b2bfb0fbd7a8d818"
+    },
+    {
+      "file": "layers/widget-area-bottom-of-the-well.json",
+      "sha256": "cde7b267618c4af410de2fdff93e626429aee44a519dbdef8355e5a1e1988e2a"
+    },
+    {
+      "file": "layers/widget-area-castle-town-market.json",
+      "sha256": "9a85bb122a849fcc2b9a023c6f7f2b7c65154259d266c56a410bf401fab27cff"
+    },
+    {
+      "file": "layers/widget-area-death-mountain-crater.json",
+      "sha256": "27e4ef27964f914a3c4cd4fa6f15c6ccfc91a37e02a1ce65a9965482f7da6a5d"
+    },
+    {
+      "file": "layers/widget-area-death-mountain-trail.json",
+      "sha256": "0a33c6d3cd1da0a9be80e2dac7f8a7e9e8b8e936a89d677023c4dcfbab75796c"
+    },
+    {
+      "file": "layers/widget-area-desert-colossus.json",
+      "sha256": "a43de00f885a18c7718c7873e04219420dd9a35e34e130783ddfe99557eeafaa"
+    },
+    {
+      "file": "layers/widget-area-dodongos-cavern.json",
+      "sha256": "115e185b1a0daead8091ee1a53916183a663b444a67eab0b5761be9ca1737b48"
+    },
+    {
+      "file": "layers/widget-area-fire-temple.json",
+      "sha256": "88f493cc1de2b970dd0cfffe923e0cfe531c150ab38cde4567b5f4a30e4f932d"
+    },
+    {
+      "file": "layers/widget-area-forest-temple.json",
+      "sha256": "b993501aeb423409b7cc439f15088d748faec6cc99d424f2e99dc6e3aa5309b6"
+    },
+    {
+      "file": "layers/widget-area-ganons-castle.json",
+      "sha256": "2267d65552870fe31c0d7c3f8466216832ac173f2566019370d76496feac59f5"
+    },
+    {
+      "file": "layers/widget-area-gerudo-fortress.json",
+      "sha256": "c24924266c284f9c0c66cb669e4a1b5007b6a285166f279a2037c3e4609efc9c"
+    },
+    {
+      "file": "layers/widget-area-gerudo-valley.json",
+      "sha256": "1e61d70b67f1887f8396c4a60968fd098be59c604fba565fbe3d8cb2af420c2e"
+    },
+    {
+      "file": "layers/widget-area-goron-city.json",
+      "sha256": "a2593764d75c8efab27b2bb9b64053e47278f3599c146c8d0c2e62538e71dd07"
+    },
+    {
+      "file": "layers/widget-area-graveyard.json",
+      "sha256": "718063c22733a34fb4ce4db2c44721ab3368cb6deb809190e461b0b6e4c6dc32"
+    },
+    {
+      "file": "layers/widget-area-great-deku-tree.json",
+      "sha256": "a17d46a8698136f0afcc93695d2643f029ce59271c9cff048bbbca6750378da4"
+    },
+    {
+      "file": "layers/widget-area-haunted-wasteland.json",
+      "sha256": "5ba36cdccbb764ceab132bed2f0118007b2484ff32e2da510241ab3cf7aebd25"
+    },
+    {
+      "file": "layers/widget-area-hyrule-castle.json",
+      "sha256": "272322d2b0773d895787ed91c11f231ed58d0f1458ae5c7f2f78b0ca472ed7ed"
+    },
+    {
+      "file": "layers/widget-area-hyrule-field.json",
+      "sha256": "6e8019aedbca487eebfa5344aceff0a67447773c8c7cc5fbab4f27caf023c76d"
+    },
+    {
+      "file": "layers/widget-area-ice-cavern.json",
+      "sha256": "b30abb879d4257ac409dc5cdd3eaf9622b387fc48677231f4ea1cad7a83eba96"
+    },
+    {
+      "file": "layers/widget-area-jabu-jabus-belly.json",
+      "sha256": "c1db8d6d27b0fdcb52503c1e3116c9b69feef3162a0f64f13e790a97f9baed4e"
+    },
+    {
+      "file": "layers/widget-area-kakariko-village.json",
+      "sha256": "f80855a2cc5dafceeb1b68ee2d7d36ba82e7ef3f26566f609cf0849316c7a168"
+    },
+    {
+      "file": "layers/widget-area-kokiri-forest.json",
+      "sha256": "5a031be3d8ec73aadd3d60e0ec768a5cf46246071fec731f70e578a17106502c"
+    },
+    {
+      "file": "layers/widget-area-lake-hylia.json",
+      "sha256": "8843fea7fab554f31c66a9adcb877ce0afa9c7db0a65dafb691a1b1800027f96"
+    },
+    {
+      "file": "layers/widget-area-lon-lon-ranch.json",
+      "sha256": "5b40633ad43d5e0c2d3338d3e4f191cc4f1079528824aafbb03fb126a39ebdb0"
+    },
+    {
+      "file": "layers/widget-area-lost-woods.json",
+      "sha256": "751d4716118022b391a94911910cf6c1e3311fbe4f4e65f4216fe76023bd86b3"
+    },
+    {
+      "file": "layers/widget-area-sacred-forest-meadow.json",
+      "sha256": "62b1f1bff2b4e8a1bd04d4f24ee80b0d7169f1c7d7555c92c2a0ba59a7276f43"
+    },
+    {
+      "file": "layers/widget-area-shadow-temple.json",
+      "sha256": "852b84b3b3f33c2fee40aff94df8007b81b105642b4af207d2b06a6240b75310"
+    },
+    {
+      "file": "layers/widget-area-spirit-temple.json",
+      "sha256": "337d4e9f3df6357c04ae0455159d156e02913b8a37aaa9393e2c9b366edf3558"
+    },
+    {
+      "file": "layers/widget-area-water-temple.json",
+      "sha256": "3245fcac28ee54c1aa1171137943b27eb1b7747602f7c463b4652396df930481"
+    },
+    {
+      "file": "layers/widget-area-zoras-domain.json",
+      "sha256": "d733d522856eede0608ad7b56eeac3fb6352fa8d4adaf9e542062af48445b96e"
+    },
+    {
+      "file": "layers/widget-area-zoras-fountain.json",
+      "sha256": "2edb1e425bbee815264e397dec765a5c04777e1f830d98bb1b373cef6241cb90"
+    },
+    {
+      "file": "layers/widget-area-zoras-river.json",
+      "sha256": "994375921d647311e50c7ec6cea6a6389ace03087e8c365e1b165375e51d31b2"
+    },
+    {
+      "file": "layers/widget-equipment.json",
+      "sha256": "1f087bcd29cafc57eb15db1e833b040be06232cd4a5f78766a342361e321efb6"
+    },
+    {
+      "file": "layers/widget-gold-skulltulas.json",
+      "sha256": "11a50aafa88d2ae42fdd7603a74df8e9369fe7b4fa9255332d55ee77fd1b9f7c"
+    },
+    {
+      "file": "layers/widget-heart-pieces.json",
+      "sha256": "6f0a7e5eafa5bbe8820953eec957a85ef0866389115169593c385f1f2fce7fea"
+    },
+    {
+      "file": "layers/widget-prep-c1.json",
+      "sha256": "fb4e18021944153c4e9046ff77e9baee9a2ae629b4d3046fa8a0dbff2ce2865c"
+    },
+    {
+      "file": "layers/widget-prep-c10.json",
+      "sha256": "bc0acb1ea2e8e3c84cf5bfab1285488e85055ce903f30b150d60486b46f022ca"
+    },
+    {
+      "file": "layers/widget-prep-c11.json",
+      "sha256": "75e8de75ef7b7e505f4aeab83d2c59e2f86d38116a7ce3069ec2533ad8d6f4e6"
+    },
+    {
+      "file": "layers/widget-prep-c12.json",
+      "sha256": "69c053bdc478c65349b0b22c6596277a61b26e5f96beda290f342cf93b12c9b9"
+    },
+    {
+      "file": "layers/widget-prep-c13.json",
+      "sha256": "aea22bda00cbce15fc0739c80465dd81c3840386d6ea95bda2448f2d3d840fbc"
+    },
+    {
+      "file": "layers/widget-prep-c14.json",
+      "sha256": "4ccb011917ab7c02428421e6a4c1968b8f233f2d443c2089d5dc0ce57c4a952d"
+    },
+    {
+      "file": "layers/widget-prep-c4.json",
+      "sha256": "092d4001c0fdbcee968ea7901611d28daa9e9d5f46d869bd09d7d4f77d505133"
+    },
+    {
+      "file": "layers/widget-prep-c5.json",
+      "sha256": "88fc3717c2f44e26e0fde21bb39c0a5a6aacc5d110573a2bef65899fd7cc10fa"
+    },
+    {
+      "file": "layers/widget-prep-c7.json",
+      "sha256": "67391206f4546f49094f89b8f08eb02f3046f7f6251418be3046664644170649"
+    },
+    {
+      "file": "layers/widget-prep-c8.json",
+      "sha256": "8a5cef074ad71decb2f1bac9e1b60e1e55079476038153a6f093259046e84aa5"
+    },
+    {
+      "file": "layers/widget-prep-c9.json",
+      "sha256": "5f38bf515da47c43f10f2a9ddee2831f37c55e659e20654b07112f80576e807e"
+    },
+    {
+      "file": "layers/manifest.json",
+      "sha256": "0a60abe4ee1d96b189ed9bc695ed8dadf7a101091bf345235e06902b015413b2"
+    },
+    {
+      "file": "guide.json",
+      "sha256": "df8939ad5cba06077efb0593f988c7a93702498e504b412191e54d06d283e640"
+    },
+    {
+      "file": "ra-mapping.json",
+      "sha256": "17c25846d8719c46f2a1373402948969d421c3ce6bbe6ce3041d1696703fb5bb"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "54512053dc611e25bd0017fc42464131112be282656845a5c12b814abd98adf6"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "c5f63992198ff323ecfbb80ca474de3a2c3509dd6ff0ec011723f70279fbf6fe"
+    }
+  ],
+  "report": {
+    "rowCount": 138,
+    "anomalies": [
+      "spine: v-ganons-castle-1:s19 (Plenty of Hearts, 49287) flagged — approved-content flag carried forward: RA marks this cumulative 'all 20 hearts' achievement missable, but it is earned when the 20th heart completes, not at a fixed route step; pinned to the pre-tower stock-up as the last guaranteed point. Honest: the anomaly states the approximation.",
+      "spine: v-ganons-tower-1:s6 (Blind Explorer 49293 + Cartographer 49294) flagged — approved-content flag carried forward: the two are mutually exclusive (no maps/compasses vs every map/compass) and, like the 3-hearts-only challenges, expect a dedicated challenge save; they cannot both be earned on the single ZD 100% playthrough. Honest.",
+      "widget-equipment: eq-heart-container, eq-heart-container-shadow-temple, eq-lense-of-truth, eq-hoover-boots flagged — approved-content flags carried forward: the checklist PDF's verbatim spellings/values conflict with ZD/RA (Queen Ghoma vs Gohma; Bongo Dongo vs Bongo Bongo; Lense vs Lens of Truth; Hoover vs Hover Boots). Reproduced verbatim per the contract; honest."
+    ],
+    "flaggedItemIds": [
+      "zelda-oot:v-ganons-castle-1:s19",
+      "zelda-oot:v-ganons-tower-1:s6",
+      "zelda-oot:equipment:eq-heart-container",
+      "zelda-oot:equipment:eq-heart-container-shadow-temple",
+      "zelda-oot:equipment:eq-lense-of-truth",
+      "zelda-oot:equipment:eq-hoover-boots"
+    ]
+  },
+  "notes": [
+    "PASS. Mechanical: validate-guides green (schema + cross-file invariants + manifest parity/digests); assemble-guide wrote guide.json + ra-mapping.json with no stale-layer refusal; check-stable-ids clean (first compile — zelda-oot not yet on main, nothing to protect); re-validated the assembled guide.json in place — green.",
+    "Assembled guide.json: 34 locations, 14 chapters, 133 visits, 587 steps, 46 widgets; 1057 checkable IDs across the guide with zero duplicates.",
+    "Coverage: all 97 ra-set achievements are mapped in ra-mapping.json (0 unmapped). All 28 type=missable achievements land on a step carrying a missable banner, and every one of the 20 bannered steps states a deadline.",
+    "Images: 34 distinct location-map references, all present on disk under images/.",
+    "Flag spot-read: all 6 flagged checkables re-read against source — 2 spine (approximate/mutually-exclusive endgame achievement placements) and 4 equipment (verbatim PDF spelling conflicts). All honest; each has an anomaly line in its owning layer's report and was approved in that layer. QA edited no content.",
+    "Verdict: ready for review-lens approval. No pass needs a re-run."
+  ]
+}
