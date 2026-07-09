@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "entries": [
+    {
+      "id": "spine",
+      "kind": "spine",
+      "artifact": "layers/spine.json",
+      "report": "layers/spine.report.json",
+      "sha256": "8de597a8afe07a8c15b4f7e0f285ec30476f0151dfe79b7422c6fdef12fd9010"
+    }
+  ]
+}

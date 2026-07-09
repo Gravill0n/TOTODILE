@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "guideId": "zelda-oot",
+  "pass": "spine",
+  "layer": "spine",
+  "generatedAt": "2026-07-09T12:38:07Z",
+  "inputs": [
+    {
+      "file": "layers/data.json",
+      "sha256": "ad27a0ee90401b02856116880c1febeabcc69f70701c93b5cf877eb33d1b2850"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "c5f63992198ff323ecfbb80ca474de3a2c3509dd6ff0ec011723f70279fbf6fe"
+    }
+  ],
+  "report": {
+    "rowCount": 584,
+    "anomalies": [
+      "v-hyrule-castle-1:s4 (Money Solves Everything, 48160) and v-hyrule-castle-1:s8 (Troublemaker, 48161): the ZD route sneaks past the castle guards and never mentions bribing or angering one, so these RA achievements are attached to the infiltration steps by their RA descriptions alone. Flagged.",
+      "v-castle-town-market-4:s1 (Last Breath, 48513): the dying-guard scene after Zelda's escape is not in the ZD route; the step and its placement come from the RA description only (child era, ruined Market). Flagged; the step's sole source is src-ra.",
+      "v-lake-hylia-4:s4 (Mischievous Hero, 48944 — 'Have the pond owner lose his hat permanently'): not covered by the ZD route; attached to the Fishing Pond by RA description only. Flagged; sole source src-ra.",
+      "v-ganons-castle-1:s19 (Plenty of Hearts, 49287): RA marks this cumulative 'obtain all 20 hearts' achievement as missable. It is earned the instant the 20th heart is completed, not at a specific route step, so it is attached to the pre-tower stock-up step as the last guaranteed point on the ZD 100% route. Flagged as an approximate placement.",
+      "v-ganons-tower-1:s6 (Blind Explorer 49293 and Cartographer 49294): both are attached to the final seal step. They are mutually exclusive (no maps/compasses vs every map/compass) and, like the several 3-hearts-only challenge achievements, expect a dedicated challenge save — they cannot both be earned on the single ZD 100% playthrough this route describes. Flagged.",
+      "achievements not routed by the ZD walkthrough (3 of 97, left unplaced — no route step supports them; the RetroAchievements checklist widget will surface them at the RA-mapping/widget stage): Lifestyle and Stones (48515, listen to all 32 Gossip Stones in one session), Kiss That Frog (48942, get a kiss from King Zora — missable), Wind Runner (49288, finish the Running Man challenge under 1:30).",
+      "route-actions carried 10 leaked ad-player fragments ('Powered By … ShareNextStay') from the Zelda Dungeon pages; 4 were ad-only (dropped) and 6 had real route prose after the ad prefix (prefix stripped). Carried over from the extract-data anomalies; none reached the spine text.",
+      "Some ZD <ul> list content was missing from the extract-data route-actions (Zora's Domain 5-torch order, Forest Temple basement counter-clockwise rotation) and was recovered from the raw ZD snapshots in guides/zelda-oot/sources/zelda-dungeon/ for the spine detail."
+    ],
+    "flaggedItemIds": [
+      "zelda-oot:v-hyrule-castle-1:s4",
+      "zelda-oot:v-hyrule-castle-1:s8",
+      "zelda-oot:v-castle-town-market-4:s1",
+      "zelda-oot:v-lake-hylia-4:s4",
+      "zelda-oot:v-ganons-castle-1:s19",
+      "zelda-oot:v-ganons-tower-1:s6"
+    ]
+  },
+  "notes": [
+    "First spine run. 14 chapters (ZD walkthrough order), 34 locations (all with an oot-tracker map image copied into guides/zelda-oot/images/), 133 visits, 584 steps.",
+    "Zelda Dungeon walkthrough is the primary route per Pierre (extract-data + this pass): one step per content paragraph, merging only paragraphs that describe a single action (notably boss fights = one step each with strategy in detail). Cutscene-only narration folds into the neighbouring step or the chapter intro (gate-1 decision).",
+    "Chapter breakdown, location set, visit sequence, and missable classification signed off at the outline gate (2026-07-09). Sample chapters 1–2 signed off at the sample gate; the full run follows the sample's granularity and tone.",
+    "Gerudo Training Ground folded into chapter 14 at its route position (section 14.3), per the outline gate — the ZD standalone GTG page is part of the same src-zd-walkthrough source, so no separate sourceRef was added.",
+    "Missable banners: 27 of the 28 RA type=missable achievements carry a step missable banner (the 28th, Kiss That Frog 48942, is unrouted — see anomalies). Deadline text derives from each achievement's own RA description. Boss-challenge conditions banner the fight step; event-window ones banner the moment they close.",
+    "94 of 97 achievements are referenced by a step's achievementRefs; the 3 unrouted ones are listed in the anomalies for the downstream RA-mapping/checklist widget.",
+    "Stable IDs freshly minted (no prior artifact): locations zelda-oot:<place>, visits zelda-oot:v-<place>-<k> (k = k-th visit to that place in spine order, contiguous per location), steps <visit-id>:sN. Era changes (child<->adult via the Temple of Time pedestal) are described in step detail rather than as bare Temple of Time revisits, except where the route's purpose is the visit itself.",
+    "Source typos are reproduced verbatim in step detail per the compiler contract; connective prose is lightly reworded, facts (places, NPCs, items, counts, inputs) are not."
+  ]
+}
