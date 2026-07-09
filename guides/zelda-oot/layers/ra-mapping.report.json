@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "guideId": "zelda-oot",
+  "pass": "ra-mapping",
+  "layer": "ra-mapping",
+  "generatedAt": "2026-07-09T14:04:27Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "94f5ed4cfa3228f7c99d3a2181665f54ef1fdd8d281bb2310126c4383f7f3123"
+    },
+    {
+      "file": "layers/widget-achievements.json",
+      "sha256": "f410a7c9a949d7c8f0e7d15218797de9d009af3266ed8536b2bfb0fbd7a8d818"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "c5f63992198ff323ecfbb80ca474de3a2c3509dd6ff0ec011723f70279fbf6fe"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "ad27a0ee90401b02856116880c1febeabcc69f70701c93b5cf877eb33d1b2850"
+    }
+  ],
+  "report": {
+    "rowCount": 97,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "raGameId 10113 matches the library entry. All 97 achievements from the ra-set source (src-ra, the public RA game page snapshot) map 1:1 to their row in the global RetroAchievements widget (target convention confirmed by Pierre 2026-07-09) — syncing RA progress ticks the achievement in that checklist. 0 unmapped, 0 flagged.",
+    "The RA API was not called; the achievement list comes from the ra-set source recorded in sources.json (per the hard rule).",
+    "The reverse links (step -> achievements, for the play-view badges) live in the spine's achievementRefs; this pass provides the forward links (achievement -> guide item) for Sync. The two flagged spine step placements (Plenty of Hearts; Blind Explorer/Cartographer) do not affect this mapping, which targets the checklist rows."
+  ]
+}

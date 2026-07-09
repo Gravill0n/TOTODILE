@@ -694,6 +694,13 @@
         },
         "title": "Dungeon Prep — Ice Cavern"
       }
+    },
+    {
+      "id": "ra-mapping",
+      "kind": "ra-mapping",
+      "artifact": "layers/ra-mapping.json",
+      "report": "layers/ra-mapping.report.json",
+      "sha256": "17c25846d8719c46f2a1373402948969d421c3ce6bbe6ce3041d1696703fb5bb"
     }
   ]
 }
