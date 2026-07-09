@@ -1,0 +1,889 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:achievements",
+    "title": "RetroAchievements",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 5,
+    "type": "checklist",
+    "rows": [
+      {
+        "itemId": "zelda-oot:achievements:ach-48057",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Spider Net",
+        "note": "10 pts · missable — Defeat Queen Gohma before she can retreat to the ceiling"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48074",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Entrusted Mission",
+        "note": "5 pts · progression — Receive the Spiritual Stone of the Forest"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48106",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Sniper Fury",
+        "note": "5 pts · standard — Obtain a reward from the Shooting Gallery as Young Link"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48107",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Who Let the Dogs Out",
+        "note": "5 pts · standard — Help a lady locate her lost puppy"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48108",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Rise and Shine!!",
+        "note": "5 pts · standard — Help Malon locate her father"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48109",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "A Royal Autograph",
+        "note": "5 pts · progression — Meet Princess Zelda for the first time"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48113",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Super Cucco Catching",
+        "note": "5 pts · standard — Obtain a reward from the Lon Lon Ranch minigame"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48160",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Money Solves Everything",
+        "note": "5 pts · missable — Bribe the guard in front of the gate to gain entry to the courtyard"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48161",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Troublemaker",
+        "note": "5 pts · missable — Anger a guard inside of the castle"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48162",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "You Make Me Feel So Good",
+        "note": "5 pts · standard — Obtain some nutritious milk from a healthy cow"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48224",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Bullseye!!",
+        "note": "5 pts · standard — Obtain the Bullet Bag upgrade in the Lost Woods"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48225",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "You Can Be a Star",
+        "note": "5 pts · standard — Obtain the final reward from the Ocarina Playing minigame in the Lost Woods"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48226",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Shield Raider",
+        "note": "5 pts · missable — Obtain the Hylian Shield for free instead of buying it"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48241",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Catch Me If You Can",
+        "note": "5 pts · standard — Obtain a reward from Anju for catching her cuccos in Kakariko Village"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48242",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Cuccos' Revenge",
+        "note": "5 pts · standard — Feel the wrath of the cuccos in Kakariko Village"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48243",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "A Man's Best Friend",
+        "note": "5 pts · standard — Collect 10 Gold Skulltulas and obtain your reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48244",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Secrets Detector",
+        "note": "5 pts · standard — Collect 20 Gold Skulltulas and obtain your reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48245",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "A Woman's Best Friend",
+        "note": "5 pts · standard — Collect 30 Gold Skulltulas and obtain your reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48246",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Bombchu",
+        "note": "5 pts · standard — Collect 40 Gold Skulltulas and obtain your reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48247",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "My Broken Heart",
+        "note": "10 pts · standard — Collect 50 Gold Skulltulas and obtain your reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48248",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Family Reunion",
+        "note": "25 pts · standard — Collect 100 Gold Skulltulas and obtain your final reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48249",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Dance Into the Fire",
+        "note": "5 pts · progression — Visit Darunia in Goron City and obtain a gift"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48254",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Bring Me to the Bottom of the Oceans",
+        "note": "5 pts · standard — Obtain the Iron Boots"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48255",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Bunches of Twigs",
+        "note": "5 pts · standard — Purchase more Deku Sticks from the Deku Merchant in Lost Woods"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48275",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Home Sweet Home",
+        "note": "25 pts · win condition — Banish Ganon to the void of the Evil Realm"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48277",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Bombalicious",
+        "note": "10 pts · missable — Defeat King Dodongo before he breathes fire without using Bombs from your bag"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48278",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Soul Brothers",
+        "note": "5 pts · progression — Receive the Spiritual Stone of Fire"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48279",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Walking on a Tightrope",
+        "note": "5 pts · missable — Open any chest in Goron City's boulder room without destroying the entrance blockade"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48336",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Roll Roll and Away",
+        "note": "5 pts · standard — Obtain the Bomb Bag upgrade in Goron City"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48341",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "You Spin Me Round",
+        "note": "5 pts · standard — Learn the Spin Attack technique"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48342",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Bombchu Bowling Star",
+        "note": "5 pts · standard — Obtain the Bomb Bag upgrade at the Bombchu Bowling Alley"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48343",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Mouse Ka-Boom",
+        "note": "5 pts · standard — Obtain some Bombchus"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48344",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "On Fire",
+        "note": "5 pts · standard — Learn Din's Fire"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48345",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Stocking Nuts",
+        "note": "5 pts · missable — Purchase a Deku Nuts upgrade in the Lost Woods"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48346",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Magic Beans",
+        "note": "5 pts · standard — Obtain a Magic Bean"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48347",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "The Way the World Learns to Dive",
+        "note": "5 pts · progression — Obtain a reward from the Zora's Diving minigame"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48348",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Fishing Lessons",
+        "note": "5 pts · standard — Catch a fish that weighs at least 10 pounds as Young Link"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48416",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Take Me Away",
+        "note": "5 pts · standard — Learn Farore's Wind"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48417",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Rolling Thunder",
+        "note": "10 pts · missable — Defeat Barinade without getting hit"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48418",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Wedding Band",
+        "note": "5 pts · progression — Receive the Spiritual Stone of Water"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48423",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "A Pretty Face",
+        "note": "5 pts · standard — Obtain the Deku Sticks upgrade from the Deku Scrub Brothers in the Lost Woods"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48512",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Damsel in Distress",
+        "note": "5 pts · progression — Witness Zelda's great escape and obtain a royal heirloom"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48513",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Last Breath",
+        "note": "5 pts · missable — Receive some news from a dying guard in his final moments"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48514",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Happy Mask Salesman",
+        "note": "5 pts · standard — Complete the Happy Mask Salesman quest and obtain your reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48515",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Lifestyle and Stones",
+        "note": "10 pts · standard — Listen to all 32 rumors from the Gossip Stones around the world in one session"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48516",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Hero of Time",
+        "note": "5 pts · progression — Transform into Adult Link"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48582",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "The Great Escape",
+        "note": "5 pts · standard — Ride Epona on Hyrule Field"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48583",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Hook Me Away",
+        "note": "5 pts · standard — Obtain the Hookshot"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48584",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Ghost Chaser",
+        "note": "5 pts · standard — Complete Dampe's race in 1 minute or less"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48585",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Jump Over",
+        "note": "5 pts · missable — Complete the obstacle course at Lon Lon Ranch and obtain a reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48818",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Drunken Master",
+        "note": "10 pts · missable — Lower Phantom Ganon to 1 HP by using only the Bow and Bottles"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48819",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Awakening",
+        "note": "5 pts · progression — Awake Saria and obtain the Forest Medallion"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48820",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Pierre the Wanderer",
+        "note": "5 pts · standard — Obtain the services of Pierre the Scarecrow"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48821",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Poe Collector",
+        "note": "10 pts · standard — Catch all 10 Big Poes and obtain your reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48822",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Drunkard",
+        "note": "5 pts · standard — Obtain all 4 Bottles"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48823",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Sniper Elite",
+        "note": "5 pts · standard — Obtain a reward at the Shooting Gallery as Adult Link"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48896",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Gerudo's Fan Club",
+        "note": "5 pts · standard — Obtain the Gerudo's Membership Card"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48912",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Heat Resistant Tunic",
+        "note": "5 pts · standard — Obtain a Goron Tunic"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48913",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Whac-A-Mole",
+        "note": "10 pts · missable — Defeat Volvagia using only the Megaton Hammer and without healing with 3 hearts only"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48914",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Hot Hot Hot",
+        "note": "10 pts · missable — Defeat Volvagia without wearing the Goron Tunic"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48915",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Eternal Brothers",
+        "note": "5 pts · progression — Awake Darunia and obtain the Fire Medallion"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48916",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Race Against the Clock",
+        "note": "10 pts · missable — Defeat Barinade in less than 1:51 with 3 hearts only"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48917",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Dodgeball",
+        "note": "10 pts · missable — Defeat Phantom Ganon without healing and with 3 hearts only"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48918",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Dangerously Delicious",
+        "note": "10 pts · missable — Defeat King Dodongo before he breathes fire without using Bombs from your bag or taking damage, with 3 hearts only"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48941",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "A Breath of Fresh Air",
+        "note": "5 pts · standard — Obtain a Zora Tunic"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48942",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Kiss That Frog",
+        "note": "5 pts · missable — Get a kiss from King Zora"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48943",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Expert Angler",
+        "note": "5 pts · standard — Catch a large fish and obtain a golden reward as Adult Link"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48944",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Mischievous Hero",
+        "note": "5 pts · standard — Have the pond owner lose his hat permanently"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48945",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Accomplished Angler",
+        "note": "10 pts · standard — Catch the rare Hyrule Loach"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48946",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Day of the Tentacles",
+        "note": "10 pts · missable — Defeat Morpha without falling into the water or getting captured by its tentacle"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48947",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Bride to Be",
+        "note": "5 pts · progression — Obtain the Water Medallion from Princess Ruto"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48948",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Tentacles of the Deep",
+        "note": "10 pts · missable — Defeat Morpha without falling into water or taking damage with 3 hearts only"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48949",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "The Flaming Arrow",
+        "note": "5 pts · standard — Obtain the Fire Arrow"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48950",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "The Fabulous Froggish Tenors",
+        "note": "5 pts · standard — Complete the Frog minigame on Zora's River"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48951",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Seeing Is Believing",
+        "note": "5 pts · standard — Obtain the Lens of Truth"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-48975",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Biggoron's Sword",
+        "note": "10 pts · standard — Obtain the Biggoron's Sword"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49018",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Invisible One",
+        "note": "10 pts · missable — Defeat Bongo Bongo without using the Lens of Truth or getting trapped by his hands"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49019",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "The Shadow of the Hylians",
+        "note": "5 pts · progression — Awake Impa and obtain the Shadow Medallion"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49020",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Invisible Stalker",
+        "note": "10 pts · missable — Defeat Bongo Bongo without using the Lens of Truth and without healing with 3 hearts only"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49040",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Ultimate Horse Master",
+        "note": "10 pts · standard — Complete the Horseback Archery minigame and obtain the top reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49185",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Graduate of Gerudo's Training Ground",
+        "note": "5 pts · standard — Complete the Gerudo's Training Ground and obtain your reward"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49186",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Nayru's Love",
+        "note": "5 pts · standard — Learn Nayru's Love"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49187",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Musician",
+        "note": "5 pts · standard — Learn all 12 songs"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49188",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "A Horrible Face",
+        "note": "5 pts · missable — Obtain the Deku Nuts upgrade from the Deku Scrub Brothers in the Lost Woods"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49189",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Infamous Silver Gauntlets",
+        "note": "5 pts · standard — Obtain the Silver Gauntlets from the Spirit Temple"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49261",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Twins of Evil",
+        "note": "10 pts · missable — Defeat the Twinrova Sisters without falling from the platform or reviving [you have 12 sec to hook to the top for any attempt after the 1st]"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49262",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Double Trouble",
+        "note": "10 pts · missable — Defeat the Twinrova Sisters using only the Master Sword and Mirror Shield without using Fairies and with 3 hearts only"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49263",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Brainwashed",
+        "note": "5 pts · progression — Awake Nabooru and obtain the Spirit Medallion"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49286",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "To the Rescue",
+        "note": "5 pts · standard — Meet Princess Zelda one last time before the final showdown"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49287",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Plenty of Hearts",
+        "note": "10 pts · missable — Obtain all 20 hearts"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49288",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Wind Runner",
+        "note": "5 pts · standard — Finish the Running Man challenge in less than 1:30"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49289",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "The Rock",
+        "note": "5 pts · standard — Enhance your defensive power, reducing any damage received by half"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49290",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "King of Thieves",
+        "note": "10 pts · standard — Defeat Ganondorf without falling or climbing down the Platform and without using Fairies"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49291",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "My Last Breath",
+        "note": "10 pts · standard — Defeat Ganon with 1 heart or less remaining without using Fairies or Bombs"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49292",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Dark Lord",
+        "note": "25 pts · missable — Defeat Ganon without getting hit and with 3 hearts only"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49293",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Blind Explorer",
+        "note": "25 pts · missable — Complete the Game without getting any Map or Compass, without skipping any medallion and with 3 hearts only"
+      },
+      {
+        "itemId": "zelda-oot:achievements:ach-49294",
+        "sourceRefs": [
+          "src-ra"
+        ],
+        "confidence": "normal",
+        "label": "Cartographer",
+        "note": "10 pts · missable — Complete the game with every Map, Compass, and Boss Key from all dungeons"
+      }
+    ]
+  }
+}
