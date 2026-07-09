@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "extract-data",
+  "layer": "data",
+  "generatedAt": "2026-07-09T07:18:14Z",
+  "inputs": [
+    {
+      "file": "sources.json",
+      "sha256": "c5f63992198ff323ecfbb80ca474de3a2c3509dd6ff0ec011723f70279fbf6fe"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Zelda Dungeon.html",
+      "sha256": "a558fcd74cec73fdba0923bdb2da1208dc01cd88b6cdd67ad4bbdafa905e773e"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Inside The Great Deku Tree - Zelda Dungeon.html",
+      "sha256": "1828febbe500be2563c98311b46341111800d5a04e21fb27d95286c163ae4afe"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Princess of Destiny - Zelda Dungeon.html",
+      "sha256": "ad9470a16a57eb83fda50d7b69e02725cfa313e34cc5ce0aafd3716261ffd0ff"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - The Mighty Collection - Zelda Dungeon.html",
+      "sha256": "d8e1438d99c6e9c4d1df4f377c957b29205fba59d2b70ea84604422ba2da8874"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Dodongo's Cavern - Zelda Dungeon.html",
+      "sha256": "f7f5326e6d47ce0355539215ea4c1698adcbf632c2c8d85dab2ba7eda28284aa"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Inside Jabu-Jabu's Belly - Zelda Dungeon.html",
+      "sha256": "81bee49debfcd9d414c43c7575929e0b07837940858f12df51f17bb2c93093f4"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Timely Appearance - Zelda Dungeon.html",
+      "sha256": "7cc42957bbfd13521e54b0a48219f5689c5c58d27b5c1ff0cc154afa40739729"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Forest Temple - Zelda Dungeon.html",
+      "sha256": "738289838b682d10030cfecfb05f47c9123c53b3cc3e1d9068641f2d36d215e4"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Fire Temple - Zelda Dungeon.html",
+      "sha256": "f7f790baa4c8e3c57ac945eeb83875e74b891f08d40b59b4ec99e9093085fc03"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Ice Cavern - Zelda Dungeon.html",
+      "sha256": "1d94270a141e1ecf1923aa32218cc448b6cc5df3866f89142cdda19a0ad1e2bd"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Water Temple - Zelda Dungeon.html",
+      "sha256": "530cfea5cabc3b4821643a602c027b7ff5f7bbc18a7179c680d7a9ae9e36951e"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Bottom of The Well - Zelda Dungeon.html",
+      "sha256": "967c64d122a3c101e96681f6c461f560537dfbf2826e3837337b9da75fff4042"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Shadow Temple - Zelda Dungeon.html",
+      "sha256": "d82484b0809ea75f5ded514ef907a777b566755a937e8761f66a15bd3f91cadc"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Spirit Temple - Zelda Dungeon.html",
+      "sha256": "b4b29313eb8cee31ec4c9bbf515e6ce1fa9c76ee6c5cd2fc6274f12a3a3700cf"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Walkthrough - Ganon's Castle - Zelda Dungeon.html",
+      "sha256": "bef869e75019ea02ba669e50d22790bc8cbc7024df62995321744f7e9e4a7c4c"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Gerudo Training Ground and Ice Arrow Guide - Zelda Dungeon.html",
+      "sha256": "6af9d0368ab6749c3680a25409a1f5234249d82f5e1074bbe67a651c3a9dd84a"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Gold Skulltulas - Zelda Dungeon Wiki, a The Legend of Zelda wiki.html",
+      "sha256": "b7468cace87f2a8bf614219c627f222f507a8dfe3f23d8d9da626a9082e0c0e6"
+    },
+    {
+      "file": "sources/zelda-dungeon/Ocarina of Time Heart Pieces - Zelda Dungeon Wiki, a The Legend of Zelda wiki.html",
+      "sha256": "6a00634912c00583fc4e70d5b401d662362fc446b428dbef1ff5b06243ddef92"
+    },
+    {
+      "file": "sources/ra-set/The Legend of Zelda_ Ocarina of Time (Nintendo 64) · RetroAchievements.html",
+      "sha256": "5c737e145888f869086d4f896f54aace168e3df0ff6e64eb1a2439c6e1784d51"
+    },
+    {
+      "file": "sources/ocarina_of_time_checklist.pdf",
+      "sha256": "f0f0c27d4e268bb5df07772ff1730aab39e4f21b5764b783ad06074b211e88cb"
+    },
+    {
+      "file": "sources/oot-tracker-main/maps/maps.jsonc",
+      "sha256": "7fa48d3a5497db60dbd603df29497a5374004b950ad41cfd0f1d4295c37ba686"
+    }
+  ],
+  "report": {
+    "rowCount": 1865,
+    "anomalies": [
+      "eq-heart-container: source conflict — checklist PDF spells the Deku Tree boss \"Queen Ghoma\"; the RA set (Spider Net, 48057) and ZD walkthrough spell \"Gohma\". PDF value reproduced verbatim, record flagged.",
+      "eq-heart-container-shadow-temple: source conflict — checklist PDF \"Defeat Bongo Dongo\" vs ZD/RA \"Bongo Bongo\". Flagged.",
+      "eq-hoover-boots: source conflict — checklist PDF \"Hoover Boots\" vs ZD \"Hover Boots\". Flagged.",
+      "eq-lense-of-truth: source conflict — checklist PDF \"Lense of Truth\" vs ZD \"Lens of Truth\". Flagged.",
+      "dg-great-deku-tree, dg-shadow-temple, dg-bottom-of-the-well: inherit the conflicted boss/item spellings above (fields quote the PDF). Flagged.",
+      "gold-skulltulas: ZD marks era only as \"(Past)\" on 46 of 100 entries; the rest state item requirements with no era. Empty age = not stated in source — downstream passes must not infer it.",
+      "route-actions: the Fire Temple chapter page was missing from the original browser-save batch; Pierre re-saved it 2026-07-08 before extraction (its capture date differs from the other chapters)."
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "First run. 8 datasets: achievements(97), route-chapters(15), route-actions(1302), gold-skulltulas(100), heart-pieces(36), equipment-upgrades(160), dungeons(12), images(143).",
+    "Zelda Dungeon walkthrough is the primary route per Pierre 2026-07-08 (route-actions = one record per content paragraph, section from the page h2, optional-collectible callouts from the wt-optional sections).",
+    "achievements.missable comes from the RA page's own embedded type field (missable/progression/win_condition), which superseded the planned RA-wiki [M] cross-ref — 28 missable, 13 progression, 1 win_condition, 690 points total, matching the set page.",
+    "checklist PDF text via pdftotext renders ti/tt ligatures as \"(\"/\"9\"; repaired mechanically and verified against the rendered pages (e.g. Deku Stick, Zelda's Letter, Bottle 4). Source's own typos kept verbatim (Ghoma, Bongo Dongo, Hoover Boots, Lense of Truth, Dogongo's Cavern heading).",
+    "Cross-counts: PDF checklist contains exactly 100 Gold Skulltula and 36 Heart Piece lines, matching the ZD datasets.",
+    "images: 36 location maps (names from maps.jsonc, which duplicates 3 entries verbatim — deduped) + 107 item icons; tracker UI assets (labels/, logictricks/, reward_placement/, settings/) not cataloged. RA badge icons not cataloged per plan sign-off.",
+    "Gerudo Training Ground page has no h2 sections (flat guide page): its 41 route-actions carry an empty section field."
+  ]
+}

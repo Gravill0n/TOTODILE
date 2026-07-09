@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-bottom-of-the-well",
+    "title": "Area Collectibles — Bottom of the Well",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:bottom-of-the-well"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-bottom-of-the-well:gs-079",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#79",
+          "cond": "Enter Bottom of the Well",
+          "how": "In the center room of the Bottom of the Well, there are two locked doors. The room on the left has a Deku Baba and some flying pots. The Skulltula can be found along the back wall."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-bottom-of-the-well:gs-080",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#80",
+          "cond": "Enter Bottom of the Well",
+          "how": "In the center room of the Bottom of the Well, there are two locked doors. The room on the right has a bunch of Keese. Defeat them and then use the Lens of Truth to find the path that leads to the Sku…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-bottom-of-the-well:gs-081",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#81",
+          "cond": "Enter Bottom of the Well",
+          "how": "At the top-right corner of the Bottom of the Well, crawl through the small hole and use a key on the locked door. Carefully navigate through this room, avoiding the invisible pits. In the next room w…"
+        }
+      }
+    ]
+  }
+}

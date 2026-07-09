@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-kokiri-forest",
+    "title": "Area Collectibles — Kokiri Forest",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:kokiri-forest"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-kokiri-forest:gs-017",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#17",
+          "cond": "(Night) (Past)",
+          "how": "Found only at nighttime in the Kokiri Forest. The Skulltula is on the backside of the Know-It-All Brothers' House, located at the southwest part of the village."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kokiri-forest:gs-020",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#20",
+          "cond": "An Empty Bottle and Bottle Bugs (Past)",
+          "how": "Right behind the Kokiri Shop, you will find a soft soil location. Drop some bugs to get the Skulltula."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kokiri-forest:gs-047",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#47",
+          "cond": "Hookshot (Night)",
+          "how": "At nighttime in Kokiri Forest, make your way over to the Twins' House, located at the southeast part of the forest. Use your Hookshot to defeat a Skulltula that is located above the building."
+        }
+      }
+    ]
+  }
+}

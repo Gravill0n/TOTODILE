@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-hyrule-castle",
+    "title": "Area Collectibles — Hyrule Castle",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:hyrule-castle"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-hyrule-castle:gs-005",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#5",
+          "cond": "Reach the Hyrule Castle (Past)",
+          "how": "Exit Hyrule Castle Town towards Hyrule Castle and you'll find a lone tree nearby. Roll into it to get the Skulltula to pop out."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-hyrule-castle:gs-078",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#78",
+          "cond": "Song of Storms (Past)",
+          "how": "After learning the Song of Storms, return to the pathway that leads to Hyrule Castle. Just outside Hyrule Castle, there is a tree in the corner of the gate. Stand next to it and play the Song of Stor…"
+        }
+      }
+    ]
+  }
+}

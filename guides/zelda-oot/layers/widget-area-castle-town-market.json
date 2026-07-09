@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-castle-town-market",
+    "title": "Area Collectibles — Castle Town Market",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:castle-town-market"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-castle-town-market:gs-004",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#4",
+          "cond": "Reach Hyrule Castle Town (Past)",
+          "how": "After crossing the drawbridge into Hyrule Castle Town, enter the Guard House, the building at the top of the screen before entering the Market. At the back of the room, roll into a wooden crate to ge…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-castle-town-market:hp-09",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#9",
+          "cond": "Reach the Market (Child)",
+          "how": "During the night, there are lots of dogs roaming the streets. If you touch one, it will follow you until you enter a building or leave the area entirely. There is one specific dog we want, which is t…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-castle-town-market:hp-13",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#13",
+          "cond": "Acquire Bombs (Child)",
+          "how": "During the day, the Bombchu Bowling Alley is open and ready for business! The game cycles through five different prizes, in this order: Bombchu, Piece of Heart, Bombs, Bomb Bag, and a purple Rupee (5…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-castle-town-market:hp-33",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#33",
+          "cond": "Acquire the Lens of Truth (Child)",
+          "how": "The Treasure Chest Shop is open only at night. Enter and you can play this game for 10 Rupees a try. In each room, you are given a choice between two chests, one being a prize while the other allows…"
+        }
+      }
+    ]
+  }
+}

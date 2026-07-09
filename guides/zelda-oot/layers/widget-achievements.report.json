@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "layer": "widget-achievements",
+  "generatedAt": "2026-07-09T13:50:23Z",
+  "inputs": [
+    {
+      "file": "layers/data.json",
+      "sha256": "ad27a0ee90401b02856116880c1febeabcc69f70701c93b5cf877eb33d1b2850"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "94f5ed4cfa3228f7c99d3a2181665f54ef1fdd8d281bb2310126c4383f7f3123"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "54512053dc611e25bd0017fc42464131112be282656845a5c12b814abd98adf6"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "c5f63992198ff323ecfbb80ca474de3a2c3509dd6ff0ec011723f70279fbf6fe"
+    }
+  ],
+  "report": {
+    "rowCount": 97,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Slot 5 (checklist, global). All 97 achievements from the achievements dataset (690 points), one checkable row each; note = points · type · description. This is the global home for the full RA set, including the two run-condition achievements the spine flags at their step placement (Plenty of Hearts; the mutually-exclusive Blind Explorer / Cartographer). Sourced to the RA game page (src-ra)."
+  ]
+}

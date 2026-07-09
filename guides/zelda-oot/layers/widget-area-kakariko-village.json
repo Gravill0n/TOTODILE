@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-kakariko-village",
+    "title": "Area Collectibles — Kakariko Village",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:kakariko-village"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-kakariko-village:gs-007",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#7",
+          "cond": "Reach Kakariko Village (Past) (Night)",
+          "how": "There is a building under construction at the center of the village. At nighttime, a Gold Skulltula will appear."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kakariko-village:gs-008",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#8",
+          "cond": "Reach Kakariko Village (Past) (Night)",
+          "how": "At the side of the Skulltula House, there is a Gold Skulltula found here at nighttime."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kakariko-village:gs-009",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#9",
+          "cond": "Reach Kakariko Village (Past) (Night)",
+          "how": "Right when you enter the Village, there is a tree straight ahead. Roll into the tree and a Skulltula will pop out."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kakariko-village:gs-010",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#10",
+          "cond": "Reach Kakariko Village (Past) (Night)",
+          "how": "At nighttime, a Gold Skulltula will appear near the top of the watch tower. Shoot it down with your Slingshot."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kakariko-village:gs-011",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#11",
+          "cond": "Reach Kakariko Village (Past) (Night)",
+          "how": "Found at nighttime on the side of the house located closest to the gate that leads to Death Mountain."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kakariko-village:gs-045",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#45",
+          "cond": "Hookshot (Night)",
+          "how": "The Gold Skulltula is located on top of Impa's House in Kakariko Village. Make your way to the south end of Kakariko Village, next to Impa's House. From here, Hookshot onto the roof of the Skulltula…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kakariko-village:hp-12",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#12",
+          "cond": "Reach Kakariko Village (Child)",
+          "how": "To get this Piece of Heart, you need to get on top of a ledge above the Cucco pen behind Impa's House (the building to the far southwest of Kakariko Village). You can get there by one of three method…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kakariko-village:hp-19",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#19",
+          "cond": "Acquire the Boomerang as a Child (or race Dampé as an Adult)",
+          "how": "Within the Windmill is a ledge with a Piece of Heart resting atop it. After you race against Dampé in the Graveyard as an adult, you come out of the Windmill and you can jump across the moving platfo…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kakariko-village:hp-21",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#21",
+          "cond": "Acquire the Hookshot",
+          "how": "When you are an adult, use the Hookshot to get on top of the roof of Granny's Potion Shop and then talk to the guy up there and he will give you the Piece of Heart. You can reach the roof by standing…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-kakariko-village:hp-22",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#22",
+          "cond": "Collect 50 Gold Skulltulas",
+          "how": "Once you have collected 50 Gold Skulltulas, go into the House of Skulltula and claim your prize."
+        }
+      }
+    ]
+  }
+}

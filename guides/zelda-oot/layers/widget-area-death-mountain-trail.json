@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-death-mountain-trail",
+    "title": "Area Collectibles — Death Mountain Trail",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:death-mountain-trail"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-death-mountain-trail:gs-021",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#21",
+          "cond": "An Empty Bottle and Bottle Bugs (Past)",
+          "how": "Right outside of Dodongo's Cavern, there is a Soft Soil location. Drop some bugs into it and the Skulltula will appear."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-death-mountain-trail:gs-025",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#25",
+          "cond": "Bombs (Past)",
+          "how": "On the trail between Kakariko Village and Dodongo's Cavern, there is a bombable wall on the side where you can hear a Gold Skulltula. Bomb the wall, defeat the Skulltula, and climb the wall for the t…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-death-mountain-trail:gs-063",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#63",
+          "cond": "Megaton Hammer (Night)",
+          "how": "Located on the Death Mountain Trail, in the area where there were falling boulders as a child. There are three rocks on this trail that you cannot break with bombs. The closest one to the summit has…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-death-mountain-trail:gs-064",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#64",
+          "cond": "Megaton Hammer (Night)",
+          "how": "Located on the Death Mountain Trail, near the entrance to Goron City. There is a boulder located just above Dodongo's Cavern and you'll need the Megaton Hammer to break it. The Skulltula can be found…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-death-mountain-trail:hp-26",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#26",
+          "cond": "Plant a Magic Bean",
+          "how": "As a child, plant a Magic Bean in the soft soil at the entrance of Dodongo's Cavern. When you return as an adult, you can ride the Magic Bean Plant to jump on to the ledge just above Dodongo's Cavern…"
+        }
+      }
+    ]
+  }
+}

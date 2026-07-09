@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-hyrule-field",
+    "title": "Area Collectibles — Hyrule Field",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:hyrule-field"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-hyrule-field:gs-039",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#39",
+          "cond": "Boomerang and Din's Fire",
+          "how": "At the west end of Hyrule Field, near the entrance of Gerudo Valley, you will find a circle of rocks. The Shard of Agony will chime if you stand in the middle. Drop a bomb to blast open a hole to rev…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-hyrule-field:gs-042",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#42",
+          "cond": "Boomerang",
+          "how": "Located in Hyrule Field, right near the entrance to Kakariko Village. Just north of the small bridge that is between Hyrule Castle Town and Kakariko Village, you will find a tree. The Shard of Agony…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-hyrule-field:hp-14",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#14",
+          "cond": "Acquire Bombs",
+          "how": "In the southwest corner of Hyrule Field is the entrance to Lake Hylia. Just before the entrance itself are four fences that form a square. Lay a Bomb in the center to reveal a hole. Jump down and pur…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-hyrule-field:hp-25",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#25",
+          "cond": "Acquire the Golden Scale (or Iron Boots)",
+          "how": "Northwest of Lon Lon Ranch, between Gerudo Valley and Hyrule Castle, there is a tree. Once you walk by it the Shard of Agony will chime, or if you are playing the N64 version, the Stone of Agony will…"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-zoras-river",
+    "title": "Area Collectibles — Zora's River",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:zoras-river"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-zoras-river:gs-028",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#28",
+          "cond": "Reach Zora's River (Past)",
+          "how": "At the entrance of Zora's River, roll into the first tree and a Gold Skulltula will pop out."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-river:gs-029",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#29",
+          "cond": "Acquire Bombs (Past) (Night)",
+          "how": "At the end of Zora's River, right near the Sleepless Waterfall, there is a ladder leading out of the water. At nighttime, a Skulltula can be found here. Shoot it down with a Slingshot and collect the…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-river:gs-065",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#65",
+          "cond": "Hookshot (Night)",
+          "how": "In Zora's River, located high up on the southern wall. Ride the Magic Bean plant up to the large plateau in the center of the River. If you never planted the Magic Bean, you can still reach it from t…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-river:gs-066",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#66",
+          "cond": "Hookshot (Night)",
+          "how": "In Zora's River, once you cross the small bridge, heading towards Zora's Domain, if you look up high at the wall at nighttime, you'll find a Gold Skulltula. It is just out of reach from when you are…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-river:hp-15",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#15",
+          "cond": "Reach Zora's River",
+          "how": "The heart piece is located on a pillar found right in the center of Zora's River region. There are a few different ways to get to it: 1) You can bring the Cucco from the beginning of the area, jump a…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-river:hp-16",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#16",
+          "cond": "Reach Zora's River",
+          "how": "At the end of Zora's River, near the Sleepless Waterfall - the entrance to Zora's Domain - there is a platform in the corner with a Piece of Heart. There are a few ways to get it: Bring the Cucco fro…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-river:hp-31",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#31",
+          "cond": "Learn the Song of Storms (Child)",
+          "how": "At Zora's River as a child, near the center of the map, step on the nearby log that sticks out into the water. Pull out your Ocarina to get five Frogs to appear. Play the Song of Storms and you'll be…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-river:hp-32",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#32",
+          "cond": "Learn Epona's Song, Sun's Song, Song of Storms (Child)",
+          "how": "At Zora's River as a child, when you meet the five frogs, play Zelda's Lullaby, Saria's Song, Epona's Song, Sun's Song, and the Song of Time. Each time one of the frogs will grow in size. Once all fi…"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-forest-temple",
+    "title": "Area Collectibles — Forest Temple",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:forest-temple"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-forest-temple:gs-050",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#50",
+          "cond": "Hookshot",
+          "how": "In the first room of the Forest Temple, climb the vines on the right side. Use the Hookshot to defeat the Gold Skulltula."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-forest-temple:gs-051",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#51",
+          "cond": "Hookshot",
+          "how": "In the large central room, run straight ahead to the north door. Look at the wall to the right and you'll find the Gold Skulltula."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-forest-temple:gs-052",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#52",
+          "cond": "Hookshot",
+          "how": "In the courtyard northeast of the center room, you'll find a treasure chest on a higher ledge. Use the Hookshot to latch on to the front of the chest, pulling you up to the higher ledge. From here, f…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-forest-temple:gs-053",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#53",
+          "cond": "Hookshot",
+          "how": "When you enter the other courtyard northwest of the center room, jump over to the narrow platform with recovery hearts. From there, look up against the wall and you'll find the Gold Skulltula."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-forest-temple:gs-054",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#54",
+          "cond": "Hookshot",
+          "how": "In the basement of the Forest Temple, just before the boss, there is a Gold Skulltula located in the room with the Treasure Chest."
+        }
+      }
+    ]
+  }
+}

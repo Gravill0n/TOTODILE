@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-zoras-fountain",
+    "title": "Area Collectibles — Zora's Fountain",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:zoras-fountain"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-zoras-fountain:gs-030",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#30",
+          "cond": "Reach Zora's Fountain (Past)",
+          "how": "At the southeast portion of Zora's Fountain, roll into the lone tree here and the Skulltula will pop out."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-fountain:gs-035",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#35",
+          "cond": "Boomerang (Past) (Night)",
+          "how": "At Zora's Fountain, stand on the log just south of Lord Jabu-Jabu. At nighttime, there will be a Skulltula crawling around on the wall. Toss your Boomerang at it to defeat it and collect the token."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-fountain:gs-100",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#100",
+          "cond": "Silver Gauntlets (Night)",
+          "how": "At nighttime, make your way to Zora's Fountain and then head on over to the southeast corner, where the Great Fairy was located. There is a lone silver boulder here and now that you have the Silver G…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-fountain:hp-28",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#28",
+          "cond": "None",
+          "how": "When you return to Zora's Domain as an adult, Lord Jabu-Jabu is no longer here and there are now a bunch of icebergs floating around. Jump across them to find a Piece of Heart atop one of them."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-fountain:hp-30",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#30",
+          "cond": "Acquire the Iron Boots",
+          "how": "Located at the very bottom of Zora's Fountain. Use the Iron Boots to reach the ground floor and collect the heart piece."
+        }
+      }
+    ]
+  }
+}

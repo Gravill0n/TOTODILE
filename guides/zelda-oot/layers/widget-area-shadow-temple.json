@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-shadow-temple",
+    "title": "Area Collectibles — Shadow Temple",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:shadow-temple"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-shadow-temple:gs-082",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#82",
+          "cond": "Hover Boots",
+          "how": "After going down the pathway with the guillotines and reaching the lone Stalfos, take the path on the left, using the Lens of Truth. Defeat the Like Like and all the Keese to unlock the gate and defe…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-shadow-temple:gs-083",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#83",
+          "cond": "Hover Boots",
+          "how": "In the room with the Falling Spikes, use the Lens of Truth to find a block hidden in the wall. Push the block so that it prevents both of the falling traps from hitting the ground. Check behind the f…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-shadow-temple:gs-084",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#84",
+          "cond": "Hover Boots",
+          "how": "The Skulltula can be found in the room with the giant skull, where you have to toss a bomb into it to find a small key. There is a Gold Skulltula tucked away behind where the skull stood."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-shadow-temple:gs-085",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#85",
+          "cond": "Scarecrow's Song",
+          "how": "Once you arrive on top of the large moving boat, look back to where the shortcut is located, which is by the fencing. Navi will fly up and turn green. Play the Scarecrow's Song and Longshot over to t…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-shadow-temple:gs-086",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#86",
+          "cond": "Hover Boots",
+          "how": "In the room with the invisible walls, just before acquiring the Boss Key, head to the room to the west where you will find three spinning skulls. The Skulltula is hidden just behind them."
+        }
+      }
+    ]
+  }
+}

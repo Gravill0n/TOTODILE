@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-death-mountain-crater",
+    "title": "Area Collectibles — Death Mountain Crater",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:death-mountain-crater"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-death-mountain-crater:gs-027",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#27",
+          "cond": "Reach Death Mountain Crater (Past)",
+          "how": "At the very top of Death Mountain, enter the Death Mountain Crater and you'll find a wooden crate. Roll into it to find a Gold Skulltula."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-death-mountain-crater:gs-057",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#57",
+          "cond": "Learn Bolero of Fire and Prelude of Light, Bottle Bugs",
+          "how": "Once you have learned the Bolero of Fire, warp to the Death Mountain Crater as a child. Drop some bugs into the soft soil location to get the Skulltula to appear."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-death-mountain-crater:hp-11",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#11",
+          "cond": "Reach Death Mountain Crater",
+          "how": "The wall that leads up to the large area at the entrance of Death Mountain Crater is climbable and it has an alcove with a Piece of Heart in it. There are two ways you can get it: 1) You can enter De…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-death-mountain-crater:hp-27",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#27",
+          "cond": "Learn the Bolero of Fire, plant a Magic Bean",
+          "how": "As a child, warp to Death Mountain Crater and plant a Magic Bean in the soft soil next to the Triforce Pedestal. Warp back as an adult and ride the Magic Bean up to one of the two smoky mountains in…"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "deck-action-adventure",
+  "slots": [
+    {
+      "primitive": "counter",
+      "defaultTitle": "Gold Skulltulas",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "checklist",
+      "defaultTitle": "Heart Pieces",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "checklist",
+      "defaultTitle": "Equipment & Upgrades",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "dataTable",
+      "defaultTitle": "Area Collectibles",
+      "defaultScope": "location"
+    },
+    {
+      "primitive": "prepCard",
+      "defaultTitle": "Dungeon Prep",
+      "defaultScope": "chapter"
+    },
+    {
+      "primitive": "checklist",
+      "defaultTitle": "RetroAchievements",
+      "defaultScope": "global"
+    }
+  ]
+}

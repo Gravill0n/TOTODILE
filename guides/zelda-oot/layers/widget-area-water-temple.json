@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-water-temple",
+    "title": "Area Collectibles — Water Temple",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:water-temple"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-water-temple:gs-072",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#72",
+          "cond": "Iron Boots",
+          "how": "On the lowest level of the main room, walk through the south path and bomb the floor. Travel to the next room, step on the switch, and Hookshot over to the target. Hit the crystal switch and snag the…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-water-temple:gs-073",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#73",
+          "cond": "Longshot",
+          "how": "After acquiring the Longshot and traveling through the area with the vortexes in the water, you'll find a Skulltula on one of the walls. Use the Iron Boots and Longshot to defeat the Skulltula while…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-water-temple:gs-074",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#74",
+          "cond": "Longshot",
+          "how": "Once you have the Longshot, return to the room west of the main chamber on the highest floor. Use the Longshot to defeat the Skulltula on the wall to the right and snag the Gold Skulltula."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-water-temple:gs-075",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#75",
+          "cond": "Longshot",
+          "how": "Inside the large central pillar of the main room, once you have the Longshot, you will be able to defeat a Skulltula all the way at the top of the room and snag the token."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-water-temple:gs-076",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#76",
+          "cond": "Longshot",
+          "how": "In the area of the Water Temple, right before you acquire the Boss Key, there is a small waterfall with a Skulltula hiding behind it. Stand on the ledge and inch forward to the edge of the floor. Loo…"
+        }
+      }
+    ]
+  }
+}

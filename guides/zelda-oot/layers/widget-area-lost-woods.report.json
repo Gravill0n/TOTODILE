@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "layer": "widget-area-lost-woods",
+  "generatedAt": "2026-07-09T13:46:23Z",
+  "inputs": [
+    {
+      "file": "layers/data.json",
+      "sha256": "ad27a0ee90401b02856116880c1febeabcc69f70701c93b5cf877eb33d1b2850"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "94f5ed4cfa3228f7c99d3a2181665f54ef1fdd8d281bb2310126c4383f7f3123"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "54512053dc611e25bd0017fc42464131112be282656845a5c12b814abd98adf6"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "c5f63992198ff323ecfbb80ca474de3a2c3509dd6ff0ec011723f70279fbf6fe"
+    }
+  ],
+  "report": {
+    "rowCount": 5,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Slot 3 (dataTable, location-scoped; Pierre: individually checkable). Rows are the Gold Skulltulas + Heart Pieces whose source location maps to this spine location, drawn from the gold-skulltulas / heart-pieces datasets. The 47 raw data-location strings were normalized onto the 34 spine locations (e.g. Graveyard / Kakariko Graveyard / Kakariko Village – Graveyard all fold into graveyard; Market / Guard House / Back Alley / Hyrule Castle Market into castle-town-market; Kakariko Well (past) into bottom-of-the-well). Skulltulas also feed the global tally counter; heart pieces are also in the global Heart Pieces checklist."
+  ]
+}

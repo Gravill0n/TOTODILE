@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "guideId": "zelda-oot",
+  "pass": "spine",
+  "layer": "spine",
+  "generatedAt": "2026-07-09T13:18:27Z",
+  "inputs": [
+    {
+      "file": "layers/data.json",
+      "sha256": "ad27a0ee90401b02856116880c1febeabcc69f70701c93b5cf877eb33d1b2850"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "c5f63992198ff323ecfbb80ca474de3a2c3509dd6ff0ec011723f70279fbf6fe"
+    }
+  ],
+  "report": {
+    "rowCount": 587,
+    "anomalies": [
+      "v-ganons-castle-1:s19 (Plenty of Hearts, 49287): RA marks this cumulative 'obtain all 20 hearts' achievement as missable. It is earned the instant the 20th heart is completed, not at a specific route step, so it is attached to the pre-tower stock-up step as the last guaranteed point on the ZD 100% route. Flagged as an approximate placement.",
+      "v-ganons-tower-1:s6 (Blind Explorer 49293 and Cartographer 49294): both are attached to the final seal step. They are mutually exclusive (no maps/compasses vs every map/compass) and, like the several 3-hearts-only challenge achievements, expect a dedicated challenge save — they cannot both be earned on the single ZD 100% playthrough this route describes. Flagged.",
+      "route-actions carried 10 leaked ad-player fragments ('Powered By … ShareNextStay') from the Zelda Dungeon pages; 4 were ad-only (dropped) and 6 had real route prose after the ad prefix (prefix stripped). Carried over from the extract-data anomalies; none reached the spine text.",
+      "Some ZD <ul> list content was missing from the extract-data route-actions (Zora's Domain 5-torch order, Forest Temple basement counter-clockwise rotation) and was recovered from the raw ZD snapshots in guides/zelda-oot/sources/zelda-dungeon/ for the spine detail."
+    ],
+    "flaggedItemIds": [
+      "zelda-oot:v-ganons-castle-1:s19",
+      "zelda-oot:v-ganons-tower-1:s6"
+    ]
+  },
+  "notes": [
+    "14 chapters (ZD walkthrough order), 34 locations (all with an oot-tracker map image copied into guides/zelda-oot/images/), 133 visits, 587 steps.",
+    "Zelda Dungeon walkthrough is the primary route per Pierre (extract-data + this pass): one step per content paragraph, merging only paragraphs that describe a single action (notably boss fights = one step each with strategy in detail). Cutscene-only narration folds into the neighbouring step or the chapter intro (gate-1 decision).",
+    "Chapter breakdown, location set, visit sequence, and missable classification signed off at the outline gate (2026-07-09). Sample chapters 1–2 signed off at the sample gate; the full run follows the sample's granularity and tone.",
+    "All 97 achievements are now referenced by a step's achievementRefs. Per Pierre's request, the RA community guide (src-ra-wiki) was used to route the achievements the ZD walkthrough does not cover, and to correct/verify placements originally flagged from the RA description alone.",
+    "src-ra-wiki additions/corrections: Money Solves Everything (48160) moved from the outer approach to the courtyard-entrance guard (bribe after getting caught once); Troublemaker (48161) moved to the pre-Zelda window Slingshot shot; Last Breath (48513) given its real spot (Castle Town back alley after the Ocarina of Time); Mischievous Hero (48944) given the fishing-rod-hat method. Newly routed: Kiss That Frog (48942 — buy+equip the shop Zora Tunic before unfreezing King Zora; new step v-zoras-domain-4:s2), Wind Runner (49288 — Running Man race on Epona under 1:30; new step v-hyrule-field-7:s4), Lifestyle and Stones (48515 — all 32 Gossip Stones in one session; new step v-temple-of-time-4:s2). These six carry src-ra-wiki and are confidence normal.",
+    "Missable banners: all 28 RA type=missable achievements carry a step missable banner. Deadline text derives from each achievement's RA description (and the RA-wiki '[m]' notes for the event-window ones). Boss-challenge conditions banner the fight step; event-window ones banner the moment they close.",
+    "Only 2 steps remain flagged (see anomalies): Plenty of Hearts (cumulative, approximate placement) and Blind Explorer/Cartographer (mutually exclusive challenge-save achievements).",
+    "Gerudo Training Ground folded into chapter 14 at its route position (section 14.3), per the outline gate — the ZD standalone GTG page is part of the same src-zd-walkthrough source, so no separate sourceRef was added.",
+    "Stable IDs freshly minted (no prior artifact): locations zelda-oot:<place>, visits zelda-oot:v-<place>-<k> (k = k-th visit to that place in spine order, contiguous per location), steps <visit-id>:sN. Era changes (child<->adult via the Temple of Time pedestal) are described in step detail rather than as bare Temple of Time revisits, except where the route's purpose is the visit itself.",
+    "Source typos are reproduced verbatim in step detail per the compiler contract; connective prose is lightly reworded, facts (places, NPCs, items, counts, inputs) are not."
+  ]
+}

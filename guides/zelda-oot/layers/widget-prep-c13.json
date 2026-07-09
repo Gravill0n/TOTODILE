@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:prep-c13",
+    "title": "Dungeon Prep — Spirit Temple",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "zelda-oot:c13"
+    },
+    "deckPosition": 4,
+    "type": "prepCard",
+    "items": [
+      {
+        "itemId": "zelda-oot:prep-c13:requiem-of-spirit",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Requiem of Spirit",
+        "note": "Warps you to the Desert Colossus"
+      },
+      {
+        "itemId": "zelda-oot:prep-c13:longshot",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Longshot",
+        "note": "Reaches the Colossus hands, targets and switches"
+      },
+      {
+        "itemId": "zelda-oot:prep-c13:dins-fire-fire-arrows",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Din's Fire / Fire Arrows",
+        "note": "Lights the Sun-Face torches and clears the Anubis rooms"
+      },
+      {
+        "itemId": "zelda-oot:prep-c13:nayrus-love",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Nayru's Love",
+        "note": "Optional shield for the Iron Knuckles"
+      }
+    ]
+  }
+}

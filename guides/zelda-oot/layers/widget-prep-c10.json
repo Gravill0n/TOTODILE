@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:prep-c10",
+    "title": "Dungeon Prep — Water Temple",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "zelda-oot:c10"
+    },
+    "deckPosition": 4,
+    "type": "prepCard",
+    "items": [
+      {
+        "itemId": "zelda-oot:prep-c10:iron-boots",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Iron Boots",
+        "note": "Sink to open the gate and hold position on the dragon platforms"
+      },
+      {
+        "itemId": "zelda-oot:prep-c10:zora-tunic",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Zora Tunic",
+        "note": "Breathe underwater indefinitely — required"
+      },
+      {
+        "itemId": "zelda-oot:prep-c10:hookshot-longshot",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Hookshot / Longshot",
+        "note": "Opens the temple gate; the Longshot (found inside) reaches the far Skulltulas"
+      },
+      {
+        "itemId": "zelda-oot:prep-c10:fairies",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Fairies",
+        "quantity": 2,
+        "note": "Bottled — Dark Link and Morpha are punishing"
+      }
+    ]
+  }
+}

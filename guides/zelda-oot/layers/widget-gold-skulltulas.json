@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:gold-skulltulas",
+    "title": "Gold Skulltulas",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 0,
+    "type": "counter",
+    "counters": [
+      {
+        "itemId": "zelda-oot:gold-skulltulas:tokens",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "label": "Gold Skulltula Tokens (House of Skulltula rewards at 10/20/30/40/50/100)",
+        "target": 100
+      }
+    ]
+  }
+}

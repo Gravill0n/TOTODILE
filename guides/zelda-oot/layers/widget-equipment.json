@@ -1,0 +1,1456 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:equipment",
+    "title": "Equipment & Upgrades",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 2,
+    "type": "checklist",
+    "rows": [
+      {
+        "itemId": "zelda-oot:equipment:eq-kokiri-sword",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Kokiri Sword",
+        "note": "sword · Kokiri Forest — Thru tunnel behind training area"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-deku-shield",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Deku Shield",
+        "note": "shield · Kokiri Forest — Item shop for 40 rupees"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-deku-stick",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Deku Stick",
+        "note": "item · Kokiri Forest"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-deku-nut",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Deku Nut",
+        "note": "item · Great Deku Tree"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-map",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Map",
+        "note": "dungeon-item · Great Deku Tree"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-fairy-slingshot",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Fairy Slingshot",
+        "note": "item · Great Deku Tree"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-deku-seed",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Deku Seed",
+        "note": "item · Great Deku Tree"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-compass",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Compass",
+        "note": "dungeon-item · Great Deku Tree"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-heart-container",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "flagged",
+        "label": "Heart Container",
+        "note": "heart-container · Great Deku Tree — defeat Queen Ghoma"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-kokiri-s-emerald",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Kokiri's Emerald",
+        "note": "quest-item · Kokiri Forest — The Great Deku Tree gives it to you after you exit the dungeon"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-fairy-ocarina",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Fairy Ocarina",
+        "note": "item · Kokiri Forest — while leaving Kokiri Forest speak with Saria"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-weird-egg",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Weird Egg",
+        "note": "quest-item · Hyrule Castle — try to get into castle, get caught, then talk to Malon"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-chicken",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Chicken",
+        "note": "quest-item · Hyrule Castle — wait overnight for the egg to hatch"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-zelda-s-letter",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Zelda's Letter",
+        "note": "quest-item · Hyrule Castle — Speak with Princess Zelda"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-zelda-s-lullaby",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Zelda's Lullaby",
+        "note": "song · Hyrule Castle — Speak with Impa before heading to Kakariko"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-sun-s-song",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Sun's Song",
+        "note": "song · Kakariko Village – Graveyard — learn inside the royal tomb"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-hylian-shield",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Hylian Shield",
+        "note": "shield · Kakariko Village – Graveyard — inside grave 2nd from the left (three flowers in front) in the front row"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-bottle-1",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Bottle 1",
+        "note": "bottle · Lon Lon Ranch — Win Talon's mini-game (cost is 10 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-epona-s-song",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Epona's Song",
+        "note": "song · Lon Lon Ranch — Show Malon your Ocarina ;)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-deku-seed-bullet-bag",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Deku Seed Bullet Bag",
+        "note": "item · Lost Woods — from the entrance go right and shoot the “target” thing 3x (score 100 each time)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-saria-s-song",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Saria's Song",
+        "note": "song · Sacred Forest Meadow — Speak with Saria after navigating the Lost Woods"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-deku-stick-upgrade-carry-20",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Deku Stick Upgrade (carry 20)",
+        "note": "item · Lost Woods — Go left again (from previous area) and buy from the Business Scrub"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-bottle-2",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Bottle 2",
+        "note": "bottle · Kakariko Village — round up the cuccos"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-adult-wallet",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Adult Wallet",
+        "note": "wallet · Kakariko Village — First prize for collecting Skulltula Tokens"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-get-the-happy-mask-shop-to-open-by-giving-the-guard-zelda-s-letter",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Get the Happy Mask shop to open by giving the guard Zelda's Letter",
+        "note": "task · Kakariko Village"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-keaton-mask",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Keaton Mask",
+        "note": "mask · Hyrule Castle Market — get from the Happy Mask Shop (10 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-give-keaton-mask-to-guard",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Give Keaton Mask to guard",
+        "note": "task · Kakariko Village"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-goron-s-bracelet",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Goron's Bracelet",
+        "note": "strength · Goron City — Play Saria's song for Darunia"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-map-dodongo-s-cavern",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Map",
+        "note": "dungeon-item · Dodongo's Cavern"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-compass-dodongo-s-cavern",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Compass",
+        "note": "dungeon-item · Dodongo's Cavern"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-bomb-bag",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Bomb Bag",
+        "note": "bomb-bag · Dodongo's Cavern"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-heart-container-dodongo-s-cavern",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Heart Container",
+        "note": "heart-container · Dodongo's Cavern — Defeat King Dodongo"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-goron-s-ruby",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Goron's Ruby",
+        "note": "quest-item · Death Mountain — Darunia gives it to you after exiting Dodongo's Cavern"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-big-bomb-bag",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Big Bomb Bag",
+        "note": "bomb-bag · Goron City — blow up the rolling goron as he goes thru the cave-like area"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-spin-attack",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Spin Attack",
+        "note": "magic · Death Mountain — Blow up wall near owl to find a Great Fairy"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-stone-of-agony-shard-of-agony-on-3ds",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Stone of Agony (Shard of Agony on 3ds)",
+        "note": "quest-item · Kakariko Village — Second prize for skulltula tokens"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-deku-seeds-bullet-bag-upgrade-carry-50",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Deku Seeds Bullet Bag Upgrade (carry 50)",
+        "note": "item · Hyrule Castle Market — Win the shooting gallery mini-game (20 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-bombchus",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Bombchus",
+        "note": "item · Hyrule Castle Market — win from bombchu mini-game (30 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-biggest-bomb-bag-carry-40",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Biggest Bomb Bag (carry 40)",
+        "note": "bomb-bag · Hyrule Castle Market — win from bombchu mini-game (30 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-skull-mask",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Skull Mask",
+        "note": "mask · Hyrule Castle Market — Turn in the money from the Keaton mask (20 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-din-s-fire",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Din's Fire",
+        "note": "spell · Hyrule Castle — Great Fairy of Magic gives it to you"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-magic-beans",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Magic Beans",
+        "note": "item · Zora's River — buy at least 3 from the fat guy"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-plant-bean-near-fat-guy",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Plant bean near fat guy",
+        "note": "task · Zora's River"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-silver-scale",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Silver Scale",
+        "note": "scale · Zora's Domain — win diving game (20 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-bottle-3",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Bottle 3",
+        "note": "bottle · Lake Hylia — In water near stone pillars"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-scarecrow-song",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Scarecrow Song",
+        "note": "song · Lake Hylia — play a song for Bonooru (and remember it!!)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-plant-magic-bean-next-to-lakeside-laboratory",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Plant magic bean next to lakeside laboratory",
+        "note": "task · Lake Hylia"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-boomerang",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Boomerang",
+        "note": "item · Jabu-Jabu's Belly"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-map-jabu-jabu-s-belly",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Map",
+        "note": "dungeon-item · Jabu-Jabu's Belly"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-compass-jabu-jabu-s-belly",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Compass",
+        "note": "dungeon-item · Jabu-Jabu's Belly"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-heart-container-jabu-jabu-s-belly",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Heart Container",
+        "note": "heart-container · Jabu-Jabu's Belly — Defeat Barinade"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-zora-s-sapphire",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Zora's Sapphire",
+        "note": "quest-item · Zora's Fountain — Obtained from Ruto after exiting the dungeon"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-farore-s-wind",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Farore's Wind",
+        "note": "spell · Zora's Fountain — Get from great fairy (blow up wall)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-buy-more-beans",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Buy more beans",
+        "note": "task · Zora's River"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-deku-stick-upgrade-carry-30",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Deku Stick Upgrade (Carry 30)",
+        "note": "item · Lost Woods — From the start, go R, L, R, L, L and down hole towards the back (wear skull mask)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-give-skull-mask-to-skull-kid",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Give Skull Mask to Skull Kid",
+        "note": "task · Lost Woods — From start, go left"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-ocarina-of-time",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Ocarina of Time",
+        "note": "item · Hyrule Field — Zelda tosses it into the moat as she's chased off by Ganon"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-song-of-time",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Song of Time",
+        "note": "song · Hyrule Field — When you get the Ocarina of Time, you learn this"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-spooky-mask",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Spooky Mask",
+        "note": "mask · Hyrule Castle Market — turn in money from skull mask (30 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-giant-s-wallet",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Giant's Wallet",
+        "note": "wallet · Kakariko Village — Prize for gold skulltula tokens"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-plant-magic-bean",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Plant magic bean",
+        "note": "task · Kakariko Village – Graveyard"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-give-spooky-mask-to-kid",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Give spooky mask to kid",
+        "note": "task · Kakariko Village – Graveyard"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-buy-more-beans-zora-s-river",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Buy more beans",
+        "note": "task · Zora's River"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-bunny-hood",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Bunny Hood",
+        "note": "mask · Hyrule Castle Market — turn in money from spooky mask (50 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-give-bunny-hood-to-running-man",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Give Bunny Hood to running man",
+        "note": "task · Hyrule Field — Exit market, go right. When you pass Lon Lon you'll see him (night)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-mask-of-truth",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Mask of Truth",
+        "note": "mask · Hyrule Castle Market — turn in the money from the bunny hood. (Also gets zora, gerudo, and goron masks)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-plant-magic-bean-near-entrance-to-dodongo-s-cavern",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Plant magic bean near entrance to Dodongo's Cavern",
+        "note": "task · Death Mountain"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-plant-magic-bean-kokiri-forest",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Plant magic bean",
+        "note": "task · Kokiri Forest"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-plant-magic-bean-lost-woods",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Plant magic bean",
+        "note": "task · Lost Woods"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-plant-magic-bean-lost-woods-1",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Plant magic bean",
+        "note": "task · Lost Woods"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-deku-nut-upgrade-carry-30",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Deku Nut Upgrade (Carry 30)",
+        "note": "item · Lost Woods — From start, go R, L, R, L, Straight, L, blow up boulder (40 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-deku-nut-upgrade-carry-40",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Deku Nut Upgrade (Carry 40)",
+        "note": "item · Lost Woods — From start, go R, L, R, L, L & fall down hole in back (wear mask of truth)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-plant-magic-bean-gerudo-valley",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Plant Magic Bean",
+        "note": "task · Gerudo Valley"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-master-sword",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Master Sword",
+        "note": "sword · Temple of Time — pull from the pedestal"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-light-medallion",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Light Medallion",
+        "note": "quest-item · Temple of Time — Given to you by the Sage of Light, Rauru, in the future"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-epona",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Epona",
+        "note": "item · Lon Lon Ranch — Play Epona's song, talk to Ingo while on Epona, beat Ingo at the race, then jump the fence"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-hookshot",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Hookshot",
+        "note": "item · Kakariko Graveyard — Pull grave with flowers near magic bean, fall down hole and follow Dampe"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-minuet-of-forest",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Minuet of Forest",
+        "note": "song · Sacred Forest Meadow — Sheik teaches it to you"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-map-forest-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Map",
+        "note": "dungeon-item · Forest Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-fairy-bow",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Fairy Bow",
+        "note": "item · Forest Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-compass-forest-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Compass",
+        "note": "dungeon-item · Forest Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-heart-container-forest-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Heart Container",
+        "note": "heart-container · Forest Temple — Defeat Phantom Ganon"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-forest-medallion",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Forest Medallion",
+        "note": "quest-item · Temple of Light — After defeating Phantom Ganon, Saria gives this to you"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-prelude-of-light",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Prelude of Light",
+        "note": "song · Temple of Time — Sheik teaches it to you"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-play-the-scarecrow-song-for-the-scarecrow-again",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Play the Scarecrow song for the scarecrow again",
+        "note": "task · Lake Hylia"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-big-quiver-carry-40",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Big Quiver (carry 40)",
+        "note": "quiver · Kakariko Village — Win from shooting gallery (20 rupees)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-goron-s-tunic",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Goron's Tunic",
+        "note": "tunic · Goron City — Blow up the rolling around Goron & listen to his stories"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-bolero-of-fire",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Bolero of Fire",
+        "note": "song · Death Mountain Crater — Cross the broken bridge & Sheik teaches it to you"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-plant-magic-bean-past",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Plant magic bean (PAST)",
+        "note": "task · Death Mountain Crater"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-map-fire-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Map",
+        "note": "dungeon-item · Fire Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-compass-fire-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Compass",
+        "note": "dungeon-item · Fire Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-megaton-hammer",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Megaton Hammer",
+        "note": "item · Fire Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-heart-container-fire-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Heart Container",
+        "note": "heart-container · Fire Temple — Defeat Volvagia"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-fire-medallion",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Fire Medallion",
+        "note": "quest-item · Temple of Light — get after defeating Volvagia from Darunia"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-magic-meter-upgrade",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Magic Meter Upgrade",
+        "note": "magic · Death Mountain Crater — Left across bridge, keep going left, break red boulders with hammer"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-talk-to-the-poe-shop-guy-in-the-old-guardhouse",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Talk to the Poe Shop guy (in the old Guardhouse)",
+        "note": "task · Hyrule Castle Market"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poe-1",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poe 1",
+        "note": "big-poe · Hyrule Field — Pass the sign near the entrance to the Hyrule Market"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poe-2",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poe 2",
+        "note": "big-poe · Hyrule Field — Pass by the tree near the entrance to Lon Lon Ranch (between tree & wall)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poe-3",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poe 3",
+        "note": "big-poe · Hyrule Field — Northwest corner of Hyrule Field near stream (one of the bushes triggers it)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poe-4",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poe 4",
+        "note": "big-poe · Hyrule Field — Between Lon Lon and entrance to Gerudo is a lone tree (face the castle and go on right)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poe-5",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poe 5",
+        "note": "big-poe · Hyrule Field — Near Gerudo entrance where road forks (go between road and wall, try to get him to go thru hole)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poe-6",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poe 6",
+        "note": "big-poe · Hyrule Field — Between Lake Hylia and Kokiri Forest are tons of trees. Find a patch of bushes and run thru"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poe-7-between-lake-hylia-and-kokiri-forest-is-a-lone-boulder-go-near-tree-directly-south-of-the-boulder",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poe 7 - Between Lake Hylia and Kokiri Forest is a lone boulder. Go near tree directly SOUTH of the boulder",
+        "note": "big-poe · Hyrule Field"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poe-8",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poe 8",
+        "note": "big-poe · Hyrule Field — Between Kokiri Forest and Lon Lon Ranch is a silver boulder. Stand in the “Y” of the road facing it."
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poe-9",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poe 9",
+        "note": "big-poe · Hyrule Field — Wait in the corner of the V shaped wall west of Lon Lon Ranch"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poe-10",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poe 10",
+        "note": "big-poe · Hyrule Field — Near entrance to Kakariko Village is an overhang above the stream"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-bottle-4",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Bottle 4",
+        "note": "bottle · Hyrule Castle Market — turn in Poes"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-map-ice-cavern",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Map",
+        "note": "dungeon-item · Ice Cavern"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-compass-ice-cavern",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Compass",
+        "note": "dungeon-item · Ice Cavern"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-iron-boots",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Iron Boots",
+        "note": "boots · Ice Cavern"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-serenade-of-water",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Serenade of Water",
+        "note": "song · Ice Cavern — Sheik will teach it to you after you get the boots."
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-zora-s-tunic",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Zora's Tunic",
+        "note": "tunic · Zora's Domain — Use blue fire to melt the ice on King Zora & he'll give it to you"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-pocket-cucco",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Pocket Cucco",
+        "note": "quest-item · Kakariko Village — speak with the Cucco lady"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-cojiro",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Cojiro",
+        "note": "quest-item · Kakariko Village — hatch egg, wake up Talon (house below stairs across from Skulltula), speak with Cucco Lady"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-odd-mushroom",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Odd Mushroom",
+        "note": "quest-item · Lost Woods — From entrance go left and give the guy Cojiro"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-odd-potion",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Odd Potion",
+        "note": "quest-item · Kakariko Village — Last building on right, go thru back door of potion shop, jump down, go up ramp"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-poacher-s-saw",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Poacher's Saw",
+        "note": "quest-item · Lost Woods — give the odd potion to the Kokiri Girl"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-broken-biggoron-s-sword",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Broken Biggoron's Sword",
+        "note": "sword · Gerudo Valley — cross the bridge, speak with fat guy"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-prescription",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Prescription",
+        "note": "quest-item · Death Mountain — give the broke biggoron sword to Biggoron"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-eyeball-frog",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Eyeball Frog",
+        "note": "quest-item · Zora's Domain — talk to King Zora"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-world-s-finest-eye-drops",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "World's Finest Eye Drops",
+        "note": "quest-item · Lake Hylia — give the eyeball frog to the scientist in the lakeside laboratory"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-claim-check",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Claim Check",
+        "note": "quest-item · Death Mountain — HASTILY get back to Biggoron (use magic bean plant) and give him eye drops"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-biggoron-s-sword",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Biggoron's Sword",
+        "note": "sword · Death Mountain — wait a few days and speak with Biggoron"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-map-water-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Map",
+        "note": "dungeon-item · Water Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-compass-water-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Compass",
+        "note": "dungeon-item · Water Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-longshot",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Longshot",
+        "note": "item · Water Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-heart-container-water-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Heart Container",
+        "note": "heart-container · Water Temple — Defeat Morpha"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-water-medallion",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Water Medallion",
+        "note": "quest-item · Temple of Light — Receive from Ruto"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-fire-arrows",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Fire Arrows",
+        "note": "item · Lake Hylia — Shoot an arrow into the morning sun from the brown platform"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-golden-scale",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Golden Scale",
+        "note": "scale · Fishing Pond — Catch the largest fish (15lbs+)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-sinking-lure",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Sinking Lure",
+        "note": "item · Fishing Pond — find along the wall, or possibly by the small stream"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-catch-hylian-loach-for-bragging-rights",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Catch Hylian Loach for bragging rights",
+        "note": "item · Fishing Pond"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-nocturne-of-shadow",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Nocturne of Shadow",
+        "note": "song · Kakariko Village — Sheik teaches it to you after entering Kakariko Village"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-song-of-storms",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Song of Storms",
+        "note": "song · Kakariko Village — Show the Ocarina to Guru Guru in the windmill"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-lense-of-truth",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "flagged",
+        "label": "Lense of Truth",
+        "note": "item · Kakariko Well (past)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-map-kakariko-well-past",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Map",
+        "note": "dungeon-item · Kakariko Well (past)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-compass-kakariko-well-past",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Compass",
+        "note": "dungeon-item · Kakariko Well (past)"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-map-shadow-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Map",
+        "note": "dungeon-item · Shadow Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-hoover-boots",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "flagged",
+        "label": "Hoover Boots",
+        "note": "boots · Shadow Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-compass-shadow-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Compass",
+        "note": "dungeon-item · Shadow Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-heart-container-shadow-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "flagged",
+        "label": "Heart Container",
+        "note": "heart-container · Shadow Temple — Defeat Bongo Dongo"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-shadow-medallion",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Shadow Medallion",
+        "note": "quest-item · Temple of Light — receive from Impa"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-gerudo-membership-card",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Gerudo Membership Card",
+        "note": "quest-item · Gerudo Fortress — Rescue the Carpenters"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-biggest-quiver-hold-50",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Biggest Quiver (hold 50)",
+        "note": "quiver · Gerudo Fortress — Score 1500pts in the Horseback Archery Mini-Game"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-requiem-of-spirit",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Requiem of Spirit",
+        "note": "song · Desert Colossus — Sheik teaches you this after you enter and then exit the temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-past-plant-magic-bean-near-entrance-to-spirit-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "(PAST) Plant magic bean near entrance to Spirit Temple",
+        "note": "item · Desert Colossus"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-nayru-s-love",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Nayru's Love",
+        "note": "spell · Desert Colossus — Northern part of the area between two trees place a bomb"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-bombchu",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Bombchu",
+        "note": "item · Spirit Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-silver-gauntlets",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Silver Gauntlets",
+        "note": "strength · Spirit Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-future-compass",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "(FUTURE) Compass",
+        "note": "item · Spirit Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-map-spirit-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Map",
+        "note": "dungeon-item · Spirit Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-mirror-shield",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Mirror Shield",
+        "note": "shield · Spirit Temple"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-heart-container-spirit-temple",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Heart Container",
+        "note": "heart-container · Spirit Temple — Defeat Twinrova"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-spirit-medallion",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Spirit Medallion",
+        "note": "quest-item · Temple of Light — Receive from Nabooru"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-light-arrow",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Light Arrow",
+        "note": "item · Temple of Time — Receive from Zelda"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-turn-in-last-skulltulas-for-200-rupees",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Turn in last skulltulas for 200 rupees",
+        "note": "item · Kakariko Village"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-ice-arrow",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Ice Arrow",
+        "note": "item · Gerudo Training Grounds — make it thru the dungeon"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-golden-gauntlets",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Golden Gauntlets",
+        "note": "strength · Ganon's Castle"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-defense-upgrade",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "Defense Upgrade",
+        "note": "item · Ganon's Castle – Outside — Throw the Obelisk out of the way to see the last Great Fairy"
+      },
+      {
+        "itemId": "zelda-oot:equipment:eq-defeat-ganon",
+        "sourceRefs": [
+          "src-checklist-pdf"
+        ],
+        "confidence": "normal",
+        "label": "DEFEAT GANON",
+        "note": "task · Ganon's Castle"
+      }
+    ]
+  }
+}

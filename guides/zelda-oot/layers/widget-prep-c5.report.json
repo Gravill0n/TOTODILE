@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "layer": "widget-prep-c5",
+  "generatedAt": "2026-07-09T13:48:58Z",
+  "inputs": [
+    {
+      "file": "layers/data.json",
+      "sha256": "ad27a0ee90401b02856116880c1febeabcc69f70701c93b5cf877eb33d1b2850"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "94f5ed4cfa3228f7c99d3a2181665f54ef1fdd8d281bb2310126c4383f7f3123"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "54512053dc611e25bd0017fc42464131112be282656845a5c12b814abd98adf6"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "c5f63992198ff323ecfbb80ca474de3a2c3509dd6ff0ec011723f70279fbf6fe"
+    }
+  ],
+  "report": {
+    "rowCount": 2,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Slot 4 (prepCard, chapter-scoped). Items to bring or equip before this dungeon, curated from the chapter's own spine steps — what the Zelda Dungeon walkthrough states you need. Sourced via the spine to src-zd-walkthrough."
+  ]
+}

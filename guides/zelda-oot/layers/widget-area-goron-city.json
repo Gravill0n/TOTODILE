@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-goron-city",
+    "title": "Area Collectibles — Goron City",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:goron-city"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-goron-city:gs-026",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#26",
+          "cond": "Bombs (Past)",
+          "how": "Once you enter Goron City, bomb the three boulders on the left. This leads to a room where you should bomb the boulders along the right path. Once you reach the back of the room, roll into the wooden…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-goron-city:gs-056",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#56",
+          "cond": "Hookshot",
+          "how": "Once you enter Goron City, walk across the tightropes that are straight ahead. On the backside of the pedestal located at the top of the City, you will find a Gold Skulltula."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-goron-city:hp-10",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#10",
+          "cond": "Acquire the Goron's Bracelet",
+          "how": "At the lowest level of the city, light all the torches using Deku Sticks (and the lit torch in Darunia's chamber). Alternatively you can use Din's Fire. Once all of them are lit, the giant Goron-face…"
+        }
+      }
+    ]
+  }
+}

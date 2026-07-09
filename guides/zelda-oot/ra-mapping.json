@@ -1,0 +1,783 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "raGameId": 10113,
+  "entries": [
+    {
+      "raAchievementId": 48057,
+      "targetItemId": "zelda-oot:achievements:ach-48057",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48074,
+      "targetItemId": "zelda-oot:achievements:ach-48074",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48106,
+      "targetItemId": "zelda-oot:achievements:ach-48106",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48107,
+      "targetItemId": "zelda-oot:achievements:ach-48107",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48108,
+      "targetItemId": "zelda-oot:achievements:ach-48108",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48109,
+      "targetItemId": "zelda-oot:achievements:ach-48109",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48113,
+      "targetItemId": "zelda-oot:achievements:ach-48113",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48160,
+      "targetItemId": "zelda-oot:achievements:ach-48160",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48161,
+      "targetItemId": "zelda-oot:achievements:ach-48161",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48162,
+      "targetItemId": "zelda-oot:achievements:ach-48162",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48224,
+      "targetItemId": "zelda-oot:achievements:ach-48224",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48225,
+      "targetItemId": "zelda-oot:achievements:ach-48225",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48226,
+      "targetItemId": "zelda-oot:achievements:ach-48226",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48241,
+      "targetItemId": "zelda-oot:achievements:ach-48241",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48242,
+      "targetItemId": "zelda-oot:achievements:ach-48242",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48243,
+      "targetItemId": "zelda-oot:achievements:ach-48243",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48244,
+      "targetItemId": "zelda-oot:achievements:ach-48244",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48245,
+      "targetItemId": "zelda-oot:achievements:ach-48245",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48246,
+      "targetItemId": "zelda-oot:achievements:ach-48246",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48247,
+      "targetItemId": "zelda-oot:achievements:ach-48247",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48248,
+      "targetItemId": "zelda-oot:achievements:ach-48248",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48249,
+      "targetItemId": "zelda-oot:achievements:ach-48249",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48254,
+      "targetItemId": "zelda-oot:achievements:ach-48254",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48255,
+      "targetItemId": "zelda-oot:achievements:ach-48255",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48275,
+      "targetItemId": "zelda-oot:achievements:ach-48275",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48277,
+      "targetItemId": "zelda-oot:achievements:ach-48277",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48278,
+      "targetItemId": "zelda-oot:achievements:ach-48278",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48279,
+      "targetItemId": "zelda-oot:achievements:ach-48279",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48336,
+      "targetItemId": "zelda-oot:achievements:ach-48336",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48341,
+      "targetItemId": "zelda-oot:achievements:ach-48341",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48342,
+      "targetItemId": "zelda-oot:achievements:ach-48342",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48343,
+      "targetItemId": "zelda-oot:achievements:ach-48343",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48344,
+      "targetItemId": "zelda-oot:achievements:ach-48344",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48345,
+      "targetItemId": "zelda-oot:achievements:ach-48345",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48346,
+      "targetItemId": "zelda-oot:achievements:ach-48346",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48347,
+      "targetItemId": "zelda-oot:achievements:ach-48347",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48348,
+      "targetItemId": "zelda-oot:achievements:ach-48348",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48416,
+      "targetItemId": "zelda-oot:achievements:ach-48416",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48417,
+      "targetItemId": "zelda-oot:achievements:ach-48417",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48418,
+      "targetItemId": "zelda-oot:achievements:ach-48418",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48423,
+      "targetItemId": "zelda-oot:achievements:ach-48423",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48512,
+      "targetItemId": "zelda-oot:achievements:ach-48512",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48513,
+      "targetItemId": "zelda-oot:achievements:ach-48513",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48514,
+      "targetItemId": "zelda-oot:achievements:ach-48514",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48515,
+      "targetItemId": "zelda-oot:achievements:ach-48515",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48516,
+      "targetItemId": "zelda-oot:achievements:ach-48516",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48582,
+      "targetItemId": "zelda-oot:achievements:ach-48582",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48583,
+      "targetItemId": "zelda-oot:achievements:ach-48583",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48584,
+      "targetItemId": "zelda-oot:achievements:ach-48584",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48585,
+      "targetItemId": "zelda-oot:achievements:ach-48585",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48818,
+      "targetItemId": "zelda-oot:achievements:ach-48818",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48819,
+      "targetItemId": "zelda-oot:achievements:ach-48819",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48820,
+      "targetItemId": "zelda-oot:achievements:ach-48820",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48821,
+      "targetItemId": "zelda-oot:achievements:ach-48821",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48822,
+      "targetItemId": "zelda-oot:achievements:ach-48822",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48823,
+      "targetItemId": "zelda-oot:achievements:ach-48823",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48896,
+      "targetItemId": "zelda-oot:achievements:ach-48896",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48912,
+      "targetItemId": "zelda-oot:achievements:ach-48912",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48913,
+      "targetItemId": "zelda-oot:achievements:ach-48913",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48914,
+      "targetItemId": "zelda-oot:achievements:ach-48914",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48915,
+      "targetItemId": "zelda-oot:achievements:ach-48915",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48916,
+      "targetItemId": "zelda-oot:achievements:ach-48916",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48917,
+      "targetItemId": "zelda-oot:achievements:ach-48917",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48918,
+      "targetItemId": "zelda-oot:achievements:ach-48918",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48941,
+      "targetItemId": "zelda-oot:achievements:ach-48941",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48942,
+      "targetItemId": "zelda-oot:achievements:ach-48942",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48943,
+      "targetItemId": "zelda-oot:achievements:ach-48943",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48944,
+      "targetItemId": "zelda-oot:achievements:ach-48944",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48945,
+      "targetItemId": "zelda-oot:achievements:ach-48945",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48946,
+      "targetItemId": "zelda-oot:achievements:ach-48946",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48947,
+      "targetItemId": "zelda-oot:achievements:ach-48947",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48948,
+      "targetItemId": "zelda-oot:achievements:ach-48948",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48949,
+      "targetItemId": "zelda-oot:achievements:ach-48949",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48950,
+      "targetItemId": "zelda-oot:achievements:ach-48950",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48951,
+      "targetItemId": "zelda-oot:achievements:ach-48951",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 48975,
+      "targetItemId": "zelda-oot:achievements:ach-48975",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49018,
+      "targetItemId": "zelda-oot:achievements:ach-49018",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49019,
+      "targetItemId": "zelda-oot:achievements:ach-49019",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49020,
+      "targetItemId": "zelda-oot:achievements:ach-49020",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49040,
+      "targetItemId": "zelda-oot:achievements:ach-49040",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49185,
+      "targetItemId": "zelda-oot:achievements:ach-49185",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49186,
+      "targetItemId": "zelda-oot:achievements:ach-49186",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49187,
+      "targetItemId": "zelda-oot:achievements:ach-49187",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49188,
+      "targetItemId": "zelda-oot:achievements:ach-49188",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49189,
+      "targetItemId": "zelda-oot:achievements:ach-49189",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49261,
+      "targetItemId": "zelda-oot:achievements:ach-49261",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49262,
+      "targetItemId": "zelda-oot:achievements:ach-49262",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49263,
+      "targetItemId": "zelda-oot:achievements:ach-49263",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49286,
+      "targetItemId": "zelda-oot:achievements:ach-49286",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49287,
+      "targetItemId": "zelda-oot:achievements:ach-49287",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49288,
+      "targetItemId": "zelda-oot:achievements:ach-49288",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49289,
+      "targetItemId": "zelda-oot:achievements:ach-49289",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49290,
+      "targetItemId": "zelda-oot:achievements:ach-49290",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49291,
+      "targetItemId": "zelda-oot:achievements:ach-49291",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49292,
+      "targetItemId": "zelda-oot:achievements:ach-49292",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49293,
+      "targetItemId": "zelda-oot:achievements:ach-49293",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    },
+    {
+      "raAchievementId": 49294,
+      "targetItemId": "zelda-oot:achievements:ach-49294",
+      "sourceRefs": [
+        "src-ra"
+      ],
+      "confidence": "normal"
+    }
+  ]
+}

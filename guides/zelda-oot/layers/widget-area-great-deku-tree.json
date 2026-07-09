@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-great-deku-tree",
+    "title": "Area Collectibles — Great Deku Tree",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:great-deku-tree"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-great-deku-tree:gs-001",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#1",
+          "cond": "Enter the Deku Tree (Past)",
+          "how": "In the same room with Compass, raise the platforms and use them to get onto the platform on the left side. The Skulltula is right behind the treasure chest."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-great-deku-tree:gs-002",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#2",
+          "cond": "Enter the Deku Tree (Past)",
+          "how": "After breaking through the spider web and reaching the lower floor of the Great Deku Tree, turn back and look at the vines leading up. Shoot down the Skulltula with the Slingshot."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-great-deku-tree:gs-003",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#3",
+          "cond": "Enter the Deku Tree (Past)",
+          "how": "After breaking through the spider web and reaching the lower floor of the Great Deku Tree, look at the grating at the north end of the room to find another Skulltula."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-great-deku-tree:gs-036",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#36",
+          "cond": "Boomerang (Past)",
+          "how": "Way back inside of the Great Deku Tree. There was a room in the first basement at the northwest corner of the map that we previously never entered. Burn the spider web and then blast the boulder away…"
+        }
+      }
+    ]
+  }
+}
