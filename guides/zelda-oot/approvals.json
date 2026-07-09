@@ -820,6 +820,23 @@
         "verdict": "approved"
       },
       "spotChecks": []
+    },
+    {
+      "id": "ra-mapping",
+      "kind": "ra-mapping",
+      "artifact": "layers/ra-mapping.json",
+      "report": {
+        "rowCount": 97,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:17c25846d8719c46f2a1373402948969d421c3ce6bbe6ce3041d1696703fb5bb",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-09T14:06:58.353Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
     }
   ]
 }
