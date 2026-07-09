@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:prep-c9",
+    "title": "Dungeon Prep — Ice Cavern",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "zelda-oot:c9"
+    },
+    "deckPosition": 4,
+    "type": "prepCard",
+    "items": [
+      {
+        "itemId": "zelda-oot:prep-c9:empty-bottles",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Empty Bottles",
+        "quantity": 4,
+        "note": "To carry Blue Fire (melts the Red Ice barriers) — bring as many as you can"
+      },
+      {
+        "itemId": "zelda-oot:prep-c9:dins-fire",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Din's Fire",
+        "note": "Fastest way to clear the four Freezards at once"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:prep-c11",
+    "title": "Dungeon Prep — Bottom of The Well",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "zelda-oot:c11"
+    },
+    "deckPosition": 4,
+    "type": "prepCard",
+    "items": [
+      {
+        "itemId": "zelda-oot:prep-c11:song-of-storms",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Song of Storms",
+        "note": "Played at the Windmill (as a child) to drain the well"
+      },
+      {
+        "itemId": "zelda-oot:prep-c11:suns-song",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Sun's Song",
+        "note": "Stuns the ReDeads and Gibdos inside"
+      },
+      {
+        "itemId": "zelda-oot:prep-c11:deku-sticks",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Deku Sticks",
+        "note": "Light the coffin torches"
+      }
+    ]
+  }
+}

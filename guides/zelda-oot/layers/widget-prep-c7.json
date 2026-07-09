@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:prep-c7",
+    "title": "Dungeon Prep — Forest Temple",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "zelda-oot:c7"
+    },
+    "deckPosition": 4,
+    "type": "prepCard",
+    "items": [
+      {
+        "itemId": "zelda-oot:prep-c7:hookshot",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Hookshot",
+        "note": "Required throughout — kills Skulltulas and crosses gaps"
+      },
+      {
+        "itemId": "zelda-oot:prep-c7:song-of-time",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Song of Time",
+        "note": "Clears the Time Blocks in the Grand Hall"
+      },
+      {
+        "itemId": "zelda-oot:prep-c7:dins-fire",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Din's Fire",
+        "note": "Melts the eye switch in the Lava Room (or shoot an arrow through the torch)"
+      }
+    ]
+  }
+}

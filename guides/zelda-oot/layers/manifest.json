@@ -515,6 +515,171 @@
         },
         "title": "Heart Pieces"
       }
+    },
+    {
+      "id": "widget-prep-c1",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c1.json",
+      "report": "layers/widget-prep-c1.report.json",
+      "sha256": "fb4e18021944153c4e9046ff77e9baee9a2ae629b4d3046fa8a0dbff2ce2865c",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c1"
+        },
+        "title": "Dungeon Prep — Inside The Great Deku Tree"
+      }
+    },
+    {
+      "id": "widget-prep-c10",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c10.json",
+      "report": "layers/widget-prep-c10.report.json",
+      "sha256": "bc0acb1ea2e8e3c84cf5bfab1285488e85055ce903f30b150d60486b46f022ca",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c10"
+        },
+        "title": "Dungeon Prep — Water Temple"
+      }
+    },
+    {
+      "id": "widget-prep-c11",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c11.json",
+      "report": "layers/widget-prep-c11.report.json",
+      "sha256": "75e8de75ef7b7e505f4aeab83d2c59e2f86d38116a7ce3069ec2533ad8d6f4e6",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c11"
+        },
+        "title": "Dungeon Prep — Bottom of The Well"
+      }
+    },
+    {
+      "id": "widget-prep-c12",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c12.json",
+      "report": "layers/widget-prep-c12.report.json",
+      "sha256": "69c053bdc478c65349b0b22c6596277a61b26e5f96beda290f342cf93b12c9b9",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c12"
+        },
+        "title": "Dungeon Prep — Shadow Temple"
+      }
+    },
+    {
+      "id": "widget-prep-c13",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c13.json",
+      "report": "layers/widget-prep-c13.report.json",
+      "sha256": "aea22bda00cbce15fc0739c80465dd81c3840386d6ea95bda2448f2d3d840fbc",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c13"
+        },
+        "title": "Dungeon Prep — Spirit Temple"
+      }
+    },
+    {
+      "id": "widget-prep-c14",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c14.json",
+      "report": "layers/widget-prep-c14.report.json",
+      "sha256": "4ccb011917ab7c02428421e6a4c1968b8f233f2d443c2089d5dc0ce57c4a952d",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c14"
+        },
+        "title": "Dungeon Prep — Ganon's Castle"
+      }
+    },
+    {
+      "id": "widget-prep-c4",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c4.json",
+      "report": "layers/widget-prep-c4.report.json",
+      "sha256": "092d4001c0fdbcee968ea7901611d28daa9e9d5f46d869bd09d7d4f77d505133",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c4"
+        },
+        "title": "Dungeon Prep — Dodongo's Cavern"
+      }
+    },
+    {
+      "id": "widget-prep-c5",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c5.json",
+      "report": "layers/widget-prep-c5.report.json",
+      "sha256": "88fc3717c2f44e26e0fde21bb39c0a5a6aacc5d110573a2bef65899fd7cc10fa",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c5"
+        },
+        "title": "Dungeon Prep — Inside Jabu-Jabu's Belly"
+      }
+    },
+    {
+      "id": "widget-prep-c7",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c7.json",
+      "report": "layers/widget-prep-c7.report.json",
+      "sha256": "67391206f4546f49094f89b8f08eb02f3046f7f6251418be3046664644170649",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c7"
+        },
+        "title": "Dungeon Prep — Forest Temple"
+      }
+    },
+    {
+      "id": "widget-prep-c8",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c8.json",
+      "report": "layers/widget-prep-c8.report.json",
+      "sha256": "8a5cef074ad71decb2f1bac9e1b60e1e55079476038153a6f093259046e84aa5",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c8"
+        },
+        "title": "Dungeon Prep — Fire Temple"
+      }
+    },
+    {
+      "id": "widget-prep-c9",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c9.json",
+      "report": "layers/widget-prep-c9.report.json",
+      "sha256": "5f38bf515da47c43f10f2a9ddee2831f37c55e659e20654b07112f80576e807e",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "zelda-oot:c9"
+        },
+        "title": "Dungeon Prep — Ice Cavern"
+      }
     }
   ]
 }

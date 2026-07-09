@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:prep-c14",
+    "title": "Dungeon Prep — Ganon's Castle",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "zelda-oot:c14"
+    },
+    "deckPosition": 4,
+    "type": "prepCard",
+    "items": [
+      {
+        "itemId": "zelda-oot:prep-c14:light-arrows",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Light Arrows",
+        "note": "Required — destroys each of the six elemental barriers"
+      },
+      {
+        "itemId": "zelda-oot:prep-c14:fairies-blue-potions",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Fairies + Blue Potions",
+        "quantity": 2,
+        "note": "Fill your bottles for the barriers and the final fights"
+      },
+      {
+        "itemId": "zelda-oot:prep-c14:goron-tunic",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Goron Tunic",
+        "note": "Heat protection for the Fire barrier's Lava Room"
+      },
+      {
+        "itemId": "zelda-oot:prep-c14:fire-arrows",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Fire Arrows",
+        "note": "Light the Sun-Face cobweb in the Spirit barrier"
+      },
+      {
+        "itemId": "zelda-oot:prep-c14:dins-fire",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Din's Fire",
+        "note": "Lights torches in the Forest and Spirit barriers, burns the Boss Key traps"
+      },
+      {
+        "itemId": "zelda-oot:prep-c14:mirror-shield",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Mirror Shield",
+        "note": "Reflects light onto the Sun Faces in the Spirit and Light barriers"
+      },
+      {
+        "itemId": "zelda-oot:prep-c14:megaton-hammer",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Megaton Hammer",
+        "note": "Rusty switches in the Shadow, Water and Spirit barriers"
+      },
+      {
+        "itemId": "zelda-oot:prep-c14:blue-fire-bottled",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Blue Fire (bottled)",
+        "note": "Melts the Red Ice in the Water barrier"
+      },
+      {
+        "itemId": "zelda-oot:prep-c14:bombchus",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Bombchus",
+        "note": "Solves the Spirit barrier's bar-slit switch (and every dungeon item for GTG)"
+      }
+    ]
+  }
+}

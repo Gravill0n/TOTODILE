@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:prep-c8",
+    "title": "Dungeon Prep — Fire Temple",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "zelda-oot:c8"
+    },
+    "deckPosition": 4,
+    "type": "prepCard",
+    "items": [
+      {
+        "itemId": "zelda-oot:prep-c8:goron-tunic",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Goron Tunic",
+        "note": "Heat protection — near-required for the Fire Temple and Crater"
+      },
+      {
+        "itemId": "zelda-oot:prep-c8:hookshot",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Hookshot",
+        "note": "For the flaming elevator and stunning Torch Slugs"
+      },
+      {
+        "itemId": "zelda-oot:prep-c8:bombs",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Bombs",
+        "note": "For crystal switches and bombable walls"
+      },
+      {
+        "itemId": "zelda-oot:prep-c8:fairies",
+        "sourceRefs": [
+          "src-zd-walkthrough"
+        ],
+        "confidence": "normal",
+        "label": "Fairies",
+        "quantity": 2,
+        "note": "Bottled — Volvagia and the fire rooms hit hard"
+      }
+    ]
+  }
+}
