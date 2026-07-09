@@ -1021,18 +1021,12 @@
                 "Climb the cliff, drop down"
               ],
               "detail": "Climb the vines and follow the cliff to the end, then jump off on the far side of the gate (away from the guard). Facing the castle: two guards watch the right-hand path, so climb up between the two guards on the right and the single guard up top on the left — easy to pass unnoticed. Stay left (off the bright road) to reach another gate with two guards; on the left, suspicious vines (stones on N64) stick out of the cliff. Climb up and jump down the other side.",
-              "missable": {
-                "deadline": "While entering Hyrule Castle as child — Money Solves Everything requires bribing the guard in front of the gate to gain courtyard entry"
-              },
-              "achievementRefs": [
-                48160
-              ],
+              "achievementRefs": [],
               "images": [],
               "sourceRefs": [
-                "src-zd-walkthrough",
-                "src-ra"
+                "src-zd-walkthrough"
               ],
-              "confidence": "flagged"
+              "confidence": "normal"
             },
             {
               "id": "zelda-oot:v-hyrule-castle-1:s5",
@@ -1085,36 +1079,44 @@
               "id": "zelda-oot:v-hyrule-castle-1:s8",
               "order": 7,
               "keywords": [
+                "Optional: bribe the courtyard-entrance guard",
                 "Sneak past the courtyard guards"
               ],
-              "detail": "The garden is littered with patrolling guards; the goal is to pass without getting caught. You can stand behind them but not to either side — move when they're on the opposite side of a fountain, statue or topiary, or walking away from you. Past the final obstacle, turn left into the quiet part of the gardens, where there are no guards at all.",
+              "detail": "At the courtyard entrance a guard stands on the left. For Money Solves Everything: talk to him and get caught (you're thrown out), then come back — now you can talk to him again, pay a small fee, and he opens the gate. The garden beyond is littered with patrolling guards; pass without getting caught by standing behind them (never to either side) and moving when they're on the far side of a fountain, statue or topiary, or walking away. Past the final obstacle, turn left into the quiet part of the gardens, where there are no guards at all.",
               "missable": {
-                "deadline": "While inside Hyrule Castle as child — Troublemaker requires angering a guard inside the castle"
+                "deadline": "At the Hyrule Courtyard entrance as child — Money Solves Everything requires bribing the gate guard here; once you've entered the courtyard the dialogue can't be triggered again"
               },
               "achievementRefs": [
-                48161
+                48160
               ],
               "images": [],
               "sourceRefs": [
                 "src-zd-walkthrough",
-                "src-ra"
+                "src-ra",
+                "src-ra-wiki"
               ],
-              "confidence": "flagged"
+              "confidence": "normal"
             },
             {
               "id": "zelda-oot:v-hyrule-castle-1:s9",
               "order": 8,
               "keywords": [
+                "Optional: Slingshot the left window (anger a guard)",
                 "Meet Princess Zelda"
               ],
-              "detail": "Check the cameo pictures in the window on the right if you like, then speak with the princess for perhaps the lengthiest conversation in Zelda history to this point. She reveals the royal family's secret: the Triforce, the three magical triangles the goddesses left behind, grants any wish to whoever gains it — enough to change Hyrule's fate for a hundred years.",
+              "detail": "Right before speaking with Zelda, for Troublemaker: shoot the window to your left with the Slingshot to trigger a short guard dialogue. Then check the cameo pictures in the window on the right if you like, and speak with the princess for perhaps the lengthiest conversation in Zelda history to this point. She reveals the royal family's secret: the Triforce, the three magical triangles the goddesses left behind, grants any wish to whoever gains it — enough to change Hyrule's fate for a hundred years.",
+              "missable": {
+                "deadline": "Before talking to Zelda as child — Troublemaker requires Slingshotting the left window here to anger a guard; you can't return to this area after collecting all 3 Spiritual Stones"
+              },
               "achievementRefs": [
+                48161,
                 48109
               ],
               "images": [],
               "sourceRefs": [
                 "src-zd-walkthrough",
-                "src-ra"
+                "src-ra",
+                "src-ra-wiki"
               ],
               "confidence": "normal"
             },
@@ -4005,20 +4007,21 @@
               "id": "zelda-oot:v-castle-town-market-4:s1",
               "order": 0,
               "keywords": [
-                "Hear the dying guard's last words"
+                "Hear the dying guard's last words in the back alley"
               ],
-              "detail": "In the aftermath of Ganondorf's attack, a mortally wounded guard has some news to share in his final moments. The ZD route doesn't mention him — this step is placed from the RA achievement description alone (child era, right after Zelda's escape), so treat the location as unverified.",
+              "detail": "For Last Breath: now that you have the Ocarina of Time from Zelda, go to the Hyrule Castle Town back alley, where a mortally wounded guard can be talked to — hear his dying words for the hidden dialogue. This is a one-time window: once the Temple of Time cutscenes trigger (pulling the Master Sword), the guard never appears again.",
               "missable": {
-                "deadline": "After Zelda's escape, before pulling the Master Sword — Last Breath requires receiving the dying guard's news in his final moments"
+                "deadline": "After getting the Ocarina of Time, before the Temple of Time cutscenes — Last Breath requires hearing the dying guard in the Castle Town back alley; he never appears again once you pull the Master Sword"
               },
               "achievementRefs": [
                 48513
               ],
               "images": [],
               "sourceRefs": [
-                "src-ra"
+                "src-ra",
+                "src-ra-wiki"
               ],
-              "confidence": "flagged"
+              "confidence": "normal"
             },
             {
               "id": "zelda-oot:v-castle-town-market-4:s2",
@@ -5474,6 +5477,23 @@
                 "src-zd-walkthrough"
               ],
               "confidence": "normal"
+            },
+            {
+              "id": "zelda-oot:v-hyrule-field-7:s4",
+              "order": 3,
+              "keywords": [
+                "Optional: race the Running Man on Epona",
+                "Beat him under 1:30"
+              ],
+              "detail": "While you're roaming Hyrule Field on Epona, take on the Running Man challenge for Wind Runner: summon Epona first, then start the race — mounted, it's an easy win in under 1 minute 30 seconds.",
+              "achievementRefs": [
+                49288
+              ],
+              "images": [],
+              "sourceRefs": [
+                "src-ra-wiki"
+              ],
+              "confidence": "normal"
             }
           ]
         },
@@ -5569,17 +5589,19 @@
               "id": "zelda-oot:v-lake-hylia-4:s4",
               "order": 3,
               "keywords": [
-                "Knock off the pond owner's hat"
+                "Optional: hook the pond owner's hat",
+                "Cast it into the pond"
               ],
-              "detail": "The pond owner can lose his hat permanently — an RA achievement the ZD route never mentions; placed here from the description alone (the pond owner is the Fishing Pond man), so treat the method as unverified.",
+              "detail": "For Mischievous Hero: stand in front of the Fishing Pond owner and keep casting until your fishing rod grabs his hat, then cast the hat out into the pond to make it permanently disappear. Tricky to pull off, but there's no time limit.",
               "achievementRefs": [
                 48944
               ],
               "images": [],
               "sourceRefs": [
-                "src-ra"
+                "src-ra",
+                "src-ra-wiki"
               ],
-              "confidence": "flagged"
+              "confidence": "normal"
             },
             {
               "id": "zelda-oot:v-lake-hylia-4:s5",
@@ -6816,17 +6838,40 @@
               "id": "zelda-oot:v-zoras-domain-4:s1",
               "order": 0,
               "keywords": [
-                "Blue Fire to unfreeze King Zora",
-                "Free Zora Tunic"
+                "Buy the Zora Tunic at the shop (300R)",
+                "Equip it"
               ],
-              "detail": "Return to Zora's Domain and use the Blue Fire to unfreeze King Zora, then stand on the platform below and speak with him for the Zora Tunic, free — it lets you breathe underwater indefinitely. (Alternatively, melt the Red Ice at the Zora Shop below and buy the Zora Tunic for 300 Rupees — costly, but useful if a Like Like eats your current one.)",
+              "detail": "Return to Zora's Domain. To set up the Kiss That Frog achievement, buy the Zora Tunic BEFORE unfreezing King Zora: melt the Red Ice blocking the Zora Shop below with Blue Fire, purchase the Zora Tunic for 300 Rupees, and equip it. The Zora Tunic lets you breathe underwater indefinitely. (The 30-Gold-Skulltula reward, the Giant's Wallet, helps afford this.)",
               "achievementRefs": [
                 48941
               ],
               "images": [],
               "sourceRefs": [
                 "src-zd-walkthrough",
-                "src-ra"
+                "src-ra",
+                "src-ra-wiki"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "zelda-oot:v-zoras-domain-4:s2",
+              "order": 1,
+              "keywords": [
+                "Unfreeze King Zora while wearing the Zora Tunic",
+                "He blows you a kiss"
+              ],
+              "detail": "With the Zora Tunic equipped, use Blue Fire to unfreeze King Zora from the Red Ice, then stand on the platform below and speak with him — because you're wearing a Zora Tunic, he blows you a kiss (Kiss That Frog). Important: if you talk to him WITHOUT a Zora Tunic equipped, he simply gives you a free Zora Tunic instead and you miss the kiss for good.",
+              "missable": {
+                "deadline": "When you unfreeze and talk to King Zora — Kiss That Frog needs a Zora Tunic already equipped; talk to him without one and he hands over a free tunic instead of the kiss"
+              },
+              "achievementRefs": [
+                48942
+              ],
+              "images": [],
+              "sourceRefs": [
+                "src-zd-walkthrough",
+                "src-ra",
+                "src-ra-wiki"
               ],
               "confidence": "normal"
             }
@@ -9641,6 +9686,22 @@
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
+              ],
+              "confidence": "normal"
+            },
+            {
+              "id": "zelda-oot:v-temple-of-time-4:s2",
+              "order": 1,
+              "keywords": [
+                "Optional: hear all 32 Gossip Stones in one session (Mask of Truth)"
+              ],
+              "detail": "One of the final things before Ganon, for Lifestyle and Stones: with the Mask of Truth equipped and all warp songs learned, tour every Gossip Stone in Hyrule and listen to all 32 rumors in a single session (don't reset). They're spread across the world — 7 around Kokiri Forest, the Lost Woods and Sacred Forest Meadow; 7 around Hyrule Castle (four outside the Temple of Time, the courtyard vines, the castle path, and one in the Song-of-Storms grotto outside the castle); 5 around Goron City and Death Mountain (including one inside Dodongo's Cavern); 5 along Zora's River, Domain and Fountain; 3 at Lake Hylia; 2 at Gerudo Valley; and the rest at the Graveyard (via Nocturne of Shadow) and the Desert Colossus. Use the warp songs to hop regions efficiently. The full stone-by-stone list is in the RA community guide.",
+              "achievementRefs": [
+                48515
+              ],
+              "images": [],
+              "sourceRefs": [
+                "src-ra-wiki"
               ],
               "confidence": "normal"
             }
