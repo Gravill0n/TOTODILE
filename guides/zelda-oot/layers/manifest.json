@@ -10,6 +10,471 @@
       "sha256": "94f5ed4cfa3228f7c99d3a2181665f54ef1fdd8d281bb2310126c4383f7f3123"
     },
     {
+      "id": "widget-area-bottom-of-the-well",
+      "kind": "widget",
+      "artifact": "layers/widget-area-bottom-of-the-well.json",
+      "report": "layers/widget-area-bottom-of-the-well.report.json",
+      "sha256": "cde7b267618c4af410de2fdff93e626429aee44a519dbdef8355e5a1e1988e2a",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:bottom-of-the-well"
+        },
+        "title": "Area Collectibles — Bottom of the Well"
+      }
+    },
+    {
+      "id": "widget-area-castle-town-market",
+      "kind": "widget",
+      "artifact": "layers/widget-area-castle-town-market.json",
+      "report": "layers/widget-area-castle-town-market.report.json",
+      "sha256": "9a85bb122a849fcc2b9a023c6f7f2b7c65154259d266c56a410bf401fab27cff",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:castle-town-market"
+        },
+        "title": "Area Collectibles — Castle Town Market"
+      }
+    },
+    {
+      "id": "widget-area-death-mountain-crater",
+      "kind": "widget",
+      "artifact": "layers/widget-area-death-mountain-crater.json",
+      "report": "layers/widget-area-death-mountain-crater.report.json",
+      "sha256": "27e4ef27964f914a3c4cd4fa6f15c6ccfc91a37e02a1ce65a9965482f7da6a5d",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:death-mountain-crater"
+        },
+        "title": "Area Collectibles — Death Mountain Crater"
+      }
+    },
+    {
+      "id": "widget-area-death-mountain-trail",
+      "kind": "widget",
+      "artifact": "layers/widget-area-death-mountain-trail.json",
+      "report": "layers/widget-area-death-mountain-trail.report.json",
+      "sha256": "0a33c6d3cd1da0a9be80e2dac7f8a7e9e8b8e936a89d677023c4dcfbab75796c",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:death-mountain-trail"
+        },
+        "title": "Area Collectibles — Death Mountain Trail"
+      }
+    },
+    {
+      "id": "widget-area-desert-colossus",
+      "kind": "widget",
+      "artifact": "layers/widget-area-desert-colossus.json",
+      "report": "layers/widget-area-desert-colossus.report.json",
+      "sha256": "a43de00f885a18c7718c7873e04219420dd9a35e34e130783ddfe99557eeafaa",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:desert-colossus"
+        },
+        "title": "Area Collectibles — Desert Colossus"
+      }
+    },
+    {
+      "id": "widget-area-dodongos-cavern",
+      "kind": "widget",
+      "artifact": "layers/widget-area-dodongos-cavern.json",
+      "report": "layers/widget-area-dodongos-cavern.report.json",
+      "sha256": "115e185b1a0daead8091ee1a53916183a663b444a67eab0b5761be9ca1737b48",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:dodongos-cavern"
+        },
+        "title": "Area Collectibles — Dodongo's Cavern"
+      }
+    },
+    {
+      "id": "widget-area-fire-temple",
+      "kind": "widget",
+      "artifact": "layers/widget-area-fire-temple.json",
+      "report": "layers/widget-area-fire-temple.report.json",
+      "sha256": "88f493cc1de2b970dd0cfffe923e0cfe531c150ab38cde4567b5f4a30e4f932d",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:fire-temple"
+        },
+        "title": "Area Collectibles — Fire Temple"
+      }
+    },
+    {
+      "id": "widget-area-forest-temple",
+      "kind": "widget",
+      "artifact": "layers/widget-area-forest-temple.json",
+      "report": "layers/widget-area-forest-temple.report.json",
+      "sha256": "b993501aeb423409b7cc439f15088d748faec6cc99d424f2e99dc6e3aa5309b6",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:forest-temple"
+        },
+        "title": "Area Collectibles — Forest Temple"
+      }
+    },
+    {
+      "id": "widget-area-ganons-castle",
+      "kind": "widget",
+      "artifact": "layers/widget-area-ganons-castle.json",
+      "report": "layers/widget-area-ganons-castle.report.json",
+      "sha256": "2267d65552870fe31c0d7c3f8466216832ac173f2566019370d76496feac59f5",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:ganons-castle"
+        },
+        "title": "Area Collectibles — Ganon's Castle"
+      }
+    },
+    {
+      "id": "widget-area-gerudo-fortress",
+      "kind": "widget",
+      "artifact": "layers/widget-area-gerudo-fortress.json",
+      "report": "layers/widget-area-gerudo-fortress.report.json",
+      "sha256": "c24924266c284f9c0c66cb669e4a1b5007b6a285166f279a2037c3e4609efc9c",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:gerudo-fortress"
+        },
+        "title": "Area Collectibles — Gerudo Fortress"
+      }
+    },
+    {
+      "id": "widget-area-gerudo-valley",
+      "kind": "widget",
+      "artifact": "layers/widget-area-gerudo-valley.json",
+      "report": "layers/widget-area-gerudo-valley.report.json",
+      "sha256": "1e61d70b67f1887f8396c4a60968fd098be59c604fba565fbe3d8cb2af420c2e",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:gerudo-valley"
+        },
+        "title": "Area Collectibles — Gerudo Valley"
+      }
+    },
+    {
+      "id": "widget-area-goron-city",
+      "kind": "widget",
+      "artifact": "layers/widget-area-goron-city.json",
+      "report": "layers/widget-area-goron-city.report.json",
+      "sha256": "a2593764d75c8efab27b2bb9b64053e47278f3599c146c8d0c2e62538e71dd07",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:goron-city"
+        },
+        "title": "Area Collectibles — Goron City"
+      }
+    },
+    {
+      "id": "widget-area-graveyard",
+      "kind": "widget",
+      "artifact": "layers/widget-area-graveyard.json",
+      "report": "layers/widget-area-graveyard.report.json",
+      "sha256": "718063c22733a34fb4ce4db2c44721ab3368cb6deb809190e461b0b6e4c6dc32",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:graveyard"
+        },
+        "title": "Area Collectibles — Graveyard"
+      }
+    },
+    {
+      "id": "widget-area-great-deku-tree",
+      "kind": "widget",
+      "artifact": "layers/widget-area-great-deku-tree.json",
+      "report": "layers/widget-area-great-deku-tree.report.json",
+      "sha256": "a17d46a8698136f0afcc93695d2643f029ce59271c9cff048bbbca6750378da4",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:great-deku-tree"
+        },
+        "title": "Area Collectibles — Great Deku Tree"
+      }
+    },
+    {
+      "id": "widget-area-haunted-wasteland",
+      "kind": "widget",
+      "artifact": "layers/widget-area-haunted-wasteland.json",
+      "report": "layers/widget-area-haunted-wasteland.report.json",
+      "sha256": "5ba36cdccbb764ceab132bed2f0118007b2484ff32e2da510241ab3cf7aebd25",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:haunted-wasteland"
+        },
+        "title": "Area Collectibles — Haunted Wasteland"
+      }
+    },
+    {
+      "id": "widget-area-hyrule-castle",
+      "kind": "widget",
+      "artifact": "layers/widget-area-hyrule-castle.json",
+      "report": "layers/widget-area-hyrule-castle.report.json",
+      "sha256": "272322d2b0773d895787ed91c11f231ed58d0f1458ae5c7f2f78b0ca472ed7ed",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:hyrule-castle"
+        },
+        "title": "Area Collectibles — Hyrule Castle"
+      }
+    },
+    {
+      "id": "widget-area-hyrule-field",
+      "kind": "widget",
+      "artifact": "layers/widget-area-hyrule-field.json",
+      "report": "layers/widget-area-hyrule-field.report.json",
+      "sha256": "6e8019aedbca487eebfa5344aceff0a67447773c8c7cc5fbab4f27caf023c76d",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:hyrule-field"
+        },
+        "title": "Area Collectibles — Hyrule Field"
+      }
+    },
+    {
+      "id": "widget-area-ice-cavern",
+      "kind": "widget",
+      "artifact": "layers/widget-area-ice-cavern.json",
+      "report": "layers/widget-area-ice-cavern.report.json",
+      "sha256": "b30abb879d4257ac409dc5cdd3eaf9622b387fc48677231f4ea1cad7a83eba96",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:ice-cavern"
+        },
+        "title": "Area Collectibles — Ice Cavern"
+      }
+    },
+    {
+      "id": "widget-area-jabu-jabus-belly",
+      "kind": "widget",
+      "artifact": "layers/widget-area-jabu-jabus-belly.json",
+      "report": "layers/widget-area-jabu-jabus-belly.report.json",
+      "sha256": "c1db8d6d27b0fdcb52503c1e3116c9b69feef3162a0f64f13e790a97f9baed4e",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:jabu-jabus-belly"
+        },
+        "title": "Area Collectibles — Jabu-Jabu's Belly"
+      }
+    },
+    {
+      "id": "widget-area-kakariko-village",
+      "kind": "widget",
+      "artifact": "layers/widget-area-kakariko-village.json",
+      "report": "layers/widget-area-kakariko-village.report.json",
+      "sha256": "f80855a2cc5dafceeb1b68ee2d7d36ba82e7ef3f26566f609cf0849316c7a168",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:kakariko-village"
+        },
+        "title": "Area Collectibles — Kakariko Village"
+      }
+    },
+    {
+      "id": "widget-area-kokiri-forest",
+      "kind": "widget",
+      "artifact": "layers/widget-area-kokiri-forest.json",
+      "report": "layers/widget-area-kokiri-forest.report.json",
+      "sha256": "5a031be3d8ec73aadd3d60e0ec768a5cf46246071fec731f70e578a17106502c",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:kokiri-forest"
+        },
+        "title": "Area Collectibles — Kokiri Forest"
+      }
+    },
+    {
+      "id": "widget-area-lake-hylia",
+      "kind": "widget",
+      "artifact": "layers/widget-area-lake-hylia.json",
+      "report": "layers/widget-area-lake-hylia.report.json",
+      "sha256": "8843fea7fab554f31c66a9adcb877ce0afa9c7db0a65dafb691a1b1800027f96",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:lake-hylia"
+        },
+        "title": "Area Collectibles — Lake Hylia"
+      }
+    },
+    {
+      "id": "widget-area-lon-lon-ranch",
+      "kind": "widget",
+      "artifact": "layers/widget-area-lon-lon-ranch.json",
+      "report": "layers/widget-area-lon-lon-ranch.report.json",
+      "sha256": "5b40633ad43d5e0c2d3338d3e4f191cc4f1079528824aafbb03fb126a39ebdb0",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:lon-lon-ranch"
+        },
+        "title": "Area Collectibles — Lon Lon Ranch"
+      }
+    },
+    {
+      "id": "widget-area-lost-woods",
+      "kind": "widget",
+      "artifact": "layers/widget-area-lost-woods.json",
+      "report": "layers/widget-area-lost-woods.report.json",
+      "sha256": "751d4716118022b391a94911910cf6c1e3311fbe4f4e65f4216fe76023bd86b3",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:lost-woods"
+        },
+        "title": "Area Collectibles — Lost Woods"
+      }
+    },
+    {
+      "id": "widget-area-sacred-forest-meadow",
+      "kind": "widget",
+      "artifact": "layers/widget-area-sacred-forest-meadow.json",
+      "report": "layers/widget-area-sacred-forest-meadow.report.json",
+      "sha256": "62b1f1bff2b4e8a1bd04d4f24ee80b0d7169f1c7d7555c92c2a0ba59a7276f43",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:sacred-forest-meadow"
+        },
+        "title": "Area Collectibles — Sacred Forest Meadow"
+      }
+    },
+    {
+      "id": "widget-area-shadow-temple",
+      "kind": "widget",
+      "artifact": "layers/widget-area-shadow-temple.json",
+      "report": "layers/widget-area-shadow-temple.report.json",
+      "sha256": "852b84b3b3f33c2fee40aff94df8007b81b105642b4af207d2b06a6240b75310",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:shadow-temple"
+        },
+        "title": "Area Collectibles — Shadow Temple"
+      }
+    },
+    {
+      "id": "widget-area-spirit-temple",
+      "kind": "widget",
+      "artifact": "layers/widget-area-spirit-temple.json",
+      "report": "layers/widget-area-spirit-temple.report.json",
+      "sha256": "337d4e9f3df6357c04ae0455159d156e02913b8a37aaa9393e2c9b366edf3558",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:spirit-temple"
+        },
+        "title": "Area Collectibles — Spirit Temple"
+      }
+    },
+    {
+      "id": "widget-area-water-temple",
+      "kind": "widget",
+      "artifact": "layers/widget-area-water-temple.json",
+      "report": "layers/widget-area-water-temple.report.json",
+      "sha256": "3245fcac28ee54c1aa1171137943b27eb1b7747602f7c463b4652396df930481",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:water-temple"
+        },
+        "title": "Area Collectibles — Water Temple"
+      }
+    },
+    {
+      "id": "widget-area-zoras-domain",
+      "kind": "widget",
+      "artifact": "layers/widget-area-zoras-domain.json",
+      "report": "layers/widget-area-zoras-domain.report.json",
+      "sha256": "d733d522856eede0608ad7b56eeac3fb6352fa8d4adaf9e542062af48445b96e",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:zoras-domain"
+        },
+        "title": "Area Collectibles — Zora's Domain"
+      }
+    },
+    {
+      "id": "widget-area-zoras-fountain",
+      "kind": "widget",
+      "artifact": "layers/widget-area-zoras-fountain.json",
+      "report": "layers/widget-area-zoras-fountain.report.json",
+      "sha256": "2edb1e425bbee815264e397dec765a5c04777e1f830d98bb1b373cef6241cb90",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:zoras-fountain"
+        },
+        "title": "Area Collectibles — Zora's Fountain"
+      }
+    },
+    {
+      "id": "widget-area-zoras-river",
+      "kind": "widget",
+      "artifact": "layers/widget-area-zoras-river.json",
+      "report": "layers/widget-area-zoras-river.report.json",
+      "sha256": "994375921d647311e50c7ec6cea6a6389ace03087e8c365e1b165375e51d31b2",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "location",
+          "locationId": "zelda-oot:zoras-river"
+        },
+        "title": "Area Collectibles — Zora's River"
+      }
+    },
+    {
       "id": "widget-equipment",
       "kind": "widget",
       "artifact": "layers/widget-equipment.json",

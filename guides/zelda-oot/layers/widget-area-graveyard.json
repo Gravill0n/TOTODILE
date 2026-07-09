@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-graveyard",
+    "title": "Area Collectibles — Graveyard",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:graveyard"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-graveyard:gs-006",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#6",
+          "cond": "An Empty Bottle and Bottle Bugs (Past)",
+          "how": "In the Graveyard, there is a soft soil location on the left side. Drop some bugs from a bottle to get a Skulltula to pop out."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-graveyard:gs-043",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#43",
+          "cond": "Boomerang (Past) (Night)",
+          "how": "Found on the wall at the southeast corner of the Graveyard. The Skulltula can be found at nighttime and you'll need the Boomerang to retrieve the token."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-graveyard:hp-01",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#1",
+          "cond": "Learn the Sun's Song (Child)",
+          "how": "Go up to the giant tombstone (Royal Family's Tomb) and turn back to the exit. There are five tombstones on your left side directly in front of you. The second from the right can be pulled back. Do so…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-graveyard:hp-02",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#2",
+          "cond": "Enough Rupees (10 per dig)",
+          "how": "Once you have a lot of Rupees to throw around, enter the Graveyard between 18:00 and 21:00 (you can talk to the guard at the entrance of Kakariko Village to check the time). You will have the option…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-graveyard:hp-18",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#18",
+          "cond": "Plant a Magic Bean",
+          "how": "On the left side of the Graveyard as a child, there is a soft soil location. Plant a Magic Bean and return as an adult later on. Ride the Magic Bean Plant up on to the ledge and roll into the crate t…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-graveyard:hp-20",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#20",
+          "cond": "Acquire the Hookshot",
+          "how": "Once you have acquired the Hookshot from Dampé's Crypt, you can race against Dampé's ghost again anytime you like. If you can complete the race in a minute or under, you will get a Piece of Heart. A…"
+        }
+      }
+    ]
+  }
+}

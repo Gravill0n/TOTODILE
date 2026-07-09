@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-desert-colossus",
+    "title": "Area Collectibles — Desert Colossus",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:desert-colossus"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-desert-colossus:gs-092",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#92",
+          "cond": "Requiem of Spirit, Bottle Bugs (Past)",
+          "how": "As a child, drop some bugs into the Soft Soil location just outside of the Spirit Temple to get a Gold Skulltula to appear."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-desert-colossus:gs-093",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#93",
+          "cond": "Requiem of Spirit, Magic Bean (Night)",
+          "how": "In the Desert Colossus, ride the Magic Bean plant to a large rock, near the north-central portion of the map. Play the Sun's Song to make it nighttime and you'll find a Skulltula right here."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-desert-colossus:gs-094",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#94",
+          "cond": "Reach Desert Colossus (Night)",
+          "how": "Near the oasis at the south end of the Desert Colossus, you'll find the Skulltula at the top of one of the palm trees at nighttime. Use the Longshot to defeat it and grab the token."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-desert-colossus:hp-36",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#36",
+          "cond": "Learn the Requiem of Spirit, plant a Magic Bean",
+          "how": "Next to the entrance of the Spirit Temple is a soft soil location. Plant a Magic Bean as a child (you can warp there using the Requiem of Spirit), and then come back as an adult and ride it. Near the…"
+        }
+      }
+    ]
+  }
+}

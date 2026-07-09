@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-spirit-temple",
+    "title": "Area Collectibles — Spirit Temple",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:spirit-temple"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-spirit-temple:gs-095",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#95",
+          "cond": "Enter Spirit Temple (Past)",
+          "how": "As a child in the Spirit Temple, the Gold Skulltula is located in the room found early on with the five silver rupees and a Wallmaster. Grab the rupees to drop the bridge and then use your Boomerang…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-spirit-temple:gs-096",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#96",
+          "cond": "Enter Spirit Temple (Past)",
+          "how": "As a child in the Spirit Temple, the Skulltula is located in the room with the Bombchu puzzle. Once you enter the room, climb the wall where there are two regular Skulltulas. Turn around and look dow…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-spirit-temple:gs-097",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#97",
+          "cond": "Enter Spirit Temple (Past)",
+          "how": "As a child in the Spirit Temple, the Skulltula is located in the room just before the Iron Knuckle battle. In this narrow hallway, turn around and look at the door you came through and the Skulltula…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-spirit-temple:gs-098",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#98",
+          "cond": "Silver Gauntlets",
+          "how": "As an adult in the Spirit Temple, the Skulltula is located in the room with rolling boulders and five silver rupees. Play the Song of Time in front of the Time Block to find the Skulltula hidden righ…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-spirit-temple:gs-099",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#99",
+          "cond": "Silver Gauntlets, Scarecrow's Song",
+          "how": "In the large Colossus room where the giant statue, climb up to the top on the west of the room. Navi will float over to a platform in the distance, so play the Scarecrow's Song. Longshot over and def…"
+        }
+      }
+    ]
+  }
+}

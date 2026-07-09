@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-fire-temple",
+    "title": "Area Collectibles — Fire Temple",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:fire-temple"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-fire-temple:gs-058",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#58",
+          "cond": "Enter Fire Temple",
+          "how": "In the large lava room with the broken bridge, found very early in the dungeon, turn to the left and you'll find a Time Block on a higher ledge. Stand on the lower platform and play the Song of Time…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-fire-temple:gs-059",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#59",
+          "cond": "Enter Fire Temple",
+          "how": "In the boulder maze room of the Fire Temple, there is a bombable wall near the northeast portion of the room. It is located on the bottom floor, right beneath the overhang. You can slash your sword a…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-fire-temple:gs-060",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#60",
+          "cond": "Scarecrow's Song",
+          "how": "In the boulder maze room of the Fire Temple, once you are on the higher level after passing through the room where the fire is chasing you, turn to the right and play the Scarecrow's Song. Hookshot t…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-fire-temple:gs-061",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#61",
+          "cond": "Scarecrow's Song",
+          "how": "In the boulder maze room of the Fire Temple, once you are on the higher level after passing through the room where the fire is chasing you, turn to the right and play the Scarecrow's Song. Hookshot t…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-fire-temple:gs-062",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#62",
+          "cond": "Megaton Hammer",
+          "how": "In the room just before the second battle with the Flare Dancer, block all the Floor Tiles and defeat the Like Like. The Skulltula is found on the back wall."
+        }
+      }
+    ]
+  }
+}

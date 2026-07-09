@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-zoras-domain",
+    "title": "Area Collectibles — Zora's Domain",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:zoras-domain"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-zoras-domain:gs-067",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#67",
+          "cond": "Hookshot (Night)",
+          "how": "Found inside of Zora's Domain, there is a Skulltula near the top of the frozen waterfall. Go through King Zora's Chamber and walk right up to the edge. Turn to the left and defeat the Skulltula. This…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-zoras-domain:hp-17",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#17",
+          "cond": "Reach Zora's Domain (Child)",
+          "how": "There are five unlit torches in Zora's Domain: As a child, run up to the Throne Room and light a Deku Stick, then run down the stairs and light the torch you find at the corner. This one will stay li…"
+        }
+      }
+    ]
+  }
+}

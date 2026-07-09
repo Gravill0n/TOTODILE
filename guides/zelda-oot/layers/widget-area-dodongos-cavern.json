@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-dodongos-cavern",
+    "title": "Area Collectibles — Dodongo's Cavern",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:dodongos-cavern"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-dodongos-cavern:gs-022",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#22",
+          "cond": "Reach Dodongo's Cavern (Past)",
+          "how": "In the room with the giant staircase, climb up to the very top and walk around to the south part of the room. Use the Slingshot to defeat the Skulltula and climb up to get the token."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-dodongos-cavern:gs-023",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#23",
+          "cond": "Bombs are Recommended (Past)",
+          "how": "From the entrance of the dungeon, head through the southeast door to reach the room with the Baby Dodongos. Blast away at the wall with a bomb and head down a room where you will find the Gold Skullt…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-dodongos-cavern:gs-024",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#24",
+          "cond": "Bombs (Past)",
+          "how": "In the room with the Fire Keese towards the end of the dungeon, there is a bombable wall at the north end of the room. Blast it open and you'll find a Gold Skulltula behind the Armos statue."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-dodongos-cavern:gs-044",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#44",
+          "cond": "Boomerang or Hookshot",
+          "how": "The Gold Skulltula is located in Dodongo's Cavern, within the room with the massive explodable staircase, but the staircase must be not lowered to collect it, and Link must enter the room from the 2F…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-dodongos-cavern:gs-055",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#55",
+          "cond": "Scarecrow's Song, Hookshot",
+          "how": "Re-enter Dodongo's Cavern and make your way to the room at the southeast part of the main room. This is the room with the Baby Dodongos and if you pay close attention, you'll notice Navi will fly up…"
+        }
+      }
+    ]
+  }
+}

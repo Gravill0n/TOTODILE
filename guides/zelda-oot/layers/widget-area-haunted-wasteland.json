@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-haunted-wasteland",
+    "title": "Area Collectibles — Haunted Wasteland",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:haunted-wasteland"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-haunted-wasteland:gs-091",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#91",
+          "cond": "Gerudo Token",
+          "how": "When traveling through the Haunted Wasteland, you'll come to a lone structure right in the middle of the Desert. Drop down into the below chamber and you'll find the Skulltula ahead, right between th…"
+        }
+      }
+    ]
+  }
+}

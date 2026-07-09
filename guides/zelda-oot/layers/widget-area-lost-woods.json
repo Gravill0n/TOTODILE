@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-lost-woods",
+    "title": "Area Collectibles — Lost Woods",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:lost-woods"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-lost-woods:gs-018",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#18",
+          "cond": "An Empty Bottle and Bottle Bugs (Past)",
+          "how": "From the entrance of the Lost Woods, go left and left again. Drop some bugs into the Soft Soil and the Skulltula will pop out."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lost-woods:gs-019",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#19",
+          "cond": "An Empty Bottle and Bottle Bugs (Past)",
+          "how": "From the entrance of the Lost Woods, go right, left, right, left, and left to find yourself in a Meadow. Walk forward and you'll find a Soft Soil location. Drop some bugs and the Skulltula will pop o…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lost-woods:gs-048",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#48",
+          "cond": "Plant Magic Bean (Night)",
+          "how": "At nighttime in the Meadow of the Lost Woods. From the entrance of the Lost Woods, head right, left, right, left, and left to reach the Meadow. Ride the Magic Bean plant up to the top and slash away…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lost-woods:hp-07",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#7",
+          "cond": "Acquire the Fairy Ocarina (Child)",
+          "how": "When you enter the Lost Woods as a child, go right one screen then jump down into the lower area. Stand on the stump off to the right to make two Skull Kids appear. Pull out your Ocarina and they'll…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lost-woods:hp-08",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#8",
+          "cond": "Learn Saria's Song (Child)",
+          "how": "Enter the Lost Woods as a child and go left one screen. Stand on the stump, pull out your Ocarina and play Saria's Song once you have acquired it. The Skull Kid on top of the tree trunk in front of y…"
+        }
+      }
+    ]
+  }
+}

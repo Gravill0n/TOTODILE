@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-jabu-jabus-belly",
+    "title": "Area Collectibles — Jabu-Jabu's Belly",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:jabu-jabus-belly"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-jabu-jabus-belly:gs-031",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#31",
+          "cond": "Reach Jabu-Jabu's Belly (Past)",
+          "how": "After meeting Ruto and falling down below, you'll pick her up and bring her to a room with a Floor Switch. Shoot the Skulltula on the side wall and climb up to get the token."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-jabu-jabus-belly:gs-032",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#32",
+          "cond": "Boomerang (Past)",
+          "how": "After falling down to the lower floor for a second time, you'll find two Skulltulas on the wall. Defeat them and use the Boomerang to grab the closer token."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-jabu-jabus-belly:gs-033",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#33",
+          "cond": "Boomerang (Past)",
+          "how": "After falling down to the lower floor for a second time, you'll find two Skulltulas on the wall. Defeat them and use the Boomerang to grab the further token."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-jabu-jabus-belly:gs-034",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#34",
+          "cond": "Boomerang (Past)",
+          "how": "In the final room before the boss, there is a Gold Skulltula on the vines. Defeat it and grab the token."
+        }
+      }
+    ]
+  }
+}

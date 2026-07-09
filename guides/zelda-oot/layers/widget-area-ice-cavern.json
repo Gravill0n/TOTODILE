@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-ice-cavern",
+    "title": "Area Collectibles — Ice Cavern",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:ice-cavern"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-ice-cavern:gs-068",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#68",
+          "cond": "Hookshot",
+          "how": "In the Ice Cavern, make your way to the first spinning blade room with the Silver Rupees. The Skulltula is located high up on the wall, just above one of the silver rupees. Use the Hookshot to snag t…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-ice-cavern:gs-069",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#69",
+          "cond": "Hookshot, Blue Fire",
+          "how": "In the Ice Cavern, located in the room with the Compass. From the first spinning blade room, use Blue Fire to melt the Red Ice and head east. The Gold Skulltula is hidden up on a higher pillar. Use t…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-ice-cavern:gs-070",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#70",
+          "cond": "Hookshot, Blue Fire",
+          "how": "In the large block pushing room of the Ice Cavern, the Gold Skulltula is found waiting on one of the higher walls."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-ice-cavern:hp-29",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#29",
+          "cond": "Acquire some Blue Fire",
+          "how": "In the far right room of the Ice Cavern, which is the same room where you can acquire some Blue Fire and find the Compass, there are lots of stalactites that fall from the ceiling. There are a few pa…"
+        }
+      }
+    ]
+  }
+}

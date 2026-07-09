@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-gerudo-fortress",
+    "title": "Area Collectibles — Gerudo Fortress",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:gerudo-fortress"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-gerudo-fortress:gs-089",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#89",
+          "cond": "Longshot or Epona (Night)",
+          "how": "Located near the top of Gerudo's Fortress, against the back wall. The Skulltula is only there at nighttime. Use your Longshot to snag the token."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-gerudo-fortress:gs-090",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#90",
+          "cond": "Gerudo Token (Night)",
+          "how": "At nighttime in the Gerudo's Fortress, head to the Horseback Archery Range. Located on the target at the far end of the area is a Gold Skulltula. Use the Longshot to defeat it and collect the token."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-gerudo-fortress:hp-34",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#34",
+          "cond": "Acquire the Gerudo Token, Longshot",
+          "how": "At the very top of the fortress is a large treasure chest. One of the doors to the south takes you to an upper ledge where you can walk around and climb up some vines to get to the highest point. Run…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-gerudo-fortress:hp-35",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#35",
+          "cond": "Acquire the Gerudo Token, Epona",
+          "how": "Once you have saved all the carpenters and acquired the Gerudo Token, you can bring Epona to the far east and play the Horseback Archery game. If you can manage to get over 1,000 points, you will be…"
+        }
+      }
+    ]
+  }
+}

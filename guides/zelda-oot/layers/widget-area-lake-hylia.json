@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 2,
+  "guideId": "zelda-oot",
+  "pass": "widget",
+  "widget": {
+    "id": "zelda-oot:area-lake-hylia",
+    "title": "Area Collectibles — Lake Hylia",
+    "scope": {
+      "kind": "location",
+      "locationId": "zelda-oot:lake-hylia"
+    },
+    "deckPosition": 3,
+    "type": "dataTable",
+    "columns": [
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "cond",
+        "label": "Conditions"
+      },
+      {
+        "id": "how",
+        "label": "How / Where"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "zelda-oot:area-lake-hylia:gs-015",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#15",
+          "cond": "An Empty Bottle and Bottle Bugs (Past)",
+          "how": "Near the Lakeside Laboratory at the northwest portion of the area, you will find a soft soil location. Drop some bugs to get the Skulltula."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lake-hylia:gs-016",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#16",
+          "cond": "Reach Lake Hylia (Past) (Night)",
+          "how": "At Lake Hylia, there is an island at the southeast corner of the map. This Gold Skulltula will only appear at nighttime."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lake-hylia:gs-041",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#41",
+          "cond": "Boomerang (Past) (Night)",
+          "how": "At the northwest side of Lake Hylia, walk onto the bridge near the Lakeside Laboratory. At nighttime, look at the building and you'll find a Skulltula. Defeat it and use the Boomerang to snag the tok…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lake-hylia:gs-071",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#71",
+          "cond": "Iron Boots",
+          "how": "Enter the Lakeside Laboratory and use the Iron Boots to sink down to the bottom of the small pool. Roll into the wooden crate here and a Skulltula will pop out. Use the Hookshot to defeat it and grab…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lake-hylia:gs-077",
+        "sourceRefs": [
+          "src-zd-skulltulas"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Gold Skulltula",
+          "num": "#77",
+          "cond": "Longshot (Night)",
+          "how": "After acquiring the Longshot, grapple up to the top of the tree, located on the island just above the entrance to the Water Temple. At nighttime, you'll find a Gold Skulltula up here."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lake-hylia:hp-06",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#6",
+          "cond": "Reach Lake Hylia (Child)",
+          "how": "In the Fishing Pond game, catch a 10-pound fish as a child and show it to the Fishing Hole Man to get a Piece of Heart."
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lake-hylia:hp-23",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#23",
+          "cond": "Plant a Magic Bean (or learn the Scarecrow's Song)",
+          "how": "At the very top of the Lakeside Laboratory is a Piece of Heart. To get up there, you can either plant a Magic Bean as a child and ride it as an adult or use the Scarecrow's Song and Hookshot up. Watc…"
+        }
+      },
+      {
+        "itemId": "zelda-oot:area-lake-hylia:hp-24",
+        "sourceRefs": [
+          "src-zd-heart-pieces"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "type": "Heart Piece",
+          "num": "#24",
+          "cond": "Acquire the Golden Scale",
+          "how": "Once you win the Golden Scale from the Fishing Pond, you can enter the Lakeside Laboratory and use it to dive down as far as you can. Link will touch the bottom and you will hear the \"secret\" chime.…"
+        }
+      }
+    ]
+  }
+}
