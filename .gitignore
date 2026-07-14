@@ -2,3 +2,4 @@ sources/
 .superpowers/
 *.local.json
 *.local.*
+graphify-out/
