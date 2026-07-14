@@ -46,8 +46,7 @@
         "hooks": [
           {
             "type": "command",
-            "if": "Bash(git commit*)",
-            "command": "cd \"${CLAUDE_PROJECT_DIR:-.}/app\" && yarn check 1>&2 || { echo 'BLOCKED: yarn check failed — fix before committing.' 1>&2; exit 2; }",
+            "command": "input=$(cat); cmd=$(printf '%s' \"$input\" | jq -r '.tool_input.command // empty'); case \"$cmd\" in *\"git commit\"*) cd \"${CLAUDE_PROJECT_DIR:-.}/app\" && yarn check 1>&2 || { echo 'BLOCKED: yarn check failed — fix before committing.' 1>&2; exit 2; } ;; esac",
             "timeout": 600,
             "statusMessage": "Running yarn check before commit…"
           }
