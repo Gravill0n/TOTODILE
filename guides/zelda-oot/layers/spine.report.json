@@ -3,7 +3,7 @@
   "guideId": "zelda-oot",
   "pass": "spine",
   "layer": "spine",
-  "generatedAt": "2026-07-09T13:18:27Z",
+  "generatedAt": "2026-07-14T09:12:50Z",
   "inputs": [
     {
       "file": "layers/data.json",
@@ -37,6 +37,7 @@
     "Only 2 steps remain flagged (see anomalies): Plenty of Hearts (cumulative, approximate placement) and Blind Explorer/Cartographer (mutually exclusive challenge-save achievements).",
     "Gerudo Training Ground folded into chapter 14 at its route position (section 14.3), per the outline gate — the ZD standalone GTG page is part of the same src-zd-walkthrough source, so no separate sourceRef was added.",
     "Stable IDs freshly minted (no prior artifact): locations zelda-oot:<place>, visits zelda-oot:v-<place>-<k> (k = k-th visit to that place in spine order, contiguous per location), steps <visit-id>:sN. Era changes (child<->adult via the Temple of Time pedestal) are described in step detail rather than as bare Temple of Time revisits, except where the route's purpose is the visit itself.",
-    "Source typos are reproduced verbatim in step detail per the compiler contract; connective prose is lightly reworded, facts (places, NPCs, items, counts, inputs) are not."
+    "Source typos are reproduced verbatim in step detail per the compiler contract; connective prose is lightly reworded, facts (places, NPCs, items, counts, inputs) are not.",
+    "Re-run 2026-07-14 (Pierre's request, no rejection note): added step-level images — 98 imageRefs on 93 steps. Item icons from the oot-tracker catalog on the obtain-step of each notable item (songs, stones/medallions, equipment, Great Fairy spells, capacity upgrades, trade-quest chain, masks, bottles, Heart Containers), plus the two previously unused catalog maps as step images (Overworld on the first Hyrule Field step, Dampé race route on the race step). Excluded by design: dungeon consumables, Heart Piece / Gold Skulltula icons (their widgets cover them), and a magic-meter icon on the DMT Great Fairy (step detail names only the Spin Attack). No step text, order, IDs, flags, or achievementRefs changed; all prior IDs preserved."
   ]
 }

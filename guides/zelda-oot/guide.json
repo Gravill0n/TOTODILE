@@ -359,7 +359,13 @@
               ],
               "detail": "The fenced Forest Training Center is in the southwestern area of the village (bottom left on your map). Crawl through the small hole in the wall next to the sign. Inside, round the corner for a Blue Rupee (5), wait for the giant boulder to pass, follow it and take the first right for another Blue Rupee (5). The next alcove holds a giant chest with the Kokiri Sword.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-kokiri-sword.png",
+                  "alt": "Kokiri Sword icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -389,7 +395,13 @@
               ],
               "detail": "The village is full of little secret rupee spots, and many can be collected repeatedly by entering a building and coming back out. Once you have 40 Rupees, head to the Shop (the northeast building) — the girl sitting above the doorway shows you can Z-target and talk to her — and purchase the Deku Shield.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-deku-shield.png",
+                  "alt": "Deku Shield icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -501,7 +513,13 @@
               ],
               "detail": "Slingshot Room — jump on the crumbling platform and across to the next (or climb the vines if you fall). The large chest holds the dungeon's treasure: the Fairy Slingshot. It uses Deku Seeds for ammo, which you can now find by slashing bushes.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-slingshot.png",
+                  "alt": "Fairy Slingshot icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -789,7 +807,13 @@
               ],
               "detail": "After the scene of her disintegrating, snag the Heart Container left in her remains, then step into the shiny light to teleport out of the dungeon.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-heart-container.png",
+                  "alt": "Heart Container icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -805,7 +829,13 @@
               "achievementRefs": [
                 48074
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-kokiris-emerald.png",
+                  "alt": "Kokiri's Emerald icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -848,7 +878,13 @@
               ],
               "detail": "On the bridge to Hyrule Field, Saria pops out to say goodbye. As a parting gift she gives you the Fairy Ocarina, a mystical instrument for playing magic songs throughout your journey.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-ocarina.png",
+                  "alt": "Fairy Ocarina icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -870,7 +906,14 @@
               ],
               "detail": "Exiting gives an overview of the field — the castle on the far side is the goal. Around the corner the owl Kaepora Gaebora interrupts: he reaffirms you must go to Hyrule Castle and explains the map. When he's done, select the BOTTOM option (No, I DON'T want to hear it again!) — the game swaps his responses to trip you up throughout.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/map-overworld.png",
+                  "alt": "Map of the full Hyrule overworld showing how all regions connect",
+                  "caption": "The Hyrule overworld",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -952,7 +995,13 @@
               "achievementRefs": [
                 48106
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-seedbag2.png",
+                  "alt": "Bullet Bag (40 seeds) icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -1005,7 +1054,13 @@
               ],
               "detail": "The area is littered with guards, and before sneaking past them an item is needed: return to the Market (someone who was there before is now missing), then head back toward the castle. By the vines you now find the red-haired girl, Malon, of Lon Lon Ranch in the center of Hyrule Field. Her father Talon went to deliver Lon Lon Milk to the castle and probably fell asleep — she asks you to wake him if you find him, and gives you… an egg.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-egg.png",
+                  "alt": "Weird Egg icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -1127,7 +1182,13 @@
               ],
               "detail": "After a peep through the window at the creepy Gerudo man she was spying on, Zelda recruits you to retrieve the remaining Spiritual Stones and reach the Sacred Realm before Ganondorf does. She gives you a letter carrying her royal authority.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-zeldas-letter.png",
+                  "alt": "Zelda's Letter icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -1141,7 +1202,13 @@
               ],
               "detail": "At the exit you meet Zelda's nursemaid Impa, a ninja of sorts loyal to the royal family who believes the young lady's visions. She teaches you your first song: Zelda's Lullaby — then leads you outside the castle and points you toward Kakariko Village. A few other things need doing before actually scaling Death Mountain…",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-zeldas-lullaby.png",
+                  "alt": "Zelda's Lullaby icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -1237,7 +1304,13 @@
               ],
               "detail": "In the final passage, press A to check the large stone. Navi reads the poetic inscription and you learn the Sun's Song — perhaps one of the handiest songs in the game. Work your way out, using the Sun's Song to stun the ReDeads, and step on the colorful pad in the first room to return to the surface.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-suns-song.png",
+                  "alt": "Sun's Song icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -1273,7 +1346,13 @@
               "achievementRefs": [
                 48226
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-hylian-shield.png",
+                  "alt": "Hylian Shield icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -1375,7 +1454,13 @@
               "achievementRefs": [
                 48241
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-bottle.png",
+                  "alt": "Empty Bottle icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -1451,7 +1536,13 @@
               "achievementRefs": [
                 48243
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-wallet1.png",
+                  "alt": "Adult Wallet icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -1505,7 +1596,13 @@
               "achievementRefs": [
                 48113
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-bottle.png",
+                  "alt": "Bottle of Lon Lon Milk icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -1535,7 +1632,13 @@
               ],
               "detail": "In the center of the corral, Malon chats about the castle and her father, then introduces you to the horse — who immediately runs from you. Keep speaking with her until she asks about \"the song her mother wrote\", then pull out your Ocarina in front of her: she teaches you Epona's Song.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-eponas-song.png",
+                  "alt": "Epona's Song icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -1798,7 +1901,13 @@
               "achievementRefs": [
                 48224
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-seedbag3.png",
+                  "alt": "Biggest Bullet Bag (50 seeds) icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -1882,7 +1991,13 @@
               ],
               "detail": "Link and Saria are reunited — she's been the one playing that song you hear in the woods all along, and she feels this place will be important to you both later. She teaches you her song, the same one as the woods.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-sarias-song.png",
+                  "alt": "Saria's Song icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -1936,7 +2051,13 @@
               "achievementRefs": [
                 48255
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-deku-stick.png",
+                  "alt": "Deku Stick upgrade icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -2001,7 +2122,13 @@
               "achievementRefs": [
                 48244
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-stone-of-agony.png",
+                  "alt": "Shard of Agony icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -2147,7 +2274,13 @@
               "achievementRefs": [
                 48249
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-goron-bracelet.png",
+                  "alt": "Goron's Bracelet icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -2444,7 +2577,13 @@
               ],
               "detail": "Back above the Trap Room: jump to the next platform, climb the ledge on the right, and open the large chest for the dungeon item — Bombs! Now we can blow everything up. (The bombable wall a level down? DON'T — just Business Scrubs selling Deku Nuts and Seeds.) Continue through the next opening.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-bombs.png",
+                  "alt": "Bombs icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -2585,7 +2724,13 @@
               ],
               "detail": "With the old king defeated, grab the Heart Container left behind, then enter the blue portal to leave the dungeon.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-heart-container.png",
+                  "alt": "Heart Container icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -2608,7 +2753,13 @@
               "achievementRefs": [
                 48278
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-gorons-ruby.png",
+                  "alt": "Goron's Ruby icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -2649,7 +2800,13 @@
               "achievementRefs": [
                 48336
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-bombbag2.png",
+                  "alt": "Big Bomb Bag icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -2859,7 +3016,13 @@
               "achievementRefs": [
                 48344
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-dins-fire.png",
+                  "alt": "Din's Fire icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -2910,7 +3073,13 @@
               "achievementRefs": [
                 48345
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-deku-nuts.png",
+                  "alt": "Deku Nut upgrade icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -2974,7 +3143,13 @@
               "achievementRefs": [
                 48346
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-beans.png",
+                  "alt": "Magic Bean icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -3146,7 +3321,13 @@
               "achievementRefs": [
                 48347
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-silver-scale.png",
+                  "alt": "Silver Scale icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -3182,7 +3363,13 @@
               ],
               "detail": "You surface in Lake Hylia. Near the water's edge by the stone pillar ruins, Navi flies to something in the water and glows green: swim over and dive for it — a bottle with a letter inside, from the missing Zora princess! The bottle itself stays unusable until the letter reaches King Zora. (If you skipped Lake Hylia's goodies, chapter 3 covers them.) Swim back through the hole to Zora's Domain.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-rutosletter.png",
+                  "alt": "Ruto's Letter icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -3256,7 +3443,13 @@
               "achievementRefs": [
                 48416
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-farores-wind.png",
+                  "alt": "Farore's Wind icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -3452,7 +3645,13 @@
               ],
               "detail": "Set Ruto down near the entrance and slaughter the four Stingers hiding in the floor. A large chest appears with the Boomerang! Equip it, pick Ruto back up and exit.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-boomerang.png",
+                  "alt": "Boomerang icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -3679,7 +3878,13 @@
               ],
               "detail": "Who knew electric fish thingies grew tons of zits when they died… Grab the Heart Container and meet Ruto in the blue light for a quick scolding about how long you took. Sure am glad I saved you…",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-heart-container.png",
+                  "alt": "Heart Container icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -3702,7 +3907,13 @@
               "achievementRefs": [
                 48418
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-zoras-sapphire.png",
+                  "alt": "Zora's Sapphire icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -3918,7 +4129,18 @@
                 48245,
                 48246
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-wallet2.png",
+                  "alt": "Giant's Wallet icon",
+                  "credit": "oot-tracker"
+                },
+                {
+                  "src": "images/icon-bombchus.png",
+                  "alt": "Bombchu icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -3988,7 +4210,18 @@
               "achievementRefs": [
                 48512
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-ocarina-of-time.png",
+                  "alt": "Ocarina of Time icon",
+                  "credit": "oot-tracker"
+                },
+                {
+                  "src": "images/icon-song-of-time.png",
+                  "alt": "Song of Time icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -4072,7 +4305,13 @@
               ],
               "detail": "Back at the shop, the second mask you're eligible to borrow is the Skull Mask, 20 Rupees — one whose owner would be impossible to find from what people say alone…",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-skull-mask.png",
+                  "alt": "Skull Mask icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -4096,7 +4335,13 @@
               "achievementRefs": [
                 48423
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-deku-stick.png",
+                  "alt": "Deku Stick upgrade icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -4188,7 +4433,13 @@
               ],
               "detail": "The last mask is less obvious: the Bunny Hood, 50 Rupees — simple, but it requires running around.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-bunnyhood.png",
+                  "alt": "Bunny Hood icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -4233,7 +4484,13 @@
               "achievementRefs": [
                 48514
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-mask-of-truth.png",
+                  "alt": "Mask of Truth icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -4261,7 +4518,13 @@
               "achievementRefs": [
                 49188
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-deku-nuts.png",
+                  "alt": "Deku Nut upgrade icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -4300,7 +4563,13 @@
               "achievementRefs": [
                 48516
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-mastersword.png",
+                  "alt": "Master Sword icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -4316,7 +4585,13 @@
               ],
               "detail": "Link wakes in a flowing blue temple where an old man introduces himself as Rauru, Sage of Light: you were destined to take up the Master Sword, but too young for the journey, so your spirit slept seven years while Ganondorf claimed the Triforce and turned Hyrule into a land of monsters. The way to overthrow him is to gather the powers of the six sages — Rauru being the first; he gives you the Light Medallion and returns you to the quiet, dark Temple of Time. There, Sheik introduces herself — a guide of sorts, fond of poetic legends — and tells you to visit Kakariko Village before tackling the Forest Temple.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-light-medallion.png",
+                  "alt": "Light Medallion icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -4489,7 +4764,14 @@
               ],
               "detail": "Dampé's Amazing Cave Race — follow the dead gravekeeper's ghost and don't get left behind! First chunk: hug the left wall. After the first door, hug the right wall to the big room, take the right exit, then a left and a right (purple flames). After that door, keep along the right side; at the ledges, climb the left one or straight ahead, then follow the path to the end.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/map-dampe-race.png",
+                  "alt": "Map of Dampé's cave race route under the graveyard",
+                  "caption": "Dampé race route",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -4505,7 +4787,13 @@
               "achievementRefs": [
                 48583
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-hookshot.png",
+                  "alt": "Hookshot icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -4778,7 +5066,13 @@
               ],
               "detail": "Up the steps, Link gazes at the stump where Saria used to sit — then Sheik appears out of nowhere (as usual), quotes more poetry, and teaches you a snazzy little song that teleports you here anytime you want. Awesome!",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-minuet-of-forest.png",
+                  "alt": "Minuet of Forest icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -5050,7 +5344,13 @@
               ],
               "detail": "The Bow Room has a Stalfos and a central pit — fall in and you're back at the earlier two-Stalfos room. Beat the first and a floating platform descends to fill the pit; two more appear, and if the second isn't killed fast enough the other revives! When all three are down, the large chest yields the Fairy Bow. Yippee!",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-bow.png",
+                  "alt": "Fairy Bow icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -5311,7 +5611,13 @@
               ],
               "detail": "Snag the Heart Container and step into the blue light.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-heart-container.png",
+                  "alt": "Heart Container icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -5335,7 +5641,13 @@
               "achievementRefs": [
                 48819
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-forest-medallion.png",
+                  "alt": "Forest Medallion icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -5357,7 +5669,13 @@
               ],
               "detail": "Navi suggests returning to the Temple of Time, where Sheik waits: she teaches the Prelude of Light, a warp straight back to the Temple of Time, and mentions you can replace the sword in the pedestal to become a child again. (Some goodies await back in childhood — handled later. On 3DS, talking to Sheik also unlocks the Boss Gauntlet: sleep in your old bed to refight beaten bosses.)",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-prelude-of-light.png",
+                  "alt": "Prelude of Light icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -5381,7 +5699,13 @@
               "achievementRefs": [
                 48823
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-quiver40.png",
+                  "alt": "Big Quiver (40 arrows) icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -5443,7 +5767,13 @@
               ],
               "detail": "Big Poes appear only when you cross certain invisible trigger rings on the ground. Ride through them on Epona, whip out the Fairy Bow and shoot the Poe as it flees — two hits down it. Speak with a downed Poe to bottle it, then ferry them back to the Poe Shop repeatedly, as obnoxious as that is. Each turned-in Big Poe pays 50 Rupees.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-bottlewithbigpoe.png",
+                  "alt": "Bottled Big Poe icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -5513,7 +5843,13 @@
                 48821,
                 48822
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-bottle.png",
+                  "alt": "Empty Bottle icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -5577,7 +5913,13 @@
               "achievementRefs": [
                 48943
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-golden-scale.png",
+                  "alt": "Golden Scale icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -5751,7 +6093,13 @@
               "achievementRefs": [
                 48912
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-goron-tunic.png",
+                  "alt": "Goron Tunic icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -5788,7 +6136,13 @@
               ],
               "detail": "Enter the Crater from Darunia's room, Hookshot across the gap of the broken bridge, and walk along it until Sheik interrupts — with, yet again, another song: the Bolero of Fire, which warps you to Death Mountain Crater whenever you like. The song's rather boring, but those cinematic camera angles on steroids… Oooo.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-bolero-of-fire.png",
+                  "alt": "Bolero of Fire icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -6212,7 +6566,13 @@
               ],
               "detail": "Hammer Cavern — difficult AND annoying: step on the ledge switch, then run the skinny platform up to the giant chest before the fire returns; fall off and you redo the whole climb back to this room. Tip: cast Farore's Wind at the door first for a warp back up (optional spell — not required). Clear the Fire Keese along the left side up to the chest first so they can't bother the run, jump back to the switch, and go. A few tries maybe, but the prize is the Megaton Hammer.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-megaton-hammer.png",
+                  "alt": "Megaton Hammer icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -6383,7 +6743,13 @@
               ],
               "detail": "The triumphant music announces the blue teleport light — but snag the Heart Container first!",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-heart-container.png",
+                  "alt": "Heart Container icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -6406,7 +6772,13 @@
               "achievementRefs": [
                 48915
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-fire-medallion.png",
+                  "alt": "Fire Medallion icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -6422,7 +6794,13 @@
               ],
               "detail": "With the Hammer, nearby goodies open up. Head left back across the bridge (Hookshot the broken part and climb up), then work as far left as possible, over a bridge to three red boulders — Bombs don't crack these; Hammer the two on the right blocking the entrance. Inside, play Zelda's Lullaby on the Triforce symbol: the Great Fairy of Wisdom doubles your Magic Meter. Nifty. Exit and smash the red boulder on your right for the fastest way out via the Crater entrance to Death Mountain Trail.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-magic-meter2.png",
+                  "alt": "Double Magic Meter icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -6768,7 +7146,13 @@
               "achievementRefs": [
                 48254
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-iron-boots.png",
+                  "alt": "Iron Boots icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -6783,7 +7167,13 @@
               ],
               "detail": "Sheik appears with more poetry: the Zoras were trapped under the ice, and she freed only the Zora princess (Ruto), who went to the Water Temple. She teaches the Serenade of Water, warping you to Lake Hylia.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-serenade-of-water.png",
+                  "alt": "Serenade of Water icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -6844,7 +7234,13 @@
               "achievementRefs": [
                 48941
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-zora-tunic.png",
+                  "alt": "Zora Tunic icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra",
@@ -6890,7 +7286,13 @@
               ],
               "detail": "A word on the Giant's Knife: Medigoron in Goron City's second level (behind bombable walls) sells adults a giant two-handed \"knife\" that shatters after a few swings and can be rebought endlessly. The unbreakable version — Biggoron's Sword — comes from a trading sequence, doable much earlier but slotted here to keep temple order. It's optional but the reward is sweet; you'll need Epona (chapter 7). Start with the Cucco Lady in Kakariko: she's breeding a new Cucco and gives you a Pocket Egg to test-run, since you look like a good Cucco raiser.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-egg.png",
+                  "alt": "Pocket Egg icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -6905,7 +7307,13 @@
               ],
               "detail": "Hatch the egg by reaching dawn (Sun's Song twice, or wait in Hyrule Field), then enter the house right below the stairs (across from the Skulltula House and Shooting Gallery). Talon sleeps on the bed again — use the chicken to wake him and he returns to Lon Lon Ranch (if you already got Epona there). Return to the Cucco Lady, who gives you Cojiro.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-cojiro.png",
+                  "alt": "Cojiro icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -6927,7 +7335,13 @@
               ],
               "detail": "Cojiro belonged to the Cucco Lady's lost brother — the freaky pale guy you may have seen in Kakariko at night. In the Lost Woods, take the first left to find him; show him Cojiro and he asks for help, handing over the Odd Mushroom.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-odd-mushroom.png",
+                  "alt": "Odd Mushroom icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -6964,7 +7378,13 @@
               ],
               "detail": "Run to the last building on the right heading toward Death Mountain — the Potion Shop, open only by day (Sun's Song if night). Go through the back door on the left, appear outside, jump down and up the ramp to a little door: the old hag's secret shop, where she trades you the Odd Potion.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-odd-potion.png",
+                  "alt": "Odd Potion icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -6986,7 +7406,13 @@
               ],
               "detail": "Bring the Odd Potion back to the Lost Woods, to the Kokiri girl who tells you the Cucco Lady's brother has turned into a Stalfos — lovely. She demands the Odd Potion back (it belongs in the forest) and gives you the Poacher's Saw the man left behind.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-poucher-saw.png",
+                  "alt": "Poacher's Saw icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -7008,7 +7434,13 @@
               ],
               "detail": "Head to Gerudo Valley and cross the bridge (a running start on Epona or the Longshot gets you over if it isn't fixed). Speak with the fat guy here, who trades you the Broken Goron's Sword for the saw.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-broken-sword.png",
+                  "alt": "Broken Goron's Sword icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -7029,7 +7461,13 @@
               ],
               "detail": "Take the broken sword to the very top of Death Mountain, just outside the Crater, to Biggoron (warp to the Crater with the Bolero of Fire since this trade isn't timed). Volcano dust has blinded him; he takes the broken sword and gives you the Prescription.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-perscription.png",
+                  "alt": "Prescription icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -7050,7 +7488,13 @@
               ],
               "detail": "Go to Zora's Domain and speak with the now-unfrozen King Zora. He doesn't have the eye drops, only the ingredients, and trades you the Eyeball Frog.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-frog.png",
+                  "alt": "Eyeball Frog icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -7071,7 +7515,13 @@
               ],
               "detail": "Another three-minute timer: run out of Zora's Domain, jump into the stream, stay left and swim fast back to Hyrule Field, then gallop Epona southwest to Lake Hylia over the fences. Give the Eyeball Frog to the freaky old scientist in the Lakeside Laboratory — he's thrilled (thinks he can eat it) but turns it into the World's Finest Eye Drops.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-eyedrops.png",
+                  "alt": "World's Finest Eye Drops icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -7092,7 +7542,13 @@
               ],
               "detail": "The hard one: four minutes, but far tougher. Run out, ride Epona back to Kakariko, straight through and up the mountain (the bean planted at Dodongo's Cavern saves lots of time), across the valley that used to rain flaming rocks. Fairy-Bow the Skullwalltulas above and climb — you should make it with seconds to spare. Biggoron takes the drops and gives the Claim Check; the sword takes a couple of days.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-claimcheck.png",
+                  "alt": "Claim Check icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -7109,7 +7565,13 @@
               "achievementRefs": [
                 48975
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-biggoron-sword.png",
+                  "alt": "Biggoron's Sword icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -7490,7 +7952,13 @@
               ],
               "detail": "Longshot Room — open the large chest for the Longshot! Stand by the Time Block on the far side of the chest and play the Song of Time to clear it, then fall into the cavern below.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-longshot.png",
+                  "alt": "Longshot icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -7753,7 +8221,18 @@
               "achievementRefs": [
                 48947
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-heart-container.png",
+                  "alt": "Heart Container icon",
+                  "credit": "oot-tracker"
+                },
+                {
+                  "src": "images/icon-water-medallion.png",
+                  "alt": "Water Medallion icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -7778,7 +8257,13 @@
               "achievementRefs": [
                 48949
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-fire-arrows.png",
+                  "alt": "Fire Arrow icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -7823,7 +8308,13 @@
               ],
               "detail": "Entering Kakariko after the Water Temple, a scene plays: the village is in flames, and Sheik grimly faces the boss of the coming Shadow Temple as it emerges from the well where it was sealed (great place to store something evil — in the water supply). After you're beaten up, Sheik teaches the Nocturne of Shadow. Too bad we couldn't teleport to this town earlier! You could technically enter the Shadow Temple now, but a mini-dungeon first grants a very useful item.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-nocturne-of-shadow.png",
+                  "alt": "Nocturne of Shadow icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -7837,7 +8328,13 @@
               ],
               "detail": "We first learned about the Song of Storms after the Hookshot but never needed it — get it now if you haven't. Enter the Windmill and speak with Guru-Guru, the furious guy at his music box, who rants about a \"stupid kid\" who came seven years ago and played \"that song\" that wrecked the windmill. Pull out your Ocarina and he teaches it to you. *snicker*",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-song-of-storms.png",
+                  "alt": "Song of Storms icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -8012,7 +8509,13 @@
               "achievementRefs": [
                 48951
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-lense.png",
+                  "alt": "Lens of Truth icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -8264,7 +8767,13 @@
               ],
               "detail": "Follow the right wall again into the hidden corridor between the two jars, and again in the second half of the room (floating jars on the left), to the Hover Boots Room. Another Dead Hand, with a twist: use the Lens to see where he's burrowed, move away from where he'll pop up, let the hands grab you, then confront him — easily beaten now that you do more damage, especially with the Biggoron's Sword. The chest holds the Hover Boots. Backtrack several rooms toward the entrance.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-hover-boots.png",
+                  "alt": "Hover Boots icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -8651,7 +9160,18 @@
               "achievementRefs": [
                 49019
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-heart-container.png",
+                  "alt": "Heart Container icon",
+                  "credit": "oot-tracker"
+                },
+                {
+                  "src": "images/icon-shadow-medallion.png",
+                  "alt": "Shadow Medallion icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -8812,7 +9332,13 @@
               "achievementRefs": [
                 48896
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-membership-card.png",
+                  "alt": "Gerudo Membership Card icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -8860,7 +9386,13 @@
               "achievementRefs": [
                 49040
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-quive50.png",
+                  "alt": "Biggest Quiver (50 arrows) icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra",
@@ -8982,7 +9514,13 @@
               "achievementRefs": [
                 49187
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-requiem-of-spirit.png",
+                  "alt": "Requiem of Spirit icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -9048,7 +9586,13 @@
               "achievementRefs": [
                 49186
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-nayrus-love.png",
+                  "alt": "Nayru's Love icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -9257,7 +9801,13 @@
               "achievementRefs": [
                 49189
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-silver-gauntlet.png",
+                  "alt": "Silver Gauntlets icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -9475,7 +10025,13 @@
               ],
               "detail": "Outside on the Colossus's left hand, a large chest thumps down: open it for the Mirror Shield. (Remember to switch back to the Hylian Shield to reflect ordinary physical attacks like Octorok shots.) Return to the four-Armos room.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-mirror-shield.png",
+                  "alt": "Mirror Shield icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],
@@ -9648,7 +10204,18 @@
               "achievementRefs": [
                 49263
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-heart-container.png",
+                  "alt": "Heart Container icon",
+                  "credit": "oot-tracker"
+                },
+                {
+                  "src": "images/icon-spirit-medallion.png",
+                  "alt": "Spirit Medallion icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -9681,7 +10248,13 @@
               "achievementRefs": [
                 49286
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-light-arrows.png",
+                  "alt": "Light Arrow icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -9956,7 +10529,13 @@
               "achievementRefs": [
                 49185
               ],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-ice-arrows.png",
+                  "alt": "Ice Arrow icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough",
                 "src-ra"
@@ -10010,7 +10589,13 @@
               ],
               "detail": "Fire-Arrow the unlit torch on the right platform to make blocks appear temporarily; run them (avoid the Green Bubble, beware the Like Like spitting you into the pit) to the far platform. Re-light torches to reform blocks, jump platform to platform to the switch, which spawns a large chest on the big platform — Longshot up and open it for the Golden Gauntlets (why Shadow went first). Then Lens the invisible path to a rusty switch, Hammer it to open the door, and cross (Longshot the unlit torch or take the invisible middle path) through.",
               "achievementRefs": [],
-              "images": [],
+              "images": [
+                {
+                  "src": "images/icon-golde-gauntlet.png",
+                  "alt": "Golden Gauntlets icon",
+                  "credit": "oot-tracker"
+                }
+              ],
               "sourceRefs": [
                 "src-zd-walkthrough"
               ],

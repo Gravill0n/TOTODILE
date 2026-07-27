@@ -11,7 +11,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "94f5ed4cfa3228f7c99d3a2181665f54ef1fdd8d281bb2310126c4383f7f3123"
+      "sha256": "c7f2f266082ee765cda7a01bf23eb79e82329e86d1a9e657f634cec6d5a1fd28"
     },
     {
       "file": "deck.json",
@@ -28,6 +28,7 @@
     "flaggedItemIds": []
   },
   "notes": [
-    "Slot 1 (checklist, global). 36 checkable rows, one per heart-pieces dataset record (Heart Piece #1–#36); note carries the location, unlock condition and a trimmed how-to. Same pieces are also checkable per-location in the slot-3 Area Collectibles tables (Pierre chose individually-checkable collectibles)."
+    "Slot 1 (checklist, global). 36 checkable rows, one per heart-pieces dataset record (Heart Piece #1–#36); note carries the location, unlock condition and a trimmed how-to. Same pieces are also checkable per-location in the slot-3 Area Collectibles tables (Pierre chose individually-checkable collectibles).",
+    "Re-stamped 2026-07-27: the 2026-07-14 spine re-run added step images only (verified: with the images arrays stripped, the pre- and post-re-run spine are byte-identical), so this layer's artifact is unchanged and only the recorded layers/spine.json input digest moved."
   ]
 }
