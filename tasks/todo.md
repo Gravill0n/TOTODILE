@@ -13,7 +13,7 @@ checkpoint.
       the plan — the motion and focus-ring vars, because Tailwind's `--ease-in-out`,
       `duration-*` and the shadcn `ring-ring/50 ring-[3px]` pattern already carry exactly those
       values; a parallel var would only invite divergence (S)
-- [ ] **0.3** Add missing shadcn primitives — `accordion`, `breadcrumb`, `progress`,
+- [x] **0.3** Add missing shadcn primitives — `accordion`, `breadcrumb`, `progress`,
       `toggle-group` (+`toggle`); paper-fit them; extend `coreSet.test.tsx` (M)
 - [ ] **0.4** `guideUi` IDB store — `features/progress/db.ts` at v2, `schema/guideUi.ts`,
       `guideUiStore.ts`, `useGuideUi`; v1→v2 migration test (M)
