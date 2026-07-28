@@ -6,11 +6,13 @@ checkpoint.
 
 ## Phase 0 — Foundations
 
-- [ ] **0.1** Task files — this list + `tasks/plan.md` (XS)
-- [ ] **0.2** Port the design-system tokens into `app/src/index.css` — 7 signal-tint colours with
+- [x] **0.1** Task files — this list + `tasks/plan.md` (XS)
+- [x] **0.2** Port the design-system tokens into `app/src/index.css` — 7 signal-tint colours with
       dark values, `--font-sans`/`--font-mono`, `--tracking-label`, `--radius-xs`, ink-tinted
-      shadows, motion + focus-ring vars. Not ported: `--font-serif`, `[data-theme]`,
-      `--color-mark` (S)
+      shadows. Not ported: `--font-serif`, `[data-theme]`, `--color-mark`, and — deviating from
+      the plan — the motion and focus-ring vars, because Tailwind's `--ease-in-out`,
+      `duration-*` and the shadcn `ring-ring/50 ring-[3px]` pattern already carry exactly those
+      values; a parallel var would only invite divergence (S)
 - [ ] **0.3** Add missing shadcn primitives — `accordion`, `breadcrumb`, `progress`,
       `toggle-group` (+`toggle`); paper-fit them; extend `coreSet.test.tsx` (M)
 - [ ] **0.4** `guideUi` IDB store — `features/progress/db.ts` at v2, `schema/guideUi.ts`,

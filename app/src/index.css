@@ -18,6 +18,36 @@
   --color-accent: #a8431d;
   /* The one unmistakable missable treatment, used everywhere (§7). */
   --color-missable: #b3261e;
+
+  /* Signal tints DERIVED from the two signals above — surfaces and ink for
+     the missable card, the sync receipt and the review verdicts. Kept few on
+     purpose: they are shades of the two signals, never a third one. */
+  --color-missable-bg: #fbeeea;
+  --color-missable-ink: #8a2418;
+  --color-warn: #c88a2e;
+  --color-warn-bg: #f7efdd;
+  --color-warn-ink: #7a5a1e;
+  --color-ok: #4a6a4a;
+  --color-ok-bg: #eaf0ea;
+
+  /* Type: the platform stack, no webfont ever loaded. Mono carries counts and
+     percentages so tabular figures don't jitter as they change. */
+  --font-sans:
+    system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* The UPPERCASE eyebrow labels — NOW, BACKLOG, MISSABLE AHEAD, REFERENCE. */
+  --tracking-label: 0.06em;
+
+  /* Elevation is hairline-first: surfaces are a 1px --color-line border and
+     shadow is a whisper, tinted with ink rather than neutral black. To make
+     something stand out, change its border color, not its shadow. */
+  --shadow-xs: 0 1px 2px 0 rgba(43, 38, 32, 0.06);
+  --shadow-sm:
+    0 1px 3px 0 rgba(43, 38, 32, 0.1), 0 1px 2px -1px rgba(43, 38, 32, 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgba(43, 38, 32, 0.12),
+    0 4px 6px -4px rgba(43, 38, 32, 0.1);
 }
 
 /* shadcn semantic tokens are an ALIAS layer over the paper palette (Workstream
@@ -61,6 +91,7 @@
    there is no collision to resolve. `--color-card` likewise stays the paper
    card surface (same value as shadcn's). */
 @theme inline {
+  --radius-xs: calc(var(--radius) - 6px);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -98,5 +129,13 @@
     --color-line: #443c2f;
     --color-accent: #e0824f;
     --color-missable: #e2574a;
+
+    --color-missable-bg: #3a201c;
+    --color-missable-ink: #f0b9ad;
+    --color-warn: #d9a24e;
+    --color-warn-bg: #322616;
+    --color-warn-ink: #e6c88f;
+    --color-ok: #8fb28f;
+    --color-ok-bg: #22301f;
   }
 }
