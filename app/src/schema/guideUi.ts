@@ -13,8 +13,15 @@ export const guideUiRecord = z.object({
   // widget appends it instead of dropping the arrangement.
   widgetOrder: z.array(widgetId).default([]),
   pinnedWidgetIds: z.array(widgetId).default([]),
-  // A multiplier: 1 = 100%, 4 = 400% — the range the map panel offers.
+  // Where the map was left, not just how far in. A multiplier — 1 = 100%,
+  // 4 = 400%, the range the map panel offers — plus the scroll position.
   mapZoom: z.number().min(1).max(4).default(1),
+  // The pan is a FRACTION of the scrollable extent (0 = left/top edge,
+  // 1 = right/bottom edge), never pixels: the map panel is a ~320px column on
+  // desktop and full-width on the phone, so a pixel offset would land somewhere
+  // else on the other posture. Meaningless at zoom 1, where nothing overflows.
+  mapPanX: z.number().min(0).max(1).default(0),
+  mapPanY: z.number().min(0).max(1).default(0),
 });
 
 export type GuideUiRecord = z.infer<typeof guideUiRecord>;

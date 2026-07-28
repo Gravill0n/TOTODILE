@@ -6,7 +6,14 @@ import { closeDb, db, GUIDE_UI_STORE as STORE } from "./db";
 export type { GuideUiRecord } from "@/schema";
 
 export function emptyGuideUi(guideId: string): GuideUiRecord {
-  return { guideId, widgetOrder: [], pinnedWidgetIds: [], mapZoom: 1 };
+  return {
+    guideId,
+    widgetOrder: [],
+    pinnedWidgetIds: [],
+    mapZoom: 1,
+    mapPanX: 0,
+    mapPanY: 0,
+  };
 }
 
 // Same implicit forward migration as the progress slot: spreading over the

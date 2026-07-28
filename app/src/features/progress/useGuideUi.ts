@@ -6,6 +6,15 @@ import { emptyGuideUi, readGuideUi, writeGuideUi } from "./guideUiStore";
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 4;
 
+// How far the map is zoomed and where it is scrolled. One value, because
+// zooming around a point moves both — the panel computes the view and hands it
+// over whole, so a zoom press is one write, not two.
+export type MapView = {
+  zoom: number;
+  panX: number;
+  panY: number;
+};
+
 export type GuideUi = {
   // False until the stored record has landed. Renderers don't need to wait —
   // the defaults are already the right answer for a guide never arranged — but
@@ -14,13 +23,15 @@ export type GuideUi = {
   widgetOrder: readonly string[];
   pinnedWidgetIds: readonly string[];
   mapZoom: number;
+  mapPanX: number;
+  mapPanY: number;
   setWidgetOrder: (widgetIds: string[]) => void;
   togglePinned: (widgetId: string) => void;
-  setMapZoom: (zoom: number) => void;
+  setMapView: (view: MapView) => void;
 };
 
-function clampZoom(zoom: number): number {
-  return Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, zoom));
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, value));
 }
 
 // Owns the per-guide UI arrangement, mirroring useGuideProgress: state lives at
@@ -76,9 +87,14 @@ export function useGuideUi(guideId: string): GuideUi {
     [update],
   );
 
-  const setMapZoom = useCallback(
-    (zoom: number) =>
-      update((record) => ({ ...record, mapZoom: clampZoom(zoom) })),
+  const setMapView = useCallback(
+    (view: MapView) =>
+      update((record) => ({
+        ...record,
+        mapZoom: clamp(view.zoom, MIN_ZOOM, MAX_ZOOM),
+        mapPanX: clamp(view.panX, 0, 1),
+        mapPanY: clamp(view.panY, 0, 1),
+      })),
     [update],
   );
 
@@ -87,8 +103,10 @@ export function useGuideUi(guideId: string): GuideUi {
     widgetOrder: record.widgetOrder,
     pinnedWidgetIds: record.pinnedWidgetIds,
     mapZoom: record.mapZoom,
+    mapPanX: record.mapPanX,
+    mapPanY: record.mapPanY,
     setWidgetOrder,
     togglePinned,
-    setMapZoom,
+    setMapView,
   };
 }

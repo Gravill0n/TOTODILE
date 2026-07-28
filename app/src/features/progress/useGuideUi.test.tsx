@@ -29,6 +29,8 @@ describe("useGuideUi", () => {
       widgetOrder: ["fictional-quest:bosses", "fictional-quest:coins"],
       pinnedWidgetIds: ["fictional-quest:bosses"],
       mapZoom: 1.8,
+      mapPanX: 0.2,
+      mapPanY: 0.4,
     });
 
     const { result } = renderHook(() => useGuideUi("fictional-quest"));
@@ -43,7 +45,7 @@ describe("useGuideUi", () => {
     const { result } = renderHook(() => useGuideUi("fictional-quest"));
     await waitFor(() => expect(result.current.hydrated).toBe(true));
 
-    act(() => result.current.setMapZoom(2.2));
+    act(() => result.current.setMapView({ zoom: 2.2, panX: 0, panY: 0 }));
 
     expect(result.current.mapZoom).toBe(2.2);
     await waitFor(async () =>
@@ -51,14 +53,39 @@ describe("useGuideUi", () => {
     );
   });
 
+  it("writes the pan through with the zoom", async () => {
+    const { result } = renderHook(() => useGuideUi("fictional-quest"));
+    await waitFor(() => expect(result.current.hydrated).toBe(true));
+
+    act(() => result.current.setMapView({ zoom: 3, panX: 0.4, panY: 0.75 }));
+
+    expect(result.current.mapPanX).toBe(0.4);
+    expect(result.current.mapPanY).toBe(0.75);
+    await waitFor(async () => {
+      const stored = await readGuideUi("fictional-quest");
+      expect([stored.mapZoom, stored.mapPanX, stored.mapPanY]).toEqual([
+        3, 0.4, 0.75,
+      ]);
+    });
+  });
+
+  it("clamps the pan to the scrollable extent", async () => {
+    const { result } = renderHook(() => useGuideUi("fictional-quest"));
+    await waitFor(() => expect(result.current.hydrated).toBe(true));
+
+    act(() => result.current.setMapView({ zoom: 2, panX: 1.4, panY: -0.2 }));
+    expect(result.current.mapPanX).toBe(1);
+    expect(result.current.mapPanY).toBe(0);
+  });
+
   it("clamps the zoom to the range the map panel offers", async () => {
     const { result } = renderHook(() => useGuideUi("fictional-quest"));
     await waitFor(() => expect(result.current.hydrated).toBe(true));
 
-    act(() => result.current.setMapZoom(9));
+    act(() => result.current.setMapView({ zoom: 9, panX: 0, panY: 0 }));
     expect(result.current.mapZoom).toBe(4);
 
-    act(() => result.current.setMapZoom(0.1));
+    act(() => result.current.setMapView({ zoom: 0.1, panX: 0, panY: 0 }));
     expect(result.current.mapZoom).toBe(1);
   });
 

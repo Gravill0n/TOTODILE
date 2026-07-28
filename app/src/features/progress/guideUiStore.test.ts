@@ -18,7 +18,40 @@ describe("guideUi store", () => {
       widgetOrder: [],
       pinnedWidgetIds: [],
       mapZoom: 1,
+      mapPanX: 0,
+      mapPanY: 0,
     });
+  });
+
+  it("remembers where the map was zoomed, not just how far", async () => {
+    await writeGuideUi({
+      guideId: "fictional-quest",
+      widgetOrder: [],
+      pinnedWidgetIds: [],
+      mapZoom: 3,
+      mapPanX: 0.62,
+      mapPanY: 0.25,
+    });
+    await closeGuideUiDb();
+
+    const record = await readGuideUi("fictional-quest");
+    expect([record.mapZoom, record.mapPanX, record.mapPanY]).toEqual([
+      3, 0.62, 0.25,
+    ]);
+  });
+
+  // A record written before the pan existed must still read — the store's
+  // spread-over-defaults is the only forward migration these records get.
+  it("defaults the pan for a record written before it existed", async () => {
+    await writeGuideUi({
+      guideId: "fictional-quest",
+      widgetOrder: [],
+      pinnedWidgetIds: [],
+      mapZoom: 2,
+    } as never);
+
+    const record = await readGuideUi("fictional-quest");
+    expect([record.mapZoom, record.mapPanX, record.mapPanY]).toEqual([2, 0, 0]);
   });
 
   it("round-trips an arrangement across connections", async () => {
@@ -27,6 +60,8 @@ describe("guideUi store", () => {
       widgetOrder: ["fictional-quest:coins", "fictional-quest:bosses"],
       pinnedWidgetIds: ["fictional-quest:bosses"],
       mapZoom: 2.4,
+      mapPanX: 0.5,
+      mapPanY: 0.33,
     });
     await closeGuideUiDb();
 
@@ -45,6 +80,8 @@ describe("guideUi store", () => {
       widgetOrder: ["fictional-quest:coins"],
       pinnedWidgetIds: [],
       mapZoom: 1,
+      mapPanX: 0,
+      mapPanY: 0,
     });
     const other = await readGuideUi("other-quest");
     expect(other.widgetOrder).toEqual([]);
@@ -84,6 +121,8 @@ describe("guideUi store", () => {
       widgetOrder: [],
       pinnedWidgetIds: [],
       mapZoom: 3,
+      mapPanX: 0,
+      mapPanY: 0,
     });
     await closeProgressDb();
 

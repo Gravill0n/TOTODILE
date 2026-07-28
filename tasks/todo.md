@@ -16,7 +16,9 @@ checkpoint.
 - [x] **0.3** Add missing shadcn primitives — `accordion`, `breadcrumb`, `progress`,
       `toggle-group` (+`toggle`); paper-fit them; extend `coreSet.test.tsx` (M)
 - [x] **0.4** `guideUi` IDB store — `features/progress/db.ts` at v2, `schema/guideUi.ts`,
-      `guideUiStore.ts`, `useGuideUi`; v1→v2 migration test (M)
+      `guideUiStore.ts`, `useGuideUi`; v1→v2 migration test. The map view keeps zoom **and**
+      pan (`mapPanX`/`mapPanY`, as a fraction of the scrollable extent) so reopening a visit
+      returns to the corner you were reading (M)
 - [x] **0.5** Spine selectors + id helpers — `chapterProgress`, `visitIndex`, `visitOfStep`,
       `localId`/`qualifyId` (S)
 - [x] **0.6** Move `mastery()` to `lib/mastery.ts`, add `doneIdsOf(slot)` (S)
@@ -27,8 +29,8 @@ checkpoint.
 - [x] Token parity guarded in both schemes; every new token verified in the built stylesheet
 - [ ] **Pierre**: eyeball the tokens in a browser (light + dark) — not machine-checkable
 - [ ] **Pierre**: sanity-check the `guideUi` shape before anything writes to it
-      (`app/src/schema/guideUi.ts` — `widgetOrder`, `pinnedWidgetIds`, `mapZoom`; nothing
-      writes to the store yet)
+      (`app/src/schema/guideUi.ts` — `widgetOrder`, `pinnedWidgetIds`, and the map view
+      `mapZoom` + `mapPanX`/`mapPanY`; nothing writes to the store yet)
 
 ## Phase 1 — URL-addressable visits (highest risk, done early)
 
@@ -81,7 +83,8 @@ checkpoint.
 
 ## Phase 5 — Right column: map + widgets
 
-- [ ] **5.1** `MapPanel` — pixelated map, 100–400% in 20% steps, zoom persisted per guide (M)
+- [ ] **5.1** `MapPanel` — pixelated map, 100–400% in 20% steps, zoom **and pan** persisted per
+      guide (M)
 - [ ] **5.2** `WidgetStack` replaces `WidgetRail` + `WidgetDialog`; opens in place; scope labels;
       shared with the phone sheet (L — stack first, then delete)
 - [ ] **5.3** Pin + reorder — dnd-kit with keyboard sensor, move up/down buttons, persisted

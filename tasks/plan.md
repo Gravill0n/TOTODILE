@@ -33,7 +33,7 @@ hand-rolling their markup.
 | Tokens | **Port the design-system token contract** (`cacbcd0d-…/tokens/*.css`) into `app/src/index.css`; components style only through tokens |
 | Missing primitives | **Add them** — `accordion`, `breadcrumb`, `progress`, `toggle-group` (+`toggle`) via shadcn CLI into `components/ui/` |
 | Navigation | **Chapter + visit live in the URL**; a TanStack Router **layout route** carries the shared chrome and `<Outlet/>` renders the visit |
-| Per-guide UI state (`widgetOrder`, `pinnedWidgetIds`, `mapZoom`) | **Sibling IDB store** `guideUi` in the `totodile` DB (v1→v2); `progressExport` stays pure save data |
+| Per-guide UI state (`widgetOrder`, `pinnedWidgetIds`, `mapZoom` + `mapPanX`/`mapPanY`) | **Sibling IDB store** `guideUi` in the `totodile` DB (v1→v2); `progressExport` stays pure save data |
 | Library achievement counts | **Load `ra-mapping.json` in the loader**, gated on `entry.raGameId`; reuse `mastery()` |
 | Widget reordering | **`@dnd-kit/core` + `@dnd-kit/sortable`** (2 new deps, approved), with move up/down buttons as the accessible path |
 | Delivery | **One PR** off `feat/totodile-design-v2` (branch exists, currently == `main`) |
@@ -358,11 +358,14 @@ chapter rail, not a restored banner. **Verification:** `yarn test missable`. **S
 ### Task 5.1: `MapPanel`
 Top of the right column: the displayed visit's `location.mapImage`, pixelated, hairline,
 credited, in its own `overflow-auto` box with zoom out / in / reset (100–400%, 20% steps —
-implemented as image width; `react-zoom-pan-pinch` stays the lightbox mechanism). Zoom persists
-per guide via `useGuideUi().mapZoom`.
-**Acceptance:** zoom survives remount and visit change, clamps at 100/400; renders nothing (no
-empty frame) when the location has no map. **Verification:** new `mapPanel.test.tsx` — zoom
-twice, remount, read 140%. **Scope:** M.
+implemented as image width; `react-zoom-pan-pinch` stays the lightbox mechanism). The whole view
+persists per guide via `useGuideUi().setMapView` — zoom **and** scroll position, so reopening a
+visit returns to the corner of the map you were reading.
+**Acceptance:** zoom and pan survive remount and visit change, clamp at 100/400 and 0–1;
+renders nothing (no empty frame) when the location has no map; the pan is restored as a fraction
+of the scrollable extent, so it lands in the same place on desktop and phone.
+**Verification:** new `mapPanel.test.tsx` — zoom twice, scroll, remount, read 140% at the same
+corner. **Scope:** M.
 
 ### Task 5.2: `WidgetStack` replaces the rails and the dialog
 Evolve `WidgetDeck` into `WidgetStack.tsx`: each widget is a card that opens **in place**
