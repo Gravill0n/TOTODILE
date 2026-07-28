@@ -388,6 +388,15 @@ export function validProgressSlot() {
   };
 }
 
+export function validGuideUi() {
+  return {
+    guideId: "fictional-quest",
+    widgetOrder: ["fictional-quest:coins", "fictional-quest:bosses"],
+    pinnedWidgetIds: ["fictional-quest:bosses"],
+    mapZoom: 2.4,
+  };
+}
+
 export function validProgressExport() {
   return {
     kind: "totodile-progress",

@@ -1,18 +1,10 @@
-import { createLazyDb } from "@/lib/idb";
 import type { ProgressSlot } from "@/schema";
+import { closeDb, db, PROGRESS_STORE as STORE } from "./db";
 
 // §6.8 browser-side progress slots on IndexedDB — exactly one per guide
 // (FR-B7), never in the repo. The record shape is the schema's
 // progressSlot (§22.1: types come from Zod, the export file is contract).
 export type { ItemState, ProgressSlot } from "@/schema";
-
-const DB_NAME = "totodile";
-const STORE = "progress";
-
-const lazy = createLazyDb(DB_NAME, 1, (database) => {
-  database.createObjectStore(STORE, { keyPath: "guideId" });
-});
-const db = lazy.db;
 
 export function emptySlot(guideId: string): ProgressSlot {
   return {
@@ -61,4 +53,4 @@ export async function importSlots(slots: ProgressSlot[]): Promise<void> {
 
 // Drops the cached connection so the next call reopens the database.
 // Used by tests to prove persistence across connections.
-export const closeProgressDb = lazy.close;
+export const closeProgressDb = closeDb;

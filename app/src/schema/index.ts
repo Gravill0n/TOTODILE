@@ -5,6 +5,7 @@ export * from "./approvals.ts";
 export * from "./common.ts";
 export * from "./deck.ts";
 export * from "./guide.ts";
+export * from "./guideUi.ts";
 export * from "./layers.ts";
 export * from "./library.ts";
 export * from "./manifest.ts";

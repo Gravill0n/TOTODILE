@@ -15,7 +15,7 @@ checkpoint.
       values; a parallel var would only invite divergence (S)
 - [x] **0.3** Add missing shadcn primitives — `accordion`, `breadcrumb`, `progress`,
       `toggle-group` (+`toggle`); paper-fit them; extend `coreSet.test.tsx` (M)
-- [ ] **0.4** `guideUi` IDB store — `features/progress/db.ts` at v2, `schema/guideUi.ts`,
+- [x] **0.4** `guideUi` IDB store — `features/progress/db.ts` at v2, `schema/guideUi.ts`,
       `guideUiStore.ts`, `useGuideUi`; v1→v2 migration test (M)
 - [ ] **0.5** Spine selectors + id helpers — `chapterProgress`, `visitIndex`, `visitOfStep`,
       `localId`/`qualifyId` (S)
