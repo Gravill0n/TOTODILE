@@ -2,10 +2,9 @@ import { describe, expect, it } from "vitest";
 import {
   type CleanupProgress,
   collectCleanupTasks,
-  mastery,
 } from "@/app/routes/cleanupTasks";
-import { guideFile, raMapping as raMappingSchema } from "@/schema";
-import { validGuide, validRaMapping } from "@/testing/helpers";
+import { guideFile } from "@/schema";
+import { validGuide } from "@/testing/helpers";
 
 const guide = guideFile.parse(validGuide());
 
@@ -106,19 +105,5 @@ describe("collectCleanupTasks (FR-B4)", () => {
       ),
     ).find((i) => i.itemId === "fictional-quest:w4:coins");
     expect(item?.counter).toEqual({ value: 1, target: 2 });
-  });
-});
-
-describe("mastery (§7 S4)", () => {
-  it("counts an achievement earned when its mapped target is done", () => {
-    const map = raMappingSchema.parse(validRaMapping());
-    expect(mastery(map, new Set(["fictional-quest:c1:s1"]))).toEqual({
-      earned: 1,
-      total: 2,
-    });
-  });
-
-  it("is null without an RA mapping", () => {
-    expect(mastery(null, new Set())).toBeNull();
   });
 });

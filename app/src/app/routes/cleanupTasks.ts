@@ -1,10 +1,5 @@
 import { widgetBinaryItems } from "@/lib/widgetItems";
-import {
-  counterTarget,
-  type GuideFile,
-  type RaMapping,
-  type Widget,
-} from "@/schema";
+import { counterTarget, type GuideFile, type Widget } from "@/schema";
 
 // One leftover task in the cleanup view (FR-B4): a non-done step or widget
 // item. Counters carry their progress; everything binary is tappable to done.
@@ -110,16 +105,4 @@ export function collectCleanupTasks(
   return order.map((label) => ({ label, items: byLabel.get(label) ?? [] }));
 }
 
-// Mastery proxy (§7 S4): an achievement counts as earned when its mapped target
-// is done — exactly what Sync reconciles, so this needs no stored RA state.
-// Null when the guide has no RA set.
-export function mastery(
-  raMapping: RaMapping | null,
-  doneIds: ReadonlySet<string>,
-): { earned: number; total: number } | null {
-  if (!raMapping || raMapping.entries.length === 0) return null;
-  const earned = raMapping.entries.filter((e) =>
-    doneIds.has(e.targetItemId),
-  ).length;
-  return { earned, total: raMapping.entries.length };
-}
+// mastery() moved to @/lib/mastery — the library screen reads it too now.
