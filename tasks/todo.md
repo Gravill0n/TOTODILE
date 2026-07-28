@@ -23,8 +23,12 @@ checkpoint.
 - [x] **0.7** `yarn add @dnd-kit/core @dnd-kit/sortable` (XS)
 
 ### ☑ Checkpoint A — foundations
-- [ ] `yarn check` green · tokens correct in light **and** dark · no UI restructured
-- [ ] Pierre sanity-checks the `guideUi` shape before anything writes to it
+- [x] `yarn check` green (99 files, 613 tests) · `yarn build` clean · no UI restructured
+- [x] Token parity guarded in both schemes; every new token verified in the built stylesheet
+- [ ] **Pierre**: eyeball the tokens in a browser (light + dark) — not machine-checkable
+- [ ] **Pierre**: sanity-check the `guideUi` shape before anything writes to it
+      (`app/src/schema/guideUi.ts` — `widgetOrder`, `pinnedWidgetIds`, `mapZoom`; nothing
+      writes to the store yet)
 
 ## Phase 1 — URL-addressable visits (highest risk, done early)
 
