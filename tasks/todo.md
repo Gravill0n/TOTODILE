@@ -17,7 +17,7 @@ checkpoint.
       `toggle-group` (+`toggle`); paper-fit them; extend `coreSet.test.tsx` (M)
 - [x] **0.4** `guideUi` IDB store — `features/progress/db.ts` at v2, `schema/guideUi.ts`,
       `guideUiStore.ts`, `useGuideUi`; v1→v2 migration test (M)
-- [ ] **0.5** Spine selectors + id helpers — `chapterProgress`, `visitIndex`, `visitOfStep`,
+- [x] **0.5** Spine selectors + id helpers — `chapterProgress`, `visitIndex`, `visitOfStep`,
       `localId`/`qualifyId` (S)
 - [ ] **0.6** Move `mastery()` to `lib/mastery.ts`, add `doneIdsOf(slot)` (S)
 - [ ] **0.7** `yarn add @dnd-kit/core @dnd-kit/sortable` (XS)

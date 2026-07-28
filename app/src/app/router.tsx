@@ -23,6 +23,7 @@ import { buildLocationIndex } from "@/features/spine/locationIndex";
 import { loadGuide } from "@/lib/content/guide";
 import { loadLibrary } from "@/lib/content/library";
 import { loadRaMapping } from "@/lib/content/raMapping";
+import { qualifyId } from "@/schema";
 import { CleanupScreen } from "./routes/CleanupScreen";
 import { GuideScreen } from "./routes/GuideScreen";
 import { LibraryScreen } from "./routes/LibraryScreen";
@@ -138,7 +139,7 @@ const placeRoute = createRoute({
     }
     const guide = await loadGuide(entry.id);
     const indexEntry = buildLocationIndex(guide).get(
-      `${params.slug}:${params.loc}`,
+      qualifyId(params.slug, params.loc),
     );
     if (!indexEntry) throw notFound();
     return { entry, indexEntry };
