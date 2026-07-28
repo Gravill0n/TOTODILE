@@ -20,7 +20,7 @@ checkpoint.
 - [x] **0.5** Spine selectors + id helpers — `chapterProgress`, `visitIndex`, `visitOfStep`,
       `localId`/`qualifyId` (S)
 - [x] **0.6** Move `mastery()` to `lib/mastery.ts`, add `doneIdsOf(slot)` (S)
-- [ ] **0.7** `yarn add @dnd-kit/core @dnd-kit/sortable` (XS)
+- [x] **0.7** `yarn add @dnd-kit/core @dnd-kit/sortable` (XS)
 
 ### ☑ Checkpoint A — foundations
 - [ ] `yarn check` green · tokens correct in light **and** dark · no UI restructured
