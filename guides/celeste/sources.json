@@ -43,6 +43,13 @@
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3474899136",
       "type": "wiki",
       "retrievedAt": "2026-07-29"
+    },
+    {
+      "id": "src-tracker-maps",
+      "title": "Celeste (Open World) Archipelago Tracker by Zeeveez, PopTracker pack v2.0.2 (package_uid celeste_poptracker), supplied by Pierre at guides/celeste/sources/CelesteOpenWorldPoptracker-2.0.2. Ships 93 stitched map images (26 MB of JPEG) covering all eleven chapters 0-10 including Farewell, cut chapter -> side -> sub-map, plus 1216 pin records giving each collectable's exact x/y on its map: 175 red strawberries (20/18/25/29/31/47/5 by chapter), the goldens and the Moon Berry, 8 cassettes, the crystal hearts and 27 level clears, 60 checkpoints, 82 binoculars, 24 keys and summit gems, and 801 roomsanity rooms. Non-commercial modding-policy licence (c) 2026 Zeeveez; map and chapter graphics are Celeste assets used under EXOK Games's modding policy; the logic directory derives from PoryGone's Celeste (Open World) AP World",
+      "url": "https://github.com/Zeeveez/CelesteOpenWorldPoptracker",
+      "type": "map",
+      "retrievedAt": "2026-07-29"
     }
   ]
 }

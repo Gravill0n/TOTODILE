@@ -24,8 +24,8 @@
     },
     {
       "primitive": "mapPins",
-      "defaultTitle": "Chapter Map",
-      "defaultScope": "chapter"
+      "defaultTitle": "Checkpoint Map",
+      "defaultScope": "location"
     },
     {
       "primitive": "prepCard",
