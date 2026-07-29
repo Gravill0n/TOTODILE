@@ -281,6 +281,9 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
           onMarkThrough={progress.markThrough}
           onMovePointer={progress.movePointer}
           onOpenVisit={openVisit}
+          onBackToNow={() =>
+            currentStepId === null ? undefined : goToStep(currentStepId)
+          }
         />
       ) : (
         <p className="text-ink-soft">Loading progress…</p>

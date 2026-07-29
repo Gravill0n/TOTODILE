@@ -11,6 +11,7 @@ import type { GuideFile } from "@/schema";
 import { idTail } from "@/schema";
 import { visitIndex } from "./chapterProgress";
 import { StepRow } from "./StepRow";
+import { useInView } from "./useInView";
 
 type VisitScreenProps = {
   guide: GuideFile;
@@ -24,6 +25,8 @@ type VisitScreenProps = {
   onMarkThrough: (stepId: string) => void;
   onMovePointer: (stepId: string) => void;
   onOpenVisit: (visitId: string) => void;
+  /** Scroll the current step back into view — the same move as "Where am I". */
+  onBackToNow: () => void;
 };
 
 const count = (n: number, noun: string) => `${n} ${noun}${n === 1 ? "" : "s"}`;
@@ -48,7 +51,11 @@ export function VisitScreen({
   onMarkThrough,
   onMovePointer,
   onOpenVisit,
+  onBackToNow,
 }: VisitScreenProps) {
+  // Watching the current row is what decides whether the page needs to offer
+  // a way back to it; with no row on this page there is nothing to offer.
+  const { ref: nowRef, inView: nowInView } = useInView<HTMLDivElement>();
   const index = visitIndex(guide);
   const here = index.find((entry) => entry.visitId === visitId);
   const chapter = guide.chapters.find((c) => c.id === here?.chapterId);
@@ -131,6 +138,21 @@ export function VisitScreen({
           </BreadcrumbItem>
         </BreadcrumbList>
         <span className="flex shrink-0 items-center gap-2">
+          {/* Only while the row it points at is off screen — otherwise this is
+              a button that scrolls you to what you are already looking at. */}
+          {pointerAt !== -1 && !nowInView ? (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              onClick={onBackToNow}
+              className="max-w-56 shrink-0 border-primary text-primary"
+            >
+              <span className="truncate">
+                {`Back to NOW — ${visit.steps[pointerAt]?.keywords[0] ?? ""}`}
+              </span>
+            </Button>
+          ) : null}
           {walk("Previous", here.previousVisitId, "compact")}
           {walk("Next", here.nextVisitId, "compact")}
         </span>
@@ -162,6 +184,7 @@ export function VisitScreen({
             key={stepData.id}
             step={stepData}
             slug={slug}
+            ref={stepData.id === currentStepId ? nowRef : undefined}
             isCurrent={stepData.id === currentStepId}
             isDone={doneIds.has(stepData.id)}
             isSkipped={skippedIds.has(stepData.id)}

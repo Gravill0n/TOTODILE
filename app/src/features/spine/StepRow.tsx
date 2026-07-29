@@ -1,4 +1,5 @@
 import { CheckCheck, SkipForward, TriangleAlert, Trophy } from "lucide-react";
+import type { Ref } from "react";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -12,6 +13,8 @@ import type { Step } from "@/schema";
 
 type StepRowProps = {
   step: Step;
+  // The visit watches the current row to know whether it is still on screen.
+  ref?: Ref<HTMLDivElement>;
   slug: string;
   isCurrent: boolean;
   isDone: boolean;
@@ -29,6 +32,7 @@ type StepRowProps = {
 // accident.
 export function StepRow({
   step,
+  ref,
   slug,
   isCurrent,
   isDone,
@@ -74,6 +78,7 @@ export function StepRow({
 
   return (
     <div
+      ref={ref}
       id={stepDomId(step.id)}
       data-current={isCurrent || undefined}
       className={

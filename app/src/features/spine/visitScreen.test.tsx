@@ -185,6 +185,15 @@ describe("visit page furniture", () => {
     expect(screen.getByText(/1 achievement\b/)).toBeDefined();
   });
 
+  it("offers no way back to a NOW row that is already on screen", async () => {
+    stubGuideContent();
+    renderGuideAt("fictional-quest", GATE);
+    await screen.findByText(S1_TEXT);
+    // jsdom has no IntersectionObserver, so useInView answers "in view" — a
+    // Back-to-NOW button here would be pointing at a visible row.
+    expect(screen.queryByText(/^Back to NOW/)).toBeNull();
+  });
+
   it("repeats prev/next at the bottom, naming where they go", async () => {
     stubGuideContent();
     renderGuideAt("fictional-quest", VAULT);

@@ -141,8 +141,11 @@ checkpoint.
       when the pointer is in another visit — a position you are not at is worse than none. The
       prototype's `5 Gold Skulltulas here` is guide-specific and has no generic source, so the
       meta line stops at achievements (M)
-- [ ] **4.2** `useInView` → `Back to NOW` only when the current row is off-screen; no-ops in
-      jsdom (S)
+- [x] **4.2** `useInView` → `Back to NOW — <first beat>` in the breadcrumb, only when the
+      current row is off screen and only when the pointer is on this page. Defaults to *in view*
+      when `IntersectionObserver` is absent, so jsdom (and any browser without it) never grows a
+      permanent button pointing at a visible row — no global stub needed. `StepRow` takes a `ref`
+      (React 19: an ordinary prop) so the visit can watch its current row (S)
 - [ ] **4.3** `StepRow` — item icons on every row, unified badge row, current-row treatment,
       skip/mark-through icon buttons (M)
 - [ ] **4.4** `MissableCard` inline at the step; delete `MissableBanner` (M)
