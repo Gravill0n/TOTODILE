@@ -260,6 +260,10 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
                   widgets={visibleWidgets}
                   progress={progressSlice}
                   labelForScope={nameForScope}
+                  order={ui.widgetOrder}
+                  pinnedIds={ui.pinnedWidgetIds}
+                  onOrderChange={ui.setWidgetOrder}
+                  onTogglePin={ui.togglePinned}
                   {...handlers}
                 />
               </div>
@@ -354,6 +358,10 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
           widgets={visibleWidgets}
           progress={progressSlice}
           labelForScope={nameForScope}
+          order={ui.widgetOrder}
+          pinnedIds={ui.pinnedWidgetIds}
+          onOrderChange={ui.setWidgetOrder}
+          onTogglePin={ui.togglePinned}
           wholeGame={wholeGame}
           onWholeGameChange={setWholeGame}
           onClose={() => setWidgetsOpen(false)}

@@ -15,6 +15,10 @@ type WidgetsSheetProps = WidgetHandlers & {
   widgets: Widget[];
   progress: ProgressSlice;
   labelForScope?: (scope: WidgetScope) => string;
+  order?: readonly string[];
+  pinnedIds?: readonly string[];
+  onOrderChange?: (widgetIds: string[]) => void;
+  onTogglePin?: (widgetId: string) => void;
   wholeGame: boolean;
   onWholeGameChange: (wholeGame: boolean) => void;
   onClose: () => void;
@@ -28,6 +32,10 @@ export function WidgetsSheet({
   widgets,
   progress,
   labelForScope,
+  order,
+  pinnedIds,
+  onOrderChange,
+  onTogglePin,
   wholeGame,
   onWholeGameChange,
   onClose,
@@ -69,6 +77,10 @@ export function WidgetsSheet({
             widgets={widgets}
             progress={progress}
             labelForScope={labelForScope}
+            order={order}
+            pinnedIds={pinnedIds}
+            onOrderChange={onOrderChange}
+            onTogglePin={onTogglePin}
             {...handlers}
           />
         </div>
