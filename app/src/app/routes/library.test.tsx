@@ -146,7 +146,7 @@ describe("guide row", () => {
     stubGuideContent();
     renderAppAt("/");
     await screen.findByText("Fictional Quest — 100% guide");
-    expect(screen.getByText("not started")).toBeDefined();
+    expect(screen.getByText("Not started")).toBeDefined();
   });
 
   it("keeps planned entries out of the playable rows entirely", async () => {
@@ -177,7 +177,7 @@ describe("guide row", () => {
     expect(backlogTitle.closest("a")).toBeNull();
     expect(backlogTitle.closest('[class*="opacity-"]')).not.toBeNull();
     expect(screen.getByText("Backlog")).toBeDefined();
-    expect(screen.getByText("planned")).toBeDefined();
+    expect(screen.getByText("Planned — not compiled yet")).toBeDefined();
     // The RA-set chip marks which backlog entries already have a set mapped.
     expect(screen.getAllByText("RA set")).toHaveLength(1);
     // Only the playable row carries a stats column.

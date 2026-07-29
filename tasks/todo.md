@@ -85,6 +85,13 @@ checkpoint.
       pill in `ink-soft`, and no hairlines between the stats rows — the column has one rule, down
       its left edge. Pinned by `library.test.tsx` ("colours the row the way Library.dc.html
       does") (S)
+- [x] **2.6** The rest of the `Library.dc.html` deltas — `--tracking-eyebrow` (0.12em) added
+      beside `--tracking-label` (0.06em, chip caps) because the prototypes use two steps; mono
+      `TOTODILE` eyebrow; `COVER` label in the placeholder; 18/600 row title with `text-pretty`;
+      `Next up —` at full ink and `Not started` moved onto that line (the percent shows `—`);
+      `BACKLOG <n>` over `Planned — not compiled yet`; a `SORT` label before the sort segments.
+      `backlog.test.tsx`'s `planned` assertion became `Planned — not compiled yet` — the
+      prototype has no per-row chip, so that exact text node is gone by design (S)
 
 ### ☑ Checkpoint C — Library done
 - [x] `yarn check` green (101 files, 644 tests) · `yarn build` clean

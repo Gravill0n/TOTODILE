@@ -37,7 +37,12 @@
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
   /* The UPPERCASE eyebrow labels — NOW, BACKLOG, MISSABLE AHEAD, REFERENCE. */
+  /* Two steps, because the prototypes use two: the wide one for section
+     eyebrows set in caps (TOTODILE, BACKLOG, CHAPTERS, MAP, WIDGETS, and the
+     stat labels), the narrow one for caps inside a chip. The .14em/.1em
+     one-offs in Library.dc.html are normalised onto the .12em step. */
   --tracking-label: 0.06em;
+  --tracking-eyebrow: 0.12em;
 
   /* Elevation is hairline-first: surfaces are a 1px --color-line border and
      shadow is a whisper, tinted with ink rather than neutral black. To make

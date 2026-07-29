@@ -46,8 +46,10 @@ describe("design-system token contract", () => {
     expect(theme).toMatch(/--font-mono:\s*ui-monospace/);
   });
 
-  it("ships the uppercase eyebrow tracking", () => {
+  it("ships both steps of the uppercase tracking scale", () => {
+    // Chip caps and section eyebrows track differently in the prototypes.
     expect(theme).toMatch(/--tracking-label:\s*0\.06em/);
+    expect(theme).toMatch(/--tracking-eyebrow:\s*0\.12em/);
   });
 
   it("completes the radius ladder with the 2px rung", () => {

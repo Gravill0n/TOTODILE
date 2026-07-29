@@ -76,14 +76,14 @@ export function LibraryScreen({
         );
 
   return (
-    <main className="mx-auto max-w-4xl px-4 py-6">
+    <main className="mx-auto max-w-4xl px-6 pt-10 pb-16">
       <header className="mb-6 border-b-2 border-line pb-3">
-        <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <div className="flex flex-wrap items-end justify-between gap-4">
           <span>
-            <p className="text-xs font-bold tracking-label text-ink-soft uppercase">
+            <p className="font-mono text-[11px] tracking-eyebrow text-ink-soft uppercase">
               TOTODILE
             </p>
-            <h1 className="text-2xl font-bold">Library</h1>
+            <h1 className="text-2xl font-bold tracking-tight">Library</h1>
           </span>
           <span className="flex items-center gap-3 text-sm">
             <span className="text-ink-soft tabular-nums">{tally}</span>
@@ -102,7 +102,7 @@ export function LibraryScreen({
       {view.status === "planned" ? null : guides.length === 0 ? (
         <p className="text-ink-soft">No playable guides match.</p>
       ) : (
-        <ul className="grid gap-4">
+        <ul className="grid gap-3">
           {guides.map((entry) => (
             <li key={entry.id}>
               <GuideRow
@@ -118,13 +118,15 @@ export function LibraryScreen({
       {view.status === "playable" ? null : (
         <section className="mt-10 border-t-2 border-line pt-3">
           <div className="flex items-baseline justify-between gap-3">
-            <p className="text-xs font-bold tracking-label text-ink-soft uppercase">
-              Backlog
+            <p className="flex items-baseline gap-2.5">
+              <span className="text-[11px] tracking-eyebrow text-ink-soft uppercase">
+                Backlog
+              </span>
+              <span className="font-mono text-xs text-ink-soft tabular-nums">
+                {backlog.length}
+              </span>
             </p>
-            <p className="text-sm text-ink-soft">
-              <span className="tabular-nums">{backlog.length}</span>{" "}
-              <span>planned</span>
-            </p>
+            <p className="text-xs text-ink-soft">Planned — not compiled yet</p>
           </div>
           {backlog.length === 0 ? (
             <p className="mt-3 text-ink-soft">

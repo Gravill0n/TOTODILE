@@ -31,7 +31,7 @@ function Stat({
 }) {
   return (
     <div className="flex items-baseline justify-between gap-3">
-      <dt className="text-[10px] tracking-label text-ink-soft uppercase">
+      <dt className="text-[10px] tracking-eyebrow text-ink-soft uppercase">
         {label}
       </dt>
       <dd
@@ -65,15 +65,22 @@ export function GuideRow({ entry, slot, playable, raMapping }: GuideRowProps) {
         />
       ) : (
         // No guide in the library has a cover yet, so the placeholder is the
-        // common case — it holds the row's shape rather than collapsing it.
+        // common case — it holds the row's shape rather than collapsing it,
+        // and says what it is standing in for.
         <div
-          className="aspect-video w-full rounded border border-line bg-paper-dim"
+          className="grid aspect-video w-full place-items-center rounded-sm border border-line bg-paper-dim"
           aria-hidden
-        />
+        >
+          <span className="text-[10px] tracking-eyebrow text-ink-soft uppercase">
+            Cover
+          </span>
+        </div>
       )}
 
       <div className="min-w-0">
-        <h2 className="font-bold">{entry.title}</h2>
+        <h2 className="text-lg leading-[22px] font-semibold text-pretty">
+          {entry.title}
+        </h2>
         <p className="text-sm text-ink-soft">
           {entry.game} · {entry.platform}
         </p>
@@ -94,22 +101,21 @@ export function GuideRow({ entry, slot, playable, raMapping }: GuideRowProps) {
               className="mt-1"
             />
           </span>
-          {completion === null ? (
-            <span className="text-sm text-ink-soft">not started</span>
-          ) : (
-            <span className="font-mono text-lg font-medium text-primary tabular-nums">
-              {`${completion}%`}
-            </span>
-          )}
+          <span className="font-mono text-lg font-medium text-primary tabular-nums">
+            {completion === null ? "—" : `${completion}%`}
+          </span>
         </div>
-        {stats?.currentChapterTitle ? (
-          // Two elements, not one string: the chapter is the useful half and
-          // stays addressable on its own.
-          <p className="mt-2 text-sm">
-            <span className="text-ink-soft">Next up —</span>{" "}
-            <span>{stats.currentChapterTitle}</span>
-          </p>
-        ) : null}
+        {/* Two elements, not one string: the chapter is the useful half and
+            stays addressable on its own. */}
+        <p className="mt-2 text-sm">
+          {stats?.currentChapterTitle ? (
+            <>
+              <span>Next up —</span> <span>{stats.currentChapterTitle}</span>
+            </>
+          ) : (
+            <span>Not started</span>
+          )}
+        </p>
       </div>
 
       <dl className="grid content-start gap-2 sm:border-l sm:border-line sm:pl-4">

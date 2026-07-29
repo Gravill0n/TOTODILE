@@ -67,22 +67,30 @@ export function LibraryToolbar({ view, onChange }: LibraryToolbarProps) {
           </ToggleGroupItem>
         ))}
       </ToggleGroup>
-      <ToggleGroup
-        type="single"
-        variant="outline"
-        size="sm"
-        value={view.sort}
-        onValueChange={(value) =>
-          value ? onChange({ ...view, sort: value as SortKey }) : null
-        }
-        aria-label="Sort by"
-      >
-        {sortOptions.map((option) => (
-          <ToggleGroupItem key={option.value} value={option.value}>
-            {option.label}
-          </ToggleGroupItem>
-        ))}
-      </ToggleGroup>
+      {/* Status is self-describing (All / Playable / Planned); sort is not —
+          "Title" beside "Playable" reads as another filter without a label
+          in front of it. The prototype labels only this one. */}
+      <span className="ms-auto flex items-center gap-2">
+        <span className="text-[11px] tracking-eyebrow text-ink-soft uppercase">
+          Sort
+        </span>
+        <ToggleGroup
+          type="single"
+          variant="outline"
+          size="sm"
+          value={view.sort}
+          onValueChange={(value) =>
+            value ? onChange({ ...view, sort: value as SortKey }) : null
+          }
+          aria-label="Sort by"
+        >
+          {sortOptions.map((option) => (
+            <ToggleGroupItem key={option.value} value={option.value}>
+              {option.label}
+            </ToggleGroupItem>
+          ))}
+        </ToggleGroup>
+      </span>
     </div>
   );
 }
