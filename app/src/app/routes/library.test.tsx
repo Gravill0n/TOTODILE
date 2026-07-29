@@ -90,3 +90,50 @@ describe("library loader — RA mappings", () => {
     expect(screen.getByText("no RA set")).toBeDefined();
   });
 });
+
+describe("guide row", () => {
+  it("carries the numbers a completionist opens the app for", async () => {
+    await writeSlot({
+      ...emptySlot("fictional-quest"),
+      itemStates: {
+        "fictional-quest:c1:s1": { state: "done", at: "2026-07-29T10:00:00Z" },
+      },
+      stats: {
+        stepsDone: 3,
+        stepsTotal: 12,
+        currentChapterTitle: "Chapter 1 — The Castle Gate",
+      },
+      lastActivityAt: "2026-06-11T10:00:00Z",
+    });
+    stubGuideContent();
+    renderAppAt("/");
+    await screen.findByText("Fictional Quest — 100% guide");
+
+    expect(screen.getByText("3 / 12")).toBeDefined();
+    expect(screen.getByText("1 / 2")).toBeDefined();
+    expect(screen.getByText("2026-06-11")).toBeDefined();
+    // The percentage is its own node, not glued to a label.
+    expect(screen.getByText("25%")).toBeDefined();
+    // "Next up —" and the chapter are separate elements, so the chapter title
+    // is findable on its own.
+    expect(screen.getByText("Next up —")).toBeDefined();
+    expect(screen.getByText("Chapter 1 — The Castle Gate")).toBeDefined();
+  });
+
+  it("says a guide has never been opened rather than showing zeroes", async () => {
+    stubGuideContent();
+    renderAppAt("/");
+    await screen.findByText("Fictional Quest — 100% guide");
+    expect(screen.getByText("not started")).toBeDefined();
+  });
+
+  it("renders the cover when there is one and a placeholder when there is not", async () => {
+    const library = validLibrary();
+    library.guides = [{ ...library.guides[0], cover: undefined }] as never;
+    stubGuideContent({ library });
+    renderAppAt("/");
+    await screen.findByText("Fictional Quest — 100% guide");
+    // No cover in the manifest means no broken image request.
+    expect(screen.queryByRole("img")).toBeNull();
+  });
+});

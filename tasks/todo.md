@@ -69,8 +69,9 @@ checkpoint.
       toggle groups, `useState` only. Filtering/ordering lives in `libraryView.ts` beside the
       screen; the playable/planned split lands here (the two empty states need it) and task 2.4
       gives the backlog group its own chrome (M)
-- [ ] **2.3** Guide row replaces the cover card in `GuideCard.tsx` — cover, progress bar + mono %,
-      `Next up —`, STEPS / ACHIEVEMENTS / LAST PLAYED (M)
+- [x] **2.3** Guide row replaces the cover card in `GuideCard.tsx` (filename kept for the reskin
+      guard; exports `GuideRow`) — cover or placeholder, progress bar + mono %, `Next up —`,
+      STEPS / ACHIEVEMENTS / LAST PLAYED. `appShell` and `libraryReskin` pass unedited (M)
 - [ ] **2.4** `BACKLOG` section — dense two-column, 44px rows, `RA set` chip, not navigable (S)
 
 ### ☑ Checkpoint C — Library done

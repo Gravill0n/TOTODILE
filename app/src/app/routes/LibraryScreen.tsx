@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { useEditorMode } from "@/features/review/editorMode";
 import type { LibraryManifest, ProgressSlot, RaMapping } from "@/schema";
-import { GuideCard } from "./GuideCard";
+import { GuideRow } from "./GuideCard";
 import {
   defaultLibraryView,
   LibraryToolbar,
@@ -77,7 +77,7 @@ export function LibraryScreen({
   const rows = (entries: typeof guides) =>
     entries.map((entry) => (
       <li key={entry.id}>
-        <GuideCard
+        <GuideRow
           entry={entry}
           slot={slotOf(entry.id)}
           playable={playable.get(entry.id) === true}
