@@ -1,14 +1,9 @@
 // @vitest-environment jsdom
 import "fake-indexeddb/auto";
-import {
-  cleanup,
-  fireEvent,
-  render,
-  screen,
-  waitFor,
-} from "@testing-library/react";
+import { cleanup, render, screen, waitFor } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { readGuideUi, writeGuideUi } from "@/features/progress/guideUiStore";
 import { closeProgressDb } from "@/features/progress/progressStore";
 import { MapPanel, panFraction, panOffset } from "@/features/spine/MapPanel";
 import { renderGuideAt, stubGuideContent } from "@/testing/renderRoute";
@@ -73,40 +68,23 @@ describe("MapPanel", () => {
     expect(screen.getByText("100%")).toBeDefined();
   });
 
-  it("zooms in and out in 20% steps", () => {
-    const onViewChange = renderPanel({ zoom: 2 });
-    fireEvent.click(screen.getByLabelText("Zoom in"));
-    expect(onViewChange).toHaveBeenCalledWith({ zoom: 2.2, panX: 0, panY: 0 });
-
-    cleanup();
-    const out = renderPanel({ zoom: 2 });
-    fireEvent.click(screen.getByLabelText("Zoom out"));
-    expect(out).toHaveBeenCalledWith({ zoom: 1.8, panX: 0, panY: 0 });
+  it("offers no buttons at all — the map is worked by hand", () => {
+    renderPanel({ zoom: 2 });
+    for (const gone of ["Zoom in", "Zoom out", "Reset zoom"]) {
+      expect(screen.queryByLabelText(gone)).toBeNull();
+    }
+    expect(screen.queryAllByRole("button")).toHaveLength(0);
+    // The percentage stays, as a readout rather than a control.
+    expect(screen.getByText("200%")).toBeDefined();
   });
 
-  it("stops at 100% and 400%", () => {
-    const atFloor = renderPanel({ zoom: 1 });
-    fireEvent.click(screen.getByLabelText("Zoom out"));
-    expect(atFloor).toHaveBeenCalledWith({ zoom: 1, panX: 0, panY: 0 });
-
-    cleanup();
-    const atCeiling = renderPanel({ zoom: 4 });
-    fireEvent.click(screen.getByLabelText("Zoom in"));
-    expect(atCeiling).toHaveBeenCalledWith({ zoom: 4, panX: 0, panY: 0 });
-  });
-
-  it("resets to the whole map at the top-left", () => {
-    const onViewChange = renderPanel({ zoom: 3, panX: 0.8, panY: 0.5 });
-    fireEvent.click(screen.getByLabelText("Reset zoom"));
-    expect(onViewChange).toHaveBeenCalledWith({ zoom: 1, panX: 0, panY: 0 });
-  });
-
-  it("scales the image by width, so the box scrolls rather than the page", () => {
-    renderPanel({ zoom: 2.5 });
-    expect(
-      screen.getByRole("img", { name: "Castle gate and wall route" }).style
-        .width,
-    ).toBe("250%");
+  it("hands the map to the wheel and the pointer, within 100–400%", () => {
+    renderPanel({ zoom: 2 });
+    // react-zoom-pan-pinch owns the gestures; what this pins is that the map
+    // is inside it and bounded, rather than a plain scrolling box.
+    expect(document.querySelector(".react-transform-wrapper")).not.toBeNull();
+    const map = screen.getByRole("img", { name: "Castle gate and wall route" });
+    expect(map.closest(".react-transform-component")).not.toBeNull();
   });
 });
 
@@ -129,18 +107,20 @@ describe("pan as a fraction of the extent", () => {
 describe("the map remembers where it was left", () => {
   const GATE = "/chapter/c1/visit/v-castle-gate-1";
 
-  it("keeps its zoom across a remount, per guide", async () => {
+  it("reads its zoom back from the guide's record", async () => {
+    // Written the way a gesture would leave it.
+    await writeGuideUi({
+      ...(await readGuideUi("fictional-quest")),
+      mapZoom: 1.4,
+      mapPanX: 0.5,
+      mapPanY: 0.25,
+    });
     stubGuideContent();
     renderGuideAt("fictional-quest", GATE);
-    await screen.findByText("100%");
 
-    fireEvent.click(screen.getByLabelText("Zoom in"));
-    fireEvent.click(screen.getByLabelText("Zoom in"));
-    await screen.findByText("140%");
-    cleanup();
-
-    renderGuideAt("fictional-quest", GATE);
     await waitFor(() => expect(screen.getByText("140%")).toBeDefined());
+    // What the gestures themselves resolve to needs a measured box, which
+    // jsdom does not provide — that is a checkpoint-G item in a browser.
   });
 
   it("shows no map panel for a place that has none", async () => {

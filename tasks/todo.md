@@ -228,12 +228,17 @@ checkpoint.
       rather than resize. Tests cover the separators (count, focus, orientation), the
       percentages reaching the DOM, per-guide isolation and the clamping on the record; the
       pixels are a checkpoint-G item in a real browser (L)
-- [ ] **5.5.4** Direct-manipulation map — wheel zooms, drag pans, double-click resets; all three
-      buttons go, the `%` stays as text. `react-zoom-pan-pinch` is already a dependency, and
-      `panFraction`/`panOffset` keep their meaning unchanged (M)
+- [x] **5.5.4** Direct-manipulation map — wheel zooms, drag pans, double-click resets; all three
+      buttons go, the `%` stays as a readout. `react-zoom-pan-pinch` was already a dependency
+      (it drives the `ZoomableImage` lightbox) and `panFraction`/`panOffset` keep their meaning:
+      at `w-full`, content width at scale *s* is `W·s`, so the extent is `W·(s−1)` exactly as
+      before. The stored view is applied on `onInit` rather than as an initial transform — the
+      fraction needs a measured box — and written back debounced from `onTransform` (v4's name;
+      it fires per frame). **Not machine-verified:** what a gesture resolves to, for the same
+      zero-size-box reason as 5.5.3; the test proves the stored zoom is read back (M)
 
 ### ☑ Checkpoint G — before Phase 6
-- [ ] `yarn check` green · `yarn build` clean
+- [x] `yarn check` green (105 files, 687 tests) · `yarn build` clean
 - [ ] **Pierre**: drag both rails and the map split on `zelda-oot`, reload, confirm they held —
       and that `pokemon-crystal` has its own
 - [ ] **Pierre**: wheel + drag the map with no buttons in sight
