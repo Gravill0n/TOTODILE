@@ -65,21 +65,34 @@ const libraryRoute = createRoute({
   // the approval records are the truth.
   loader: async () => {
     const library = await loadLibrary();
-    const playableEntries = await Promise.all(
-      library.guides.map(
-        async (guide) => [guide.id, await loadPlayability(guide.id)] as const,
-      ),
+    const rows = await Promise.all(
+      library.guides.map(async (guide) => {
+        const [playable, raMapping] = await Promise.all([
+          loadPlayability(guide.id),
+          // A row shows the share of the RA set earned, so the mapping is
+          // library data now — but only for guides that have a set at all.
+          guide.raGameId === undefined ? null : loadRaMapping(guide.id),
+        ]);
+        return { id: guide.id, playable, raMapping };
+      }),
     );
     return {
       library,
       slots: await readAllSlots(),
-      playable: new Map(playableEntries),
+      playable: new Map(rows.map((row) => [row.id, row.playable])),
+      raMappings: new Map(rows.map((row) => [row.id, row.raMapping])),
     };
   },
   component: function LibraryRouteComponent() {
-    const { library, slots, playable } = libraryRoute.useLoaderData();
+    const { library, slots, playable, raMappings } =
+      libraryRoute.useLoaderData();
     return (
-      <LibraryScreen library={library} slots={slots} playable={playable} />
+      <LibraryScreen
+        library={library}
+        slots={slots}
+        playable={playable}
+        raMappings={raMappings}
+      />
     );
   },
 });

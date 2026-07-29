@@ -62,7 +62,9 @@ checkpoint.
 
 ## Phase 2 — Library (S1)
 
-- [ ] **2.1** Library loader gains `raMappings`, gated on `raGameId` (S)
+- [x] **2.1** Library loader gains `raMappings`, gated on `raGameId`; threaded to `GuideCard`,
+      which shows `earned / total` (or `no RA set`) — rendering it now rather than passing a
+      prop nothing reads for two commits; task 2.3 restyles it into the stats column (S)
 - [ ] **2.2** Header (eyebrow + 2px rule + tally) and `LibraryToolbar` — search + status/sort
       toggle groups, `useState` only (M)
 - [ ] **2.3** Guide row replaces the cover card in `GuideCard.tsx` — cover, progress bar + mono %,

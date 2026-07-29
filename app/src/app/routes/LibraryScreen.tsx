@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Badge } from "@/components/ui/badge";
 import { useEditorMode } from "@/features/review/editorMode";
-import type { LibraryManifest, ProgressSlot } from "@/schema";
+import type { LibraryManifest, ProgressSlot, RaMapping } from "@/schema";
 import { GuideCard } from "./GuideCard";
 
 type LibraryScreenProps = {
@@ -9,6 +9,8 @@ type LibraryScreenProps = {
   slots: ProgressSlot[];
   // Derived from each guide's approvals.json (FR-E5); absent key = unfinished.
   playable: Map<string, boolean>;
+  // Null for a guide with no RA set, or none compiled yet (§6.5).
+  raMappings: Map<string, RaMapping | null>;
 };
 
 // S1 — the app home. Sorted by last activity (FR-A3); guides never opened
@@ -18,6 +20,7 @@ export function LibraryScreen({
   library,
   slots,
   playable,
+  raMappings,
 }: LibraryScreenProps) {
   const editorMode = useEditorMode();
   const slotsByGuide = new Map(slots.map((slot) => [slot.guideId, slot]));
@@ -65,6 +68,7 @@ export function LibraryScreen({
                 entry={entry}
                 slot={slotsByGuide.get(entry.id)}
                 playable={playable.get(entry.id) === true}
+                raMapping={raMappings.get(entry.id) ?? null}
               />
             </li>
           ))}
