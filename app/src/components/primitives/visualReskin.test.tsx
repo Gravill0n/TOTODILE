@@ -5,7 +5,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { FlagMark } from "@/components/primitives/FlagMark";
 import { Flowchart } from "@/components/primitives/flowchart/Flowchart";
 import { MapPins } from "@/components/primitives/mapPins/MapPins";
-import { WidgetDeck } from "@/features/spine/WidgetDeck";
+import { WidgetStack } from "@/features/spine/WidgetStack";
 import { flowchartWidget, mapPinsWidget, type Widget } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
 
@@ -92,19 +92,21 @@ describe("Flowchart reskin (R4c)", () => {
   });
 });
 
-describe("WidgetDeck reskin (R4c)", () => {
-  it("renders each widget in a shadcn Card", () => {
-    const { container } = render(
-      <WidgetDeck
+describe("WidgetStack reskin (R4c)", () => {
+  it("cards each widget and opens its body in place", () => {
+    render(
+      <WidgetStack
         widgets={[flowchart as Widget]}
         progress={noProgress}
         onToggle={vi.fn()}
         onAdjustCounter={vi.fn()}
         onResetCounter={vi.fn()}
-        resolveAsset={(p) => p}
+        resolveAsset={(path: string) => path}
       />,
     );
-    expect(container.querySelector('[data-slot="card"]')).not.toBeNull();
+    // The title is the disclosure; the body arrives under it, not in a dialog.
+    fireEvent.click(screen.getByRole("button", { name: /^Chain/ }));
+    expect(document.querySelector('[data-slot="dialog-content"]')).toBeNull();
     expect(screen.getByText("Chain")).toBeTruthy();
   });
 });

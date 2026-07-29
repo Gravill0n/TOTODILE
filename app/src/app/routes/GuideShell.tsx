@@ -13,16 +13,19 @@ import { MapPanel } from "@/features/spine/MapPanel";
 import { upcomingMissables } from "@/features/spine/missables";
 import { PostureLayout } from "@/features/spine/PostureLayout";
 import { VisitScreen } from "@/features/spine/VisitScreen";
-import type { WidgetHandlers } from "@/features/spine/WidgetDeck";
-import { WidgetDialog } from "@/features/spine/WidgetDialog";
-import { WidgetRail } from "@/features/spine/WidgetRail";
+import { type WidgetHandlers, WidgetStack } from "@/features/spine/WidgetStack";
 import { WidgetsSheet } from "@/features/spine/WidgetsSheet";
 import { widgetContextFor, widgetInScope } from "@/features/spine/widgetScope";
 import { getCredentials } from "@/features/sync/raCredentials";
 import { SyncReceipt } from "@/features/sync/SyncReceipt";
 import { type SyncOutcome, syncGuide } from "@/features/sync/syncGuide";
 import { guideAssetUrl, stepDomId } from "@/lib/guide";
-import { type GuideFile, idTail, type LibraryEntry } from "@/schema";
+import {
+  type GuideFile,
+  idTail,
+  type LibraryEntry,
+  type WidgetScope,
+} from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
 
 type GuideShellProps = {
@@ -53,7 +56,6 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
   const [chaptersOpen, setChaptersOpen] = useState(false);
   const [widgetsOpen, setWidgetsOpen] = useState(false);
   const [wholeGame, setWholeGame] = useState(false);
-  const [openWidgetId, setOpenWidgetId] = useState<string | null>(null);
   const [syncing, setSyncing] = useState(false);
   const [receipt, setReceipt] = useState<SyncOutcome | null>(null);
 
@@ -175,17 +177,29 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
     resolveAsset: (path) => guideAssetUrl(entry.id, path),
   };
 
-  // Browse posture: the left rail is where you are in the route, so the widget
-  // launchers all live on the right now (§6.4 deck order holds across them —
-  // the old global/contextual split was a consequence of having two strips to
-  // fill). A launcher opens the widget full-size in WidgetDialog. The open
-  // widget is looked up in the full deck, not visibleWidgets, so it survives
-  // the pointer moving it out of scope mid-interaction.
-  const openWidget =
-    openWidgetId === null
-      ? null
-      : (guide.widgets.find((widget) => widget.id === openWidgetId) ?? null);
-  // Whole-game only affects the contextual rail — global always shows.
+  // Scope labels read as prose ("Location · Sunken Vault") rather than ids.
+  const nameForScope = useCallback(
+    (scope: WidgetScope) => {
+      if (scope.kind === "location") {
+        return (
+          guide.locations.find((l) => l.id === scope.locationId)?.name ?? ""
+        );
+      }
+      if (scope.kind === "chapter") {
+        return (
+          guide.chapters.find((c) => c.id === scope.chapterId)?.title ?? ""
+        );
+      }
+      if (scope.kind === "visit") {
+        const visit = visits.find((v) => v.visitId === scope.visitId);
+        return visit ? `${visit.locationName} ${visit.ordinalAtLocation}` : "";
+      }
+      return "";
+    },
+    [guide, visits],
+  );
+
+  // Whole-game lifts the scope filter; global widgets always show either way.
   const wholeGameToggle = (
     <Label className="flex items-center gap-2 text-xs font-normal text-ink-soft">
       <Switch
@@ -235,12 +249,20 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
               onViewChange={ui.setMapView}
             />
             {guide.widgets.length > 0 ? (
-              <WidgetRail
-                widgets={visibleWidgets}
-                header={wholeGameToggle}
-                emptyLabel="Nothing in scope"
-                onOpen={setOpenWidgetId}
-              />
+              <div className="space-y-2 pt-3">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-[11px] tracking-eyebrow text-ink-soft uppercase">
+                    Widgets
+                  </span>
+                  {wholeGameToggle}
+                </div>
+                <WidgetStack
+                  widgets={visibleWidgets}
+                  progress={progressSlice}
+                  labelForScope={nameForScope}
+                  {...handlers}
+                />
+              </div>
             ) : null}
           </>
         ) : undefined
@@ -327,18 +349,11 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
           onClose={() => setChaptersOpen(false)}
         />
       ) : null}
-      {openWidget !== null && progress.ready ? (
-        <WidgetDialog
-          widget={openWidget}
-          progress={progressSlice}
-          onClose={() => setOpenWidgetId(null)}
-          {...handlers}
-        />
-      ) : null}
       {widgetsOpen && progress.ready ? (
         <WidgetsSheet
           widgets={visibleWidgets}
           progress={progressSlice}
+          labelForScope={nameForScope}
           wholeGame={wholeGame}
           onWholeGameChange={setWholeGame}
           onClose={() => setWidgetsOpen(false)}

@@ -177,8 +177,12 @@ checkpoint.
       `useGuideUi`. Pan is written once scrolling settles, not per frame. A place with no map
       renders nothing. `MapView` moved to `types/mapView.ts` — the spine feature renders the
       panel and the progress feature owns the store, and features never import each other (M)
-- [ ] **5.2** `WidgetStack` replaces `WidgetRail` + `WidgetDialog`; opens in place; scope labels;
-      shared with the phone sheet (L — stack first, then delete)
+- [x] **5.2** `WidgetStack` replaces `WidgetRail` + `WidgetDialog` (and `WidgetDeck`) — cards
+      that open in place via `Collapsible`, a scope label under each title (`Global`,
+      `Chapter · <title>`, `Location · <name>`, `Visit · <place N>`), shared by the desktop
+      column and the phone sheet. `widgetScope.ts` untouched. The counter-persistence and
+      checklist cases moved over with only their queries loosened — the trigger's accessible
+      name now carries the scope label under the title (L)
 - [ ] **5.3** Pin + reorder — dnd-kit with keyboard sensor, move up/down buttons, persisted
       order and pins (M)
 - [ ] **5.4** Guide header — `← Library`, progress bar + `123 / 587`, `Trophy 11 / 97`, Sync (S)

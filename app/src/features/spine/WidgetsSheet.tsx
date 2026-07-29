@@ -7,13 +7,14 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { Switch } from "@/components/ui/switch";
-import type { Widget } from "@/schema";
+import type { Widget, WidgetScope } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
-import { WidgetDeck, type WidgetHandlers } from "./WidgetDeck";
+import { type WidgetHandlers, WidgetStack } from "./WidgetStack";
 
 type WidgetsSheetProps = WidgetHandlers & {
   widgets: Widget[];
   progress: ProgressSlice;
+  labelForScope?: (scope: WidgetScope) => string;
   wholeGame: boolean;
   onWholeGameChange: (wholeGame: boolean) => void;
   onClose: () => void;
@@ -26,6 +27,7 @@ type WidgetsSheetProps = WidgetHandlers & {
 export function WidgetsSheet({
   widgets,
   progress,
+  labelForScope,
   wholeGame,
   onWholeGameChange,
   onClose,
@@ -63,7 +65,12 @@ export function WidgetsSheet({
             container inside the sheet's flex column, so the title +
             whole-game toggle stay pinned while the list scrolls under. */}
         <div className="min-h-0 flex-1 overflow-y-auto px-4 pb-4">
-          <WidgetDeck widgets={widgets} progress={progress} {...handlers} />
+          <WidgetStack
+            widgets={widgets}
+            progress={progress}
+            labelForScope={labelForScope}
+            {...handlers}
+          />
         </div>
       </SheetContent>
     </Sheet>
