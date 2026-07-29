@@ -41,9 +41,15 @@ checkpoint.
       while a loader is cached per match. `shouldReload: false` pins that cache so the guide file
       is read once per guide. Child loaders read the layout's data through `parentMatchPromise`
       instead of re-fetching (M)
-- [ ] **1.2** Split `GuideScreen` → `GuideShell` (chrome + `<Outlet/>`) + `VisitScreen` (pure,
-      one visit); retire `NowScreen`; add `src/testing/renderRoute.tsx` and migrate the 5
-      affected test files (L — split at the seam if it grows)
+- [x] **1.2** Split `GuideScreen` → `GuideShell` + `VisitScreen` (pure, one visit); retire
+      `NowScreen`; add `src/testing/renderRoute.tsx` and migrate the affected test files.
+      Deviating from the plan, `GuideShell` is the **visit route's** component rather than a
+      layout with `<Outlet/>`: the chrome it will grow (map panel, breadcrumb, current-chapter
+      marking) is *about the displayed visit*, so the shell needs the visit params directly —
+      and `place`/`cleanup` are self-contained screens that must not inherit the play chrome.
+      It stays mounted across visit changes either way. 6 test files migrated, not 5:
+      `skipAndBurst.test.tsx` also rendered the guide bare, and its burst case moved to the
+      3-step vault visit so the burst fits on one page (L)
 - [ ] **1.3** Rewire the jumps — chapters, Where am I, first-open landing, missable Go (S)
 
 ### ☑ Checkpoint B — navigation

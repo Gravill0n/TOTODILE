@@ -1,49 +1,35 @@
 // @vitest-environment jsdom
 import "fake-indexeddb/auto";
-import {
-  cleanup,
-  fireEvent,
-  render,
-  screen,
-  waitFor,
-} from "@testing-library/react";
+import { cleanup, fireEvent, screen, waitFor } from "@testing-library/react";
 import { deleteDB } from "idb";
-import { afterEach, describe, expect, it } from "vitest";
-import { GuideScreen } from "@/app/routes/GuideScreen";
-import { closeProgressDb } from "@/features/progress/progressStore";
-import { guideFile, libraryManifest } from "@/schema";
-import { readFixtureJson } from "@/testing/fixtureRepo";
+import { afterEach, describe, expect, it, vi } from "vitest";
+import {
+  closeProgressDb,
+  emptySlot,
+  readSlot,
+  writeSlot,
+} from "@/features/progress/progressStore";
+import { renderGuideAt, stubGuideContent } from "@/testing/renderRoute";
 
-const guide = guideFile.parse(
-  readFixtureJson("guides/fictional-quest/guide.json"),
-);
-const entries = libraryManifest.parse(readFixtureJson("library.json")).guides;
-const entry =
-  entries[0] ??
-  (() => {
-    throw new Error("fixture library has no entry");
-  })();
+// Skip and burst are per-step actions, so these drive them inside one visit —
+// the play view shows one visit at a time (design v2). Where the pointer ends
+// up outside the displayed visit, the stored slot is the assertion.
 
-// The play view renders a step's keyword beats joined (stepHeadline); flatten
-// the chapter's visits to address steps by their old chapter-relative index.
-const stepText = (chapterIndex: number, stepIndex: number): string => {
-  const steps =
-    guide.chapters[chapterIndex]?.visits.flatMap((v) => v.steps) ?? [];
-  const step = steps[stepIndex];
-  if (!step) throw new Error("missing fixture step");
-  return step.keywords.join(" · ");
-};
+const GATE = "/chapter/c1/visit/v-castle-gate-1";
+const VAULT = "/chapter/c2/visit/v-sunken-vault-1";
+
+// The keyword headlines StepRow renders and labels with.
+const S1 = "Talk to gatekeeper ×2 · Take rusty lantern";
+const S2 = "Pry Old Coin from loose brick";
+const V1 = "Dive at buoy · Swim through cracked grate";
+const V2 = "Pull levers west, east, center";
+const V3 = "Feed moray eel a mushroom";
+
 const short = (text: string) => text.slice(0, 40);
-
-const S1 = stepText(0, 0);
-const S2 = stepText(0, 1);
-const S3 = stepText(0, 2);
-const S4 = stepText(0, 3);
-const S5 = stepText(0, 4);
-const C2S1 = stepText(1, 0);
 
 afterEach(async () => {
   cleanup();
+  vi.unstubAllGlobals();
   await closeProgressDb();
   await deleteDB("totodile");
 });
@@ -51,45 +37,44 @@ afterEach(async () => {
 const currentText = () =>
   document.querySelector("[data-current]")?.textContent ?? "";
 
-const renderGuide = async () => {
-  render(<GuideScreen entry={entry} guide={guide} />);
-  await screen.findByText(S1);
+const doneBox = (text: string) =>
+  screen.getByLabelText(`Done: ${short(text)}`) as HTMLInputElement;
+
+const renderGuide = async (path: string, firstStepText: string) => {
+  stubGuideContent();
+  renderGuideAt("fictional-quest", path);
+  await screen.findByText(firstStepText);
 };
 
 describe("skip-for-later (FR-B2)", () => {
   it("skipping the current step advances the pointer and flags the row", async () => {
-    await renderGuide();
+    await renderGuide(GATE, S1);
     fireEvent.click(screen.getByLabelText(`Skip for later: ${short(S1)}`));
     await waitFor(() => expect(currentText()).toContain(S2));
     expect(screen.getByText("skipped")).toBeDefined();
-    const checkbox = screen.getByLabelText(
-      `Done: ${short(S1)}`,
-    ) as HTMLInputElement;
-    expect(checkbox.checked).toBe(false);
+    expect(doneBox(S1).checked).toBe(false);
   });
 
   it("checking a skipped step promotes it to done", async () => {
-    await renderGuide();
+    await renderGuide(GATE, S1);
     fireEvent.click(screen.getByLabelText(`Skip for later: ${short(S1)}`));
     await screen.findByText("skipped");
-    fireEvent.click(screen.getByLabelText(`Done: ${short(S1)}`));
+    fireEvent.click(doneBox(S1));
     await waitFor(() => {
       expect(screen.queryByText("skipped")).toBeNull();
     });
-    expect(
-      (screen.getByLabelText(`Done: ${short(S1)}`) as HTMLInputElement).checked,
-    ).toBe(true);
+    expect(doneBox(S1).checked).toBe(true);
   });
 
   it("done rows offer no skip action", async () => {
-    await renderGuide();
-    fireEvent.click(screen.getByLabelText(`Done: ${short(S1)}`));
+    await renderGuide(GATE, S1);
+    fireEvent.click(doneBox(S1));
     await waitFor(() => expect(currentText()).toContain(S2));
     expect(screen.queryByLabelText(`Skip for later: ${short(S1)}`)).toBeNull();
   });
 
   it("unskipping a non-current step leaves the pointer alone", async () => {
-    await renderGuide();
+    await renderGuide(GATE, S1);
     fireEvent.click(screen.getByLabelText(`Skip for later: ${short(S2)}`));
     await screen.findByText("skipped");
     expect(currentText()).toContain(S1);
@@ -103,22 +88,28 @@ describe("skip-for-later (FR-B2)", () => {
 
 describe("burst marking (P2)", () => {
   it("mark-through checks everything up to the tapped step but preserves skips", async () => {
-    await renderGuide();
-    fireEvent.click(screen.getByLabelText(`Skip for later: ${short(S3)}`));
+    // The pointer sits on the visit's first step, so the burst spans exactly
+    // the three steps on screen.
+    await writeSlot({
+      ...emptySlot("fictional-quest"),
+      currentStepId: "fictional-quest:c2:s1",
+    });
+    await renderGuide(VAULT, V1);
+
+    fireEvent.click(screen.getByLabelText(`Skip for later: ${short(V2)}`));
     await screen.findByText("skipped");
     fireEvent.click(
-      screen.getByLabelText(`Mark all through here: ${short(S5)}`),
+      screen.getByLabelText(`Mark all through here: ${short(V3)}`),
     );
-    await waitFor(() => expect(currentText()).toContain(C2S1));
-    for (const text of [S1, S2, S4, S5]) {
-      expect(
-        (screen.getByLabelText(`Done: ${short(text)}`) as HTMLInputElement)
-          .checked,
-      ).toBe(true);
-    }
-    expect(
-      (screen.getByLabelText(`Done: ${short(S3)}`) as HTMLInputElement).checked,
-    ).toBe(false);
+
+    // The pointer walks past the burst into the next visit.
+    await waitFor(async () => {
+      const slot = await readSlot("fictional-quest");
+      expect(slot.currentStepId).toBe("fictional-quest:c2:s4");
+    });
+    expect(doneBox(V1).checked).toBe(true);
+    expect(doneBox(V3).checked).toBe(true);
+    expect(doneBox(V2).checked).toBe(false);
     expect(screen.getByText("skipped")).toBeDefined();
   });
 });

@@ -27,7 +27,7 @@ import { loadRaMapping } from "@/lib/content/raMapping";
 import type { GuideFile, LibraryEntry, RaMapping } from "@/schema";
 import { idTail, qualifyId } from "@/schema";
 import { CleanupScreen } from "./routes/CleanupScreen";
-import { GuideScreen } from "./routes/GuideScreen";
+import { GuideShell } from "./routes/GuideShell";
 import { LibraryScreen } from "./routes/LibraryScreen";
 import { LocationScreen } from "./routes/LocationScreen";
 import { SettingsScreen } from "./routes/SettingsScreen";
@@ -173,7 +173,8 @@ const visitRoute = createRoute({
   },
   component: function VisitRouteComponent() {
     const { entry, guide } = guideRoute.useLoaderData();
-    return <GuideScreen entry={entry} guide={guide} />;
+    const { visitId } = visitRoute.useLoaderData();
+    return <GuideShell entry={entry} guide={guide} visitId={visitId} />;
   },
 });
 

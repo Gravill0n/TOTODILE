@@ -1,14 +1,16 @@
+import { useNavigate } from "@tanstack/react-router";
 import { RefreshCw } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { useGuideProgress } from "@/features/progress/useGuideProgress";
 import { ChapterSheet } from "@/features/spine/ChapterSheet";
+import { visitIndex } from "@/features/spine/chapterProgress";
 import { MissableBanner } from "@/features/spine/MissableBanner";
 import { upcomingMissables } from "@/features/spine/missables";
-import { NowScreen } from "@/features/spine/NowScreen";
 import { PostureLayout } from "@/features/spine/PostureLayout";
+import { VisitScreen } from "@/features/spine/VisitScreen";
 import type { WidgetHandlers } from "@/features/spine/WidgetDeck";
 import { WidgetDialog } from "@/features/spine/WidgetDialog";
 import { WidgetRail } from "@/features/spine/WidgetRail";
@@ -18,12 +20,14 @@ import { getCredentials } from "@/features/sync/raCredentials";
 import { SyncReceipt } from "@/features/sync/SyncReceipt";
 import { type SyncOutcome, syncGuide } from "@/features/sync/syncGuide";
 import { chapterDomId, guideAssetUrl, stepDomId } from "@/lib/guide";
-import type { GuideFile, LibraryEntry } from "@/schema";
+import { type GuideFile, idTail, type LibraryEntry } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
 
-type GuideScreenProps = {
+type GuideShellProps = {
   entry: LibraryEntry;
   guide: GuideFile;
+  /** The fully-qualified id of the visit the URL points at. */
+  visitId: string;
 };
 
 // "center" suits small targets (step rows). Whole chapters are taller than
@@ -36,9 +40,12 @@ function scrollToElement(
   document.getElementById(domId)?.scrollIntoView?.({ block });
 }
 
-// S2 — the play view. Owns the progress slot and the navigation chrome;
-// the spine and widgets render purely below (§22.1).
-export function GuideScreen({ entry, guide }: GuideScreenProps) {
+// S2 — the play view's chrome. Owns the progress slot and every affordance
+// that outlives a single visit (header, sheets, sync, widget rails); the visit
+// itself renders below from the URL, so this stays mounted while the player
+// walks the route (§22.1 — the body is pure, the shell does the plumbing).
+export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
+  const navigate = useNavigate();
   const progress = useGuideProgress(guide);
   const [chaptersOpen, setChaptersOpen] = useState(false);
   const [widgetsOpen, setWidgetsOpen] = useState(false);
@@ -46,6 +53,26 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
   const [openWidgetId, setOpenWidgetId] = useState<string | null>(null);
   const [syncing, setSyncing] = useState(false);
   const [receipt, setReceipt] = useState<SyncOutcome | null>(null);
+
+  const visits = useMemo(() => visitIndex(guide), [guide]);
+
+  // Where the player is is an address, not component state: every jump between
+  // visits goes through the URL so it can be copied, reloaded and walked back.
+  const openVisit = useCallback(
+    (targetVisitId: string) => {
+      const target = visits.find((visit) => visit.visitId === targetVisitId);
+      if (!target) return;
+      void navigate({
+        to: "/guide/$slug/chapter/$chapterId/visit/$visitId",
+        params: {
+          slug: entry.id,
+          chapterId: idTail(target.chapterId),
+          visitId: idTail(target.visitId),
+        },
+      });
+    },
+    [entry.id, navigate, visits],
+  );
 
   // FR-C: one tap fetches RA unlocks and additively marks mapped items, then
   // shows a receipt. Atomic — marks are written only on success (§8.1).
@@ -195,8 +222,8 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
               Sync
             </Button>
           ) : null}
-          {/* Hash anchor, not <Link>: GuideScreen is rendered bare in tests, so
-              it stays free of router context. The app runs on hash history. */}
+          {/* Hash anchor, not <Link>: the app runs on hash history and this
+              leaves the play view rather than moving within it. */}
           <a
             href={`#/guide/${entry.id}/cleanup`}
             className="text-sm text-ink-soft underline"
@@ -218,9 +245,10 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
         />
       ) : null}
       {progress.ready ? (
-        <NowScreen
+        <VisitScreen
           guide={guide}
           slug={entry.id}
+          visitId={visitId}
           currentStepId={progress.currentStepId}
           doneIds={progress.doneIds}
           skippedIds={progress.skippedIds}
@@ -228,6 +256,7 @@ export function GuideScreen({ entry, guide }: GuideScreenProps) {
           onToggleSkip={progress.toggleSkip}
           onMarkThrough={progress.markThrough}
           onMovePointer={progress.movePointer}
+          onOpenVisit={openVisit}
         />
       ) : (
         <p className="text-ink-soft">Loading progress…</p>
