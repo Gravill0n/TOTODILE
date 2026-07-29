@@ -1,19 +1,16 @@
 import { useCallback, useEffect, useState } from "react";
 import type { GuideUiRecord } from "@/schema";
+import type { MapView } from "@/types/mapView";
 import { emptyGuideUi, readGuideUi, writeGuideUi } from "./guideUiStore";
 
 // The map panel offers 100%–400%; the schema pins the same range.
 const MIN_ZOOM = 1;
 const MAX_ZOOM = 4;
 
-// How far the map is zoomed and where it is scrolled. One value, because
-// zooming around a point moves both — the panel computes the view and hands it
-// over whole, so a zoom press is one write, not two.
-export type MapView = {
-  zoom: number;
-  panX: number;
-  panY: number;
-};
+// How far the map is zoomed and where it is scrolled travel together: zooming
+// around a point moves both, so the panel computes the view and hands it over
+// whole and a zoom press is one write, not two.
+export type { MapView };
 
 export type GuideUi = {
   // False until the stored record has landed. Renderers don't need to wait —

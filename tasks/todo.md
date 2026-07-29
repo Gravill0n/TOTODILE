@@ -162,7 +162,7 @@ checkpoint.
 
 ### ☑ Checkpoint E — the spine reads right
 - [x] `yarn check` green (103 files, 667 tests) · `yarn build` clean
-- [ ] **Pierre**: manual walk of `zelda-oot` chapter 4 — icons on every row, missable card where
+- [x] **Pierre**: manual walk of `zelda-oot` chapter 4 — icons on every row, missable card where
       the player acts, `Back to NOW` when you scroll away
 
 ## Phase 5 — Right column: map + widgets
@@ -172,8 +172,11 @@ checkpoint.
 > line) over a scrolling widget stack under a 2px-ruled `WIDGETS` header. Note the `.12em`
 > eyebrow tracking, which `--tracking-label` (0.06em) does not cover.
 
-- [ ] **5.1** `MapPanel` — pixelated map, 100–400% in 20% steps, zoom **and pan** persisted per
-      guide (M)
+- [x] **5.1** `MapPanel` — pixelated map of the *displayed* visit's place, 100–400% in 20% steps
+      applied as image width so the box scrolls, zoom **and** pan persisted per guide via
+      `useGuideUi`. Pan is written once scrolling settles, not per frame. A place with no map
+      renders nothing. `MapView` moved to `types/mapView.ts` — the spine feature renders the
+      panel and the progress feature owns the store, and features never import each other (M)
 - [ ] **5.2** `WidgetStack` replaces `WidgetRail` + `WidgetDialog`; opens in place; scope labels;
       shared with the phone sheet (L — stack first, then delete)
 - [ ] **5.3** Pin + reorder — dnd-kit with keyboard sensor, move up/down buttons, persisted

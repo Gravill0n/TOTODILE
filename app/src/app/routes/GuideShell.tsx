@@ -5,9 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { useGuideProgress } from "@/features/progress/useGuideProgress";
+import { useGuideUi } from "@/features/progress/useGuideUi";
 import { ChapterRail } from "@/features/spine/ChapterRail";
 import { ChapterSheet } from "@/features/spine/ChapterSheet";
 import { chapterProgress, visitIndex } from "@/features/spine/chapterProgress";
+import { MapPanel } from "@/features/spine/MapPanel";
 import { upcomingMissables } from "@/features/spine/missables";
 import { PostureLayout } from "@/features/spine/PostureLayout";
 import { VisitScreen } from "@/features/spine/VisitScreen";
@@ -47,6 +49,7 @@ function scrollToElement(
 export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
   const navigate = useNavigate();
   const progress = useGuideProgress(guide);
+  const ui = useGuideUi(guide.guideId);
   const [chaptersOpen, setChaptersOpen] = useState(false);
   const [widgetsOpen, setWidgetsOpen] = useState(false);
   const [wholeGame, setWholeGame] = useState(false);
@@ -55,6 +58,12 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
   const [receipt, setReceipt] = useState<SyncOutcome | null>(null);
 
   const visits = useMemo(() => visitIndex(guide), [guide]);
+  const displayedLocation = useMemo(() => {
+    const locationId = visits.find(
+      (visit) => visit.visitId === visitId,
+    )?.locationId;
+    return guide.locations.find((location) => location.id === locationId);
+  }, [guide, visitId, visits]);
 
   // Where the player is is an address, not component state: every jump between
   // visits goes through the URL so it can be copied, reloaded and walked back.
@@ -210,13 +219,30 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
         ) : undefined
       }
       rightPanel={
-        progress.ready && guide.widgets.length > 0 ? (
-          <WidgetRail
-            widgets={visibleWidgets}
-            header={wholeGameToggle}
-            emptyLabel="Nothing in scope"
-            onOpen={setOpenWidgetId}
-          />
+        progress.ready ? (
+          <>
+            {/* The map of the place the URL names — not the pointer's place.
+                You look at the map of the room you are reading about. */}
+            <MapPanel
+              locationName={displayedLocation?.name ?? ""}
+              image={displayedLocation?.mapImage}
+              resolveAsset={(path) => guideAssetUrl(entry.id, path)}
+              view={{
+                zoom: ui.mapZoom,
+                panX: ui.mapPanX,
+                panY: ui.mapPanY,
+              }}
+              onViewChange={ui.setMapView}
+            />
+            {guide.widgets.length > 0 ? (
+              <WidgetRail
+                widgets={visibleWidgets}
+                header={wholeGameToggle}
+                emptyLabel="Nothing in scope"
+                onOpen={setOpenWidgetId}
+              />
+            ) : null}
+          </>
         ) : undefined
       }
       header={
