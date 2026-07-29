@@ -13,9 +13,11 @@ type PostureLayoutProps = {
   rightPanel?: ReactNode;
 };
 
-// §7 S2 skeleton. Phone (play posture): single column with the bottom
-// action bar. Desktop (browse posture): walkthrough column flanked by
-// slim widget-launcher rails (WidgetRail); widgets open in WidgetDialog.
+// §7 S2 skeleton. Phone (play posture): single column with the bottom action
+// bar. Desktop (browse posture): three columns — where you are in the route on
+// the left, the visit in the middle, the map and widgets for that place on the
+// right. The rails are wide enough to read from now; they used to be 160px
+// launcher strips whose only job was opening a dialog.
 export function PostureLayout({
   children,
   onChapters,
@@ -28,20 +30,20 @@ export function PostureLayout({
 }: PostureLayoutProps) {
   return (
     <div className="min-h-dvh">
-      <div className="mx-auto flex max-w-6xl gap-6 px-4 pt-4 pb-20 lg:pb-4">
+      <div className="mx-auto flex max-w-7xl gap-6 px-4 pt-4 pb-20 lg:pb-4">
         {/* Sticky panels (#3): stay in view on long-page scroll; self-start
             so sticky bites in the stretch-aligned flex row, and an internal
             scroll cap so a tall panel never outgrows the viewport. */}
         <aside
-          aria-label="Global widgets"
-          className="hidden w-40 shrink-0 lg:sticky lg:top-4 lg:block lg:max-h-[calc(100dvh-2rem)] lg:self-start lg:overflow-y-auto"
+          aria-label="Chapters"
+          className="hidden w-56 shrink-0 lg:sticky lg:top-4 lg:block lg:max-h-[calc(100dvh-2rem)] lg:self-start lg:overflow-y-auto"
         >
           {leftPanel}
         </aside>
         <main className="min-w-0 flex-1">{children}</main>
         <aside
-          aria-label="Widgets in scope"
-          className="hidden w-40 shrink-0 lg:sticky lg:top-4 lg:block lg:max-h-[calc(100dvh-2rem)] lg:self-start lg:overflow-y-auto"
+          aria-label="Map and widgets"
+          className="hidden w-80 shrink-0 lg:sticky lg:top-4 lg:block lg:max-h-[calc(100dvh-2rem)] lg:self-start lg:overflow-y-auto"
         >
           {rightPanel}
         </aside>
@@ -54,7 +56,9 @@ export function PostureLayout({
           variant="ghost"
           size="icon"
           title="Chapters"
-          aria-label="Chapters"
+          // The desktop rail *is* the chapter list and owns that name; this
+          // button opens the same list as a sheet.
+          aria-label="Open chapter list"
           onClick={onChapters}
           disabled={!onChapters}
         >

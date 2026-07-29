@@ -74,3 +74,23 @@ describe("PostureLayout bottom nav (R1)", () => {
     expect(onSync).not.toHaveBeenCalled();
   });
 });
+
+// Design v2 turns the browse posture into three real columns: chapters on the
+// left, the visit in the middle, map and widgets on the right — not two 160px
+// launcher strips flanking a page of spine.
+describe("PostureLayout browse posture", () => {
+  it("gives each rail a name and room to hold something", () => {
+    const { container } = renderNav();
+    const chapters = screen.getByLabelText("Chapters");
+    const reference = screen.getByLabelText("Map and widgets");
+    expect(chapters.className).toContain("w-56");
+    expect(reference.className).toContain("w-80");
+    // One breakpoint, still: below lg the rails are gone and the bottom bar
+    // is the navigation.
+    for (const rail of [chapters, reference]) {
+      expect(rail.className).toContain("hidden");
+      expect(rail.className).toContain("lg:block");
+    }
+    expect(container.querySelector(".max-w-7xl")).not.toBeNull();
+  });
+});

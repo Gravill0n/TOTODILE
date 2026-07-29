@@ -40,8 +40,8 @@ describe("sticky widgets (Build 4)", () => {
       </PostureLayout>,
     );
     const asides = [
-      screen.getByLabelText("Global widgets"),
-      screen.getByLabelText("Widgets in scope"),
+      screen.getByLabelText("Chapters"),
+      screen.getByLabelText("Map and widgets"),
     ];
     for (const aside of asides) {
       expect(aside.className).toContain("sticky");

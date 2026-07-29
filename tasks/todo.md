@@ -86,7 +86,10 @@ checkpoint.
 
 ## Phase 3 — Three-column layout + chapter rail
 
-- [ ] **3.1** `PostureLayout`: `max-w-7xl`, `w-56` chapters rail, `w-80` map/widgets rail (S)
+- [x] **3.1** `PostureLayout`: `max-w-7xl`, `w-56` chapters rail, `w-80` map/widgets rail. The
+      phone bar's Chapters button gave up the accessible name `Chapters` to the rail (it keeps
+      the title; its label is now `Open chapter list`) — two elements cannot both own it, and
+      the rail is the list. The left rail still holds the old global-widget launcher until 3.2 (S)
 - [ ] **3.2** `ChapterRail` on `Accordion` + `Progress`, visits as `Link`s, current marked with
       `primary` (M)
 - [ ] **3.3** `ChapterSheet` reuses `ChapterRail` on phone (S)
