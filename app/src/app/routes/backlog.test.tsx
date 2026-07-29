@@ -69,7 +69,9 @@ describe("library backlog (Build 1)", () => {
     const title = await screen.findByText("Future Quest — planned");
     // Backlog cards never link anywhere — no play view, no review lens.
     expect(title.closest("a")).toBeNull();
-    expect(screen.getByText("planned")).toBeDefined();
+    // The section says what it holds; the rows themselves stay bare
+    // (Library.dc.html — no per-row "planned" chip).
+    expect(screen.getByText("Planned — not compiled yet")).toBeDefined();
   });
 
   it("de-emphasizes the planned card and keeps playable cards navigable", async () => {

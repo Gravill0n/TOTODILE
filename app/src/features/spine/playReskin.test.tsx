@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import { MissableBanner } from "@/features/spine/MissableBanner";
+import { MissableCard } from "@/features/spine/MissableCard";
 import { StepRow } from "@/features/spine/StepRow";
 import { step as stepSchema } from "@/schema";
 
@@ -64,21 +64,15 @@ describe("StepRow reskin (R3)", () => {
   });
 });
 
-describe("MissableBanner reskin (R3)", () => {
-  const items = [
-    {
-      stepId: "g:v1:s2",
-      deadline: "Before opening the gate",
-      location: "Gate",
-    },
-  ];
-
-  it("is an alert and tags the missable with a Badge in the missable colour", () => {
+describe("MissableCard reskin (R3)", () => {
+  it("wears the missable signal tint, not a generic warning", () => {
     const { container } = render(
-      <MissableBanner items={items} onAcknowledge={noop} onJump={noop} />,
+      <MissableCard deadline="Before opening the gate" onAcknowledge={noop} />,
     );
-    expect(screen.getByRole("alert")).toBeTruthy();
-    const badge = container.querySelector('[data-slot="badge"]');
-    expect(badge).not.toBeNull();
+    const html = container.innerHTML;
+    expect(html).toContain("border-missable");
+    expect(html).toContain("bg-missable-bg");
+    expect(html).toContain("text-missable-ink");
+    expect(screen.getByText("Missable ahead")).toBeTruthy();
   });
 });

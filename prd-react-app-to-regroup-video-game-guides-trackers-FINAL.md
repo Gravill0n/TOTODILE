@@ -274,18 +274,26 @@ The pointer is **explicit**: a stored value that auto-advances when the step it 
 
 ## 7. UI/UX Specification
 
+> **Amended 2026-07-29 (design v2).** S1, S2, S3 and the navigation map below are the
+> post-redesign spec. The decision record — the approved prototypes, the change list they
+> came with, and every point where the shipped app diverges from it — is
+> `docs/ideas/design-v2-handoff.md`. The screen count is unchanged.
+
 ### Screens (5 total)
 
 **S1 — Library** (app home when no guide is active)
-Grid/list of guide cards: cover, title, completion %, current chapter, language badge. Sorted by last activity. Guides still in compilation appear with an "in progress" treatment and open into review, not play. One tap on a card → S2 at the current step.
+An **index**, not a shelf: one wide row per guide — cover (or a placeholder; no entry has a cover yet), title, `game · platform`, language badge, a progress bar with its percentage, the chapter you are heading into, and a stat column of steps / achievements / last played. Sorted by last activity by default, with a toolbar over it: search across title, game and platform; a status filter; a sort control. None of the toolbar is persisted — the library is a place you pass through. `planned` entries leave the main list for a separate **backlog** section: dense, two-column, not navigable, because there is no build to open. Guides still in compilation appear with an "in progress" treatment and open into review, not play. One tap on a row → S2 at the current step.
 
 **S2 — Guide: play view** (the core screen)
-- *Phone (play posture)*: single column. Current step prominent at top (large type, image if any, achievement badge if mapped); next steps listed below; sticky missable banner above when one is upcoming (FR-B5). Bottom bar: ☰ chapters · 🧩 widgets · 📍 where-am-I · 🔄 Sync.
-- *Desktop (browse posture)*: walkthrough column center; widget panels in side columns per deck layout; same data, spread out.
-- Checking behavior: tap checkbox = done (auto-advance pointer if on current step); swipe/secondary action = skip-for-later; multi-select for bursts (P2).
+**One visit at a time — the place is the page — and the place is in the URL**: `#/guide/<slug>/chapter/<chapter>/visit/<visit>`, so a copied link reloads exactly where it pointed and Back walks the route. `#/guide/<slug>` is an address for "where I am": it resolves the stored pointer to its visit and rewrites itself there.
+- *Phone (play posture)*: single column, one visit's steps. Bottom bar: ☰ chapters · 🧩 widgets · 📍 where-am-I · 🔄 Sync.
+- *Desktop (browse posture)*: a header bar across three columns the reader can resize — chapter progress on the left, the visit in the middle, the map of that place and the widget stack on the right. The window itself does not scroll; each column does.
+- Each visit is headed by a sticky breadcrumb (chapter · place · which visit · position within it) with prev/next visit, and a `Back to NOW` that appears **only while the current step row is off screen**.
+- Checking behavior: tap checkbox = done (auto-advance pointer if on current step); a skip icon = skip-for-later; mark-through for bursts (P2). Browsing between visits never moves the pointer.
+- Missables are warned about **inline, above the step that passes the deadline** (FR-B5), not in a banner over the page.
 
-**S3 — Widget view** (phone) / side panels (desktop)
-Widgets for the current chapter by default, whole-game toggle visible (FR-A5). Each primitive renders responsively: tables → cards, matrices → scrollable grids, counters → chips with big +. Pinned counter floats over S2 when active (P6).
+**S3 — Widget view** (phone) / right column (desktop)
+Widgets for where the pointer is by default, whole-game toggle visible (FR-A5). Each is a **card that opens in place** — never a dialog over the guide — with its primitive rendered inside and a label saying what it is scoped to. The stack is the reader's to arrange: reorder by drag or by button, pin the ones being leant on to the top; both persist per guide. Each primitive renders responsively: tables → cards, matrices → scrollable grids, counters → chips with big +. Pinned counter floats over S2 when active (P6, still deferred — distinct from pinning a widget to the top of the stack).
 
 **S4 — Cleanup view**
 Entered from guide menu post-credits (manual switch, no auto-trigger — no nagging). Non-done items grouped by location; skipped items flagged distinctly; mastery bar at top (remaining RA achievements).
@@ -295,6 +303,19 @@ Per-layer tabs with report card header (counts, anomalies, flags). Flagged rows 
 
 ### Navigation map
 Library → Guide(play) ⇄ Widgets ⇄ Cleanup; Guide → Review lens (only for in-compilation guides); Settings reachable from Library only.
+
+Every play-view screen hangs off one guide route, which does the entry lookup, the playability guard and the content load **once**:
+
+```
+#/                                                   Library
+#/guide/<slug>                                       → redirects to the pointer's visit
+#/guide/<slug>/chapter/<chapter>/visit/<visit>       the visit page (S2)
+#/guide/<slug>/cleanup                               Cleanup (S4)
+#/review/<slug>                                      Review lens (S5, editor mode only)
+#/settings                                           Settings
+```
+
+_Amended 2026-07-29: the place screen (`#/guide/<slug>/place/<loc>`), a Workstream-A addition that never appeared in this section, was removed. The visit page names its location, says which visit of how many it is, and carries that location's map; what is no longer offered is the cross-visit view of one place._
 
 ### Visual language
 - Paper-guide aesthetic (HeartGold official guide): warm neutrals, generous information density, clear chapter numbering, "printed book" typography; dark mode = dimmed paper, not pure black UI chrome
@@ -393,7 +414,7 @@ No other flag mechanism exists. Anything else that needs turning on/off is a sch
 | Approval status | Approval records, hash-referenced (§6.7) | Library listing, review lens |
 | Player progress | Browser progress store — **only** there | Renderers, cleanup mode, sync receipt |
 | Achievement truth | **RetroAchievements** | Sync maps RA unlocks → local "done"; never the reverse (§8.1) |
-| Current step | Explicit pointer in progress store (§6.7) | Now screen, play view |
+| Current step | Explicit pointer in progress store (§6.7) | The visit page, play view |
 | RA API key | Browser settings store — only there | RA client module |
 
 Governing rule: **repo = content truth, browser = progress truth, RA = achievement truth.** No datum lives in two places.
@@ -424,7 +445,7 @@ What breaks if X changes:
 ### 11.2 Missing Data Scenarios
 - **Image missing or uncached** → placeholder showing the image's caption text; the step remains fully usable.
 - **Guide has no RA mapping** → the Sync button is hidden for that guide (not greyed out — sync is not a feature of that guide).
-- **No progress yet** (freshly opened guide) → pointer starts at step 1; Now screen shows the first step.
+- **No progress yet** (freshly opened guide) → pointer starts at step 1; the guide opens on that step's visit.
 - **A widget references no steps** (standalone widget, e.g. an encounter table) → renders normally; standalone widgets are legal.
 - **Pointer's step removed by a guide update** → pointer moves to the nearest surviving earlier step, and the app states this once.
 
@@ -517,10 +538,10 @@ Single-user app: no DAU charts. Success = the app gets used and beats the HTML g
 ### 14.2 Deferred (future — explicitly ledgered)
 | Item | Deferred from | Revisit when |
 |------|---------------|--------------|
-| In-guide text search | §4 ruling | All 5 guides migrated AND spine/TOC navigation proves insufficient |
+| In-guide text search | §4 ruling | All 5 guides migrated AND spine/TOC navigation proves insufficient. Amended 2026-07-29: with the play view visit-scoped and the place screen gone, "find that step I remember" rests on the chapter rail and shareable visit URLs — if those prove thin, search over step beats is the answer, not a restored screen |
 | Multi-playthrough slots per game | §4 ruling | A real replay actually happens |
 | Map-pins & flowchart full renderers (list-style ships first) | §9.3 | After v1 ships |
-| Per-primitive "Now cards" (brainstorm #25) | P5 tier | After the Now screen proves itself |
+| Per-primitive "Now cards" (brainstorm #25) | P5 tier | After the visit page proves itself (amended 2026-07-29: the Now screen it named was retired with the whole-spine scroll) |
 | Missables radar as derived widget (brainstorm #17) | P4/P5 tier | After cleanup mode exists |
 | App UI in French | §5.6 | Probably never — recorded for honesty |
 
@@ -659,6 +680,9 @@ Versions pinned at major level; exact minors lock in the Yarn lockfile at implem
 | Styling | **Tailwind CSS** | 4.x | v4's `@theme` is CSS custom properties natively — §9.1 "centralized theme tokens" maps directly onto it; paper-guide palette defined once as tokens. The §9.1 "theme = hardcoded, centralized" row concretely means the Tailwind theme config |
 | State | **React state + context only** | — | No Redux/Zustand: progress lives in IndexedDB, UI state is shallow; fewer deps, less rot |
 | Routing | **TanStack Router** | latest 1.x | Type-safe routes pair with the strict-TS, schema-first approach; static-host-safe |
+| Drag & drop | **`@dnd-kit/core` + `@dnd-kit/sortable`** | latest | Reordering the widget stack (§7 S3). Chosen for its keyboard sensor — reordering is operable without a pointer, and the move up/down buttons ride the same arrangement. Added 2026-07-28 (design v2) |
+| Resizable panes | **`react-resizable-panels`** | 4.x | The reader sizes S2's three columns and the map/widget split (§7 S2). Speaks in percentages, which survive a window resize where stored pixel widths would not. Added 2026-07-29 (design v2) |
+| Pan & zoom | **`react-zoom-pan-pinch`** | 4.x | The image lightbox (#2) and, since design v2, the map panel's wheel/drag gestures. Added at Build 3 |
 
 ### 19.2 Development Tools
 | Tool | Version | Purpose |
@@ -699,7 +723,7 @@ Guides/                          # this repo
 │   │   ├── main.tsx             # entry — stays at src root (index.html references it)
 │   │   ├── app/                 # app layer: router + route screens (routes/)
 │   │   ├── features/
-│   │   │   ├── spine/           # spine rendering, current-step pointer, Now screen, widget chrome
+│   │   │   ├── spine/           # visit page, chapter rail, map panel, widget stack
 │   │   │   ├── progress/        # IndexedDB store, done/skip semantics, export/import
 │   │   │   ├── review/          # review lens (editor mode only)
 │   │   │   └── sync/            # the isolated RA client module (§9.1) + receipt UI
@@ -737,7 +761,7 @@ Structural decision: **no Yarn workspaces / monorepo packages** — the schema l
 
 ### 20.3 Naming Conventions
 - **Non-component files:** camelCase (`raClient.ts`, `progressStore.ts`)
-- **Component files:** PascalCase, matching the exported component (`PrepCard.tsx`, `NowScreen.tsx`)
+- **Component files:** PascalCase, matching the exported component (`PrepCard.tsx`, `VisitScreen.tsx`)
 - **Folders:** camelCase (`primitives/prepCard/`, `sync/`)
 - **Guide slugs & data folders:** kebab-case (`pokemon-crystal`) — URLs and data keys, not code; already established in the repo; stable forever (they key progress data)
 - **Schema/JSON fields:** camelCase
@@ -862,7 +886,7 @@ export async function fetchUnlocks(id: number): Promise<RAUserGameResponse> // �
 | Element | Convention | Example |
 |---------|------------|---------|
 | Variables / functions | camelCase | `markStepDone()` |
-| Components | PascalCase | `NowScreen` |
+| Components | PascalCase | `VisitScreen` |
 | Types | PascalCase | `GuideSpine` |
 | Constants | SCREAMING_SNAKE | `SCHEMA_VERSION` |
 | Hooks | `use` prefix | `useCurrentStep` |
@@ -970,7 +994,7 @@ Source ideas are the 25 distilled ideas from the brainstorm session (2026-06-09)
 | 11. Confidence flags | E3 | FR-D2, FR-E2 | §3 E3 AC |
 | 12. Random spot-check | E4 | FR-E3 | §3 E4 AC |
 | 13. In-app review lens | E3, E5 | FR-E1–E5 | §3 E5 AC |
-| 14. Now screen landing | P1 | FR-A4 | §3 P1 AC |
+| 14. Landing on the current step | P1 | FR-A4 | §3 P1 AC |
 | 15. Responsive postures | P1, P4 | §5.4, §7 (S1–S5) | §13.2 metric 4 |
 | 16. Offline-first PWA | P1 | §5.2, §17.3 | §3 P1 AC ("works offline") |
 | 17. Missables radar (derived widget) | P3 | FR-B5; full radar deferred §14.2 | §3 P3 AC |
@@ -981,7 +1005,7 @@ Source ideas are the 25 distilled ideas from the brainstorm session (2026-06-09)
 | 22. Pokémon Crystal as pilot | E2–E5 | §15 risk 4, §16.4 | §13.1 metric 2 |
 | 23. Sync receipt | P5 | FR-C3 | §3 P5 AC |
 | 24. RA mapping as standalone file | P5 | FR-C1, §6.5 | §11.1 RA-mapping row |
-| 25. Per-primitive "Now cards" | — | **Deferred** §14.2 | Revisit after the Now screen proves itself |
+| 25. Per-primitive "Now cards" | — | **Deferred** §14.2 | Revisit after the visit page proves itself |
 
 ## Appendix B: Five Pre-Coding Questions Checklist
 

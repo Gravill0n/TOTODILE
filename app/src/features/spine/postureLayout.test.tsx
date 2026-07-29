@@ -74,3 +74,76 @@ describe("PostureLayout bottom nav (R1)", () => {
     expect(onSync).not.toHaveBeenCalled();
   });
 });
+
+// Design v2 turns the browse posture into three real columns: chapters on the
+// left, the visit in the middle, map and widgets on the right — not two 160px
+// launcher strips flanking a page of spine.
+describe("PostureLayout browse posture", () => {
+  it("divides the window into three panels the reader can size", () => {
+    const { container } = renderNav();
+    // Both rails and the visit are panels of one group; the right rail holds
+    // a nested vertical group for map-over-widgets.
+    expect(
+      container.querySelectorAll('[data-slot="resizable-panel-group"]'),
+    ).toHaveLength(2);
+    expect(
+      container.querySelectorAll('[data-slot="resizable-panel"]'),
+    ).toHaveLength(5);
+    // Three separators: two between the columns, one inside the right rail.
+    expect(screen.getAllByRole("separator")).toHaveLength(3);
+    // Nothing is centred in a fixed measure — the rails hold the edges.
+    expect(container.querySelector('[class*="max-w-"]')).toBeNull();
+  });
+
+  it("starts at the sizes it is given", () => {
+    renderNav({
+      sizes: { leftRailPct: 30, rightRailPct: 20, mapPanePct: 60 },
+    });
+    // The group applies the layout as flex-basis on each panel.
+    const left = screen.getByLabelText("Chapters").closest("[data-slot]");
+    expect(left?.getAttribute("style") ?? "").toContain("30");
+  });
+
+  it("sets the chrome apart from the column being read", () => {
+    renderNav({ header: <p>guide header</p> });
+    // The chrome is on card, the visit on paper (the page background).
+    const bar = screen.getByText("guide header").closest("header");
+    expect(bar?.className).toContain("bg-card");
+    for (const label of ["Chapters", "Map and widgets"]) {
+      expect(screen.getByLabelText(label).className).toContain("bg-card");
+    }
+  });
+
+  it("scrolls each column, never the window", () => {
+    const { container } = renderNav();
+    // The desktop shell is exactly one viewport tall and clips: the header
+    // holds its row and the three columns scroll inside it, so a rail can
+    // never slide away from the visit it describes.
+    const shell = container.firstElementChild;
+    expect(shell?.className).toContain("lg:h-dvh");
+    expect(shell?.className).toContain("lg:overflow-hidden");
+    expect(screen.getByLabelText("Chapters").className).toContain(
+      "overflow-y-auto",
+    );
+    expect(screen.getByText("play area").closest("main")?.className).toContain(
+      "lg:overflow-y-auto",
+    );
+    // The right rail is no longer one scroll container: it is split, and only
+    // its widget half scrolls — asserted in the next case.
+  });
+
+  it("holds the map still and scrolls the widgets under it", () => {
+    renderNav({
+      mapPanel: <p>map here</p>,
+      widgetPanel: <p>widgets here</p>,
+    });
+    // Guide.dc.html: the map block is flex-shrink:0 and only the widget block
+    // scrolls. It is also what makes wheel-over-map unambiguous (task 5.5.4).
+    expect(screen.getByText("map here").closest("div")?.className).toContain(
+      "overflow-hidden",
+    );
+    expect(
+      screen.getByText("widgets here").closest("div")?.className,
+    ).toContain("overflow-y-auto");
+  });
+});

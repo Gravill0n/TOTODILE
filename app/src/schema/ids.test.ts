@@ -1,11 +1,14 @@
-import { describe, it } from "vitest";
+import { describe, expect, it } from "vitest";
 import {
   chapterId,
   checkableId,
   guideFile,
   guideSlug,
+  idSlug,
+  idTail,
   localId,
   locationId,
+  qualifyId,
   stepId,
   visitId,
 } from "@/schema";
@@ -17,6 +20,32 @@ import {
   validGuide,
   validLocation,
 } from "@/testing/helpers";
+
+// URLs carry the tail, not the whole ID: /guide/zelda-oot/chapter/c4 reads
+// better than the slug repeated, and the slug is already in the path.
+describe("ID slug and tail", () => {
+  it("splits an ID into its slug and its guide-local tail", () => {
+    expect(idSlug("zelda-oot:v-kakariko-village-5")).toBe("zelda-oot");
+    expect(idTail("zelda-oot:v-kakariko-village-5")).toBe(
+      "v-kakariko-village-5",
+    );
+  });
+
+  it("keeps every segment after the slug for 3-segment IDs", () => {
+    expect(idTail("zelda-oot:v-kakariko-village-5:s1")).toBe(
+      "v-kakariko-village-5:s1",
+    );
+  });
+
+  it("round-trips through qualifyId", () => {
+    const id = "zelda-oot:c4";
+    expect(qualifyId(idSlug(id), idTail(id))).toBe(id);
+  });
+
+  it("returns an empty tail for an ID with no colon", () => {
+    expect(idTail("zelda-oot")).toBe("");
+  });
+});
 
 describe("stable-ID grammar (§20.3)", () => {
   it("accepts well-formed IDs of each class", () => {

@@ -90,6 +90,18 @@ export function idSlug(id: string): string {
   return id.split(":")[0] ?? "";
 }
 
+// The guide-local part of an ID — everything after the slug, separators kept.
+// URLs carry the tail (/guide/zelda-oot/chapter/c4) because the slug is already
+// in the path; qualifyId puts a routed tail back together with its slug.
+export function idTail(id: string): string {
+  const separator = id.indexOf(":");
+  return separator === -1 ? "" : id.slice(separator + 1);
+}
+
+export function qualifyId(slug: string, tail: string): string {
+  return `${slug}:${tail}`;
+}
+
 // §6.6 invariant: every step and every widget row traces to at least one
 // source-manifest entry. Whether the referenced IDs exist in sources.json
 // is a cross-file check owned by validate-guides.

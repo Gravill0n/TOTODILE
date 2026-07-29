@@ -107,6 +107,8 @@ export default defineConfig({
   ],
   test: {
     environment: "node",
+    // Browser APIs jsdom lacks that a dependency requires — see the file.
+    setupFiles: ["./src/testing/setup.ts"],
     coverage: {
       // Test infra is not product code — keep the report about src proper.
       exclude: ["src/testing/**", "**/*.test.*"],

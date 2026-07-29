@@ -1,36 +1,28 @@
 // @vitest-environment jsdom
 import "fake-indexeddb/auto";
-import {
-  cleanup,
-  fireEvent,
-  render,
-  screen,
-  waitFor,
-  within,
-} from "@testing-library/react";
+import { cleanup, fireEvent, screen, waitFor } from "@testing-library/react";
 import { deleteDB } from "idb";
-import { afterEach, describe, expect, it } from "vitest";
-import { GuideScreen } from "@/app/routes/GuideScreen";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { closeProgressDb } from "@/features/progress/progressStore";
-import { guideFile, libraryManifest } from "@/schema";
-import { readFixtureJson } from "@/testing/fixtureRepo";
-
-const guide = guideFile.parse(
-  readFixtureJson("guides/fictional-quest/guide.json"),
-);
-const entry = libraryManifest.parse(readFixtureJson("library.json")).guides[0];
-if (!entry) throw new Error("fixture library has no entry");
+import { renderGuideAt, stubGuideContent } from "@/testing/renderRoute";
 
 const S1_TEXT = /Talk to gatekeeper ×2/;
+const DIVE_TEXT = /Dive at buoy/;
+// The vault's first visit — chapter 2, where the location-scoped map lives.
+const VAULT = "/chapter/c2/visit/v-sunken-vault-1";
 
 afterEach(async () => {
   cleanup();
+  vi.unstubAllGlobals();
   await closeProgressDb();
   await deleteDB("totodile");
 });
 
+// Widget scope follows the pointer, not the URL (FR-A5), so these render at
+// the pointer's own visit unless they are about moving it.
 const renderGuide = async () => {
-  render(<GuideScreen entry={entry} guide={guide} />);
+  stubGuideContent();
+  renderGuideAt("fictional-quest");
   await screen.findByText(S1_TEXT);
 };
 
@@ -55,7 +47,9 @@ describe("widget view (S3)", () => {
   });
 
   it("moving the pointer into the Sunken Vault reveals its location-scoped map", async () => {
-    await renderGuide();
+    stubGuideContent();
+    renderGuideAt("fictional-quest", VAULT);
+    await screen.findByText(DIVE_TEXT);
     // The vault map is scoped to the Sunken Vault location; moving the pointer
     // to a step there reveals it and drops the chapter-1 checklist.
     fireEvent.click(screen.getByRole("button", { name: /^Dive at buoy/ }));
@@ -72,20 +66,13 @@ describe("widget view (S3)", () => {
     expect(screen.getAllByText("Widgets")).not.toHaveLength(0);
   });
 
-  it("a rail launcher opens the widget full-size in a dialog", async () => {
-    await renderGuide();
-    fireEvent.click(screen.getByRole("button", { name: "Bestiary" }));
-    const dialog = await screen.findByRole("dialog");
-    expect(within(dialog).getByText("Bestiary")).toBeDefined();
-    // The body renders live inside the dialog, not in the rail.
-    expect(within(dialog).getByText("HP")).toBeDefined();
-  });
+  // Opening a widget in place, rather than over the guide, is covered by
+  // widgetStack.test.tsx — the launcher-and-dialog pair it replaced is gone.
 
   it("counter values persist across a remount (FR-B3)", async () => {
-    const first = render(<GuideScreen entry={entry} guide={guide} />);
-    await screen.findByText(S1_TEXT);
+    await renderGuide();
     fireEvent.click(
-      screen.getByRole("button", { name: "Collectible counters" }),
+      screen.getByRole("button", { name: /^Collectible counters/ }),
     );
     fireEvent.click(
       (await screen.findAllByLabelText("Increment Blue coins"))[0] as Element,
@@ -93,21 +80,21 @@ describe("widget view (S3)", () => {
     await waitFor(() => {
       expect(screen.getAllByText("1 / 40")).not.toHaveLength(0);
     });
-    first.unmount();
-    render(<GuideScreen entry={entry} guide={guide} />);
-    await screen.findByText(S1_TEXT);
+    cleanup();
+
+    await renderGuide();
     fireEvent.click(
-      screen.getByRole("button", { name: "Collectible counters" }),
+      screen.getByRole("button", { name: /^Collectible counters/ }),
     );
     await waitFor(() => {
       expect(screen.getAllByText("1 / 40")).not.toHaveLength(0);
     });
   });
 
-  it("toggling a checklist row in the dialog marks it done", async () => {
+  it("toggling a checklist row in the stack marks it done", async () => {
     await renderGuide();
     fireEvent.click(
-      screen.getByRole("button", { name: "Castle treasure checklist" }),
+      screen.getByRole("button", { name: /^Castle treasure checklist/ }),
     );
     const checkbox = (
       await screen.findAllByLabelText("Gate key")
