@@ -217,10 +217,17 @@ checkpoint.
       and the nested vertical one report separately and must not clobber each other) + a
       `ResizeObserver` stub via a new `test.setupFiles`. `components.json` untouched; the store
       stays at **v2**, proved by a test that reads an older record back with the new defaults (M)
-- [ ] **5.5.3** Resizable rails: horizontal `ResizablePanelGroup` at `lg` with a nested vertical
-      group for map-over-widgets; `useIsWide()` gates it and returns **true** without matchMedia,
-      as `useInView` does. Also corrects the task-3.1 deviation where the right aside, not the
-      widget block, is the scroll container (L)
+- [x] **5.5.3** Resizable rails: horizontal group at `lg` with a nested vertical group for
+      map-over-widgets; `useIsWide()` gates it and returns **true** without matchMedia, as
+      `useInView` does. Corrects the task-3.1 deviation where the right aside, not the widget
+      block, was the scroll container. Stored sizes are applied through the imperative
+      `groupRef.setLayout` because `defaultLayout` is read once on mount and the record arrives
+      later — same one-frame default the map zoom already has.
+      **Not machine-verified:** what a resize *resolves to*. The group sizes itself from a
+      measured box and jsdom reports every box as zero, so an arrow key makes the library throw
+      rather than resize. Tests cover the separators (count, focus, orientation), the
+      percentages reaching the DOM, per-guide isolation and the clamping on the record; the
+      pixels are a checkpoint-G item in a real browser (L)
 - [ ] **5.5.4** Direct-manipulation map — wheel zooms, drag pans, double-click resets; all three
       buttons go, the `%` stays as text. `react-zoom-pan-pinch` is already a dependency, and
       `panFraction`/`panOffset` keep their meaning unchanged (M)

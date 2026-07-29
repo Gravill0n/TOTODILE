@@ -251,43 +251,49 @@ export function GuideShell({
           />
         ) : undefined
       }
-      rightPanel={
+      sizes={{
+        leftRailPct: ui.leftRailPct,
+        rightRailPct: ui.rightRailPct,
+        mapPanePct: ui.mapPanePct,
+      }}
+      onSizesChange={ui.setRailLayout}
+      mapPanel={
+        // The map of the place the URL names — not the pointer's place. You
+        // look at the map of the room you are reading about.
         progress.ready ? (
-          <>
-            {/* The map of the place the URL names — not the pointer's place.
-                You look at the map of the room you are reading about. */}
-            <MapPanel
-              locationName={displayedLocation?.name ?? ""}
-              image={displayedLocation?.mapImage}
-              resolveAsset={(path) => guideAssetUrl(entry.id, path)}
-              view={{
-                zoom: ui.mapZoom,
-                panX: ui.mapPanX,
-                panY: ui.mapPanY,
-              }}
-              onViewChange={ui.setMapView}
+          <MapPanel
+            locationName={displayedLocation?.name ?? ""}
+            image={displayedLocation?.mapImage}
+            resolveAsset={(path) => guideAssetUrl(entry.id, path)}
+            view={{
+              zoom: ui.mapZoom,
+              panX: ui.mapPanX,
+              panY: ui.mapPanY,
+            }}
+            onViewChange={ui.setMapView}
+          />
+        ) : undefined
+      }
+      widgetPanel={
+        progress.ready && guide.widgets.length > 0 ? (
+          <div className="space-y-2">
+            <div className="flex items-center justify-between gap-2">
+              <span className="text-[11px] tracking-eyebrow text-ink-soft uppercase">
+                Widgets
+              </span>
+              {wholeGameToggle}
+            </div>
+            <WidgetStack
+              widgets={visibleWidgets}
+              progress={progressSlice}
+              labelForScope={nameForScope}
+              order={ui.widgetOrder}
+              pinnedIds={ui.pinnedWidgetIds}
+              onOrderChange={ui.setWidgetOrder}
+              onTogglePin={ui.togglePinned}
+              {...handlers}
             />
-            {guide.widgets.length > 0 ? (
-              <div className="space-y-2 pt-3">
-                <div className="flex items-center justify-between gap-2">
-                  <span className="text-[11px] tracking-eyebrow text-ink-soft uppercase">
-                    Widgets
-                  </span>
-                  {wholeGameToggle}
-                </div>
-                <WidgetStack
-                  widgets={visibleWidgets}
-                  progress={progressSlice}
-                  labelForScope={nameForScope}
-                  order={ui.widgetOrder}
-                  pinnedIds={ui.pinnedWidgetIds}
-                  onOrderChange={ui.setWidgetOrder}
-                  onTogglePin={ui.togglePinned}
-                  {...handlers}
-                />
-              </div>
-            ) : null}
-          </>
+          </div>
         ) : undefined
       }
       header={

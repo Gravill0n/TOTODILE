@@ -90,6 +90,37 @@ describe("useGuideUi", () => {
     expect(result.current.mapZoom).toBe(1);
   });
 
+  // The two groups report separately — the columns when a rail moves, the
+  // nested one when the map/widget split moves — so a partial write must not
+  // reset whatever the other group last said.
+  it("writes one division without disturbing the others", async () => {
+    const { result } = renderHook(() => useGuideUi("fictional-quest"));
+    await waitFor(() => expect(result.current.hydrated).toBe(true));
+
+    act(() => result.current.setRailLayout({ leftRailPct: 30 }));
+    await waitFor(async () => {
+      expect((await readGuideUi("fictional-quest")).leftRailPct).toBe(30);
+    });
+
+    act(() => result.current.setRailLayout({ mapPanePct: 70 }));
+    const stored = await readGuideUi("fictional-quest");
+    expect(stored.mapPanePct).toBe(70);
+    expect(stored.leftRailPct).toBe(30);
+  });
+
+  it("clamps a division to something a reader can still use", async () => {
+    const { result } = renderHook(() => useGuideUi("fictional-quest"));
+    await waitFor(() => expect(result.current.hydrated).toBe(true));
+
+    // A rail dragged to nothing would be unusable and, once stored,
+    // unrecoverable without clearing site data.
+    act(() =>
+      result.current.setRailLayout({ leftRailPct: 0, rightRailPct: 99 }),
+    );
+    await waitFor(() => expect(result.current.leftRailPct).toBe(8));
+    expect(result.current.rightRailPct).toBe(45);
+  });
+
   it("toggles a pin on and back off", async () => {
     const { result } = renderHook(() => useGuideUi("fictional-quest"));
     await waitFor(() => expect(result.current.hydrated).toBe(true));
