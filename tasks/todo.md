@@ -78,6 +78,14 @@ checkpoint.
       label would be noise. Backlog titles are list rows, not `<h2>`s, so the toolbar test's
       heading assertion moved to a text assertion (S)
 
+- [x] **2.5** Colour corrections against `Library.dc.html` (Pierre, 2026-07-29) — progress
+      tracks on `paper-dim` (the shadcn `bg-primary/20` default was a washed-out accent), the
+      completion figure in `primary`, the search field on `card`, the active segment carrying an
+      ink border, `no RA set` / `Last played` in `ink-soft`, the `RA set` chip a dashed hairline
+      pill in `ink-soft`, and no hairlines between the stats rows — the column has one rule, down
+      its left edge. Pinned by `library.test.tsx` ("colours the row the way Library.dc.html
+      does") (S)
+
 ### ☑ Checkpoint C — Library done
 - [x] `yarn check` green (101 files, 644 tests) · `yarn build` clean
 - [ ] **Pierre**: `yarn dev` — real counts on `pokemon-crystal`/`zelda-oot`, `no RA set` on

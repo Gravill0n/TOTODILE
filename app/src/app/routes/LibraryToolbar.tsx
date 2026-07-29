@@ -46,7 +46,7 @@ export function LibraryToolbar({ view, onChange }: LibraryToolbarProps) {
         }
         aria-label="Search guides"
         placeholder="Search guides"
-        className="max-w-xs flex-1"
+        className="max-w-xs flex-1 bg-card"
       />
       {/* Radix clears a single-select group when its active item is tapped
           again; a segmented control has no empty state, so an empty value is

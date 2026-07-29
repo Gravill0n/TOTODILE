@@ -17,7 +17,10 @@ export function BacklogRow({ entry }: { entry: LibraryEntry }) {
       {/* Dashed, because the set exists at RetroAchievements but nothing here
           is mapped to it yet. */}
       {entry.raGameId === undefined ? null : (
-        <Badge variant="outline" className="shrink-0 border-dashed">
+        <Badge
+          variant="outline"
+          className="shrink-0 rounded-full border-dashed border-line text-[10px] text-ink-soft"
+        >
           RA set
         </Badge>
       )}

@@ -120,6 +120,28 @@ describe("guide row", () => {
     expect(screen.getByText("Chapter 1 — The Castle Gate")).toBeDefined();
   });
 
+  it("colours the row the way Library.dc.html does", async () => {
+    await writeSlot({
+      ...emptySlot("fictional-quest"),
+      stats: { stepsDone: 3, stepsTotal: 12, currentChapterTitle: null },
+      lastActivityAt: "2026-06-11T10:00:00Z",
+    });
+    stubGuideContent({ raMappings: {} });
+    renderAppAt("/");
+    await screen.findByText("Fictional Quest — 100% guide");
+
+    // The completion figure is the one number on the row worth the accent.
+    expect(screen.getByText("25%").className).toContain("text-primary");
+    // Bar tracks are a surface, not a tint of the fill.
+    expect(
+      document.querySelector('[data-slot="progress"]')?.className,
+    ).toContain("bg-paper-dim");
+    // A figure the guide does not have reads soft; one it does reads full.
+    expect(screen.getByText("no RA set").className).toContain("text-ink-soft");
+    expect(screen.getByText("3 / 12").className).not.toContain("text-ink-soft");
+    expect(screen.getByText("2026-06-11").className).toContain("text-ink-soft");
+  });
+
   it("says a guide has never been opened rather than showing zeroes", async () => {
     stubGuideContent();
     renderAppAt("/");

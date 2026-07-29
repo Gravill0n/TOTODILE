@@ -17,8 +17,12 @@ function Progress({
       // to the root, so every bar announces as indeterminate. Completion is the
       // number this app is about — pass it through.
       value={value}
+      // Paper-fitted: upstream tracks the bar on a 20% tint of the fill, which
+      // in this palette is a washed-out achievement orange. Every bar in the
+      // prototypes runs on paper-dim (`--color-paper-dim`) under an accent
+      // fill, so the track is a surface and only the fill carries the colour.
       className={cn(
-        "relative h-2 w-full overflow-hidden rounded-full bg-primary/20",
+        "relative h-2 w-full overflow-hidden rounded-full bg-paper-dim",
         className,
       )}
       {...props}

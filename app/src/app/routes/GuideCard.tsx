@@ -17,14 +17,28 @@ type GuideRowProps = {
   raMapping: RaMapping | null;
 };
 
-// One line of the stats column: a label and a figure, hairline-separated.
-function Stat({ label, value }: { label: string; value: string }) {
+// One line of the stats column. The only rule in this column is the one down
+// its left edge (Library.dc.html) — hairlines between the rows turned three
+// figures into a table.
+function Stat({
+  label,
+  value,
+  muted = false,
+}: {
+  label: string;
+  value: string;
+  muted?: boolean;
+}) {
   return (
-    <div className="flex items-baseline justify-between gap-2 border-b border-line pb-1 last:border-b-0">
-      <dt className="text-xs tracking-label text-ink-soft uppercase">
+    <div className="flex items-baseline justify-between gap-3">
+      <dt className="text-[10px] tracking-label text-ink-soft uppercase">
         {label}
       </dt>
-      <dd className="font-mono text-sm tabular-nums">{value}</dd>
+      <dd
+        className={`font-mono text-sm tabular-nums ${muted ? "text-ink-soft" : ""}`}
+      >
+        {value}
+      </dd>
     </div>
   );
 }
@@ -83,7 +97,7 @@ export function GuideRow({ entry, slot, playable, raMapping }: GuideRowProps) {
           {completion === null ? (
             <span className="text-sm text-ink-soft">not started</span>
           ) : (
-            <span className="font-mono text-2xl tabular-nums">
+            <span className="font-mono text-lg font-medium text-primary tabular-nums">
               {`${completion}%`}
             </span>
           )}
@@ -102,6 +116,7 @@ export function GuideRow({ entry, slot, playable, raMapping }: GuideRowProps) {
         <Stat
           label="Steps"
           value={stats ? `${stats.stepsDone} / ${stats.stepsTotal}` : "—"}
+          muted={!stats}
         />
         <Stat
           label="Achievements"
@@ -110,10 +125,12 @@ export function GuideRow({ entry, slot, playable, raMapping }: GuideRowProps) {
               ? `${achievements.earned} / ${achievements.total}`
               : "no RA set"
           }
+          muted={achievements === null}
         />
         <Stat
           label="Last played"
           value={slot ? slot.lastActivityAt.slice(0, 10) : "never"}
+          muted
         />
       </dl>
     </Card>
