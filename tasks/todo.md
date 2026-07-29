@@ -205,9 +205,11 @@ checkpoint.
 > **No IDB version bump**: `migrated()` spreads over `emptyGuideUi`, so defaults land on
 > existing records.
 
-- [ ] **5.5.1** Keyword beats on their own lines — a block `<span>` per beat inside the existing
-      move-pointer button; `aria-label`s keep the joined `stepHeadline` form, so `visitScreen`,
-      `skipAndBurst` and `playReskin` pass unedited (S)
+- [x] **5.5.1** Keyword beats on their own lines — a block `<span>` per beat inside the existing
+      move-pointer button; `aria-label`s keep the joined `stepHeadline` form. Correction to the
+      plan's acceptance: `skipAndBurst` did **not** pass unedited — not because of a label, but
+      because it *waited* on the joined text to know the guide had rendered, and read the current
+      row's `textContent` for it. Both now use the first beat; every `aria-label` is untouched (S)
 - [ ] **5.5.2** `shadcn add resizable` + `guideUi` gains `leftRailPct` / `rightRailPct` /
       `mapPanePct` (percentages, not pixels — they survive a window resize) + a `ResizeObserver`
       stub via a new `test.setupFiles`, without which jsdom kills every guide test (M)

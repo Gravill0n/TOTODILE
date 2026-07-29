@@ -26,6 +26,9 @@ const V2 = "Pull levers west, east, center";
 const V3 = "Feed moray eel a mushroom";
 
 const short = (text: string) => text.slice(0, 40);
+// Beats render one per line (design v2), so waiting for a render means waiting
+// for the first beat. The joined form still names the controls.
+const firstBeat = (text: string) => text.split(" · ")[0] ?? text;
 
 afterEach(async () => {
   cleanup();
@@ -34,6 +37,8 @@ afterEach(async () => {
   await deleteDB("totodile");
 });
 
+// The row's beats are separate elements, so textContent runs them together —
+// match on the first beat rather than the joined headline.
 const currentText = () =>
   document.querySelector("[data-current]")?.textContent ?? "";
 
@@ -43,14 +48,14 @@ const doneBox = (text: string) =>
 const renderGuide = async (path: string, firstStepText: string) => {
   stubGuideContent();
   renderGuideAt("fictional-quest", path);
-  await screen.findByText(firstStepText);
+  await screen.findByText(firstBeat(firstStepText));
 };
 
 describe("skip-for-later (FR-B2)", () => {
   it("skipping the current step advances the pointer and flags the row", async () => {
     await renderGuide(GATE, S1);
     fireEvent.click(screen.getByLabelText(`Skip for later: ${short(S1)}`));
-    await waitFor(() => expect(currentText()).toContain(S2));
+    await waitFor(() => expect(currentText()).toContain(firstBeat(S2)));
     expect(screen.getByText("skipped")).toBeDefined();
     expect(doneBox(S1).checked).toBe(false);
   });
@@ -69,7 +74,7 @@ describe("skip-for-later (FR-B2)", () => {
   it("done rows offer no usable skip action", async () => {
     await renderGuide(GATE, S1);
     fireEvent.click(doneBox(S1));
-    await waitFor(() => expect(currentText()).toContain(S2));
+    await waitFor(() => expect(currentText()).toContain(firstBeat(S2)));
     // Every row keeps the same controls (design v2), but skipping a done step
     // is a no-op in the slot, so the button is disabled rather than absent.
     expect(
@@ -81,12 +86,12 @@ describe("skip-for-later (FR-B2)", () => {
     await renderGuide(GATE, S1);
     fireEvent.click(screen.getByLabelText(`Skip for later: ${short(S2)}`));
     await screen.findByText("skipped");
-    expect(currentText()).toContain(S1);
+    expect(currentText()).toContain(firstBeat(S1));
     fireEvent.click(screen.getByLabelText(`Unskip: ${short(S2)}`));
     await waitFor(() => {
       expect(screen.queryByText("skipped")).toBeNull();
     });
-    expect(currentText()).toContain(S1);
+    expect(currentText()).toContain(firstBeat(S1));
   });
 });
 

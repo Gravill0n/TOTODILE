@@ -36,8 +36,27 @@ afterEach(cleanup);
 describe("StepRow keyword/detail rendering (D3)", () => {
   it("shows the keyword beats by default and keeps detail collapsed", () => {
     renderStep(true);
-    expect(screen.getByText("First beat · Second beat")).toBeDefined();
+    // Beats are actions, one per line — not one sentence joined by separators.
+    expect(screen.getByText("First beat")).toBeDefined();
+    expect(screen.getByText("Second beat")).toBeDefined();
+    expect(screen.queryByText("First beat · Second beat")).toBeNull();
     expect(screen.queryByText(/full prose explanation/)).toBeNull();
+  });
+
+  it("keeps every beat inside the one move-pointer target", () => {
+    renderStep(false);
+    const move = screen.getByRole("button", { name: /^First beat/ });
+    // Tapping any line moves the pointer: the lines are inside one button.
+    expect(move.textContent).toContain("First beat");
+    expect(move.textContent).toContain("Second beat");
+    // …and the accessible names stay the joined form — a label is a name,
+    // not a layout, and the rest of the suite pins these strings.
+    expect(
+      screen.getByLabelText("Done: First beat · Second beat"),
+    ).toBeDefined();
+    expect(
+      screen.getByLabelText("Skip for later: First beat · Second beat"),
+    ).toBeDefined();
   });
 
   it("toggles the detail open and closed (aria-expanded tracks state)", () => {

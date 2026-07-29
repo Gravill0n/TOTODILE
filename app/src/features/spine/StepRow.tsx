@@ -115,17 +115,27 @@ export function StepRow({
             Now
           </p>
         ) : null}
+        {/* One beat per line. A step's keywords are a sequence of actions —
+            "Talk to gatekeeper ×2" then "Take rusty lantern" — and joining
+            them with separators made two things read as one sentence to
+            parse. Spans rather than a list because a <ul> is not valid inside
+            a <button>, and the button has to stay whole: tapping any line
+            moves the pointer. */}
         <button
           type="button"
           onClick={onMoveHere}
           title="Move the current-step pointer here"
           className={cn(
-            "text-left",
+            "flex flex-col items-start gap-0.5 text-left",
             isCurrent ? "text-lg/6" : "text-sm/5",
             isDone ? "line-through" : isSkipped ? "italic" : undefined,
           )}
         >
-          {headline}
+          {step.keywords.map((beat) => (
+            <span key={beat} className="block text-pretty">
+              {beat}
+            </span>
+          ))}
         </button>
 
         {/* Keyword beats show by default (#11); the full prose is one tap away
