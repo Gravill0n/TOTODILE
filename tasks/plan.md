@@ -486,6 +486,152 @@ back glyph (no `arrow-left` in the DS set; the emoji guard allows `←`).
 
 ---
 
+## Phase 5.5 — Fit the guide to the reader
+
+**Added 2026-07-29 (Pierre), after checkpoint F.** Numbered 5.5 rather than 6 so the existing
+§6.1/§6.2 references in this file, in `tasks/todo.md` and in the commit log keep pointing at the
+same tasks.
+
+Walking the finished guide screen surfaced three places where the fixed design is the
+designer's guess rather than the reader's need:
+
+- **The columns are fixed.** 248px of chapter rail is generous for `zelda-oot` (26-character
+  titles) and cramped for `pokemon-crystal` (48). The map/widget split is likewise fixed at
+  236px of map whether the map or the tables are the thing being read.
+- **The map is driven by buttons** — three 28px controls for something every other map does
+  with a wheel and a drag.
+- **Keyword beats read as one run-on line.** `Talk to gatekeeper ×2 · Take rusty lantern` is two
+  actions, and the separator makes them one sentence to parse.
+
+**Decisions (Pierre, 2026-07-29):**
+
+| Decision | Choice |
+| --- | --- |
+| Resizing | **`react-resizable-panels`** via `npx shadcn@latest add resizable` — a new dependency, approved |
+| Where sizes live | **Per guide, in the `guideUi` IDB store** — a schema change, approved |
+| Map controls | **All three zoom buttons go**; wheel zooms, drag pans, double-click resets |
+
+**Reused rather than rebuilt:** `react-zoom-pan-pinch@4.0.3` is *already* a dependency driving
+the `ZoomableImage` lightbox; `panFraction`/`panOffset` in `MapPanel.tsx` already express pan as
+a posture-independent 0..1 fraction; `useGuideUi` already owns the per-guide record.
+
+**No IDB version bump.** The store stays at v2 — no new object store, no index. `migrated()` in
+`guideUiStore.ts` spreads over `emptyGuideUi`, so fields added with `.default()` land on existing
+records; the same implicit forward migration `progressStore` has always used.
+
+**Dependency graph:**
+
+```
+5.5.1  keywords on lines        ── independent, touches only StepRow
+5.5.2  resizable dep + schema   ──┐
+                                  ├─→ 5.5.3 resizable rails ──→ 5.5.4 direct-manipulation map
+                                  ┘                              (needs 5.5.3's non-scrolling
+                                                                   map pane: wheel-over-map must
+                                                                   not fight a scrolling rail)
+```
+
+### Task 5.5.1: Keyword beats on their own lines
+`StepRow` renders each `step.keywords[n]` as its own block line inside the existing move-pointer
+button, dropping the `·` separators. The button stays one element, so tapping any line still
+moves the pointer. **`aria-label`s keep the joined `stepHeadline` form** — a label is a name, not
+a layout, and `visitScreen`/`skipAndBurst` pin `Done: <first 40 chars>`. A `<ul>` would be more
+semantic but is invalid inside a `<button>` (phrasing content only); `<span className="block">`
+per beat is valid and gives the line breaks.
+**Acceptance:**
+- [ ] Each beat is findable alone: `getByText("Take rusty lantern")` matches.
+- [ ] `stepRow.test.tsx`'s `getByText("First beat · Second beat")` is rewritten to per-line
+      assertions — deliberately; the joined string is no longer rendered.
+- [ ] Every `aria-label` unchanged; `visitScreen`, `skipAndBurst`, `playReskin` pass unedited.
+- [ ] Current row keeps `text-lg/6`, ordinary rows `text-sm/5`.
+**Verification:** `yarn test stepRow visitScreen skipAndBurst playReskin`.
+**Files:** `features/spine/StepRow.tsx`, `features/spine/stepRow.test.tsx`. **Scope:** S.
+
+### Task 5.5.2: The resizable primitive, the record, and the jsdom stub
+The three things 5.5.3 cannot start without.
+1. `npx shadcn@latest add resizable` — pulls `react-resizable-panels`, writes
+   `components/ui/resizable.tsx`. Paper-fit as in task 0.3: semantic tokens only, no hex.
+2. `schema/guideUi.ts` gains three **percentages** (the library speaks in percent, and unlike
+   pixels they survive a window resize):
+   ```ts
+   leftRailPct:  z.number().min(8).max(40).default(18),   // ≈248px at 1440
+   rightRailPct: z.number().min(12).max(45).default(25),  // ≈352px at 1440
+   mapPanePct:   z.number().min(15).max(85).default(45),  // the map's share of the right column
+   ```
+   plus matching `emptyGuideUi` defaults and a `setRailLayout` writer on `useGuideUi`.
+3. **`ResizeObserver` stub.** `react-resizable-panels` measures its group with `ResizeObserver`,
+   which jsdom does not implement — without this every guide test dies. Add
+   `test.setupFiles: ["./src/testing/setup.ts"]` to `vite.config.ts` and define the stub there,
+   guarded so the node-environment tests are untouched.
+**Acceptance:**
+- [ ] `guideUiRecord.parse({ guideId })` fills all three new fields.
+- [ ] A record written *before* this task reads back with the new defaults, and the DB stays at
+      **v2** — assert no upgrade ran.
+- [ ] Out-of-range percentages are rejected by the schema, not silently stored.
+- [ ] `coreSet.test.tsx` covers the new primitive's `data-slot`.
+- [ ] `componentsConfig.test.ts` green — the CLI did not rewrite `components.json`.
+**Verification:** `yarn test guideUi coreSet guards`; `yarn install --immutable` clean; lockfile
+committed. **Scope:** M.
+
+### Task 5.5.3: Resizable rails and a resizable map/widget split
+At `lg`, `PostureLayout`'s grid becomes a horizontal `ResizablePanelGroup` — chapters · visit ·
+reference — and the right panel holds a **nested vertical group**: map pane over widget pane.
+Below `lg` nothing changes: the same single scrolling column and the same four-button bar.
+The breakpoint is gated by a new `useIsWide()` (matchMedia `(min-width: 64rem)`) rather than CSS,
+because the library writes inline `flex` styles that classes cannot neutralise. **It returns
+`true` when `matchMedia` is absent** — the same call as `useInView` in task 4.2: jsdom has no
+matchMedia, and every existing test asserts the three-column layout.
+This also corrects a task-3.1 deviation from `Guide.dc.html`: the right aside is currently the
+scroll container, where the prototype scrolls only the widget block and holds the map fixed.
+**Acceptance:**
+- [ ] Dragging a handle resizes; **keyboard resizes too** (handle focusable, arrow keys) — the
+      library provides it, the test proves it.
+- [ ] Sizes persist per guide: resize, remount, same layout; another guide is independent.
+- [ ] `minSize` stops any rail collapsing to nothing.
+- [ ] Phone posture unchanged: one column, bottom bar untouched.
+- [ ] The widget pane scrolls; the map pane does not; the window still never scrolls.
+**Verification:** `yarn test postureLayout resizableRails guideRouting visitScreen`; manual —
+drag both rails and the map split on `zelda-oot`, reload, confirm they hold.
+**Files:** `features/spine/PostureLayout.tsx`, `app/routes/GuideShell.tsx`,
+`features/spine/useIsWide.ts` (new), `postureLayout.test.tsx`, new `resizableRails.test.tsx`.
+**Scope:** L.
+
+### Task 5.5.4: Direct-manipulation map
+`MapPanel` drops its three buttons and renders through `TransformWrapper`/`TransformComponent`
+(`react-zoom-pan-pinch`, already a dependency): wheel zooms, drag pans, double-click resets to
+fit. The zoom percentage stays as a **plain text readout**, not a control.
+Stored state keeps its meaning — `mapZoom` 1–4, `mapPanX/Y` a 0..1 fraction of the scrollable
+extent — because with the image at `w-full`, content width at scale *s* is `W·s` and the extent
+is `W·(s−1)`: exactly what `panFraction`/`panOffset` already compute. Persist from
+`onTransformed`, debounced the way the scroll handler is today.
+**Acceptance:**
+- [ ] No zoom buttons remain anywhere in the panel.
+- [ ] Wheel changes the zoom readout; drag changes the persisted pan; double-click returns to
+      100% at the origin.
+- [ ] Zoom and pan survive a remount and a visit change, still clamped to 1–4 and 0–1.
+- [ ] A place with no map still renders nothing at all.
+- [ ] `panFraction`/`panOffset` keep their unit tests unchanged — the maths did not move.
+**Verification:** `yarn test mapPanel`; manual — wheel-zoom Dodongo's Cavern, drag to a corner,
+change visit and come back. **Scope:** M.
+
+### Checkpoint G — before Phase 6
+- [ ] `yarn check` green from `app/`, `yarn build` clean
+- [ ] Pierre: drag both rails and the map split on `zelda-oot`; reload; confirm they held and
+      that `pokemon-crystal` has its own
+- [ ] Pierre: wheel + drag the map with no buttons in sight
+- [ ] Pierre: read a multi-beat step; phone viewport unchanged
+
+**Phase 5.5 risks**
+
+| Risk | Impact | Mitigation |
+| --- | --- | --- |
+| `ResizeObserver` missing in jsdom kills every guide test | High | Owned by 5.5.2, before any layout work depends on it |
+| Percentages drift from the prototype's 248/352px | Low | Defaults land within a few px at ~1440; the point of the task is that they move |
+| Wheel-over-map traps the rail scroll | Medium | 5.5.3 gives the map its own non-scrolling pane before 5.5.4 turns on wheel zoom |
+| A new dependency's keyboard support is assumed, not verified | Medium | 5.5.3's acceptance drives a resize from the keyboard in a test, not from the docs |
+| `useIsWide` defaulting true hides a phone-layout regression | Low | Phone behaviour is asserted through the bottom bar and the `hidden`/`lg:block` classes, which do not use the hook |
+
+---
+
 ## Removed after the fact
 
 **The place screen (#8) — removed 2026-07-29, Pierre's call.** `LocationScreen`, `placeRoute`

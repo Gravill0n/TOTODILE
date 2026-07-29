@@ -196,6 +196,36 @@ checkpoint.
 - [ ] **Pierre**: full walk of `zelda-oot` + `pokemon-crystal`, desktop **and** phone viewport
 - [ ] **Pierre**: compare against all four approved prototypes
 
+## Phase 5.5 — Fit the guide to the reader
+
+> Added 2026-07-29 after checkpoint F. Numbered 5.5, not 6, so every existing §6.1/§6.2
+> reference keeps pointing at the same task. Full detail, acceptance criteria and the decision
+> table: [`plan.md` §Phase 5.5](./plan.md). Two gates cleared by Pierre up front —
+> `react-resizable-panels` is a new dependency, and the `guideUi` record gains three fields.
+> **No IDB version bump**: `migrated()` spreads over `emptyGuideUi`, so defaults land on
+> existing records.
+
+- [ ] **5.5.1** Keyword beats on their own lines — a block `<span>` per beat inside the existing
+      move-pointer button; `aria-label`s keep the joined `stepHeadline` form, so `visitScreen`,
+      `skipAndBurst` and `playReskin` pass unedited (S)
+- [ ] **5.5.2** `shadcn add resizable` + `guideUi` gains `leftRailPct` / `rightRailPct` /
+      `mapPanePct` (percentages, not pixels — they survive a window resize) + a `ResizeObserver`
+      stub via a new `test.setupFiles`, without which jsdom kills every guide test (M)
+- [ ] **5.5.3** Resizable rails: horizontal `ResizablePanelGroup` at `lg` with a nested vertical
+      group for map-over-widgets; `useIsWide()` gates it and returns **true** without matchMedia,
+      as `useInView` does. Also corrects the task-3.1 deviation where the right aside, not the
+      widget block, is the scroll container (L)
+- [ ] **5.5.4** Direct-manipulation map — wheel zooms, drag pans, double-click resets; all three
+      buttons go, the `%` stays as text. `react-zoom-pan-pinch` is already a dependency, and
+      `panFraction`/`panOffset` keep their meaning unchanged (M)
+
+### ☑ Checkpoint G — before Phase 6
+- [ ] `yarn check` green · `yarn build` clean
+- [ ] **Pierre**: drag both rails and the map split on `zelda-oot`, reload, confirm they held —
+      and that `pokemon-crystal` has its own
+- [ ] **Pierre**: wheel + drag the map with no buttons in sight
+- [ ] **Pierre**: read a multi-beat step; phone viewport unchanged
+
 ## Phase 6 — Land it
 
 - [ ] **6.1** PRD amendment for §7/§14/§17 + `docs/ideas/design-v2-handoff.md`. **Also strike
