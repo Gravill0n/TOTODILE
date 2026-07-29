@@ -50,11 +50,15 @@ checkpoint.
       It stays mounted across visit changes either way. 6 test files migrated, not 5:
       `skipAndBurst.test.tsx` also rendered the guide bare, and its burst case moved to the
       3-step vault visit so the burst fits on one page (L)
-- [ ] **1.3** Rewire the jumps — chapters, Where am I, first-open landing, missable Go (S)
+- [x] **1.3** Rewire the jumps — chapters (→ the chapter's first visit), Where am I, missable Go.
+      First-open landing **scrolls only**, deviating from the plan: the index route already
+      picked the visit, and navigating on landing would yank a deep link away from the visit it
+      deliberately named. `chapterDomId` retired with the chapter-anchored scroll (S)
 
 ### ☑ Checkpoint B — navigation
-- [ ] `yarn check` green · visit URLs reload in place · back/forward walk visits
-- [ ] Review with Pierre — everything else sits on this
+- [x] `yarn check` green (99 files, 631 tests) · `yarn build` clean
+- [ ] **Pierre**: copy a visit URL, reload, land in the same place; back/forward walk visits
+- [ ] **Pierre**: review — everything else sits on this
 
 ## Phase 2 — Library (S1)
 

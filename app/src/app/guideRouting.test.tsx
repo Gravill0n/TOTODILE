@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import "fake-indexeddb/auto";
-import { cleanup, screen } from "@testing-library/react";
+import { cleanup, fireEvent, screen } from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import {
@@ -94,5 +94,64 @@ describe("guide routing (design v2 — the place is the page)", () => {
     expect(
       await screen.findByRole("heading", { name: "Library" }),
     ).toBeDefined();
+  });
+});
+
+// Every jump used to be a scroll into the one long spine. Now the step being
+// jumped to lives on its own page, so a jump navigates first and scrolls after.
+describe("jumps land on the visit that holds the step", () => {
+  it("the chapter sheet opens the chapter's first visit", async () => {
+    stubGuideContent();
+    const router = renderAppAt(FIRST_VISIT);
+    await screen.findByText(S1_TEXT);
+
+    fireEvent.click(screen.getByTitle("Chapters"));
+    fireEvent.click(
+      await screen.findByRole("button", {
+        name: "Chapter 2 — The Sunken Vault",
+      }),
+    );
+
+    await screen.findByText(/Dive at buoy/);
+    expect(router.state.location.pathname).toBe(
+      "/guide/fictional-quest/chapter/c2/visit/v-sunken-vault-1",
+    );
+  });
+
+  it("Where am I comes back to the pointer's visit from anywhere", async () => {
+    stubGuideContent();
+    const router = renderAppAt(
+      "/guide/fictional-quest/chapter/c2/visit/v-sunken-vault-1",
+    );
+    await screen.findByText(/Dive at buoy/);
+    // The pointer is still on the fresh slot's first step, two chapters back.
+    fireEvent.click(screen.getByTitle("Where am I"));
+
+    await screen.findByText(S1_TEXT);
+    expect(router.state.location.pathname).toBe(FIRST_VISIT);
+  });
+
+  it("a missable's Go opens the visit that missable is in", async () => {
+    stubGuideContent();
+    const router = renderAppAt(FIRST_VISIT);
+    await screen.findByText(S1_TEXT);
+
+    fireEvent.click(
+      screen.getByRole("button", {
+        name: /^Go to missable: Before draining the vault/,
+      }),
+    );
+
+    await screen.findByText(/Feed moray eel a mushroom/);
+    expect(router.state.location.pathname).toBe(
+      "/guide/fictional-quest/chapter/c2/visit/v-sunken-vault-1",
+    );
+  });
+
+  it("a deep link stays put — landing never yanks you to the pointer", async () => {
+    stubGuideContent();
+    const router = renderAppAt(ANTECHAMBER_VISIT);
+    await screen.findByText(ANTECHAMBER_TEXT);
+    expect(router.state.location.pathname).toBe(ANTECHAMBER_VISIT);
   });
 });

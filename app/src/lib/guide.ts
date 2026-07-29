@@ -12,10 +12,6 @@ export function stepDomId(stepId: string): string {
   return `step-${stepId}`;
 }
 
-export function chapterDomId(chapterId: string): string {
-  return `chapter-${chapterId}`;
-}
-
 // Spine order, made executable for the chapter→visit→step tree: array order is
 // authoritative (as it always was for chapters), so steps flatten visit by
 // visit, chapter by chapter. This is the ordered ID list the explicit pointer

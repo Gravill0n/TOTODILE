@@ -19,7 +19,7 @@ import { widgetContextFor, widgetInScope } from "@/features/spine/widgetScope";
 import { getCredentials } from "@/features/sync/raCredentials";
 import { SyncReceipt } from "@/features/sync/SyncReceipt";
 import { type SyncOutcome, syncGuide } from "@/features/sync/syncGuide";
-import { chapterDomId, guideAssetUrl, stepDomId } from "@/lib/guide";
+import { guideAssetUrl, stepDomId } from "@/lib/guide";
 import { type GuideFile, idTail, type LibraryEntry } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
 
@@ -74,6 +74,32 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
     [entry.id, navigate, visits],
   );
 
+  // Jumping to a step is now two moves: open the visit that holds it, then
+  // scroll to its row. The scroll cannot follow the navigate call directly —
+  // the row does not exist until the new visit has rendered — so the target is
+  // parked here and an effect below spends it once the row is in the DOM.
+  const [pendingStepId, setPendingStepId] = useState<string | null>(null);
+  const goToStep = useCallback(
+    (stepId: string) => {
+      const target = visits.find((visit) => visit.stepIds.includes(stepId));
+      if (target && target.visitId !== visitId) openVisit(target.visitId);
+      setPendingStepId(stepId);
+    },
+    [openVisit, visitId, visits],
+  );
+
+  useEffect(() => {
+    if (pendingStepId === null) return;
+    // The row is only in the DOM once its own visit is the displayed one, so
+    // a target in another visit waits for the navigation to land.
+    const holder = visits.find((visit) =>
+      visit.stepIds.includes(pendingStepId),
+    );
+    if (holder && holder.visitId !== visitId) return;
+    scrollToElement(stepDomId(pendingStepId));
+    setPendingStepId(null);
+  }, [pendingStepId, visitId, visits]);
+
   // FR-C: one tap fetches RA unlocks and additively marks mapped items, then
   // shows a receipt. Atomic — marks are written only on success (§8.1).
   const canSync = entry.raGameId !== undefined && progress.ready;
@@ -117,13 +143,15 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
     );
   }, [guide, wholeGame, widgetContext]);
 
-  // FR-A4: opening the guide lands on the current step — once, not on
-  // every pointer move.
+  // FR-A4: opening the guide lands on the current step — once, not on every
+  // pointer move. Scroll only, never navigate: the index route already chose
+  // the visit, and a deep link is a deliberate destination that must not be
+  // overruled by where the pointer happens to sit.
   const hasLandedRef = useRef(false);
   useEffect(() => {
     if (!hasLandedRef.current && currentStepId !== null) {
       hasLandedRef.current = true;
-      scrollToElement(stepDomId(currentStepId));
+      setPendingStepId(currentStepId);
     }
   }, [currentStepId]);
 
@@ -173,9 +201,7 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
         guide.widgets.length > 0 ? () => setWidgetsOpen(true) : undefined
       }
       onWhereAmI={
-        currentStepId !== null
-          ? () => scrollToElement(stepDomId(currentStepId))
-          : undefined
+        currentStepId !== null ? () => goToStep(currentStepId) : undefined
       }
       onSync={canSync ? handleSync : undefined}
       syncing={syncing}
@@ -241,7 +267,7 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
             progress.acknowledgedMissableIds,
           )}
           onAcknowledge={progress.acknowledgeMissable}
-          onJump={(stepId) => scrollToElement(stepDomId(stepId))}
+          onJump={goToStep}
         />
       ) : null}
       {progress.ready ? (
@@ -266,7 +292,9 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
           chapters={guide.chapters}
           onJump={(chapterId) => {
             setChaptersOpen(false);
-            scrollToElement(chapterDomId(chapterId), "start");
+            // A chapter is not a page any more: it opens at its first visit.
+            const first = visits.find((visit) => visit.chapterId === chapterId);
+            if (first) openVisit(first.visitId);
           }}
           onClose={() => setChaptersOpen(false)}
         />
