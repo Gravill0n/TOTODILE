@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "id": "deck-precision-platformer",
+  "slots": [
+    {
+      "primitive": "counter",
+      "defaultTitle": "Strawberries",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "matrix",
+      "defaultTitle": "Sides & Hearts",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "checklist",
+      "defaultTitle": "Cassette Tapes",
+      "defaultScope": "global"
+    },
+    {
+      "primitive": "dataTable",
+      "defaultTitle": "Chapter Strawberries",
+      "defaultScope": "chapter"
+    },
+    {
+      "primitive": "mapPins",
+      "defaultTitle": "Chapter Map",
+      "defaultScope": "chapter"
+    },
+    {
+      "primitive": "prepCard",
+      "defaultTitle": "Chapter Briefing",
+      "defaultScope": "chapter"
+    },
+    {
+      "primitive": "checklist",
+      "defaultTitle": "Achievements",
+      "defaultScope": "global"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "sources": [
+    {
+      "id": "src-ink-collectables",
+      "title": "Celeste Wiki (celeste.ink) — the eight <Chapter>/Collectables pages (Forsaken City, Old Site, Celestial Resort, Golden Ridge, Mirror Temple, Reflection, The Summit, Core): every red strawberry numbered and described in collection order, grouped under its checkpoint/subchapter, plus the crystal-heart and cassette-tape walkthroughs and The Summit's six gems. 175 berries total across the set",
+      "url": "https://celeste.ink/wiki/Category:Chapters%27_collectables",
+      "type": "wiki",
+      "retrievedAt": "2026-07-29"
+    },
+    {
+      "id": "src-ink-chapters",
+      "title": "Celeste Wiki (celeste.ink) — the chapter pages (Prologue, Forsaken City, Old Site, Celestial Resort, Golden Ridge, Mirror Temple, Reflection, The Summit, Epilogue, Core, Farewell) and their alternate-side sections: chapter -> subchapter/checkpoint structure, A/B/C side breakdown, per-chapter strawberry and collectable totals, mechanics introduced, and Farewell's Moon Berry",
+      "url": "https://celeste.ink/wiki/Main_Page",
+      "type": "wiki",
+      "retrievedAt": "2026-07-29"
+    },
+    {
+      "id": "src-ink-achievements",
+      "title": "Celeste Wiki (celeste.ink) — Achievements: the full list of 32 Steam/Xbox/PlayStation achievements in four groups of eight (complete each A-Side, collect each crystal heart, complete each B-Side, and eight others: 30/80/175 strawberries, a cassette, PICO-8 Celeste Classic, all C-Sides, the 1UP, the Moon Berry). This is the guide's completion definition, per Pierre 2026-07-29; it deliberately excludes golden strawberries",
+      "url": "https://celeste.ink/wiki/Achievements",
+      "type": "other",
+      "retrievedAt": "2026-07-29"
+    },
+    {
+      "id": "src-ink-maps",
+      "title": "Celeste Wiki (celeste.ink) — Category:Level maps: nine stitched full-chapter room-layout PNGs (Prologue, Forsaken City, Old Site, Celestial Resort, Golden Ridge, Mirror Temple, Reflection, Map Chapter 7, Epilogue), originally rendered by the now-defunct Berrycamp tool and mirrored on the wiki. No map exists for Core or Farewell",
+      "url": "https://celeste.ink/wiki/Category:Level_maps",
+      "type": "map",
+      "retrievedAt": "2026-07-29"
+    },
+    {
+      "id": "src-steam-ashininity",
+      "title": "Steam Community — \"Chapter N 100% Walkthrough\" series by Ashininity (published Mar-Apr 2018), nine guides covering Chapters 1-8 (all strawberries, crystal heart, B-Side tape, general tips) plus Chapter 9 (Moon Berry for the \"Wow\" achievement, secret paths). Each is a 100%-route video walkthrough with collectable timecodes and a written notes/tips/tricks section",
+      "url": "https://steamcommunity.com/id/Ashininity/myworkshopfiles/?section=guides&appid=504230",
+      "type": "video",
+      "retrievedAt": "2026-07-29"
+    },
+    {
+      "id": "src-steam-abbilieve",
+      "title": "Steam Community — \"Chapter N: <Name> - Complete Walkthrough [All Strawberries, Cassette Tape, and Crystal Heart]\" series by Abbilieve (2025), covering Chapters 1-3 only: ordered checkpoint -> collectable route with author-made screenshots and GIFs, a per-chapter mechanics primer, a stitched Prezi chapter map, and an explicit missable / not-missable classification for every strawberry",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3474899136",
+      "type": "wiki",
+      "retrievedAt": "2026-07-29"
+    }
+  ]
+}

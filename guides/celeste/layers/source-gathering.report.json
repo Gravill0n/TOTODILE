@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "source-gathering",
+  "layer": "source-gathering",
+  "generatedAt": "2026-07-29T16:20:00Z",
+  "inputs": [],
+  "report": {
+    "rowCount": 6,
+    "anomalies": [
+      "src-ink-maps: no chapter map exists for Core (Chapter 8) or Farewell (Chapter 9) — the wiki's Level maps set stops at Chapter 7 (plus Prologue and Epilogue). The mapPins slot cannot be filled for those two chapters from the sources on file",
+      "src-ink-maps: Berrycamp, the room-by-room capture tool that produced these maps, is dead — berrycamp.com now serves a parked domain-for-sale page. The wiki's mirrored PNGs are the only surviving copies, so no higher-resolution or per-room re-capture is available",
+      "src-steam-abbilieve: covers Chapters 1-3 only. It is the sole source carrying a per-strawberry missable / not-missable classification, so missable status for Chapters 4-8 has no source backing and must be flagged rather than inferred by the spine and widget passes",
+      "mapPins slot: no source gives per-berry coordinates on the stitched chapter maps. Pins must be derived from the room/checkpoint text in src-ink-collectables and flagged where placement is uncertain — coordinates are never to be guessed (contract §2 rule 1). Deck slot included on Pierre's explicit call 2026-07-29 after this risk was raised",
+      "celestegame.fandom.com (the Fandom Celeste wiki, including its Special:AllMaps interactive maps and Golden Strawberries Guide) refuses automated retrieval (HTTP 403/402) and is therefore not on the slate; adding it would require Pierre-supplied captures",
+      "No RetroAchievements set exists for Celeste (2018) — the library entry carries no raGameId and the ra-mapping pass does not apply to this guide"
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "First run on a new slug: bootstraps guides/celeste/ with deck.json and promotes the existing library.json entry from planned to in-compilation, adding deckId.",
+    "Scope, per Pierre 2026-07-29: 100% means the game's own 32-achievement list — 175 red strawberries, all eight A-Sides, all eight crystal hearts, all eight B-Sides, all C-Sides, a cassette, PICO-8 Celeste Classic, the 1UP, and the Moon Berry. Golden strawberries are explicitly out of scope, matching the achievement list's own exclusion.",
+    "Deck, per Pierre 2026-07-29: a new deck-precision-platformer (7 slots: counter Strawberries, matrix Sides & Hearts, checklist Cassette Tapes, dataTable Chapter Strawberries, mapPins Chapter Map, prepCard Chapter Briefing, checklist Achievements). No existing deck was offered as a fit — deck-action-adventure's sixth slot is an RA checklist Celeste cannot fill and it has no matrix for the chapter x side grid. The matrix slot is intended as chapters x A/B/C sides.",
+    "Source slate, per Pierre 2026-07-29: all six candidates accepted. celeste.ink is the community-run Celeste Wiki (Miraheze, GPLv3 content), not the Fandom wiki; its pages are retrievable through the MediaWiki API at https://celeste.ink/w/api.php.",
+    "src-ink-collectables is the primary route source. Its per-chapter berry counts (20 + 18 + 25 + 29 + 31 + 0 + 47 + 5) sum to exactly 175, matching the \"Impress Your Friends\" achievement in src-ink-achievements — the two independent sources agree on the completion target.",
+    "Chapter 6 (Reflection) has no red strawberries; its Collectables page carries only the crystal heart, the cassette tape and the golden. Chapter 9 (Farewell) has no red strawberries either — its single berry is the Moon Berry, documented on the Farewell chapter page (src-ink-chapters) and in Ashininity's Chapter 9 guide (src-steam-ashininity).",
+    "src-steam-ashininity is classified `video`: its route content is a YouTube walkthrough with collectable timecodes, and the on-page text is a tips/notes section rather than a per-collectable route."
+  ]
+}

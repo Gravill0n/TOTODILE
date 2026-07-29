@@ -53,8 +53,9 @@
       "title": "Celeste — 100% Guide",
       "game": "Celeste",
       "platform": "PC",
+      "deckId": "deck-precision-platformer",
       "language": "en",
-      "status": "planned"
+      "status": "in-compilation"
     },
     {
       "id": "pokemon-legends-za",
