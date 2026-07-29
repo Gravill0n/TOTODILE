@@ -90,8 +90,12 @@ checkpoint.
       phone bar's Chapters button gave up the accessible name `Chapters` to the rail (it keeps
       the title; its label is now `Open chapter list`) — two elements cannot both own it, and
       the rail is the list. The left rail still holds the old global-widget launcher until 3.2 (S)
-- [ ] **3.2** `ChapterRail` on `Accordion` + `Progress`, visits as `Link`s, current marked with
-      `primary` (M)
+- [x] **3.2** `ChapterRail` on `Accordion` + `Progress`, current marked with `primary`. Visits
+      are hash **anchors with a plain-click handler**, not router `Link`s: middle-click, copy
+      and open-in-new-tab work on the real address while the rail stays router-free and
+      bare-renderable (§22.1). "Current" is the **displayed** visit (what the URL names), not
+      the pointer — the rail says where you are looking. Global widgets moved into the right
+      rail with the contextual ones, since the left rail is now the chapter list (M)
 - [ ] **3.3** `ChapterSheet` reuses `ChapterRail` on phone (S)
 
 ### ☑ Checkpoint D — layout

@@ -5,8 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { useGuideProgress } from "@/features/progress/useGuideProgress";
+import { ChapterRail } from "@/features/spine/ChapterRail";
 import { ChapterSheet } from "@/features/spine/ChapterSheet";
-import { visitIndex } from "@/features/spine/chapterProgress";
+import { chapterProgress, visitIndex } from "@/features/spine/chapterProgress";
 import { MissableBanner } from "@/features/spine/MissableBanner";
 import { upcomingMissables } from "@/features/spine/missables";
 import { PostureLayout } from "@/features/spine/PostureLayout";
@@ -166,18 +167,12 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
     resolveAsset: (path) => guideAssetUrl(entry.id, path),
   };
 
-  // Browse posture: the side rails are launchers split by scope — global
-  // widgets left, in-scope contextual ones right (§6.4 deck order holds
-  // within each rail; the split is presentation). A launcher opens the
-  // widget full-size in WidgetDialog. The open widget is looked up in the
-  // full deck, not visibleWidgets, so it survives the pointer moving it
-  // out of scope mid-interaction.
-  const globalWidgets = visibleWidgets.filter(
-    (widget) => widget.scope.kind === "global",
-  );
-  const contextWidgets = visibleWidgets.filter(
-    (widget) => widget.scope.kind !== "global",
-  );
+  // Browse posture: the left rail is where you are in the route, so the widget
+  // launchers all live on the right now (§6.4 deck order holds across them —
+  // the old global/contextual split was a consequence of having two strips to
+  // fill). A launcher opens the widget full-size in WidgetDialog. The open
+  // widget is looked up in the full deck, not visibleWidgets, so it survives
+  // the pointer moving it out of scope mid-interaction.
   const openWidget =
     openWidgetId === null
       ? null
@@ -206,18 +201,19 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
       onSync={canSync ? handleSync : undefined}
       syncing={syncing}
       leftPanel={
-        progress.ready && guide.widgets.length > 0 ? (
-          <WidgetRail
-            widgets={globalWidgets}
-            emptyLabel="No global widgets"
-            onOpen={setOpenWidgetId}
+        progress.ready ? (
+          <ChapterRail
+            chapters={chapterProgress(guide, progress.doneIds)}
+            slug={entry.id}
+            visitId={visitId}
+            onOpenVisit={openVisit}
           />
         ) : undefined
       }
       rightPanel={
         progress.ready && guide.widgets.length > 0 ? (
           <WidgetRail
-            widgets={contextWidgets}
+            widgets={visibleWidgets}
             header={wholeGameToggle}
             emptyLabel="Nothing in scope"
             onOpen={setOpenWidgetId}
