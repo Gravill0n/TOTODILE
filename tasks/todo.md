@@ -125,7 +125,7 @@ checkpoint.
 
 ### ☑ Checkpoint D — layout
 - [x] `yarn check` green (102 files, 650 tests) · `yarn build` clean
-- [ ] **Pierre**: `yarn dev` — three columns on desktop, phone unchanged, rail % matches the
+- [x] **Pierre**: three columns on desktop, phone unchanged, rail % matches the
       header total on `zelda-oot`
 
 ## Phase 4 — The visit page
@@ -135,7 +135,12 @@ checkpoint.
 > bottom. `Guide.dc.html` is readable through the `claude_design` MCP (project
 > `c7426467-52ff-4a2f-8ec1-ed7e4e915447`).
 
-- [ ] **4.1** Breadcrumb + visit meta line + prev/next visit (M)
+- [x] **4.1** Sticky breadcrumb (`<chapter> · <place> · visit N · step N of M`), 24px place
+      heading over `Visit N of M · N steps · N achievements`, compact prev/next beside the
+      breadcrumb and named prev/next at the foot. `step N of M` degrades to a plain step count
+      when the pointer is in another visit — a position you are not at is worse than none. The
+      prototype's `5 Gold Skulltulas here` is guide-specific and has no generic source, so the
+      meta line stops at achievements (M)
 - [ ] **4.2** `useInView` → `Back to NOW` only when the current row is off-screen; no-ops in
       jsdom (S)
 - [ ] **4.3** `StepRow` — item icons on every row, unified badge row, current-row treatment,

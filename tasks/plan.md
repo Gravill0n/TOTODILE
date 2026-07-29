@@ -348,6 +348,25 @@ container, `padding:0 32px 48px`, so everything below is measured inside it:
   13px `--color-ink-soft`: `Visit 1 of 3 · 14 steps · 3 achievements · 5 Gold Skulltulas here`.
 - **Bottom prev/next** are wider (36px tall, `--shadow-xs`, hover `--color-paper-dim`) and name
   their destination: `← Death Mountain Trail · visit 2` / `Goron City · visit 3 →`.
+- **Step row** — `flex; align-items:flex-start; gap:14px`. The current row is the only one with
+  any border: `1px solid --color-accent`, `--radius-lg`, `background:--color-card`,
+  `--shadow-sm`, `padding:16px`, checkbox 20px, beats 18px/24px, `NOW` eyebrow above (11px,
+  .12em, 700, accent). Every other row is `padding:10px 8px`, **no border at all** (the
+  shorthand resets the hairline — the rows are separated by rhythm, not rules), checkbox 16px,
+  beats 14px/20px. `opacity:.5` done, `.7` skipped; `line-through` done, `italic` skipped.
+- **Step icon** — 36×36 on *every* row, `border:1px solid --color-line`, `--radius-sm`,
+  `background-color:--color-card`, image at 30px, `image-rendering:pixelated`.
+- **Badge row** — achievement is a *filled* accent pill (`--color-paper` text, 10px, trophy
+  glyph, label `×N` when >1 else `1`); missable an outlined `--color-missable` pill; skipped a
+  dashed `--color-line` pill in ink-soft; `Details` an 11px underlined ink-soft button. Skip and
+  mark-through are 26px square icon buttons (`--color-line` hairline, `--radius-sm`, ink-soft)
+  pushed right with `margin-left:auto`. Detail prose is 13px/19px ink-soft.
+- **Missable card** (above its step, `margin:10px 0 2px`, `padding:12px`) —
+  `border:1px solid --color-missable`, `--radius-md`, `background:--color-missable-bg`,
+  16px `TriangleAlert`, `MISSABLE AHEAD` eyebrow (11px, .1em, 500, missable), deadline at
+  13px/19px in `--color-missable-ink`, and a 28px transparent `Acknowledge` button outlined in
+  missable. Shown when the step is missable, not acknowledged, not done, and at or after the
+  pointer.
 
 ### Task 4.1: Breadcrumb, meta line, prev/next
 `VisitScreen` gains the sticky `Breadcrumb` (`Chapter 04 — Dodongo's Cavern · Dodongo's Cavern ·

@@ -1,6 +1,12 @@
 // @vitest-environment jsdom
 import "fake-indexeddb/auto";
-import { cleanup, fireEvent, screen, waitFor } from "@testing-library/react";
+import {
+  cleanup,
+  fireEvent,
+  screen,
+  waitFor,
+  within,
+} from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { closeProgressDb, readSlot } from "@/features/progress/progressStore";
@@ -23,6 +29,10 @@ const DIVE_TEXT = /Dive at buoy/;
 const S1 = "fictional-quest:c1:s1";
 const S2 = "fictional-quest:c1:s2";
 const S3 = "fictional-quest:c1:s3";
+
+// Prev/next appear twice — compact beside the breadcrumb, named at the foot of
+// the page — so queries say which pair they mean.
+const footer = () => within(screen.getByLabelText("Visit navigation"));
 
 // The keyword headlines, matching what StepRow renders and labels with.
 const s1Full = "Talk to gatekeeper ×2 · Take rusty lantern";
@@ -132,13 +142,69 @@ describe("visit page (S2 — one visit at a time)", () => {
   });
 });
 
+describe("visit page furniture", () => {
+  it("heads the page with a breadcrumb that says where and how far", async () => {
+    stubGuideContent();
+    renderGuideAt("fictional-quest", GATE);
+    await screen.findByText(S1_TEXT);
+
+    const crumbs = screen.getByLabelText("breadcrumb");
+    expect(crumbs.textContent).toContain("Chapter 1 — The Castle Gate");
+    expect(crumbs.textContent).toContain("Castle Gate");
+    expect(crumbs.textContent).toContain("visit 1");
+    // The pointer is on the first of this visit's two steps.
+    expect(crumbs.textContent).toContain("step 1 of 2");
+  });
+
+  it("counts steps rather than the pointer when the pointer is elsewhere", async () => {
+    stubGuideContent();
+    renderGuideAt("fictional-quest", VAULT);
+    await screen.findByText(DIVE_TEXT);
+    // The pointer is still back in chapter 1, so there is no "step N" here.
+    const crumbs = screen.getByLabelText("breadcrumb");
+    expect(crumbs.textContent).toContain("3 steps");
+    expect(crumbs.textContent).not.toContain("step 1 of");
+  });
+
+  it("names the place and what is in it", async () => {
+    stubGuideContent();
+    renderGuideAt("fictional-quest", VAULT);
+    await screen.findByText(DIVE_TEXT);
+
+    expect(
+      screen.getByRole("heading", { level: 2, name: "Sunken Vault" }),
+    ).toBeDefined();
+    // One visit to this place, three steps, no achievements to earn here.
+    expect(screen.getByText("Visit 1 of 1 · 3 steps")).toBeDefined();
+  });
+
+  it("counts the achievements earnable in this visit", async () => {
+    stubGuideContent();
+    renderGuideAt("fictional-quest", "/chapter/c1/visit/v-castle-wall-1");
+    await screen.findByText(S3_TEXT);
+    expect(screen.getByText(/1 achievement\b/)).toBeDefined();
+  });
+
+  it("repeats prev/next at the bottom, naming where they go", async () => {
+    stubGuideContent();
+    renderGuideAt("fictional-quest", VAULT);
+    await screen.findByText(DIVE_TEXT);
+
+    // Top pair is compact; the bottom pair names its destination.
+    expect(
+      footer().getByRole("button", { name: "Next visit — Vault Antechamber" })
+        .textContent,
+    ).toContain("Vault Antechamber");
+  });
+});
+
 describe("visit navigation (URL, never local state)", () => {
   it("walks to the next visit by changing the URL, without moving the pointer", async () => {
     stubGuideContent();
     const router = renderGuideAt("fictional-quest", GATE);
     await screen.findByText(S1_TEXT);
 
-    fireEvent.click(screen.getByRole("button", { name: /^Next visit/ }));
+    fireEvent.click(footer().getByRole("button", { name: /^Next visit/ }));
 
     await screen.findByText(S3_TEXT);
     expect(router.state.location.pathname).toBe(
@@ -154,7 +220,7 @@ describe("visit navigation (URL, never local state)", () => {
     const router = renderGuideAt("fictional-quest", VAULT);
     await screen.findByText(DIVE_TEXT);
 
-    fireEvent.click(screen.getByRole("button", { name: /^Previous visit/ }));
+    fireEvent.click(footer().getByRole("button", { name: /^Previous visit/ }));
 
     await screen.findByText(/East stairs to docks/);
     expect(router.state.location.pathname).toBe(
@@ -167,15 +233,14 @@ describe("visit navigation (URL, never local state)", () => {
     renderGuideAt("fictional-quest", GATE);
     await screen.findByText(S1_TEXT);
     expect(
-      screen.getByRole("button", { name: /^Previous visit/ }),
+      footer().getByRole("button", { name: /^Previous visit/ }),
     ).toHaveProperty("disabled", true);
 
     cleanup();
     renderGuideAt("fictional-quest", "/chapter/c2/visit/v-vault-heart-1");
     await screen.findByText(/Defeat Vault Warden/);
-    expect(screen.getByRole("button", { name: /^Next visit/ })).toHaveProperty(
-      "disabled",
-      true,
-    );
+    expect(
+      footer().getByRole("button", { name: /^Next visit/ }),
+    ).toHaveProperty("disabled", true);
   });
 });
