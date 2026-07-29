@@ -65,8 +65,10 @@ checkpoint.
 - [x] **2.1** Library loader gains `raMappings`, gated on `raGameId`; threaded to `GuideCard`,
       which shows `earned / total` (or `no RA set`) — rendering it now rather than passing a
       prop nothing reads for two commits; task 2.3 restyles it into the stats column (S)
-- [ ] **2.2** Header (eyebrow + 2px rule + tally) and `LibraryToolbar` — search + status/sort
-      toggle groups, `useState` only (M)
+- [x] **2.2** Header (eyebrow + 2px rule + tally) and `LibraryToolbar` — search + status/sort
+      toggle groups, `useState` only. Filtering/ordering lives in `libraryView.ts` beside the
+      screen; the playable/planned split lands here (the two empty states need it) and task 2.4
+      gives the backlog group its own chrome (M)
 - [ ] **2.3** Guide row replaces the cover card in `GuideCard.tsx` — cover, progress bar + mono %,
       `Next up —`, STEPS / ACHIEVEMENTS / LAST PLAYED (M)
 - [ ] **2.4** `BACKLOG` section — dense two-column, 44px rows, `RA set` chip, not navigable (S)
