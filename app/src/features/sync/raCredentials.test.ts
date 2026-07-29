@@ -3,7 +3,6 @@ import { afterEach, describe, expect, it } from "vitest";
 import {
   clearCredentials,
   getCredentials,
-  hasCredentials,
   setCredentials,
 } from "@/features/sync/raCredentials";
 
@@ -16,13 +15,13 @@ describe("RA credentials store (§10.2/§17.4)", () => {
       username: "Pierre",
       webApiKey: "KEY-123",
     });
-    expect(hasCredentials()).toBe(true);
   });
 
   it("treats an empty username or key as no credentials", () => {
     setCredentials({ username: "Pierre", webApiKey: "" });
+    // `getCredentials` returning null IS "no credentials" — Sync and Settings
+    // both branch on that, so there is no second predicate to keep in step.
     expect(getCredentials()).toBeNull();
-    expect(hasCredentials()).toBe(false);
   });
 
   it("clears stored credentials", () => {

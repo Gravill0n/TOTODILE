@@ -17,11 +17,11 @@ export function stepDomId(stepId: string): string {
 // visit, chapter by chapter. This is the ordered ID list the explicit pointer
 // walks — `advancePointer` works unchanged because it only needs the flat
 // order, which now spans visit and chapter boundaries (Workstream A A5).
-export function chapterSteps(chapter: Chapter): Step[] {
+function chapterSteps(chapter: Chapter): Step[] {
   return chapter.visits.flatMap((visit) => visit.steps);
 }
 
-export function guideSteps(guide: GuideFile): Step[] {
+function guideSteps(guide: GuideFile): Step[] {
   return guide.chapters.flatMap(chapterSteps);
 }
 
