@@ -146,8 +146,11 @@ checkpoint.
       when `IntersectionObserver` is absent, so jsdom (and any browser without it) never grows a
       permanent button pointing at a visible row — no global stub needed. `StepRow` takes a `ref`
       (React 19: an ordinary prop) so the visit can watch its current row (S)
-- [ ] **4.3** `StepRow` — item icons on every row, unified badge row, current-row treatment,
-      skip/mark-through icon buttons (M)
+- [x] **4.3** `StepRow` rebuilt as one anatomy — icon, beats, badge row, two icon actions — with
+      the current row *marked* rather than built differently. Item icons (36px, hairline,
+      pixelated, lightbox intact) now render on every row, not only the current card. Skip is
+      **disabled** rather than absent on a done row: the anatomy holds still, and skipping a done
+      step is a no-op in the slot, so the control should say so (M)
 - [ ] **4.4** `MissableCard` inline at the step; delete `MissableBanner` (M)
 
 ### ☑ Checkpoint E — the spine reads right

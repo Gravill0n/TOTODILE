@@ -66,11 +66,15 @@ describe("skip-for-later (FR-B2)", () => {
     expect(doneBox(S1).checked).toBe(true);
   });
 
-  it("done rows offer no skip action", async () => {
+  it("done rows offer no usable skip action", async () => {
     await renderGuide(GATE, S1);
     fireEvent.click(doneBox(S1));
     await waitFor(() => expect(currentText()).toContain(S2));
-    expect(screen.queryByLabelText(`Skip for later: ${short(S1)}`)).toBeNull();
+    // Every row keeps the same controls (design v2), but skipping a done step
+    // is a no-op in the slot, so the button is disabled rather than absent.
+    expect(
+      screen.getByLabelText(`Skip for later: ${short(S1)}`),
+    ).toHaveProperty("disabled", true);
   });
 
   it("unskipping a non-current step leaves the pointer alone", async () => {

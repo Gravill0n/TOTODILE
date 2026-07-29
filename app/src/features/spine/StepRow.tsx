@@ -1,5 +1,5 @@
 import { CheckCheck, SkipForward, TriangleAlert, Trophy } from "lucide-react";
-import type { Ref } from "react";
+import type { ReactNode, Ref } from "react";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/collapsible";
 import { ZoomableImage } from "@/components/ZoomableImage";
 import { guideAssetUrl, stepDomId, stepHeadline } from "@/lib/guide";
+import { cn } from "@/lib/utils";
 import type { Step } from "@/schema";
 
 type StepRowProps = {
@@ -30,6 +31,11 @@ type StepRowProps = {
 // skip icon is the skip-for-later secondary action (FR-B2) and the
 // mark-through icon the P2 burst — separate tap targets so nothing happens by
 // accident.
+//
+// Every row has the same anatomy — icon, beats, badges, the two icon actions.
+// The current one is *marked* (border, fill, NOW, bigger type), not built
+// differently: the row used to be two separate branches, so the item icon
+// existed only on the current card and the burst action only on the others.
 export function StepRow({
   step,
   ref,
@@ -45,34 +51,24 @@ export function StepRow({
   const headline = stepHeadline(step);
   const shortText = headline.slice(0, 40);
   const [showDetail, setShowDetail] = useState(false);
-  // Keyword beats show by default (#11); the full prose is one tap away via a
-  // Collapsible, which appends below the toggle so opening it never reflows the
-  // rows above.
-  const detailDisclosure = step.detail ? (
-    <Collapsible
-      open={showDetail}
-      onOpenChange={setShowDetail}
-      className="mt-1"
-    >
-      <CollapsibleTrigger className="text-xs text-ink-soft underline underline-offset-2">
-        {showDetail ? "Hide details" : "Details"}
-      </CollapsibleTrigger>
-      <CollapsibleContent>
-        <p className="mt-1 text-sm text-ink-soft">{step.detail}</p>
-      </CollapsibleContent>
-    </Collapsible>
-  ) : null;
-  const skipButton = (
+  const icon = step.images[0];
+
+  const action = (
+    label: string,
+    title: string,
+    onClick: () => void,
+    glyph: ReactNode,
+    disabled = false,
+  ) => (
     <button
       type="button"
-      onClick={onToggleSkip}
-      aria-label={`${isSkipped ? "Unskip" : "Skip for later"}: ${shortText}`}
-      title={isSkipped ? "Unskip" : "Skip for later"}
-      className={`shrink-0 rounded border px-1.5 py-1 ${
-        isSkipped ? "border-ink-soft text-ink" : "border-line text-ink-soft"
-      }`}
+      onClick={onClick}
+      disabled={disabled}
+      aria-label={`${label}: ${shortText}`}
+      title={title}
+      className="grid size-[26px] shrink-0 place-items-center rounded-sm border border-line text-ink-soft disabled:opacity-40"
     >
-      <SkipForward className="size-3.5" aria-hidden />
+      {glyph}
     </button>
   );
 
@@ -81,133 +77,125 @@ export function StepRow({
       ref={ref}
       id={stepDomId(step.id)}
       data-current={isCurrent || undefined}
-      className={
+      className={cn(
+        "flex items-start gap-3.5",
         isCurrent
-          ? "rounded-lg border-2 border-primary bg-card p-4 shadow-sm"
-          : `flex items-start gap-3 rounded px-2 py-2 ${isDone ? "opacity-50" : ""}`
-      }
-    >
-      {isCurrent ? (
-        <>
-          <p className="mb-1 flex items-center justify-between text-xs font-bold text-primary uppercase">
-            Now
-            {skipButton}
-          </p>
-          <div className="flex items-start gap-3">
-            <input
-              type="checkbox"
-              checked={isDone}
-              onChange={onToggleDone}
-              aria-label={`Done: ${shortText}`}
-              className="mt-1 size-5 accent-primary"
-            />
-            <div className="min-w-0">
-              <p className="text-lg">{headline}</p>
-              <StepMeta
-                step={step}
-                isSkipped={isSkipped}
-                withMissableMark={false}
-              />
-              {detailDisclosure}
-              {step.missable ? (
-                <p className="mt-2 flex items-center gap-1 text-sm font-bold text-missable">
-                  <TriangleAlert className="size-4" aria-hidden />
-                  Missable — {step.missable.deadline}
-                </p>
-              ) : null}
-              {step.images.map((image) => (
-                <ZoomableImage
-                  key={image.src}
-                  src={guideAssetUrl(slug, image.src)}
-                  alt={image.alt}
-                  caption={image.caption}
-                  credit={image.credit}
-                  className="mt-3 max-h-72 rounded border border-line"
-                />
-              ))}
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <input
-            type="checkbox"
-            checked={isDone}
-            onChange={onToggleDone}
-            aria-label={`Done: ${shortText}`}
-            className="mt-1 size-4 shrink-0 accent-primary"
-          />
-          <div className="min-w-0 flex-1">
-            <button
-              type="button"
-              onClick={onMoveHere}
-              className="w-full text-left"
-              title="Move the current-step pointer here"
-            >
-              <p
-                className={
-                  isDone ? "line-through" : isSkipped ? "italic opacity-70" : ""
-                }
-              >
-                {headline}
-              </p>
-              <StepMeta step={step} isSkipped={isSkipped} />
-            </button>
-            {detailDisclosure}
-          </div>
-          {!isDone ? skipButton : null}
-          {!isDone && !isSkipped ? (
-            <button
-              type="button"
-              onClick={onMarkThrough}
-              aria-label={`Mark all through here: ${shortText}`}
-              title="Mark every step up to and including this one done"
-              className="shrink-0 rounded border border-line px-1.5 py-1 text-ink-soft"
-            >
-              <CheckCheck className="size-3.5" aria-hidden />
-            </button>
-          ) : null}
-        </>
+          ? "rounded-lg border border-primary bg-card p-4 shadow-sm"
+          : "px-2 py-2.5",
+        isDone ? "opacity-50" : isSkipped ? "opacity-70" : undefined,
       )}
-    </div>
-  );
-}
+    >
+      <input
+        type="checkbox"
+        checked={isDone}
+        onChange={onToggleDone}
+        aria-label={`Done: ${shortText}`}
+        className={cn(
+          "mt-0.5 shrink-0 accent-primary",
+          isCurrent ? "size-5" : "size-4",
+        )}
+      />
 
-function StepMeta({
-  step,
-  isSkipped,
-  withMissableMark = true,
-}: {
-  step: Step;
-  isSkipped: boolean;
-  withMissableMark?: boolean;
-}) {
-  if (!step.missable && step.achievementRefs.length === 0 && !isSkipped) {
-    return null;
-  }
-  return (
-    <p className="mt-1 flex flex-wrap items-center gap-2 text-xs text-ink-soft">
-      {isSkipped ? (
-        <Badge variant="outline" className="border-dashed">
-          skipped
-        </Badge>
+      {/* The item at sprite size, on every row — "which bag was it again" is a
+          question a row should answer at a glance, and the answer used to be
+          on the current card only. Still the lightbox underneath. */}
+      {icon ? (
+        <ZoomableImage
+          src={guideAssetUrl(slug, icon.src)}
+          alt={icon.alt}
+          caption={icon.caption}
+          credit={icon.credit}
+          className="size-9 rounded-sm border border-line bg-card object-contain [image-rendering:pixelated]"
+        />
       ) : null}
-      {step.achievementRefs.length > 0 ? (
-        <Badge
-          aria-label={`${step.achievementRefs.length} achievement(s) here`}
+
+      <div className="flex min-w-0 flex-1 flex-col gap-1.5">
+        {isCurrent ? (
+          <p className="text-[11px] font-bold tracking-eyebrow text-primary uppercase">
+            Now
+          </p>
+        ) : null}
+        <button
+          type="button"
+          onClick={onMoveHere}
+          title="Move the current-step pointer here"
+          className={cn(
+            "text-left",
+            isCurrent ? "text-lg/6" : "text-sm/5",
+            isDone ? "line-through" : isSkipped ? "italic" : undefined,
+          )}
         >
-          <Trophy className="size-3" aria-hidden />
-          {step.achievementRefs.length > 1
-            ? `×${step.achievementRefs.length}`
-            : ""}
-        </Badge>
-      ) : null}
-      {step.missable && withMissableMark ? (
-        <Badge variant="outline" className="border-missable text-missable">
-          <TriangleAlert className="size-3" aria-hidden />
-          missable
-        </Badge>
-      ) : null}
-    </p>
+          {headline}
+        </button>
+
+        {/* Keyword beats show by default (#11); the full prose is one tap away
+            via a Collapsible, which appends below the badge row so opening it
+            never reflows the rows above. */}
+        <Collapsible open={showDetail} onOpenChange={setShowDetail}>
+          <div className="flex flex-wrap items-center gap-2">
+            {step.achievementRefs.length > 0 ? (
+              <Badge
+                aria-label={`${step.achievementRefs.length} achievement(s) here`}
+              >
+                <Trophy className="size-3" aria-hidden />
+                {step.achievementRefs.length > 1
+                  ? `×${step.achievementRefs.length}`
+                  : ""}
+              </Badge>
+            ) : null}
+            {step.missable ? (
+              <Badge
+                variant="outline"
+                className="border-missable text-missable"
+              >
+                <TriangleAlert className="size-3" aria-hidden />
+                missable
+              </Badge>
+            ) : null}
+            {isSkipped ? (
+              <Badge variant="outline" className="border-dashed text-ink-soft">
+                skipped
+              </Badge>
+            ) : null}
+            {step.detail ? (
+              <CollapsibleTrigger className="text-xs text-ink-soft underline underline-offset-2">
+                {showDetail ? "Hide details" : "Details"}
+              </CollapsibleTrigger>
+            ) : null}
+            <span className="ms-auto flex shrink-0 gap-1.5">
+              {/* Every row keeps both actions so the anatomy never shifts,
+                  but skipping something already done is a no-op in the slot
+                  (uncheck it first) — so the control says so rather than
+                  lying. */}
+              {action(
+                isSkipped ? "Unskip" : "Skip for later",
+                isSkipped ? "Unskip" : "Skip for later",
+                onToggleSkip,
+                <SkipForward className="size-3.5" aria-hidden />,
+                isDone,
+              )}
+              {action(
+                "Mark all through here",
+                "Mark every step up to and including this one done",
+                onMarkThrough,
+                <CheckCheck className="size-3.5" aria-hidden />,
+              )}
+            </span>
+          </div>
+          <CollapsibleContent>
+            <p className="mt-1.5 text-sm/5 text-ink-soft text-pretty">
+              {step.detail}
+            </p>
+          </CollapsibleContent>
+        </Collapsible>
+
+        {step.missable ? (
+          <p className="flex items-center gap-1 text-sm font-bold text-missable">
+            <TriangleAlert className="size-4" aria-hidden />
+            Missable — {step.missable.deadline}
+          </p>
+        ) : null}
+      </div>
+    </div>
   );
 }
