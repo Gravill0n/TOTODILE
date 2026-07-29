@@ -89,7 +89,7 @@ describe("guide routing (design v2 — the place is the page)", () => {
 
   it("still bounces a non-playable guide away from every play-view child", async () => {
     stubGuideContent({ playableSlugs: [] });
-    renderAppAt("/guide/fictional-quest/place/castle-gate");
+    renderAppAt("/guide/fictional-quest/cleanup");
     // Not playable → /review → editor mode off → library.
     expect(
       await screen.findByRole("heading", { name: "Library" }),

@@ -133,11 +133,11 @@ describe("visit page (S2 — one visit at a time)", () => {
     renderGuideAt("fictional-quest", GATE);
     await screen.findByText(S1_TEXT);
     expect(screen.getByText(/The road ends at the portcullis/)).toBeDefined();
-    // The visit is headed by its location, linking to the place screen (#8).
-    const placeLink = screen.getByRole("link", { name: "Castle Gate" });
-    expect(placeLink.getAttribute("href")).toBe(
-      "#/guide/fictional-quest/place/castle-gate",
-    );
+    // The visit is headed by its place. It is a heading, not a link: the place
+    // screen was retired (2026-07-29) — the visit page is the place now.
+    expect(
+      screen.getByRole("heading", { level: 2, name: "Castle Gate" }),
+    ).toBeDefined();
     expect(screen.getAllByText(/missable/i).length).toBeGreaterThan(0);
   });
 });

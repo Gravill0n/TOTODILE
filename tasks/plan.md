@@ -46,8 +46,10 @@ already does):
 ```
 #/guide/zelda-oot                                            → redirects to the pointer's visit
 #/guide/zelda-oot/chapter/c4/visit/v-kakariko-village-5      → the visit page
-#/guide/zelda-oot/place/kakariko-village                     → place screen (unchanged content)
 #/guide/zelda-oot/cleanup                                    → cleanup (unchanged content)
+
+(The place screen `#/guide/<slug>/place/<loc>` was **removed** on Pierre's call,
+2026-07-29 — see "Removed after the fact" below.)
 ```
 
 **Route tree** — `guideRoute` becomes the layout: one loader (entry + guide + ra-mapping), one
@@ -59,7 +61,6 @@ rootRoute
 └── guideRoute            /guide/$slug          layout: GuideShell (chrome + <Outlet/>)
     ├── guideIndexRoute   /                     loader redirect → pointer's visit
     ├── visitRoute        /chapter/$chapterId/visit/$visitId   → VisitScreen
-    ├── placeRoute        /place/$loc
     └── cleanupRoute      /cleanup
 ```
 
@@ -485,6 +486,16 @@ back glyph (no `arrow-left` in the DS set; the emoji guard allows `←`).
 
 ---
 
+## Removed after the fact
+
+**The place screen (#8) — removed 2026-07-29, Pierre's call.** `LocationScreen`, `placeRoute`
+and `locationIndex.ts` (which existed only to feed it) are gone; the visit heading is a plain
+heading rather than a link to it. The visit page is the place now — it already names the
+location, says which visit of how many this is, and carries that location's map in the right
+column, which is most of what the place screen aggregated. What is genuinely lost is the
+*cross-visit* view: every visit to one location on one page, with its widgets and achievements
+totalled. Task 6.1 must strike screen #8 from PRD §7 along with the rest.
+
 ## Phase 6 — Land it
 
 ### Task 6.1: PRD amendment
@@ -510,7 +521,7 @@ postures; body lists the deleted components (`NowScreen`, `MissableBanner`, `Wid
 | Source-text tests (`libraryReskin`, `appShell`, `backlog`) break on correct markup | High — noisy red suite | Tasks 2.3/2.4 pin the exact text nodes; an edit to those tests is a signal to fix the markup instead |
 | IDB v1→v2 upgrade corrupts real progress | High — Pierre's only save data | Migration test seeds a v1 DB; export progress from Settings before first `yarn dev` on this branch |
 | New `--color-*` tokens without dark values red the guard | Medium | Task 0.2 ports colours only from the DS dark block; `--color-mark` deliberately excluded |
-| Visit-scoping breaks "find that step I remember" | Medium | Chapter rail + visit list + shareable URLs are the replacement; place screens stay |
+| Visit-scoping breaks "find that step I remember" | Medium | Chapter rail + visit list + shareable URLs are the replacement. **The place screen was the other half of this mitigation and is now gone** (removed 2026-07-29) — the rail and the URLs carry it alone. If finding a remembered step gets hard during the manual walk, search over step beats is the follow-up, not a restored place screen |
 | Losing lookahead missables outside the current visit | Medium | Flagged in 4.4; follow-up is a rail marker, not a restored banner |
 | `WidgetStack` (5.2) is the largest single task | Medium | Pre-split seam noted |
 | Shadcn CLI may pull a newer Radix or rewrite `components.json` | Low | Review the CLI diff; `componentsConfig.test.ts` fails loudly if the config drifts |

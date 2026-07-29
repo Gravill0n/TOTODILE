@@ -198,7 +198,9 @@ checkpoint.
 
 ## Phase 6 — Land it
 
-- [ ] **6.1** PRD amendment for §7/§14/§17 + `docs/ideas/design-v2-handoff.md` (S)
+- [ ] **6.1** PRD amendment for §7/§14/§17 + `docs/ideas/design-v2-handoff.md`. **Also strike
+      screen #8 (the place screen)** — removed 2026-07-29 on Pierre's call, along with
+      `locationIndex.ts`; the visit page is the place now (S)
 - [ ] **6.2** PR with before/after screenshots; list deleted components and retired tests
 
 ## Deleted by the end of this work

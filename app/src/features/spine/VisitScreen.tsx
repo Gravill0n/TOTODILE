@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import type { GuideFile } from "@/schema";
-import { idTail } from "@/schema";
 import { visitIndex } from "./chapterProgress";
 import { MissableCard } from "./MissableCard";
 import { StepRow } from "./StepRow";
@@ -165,14 +164,7 @@ export function VisitScreen({
       </Breadcrumb>
 
       <h2 className="mt-5 text-2xl font-bold tracking-tight">
-        {/* Hash anchor, not <Link>: this component stays free of router
-            context so it renders bare. The app runs on hash history. */}
-        <a
-          href={`#/guide/${slug}/place/${idTail(visit.locationId)}`}
-          className="underline decoration-dotted underline-offset-4"
-        >
-          {here.locationName}
-        </a>
+        {here.locationName}
       </h2>
       <p className="mt-1 text-sm text-ink-soft">
         {`Visit ${here.ordinalAtLocation} of ${here.visitsAtLocation} · ${count(visit.steps.length, "step")}`}

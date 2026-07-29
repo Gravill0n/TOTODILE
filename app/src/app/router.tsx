@@ -20,7 +20,6 @@ import { ReviewScreen } from "@/features/review/ReviewScreen";
 import { loadReviewGuide } from "@/features/review/reviewContent";
 import { loadDeck, loadSources } from "@/features/review/reviewLoaders";
 import { visitIndex, visitOfStep } from "@/features/spine/chapterProgress";
-import { buildLocationIndex } from "@/features/spine/locationIndex";
 import { loadGuide } from "@/lib/content/guide";
 import { loadLibrary } from "@/lib/content/library";
 import { loadRaMapping } from "@/lib/content/raMapping";
@@ -29,7 +28,6 @@ import { idTail, qualifyId } from "@/schema";
 import { CleanupScreen } from "./routes/CleanupScreen";
 import { GuideShell } from "./routes/GuideShell";
 import { LibraryScreen } from "./routes/LibraryScreen";
-import { LocationScreen } from "./routes/LocationScreen";
 import { SettingsScreen } from "./routes/SettingsScreen";
 
 const rootRoute = createRootRoute({
@@ -208,26 +206,6 @@ const cleanupRoute = createRoute({
   },
 });
 
-const placeRoute = createRoute({
-  getParentRoute: () => guideRoute,
-  path: "place/$loc",
-  // The place screen (#8). `$loc` is the location ID's second segment; the
-  // full ID is `<slug>:<loc>`.
-  loader: async ({ params, parentMatchPromise }) => {
-    const { guide } = await guideLayoutData(parentMatchPromise);
-    const indexEntry = buildLocationIndex(guide).get(
-      qualifyId(params.slug, params.loc),
-    );
-    if (!indexEntry) throw notFound();
-    return { indexEntry };
-  },
-  component: function PlaceRouteComponent() {
-    const { entry } = guideRoute.useLoaderData();
-    const { indexEntry } = placeRoute.useLoaderData();
-    return <LocationScreen entry={entry} indexEntry={indexEntry} />;
-  },
-});
-
 const reviewRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/review/$slug",
@@ -284,12 +262,7 @@ const settingsRoute = createRoute({
 
 const routeTree = rootRoute.addChildren([
   libraryRoute,
-  guideRoute.addChildren([
-    guideIndexRoute,
-    visitRoute,
-    cleanupRoute,
-    placeRoute,
-  ]),
+  guideRoute.addChildren([guideIndexRoute, visitRoute, cleanupRoute]),
   reviewRoute,
   settingsRoute,
 ]);
