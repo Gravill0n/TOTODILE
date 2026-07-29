@@ -127,6 +127,41 @@ describe("guide row", () => {
     expect(screen.getByText("not started")).toBeDefined();
   });
 
+  it("keeps planned entries out of the playable rows entirely", async () => {
+    const library = validLibrary();
+    library.guides = [
+      library.guides[0],
+      {
+        ...library.guides[0],
+        id: "future-quest",
+        title: "Future Quest — planned",
+        game: "Future Quest",
+        status: "planned",
+      },
+      {
+        ...library.guides[0],
+        id: "quiet-future",
+        title: "Quiet Future — planned",
+        game: "Quiet Future",
+        status: "planned",
+        raGameId: undefined,
+      },
+    ] as never;
+    stubGuideContent({ library });
+    renderAppAt("/");
+
+    const backlogTitle = await screen.findByText("Future Quest — planned");
+    // A backlog entry has no build to open and no progress to report.
+    expect(backlogTitle.closest("a")).toBeNull();
+    expect(backlogTitle.closest('[class*="opacity-"]')).not.toBeNull();
+    expect(screen.getByText("Backlog")).toBeDefined();
+    expect(screen.getByText("planned")).toBeDefined();
+    // The RA-set chip marks which backlog entries already have a set mapped.
+    expect(screen.getAllByText("RA set")).toHaveLength(1);
+    // Only the playable row carries a stats column.
+    expect(screen.getAllByText("Steps")).toHaveLength(1);
+  });
+
   it("renders the cover when there is one and a placeholder when there is not", async () => {
     const library = validLibrary();
     library.guides = [{ ...library.guides[0], cover: undefined }] as never;

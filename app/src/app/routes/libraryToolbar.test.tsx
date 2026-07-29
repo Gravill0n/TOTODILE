@@ -49,8 +49,9 @@ afterEach(async () => {
   await deleteDB("totodile");
 });
 
+// Only playable guides get a card with a heading; the backlog is a plain list.
 const titles = () =>
-  screen.getAllByRole("heading", { level: 2 }).map((h) => h.textContent);
+  screen.queryAllByRole("heading", { level: 2 }).map((h) => h.textContent);
 
 async function renderLibrary() {
   stubGuideContent({ library: libraryOfThree(), playableSlugs: PLAYABLE });
@@ -85,7 +86,10 @@ describe("library toolbar", () => {
     await renderLibrary();
 
     fireEvent.click(screen.getByRole("radio", { name: "Planned" }));
-    await waitFor(() => expect(titles()).toEqual(["Future Quest — planned"]));
+    // Backlog entries are dense list rows, not cards, so they carry no
+    // heading of their own — the section label is the heading here.
+    await waitFor(() => expect(titles()).toEqual([]));
+    expect(screen.getByText("Future Quest — planned")).toBeDefined();
 
     fireEvent.click(screen.getByRole("radio", { name: "Playable" }));
     await waitFor(() => {

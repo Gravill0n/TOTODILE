@@ -72,12 +72,17 @@ checkpoint.
 - [x] **2.3** Guide row replaces the cover card in `GuideCard.tsx` (filename kept for the reskin
       guard; exports `GuideRow`) — cover or placeholder, progress bar + mono %, `Next up —`,
       STEPS / ACHIEVEMENTS / LAST PLAYED. `appShell` and `libraryReskin` pass unedited (M)
-- [ ] **2.4** `BACKLOG` section — dense two-column, 44px rows, `RA set` chip, not navigable (S)
+- [x] **2.4** `BACKLOG` section — dense two-column, 44px rows, `RA set` chip, not navigable. New
+      `BacklogRow.tsx`; `GuideRow` loses its planned branch. The exact `planned` text node
+      survives as the section's count, not a per-row chip — eight repeats under a `BACKLOG`
+      label would be noise. Backlog titles are list rows, not `<h2>`s, so the toolbar test's
+      heading assertion moved to a text assertion (S)
 
 ### ☑ Checkpoint C — Library done
-- [ ] `yarn check` green · real counts on `pokemon-crystal`/`zelda-oot`, `no RA set` on
-      `layton-mm`, 8 backlog rows
-- [ ] Compared against `Library.dc.html` + `Library Mobile.dc.html`
+- [x] `yarn check` green (101 files, 644 tests) · `yarn build` clean
+- [ ] **Pierre**: `yarn dev` — real counts on `pokemon-crystal`/`zelda-oot`, `no RA set` on
+      `layton-mm`, 8 backlog rows, both segmented controls
+- [ ] **Pierre**: compare against `Library.dc.html` + `Library Mobile.dc.html`
 
 ## Phase 3 — Three-column layout + chapter rail
 

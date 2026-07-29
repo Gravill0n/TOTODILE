@@ -32,10 +32,9 @@ function Stat({ label, value }: { label: string; value: string }) {
 // S1 row: cover, what the guide is, how far in you are, and the three figures
 // worth scanning down a column — steps, achievements, when you last played.
 // One tap → the guide at its current step, or its review lens. Planned entries
-// are backlog rows (#7): visible but de-emphasized and not navigable — there is
-// no build to open.
+// never reach here — the backlog is its own section (#7), with nothing to open
+// and no progress to report.
 export function GuideRow({ entry, slot, playable, raMapping }: GuideRowProps) {
-  const planned = entry.status === "planned";
   const stats = slot?.stats;
   const completion = completionOf(slot);
   // Mastery is the same proxy the cleanup screen uses: an achievement counts
@@ -43,12 +42,7 @@ export function GuideRow({ entry, slot, playable, raMapping }: GuideRowProps) {
   const achievements = mastery(raMapping, doneIdsOf(slot));
 
   const card = (
-    <Card
-      className={cn(
-        "grid gap-4 p-4 shadow-sm sm:grid-cols-[184px_1fr_232px]",
-        !planned && "transition hover:border-primary",
-      )}
-    >
+    <Card className="grid gap-4 p-4 shadow-sm transition hover:border-primary sm:grid-cols-[184px_1fr_232px]">
       {entry.cover ? (
         <img
           src={entry.cover}
@@ -73,32 +67,27 @@ export function GuideRow({ entry, slot, playable, raMapping }: GuideRowProps) {
           <Badge variant="outline" className="uppercase">
             {entry.language}
           </Badge>
-          {planned ? <Badge variant="secondary">planned</Badge> : null}
-          {planned || playable ? null : (
-            <Badge variant="secondary">unfinished</Badge>
+          {playable ? null : <Badge variant="secondary">unfinished</Badge>}
+        </div>
+        <div className="mt-3 flex items-center gap-3">
+          <span className="flex-1">
+            <span className="text-xs tracking-label text-ink-soft uppercase">
+              Progress
+            </span>
+            <Progress
+              value={completion ?? 0}
+              aria-label={`${entry.title} completion`}
+              className="mt-1"
+            />
+          </span>
+          {completion === null ? (
+            <span className="text-sm text-ink-soft">not started</span>
+          ) : (
+            <span className="font-mono text-2xl tabular-nums">
+              {`${completion}%`}
+            </span>
           )}
         </div>
-        {planned ? null : (
-          <div className="mt-3 flex items-center gap-3">
-            <span className="flex-1">
-              <span className="text-xs tracking-label text-ink-soft uppercase">
-                Progress
-              </span>
-              <Progress
-                value={completion ?? 0}
-                aria-label={`${entry.title} completion`}
-                className="mt-1"
-              />
-            </span>
-            {completion === null ? (
-              <span className="text-sm text-ink-soft">not started</span>
-            ) : (
-              <span className="font-mono text-2xl tabular-nums">
-                {`${completion}%`}
-              </span>
-            )}
-          </div>
-        )}
         {stats?.currentChapterTitle ? (
           // Two elements, not one string: the chapter is the useful half and
           // stays addressable on its own.
@@ -109,32 +98,27 @@ export function GuideRow({ entry, slot, playable, raMapping }: GuideRowProps) {
         ) : null}
       </div>
 
-      {planned ? null : (
-        <dl className="grid content-start gap-2 sm:border-l sm:border-line sm:pl-4">
-          <Stat
-            label="Steps"
-            value={stats ? `${stats.stepsDone} / ${stats.stepsTotal}` : "—"}
-          />
-          <Stat
-            label="Achievements"
-            value={
-              achievements
-                ? `${achievements.earned} / ${achievements.total}`
-                : "no RA set"
-            }
-          />
-          <Stat
-            label="Last played"
-            value={slot ? slot.lastActivityAt.slice(0, 10) : "never"}
-          />
-        </dl>
-      )}
+      <dl className="grid content-start gap-2 sm:border-l sm:border-line sm:pl-4">
+        <Stat
+          label="Steps"
+          value={stats ? `${stats.stepsDone} / ${stats.stepsTotal}` : "—"}
+        />
+        <Stat
+          label="Achievements"
+          value={
+            achievements
+              ? `${achievements.earned} / ${achievements.total}`
+              : "no RA set"
+          }
+        />
+        <Stat
+          label="Last played"
+          value={slot ? slot.lastActivityAt.slice(0, 10) : "never"}
+        />
+      </dl>
     </Card>
   );
 
-  if (planned) {
-    return <div className="block opacity-50">{card}</div>;
-  }
   return (
     <Link
       to={playable ? "/guide/$slug" : "/review/$slug"}

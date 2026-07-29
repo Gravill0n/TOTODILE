@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { useEditorMode } from "@/features/review/editorMode";
 import type { LibraryManifest, ProgressSlot, RaMapping } from "@/schema";
+import { BacklogRow } from "./BacklogRow";
 import { GuideRow } from "./GuideCard";
 import {
   defaultLibraryView,
@@ -74,18 +75,6 @@ export function LibraryScreen({
           slotOf,
         );
 
-  const rows = (entries: typeof guides) =>
-    entries.map((entry) => (
-      <li key={entry.id}>
-        <GuideRow
-          entry={entry}
-          slot={slotOf(entry.id)}
-          playable={playable.get(entry.id) === true}
-          raMapping={raMappings.get(entry.id) ?? null}
-        />
-      </li>
-    ));
-
   return (
     <main className="mx-auto max-w-4xl px-4 py-6">
       <header className="mb-6 border-b-2 border-line pb-3">
@@ -113,16 +102,42 @@ export function LibraryScreen({
       {view.status === "planned" ? null : guides.length === 0 ? (
         <p className="text-ink-soft">No playable guides match.</p>
       ) : (
-        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {rows(guides)}
+        <ul className="grid gap-4">
+          {guides.map((entry) => (
+            <li key={entry.id}>
+              <GuideRow
+                entry={entry}
+                slot={slotOf(entry.id)}
+                playable={playable.get(entry.id) === true}
+                raMapping={raMappings.get(entry.id) ?? null}
+              />
+            </li>
+          ))}
         </ul>
       )}
-      {view.status === "playable" ? null : backlog.length === 0 ? (
-        <p className="mt-6 text-ink-soft">Nothing in the backlog matches.</p>
-      ) : (
-        <ul className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {rows(backlog)}
-        </ul>
+      {view.status === "playable" ? null : (
+        <section className="mt-10 border-t-2 border-line pt-3">
+          <div className="flex items-baseline justify-between gap-3">
+            <p className="text-xs font-bold tracking-label text-ink-soft uppercase">
+              Backlog
+            </p>
+            <p className="text-sm text-ink-soft">
+              <span className="tabular-nums">{backlog.length}</span>{" "}
+              <span>planned</span>
+            </p>
+          </div>
+          {backlog.length === 0 ? (
+            <p className="mt-3 text-ink-soft">
+              Nothing in the backlog matches.
+            </p>
+          ) : (
+            <ul className="mt-3 grid gap-x-8 sm:grid-cols-2">
+              {backlog.map((entry) => (
+                <BacklogRow key={entry.id} entry={entry} />
+              ))}
+            </ul>
+          )}
+        </section>
       )}
     </main>
   );
