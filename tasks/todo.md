@@ -255,7 +255,11 @@ checkpoint.
       layout. `docs/ideas/design-v2-handoff.md` records the approved change list verbatim, the
       eight points where the app diverges from it, and the three corrections that came from
       reading the prototypes rather than the handoff (S)
-- [ ] **6.2** PR with before/after screenshots; list deleted components and retired tests
+- [x] **6.2** [PR #28](https://github.com/Gravill0n/TOTODILE/pull/28) — 40 commits, deleted
+      components and retired tests listed, plus the test-contract changes worth reviewing and
+      the two things no test can prove. **Screenshots outstanding**: the plan asks for
+      before/after on both screens and both postures, and capturing them needs a browser —
+      left for Pierre before merge
 
 ## Deleted by the end of this work
 
