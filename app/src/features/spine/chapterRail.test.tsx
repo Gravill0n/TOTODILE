@@ -93,6 +93,16 @@ describe("ChapterRail", () => {
     expect(screen.getByText("0 / 2")).toBeDefined();
   });
 
+  it("lets a long chapter title wrap instead of clipping it", () => {
+    renderRail();
+    // Truncation is CSS-only, so no text assertion can catch it: the compiled
+    // guides carry titles up to 48 characters ("Zephyr Badge — New Bark to
+    // Violet") and the rail is 224px wide. The class is the contract.
+    const title = screen.getByText("One — The Harbor");
+    expect(title.className).not.toContain("truncate");
+    expect(title.className).toContain("wrap-anywhere");
+  });
+
   it("opens the displayed visit's chapter and marks it", () => {
     renderRail("g:v-cave-2");
     // Chapter two is where the URL points, so its visits are already showing.

@@ -74,36 +74,41 @@ export function ChapterRail({
                   announced by the progress bar below it. */}
               <AccordionTrigger
                 aria-label={chapter.title}
-                className="items-center py-2"
+                className="items-baseline gap-2 py-2"
               >
-                <span className="flex min-w-0 flex-1 items-baseline gap-2">
-                  <span
-                    className={cn(
-                      "font-mono text-xs tabular-nums",
-                      here ? "text-primary" : "text-ink-soft",
-                    )}
-                  >
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <span className="truncate">{chapter.title}</span>
-                </span>
                 <span
                   className={cn(
-                    "font-mono text-xs tabular-nums",
+                    "shrink-0 font-mono text-xs tabular-nums",
                     here ? "text-primary" : "text-ink-soft",
                   )}
                 >
-                  {`${percent}%`}
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                {/* Chapter titles are sentences, not labels — "Zephyr Badge —
+                    New Bark to Violet" is 33 characters and the compiled
+                    guides run to 48. In a 224px rail they wrap; truncating
+                    them left every chapter reading as its first two words. */}
+                <span className="min-w-0 flex-1 text-left wrap-anywhere">
+                  {chapter.title}
                 </span>
               </AccordionTrigger>
               {/* Outside the trigger: a progress bar inside a button is neither
-                  valid nor announceable. */}
+                  valid nor announceable. The figures sit here rather than up
+                  in the trigger so the title gets the whole width. */}
               <div className="flex items-center gap-2 pb-2">
                 <Progress
                   value={percent}
                   aria-label={`${chapter.title} completion`}
                   className={here ? undefined : "opacity-60"}
                 />
+                <span
+                  className={cn(
+                    "shrink-0 font-mono text-xs tabular-nums",
+                    here ? "text-primary" : "text-ink-soft",
+                  )}
+                >
+                  {`${percent}%`}
+                </span>
                 <span className="shrink-0 font-mono text-xs text-ink-soft tabular-nums">
                   {`${chapter.done} / ${chapter.total}`}
                 </span>
@@ -128,7 +133,12 @@ export function ChapterRail({
                               : "border-transparent text-ink-soft",
                           )}
                         >
-                          <span className="truncate">{visit.locationName}</span>
+                          {/* Place names wrap too — "Goldenrod Underground"
+                              does not fit either. min-h-9 is a floor, so the
+                              row grows rather than clipping. */}
+                          <span className="min-w-0 wrap-anywhere">
+                            {visit.locationName}
+                          </span>
                           <span className="shrink-0 font-mono text-xs tabular-nums">
                             {`${visit.done} / ${visit.total}`}
                           </span>
