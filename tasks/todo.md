@@ -86,10 +86,13 @@ checkpoint.
 
 ## Phase 3 — Three-column layout + chapter rail
 
-- [x] **3.1** `PostureLayout`: `max-w-7xl`, `w-56` chapters rail, `w-80` map/widgets rail. The
-      phone bar's Chapters button gave up the accessible name `Chapters` to the rail (it keeps
-      the title; its label is now `Open chapter list`) — two elements cannot both own it, and
-      the rail is the list. The left rail still holds the old global-widget launcher until 3.2 (S)
+- [x] **3.1** `PostureLayout`: full-bleed (no `max-w-*`), `w-72` chapters rail, `w-80`
+      map/widgets rail, both `bg-paper-dim` and full viewport height under a **full-width sticky
+      header bar** on the same tone; the visit column keeps `bg-paper`. The phone bar's Chapters
+      button gave up the accessible name `Chapters` to the rail (it keeps the title; its label is
+      now `Open chapter list`) — two elements cannot both own it, and the rail is the list.
+      Amended 2026-07-29 by Pierre at checkpoint D against `Guide.dc.html`; `tasks/plan.md`
+      §3.1 and §5.4 updated to match (S)
 - [x] **3.2** `ChapterRail` on `Accordion` + `Progress`, current marked with `primary`. Visits
       are hash **anchors with a plain-click handler**, not router `Link`s: middle-click, copy
       and open-in-new-tab work on the real address while the rail stays router-free and

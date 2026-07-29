@@ -280,12 +280,20 @@ label or chip; playable and planned rows never cross under any filter/sort.
 ## Phase 3 — Three-column layout + chapter rail
 
 ### Task 3.1: `PostureLayout` grows a real left rail
-Container `max-w-6xl` → `max-w-7xl`; left aside `w-56` labelled `Chapters`, right aside `w-80`
-labelled `Map and widgets`. Keep `lg` as the single breakpoint, keep both asides
-`lg:sticky lg:top-4 lg:self-start lg:overflow-y-auto` (`stickyWidgets.test.tsx:36`), keep the
-4-button phone bar unchanged.
-**Verification:** `postureLayout.test.tsx` + `stickyWidgets.test.tsx` pass with only the two
-`aria-label` strings edited. **Scope:** S.
+**Amended 2026-07-29 (Pierre, at checkpoint D, against `Guide.dc.html`):** the play view is
+**full-bleed** — no `max-w-*` anywhere in the shell. The rails hold the edges of the window and
+the visit column takes what is left. The chrome sits one tone apart from the column being read:
+the header bar and both rails are `bg-paper-dim`, the visit stays on `bg-paper`. The **header is
+a full-width bar above all three columns**, `sticky top-0`, not a block inside the middle column
+— so `GuideShell` passes it to `PostureLayout` as a `header` prop rather than rendering it in
+`children`.
+
+Left aside `w-72` labelled `Chapters` (widened from `w-56`: the full-bleed page has the room, and
+compiled chapter titles run to 48 characters), right aside `w-80` labelled `Map and widgets`.
+Both are `lg:sticky lg:top-14 lg:h-[calc(100dvh-3.5rem)] lg:self-start lg:overflow-y-auto` —
+full viewport height under the header, so each reads as a column rather than a floating panel.
+Keep `lg` as the single breakpoint and the 4-button phone bar unchanged.
+**Verification:** `postureLayout.test.tsx` + `stickyWidgets.test.tsx`. **Scope:** S.
 
 ### Task 3.2: `ChapterRail`
 Built on `Accordion` + `Progress`, fed by `chapterProgress`: per chapter — mono number, title,
@@ -391,7 +399,9 @@ rather than dropping the saved order; reordering is fully keyboard-operable.
 persisted record; manual drag check. **Scope:** M.
 
 ### Task 5.4: Guide header
-`← Library` · title · `Progress` bar + % + `123 / 587` · `Trophy 11 / 97` · `Sync`.
+`← Library` · title · `Progress` bar + % + `123 / 587` · `Trophy 11 / 97` · `Sync`. Fills the
+full-width sticky bar `PostureLayout` grew in Task 3.1 (amended) — the slot exists and already
+carries the title, Sync and Cleanup; this task adds the back link and the two figures.
 `SyncReceipt` behaviour unchanged (`syncGuide`, 6s auto-dismiss on success, errors persist),
 rendered as a desktop bottom-right toast / above the phone bar. The `11 / 97` uses the
 ra-mapping already loaded by the layout route (Task 1.1).

@@ -83,7 +83,7 @@ describe("PostureLayout browse posture", () => {
     const { container } = renderNav();
     const chapters = screen.getByLabelText("Chapters");
     const reference = screen.getByLabelText("Map and widgets");
-    expect(chapters.className).toContain("w-56");
+    expect(chapters.className).toContain("w-72");
     expect(reference.className).toContain("w-80");
     // One breakpoint, still: below lg the rails are gone and the bottom bar
     // is the navigation.
@@ -91,6 +91,20 @@ describe("PostureLayout browse posture", () => {
       expect(rail.className).toContain("hidden");
       expect(rail.className).toContain("lg:block");
     }
-    expect(container.querySelector(".max-w-7xl")).not.toBeNull();
+    // Full bleed: the rails sit against the edges of the window, and the
+    // visit takes whatever is left.
+    expect(container.querySelector('[class*="max-w-"]')).toBeNull();
+  });
+
+  it("sets the chrome apart from the column being read", () => {
+    renderNav({ header: <p>guide header</p> });
+    const bar = screen.getByText("guide header").closest("header");
+    expect(bar?.className).toContain("bg-paper-dim");
+    // The header spans the columns rather than sitting inside one, and stays
+    // put while the visit scrolls under it.
+    expect(bar?.className).toContain("sticky");
+    for (const label of ["Chapters", "Map and widgets"]) {
+      expect(screen.getByLabelText(label).className).toContain("bg-paper-dim");
+    }
   });
 });

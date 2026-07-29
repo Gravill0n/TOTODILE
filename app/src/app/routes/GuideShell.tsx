@@ -220,10 +220,11 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
           />
         ) : undefined
       }
-    >
-      <header className="mb-4 flex items-center justify-between gap-3">
-        <h1 className="text-xl font-bold">{entry.title}</h1>
-        <span className="flex shrink-0 items-center gap-3">
+      header={
+        <>
+          <h1 className="min-w-0 flex-1 truncate text-xl font-bold">
+            {entry.title}
+          </h1>
           {/* The bottom action bar is phone-only (lg:hidden), so the browse
               posture carries its Sync affordance here — same handler, same
               in-flight disable. */}
@@ -248,12 +249,13 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
               leaves the play view rather than moving within it. */}
           <a
             href={`#/guide/${entry.id}/cleanup`}
-            className="text-sm text-ink-soft underline"
+            className="shrink-0 text-sm text-ink-soft underline"
           >
             Cleanup
           </a>
-        </span>
-      </header>
+        </>
+      }
+    >
       {progress.ready ? (
         <MissableBanner
           items={upcomingMissables(
