@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   type ReactZoomPanPinchRef,
   TransformComponent,
@@ -63,6 +63,11 @@ export function MapPanel({
   const settleRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const appliedRef = useRef(false);
   const { zoom, panX, panY } = view;
+  // The readout follows the gesture, not the record: the write is debounced,
+  // so reading `zoom` here would leave the percentage stuck at its old value
+  // for the whole of a scroll and make a smooth zoom look like a jump.
+  const [liveZoom, setLiveZoom] = useState(zoom);
+  useEffect(() => setLiveZoom(zoom), [zoom]);
 
   // Every hook runs before the no-map return: the panel disappears entirely
   // for a place without one, and a conditional hook would be a different
@@ -92,6 +97,7 @@ export function MapPanel({
   // A gesture is a stream of transforms — onTransform fires on every frame of
   // one — so the write waits for it to settle.
   const remember = (ref: ReactZoomPanPinchRef) => {
+    setLiveZoom(ref.state.scale);
     clearTimeout(settleRef.current);
     settleRef.current = setTimeout(() => {
       const wrapper = ref.instance.wrapperComponent;
@@ -115,7 +121,7 @@ export function MapPanel({
         <span className="min-w-0 truncate text-xs">{locationName}</span>
         {/* A readout, not a control — the gestures are the controls now. */}
         <span className="ms-auto shrink-0 font-mono text-[11px] text-ink-soft tabular-nums">
-          {`${Math.round(zoom * 100)}%`}
+          {`${Math.round(liveZoom * 100)}%`}
         </span>
       </div>
       <div className="min-h-0 flex-1 overflow-hidden rounded-sm border border-line bg-paper">
@@ -124,7 +130,10 @@ export function MapPanel({
           maxScale={MAX_ZOOM}
           limitToBounds
           centerZoomedOut
-          wheel={{ step: 0.15 }}
+          // No `wheel.step` override. The library's default is 0.015 per wheel
+          // event, and a wheel fires many events per notch — 0.15 made a
+          // single scroll cross the whole 100–400% range, so the map read as
+          // either untouched or fully zoomed with nothing in between.
           doubleClick={{ mode: "reset" }}
           onInit={applyStoredView}
           onTransform={remember}
