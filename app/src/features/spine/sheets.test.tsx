@@ -7,11 +7,54 @@ import type { ProgressSlice } from "@/types/progressSlice";
 
 afterEach(cleanup);
 
+// The sheet shows the same rail the desktop column does, so it takes the
+// same chapterProgress rows.
 const chapters = [
-  { id: "c1", title: "Chapter 1 — The Gate" },
-  { id: "c2", title: "Chapter 2 — The Vault" },
-  // biome-ignore lint/suspicious/noExplicitAny: minimal chapter stubs for the sheet
-] as any[];
+  {
+    chapterId: "g:c1",
+    title: "Chapter 1 — The Gate",
+    done: 1,
+    total: 2,
+    visits: [
+      {
+        visitId: "g:v-gate-1",
+        locationId: "g:gate",
+        locationName: "The Gate",
+        done: 1,
+        total: 2,
+      },
+    ],
+  },
+  {
+    chapterId: "g:c2",
+    title: "Chapter 2 — The Vault",
+    done: 0,
+    total: 1,
+    visits: [
+      {
+        visitId: "g:v-vault-1",
+        locationId: "g:vault",
+        locationName: "The Vault",
+        done: 0,
+        total: 1,
+      },
+    ],
+  },
+];
+
+function renderChapterSheet(
+  props: { onOpenVisit?: () => void; onClose?: () => void } = {},
+) {
+  render(
+    <ChapterSheet
+      chapters={chapters}
+      slug="g"
+      visitId="g:v-gate-1"
+      onOpenVisit={props.onOpenVisit ?? (() => {})}
+      onClose={props.onClose ?? (() => {})}
+    />,
+  );
+}
 
 const emptyProgress: ProgressSlice = {
   doneIds: new Set(),
@@ -27,31 +70,27 @@ const noopHandlers = {
 
 describe("ChapterSheet (R2 — Radix Sheet)", () => {
   it("renders as a dialog with the labelled close affordance", () => {
-    render(
-      <ChapterSheet chapters={chapters} onJump={() => {}} onClose={() => {}} />,
-    );
+    renderChapterSheet();
     expect(screen.getByRole("dialog")).toBeTruthy();
     expect(screen.getByLabelText("Close chapter list")).toBeTruthy();
   });
 
   it("closes on Escape", () => {
     const onClose = vi.fn();
-    render(
-      <ChapterSheet chapters={chapters} onJump={() => {}} onClose={onClose} />,
-    );
+    renderChapterSheet({ onClose });
     fireEvent.keyDown(document.body, { key: "Escape" });
     expect(onClose).toHaveBeenCalled();
   });
 
-  it("jumps to a chapter", () => {
-    const onJump = vi.fn();
-    render(
-      <ChapterSheet chapters={chapters} onJump={onJump} onClose={() => {}} />,
-    );
+  it("opens a visit from the chapter it is in", () => {
+    const onOpenVisit = vi.fn();
+    renderChapterSheet({ onOpenVisit });
+    // Chapter 2 is not where the URL points, so it takes a tap to reveal.
     fireEvent.click(
       screen.getByRole("button", { name: "Chapter 2 — The Vault" }),
     );
-    expect(onJump).toHaveBeenCalledWith("c2");
+    fireEvent.click(screen.getByRole("link", { name: /The Vault/ }));
+    expect(onOpenVisit).toHaveBeenCalledWith("g:v-vault-1");
   });
 });
 

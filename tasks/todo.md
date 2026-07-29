@@ -96,10 +96,16 @@ checkpoint.
       bare-renderable (§22.1). "Current" is the **displayed** visit (what the URL names), not
       the pointer — the rail says where you are looking. Global widgets moved into the right
       rail with the contextual ones, since the left rail is now the chapter list (M)
-- [ ] **3.3** `ChapterSheet` reuses `ChapterRail` on phone (S)
+- [x] **3.3** `ChapterSheet` reuses `ChapterRail` on phone. The rail's accordion trigger takes
+      `aria-label={chapter.title}` so a chapter is still findable by name (the number is
+      decoration; the bar announces completion) — `appShell`'s sheet assertion passes unedited.
+      `sheets.test` and the `guideRouting` sheet case now expand a chapter and pick a visit, on
+      purpose: a chapter is no longer a destination (S)
 
 ### ☑ Checkpoint D — layout
-- [ ] `yarn check` green · three columns on desktop, phone unchanged · rail % matches header
+- [x] `yarn check` green (102 files, 650 tests) · `yarn build` clean
+- [ ] **Pierre**: `yarn dev` — three columns on desktop, phone unchanged, rail % matches the
+      header total on `zelda-oot`
 
 ## Phase 4 — The visit page
 

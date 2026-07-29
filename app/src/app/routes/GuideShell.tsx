@@ -283,14 +283,14 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
       ) : (
         <p className="text-ink-soft">Loading progress…</p>
       )}
-      {chaptersOpen ? (
+      {chaptersOpen && progress.ready ? (
         <ChapterSheet
-          chapters={guide.chapters}
-          onJump={(chapterId) => {
+          chapters={chapterProgress(guide, progress.doneIds)}
+          slug={entry.id}
+          visitId={visitId}
+          onOpenVisit={(targetVisitId) => {
             setChaptersOpen(false);
-            // A chapter is not a page any more: it opens at its first visit.
-            const first = visits.find((visit) => visit.chapterId === chapterId);
-            if (first) openVisit(first.visitId);
+            openVisit(targetVisitId);
           }}
           onClose={() => setChaptersOpen(false)}
         />

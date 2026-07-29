@@ -5,18 +5,31 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import type { Chapter } from "@/schema";
+import { ChapterRail } from "./ChapterRail";
+import type { ChapterProgress } from "./chapterProgress";
 
 type ChapterSheetProps = {
-  chapters: Chapter[];
-  onJump: (chapterId: string) => void;
+  chapters: ChapterProgress[];
+  slug: string;
+  visitId: string;
+  onOpenVisit: (visitId: string) => void;
   onClose: () => void;
 };
 
-// The chapters bottom sheet: jump to a chapter without losing the pointer. Radix
-// Sheet gives the focus trap, scroll lock and escape-to-close (#4); the parent
-// mounts it only while open, so onOpenChange(false) maps to onClose.
-export function ChapterSheet({ chapters, onJump, onClose }: ChapterSheetProps) {
+// The chapters bottom sheet: the same rail the browse posture keeps beside the
+// visit, on a posture that has no room for a column. One component means the
+// two postures cannot drift — the phone gets the progress bars and the visit
+// list, not a flat list of titles.
+//
+// Radix Sheet gives the focus trap, scroll lock and escape-to-close (#4); the
+// parent mounts it only while open, so onOpenChange(false) maps to onClose.
+export function ChapterSheet({
+  chapters,
+  slug,
+  visitId,
+  onOpenVisit,
+  onClose,
+}: ChapterSheetProps) {
   return (
     <Sheet
       open
@@ -34,24 +47,17 @@ export function ChapterSheet({ chapters, onJump, onClose }: ChapterSheetProps) {
             Chapters
           </SheetTitle>
           <SheetDescription className="sr-only">
-            Jump to a chapter without losing your place.
+            Jump to a visit without losing your place.
           </SheetDescription>
         </SheetHeader>
-        <nav aria-label="Chapters" className="overflow-y-auto px-4 pb-4">
-          <ul>
-            {chapters.map((chapter) => (
-              <li key={chapter.id}>
-                <button
-                  type="button"
-                  onClick={() => onJump(chapter.id)}
-                  className="w-full border-b border-line py-2 text-left"
-                >
-                  {chapter.title}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className="overflow-y-auto px-4 pb-4">
+          <ChapterRail
+            chapters={chapters}
+            slug={slug}
+            visitId={visitId}
+            onOpenVisit={onOpenVisit}
+          />
+        </div>
       </SheetContent>
     </Sheet>
   );

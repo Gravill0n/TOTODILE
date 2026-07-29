@@ -69,7 +69,13 @@ export function ChapterRail({
               value={chapter.chapterId}
               className="border-line"
             >
-              <AccordionTrigger className="items-center py-2">
+              {/* The trigger is a disclosure for one chapter, so that is its
+                  name; the number is decoration and the completion is
+                  announced by the progress bar below it. */}
+              <AccordionTrigger
+                aria-label={chapter.title}
+                className="items-center py-2"
+              >
                 <span className="flex min-w-0 flex-1 items-baseline gap-2">
                   <span
                     className={cn(

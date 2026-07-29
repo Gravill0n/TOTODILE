@@ -100,17 +100,20 @@ describe("guide routing (design v2 — the place is the page)", () => {
 // Every jump used to be a scroll into the one long spine. Now the step being
 // jumped to lives on its own page, so a jump navigates first and scrolls after.
 describe("jumps land on the visit that holds the step", () => {
-  it("the chapter sheet opens the chapter's first visit", async () => {
+  it("the chapter sheet opens a visit from another chapter", async () => {
     stubGuideContent();
     const router = renderAppAt(FIRST_VISIT);
     await screen.findByText(S1_TEXT);
 
     fireEvent.click(screen.getByTitle("Chapters"));
+    // The sheet holds the same rail as the desktop column: expand a chapter,
+    // then pick the place inside it.
     fireEvent.click(
       await screen.findByRole("button", {
         name: "Chapter 2 — The Sunken Vault",
       }),
     );
+    fireEvent.click(screen.getByRole("link", { name: /Sunken Vault/ }));
 
     await screen.findByText(/Dive at buoy/);
     expect(router.state.location.pathname).toBe(
