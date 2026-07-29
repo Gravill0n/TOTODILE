@@ -13,6 +13,9 @@ export function emptyGuideUi(guideId: string): GuideUiRecord {
     mapZoom: 1,
     mapPanX: 0,
     mapPanY: 0,
+    leftRailPct: 18,
+    rightRailPct: 25,
+    mapPanePct: 45,
   };
 }
 

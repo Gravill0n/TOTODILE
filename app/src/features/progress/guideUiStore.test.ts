@@ -2,7 +2,12 @@ import "fake-indexeddb/auto";
 import { deleteDB, openDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
 import { validProgressSlot } from "@/testing/helpers";
-import { closeGuideUiDb, readGuideUi, writeGuideUi } from "./guideUiStore";
+import {
+  closeGuideUiDb,
+  emptyGuideUi,
+  readGuideUi,
+  writeGuideUi,
+} from "./guideUiStore";
 import { closeProgressDb, readSlot, writeSlot } from "./progressStore";
 
 afterEach(async () => {
@@ -13,21 +18,12 @@ afterEach(async () => {
 describe("guideUi store", () => {
   it("returns defaults for a guide that has never been arranged", async () => {
     const record = await readGuideUi("fictional-quest");
-    expect(record).toEqual({
-      guideId: "fictional-quest",
-      widgetOrder: [],
-      pinnedWidgetIds: [],
-      mapZoom: 1,
-      mapPanX: 0,
-      mapPanY: 0,
-    });
+    expect(record).toEqual(emptyGuideUi("fictional-quest"));
   });
 
   it("remembers where the map was zoomed, not just how far", async () => {
     await writeGuideUi({
-      guideId: "fictional-quest",
-      widgetOrder: [],
-      pinnedWidgetIds: [],
+      ...emptyGuideUi("fictional-quest"),
       mapZoom: 3,
       mapPanX: 0.62,
       mapPanY: 0.25,
@@ -54,9 +50,36 @@ describe("guideUi store", () => {
     expect([record.mapZoom, record.mapPanX, record.mapPanY]).toEqual([2, 0, 0]);
   });
 
+  // Same trick again for the rail sizes (task 5.5.2), and the reason the store
+  // needed no version bump to gain them: an arrangement written before they
+  // existed reads back with the defaults, and the database stays at v2.
+  it("defaults the rail sizes for an older record, at the same DB version", async () => {
+    await writeGuideUi({
+      ...emptyGuideUi("fictional-quest"),
+      widgetOrder: ["fictional-quest:coins"],
+      pinnedWidgetIds: [],
+      mapZoom: 1,
+      mapPanX: 0,
+      mapPanY: 0,
+    } as never);
+    await closeGuideUiDb();
+
+    const record = await readGuideUi("fictional-quest");
+    expect(record.leftRailPct).toBe(18);
+    expect(record.rightRailPct).toBe(25);
+    expect(record.mapPanePct).toBe(45);
+    // The arrangement it *did* carry is untouched.
+    expect(record.widgetOrder).toEqual(["fictional-quest:coins"]);
+    await closeGuideUiDb();
+
+    const opened = await openDB("totodile", 2);
+    expect(opened.version).toBe(2);
+    opened.close();
+  });
+
   it("round-trips an arrangement across connections", async () => {
     await writeGuideUi({
-      guideId: "fictional-quest",
+      ...emptyGuideUi("fictional-quest"),
       widgetOrder: ["fictional-quest:coins", "fictional-quest:bosses"],
       pinnedWidgetIds: ["fictional-quest:bosses"],
       mapZoom: 2.4,
@@ -76,12 +99,8 @@ describe("guideUi store", () => {
 
   it("keeps one record per guide", async () => {
     await writeGuideUi({
-      guideId: "fictional-quest",
+      ...emptyGuideUi("fictional-quest"),
       widgetOrder: ["fictional-quest:coins"],
-      pinnedWidgetIds: [],
-      mapZoom: 1,
-      mapPanX: 0,
-      mapPanY: 0,
     });
     const other = await readGuideUi("other-quest");
     expect(other.widgetOrder).toEqual([]);
@@ -117,7 +136,7 @@ describe("guideUi store", () => {
 
     await writeSlot(validProgressSlot());
     await writeGuideUi({
-      guideId: "fictional-quest",
+      ...emptyGuideUi("fictional-quest"),
       widgetOrder: [],
       pinnedWidgetIds: [],
       mapZoom: 3,

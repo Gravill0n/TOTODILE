@@ -22,6 +22,16 @@ export const guideUiRecord = z.object({
   // else on the other posture. Meaningless at zoom 1, where nothing overflows.
   mapPanX: z.number().min(0).max(1).default(0),
   mapPanY: z.number().min(0).max(1).default(0),
+  // How the three columns are divided, as PERCENTAGES of their group —
+  // react-resizable-panels speaks in percent (its Layout is a map of panel id
+  // to 0..100), and unlike a pixel width a percentage survives the window
+  // being resized. Bounds are what still leaves a usable column on both sides;
+  // the defaults land within a few pixels of the prototype's 248 / 352 at a
+  // ~1440px window.
+  leftRailPct: z.number().min(8).max(40).default(18),
+  rightRailPct: z.number().min(12).max(45).default(25),
+  // The map's share of the right column, the rest going to the widget stack.
+  mapPanePct: z.number().min(15).max(85).default(45),
 });
 
 export type GuideUiRecord = z.infer<typeof guideUiRecord>;

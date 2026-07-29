@@ -5820,6 +5820,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-resizable-panels@npm:^4":
+  version: 4.12.2
+  resolution: "react-resizable-panels@npm:4.12.2"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  checksum: 10c0/fb74d5ff113d04f9293f33a244a0201695891bdfcfbb7beeaa3f71708c14c38bf81424dab5972fd9ab84711b6dd2160a73ef7a51a286f5085dabe267418675b5
+  languageName: node
+  linkType: hard
+
 "react-style-singleton@npm:^2.2.2, react-style-singleton@npm:^2.2.3":
   version: 2.2.3
   resolution: "react-style-singleton@npm:2.2.3"
@@ -6627,6 +6637,7 @@ __metadata:
     radix-ui: "npm:^1.6.0"
     react: "npm:^19"
     react-dom: "npm:^19"
+    react-resizable-panels: "npm:^4"
     react-zoom-pan-pinch: "npm:^4.0.3"
     tailwind-merge: "npm:^3.6.0"
     tailwindcss: "npm:^4"

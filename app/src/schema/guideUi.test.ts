@@ -14,6 +14,21 @@ describe("guideUiRecord", () => {
     expect(record.mapZoom).toBe(1);
     expect(record.mapPanX).toBe(0);
     expect(record.mapPanY).toBe(0);
+    // Rail sizes land near the prototype's 248 / 352 px at a ~1440px window.
+    expect(record.leftRailPct).toBe(18);
+    expect(record.rightRailPct).toBe(25);
+    expect(record.mapPanePct).toBe(45);
+  });
+
+  // Percentages, not pixels: react-resizable-panels speaks in percent, and a
+  // percentage survives a window resize where a pixel width would not.
+  it("rejects rail sizes outside the range a usable column can occupy", () => {
+    expectRejects(guideUiRecord, { ...validGuideUi(), leftRailPct: 2 });
+    expectRejects(guideUiRecord, { ...validGuideUi(), leftRailPct: 60 });
+    expectRejects(guideUiRecord, { ...validGuideUi(), rightRailPct: 5 });
+    expectRejects(guideUiRecord, { ...validGuideUi(), rightRailPct: 70 });
+    expectRejects(guideUiRecord, { ...validGuideUi(), mapPanePct: 5 });
+    expectRejects(guideUiRecord, { ...validGuideUi(), mapPanePct: 95 });
   });
 
   it("rejects a zoom outside the 100%–400% range the map panel offers", () => {

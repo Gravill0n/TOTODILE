@@ -210,9 +210,13 @@ checkpoint.
       plan's acceptance: `skipAndBurst` did **not** pass unedited — not because of a label, but
       because it *waited* on the joined text to know the guide had rendered, and read the current
       row's `textContent` for it. Both now use the first beat; every `aria-label` is untouched (S)
-- [ ] **5.5.2** `shadcn add resizable` + `guideUi` gains `leftRailPct` / `rightRailPct` /
-      `mapPanePct` (percentages, not pixels — they survive a window resize) + a `ResizeObserver`
-      stub via a new `test.setupFiles`, without which jsdom kills every guide test (M)
+- [x] **5.5.2** `shadcn add resizable` (pulls `react-resizable-panels@^4` — note **v4**, whose
+      API is `Group`/`Panel`/`Separator` with a `Layout` map of panel id → percentage, not the
+      v2 `PanelGroup`/`PanelResizeHandle` the plan sketched) + `guideUi` gains `leftRailPct` /
+      `rightRailPct` / `mapPanePct` + `setRailLayout` (a **partial**, since the horizontal group
+      and the nested vertical one report separately and must not clobber each other) + a
+      `ResizeObserver` stub via a new `test.setupFiles`. `components.json` untouched; the store
+      stays at **v2**, proved by a test that reads an older record back with the new defaults (M)
 - [ ] **5.5.3** Resizable rails: horizontal `ResizablePanelGroup` at `lg` with a nested vertical
       group for map-over-widgets; `useIsWide()` gates it and returns **true** without matchMedia,
       as `useInView` does. Also corrects the task-3.1 deviation where the right aside, not the

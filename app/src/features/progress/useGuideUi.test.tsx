@@ -5,6 +5,7 @@ import { deleteDB } from "idb";
 import { afterEach, describe, expect, it } from "vitest";
 import {
   closeGuideUiDb,
+  emptyGuideUi,
   readGuideUi,
   writeGuideUi,
 } from "@/features/progress/guideUiStore";
@@ -25,7 +26,7 @@ describe("useGuideUi", () => {
 
   it("hydrates a stored arrangement", async () => {
     await writeGuideUi({
-      guideId: "fictional-quest",
+      ...emptyGuideUi("fictional-quest"),
       widgetOrder: ["fictional-quest:bosses", "fictional-quest:coins"],
       pinnedWidgetIds: ["fictional-quest:bosses"],
       mapZoom: 1.8,

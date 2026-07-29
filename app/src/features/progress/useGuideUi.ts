@@ -12,6 +12,13 @@ const MAX_ZOOM = 4;
 // whole and a zoom press is one write, not two.
 export type { MapView };
 
+// How the three columns are divided, as percentages of their group.
+export type RailLayout = {
+  leftRailPct: number;
+  rightRailPct: number;
+  mapPanePct: number;
+};
+
 export type GuideUi = {
   // False until the stored record has landed. Renderers don't need to wait —
   // the defaults are already the right answer for a guide never arranged — but
@@ -22,9 +29,13 @@ export type GuideUi = {
   mapZoom: number;
   mapPanX: number;
   mapPanY: number;
+  leftRailPct: number;
+  rightRailPct: number;
+  mapPanePct: number;
   setWidgetOrder: (widgetIds: string[]) => void;
   togglePinned: (widgetId: string) => void;
   setMapView: (view: MapView) => void;
+  setRailLayout: (layout: Partial<RailLayout>) => void;
 };
 
 function clamp(value: number, min: number, max: number): number {
@@ -84,6 +95,19 @@ export function useGuideUi(guideId: string): GuideUi {
     [update],
   );
 
+  // A partial, because the horizontal group and the nested vertical one report
+  // their layouts separately — one drag must not clobber the other's sizes.
+  const setRailLayout = useCallback(
+    (layout: Partial<RailLayout>) =>
+      update((record) => ({
+        ...record,
+        leftRailPct: clamp(layout.leftRailPct ?? record.leftRailPct, 8, 40),
+        rightRailPct: clamp(layout.rightRailPct ?? record.rightRailPct, 12, 45),
+        mapPanePct: clamp(layout.mapPanePct ?? record.mapPanePct, 15, 85),
+      })),
+    [update],
+  );
+
   const setMapView = useCallback(
     (view: MapView) =>
       update((record) => ({
@@ -102,8 +126,12 @@ export function useGuideUi(guideId: string): GuideUi {
     mapZoom: record.mapZoom,
     mapPanX: record.mapPanX,
     mapPanY: record.mapPanY,
+    leftRailPct: record.leftRailPct,
+    rightRailPct: record.rightRailPct,
+    mapPanePct: record.mapPanePct,
     setWidgetOrder,
     togglePinned,
     setMapView,
+    setRailLayout,
   };
 }

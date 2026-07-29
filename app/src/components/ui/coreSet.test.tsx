@@ -12,6 +12,11 @@ import * as Collapsible from "@/components/ui/collapsible";
 import * as Dialog from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable";
 import * as ScrollArea from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import * as Sheet from "@/components/ui/sheet";
@@ -63,6 +68,29 @@ describe("core shadcn component set", () => {
     const bar = screen.getByRole("progressbar", { name: "Completion" });
     expect(bar.getAttribute("aria-valuenow")).toBe("42");
     expect(document.querySelector('[data-slot="progress"]')).toBeTruthy();
+  });
+
+  // The guide's columns are resizable (task 5.5.3), so the group, its panels
+  // and the separator between them are part of the owned set now.
+  it("renders a resizable group whose separator is reachable", () => {
+    render(
+      <ResizablePanelGroup orientation="horizontal">
+        <ResizablePanel id="left" defaultSize="30">
+          left
+        </ResizablePanel>
+        <ResizableHandle />
+        <ResizablePanel id="right">right</ResizablePanel>
+      </ResizablePanelGroup>,
+    );
+    expect(
+      document.querySelector('[data-slot="resizable-panel-group"]'),
+    ).toBeTruthy();
+    expect(
+      document.querySelectorAll('[data-slot="resizable-panel"]'),
+    ).toHaveLength(2);
+    // The library gives the separator its own role, which is what makes the
+    // keyboard path in task 5.5.3 possible.
+    expect(screen.getByRole("separator")).toBeTruthy();
   });
 
   it("renders a single-select toggle group without the accent", () => {
