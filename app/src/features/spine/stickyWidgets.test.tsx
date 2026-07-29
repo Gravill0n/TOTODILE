@@ -1,7 +1,6 @@
 // @vitest-environment jsdom
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
-import { PostureLayout } from "@/features/spine/PostureLayout";
 import { WidgetsSheet } from "@/features/spine/WidgetsSheet";
 import type { ProgressSlice } from "@/types/progressSlice";
 
@@ -32,26 +31,11 @@ function renderSheet() {
   );
 }
 
+// The desktop rails used to be sticky panels in a scrolling page; they are
+// now columns in a shell that does not scroll at all, so that contract moved
+// to postureLayout.test.tsx ("scrolls each column, never the window"). What
+// stays here is the sheet, which is still a scroll container of its own.
 describe("sticky widgets (Build 4)", () => {
-  it("desktop side panels stick within the viewport and scroll internally", () => {
-    render(
-      <PostureLayout leftPanel={<div>left</div>} rightPanel={<div>right</div>}>
-        main
-      </PostureLayout>,
-    );
-    const asides = [
-      screen.getByLabelText("Chapters"),
-      screen.getByLabelText("Map and widgets"),
-    ];
-    for (const aside of asides) {
-      expect(aside.className).toContain("sticky");
-      // Required for sticky to bite inside a stretch-aligned flex row.
-      expect(aside.className).toContain("self-start");
-      // Long panels scroll internally instead of growing past the viewport.
-      expect(aside.className).toContain("overflow-y-auto");
-    }
-  });
-
   it("pins the sheet header — only the widget list scrolls under it", () => {
     renderSheet();
     const list = document.querySelector(".overflow-y-auto");

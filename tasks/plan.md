@@ -280,20 +280,35 @@ label or chip; playable and planned rows never cross under any filter/sort.
 ## Phase 3 — Three-column layout + chapter rail
 
 ### Task 3.1: `PostureLayout` grows a real left rail
-**Amended 2026-07-29 (Pierre, at checkpoint D, against `Guide.dc.html`):** the play view is
-**full-bleed** — no `max-w-*` anywhere in the shell. The rails hold the edges of the window and
-the visit column takes what is left. The chrome sits one tone apart from the column being read:
-the header bar and both rails are `bg-paper-dim`, the visit stays on `bg-paper`. The **header is
-a full-width bar above all three columns**, `sticky top-0`, not a block inside the middle column
-— so `GuideShell` passes it to `PostureLayout` as a `header` prop rather than rendering it in
-`children`.
+**Amended 2026-07-29 (Pierre, at checkpoint D), read off `Guide.dc.html` through the
+`claude_design` MCP — these are the prototype's own values, not an interpretation:**
 
-Left aside `w-72` labelled `Chapters` (widened from `w-56`: the full-bleed page has the room, and
-compiled chapter titles run to 48 characters), right aside `w-80` labelled `Map and widgets`.
-Both are `lg:sticky lg:top-14 lg:h-[calc(100dvh-3.5rem)] lg:self-start lg:overflow-y-auto` —
-full viewport height under the header, so each reads as a column rather than a floating panel.
-Keep `lg` as the single breakpoint and the 4-button phone bar unchanged.
-**Verification:** `postureLayout.test.tsx` + `stickyWidgets.test.tsx`. **Scope:** S.
+```
+main    height:100vh; display:flex; flex-direction:column; overflow:hidden;
+        background:var(--color-paper)
+header  flex-shrink:0; padding:14px 24px; gap:20px;
+        border-bottom:1px solid var(--color-line); background:var(--color-card)
+grid    flex:1; min-height:0; grid-template-columns:248px minmax(0,1fr) 352px
+ left   border-right:1px solid --color-line; overflow-y:auto; padding:16px 12px 24px;
+        background:var(--color-card)
+ mid    overflow-y:auto; padding:0 32px 48px            (page background — paper)
+ right  border-left:1px solid --color-line; display:flex; flex-direction:column;
+        min-height:0; background:var(--color-card)
+```
+
+Three things this settles:
+- **Full bleed, and the window never scrolls.** The shell is exactly one viewport tall and clips;
+  the header holds its row and each of the three columns scrolls independently. No `max-w-*`, no
+  `sticky` rails — a rail cannot slide away from the visit it describes.
+- **Chrome is `card`, content is `paper`** (not `paper-dim`, which the prototype keeps for hover
+  surfaces and progress-bar tracks).
+- **The header is a bar across all three columns**, so `GuideShell` passes it to `PostureLayout`
+  as a `header` prop rather than rendering it inside `children`.
+
+Widths are the prototype's: `lg:grid-cols-[248px_minmax(0,1fr)_352px]`. Keep `lg` as the single
+breakpoint — below it, one scrolling column and the unchanged 4-button bar.
+**Verification:** `postureLayout.test.tsx`. The rails' scroll contract moved here out of
+`stickyWidgets.test.tsx`, which keeps only its sheet cases. **Scope:** S.
 
 ### Task 3.2: `ChapterRail`
 Built on `Accordion` + `Progress`, fed by `chapterProgress`: per chapter — mono number, title,
@@ -317,6 +332,22 @@ closes on Escape / labelled close; `sheets.test.tsx:56` updated to the visit rou
 ---
 
 ## Phase 4 — The visit page
+
+**Prototype values (`Guide.dc.html`, read 2026-07-29).** The middle column is the scroll
+container, `padding:0 32px 48px`, so everything below is measured inside it:
+
+- **Breadcrumb** — `position:sticky; top:0; z-index:20`, `padding:12px 0`, `background:
+  var(--color-paper)` (matching the column, so rows disappear cleanly under it),
+  `border-bottom:1px solid --color-line`, 12px `--color-ink-soft`. Reads
+  `Chapter 04 — Dodongo's Cavern · Dodongo's Cavern · visit 1 · step N of 14`, with the chapter
+  in `--color-ink` at weight 500 and the step count in `--font-mono` + tabular-nums.
+- **Right of the breadcrumb**, `margin-left:auto`: `Back to NOW — <beat>` (28px tall, border and
+  text both `--color-accent` → our `primary`, `background:var(--color-card)`) shown only when
+  scrolled away, then two 28px `←` / `→` buttons on `--color-line` / `--color-ink-soft`.
+- **Visit heading** `24px/700, letter-spacing:-.01em`, `margin:20px 0 4px`; meta line under it at
+  13px `--color-ink-soft`: `Visit 1 of 3 · 14 steps · 3 achievements · 5 Gold Skulltulas here`.
+- **Bottom prev/next** are wider (36px tall, `--shadow-xs`, hover `--color-paper-dim`) and name
+  their destination: `← Death Mountain Trail · visit 2` / `Goron City · visit 3 →`.
 
 ### Task 4.1: Breadcrumb, meta line, prev/next
 `VisitScreen` gains the sticky `Breadcrumb` (`Chapter 04 — Dodongo's Cavern · Dodongo's Cavern ·
@@ -362,6 +393,25 @@ chapter rail, not a restored banner. **Verification:** `yarn test missable`. **S
 ---
 
 ## Phase 5 — Right column: map + widgets
+
+**Prototype values (`Guide.dc.html`, read 2026-07-29).** The right column is
+`display:flex; flex-direction:column; min-height:0` on `--color-card`, split in two:
+
+- **Map block** — `flex-shrink:0`, `padding:14px 16px 12px`, `border-bottom:1px solid
+  --color-line`. Header row: `MAP` eyebrow (11px, `letter-spacing:.12em`, `--color-ink-soft`),
+  the location name at 12px, then three 28px square buttons (zoom out · `{{ zoom }}` label in
+  `--font-mono` with `min-width:34px` · zoom in · reset) on `--color-paper`. The image sits in a
+  **236px-tall** `overflow:auto` box, `border:1px solid --color-line`, `--radius-sm`, background
+  `--color-paper`, with `width:{{ zoomWidth }}; max-width:none; image-rendering:pixelated`.
+  Credit line under it at 10px: `<location> — <source> · zoom is remembered`.
+- **Widget stack** — `flex:1; min-height:0; overflow-y:auto`, `padding:12px 16px 24px`. Section
+  header: `WIDGETS` eyebrow + `Drag to reorder` at 10px, over a **2px** `--color-line` rule.
+  Each widget card is `padding:10px 12px`, `border:1px solid --color-line`, `--radius-sm`,
+  `background:var(--color-card)`.
+
+Note the eyebrows here use `letter-spacing:.12em`, not the `--tracking-label` 0.06em ported in
+task 0.2 (which came from the `NOW` / `BACKLOG` labels). Add a second step to the scale rather
+than stretching one token over both.
 
 ### Task 5.1: `MapPanel`
 Top of the right column: the displayed visit's `location.mapImage`, pixelated, hairline,

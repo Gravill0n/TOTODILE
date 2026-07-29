@@ -79,32 +79,48 @@ describe("PostureLayout bottom nav (R1)", () => {
 // left, the visit in the middle, map and widgets on the right — not two 160px
 // launcher strips flanking a page of spine.
 describe("PostureLayout browse posture", () => {
-  it("gives each rail a name and room to hold something", () => {
+  it("lays the columns out at the prototype's widths, full bleed", () => {
     const { container } = renderNav();
-    const chapters = screen.getByLabelText("Chapters");
-    const reference = screen.getByLabelText("Map and widgets");
-    expect(chapters.className).toContain("w-72");
-    expect(reference.className).toContain("w-80");
+    // Guide.dc.html: grid-template-columns:248px minmax(0,1fr) 352px.
+    expect(
+      container.querySelector(
+        '[class*="lg:grid-cols-[248px_minmax(0,1fr)_352px]"]',
+      ),
+    ).not.toBeNull();
+    // Nothing is centred in a fixed measure — the rails hold the edges.
+    expect(container.querySelector('[class*="max-w-"]')).toBeNull();
     // One breakpoint, still: below lg the rails are gone and the bottom bar
     // is the navigation.
-    for (const rail of [chapters, reference]) {
-      expect(rail.className).toContain("hidden");
-      expect(rail.className).toContain("lg:block");
+    for (const label of ["Chapters", "Map and widgets"]) {
+      expect(screen.getByLabelText(label).className).toContain("hidden");
     }
-    // Full bleed: the rails sit against the edges of the window, and the
-    // visit takes whatever is left.
-    expect(container.querySelector('[class*="max-w-"]')).toBeNull();
   });
 
   it("sets the chrome apart from the column being read", () => {
     renderNav({ header: <p>guide header</p> });
+    // The chrome is on card, the visit on paper (the page background).
     const bar = screen.getByText("guide header").closest("header");
-    expect(bar?.className).toContain("bg-paper-dim");
-    // The header spans the columns rather than sitting inside one, and stays
-    // put while the visit scrolls under it.
-    expect(bar?.className).toContain("sticky");
+    expect(bar?.className).toContain("bg-card");
     for (const label of ["Chapters", "Map and widgets"]) {
-      expect(screen.getByLabelText(label).className).toContain("bg-paper-dim");
+      expect(screen.getByLabelText(label).className).toContain("bg-card");
     }
+  });
+
+  it("scrolls each column, never the window", () => {
+    const { container } = renderNav();
+    // The desktop shell is exactly one viewport tall and clips: the header
+    // holds its row and the three columns scroll inside it, so a rail can
+    // never slide away from the visit it describes.
+    const shell = container.firstElementChild;
+    expect(shell?.className).toContain("lg:h-dvh");
+    expect(shell?.className).toContain("lg:overflow-hidden");
+    for (const label of ["Chapters", "Map and widgets"]) {
+      expect(screen.getByLabelText(label).className).toContain(
+        "overflow-y-auto",
+      );
+    }
+    expect(screen.getByText("play area").closest("main")?.className).toContain(
+      "lg:overflow-y-auto",
+    );
   });
 });

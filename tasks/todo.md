@@ -86,13 +86,16 @@ checkpoint.
 
 ## Phase 3 — Three-column layout + chapter rail
 
-- [x] **3.1** `PostureLayout`: full-bleed (no `max-w-*`), `w-72` chapters rail, `w-80`
-      map/widgets rail, both `bg-paper-dim` and full viewport height under a **full-width sticky
-      header bar** on the same tone; the visit column keeps `bg-paper`. The phone bar's Chapters
-      button gave up the accessible name `Chapters` to the rail (it keeps the title; its label is
-      now `Open chapter list`) — two elements cannot both own it, and the rail is the list.
-      Amended 2026-07-29 by Pierre at checkpoint D against `Guide.dc.html`; `tasks/plan.md`
-      §3.1 and §5.4 updated to match (S)
+- [x] **3.1** `PostureLayout`, matched to `Guide.dc.html` (read through the `claude_design` MCP,
+      2026-07-29): full-bleed `248px | 1fr | 352px`; the desktop shell is one viewport tall and
+      clips, so the **window never scrolls** — the header bar holds its row across all three
+      columns and each column scrolls on its own. Chrome (header + both rails) is `bg-card`, the
+      visit column `bg-paper`; `paper-dim` stays what the prototype uses it for (hover surfaces,
+      progress tracks). The phone bar's Chapters button gave up the accessible name `Chapters`
+      to the rail (it keeps the title; its label is now `Open chapter list`). The rails' scroll
+      contract moved from `stickyWidgets.test.tsx` into `postureLayout.test.tsx` — they are
+      columns now, not sticky panels. `tasks/plan.md` §3.1/§4/§5/§5.4 carry the prototype's own
+      values for the phases still ahead (S)
 - [x] **3.2** `ChapterRail` on `Accordion` + `Progress`, current marked with `primary`. Visits
       are hash **anchors with a plain-click handler**, not router `Link`s: middle-click, copy
       and open-in-new-tab work on the real address while the rail stays router-free and
@@ -112,6 +115,11 @@ checkpoint.
 
 ## Phase 4 — The visit page
 
+> Build against the prototype values now recorded in [`plan.md` §Phase 4](./plan.md) — sticky
+> breadcrumb on `paper`, `Back to NOW` in `primary`, 24px visit heading, named prev/next at the
+> bottom. `Guide.dc.html` is readable through the `claude_design` MCP (project
+> `c7426467-52ff-4a2f-8ec1-ed7e4e915447`).
+
 - [ ] **4.1** Breadcrumb + visit meta line + prev/next visit (M)
 - [ ] **4.2** `useInView` → `Back to NOW` only when the current row is off-screen; no-ops in
       jsdom (S)
@@ -123,6 +131,11 @@ checkpoint.
 - [ ] `yarn check` green · manual walk of `zelda-oot` chapter 4
 
 ## Phase 5 — Right column: map + widgets
+
+> Build against the prototype values now recorded in [`plan.md` §Phase 5](./plan.md) — the right
+> column is a flex column on `card`: a fixed map block (236px viewport, zoom controls, credit
+> line) over a scrolling widget stack under a 2px-ruled `WIDGETS` header. Note the `.12em`
+> eyebrow tracking, which `--tracking-label` (0.06em) does not cover.
 
 - [ ] **5.1** `MapPanel` — pixelated map, 100–400% in 20% steps, zoom **and pan** persisted per
       guide (M)
