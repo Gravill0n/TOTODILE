@@ -185,11 +185,16 @@ checkpoint.
       name now carries the scope label under the title (L)
 - [ ] **5.3** Pin + reorder — dnd-kit with keyboard sensor, move up/down buttons, persisted
       order and pins (M)
-- [ ] **5.4** Guide header — `← Library`, progress bar + `123 / 587`, `Trophy 11 / 97`, Sync (S)
+- [x] **5.4** Guide header — `← Library`, title, progress bar + % + `123 / 587`,
+      `Trophy 11 / 97` (or `no RA set`), Sync, Cleanup. The spine total counts **steps only**:
+      the done set also holds widget item ids (§6.5 one checkable namespace) and a ticked
+      checklist row is not a step walked. Mastery reuses the ra-mapping the layout route already
+      loaded (task 1.1) — no second fetch. `guideSync`/`syncReceipt` pass unedited (S)
 
 ### ☑ Checkpoint F — feature complete
-- [ ] `yarn check` green · full walk of `zelda-oot` + `pokemon-crystal`, desktop and phone
-- [ ] Compared against all four approved prototypes
+- [x] `yarn check` green (106 files, 687 tests) · `yarn build` clean
+- [ ] **Pierre**: full walk of `zelda-oot` + `pokemon-crystal`, desktop **and** phone viewport
+- [ ] **Pierre**: compare against all four approved prototypes
 
 ## Phase 6 — Land it
 

@@ -1,8 +1,9 @@
-import { useNavigate } from "@tanstack/react-router";
-import { RefreshCw } from "lucide-react";
+import { Link, useNavigate } from "@tanstack/react-router";
+import { RefreshCw, Trophy } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
+import { Progress } from "@/components/ui/progress";
 import { Switch } from "@/components/ui/switch";
 import { useGuideProgress } from "@/features/progress/useGuideProgress";
 import { useGuideUi } from "@/features/progress/useGuideUi";
@@ -19,11 +20,13 @@ import { widgetContextFor, widgetInScope } from "@/features/spine/widgetScope";
 import { getCredentials } from "@/features/sync/raCredentials";
 import { SyncReceipt } from "@/features/sync/SyncReceipt";
 import { type SyncOutcome, syncGuide } from "@/features/sync/syncGuide";
-import { guideAssetUrl, stepDomId } from "@/lib/guide";
+import { guideAssetUrl, guideStepIds, stepDomId } from "@/lib/guide";
+import { mastery } from "@/lib/mastery";
 import {
   type GuideFile,
   idTail,
   type LibraryEntry,
+  type RaMapping,
   type WidgetScope,
 } from "@/schema";
 import type { ProgressSlice } from "@/types/progressSlice";
@@ -31,6 +34,8 @@ import type { ProgressSlice } from "@/types/progressSlice";
 type GuideShellProps = {
   entry: LibraryEntry;
   guide: GuideFile;
+  /** The guide's RA set, loaded once by the layout route; null when it has none. */
+  raMapping: RaMapping | null;
   /** The fully-qualified id of the visit the URL points at. */
   visitId: string;
 };
@@ -49,7 +54,12 @@ function scrollToElement(
 // that outlives a single visit (header, sheets, sync, widget rails); the visit
 // itself renders below from the URL, so this stays mounted while the player
 // walks the route (§22.1 — the body is pure, the shell does the plumbing).
-export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
+export function GuideShell({
+  entry,
+  guide,
+  raMapping,
+  visitId,
+}: GuideShellProps) {
   const navigate = useNavigate();
   const progress = useGuideProgress(guide);
   const ui = useGuideUi(guide.guideId);
@@ -136,6 +146,15 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
   }, [receipt]);
 
   const currentStepId = progress.ready ? progress.currentStepId : null;
+
+  // Spine progress counts steps only: the done set also holds widget item ids
+  // (§6.5 — one checkable namespace), and a ticked checklist row is not a step
+  // walked. Mastery is the same proxy the library and cleanup screens use.
+  const stepIds = useMemo(() => guideStepIds(guide), [guide]);
+  const doneIds = progress.ready ? progress.doneIds : new Set<string>();
+  const stepsDone = stepIds.filter((id) => doneIds.has(id)).length;
+  const stepsTotal = stepIds.length;
+  const achievements = mastery(raMapping, doneIds);
 
   // FR-A5: widgets auto-filter to where the current step is — its chapter,
   // its location (across every visit there), or its specific visit; the
@@ -273,9 +292,41 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
       }
       header={
         <>
-          <h1 className="min-w-0 flex-1 truncate text-xl font-bold">
+          {/* `←` rather than a lucide glyph: the DS icon set has no arrow-left,
+              and the emoji guard allows this character by name. */}
+          <Link
+            to="/"
+            className="flex shrink-0 items-center gap-1.5 text-sm text-ink-soft"
+          >
+            <span aria-hidden className="text-base/none">
+              ←
+            </span>
+            Library
+          </Link>
+          <h1 className="min-w-0 flex-1 truncate text-lg font-bold">
             {entry.title}
           </h1>
+          {/* The two totals a completionist tracks, without leaving the visit. */}
+          <span className="hidden shrink-0 items-center gap-2.5 lg:flex">
+            <Progress
+              value={stepsTotal === 0 ? 0 : (stepsDone / stepsTotal) * 100}
+              aria-label={`${entry.title} completion`}
+              className="w-35"
+            />
+            <span className="font-mono text-sm font-medium text-primary tabular-nums">
+              {`${stepsTotal === 0 ? 0 : Math.round((stepsDone / stepsTotal) * 100)}%`}
+            </span>
+            <span className="font-mono text-xs text-ink-soft tabular-nums">
+              {`${stepsDone} / ${stepsTotal}`}
+            </span>
+            <span className="h-5 w-px bg-line" />
+            <span className="flex items-center gap-1.5 font-mono text-xs text-ink-soft tabular-nums">
+              <Trophy className="size-3.5 text-primary" aria-hidden />
+              {achievements
+                ? `${achievements.earned} / ${achievements.total}`
+                : "no RA set"}
+            </span>
+          </span>
           {/* The bottom action bar is phone-only (lg:hidden), so the browse
               posture carries its Sync affordance here — same handler, same
               in-flight disable. */}

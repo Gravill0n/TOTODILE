@@ -185,9 +185,16 @@ const visitRoute = createRoute({
     return { visitId: visit.id };
   },
   component: function VisitRouteComponent() {
-    const { entry, guide } = guideRoute.useLoaderData();
+    const { entry, guide, raMapping } = guideRoute.useLoaderData();
     const { visitId } = visitRoute.useLoaderData();
-    return <GuideShell entry={entry} guide={guide} visitId={visitId} />;
+    return (
+      <GuideShell
+        entry={entry}
+        guide={guide}
+        raMapping={raMapping}
+        visitId={visitId}
+      />
+    );
   },
 });
 
