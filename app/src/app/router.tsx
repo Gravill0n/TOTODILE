@@ -9,7 +9,7 @@ import {
   type RouterHistory,
   redirect,
 } from "@tanstack/react-router";
-import { readAllSlots } from "@/features/progress/progressStore";
+import { readAllSlots, readSlot } from "@/features/progress/progressStore";
 import {
   loadApprovals,
   loadPlayability,
@@ -19,11 +19,13 @@ import { loadLayerRoster } from "@/features/review/layerRoster";
 import { ReviewScreen } from "@/features/review/ReviewScreen";
 import { loadReviewGuide } from "@/features/review/reviewContent";
 import { loadDeck, loadSources } from "@/features/review/reviewLoaders";
+import { visitIndex, visitOfStep } from "@/features/spine/chapterProgress";
 import { buildLocationIndex } from "@/features/spine/locationIndex";
 import { loadGuide } from "@/lib/content/guide";
 import { loadLibrary } from "@/lib/content/library";
 import { loadRaMapping } from "@/lib/content/raMapping";
-import { qualifyId } from "@/schema";
+import type { GuideFile, LibraryEntry, RaMapping } from "@/schema";
+import { idTail, qualifyId } from "@/schema";
 import { CleanupScreen } from "./routes/CleanupScreen";
 import { GuideScreen } from "./routes/GuideScreen";
 import { LibraryScreen } from "./routes/LibraryScreen";
@@ -82,9 +84,17 @@ const libraryRoute = createRoute({
   },
 });
 
+// The play view is a layout (§7): one entry lookup, one playability guard and
+// one guide + ra-mapping fetch, shared by the visit, place and cleanup screens
+// below. The guard lives in the loader rather than beforeLoad because
+// beforeLoad re-runs on every navigation — walking visits would refetch
+// approvals.json and library.json each time — while a loader is cached per
+// match. `shouldReload: false` pins that cache: the guide file is read once
+// per guide, not once per visit.
 const guideRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/guide/$slug",
+  shouldReload: false,
   loader: async ({ params }) => {
     const library = await loadLibrary();
     const entry = library.guides.find((g) => g.id === params.slug);
@@ -93,59 +103,106 @@ const guideRoute = createRoute({
     if (!(await loadPlayability(entry.id))) {
       throw redirect({ to: "/review/$slug", params: { slug: entry.id } });
     }
-    const guide = await loadGuide(entry.id);
-    return { entry, guide };
+    const [guide, raMapping] = await Promise.all([
+      loadGuide(entry.id),
+      // A guide with no RA set has no mapping to fetch (§6.5).
+      entry.raGameId === undefined ? null : loadRaMapping(entry.id),
+    ]);
+    return { entry, guide, raMapping };
   },
-  component: function GuideRouteComponent() {
+  component: () => <Outlet />,
+});
+
+// Child loaders read the layout's data instead of re-fetching it. The parent
+// match has always resolved by the time a child loader runs, so awaiting it
+// costs nothing.
+type GuideLayoutData = {
+  entry: LibraryEntry;
+  guide: GuideFile;
+  raMapping: RaMapping | null;
+};
+
+async function guideLayoutData(
+  parentMatchPromise: Promise<{ loaderData?: unknown }>,
+): Promise<GuideLayoutData> {
+  return (await parentMatchPromise).loaderData as GuideLayoutData;
+}
+
+// `#/guide/<slug>` is an address for "where I am", not a screen: it resolves
+// the stored pointer to its visit and rewrites the URL there. `replace` keeps
+// the redirect out of the history stack, so Back returns to the library.
+const guideIndexRoute = createRoute({
+  getParentRoute: () => guideRoute,
+  path: "/",
+  loader: async ({ params, parentMatchPromise }) => {
+    const { guide } = await guideLayoutData(parentMatchPromise);
+    const slot = await readSlot(params.slug);
+    const target =
+      visitOfStep(guide, slot.currentStepId) ?? visitIndex(guide)[0];
+    if (!target) throw notFound();
+    throw redirect({
+      to: "/guide/$slug/chapter/$chapterId/visit/$visitId",
+      params: {
+        slug: params.slug,
+        chapterId: idTail(target.chapterId),
+        visitId: idTail(target.visitId),
+      },
+      replace: true,
+    });
+  },
+});
+
+// The visit page — the place *is* the page. Both params carry the guide-local
+// tail of their ID; the chapter is part of the URL (not derivable noise) so
+// the address reads as the route the player is walking.
+const visitRoute = createRoute({
+  getParentRoute: () => guideRoute,
+  path: "chapter/$chapterId/visit/$visitId",
+  loader: async ({ params, parentMatchPromise }) => {
+    const { guide } = await guideLayoutData(parentMatchPromise);
+    const chapter = guide.chapters.find(
+      (c) => c.id === qualifyId(params.slug, params.chapterId),
+    );
+    const visit = chapter?.visits.find(
+      (v) => v.id === qualifyId(params.slug, params.visitId),
+    );
+    // A visit under the wrong chapter is as wrong as one that does not exist:
+    // a location reached twice has two URLs and they must not be confusable.
+    if (!visit) throw notFound();
+    return { visitId: visit.id };
+  },
+  component: function VisitRouteComponent() {
     const { entry, guide } = guideRoute.useLoaderData();
     return <GuideScreen entry={entry} guide={guide} />;
   },
 });
 
 const cleanupRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/guide/$slug/cleanup",
-  // S4 cleanup is a play-view sibling — same playable guard as the guide.
-  loader: async ({ params }) => {
-    const library = await loadLibrary();
-    const entry = library.guides.find((g) => g.id === params.slug);
-    if (!entry) throw notFound();
-    if (!(await loadPlayability(entry.id))) {
-      throw redirect({ to: "/review/$slug", params: { slug: entry.id } });
-    }
-    const [guide, raMapping] = await Promise.all([
-      loadGuide(entry.id),
-      loadRaMapping(entry.id),
-    ]);
-    return { entry, guide, raMapping };
-  },
+  getParentRoute: () => guideRoute,
+  path: "cleanup",
+  // S4 cleanup is a play-view sibling — the layout's guard and data cover it.
   component: function CleanupRouteComponent() {
-    const { entry, guide, raMapping } = cleanupRoute.useLoaderData();
+    const { entry, guide, raMapping } = guideRoute.useLoaderData();
     return <CleanupScreen entry={entry} guide={guide} raMapping={raMapping} />;
   },
 });
 
 const placeRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/guide/$slug/place/$loc",
-  // The place screen (#8) is a play-view sibling — same playable guard. `$loc`
-  // is the location ID's second segment; the full ID is `<slug>:<loc>`.
-  loader: async ({ params }) => {
-    const library = await loadLibrary();
-    const entry = library.guides.find((g) => g.id === params.slug);
-    if (!entry) throw notFound();
-    if (!(await loadPlayability(entry.id))) {
-      throw redirect({ to: "/review/$slug", params: { slug: entry.id } });
-    }
-    const guide = await loadGuide(entry.id);
+  getParentRoute: () => guideRoute,
+  path: "place/$loc",
+  // The place screen (#8). `$loc` is the location ID's second segment; the
+  // full ID is `<slug>:<loc>`.
+  loader: async ({ params, parentMatchPromise }) => {
+    const { guide } = await guideLayoutData(parentMatchPromise);
     const indexEntry = buildLocationIndex(guide).get(
       qualifyId(params.slug, params.loc),
     );
     if (!indexEntry) throw notFound();
-    return { entry, indexEntry };
+    return { indexEntry };
   },
   component: function PlaceRouteComponent() {
-    const { entry, indexEntry } = placeRoute.useLoaderData();
+    const { entry } = guideRoute.useLoaderData();
+    const { indexEntry } = placeRoute.useLoaderData();
     return <LocationScreen entry={entry} indexEntry={indexEntry} />;
   },
 });
@@ -206,9 +263,12 @@ const settingsRoute = createRoute({
 
 const routeTree = rootRoute.addChildren([
   libraryRoute,
-  guideRoute,
-  cleanupRoute,
-  placeRoute,
+  guideRoute.addChildren([
+    guideIndexRoute,
+    visitRoute,
+    cleanupRoute,
+    placeRoute,
+  ]),
   reviewRoute,
   settingsRoute,
 ]);

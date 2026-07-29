@@ -34,8 +34,13 @@ checkpoint.
 
 ## Phase 1 — URL-addressable visits (highest risk, done early)
 
-- [ ] **1.1** Guide layout route — `beforeLoad` guard + single loader; `place`/`cleanup` move
-      under it; add `visitRoute` (`chapter/$chapterId/visit/$visitId`) and the index redirect (M)
+- [x] **1.1** Guide layout route — single guard + loader; `place`/`cleanup` move under it; add
+      `visitRoute` (`chapter/$chapterId/visit/$visitId`) and the index redirect. Deviating from
+      the plan, the guard sits in the **loader**, not `beforeLoad`: `beforeLoad` re-runs on every
+      navigation, so walking visits would refetch `library.json` + `approvals.json` each time,
+      while a loader is cached per match. `shouldReload: false` pins that cache so the guide file
+      is read once per guide. Child loaders read the layout's data through `parentMatchPromise`
+      instead of re-fetching (M)
 - [ ] **1.2** Split `GuideScreen` → `GuideShell` (chrome + `<Outlet/>`) + `VisitScreen` (pure,
       one visit); retire `NowScreen`; add `src/testing/renderRoute.tsx` and migrate the 5
       affected test files (L — split at the seam if it grows)
