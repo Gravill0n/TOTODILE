@@ -246,9 +246,15 @@ checkpoint.
 
 ## Phase 6 — Land it
 
-- [ ] **6.1** PRD amendment for §7/§14/§17 + `docs/ideas/design-v2-handoff.md`. **Also strike
-      screen #8 (the place screen)** — removed 2026-07-29 on Pierre's call, along with
-      `locationIndex.ts`; the visit page is the place now (S)
+- [x] **6.1** PRD amended: §7 (S1 index, S2 visit-scoped + resizable columns + inline missables,
+      S3 in-place stack, the route map) and the stale `Now screen` references in §10.1/§11.2/
+      §20/§25. §14.2's two revisit triggers updated; §19.1 gained the three UI dependencies.
+      **Correction:** the plan said to "strike screen #8" — the PRD never had a place screen at
+      all (it was a Workstream-A addition), so §7 gained a note that the route was removed
+      rather than losing a screen. §17 needed nothing: it constrains hosting and data, not
+      layout. `docs/ideas/design-v2-handoff.md` records the approved change list verbatim, the
+      eight points where the app diverges from it, and the three corrections that came from
+      reading the prototypes rather than the handoff (S)
 - [ ] **6.2** PR with before/after screenshots; list deleted components and retired tests
 
 ## Deleted by the end of this work
