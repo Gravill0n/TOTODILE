@@ -8,7 +8,6 @@ import { useGuideProgress } from "@/features/progress/useGuideProgress";
 import { ChapterRail } from "@/features/spine/ChapterRail";
 import { ChapterSheet } from "@/features/spine/ChapterSheet";
 import { chapterProgress, visitIndex } from "@/features/spine/chapterProgress";
-import { MissableBanner } from "@/features/spine/MissableBanner";
 import { upcomingMissables } from "@/features/spine/missables";
 import { PostureLayout } from "@/features/spine/PostureLayout";
 import { VisitScreen } from "@/features/spine/VisitScreen";
@@ -257,18 +256,6 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
       }
     >
       {progress.ready ? (
-        <MissableBanner
-          items={upcomingMissables(
-            guide,
-            progress.currentStepId,
-            progress.doneIds,
-            progress.acknowledgedMissableIds,
-          )}
-          onAcknowledge={progress.acknowledgeMissable}
-          onJump={goToStep}
-        />
-      ) : null}
-      {progress.ready ? (
         <VisitScreen
           guide={guide}
           slug={entry.id}
@@ -284,6 +271,20 @@ export function GuideShell({ entry, guide, visitId }: GuideShellProps) {
           onBackToNow={() =>
             currentStepId === null ? undefined : goToStep(currentStepId)
           }
+          // The lookahead is unchanged (FR-B5) — what changed is where the
+          // warning lands: the ones falling inside this visit render at their
+          // own step instead of stacking in a banner.
+          missableStepIds={
+            new Set(
+              upcomingMissables(
+                guide,
+                progress.currentStepId,
+                progress.doneIds,
+                progress.acknowledgedMissableIds,
+              ).map((item) => item.stepId),
+            )
+          }
+          onAcknowledgeMissable={progress.acknowledgeMissable}
         />
       ) : (
         <p className="text-ink-soft">Loading progress…</p>

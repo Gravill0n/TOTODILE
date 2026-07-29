@@ -151,10 +151,19 @@ checkpoint.
       pixelated, lightbox intact) now render on every row, not only the current card. Skip is
       **disabled** rather than absent on a done row: the anatomy holds still, and skipping a done
       step is a no-op in the slot, so the control should say so (M)
-- [ ] **4.4** `MissableCard` inline at the step; delete `MissableBanner` (M)
+- [x] **4.4** `MissableCard` inline above its step; `MissableBanner` deleted. `upcomingMissables`
+      keeps its lookahead unchanged — the shell passes the ids, the visit renders the ones that
+      fall on this page. The step row's own `Missable — <deadline>` line went with the banner
+      (the card quotes the deadline whole, and the badge carries it as a `title` once the card
+      is gone), and the banner's `Go` retired with it — there is nowhere to go from a warning
+      that is already at its step. **Known tradeoff (accepted in the plan):** missables in later
+      visits are no longer surfaced ahead of time; the follow-up is a marker in the chapter rail,
+      not a restored banner (M)
 
 ### ☑ Checkpoint E — the spine reads right
-- [ ] `yarn check` green · manual walk of `zelda-oot` chapter 4
+- [x] `yarn check` green (103 files, 667 tests) · `yarn build` clean
+- [ ] **Pierre**: manual walk of `zelda-oot` chapter 4 — icons on every row, missable card where
+      the player acts, `Back to NOW` when you scroll away
 
 ## Phase 5 — Right column: map + widgets
 

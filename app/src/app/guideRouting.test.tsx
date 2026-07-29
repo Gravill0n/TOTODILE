@@ -134,22 +134,8 @@ describe("jumps land on the visit that holds the step", () => {
     expect(router.state.location.pathname).toBe(FIRST_VISIT);
   });
 
-  it("a missable's Go opens the visit that missable is in", async () => {
-    stubGuideContent();
-    const router = renderAppAt(FIRST_VISIT);
-    await screen.findByText(S1_TEXT);
-
-    fireEvent.click(
-      screen.getByRole("button", {
-        name: /^Go to missable: Before draining the vault/,
-      }),
-    );
-
-    await screen.findByText(/Feed moray eel a mushroom/);
-    expect(router.state.location.pathname).toBe(
-      "/guide/fictional-quest/chapter/c2/visit/v-sunken-vault-1",
-    );
-  });
+  // The missable banner's "Go" retired with the banner (task 4.4): the warning
+  // now renders at its own step, so there is nowhere to go from it.
 
   it("a deep link stays put — landing never yanks you to the pointer", async () => {
     stubGuideContent();

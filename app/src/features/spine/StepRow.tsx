@@ -143,9 +143,13 @@ export function StepRow({
                   : ""}
               </Badge>
             ) : null}
+            {/* The badge marks the row; the deadline itself is quoted by the
+                MissableCard above it while the deadline is still ahead, and
+                carried here as the badge's title once that card is gone. */}
             {step.missable ? (
               <Badge
                 variant="outline"
+                title={step.missable.deadline}
                 className="border-missable text-missable"
               >
                 <TriangleAlert className="size-3" aria-hidden />
@@ -188,13 +192,6 @@ export function StepRow({
             </p>
           </CollapsibleContent>
         </Collapsible>
-
-        {step.missable ? (
-          <p className="flex items-center gap-1 text-sm font-bold text-missable">
-            <TriangleAlert className="size-4" aria-hidden />
-            Missable — {step.missable.deadline}
-          </p>
-        ) : null}
       </div>
     </div>
   );

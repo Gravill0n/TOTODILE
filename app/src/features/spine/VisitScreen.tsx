@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import type { GuideFile } from "@/schema";
 import { idTail } from "@/schema";
 import { visitIndex } from "./chapterProgress";
+import { MissableCard } from "./MissableCard";
 import { StepRow } from "./StepRow";
 import { useInView } from "./useInView";
 
@@ -27,6 +28,9 @@ type VisitScreenProps = {
   onOpenVisit: (visitId: string) => void;
   /** Scroll the current step back into view — the same move as "Where am I". */
   onBackToNow: () => void;
+  /** Steps whose missable is still ahead and unacknowledged (FR-B5). */
+  missableStepIds: ReadonlySet<string>;
+  onAcknowledgeMissable: (stepId: string) => void;
 };
 
 const count = (n: number, noun: string) => `${n} ${noun}${n === 1 ? "" : "s"}`;
@@ -52,6 +56,8 @@ export function VisitScreen({
   onMovePointer,
   onOpenVisit,
   onBackToNow,
+  missableStepIds,
+  onAcknowledgeMissable,
 }: VisitScreenProps) {
   // Watching the current row is what decides whether the page needs to offer
   // a way back to it; with no row on this page there is nothing to offer.
@@ -180,19 +186,28 @@ export function VisitScreen({
 
       <div className="mt-5 space-y-1">
         {visit.steps.map((stepData) => (
-          <StepRow
-            key={stepData.id}
-            step={stepData}
-            slug={slug}
-            ref={stepData.id === currentStepId ? nowRef : undefined}
-            isCurrent={stepData.id === currentStepId}
-            isDone={doneIds.has(stepData.id)}
-            isSkipped={skippedIds.has(stepData.id)}
-            onToggleDone={() => onToggleDone(stepData.id)}
-            onToggleSkip={() => onToggleSkip(stepData.id)}
-            onMarkThrough={() => onMarkThrough(stepData.id)}
-            onMoveHere={() => onMovePointer(stepData.id)}
-          />
+          <div key={stepData.id}>
+            {/* The warning sits with the step that passes the deadline, not at
+                the top of a page you may have scrolled away from. */}
+            {stepData.missable && missableStepIds.has(stepData.id) ? (
+              <MissableCard
+                deadline={stepData.missable.deadline}
+                onAcknowledge={() => onAcknowledgeMissable(stepData.id)}
+              />
+            ) : null}
+            <StepRow
+              step={stepData}
+              slug={slug}
+              ref={stepData.id === currentStepId ? nowRef : undefined}
+              isCurrent={stepData.id === currentStepId}
+              isDone={doneIds.has(stepData.id)}
+              isSkipped={skippedIds.has(stepData.id)}
+              onToggleDone={() => onToggleDone(stepData.id)}
+              onToggleSkip={() => onToggleSkip(stepData.id)}
+              onMarkThrough={() => onMarkThrough(stepData.id)}
+              onMoveHere={() => onMovePointer(stepData.id)}
+            />
+          </div>
         ))}
       </div>
 
