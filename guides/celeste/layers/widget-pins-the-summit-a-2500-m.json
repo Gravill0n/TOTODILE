@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-the-summit-a-2500-m",
+    "title": "The Summit A — 2500 M — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:the-summit-a-2500-m"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-the-summit-a-2500-m.jpg",
+      "alt": "Room layout of The Summit A — 2500 M",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-the-summit-a-2500-m:pin-7a-f-00",
+        "label": "The Summit A - Room f-00 Strawberry",
+        "x": 0.1865,
+        "y": 0.8722,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-2500-m:pin-7a-f-01",
+        "label": "The Summit A - Room f-01 Strawberry",
+        "x": 0.0063,
+        "y": 0.776,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-2500-m:pin-7a-f-07",
+        "label": "The Summit A - Room f-07 Strawberry",
+        "x": 0.5361,
+        "y": 0.7194,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-2500-m:pin-7a-f-08b",
+        "label": "The Summit A - Room f-08b Strawberry",
+        "x": 0.6372,
+        "y": 0.7299,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-2500-m:pin-7a-f-08c",
+        "label": "The Summit A - Room f-08c Strawberry",
+        "x": 0.8264,
+        "y": 0.7549,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-2500-m:pin-7a-f-11-1",
+        "label": "The Summit A - Room f-11 Strawberry 1",
+        "x": 0.9788,
+        "y": 0.5389,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-2500-m:pin-7a-f-11-2",
+        "label": "The Summit A - Room f-11 Strawberry 2",
+        "x": 0.9539,
+        "y": 0.3188,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-2500-m:pin-7a-f-11-3",
+        "label": "The Summit A - Room f-11 Strawberry 3",
+        "x": 0.9934,
+        "y": 0.3188,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-2500-m:col-7a-gem-6",
+        "label": "Gem 6",
+        "x": 0.5149,
+        "y": 0.7372,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

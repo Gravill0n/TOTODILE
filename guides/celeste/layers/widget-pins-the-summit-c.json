@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-the-summit-c",
+    "title": "The Summit C-Side — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:the-summit-c"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-the-summit-c.jpg",
+      "alt": "Room layout of The Summit C-Side",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-the-summit-c:col-7c-level-clear",
+        "label": "Level Clear",
+        "x": 0.9634,
+        "y": 0.082,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

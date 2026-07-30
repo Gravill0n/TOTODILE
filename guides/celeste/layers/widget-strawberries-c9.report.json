@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "layer": "widget-strawberries-c9",
+  "generatedAt": "2026-07-30T18:10:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "e3201f6fa921f2c3876a25b68e3cc7125b6326dfe3fbbdfb117d76c272e81cd3"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "503f409a29c3e1a24e491f12735254832160bb2d045e136b958e23775eabd73c"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "e5ab1bc1eab4b4c0ae4c4c556dc943dd06779dd5ec7c74465b2e6020999a9e0d"
+    }
+  ],
+  "report": {
+    "rowCount": 5,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Deck slot 3 (dataTable, Chapter Strawberries), scoped to celeste:c9. Composition approved by Pierre 2026-07-30.",
+    "Rows are checkable, per Pierre 2026-07-30, matching how zelda-oot and pokemon-crystal build their area tables. Note this means each berry has two tick boxes — this row and its route step — and celeste:strawberries derives its 30/80/175 counters from the route step, so this table does not feed the counter.",
+    "One row per red strawberry in the chapter, in the wiki's collection order. The How column reproduces the same prose as the corresponding spine step, so the route text lives in one voice in one place.",
+    "Type distribution: 5 normal.",
+    "The Type column is not taken from the data layer's `type` field, which is under-populated: berries whose own prose calls them winged or flying are promoted to winged here. That correction makes the prose agree with src-tracker-maps' winged counts exactly in chapters 2, 3, 4, 5 and 7 — see the spine report. Forsaken City is the one chapter where the two sources genuinely disagree."
+  ]
+}

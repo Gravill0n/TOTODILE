@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c9",
+    "title": "Chapter 8: Core — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c9"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c9:heart-door",
+        "label": "Open the 4-heart door",
+        "note": "Core's A-Side is locked behind a Heart Door needing 4 crystal hearts; its B-Side needs 15.",
+        "sourceRefs": [
+          "src-ink-chapters"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c9:berries",
+        "label": "Red strawberries",
+        "quantity": 5,
+        "note": "1 in Into the Core, 3 in Hot and Cold, 1 in Heart of the Mountain. Two of them depend on the hot/cold state of the room.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c9:cassette",
+        "label": "Cassette Tape",
+        "note": "At the end of the level, alongside the crystal heart.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c9:heart",
+        "label": "Crystal Heart",
+        "note": "Also at the end of the level; collecting it is necessary to complete Core. The eighth and last A-Side heart. Earns Heart of the Mountain.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c9:a-side",
+        "label": "Clear the A-Side",
+        "note": "The one A-Side clear that awards no achievement of its own.",
+        "sourceRefs": [
+          "src-ink-chapters",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c9:b-side",
+        "label": "Clear the B-Side",
+        "note": "Earns Say Goodbye, and unlocks the C-Sides.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-ink-chapters",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

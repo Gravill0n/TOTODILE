@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-farewell-farewell",
+    "title": "Farewell — Farewell — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:farewell-farewell"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-farewell-farewell.jpg",
+      "alt": "Stitched room-layout map of Farewell's final checkpoint, including the Moon Berry room",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-farewell-farewell:col-10a-level-clear",
+        "label": "Level Clear",
+        "x": 0.7841,
+        "y": 0.845,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-farewell-farewell:col-10a-moon-berry",
+        "label": "Moon Berry",
+        "x": 0.7044,
+        "y": 0.2041,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

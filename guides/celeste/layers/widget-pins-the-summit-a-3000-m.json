@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-the-summit-a-3000-m",
+    "title": "The Summit A — 3000 M — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:the-summit-a-3000-m"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-the-summit-a-3000-m.jpg",
+      "alt": "Stitched room-layout map of The Summit A — 3000 M, including the hidden crystal heart room near flag 28",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-the-summit-a-3000-m:pin-7a-g-00b-1",
+        "label": "The Summit A - Room g-00b Strawberry 1",
+        "x": 0.1892,
+        "y": 0.8081,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-3000-m:pin-7a-g-00b-2",
+        "label": "The Summit A - Room g-00b Strawberry 2",
+        "x": 0.1943,
+        "y": 0.7712,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-3000-m:pin-7a-g-00b-3",
+        "label": "The Summit A - Room g-00b Strawberry 3",
+        "x": 0.2209,
+        "y": 0.7131,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-3000-m:pin-7a-g-01-1",
+        "label": "The Summit A - Room g-01 Strawberry 1",
+        "x": 0.0235,
+        "y": 0.561,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-3000-m:pin-7a-g-01-2",
+        "label": "The Summit A - Room g-01 Strawberry 2",
+        "x": 0.3732,
+        "y": 0.5483,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-3000-m:pin-7a-g-01-3",
+        "label": "The Summit A - Room g-01 Strawberry 3",
+        "x": 0.274,
+        "y": 0.5349,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-3000-m:pin-7a-g-03",
+        "label": "The Summit A - Room g-03 Strawberry",
+        "x": 0.5245,
+        "y": 0.2139,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-3000-m:col-7a-level-clear",
+        "label": "Level Clear",
+        "x": 0.91,
+        "y": 0.031,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-3000-m:col-7a-crystal-heart",
+        "label": "Crystal Heart",
+        "x": 0.2393,
+        "y": 0.8401,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

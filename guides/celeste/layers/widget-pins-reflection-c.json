@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-reflection-c",
+    "title": "Reflection C-Side — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:reflection-c"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-reflection-c.jpg",
+      "alt": "Room layout of Reflection C-Side",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-reflection-c:col-6c-level-clear",
+        "label": "Level Clear",
+        "x": 0.9468,
+        "y": 0.9212,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

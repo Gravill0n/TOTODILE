@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-forsaken-city-a-chasm",
+    "title": "Forsaken City A — Chasm — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:forsaken-city-a-chasm"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-forsaken-city-a-chasm.jpg",
+      "alt": "Stitched room-layout map of Forsaken City A — Chasm, including the cassette room",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-forsaken-city-a-chasm:pin-1a-9b",
+        "label": "Forsaken City A - Room 9b Strawberry",
+        "x": 0.7693,
+        "y": 0.9141,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-chasm:pin-1a-9c",
+        "label": "Forsaken City A - Room 9c Strawberry",
+        "x": 0.92,
+        "y": 0.8874,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-chasm:pin-1a-10zb",
+        "label": "Forsaken City A - Room 10zb Strawberry",
+        "x": 0.1829,
+        "y": 0.814,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-chasm:pin-1a-11",
+        "label": "Forsaken City A - Room 11 Strawberry",
+        "x": 0.6079,
+        "y": 0.6205,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-chasm:pin-1a-12z",
+        "label": "Forsaken City A - Room 12z Strawberry",
+        "x": 0.2959,
+        "y": 0.2535,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-chasm:col-1a-level-clear",
+        "label": "Level Clear",
+        "x": 0.9307,
+        "y": 0.1134,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-chasm:col-1a-cassette",
+        "label": "Cassette",
+        "x": 0.3699,
+        "y": 0.4996,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

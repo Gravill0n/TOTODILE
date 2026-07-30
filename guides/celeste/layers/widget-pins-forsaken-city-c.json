@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-forsaken-city-c",
+    "title": "Forsaken City C-Side — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:forsaken-city-c"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-forsaken-city-c.jpg",
+      "alt": "Room layout of Forsaken City C-Side",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-forsaken-city-c:col-1c-level-clear",
+        "label": "Level Clear",
+        "x": 0.9449,
+        "y": 0.2308,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

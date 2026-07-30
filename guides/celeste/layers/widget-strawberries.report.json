@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "layer": "widget-strawberries",
+  "generatedAt": "2026-07-30T17:05:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "e3201f6fa921f2c3876a25b68e3cc7125b6326dfe3fbbdfb117d76c272e81cd3"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "503f409a29c3e1a24e491f12735254832160bb2d045e136b958e23775eabd73c"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "e5ab1bc1eab4b4c0ae4c4c556dc943dd06779dd5ec7c74465b2e6020999a9e0d"
+    }
+  ],
+  "report": {
+    "rowCount": 3,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Deck slot 0 (counter, Strawberries, global). Slot and composition approved by Pierre 2026-07-30.",
+    "All three entries are derived (#5): read-only, their value is the number of checked IDs in derivedFrom, so ticking a strawberry step in the route advances all three at once and nothing writes counterValues.",
+    "derivedFrom is the same set of 175 spine step IDs on every entry — every step in layers/spine.json whose first keyword is \"Grab berry <n>\". They split 20/18/25/29/31/47/5 across chapters 1, 2, 3, 4, 5, 7 and Core, matching both the per-chapter totals in the chapters dataset and the 175 that src-ink-achievements requires for Impress Your Friends.",
+    "The three targets are the three strawberry achievements in src-ink-achievements: Strawberry Badge (30), Strawberry Medal (80), Impress Your Friends (175). No separate plain 0/175 entry is emitted — Impress Your Friends already is it.",
+    "Targets are explicit rather than left to default from derivedFrom.length, because 30 and 80 are milestones over the same 175-item set, not smaller sets.",
+    "No flagged rows. The 175-berry set is corroborated independently by src-tracker-maps, whose pin dataset reproduces the same per-chapter split."
+  ]
+}

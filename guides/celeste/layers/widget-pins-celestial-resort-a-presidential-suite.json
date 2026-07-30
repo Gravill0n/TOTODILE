@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-celestial-resort-a-presidential-suite",
+    "title": "Celestial Resort A — Presidential Suite — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:celestial-resort-a-presidential-suite"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-celestial-resort-a-presidential-suite.jpg",
+      "alt": "Room layout of Celestial Resort A — Presidential Suite",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-celestial-resort-a-presidential-suite:pin-3a-roof03",
+        "label": "Celestial Resort A - Room roof03 Strawberry",
+        "x": 0.3271,
+        "y": 0.0539,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-presidential-suite:pin-3a-roof06-1",
+        "label": "Celestial Resort A - Room roof06 Strawberry 1",
+        "x": 0.6958,
+        "y": 0.0482,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-presidential-suite:pin-3a-roof06-2",
+        "label": "Celestial Resort A - Room roof06 Strawberry 2",
+        "x": 0.7878,
+        "y": 0.1618,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-presidential-suite:col-3a-level-clear",
+        "label": "Level Clear",
+        "x": 0.9551,
+        "y": 0.0829,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c2",
+    "title": "Chapter 2: Old Site — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c2"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c2:berries",
+        "label": "Red strawberries",
+        "quantity": 18,
+        "note": "9 in Start, 8 in Intervention, 1 in Awake. Includes the game's first seeded strawberry.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c2:cassette",
+        "label": "Cassette Tape",
+        "note": "In Start, reachable only after the mirror shatters and the dream blocks activate.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c2:heart",
+        "label": "Crystal Heart",
+        "note": "Straight up from the spawn point, before you go underground. Earns Resurrections.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c2:a-side",
+        "label": "Clear the A-Side",
+        "note": "Earns Archaeology.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c2:b-side",
+        "label": "Clear the B-Side",
+        "note": "Earns Black Moonrise.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

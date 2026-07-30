@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:strawberries-c2",
+    "title": "Old Site — Strawberries",
+    "type": "dataTable",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c2"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "checkpoint",
+        "label": "Checkpoint"
+      },
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "how",
+        "label": "How to get it"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "celeste:strawberries-c2:b01",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "1",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the same room as the mirror, but out of view without binoculars. To reach it, stay on the falling platform in the previous room and then go right into a hidden gap, which lets you grab the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b02",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "2",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the eighth room, to the top-left of the mirror room. The strawberry is in a hidden area above the middle of the 3 dream blocks; dash upward through that dream block to reach it."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b03",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "3",
+          "checkpoint": "Start",
+          "type": "seeded",
+          "how": "The first seeded strawberry of the game. To collect a seeded berry, do not touch the floor before you have collected all of its strawberry seeds. The room is a tall one, accessed from the upper two left transitions in the fourth room. Keep yourself airborne by dashing into any nearby dream blocks as they move and you can get all the seeds."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b04",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "4",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the room below the previous berry's room, past a smashable wall in the floor — or from the bottom left transition in the fourth room. Approached from above it is simple. It is possible to reach the berry from below, but you should be smashing the floor in the room above to access it with no challenge."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b05",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "5",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the fourth room, and it needs care: the berry hovers in the upper area surrounded by many spikes. Position yourself to dash diagonally downward into the area it sits in, then either dash straight upward immediately or grab the wall and dash straight upward from there, to be safe as you collect it."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b06",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "6",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Go through the transition to the right of the previous berry's room and the sixth berry comes into view. Dash upward diagonally to land on the traffic light block, then dash directly right so you stop while the traffic light block is also stopped on the right. Dash from there to the strawberry and climb up to safety."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b07",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "7",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the room right of the previous berry's room. The safest approach is to dash right after jumping into the dream block, then dash diagonally upward into the next one and grab the wall. After collecting the strawberry, climb higher and dash left twice through the dream blocks to get back."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b08",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "8",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Hidden in the floor of berry 6's room is a transition. Line yourself up with the hole and dash straight down to get in. That takes you to a hidden tunnel above an earlier room, which contains this strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b09",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "9",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Found by backtracking to the second room and going straight up the dream block, then right, arriving above the third room. To collect the berry, dash directly right into the upper dream block and then the lower one. Climb up to get the berry, then dash left twice and climb the wall on your way back to claim the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b10",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "10",
+          "checkpoint": "Intervention",
+          "type": "normal",
+          "how": "In the second room, this strawberry forces you to detour from the exit by going up-right from the dream block. For the most consistent collect, dash right into the berry, climb up and wait a bit, then jump back left."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b11",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "11",
+          "checkpoint": "Intervention",
+          "type": "normal",
+          "how": "In the third room you can see this strawberry inside a wall with no obvious way in. To reach the area, dash straight left from the right side of the dream block just above the spikes. To make sure Badeline does not hit you, grab the berry and cling to the right wall, then dash to the left wall as she approaches and escape as normal."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b12",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "12",
+          "checkpoint": "Intervention",
+          "type": "normal",
+          "how": "In the sixth room, the berry is in the top-left corner. Dash up one side of the wall, jump to the other side and grab the strawberry, then slide down the wall."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b13",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "13",
+          "checkpoint": "Intervention",
+          "type": "normal",
+          "how": "From the seventh room you can spot an opening in the ceiling between two spike-filled walls. Get yourself under the second dream block in the room, dash straight up, move left a bit, then dash straight up again. That gets you into the room above with this strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b14",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "14",
+          "checkpoint": "Intervention",
+          "type": "normal",
+          "how": "In the seventh room, and very tricky: you cannot interact with the falling platform above the berry or it will block the berry off or crush you. Grab onto the walls elevated above the spikes and climb them to jump into the pit with the berry, then quickly dash out and finish the room."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b15",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "15",
+          "checkpoint": "Intervention",
+          "type": "normal",
+          "how": "In the eighth room, and the approach depends on whether you took the shortcut mentioned earlier. If you did, simply move right out of your fall into the hole where the strawberry floats. If you did not, it is still reachable: when you come to the large, square-shaped dream block, dash through it diagonally up-right and then dash straight up to reach the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b16",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "16",
+          "checkpoint": "Intervention",
+          "type": "normal",
+          "how": "From the eleventh room you can reach a screen transition at the top, in the same column as the fourth dream block from the left. In the room above, dash straight up to find the strawberry, then move left and right, dashing through the dream block as you descend, to avoid dying."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b17",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "17",
+          "checkpoint": "Intervention",
+          "type": "normal",
+          "how": "From the eleventh room, another screen transition sits in the same column as the fourth dream block from the right. It is at the bottom, so enter it by dashing straight down from the top of the dream block. In the room below, reach the strawberry by dashing diagonally up-right from below both dream blocks; once you have it, do the same mirrored to return."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c2:b18",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "18",
+          "checkpoint": "Awake",
+          "type": "winged",
+          "how": "In the sixth room the hole in the ceiling still exists and can be entered. Scale another room and you reach the room with the winged strawberry. Jump onto the left spring, then move right in the air and jump across the disappearing platforms to the other spring. Climb the right wall after bouncing on that spring and jump left onto the other disappearing platforms. To reach the winged strawberry you actually need to dash into it — aim slightly higher than where the berry hovers, as it starts flying up when you dash."
+        }
+      }
+    ]
+  }
+}

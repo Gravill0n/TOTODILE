@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "source-gathering",
+  "layer": "source-gathering",
+  "generatedAt": "2026-07-29T19:05:00Z",
+  "inputs": [],
+  "report": {
+    "rowCount": 1,
+    "anomalies": [
+      "src-tracker-maps supersedes src-ink-maps for all map purposes. src-ink-maps remains on file (records are append-only) but its 9 whole-chapter PNGs are coarser, cover only A-sides, stop at Chapter 7, and carry no coordinates. Nothing referencing src-ink-maps has been emitted yet, so no sourceRefs need rewriting",
+      "src-tracker-maps: pins are named by room id (\"Forsaken City A - Room 3b Strawberry\"), while src-ink-collectables numbers berries sequentially per chapter (\"Strawberry 4\"). The two schemes must be cross-walked for all 175 strawberries before the mapPins and dataTable widgets can share item IDs — this is extract-data work and is the single largest open task on this guide",
+      "src-tracker-maps: 1216 pins is far more than the guide needs. Out of scope under the 32-achievement definition Pierre set on 2026-07-29 are the 801 roomsanity rooms, 82 binoculars, 24 keys/gems, the goldens, and the cars — all randomizer-specific. The widget pass must select the in-scope subset (175 strawberries, 8 cassettes, the crystal hearts, the level clears, the Moon Berry) rather than fill from the pin file wholesale",
+      "src-tracker-maps: Farewell's A-side heart pin is named \"Crystal Heart?\" in the pack, the only pin whose name carries an interrogative. Its identity must be confirmed against src-ink-chapters before it is emitted as a checkable",
+      "src-tracker-maps is licensed non-commercial by Zeeveez, and its map images are Celeste game assets used under EXOK Games's modding policy. TOTODILE is a personal non-commercial single-user app so the terms are met, but any redistribution question (including whether the 26 MB of map JPEGs are committed to a public GitHub repo) is Pierre's call and is not settled by this pass",
+      "Map images are not yet in the repo. guides/<slug>/images/ is tracked in git (266 images across the existing guides) while guides/<slug>/sources/ is gitignored, so the map JPEGs the mapPins widgets will reference have to be copied into guides/celeste/images/ and committed. Which subset, and at what resolution, is unresolved and blocks the mapPins widget fills"
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Re-run appending one source, per Pierre 2026-07-29, after he supplied PopTracker packs at guides/celeste/sources/ as the intended mapPins data.",
+    "Two packs were supplied. Pierre chose the Zeeveez v2.0.2 pack (src-tracker-maps) and directed the other — Reisz's Celeste-OpenWorld-AP-Tracker-main — to be removed; that folder has been deleted from guides/celeste/sources/. Only the Zeeveez pack remains.",
+    "The Reisz pack was rejected because it ships no maps at all: its map images, pin coordinates and map tab layout are gitignored build outputs, so the copied folder contained only item lists, chapter icons (64x64 to 180x180, not maps), and a layouts/tracker.json referencing a \"maps\" layout that no file defines. Its data can be reproduced by running the upstream generator against the Berrycamp room dataset and Archipelago's CelesteLevelData.json — this was verified end to end in a scratch directory (112 maps, 97 MB of PNG, 252 pins, all in bounds) — but the Zeeveez pack ships equivalent data prebuilt, covers Farewell, and is a third the size, so no generator step is needed. Nothing from that exercise was written into the repo.",
+    "CORRECTION to the first run's anomaly \"Berrycamp ... is dead\": only the berrycamp.com website is gone (parked domain). The berrycamp/berrycamp.github.io repository is live and holds the room dataset plus 844 room captures. It is not recorded as a source because the Zeeveez pack makes it unnecessary.",
+    "Verified in src-tracker-maps: 175 red strawberry pins split 20/18/25/29/31/47/5 across Forsaken City, Old Site, Celestial Resort, Golden Ridge, Mirror Temple, The Summit and Core — an exact match with src-ink-collectables and with the \"Impress Your Friends\" achievement in src-ink-achievements. Three independent sources now agree on the completion target.",
+    "Farewell coverage is resolved: the pack carries 9 maps and 168 pins for chapter 10, including the Moon Berry. The first run's anomaly that Core and Farewell had no map is fully closed — Core has 9 maps and 87 pins.",
+    "deck.json updated per Pierre 2026-07-29: the mapPins slot moves from defaultScope \"chapter\" to \"location\" and is retitled \"Checkpoint Map\". The pack cuts maps chapter -> side -> sub-map (e.g. Forsaken City yields 1_a_0, 1_a_1, 1_a_2, 1_b_0, 1_b_1, 1_b_2, 1_c_0), 93 in all. A chapter-scoped map slot cannot express that; a location-scoped one can, with each sub-map becoming a spine location.",
+    "The first run's anomaly that no source gives per-berry map coordinates is resolved: every pin carries an exact x/y against a named map image, so pins no longer need to be derived from prose or flagged for uncertain placement."
+  ]
+}

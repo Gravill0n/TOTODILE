@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c1",
+    "title": "Chapter 1: Forsaken City — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c1"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c1:berries",
+        "label": "Red strawberries",
+        "quantity": 20,
+        "note": "6 in Start, 9 in Crossing, 5 in Chasm.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c1:cassette",
+        "label": "Cassette Tape",
+        "note": "In Chasm. Unlocks 1B and earns Gateway — this is the first cassette in play order.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c1:heart",
+        "label": "Crystal Heart",
+        "note": "At the satellite in Crossing, behind the six-colour dash code. Earns Pointless Machines.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c1:a-side",
+        "label": "Clear the A-Side",
+        "note": "Earns Forsaken.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c1:b-side",
+        "label": "Clear the B-Side",
+        "note": "Earns Sever the Skyline.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

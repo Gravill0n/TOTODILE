@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "layer": "widget-sides-hearts",
+  "generatedAt": "2026-07-30T17:40:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "e3201f6fa921f2c3876a25b68e3cc7125b6326dfe3fbbdfb117d76c272e81cd3"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "503f409a29c3e1a24e491f12735254832160bb2d045e136b958e23775eabd73c"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "e5ab1bc1eab4b4c0ae4c4c556dc943dd06779dd5ec7c74465b2e6020999a9e0d"
+    }
+  ],
+  "report": {
+    "rowCount": 32,
+    "anomalies": [
+      "celeste:sides-hearts:core-crystal-heart — src-tracker-maps carries no crystal-heart pin anywhere in Core, so this cell is sourced from src-ink-collectables (\"The Crystal Heart and the Cassette Tape are located at the end of the level, collecting them is necessary to complete it\") rather than from a pin like the other seven hearts. Same gap already recorded against the spine layer.",
+      "celeste:sides-hearts:core-a-side — Core's A-Side clear is the one cell in the A-Side column with no corresponding achievement. The eight chapter-clear achievements cover chapters 1-6, The Summit (\"Celeste — Climb Celeste Mountain\") and Farewell (\"Farewell — Complete Chapter 9\"); Core's A-Side is required to reach the crystal heart and cassette but awards nothing itself. Sourced from src-ink-chapters and the level-clear pin instead."
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Deck slot 1 (matrix, Sides & Hearts, global). Composition approved by Pierre 2026-07-30.",
+    "Rows are the eight chapters that have alternate sides — Forsaken City through Core. Prologue, Epilogue and Farewell have no B- or C-Side (src-ink-chapters: alternate sides \"exist in every chapter except Prologue, Epilogue and Farewell\") so they are not rows here; their clears live in the Achievements checklist and the route.",
+    "Row labels carry the in-game chapter number, so Core reads \"Ch 8: Core\" while its pack index is 9. The two numberings disagree throughout the sources; the spine layer records the same convention.",
+    "24 of the 32 cells correspond one-to-one with an achievement in src-ink-achievements: 7 A-Side clears, 8 crystal hearts, 8 B-Side clears, and Core's A-Side which has none. The 8 C-Side cells map collectively to the single \"Thanks For Playing\" achievement rather than one each.",
+    "No flagged cells. Every cell is corroborated by a level-clear or crystal-heart pin in src-tracker-maps except Core's crystal heart, which the pack omits — see anomalies."
+  ]
+}

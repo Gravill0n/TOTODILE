@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "extract-data",
+  "layer": "data",
+  "generatedAt": "2026-07-29T20:10:00Z",
+  "inputs": [
+    {
+      "file": "sources.json",
+      "sha256": "503f409a29c3e1a24e491f12735254832160bb2d045e136b958e23775eabd73c"
+    }
+  ],
+  "report": {
+    "rowCount": 635,
+    "anomalies": [
+      "strawberry-route and strawberry-pins are deliberately NOT joined. Both carry 175 rows partitioned identically across the 30 A-side checkpoint groups (verified: every group's berry count agrees between the two sources), but which pin corresponds to which numbered berry cannot be established from the sources. Tested positionally against the berry-type markers both sources carry: of the 13 checkpoint groups with a distinctive marker, 2 corroborate a positional join and 4 flatly contradict it (Old Site/Start, Celestial Resort/Huge Mess, Mirror Temple/Depths, The Summit/2000 M place the marked berry at different positions); the other 17 groups carry no marker at all. Pairing them would be a guess, per Pierre 2026-07-29",
+      "strawberry-route/strawberry-pins: chapter 1 (Forsaken City) — src-ink-collectables describes 2 winged strawberries but src-tracker-maps marks 1; the affected route rows are flagged and their `type` must not be trusted",
+      "strawberry-route/strawberry-pins: chapter 2 (Old Site) — src-ink-collectables describes 0 winged strawberries but src-tracker-maps marks 1; the affected route rows are flagged and their `type` must not be trusted",
+      "strawberry-route/strawberry-pins: chapter 3 (Celestial Resort) — src-ink-collectables describes 1 winged strawberry but src-tracker-maps marks 2; the affected route rows are flagged and their `type` must not be trusted",
+      "strawberry-route/strawberry-pins: chapter 4 (Golden Ridge) — src-ink-collectables describes 0 winged strawberries but src-tracker-maps marks 1; the affected route rows are flagged and their `type` must not be trusted",
+      "strawberry-route/strawberry-pins: chapter 5 (Mirror Temple) — src-ink-collectables describes 0 winged strawberries but src-tracker-maps marks 1; the affected route rows are flagged and their `type` must not be trusted",
+      "strawberry-route/strawberry-pins: chapter 7 (The Summit) — src-ink-collectables describes 1 winged strawberry but src-tracker-maps marks 3; the affected route rows are flagged and their `type` must not be trusted",
+      "collectables: the pack models only A-side crystal hearts as `crystal-heart` (8 rows); the 16 B-side and C-side hearts appear as `level-clear` rows instead, because collecting them is what clears those sides. The 24 hearts the achievement scope needs are therefore 8 `crystal-heart` rows plus the 16 B/C-side `level-clear` rows, not a single kind",
+      "images: guides/celeste/sources/ is gitignored, so the 93 map JPEGs and 11 icons catalogued here are on disk but not in the repo. They must be copied into guides/celeste/images/ and committed before any widget can reference them; which subset and at what resolution is unresolved"
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "First run. Dataset set approved by Pierre 2026-07-29: chapters, checkpoints, strawberry-route, strawberry-pins, collectables, achievements, images.",
+    "Pierre's 2026-07-29 call after the join was shown to be unverifiable: keep the strawberries as two datasets sharing the same checkpoint keys rather than assert a pairing. The verified partition (30 A-side checkpoint groups, berry counts agreeing between both sources) is what downstream passes should key on.",
+    "The 175 route rows and 175 pin rows independently reproduce the 20/18/25/29/31/47/5 per-chapter split, matching the 175-strawberry \"Impress Your Friends\" achievement in src-ink-achievements.",
+    "Goldens, the winged golden, the 801 roomsanity rooms, 82 binoculars, keys and cars carried by src-tracker-maps are deliberately not extracted — all are out of scope under the 32-achievement definition.",
+    "4 strawberry-route rows are flagged where the prose-derived berry type conflicts with the pack's markers; the row's route text is still sound, only its `type` field is in doubt.",
+    "Record IDs are minted from stable content keys (chapter/side/berry number for route rows, chapter/side/room for pin rows), never from sequence position, so a re-run reproduces them."
+  ]
+}

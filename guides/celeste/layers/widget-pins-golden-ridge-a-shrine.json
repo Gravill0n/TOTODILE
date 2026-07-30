@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-golden-ridge-a-shrine",
+    "title": "Golden Ridge A — Shrine — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:golden-ridge-a-shrine"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-golden-ridge-a-shrine.jpg",
+      "alt": "Stitched room-layout map of Golden Ridge A — Shrine, including the underwater passage to the crystal heart",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-golden-ridge-a-shrine:pin-4a-b-01-1",
+        "label": "Golden Ridge A - Room b-01 Strawberry 1",
+        "x": 0.6504,
+        "y": 0.8776,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-shrine:pin-4a-b-01-2",
+        "label": "Golden Ridge A - Room b-01 Strawberry 2",
+        "x": 0.6842,
+        "y": 0.898,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-shrine:pin-4a-b-04",
+        "label": "Golden Ridge A - Room b-04 Strawberry",
+        "x": 0.2406,
+        "y": 0.585,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-shrine:pin-4a-b-07",
+        "label": "Golden Ridge A - Room b-07 Strawberry",
+        "x": 0.1541,
+        "y": 0.8095,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-shrine:pin-4a-b-03",
+        "label": "Golden Ridge A - Room b-03 Strawberry",
+        "x": 0.2632,
+        "y": 0.8027,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-shrine:pin-4a-b-02-1",
+        "label": "Golden Ridge A - Room b-02 Strawberry 1",
+        "x": 0.6466,
+        "y": 0.7347,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-shrine:pin-4a-b-02-2",
+        "label": "Golden Ridge A - Room b-02 Strawberry 2",
+        "x": 0.6203,
+        "y": 0.5918,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-shrine:pin-4a-b-secb",
+        "label": "Golden Ridge A - Room b-secb Strawberry",
+        "x": 0.8496,
+        "y": 0.517,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-shrine:pin-4a-b-08",
+        "label": "Golden Ridge A - Room b-08 Strawberry",
+        "x": 0.8947,
+        "y": 0.0408,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-shrine:col-4a-crystal-heart",
+        "label": "Crystal Heart",
+        "x": 0.7401,
+        "y": 0.3682,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

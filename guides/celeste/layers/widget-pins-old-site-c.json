@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-old-site-c",
+    "title": "Old Site C-Side — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:old-site-c"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-old-site-c.jpg",
+      "alt": "Room layout of Old Site C-Side",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-old-site-c:col-2c-level-clear",
+        "label": "Level Clear",
+        "x": 0.765,
+        "y": 0.3636,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

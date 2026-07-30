@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "layer": "widget-cassettes",
+  "generatedAt": "2026-07-30T17:55:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "e3201f6fa921f2c3876a25b68e3cc7125b6326dfe3fbbdfb117d76c272e81cd3"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "503f409a29c3e1a24e491f12735254832160bb2d045e136b958e23775eabd73c"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "e5ab1bc1eab4b4c0ae4c4c556dc943dd06779dd5ec7c74465b2e6020999a9e0d"
+    }
+  ],
+  "report": {
+    "rowCount": 8,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Deck slot 2 (checklist, Cassette Tapes, global). Composition approved by Pierre 2026-07-30.",
+    "Eight rows, one per chapter that has a cassette — chapters 1 through 8 (Core). src-ink-collectables: cassette tapes are \"special entities in the A-Sides of chapters 1 through 8\". Row order follows play order.",
+    "Each row's note is a locator, not a walkthrough: where the cassette room is and how to open it. The full route prose stays on the corresponding spine step, which is the same source text. An earlier draft truncated the spine detail to its first two sentences and was replaced, because that cut several routes off mid-instruction.",
+    "Collecting any one cassette earns Gateway; collecting all eight is what unlocks every B-Side, and completing those B-Sides is in turn what gates the C-Sides. That chain is noted on the Forsaken City row since it is the first cassette in play order.",
+    "No flagged rows. Every cassette has both a walkthrough in src-ink-collectables and a pin in src-tracker-maps."
+  ]
+}

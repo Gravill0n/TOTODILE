@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-golden-ridge-a-start",
+    "title": "Golden Ridge A — Start — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:golden-ridge-a-start"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-golden-ridge-a-start.jpg",
+      "alt": "Room layout of Golden Ridge A — Start",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-golden-ridge-a-start:pin-4a-a-01x",
+        "label": "Golden Ridge A - Room a-01x Strawberry",
+        "x": 0.2285,
+        "y": 0.5095,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-start:pin-4a-a-02",
+        "label": "Golden Ridge A - Room a-02 Strawberry",
+        "x": 0.4324,
+        "y": 0.6388,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-start:pin-4a-a-03",
+        "label": "Golden Ridge A - Room a-03 Strawberry",
+        "x": 0.5408,
+        "y": 0.5373,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-start:pin-4a-a-04",
+        "label": "Golden Ridge A - Room a-04 Strawberry",
+        "x": 0.686,
+        "y": 0.5711,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-start:pin-4a-a-06",
+        "label": "Golden Ridge A - Room a-06 Strawberry",
+        "x": 0.8062,
+        "y": 0.5164,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-start:pin-4a-a-07",
+        "label": "Golden Ridge A - Room a-07 Strawberry",
+        "x": 0.8879,
+        "y": 0.401,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-start:pin-4a-a-10",
+        "label": "Golden Ridge A - Room a-10 Strawberry",
+        "x": 0.8865,
+        "y": 0.2169,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-start:pin-4a-a-09",
+        "label": "Golden Ridge A - Room a-09 Strawberry",
+        "x": 0.9648,
+        "y": 0.0945,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-start:col-4a-cassette",
+        "label": "Cassette",
+        "x": 0.6924,
+        "y": 0.2229,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

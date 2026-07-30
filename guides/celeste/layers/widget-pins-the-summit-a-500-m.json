@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-the-summit-a-500-m",
+    "title": "The Summit A — 500 M — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:the-summit-a-500-m"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-the-summit-a-500-m.jpg",
+      "alt": "Room layout of The Summit A — 500 M",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-the-summit-a-500-m:pin-7a-b-02",
+        "label": "The Summit A - Room b-02 Strawberry",
+        "x": 0.2359,
+        "y": 0.8154,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-500-m:pin-7a-b-02b",
+        "label": "The Summit A - Room b-02b Strawberry",
+        "x": 0.1818,
+        "y": 0.5802,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-500-m:pin-7a-b-02e",
+        "label": "The Summit A - Room b-02e Strawberry",
+        "x": 0.0098,
+        "y": 0.5896,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-500-m:pin-7a-b-04",
+        "label": "The Summit A - Room b-04 Strawberry",
+        "x": 0.4521,
+        "y": 0.7181,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-500-m:pin-7a-b-08",
+        "label": "The Summit A - Room b-08 Strawberry",
+        "x": 0.7875,
+        "y": 0.4422,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-500-m:pin-7a-b-09",
+        "label": "The Summit A - Room b-09 Strawberry",
+        "x": 0.9803,
+        "y": 0.2477,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-500-m:col-7a-gem-2",
+        "label": "Gem 2",
+        "x": 0.2822,
+        "y": 0.6993,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

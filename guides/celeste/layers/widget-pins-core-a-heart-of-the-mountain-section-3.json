@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-core-a-heart-of-the-mountain-section-3",
+    "title": "Core A — Heart of the Mountain (map section 3) — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:core-a-heart-of-the-mountain-section-3"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-core-a-heart-of-the-mountain-section-3.jpg",
+      "alt": "Stitched room-layout map of Core A — Heart of the Mountain, ending at the crystal heart and cassette",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-core-a-heart-of-the-mountain-section-3:pin-9a-d-06",
+        "label": "Core A - Room d-06 Strawberry",
+        "x": 0.0288,
+        "y": 0.3383,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-core-a-heart-of-the-mountain-section-3:col-9a-level-clear",
+        "label": "Level Clear",
+        "x": 0.9827,
+        "y": 0.029,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-core-a-heart-of-the-mountain-section-3:col-9a-cassette",
+        "label": "Cassette",
+        "x": 0.7104,
+        "y": 0.0199,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

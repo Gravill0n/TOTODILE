@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-core-b",
+    "title": "Core B-Side — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:core-b"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-core-b.jpg",
+      "alt": "Room layout of Core B-Side",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-core-b:col-9b-level-clear",
+        "label": "Level Clear",
+        "x": 0.97,
+        "y": 0.0412,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

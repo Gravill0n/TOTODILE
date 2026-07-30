@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "layer": "widget-pins-reflection-a-hollows",
+  "generatedAt": "2026-07-30T18:25:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "e3201f6fa921f2c3876a25b68e3cc7125b6326dfe3fbbdfb117d76c272e81cd3"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "503f409a29c3e1a24e491f12735254832160bb2d045e136b958e23775eabd73c"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "e5ab1bc1eab4b4c0ae4c4c556dc943dd06779dd5ec7c74465b2e6020999a9e0d"
+    }
+  ],
+  "report": {
+    "rowCount": 2,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Deck slot 4 (mapPins, Checkpoint Map), scoped to location celeste:reflection-a-hollows. Composition approved by Pierre 2026-07-30.",
+    "Pins come from src-tracker-maps' pin records for pack map 6_a_2. Coordinates are the pack's pixel positions divided by the image's own dimensions (4096x471), rounded to 4 decimal places, so they survive any rendered size. Every pin was checked to fall inside the image bounds.",
+    "Image is the location's mapImage, already committed to guides/celeste/images/ under Git LFS by the spine pass — no new asset was downloaded.",
+    "Pin item IDs reuse the data layer's own record IDs as their last segment, which are minted from chapter/side/room and are unique within a map, so a re-run reproduces them.",
+    "No flagged pins. Every pin is a direct reading of the pack's coordinate data."
+  ]
+}

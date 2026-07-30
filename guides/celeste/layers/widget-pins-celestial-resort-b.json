@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-celestial-resort-b",
+    "title": "Celestial Resort B-Side — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:celestial-resort-b"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-celestial-resort-b.jpg",
+      "alt": "Room layout of Celestial Resort B-Side",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-celestial-resort-b:col-3b-level-clear",
+        "label": "Level Clear",
+        "x": 0.9562,
+        "y": 0.7384,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

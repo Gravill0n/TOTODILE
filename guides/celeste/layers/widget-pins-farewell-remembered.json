@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-farewell-remembered",
+    "title": "Farewell — Remembered — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:farewell-remembered"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-farewell-remembered.jpg",
+      "alt": "Room layout of Farewell — Remembered",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-farewell-remembered:col-10a-crystal-heart",
+        "label": "Crystal Heart?",
+        "x": 0.9404,
+        "y": 0.0621,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

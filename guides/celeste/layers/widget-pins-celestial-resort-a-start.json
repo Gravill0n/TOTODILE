@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-celestial-resort-a-start",
+    "title": "Celestial Resort A — Start — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:celestial-resort-a-start"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-celestial-resort-a-start.jpg",
+      "alt": "Room layout of Celestial Resort A — Start",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-s2-1",
+        "label": "Celestial Resort A - Room s2 Strawberry 1",
+        "x": 0.2275,
+        "y": 0.952,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-s2-2",
+        "label": "Celestial Resort A - Room s2 Strawberry 2",
+        "x": 0.1689,
+        "y": 0.5403,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-s3",
+        "label": "Celestial Resort A - Room s3 Strawberry",
+        "x": 0.3044,
+        "y": 0.3516,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-00-a",
+        "label": "Celestial Resort A - Room 00-a Strawberry",
+        "x": 0.4751,
+        "y": 0.717,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-00-b",
+        "label": "Celestial Resort A - Room 00-b Strawberry",
+        "x": 0.415,
+        "y": 0.3756,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-04-b",
+        "label": "Celestial Resort A - Room 04-b Strawberry",
+        "x": 0.7263,
+        "y": 0.458,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-06-a",
+        "label": "Celestial Resort A - Room 06-a Strawberry",
+        "x": 0.8552,
+        "y": 0.6569,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-07-b",
+        "label": "Celestial Resort A - Room 07-b Strawberry",
+        "x": 0.9221,
+        "y": 0.3173,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-06-b",
+        "label": "Celestial Resort A - Room 06-b Strawberry",
+        "x": 0.8232,
+        "y": 0.482,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-06-c",
+        "label": "Celestial Resort A - Room 06-c Strawberry",
+        "x": 0.845,
+        "y": 0.0463,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-start:pin-3a-05-c",
+        "label": "Celestial Resort A - Room 05-c Strawberry",
+        "x": 0.7681,
+        "y": 0.482,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

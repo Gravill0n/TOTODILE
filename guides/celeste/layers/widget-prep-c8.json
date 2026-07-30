@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c8",
+    "title": "Epilogue — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c8"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c8:clear",
+        "label": "Walk through the Epilogue",
+        "note": "No gameplay, no way to die, no achievement — but Core and its five strawberries only become accessible afterwards.",
+        "sourceRefs": [
+          "src-ink-chapters",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-mirror-temple-a-start",
+    "title": "Mirror Temple A — Start — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:mirror-temple-a-start"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-mirror-temple-a-start.jpg",
+      "alt": "Room layout of Mirror Temple A — Start",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-00x",
+        "label": "Mirror Temple A - Room a-00x Strawberry",
+        "x": 0.1781,
+        "y": 0.6452,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-01-1",
+        "label": "Mirror Temple A - Room a-01 Strawberry 1",
+        "x": 0.6996,
+        "y": 0.346,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-01-2",
+        "label": "Mirror Temple A - Room a-01 Strawberry 2",
+        "x": 0.7489,
+        "y": 0.5237,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-02",
+        "label": "Mirror Temple A - Room a-02 Strawberry",
+        "x": 0.8755,
+        "y": 0.7341,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-03",
+        "label": "Mirror Temple A - Room a-03 Strawberry",
+        "x": 0.7532,
+        "y": 0.7013,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-04",
+        "label": "Mirror Temple A - Room a-04 Strawberry",
+        "x": 0.6352,
+        "y": 0.7575,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-05",
+        "label": "Mirror Temple A - Room a-05 Strawberry",
+        "x": 0.7532,
+        "y": 0.8323,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-06",
+        "label": "Mirror Temple A - Room a-06 Strawberry",
+        "x": 0.8648,
+        "y": 0.9117,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-07",
+        "label": "Mirror Temple A - Room a-07 Strawberry",
+        "x": 0.6159,
+        "y": 0.8954,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-11",
+        "label": "Mirror Temple A - Room a-11 Strawberry",
+        "x": 0.5215,
+        "y": 0.2011,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-15",
+        "label": "Mirror Temple A - Room a-15 Strawberry",
+        "x": 0.9914,
+        "y": 0.1356,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-start:pin-5a-a-14",
+        "label": "Mirror Temple A - Room a-14 Strawberry",
+        "x": 0.8519,
+        "y": 0.0187,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-old-site-a-intervention",
+    "title": "Old Site A — Intervention — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:old-site-a-intervention"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-old-site-a-intervention.jpg",
+      "alt": "Room layout of Old Site A — Intervention",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-old-site-a-intervention:pin-2a-4",
+        "label": "Old Site A - Room 4 Strawberry",
+        "x": 0.1267,
+        "y": 0.5493,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-intervention:pin-2a-5",
+        "label": "Old Site A - Room 5 Strawberry",
+        "x": 0.0331,
+        "y": 0.4754,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-intervention:pin-2a-8",
+        "label": "Old Site A - Room 8 Strawberry",
+        "x": 0.0441,
+        "y": 0.169,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-intervention:pin-2a-9",
+        "label": "Old Site A - Room 9 Strawberry",
+        "x": 0.2617,
+        "y": 0.2676,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-intervention:pin-2a-9b",
+        "label": "Old Site A - Room 9b Strawberry",
+        "x": 0.168,
+        "y": 0.1056,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-intervention:pin-2a-10",
+        "label": "Old Site A - Room 10 Strawberry",
+        "x": 0.3196,
+        "y": 0.3944,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-intervention:pin-2a-12c",
+        "label": "Old Site A - Room 12c Strawberry",
+        "x": 0.6474,
+        "y": 0.7113,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-intervention:pin-2a-12d",
+        "label": "Old Site A - Room 12d Strawberry",
+        "x": 0.7631,
+        "y": 0.9613,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

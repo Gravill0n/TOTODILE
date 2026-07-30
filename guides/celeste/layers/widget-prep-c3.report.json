@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "layer": "widget-prep-c3",
+  "generatedAt": "2026-07-30T18:45:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "e3201f6fa921f2c3876a25b68e3cc7125b6326dfe3fbbdfb117d76c272e81cd3"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "503f409a29c3e1a24e491f12735254832160bb2d045e136b958e23775eabd73c"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "e5ab1bc1eab4b4c0ae4c4c556dc943dd06779dd5ec7c74465b2e6020999a9e0d"
+    }
+  ],
+  "report": {
+    "rowCount": 5,
+    "anomalies": [],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Deck slot 5 (prepCard, Chapter Briefing), scoped to celeste:c3. Composition approved by Pierre 2026-07-30.",
+    "Items are the chapter's in-scope objectives at chapter granularity — one line per collectable class with its count, plus the side clears and any Heart Door that gates them — not one line per individual collectable. The per-berry detail lives in the chapter strawberry table and the route.",
+    "Each item names the achievement it pays out, where there is one. Chapter counts come from the chapters dataset and the checkpoint split from the checkpoints dataset; locations and methods are condensed from the same source text the route steps use.",
+    "Mechanics introduced are deliberately not items here — they are not things you tick off. They stay in the chapter intro on the spine.",
+    "No flagged items."
+  ]
+}

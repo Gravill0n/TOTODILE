@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c7",
+    "title": "Chapter 7: The Summit — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c7"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c7:berries",
+        "label": "Red strawberries",
+        "quantity": 47,
+        "note": "4 / 6 / 6 / 8 / 8 / 8 / 7 across Start, 500 M, 1000 M, 1500 M, 2000 M, 2500 M and 3000 M.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c7:gems",
+        "label": "Summit gems",
+        "quantity": 6,
+        "note": "One in each subchapter from Start to 2500 M. All six are required before the crystal heart can be reached, though not necessarily in one playthrough.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-ink-chapters",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c7:cassette",
+        "label": "Cassette Tape",
+        "note": "In 1500 M, through an opening in the fifth room's ceiling.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c7:heart",
+        "label": "Crystal Heart",
+        "note": "In 3000 M, right of flag 28 — only after all six gems. The hardest heart in the game. Earns Pink Sunrise.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c7:a-side",
+        "label": "Clear the A-Side",
+        "note": "Flags count down from 30 to 01 as you climb. Earns Celeste.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-ink-chapters",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c7:b-side",
+        "label": "Clear the B-Side",
+        "note": "Earns No More Running.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

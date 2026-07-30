@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-the-summit-a-1000-m",
+    "title": "The Summit A — 1000 M — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:the-summit-a-1000-m"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-the-summit-a-1000-m.jpg",
+      "alt": "Room layout of The Summit A — 1000 M",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-the-summit-a-1000-m:pin-7a-c-03b",
+        "label": "The Summit A - Room c-03b Strawberry",
+        "x": 0.1313,
+        "y": 0.6472,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-1000-m:pin-7a-c-05",
+        "label": "The Summit A - Room c-05 Strawberry",
+        "x": 0.635,
+        "y": 0.5519,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-1000-m:pin-7a-c-06b",
+        "label": "The Summit A - Room c-06b Strawberry",
+        "x": 0.5381,
+        "y": 0.5324,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-1000-m:pin-7a-c-07b",
+        "label": "The Summit A - Room c-07b Strawberry",
+        "x": 0.4597,
+        "y": 0.3221,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-1000-m:pin-7a-c-08",
+        "label": "The Summit A - Room c-08 Strawberry",
+        "x": 0.7791,
+        "y": 0.3195,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-1000-m:pin-7a-c-09",
+        "label": "The Summit A - Room c-09 Strawberry",
+        "x": 0.9817,
+        "y": 0.1987,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-1000-m:col-7a-gem-3",
+        "label": "Gem 3",
+        "x": 0.6145,
+        "y": 0.4814,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

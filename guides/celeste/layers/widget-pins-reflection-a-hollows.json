@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-reflection-a-hollows",
+    "title": "Reflection A — Hollows — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:reflection-a-hollows"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-reflection-a-hollows.jpg",
+      "alt": "Stitched room-layout map of Reflection A — Hollows, including the dash-code puzzle room and the cassette room",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-reflection-a-hollows:col-6a-cassette",
+        "label": "Cassette",
+        "x": 0.0039,
+        "y": 0.8301,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-reflection-a-hollows:col-6a-crystal-heart",
+        "label": "Crystal Heart",
+        "x": 0.0347,
+        "y": 0.2548,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

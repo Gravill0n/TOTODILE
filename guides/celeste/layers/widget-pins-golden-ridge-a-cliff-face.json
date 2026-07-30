@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-golden-ridge-a-cliff-face",
+    "title": "Golden Ridge A — Cliff Face — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:golden-ridge-a-cliff-face"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-golden-ridge-a-cliff-face.jpg",
+      "alt": "Room layout of Golden Ridge A — Cliff Face",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-golden-ridge-a-cliff-face:pin-4a-d-00b",
+        "label": "Golden Ridge A - Room d-00b Strawberry",
+        "x": 0.0647,
+        "y": 0.7709,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-cliff-face:pin-4a-d-01",
+        "label": "Golden Ridge A - Room d-01 Strawberry",
+        "x": 0.1553,
+        "y": 0.9317,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-cliff-face:pin-4a-d-04",
+        "label": "Golden Ridge A - Room d-04 Strawberry",
+        "x": 0.3477,
+        "y": 0.8042,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-cliff-face:pin-4a-d-07",
+        "label": "Golden Ridge A - Room d-07 Strawberry",
+        "x": 0.5193,
+        "y": 0.7906,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-cliff-face:pin-4a-d-09",
+        "label": "Golden Ridge A - Room d-09 Strawberry",
+        "x": 0.7742,
+        "y": 0.7314,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-cliff-face:col-4a-level-clear",
+        "label": "Level Clear",
+        "x": 0.8398,
+        "y": 0.6737,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c5",
+    "title": "Chapter 5: Mirror Temple — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c5"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c5:berries",
+        "label": "Red strawberries",
+        "quantity": 31,
+        "note": "12 in Start, 11 in Depths, 1 in Unravelling, 6 in Search, 1 in Rescue. Berry 26's passage can only be entered once per attempt.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c5:cassette",
+        "label": "Cassette Tape",
+        "note": "In Depths, past the third Temple Gate and three dash-switch rooms.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c5:heart",
+        "label": "Crystal Heart",
+        "note": "In Depths, behind a second locked door — bring the key. Earns Quiet and Falling.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c5:a-side",
+        "label": "Clear the A-Side",
+        "note": "Earns In the Mirror.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c5:b-side",
+        "label": "Clear the B-Side",
+        "note": "Earns Mirror Magic.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
