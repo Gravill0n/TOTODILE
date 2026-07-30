@@ -1,0 +1,16 @@
+# Guide images are content, not code: binaries that only ever grow. Each one has
+# a single blob version today, so LFS buys nothing yet — the point is prospective.
+# A re-exported map set would otherwise pin every revision of a ~1 MB PNG in the
+# pack forever, and the map-heavy guides (Celeste and after) are still to come.
+#
+# Directory-wide on purpose. An extension list would be a third format list to
+# keep in sync with CONTENT_TYPES (app/vite.config.ts) and IMAGE_EXTENSIONS
+# (app/scripts/contentPrecache.ts), and would drift the first time a guide ships
+# a format nobody thought to add here. Everything in a guide's images/ is LFS.
+#
+# Root-anchored, so app/src/testing/fixtures/repo/guides/*/images/ is NOT matched:
+# the test suite must never depend on an LFS smudge having run.
+#
+# Cloning without git-lfs leaves pointer text where the maps should be. That is
+# caught by `yarn validate-guides` and fixed with `git lfs pull` (see README).
+guides/*/images/** filter=lfs diff=lfs merge=lfs -text
