@@ -8,6 +8,20 @@
       "artifact": "layers/spine.json",
       "report": "layers/spine.report.json",
       "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+    },
+    {
+      "id": "widget-strawberries",
+      "kind": "widget",
+      "artifact": "layers/widget-strawberries.json",
+      "report": "layers/widget-strawberries.report.json",
+      "sha256": "272e682715a26c45baf225d7b8c0375cce3e3febd7853f73662a9762b9f056e6",
+      "widget": {
+        "deckPosition": 0,
+        "scope": {
+          "kind": "global"
+        },
+        "title": "Strawberries"
+      }
     }
   ]
 }
