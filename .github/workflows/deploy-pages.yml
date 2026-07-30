@@ -29,6 +29,42 @@ jobs:
         with:
           persist-credentials: false
 
+      # guides/*/images/** is Git LFS-tracked (.gitattributes), and checkout
+      # leaves pointer files. Everything downstream needs the real bytes: the
+      # gate resolves every imageRef, the build md5s each image into the
+      # service-worker precache, and "Assemble site" would otherwise copy ~130
+      # bytes of pointer text into the artifact as every map.
+      #
+      # Pulled through a cache rather than `lfs: true` on checkout because this
+      # job runs on every push to main and GitHub's free LFS allowance is ~1
+      # GB/month — with the large map sets still to come, re-downloading the
+      # full set each deploy would exhaust it in a couple of runs. ls-files
+      # reads pointers locally, so the key needs no credentials.
+      - name: LFS — object ids for the cache key
+        working-directory: ${{ github.workspace }}
+        run: git lfs ls-files --long | cut -d' ' -f1 | sort > .lfs-assets-id
+
+      - uses: actions/cache@v4
+        with:
+          path: .git/lfs
+          key: lfs-${{ hashFiles('.lfs-assets-id') }}
+          # A partial hit still helps: `git lfs pull` then fetches only the
+          # objects the cache is missing.
+          restore-keys: lfs-
+
+      # The credential is set for this step alone and unset on the way out
+      # (checkout dropped it deliberately). Anonymous LFS reads may well work
+      # on a public repo, but the deploy should not rest on that.
+      - name: LFS — materialize guide images
+        working-directory: ${{ github.workspace }}
+        env:
+          LFS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --local http.https://github.com/.extraheader \
+            "AUTHORIZATION: basic $(printf 'x-access-token:%s' "$LFS_TOKEN" | base64 -w0)"
+          trap 'git config --local --unset-all http.https://github.com/.extraheader || true' EXIT
+          git lfs pull
+
       # Yarn 4 is pinned via package.json "packageManager"; corepack must be
       # enabled before setup-node so its yarn cache probe hits Yarn 4, not 1.x.
       - run: corepack enable

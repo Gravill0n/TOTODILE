@@ -59,6 +59,25 @@ Next up: compiling the remaining guides through the pipeline, one
 | `docs/ideas/` | Refined-direction decision records |
 | `docs/archive/` | Completed plans, brainstorms, and the working PRD — history |
 
+## Getting started
+
+Guide images (`guides/*/images/`) are stored with **Git LFS**, so git-lfs has to be
+installed *before* you clone — otherwise every map arrives as ~130 bytes of pointer
+text instead of a PNG.
+
+```bash
+sudo apt install git-lfs      # or the equivalent for your distro
+git lfs install               # one-time, per machine
+git clone git@github.com:Gravill0n/TOTODILE.git
+
+cd TOTODILE/app && yarn install && yarn dev
+```
+
+Already cloned without it? `git lfs pull` fixes the working tree in place. If you are
+not sure, `yarn validate-guides` will tell you: it names any image that is still a
+pointer and what to run. Nobody *visiting* the deployed site needs git-lfs — the
+deploy resolves the pointers and publishes real image bytes.
+
 ## Tech
 
 TypeScript (strict) · React 19 · Vite (PWA) · Tailwind 4 · TanStack Router ·

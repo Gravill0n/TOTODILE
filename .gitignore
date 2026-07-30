@@ -1,4 +1,7 @@
 sources/
+# Scratch list of LFS object ids, written by the deploy workflow to key its
+# cache (.github/workflows/deploy-pages.yml).
+.lfs-assets-id
 .superpowers/
 *.local.json
 *.local.*

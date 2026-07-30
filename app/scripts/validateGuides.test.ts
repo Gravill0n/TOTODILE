@@ -9,6 +9,7 @@ import {
   validDeck,
   validGuide,
   validLibrary,
+  validMapPins,
   validPassReport,
   validRaMapping,
   validSources,
@@ -42,6 +43,26 @@ function writeTree(files: Record<string, unknown>): string {
   return root;
 }
 
+// Every image the fixture factories reference has to exist on disk now that
+// the gate resolves imageRefs. Content is irrelevant — the check is existence
+// and "not an unsmudged LFS pointer", never image format.
+const HAPPY_IMAGES = {
+  // validStep().images + validLocation().mapImage
+  "guides/fictional-quest/images/castle-gate.png": "png-bytes",
+  // validMapPins().image
+  "guides/fictional-quest/images/overworld.png": "png-bytes",
+  // validLibrary()'s cover — resolved from the repo root, not the guide folder.
+  "images/cover.png": "png-bytes",
+};
+
+// What a clone holds when git-lfs never smudged: the pointer file itself.
+const LFS_POINTER_TEXT = [
+  "version https://git-lfs.github.com/spec/v1",
+  "oid sha256:0de1fbe5641cd6232e8c88aae4cc049ff6a44ff21f7c32846af6202e79d9df33",
+  "size 1020395",
+  "",
+].join("\n");
+
 function happyTree() {
   return {
     "library.json": validLibrary(),
@@ -50,6 +71,7 @@ function happyTree() {
     "guides/fictional-quest/deck.json": validDeck(),
     "guides/fictional-quest/ra-mapping.json": validRaMapping(),
     "guides/fictional-quest/approvals.json": validApprovals(),
+    ...HAPPY_IMAGES,
   };
 }
 
@@ -617,5 +639,121 @@ describe("validateGuides — compiler layers (COMPILER_PASS_CONTRACT.md)", () =>
         '[fictional-quest/layers/manifest.json] guideId "other-game" does not match folder slug',
       );
     });
+  });
+
+  // The layers are where a pass writes an image reference first; guide.json
+  // only gets one at QA assembly. A broken image has to be caught in the layer
+  // that owns it, or the owning pass never learns it is at fault.
+  describe("image references in the layers", () => {
+    it("flags a pointer where the spine layer's image should be", () => {
+      const root = writeTree({
+        ...happyLayers(),
+        "guides/fictional-quest/images/castle-gate.png": LFS_POINTER_TEXT,
+      });
+      expect(messagesOf(root).join("\n")).toContain(
+        "[fictional-quest/layers/spine.json]",
+      );
+    });
+
+    it("flags a pointer where a widget layer's image should be", () => {
+      const mapPinsLayer = { ...validWidgetLayer(1), widget: validMapPins(6) };
+      const manifest = happyManifest();
+      manifest.entries.push(
+        manifestEntryFor("widget-w6", "widget", mapPinsLayer, {
+          deckPosition: 5,
+          scope: { kind: "global" },
+          title: "Widget",
+        }),
+      );
+      const root = writeTree({
+        ...happyLayers(),
+        [`${layersBase}/manifest.json`]: manifest,
+        [`${layersBase}/widget-w6.json`]: mapPinsLayer,
+        [`${layersBase}/widget-w6.report.json`]: validPassReport(
+          "widget-w6",
+          "widget",
+        ),
+        "guides/fictional-quest/images/overworld.png": LFS_POINTER_TEXT,
+      });
+      expect(messagesOf(root).join("\n")).toContain(
+        '[fictional-quest/layers/widget-w6.json] widget "fictional-quest:w6" references "images/overworld.png"',
+      );
+    });
+  });
+});
+
+// guides/*/images/** is Git LFS-tracked (.gitattributes). A clone without
+// git-lfs, or one where `git lfs pull` never ran, holds ~130 bytes of pointer
+// text where every map should be. Nothing else in the pipeline notices: the
+// schemas only check that `src` is a non-empty string, and the PWA precache
+// would happily md5 the pointer into the service-worker manifest. So the gate
+// owns it.
+describe("validateGuides — guide images", () => {
+  const guideBase = "guides/fictional-quest";
+
+  it("passes when every referenced image is on disk", () => {
+    const report = validateGuides(writeTree(happyTree()));
+    expect(report.findings).toEqual([]);
+    expect(report.ok).toBe(true);
+  });
+
+  it("flags a step image that is missing from disk", () => {
+    const { [`${guideBase}/images/castle-gate.png`]: _gone, ...tree } =
+      happyTree();
+    expect(messagesOf(writeTree(tree)).join("\n")).toContain(
+      'references a missing image "images/castle-gate.png"',
+    );
+  });
+
+  it("flags an unsmudged LFS pointer where a step image should be", () => {
+    const root = writeTree({
+      ...happyTree(),
+      [`${guideBase}/images/castle-gate.png`]: LFS_POINTER_TEXT,
+    });
+    const joined = messagesOf(root).join("\n");
+    expect(joined).toContain("is an unsmudged Git LFS pointer, not an image");
+    expect(joined).toContain("git lfs pull");
+  });
+
+  it("names the location and the step that reference a broken image", () => {
+    const root = writeTree({
+      ...happyTree(),
+      [`${guideBase}/images/castle-gate.png`]: LFS_POINTER_TEXT,
+    });
+    const joined = messagesOf(root).join("\n");
+    expect(joined).toContain('location "fictional-quest:castle-gate"');
+    expect(joined).toContain('step "fictional-quest:c1:s1"');
+  });
+
+  it("flags a widget image that is missing from disk", () => {
+    const { [`${guideBase}/images/overworld.png`]: _gone, ...tree } =
+      happyTree();
+    expect(messagesOf(writeTree(tree)).join("\n")).toContain(
+      'widget "fictional-quest:w6" references a missing image "images/overworld.png"',
+    );
+  });
+
+  it("flags a missing library cover, resolved from the repo root", () => {
+    const { "images/cover.png": _gone, ...tree } = happyTree();
+    expect(messagesOf(writeTree(tree)).join("\n")).toContain(
+      '[library/library.json] guide "fictional-quest" references a missing image "images/cover.png"',
+    );
+  });
+
+  // layers/data.json's `images` dataset catalogues candidate assets by a path
+  // into guides/<slug>/sources/, which is gitignored and absent from any fresh
+  // clone. Those rows are generic dataset records, not imageRefs, and must stay
+  // outside the check or the gate would fail on every machine but the one that
+  // ran the sources pass.
+  it("ignores the extract-data image catalogue's source paths", () => {
+    const root = writeTree({
+      ...happyTree(),
+      [`${guideBase}/layers/data.json`]: validDataLayer(),
+      [`${guideBase}/layers/data.report.json`]: validPassReport(
+        "data",
+        "extract-data",
+      ),
+    });
+    expect(messagesOf(root).join("\n")).not.toContain("images/maps");
   });
 });

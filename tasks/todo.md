@@ -1,267 +1,155 @@
-# TOTODILE design v2 — task list
+# Guide images on Git LFS — task list
 
 Full detail, acceptance criteria and verification steps: [`tasks/plan.md`](./plan.md).
-Branch: `feat/totodile-design-v2` · one PR to `main` · `yarn check` green from `app/` at every
+Branch: `feat/add-git-lfs` · one PR to `main` · `yarn check` green from `app/` at every
 checkpoint.
 
-## Phase 0 — Foundations
+**Why:** guide images are the only binaries in the repo and they only ever grow. 266 files
+(~18 MB) today, one blob version each — LFS buys nothing *now*, but the moment a map set is
+re-exported every revision is pinned in the pack forever. Celeste and later guides bring
+large maps.
 
-- [x] **0.1** Task files — this list + `tasks/plan.md` (XS)
-- [x] **0.2** Port the design-system tokens into `app/src/index.css` — 7 signal-tint colours with
-      dark values, `--font-sans`/`--font-mono`, `--tracking-label`, `--radius-xs`, ink-tinted
-      shadows. Not ported: `--font-serif`, `[data-theme]`, `--color-mark`, and — deviating from
-      the plan — the motion and focus-ring vars, because Tailwind's `--ease-in-out`,
-      `duration-*` and the shadcn `ring-ring/50 ring-[3px]` pattern already carry exactly those
-      values; a parallel var would only invite divergence (S)
-- [x] **0.3** Add missing shadcn primitives — `accordion`, `breadcrumb`, `progress`,
-      `toggle-group` (+`toggle`); paper-fit them; extend `coreSet.test.tsx` (M)
-- [x] **0.4** `guideUi` IDB store — `features/progress/db.ts` at v2, `schema/guideUi.ts`,
-      `guideUiStore.ts`, `useGuideUi`; v1→v2 migration test. The map view keeps zoom **and**
-      pan (`mapPanX`/`mapPanY`, as a fraction of the scrollable extent) so reopening a visit
-      returns to the corner you were reading (M)
-- [x] **0.5** Spine selectors + id helpers — `chapterProgress`, `visitIndex`, `visitOfStep`,
-      `localId`/`qualifyId` (S)
-- [x] **0.6** Move `mastery()` to `lib/mastery.ts`, add `doneIdsOf(slot)` (S)
-- [x] **0.7** `yarn add @dnd-kit/core @dnd-kit/sortable` (XS)
+**Decisions taken:** convert at HEAD (no history rewrite) · cache LFS objects in CI (the
+~1 GB/month bandwidth tier) · directory-wide root-anchored pattern · add the guards that
+make a broken LFS state loud.
 
-### ☑ Checkpoint A — foundations
-- [x] `yarn check` green (99 files, 613 tests) · `yarn build` clean · no UI restructured
-- [x] Token parity guarded in both schemes; every new token verified in the built stylesheet
-- [ ] **Pierre**: eyeball the tokens in a browser (light + dark) — not machine-checkable
-- [ ] **Pierre**: sanity-check the `guideUi` shape before anything writes to it
-      (`app/src/schema/guideUi.ts` — `widgetOrder`, `pinnedWidgetIds`, and the map view
-      `mapZoom` + `mapPanX`/`mapPanY`; nothing writes to the store yet)
+## Phase 0 — Housekeeping
 
-## Phase 1 — URL-addressable visits (highest risk, done early)
+- [x] **0.1** Archive the stale design-v2 task files → `docs/archive/design-v2-plan.md`
+      and `docs/archive/design-v2-tasks.md` (moved verbatim via `git mv`). ⚠️ Design-v2
+      left task **5.3** (pin + reorder, dnd-kit) unbuilt and 11 of Pierre's manual
+      verification checks unticked — see the archived list (XS)
+- [x] **0.2** This task list + `tasks/plan.md` (XS)
 
-- [x] **1.1** Guide layout route — single guard + loader; `place`/`cleanup` move under it; add
-      `visitRoute` (`chapter/$chapterId/visit/$visitId`) and the index redirect. Deviating from
-      the plan, the guard sits in the **loader**, not `beforeLoad`: `beforeLoad` re-runs on every
-      navigation, so walking visits would refetch `library.json` + `approvals.json` each time,
-      while a loader is cached per match. `shouldReload: false` pins that cache so the guide file
-      is read once per guide. Child loaders read the layout's data through `parentMatchPromise`
-      instead of re-fetching (M)
-- [x] **1.2** Split `GuideScreen` → `GuideShell` + `VisitScreen` (pure, one visit); retire
-      `NowScreen`; add `src/testing/renderRoute.tsx` and migrate the affected test files.
-      Deviating from the plan, `GuideShell` is the **visit route's** component rather than a
-      layout with `<Outlet/>`: the chrome it will grow (map panel, breadcrumb, current-chapter
-      marking) is *about the displayed visit*, so the shell needs the visit params directly —
-      and `place`/`cleanup` are self-contained screens that must not inherit the play chrome.
-      It stays mounted across visit changes either way. 6 test files migrated, not 5:
-      `skipAndBurst.test.tsx` also rendered the guide bare, and its burst case moved to the
-      3-step vault visit so the burst fits on one page (L)
-- [x] **1.3** Rewire the jumps — chapters (→ the chapter's first visit), Where am I, missable Go.
-      First-open landing **scrolls only**, deviating from the plan: the index route already
-      picked the visit, and navigating on landing would yank a deep link away from the visit it
-      deliberately named. `chapterDomId` retired with the chapter-anchored scroll (S)
+## Phase 1 — LFS on, images converted
 
-### ☑ Checkpoint B — navigation
-- [x] `yarn check` green (99 files, 631 tests) · `yarn build` clean
-- [ ] **Pierre**: copy a visit URL, reload, land in the same place; back/forward walk visits
-- [ ] **Pierre**: review — everything else sits on this
+- [x] **1.1** git-lfs installed by Pierre — `git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)`,
+      `filter.lfs.clean` = `git-lfs clean -- %f`, smudge likewise (XS)
+- [x] **1.2** `.gitattributes` at the repo root (commit `38965f8`) then
+      `git add --renormalize guides` (commit `15214aa`). Pattern is
+      `guides/*/images/** filter=lfs diff=lfs merge=lfs -text` — directory-wide and
+      root-anchored, as decided (S)
+  - [x] `git lfs ls-files | wc -l` → **266**
+  - [x] `git cat-file -p HEAD:guides/zelda-oot/images/map-overworld.png` →
+        `version https://git-lfs.github.com/spec/v1`, `size 1020395`
+  - [x] `file guides/zelda-oot/images/map-overworld.png` →
+        `PNG image data, 1911 x 1080, 8-bit colormap`
+  - [x] `git lfs status` and `git status --porcelain` clean
+  - [x] Scope proved with `git check-attr` **before** converting: real and nested guide
+        images → `filter: lfs`; PWA icons, fixture images, guide JSON and the gitignored
+        `sources/` scrapes → `filter: unspecified`
+  - [x] **Bytes provably intact**: all 266 files verified against sha256sums taken before
+        conversion (`sha256sum -c` exit 0), 0 pointer-text files and 0 non-image files in
+        the working tree. For `map-overworld.png` the LFS oid
+        `0de1fbe5…9df33` *equals* the pre-conversion sha256 — the bytes are in the object
+        store, not merely assumed to be
 
-## Phase 2 — Library (S1)
+### ☑ Checkpoint A — foundation
+- [x] `yarn check` green from `app/` — enforced by the pre-commit hook on both commits
+      (247 files linted, 104 test files / 682 tests, `validate-guides` 3 guides all green)
+- [x] `yarn dev` serves real bytes through `serveRepoContent()`: the map-overworld.png
+      response is `200 image/png`, `PNG image data, 1911 x 1080`, sha256 identical to the
+      original. Spot-checked a crystal mapPins image (27854 B), a zelda-oot step icon
+      (30858 B) and `guide.json` (736288 B) — all 200
+- [x] **Not pushed** — 3 commits sit local until the 2.1 guard and 3.1 CI pull are in
 
-- [x] **2.1** Library loader gains `raMappings`, gated on `raGameId`; threaded to `GuideCard`,
-      which shows `earned / total` (or `no RA set`) — rendering it now rather than passing a
-      prop nothing reads for two commits; task 2.3 restyles it into the stats column (S)
-- [x] **2.2** Header (eyebrow + 2px rule + tally) and `LibraryToolbar` — search + status/sort
-      toggle groups, `useState` only. Filtering/ordering lives in `libraryView.ts` beside the
-      screen; the playable/planned split lands here (the two empty states need it) and task 2.4
-      gives the backlog group its own chrome (M)
-- [x] **2.3** Guide row replaces the cover card in `GuideCard.tsx` (filename kept for the reskin
-      guard; exports `GuideRow`) — cover or placeholder, progress bar + mono %, `Next up —`,
-      STEPS / ACHIEVEMENTS / LAST PLAYED. `appShell` and `libraryReskin` pass unedited (M)
-- [x] **2.4** `BACKLOG` section — dense two-column, 44px rows, `RA set` chip, not navigable. New
-      `BacklogRow.tsx`; `GuideRow` loses its planned branch. The exact `planned` text node
-      survives as the section's count, not a per-row chip — eight repeats under a `BACKLOG`
-      label would be noise. Backlog titles are list rows, not `<h2>`s, so the toolbar test's
-      heading assertion moved to a text assertion (S)
+## Phase 2 — Make a broken LFS state loud
 
-- [x] **2.5** Colour corrections against `Library.dc.html` (Pierre, 2026-07-29) — progress
-      tracks on `paper-dim` (the shadcn `bg-primary/20` default was a washed-out accent), the
-      completion figure in `primary`, the search field on `card`, the active segment carrying an
-      ink border, `no RA set` / `Last played` in `ink-soft`, the `RA set` chip a dashed hairline
-      pill in `ink-soft`, and no hairlines between the stats rows — the column has one rule, down
-      its left edge. Pinned by `library.test.tsx` ("colours the row the way Library.dc.html
-      does") (S)
-- [x] **2.6** The rest of the `Library.dc.html` deltas — `--tracking-eyebrow` (0.12em) added
-      beside `--tracking-label` (0.06em, chip caps) because the prototypes use two steps; mono
-      `TOTODILE` eyebrow; `COVER` label in the placeholder; 18/600 row title with `text-pretty`;
-      `Next up —` at full ink and `Not started` moved onto that line (the percent shows `—`);
-      `BACKLOG <n>` over `Planned — not compiled yet`; a `SORT` label before the sort segments.
-      `backlog.test.tsx`'s `planned` assertion became `Planned — not compiled yet` — the
-      prototype has no per-row chip, so that exact text node is gone by design (S)
+- [x] **2.1** Image existence + LFS-pointer guard in `app/scripts/validateGuidesCore.ts`
+      (commit `e58a3e9`). `validateImageRefs()` resolves every `imageRef.src` and reports
+      the *owner*, not just the path — which location, step or widget. Wired at three call
+      sites: `guide.json`, each layer artifact (via `layerImageRefs`), and `library.json`'s
+      `cover` (repo-root-relative, unlike guide-relative `src`) (M)
+  - [x] 4 real 1×1 PNGs added under
+        `app/src/testing/fixtures/repo/guides/fictional-quest/images/` — the fixture had
+        referenced `castle-gate`, `vault-entrance`, `vault-map` and `cover` all along
+        without shipping them. Outside the root-anchored LFS pattern (`check-attr`:
+        `unspecified`), so the suite never needs a smudge
+  - [x] 9 new tests: missing step image, pointer text, owner naming, missing widget image,
+        missing library cover, spine-layer image, widget-layer image, the all-present happy
+        case, and one pinning that the extract-data image catalogue stays **out** of scope
+  - [x] `widgetImages()` added to `widgets.ts` beside `widgetCheckables`/`widgetItemIds` —
+        exhaustive switch over the closed primitive set. No schema shape changed, no bump
+  - [x] All 266 real refs resolve — `yarn validate-guides` exit 0
+  - [x] **Negative proof**: a tree built with `GIT_LFS_SKIP_SMUDGE=1 git archive` holds
+        132-byte pointers; the gate emits **708 findings and exits 1**, each naming
+        `git lfs pull`
+- [x] **2.2** Scope the precache walker to `images/` (commit `feb1b56`) (S)
+  - [x] Test: images under `sources/` yield no manifest entry
+  - [x] The four existing `contentPrecache.test.ts` cases pass unchanged
+  - [x] `dist/sw.js` after `yarn build`: **0** `sources/` entries, 266 `images/` entries
+        (146 crystal + 120 zelda-oot). Measured what the bug had been shipping:
+        **3361 source images / 115.6 MB** md5'd into every local build's service worker
+  - [x] `imageFiles()` gained an `existsSync` guard — layton-mm legitimately has no `images/`
 
-### ☑ Checkpoint C — Library done
-- [x] `yarn check` green (101 files, 644 tests) · `yarn build` clean
-- [ ] **Pierre**: `yarn dev` — real counts on `pokemon-crystal`/`zelda-oot`, `no RA set` on
-      `layton-mm`, 8 backlog rows, both segmented controls
-- [ ] **Pierre**: compare against `Library.dc.html` + `Library Mobile.dc.html`
+### ☑ Checkpoint B — guards
+- [x] `yarn check` green from `app/` — 104 test files, **692 tests** (was 682), 3 guides green
+- [x] Pointer files **and** missing images both fail the gate (negative proof above)
+- [x] **Pierre**: reviewed and approved 2026-07-30 — cleared to touch CI
 
-## Phase 3 — Three-column layout + chapter rail
+## Phase 3 — CI deploy
 
-- [x] **3.1** `PostureLayout`, matched to `Guide.dc.html` (read through the `claude_design` MCP,
-      2026-07-29): full-bleed `248px | 1fr | 352px`; the desktop shell is one viewport tall and
-      clips, so the **window never scrolls** — the header bar holds its row across all three
-      columns and each column scrolls on its own. Chrome (header + both rails) is `bg-card`, the
-      visit column `bg-paper`; `paper-dim` stays what the prototype uses it for (hover surfaces,
-      progress tracks). The phone bar's Chapters button gave up the accessible name `Chapters`
-      to the rail (it keeps the title; its label is now `Open chapter list`). The rails' scroll
-      contract moved from `stickyWidgets.test.tsx` into `postureLayout.test.tsx` — they are
-      columns now, not sticky panels. `tasks/plan.md` §3.1/§4/§5/§5.4 carry the prototype's own
-      values for the phases still ahead (S)
-- [x] **3.2** `ChapterRail` on `Accordion` + `Progress`, current marked with `primary`. Visits
-      are hash **anchors with a plain-click handler**, not router `Link`s: middle-click, copy
-      and open-in-new-tab work on the real address while the rail stays router-free and
-      bare-renderable (§22.1). "Current" is the **displayed** visit (what the URL names), not
-      the pointer — the rail says where you are looking. Global widgets moved into the right
-      rail with the contextual ones, since the left rail is now the chapter list (M)
-- [x] **3.3** `ChapterSheet` reuses `ChapterRail` on phone. The rail's accordion trigger takes
-      `aria-label={chapter.title}` so a chapter is still findable by name (the number is
-      decoration; the bar announces completion) — `appShell`'s sheet assertion passes unedited.
-      `sheets.test` and the `guideRouting` sheet case now expand a chapter and pick a visit, on
-      purpose: a chapter is no longer a destination (S)
+- [x] **3.1** LFS cache + pull in `.github/workflows/deploy-pages.yml` (commit `4b0506b`),
+      inserted after `actions/checkout` and before `corepack enable`. `git lfs ls-files
+      --long | cut -d' ' -f1 | sort` → `.lfs-assets-id` → `actions/cache@v4` on `.git/lfs`
+      keyed on `hashFiles`, `restore-keys: lfs-` → `git lfs pull`. Steps carry
+      `working-directory: ${{ github.workspace }}` (the job defaults to `app`).
+      `.lfs-assets-id` added to `.gitignore` (S)
+  - [x] ⚠️ **The auth risk was designed out, not gambled on.** Rather than hope anonymous
+        LFS reads work on a public repo, the pull step supplies `secrets.GITHUB_TOKEN` as
+        an `extraheader` for that single step and removes it via a `trap ... EXIT`.
+        `persist-credentials: false` is preserved. Verified locally on both paths: the
+        header is set, decodes to `x-access-token:<token>`, and is gone afterwards whether
+        the command succeeded or failed — with a failure still propagating a non-zero exit
+  - [x] LFS steps precede the gate, the build **and** the assemble step — verified by
+        parsing the workflow YAML (key list → cache → pull → gate/build/assemble)
+  - [x] `.lfs-assets-id` gitignored and outside the artifact (assemble copies only
+        `app/dist/.`, `guides`, `library.json`)
+  - [ ] A second consecutive run reports a cache hit and downloads ~nothing — **only
+        observable post-merge** (Checkpoint C)
 
-### ☑ Checkpoint D — layout
-- [x] `yarn check` green (102 files, 650 tests) · `yarn build` clean
-- [x] **Pierre**: three columns on desktop, phone unchanged, rail % matches the
-      header total on `zelda-oot`
+### ☐ Checkpoint C — deploy (post-merge; the workflow triggers on push to `main`)
+- [ ] The run's LFS step logs objects fetched; `yarn check` passes in CI
+- [ ] `curl -sI https://gravill0n.github.io/TOTODILE/guides/zelda-oot/images/map-overworld.png`
+      → `content-length: 1020395`, **not** ~130 bytes of pointer text
+- [ ] `curl -s <same URL> | file -` → `PNG image data`
+- [ ] The deployed zelda-oot guide renders its maps
+- [ ] Optional pre-merge: `workflow_dispatch` runs this from the branch, but its `deploy`
+      job publishes to the **live** Pages site. Content is identical to `main` — Pierre's call
+- [ ] Rollback if needed: revert the merge. Images return to plain blobs at HEAD; LFS
+      objects already pushed are harmless
 
-## Phase 4 — The visit page
+## Phase 4 — Document the new clone requirement
 
-> Build against the prototype values now recorded in [`plan.md` §Phase 4](./plan.md) — sticky
-> breadcrumb on `paper`, `Back to NOW` in `primary`, 24px visit heading, named prev/next at the
-> bottom. `Guide.dc.html` is readable through the `claude_design` MCP (project
-> `c7426467-52ff-4a2f-8ec1-ed7e4e915447`).
+- [x] **4.1** Documented the new clone requirement (S)
+  - [x] `README.md` — new **Getting started** section (the README had no setup
+        instructions at all): install git-lfs *before* cloning, `git lfs pull` to repair an
+        existing clone, `yarn validate-guides` to diagnose, and the note that a *visitor*
+        needs nothing
+  - [x] PRD **§16.2** — Git LFS row: required to clone or compile, never to serve; failure
+        stance points at `git lfs pull` and the CI gate
+  - [x] PRD **§17** — new constraint **#11**, arguing explicitly that #1 ("static files
+        only… any dumb file server") and #6 ("the repo is the only content store") both
+        still hold: pointers live only inside git, the artifact carries plain bytes
+  - [x] PRD **§21.1** — `git lfs install` / `git lfs pull` in the setup commands
+  - [x] `CLAUDE.md` — repo-layout bullet: images are LFS-tracked, `sources/` is not
 
-- [x] **4.1** Sticky breadcrumb (`<chapter> · <place> · visit N · step N of M`), 24px place
-      heading over `Visit N of M · N steps · N achievements`, compact prev/next beside the
-      breadcrumb and named prev/next at the foot. `step N of M` degrades to a plain step count
-      when the pointer is in another visit — a position you are not at is worse than none. The
-      prototype's `5 Gold Skulltulas here` is guide-specific and has no generic source, so the
-      meta line stops at achievements (M)
-- [x] **4.2** `useInView` → `Back to NOW — <first beat>` in the breadcrumb, only when the
-      current row is off screen and only when the pointer is on this page. Defaults to *in view*
-      when `IntersectionObserver` is absent, so jsdom (and any browser without it) never grows a
-      permanent button pointing at a visible row — no global stub needed. `StepRow` takes a `ref`
-      (React 19: an ordinary prop) so the visit can watch its current row (S)
-- [x] **4.3** `StepRow` rebuilt as one anatomy — icon, beats, badge row, two icon actions — with
-      the current row *marked* rather than built differently. Item icons (36px, hairline,
-      pixelated, lightbox intact) now render on every row, not only the current card. Skip is
-      **disabled** rather than absent on a done row: the anatomy holds still, and skipping a done
-      step is a no-op in the slot, so the control should say so (M)
-- [x] **4.4** `MissableCard` inline above its step; `MissableBanner` deleted. `upcomingMissables`
-      keeps its lookahead unchanged — the shell passes the ids, the visit renders the ones that
-      fall on this page. The step row's own `Missable — <deadline>` line went with the banner
-      (the card quotes the deadline whole, and the badge carries it as a `title` once the card
-      is gone), and the banner's `Go` retired with it — there is nowhere to go from a warning
-      that is already at its step. **Known tradeoff (accepted in the plan):** missables in later
-      visits are no longer surfaced ahead of time; the follow-up is a marker in the chapter rail,
-      not a restored banner (M)
+### ☐ Checkpoint D — complete
+- [x] `yarn check` green from `app/` — 104 test files, 692 tests, 3 guides green
+- [ ] One PR `feat/add-git-lfs` → `main` (never a direct commit, PRD §23) — 8 commits
+      ready, **nothing pushed yet**
+- [ ] Post-merge deploy green and the deployed map URL serves real PNG bytes
+      (= Checkpoint C, Pierre's to verify)
 
-### ☑ Checkpoint E — the spine reads right
-- [x] `yarn check` green (103 files, 667 tests) · `yarn build` clean
-- [x] **Pierre**: manual walk of `zelda-oot` chapter 4 — icons on every row, missable card where
-      the player acts, `Back to NOW` when you scroll away
+## Not in this branch
 
-## Phase 5 — Right column: map + widgets
+LFS fixes *git history*, not *delivery*. Still open, flagged during planning:
 
-> Build against the prototype values now recorded in [`plan.md` §Phase 5](./plan.md) — the right
-> column is a flex column on `card`: a fixed map block (236px viewport, zoom controls, credit
-> line) over a scrolling widget stack under a 2px-ruled `WIDGETS` header. Note the `.12em`
-> eyebrow tracking, which `--tracking-label` (0.06em) does not cover.
-
-- [x] **5.1** `MapPanel` — pixelated map of the *displayed* visit's place, 100–400% in 20% steps
-      applied as image width so the box scrolls, zoom **and** pan persisted per guide via
-      `useGuideUi`. Pan is written once scrolling settles, not per frame. A place with no map
-      renders nothing. `MapView` moved to `types/mapView.ts` — the spine feature renders the
-      panel and the progress feature owns the store, and features never import each other (M)
-- [x] **5.2** `WidgetStack` replaces `WidgetRail` + `WidgetDialog` (and `WidgetDeck`) — cards
-      that open in place via `Collapsible`, a scope label under each title (`Global`,
-      `Chapter · <title>`, `Location · <name>`, `Visit · <place N>`), shared by the desktop
-      column and the phone sheet. `widgetScope.ts` untouched. The counter-persistence and
-      checklist cases moved over with only their queries loosened — the trigger's accessible
-      name now carries the scope label under the title (L)
-- [ ] **5.3** Pin + reorder — dnd-kit with keyboard sensor, move up/down buttons, persisted
-      order and pins (M)
-- [x] **5.4** Guide header — `← Library`, title, progress bar + % + `123 / 587`,
-      `Trophy 11 / 97` (or `no RA set`), Sync, Cleanup. The spine total counts **steps only**:
-      the done set also holds widget item ids (§6.5 one checkable namespace) and a ticked
-      checklist row is not a step walked. Mastery reuses the ra-mapping the layout route already
-      loaded (task 1.1) — no second fetch. `guideSync`/`syncReceipt` pass unedited (S)
-
-### ☑ Checkpoint F — feature complete
-- [x] `yarn check` green (106 files, 687 tests) · `yarn build` clean
-- [ ] **Pierre**: full walk of `zelda-oot` + `pokemon-crystal`, desktop **and** phone viewport
-- [ ] **Pierre**: compare against all four approved prototypes
-
-## Phase 5.5 — Fit the guide to the reader
-
-> Added 2026-07-29 after checkpoint F. Numbered 5.5, not 6, so every existing §6.1/§6.2
-> reference keeps pointing at the same task. Full detail, acceptance criteria and the decision
-> table: [`plan.md` §Phase 5.5](./plan.md). Two gates cleared by Pierre up front —
-> `react-resizable-panels` is a new dependency, and the `guideUi` record gains three fields.
-> **No IDB version bump**: `migrated()` spreads over `emptyGuideUi`, so defaults land on
-> existing records.
-
-- [x] **5.5.1** Keyword beats on their own lines — a block `<span>` per beat inside the existing
-      move-pointer button; `aria-label`s keep the joined `stepHeadline` form. Correction to the
-      plan's acceptance: `skipAndBurst` did **not** pass unedited — not because of a label, but
-      because it *waited* on the joined text to know the guide had rendered, and read the current
-      row's `textContent` for it. Both now use the first beat; every `aria-label` is untouched (S)
-- [x] **5.5.2** `shadcn add resizable` (pulls `react-resizable-panels@^4` — note **v4**, whose
-      API is `Group`/`Panel`/`Separator` with a `Layout` map of panel id → percentage, not the
-      v2 `PanelGroup`/`PanelResizeHandle` the plan sketched) + `guideUi` gains `leftRailPct` /
-      `rightRailPct` / `mapPanePct` + `setRailLayout` (a **partial**, since the horizontal group
-      and the nested vertical one report separately and must not clobber each other) + a
-      `ResizeObserver` stub via a new `test.setupFiles`. `components.json` untouched; the store
-      stays at **v2**, proved by a test that reads an older record back with the new defaults (M)
-- [x] **5.5.3** Resizable rails: horizontal group at `lg` with a nested vertical group for
-      map-over-widgets; `useIsWide()` gates it and returns **true** without matchMedia, as
-      `useInView` does. Corrects the task-3.1 deviation where the right aside, not the widget
-      block, was the scroll container. Stored sizes are applied through the imperative
-      `groupRef.setLayout` because `defaultLayout` is read once on mount and the record arrives
-      later — same one-frame default the map zoom already has.
-      **Not machine-verified:** what a resize *resolves to*. The group sizes itself from a
-      measured box and jsdom reports every box as zero, so an arrow key makes the library throw
-      rather than resize. Tests cover the separators (count, focus, orientation), the
-      percentages reaching the DOM, per-guide isolation and the clamping on the record; the
-      pixels are a checkpoint-G item in a real browser (L)
-- [x] **5.5.4** Direct-manipulation map — wheel zooms, drag pans, double-click resets; all three
-      buttons go, the `%` stays as a readout. `react-zoom-pan-pinch` was already a dependency
-      (it drives the `ZoomableImage` lightbox) and `panFraction`/`panOffset` keep their meaning:
-      at `w-full`, content width at scale *s* is `W·s`, so the extent is `W·(s−1)` exactly as
-      before. The stored view is applied on `onInit` rather than as an initial transform — the
-      fraction needs a measured box — and written back debounced from `onTransform` (v4's name;
-      it fires per frame). **Not machine-verified:** what a gesture resolves to, for the same
-      zero-size-box reason as 5.5.3; the test proves the stored zoom is read back (M)
-
-### ☑ Checkpoint G — before Phase 6
-- [x] `yarn check` green (105 files, 687 tests) · `yarn build` clean
-- [ ] **Pierre**: drag both rails and the map split on `zelda-oot`, reload, confirm they held —
-      and that `pokemon-crystal` has its own
-- [ ] **Pierre**: wheel + drag the map with no buttons in sight
-- [ ] **Pierre**: read a multi-beat step; phone viewport unchanged
-
-## Phase 6 — Land it
-
-- [x] **6.1** PRD amended: §7 (S1 index, S2 visit-scoped + resizable columns + inline missables,
-      S3 in-place stack, the route map) and the stale `Now screen` references in §10.1/§11.2/
-      §20/§25. §14.2's two revisit triggers updated; §19.1 gained the three UI dependencies.
-      **Correction:** the plan said to "strike screen #8" — the PRD never had a place screen at
-      all (it was a Workstream-A addition), so §7 gained a note that the route was removed
-      rather than losing a screen. §17 needed nothing: it constrains hosting and data, not
-      layout. `docs/ideas/design-v2-handoff.md` records the approved change list verbatim, the
-      eight points where the app diverges from it, and the three corrections that came from
-      reading the prototypes rather than the handoff (S)
-- [x] **6.2** [PR #28](https://github.com/Gravill0n/TOTODILE/pull/28) — 40 commits, deleted
-      components and retired tests listed, plus the test-contract changes worth reviewing and
-      the two things no test can prove. **Screenshots outstanding**: the plan asks for
-      before/after on both screens and both postures, and capturing them needs a browser —
-      left for Pierre before merge
-
-## Deleted by the end of this work
-
-`NowScreen.tsx` · `MissableBanner.tsx` · `WidgetRail.tsx` · `WidgetDialog.tsx` — and their tests
-(`widgetRail.test.tsx`, `widgetDialog.test.tsx`, `missableBanner.test.tsx` → `missableCard`).
+- The PWA precaches **every** guide image to **every** visitor
+  (`additionalManifestEntries` in `app/vite.config.ts`) — 500 MB of maps is a 500 MB first visit
+- GitHub Pages caps a site at 1 GB / a file at 100 MB
+- Image optimization: the `map-*.png` files are unoptimized 8-bit-colormap PNGs at ~1920px;
+  a webp pass is likely the bigger win than LFS for delivery
+- A per-guide image **weight** budget in `validate-guides` (PRD §17 #8 budgets the count only)
+- ~28 MB of dead image blobs remain in the pack (10.5 MB from guides deleted in `3168343`);
+  only a history rewrite reclaims them — accepted

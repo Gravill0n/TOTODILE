@@ -1,16 +1,26 @@
 import { createHash } from "node:crypto";
-import { existsSync, readdirSync, readFileSync } from "node:fs";
+import {
+  closeSync,
+  existsSync,
+  openSync,
+  readdirSync,
+  readFileSync,
+  readSync,
+} from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import type {
+  Chapter,
   DataLayer,
   GuideFile,
   LayersManifest,
   LibraryManifest,
+  Location,
   PassReportFile,
   RaMapping,
   SourceManifest,
   SpineLayer,
+  Widget,
   WidgetLayer,
 } from "../src/schema/index.ts";
 import {
@@ -26,6 +36,7 @@ import {
   sourceManifest,
   spineLayer,
   widgetCheckables,
+  widgetImages,
   widgetItemIds,
   widgetLayer,
 } from "../src/schema/index.ts";
@@ -112,6 +123,24 @@ export function validateGuides(rootDir: string): Report {
         });
       }
     }
+    // A cover is a plain URL the library card renders as-is (GuideCard.tsx), so
+    // unlike an imageRef it resolves from the repo root, not the guide folder.
+    validateImageRefs(
+      rootDir,
+      "library",
+      library.guides.flatMap((entry) =>
+        entry.cover
+          ? [
+              {
+                file: "library.json",
+                owner: `guide "${entry.id}"`,
+                src: entry.cover,
+              },
+            ]
+          : [],
+      ),
+      findings,
+    );
   }
 
   for (const slug of folders) {
@@ -296,6 +325,18 @@ function validateGuideFolder(
     }
   }
 
+  if (guide) {
+    validateImageRefs(
+      dir,
+      slug,
+      [
+        ...spineImageRefs("guide.json", guide.locations, guide.chapters),
+        ...widgetImageRefs("guide.json", guide.widgets),
+      ],
+      findings,
+    );
+  }
+
   validateLayers(dir, slug, sources, findings);
 }
 
@@ -469,6 +510,9 @@ function validateLayers(
         }
       }
     }
+
+    // Layer image paths are guide-relative, same as the assembled guide.json's.
+    validateImageRefs(dir, slug, layerImageRefs(file, artifact), findings);
   }
 
   for (const layerId of reports.keys()) {
@@ -631,6 +675,136 @@ function checkableNamespace(guide: GuideFile): Set<string> {
     ),
     ...guide.widgets.flatMap(widgetItemIds),
   ]);
+}
+
+// One place an image is pointed at, and by what — enough to name the culprit
+// in the finding rather than just the broken path.
+type ImageReference = {
+  // The file carrying the reference, relative to its base directory.
+  file: string;
+  // What in that file points at the image, e.g. 'step "slug:c1:s1"'.
+  owner: string;
+  // The path as written: guide-relative for imageRefs, root-relative for the
+  // library cover. Resolved against the baseDir passed alongside.
+  src: string;
+};
+
+// The first line of a Git LFS pointer file. guides/*/images/** is LFS-tracked
+// (.gitattributes), so a clone without git-lfs — or one where `git lfs pull`
+// never ran — holds this text where the image should be.
+const LFS_POINTER_MAGIC = "version https://git-lfs.github.com/spec/v1";
+
+// Every referenced image resolves to real bytes. Nothing else in the pipeline
+// checks this: imageRef only constrains `src` to a non-empty string, and the
+// PWA precache would md5 pointer text into the service-worker manifest as
+// happily as a PNG. Without this the CI gate goes green and the deploy
+// publishes ~130 bytes of pointer text as every map.
+function validateImageRefs(
+  baseDir: string,
+  slug: string,
+  refs: ImageReference[],
+  findings: Finding[],
+): void {
+  for (const ref of refs) {
+    const path = join(baseDir, ref.src);
+    if (!existsSync(path)) {
+      findings.push({
+        guide: slug,
+        file: ref.file,
+        message: `${ref.owner} references a missing image "${ref.src}"`,
+      });
+    } else if (isLfsPointer(path)) {
+      findings.push({
+        guide: slug,
+        file: ref.file,
+        message: `${ref.owner} references "${ref.src}", which is an unsmudged Git LFS pointer, not an image — run \`git lfs pull\``,
+      });
+    }
+  }
+}
+
+// Reads only the magic line's worth of bytes: a guide can carry hundreds of
+// images and the gate runs on every commit.
+function isLfsPointer(path: string): boolean {
+  const handle = openSync(path, "r");
+  try {
+    const buffer = Buffer.alloc(LFS_POINTER_MAGIC.length);
+    const read = readSync(handle, buffer, 0, buffer.length, 0);
+    return (
+      read === buffer.length && buffer.toString("utf8") === LFS_POINTER_MAGIC
+    );
+  } finally {
+    closeSync(handle);
+  }
+}
+
+// The imageRefs a locations + chapters tree carries — the shape guide.json and
+// layers/spine.json share. Note what is absent: layers/data.json's `images`
+// dataset catalogues candidate assets by a path into the gitignored sources/
+// tree, and those are generic dataset records rather than imageRefs, so they
+// stay out of reach here. Checking them would fail on every machine but the one
+// that ran the sources pass.
+function spineImageRefs(
+  file: string,
+  locations: Location[],
+  chapters: Chapter[],
+): ImageReference[] {
+  return [
+    ...locations.flatMap((location) =>
+      location.mapImage
+        ? [
+            {
+              file,
+              owner: `location "${location.id}"`,
+              src: location.mapImage.src,
+            },
+          ]
+        : [],
+    ),
+    ...chapters.flatMap((chapter) =>
+      chapter.visits.flatMap((visit) =>
+        visit.steps.flatMap((step) =>
+          step.images.map((image) => ({
+            file,
+            owner: `step "${step.id}"`,
+            src: image.src,
+          })),
+        ),
+      ),
+    ),
+  ];
+}
+
+// Which layer kinds carry images: the spine (locations + steps) and a widget
+// fill. data.json and ra-mapping.json carry none — see spineImageRefs on why
+// the data layer's image catalogue is deliberately out of scope.
+function layerImageRefs(
+  file: string,
+  artifact: LayerArtifact,
+): ImageReference[] {
+  switch (artifact.kind) {
+    case "spine":
+      return spineImageRefs(
+        file,
+        artifact.value.locations,
+        artifact.value.chapters,
+      );
+    case "widget":
+      return widgetImageRefs(file, [artifact.value.widget]);
+    case "data":
+    case "ra-mapping":
+      return [];
+  }
+}
+
+function widgetImageRefs(file: string, widgets: Widget[]): ImageReference[] {
+  return widgets.flatMap((widget) =>
+    widgetImages(widget).map((image) => ({
+      file,
+      owner: `widget "${widget.id}"`,
+      src: image.src,
+    })),
+  );
 }
 
 // Shared with assembleGuideCore.ts — same loading + findings discipline.
