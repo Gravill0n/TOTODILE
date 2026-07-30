@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "layers": [
+    {
+      "id": "spine",
+      "kind": "spine",
+      "artifact": "layers/spine.json",
+      "report": {
+        "rowCount": 237,
+        "anomalies": [
+          "celeste:v-forsaken-city-a-start-1:s3, celeste:v-forsaken-city-a-chasm-1:s5 — source disagreement on winged berry count in Forsaken City: src-ink-collectables describes both berry 3 (\"this is a flying strawberry\") and berry 19 (\"another winged strawberry\") as winged, while src-tracker-maps marks only one winged berry in chapter 1. Both steps are flagged; their route text is unaffected, only the berry type is in doubt.",
+          "data layer, strawberry-route: the winged-berry conflicts the data pass recorded for chapters 2, 3, 4, 5 and 7 do not survive reading the how-to prose. The prose names one winged berry in chapter 2 (route-2a-18), two in chapter 3 (route-3a-07, route-3a-14), one in chapter 4 (route-4a-18), one in chapter 5 (route-5a-15) and three in chapter 7 (route-7a-08, route-7a-24, route-7a-28) — matching src-tracker-maps exactly in every case. The disagreement was in the dataset's `type` column, which is under-populated, not between the sources. Only chapter 1 genuinely conflicts. Consequently route-3a-14 and route-7a-28, flagged in the data layer, are emitted at normal confidence here.",
+          "data layer, checkpoints: chapter 6 (Reflection) map-section labels are shifted one checkpoint early. src-ink-chapters lists six A-side checkpoints — Start, Lake, Hollows, Reflection, Rock Bottom, Resolution — for the pack's six sections, but data.json omits Lake, so 6_a_1..6_a_4 carry the following checkpoint's name and 6_a_5 falls off the end as the placeholder \"Sub-map 5\". The corrected mapping is confirmed by the pins: src-tracker-maps places the crystal heart and cassette on 6_a_2, and src-ink-chapters says the Hollows checkpoint holds the path to both. This spine uses the corrected names.",
+          "data layer, checkpoints/strawberry-pins: chapter 9 (Core) labels and pins disagree on which section holds which berries. The route gives Into the Core 1, Hot and Cold 3, Heart of the Mountain 1; the pins give 9_a_0 zero, 9_a_1 one, 9_a_2 three, 9_a_3 one — a one-section shift consistent with 9_a_0 being the pre-Heart-Door opening rather than a checkpoint of its own. Berries are placed by the route's checkpoint name (the labels), not the pins, since the two strawberry datasets are deliberately unjoined.",
+          "celeste:core-a-heart-of-the-mountain-section-2 / -section-3 — the Core checkpoint \"Heart of the Mountain\" spans two pack map sections, so two locations carry the same checkpoint name, disambiguated by the pack's own section numbering. Berry 5 is placed in the first of the two; the cassette, crystal heart and level clear are placed in the second, where src-tracker-maps pins them.",
+          "celeste:v-core-a-heart-of-the-mountain-section-3-1:s2 — src-tracker-maps has no crystal-heart pin anywhere in Core, although \"Heart of the Mountain — Collect the Crystal Heart in Chapter 8\" is one of the 32 achievements. The step is sourced from src-ink-collectables instead (\"The Crystal Heart and the Cassette Tape are located at the end of the level, collecting them is necessary to complete it\"), so it is emitted at normal confidence, but the pin gap should be recorded against the pack.",
+          "Achievements \"Real Gamer\" (Complete Celeste for PICO-8) and \"1UP!\" (Get a 1UP) have no location in any manifested source, so no step is emitted for either. Both are in the 32-achievement completion definition. They need a source added through the sources pass before the spine can place them; until then they exist only as rows in the achievements dataset and will have to be carried by the global Achievements checklist widget.",
+          "The C-sides chapter intro states the unlock rule (\"C-Sides are unlocked after completing 8B, which, in turn, requires completion of all B-Sides\"), which comes from celeste.ink's standalone \"Alternate sides\" page. No sources.json entry covers that page — src-ink-chapters covers the chapter pages and their alternate-side sections, not the separate article. A src-ink-alternate-sides entry should be appended by the sources pass. Chapter intros carry no sourceRefs, so this is not a schema violation, but the provenance is currently unrecorded.",
+          "data layer, chapters: chapter-6-reflection carries red-strawberries \"3\", which no other source supports. The route dataset, the pin dataset and the 20/18/25/29/31/47/5 per-chapter split all give Reflection zero, and three more would total 178 rather than the 175 the \"Impress Your Friends\" achievement requires. This spine emits no strawberry steps in Reflection.",
+          "route-7a-29 — src-ink-collectables' prose for this berry contains the stray sentence \"However, this is strawberry 6, not 5\", a cross-reference under a different numbering scheme left over from the Fandom port the page was ported from. It is omitted from the step's detail as source noise; the route directions are unaffected.",
+          "src-ink-collectables gives one shared description for the two berries in the ceiling enclave off The Summit's fifth room (route-7a-02, route-7a-03) and does not say which of the left and right berries is numbered which. Both steps carry the full description and say so.",
+          "celeste.ink returns HTTP 403 to the WebFetch tool; the pages behind src-ink-collectables and src-ink-chapters were read through the MediaWiki API with a browser user agent instead. Content is unaffected, but a future re-run should expect the same."
+        ],
+        "flaggedItemIds": [
+          "celeste:v-forsaken-city-a-start-1:s3",
+          "celeste:v-forsaken-city-a-chasm-1:s5"
+        ]
+      },
+      "contentHash": "sha256:835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:08:07.489Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    }
+  ]
+}
