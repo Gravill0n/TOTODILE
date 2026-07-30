@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "qa",
+  "layer": "qa",
+  "generatedAt": "2026-07-30T19:05:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+    },
+    {
+      "file": "layers/widget-achievements.json",
+      "sha256": "62410ee615372659033cbbe0e62809333b9641552ef917c5a23e38a258bc32ad"
+    },
+    {
+      "file": "layers/widget-cassettes.json",
+      "sha256": "98750e63abf665eac1b570f8bab1a0dba96bd8be55246de43c9bc043a9470231"
+    },
+    {
+      "file": "layers/widget-pins-celestial-resort-a-elevator-shaft.json",
+      "sha256": "c5044d8237cb2b9a376414c5c9452231cbd8be024de812b9f2aee7f21a23c25b"
+    },
+    {
+      "file": "layers/widget-pins-celestial-resort-a-huge-mess.json",
+      "sha256": "15e561c352edc77586f4b31773e6db1f9b8d3a1a27b047d54ee0e20abec6bfd7"
+    },
+    {
+      "file": "layers/widget-pins-celestial-resort-a-presidential-suite.json",
+      "sha256": "14092761260e86c663316588f5c6c58ffcc43933d8aa24096d05f15105b6b334"
+    },
+    {
+      "file": "layers/widget-pins-celestial-resort-a-start.json",
+      "sha256": "8073559155ccb6ec2dc652146c5bad35cf7eeaca72639e459c7a98250c2533c6"
+    },
+    {
+      "file": "layers/widget-pins-celestial-resort-b.json",
+      "sha256": "b03c22551bf9b066b61ce38b1f4d7eba3e946b5dc76cb2a7e3ab9bc2fc6aa717"
+    },
+    {
+      "file": "layers/widget-pins-celestial-resort-c.json",
+      "sha256": "d7c7b31eb6028d8cbcad934ccfb1ad292f01ec143cce075802b716f222b8ae46"
+    },
+    {
+      "file": "layers/widget-pins-core-a-heart-of-the-mountain-section-2.json",
+      "sha256": "7bca1d390627bd907eda2661814de37a88ea37d06e70d28134094ecb6ebd2fad"
+    },
+    {
+      "file": "layers/widget-pins-core-a-heart-of-the-mountain-section-3.json",
+      "sha256": "3602b548a19fdbfa05dbc59c8069d4366e134273a5455043140779d37168e8b1"
+    },
+    {
+      "file": "layers/widget-pins-core-a-hot-and-cold.json",
+      "sha256": "54b74e269c4f0ce719ea08df428aaa8ac81f488fd7d1cab7eaa800ae2f8efb40"
+    },
+    {
+      "file": "layers/widget-pins-core-b.json",
+      "sha256": "6fa5f8082707653ab3ecd29b09d35b5ae4d541c1b90c81de7efe1411717916c6"
+    },
+    {
+      "file": "layers/widget-pins-core-c.json",
+      "sha256": "8c9b5c5f9f9b945e0a5c1c3eb5f480955b2eb89b1b3796db9855368effe82882"
+    },
+    {
+      "file": "layers/widget-pins-epilogue.json",
+      "sha256": "b3c09d012aeb0fa3a475cec4f37a4a260a7fb67bf7df35834eb7b5d0b751aa01"
+    },
+    {
+      "file": "layers/widget-pins-farewell-farewell.json",
+      "sha256": "a66cae3b88ab671c9c6137e706d6674d01b46b9b620f3971f251647e77714e27"
+    },
+    {
+      "file": "layers/widget-pins-farewell-remembered.json",
+      "sha256": "29f61332fca71beac186b4d9cb66a36d532e532c40d81e0253a66d777adc1b75"
+    },
+    {
+      "file": "layers/widget-pins-forsaken-city-a-chasm.json",
+      "sha256": "cc09cc4eb2cf4b1a38706f4d4d859452205382a37620e5f80da7ea0c545a3ba2"
+    },
+    {
+      "file": "layers/widget-pins-forsaken-city-a-crossing.json",
+      "sha256": "b02924334273594a2c44b7ed1b25c4022d3458a0a4bcfddd4556d051e199e4a5"
+    },
+    {
+      "file": "layers/widget-pins-forsaken-city-a-start.json",
+      "sha256": "76b5da057449e9d9f3cd41cf69c4cbcbae82ac0d597733c01d89e04cdd175b38"
+    },
+    {
+      "file": "layers/widget-pins-forsaken-city-b.json",
+      "sha256": "96fe6d9f5bf2dfbaf4a0cfb4264c37ce0af0aabeac53235e186f9ff53b7f0c16"
+    },
+    {
+      "file": "layers/widget-pins-forsaken-city-c.json",
+      "sha256": "467036e32014f2b439cf9317d5f85ce73915fb94c34a60f3aa3bc0368c4736c6"
+    },
+    {
+      "file": "layers/widget-pins-golden-ridge-a-cliff-face.json",
+      "sha256": "bcbee93611af88d46eac87b19263df520cdefdb070a7114a71d56d581b0995b8"
+    },
+    {
+      "file": "layers/widget-pins-golden-ridge-a-old-trail.json",
+      "sha256": "ca60dcf00c730f67fee1833f7c670b385560b1bc312755fcf17afc2c6393a39a"
+    },
+    {
+      "file": "layers/widget-pins-golden-ridge-a-shrine.json",
+      "sha256": "589d33cc7a92f8fe389d1502dba8657ecaad28177f8acccfcd4404d7c5ceddcd"
+    },
+    {
+      "file": "layers/widget-pins-golden-ridge-a-start.json",
+      "sha256": "8e06d8df88d0175f0daa2e86ed77aa5ad44d61c83d5844b4c200abaa80dacc49"
+    },
+    {
+      "file": "layers/widget-pins-golden-ridge-b.json",
+      "sha256": "381c12347e92249982dc87ab9f551ef141881cc40fb2db7137a54d90225711c3"
+    },
+    {
+      "file": "layers/widget-pins-golden-ridge-c.json",
+      "sha256": "1caa9048d1d8cbbff0f2a379ee0a2c7e8112373ef46ab168eaebe7eee7451c09"
+    },
+    {
+      "file": "layers/widget-pins-mirror-temple-a-depths.json",
+      "sha256": "50a0d9bfb3c0c69b4008698f2da5dbb0c26b691edc9f5cb20903d1088da00cdc"
+    },
+    {
+      "file": "layers/widget-pins-mirror-temple-a-rescue.json",
+      "sha256": "033e92fb23a35b6c264c2e8cb8947d8ff276d32aa359145b8643394e50983543"
+    },
+    {
+      "file": "layers/widget-pins-mirror-temple-a-search.json",
+      "sha256": "4873e3bdb011c86acd19ef0ff1ed810a7cc2cb7152ec22568b3ce23ffff44d0f"
+    },
+    {
+      "file": "layers/widget-pins-mirror-temple-a-start.json",
+      "sha256": "86dec6275c8e90f00f63456062563fb88b528b4855ffda8c427618c986238d71"
+    },
+    {
+      "file": "layers/widget-pins-mirror-temple-a-unravelling.json",
+      "sha256": "274e6e2ce5b7d77a9c072e8494b1eb5c1ba2614779f9ab3360dae5aad2076aa2"
+    },
+    {
+      "file": "layers/widget-pins-mirror-temple-b.json",
+      "sha256": "c673836ffed9427196c12ff6cfe767f931e1c48553c536b9f392023fad11bf46"
+    },
+    {
+      "file": "layers/widget-pins-mirror-temple-c.json",
+      "sha256": "6d4170bec63f5784d3f6b01ae5d6a459c60c2e71516f94d4397fe43d42f287e2"
+    },
+    {
+      "file": "layers/widget-pins-old-site-a-awake.json",
+      "sha256": "343946a7e942162d8536acd3f596d26c737f71f692ba2ea28ae03559c6717cd0"
+    },
+    {
+      "file": "layers/widget-pins-old-site-a-intervention.json",
+      "sha256": "820593bb6d6cf8219f3f70af6d8a76d943bf132c0a68b21b058e1ad52fb1c594"
+    },
+    {
+      "file": "layers/widget-pins-old-site-a-start.json",
+      "sha256": "c3b267a77034eedaf35497a38c49cf1cf4244264e9fce1cf42b3f8187bda490f"
+    },
+    {
+      "file": "layers/widget-pins-old-site-b.json",
+      "sha256": "6ccad912bbda0222fc1afda35ec5b9ffa64e59fd477369b9747cd3526744193a"
+    },
+    {
+      "file": "layers/widget-pins-old-site-c.json",
+      "sha256": "5e34f2aa942db69e1c9f648dcebbc8942b9f2416c7430cffdcbf652d3578456e"
+    },
+    {
+      "file": "layers/widget-pins-prologue.json",
+      "sha256": "934a37d53166e2ec51a2eb183e8d10f0dda20b05494a599274c26371e4a949da"
+    },
+    {
+      "file": "layers/widget-pins-reflection-a-hollows.json",
+      "sha256": "e3bd68448d40653b4a24ac7a9c6a5a93bd57de660942c478bffd87b8f7564152"
+    },
+    {
+      "file": "layers/widget-pins-reflection-a-resolution.json",
+      "sha256": "32c153b02cd4f4bb06ae74e4f9dac6aae5317fe72bf191d1a90b8abd6235d063"
+    },
+    {
+      "file": "layers/widget-pins-reflection-b.json",
+      "sha256": "9022e26db3a6815eaa6dba1f0ef508f5048336f55cedfc053ad48d591a2e9025"
+    },
+    {
+      "file": "layers/widget-pins-reflection-c.json",
+      "sha256": "3c37560be91bcb9c8a8b27cad79ed146f69da5b7c711aeeac64e178d75657992"
+    },
+    {
+      "file": "layers/widget-pins-the-summit-a-1000-m.json",
+      "sha256": "b511925f4213fa1bf66484e1c5b17cbb93296904d8b6749f834f1373d603c35c"
+    },
+    {
+      "file": "layers/widget-pins-the-summit-a-1500-m.json",
+      "sha256": "0286317d4ccb682e440caa1ac8ab25b20bfabef5010f31ba9ea0fc4167bd4269"
+    },
+    {
+      "file": "layers/widget-pins-the-summit-a-2000-m.json",
+      "sha256": "8f90bd63590cb2a6352d50ba1016a19a66e0ca981b055173cd2d2096275ea572"
+    },
+    {
+      "file": "layers/widget-pins-the-summit-a-2500-m.json",
+      "sha256": "552c717685f30233f9c9f70492ad929c8d512991d9f6e899a525716327fcd6e0"
+    },
+    {
+      "file": "layers/widget-pins-the-summit-a-3000-m.json",
+      "sha256": "28162c27e3e09bf6c19c6f4c4983f99d4b6da000ec4bc1eaee2f5564625860ef"
+    },
+    {
+      "file": "layers/widget-pins-the-summit-a-500-m.json",
+      "sha256": "25c6888f87001b25d0da0c74ff98c35a92c540b1e6b7107e9e51c88041db42cd"
+    },
+    {
+      "file": "layers/widget-pins-the-summit-a-start.json",
+      "sha256": "c092c989caf9b316a23dbaa936ba3ee1653dadb1366a3354485915056d476823"
+    },
+    {
+      "file": "layers/widget-pins-the-summit-b.json",
+      "sha256": "9bc52f5b929340d6c2218b23dcdd0cf8bd07fb2d3323b91866a6a51525847773"
+    },
+    {
+      "file": "layers/widget-pins-the-summit-c.json",
+      "sha256": "03c97c70503f88db404d681975553bf8b25df3491cd55c2c051228b4c552e718"
+    },
+    {
+      "file": "layers/widget-prep-c-sides.json",
+      "sha256": "5e9f8793ca72a06b4006ff90889e5396d1e1f06fa888b9715d76d5c132f43c32"
+    },
+    {
+      "file": "layers/widget-prep-c0.json",
+      "sha256": "f63c002c777a959e42e53212ed99067b554ab3312def6586552209c2a0c3e15f"
+    },
+    {
+      "file": "layers/widget-prep-c1.json",
+      "sha256": "329cc54bb797911b92ef88bd291b25435b25975bd0fcce903fa4b6393c2a94ab"
+    },
+    {
+      "file": "layers/widget-prep-c10.json",
+      "sha256": "f98f11a631f090cb873d31c5bf3fa54d409725945d9387ecf7a689038f938080"
+    },
+    {
+      "file": "layers/widget-prep-c2.json",
+      "sha256": "807e681b355b1bcaeee2c4e890fbe0b1a66af8ffe999e8207dffb0183f6cc548"
+    },
+    {
+      "file": "layers/widget-prep-c3.json",
+      "sha256": "e06654bddef6930c61fd04d096526497a0ae376700802cecaab16d2368d8e68c"
+    },
+    {
+      "file": "layers/widget-prep-c4.json",
+      "sha256": "57ef4c29e6e32f64086784e756b0a0c776c20847222bb7cbe7259fbfe035cb50"
+    },
+    {
+      "file": "layers/widget-prep-c5.json",
+      "sha256": "d956c95ea9f864f55c68f85aa3a5f2d924906ae23b15c6c54ff99f4da9c15e8d"
+    },
+    {
+      "file": "layers/widget-prep-c6.json",
+      "sha256": "bf9eacb0eae529e583e857d9e6599863308a5bb739a87ebc832a3ffc22683aa3"
+    },
+    {
+      "file": "layers/widget-prep-c7.json",
+      "sha256": "6c7376b015a8109809eaea82a4b57a1da9e429013db8a170ca8668a69fabdd46"
+    },
+    {
+      "file": "layers/widget-prep-c8.json",
+      "sha256": "2b625556f1629cdbd13eb9e578f5364f1aa67aa3a9029c7fe56f7dcba6400019"
+    },
+    {
+      "file": "layers/widget-prep-c9.json",
+      "sha256": "c62b837e0b18ae4e9233cee25acf5182c15b1025f61bfe767e55af131a9dc72e"
+    },
+    {
+      "file": "layers/widget-sides-hearts.json",
+      "sha256": "80c69f591082b38f7b0157b386041490a47d01f0dc6b9cacb21756426ee3ac12"
+    },
+    {
+      "file": "layers/widget-strawberries.json",
+      "sha256": "272e682715a26c45baf225d7b8c0375cce3e3febd7853f73662a9762b9f056e6"
+    },
+    {
+      "file": "layers/widget-strawberries-c1.json",
+      "sha256": "d49751df7605140f739fb647410acb864140ce208fa1ac87a75061a17cc8d89a"
+    },
+    {
+      "file": "layers/widget-strawberries-c2.json",
+      "sha256": "25f8bc50868cee978862ab9a53d865b6cc87bdd3cd62d29ce693fb193217793b"
+    },
+    {
+      "file": "layers/widget-strawberries-c3.json",
+      "sha256": "e2da9148c812dac61f1c3af803059277ffd73e672f08758be8270b0e2a460216"
+    },
+    {
+      "file": "layers/widget-strawberries-c4.json",
+      "sha256": "f7a347b50bc23aa3273e2fc95a8f9dce560eacca3dfca62788b8ac755057f62f"
+    },
+    {
+      "file": "layers/widget-strawberries-c5.json",
+      "sha256": "13ced5188455c82d1f6ae63e684aa26a07fed1feb47ebddb501fc75f510ddf08"
+    },
+    {
+      "file": "layers/widget-strawberries-c7.json",
+      "sha256": "7c4b6f5e0d1be0426cdc068f28802e8363145b2b3e69ec756466afc2f9fc80dc"
+    },
+    {
+      "file": "layers/widget-strawberries-c9.json",
+      "sha256": "29a551adfa17eb487f77466d2a9196508f3dc7e73957a15cd903c31e2015e9af"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "e5ab1bc1eab4b4c0ae4c4c556dc943dd06779dd5ec7c74465b2e6020999a9e0d"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "503f409a29c3e1a24e491f12735254832160bb2d045e136b958e23775eabd73c"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "e3201f6fa921f2c3876a25b68e3cc7125b6326dfe3fbbdfb117d76c272e81cd3"
+    },
+    {
+      "file": "layers/manifest.json",
+      "sha256": "04ce251071cac4a16ce6942a3689d84718b771ecd1a00bedc61c5d205e81fa36"
+    },
+    {
+      "file": "guide.json",
+      "sha256": "f804d34906d977bdb1e8db531004656168f7f26777e3da3a78db00bc80622105"
+    }
+  ],
+  "report": {
+    "rowCount": 221,
+    "anomalies": [
+      "spine, widget-strawberries-c1: the 4 flagged rows are all one finding — Forsaken City's winged berry count. src-ink-collectables self-describes two winged berries (berry 3, \"this is a flying strawberry\"; berry 19, \"another winged strawberry\") while src-tracker-maps marks one winged berry in chapter 1. Spot-read against both sources: the flags are honest, the doubt is real, and it touches only the berry type — the route text is unaffected. No other chapter conflicts: prose and pack agree exactly at 1/2/1/1/3/0 winged for chapters 2, 3, 4, 5, 7 and Core.",
+      "widget-achievements: \"Real Gamer\" (Complete Celeste for PICO-8) and \"1UP!\" (Get a 1UP) are tracked only as checklist rows — no manifested source gives either a location, so the spine emits no step for them. Owning pass: source-gathering. Both are in the 32-achievement completion definition, so the guide is playable but cannot route the player to them.",
+      "spine: the C-Sides chapter intro states the unlock rule (\"C-Sides are unlocked after completing 8B, which, in turn, requires completion of all B-Sides\") sourced from celeste.ink's standalone \"Alternate sides\" page, which no sources.json entry covers. Chapter intros carry no sourceRefs so this is not a schema violation, but the provenance is unrecorded. Owning pass: source-gathering — append src-ink-alternate-sides.",
+      "data: three defects in layers/data.json were worked around by the spine and widget passes rather than corrected at source, so a re-run of extract-data would still reproduce them. (1) The strawberry-route `type` column is under-populated — ten berries whose own prose calls them winged or flying are typed normal; correcting it dissolves the winged conflicts the data pass recorded for chapters 2, 3, 4, 5 and 7. (2) The chapter-6 checkpoint labels are shifted one section early because Reflection's \"Lake\" checkpoint is omitted, leaving 6_a_5 as the placeholder \"Sub-map 5\". (3) chapters.chapter-6-reflection carries red-strawberries \"3\", which no other source supports and which would make the game total 178 rather than 175. Owning pass: extract-data.",
+      "data, widget-pins-core-a-heart-of-the-mountain-section-3: src-tracker-maps carries no crystal-heart pin anywhere in Core, though \"Heart of the Mountain — Collect the Crystal Heart in Chapter 8\" is one of the 32 achievements. The spine and the Sides & Hearts matrix source that heart from src-ink-collectables instead. Not a blocker; recorded against the pack.",
+      "widget-strawberries-c*, widget-pins-*: each of the 175 red strawberries is three separate checkables — its route step, its chapter-table row, and its map pin — and only the route step feeds celeste:strawberries' 30/80/175 counters. This is deliberate (Pierre 2026-07-30, approved with the widget stage) and unavoidable for the pins, since mapPinsWidget has no informational-pin option and the berry-to-pin join was tested and rejected in extract-data. Recorded so the guide's checkable total (761) is not mistaken for 761 distinct objectives.",
+      "ra-mapping: not applicable. Celeste has no RetroAchievements set, so no ra-mapping layer exists, no step carries achievementRefs, no ra-mapping.json was assembled, and library.json carries no raGameId. The 32 Steam/Xbox/PlayStation achievements are tracked by hand through widget-achievements.",
+      "library.json: celeste is still status \"in-compilation\". QA does not change it — flipping it to \"playable\" is what surfaces the guide in the app and is Pierre's call at merge."
+    ],
+    "flaggedItemIds": [
+      "celeste:v-forsaken-city-a-start-1:s3",
+      "celeste:v-forsaken-city-a-chasm-1:s5",
+      "celeste:strawberries-c1:b03",
+      "celeste:strawberries-c1:b19"
+    ]
+  },
+  "notes": [
+    "Gate: all 75 manifest entries (spine + 74 widget layers) verified approved and hash-current against approvals.json, with no orphan in either direction.",
+    "Mechanical: yarn validate-guides green before and after assembly; yarn assemble-guide celeste wrote guide.json with no staleness refusal; yarn check-stable-ids reports celeste absent from main, so no protected baseline exists yet — the first merge establishes it.",
+    "rowCount counts 158 JSON files and 63 images verified.",
+    "Assembled shape: 63 locations, 12 chapters, 63 visits, 237 steps, 74 widgets, 524 widget items — 761 checkables in one namespace with no duplicates.",
+    "Coverage: all 32 achievements in the achievements dataset appear in widget-achievements. 0 steps carry achievementRefs, as expected with no RA set.",
+    "Images: 63 referenced, 63 on disk, 0 missing, 0 unreferenced, 0 unsmudged LFS pointers.",
+    "Missables: 0 steps carry a missable, per Pierre 2026-07-30 — nothing in Celeste is permanently lost. No step therefore lacks a deadline.",
+    "sourceRefs: every reference across all 761 checkables resolves to one of the 7 entries in sources.json.",
+    "Derived counters: all 525 derivedFrom references (3 entries x 175) resolve to spine step IDs.",
+    "Spot-reads performed: the 4 flagged rows against both sources; the winged-berry claim re-verified across all 7 berry-bearing chapters; 3 map-pin coordinate conversions recomputed from the pack's pixels and the images' own dimensions, all exact.",
+    "QA edited no guide content. Every anomaly above is routed to its owning pass."
+  ]
+}
