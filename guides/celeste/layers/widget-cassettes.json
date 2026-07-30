@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:cassettes",
+    "title": "Cassette Tapes",
+    "type": "checklist",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 2,
+    "rows": [
+      {
+        "itemId": "celeste:cassettes:forsaken-city",
+        "label": "Chapter 1: Forsaken City — Cassette Tape",
+        "note": "Right at the Chasm checkpoint — move the block aside, go up, then behind the wall-stuck zipper. Unlocks 1B, and is the earliest point for the Gateway achievement.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:cassettes:old-site",
+        "label": "Chapter 2: Old Site — Cassette Tape",
+        "note": "In Start, after the mirror shatters and the dream blocks activate. Dash down through the dream block in the floor at the centre of the central room.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:cassettes:celestial-resort",
+        "label": "Chapter 3: Celestial Resort — Cassette Tape",
+        "note": "In Elevator Shaft, left of the key in the seventh room, through a hole in the wall with light coming through it.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:cassettes:golden-ridge",
+        "label": "Chapter 4: Golden Ridge — Cassette Tape",
+        "note": "In Start, top-left of the tenth room. Jump the clouds, go back left and dash up; continue left past the seeded-strawberry room.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:cassettes:mirror-temple",
+        "label": "Chapter 5: Mirror Temple — Cassette Tape",
+        "note": "In Depths, past the third Temple Gate. A red bubble leads to three dash-switch rooms; the cassette room is through cracked wall at the bottom right of the third.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:cassettes:reflection",
+        "label": "Chapter 6: Reflection — Cassette Tape",
+        "note": "At the beginning of Hollows, same section as the Crystal Heart. Crash the Kevin Block into the far-left wall to open the hidden entrance.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:cassettes:the-summit",
+        "label": "Chapter 7: The Summit — Cassette Tape",
+        "note": "In 1500 M, fifth room — an opening in the ceiling leads to the cassette room.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:cassettes:core",
+        "label": "Chapter 8: Core — Cassette Tape",
+        "note": "At the end of the level, alongside the Crystal Heart. Collecting both is necessary to complete Core.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

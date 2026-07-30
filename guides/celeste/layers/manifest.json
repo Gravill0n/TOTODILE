@@ -10,6 +10,20 @@
       "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
     },
     {
+      "id": "widget-cassettes",
+      "kind": "widget",
+      "artifact": "layers/widget-cassettes.json",
+      "report": "layers/widget-cassettes.report.json",
+      "sha256": "98750e63abf665eac1b570f8bab1a0dba96bd8be55246de43c9bc043a9470231",
+      "widget": {
+        "deckPosition": 2,
+        "scope": {
+          "kind": "global"
+        },
+        "title": "Cassette Tapes"
+      }
+    },
+    {
       "id": "widget-sides-hearts",
       "kind": "widget",
       "artifact": "layers/widget-sides-hearts.json",
