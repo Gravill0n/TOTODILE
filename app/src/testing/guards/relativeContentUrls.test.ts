@@ -1,5 +1,5 @@
-import { readdirSync, readFileSync, statSync } from "node:fs";
-import { join, sep } from "node:path";
+import { globSync, readFileSync } from "node:fs";
+import { sep } from "node:path";
 import { describe, expect, it } from "vitest";
 
 // The Pages deploy serves the app under a subpath (§21.3: /TOTODILE/); hash
@@ -10,18 +10,10 @@ import { describe, expect, it } from "vitest";
 // ever see it. Machine-enforce the invariant instead.
 // Production source only: colocated tests and src/testing/ may do as they like.
 
-function walk(dir: string): string[] {
-  return readdirSync(dir).flatMap((name) => {
-    const full = join(dir, name);
-    if (statSync(full).isDirectory()) return walk(full);
-    return /\.tsx?$/.test(full) ? [full] : [];
-  });
-}
-
 const isProduction = (f: string) =>
   !/\.test\.tsx?$/.test(f) && !f.includes(`src${sep}testing${sep}`);
 
-const files = walk("src").filter(isProduction);
+const files = globSync(["src/**/*.ts", "src/**/*.tsx"]).filter(isProduction);
 
 const offenders = (pattern: RegExp) =>
   files.filter((f) => pattern.test(readFileSync(f, "utf8")));

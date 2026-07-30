@@ -14,8 +14,8 @@ remaining `library.json` guides through the pass pipeline.
 2. **`COMPILER_PASS_CONTRACT.md`** — normative for every compiler pass run (any
    `guide-pass-*` skill). A pass that violates it is broken even if its output
    looks right.
-3. There is no active planning doc: completed specs, plans, and task files live in
-   `docs/archive/`; `docs/ideas/` holds the decision records behind them.
+3. There is no active planning doc: completed specs, plans, and task files were
+   deleted (git history has them); `docs/ideas/` holds the decision records.
 
 ## Hard rules (from PRD §24 — full list there)
 
@@ -81,9 +81,9 @@ remaining `library.json` guides through the pass pipeline.
 - `.claude/skills/guide-pass-*/` — the six-pass compiler suite (sources,
   extract-data, spine, widgets, ra-mapping, qa), bound by
   `COMPILER_PASS_CONTRACT.md`.
-- `docs/ideas/` — refined-direction decision records. `docs/archive/` — completed
-  plans and historical context (brainstorms, the working PRD with full approval
-  history, `IMPLEMENTATION_PLAN.md`, workstream and small-build task files) —
-  rarely needed.
+- `docs/ideas/` — refined-direction decision records. The old `docs/archive/`
+  (brainstorms, the working PRD with full approval history,
+  `IMPLEMENTATION_PLAN.md`, workstream and small-build task files) was deleted in
+  July 2026 — git history has it if it is ever needed again.
 - The legacy single-file HTML guides and their `achievement-guide-builder` skill
   were removed in July 2026 (git history has them).

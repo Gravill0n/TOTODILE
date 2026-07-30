@@ -7,8 +7,8 @@ contract is broken even if its output looks right. Schemas referenced here live 
 mechanical clauses in CI.
 
 Companion document: the PRD (FR-D/FR-E, §6, §23) governs. (The plan that
-sequenced the suite's build, `IMPLEMENTATION_PLAN.md`, is retired to
-`docs/archive/`.)
+sequenced the suite's build, `IMPLEMENTATION_PLAN.md`, is deleted — see git
+history.)
 
 ## 1. Pipeline
 

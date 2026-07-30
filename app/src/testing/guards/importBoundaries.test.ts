@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { globSync, readFileSync } from "node:fs";
 import { dirname, join, relative, resolve, sep } from "node:path";
 import { describe, expect, it } from "vitest";
 
@@ -14,18 +14,10 @@ import { describe, expect, it } from "vitest";
 //   5. schema/ imports nothing from src outside schema/ (the contract is a leaf)
 //   6. @retroachievements/api appears only under features/sync (§9.1)
 
-function walk(dir: string): string[] {
-  return readdirSync(dir).flatMap((name) => {
-    const full = join(dir, name);
-    if (statSync(full).isDirectory()) return walk(full);
-    return /\.tsx?$/.test(full) ? [full] : [];
-  });
-}
-
 const isProduction = (f: string) =>
   !/\.test\.tsx?$/.test(f) && !f.includes(`src${sep}testing${sep}`);
 
-const files = walk("src").filter(isProduction);
+const files = globSync(["src/**/*.ts", "src/**/*.tsx"]).filter(isProduction);
 
 // "app", "features/spine", "components", "lib", "types", "schema", or "main"
 // for the src-root entry files (main.tsx, index.css side).

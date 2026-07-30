@@ -57,7 +57,6 @@ Next up: compiling the remaining guides through the pipeline, one
 | `COMPILER_PASS_CONTRACT.md` | Normative contract every compiler pass obeys |
 | `CLAUDE.md` | Ground rules for AI sessions working in this repo |
 | `docs/ideas/` | Refined-direction decision records |
-| `docs/archive/` | Completed plans, brainstorms, and the working PRD — history |
 
 ## Getting started
 

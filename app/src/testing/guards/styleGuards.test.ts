@@ -1,5 +1,4 @@
-import { readdirSync, readFileSync, statSync } from "node:fs";
-import { join } from "node:path";
+import { globSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 // V1 — the token contract, enforced. Feature components style only through the
@@ -14,21 +13,13 @@ import { describe, expect, it } from "vitest";
 const HEX = /#[0-9a-fA-F]{3,8}\b/;
 const DARK_VARIANT = /\bdark:[a-z[]/;
 
-function walk(dir: string, pred: (f: string) => boolean): string[] {
-  return readdirSync(dir).flatMap((name) => {
-    const full = join(dir, name);
-    if (statSync(full).isDirectory()) return walk(full, pred);
-    return /\.tsx$/.test(full) && pred(full) ? [full] : [];
-  });
-}
-
 const isUi = (f: string) => f.includes("/components/ui/");
 // Production source only — colocated tests and src/testing/ are exempt, as
 // they were before test colocation moved them inside src/.
 const isTest = (f: string) =>
   /\.test\.tsx?$/.test(f) || f.includes("src/testing/");
-const featureFiles = walk("src", (f) => !isUi(f) && !isTest(f));
-const allTsx = walk("src", (f) => !isTest(f));
+const allTsx = globSync("src/**/*.tsx").filter((f) => !isTest(f));
+const featureFiles = allTsx.filter((f) => !isUi(f));
 
 describe("style guards (V1)", () => {
   it("no feature component carries a `dark:` variant", () => {

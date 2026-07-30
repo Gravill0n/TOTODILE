@@ -1,5 +1,4 @@
-import { readdirSync, readFileSync, statSync } from "node:fs";
-import { join } from "node:path";
+import { globSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 // R8: no emoji affordances anywhere in the app source — every one is a lucide
@@ -11,18 +10,10 @@ import { describe, expect, it } from "vitest";
 const EMOJI =
   /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{2300}-\u{23FF}]/u;
 
-function walk(dir: string): string[] {
-  return readdirSync(dir).flatMap((name) => {
-    const full = join(dir, name);
-    if (statSync(full).isDirectory()) return walk(full);
-    return /\.tsx?$/.test(full) ? [full] : [];
-  });
-}
-
 describe("emoji sweep (R8)", () => {
   // Source only — guide content/data (guides/*, fixtures) is exempt (§0.2),
   // as are colocated tests and src/testing/ (production source only).
-  const files = walk("src").filter(
+  const files = globSync(["src/**/*.ts", "src/**/*.tsx"]).filter(
     (f) => !/\.test\.tsx?$/.test(f) && !f.includes("src/testing/"),
   );
 
