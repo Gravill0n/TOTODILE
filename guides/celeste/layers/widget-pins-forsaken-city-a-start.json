@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-forsaken-city-a-start",
+    "title": "Forsaken City A — Start — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:forsaken-city-a-start"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-forsaken-city-a-start.jpg",
+      "alt": "Room layout of Forsaken City A — Start",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-forsaken-city-a-start:pin-1a-2",
+        "label": "Forsaken City A - Room 2 Strawberry",
+        "x": 0.2019,
+        "y": 0.7285,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-start:pin-1a-3",
+        "label": "Forsaken City A - Room 3 Strawberry",
+        "x": 0.4712,
+        "y": 0.649,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-start:pin-1a-3b",
+        "label": "Forsaken City A - Room 3b Strawberry",
+        "x": 0.5962,
+        "y": 0.2914,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-start:pin-1a-5",
+        "label": "Forsaken City A - Room 5 Strawberry",
+        "x": 0.6346,
+        "y": 0.0265,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-start:pin-1a-5z",
+        "label": "Forsaken City A - Room 5z Strawberry",
+        "x": 0.5096,
+        "y": 0.2053,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-start:pin-1a-5a",
+        "label": "Forsaken City A - Room 5a Strawberry",
+        "x": 0.9519,
+        "y": 0.2053,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-celestial-resort-a-elevator-shaft",
+    "title": "Celestial Resort A — Elevator Shaft — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:celestial-resort-a-elevator-shaft"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-celestial-resort-a-elevator-shaft.jpg",
+      "alt": "Room layout of Celestial Resort A — Elevator Shaft",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-celestial-resort-a-elevator-shaft:pin-3a-06-d",
+        "label": "Celestial Resort A - Room 06-d Strawberry",
+        "x": 0.6583,
+        "y": 0.0735,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-elevator-shaft:pin-3a-04-c",
+        "label": "Celestial Resort A - Room 04-c Strawberry",
+        "x": 0.4333,
+        "y": 0.4706,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-elevator-shaft:pin-3a-03-b-1",
+        "label": "Celestial Resort A - Room 03-b Strawberry 1",
+        "x": 0.2417,
+        "y": 0.7353,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-elevator-shaft:pin-3a-03-b-2",
+        "label": "Celestial Resort A - Room 03-b Strawberry 2",
+        "x": 0.2889,
+        "y": 0.8382,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-elevator-shaft:col-3a-cassette",
+        "label": "Cassette",
+        "x": 0.008,
+        "y": 0.4816,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

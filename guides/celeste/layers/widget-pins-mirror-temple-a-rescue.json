@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-mirror-temple-a-rescue",
+    "title": "Mirror Temple A — Rescue — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:mirror-temple-a-rescue"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-mirror-temple-a-rescue.jpg",
+      "alt": "Room layout of Mirror Temple A — Rescue",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-mirror-temple-a-rescue:pin-5a-e-06",
+        "label": "Mirror Temple A - Room e-06 Strawberry",
+        "x": 0.3938,
+        "y": 0.5233,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-rescue:col-5a-level-clear",
+        "label": "Level Clear",
+        "x": 0.9834,
+        "y": 0.3663,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

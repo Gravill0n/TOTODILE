@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-mirror-temple-c",
+    "title": "Mirror Temple C-Side — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:mirror-temple-c"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-mirror-temple-c.jpg",
+      "alt": "Room layout of Mirror Temple C-Side",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-mirror-temple-c:col-5c-level-clear",
+        "label": "Level Clear",
+        "x": 0.9601,
+        "y": 0.25,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

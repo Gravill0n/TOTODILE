@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-the-summit-a-start",
+    "title": "The Summit A — Start — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:the-summit-a-start"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-the-summit-a-start.jpg",
+      "alt": "Room layout of The Summit A — Start",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-the-summit-a-start:pin-7a-a-02b",
+        "label": "The Summit A - Room a-02b Strawberry",
+        "x": 0.3072,
+        "y": 0.5859,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-start:pin-7a-a-04b-1",
+        "label": "The Summit A - Room a-04b Strawberry 1",
+        "x": 0.5807,
+        "y": 0.404,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-start:pin-7a-a-04b-2",
+        "label": "The Summit A - Room a-04b Strawberry 2",
+        "x": 0.6345,
+        "y": 0.4343,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-start:pin-7a-a-05",
+        "label": "The Summit A - Room a-05 Strawberry",
+        "x": 0.7668,
+        "y": 0.4293,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-the-summit-a-start:col-7a-gem-1",
+        "label": "Gem 1",
+        "x": 0.984,
+        "y": 0.197,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

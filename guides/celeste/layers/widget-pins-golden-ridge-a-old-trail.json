@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-golden-ridge-a-old-trail",
+    "title": "Golden Ridge A — Old Trail — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:golden-ridge-a-old-trail"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-golden-ridge-a-old-trail.jpg",
+      "alt": "Room layout of Golden Ridge A — Old Trail",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-golden-ridge-a-old-trail:pin-4a-c-00",
+        "label": "Golden Ridge A - Room c-00 Strawberry",
+        "x": 0.165,
+        "y": 0.9856,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-old-trail:pin-4a-c-01",
+        "label": "Golden Ridge A - Room c-01 Strawberry",
+        "x": 0.0461,
+        "y": 0.8665,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-old-trail:pin-4a-c-05",
+        "label": "Golden Ridge A - Room c-05 Strawberry",
+        "x": 0.5701,
+        "y": 0.7509,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-old-trail:pin-4a-c-06",
+        "label": "Golden Ridge A - Room c-06 Strawberry",
+        "x": 0.5859,
+        "y": 0.4978,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-old-trail:pin-4a-c-06b",
+        "label": "Golden Ridge A - Room c-06b Strawberry",
+        "x": 0.4705,
+        "y": 0.5524,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-old-trail:pin-4a-c-08",
+        "label": "Golden Ridge A - Room c-08 Strawberry",
+        "x": 0.8667,
+        "y": 0.1261,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-golden-ridge-a-old-trail:pin-4a-c-10",
+        "label": "Golden Ridge A - Room c-10 Strawberry",
+        "x": 0.9412,
+        "y": 0.0576,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-prologue",
+    "title": "Prologue — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:prologue"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-prologue.jpg",
+      "alt": "Stitched room-layout map of the Prologue, from the intro car across the collapsing bridge",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-prologue:col-0a-level-clear",
+        "label": "Level Clear",
+        "x": 0.9772,
+        "y": 0.5734,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

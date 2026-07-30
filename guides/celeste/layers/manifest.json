@@ -24,6 +24,771 @@
       }
     },
     {
+      "id": "widget-pins-celestial-resort-a-elevator-shaft",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-celestial-resort-a-elevator-shaft.json",
+      "report": "layers/widget-pins-celestial-resort-a-elevator-shaft.report.json",
+      "sha256": "c5044d8237cb2b9a376414c5c9452231cbd8be024de812b9f2aee7f21a23c25b",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:celestial-resort-a-elevator-shaft"
+        },
+        "title": "Celestial Resort A — Elevator Shaft — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-celestial-resort-a-huge-mess",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-celestial-resort-a-huge-mess.json",
+      "report": "layers/widget-pins-celestial-resort-a-huge-mess.report.json",
+      "sha256": "15e561c352edc77586f4b31773e6db1f9b8d3a1a27b047d54ee0e20abec6bfd7",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:celestial-resort-a-huge-mess"
+        },
+        "title": "Celestial Resort A — Huge Mess — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-celestial-resort-a-presidential-suite",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-celestial-resort-a-presidential-suite.json",
+      "report": "layers/widget-pins-celestial-resort-a-presidential-suite.report.json",
+      "sha256": "14092761260e86c663316588f5c6c58ffcc43933d8aa24096d05f15105b6b334",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:celestial-resort-a-presidential-suite"
+        },
+        "title": "Celestial Resort A — Presidential Suite — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-celestial-resort-a-start",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-celestial-resort-a-start.json",
+      "report": "layers/widget-pins-celestial-resort-a-start.report.json",
+      "sha256": "8073559155ccb6ec2dc652146c5bad35cf7eeaca72639e459c7a98250c2533c6",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:celestial-resort-a-start"
+        },
+        "title": "Celestial Resort A — Start — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-celestial-resort-b",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-celestial-resort-b.json",
+      "report": "layers/widget-pins-celestial-resort-b.report.json",
+      "sha256": "b03c22551bf9b066b61ce38b1f4d7eba3e946b5dc76cb2a7e3ab9bc2fc6aa717",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:celestial-resort-b"
+        },
+        "title": "Celestial Resort B-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-celestial-resort-c",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-celestial-resort-c.json",
+      "report": "layers/widget-pins-celestial-resort-c.report.json",
+      "sha256": "d7c7b31eb6028d8cbcad934ccfb1ad292f01ec143cce075802b716f222b8ae46",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:celestial-resort-c"
+        },
+        "title": "Celestial Resort C-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-core-a-heart-of-the-mountain-section-2",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-core-a-heart-of-the-mountain-section-2.json",
+      "report": "layers/widget-pins-core-a-heart-of-the-mountain-section-2.report.json",
+      "sha256": "7bca1d390627bd907eda2661814de37a88ea37d06e70d28134094ecb6ebd2fad",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:core-a-heart-of-the-mountain-section-2"
+        },
+        "title": "Core A — Heart of the Mountain (map section 2) — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-core-a-heart-of-the-mountain-section-3",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-core-a-heart-of-the-mountain-section-3.json",
+      "report": "layers/widget-pins-core-a-heart-of-the-mountain-section-3.report.json",
+      "sha256": "3602b548a19fdbfa05dbc59c8069d4366e134273a5455043140779d37168e8b1",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:core-a-heart-of-the-mountain-section-3"
+        },
+        "title": "Core A — Heart of the Mountain (map section 3) — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-core-a-hot-and-cold",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-core-a-hot-and-cold.json",
+      "report": "layers/widget-pins-core-a-hot-and-cold.report.json",
+      "sha256": "54b74e269c4f0ce719ea08df428aaa8ac81f488fd7d1cab7eaa800ae2f8efb40",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:core-a-hot-and-cold"
+        },
+        "title": "Core A — Hot and Cold — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-core-b",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-core-b.json",
+      "report": "layers/widget-pins-core-b.report.json",
+      "sha256": "6fa5f8082707653ab3ecd29b09d35b5ae4d541c1b90c81de7efe1411717916c6",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:core-b"
+        },
+        "title": "Core B-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-core-c",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-core-c.json",
+      "report": "layers/widget-pins-core-c.report.json",
+      "sha256": "8c9b5c5f9f9b945e0a5c1c3eb5f480955b2eb89b1b3796db9855368effe82882",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:core-c"
+        },
+        "title": "Core C-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-epilogue",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-epilogue.json",
+      "report": "layers/widget-pins-epilogue.report.json",
+      "sha256": "b3c09d012aeb0fa3a475cec4f37a4a260a7fb67bf7df35834eb7b5d0b751aa01",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:epilogue"
+        },
+        "title": "Epilogue — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-farewell-farewell",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-farewell-farewell.json",
+      "report": "layers/widget-pins-farewell-farewell.report.json",
+      "sha256": "a66cae3b88ab671c9c6137e706d6674d01b46b9b620f3971f251647e77714e27",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:farewell-farewell"
+        },
+        "title": "Farewell — Farewell — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-farewell-remembered",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-farewell-remembered.json",
+      "report": "layers/widget-pins-farewell-remembered.report.json",
+      "sha256": "29f61332fca71beac186b4d9cb66a36d532e532c40d81e0253a66d777adc1b75",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:farewell-remembered"
+        },
+        "title": "Farewell — Remembered — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-forsaken-city-a-chasm",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-forsaken-city-a-chasm.json",
+      "report": "layers/widget-pins-forsaken-city-a-chasm.report.json",
+      "sha256": "cc09cc4eb2cf4b1a38706f4d4d859452205382a37620e5f80da7ea0c545a3ba2",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:forsaken-city-a-chasm"
+        },
+        "title": "Forsaken City A — Chasm — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-forsaken-city-a-crossing",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-forsaken-city-a-crossing.json",
+      "report": "layers/widget-pins-forsaken-city-a-crossing.report.json",
+      "sha256": "b02924334273594a2c44b7ed1b25c4022d3458a0a4bcfddd4556d051e199e4a5",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:forsaken-city-a-crossing"
+        },
+        "title": "Forsaken City A — Crossing — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-forsaken-city-a-start",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-forsaken-city-a-start.json",
+      "report": "layers/widget-pins-forsaken-city-a-start.report.json",
+      "sha256": "76b5da057449e9d9f3cd41cf69c4cbcbae82ac0d597733c01d89e04cdd175b38",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:forsaken-city-a-start"
+        },
+        "title": "Forsaken City A — Start — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-forsaken-city-b",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-forsaken-city-b.json",
+      "report": "layers/widget-pins-forsaken-city-b.report.json",
+      "sha256": "96fe6d9f5bf2dfbaf4a0cfb4264c37ce0af0aabeac53235e186f9ff53b7f0c16",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:forsaken-city-b"
+        },
+        "title": "Forsaken City B-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-forsaken-city-c",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-forsaken-city-c.json",
+      "report": "layers/widget-pins-forsaken-city-c.report.json",
+      "sha256": "467036e32014f2b439cf9317d5f85ce73915fb94c34a60f3aa3bc0368c4736c6",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:forsaken-city-c"
+        },
+        "title": "Forsaken City C-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-golden-ridge-a-cliff-face",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-golden-ridge-a-cliff-face.json",
+      "report": "layers/widget-pins-golden-ridge-a-cliff-face.report.json",
+      "sha256": "bcbee93611af88d46eac87b19263df520cdefdb070a7114a71d56d581b0995b8",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:golden-ridge-a-cliff-face"
+        },
+        "title": "Golden Ridge A — Cliff Face — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-golden-ridge-a-old-trail",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-golden-ridge-a-old-trail.json",
+      "report": "layers/widget-pins-golden-ridge-a-old-trail.report.json",
+      "sha256": "ca60dcf00c730f67fee1833f7c670b385560b1bc312755fcf17afc2c6393a39a",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:golden-ridge-a-old-trail"
+        },
+        "title": "Golden Ridge A — Old Trail — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-golden-ridge-a-shrine",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-golden-ridge-a-shrine.json",
+      "report": "layers/widget-pins-golden-ridge-a-shrine.report.json",
+      "sha256": "589d33cc7a92f8fe389d1502dba8657ecaad28177f8acccfcd4404d7c5ceddcd",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:golden-ridge-a-shrine"
+        },
+        "title": "Golden Ridge A — Shrine — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-golden-ridge-a-start",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-golden-ridge-a-start.json",
+      "report": "layers/widget-pins-golden-ridge-a-start.report.json",
+      "sha256": "8e06d8df88d0175f0daa2e86ed77aa5ad44d61c83d5844b4c200abaa80dacc49",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:golden-ridge-a-start"
+        },
+        "title": "Golden Ridge A — Start — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-golden-ridge-b",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-golden-ridge-b.json",
+      "report": "layers/widget-pins-golden-ridge-b.report.json",
+      "sha256": "381c12347e92249982dc87ab9f551ef141881cc40fb2db7137a54d90225711c3",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:golden-ridge-b"
+        },
+        "title": "Golden Ridge B-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-golden-ridge-c",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-golden-ridge-c.json",
+      "report": "layers/widget-pins-golden-ridge-c.report.json",
+      "sha256": "1caa9048d1d8cbbff0f2a379ee0a2c7e8112373ef46ab168eaebe7eee7451c09",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:golden-ridge-c"
+        },
+        "title": "Golden Ridge C-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-mirror-temple-a-depths",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-mirror-temple-a-depths.json",
+      "report": "layers/widget-pins-mirror-temple-a-depths.report.json",
+      "sha256": "50a0d9bfb3c0c69b4008698f2da5dbb0c26b691edc9f5cb20903d1088da00cdc",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:mirror-temple-a-depths"
+        },
+        "title": "Mirror Temple A — Depths — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-mirror-temple-a-rescue",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-mirror-temple-a-rescue.json",
+      "report": "layers/widget-pins-mirror-temple-a-rescue.report.json",
+      "sha256": "033e92fb23a35b6c264c2e8cb8947d8ff276d32aa359145b8643394e50983543",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:mirror-temple-a-rescue"
+        },
+        "title": "Mirror Temple A — Rescue — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-mirror-temple-a-search",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-mirror-temple-a-search.json",
+      "report": "layers/widget-pins-mirror-temple-a-search.report.json",
+      "sha256": "4873e3bdb011c86acd19ef0ff1ed810a7cc2cb7152ec22568b3ce23ffff44d0f",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:mirror-temple-a-search"
+        },
+        "title": "Mirror Temple A — Search — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-mirror-temple-a-start",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-mirror-temple-a-start.json",
+      "report": "layers/widget-pins-mirror-temple-a-start.report.json",
+      "sha256": "86dec6275c8e90f00f63456062563fb88b528b4855ffda8c427618c986238d71",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:mirror-temple-a-start"
+        },
+        "title": "Mirror Temple A — Start — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-mirror-temple-a-unravelling",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-mirror-temple-a-unravelling.json",
+      "report": "layers/widget-pins-mirror-temple-a-unravelling.report.json",
+      "sha256": "274e6e2ce5b7d77a9c072e8494b1eb5c1ba2614779f9ab3360dae5aad2076aa2",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:mirror-temple-a-unravelling"
+        },
+        "title": "Mirror Temple A — Unravelling — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-mirror-temple-b",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-mirror-temple-b.json",
+      "report": "layers/widget-pins-mirror-temple-b.report.json",
+      "sha256": "c673836ffed9427196c12ff6cfe767f931e1c48553c536b9f392023fad11bf46",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:mirror-temple-b"
+        },
+        "title": "Mirror Temple B-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-mirror-temple-c",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-mirror-temple-c.json",
+      "report": "layers/widget-pins-mirror-temple-c.report.json",
+      "sha256": "6d4170bec63f5784d3f6b01ae5d6a459c60c2e71516f94d4397fe43d42f287e2",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:mirror-temple-c"
+        },
+        "title": "Mirror Temple C-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-old-site-a-awake",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-old-site-a-awake.json",
+      "report": "layers/widget-pins-old-site-a-awake.report.json",
+      "sha256": "343946a7e942162d8536acd3f596d26c737f71f692ba2ea28ae03559c6717cd0",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:old-site-a-awake"
+        },
+        "title": "Old Site A — Awake — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-old-site-a-intervention",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-old-site-a-intervention.json",
+      "report": "layers/widget-pins-old-site-a-intervention.report.json",
+      "sha256": "820593bb6d6cf8219f3f70af6d8a76d943bf132c0a68b21b058e1ad52fb1c594",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:old-site-a-intervention"
+        },
+        "title": "Old Site A — Intervention — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-old-site-a-start",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-old-site-a-start.json",
+      "report": "layers/widget-pins-old-site-a-start.report.json",
+      "sha256": "c3b267a77034eedaf35497a38c49cf1cf4244264e9fce1cf42b3f8187bda490f",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:old-site-a-start"
+        },
+        "title": "Old Site A — Start — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-old-site-b",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-old-site-b.json",
+      "report": "layers/widget-pins-old-site-b.report.json",
+      "sha256": "6ccad912bbda0222fc1afda35ec5b9ffa64e59fd477369b9747cd3526744193a",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:old-site-b"
+        },
+        "title": "Old Site B-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-old-site-c",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-old-site-c.json",
+      "report": "layers/widget-pins-old-site-c.report.json",
+      "sha256": "5e34f2aa942db69e1c9f648dcebbc8942b9f2416c7430cffdcbf652d3578456e",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:old-site-c"
+        },
+        "title": "Old Site C-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-prologue",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-prologue.json",
+      "report": "layers/widget-pins-prologue.report.json",
+      "sha256": "934a37d53166e2ec51a2eb183e8d10f0dda20b05494a599274c26371e4a949da",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:prologue"
+        },
+        "title": "Prologue — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-reflection-a-hollows",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-reflection-a-hollows.json",
+      "report": "layers/widget-pins-reflection-a-hollows.report.json",
+      "sha256": "e3bd68448d40653b4a24ac7a9c6a5a93bd57de660942c478bffd87b8f7564152",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:reflection-a-hollows"
+        },
+        "title": "Reflection A — Hollows — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-reflection-a-resolution",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-reflection-a-resolution.json",
+      "report": "layers/widget-pins-reflection-a-resolution.report.json",
+      "sha256": "32c153b02cd4f4bb06ae74e4f9dac6aae5317fe72bf191d1a90b8abd6235d063",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:reflection-a-resolution"
+        },
+        "title": "Reflection A — Resolution — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-reflection-b",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-reflection-b.json",
+      "report": "layers/widget-pins-reflection-b.report.json",
+      "sha256": "9022e26db3a6815eaa6dba1f0ef508f5048336f55cedfc053ad48d591a2e9025",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:reflection-b"
+        },
+        "title": "Reflection B-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-reflection-c",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-reflection-c.json",
+      "report": "layers/widget-pins-reflection-c.report.json",
+      "sha256": "3c37560be91bcb9c8a8b27cad79ed146f69da5b7c711aeeac64e178d75657992",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:reflection-c"
+        },
+        "title": "Reflection C-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-the-summit-a-1000-m",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-the-summit-a-1000-m.json",
+      "report": "layers/widget-pins-the-summit-a-1000-m.report.json",
+      "sha256": "b511925f4213fa1bf66484e1c5b17cbb93296904d8b6749f834f1373d603c35c",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:the-summit-a-1000-m"
+        },
+        "title": "The Summit A — 1000 M — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-the-summit-a-1500-m",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-the-summit-a-1500-m.json",
+      "report": "layers/widget-pins-the-summit-a-1500-m.report.json",
+      "sha256": "0286317d4ccb682e440caa1ac8ab25b20bfabef5010f31ba9ea0fc4167bd4269",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:the-summit-a-1500-m"
+        },
+        "title": "The Summit A — 1500 M — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-the-summit-a-2000-m",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-the-summit-a-2000-m.json",
+      "report": "layers/widget-pins-the-summit-a-2000-m.report.json",
+      "sha256": "8f90bd63590cb2a6352d50ba1016a19a66e0ca981b055173cd2d2096275ea572",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:the-summit-a-2000-m"
+        },
+        "title": "The Summit A — 2000 M — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-the-summit-a-2500-m",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-the-summit-a-2500-m.json",
+      "report": "layers/widget-pins-the-summit-a-2500-m.report.json",
+      "sha256": "552c717685f30233f9c9f70492ad929c8d512991d9f6e899a525716327fcd6e0",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:the-summit-a-2500-m"
+        },
+        "title": "The Summit A — 2500 M — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-the-summit-a-3000-m",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-the-summit-a-3000-m.json",
+      "report": "layers/widget-pins-the-summit-a-3000-m.report.json",
+      "sha256": "28162c27e3e09bf6c19c6f4c4983f99d4b6da000ec4bc1eaee2f5564625860ef",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:the-summit-a-3000-m"
+        },
+        "title": "The Summit A — 3000 M — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-the-summit-a-500-m",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-the-summit-a-500-m.json",
+      "report": "layers/widget-pins-the-summit-a-500-m.report.json",
+      "sha256": "25c6888f87001b25d0da0c74ff98c35a92c540b1e6b7107e9e51c88041db42cd",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:the-summit-a-500-m"
+        },
+        "title": "The Summit A — 500 M — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-the-summit-a-start",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-the-summit-a-start.json",
+      "report": "layers/widget-pins-the-summit-a-start.report.json",
+      "sha256": "c092c989caf9b316a23dbaa936ba3ee1653dadb1366a3354485915056d476823",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:the-summit-a-start"
+        },
+        "title": "The Summit A — Start — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-the-summit-b",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-the-summit-b.json",
+      "report": "layers/widget-pins-the-summit-b.report.json",
+      "sha256": "9bc52f5b929340d6c2218b23dcdd0cf8bd07fb2d3323b91866a6a51525847773",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:the-summit-b"
+        },
+        "title": "The Summit B-Side — Checkpoint Map"
+      }
+    },
+    {
+      "id": "widget-pins-the-summit-c",
+      "kind": "widget",
+      "artifact": "layers/widget-pins-the-summit-c.json",
+      "report": "layers/widget-pins-the-summit-c.report.json",
+      "sha256": "03c97c70503f88db404d681975553bf8b25df3491cd55c2c051228b4c552e718",
+      "widget": {
+        "deckPosition": 4,
+        "scope": {
+          "kind": "location",
+          "locationId": "celeste:the-summit-c"
+        },
+        "title": "The Summit C-Side — Checkpoint Map"
+      }
+    },
+    {
       "id": "widget-sides-hearts",
       "kind": "widget",
       "artifact": "layers/widget-sides-hearts.json",

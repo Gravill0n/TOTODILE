@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-mirror-temple-a-unravelling",
+    "title": "Mirror Temple A — Unravelling — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:mirror-temple-a-unravelling"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-mirror-temple-a-unravelling.jpg",
+      "alt": "Room layout of Mirror Temple A — Unravelling",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-mirror-temple-a-unravelling:pin-5a-c-08",
+        "label": "Mirror Temple A - Room c-08 Strawberry",
+        "x": 0.4846,
+        "y": 0.9507,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

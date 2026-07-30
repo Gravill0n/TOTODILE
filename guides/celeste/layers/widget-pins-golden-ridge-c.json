@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-golden-ridge-c",
+    "title": "Golden Ridge C-Side — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:golden-ridge-c"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-golden-ridge-c.jpg",
+      "alt": "Room layout of Golden Ridge C-Side",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-golden-ridge-c:col-4c-level-clear",
+        "label": "Level Clear",
+        "x": 0.9618,
+        "y": 0.1711,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

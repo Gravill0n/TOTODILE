@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-core-a-heart-of-the-mountain-section-2",
+    "title": "Core A — Heart of the Mountain (map section 2) — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:core-a-heart-of-the-mountain-section-2"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-core-a-heart-of-the-mountain-section-2.jpg",
+      "alt": "Room layout of Core A — Heart of the Mountain (map section 2)",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-core-a-heart-of-the-mountain-section-2:pin-9a-c-00b",
+        "label": "Core A - Room c-00b Strawberry",
+        "x": 0.2852,
+        "y": 0.1304,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-core-a-heart-of-the-mountain-section-2:pin-9a-c-02",
+        "label": "Core A - Room c-02 Strawberry",
+        "x": 0.5781,
+        "y": 0.5652,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-core-a-heart-of-the-mountain-section-2:pin-9a-c-03b",
+        "label": "Core A - Room c-03b Strawberry",
+        "x": 0.7988,
+        "y": 0.2826,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

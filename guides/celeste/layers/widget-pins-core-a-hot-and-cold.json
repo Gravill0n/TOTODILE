@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-core-a-hot-and-cold",
+    "title": "Core A — Hot and Cold — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:core-a-hot-and-cold"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-core-a-hot-and-cold.jpg",
+      "alt": "Room layout of Core A — Hot and Cold",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-core-a-hot-and-cold:pin-9a-b-06",
+        "label": "Core A - Room b-06 Strawberry",
+        "x": 0.2588,
+        "y": 0.5593,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

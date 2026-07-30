@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-old-site-a-start",
+    "title": "Old Site A — Start — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:old-site-a-start"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-old-site-a-start.jpg",
+      "alt": "Stitched room-layout map of Old Site A — Start, including the tower above the campfire room",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-old-site-a-start:pin-2a-1",
+        "label": "Old Site A - Room 1 Strawberry",
+        "x": 0.498,
+        "y": 0.3432,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-start:pin-2a-d0",
+        "label": "Old Site A - Room d0 Strawberry",
+        "x": 0.4245,
+        "y": 0.5752,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-start:pin-2a-d3",
+        "label": "Old Site A - Room d3 Strawberry",
+        "x": 0.8694,
+        "y": 0.8459,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-start:pin-2a-d2-1",
+        "label": "Old Site A - Room d2 Strawberry 1",
+        "x": 0.5857,
+        "y": 0.6066,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-start:pin-2a-d2-2",
+        "label": "Old Site A - Room d2 Strawberry 2",
+        "x": 0.6939,
+        "y": 0.6115,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-start:pin-2a-d1",
+        "label": "Old Site A - Room d1 Strawberry",
+        "x": 0.2449,
+        "y": 0.6767,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-start:pin-2a-d6",
+        "label": "Old Site A - Room d6 Strawberry",
+        "x": 0.2408,
+        "y": 0.7396,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-start:pin-2a-d4",
+        "label": "Old Site A - Room d4 Strawberry",
+        "x": 0.6449,
+        "y": 0.5317,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-start:pin-2a-d5",
+        "label": "Old Site A - Room d5 Strawberry",
+        "x": 0.8245,
+        "y": 0.5366,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-start:col-2a-cassette",
+        "label": "Cassette",
+        "x": 0.4403,
+        "y": 0.9511,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-start:col-2a-crystal-heart",
+        "label": "Crystal Heart",
+        "x": 0.1138,
+        "y": 0.0671,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

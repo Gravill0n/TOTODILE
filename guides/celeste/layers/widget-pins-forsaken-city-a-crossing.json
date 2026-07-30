@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-forsaken-city-a-crossing",
+    "title": "Forsaken City A — Crossing — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:forsaken-city-a-crossing"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-forsaken-city-a-crossing.jpg",
+      "alt": "Stitched room-layout map of Forsaken City A — Crossing, including the satellite area west of the city",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-forsaken-city-a-crossing:pin-1a-6",
+        "label": "Forsaken City A - Room 6 Strawberry",
+        "x": 0.3168,
+        "y": 0.9248,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-crossing:pin-1a-7zb",
+        "label": "Forsaken City A - Room 7zb Strawberry",
+        "x": 0.0138,
+        "y": 0.6917,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-crossing:pin-1a-s1",
+        "label": "Forsaken City A - Room s1 Strawberry",
+        "x": 0.1846,
+        "y": 0.4887,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-crossing:pin-1a-7z",
+        "label": "Forsaken City A - Room 7z Strawberry",
+        "x": 0.4876,
+        "y": 0.5639,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-crossing:pin-1a-8zb",
+        "label": "Forsaken City A - Room 8zb Strawberry",
+        "x": 0.6529,
+        "y": 0.2556,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-crossing:pin-1a-7a",
+        "label": "Forsaken City A - Room 7a Strawberry",
+        "x": 0.8733,
+        "y": 0.4812,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-crossing:pin-1a-9z",
+        "label": "Forsaken City A - Room 9z Strawberry",
+        "x": 0.7383,
+        "y": 0.1805,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-crossing:pin-1a-8b",
+        "label": "Forsaken City A - Room 8b Strawberry",
+        "x": 0.8788,
+        "y": 0.1955,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-crossing:pin-1a-9",
+        "label": "Forsaken City A - Room 9 Strawberry",
+        "x": 0.9752,
+        "y": 0.0977,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-forsaken-city-a-crossing:col-1a-crystal-heart",
+        "label": "Crystal Heart",
+        "x": 0.1763,
+        "y": 0.5357,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

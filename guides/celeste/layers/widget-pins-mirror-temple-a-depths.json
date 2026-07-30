@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-mirror-temple-a-depths",
+    "title": "Mirror Temple A — Depths — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:mirror-temple-a-depths"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-mirror-temple-a-depths.jpg",
+      "alt": "Stitched room-layout map of Mirror Temple A — Depths, including the crystal heart and cassette rooms",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-18",
+        "label": "Mirror Temple A - Room b-18 Strawberry",
+        "x": 0.0474,
+        "y": 0.6738,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-01c",
+        "label": "Mirror Temple A - Room b-01c Strawberry",
+        "x": 0.1785,
+        "y": 0.8758,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-20-1",
+        "label": "Mirror Temple A - Room b-20 Strawberry 1",
+        "x": 0.1365,
+        "y": 0.5778,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-20-2",
+        "label": "Mirror Temple A - Room b-20 Strawberry 2",
+        "x": 0.1812,
+        "y": 0.5778,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-21",
+        "label": "Mirror Temple A - Room b-21 Strawberry",
+        "x": 0.0566,
+        "y": 0.5273,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-03",
+        "label": "Mirror Temple A - Room b-03 Strawberry",
+        "x": 0.2341,
+        "y": 0.4495,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-05",
+        "label": "Mirror Temple A - Room b-05 Strawberry",
+        "x": 0.3706,
+        "y": 0.495,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-10",
+        "label": "Mirror Temple A - Room b-10 Strawberry",
+        "x": 0.2407,
+        "y": 0.9404,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-12",
+        "label": "Mirror Temple A - Room b-12 Strawberry",
+        "x": 0.3491,
+        "y": 0.9636,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-17-2",
+        "label": "Mirror Temple A - Room b-17 Strawberry 2",
+        "x": 0.4763,
+        "y": 0.8758,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:pin-5a-b-17-1",
+        "label": "Mirror Temple A - Room b-17 Strawberry 1",
+        "x": 0.4561,
+        "y": 0.7748,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:col-5a-cassette",
+        "label": "Cassette",
+        "x": 0.5273,
+        "y": 0.8253,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-depths:col-5a-crystal-heart",
+        "label": "Crystal Heart",
+        "x": 0.9211,
+        "y": 0.6565,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

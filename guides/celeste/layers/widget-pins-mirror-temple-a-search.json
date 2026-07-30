@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-mirror-temple-a-search",
+    "title": "Mirror Temple A — Search — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:mirror-temple-a-search"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-mirror-temple-a-search.jpg",
+      "alt": "Room layout of Mirror Temple A — Search",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-mirror-temple-a-search:pin-5a-d-04-2",
+        "label": "Mirror Temple A - Room d-04 Strawberry 2",
+        "x": 0.3101,
+        "y": 0.465,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-search:pin-5a-d-04-1",
+        "label": "Mirror Temple A - Room d-04 Strawberry 1",
+        "x": 0.2997,
+        "y": 0.3185,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-search:pin-5a-d-15-2",
+        "label": "Mirror Temple A - Room d-15 Strawberry 2",
+        "x": 0.878,
+        "y": 0.4076,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-search:pin-5a-d-15-1",
+        "label": "Mirror Temple A - Room d-15 Strawberry 1",
+        "x": 0.7282,
+        "y": 0.4268,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-search:pin-5a-d-13",
+        "label": "Mirror Temple A - Room d-13 Strawberry",
+        "x": 0.8746,
+        "y": 0.6815,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-mirror-temple-a-search:pin-5a-d-19",
+        "label": "Mirror Temple A - Room d-19 Strawberry",
+        "x": 0.0801,
+        "y": 0.4968,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

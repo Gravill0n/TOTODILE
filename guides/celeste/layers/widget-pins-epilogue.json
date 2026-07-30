@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-epilogue",
+    "title": "Epilogue — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:epilogue"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-epilogue.jpg",
+      "alt": "Stitched room-layout map of the Epilogue, including the rebuilt bridge and the secret bird's-nest room",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-epilogue:col-8a-level-clear",
+        "label": "Level Clear",
+        "x": 0.361,
+        "y": 0.6949,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

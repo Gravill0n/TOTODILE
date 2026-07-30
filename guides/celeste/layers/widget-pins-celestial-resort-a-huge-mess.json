@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-celestial-resort-a-huge-mess",
+    "title": "Celestial Resort A — Huge Mess — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:celestial-resort-a-huge-mess"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-celestial-resort-a-huge-mess.jpg",
+      "alt": "Stitched room-layout map of Celestial Resort A — Huge Mess, showing the green, purple and brown clutter paths",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-celestial-resort-a-huge-mess:pin-3a-12-y",
+        "label": "Celestial Resort A - Room 12-y Strawberry",
+        "x": 0.8083,
+        "y": 0.7453,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-huge-mess:pin-3a-10-y",
+        "label": "Celestial Resort A - Room 10-y Strawberry",
+        "x": 0.3917,
+        "y": 0.7516,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-huge-mess:pin-3a-12-c",
+        "label": "Celestial Resort A - Room 12-c Strawberry",
+        "x": 0.75,
+        "y": 0.2609,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-huge-mess:pin-3a-11-d",
+        "label": "Celestial Resort A - Room 11-d Strawberry",
+        "x": 0.65,
+        "y": 0.0932,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-huge-mess:pin-3a-13-b",
+        "label": "Celestial Resort A - Room 13-b Strawberry",
+        "x": 0.9875,
+        "y": 0.3944,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-huge-mess:pin-3a-13-x",
+        "label": "Celestial Resort A - Room 13-x Strawberry",
+        "x": 0.9042,
+        "y": 0.677,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-huge-mess:pin-3a-08-x",
+        "label": "Celestial Resort A - Room 08-x Strawberry",
+        "x": 0.0833,
+        "y": 0.6522,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-celestial-resort-a-huge-mess:col-3a-crystal-heart",
+        "label": "Crystal Heart",
+        "x": 0.5828,
+        "y": 0.2484,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

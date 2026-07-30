@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:pins-old-site-a-awake",
+    "title": "Old Site A — Awake — Checkpoint Map",
+    "type": "mapPins",
+    "scope": {
+      "kind": "location",
+      "locationId": "celeste:old-site-a-awake"
+    },
+    "deckPosition": 4,
+    "image": {
+      "src": "images/map-old-site-a-awake.jpg",
+      "alt": "Room layout of Old Site A — Awake",
+      "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+    },
+    "pins": [
+      {
+        "itemId": "celeste:pins-old-site-a-awake:pin-2a-end-3c",
+        "label": "Old Site A - Room end_3c Strawberry",
+        "x": 0.6692,
+        "y": 0.4054,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:pins-old-site-a-awake:col-2a-level-clear",
+        "label": "Level Clear",
+        "x": 0.964,
+        "y": 0.9403,
+        "sourceRefs": [
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
