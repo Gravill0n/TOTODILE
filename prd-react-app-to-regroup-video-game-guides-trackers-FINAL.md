@@ -589,6 +589,7 @@ Structural theme: every mitigation is "the system stays useful even if this part
 | Walkthrough/wiki sources (GameFAQs, fan wikis, etc.) | Compiler input; every retrieval recorded in the source manifest with URL + date (§6.6) |
 | RA achievement lists per game | RA mapping pass input |
 | Claude Code + the reworked skill suite | The compiler *is* skills; guides cannot be produced without it — but already-shipped guides never depend on it at runtime |
+| **Git LFS** (amended 2026-07-30) | Storing `guides/*/images/**`. Required to *clone or compile*, never to *serve*: the built artifact holds plain image bytes, so a deployed guide has no LFS dependency (§17 #11). Failure stance: without it a clone holds pointer text where the maps should be — `yarn validate-guides` names the file and says `git lfs pull`, and the CI gate refuses to publish it |
 
 ### 16.3 Internal (build-order dependencies)
 The P0→P5 chain: **schema v0** unblocks everything → **app renderers** need the schema → **compiler** needs the schema → **review lens** needs the app + compiler output → **sync** needs the app + RA mappings. The schema is the single upstream dependency of every workstream.
@@ -621,6 +622,7 @@ Hard constraints consolidated in one place for any implementing AI:
 **Production**
 9. The compiler runs as Claude Code skills against the repo — production tooling never becomes a runtime dependency of shipped guides (§16.2).
 10. Print lens output is a **single self-contained HTML file** per guide (§14.1).
+11. **Git LFS is a repo-side concern only** (amended 2026-07-30). `guides/*/images/**` is LFS-tracked, so working with the repo needs git-lfs — but constraint #1 ("static files only… any dumb file server") is untouched: pointers exist solely inside git, and the deploy resolves them before assembling the artifact, which carries ordinary image bytes. Constraint #6 also holds — the repo is still the only content store; LFS changes how git stores a blob, not where content lives. A self-hoster (§18.1 "a friend clones the repo") needs git-lfs installed; a *visitor* needs nothing.
 
 **Framework**: at constraint level the requirement is "a static-buildable SPA framework"; the React commitment and specifics are pinned in §19 Tech Stack.
 
@@ -775,6 +777,11 @@ All commands run from `app/`. The script names below are the contract; implement
 
 ### 21.1 Development
 ```bash
+# One-time, from the repo root: guide images are Git LFS-tracked (§16.2), so a
+# clone without this holds pointer text instead of maps
+git lfs install
+git lfs pull        # only needed if the clone predates git-lfs being installed
+
 # Install dependencies (Yarn 4)
 yarn install
 

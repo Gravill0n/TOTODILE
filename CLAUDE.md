@@ -74,6 +74,10 @@ remaining `library.json` guides through the pass pipeline.
   colocated in `src/`); schemas in `app/src/schema/` are the single source of truth.
 - `guides/<slug>/` — compiled guide data (content truth); `library.json` — the
   manifest (`pokemon-crystal` playable; the rest `planned`).
+- `guides/*/images/**` is **Git LFS-tracked** (`.gitattributes`). Never commit an
+  image without git-lfs configured, and never assume a path holds real bytes:
+  `yarn validate-guides` fails on an unsmudged pointer and tells you to run
+  `git lfs pull`. The sibling `guides/*/sources/` is gitignored and is *not* LFS.
 - `.claude/skills/guide-pass-*/` — the six-pass compiler suite (sources,
   extract-data, spine, widgets, ra-mapping, qa), bound by
   `COMPILER_PASS_CONTRACT.md`.

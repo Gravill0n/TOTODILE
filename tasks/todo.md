@@ -85,24 +85,28 @@ make a broken LFS state loud.
 ### ☑ Checkpoint B — guards
 - [x] `yarn check` green from `app/` — 104 test files, **692 tests** (was 682), 3 guides green
 - [x] Pointer files **and** missing images both fail the gate (negative proof above)
-- [ ] **Pierre**: review before CI is touched
+- [x] **Pierre**: reviewed and approved 2026-07-30 — cleared to touch CI
 
 ## Phase 3 — CI deploy
 
-- [ ] **3.1** LFS cache + pull in `.github/workflows/deploy-pages.yml`, inserted after
-      `actions/checkout` and **before** `corepack enable` — both `yarn check` (guard 2.1)
-      and `yarn build` (precache md5) need real bytes. `git lfs ls-files --long` → cache key
-      → `actions/cache@v4` on `.git/lfs` with `restore-keys: lfs-` → `git lfs pull`. The job
-      defaults to `working-directory: app`, so these steps need
-      `working-directory: ${{ github.workspace }}`. Also `.lfs-assets-id` → `.gitignore` (S)
-  - [ ] ⚠️ **Likely to bite:** checkout sets `persist-credentials: false`, stripping the
-        auth header `git lfs pull` uses. The repo is public so anonymous LFS reads should
-        work — **if it 401s, set `persist-credentials: true`** rather than redesigning
-        the caching
-  - [ ] LFS steps precede the gate and the build
-  - [ ] `.lfs-assets-id` gitignored and absent from the artifact (the assemble step copies
-        only `app/dist/.`, `guides`, `library.json`)
-  - [ ] A second consecutive run reports a cache hit and downloads ~nothing
+- [x] **3.1** LFS cache + pull in `.github/workflows/deploy-pages.yml` (commit `4b0506b`),
+      inserted after `actions/checkout` and before `corepack enable`. `git lfs ls-files
+      --long | cut -d' ' -f1 | sort` → `.lfs-assets-id` → `actions/cache@v4` on `.git/lfs`
+      keyed on `hashFiles`, `restore-keys: lfs-` → `git lfs pull`. Steps carry
+      `working-directory: ${{ github.workspace }}` (the job defaults to `app`).
+      `.lfs-assets-id` added to `.gitignore` (S)
+  - [x] ⚠️ **The auth risk was designed out, not gambled on.** Rather than hope anonymous
+        LFS reads work on a public repo, the pull step supplies `secrets.GITHUB_TOKEN` as
+        an `extraheader` for that single step and removes it via a `trap ... EXIT`.
+        `persist-credentials: false` is preserved. Verified locally on both paths: the
+        header is set, decodes to `x-access-token:<token>`, and is gone afterwards whether
+        the command succeeded or failed — with a failure still propagating a non-zero exit
+  - [x] LFS steps precede the gate, the build **and** the assemble step — verified by
+        parsing the workflow YAML (key list → cache → pull → gate/build/assemble)
+  - [x] `.lfs-assets-id` gitignored and outside the artifact (assemble copies only
+        `app/dist/.`, `guides`, `library.json`)
+  - [ ] A second consecutive run reports a cache hit and downloads ~nothing — **only
+        observable post-merge** (Checkpoint C)
 
 ### ☐ Checkpoint C — deploy (post-merge; the workflow triggers on push to `main`)
 - [ ] The run's LFS step logs objects fetched; `yarn check` passes in CI
@@ -117,21 +121,25 @@ make a broken LFS state loud.
 
 ## Phase 4 — Document the new clone requirement
 
-- [ ] **4.1** git-lfs is now a **hard prerequisite for a working clone** — without it every
-      map smudges to pointer text. PRD §18.1 contemplates "a friend clones the repo and
-      self-hosts", and the PRD says nothing about LFS today (S)
-  - [ ] `README.md` — prerequisites gain `git-lfs`; a "maps broken after cloning?
-        `git lfs pull`" line
-  - [ ] PRD **§16.2** (compile-time dependencies) — Git LFS + its failure stance
-  - [ ] PRD **§17** — LFS does not breach "static files only / any dumb file server":
-        pointers exist only in git, the built artifact is plain bytes
-  - [ ] PRD **§21.1** — `git lfs install` in the setup commands
-  - [ ] `CLAUDE.md` — one line under repo layout: guide images are LFS-tracked
+- [x] **4.1** Documented the new clone requirement (S)
+  - [x] `README.md` — new **Getting started** section (the README had no setup
+        instructions at all): install git-lfs *before* cloning, `git lfs pull` to repair an
+        existing clone, `yarn validate-guides` to diagnose, and the note that a *visitor*
+        needs nothing
+  - [x] PRD **§16.2** — Git LFS row: required to clone or compile, never to serve; failure
+        stance points at `git lfs pull` and the CI gate
+  - [x] PRD **§17** — new constraint **#11**, arguing explicitly that #1 ("static files
+        only… any dumb file server") and #6 ("the repo is the only content store") both
+        still hold: pointers live only inside git, the artifact carries plain bytes
+  - [x] PRD **§21.1** — `git lfs install` / `git lfs pull` in the setup commands
+  - [x] `CLAUDE.md` — repo-layout bullet: images are LFS-tracked, `sources/` is not
 
 ### ☐ Checkpoint D — complete
-- [ ] `yarn check` green from `app/`
-- [ ] One PR `feat/add-git-lfs` → `main` (never a direct commit, PRD §23)
+- [x] `yarn check` green from `app/` — 104 test files, 692 tests, 3 guides green
+- [ ] One PR `feat/add-git-lfs` → `main` (never a direct commit, PRD §23) — 8 commits
+      ready, **nothing pushed yet**
 - [ ] Post-merge deploy green and the deployed map URL serves real PNG bytes
+      (= Checkpoint C, Pierre's to verify)
 
 ## Not in this branch
 
