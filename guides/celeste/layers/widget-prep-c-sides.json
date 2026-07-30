@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c-sides",
+    "title": "C-Sides — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c-sides"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c-sides:unlock",
+        "label": "Finish every B-Side first",
+        "note": "C-Sides unlock after 8B, which itself requires completing all the other B-Sides.",
+        "sourceRefs": [
+          "src-ink-chapters"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c-sides:clears",
+        "label": "Clear all eight C-Sides",
+        "quantity": 8,
+        "note": "Three to four rooms each, no checkpoints, ending in a Yellow Crystal Heart. Earns Thanks For Playing.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c-sides:heart-door",
+        "label": "Open Core C-Side's 23-heart door",
+        "note": "Core's C-Side sits behind a Heart Door needing 23 crystal hearts, and the other seven C-Sides open the Crystal Heart Gate inside it. Completing it unlocks Variant Mode.",
+        "sourceRefs": [
+          "src-ink-chapters"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

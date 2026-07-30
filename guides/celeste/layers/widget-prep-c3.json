@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c3",
+    "title": "Chapter 3: Celestial Resort — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c3"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c3:berries",
+        "label": "Red strawberries",
+        "quantity": 25,
+        "note": "11 in Start, 7 in Huge Mess, 4 in Elevator Shaft, 3 in Presidential Suite.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c3:cassette",
+        "label": "Cassette Tape",
+        "note": "In Elevator Shaft, left of the key in the seventh room.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c3:heart",
+        "label": "Crystal Heart",
+        "note": "In Huge Mess, up the path the towels blocked. Earns Scattered and Lost.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c3:a-side",
+        "label": "Clear the A-Side",
+        "note": "Earns Checking Out.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c3:b-side",
+        "label": "Clear the B-Side",
+        "note": "Earns Good Karma.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

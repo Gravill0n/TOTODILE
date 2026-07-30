@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c6",
+    "title": "Chapter 6: Reflection — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c6"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c6:cassette",
+        "label": "Cassette Tape",
+        "note": "At the beginning of Hollows — crash the Kevin Block into the far-left wall.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c6:heart",
+        "label": "Crystal Heart",
+        "note": "Also in Hollows, behind a four-torch dash code. Earns Heavy and Frail.",
+        "sourceRefs": [
+          "src-ink-collectables",
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c6:a-side",
+        "label": "Clear the A-Side",
+        "note": "Includes the Badeline boss fight in Rock Bottom. Earns Reflection.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-ink-chapters",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c6:b-side",
+        "label": "Clear the B-Side",
+        "note": "A sizable step up from the A-Side, played entirely on one dash. Earns Center of the Earth.",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-ink-chapters",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

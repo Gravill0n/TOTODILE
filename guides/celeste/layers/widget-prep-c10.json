@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c10",
+    "title": "Chapter 9: Farewell — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c10"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c10:heart-door",
+        "label": "Pass the 15-heart door in Event Horizon",
+        "note": "Needs all 8 blue hearts plus every B-Side except Core's, though it is bypassable.",
+        "sourceRefs": [
+          "src-ink-chapters"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c10:moon-berry",
+        "label": "Moon Berry",
+        "note": "In the final checkpoint: go left after the last power box, then a death exploit into a long jellyfish room. Earns Wow.",
+        "sourceRefs": [
+          "src-ink-chapters",
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:prep-c10:clear",
+        "label": "Clear Farewell",
+        "note": "The final room is the longest in the game — expect 1.5 to 2 hours on a first attempt. Earns Farewell.",
+        "sourceRefs": [
+          "src-ink-chapters",
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

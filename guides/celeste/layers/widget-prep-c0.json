@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:prep-c0",
+    "title": "Prologue — Briefing",
+    "type": "prepCard",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c0"
+    },
+    "deckPosition": 5,
+    "items": [
+      {
+        "itemId": "celeste:prep-c0:clear",
+        "label": "Clear the Prologue",
+        "note": "No collectables and no achievement, but it unlocks Chapter 1.",
+        "sourceRefs": [
+          "src-ink-chapters",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}

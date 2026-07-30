@@ -789,6 +789,186 @@
       }
     },
     {
+      "id": "widget-prep-c-sides",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c-sides.json",
+      "report": "layers/widget-prep-c-sides.report.json",
+      "sha256": "5e9f8793ca72a06b4006ff90889e5396d1e1f06fa888b9715d76d5c132f43c32",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c-sides"
+        },
+        "title": "C-Sides — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c0",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c0.json",
+      "report": "layers/widget-prep-c0.report.json",
+      "sha256": "f63c002c777a959e42e53212ed99067b554ab3312def6586552209c2a0c3e15f",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c0"
+        },
+        "title": "Prologue — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c1",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c1.json",
+      "report": "layers/widget-prep-c1.report.json",
+      "sha256": "329cc54bb797911b92ef88bd291b25435b25975bd0fcce903fa4b6393c2a94ab",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c1"
+        },
+        "title": "Chapter 1: Forsaken City — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c10",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c10.json",
+      "report": "layers/widget-prep-c10.report.json",
+      "sha256": "f98f11a631f090cb873d31c5bf3fa54d409725945d9387ecf7a689038f938080",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c10"
+        },
+        "title": "Chapter 9: Farewell — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c2",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c2.json",
+      "report": "layers/widget-prep-c2.report.json",
+      "sha256": "807e681b355b1bcaeee2c4e890fbe0b1a66af8ffe999e8207dffb0183f6cc548",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c2"
+        },
+        "title": "Chapter 2: Old Site — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c3",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c3.json",
+      "report": "layers/widget-prep-c3.report.json",
+      "sha256": "e06654bddef6930c61fd04d096526497a0ae376700802cecaab16d2368d8e68c",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c3"
+        },
+        "title": "Chapter 3: Celestial Resort — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c4",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c4.json",
+      "report": "layers/widget-prep-c4.report.json",
+      "sha256": "57ef4c29e6e32f64086784e756b0a0c776c20847222bb7cbe7259fbfe035cb50",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c4"
+        },
+        "title": "Chapter 4: Golden Ridge — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c5",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c5.json",
+      "report": "layers/widget-prep-c5.report.json",
+      "sha256": "d956c95ea9f864f55c68f85aa3a5f2d924906ae23b15c6c54ff99f4da9c15e8d",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c5"
+        },
+        "title": "Chapter 5: Mirror Temple — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c6",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c6.json",
+      "report": "layers/widget-prep-c6.report.json",
+      "sha256": "bf9eacb0eae529e583e857d9e6599863308a5bb739a87ebc832a3ffc22683aa3",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c6"
+        },
+        "title": "Chapter 6: Reflection — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c7",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c7.json",
+      "report": "layers/widget-prep-c7.report.json",
+      "sha256": "6c7376b015a8109809eaea82a4b57a1da9e429013db8a170ca8668a69fabdd46",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c7"
+        },
+        "title": "Chapter 7: The Summit — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c8",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c8.json",
+      "report": "layers/widget-prep-c8.report.json",
+      "sha256": "2b625556f1629cdbd13eb9e578f5364f1aa67aa3a9029c7fe56f7dcba6400019",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c8"
+        },
+        "title": "Epilogue — Briefing"
+      }
+    },
+    {
+      "id": "widget-prep-c9",
+      "kind": "widget",
+      "artifact": "layers/widget-prep-c9.json",
+      "report": "layers/widget-prep-c9.report.json",
+      "sha256": "c62b837e0b18ae4e9233cee25acf5182c15b1025f61bfe767e55af131a9dc72e",
+      "widget": {
+        "deckPosition": 5,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c9"
+        },
+        "title": "Chapter 8: Core — Briefing"
+      }
+    },
+    {
       "id": "widget-sides-hearts",
       "kind": "widget",
       "artifact": "layers/widget-sides-hearts.json",
