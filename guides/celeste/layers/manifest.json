@@ -10,6 +10,20 @@
       "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
     },
     {
+      "id": "widget-sides-hearts",
+      "kind": "widget",
+      "artifact": "layers/widget-sides-hearts.json",
+      "report": "layers/widget-sides-hearts.report.json",
+      "sha256": "80c69f591082b38f7b0157b386041490a47d01f0dc6b9cacb21756426ee3ac12",
+      "widget": {
+        "deckPosition": 1,
+        "scope": {
+          "kind": "global"
+        },
+        "title": "Sides & Hearts"
+      }
+    },
+    {
       "id": "widget-strawberries",
       "kind": "widget",
       "artifact": "layers/widget-strawberries.json",

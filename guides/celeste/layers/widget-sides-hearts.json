@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:sides-hearts",
+    "title": "Sides & Hearts",
+    "type": "matrix",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 1,
+    "rows": [
+      {
+        "id": "forsaken-city",
+        "label": "Ch 1: Forsaken City"
+      },
+      {
+        "id": "old-site",
+        "label": "Ch 2: Old Site"
+      },
+      {
+        "id": "celestial-resort",
+        "label": "Ch 3: Celestial Resort"
+      },
+      {
+        "id": "golden-ridge",
+        "label": "Ch 4: Golden Ridge"
+      },
+      {
+        "id": "mirror-temple",
+        "label": "Ch 5: Mirror Temple"
+      },
+      {
+        "id": "reflection",
+        "label": "Ch 6: Reflection"
+      },
+      {
+        "id": "the-summit",
+        "label": "Ch 7: The Summit"
+      },
+      {
+        "id": "core",
+        "label": "Ch 8: Core"
+      }
+    ],
+    "columns": [
+      {
+        "id": "a-side",
+        "label": "A-Side"
+      },
+      {
+        "id": "b-side",
+        "label": "B-Side"
+      },
+      {
+        "id": "c-side",
+        "label": "C-Side"
+      },
+      {
+        "id": "crystal-heart",
+        "label": "Crystal Heart"
+      }
+    ],
+    "cells": [
+      {
+        "itemId": "celeste:sides-hearts:forsaken-city-a-side",
+        "rowId": "forsaken-city",
+        "columnId": "a-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:forsaken-city-b-side",
+        "rowId": "forsaken-city",
+        "columnId": "b-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:forsaken-city-c-side",
+        "rowId": "forsaken-city",
+        "columnId": "c-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:forsaken-city-crystal-heart",
+        "rowId": "forsaken-city",
+        "columnId": "crystal-heart",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:old-site-a-side",
+        "rowId": "old-site",
+        "columnId": "a-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:old-site-b-side",
+        "rowId": "old-site",
+        "columnId": "b-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:old-site-c-side",
+        "rowId": "old-site",
+        "columnId": "c-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:old-site-crystal-heart",
+        "rowId": "old-site",
+        "columnId": "crystal-heart",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:celestial-resort-a-side",
+        "rowId": "celestial-resort",
+        "columnId": "a-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:celestial-resort-b-side",
+        "rowId": "celestial-resort",
+        "columnId": "b-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:celestial-resort-c-side",
+        "rowId": "celestial-resort",
+        "columnId": "c-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:celestial-resort-crystal-heart",
+        "rowId": "celestial-resort",
+        "columnId": "crystal-heart",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:golden-ridge-a-side",
+        "rowId": "golden-ridge",
+        "columnId": "a-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:golden-ridge-b-side",
+        "rowId": "golden-ridge",
+        "columnId": "b-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:golden-ridge-c-side",
+        "rowId": "golden-ridge",
+        "columnId": "c-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:golden-ridge-crystal-heart",
+        "rowId": "golden-ridge",
+        "columnId": "crystal-heart",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:mirror-temple-a-side",
+        "rowId": "mirror-temple",
+        "columnId": "a-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:mirror-temple-b-side",
+        "rowId": "mirror-temple",
+        "columnId": "b-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:mirror-temple-c-side",
+        "rowId": "mirror-temple",
+        "columnId": "c-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:mirror-temple-crystal-heart",
+        "rowId": "mirror-temple",
+        "columnId": "crystal-heart",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:reflection-a-side",
+        "rowId": "reflection",
+        "columnId": "a-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:reflection-b-side",
+        "rowId": "reflection",
+        "columnId": "b-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:reflection-c-side",
+        "rowId": "reflection",
+        "columnId": "c-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:reflection-crystal-heart",
+        "rowId": "reflection",
+        "columnId": "crystal-heart",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:the-summit-a-side",
+        "rowId": "the-summit",
+        "columnId": "a-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:the-summit-b-side",
+        "rowId": "the-summit",
+        "columnId": "b-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:the-summit-c-side",
+        "rowId": "the-summit",
+        "columnId": "c-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:the-summit-crystal-heart",
+        "rowId": "the-summit",
+        "columnId": "crystal-heart",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:core-a-side",
+        "rowId": "core",
+        "columnId": "a-side",
+        "sourceRefs": [
+          "src-ink-chapters",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:core-b-side",
+        "rowId": "core",
+        "columnId": "b-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:core-c-side",
+        "rowId": "core",
+        "columnId": "c-side",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-tracker-maps"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:sides-hearts:core-crystal-heart",
+        "rowId": "core",
+        "columnId": "crystal-heart",
+        "sourceRefs": [
+          "src-ink-achievements",
+          "src-ink-collectables"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
