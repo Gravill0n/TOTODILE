@@ -55,36 +55,36 @@ make a broken LFS state loud.
 
 ## Phase 2 — Make a broken LFS state loud
 
-- [ ] **2.1** Image existence + LFS-pointer guard in `app/scripts/validateGuidesCore.ts`
-      (inside `validateGuideFolder`, `:129`, using the existing `Finding` shape at `:33`).
-      Walk every `imageRef.src` in `guide.json` (`locations[].mapImage`, `steps[].images[]`,
-      `widgets[].image`) plus `layers/spine.json` and `layers/widget-items-*.json`; flag
-      missing files, and flag files whose first bytes are
-      `version https://git-lfs.github.com/spec/v1` with *"run `git lfs pull`"*. Also check
-      `library.json`'s optional `cover` — **repo-root-relative**, unlike guide-relative
-      `src`. Without this, `yarn check` passes on pointer text and `contentPrecache` md5s a
-      pointer into the service worker (M)
-  - [ ] **Blocked on:** add 4 minimal PNGs the fixture already references but does not
-        have — `castle-gate.png`, `vault-entrance.png`, `vault-map.png` under
-        `app/src/testing/fixtures/repo/guides/fictional-quest/images/`, plus
-        `.../repo/guides/fictional-quest/images/cover.png` for the library `cover`
-  - [ ] Test: pointer text where an `imageRef` points → finding fires
-  - [ ] Test: missing file → finding fires
-  - [ ] All 266 real refs pass (baseline: 0 missing / 0 orphans in both guides)
-  - [ ] Negative proof in a throwaway worktree: `GIT_LFS_SKIP_SMUDGE=1 git checkout --
-        guides/zelda-oot/images/` makes `yarn validate-guides` **fail**; `git lfs pull` restores
-- [ ] **2.2** Scope the precache walker to `images/` — `imageFiles()`
-      (`app/scripts/contentPrecache.ts:67`) recurses the whole guide folder, so a local
-      `yarn build` md5s and precaches all 143 MB of gitignored `sources/` scrapes.
-      Pre-existing bug; compounds directly with huge maps. Parallel with 2.1 (S)
-  - [ ] Test: `guides/<slug>/sources/foo/big.png` yields no manifest entry
-  - [ ] The four existing `contentPrecache.test.ts` cases pass unchanged (they only use
-        paths under `images/`, so scoping is behavior-preserving)
-  - [ ] `yarn build`, then grep `dist/sw.js` for `sources/` → no matches
+- [x] **2.1** Image existence + LFS-pointer guard in `app/scripts/validateGuidesCore.ts`
+      (commit `e58a3e9`). `validateImageRefs()` resolves every `imageRef.src` and reports
+      the *owner*, not just the path — which location, step or widget. Wired at three call
+      sites: `guide.json`, each layer artifact (via `layerImageRefs`), and `library.json`'s
+      `cover` (repo-root-relative, unlike guide-relative `src`) (M)
+  - [x] 4 real 1×1 PNGs added under
+        `app/src/testing/fixtures/repo/guides/fictional-quest/images/` — the fixture had
+        referenced `castle-gate`, `vault-entrance`, `vault-map` and `cover` all along
+        without shipping them. Outside the root-anchored LFS pattern (`check-attr`:
+        `unspecified`), so the suite never needs a smudge
+  - [x] 9 new tests: missing step image, pointer text, owner naming, missing widget image,
+        missing library cover, spine-layer image, widget-layer image, the all-present happy
+        case, and one pinning that the extract-data image catalogue stays **out** of scope
+  - [x] `widgetImages()` added to `widgets.ts` beside `widgetCheckables`/`widgetItemIds` —
+        exhaustive switch over the closed primitive set. No schema shape changed, no bump
+  - [x] All 266 real refs resolve — `yarn validate-guides` exit 0
+  - [x] **Negative proof**: a tree built with `GIT_LFS_SKIP_SMUDGE=1 git archive` holds
+        132-byte pointers; the gate emits **708 findings and exits 1**, each naming
+        `git lfs pull`
+- [x] **2.2** Scope the precache walker to `images/` (commit `feb1b56`) (S)
+  - [x] Test: images under `sources/` yield no manifest entry
+  - [x] The four existing `contentPrecache.test.ts` cases pass unchanged
+  - [x] `dist/sw.js` after `yarn build`: **0** `sources/` entries, 266 `images/` entries
+        (146 crystal + 120 zelda-oot). Measured what the bug had been shipping:
+        **3361 source images / 115.6 MB** md5'd into every local build's service worker
+  - [x] `imageFiles()` gained an `existsSync` guard — layton-mm legitimately has no `images/`
 
-### ☐ Checkpoint B — guards
-- [ ] `yarn check` green from `app/`
-- [ ] Pointer files **and** missing images both fail the gate (negative proof above)
+### ☑ Checkpoint B — guards
+- [x] `yarn check` green from `app/` — 104 test files, **692 tests** (was 682), 3 guides green
+- [x] Pointer files **and** missing images both fail the gate (negative proof above)
 - [ ] **Pierre**: review before CI is touched
 
 ## Phase 3 — CI deploy
