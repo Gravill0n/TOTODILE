@@ -34,6 +34,1333 @@
         "verdict": "approved"
       },
       "spotChecks": []
+    },
+    {
+      "id": "widget-achievements",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-achievements.json",
+      "report": {
+        "rowCount": 32,
+        "anomalies": [
+          "celeste:achievements:real-gamer and celeste:achievements:1up — neither achievement has a location in any manifested source, so the spine emits no step for either and this checklist is the only place they are tracked. \"Real Gamer\" (Complete Celeste for PICO-8) and \"1UP!\" (Get a 1UP) need a source added through the sources pass before the route can place them. The rows themselves are not flagged: their name and requirement are reproduced exactly from src-ink-achievements and are not in doubt — only where they are earned is unknown.",
+          "celeste:achievements:thanks-for-playing is the only achievement covering more than one chapter of work — \"Complete all C-Sides\" pays out once for all eight. Every other clear and heart achievement is one-to-one with a cell of the Sides & Hearts matrix."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:62410ee615372659033cbbe0e62809333b9641552ef917c5a23e38a258bc32ad",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:23.538Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-cassettes",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-cassettes.json",
+      "report": {
+        "rowCount": 8,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:98750e63abf665eac1b570f8bab1a0dba96bd8be55246de43c9bc043a9470231",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:38:57.488Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-celestial-resort-a-elevator-shaft",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-celestial-resort-a-elevator-shaft.json",
+      "report": {
+        "rowCount": 5,
+        "anomalies": [
+          "4 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Celestial Resort A - Room 06-d Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:c5044d8237cb2b9a376414c5c9452231cbd8be024de812b9f2aee7f21a23c25b",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-celestial-resort-a-huge-mess",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-celestial-resort-a-huge-mess.json",
+      "report": {
+        "rowCount": 8,
+        "anomalies": [
+          "7 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Celestial Resort A - Room 12-y Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:15e561c352edc77586f4b31773e6db1f9b8d3a1a27b047d54ee0e20abec6bfd7",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-celestial-resort-a-presidential-suite",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-celestial-resort-a-presidential-suite.json",
+      "report": {
+        "rowCount": 4,
+        "anomalies": [
+          "3 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Celestial Resort A - Room roof03 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:14092761260e86c663316588f5c6c58ffcc43933d8aa24096d05f15105b6b334",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-celestial-resort-a-start",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-celestial-resort-a-start.json",
+      "report": {
+        "rowCount": 11,
+        "anomalies": [
+          "11 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Celestial Resort A - Room s3 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:8073559155ccb6ec2dc652146c5bad35cf7eeaca72639e459c7a98250c2533c6",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-celestial-resort-b",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-celestial-resort-b.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:b03c22551bf9b066b61ce38b1f4d7eba3e946b5dc76cb2a7e3ab9bc2fc6aa717",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-celestial-resort-c",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-celestial-resort-c.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:d7c7b31eb6028d8cbcad934ccfb1ad292f01ec143cce075802b716f222b8ae46",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-core-a-heart-of-the-mountain-section-2",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-core-a-heart-of-the-mountain-section-2.json",
+      "report": {
+        "rowCount": 3,
+        "anomalies": [
+          "3 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Core A - Room c-00b Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:7bca1d390627bd907eda2661814de37a88ea37d06e70d28134094ecb6ebd2fad",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-core-a-heart-of-the-mountain-section-3",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-core-a-heart-of-the-mountain-section-3.json",
+      "report": {
+        "rowCount": 3,
+        "anomalies": [
+          "1 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Core A - Room d-06 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:3602b548a19fdbfa05dbc59c8069d4366e134273a5455043140779d37168e8b1",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-core-a-hot-and-cold",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-core-a-hot-and-cold.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [
+          "1 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Core A - Room b-06 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:54b74e269c4f0ce719ea08df428aaa8ac81f488fd7d1cab7eaa800ae2f8efb40",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-core-b",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-core-b.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:6fa5f8082707653ab3ecd29b09d35b5ae4d541c1b90c81de7efe1411717916c6",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-core-c",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-core-c.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:8c9b5c5f9f9b945e0a5c1c3eb5f480955b2eb89b1b3796db9855368effe82882",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-epilogue",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-epilogue.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:b3c09d012aeb0fa3a475cec4f37a4a260a7fb67bf7df35834eb7b5d0b751aa01",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-farewell-farewell",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-farewell-farewell.json",
+      "report": {
+        "rowCount": 2,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:a66cae3b88ab671c9c6137e706d6674d01b46b9b620f3971f251647e77714e27",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-farewell-remembered",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-farewell-remembered.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:29f61332fca71beac186b4d9cb66a36d532e532c40d81e0253a66d777adc1b75",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-forsaken-city-a-chasm",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-forsaken-city-a-chasm.json",
+      "report": {
+        "rowCount": 7,
+        "anomalies": [
+          "5 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Forsaken City A - Room 9b Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:cc09cc4eb2cf4b1a38706f4d4d859452205382a37620e5f80da7ea0c545a3ba2",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-forsaken-city-a-crossing",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-forsaken-city-a-crossing.json",
+      "report": {
+        "rowCount": 10,
+        "anomalies": [
+          "9 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Forsaken City A - Room 6 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:b02924334273594a2c44b7ed1b25c4022d3458a0a4bcfddd4556d051e199e4a5",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-forsaken-city-a-start",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-forsaken-city-a-start.json",
+      "report": {
+        "rowCount": 6,
+        "anomalies": [
+          "6 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Forsaken City A - Room 2 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:76b5da057449e9d9f3cd41cf69c4cbcbae82ac0d597733c01d89e04cdd175b38",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-forsaken-city-b",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-forsaken-city-b.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:96fe6d9f5bf2dfbaf4a0cfb4264c37ce0af0aabeac53235e186f9ff53b7f0c16",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-forsaken-city-c",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-forsaken-city-c.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:467036e32014f2b439cf9317d5f85ce73915fb94c34a60f3aa3bc0368c4736c6",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-golden-ridge-a-cliff-face",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-golden-ridge-a-cliff-face.json",
+      "report": {
+        "rowCount": 6,
+        "anomalies": [
+          "5 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Golden Ridge A - Room d-00b Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:bcbee93611af88d46eac87b19263df520cdefdb070a7114a71d56d581b0995b8",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-golden-ridge-a-old-trail",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-golden-ridge-a-old-trail.json",
+      "report": {
+        "rowCount": 7,
+        "anomalies": [
+          "7 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Golden Ridge A - Room c-00 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:ca60dcf00c730f67fee1833f7c670b385560b1bc312755fcf17afc2c6393a39a",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-golden-ridge-a-shrine",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-golden-ridge-a-shrine.json",
+      "report": {
+        "rowCount": 10,
+        "anomalies": [
+          "9 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Golden Ridge A - Room b-04 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:589d33cc7a92f8fe389d1502dba8657ecaad28177f8acccfcd4404d7c5ceddcd",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-golden-ridge-a-start",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-golden-ridge-a-start.json",
+      "report": {
+        "rowCount": 9,
+        "anomalies": [
+          "8 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Golden Ridge A - Room a-01x Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:8e06d8df88d0175f0daa2e86ed77aa5ad44d61c83d5844b4c200abaa80dacc49",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-golden-ridge-b",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-golden-ridge-b.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:381c12347e92249982dc87ab9f551ef141881cc40fb2db7137a54d90225711c3",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-golden-ridge-c",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-golden-ridge-c.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:1caa9048d1d8cbbff0f2a379ee0a2c7e8112373ef46ab168eaebe7eee7451c09",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-mirror-temple-a-depths",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-mirror-temple-a-depths.json",
+      "report": {
+        "rowCount": 13,
+        "anomalies": [
+          "11 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Mirror Temple A - Room b-18 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:50a0d9bfb3c0c69b4008698f2da5dbb0c26b691edc9f5cb20903d1088da00cdc",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-mirror-temple-a-rescue",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-mirror-temple-a-rescue.json",
+      "report": {
+        "rowCount": 2,
+        "anomalies": [
+          "1 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Mirror Temple A - Room e-06 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:033e92fb23a35b6c264c2e8cb8947d8ff276d32aa359145b8643394e50983543",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-mirror-temple-a-search",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-mirror-temple-a-search.json",
+      "report": {
+        "rowCount": 6,
+        "anomalies": [
+          "6 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Mirror Temple A - Room d-13 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:4873e3bdb011c86acd19ef0ff1ed810a7cc2cb7152ec22568b3ce23ffff44d0f",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-mirror-temple-a-start",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-mirror-temple-a-start.json",
+      "report": {
+        "rowCount": 12,
+        "anomalies": [
+          "12 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Mirror Temple A - Room a-00x Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:86dec6275c8e90f00f63456062563fb88b528b4855ffda8c427618c986238d71",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-mirror-temple-a-unravelling",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-mirror-temple-a-unravelling.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [
+          "1 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Mirror Temple A - Room c-08 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:274e6e2ce5b7d77a9c072e8494b1eb5c1ba2614779f9ab3360dae5aad2076aa2",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-mirror-temple-b",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-mirror-temple-b.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:c673836ffed9427196c12ff6cfe767f931e1c48553c536b9f392023fad11bf46",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-mirror-temple-c",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-mirror-temple-c.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:6d4170bec63f5784d3f6b01ae5d6a459c60c2e71516f94d4397fe43d42f287e2",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-old-site-a-awake",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-old-site-a-awake.json",
+      "report": {
+        "rowCount": 2,
+        "anomalies": [
+          "1 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Old Site A - Room end_3c Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:343946a7e942162d8536acd3f596d26c737f71f692ba2ea28ae03559c6717cd0",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-old-site-a-intervention",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-old-site-a-intervention.json",
+      "report": {
+        "rowCount": 8,
+        "anomalies": [
+          "8 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Old Site A - Room 4 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:820593bb6d6cf8219f3f70af6d8a76d943bf132c0a68b21b058e1ad52fb1c594",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-old-site-a-start",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-old-site-a-start.json",
+      "report": {
+        "rowCount": 11,
+        "anomalies": [
+          "9 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"Old Site A - Room 1 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:c3b267a77034eedaf35497a38c49cf1cf4244264e9fce1cf42b3f8187bda490f",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-old-site-b",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-old-site-b.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:6ccad912bbda0222fc1afda35ec5b9ffa64e59fd477369b9747cd3526744193a",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-old-site-c",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-old-site-c.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:5e34f2aa942db69e1c9f648dcebbc8942b9f2416c7430cffdcbf652d3578456e",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-prologue",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-prologue.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:934a37d53166e2ec51a2eb183e8d10f0dda20b05494a599274c26371e4a949da",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-reflection-a-hollows",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-reflection-a-hollows.json",
+      "report": {
+        "rowCount": 2,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:e3bd68448d40653b4a24ac7a9c6a5a93bd57de660942c478bffd87b8f7564152",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-reflection-a-resolution",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-reflection-a-resolution.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:32c153b02cd4f4bb06ae74e4f9dac6aae5317fe72bf191d1a90b8abd6235d063",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-reflection-b",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-reflection-b.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:9022e26db3a6815eaa6dba1f0ef508f5048336f55cedfc053ad48d591a2e9025",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-reflection-c",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-reflection-c.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:3c37560be91bcb9c8a8b27cad79ed146f69da5b7c711aeeac64e178d75657992",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-the-summit-a-1000-m",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-the-summit-a-1000-m.json",
+      "report": {
+        "rowCount": 7,
+        "anomalies": [
+          "6 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"The Summit A - Room c-03b Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:b511925f4213fa1bf66484e1c5b17cbb93296904d8b6749f834f1373d603c35c",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-the-summit-a-1500-m",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-the-summit-a-1500-m.json",
+      "report": {
+        "rowCount": 10,
+        "anomalies": [
+          "8 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"The Summit A - Room d-00 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:0286317d4ccb682e440caa1ac8ab25b20bfabef5010f31ba9ea0fc4167bd4269",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-the-summit-a-2000-m",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-the-summit-a-2000-m.json",
+      "report": {
+        "rowCount": 9,
+        "anomalies": [
+          "8 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"The Summit A - Room e-02 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:8f90bd63590cb2a6352d50ba1016a19a66e0ca981b055173cd2d2096275ea572",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-the-summit-a-2500-m",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-the-summit-a-2500-m.json",
+      "report": {
+        "rowCount": 9,
+        "anomalies": [
+          "8 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"The Summit A - Room f-00 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:552c717685f30233f9c9f70492ad929c8d512991d9f6e899a525716327fcd6e0",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-the-summit-a-3000-m",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-the-summit-a-3000-m.json",
+      "report": {
+        "rowCount": 9,
+        "anomalies": [
+          "7 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"The Summit A - Room g-03 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:28162c27e3e09bf6c19c6f4c4983f99d4b6da000ec4bc1eaee2f5564625860ef",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-the-summit-a-500-m",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-the-summit-a-500-m.json",
+      "report": {
+        "rowCount": 7,
+        "anomalies": [
+          "6 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"The Summit A - Room b-02 Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:25c6888f87001b25d0da0c74ff98c35a92c540b1e6b7107e9e51c88041db42cd",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-the-summit-a-start",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-the-summit-a-start.json",
+      "report": {
+        "rowCount": 5,
+        "anomalies": [
+          "4 of this map's pins are red strawberries carrying the pack's own pin names (e.g. \"The Summit A - Room a-02b Strawberry\"), not the wiki's berry numbers. Which pin is which numbered berry cannot be established from the sources — that join was tested and rejected in the extract-data pass — so these pins track \"did I sweep this room\", while the numbered berries are tracked by the chapter strawberry table and the route steps."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:c092c989caf9b316a23dbaa936ba3ee1653dadb1366a3354485915056d476823",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-the-summit-b",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-the-summit-b.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:9bc52f5b929340d6c2218b23dcdd0cf8bd07fb2d3323b91866a6a51525847773",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-pins-the-summit-c",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-pins-the-summit-c.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:03c97c70503f88db404d681975553bf8b25df3491cd55c2c051228b4c552e718",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:18.179Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c-sides",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c-sides.json",
+      "report": {
+        "rowCount": 3,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:5e9f8793ca72a06b4006ff90889e5396d1e1f06fa888b9715d76d5c132f43c32",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c0",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c0.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:f63c002c777a959e42e53212ed99067b554ab3312def6586552209c2a0c3e15f",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c1",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c1.json",
+      "report": {
+        "rowCount": 5,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:329cc54bb797911b92ef88bd291b25435b25975bd0fcce903fa4b6393c2a94ab",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c10",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c10.json",
+      "report": {
+        "rowCount": 3,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:f98f11a631f090cb873d31c5bf3fa54d409725945d9387ecf7a689038f938080",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c2",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c2.json",
+      "report": {
+        "rowCount": 5,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:807e681b355b1bcaeee2c4e890fbe0b1a66af8ffe999e8207dffb0183f6cc548",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c3",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c3.json",
+      "report": {
+        "rowCount": 5,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:e06654bddef6930c61fd04d096526497a0ae376700802cecaab16d2368d8e68c",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c4",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c4.json",
+      "report": {
+        "rowCount": 5,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:57ef4c29e6e32f64086784e756b0a0c776c20847222bb7cbe7259fbfe035cb50",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c5",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c5.json",
+      "report": {
+        "rowCount": 5,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:d956c95ea9f864f55c68f85aa3a5f2d924906ae23b15c6c54ff99f4da9c15e8d",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c6",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c6.json",
+      "report": {
+        "rowCount": 4,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:bf9eacb0eae529e583e857d9e6599863308a5bb739a87ebc832a3ffc22683aa3",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c7",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c7.json",
+      "report": {
+        "rowCount": 6,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:6c7376b015a8109809eaea82a4b57a1da9e429013db8a170ca8668a69fabdd46",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c8",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c8.json",
+      "report": {
+        "rowCount": 1,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:2b625556f1629cdbd13eb9e578f5364f1aa67aa3a9029c7fe56f7dcba6400019",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-prep-c9",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-prep-c9.json",
+      "report": {
+        "rowCount": 6,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:c62b837e0b18ae4e9233cee25acf5182c15b1025f61bfe767e55af131a9dc72e",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:20.648Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-sides-hearts",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-sides-hearts.json",
+      "report": {
+        "rowCount": 32,
+        "anomalies": [
+          "celeste:sides-hearts:core-crystal-heart — src-tracker-maps carries no crystal-heart pin anywhere in Core, so this cell is sourced from src-ink-collectables (\"The Crystal Heart and the Cassette Tape are located at the end of the level, collecting them is necessary to complete it\") rather than from a pin like the other seven hearts. Same gap already recorded against the spine layer.",
+          "celeste:sides-hearts:core-a-side — Core's A-Side clear is the one cell in the A-Side column with no corresponding achievement. The eight chapter-clear achievements cover chapters 1-6, The Summit (\"Celeste — Climb Celeste Mountain\") and Farewell (\"Farewell — Complete Chapter 9\"); Core's A-Side is required to reach the crystal heart and cassette but awards nothing itself. Sourced from src-ink-chapters and the level-clear pin instead."
+        ],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:80c69f591082b38f7b0157b386041490a47d01f0dc6b9cacb21756426ee3ac12",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:38:54.860Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-strawberries",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-strawberries.json",
+      "report": {
+        "rowCount": 3,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:272e682715a26c45baf225d7b8c0375cce3e3febd7853f73662a9762b9f056e6",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:38:44.908Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-strawberries-c1",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-strawberries-c1.json",
+      "report": {
+        "rowCount": 20,
+        "anomalies": [
+          "celeste:strawberries-c1:b03, celeste:strawberries-c1:b19 — source disagreement on berry type. src-ink-collectables describes both berry 3 (\"this is a flying strawberry\") and berry 19 (\"another winged strawberry\") as winged, while src-tracker-maps marks only one winged berry in Forsaken City. The route text in the How column is unaffected; only the Type cell is in doubt."
+        ],
+        "flaggedItemIds": [
+          "celeste:strawberries-c1:b03",
+          "celeste:strawberries-c1:b19"
+        ]
+      },
+      "contentHash": "sha256:d49751df7605140f739fb647410acb864140ce208fa1ac87a75061a17cc8d89a",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:03.585Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-strawberries-c2",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-strawberries-c2.json",
+      "report": {
+        "rowCount": 18,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:25f8bc50868cee978862ab9a53d865b6cc87bdd3cd62d29ce693fb193217793b",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:03.585Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-strawberries-c3",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-strawberries-c3.json",
+      "report": {
+        "rowCount": 25,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:e2da9148c812dac61f1c3af803059277ffd73e672f08758be8270b0e2a460216",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:03.585Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-strawberries-c4",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-strawberries-c4.json",
+      "report": {
+        "rowCount": 29,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:f7a347b50bc23aa3273e2fc95a8f9dce560eacca3dfca62788b8ac755057f62f",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:03.585Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-strawberries-c5",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-strawberries-c5.json",
+      "report": {
+        "rowCount": 31,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:13ced5188455c82d1f6ae63e684aa26a07fed1feb47ebddb501fc75f510ddf08",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:03.585Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-strawberries-c7",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-strawberries-c7.json",
+      "report": {
+        "rowCount": 47,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:7c4b6f5e0d1be0426cdc068f28802e8363145b2b3e69ec756466afc2f9fc80dc",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:03.585Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
+    },
+    {
+      "id": "widget-strawberries-c9",
+      "kind": "widget-pass",
+      "artifact": "layers/widget-strawberries-c9.json",
+      "report": {
+        "rowCount": 5,
+        "anomalies": [],
+        "flaggedItemIds": []
+      },
+      "contentHash": "sha256:29a551adfa17eb487f77466d2a9196508f3dc7e73957a15cd903c31e2015e9af",
+      "status": "approved",
+      "approval": {
+        "date": "2026-07-30T16:39:03.585Z",
+        "verdict": "approved"
+      },
+      "spotChecks": []
     }
   ]
 }
