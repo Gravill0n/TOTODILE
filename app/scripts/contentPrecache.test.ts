@@ -75,6 +75,25 @@ describe("collectContentManifestEntries", () => {
     expect(urls).toEqual(["guides/mlpit/guide.json", "library.json"]);
   });
 
+  // guides/<slug>/sources/ is the gitignored raw-scrape tree — 143 MB of it on
+  // the machine that ran the sources pass, absent in CI. Precaching it would
+  // push the whole scrape into every visitor's service worker on first load.
+  it("ignores images outside images/, notably the gitignored sources/ tree", () => {
+    const root = writeTree({
+      "library.json": "{}",
+      "guides/mlpit/guide.json": "{}",
+      "guides/mlpit/images/boss.png": "png-bytes",
+      "guides/mlpit/sources/scrape/wiki/huge-map.png": "png-bytes",
+      "guides/mlpit/sources/tracker/images/maps/overworld.png": "png-bytes",
+    });
+    const urls = collectContentManifestEntries(root).map((e) => e.url);
+    expect(urls).toEqual([
+      "guides/mlpit/guide.json",
+      "guides/mlpit/images/boss.png",
+      "library.json",
+    ]);
+  });
+
   it("returns an empty list when the repo has no content yet", () => {
     const root = writeTree({});
     expect(collectContentManifestEntries(root)).toEqual([]);

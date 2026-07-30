@@ -54,9 +54,13 @@ export function collectContentManifestEntries(
         entries.push(entryFor(path, `guides/${slug}/${relative}`));
       }
     }
-    for (const relative of imageFiles(join(guidesDir, slug))) {
+    const imagesDir = join(guidesDir, slug, "images");
+    for (const relative of imageFiles(imagesDir)) {
       entries.push(
-        entryFor(join(guidesDir, slug, relative), `guides/${slug}/${relative}`),
+        entryFor(
+          join(imagesDir, relative),
+          `guides/${slug}/images/${relative}`,
+        ),
       );
     }
   }
@@ -64,7 +68,12 @@ export function collectContentManifestEntries(
   return entries.sort((a, b) => a.url.localeCompare(b.url));
 }
 
+// Only guides/<slug>/images/ — the curated, player-facing assets. The sibling
+// sources/ tree is the gitignored raw scrape (143 MB locally, absent in CI);
+// walking the whole guide folder would push all of it into the service-worker
+// precache, so a local build shipped a wildly different manifest from CI's.
 function imageFiles(dir: string): string[] {
+  if (!existsSync(dir)) return [];
   return readdirSync(dir, { withFileTypes: true, recursive: true })
     .filter(
       (dirent) => dirent.isFile() && IMAGE_EXTENSIONS.has(extname(dirent.name)),
