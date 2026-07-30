@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:strawberries-c1",
+    "title": "Forsaken City — Strawberries",
+    "type": "dataTable",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c1"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "checkpoint",
+        "label": "Checkpoint"
+      },
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "how",
+        "label": "How to get it"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "celeste:strawberries-c1:b01",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "1",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "The first strawberry is on the second screen of the subchapter. Jump up off the spring and dash upwards to reach it, then land back on the ground."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b02",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "2",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "On the third screen. Jump off the block at the end of the room and collect the berry, then dash up straight away to avoid dropping into the spike pit, and grab the wall above."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b03",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "flagged",
+        "checkable": true,
+        "cells": {
+          "num": "3",
+          "checkpoint": "Start",
+          "type": "winged",
+          "how": "On the fourth screen; this is a flying strawberry. Use the disappearing platforms at the right of the screen to jump up to the top, then jump off the left side to collect the berry. A speedrun-specific alternative uses Wallbounces. Sources disagree on the berry type: src-ink-collectables describes two winged strawberries in Forsaken City, src-tracker-maps marks only one — treat the type as unconfirmed."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b04",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "4",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the room after the flying strawberry, go left when you find the glowing light. Behind a small challenge, scale a short ice wall with a few spikes here and there; dashing rightwards after falling down, at the left, nets you the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b05",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "5",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Boost off the zipper left-upwards and climb onto the right side of the ice block with spikes on top. Jump off upwards, then dash left-upright to collect the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b06",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "6",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the same room as strawberry 5. Instead of heading upwards using the spring — the normal way to progress — head downwards, leaning on the right wall. An ice block can be seen: dash on it to destroy the block. In the room that follows, jump downwards, dash onto and hold the zipper, and jump onto it as it stops; then jump to where the strawberry is. Jump off leftwards and dash up-left, through the floor, to get back to safety."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b07",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "7",
+          "checkpoint": "Crossing",
+          "type": "normal",
+          "how": "Instead of going right in the first room of Crossing, go left into the room, dash into the dash refill and dash again, then climb up to the next screen. Jump over the first spring and jump on the second one, grab the wall and jump above it, then dash diagonally into the refill in the upper left corner and repeat the dash. Theo can also be found right after the berry, or by going left instead of up."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b08",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "8",
+          "checkpoint": "Crossing",
+          "type": "normal",
+          "how": "At the start of Crossing, go on the higher platform, jump and dash diagonally into the upper right corner, collecting the refill, and dash to the right again. Then, instead of going up, dash into the first block under the exit of the screen — that makes an exit appear into a small hidden path with the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b09",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "9",
+          "checkpoint": "Crossing",
+          "type": "normal",
+          "how": "In the third room of Crossing — the one with two zippers, one heading right straight into spikes and the other heading upwards — use the first zipper normally, jump onto the second one, and boost up-leftwards to where an \"up arrow\" sign can be seen. From there, head left and continue through another, relatively harder, room with two zippers. Once you are outside of the city and can hear the \"Piano Only\" version of First Steps, jump and dash left until you find the satellite, collecting the strawberry on your way. The Crystal Heart is at that same satellite — do it now, in the next step."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b10",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "10",
+          "checkpoint": "Crossing",
+          "type": "normal",
+          "how": "In the fourth room of the sub-chapter, go up with the spring and dash into the block of ice, revealing a small room. Dash diagonally into the upper left corner three times, grab the berry, walljump into the refill, then dash diagonally into the upper right corner into the refill and do the same again."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b11",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "11",
+          "checkpoint": "Crossing",
+          "type": "normal",
+          "how": "Reach the room mentioned for strawberry 10, but instead of heading back after getting that berry, climb up on a floating block and dash into an odd-looking tile on the ceiling, leading you to a secret room. After beating it you enter another room where you can find the berry, then go back to the main route."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b12",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "12",
+          "checkpoint": "Crossing",
+          "type": "normal",
+          "how": "In the seventh room after the checkpoint you can find a small hole in the ground, which you can dash into instead of dashing onto the crumbling blocks. In the room you just entered, jump on the 3 zipper blocks, grab the berry, and wait a bit on the wall for the traffic light blocks to come back to their original position before coming back to the entrance."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b13",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "13",
+          "checkpoint": "Crossing",
+          "type": "normal",
+          "how": "The strawberry is located again in room 7, but this time, instead of going to the right to leave the room, go up and find another section with the berry. Grab the zipper block and climb onto the wall. If you jump off the traffic light block you will immediately get launched into spikes; jump on the other, smaller zipper instead, and when it reaches its leftmost point, jump off of it, grab the wall, and walljump off it to get the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b14",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "14",
+          "checkpoint": "Crossing",
+          "type": "normal",
+          "how": "In the eighth room, jump on the edge of the first zipper and use the boost from jumping off of it while it is going up to jump between the spikes surrounding the berry, dashing up if necessary to grab it."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b15",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "15",
+          "checkpoint": "Crossing",
+          "type": "normal",
+          "how": "In the ninth and final room of Crossing, jump off a 2-tile wide platform and dash up to grab the zipper from the right side. When the zipper is on the right side, jump off of it to quickly grab the berry, then jump back on the zipper and jump up."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b16",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "16",
+          "checkpoint": "Chasm",
+          "type": "normal",
+          "how": "At the first room of Chasm, go left by grabbing the zipper and jump-dashing over it. Go into the room and take the down path by dashing over the zipper. Then go on the spring in the next room and jump on it, then quickly jump down on the platform and go up. When outside, just jump down and dash back up after walljumping. Then go back right by jumping down to the platform, dashing to the spring, and dashing after the spike platform."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b17",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "17",
+          "checkpoint": "Chasm",
+          "type": "normal",
+          "how": "Follow the same path as for the previous berry, but go up from the first room instead of left. Dash up into the traffic light block and launch yourself into the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b18",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "18",
+          "checkpoint": "Chasm",
+          "type": "normal",
+          "how": "Found in the first room. Fall off of the right bridge and move right, then dash straight up, allowing you to reach the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b19",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "flagged",
+        "checkable": true,
+        "cells": {
+          "num": "19",
+          "checkpoint": "Chasm",
+          "type": "winged",
+          "how": "Found to the right of the first room. Ride the traffic light block and jump off it once it reaches its furthest point, to either land on the disappearing platform or grab the right wall. You can then go left after reaching the platform and bounce off the spring, into reach of the strawberry. Sources disagree on the berry type: src-ink-collectables calls this a winged strawberry, src-tracker-maps marks only one winged berry in Forsaken City — treat the type as unconfirmed."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c1:b20",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "20",
+          "checkpoint": "Chasm",
+          "type": "normal",
+          "how": "In the fourth room you can find a transition in the top-left, by going through the wall behind a falling platform. In the room with the strawberry, dash into the dash crystal above you and continue dashing into the other dash crystals all around the platform, grabbing the berry on the left and then continuing back right."
+        }
+      }
+    ]
+  }
+}

@@ -50,6 +50,111 @@
         },
         "title": "Strawberries"
       }
+    },
+    {
+      "id": "widget-strawberries-c1",
+      "kind": "widget",
+      "artifact": "layers/widget-strawberries-c1.json",
+      "report": "layers/widget-strawberries-c1.report.json",
+      "sha256": "d49751df7605140f739fb647410acb864140ce208fa1ac87a75061a17cc8d89a",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c1"
+        },
+        "title": "Forsaken City — Strawberries"
+      }
+    },
+    {
+      "id": "widget-strawberries-c2",
+      "kind": "widget",
+      "artifact": "layers/widget-strawberries-c2.json",
+      "report": "layers/widget-strawberries-c2.report.json",
+      "sha256": "25f8bc50868cee978862ab9a53d865b6cc87bdd3cd62d29ce693fb193217793b",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c2"
+        },
+        "title": "Old Site — Strawberries"
+      }
+    },
+    {
+      "id": "widget-strawberries-c3",
+      "kind": "widget",
+      "artifact": "layers/widget-strawberries-c3.json",
+      "report": "layers/widget-strawberries-c3.report.json",
+      "sha256": "e2da9148c812dac61f1c3af803059277ffd73e672f08758be8270b0e2a460216",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c3"
+        },
+        "title": "Celestial Resort — Strawberries"
+      }
+    },
+    {
+      "id": "widget-strawberries-c4",
+      "kind": "widget",
+      "artifact": "layers/widget-strawberries-c4.json",
+      "report": "layers/widget-strawberries-c4.report.json",
+      "sha256": "f7a347b50bc23aa3273e2fc95a8f9dce560eacca3dfca62788b8ac755057f62f",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c4"
+        },
+        "title": "Golden Ridge — Strawberries"
+      }
+    },
+    {
+      "id": "widget-strawberries-c5",
+      "kind": "widget",
+      "artifact": "layers/widget-strawberries-c5.json",
+      "report": "layers/widget-strawberries-c5.report.json",
+      "sha256": "13ced5188455c82d1f6ae63e684aa26a07fed1feb47ebddb501fc75f510ddf08",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c5"
+        },
+        "title": "Mirror Temple — Strawberries"
+      }
+    },
+    {
+      "id": "widget-strawberries-c7",
+      "kind": "widget",
+      "artifact": "layers/widget-strawberries-c7.json",
+      "report": "layers/widget-strawberries-c7.report.json",
+      "sha256": "7c4b6f5e0d1be0426cdc068f28802e8363145b2b3e69ec756466afc2f9fc80dc",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c7"
+        },
+        "title": "The Summit — Strawberries"
+      }
+    },
+    {
+      "id": "widget-strawberries-c9",
+      "kind": "widget",
+      "artifact": "layers/widget-strawberries-c9.json",
+      "report": "layers/widget-strawberries-c9.report.json",
+      "sha256": "29a551adfa17eb487f77466d2a9196508f3dc7e73957a15cd903c31e2015e9af",
+      "widget": {
+        "deckPosition": 3,
+        "scope": {
+          "kind": "chapter",
+          "chapterId": "celeste:c9"
+        },
+        "title": "Core — Strawberries"
+      }
     }
   ]
 }

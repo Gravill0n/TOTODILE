@@ -1,0 +1,469 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:strawberries-c5",
+    "title": "Mirror Temple — Strawberries",
+    "type": "dataTable",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c5"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "checkpoint",
+        "label": "Checkpoint"
+      },
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "how",
+        "label": "How to get it"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "celeste:strawberries-c5:b01",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "1",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Going left out of the first room brings you to the area seen at the end of Chapter 4, with the gondola at the ledge. Walk off that ledge, head back right, then dash diagonally up-right into the suspicious hole in the mountain and the area holding this strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b02",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "2",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the fifth room there is a hidden smashable wall to the left of the red bubble you would normally use to get to the upper section. The strawberry is behind that wall."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b03",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "3",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the fifth room, in the top left. Use the uppermost red bubble to go left and grab the wall. Jump and grab the next piece of wall on the left, then jump and climb the right wall. Walljump off the top and collect the berry, then fall through a gap on the left before dashing directly right to get back to safety."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b04",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "4",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Go from the lower section of the fifth room to the bottom left to find the room with this strawberry. To get across, jump onto the spring on the swap block, then dash left to bounce on it again before grabbing the wall and the berry. Dash diagonally up-right so you end up above where the swap block will arrive, then bounce on the spring. Move right to land on the spring again as it moves back right, then dash right and climb up to the starting area."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b05",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "5",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Go right from the previous berry's room to find another berry room. Use the red bubble to go up, dash right at the top, take the other red bubble left, then dash directly down at the gap on the left."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b06",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "6",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Enter the bottom-right transition of the fifth room to reach this berry's room. Jump on top of the first swap block, then for the next one dash straight up between the two swap blocks and land below where the swap block just moved away from. Quickly dash again, get below the third swap block, and reach the strawberry. Dash again to move the swap block and return left with one more dash. Jump up and dash directly up between the first and second swap block and grab the second one, then jump off it to the left to get back."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b07",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "7",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Two rooms below the fifth room, floating in the top middle among many spinners. Stand on either of the swap blocks and face towards the berry. Hit dash and immediately move towards the berry — you will be shot far past it, grabbing it on the way and landing safely."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b08",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "8",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Going to the left transition two rooms below the fifth room reaches this strawberry's room. First jump and dash into where the swap block will arrive, then cling to it. Collect the dash crystal and hold the wall. For a consistent strategy, jump off the wall and dash directly up back into the dash crystal, then dash directly left to grab the other swap block. Jump off that one to reach the strawberry. To return safely, jump right and keep going right with a diagonal up-right dash to grab the ledge — or walljump off the left swap block for more safety."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b09",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "9",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Going to the right transition two rooms below the fifth room reaches this strawberry's room. Stand on the swap block lined up with the vertical gap between the spinners. Dash directly downward onto it, then jump just after for a huge upward boost, letting you dash directly up into the red bubble. Take that bubble right and dash straight down onto the strawberry, steering left to enter another red bubble. Ride that right and dash down when you reach the gap to the lower area to claim the berry safely."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b10",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "10",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "From the sixth room, go up to the top transition to find this strawberry's room. To do that, walljump off the left area, dash directly up and grab the right side of the floating platform, then jump right onto the swap block and boost yourself with a jump at the end of its return. In the room above, jump and dash diagonally up-right above where the first swap block will move to, then grab its right side. Jump off into the dash crystal and grab the other swap block. Jump off that swap block and make a diagonal up-right dash to grab it on the other side of the crystal, which gets you to the top and the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b11",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "11",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "Go left from the eighth room by riding a red bubble to reach a room with the berry floating on the left side. Jump over the swap block and grab its left side, then dash into it. At the left side, jump off the swap block, grab the strawberry, hit the dash crystal, then dash right and grab the swap block to go back."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b12",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "12",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the ninth room there is a hidden area inside the central platform. Look for the chunk of platform dented inward and dash directly up from the red bubble after riding it left a little. Inside is a dash switch that unlocks a temple gate in a hidden lower area of the room. Hit it, then finish the room as normal. Ride the red bubble in the following room right, then up. The next room has a couple of touch switches to collect, which unlock the temple gate guarding the berry. For the left key token, ride the bottom red bubble up, dash out to enter the second red bubble and aim that one up-left into the next red bubble; aim that one down, then dash directly right and climb the wall. For the right key token, ride the second red bubble up-right and at the end dash directly right to reach the right red bubble; aim it at the key token and hold the wall after collecting it until the bubble respawns, then ride it back left. Try to fall inside the initial gap, using a direct upward dash to reposition if needed. Then go right from the starting area and claim the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b13",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "13",
+          "checkpoint": "Depths",
+          "type": "normal",
+          "how": "Above the left side of the first room is a hidden gap to another room. In there, go to the red bubble and take it right to grab the strawberry, then quickly dash straight down. Steer slightly left and take the bottom red bubble left before dashing up to get to safety."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b14",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "14",
+          "checkpoint": "Depths",
+          "type": "normal",
+          "how": "In the second room, a transition sits in the middle of the floor. Stand on the swap block in that room, then dash and move right to launch yourself to the wall, and climb it to reach the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b15",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "15",
+          "checkpoint": "Depths",
+          "type": "winged",
+          "how": "Going to the left side of the second room above the entrance finds an area with some spinners and a swap block. Dash to the swap block, hold on, then jump up the corridor when you arrive. In the room you reach, go to the top left. To get the winged strawberry in the next room, ride up the first two red bubbles to the ceiling, then move left during your descent to reach the next one. For the third, ride it left and work your way up the left area before dashing diagonally into the winged strawberry. Dash right as you fall; getting out is easy by riding the red bubbles up and dashing between them."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b16",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "16",
+          "checkpoint": "Depths",
+          "type": "normal",
+          "how": "In the ceiling of the second room, near the right, is a gap to the upper room. It can be tricky: jump right from the ledge and dash right to hold the swap block, and let go right as the other swap block returns to the left. From there, jump right and dash diagonally up-right to get above where the third swap block was, and climb up to where the strawberry hovers."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b17",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "17",
+          "checkpoint": "Depths",
+          "type": "normal",
+          "how": "Reached through another gap in the ceiling, to the left of the one used for the previous berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b18",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "18",
+          "checkpoint": "Depths",
+          "type": "normal",
+          "how": "Going to the top-left of the fourth room finds a transition to another berry room. Jump and dash diagonally up-left to reach the red bubble and ride it left. Go to the next red bubble up-right and keep moving right after collecting the strawberry. Dash into the next red bubble and take it right, then dash down before hitting the spinners."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b19",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "19",
+          "checkpoint": "Depths",
+          "type": "normal",
+          "how": "Going to the top-right of the fourth room finds another transition to a berry room. Ride the red bubble at the start to the right and, before hitting the spinners, dash diagonally up-right to grab the wall and the dash refill. Jump off the wall and dash diagonally up-right again, then climb that wall to reach the other red bubble. Direct it left and dash diagonally up-left before reaching the spinners. Land in the small gap in the floor where there are no spinners, then get back to the entrance."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b20",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "20",
+          "checkpoint": "Depths",
+          "type": "normal",
+          "how": "At the bottom of the fourth room is a transition on the left side. Dash in place to activate the swap blocks, then quickly run left to fall into the gap in the floor. Jump left out of the gap when the swap blocks return to normal. Hold the swap block and dash to get the momentum to jump off and land where the strawberry is."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b21",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "21",
+          "checkpoint": "Depths",
+          "type": "normal",
+          "how": "Going right at the bottom of the fourth room, there are 2 gaps in the floor, both leading to the same berry room. Walk off the platform and move towards the centre to grab the middle wall. Jump above the wall to the other side and grab the wall again. Jump off and dash into a red bubble to take you back to the start of the room."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b22",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "22",
+          "checkpoint": "Depths",
+          "type": "normal",
+          "how": "Go 2 rooms right from the bottom of the fourth room; from there the top-right transition leads to a strawberry. Dash to where the lower swap block is going to be and jump over the spinner as the swap block moves back. Do the same for the next swap block, then dash up on the right side to reach the transition."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b23",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "23",
+          "checkpoint": "Depths",
+          "type": "seeded",
+          "how": "Follow the steps for the previous berry, but instead of heading for the top-left transition, go for the dash switch on the ceiling above the second swap block. That opens the temple gate on the right, which leads to a seeded strawberry. Dash directly up into the leftmost seed and climb the wall. Jump off the wall, climb the swap block, and jump above it to both grab the next seed and land on the spring. Then either move right from the spring and dash to the wall to climb to the last seed, or boost yourself right by dashing from the swap block. In the lower-right corner of this area, dashing into the cracked wall opens a transition to the area with the cassette."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b24",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "24",
+          "checkpoint": "Unravelling",
+          "type": "normal",
+          "how": "In the sixth room. Lure the Seeker into the red wall on the right to break it, which exposes this strawberry and a spring."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b25",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "25",
+          "checkpoint": "Search",
+          "type": "normal",
+          "how": "In the third room, in the section opposite the left key path, reached by going below the initial entrance. Dash left into the red bubble and ride it left a little, then dash directly up. Hold the wall or swap block, then land on top of the swap block. Next, dash diagonally up-left to where the other swap block will arrive and land on it, then crouch until it returns to the left; when you uncrouch you collect this strawberry. To get back, dash directly up in the tiny corridor and fall to the red bubble, then take it back right."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b26",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "26",
+          "checkpoint": "Search",
+          "type": "normal",
+          "how": "Go to the top-left transition of the second room to find a secret room. Fall down and dash right into the red bubble, then take it left. When you are in the middle of both swap blocks, dash left out of the red bubble. That reaches a section above the third room with this strawberry above a disappearing platform. Important: this passage can only be entered once, so get the berry the first time you reach it or you will need to restart the chapter."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b27",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "27",
+          "checkpoint": "Search",
+          "type": "normal",
+          "how": "In the room right of the second room, go to the bottom right for a secret gap in the spikes leading to another berry room. Distract the Seeker in the lower area so you can hop between the tiny safe patches of ground and reach the strawberry, then do the same on the way back."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b28",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "28",
+          "checkpoint": "Search",
+          "type": "normal",
+          "how": "In the same section that leads to the previous berry. Hold the swap block and dash to launch yourself to another swap block. Jump off that one into the dash refill, then dash diagonally up-right into the other swap block and climb to the section above. The path from there leads right to the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b29",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "29",
+          "checkpoint": "Search",
+          "type": "normal",
+          "how": "A strawberry can be seen by the red bubble on the right of the second room, which would otherwise carry you across the spikes much further left. Under that red bubble is a smashable wall, destroyable only by aiming the bubble downward — which opens access to the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b30",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "30",
+          "checkpoint": "Search",
+          "type": "normal",
+          "how": "Collect all 3 keys, cross the gap in the third room — meaning you still hold 1 key when entering the red bubble — and go down to the next room, where that key unlocks the lock guarding this strawberry. Alternatively you can hold 1 key while skipping the bubble with an extended super."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c5:b31",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "31",
+          "checkpoint": "Rescue",
+          "type": "normal",
+          "how": "In the sixth room, and it needs the Theo Crystal and the Seeker together. Get to the end of the room, where the strawberry is above, and lure the Seeker over. Get a good bounce off the Seeker and use the height to throw Theo into the dash switch on the wall inside the spinners. That opens the temple gate blocking the berry, letting you dash straight up to it."
+        }
+      }
+    ]
+  }
+}

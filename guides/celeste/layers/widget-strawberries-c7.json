@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:strawberries-c7",
+    "title": "The Summit — Strawberries",
+    "type": "dataTable",
+    "scope": {
+      "kind": "chapter",
+      "chapterId": "celeste:c7"
+    },
+    "deckPosition": 3,
+    "columns": [
+      {
+        "id": "num",
+        "label": "#"
+      },
+      {
+        "id": "checkpoint",
+        "label": "Checkpoint"
+      },
+      {
+        "id": "type",
+        "label": "Type"
+      },
+      {
+        "id": "how",
+        "label": "How to get it"
+      }
+    ],
+    "rows": [
+      {
+        "itemId": "celeste:strawberries-c7:b01",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "1",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the third room, dash into a gap in the spinners to reach the berry room. You can grab the berry immediately, but then you have to navigate a room full of spinners to find a safe space to bank it."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b02",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "2",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the fifth room, dash into the enclave in the ceiling at the end platform to find a room with two berries — this one and berry 3. For the left berry, dash up to a spring that launches you into a wall, then use your 2 dashes to grab it and land back on the platform to collect it. For the right berry, dash up and walljump your way into a Dash Refill, then drop down to grab the berry and dash onto the starting platform. The source gives one description covering both berries in the room and does not say which is numbered which."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b03",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "3",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "The second of the two berries in the ceiling enclave off the fifth room. For the right berry, dash up and walljump your way into a Dash Refill, then drop down to grab the berry and dash onto the starting platform to collect it. For the left berry, dash up to a spring launching you into a wall, then use your 2 dashes to grab it and land back on the platform. The source gives one description covering both berries in the room and does not say which is numbered which."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b04",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "4",
+          "checkpoint": "Start",
+          "type": "normal",
+          "how": "In the sixth room, hovering above spinners, so you have to dash above some platforms with spikes. Once you pick it up, complete the rest of the room — or return to its beginning — to collect it."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b05",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "5",
+          "checkpoint": "500 M",
+          "type": "normal",
+          "how": "In the third room. Dash left after jumping off the zip mover and land on another one. Wait for it to return, then jump up to collect the berry and either return to the platform you started from or continue on the alternate path."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b06",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "6",
+          "checkpoint": "500 M",
+          "type": "normal",
+          "how": "At the end of the first room on the alternate path. Ride the zippers up, then bounce on the spring to reach and collect this berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b07",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "7",
+          "checkpoint": "500 M",
+          "type": "normal",
+          "how": "To the left of berry 6's location, a small bridge sits on the left wall; beyond it is a hidden passage to another room with this berry. After walking off the jump-through, dash left into the zip mover. Ride it up and fling Madeline upward, then dash left and reach the wall. Jump off the wall and ride the other zip mover to reach the wall, climb it, and collect the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b08",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "8",
+          "checkpoint": "500 M",
+          "type": "winged",
+          "how": "This winged berry is at the right of the fourth room on the main path. Use the spring to launch Madeline right and dash to go over the platform where the berry is, intercepting it while it is flying away."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b09",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "9",
+          "checkpoint": "500 M",
+          "type": "normal",
+          "how": "In the eighth room, hovering around some falling platforms. Make the left block fall and climb the wall to grab this berry. Then make the rightmost block fall and use the spring attached to it to reach the end of the room and collect the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b10",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "10",
+          "checkpoint": "500 M",
+          "type": "normal",
+          "how": "In the final, ninth room, hiding beyond the Badeline Booster at the end. Skip the booster, then climb the walls on the right until you find a hole leading to the area with this berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b11",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "11",
+          "checkpoint": "1000 M",
+          "type": "normal",
+          "how": "To the left of the fourth room. Use two Dream Blocks to reach the berry. To get back, dash into the first dash refill, then dash up and right twice to reach the second. Then dash into the wall, dash up and left into the dream block, and use your dashes to get back to safe ground."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b12",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "12",
+          "checkpoint": "1000 M",
+          "type": "normal",
+          "how": "To the right of the fifth room. Dash up diagonally through the Dream Block, grab the strawberry, then dash down diagonally to collect it."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b13",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "13",
+          "checkpoint": "1000 M",
+          "type": "normal",
+          "how": "Behind the fake wall hidden on the left path. Dash directly right into the dream block adjacent to the right wall."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b14",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "14",
+          "checkpoint": "1000 M",
+          "type": "normal",
+          "how": "To the left of the seventh room. Dash to the left wall and do an up-right dash followed by an up-left dash to get up the dream blocks. Then fall down, avoiding some spikes, to reach and collect the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b15",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "15",
+          "checkpoint": "1000 M",
+          "type": "normal",
+          "how": "In the eighth room, above the second dream block, in a suspicious hidden area reached by dashing left over the spikes above."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b16",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "16",
+          "checkpoint": "1000 M",
+          "type": "normal",
+          "how": "Found just after the final Badeline Booster, inside an oddly textured smashable wall."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b17",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "17",
+          "checkpoint": "1500 M",
+          "type": "normal",
+          "how": "In the first room of 1500 M. It requires difficult timing to dash past 3 Dust Bunnies on the way to this berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b18",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "18",
+          "checkpoint": "1500 M",
+          "type": "normal",
+          "how": "In a hole in the third room, between some Dust Bunnies. After falling down, use timing to navigate more dust bunnies and a sinking platform to collect it."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b19",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "19",
+          "checkpoint": "1500 M",
+          "type": "normal",
+          "how": "Hidden below berry 18's room, reached by falling into a hole between some Dust Bunnies. To collect it, activate four touch switches so the platform blocking the strawberry can move; a good way is to activate them from left to right. It is important not to touch too many walls, as they all have Dust Triggers on them, which makes it impossible to touch the same wall twice. It is also important to conserve your dash and stamina where you can."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b20",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "20",
+          "checkpoint": "1500 M",
+          "type": "normal",
+          "how": "In the fifth room, in the middle at the bottom, surrounded by dust bunnies. Stand on the jumpthrough below, dash right into the berry, then quickly dash left and grab the wall. Climb it to reach safety and claim the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b21",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "21",
+          "checkpoint": "1500 M",
+          "type": "normal",
+          "how": "In the sixth room, near a circling dust bunny and the dash refill. Once you grab the berry, replenish your dashes at the dash refill, then complete the room to collect it."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b22",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "22",
+          "checkpoint": "1500 M",
+          "type": "normal",
+          "how": "To the left of the eighth room. Dash up-left as soon as the first dust bunny moves towards the right. After collecting the first dash refill, dash up-left then straight up; drifting left should get you past the second dust bunny, where you collect another dash refill and dash past the dust bunny into the strawberry. Finally, use the spring to launch yourself back to the starting platform."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b23",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "23",
+          "checkpoint": "1500 M",
+          "type": "normal",
+          "how": "Beneath a smashable wall at the end of the eighth room. To collect it, drop down from the starting platform, dash right, then dash up. Repeat that, collect the berry, then immediately dash up to hit the spring. Dash left twice to get back to the starting platform."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b24",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "24",
+          "checkpoint": "1500 M",
+          "type": "winged",
+          "how": "In the tenth room there is a gap in the ceiling leading to the room with this winged berry. To collect it, use the springs while avoiding the Dust Bunnies. At the end, dash to the final spring, then twice more, to reach the room where you can intercept and collect this berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b25",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "25",
+          "checkpoint": "2000 M",
+          "type": "normal",
+          "how": "Above the second room, a small gap sits in the ceiling on the left side. Go into the left screen transition and dash up back into the second room to get into that gap. Inside is a room filled with pink clouds and spinners; jump right after you land on the pink clouds so you are not bounced into the spinners, and you can easily make it to the end of the room where the strawberry floats."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b26",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "26",
+          "checkpoint": "2000 M",
+          "type": "normal",
+          "how": "In the fifth room, floating at the far right below the ending bridge. Get to the left ledge just below, dash straight right, then straight up and hold the wall. Climb high and wait for a snowball to come at you, then jump onto it or let it hit you from below, then dash straight right twice to climb the right wall and collect the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b27",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "27",
+          "checkpoint": "2000 M",
+          "type": "normal",
+          "how": "In the seventh room, and one of the trickiest berries in the game. Ride the triggered platform up for a bit, and after passing the crumble block you need to stall precisely in the air and dash into the dash refill at the same moment the triggered platform is there. Jump off and dash straight up into the strawberry, then repeat the process when the triggered platform comes back. Finally, dash straight up and then straight right to land back on the triggered platform, and finishing the room collects the strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b28",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "28",
+          "checkpoint": "2000 M",
+          "type": "winged",
+          "how": "In the eighth room, go to the left transition to find a room with this winged strawberry. Jumping from the right ledge gets you to the left floating platform. Jump right and climb to the top of the right floating platform before jumping all the way left. With a straight left dash and then a quick straight up dash, you can catch the winged strawberry before it flies away."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b29",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "29",
+          "checkpoint": "2000 M",
+          "type": "seeded",
+          "how": "In the room holding the previous strawberry, a smashable wall is visible in the ceiling, leading to another berry room. Above that room is yet another secret berry room, reached by leading the guided platform at the start to the left and riding it to the top transition of the screen. The room that follows is a seeded strawberry challenge. As with Chapter 4's seeded strawberry, once you collect a seed the wind starts blowing left. Go to the top-right of the screen and dash into the nearby seed. Fall into the dash refill, then dash diagonally up-left and jump constantly up the wall to save stamina; at the top, move right to collect the next seed. Jump off that wall onto the right side of the floating platform, jump over it, and go left to climb the left wall into the final seed."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b30",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "30",
+          "checkpoint": "2000 M",
+          "type": "normal",
+          "how": "Located below the room of the previous strawberry and above the room of strawberry 4. Approach the guided platform with a straight-up dash and then a straight-right dash. Guide it right as it rises and fall into the green bubble. Direct that bubble up-right, then a straight up and straight right dash gets you to the other green bubble. Launch that one straight upward, then fall down and dash right through the gap in the spinners to reach the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b31",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "31",
+          "checkpoint": "2000 M",
+          "type": "normal",
+          "how": "In the ninth room, and very straightforward. As the wind carries you right, you can see this strawberry in a small gap in the spinners — dash straight into it, then up-right into the green bubble, and complete the room normally from there."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b32",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "32",
+          "checkpoint": "2000 M",
+          "type": "normal",
+          "how": "In the eleventh room. At the end of the room, where the Badeline booster would carry you to the next subchapter, avoid the purple orb and dash right underneath it into the suspicious cracked wall with no spinners on it. The strawberry is hidden in that area."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b33",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "33",
+          "checkpoint": "2500 M",
+          "type": "normal",
+          "how": "Riding the first red bubble left — or simply dashing into the smashable wall it breaks — reaches a room with this strawberry. Stand on the bridge above and dash onto the floor, then quickly run off the bridge and land in the red bubble. Take it left and, as soon as you reach the wall, jump right and grab the swap block. Let go right as it arrives back at the top and you are flung into the air. With both dashes available in the section above, dash left to get the berry, then dash back right to claim it."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b34",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "34",
+          "checkpoint": "2500 M",
+          "type": "normal",
+          "how": "In the first room, in the middle of the room under the usual red bubble path. Dash straight down into the gap in the spikes as you pass it in the red bubble, then dash diagonally up-right to land on the disappearing platform. Jump up and do an upward, then diagonally up-right dash out of the area to another disappearing platform, then dash into the nearby red bubble."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b35",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "35",
+          "checkpoint": "2500 M",
+          "type": "normal",
+          "how": "In the same room as the key above the fifth room, but on the left side instead of the right. Take the red bubble path two rooms below on the left to get to the strawberry's location."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b36",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "36",
+          "checkpoint": "2500 M",
+          "type": "normal",
+          "how": "At the start of the sixth room, ride the first red bubble straight up to reveal a hidden path above. The strawberry is at the end of the first room you enter, above a disappearing platform. Make your way to the spring on the right and try to grab the wall above it. When the swap block is about halfway back to its original position, bounce on the spring and hold onto the swap block; from there you can dash to the berry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b37",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "37",
+          "checkpoint": "2500 M",
+          "type": "normal",
+          "how": "After finishing the room holding the previous strawberry, two more rooms have to be completed. In the first, carefully time jumping and dashing up into dash switches while avoiding blades, then do the same again with springs. The strawberry is in the second room after. Its first challenge just has you dashing on a swap block and launching yourself forward by jumping right after; then comes some careful dash timing around blades."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b38",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "38",
+          "checkpoint": "2500 M",
+          "type": "normal",
+          "how": "In the twelfth room, in a hidden area near the middle. Below the swap block that is meant to launch you up to the last two swap blocks, a hidden passage is revealed by entering from the left side."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b39",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "39",
+          "checkpoint": "2500 M",
+          "type": "normal",
+          "how": "Right by the red bubble you ride up into the purple orb are a few secret areas. To the top-left of the red booster is a dash switch. To the top-right is a temple gate that the switch opens, protecting another dash switch. To the bottom-right of the red bubble, this strawberry sits behind a temple gate that the top-right dash switch unlocks."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b40",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "40",
+          "checkpoint": "2500 M",
+          "type": "normal",
+          "how": "To the bottom-left of the red bubble at the end of the twelfth room, the wall reveals a hidden section with this strawberry."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b41",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "41",
+          "checkpoint": "3000 M",
+          "type": "normal",
+          "how": "Amid flag 26's platforming, this strawberry floats under a platform. Dash right into it, then straight up, and touch the nearby dash refill to continue onward and claim it."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b42",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "42",
+          "checkpoint": "3000 M",
+          "type": "normal",
+          "how": "At the end of flag 24, a strawberry sits to the left of where flag 23 would be entered. From the crumble block below, jump left and dash leftward, then start climbing the wall. At the top of the wall, jump right to get the strawberry and clear the spikes, then dash right to land on the crumble block and get to safety."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b43",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "43",
+          "checkpoint": "3000 M",
+          "type": "normal",
+          "how": "Near the start of flag 21, above the normal path among some spikes. Bounce off the spring and dash straight up to climb the right side of the thin floating platform. Jump and dash into the strawberry, then jump back left. Finally, jump over the floating platform and keep going left to get back to the flag."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b44",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "44",
+          "checkpoint": "3000 M",
+          "type": "normal",
+          "how": "To the left of flag 18 is a section with a lot of spinners and this strawberry. Do a full bounce up from the nearby cloud and move left, over the spinners. Using your two dashes, carefully time boosting yourself up to reach the strawberry without touching the spinners. Afterwards, fall into the dash refill and make your way back to the cloud."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b45",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "45",
+          "checkpoint": "3000 M",
+          "type": "normal",
+          "how": "A strawberry hovers to the bottom-right of flag 16. Do a diagonal dash into it after falling from the bridge, then diagonally dash the other way and wrap Madeline around the thin section of wall to grab its left side and climb back up to safety."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b46",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "46",
+          "checkpoint": "3000 M",
+          "type": "normal",
+          "how": "To the left of flag 15, beyond the tall wall of spinners, this berry floats near the left wall. Do a full jump and then dash diagonally up-left over the spinners to reach the strawberry, then climb the wall and dash diagonally up-right back over the spinners."
+        }
+      },
+      {
+        "itemId": "celeste:strawberries-c7:b47",
+        "sourceRefs": [
+          "src-ink-collectables"
+        ],
+        "confidence": "normal",
+        "checkable": true,
+        "cells": {
+          "num": "47",
+          "checkpoint": "3000 M",
+          "type": "normal",
+          "how": "This strawberry hovers above the main path of flag 4, though it is worth reaching flag 3 as a breather point before going for it. A feather is needed to reach the area. If you go for the berry while completing flag 4, the feather used there can be carried upward to reach the small disappearing platform; if you go after saving at flag 3, the feather found just above can be brought down and to the left to give access. Jump onto the small disappearing platform, dash diagonally up-left over the block of spinners, and grab the left side of the floating platform. From there, jump to the disappearing platforms on the left and reach the strawberry, then ride the feather below onward as normal and claim the strawberry when you land."
+        }
+      }
+    ]
+  }
+}
