@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "layer": "widget-achievements",
+  "generatedAt": "2026-07-30T18:55:00Z",
+  "inputs": [
+    {
+      "file": "layers/spine.json",
+      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+    },
+    {
+      "file": "deck.json",
+      "sha256": "e3201f6fa921f2c3876a25b68e3cc7125b6326dfe3fbbdfb117d76c272e81cd3"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "503f409a29c3e1a24e491f12735254832160bb2d045e136b958e23775eabd73c"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "e5ab1bc1eab4b4c0ae4c4c556dc943dd06779dd5ec7c74465b2e6020999a9e0d"
+    }
+  ],
+  "report": {
+    "rowCount": 32,
+    "anomalies": [
+      "celeste:achievements:real-gamer and celeste:achievements:1up — neither achievement has a location in any manifested source, so the spine emits no step for either and this checklist is the only place they are tracked. \"Real Gamer\" (Complete Celeste for PICO-8) and \"1UP!\" (Get a 1UP) need a source added through the sources pass before the route can place them. The rows themselves are not flagged: their name and requirement are reproduced exactly from src-ink-achievements and are not in doubt — only where they are earned is unknown.",
+      "celeste:achievements:thanks-for-playing is the only achievement covering more than one chapter of work — \"Complete all C-Sides\" pays out once for all eight. Every other clear and heart achievement is one-to-one with a cell of the Sides & Hearts matrix."
+    ],
+    "flaggedItemIds": []
+  },
+  "notes": [
+    "Deck slot 6 (checklist, Achievements, global). Composition approved by Pierre 2026-07-30.",
+    "All 32 achievements from src-ink-achievements, in the source's own four groups of eight: chapter clears, crystal hearts, B-Sides, and the remaining eight. This list is the guide's completion definition, per Pierre 2026-07-29 — it deliberately excludes golden strawberries.",
+    "Notes carry the source's requirement text verbatim, prefixed with its group. The only edit is stripping the &nbsp; entities the wiki table leaves on four of the rows; no wording changed.",
+    "Celeste has no RetroAchievements set, so these are Steam/Xbox/PlayStation achievements tracked by hand here rather than through the RA mapping — no step in the spine carries achievementRefs, and the ra-mapping pass does not apply to this guide.",
+    "No flagged rows."
+  ]
+}

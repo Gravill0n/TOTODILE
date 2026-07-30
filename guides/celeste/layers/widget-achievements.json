@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "guideId": "celeste",
+  "pass": "widget",
+  "widget": {
+    "id": "celeste:achievements",
+    "title": "Achievements",
+    "type": "checklist",
+    "scope": {
+      "kind": "global"
+    },
+    "deckPosition": 6,
+    "rows": [
+      {
+        "itemId": "celeste:achievements:forsaken",
+        "label": "Forsaken",
+        "note": "Chapter clear — Complete Chapter 1",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:archaeology",
+        "label": "Archaeology",
+        "note": "Chapter clear — Complete Chapter 2",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:checking-out",
+        "label": "Checking Out",
+        "note": "Chapter clear — Complete Chapter 3",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:breathe",
+        "label": "Breathe",
+        "note": "Chapter clear — Complete Chapter 4",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:in-the-mirror",
+        "label": "In the Mirror",
+        "note": "Chapter clear — Complete Chapter 5",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:reflection",
+        "label": "Reflection",
+        "note": "Chapter clear — Complete Chapter 6",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:celeste",
+        "label": "Celeste",
+        "note": "Chapter clear — Climb Celeste Mountain",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:farewell",
+        "label": "Farewell",
+        "note": "Chapter clear — Complete Chapter 9",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:pointless-machines",
+        "label": "Pointless Machines",
+        "note": "Crystal heart — Collect the Crystal Heart in Chapter 1",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:resurrections",
+        "label": "Resurrections",
+        "note": "Crystal heart — Collect the Crystal Heart in Chapter 2",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:scattered-and-lost",
+        "label": "Scattered and Lost",
+        "note": "Crystal heart — Collect the Crystal Heart in Chapter 3",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:eye-of-the-storm",
+        "label": "Eye of the Storm",
+        "note": "Crystal heart — Collect the Crystal Heart in Chapter 4",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:quiet-and-falling",
+        "label": "Quiet and Falling",
+        "note": "Crystal heart — Collect the Crystal Heart in Chapter 5",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:heavy-and-frail",
+        "label": "Heavy and Frail",
+        "note": "Crystal heart — Collect the Crystal Heart in Chapter 6",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:pink-sunrise",
+        "label": "Pink Sunrise",
+        "note": "Crystal heart — Collect the Crystal Heart in Chapter 7",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:heart-of-the-mountain",
+        "label": "Heart of the Mountain",
+        "note": "Crystal heart — Collect the Crystal Heart in Chapter 8",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:sever-the-skyline",
+        "label": "Sever the Skyline",
+        "note": "B-Side — Complete Chapter 1 B-Side",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:black-moonrise",
+        "label": "Black Moonrise",
+        "note": "B-Side — Complete Chapter 2 B-Side",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:good-karma",
+        "label": "Good Karma",
+        "note": "B-Side — Complete Chapter 3 B-Side",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:golden-feather",
+        "label": "Golden Feather",
+        "note": "B-Side — Complete Chapter 4 B-Side",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:mirror-magic",
+        "label": "Mirror Magic",
+        "note": "B-Side — Complete Chapter 5 B-Side",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:center-of-the-earth",
+        "label": "Center of the Earth",
+        "note": "B-Side — Complete Chapter 6 B-Side",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:no-more-running",
+        "label": "No More Running",
+        "note": "B-Side — Complete Chapter 7 B-Side",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:say-goodbye",
+        "label": "Say Goodbye",
+        "note": "B-Side — Complete Chapter 8 B-Side",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:strawberry-badge",
+        "label": "Strawberry Badge",
+        "note": "Other — Collect 30 Strawberries",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:strawberry-medal",
+        "label": "Strawberry Medal",
+        "note": "Other — Collect 80 Strawberries",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:impress-your-friends",
+        "label": "Impress Your Friends",
+        "note": "Other — Collect 175 Strawberries",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:gateway",
+        "label": "Gateway",
+        "note": "Other — Collect a Cassette",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:real-gamer",
+        "label": "Real Gamer",
+        "note": "Other — Complete Celeste for PICO-8",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:thanks-for-playing",
+        "label": "Thanks For Playing",
+        "note": "Other — Complete all C-Sides",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:1up",
+        "label": "1UP!",
+        "note": "Other — Get a 1UP",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      },
+      {
+        "itemId": "celeste:achievements:wow",
+        "label": "Wow",
+        "note": "Other — Find the moon berry",
+        "sourceRefs": [
+          "src-ink-achievements"
+        ],
+        "confidence": "normal"
+      }
+    ]
+  }
+}
