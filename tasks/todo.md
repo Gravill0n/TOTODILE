@@ -23,27 +23,35 @@ make a broken LFS state loud.
 
 ## Phase 1 — LFS on, images converted
 
-- [ ] **1.1** **Pierre**: `sudo apt install git-lfs` (candidate 3.4.1-1ubuntu0.4), then
-      `git lfs install`. Needs sudo and writes `filter.lfs.*` to `~/.gitconfig`; reversible
-      with `git lfs uninstall` (XS)
-  - [ ] `git lfs version` prints 3.4.x
-  - [ ] `git config --get filter.lfs.clean` returns a value
-- [ ] **1.2** `.gitattributes` at the repo root — `guides/*/images/** filter=lfs diff=lfs
-      merge=lfs -text`, directory-wide (an extension list would drift from `CONTENT_TYPES`
-      in `vite.config.ts` and `IMAGE_EXTENSIONS` in `contentPrecache.ts`) and root-anchored
-      (so the fixture repo under `app/src/testing/` stays ordinary blobs). Commit, then
-      `git add --renormalize guides` as a second commit (S)
-  - [ ] `git lfs ls-files | wc -l` → **266**
-  - [ ] `git cat-file -p HEAD:guides/zelda-oot/images/map-overworld.png | head -c 45` →
-        `version https://git-lfs.github.com/spec/v1`
-  - [ ] `file guides/zelda-oot/images/map-overworld.png` → `PNG image data, 1911 x 1080`
-  - [ ] `git lfs status` and `git status` clean
+- [x] **1.1** git-lfs installed by Pierre — `git-lfs/3.4.1 (GitHub; linux amd64; go 1.22.2)`,
+      `filter.lfs.clean` = `git-lfs clean -- %f`, smudge likewise (XS)
+- [x] **1.2** `.gitattributes` at the repo root (commit `38965f8`) then
+      `git add --renormalize guides` (commit `15214aa`). Pattern is
+      `guides/*/images/** filter=lfs diff=lfs merge=lfs -text` — directory-wide and
+      root-anchored, as decided (S)
+  - [x] `git lfs ls-files | wc -l` → **266**
+  - [x] `git cat-file -p HEAD:guides/zelda-oot/images/map-overworld.png` →
+        `version https://git-lfs.github.com/spec/v1`, `size 1020395`
+  - [x] `file guides/zelda-oot/images/map-overworld.png` →
+        `PNG image data, 1911 x 1080, 8-bit colormap`
+  - [x] `git lfs status` and `git status --porcelain` clean
+  - [x] Scope proved with `git check-attr` **before** converting: real and nested guide
+        images → `filter: lfs`; PWA icons, fixture images, guide JSON and the gitignored
+        `sources/` scrapes → `filter: unspecified`
+  - [x] **Bytes provably intact**: all 266 files verified against sha256sums taken before
+        conversion (`sha256sum -c` exit 0), 0 pointer-text files and 0 non-image files in
+        the working tree. For `map-overworld.png` the LFS oid
+        `0de1fbe5…9df33` *equals* the pre-conversion sha256 — the bytes are in the object
+        store, not merely assumed to be
 
-### ☐ Checkpoint A — foundation
-- [ ] `yarn check` green from `app/`
-- [ ] `yarn dev` — a zelda-oot map still renders (`serveRepoContent()` reads the working tree)
-- [ ] **Do not push yet** — without the CI guard (2.1) and the CI pull (3.1) a push to
-      `main` would deploy pointer text as every map
+### ☑ Checkpoint A — foundation
+- [x] `yarn check` green from `app/` — enforced by the pre-commit hook on both commits
+      (247 files linted, 104 test files / 682 tests, `validate-guides` 3 guides all green)
+- [x] `yarn dev` serves real bytes through `serveRepoContent()`: the map-overworld.png
+      response is `200 image/png`, `PNG image data, 1911 x 1080`, sha256 identical to the
+      original. Spot-checked a crystal mapPins image (27854 B), a zelda-oot step icon
+      (30858 B) and `guide.json` (736288 B) — all 200
+- [x] **Not pushed** — 3 commits sit local until the 2.1 guard and 3.1 CI pull are in
 
 ## Phase 2 — Make a broken LFS state loud
 
