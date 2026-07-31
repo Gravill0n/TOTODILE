@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import type { MatrixWidget } from "@/schema";
 import { FlagMark } from "../FlagMark";
 import type { WidgetProps } from "../widgetProps";
+import { highlightClass } from "../widgetProps";
 
 type MatrixProps = WidgetProps<MatrixWidget>;
 
@@ -66,6 +67,7 @@ export function Matrix({ widget, progress, onToggle }: MatrixProps) {
                       className={cn(
                         "flex min-h-11 min-w-11 items-center justify-center gap-1 px-2 py-1",
                         done && "bg-primary/15",
+                        highlightClass(progress, cell.itemId),
                       )}
                     >
                       <Checkbox

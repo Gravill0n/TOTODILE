@@ -27,6 +27,8 @@ type MapPanelProps = {
    */
   pinsFor?: (src: string) => readonly PinLike[];
   doneIds?: ReadonlySet<string>;
+  /** Pins the current step hands over — same treatment as the widget card. */
+  highlightIds?: ReadonlySet<string>;
   onTogglePin?: (itemId: string) => void;
 };
 
@@ -83,6 +85,7 @@ export function MapPanel({
   onViewChange,
   pinsFor,
   doneIds,
+  highlightIds,
   onTogglePin,
 }: MapPanelProps) {
   const settleRef = useRef<ReturnType<typeof setTimeout>>(undefined);
@@ -224,6 +227,7 @@ export function MapPanel({
                 <PinOverlay
                   pins={pins}
                   doneIds={doneIds}
+                  {...(highlightIds ? { highlightIds } : {})}
                   onToggle={onTogglePin}
                 />
               ) : null}

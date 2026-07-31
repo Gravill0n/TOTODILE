@@ -29,6 +29,9 @@ export function MapPins({
     <PinOverlay
       pins={widget.pins}
       doneIds={progress.doneIds}
+      {...(progress.highlightIds
+        ? { highlightIds: progress.highlightIds }
+        : {})}
       onToggle={onToggle}
     />
   );

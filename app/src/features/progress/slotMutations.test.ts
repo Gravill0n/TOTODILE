@@ -74,3 +74,77 @@ describe("slotMutations (pure)", () => {
     expect(JSON.stringify(before)).toBe(frozen);
   });
 });
+
+// A step hands over the widget rows the route ties to it (`stepRef`). The
+// fan-out lives in these mutations so every way a step settles inherits it.
+describe("a step's linked widget rows follow it", () => {
+  // s1 hands over two rows; s2 hands over one; s3 hands over nothing.
+  const links: Record<string, string[]> = {
+    "g:c1:s1": ["g:w1:r1", "g:w1:r2"],
+    "g:c1:s2": ["g:w2:r1"],
+  };
+  const linkedItems = (stepId: string) => links[stepId] ?? [];
+  const state = (s: ProgressSlot, id: string) => s.itemStates[id]?.state;
+
+  it("ticking the step ticks its rows, in the same write", () => {
+    const next = toggleDone(slot(), STEPS, "g:c1:s1", AT, linkedItems);
+    expect(state(next, "g:c1:s1")).toBe("done");
+    expect(state(next, "g:w1:r1")).toBe("done");
+    expect(state(next, "g:w1:r2")).toBe("done");
+  });
+
+  it("unticking the step takes them back", () => {
+    const on = toggleDone(slot(), STEPS, "g:c1:s1", AT, linkedItems);
+    const off = toggleDone(on, STEPS, "g:c1:s1", AT, linkedItems);
+    expect(state(off, "g:c1:s1")).toBeUndefined();
+    expect(state(off, "g:w1:r1")).toBeUndefined();
+    expect(state(off, "g:w1:r2")).toBeUndefined();
+  });
+
+  it("leaves rows belonging to other steps alone", () => {
+    const next = toggleDone(slot(), STEPS, "g:c1:s1", AT, linkedItems);
+    expect(state(next, "g:w2:r1")).toBeUndefined();
+  });
+
+  // One direction only: a row is a thing found, a step is route walked.
+  it("ticking a row never marks its step", () => {
+    const next = toggleDone(slot(), STEPS, "g:w1:r1", AT, linkedItems);
+    expect(state(next, "g:w1:r1")).toBe("done");
+    expect(state(next, "g:c1:s1")).toBeUndefined();
+  });
+
+  it("a step with no links behaves exactly as before", () => {
+    const withLinks = toggleDone(slot(), STEPS, "g:c1:s3", AT, linkedItems);
+    const without = toggleDone(slot(), STEPS, "g:c1:s3", AT);
+    expect(withLinks).toEqual(without);
+  });
+
+  it("the burst hands over the rows of every step it settles", () => {
+    const next = markThrough(slot(), STEPS, "g:c1:s2", AT, linkedItems);
+    expect(state(next, "g:w1:r1")).toBe("done");
+    expect(state(next, "g:w2:r1")).toBe("done");
+  });
+
+  // The burst spares a deliberate skip, so its rows are spared with it.
+  it("the burst skips the rows of a step it deliberately steps over", () => {
+    const skipped = toggleSkip(slot(), STEPS, "g:c1:s1", AT);
+    const next = markThrough(skipped, STEPS, "g:c1:s2", AT, linkedItems);
+    expect(state(next, "g:c1:s1")).toBe("skipped");
+    expect(state(next, "g:w1:r1")).toBeUndefined();
+    expect(state(next, "g:w2:r1")).toBe("done");
+  });
+
+  it("an RA unlock on a step hands over its rows too", () => {
+    const next = markManyDone(slot(), ["g:c1:s1"], AT, linkedItems);
+    expect(state(next, "g:w1:r1")).toBe("done");
+  });
+
+  // FR-C2: sync is additive. It may mark, never un-mark.
+  it("sync never un-marks through the links", () => {
+    const before = slot({
+      itemStates: { "g:w1:r1": { state: "done", at: AT } },
+    });
+    const next = markManyDone(before, ["g:c1:s1"], AT, linkedItems);
+    expect(state(next, "g:w1:r1")).toBe("done");
+  });
+});

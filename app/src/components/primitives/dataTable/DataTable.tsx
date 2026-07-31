@@ -3,6 +3,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import type { DataTableWidget } from "@/schema";
 import { FlagMark } from "../FlagMark";
 import type { WidgetProps } from "../widgetProps";
+import { highlightClass } from "../widgetProps";
 
 type DataTableProps = WidgetProps<DataTableWidget>;
 
@@ -41,7 +42,10 @@ export function DataTable({ widget, progress, onToggle }: DataTableProps) {
           </thead>
           <tbody>
             {widget.rows.map((row) => (
-              <tr key={row.itemId}>
+              <tr
+                key={row.itemId}
+                className={highlightClass(progress, row.itemId)}
+              >
                 {hasCheckable ? (
                   <td className="border-b border-line px-1">
                     {row.checkable ? rowCheckbox(row) : null}

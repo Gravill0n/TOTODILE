@@ -4,6 +4,19 @@ import { advancePointer } from "./pointer";
 // Pure slot transitions, extracted verbatim from useGuideProgress: no Date,
 // no storage — the hook supplies `at` and owns write-through + stats (FR-B1).
 
+// The widget rows a step hands over (`checkable.stepRef`, 2026-07-31). Ticking
+// a step ticks them; unticking it takes them back. The fan-out lives here
+// rather than in the callers because every way a step settles routes through
+// this file — the tap, the burst, and the RA sync — and a caller added later
+// would otherwise have to remember.
+//
+// One direction: a row never marks its step. A step is a stretch of route
+// walked, a row is a thing found, and one of five things found does not mean
+// the route is walked.
+export type LinkedItems = (stepId: string) => readonly string[];
+
+const NO_LINKS: LinkedItems = () => [];
+
 // The shared "advance the pointer past a newly-settled step" move: checking
 // or skipping the step under the pointer walks it forward (§6.7).
 function advancedPast(
@@ -19,6 +32,7 @@ export function toggleDone(
   stepIds: readonly string[],
   itemId: string,
   at: string,
+  linkedItems: LinkedItems = NO_LINKS,
 ): ProgressSlot {
   const itemStates = { ...slot.itemStates };
   const wasDone = itemStates[itemId]?.state === "done";
@@ -27,6 +41,14 @@ export function toggleDone(
   } else {
     // Done replaces a skip — the two are exclusive (FR-B2).
     itemStates[itemId] = { state: "done", at };
+  }
+  // The rows this step hands over follow it, both ways: unticking a step you
+  // ticked by mistake must not leave its loot ticked. A row the player had
+  // ticked by hand is taken back too — the alternative is remembering who
+  // ticked what, which is a second progress model for a rare case.
+  for (const linked of linkedItems(itemId)) {
+    if (wasDone) delete itemStates[linked];
+    else itemStates[linked] = { state: "done", at };
   }
   let currentStepId = slot.currentStepId;
   if (!wasDone && itemId === slot.currentStepId) {
@@ -69,6 +91,7 @@ export function markThrough(
   stepIds: readonly string[],
   stepId: string,
   at: string,
+  linkedItems: LinkedItems = NO_LINKS,
 ): ProgressSlot {
   const to = stepIds.indexOf(stepId);
   if (to === -1) return slot;
@@ -81,6 +104,14 @@ export function markThrough(
   for (const id of stepIds.slice(start, end + 1)) {
     if (!itemStates[id]) {
       itemStates[id] = { state: "done", at };
+      // A burst settles many steps at once; each still hands over its rows.
+      // Additive here, matching the burst itself — a deliberate skip inside
+      // the range keeps its rows untouched because the step is not marked.
+      for (const linked of linkedItems(id)) {
+        if (itemStates[linked]?.state !== "done") {
+          itemStates[linked] = { state: "done", at };
+        }
+      }
     }
   }
   const endId = stepIds[end];
@@ -97,12 +128,19 @@ export function markManyDone(
   slot: ProgressSlot,
   itemIds: readonly string[],
   at: string,
+  linkedItems: LinkedItems = NO_LINKS,
 ): ProgressSlot {
   const itemStates = { ...slot.itemStates };
-  for (const id of itemIds) {
+  const mark = (id: string) => {
     if (itemStates[id]?.state !== "done") {
       itemStates[id] = { state: "done", at };
     }
+  };
+  for (const id of itemIds) {
+    mark(id);
+    // An RA unlock that maps to a step means the step happened, so what that
+    // step hands over happened too. Still additive — sync never un-marks.
+    for (const linked of linkedItems(id)) mark(linked);
   }
   return { ...slot, itemStates };
 }
