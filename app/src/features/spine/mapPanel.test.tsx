@@ -158,6 +158,60 @@ describe("MapPanel", () => {
     expect(screen.getByRole("tab", { name: "Map 2" })).toBeDefined();
   });
 
+  // §7 S3 put pins only inside the widget card; the panel showed a bare map
+  // of the same room. They ride the panel map now — same itemIds, so one
+  // progress store keeps the two surfaces in step.
+  it("draws the pins that belong to the map on screen", () => {
+    const onTogglePin = vi.fn();
+    render(
+      <MapPanel
+        locationName="Castle Gate"
+        images={[image, b1f]}
+        resolveAsset={(path) => path}
+        viewOf={() => view}
+        onViewChange={vi.fn()}
+        pinsFor={(src) =>
+          src === image.src
+            ? [{ itemId: "g:w:key", label: "Gate key", x: 0.3, y: 0.6 }]
+            : [{ itemId: "g:w:torch", label: "Torch", x: 0.1, y: 0.1 }]
+        }
+        doneIds={new Set()}
+        onTogglePin={onTogglePin}
+      />,
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Gate key" }));
+    expect(onTogglePin).toHaveBeenCalledWith("g:w:key");
+
+    // Switching sheets switches the pins with them.
+    fireEvent.click(screen.getByRole("tab", { name: "B1F" }));
+    expect(screen.queryByRole("button", { name: "Gate key" })).toBeNull();
+    expect(screen.getByRole("button", { name: "Torch" })).toBeDefined();
+  });
+
+  it("keeps the pins inside the zoom layer, so they hold their landmarks", () => {
+    render(
+      <MapPanel
+        locationName="Castle Gate"
+        images={[image]}
+        resolveAsset={(path) => path}
+        viewOf={() => view}
+        onViewChange={vi.fn()}
+        pinsFor={() => [
+          { itemId: "g:w:key", label: "Gate key", x: 0.3, y: 0.6 },
+        ]}
+        doneIds={new Set()}
+        onTogglePin={vi.fn()}
+      />,
+    );
+    const marker = screen.getByRole("button", { name: "Gate key" });
+    expect(marker.closest(".react-transform-component")).not.toBeNull();
+  });
+
+  it("draws no pins for a map that has none", () => {
+    renderPanel({}, [image]);
+    expect(screen.queryAllByRole("button")).toHaveLength(0);
+  });
+
   it("hands the map to the wheel and the pointer, within 100–400%", () => {
     renderPanel({ zoom: 2 });
     // react-zoom-pan-pinch owns the gestures; what this pins is that the map

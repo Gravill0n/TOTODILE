@@ -210,10 +210,13 @@ describe("mapPins (full overlay)", () => {
     expect(image.getAttribute("src")).toBe(
       "guides/fictional-quest/images/vault-map.png",
     );
-    // Pins are positioned buttons (not list checkboxes) — one per pin.
+    // Pins are positioned markers (not list checkboxes) — one per pin. The
+    // coordinates sit on the marker's wrapper, which also holds the list a
+    // grouped marker opens (a <ul> cannot live inside a <button>).
     const east = screen.getByLabelText("Shard — east alcove");
-    expect(east.style.left).toBe("78%");
-    expect(east.style.top).toBe("41%");
+    const placed = east.parentElement as HTMLElement;
+    expect(placed.style.left).toBe("78%");
+    expect(placed.style.top).toBe("41%");
     expect(east.getAttribute("aria-pressed")).toBe("false");
     fireEvent.click(east);
     expect(onToggle).toHaveBeenCalledWith(

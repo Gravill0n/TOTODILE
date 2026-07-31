@@ -4,6 +4,8 @@ import {
   TransformComponent,
   TransformWrapper,
 } from "react-zoom-pan-pinch";
+import { PinOverlay } from "@/components/primitives/mapPins/PinOverlay";
+import type { PinLike } from "@/components/primitives/mapPins/pinClusters";
 import type { ImageRef } from "@/schema";
 import type { MapView } from "@/types/mapView";
 
@@ -18,6 +20,14 @@ type MapPanelProps = {
   /** Where a given map was last left — keyed by its own src, not by place. */
   viewOf: (src: string) => MapView;
   onViewChange: (src: string, view: MapView) => void;
+  /**
+   * The pins drawn on a given map, from the mapPins widgets scoped to this
+   * place. Same itemIds as the widget card: one progress store, so ticking a
+   * pin here strikes the same row through there.
+   */
+  pinsFor?: (src: string) => readonly PinLike[];
+  doneIds?: ReadonlySet<string>;
+  onTogglePin?: (itemId: string) => void;
 };
 
 const FIT: MapView = { zoom: MIN_ZOOM, panX: 0, panY: 0 };
@@ -71,6 +81,9 @@ export function MapPanel({
   resolveAsset,
   viewOf,
   onViewChange,
+  pinsFor,
+  doneIds,
+  onTogglePin,
 }: MapPanelProps) {
   const settleRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const appliedRef = useRef<string | null>(null);
@@ -111,6 +124,8 @@ export function MapPanel({
       0,
     );
   };
+
+  const pins = pinsFor?.(image.src) ?? [];
 
   // A gesture is a stream of transforms — onTransform fires on every frame of
   // one — so the write waits for it to settle.
@@ -196,11 +211,23 @@ export function MapPanel({
             wrapperClass="!h-full !w-full cursor-grab"
             contentClass="!w-full"
           >
-            <img
-              src={resolveAsset(image.src)}
-              alt={image.alt}
-              className="block w-full [image-rendering:pixelated]"
-            />
+            {/* Relative, so the pins' fractional coordinates are fractions
+                OF THE IMAGE — and because the overlay lives inside the
+                transform, they stay on their landmarks at any zoom. */}
+            <div className="relative w-full">
+              <img
+                src={resolveAsset(image.src)}
+                alt={image.alt}
+                className="block w-full [image-rendering:pixelated]"
+              />
+              {pins.length > 0 && doneIds && onTogglePin ? (
+                <PinOverlay
+                  pins={pins}
+                  doneIds={doneIds}
+                  onToggle={onTogglePin}
+                />
+              ) : null}
+            </div>
           </TransformComponent>
         </TransformWrapper>
       </div>
