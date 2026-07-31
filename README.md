@@ -77,6 +77,13 @@ not sure, `yarn validate-guides` will tell you: it names any image that is still
 pointer and what to run. Nobody *visiting* the deployed site needs git-lfs — the
 deploy resolves the pointers and publishes real image bytes.
 
+`guides/<slug>/images/cover.*` is the library card's cover, pointed at by the `cover`
+field in `library.json` (a path from the repo root, unlike every other image
+reference, which is guide-relative). The four present covers are the publisher box art
+from each game's English Wikipedia infobox, at the 250px thumbnail Wikipedia itself
+serves — non-free art used to identify the game it belongs to, as the fan wikis the
+maps come from do. Replace or drop any of them by editing that one field.
+
 ## Tech
 
 TypeScript (strict) · React 19 · Vite (PWA) · Tailwind 4 · TanStack Router ·
