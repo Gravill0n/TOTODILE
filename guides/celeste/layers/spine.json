@@ -525,9 +525,19 @@
       "name": "Forsaken City B-Side",
       "mapImages": [
         {
+          "src": "images/map-forsaken-city-b-start.jpg",
+          "alt": "Forsaken City B-Side — Start",
+          "caption": "Start"
+        },
+        {
+          "src": "images/map-forsaken-city-b-contraption.jpg",
+          "alt": "Forsaken City B-Side — Contraption",
+          "caption": "Contraption"
+        },
+        {
           "src": "images/map-forsaken-city-b.jpg",
-          "alt": "Room layout of Forsaken City B-Side",
-          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+          "alt": "Forsaken City B-Side — Scrap Pit",
+          "caption": "Scrap Pit"
         }
       ]
     },
@@ -536,9 +546,19 @@
       "name": "Old Site B-Side",
       "mapImages": [
         {
+          "src": "images/map-old-site-b-start.jpg",
+          "alt": "Old Site B-Side — Start",
+          "caption": "Start"
+        },
+        {
+          "src": "images/map-old-site-b-combination-lock.jpg",
+          "alt": "Old Site B-Side — Combination Lock",
+          "caption": "Combination Lock"
+        },
+        {
           "src": "images/map-old-site-b.jpg",
-          "alt": "Room layout of Old Site B-Side",
-          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+          "alt": "Old Site B-Side — Dream Altar",
+          "caption": "Dream Altar"
         }
       ]
     },
@@ -547,9 +567,24 @@
       "name": "Celestial Resort B-Side",
       "mapImages": [
         {
+          "src": "images/map-celestial-resort-b-start.jpg",
+          "alt": "Celestial Resort B-Side — Start",
+          "caption": "Start"
+        },
+        {
+          "src": "images/map-celestial-resort-b-staff-quarters.jpg",
+          "alt": "Celestial Resort B-Side — Staff Quarters",
+          "caption": "Staff Quarters"
+        },
+        {
+          "src": "images/map-celestial-resort-b-library.jpg",
+          "alt": "Celestial Resort B-Side — Library",
+          "caption": "Library"
+        },
+        {
           "src": "images/map-celestial-resort-b.jpg",
-          "alt": "Room layout of Celestial Resort B-Side",
-          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+          "alt": "Celestial Resort B-Side — Rooftop",
+          "caption": "Rooftop"
         }
       ]
     },
@@ -558,9 +593,24 @@
       "name": "Golden Ridge B-Side",
       "mapImages": [
         {
+          "src": "images/map-golden-ridge-b-start.jpg",
+          "alt": "Golden Ridge B-Side — Start",
+          "caption": "Start"
+        },
+        {
+          "src": "images/map-golden-ridge-b-stepping-stones.jpg",
+          "alt": "Golden Ridge B-Side — Stepping Stones",
+          "caption": "Stepping Stones"
+        },
+        {
+          "src": "images/map-golden-ridge-b-gusty-canyon.jpg",
+          "alt": "Golden Ridge B-Side — Gusty Canyon",
+          "caption": "Gusty Canyon"
+        },
+        {
           "src": "images/map-golden-ridge-b.jpg",
-          "alt": "Room layout of Golden Ridge B-Side",
-          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+          "alt": "Golden Ridge B-Side — Eye of the Storm",
+          "caption": "Eye of the Storm"
         }
       ]
     },
@@ -569,9 +619,24 @@
       "name": "Mirror Temple B-Side",
       "mapImages": [
         {
+          "src": "images/map-mirror-temple-b-start.jpg",
+          "alt": "Mirror Temple B-Side — Start",
+          "caption": "Start"
+        },
+        {
+          "src": "images/map-mirror-temple-b-central-chamber.jpg",
+          "alt": "Mirror Temple B-Side — Central Chamber",
+          "caption": "Central Chamber"
+        },
+        {
+          "src": "images/map-mirror-temple-b-through-the-mirror.jpg",
+          "alt": "Mirror Temple B-Side — Through the Mirror",
+          "caption": "Through the Mirror"
+        },
+        {
           "src": "images/map-mirror-temple-b.jpg",
-          "alt": "Room layout of Mirror Temple B-Side",
-          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+          "alt": "Mirror Temple B-Side — Mix Master",
+          "caption": "Mix Master"
         }
       ]
     },
@@ -580,9 +645,24 @@
       "name": "Reflection B-Side",
       "mapImages": [
         {
+          "src": "images/map-reflection-b-start.jpg",
+          "alt": "Reflection B-Side — Start",
+          "caption": "Start"
+        },
+        {
+          "src": "images/map-reflection-b-reflection.jpg",
+          "alt": "Reflection B-Side — Reflection",
+          "caption": "Reflection"
+        },
+        {
+          "src": "images/map-reflection-b-rock-bottom.jpg",
+          "alt": "Reflection B-Side — Rock Bottom",
+          "caption": "Rock Bottom"
+        },
+        {
           "src": "images/map-reflection-b.jpg",
-          "alt": "Room layout of Reflection B-Side",
-          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+          "alt": "Reflection B-Side — Reprieve",
+          "caption": "Reprieve"
         }
       ]
     },
@@ -591,9 +671,39 @@
       "name": "The Summit B-Side",
       "mapImages": [
         {
+          "src": "images/map-the-summit-b-start.jpg",
+          "alt": "The Summit B-Side — Start",
+          "caption": "Start"
+        },
+        {
+          "src": "images/map-the-summit-b-500-m.jpg",
+          "alt": "The Summit B-Side — 500 M",
+          "caption": "500 M"
+        },
+        {
+          "src": "images/map-the-summit-b-1000-m.jpg",
+          "alt": "The Summit B-Side — 1000 M",
+          "caption": "1000 M"
+        },
+        {
+          "src": "images/map-the-summit-b-1500-m.jpg",
+          "alt": "The Summit B-Side — 1500 M",
+          "caption": "1500 M"
+        },
+        {
+          "src": "images/map-the-summit-b-2000-m.jpg",
+          "alt": "The Summit B-Side — 2000 M",
+          "caption": "2000 M"
+        },
+        {
+          "src": "images/map-the-summit-b-2500-m.jpg",
+          "alt": "The Summit B-Side — 2500 M",
+          "caption": "2500 M"
+        },
+        {
           "src": "images/map-the-summit-b.jpg",
-          "alt": "Room layout of The Summit B-Side",
-          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+          "alt": "The Summit B-Side — 3000 M",
+          "caption": "3000 M"
         }
       ]
     },
@@ -602,9 +712,24 @@
       "name": "Core B-Side",
       "mapImages": [
         {
+          "src": "images/map-core-b-start.jpg",
+          "alt": "Core B-Side — Start",
+          "caption": "Start"
+        },
+        {
+          "src": "images/map-core-b-into-the-core.jpg",
+          "alt": "Core B-Side — Into the Core",
+          "caption": "Into the Core"
+        },
+        {
+          "src": "images/map-core-b-burning-or-freezing.jpg",
+          "alt": "Core B-Side — Burning or Freezing",
+          "caption": "Burning or Freezing"
+        },
+        {
           "src": "images/map-core-b.jpg",
-          "alt": "Room layout of Core B-Side",
-          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+          "alt": "Core B-Side — Heartbeat",
+          "caption": "Heartbeat"
         }
       ]
     },

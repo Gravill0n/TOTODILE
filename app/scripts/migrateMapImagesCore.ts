@@ -122,6 +122,7 @@ export type ReportBody = {
 export function refreshReportInputs(
   report: ReportBody,
   digestOf: (file: string) => string | null,
+  note: string = MIGRATION_NOTE,
 ): boolean {
   let changed = false;
   for (const input of report.inputs ?? []) {
@@ -131,8 +132,8 @@ export function refreshReportInputs(
     input.sha256 = digest;
     changed = true;
   }
-  if (changed && !report.notes?.includes(MIGRATION_NOTE)) {
-    report.notes = [...(report.notes ?? []), MIGRATION_NOTE];
+  if (changed && !report.notes?.includes(note)) {
+    report.notes = [...(report.notes ?? []), note];
   }
   return changed;
 }

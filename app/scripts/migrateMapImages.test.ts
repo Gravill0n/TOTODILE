@@ -175,3 +175,14 @@ describe("refreshReportInputs", () => {
     expect(refreshReportInputs(body, digestOf)).toBe(false);
   });
 });
+
+describe("refreshReportInputs — a caller's own note", () => {
+  it("records the reason it was given, not the migration's", () => {
+    const body = {
+      inputs: [{ file: "layers/spine.json", sha256: "old" }],
+      notes: [],
+    };
+    refreshReportInputs(body, () => "new", "Spine re-run: maps only.");
+    expect(body.notes).toEqual(["Spine re-run: maps only."]);
+  });
+});

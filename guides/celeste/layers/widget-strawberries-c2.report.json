@@ -7,7 +7,7 @@
   "inputs": [
     {
       "file": "layers/spine.json",
-      "sha256": "9a9f071da796fa98c1f3a29a53320b8996454e1aafa46424c2be8a014beed7bd"
+      "sha256": "74488d1187cde876700ad9cdafa6d64edbc9d8f81df1f67ad35ee562988a036b"
     },
     {
       "file": "deck.json",
@@ -33,6 +33,7 @@
     "One row per red strawberry in the chapter, in the wiki's collection order. The How column reproduces the same prose as the corresponding spine step, so the route text lives in one voice in one place.",
     "Type distribution: 16 normal, 1 seeded, 1 winged.",
     "The Type column is not taken from the data layer's `type` field, which is under-populated: berries whose own prose calls them winged or flying are promoted to winged here. That correction makes the prose agree with src-tracker-maps' winged counts exactly in chapters 2, 3, 4, 5 and 7 — see the spine report. Forsaken City is the one chapter where the two sources genuinely disagree.",
-    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered.",
+    "Input digest for layers/spine.json refreshed by the 2026-07-31 spine re-run that attached the B-Side checkpoint maps. The spine layer is byte-identical outside location.mapImages — no id, step, visit or location this pass read was altered — so this layer s own output is unaffected."
   ]
 }

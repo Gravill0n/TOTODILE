@@ -7,7 +7,7 @@
   "inputs": [
     {
       "file": "layers/spine.json",
-      "sha256": "9a9f071da796fa98c1f3a29a53320b8996454e1aafa46424c2be8a014beed7bd"
+      "sha256": "74488d1187cde876700ad9cdafa6d64edbc9d8f81df1f67ad35ee562988a036b"
     },
     {
       "file": "deck.json",
@@ -36,6 +36,7 @@
     "Row labels carry the in-game chapter number, so Core reads \"Ch 8: Core\" while its pack index is 9. The two numberings disagree throughout the sources; the spine layer records the same convention.",
     "24 of the 32 cells correspond one-to-one with an achievement in src-ink-achievements: 7 A-Side clears, 8 crystal hearts, 8 B-Side clears, and Core's A-Side which has none. The 8 C-Side cells map collectively to the single \"Thanks For Playing\" achievement rather than one each.",
     "No flagged cells. Every cell is corroborated by a level-clear or crystal-heart pin in src-tracker-maps except Core's crystal heart, which the pack omits — see anomalies.",
-    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered.",
+    "Input digest for layers/spine.json refreshed by the 2026-07-31 spine re-run that attached the B-Side checkpoint maps. The spine layer is byte-identical outside location.mapImages — no id, step, visit or location this pass read was altered — so this layer s own output is unaffected."
   ]
 }
