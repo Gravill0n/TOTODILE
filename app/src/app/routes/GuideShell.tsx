@@ -156,12 +156,17 @@ export function GuideShell({
   const stepsTotal = stepIds.length;
   const achievements = mastery(raMapping, doneIds);
 
-  // FR-A5: widgets auto-filter to where the current step is — its chapter,
-  // its location (across every visit there), or its specific visit; the
+  // FR-A5: widgets auto-filter to the place on screen — its chapter, its
+  // location (across every visit there), or that specific visit; the
   // whole-game toggle lifts the filter. Global widgets always show.
+  //
+  // The visit in the URL, not the pointer's visit: the map beside it already
+  // follows the page ("you look at the map of the room you are reading
+  // about"), and a rail bound to the pointer disagreed with it the moment the
+  // reader walked ahead.
   const widgetContext = useMemo(
-    () => widgetContextFor(guide, currentStepId),
-    [guide, currentStepId],
+    () => widgetContextFor(guide, visitId),
+    [guide, visitId],
   );
   const visibleWidgets = useMemo(() => {
     const ordered = [...guide.widgets].sort(
