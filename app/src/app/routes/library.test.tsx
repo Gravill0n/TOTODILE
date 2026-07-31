@@ -193,4 +193,16 @@ describe("guide row", () => {
     // No cover in the manifest means no broken image request.
     expect(screen.queryByRole("img")).toBeNull();
   });
+
+  it("renders the manifest's cover path as-is — relative, for the subpath deploy", async () => {
+    stubGuideContent();
+    renderAppAt("/");
+    await screen.findByText("Fictional Quest — 100% guide");
+    const cover = screen.getByRole("presentation");
+    // A cover is a plain URL resolved from the repo root (validateGuides
+    // enforces the same reading), and it must stay relative: an absolute
+    // "/guides/…" 404s under /TOTODILE/ (§21.3).
+    expect(cover.getAttribute("src")).toBe("images/cover.png");
+    expect(cover.getAttribute("src")?.startsWith("/")).toBe(false);
+  });
 });

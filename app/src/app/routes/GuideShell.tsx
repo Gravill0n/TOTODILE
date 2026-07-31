@@ -7,6 +7,7 @@ import { Progress } from "@/components/ui/progress";
 import { Switch } from "@/components/ui/switch";
 import { useGuideProgress } from "@/features/progress/useGuideProgress";
 import { useGuideUi } from "@/features/progress/useGuideUi";
+import { useEditorMode } from "@/features/review/editorMode";
 import { ChapterRail } from "@/features/spine/ChapterRail";
 import { ChapterSheet } from "@/features/spine/ChapterSheet";
 import { chapterProgress, visitIndex } from "@/features/spine/chapterProgress";
@@ -61,6 +62,7 @@ export function GuideShell({
   visitId,
 }: GuideShellProps) {
   const navigate = useNavigate();
+  const editorMode = useEditorMode();
   const progress = useGuideProgress(guide);
   const ui = useGuideUi(guide.guideId);
   const [chaptersOpen, setChaptersOpen] = useState(false);
@@ -156,12 +158,17 @@ export function GuideShell({
   const stepsTotal = stepIds.length;
   const achievements = mastery(raMapping, doneIds);
 
-  // FR-A5: widgets auto-filter to where the current step is — its chapter,
-  // its location (across every visit there), or its specific visit; the
+  // FR-A5: widgets auto-filter to the place on screen — its chapter, its
+  // location (across every visit there), or that specific visit; the
   // whole-game toggle lifts the filter. Global widgets always show.
+  //
+  // The visit in the URL, not the pointer's visit: the map beside it already
+  // follows the page ("you look at the map of the room you are reading
+  // about"), and a rail bound to the pointer disagreed with it the moment the
+  // reader walked ahead.
   const widgetContext = useMemo(
-    () => widgetContextFor(guide, currentStepId),
-    [guide, currentStepId],
+    () => widgetContextFor(guide, visitId),
+    [guide, visitId],
   );
   const visibleWidgets = useMemo(() => {
     const ordered = [...guide.widgets].sort(
@@ -361,6 +368,16 @@ export function GuideShell({
           >
             Cleanup
           </a>
+          {/* Editor mode only (§9.3). The lens is where a recompiled layer is
+              re-approved, and until now a playable guide had no way into it. */}
+          {editorMode ? (
+            <a
+              href={`#/review/${entry.id}`}
+              className="shrink-0 text-sm text-ink-soft underline"
+            >
+              Review
+            </a>
+          ) : null}
         </>
       }
     >

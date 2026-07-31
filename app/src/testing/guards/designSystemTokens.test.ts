@@ -21,10 +21,7 @@ function blockOf(css: string, opener: RegExp): string {
 describe("design-system token contract", () => {
   const theme = blockOf(css, /@theme\s*\{/);
   const themeInline = blockOf(css, /@theme inline\s*\{/);
-  const dark = blockOf(
-    css,
-    /@media \(prefers-color-scheme: dark\)[\s\S]*?:root\s*\{/,
-  );
+  const dark = blockOf(css, /:root\[data-theme="dark"\]\s*\{/);
 
   it("ships the signal tints derived from the two signals", () => {
     for (const token of [
@@ -64,11 +61,16 @@ describe("design-system token contract", () => {
   });
 
   it("keeps design-system-only tokens out of the product", () => {
-    // --font-serif and [data-theme] are for specimens and printed artifacts;
-    // --color-mark names the app-icon teal precisely so it never becomes a UI
-    // colour (it also has no dark value, which would break token parity).
+    // --font-serif is for specimens and printed artifacts; --color-mark names
+    // the app-icon teal precisely so it never becomes a UI colour (it also has
+    // no dark value, which would break token parity).
+    //
+    // `[data-theme]` was on this list for the same reason — until 2026-07-31,
+    // when §5.4 gained the manual light/auto/dark override and the attribute
+    // became the product's own dark-mode selector (src/lib/theme.ts). It is no
+    // longer a specimen-only spelling, so only its *specimen* companions are
+    // still banned here.
     expect(css).not.toContain("--font-serif");
     expect(css).not.toContain("--color-mark");
-    expect(css).not.toContain("[data-theme");
   });
 });

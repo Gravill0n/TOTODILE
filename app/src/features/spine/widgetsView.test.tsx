@@ -18,8 +18,9 @@ afterEach(async () => {
   await deleteDB("totodile");
 });
 
-// Widget scope follows the pointer, not the URL (FR-A5), so these render at
-// the pointer's own visit unless they are about moving it.
+// Widget scope follows the URL, not the pointer (FR-A5, amended 2026-07-31):
+// the rail is about the page you are reading. These render at the pointer's
+// own visit, where the two agree.
 const renderGuide = async () => {
   stubGuideContent();
   renderGuideAt("fictional-quest");
@@ -46,13 +47,30 @@ describe("widget view (S3)", () => {
     expect(screen.getAllByText("Before the Vault Warden")).not.toHaveLength(0);
   });
 
-  it("moving the pointer into the Sunken Vault reveals its location-scoped map", async () => {
+  it("browsing to the Sunken Vault reveals its location-scoped map — pointer untouched", async () => {
     stubGuideContent();
     renderGuideAt("fictional-quest", VAULT);
     await screen.findByText(DIVE_TEXT);
-    // The vault map is scoped to the Sunken Vault location; moving the pointer
-    // to a step there reveals it and drops the chapter-1 checklist.
+    // The pointer is still on chapter 1's first step: nothing here has been
+    // checked and nothing was clicked. Walking into the vault to read about it
+    // is enough to bring its map, and to drop the chapter-1 checklist —
+    // widgets belong to the page, not to the bookmark.
+    await waitFor(() => {
+      expect(screen.getAllByText("Vault shard locations")).not.toHaveLength(0);
+    });
+    expect(screen.queryByText("Castle treasure checklist")).toBeNull();
+    // …and the pointer really did stay behind: the breadcrumb reads "step N
+    // of M" only while the pointer is on this page, and here it is not.
+    expect(screen.queryByText(/step \d+ of/)).toBeNull();
+  });
+
+  it("moving the pointer alone does not change the rail", async () => {
+    stubGuideContent();
+    renderGuideAt("fictional-quest", VAULT);
+    await screen.findByText(DIVE_TEXT);
     fireEvent.click(screen.getByRole("button", { name: /^Dive at buoy/ }));
+    // Same page, so the same widgets — the pointer moving to this visit adds
+    // nothing and, more to the point, takes nothing away.
     await waitFor(() => {
       expect(screen.getAllByText("Vault shard locations")).not.toHaveLength(0);
     });

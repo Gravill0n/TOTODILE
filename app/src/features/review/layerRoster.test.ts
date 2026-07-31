@@ -136,7 +136,11 @@ describe("loadLayerRoster", () => {
     await expect(loadLayerRoster("pokemon-crystal")).rejects.toThrow();
   });
 
-  it("throws when a listed report is missing", async () => {
+  // Was: a missing report threw. A recompile writes the manifest entry and
+  // the report as two files, and in the gap between them that throw took down
+  // the whole lens — the screen the editor is in to work through the
+  // recompile (2026-07-31). The layer stays listed and says what is wrong.
+  it("keeps a layer whose report is missing, flagged as such", async () => {
     const partial = manifest();
     partial.entries = partial.entries.filter((e) => e.id === "spine");
     vi.stubGlobal(
@@ -147,8 +151,27 @@ describe("loadLayerRoster", () => {
         return new Response("not found", { status: 404 });
       }),
     );
-    await expect(loadLayerRoster("pokemon-crystal")).rejects.toThrow(
-      /Could not load report/,
+    const roster = await loadLayerRoster("pokemon-crystal");
+    expect(roster).toHaveLength(1);
+    expect(roster[0]?.rowCount).toBe(0);
+    expect(roster[0]?.anomalies).toEqual([
+      "Pass report layers/spine.report.json is missing — re-run the pass",
+    ]);
+  });
+
+  // A malformed report is still a fault: it means the pass wrote nonsense,
+  // which absence does not (§11.1).
+  it("still throws on a present-but-malformed report", async () => {
+    const partial = manifest();
+    partial.entries = partial.entries.filter((e) => e.id === "spine");
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (input: RequestInfo | URL) => {
+        const url = String(input);
+        if (url.endsWith("layers/manifest.json")) return Response.json(partial);
+        return Response.json({ nope: true });
+      }),
     );
+    await expect(loadLayerRoster("pokemon-crystal")).rejects.toThrow();
   });
 });

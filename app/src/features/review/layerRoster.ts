@@ -1,4 +1,4 @@
-import { fetchJson } from "@/lib/content/fetchJson";
+import { fetchOptionalJson } from "@/lib/content/fetchJson";
 import type { ManifestWidgetMeta } from "@/schema";
 import { passReportFile } from "@/schema";
 import { loadLayersManifest } from "./reviewLoaders";
@@ -41,7 +41,13 @@ export async function loadLayerRoster(slug: string): Promise<LayerReport[]> {
 
   const reports = await Promise.all(
     manifest.entries.map(async (entry): Promise<LayerReport> => {
-      const parsed = await fetchJson(
+      // Tolerant of an absent report, because a recompile writes the manifest
+      // entry and the report as two separate files: for the moment between
+      // them, one 404 would take down the whole lens — the screen the editor
+      // is *in* to work through that recompile. The layer stays on the roster
+      // (dropping it would make an unapproved layer invisible while still
+      // blocking playability, §10.2) and says what is wrong with it.
+      const parsed = await fetchOptionalJson(
         `guides/${slug}/${entry.report}`,
         passReportFile,
         `report for layer "${entry.id}"`,
@@ -49,9 +55,11 @@ export async function loadLayerRoster(slug: string): Promise<LayerReport[]> {
       return {
         id: entry.id,
         kind: entry.kind,
-        rowCount: parsed.report.rowCount,
-        anomalies: parsed.report.anomalies,
-        flaggedItemIds: parsed.report.flaggedItemIds,
+        rowCount: parsed?.report.rowCount ?? 0,
+        anomalies: parsed
+          ? parsed.report.anomalies
+          : [`Pass report ${entry.report} is missing — re-run the pass`],
+        flaggedItemIds: parsed?.report.flaggedItemIds ?? [],
         contentHash: `sha256:${entry.sha256}`,
         ...(entry.widget ? { widget: entry.widget } : {}),
       };

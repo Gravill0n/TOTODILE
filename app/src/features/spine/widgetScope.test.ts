@@ -84,19 +84,24 @@ describe("widgetContextFor", () => {
     widgets: [],
   });
 
-  it("derives chapter/location/visit from the current step", () => {
-    expect(widgetContextFor(guide, "g:v-harbor-1:s1")).toEqual({
+  it("derives chapter/location/visit from the displayed visit", () => {
+    expect(widgetContextFor(guide, "g:v-harbor-1")).toEqual({
       chapterId: "g:c1",
       locationId: "g:harbor",
       visitId: "g:v-harbor-1",
     });
   });
 
-  it("is all-undefined when there is no current step", () => {
-    expect(widgetContextFor(guide, null)).toEqual({
+  // The pointer's own visit is no longer the input, so a reader browsing two
+  // chapters ahead of where they are gets the widgets of the page they are
+  // looking at. Passing a step id — the old argument — must not resolve.
+  it("is all-undefined for no visit, or for something that is not one", () => {
+    const empty = {
       chapterId: undefined,
       locationId: undefined,
       visitId: undefined,
-    });
+    };
+    expect(widgetContextFor(guide, null)).toEqual(empty);
+    expect(widgetContextFor(guide, "g:v-harbor-1:s1")).toEqual(empty);
   });
 });

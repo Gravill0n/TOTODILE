@@ -9,7 +9,8 @@
       "raGameId": 810,
       "deckId": "deck-pokemon",
       "language": "en",
-      "status": "playable"
+      "status": "playable",
+      "cover": "guides/pokemon-crystal/images/cover.png"
     },
     {
       "id": "zelda-oot",
@@ -19,7 +20,8 @@
       "raGameId": 10113,
       "deckId": "deck-action-adventure",
       "language": "en",
-      "status": "playable"
+      "status": "playable",
+      "cover": "guides/zelda-oot/images/cover.jpg"
     },
     {
       "id": "layton-mm",
@@ -28,7 +30,8 @@
       "platform": "Nintendo 3DS",
       "deckId": "deck-puzzle-adventure",
       "language": "en",
-      "status": "playable"
+      "status": "playable",
+      "cover": "guides/layton-mm/images/cover.png"
     },
     {
       "id": "ml-pit",
@@ -55,7 +58,8 @@
       "platform": "PC",
       "deckId": "deck-precision-platformer",
       "language": "en",
-      "status": "playable"
+      "status": "playable",
+      "cover": "guides/celeste/images/cover.png"
     },
     {
       "id": "pokemon-legends-za",

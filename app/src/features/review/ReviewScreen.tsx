@@ -40,6 +40,10 @@ type ReviewScreenProps = {
   sources: SourceManifest | null;
   // The committed verdicts from approvals.json, if the guide already has one.
   approvals: ApprovalsFile | null;
+  // Whether the guide is currently playable. The lens opens on playable guides
+  // too (2026-07-31 — recompiling one is when it is most needed), so the
+  // header has to say which of the two it is looking at.
+  playable: boolean;
 };
 
 const STAGE_STATE_LABEL: Record<StageState, string> = {
@@ -65,6 +69,7 @@ export function ReviewScreen({
   raMapping,
   sources,
   approvals,
+  playable,
 }: ReviewScreenProps) {
   const contentIndex = useMemo(
     () => (guide ? buildContentIndex(guide) : new Map()),
@@ -191,12 +196,19 @@ export function ReviewScreen({
   return (
     <main className="mx-auto max-w-4xl px-4 py-6">
       <header className="mb-6">
-        <p className="text-xs uppercase text-missable">
-          Review lens — unfinished
+        <p
+          className={cn(
+            "text-xs uppercase",
+            playable ? "text-ink-soft" : "text-missable",
+          )}
+        >
+          {playable ? "Review lens — playable" : "Review lens — unfinished"}
         </p>
         <h1 className="text-2xl font-bold">{entry.title}</h1>
         <p className="mt-1 text-sm text-ink-soft">
-          A guide becomes playable only once every layer is approved (FR-E5).
+          {playable
+            ? "Playable now — a rejected or re-compiled layer takes it back out of play (FR-E5)."
+            : "A guide becomes playable only once every layer is approved (FR-E5)."}
           {roster.length > 0
             ? ` ${approvedCount}/${roster.length} layer(s) approved.`
             : ""}

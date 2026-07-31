@@ -118,7 +118,13 @@ describe("the map remembers where it was left", () => {
     stubGuideContent();
     renderGuideAt("fictional-quest", GATE);
 
-    await waitFor(() => expect(screen.getByText("140%")).toBeDefined());
+    // The readout arrives behind two async hops — the guide route's fetches
+    // and the IndexedDB read of the UI record — so the default 1s waitFor
+    // window is not always enough on a loaded machine (it failed under
+    // `yarn check`, which runs lint and typecheck first, while passing alone).
+    await waitFor(() => expect(screen.getByText("140%")).toBeDefined(), {
+      timeout: 5000,
+    });
     // What the gestures themselves resolve to needs a measured box, which
     // jsdom does not provide — that is a checkpoint-G item in a browser.
   });

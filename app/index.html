@@ -7,6 +7,21 @@
     <meta name="theme-color" content="#f6f1e7" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#201c16" media="(prefers-color-scheme: dark)" />
     <title>TOTODILE</title>
+    <!-- Stamps the resolved theme before first paint, so a dark reader never
+         sees a flash of paper (§5.4). The key and the three values are the
+         contract of src/lib/theme.ts — keep the two in sync. -->
+    <script>
+      try {
+        const choice = localStorage.getItem("totodile.theme");
+        const dark =
+          choice === "dark" ||
+          (choice !== "light" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

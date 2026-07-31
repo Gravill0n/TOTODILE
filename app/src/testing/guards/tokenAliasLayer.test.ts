@@ -52,10 +52,16 @@ describe("token alias layer (index.css)", () => {
     expect(css).toMatch(/--color-background:\s*var\(--background\)/);
   });
 
-  it("keeps dark as a media query with no .dark class", () => {
-    expect(css).toContain("@media (prefers-color-scheme: dark)");
+  // Amended 2026-07-31 (§5.4 manual override): dark is keyed on the resolved
+  // `data-theme` attribute rather than the media query, because a preference
+  // has to be able to beat the system. Still no `.dark` class — and the
+  // `dark:` variant is redirected onto the same attribute, so the shadcn
+  // primitives that use it cannot drift back to the system's answer.
+  it("keys dark on data-theme, with no .dark class", () => {
+    expect(css).toContain(':root[data-theme="dark"]');
     expect(cssNoComments).not.toContain(".dark");
-    // No `.dark`-targeting custom variant either — dark: must stay media-based.
-    expect(cssNoComments).not.toContain("@custom-variant dark");
+    expect(cssNoComments).toMatch(
+      /@custom-variant dark \(&:where\(\[data-theme="dark"\]/,
+    );
   });
 });

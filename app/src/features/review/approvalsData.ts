@@ -1,7 +1,11 @@
 import { fetchOptionalJson } from "@/lib/content/fetchJson";
 import type { ApprovalsFile, LayersManifest } from "@/schema";
 import { approvalsFile } from "@/schema";
-import { loadLayersManifest, qaReportExists } from "./reviewLoaders";
+import {
+  guideFileExists,
+  loadLayersManifest,
+  qaReportExists,
+} from "./reviewLoaders";
 
 // A guide with no approvals.json simply has nothing approved yet — that is the
 // common case until the review-lens flow writes the file (§23.4), so an absent
@@ -41,12 +45,20 @@ export function isPlayable(
   return manifest.entries.every((entry) => approvedIds.has(entry.id));
 }
 
-// The three playability inputs live in three files; routes want one answer.
+// The playability inputs live in four files; routes want one answer.
+//
+// `isPlayable` judges the review record — approved, complete, covered. Whether
+// the compiled guide *exists* is a separate question, and a real one: a
+// recompile rewrites guide.json, and in the window where it is gone every
+// review input still reads green. Without this the library offers a guide with
+// no content behind it (Pierre, 2026-07-31: playable needs guide.json AND
+// approvals.json).
 export async function loadPlayability(slug: string): Promise<boolean> {
-  const [approvals, manifest, qaComplete] = await Promise.all([
+  const [approvals, manifest, qaComplete, guidePresent] = await Promise.all([
     loadApprovals(slug),
     loadLayersManifest(slug),
     qaReportExists(slug),
+    guideFileExists(slug),
   ]);
-  return isPlayable(approvals, manifest, qaComplete);
+  return guidePresent && isPlayable(approvals, manifest, qaComplete);
 }

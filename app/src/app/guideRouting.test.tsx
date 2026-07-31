@@ -85,6 +85,36 @@ describe("guide routing (design v2 — the place is the page)", () => {
     expect(fetches.count("guides/fictional-quest/guide.json")).toBe(1);
     expect(fetches.count("guides/fictional-quest/ra-mapping.json")).toBe(1);
     expect(fetches.count("guides/fictional-quest/approvals.json")).toBe(1);
+    // The playability probe asks whether guide.json is there without pulling
+    // its body — one HEAD beside the one GET, not a second read.
+    expect(fetches.count("guides/fictional-quest/guide.json", "HEAD")).toBe(1);
+  });
+
+  // Mid-recompile guide.json is gone while approvals.json and the QA report
+  // still read green — the play view would open a guide with no content.
+  it("a guide whose guide.json is missing is not playable", async () => {
+    stubGuideContent({ guides: {} });
+    const router = renderAppAt(FIRST_VISIT);
+    // Not playable → /review → editor mode off → library.
+    expect(
+      await screen.findByRole("heading", { name: "Library" }),
+    ).toBeDefined();
+    expect(router.state.location.pathname).toBe("/");
+  });
+
+  // In editor mode — the mode you are in while recompiling. Player mode keeps
+  // an unfinished guide out of the library entirely (§9.3), which is the
+  // existing rule and not something a missing guide.json should change.
+  it("its library row reads unfinished and opens the lens, not the guide", async () => {
+    localStorage.setItem("totodile.editorMode", "1");
+    stubGuideContent({ guides: {} });
+    renderAppAt("/");
+    expect(await screen.findByText("unfinished")).toBeDefined();
+    expect(
+      screen
+        .getByRole("link", { name: /Fictional Quest/ })
+        .getAttribute("href"),
+    ).toContain("/review/fictional-quest");
   });
 
   it("still bounces a non-playable guide away from every play-view child", async () => {

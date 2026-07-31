@@ -58,17 +58,23 @@ export function GuideRow({ entry, slot, playable, raMapping }: GuideRowProps) {
   const card = (
     <Card className="grid gap-4 p-4 shadow-sm transition hover:border-primary sm:grid-cols-[184px_1fr_232px]">
       {entry.cover ? (
+        // Square frame, contained rather than cropped: real box art comes in
+        // whatever shape its platform used — Celeste's is 250×401, Ocarina of
+        // Time's 250×174 — and `object-cover` in a 16:9 window would slice the
+        // title off the portrait ones. The frame is what keeps the rows
+        // aligned; the art sits inside it on the same dim paper the
+        // placeholder uses.
         <img
           src={entry.cover}
           alt=""
-          className="aspect-video w-full rounded border border-line object-cover"
+          className="aspect-square w-full rounded border border-line bg-paper-dim object-contain"
         />
       ) : (
-        // No guide in the library has a cover yet, so the placeholder is the
-        // common case — it holds the row's shape rather than collapsing it,
-        // and says what it is standing in for.
+        // Guides still being compiled have no cover — the placeholder holds
+        // the row's shape rather than collapsing it, and says what it is
+        // standing in for.
         <div
-          className="grid aspect-video w-full place-items-center rounded-sm border border-line bg-paper-dim"
+          className="grid aspect-square w-full place-items-center rounded-sm border border-line bg-paper-dim"
           aria-hidden
         >
           <span className="text-[10px] tracking-eyebrow text-ink-soft uppercase">
