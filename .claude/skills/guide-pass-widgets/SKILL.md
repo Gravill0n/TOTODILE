@@ -66,6 +66,30 @@ visit there — the data must answer "where I currently am" (P4). Wait for sign-
   `checkable: false` but still carry stable IDs.
 - **IDs** (§6.8): minted once; on a re-run, read the prior artifact and keep
   every surviving item's ID — even items that move rows or sections.
+- **`stepRef`** (added 2026-07-31) — the step where the route hands the player
+  this item. Ticking that step ticks the row, so a wrong link silently ticks
+  something the player never got.
+  - Set it ONLY when a source ties this item to that specific step. The
+    strongest evidence is the two texts being the same sourced sentence (a
+    berry row's `how` and the step's `detail` both taken from the walkthrough);
+    next strongest is a 1:1 pairing inside a container the source itself names
+    — one cassette per chapter, one "Grab the Cassette Tape" step in that
+    chapter.
+  - **No source, no link. Leave it out.** An unlinked row is the normal state
+    and costs nothing; a guessed link is invented content (§24, §0.2).
+    `confidence: "flagged"` is NOT a way to ship a speculative link — flag the
+    row's *data* if it is doubtful, but omit the link.
+  - Do not link by elimination across two datasets that share only a coarse
+    key. Celeste's map pins and its berry route agree on chapter, side and
+    checkpoint, and a checkpoint holds several berries: pairing them by order
+    would be a guess dressed up as a join. Those 225 pins are deliberately
+    unlinked (of 175 pin/berry pairs only 3 are unambiguous, and linking just
+    those would make the behaviour look random to a player).
+  - One direction, one step: a row names at most one step, and a step never
+    names rows. If two steps could both hand over the item, the route has one
+    place it actually happens — pick that one, or leave it out and say why.
+  - Report `stepRef` coverage in the pass report's `notes`: how many rows got
+    a link, how many could not, and why not. An honest zero is a fine result.
 - Map / sprite images (mapPins, icons) come from the extract-data `images`
   catalog — copy the catalogued source file into `guides/<slug>/images/` and
   reference it; only download when the catalog lacks it; unreachable → ask Pierre.

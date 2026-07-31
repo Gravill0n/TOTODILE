@@ -42,7 +42,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the third room, hidden inside a wall. Climb and dash up above the left side of the room, into the gap opposite the wall where the bird is resting."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-start-1:s1"
       },
       {
         "itemId": "celeste:strawberries-c4:b02",
@@ -56,7 +57,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the fourth room, floating near the bottom of the screen beside a wall. Jump up the nearby ledge and fall to get the strawberry, then jump off the wall and dash straight up to get back onto the ledge."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-start-1:s2"
       },
       {
         "itemId": "celeste:strawberries-c4:b03",
@@ -70,7 +72,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the fifth room, between spikes. Direct the green bubble under the berry, climb the smashable wall, then dash straight up to reach it, and finish the room normally."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-start-1:s3"
       },
       {
         "itemId": "celeste:strawberries-c4:b04",
@@ -84,7 +87,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "At the end of the sixth room, under a ledge. Jump off the left wall to bounce on the cloud and reach the berry, then move back left and bounce back to safety."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-start-1:s4"
       },
       {
         "itemId": "celeste:strawberries-c4:b05",
@@ -98,7 +102,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the eighth room, and it looks tricky because heading towards it puts you against the wind. Fall down the corridor in the middle and dash left to reach the strawberry. Walljump off the wall the berry sat beside and use your jumps and climbs carefully so you do not run out of stamina getting back up."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-start-1:s5"
       },
       {
         "itemId": "celeste:strawberries-c4:b06",
@@ -112,7 +117,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the ninth room, a smashable wall is visible. Jump left into it and dash straight up to find the strawberry."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-start-1:s6"
       },
       {
         "itemId": "celeste:strawberries-c4:b07",
@@ -126,7 +132,8 @@
           "checkpoint": "Start",
           "type": "seeded",
           "how": "Going left in the tenth room, before the cassette room, reaches a room with a seeded strawberry. After you collect one strawberry seed the wind starts blowing left. Grab the rightmost seed first, jump off the right wall, dash diagonally up-left, and land on the spring. Bounce up and dash straight up for the next seed, then climb the platform floating left off the spring and jump carefully over it to collect the third seed at its bottom-left before dashing diagonally again. Using the wind to push you left, jump up the left corridor off the wall to reach the last seed."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-start-1:s7"
       },
       {
         "itemId": "celeste:strawberries-c4:b08",
@@ -140,7 +147,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the eleventh room, floating by a platform far from the main wall. When the wind starts blowing, jump up the right wall as far as you can, then dash to the right side of the floating platform and jump above it to grab the berry just as the wind starts blowing again, then pull yourself right as soon as possible."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-start-1:s8"
       },
       {
         "itemId": "celeste:strawberries-c4:b09",
@@ -154,7 +162,8 @@
           "checkpoint": "Shrine",
           "type": "normal",
           "how": "Going right out of the first room brings you to a room with two strawberries. This first berry is in the open on the right side. Ride the guided platform straight right and dash above the spikes to reach it. Leave the room by riding the lower guided platform back left."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-shrine-1:s1"
       },
       {
         "itemId": "celeste:strawberries-c4:b10",
@@ -168,7 +177,8 @@
           "checkpoint": "Shrine",
           "type": "normal",
           "how": "In the same room as the previous berry, a smashable wall sits in the top-right corner. After reaching the right side with the guided platform you used before, fall to the lower guided platform and jump to the right wall, climb it, and dash straight up to break the smashable wall. Hold the wall until the guided platform respawns, jump to it, then finish the room."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-shrine-1:s2"
       },
       {
         "itemId": "celeste:strawberries-c4:b11",
@@ -182,7 +192,8 @@
           "checkpoint": "Shrine",
           "type": "normal",
           "how": "Above the guided platform, go right. In this room, bounce on the spring and dash to the triggered platform, then as it goes down, jump over it to the guided platform to its right. Steer that platform right, fall into the strawberry, and ride up the next triggered platform. Grab the triggered platform pointing left when you reach it and ride it to safety."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-shrine-1:s3"
       },
       {
         "itemId": "celeste:strawberries-c4:b12",
@@ -196,7 +207,8 @@
           "checkpoint": "Shrine",
           "type": "normal",
           "how": "Go into the lowest transition on the left; this strawberry floats in the middle. Grab the left side of the triggered platform, ride it left, then jump off, dash straight up when the timing is right, and grab the side of the triggered platform as you fall to ride to the end."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-shrine-1:s4"
       },
       {
         "itemId": "celeste:strawberries-c4:b13",
@@ -210,7 +222,8 @@
           "checkpoint": "Shrine",
           "type": "normal",
           "how": "This berry first requires going up the left side. To cross the first room, land on the guided platform and steer it up just enough to fit over the wall but under the small platform. Jump over the platform to land on the guided platform again, then steer it downward. Jump and dash straight up to land on the bridge, then continue left. In the following room, jump and dash to the guided platform and steer it right as it rises. A section of green bubbles follows, which is simple, then fall down the left side. In the next room, dash into the green bubble and go right, then dash to the guided platform. Move it right as it rises, then jump to the left wall at the top. Jump off that left wall when the guided platform breaks and finally take the strawberry. You can then go right through an earlier berry room to get back to the main hub."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-shrine-1:s5"
       },
       {
         "itemId": "celeste:strawberries-c4:b14",
@@ -224,7 +237,8 @@
           "checkpoint": "Shrine",
           "type": "normal",
           "how": "From the very top transition of the first room you can reach the far side of a later room in the subchapter. Bounce from the pink cloud onto the top of the nearby guided platform. Ride it left, moving it down or up as needed, and you arrive at the left side of the room, where you fall into the bottom transition and find this strawberry hovering above an earlier room."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-shrine-1:s6"
       },
       {
         "itemId": "celeste:strawberries-c4:b15",
@@ -238,7 +252,8 @@
           "checkpoint": "Shrine",
           "type": "normal",
           "how": "In the second room. Go through a hidden passage in the water, and the strawberry floats in the open beyond it."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-shrine-1:s7"
       },
       {
         "itemId": "celeste:strawberries-c4:b16",
@@ -252,7 +267,8 @@
           "checkpoint": "Shrine",
           "type": "normal",
           "how": "Continuing right from the previous berry by breaking a smashable wall takes you to the Crystal Heart room. From there, dash right through another smashable wall into the room holding this strawberry. Jump onto the first triggered platform to activate it, but make sure to jump to the triggered platform pointing upward to move it out of the way, so the first one can keep moving. When you reach the right, dash directly upward and grab the right side of the next triggered platform. Land on it and carefully dash around the crystals to arrive where the berry sits, at the top-left."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-shrine-1:s8"
       },
       {
         "itemId": "celeste:strawberries-c4:b17",
@@ -266,7 +282,8 @@
           "checkpoint": "Shrine",
           "type": "normal",
           "how": "In the fifth room, hovering over spikes on the right. Play through the room normally first, to get the guided platform on a course that crosses the berry. Hold the right side of the guided platform and climb up when you can, then jump to grab the berry while also landing on top of the platform, and move it downward to stay safe as you continue right and finish the room."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-shrine-1:s9"
       },
       {
         "itemId": "celeste:strawberries-c4:b18",
@@ -280,7 +297,8 @@
           "checkpoint": "Old Trail",
           "type": "winged",
           "how": "Above the left wall of the first room, a left transition leads to a windy room with the first berry. Approach the winged strawberry from the left side by jumping all the way left and then jumping up the wall. Do not jump while holding the wall, as that wastes stamina — a normal jump still gains height thanks to the wind. Walljump to get above the spikes and keep jumping up the higher part of the wall. At the top, jump right and dash right, above where the winged strawberry is, to reach the starting ledge, then climb up to safety."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-old-trail-1:s1"
       },
       {
         "itemId": "celeste:strawberries-c4:b19",
@@ -294,7 +312,8 @@
           "checkpoint": "Old Trail",
           "type": "normal",
           "how": "In the first room, floating under the main platforming area near the start. Walk off the small platform above the berry, and right as you touch it, start moving left and dash diagonally up-left to grab the wall above the spikes. Climb the wall and land on it to claim the berry."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-old-trail-1:s2"
       },
       {
         "itemId": "celeste:strawberries-c4:b20",
@@ -308,7 +327,8 @@
           "checkpoint": "Old Trail",
           "type": "normal",
           "how": "In the fourth room, at the far-right of the screen. Do the whole room normally first and land on the bridge at the end. From there, wait until the triggered platform you used earlier respawns, then go back down to the green bubble and direct it up-left, steering Madeline left to grab onto the triggered platform — that puts you on the platform with a dash still available. Ride it to the right side and jump to the berry, then jump back left and dash into the green bubble to claim the strawberry."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-old-trail-1:s3"
       },
       {
         "itemId": "celeste:strawberries-c4:b21",
@@ -322,7 +342,8 @@
           "checkpoint": "Old Trail",
           "type": "normal",
           "how": "In the fifth room, an alternate path to the left leads to this berry's room. Using the harsh wind, jump left and dash left to be just barely able to reach the strawberry. Jump or climb up the left wall to reach the dash crystal, then jump right and dash diagonally up-right into the next dash crystal, then dash right again to enter the green bubble. Aim the green bubble directly right, then dash diagonally up-right into the last dash crystal, fall down and dash directly right to get back."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-old-trail-1:s4"
       },
       {
         "itemId": "celeste:strawberries-c4:b22",
@@ -336,7 +357,8 @@
           "checkpoint": "Old Trail",
           "type": "normal",
           "how": "In the fifth room, at the end, in a complicated area. Ride the triggered platform right and collect the key token while holding the wall. Jump left and dash at the last moment to reach the touch switch gate, then climb it to get back to safety and claim the berry."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-old-trail-1:s5"
       },
       {
         "itemId": "celeste:strawberries-c4:b23",
@@ -350,7 +372,8 @@
           "checkpoint": "Old Trail",
           "type": "normal",
           "how": "In the eighth room, around the middle, floating among many crystal spikes. Take the closest green bubble directly left and let the wind blow you to the wall. Climb that wall and, when the wind stops, jump left to grab the berry and quickly dash directly right to get back to the wall. From there climb back up, return to the green bubble, and move on as normal."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-old-trail-1:s6"
       },
       {
         "itemId": "celeste:strawberries-c4:b24",
@@ -364,7 +387,8 @@
           "checkpoint": "Old Trail",
           "type": "normal",
           "how": "A hidden room sits to the right of the eighth room, accessed through the slightly cracked part of the right wall above the spikes. The room beyond has many green bubbles, which you aim right and then dash up out of to advance; for the third green bubble, aim it down-right and dash up-right. Walljump up the next corridor and take the green bubbles at the top to the left to finally see the strawberry. Aim the final green bubble directly down to grab the berry, then dash to the side. Hold the wall and climb back up so you can walljump into the green bubble and use it to leave the room."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-old-trail-1:s7"
       },
       {
         "itemId": "celeste:strawberries-c4:b25",
@@ -378,7 +402,8 @@
           "checkpoint": "Cliff Face",
           "type": "normal",
           "how": "A smashable wall is on the left of the first room. From the ledge it opens up, dash straight up into a hidden area in the ceiling. The room beyond is large and very tricky to work out. Start by jumping over the guided platform and grabbing its left side, then steer it left as it rises. At the top, jump and dash left to reach the green bubble. Direct the green bubble left, then dash straight up. Grab the right side of the next guided platform and move it left to ride to the top of the next area. At the top, jump to the other side of the next guided platform and grab on, then direct it right as it rises. Jump and dash to reach the next green bubble, direct it right, and ride up the triggered platform; when you can, let go and dash right."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-cliff-face-1:s1"
       },
       {
         "itemId": "celeste:strawberries-c4:b26",
@@ -392,7 +417,8 @@
           "checkpoint": "Cliff Face",
           "type": "normal",
           "how": "In the second room, underneath a disappearing platform. Advance to the third disappearing platform and fall when it disappears to touch the berry, then dash up-left to get back to safety."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-cliff-face-1:s2"
       },
       {
         "itemId": "celeste:strawberries-c4:b27",
@@ -406,7 +432,8 @@
           "checkpoint": "Cliff Face",
           "type": "normal",
           "how": "In the fifth room, hovering over crystal spikes near the end. Use the nearby green bubble to launch yourself up, then dash directly left to grab the strawberry and land on an earlier platform. You can claim the berry and continue the room as normal."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-cliff-face-1:s3"
       },
       {
         "itemId": "celeste:strawberries-c4:b28",
@@ -420,7 +447,8 @@
           "checkpoint": "Cliff Face",
           "type": "normal",
           "how": "In the eighth room, inside a secret area reached by directing the second green bubble upward."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-cliff-face-1:s4"
       },
       {
         "itemId": "celeste:strawberries-c4:b29",
@@ -434,7 +462,8 @@
           "checkpoint": "Cliff Face",
           "type": "normal",
           "how": "In the tenth room, near the end, among some green bubbles. Take the second-to-last green bubble directly right to reach the berry, immediately dash straight upward into the other green bubble, then ride it to the end of the room as normal."
-        }
+        },
+        "stepRef": "celeste:v-golden-ridge-a-cliff-face-1:s5"
       }
     ]
   }

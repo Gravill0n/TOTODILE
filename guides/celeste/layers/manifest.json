@@ -28,7 +28,7 @@
       "kind": "widget",
       "artifact": "layers/widget-cassettes.json",
       "report": "layers/widget-cassettes.report.json",
-      "sha256": "98750e63abf665eac1b570f8bab1a0dba96bd8be55246de43c9bc043a9470231",
+      "sha256": "67a72ea23f5710f03f4713bbd5000295e9da950f6f1b705a5daf62006e8c710e",
       "widget": {
         "deckPosition": 2,
         "scope": {
@@ -987,7 +987,7 @@
       "kind": "widget",
       "artifact": "layers/widget-sides-hearts.json",
       "report": "layers/widget-sides-hearts.report.json",
-      "sha256": "80c69f591082b38f7b0157b386041490a47d01f0dc6b9cacb21756426ee3ac12",
+      "sha256": "acbf4940a85e71877a1de2322b294269a036d2551c7c4f2bca6f4da74fc8fe33",
       "widget": {
         "deckPosition": 1,
         "scope": {
@@ -1015,7 +1015,7 @@
       "kind": "widget",
       "artifact": "layers/widget-strawberries-c1.json",
       "report": "layers/widget-strawberries-c1.report.json",
-      "sha256": "d49751df7605140f739fb647410acb864140ce208fa1ac87a75061a17cc8d89a",
+      "sha256": "7b5a1a61574046c1039d0443ae65ea3babb6d029a987a7b9226b53c0e4c0595e",
       "widget": {
         "deckPosition": 3,
         "scope": {
@@ -1030,7 +1030,7 @@
       "kind": "widget",
       "artifact": "layers/widget-strawberries-c2.json",
       "report": "layers/widget-strawberries-c2.report.json",
-      "sha256": "25f8bc50868cee978862ab9a53d865b6cc87bdd3cd62d29ce693fb193217793b",
+      "sha256": "57d6d25a3562d8aef35ba4a780e562b3e5b96c5727a3fa6c17e1a97449fcb28a",
       "widget": {
         "deckPosition": 3,
         "scope": {
@@ -1045,7 +1045,7 @@
       "kind": "widget",
       "artifact": "layers/widget-strawberries-c3.json",
       "report": "layers/widget-strawberries-c3.report.json",
-      "sha256": "e2da9148c812dac61f1c3af803059277ffd73e672f08758be8270b0e2a460216",
+      "sha256": "e70db5cfa13536a1060482248707ea3a759420e854d65258be379f92f107e2ad",
       "widget": {
         "deckPosition": 3,
         "scope": {
@@ -1060,7 +1060,7 @@
       "kind": "widget",
       "artifact": "layers/widget-strawberries-c4.json",
       "report": "layers/widget-strawberries-c4.report.json",
-      "sha256": "f7a347b50bc23aa3273e2fc95a8f9dce560eacca3dfca62788b8ac755057f62f",
+      "sha256": "5f59877ce8d566e113bf58c364d190afdadebaef40cb9c1e51c3cccb2965bb1d",
       "widget": {
         "deckPosition": 3,
         "scope": {
@@ -1075,7 +1075,7 @@
       "kind": "widget",
       "artifact": "layers/widget-strawberries-c5.json",
       "report": "layers/widget-strawberries-c5.report.json",
-      "sha256": "13ced5188455c82d1f6ae63e684aa26a07fed1feb47ebddb501fc75f510ddf08",
+      "sha256": "8b68b3c7228659ba3de2537ff89a26d43efd1077af180782c5e712b71cba4746",
       "widget": {
         "deckPosition": 3,
         "scope": {
@@ -1090,7 +1090,7 @@
       "kind": "widget",
       "artifact": "layers/widget-strawberries-c7.json",
       "report": "layers/widget-strawberries-c7.report.json",
-      "sha256": "7c4b6f5e0d1be0426cdc068f28802e8363145b2b3e69ec756466afc2f9fc80dc",
+      "sha256": "1e81726fc1faba9b35b1b416c84a280dc7d2d86fe65769914ba8e484d89689db",
       "widget": {
         "deckPosition": 3,
         "scope": {
@@ -1105,7 +1105,7 @@
       "kind": "widget",
       "artifact": "layers/widget-strawberries-c9.json",
       "report": "layers/widget-strawberries-c9.report.json",
-      "sha256": "29a551adfa17eb487f77466d2a9196508f3dc7e73957a15cd903c31e2015e9af",
+      "sha256": "79372f3218f145132419698c450999524b6c61fdf60e9d598ce1c0868226dc07",
       "widget": {
         "deckPosition": 3,
         "scope": {

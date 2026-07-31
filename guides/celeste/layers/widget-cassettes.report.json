@@ -34,6 +34,7 @@
     "Collecting any one cassette earns Gateway; collecting all eight is what unlocks every B-Side, and completing those B-Sides is in turn what gates the C-Sides. That chain is noted on the Forsaken City row since it is the first cassette in play order.",
     "No flagged rows. Every cassette has both a walkthrough in src-ink-collectables and a pin in src-tracker-maps.",
     "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered.",
-    "Input digest for layers/spine.json refreshed by the 2026-07-31 spine re-run that attached the B-Side checkpoint maps. The spine layer is byte-identical outside location.mapImages — no id, step, visit or location this pass read was altered — so this layer s own output is unaffected."
+    "Input digest for layers/spine.json refreshed by the 2026-07-31 spine re-run that attached the B-Side checkpoint maps. The spine layer is byte-identical outside location.mapImages — no id, step, visit or location this pass read was altered — so this layer s own output is unaffected.",
+    "stepRef added 2026-07-31: each row links to its chapter's single \"Grab the Cassette Tape\" step — one cassette per chapter, one such step in that chapter, so the pairing is 1:1 and named by the route itself."
   ]
 }
