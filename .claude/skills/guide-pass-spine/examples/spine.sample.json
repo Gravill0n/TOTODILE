@@ -3,8 +3,32 @@
   "guideId": "sample-quest",
   "pass": "spine",
   "locations": [
-    { "id": "sample-quest:harbor-town", "name": "Harbor Town" },
-    { "id": "sample-quest:sea-cave", "name": "Sea Cave" }
+    {
+      "id": "sample-quest:harbor-town",
+      "name": "Harbor Town",
+      "mapImages": [
+        {
+          "src": "images/harbor-town.png",
+          "alt": "Harbor Town"
+        }
+      ]
+    },
+    {
+      "id": "sample-quest:sea-cave",
+      "name": "Sea Cave",
+      "mapImages": [
+        {
+          "src": "images/sea-cave-upper.png",
+          "alt": "Sea Cave — upper level",
+          "caption": "Upper"
+        },
+        {
+          "src": "images/sea-cave-lower.png",
+          "alt": "Sea Cave — lower level",
+          "caption": "Lower"
+        }
+      ]
+    }
   ],
   "chapters": [
     {
@@ -21,17 +45,26 @@
             {
               "id": "sample-quest:v-harbor-town-1:s1",
               "order": 0,
-              "keywords": ["Talk to the harbormaster", "Take the lantern"],
+              "keywords": [
+                "Talk to the harbormaster",
+                "Take the lantern"
+              ],
               "detail": "Speak with the harbormaster on the pier; he hands you the lantern you will need in the Sea Cave.",
-              "sourceRefs": ["src-route"],
+              "sourceRefs": [
+                "src-route"
+              ],
               "confidence": "normal"
             },
             {
               "id": "sample-quest:v-harbor-town-1:s2",
               "order": 1,
-              "keywords": ["Buy 3 rope from the shop"],
+              "keywords": [
+                "Buy 3 rope from the shop"
+              ],
               "detail": "Buy at least three lengths of rope from the dock shop before heading north — the cave's lower ledge needs them.",
-              "sourceRefs": ["src-route"],
+              "sourceRefs": [
+                "src-route"
+              ],
               "confidence": "normal"
             }
           ]
@@ -44,21 +77,33 @@
             {
               "id": "sample-quest:v-sea-cave-1:s1",
               "order": 0,
-              "keywords": ["Light the lantern", "Cross the west ledge"],
+              "keywords": [
+                "Light the lantern",
+                "Cross the west ledge"
+              ],
               "detail": "Light the lantern at the cave mouth and cross the west ledge. Sources disagree on whether the ledge needs one rope or two — flagged for review.",
-              "sourceRefs": ["src-route"],
+              "sourceRefs": [
+                "src-route"
+              ],
               "confidence": "flagged"
             },
             {
               "id": "sample-quest:v-sea-cave-1:s2",
               "order": 1,
-              "keywords": ["Grab the Tide Relic"],
+              "keywords": [
+                "Grab the Tide Relic"
+              ],
               "detail": "Take the Tide Relic from the flooded alcove. This is the relic the harbormaster sent you for.",
               "missable": {
                 "deadline": "Before the tide rises — the alcove floods and seals after you ring the harbor bell"
               },
-              "achievementRefs": [4101],
-              "sourceRefs": ["src-route", "src-ra"],
+              "achievementRefs": [
+                4101
+              ],
+              "sourceRefs": [
+                "src-route",
+                "src-ra"
+              ],
               "confidence": "normal"
             }
           ]
@@ -71,9 +116,14 @@
             {
               "id": "sample-quest:v-harbor-town-2:s1",
               "order": 0,
-              "keywords": ["Ring the harbor bell", "Board the ferry"],
+              "keywords": [
+                "Ring the harbor bell",
+                "Board the ferry"
+              ],
               "detail": "Back in Harbor Town, ring the bell to summon the ferry, then board it for Chapter 2. (Revisit: same locationId as the opening visit, a new visit because the story returns here.)",
-              "sourceRefs": ["src-route"],
+              "sourceRefs": [
+                "src-route"
+              ],
               "confidence": "normal"
             }
           ]

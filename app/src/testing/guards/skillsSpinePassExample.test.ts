@@ -35,6 +35,15 @@ describe("guide-pass-spine worked example (Task C1)", () => {
     expect(sample.locations.length).toBeGreaterThan(0);
   });
 
+  // The example has to exercise the shape it documents, or the skill's
+  // instructions and the schema drift apart silently (2026-07-31: a place can
+  // hold several maps — floors of a tower, sections of a cave).
+  it("shows a place carrying more than one map", () => {
+    expect(
+      sample.locations.some((location) => location.mapImages.length > 1),
+    ).toBe(true);
+  });
+
   it("nests steps under visits under chapters, with keyword beats", () => {
     const steps = sample.chapters.flatMap((c) =>
       c.visits.flatMap((v) => v.steps),

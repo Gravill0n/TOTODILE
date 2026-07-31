@@ -61,7 +61,8 @@ from it rather than re-hunting (and never re-download). Each record's `fields`:
 `sourceRefs` point at the snapshot source (e.g. `src-ap-tracker`). Catalog only
 files that **actually exist** in the snapshot — a wanted-but-missing asset is an
 anomaly, never a record. Downstream: the spine reads `kind: location-map`
-records for a location's `mapImage`; widget passes read sprites / icons for
+records for a location's `mapImages[]` — one place may claim several
+(floors, sections); widget passes read sprites / icons for
 encounter tables, dex, and boss boards.
 
 ## Workflow
