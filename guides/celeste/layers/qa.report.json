@@ -3,7 +3,7 @@
   "guideId": "celeste",
   "pass": "qa",
   "layer": "qa",
-  "generatedAt": "2026-07-31T12:40:25Z",
+  "generatedAt": "2026-07-31T13:04:47Z",
   "inputs": [
     {
       "file": "layers/data.json",
@@ -19,7 +19,7 @@
     },
     {
       "file": "layers/widget-cassettes.json",
-      "sha256": "98750e63abf665eac1b570f8bab1a0dba96bd8be55246de43c9bc043a9470231"
+      "sha256": "67a72ea23f5710f03f4713bbd5000295e9da950f6f1b705a5daf62006e8c710e"
     },
     {
       "file": "layers/widget-pins-celestial-resort-a-elevator-shaft.json",
@@ -275,35 +275,35 @@
     },
     {
       "file": "layers/widget-sides-hearts.json",
-      "sha256": "80c69f591082b38f7b0157b386041490a47d01f0dc6b9cacb21756426ee3ac12"
+      "sha256": "acbf4940a85e71877a1de2322b294269a036d2551c7c4f2bca6f4da74fc8fe33"
     },
     {
       "file": "layers/widget-strawberries-c1.json",
-      "sha256": "d49751df7605140f739fb647410acb864140ce208fa1ac87a75061a17cc8d89a"
+      "sha256": "7b5a1a61574046c1039d0443ae65ea3babb6d029a987a7b9226b53c0e4c0595e"
     },
     {
       "file": "layers/widget-strawberries-c2.json",
-      "sha256": "25f8bc50868cee978862ab9a53d865b6cc87bdd3cd62d29ce693fb193217793b"
+      "sha256": "57d6d25a3562d8aef35ba4a780e562b3e5b96c5727a3fa6c17e1a97449fcb28a"
     },
     {
       "file": "layers/widget-strawberries-c3.json",
-      "sha256": "e2da9148c812dac61f1c3af803059277ffd73e672f08758be8270b0e2a460216"
+      "sha256": "e70db5cfa13536a1060482248707ea3a759420e854d65258be379f92f107e2ad"
     },
     {
       "file": "layers/widget-strawberries-c4.json",
-      "sha256": "f7a347b50bc23aa3273e2fc95a8f9dce560eacca3dfca62788b8ac755057f62f"
+      "sha256": "5f59877ce8d566e113bf58c364d190afdadebaef40cb9c1e51c3cccb2965bb1d"
     },
     {
       "file": "layers/widget-strawberries-c5.json",
-      "sha256": "13ced5188455c82d1f6ae63e684aa26a07fed1feb47ebddb501fc75f510ddf08"
+      "sha256": "8b68b3c7228659ba3de2537ff89a26d43efd1077af180782c5e712b71cba4746"
     },
     {
       "file": "layers/widget-strawberries-c7.json",
-      "sha256": "7c4b6f5e0d1be0426cdc068f28802e8363145b2b3e69ec756466afc2f9fc80dc"
+      "sha256": "1e81726fc1faba9b35b1b416c84a280dc7d2d86fe65769914ba8e484d89689db"
     },
     {
       "file": "layers/widget-strawberries-c9.json",
-      "sha256": "29a551adfa17eb487f77466d2a9196508f3dc7e73957a15cd903c31e2015e9af"
+      "sha256": "79372f3218f145132419698c450999524b6c61fdf60e9d598ce1c0868226dc07"
     },
     {
       "file": "layers/widget-strawberries.json",
@@ -311,11 +311,11 @@
     },
     {
       "file": "layers/manifest.json",
-      "sha256": "36e6420f2f48006e057abc72251e39db06d120d6125bb173e8637f73a22d0b64"
+      "sha256": "ec461f823adb529aa7266531bfa8b20b624a82579b61e766e0f3cb207e8ef30c"
     },
     {
       "file": "approvals.json",
-      "sha256": "4d9530ed30e6201c50f744821e1cd347e73d7e8c6c8431e2a98b418d73d8fe5d"
+      "sha256": "a17e79a24aa8158afb5f67c2942fd7e0b0f27a7466c7971ac35a3bc99c17f366"
     }
   ],
   "report": {
@@ -328,7 +328,9 @@
       "data, widget-pins-core-a-heart-of-the-mountain-section-3: src-tracker-maps carries no crystal-heart pin anywhere in Core, though \"Heart of the Mountain — Collect the Crystal Heart in Chapter 8\" is one of the 32 achievements. The spine and the Sides & Hearts matrix source that heart from src-ink-collectables instead. Not a blocker; recorded against the pack.",
       "widget-strawberries-c*, widget-pins-*: each of the 175 red strawberries is three separate checkables — its route step, its chapter-table row, and its map pin — and only the route step feeds celeste:strawberries' 30/80/175 counters. This is deliberate (Pierre 2026-07-30, approved with the widget stage) and unavoidable for the pins, since mapPinsWidget has no informational-pin option and the berry-to-pin join was tested and rejected in extract-data. Recorded so the guide's checkable total (761) is not mistaken for 761 distinct objectives.",
       "ra-mapping: not applicable. Celeste has no RetroAchievements set, so no ra-mapping layer exists, no step carries achievementRefs, no ra-mapping.json was assembled, and library.json carries no raGameId. The 32 Steam/Xbox/PlayStation achievements are tracked by hand through widget-achievements.",
-      "library.json: celeste is still status \"in-compilation\". QA does not change it — flipping it to \"playable\" is what surfaces the guide in the app and is Pierre's call at merge."
+      "library.json: celeste is still status \"in-compilation\". QA does not change it — flipping it to \"playable\" is what surfaces the guide in the app and is Pierre's call at merge.",
+      "qa: 215 of 532 checkable rows (40%) now carry a stepRef. The unlinked 317 are not a gap to fill later. 225 are map pins whose source keys them by room while the berry route keys by berry number — a checkpoint holds several berries, so only 3 of 175 pairs are unambiguous and pairing the rest by order would be a guess. 49 are prep-card items, which are preparation advice rather than something a step hands over. 32 are achievement rows with no per-step tie in any source. The rest are counter roll-ups. Owning pass: none — this is the honest limit of the sources.",
+      "qa: ticking a berry step therefore ticks its strawberry table row but NOT that berry's map pin. The two are separate checkables by design (§6.5) and no source connects them."
     ],
     "flaggedItemIds": [
       "celeste:strawberries-c1:b03",
@@ -351,6 +353,9 @@
     "QA edited no guide content. Every anomaly above is routed to its owning pass.",
     "Re-run 2026-07-31 after the mapImages[] migration and the 2026-07-31 spine re-run that attached the 25 B-Side checkpoint maps, and after Pierre re-approved every layer. Gate: all 75 manifest entries are approved and hash-current against the bytes on disk. Mechanical: validate-guides, assemble-guide and check-stable-ids all green.",
     "Scope of this run's judgment checks: the assembled guide.json is byte-identical to the shipped one outside location maps (verified programmatically), and ra-mapping.json is unchanged, so the flag spot-read and achievement-coverage review from the previous QA run still describe the current content and are carried forward above. What this run checked afresh is what changed: every map reference resolves to real bytes on disk and is not an unsmudged LFS pointer (validate-guides), and each location's maps are ordered as the player meets them.",
-    "The previous qa.report.json recorded layers/manifest.json as an input, whose digest moved when the spine layers were re-approved — that is what made assemble-guide refuse before this run. QA owns this file and replaces it, so the report was regenerated rather than digest-patched: no exemption was taken here. (The two exemptions taken elsewhere are noted in the reports they touched and in issue #34.)"
+    "The previous qa.report.json recorded layers/manifest.json as an input, whose digest moved when the spine layers were re-approved — that is what made assemble-guide refuse before this run. QA owns this file and replaces it, so the report was regenerated rather than digest-patched: no exemption was taken here. (The two exemptions taken elsewhere are noted in the reports they touched and in issue #34.)",
+    "Re-run 2026-07-31 after the widget pass filled checkable.stepRef and Pierre re-approved the nine touched layers. Gate: all 75 manifest entries approved and hash-current against the bytes on disk. Mechanical: validate-guides, assemble-guide and check-stable-ids all green.",
+    "Link verification (this run's judgment work): all 215 stepRefs resolve to a step that exists in the assembled guide — 0 dangling. Spot-read across all three linked families: every strawberry link is prose-identical to its step's detail (the same src-ink-collectables sentence, which is why 175/175 matched exactly); the cassette links describe the same place in the same chapter as the step they name; the side/heart matrix resolves per column, with C-Side clears correctly crossing into the celeste:c-sides chapter.",
+    "Content otherwise unchanged: the assembled guide differs from the previous QA run only by the added stepRef fields, so the flag spot-read and achievement coverage carried in the anomalies above still describe the current data."
   ]
 }
