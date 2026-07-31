@@ -38,7 +38,7 @@ export function validLocation() {
   return {
     id: "fictional-quest:castle-gate",
     name: "Castle Gate",
-    mapImage: { src: "images/castle-gate.png", alt: "Castle gate map" },
+    mapImages: [{ src: "images/castle-gate.png", alt: "Castle gate map" }],
   };
 }
 
@@ -393,9 +393,9 @@ export function validGuideUi() {
     guideId: "fictional-quest",
     widgetOrder: ["fictional-quest:coins", "fictional-quest:bosses"],
     pinnedWidgetIds: ["fictional-quest:bosses"],
-    mapZoom: 2.4,
-    mapPanX: 0.5,
-    mapPanY: 0.33,
+    mapViews: {
+      "images/castle-gate.png": { zoom: 2.4, panX: 0.5, panY: 0.33 },
+    },
   };
 }
 

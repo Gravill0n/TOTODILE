@@ -11,7 +11,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf"
+      "sha256": "30a9744446fa16368a7183695264d4f6e2b25bc0615f72640fe80abbc9e9399e"
     },
     {
       "file": "sources.json",
@@ -32,6 +32,7 @@
     ]
   },
   "notes": [
-    "Location-scoped Area Trainers table (deck slot 3) for pokemon-crystal:ruins-of-alph; 1 checkable trainer rows reproduced verbatim from the data layer trainers dataset (party levels for prep)."
+    "Location-scoped Area Trainers table (deck slot 3) for pokemon-crystal:ruins-of-alph; 1 checkable trainer rows reproduced verbatim from the data layer trainers dataset (party levels for prep).",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

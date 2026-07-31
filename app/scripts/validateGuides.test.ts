@@ -47,7 +47,7 @@ function writeTree(files: Record<string, unknown>): string {
 // the gate resolves imageRefs. Content is irrelevant — the check is existence
 // and "not an unsmudged LFS pointer", never image format.
 const HAPPY_IMAGES = {
-  // validStep().images + validLocation().mapImage
+  // validStep().images + validLocation().mapImages[0]
   "guides/fictional-quest/images/castle-gate.png": "png-bytes",
   // validMapPins().image
   "guides/fictional-quest/images/overworld.png": "png-bytes",
@@ -703,6 +703,22 @@ describe("validateGuides — guide images", () => {
     expect(messagesOf(writeTree(tree)).join("\n")).toContain(
       'references a missing image "images/castle-gate.png"',
     );
+  });
+
+  it("numbers the map so a nine-map location says which one is missing", () => {
+    const tree = happyTree();
+    const guide = structuredClone(
+      tree[`${guideBase}/guide.json`],
+    ) as ReturnType<typeof validGuide>;
+    guide.locations[0]?.mapImages.push({
+      src: "images/floor-b1.png",
+      alt: "Basement",
+    });
+    expect(
+      messagesOf(
+        writeTree({ ...tree, [`${guideBase}/guide.json`]: guide }),
+      ).join("\n"),
+    ).toContain('map 2 references a missing image "images/floor-b1.png"');
   });
 
   it("flags an unsmudged LFS pointer where a step image should be", () => {

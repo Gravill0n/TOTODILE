@@ -36,10 +36,16 @@ export const step = z.object({
 // A stable place in the guide (§6, Workstream A): the navigation target the
 // location index aggregates around. Lives in a top-level `locations[]` on the
 // spine layer and guide.json; visits reference one by `locationId`.
+//
+// `mapImages` is a list because one place routinely has several maps — Ice
+// Path's three floors, Tin Tower's nine — and a single `mapImage` (what this
+// held until 2026-07-31) forced the rest into mapPins widgets, where the panel
+// could not reach them. Order is meaningful: the first is what the panel opens
+// on. Empty for a place with no map at all, which stays common.
 export const location = z.object({
   id: locationId,
   name: z.string().min(1),
-  mapImage: imageRef.optional(),
+  mapImages: z.array(imageRef).default([]),
 });
 
 // One occurrence of being at a location within a chapter — the editorial

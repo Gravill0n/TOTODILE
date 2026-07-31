@@ -23,7 +23,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "8942e0f5ff7604265390811ddafded5c399324268c764d6507d6e6122f257c2c"
+      "sha256": "0760f32f26eae1aba7af2d3f93a2fed103030fc186617218195609e07bdd07dd"
     },
     {
       "file": "layers/widget-puzzles-c0.json",
@@ -67,7 +67,7 @@
     },
     {
       "file": "guide.json",
-      "sha256": "9d37c135ab2ad95b697d1143f039b5cf73e2ce1775faa1c83550fa59692b2d26"
+      "sha256": "34d2ce0c6e67a98289ef7f3f19fd96d84a062f5723b85bb449887e88e62ebb7b"
     }
   ],
   "report": {
@@ -80,6 +80,7 @@
     "Gate: 11/11 manifest entries approved + hash-current. Mechanical: validate-guides green, assemble-guide wrote guide.json, check-stable-ids green against HEAD, post-assembly validate green. Cross-checks: the counter's 82 derivedFrom step IDs all resolve in the assembled spine; all 9 dataTable chapter scopes resolve.",
     "Judgment: all 40 spine flags spot-read against sources across this QA cycle — umbrella-location, solution-screenshot, and omitted-solution flags verified against the route PDF and data.json; all 25 vocabulary-aligned names verified against the src-pl5-hintcoins capture (Akbadain as \"Ruins of Akbadain : Level Bn\"). Flags stay: they record the visit-location assignment inference, reviewed and approved by Pierre twice.",
     "No ra-mapping.json: no ra-set source exists (RetroAchievements has no 3DS support) — deliberate, not an omission. No images referenced; no missable steps (Any% + Puzzle Palace), so no deadlines owed. The prepCard deck slot is deliberately unfilled (Pierre 2026-07-08).",
-    "library.json still says in-compilation — flipping layton-mm to playable is Pierre's call (FR-E5), suggested at PR time."
+    "library.json still says in-compilation — flipping layton-mm to playable is Pierre's call (FR-E5), suggested at PR time.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

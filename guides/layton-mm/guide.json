@@ -4,211 +4,263 @@
   "locations": [
     {
       "id": "layton-mm:monte-dor",
-      "name": "Monte d'Or"
+      "name": "Monte d'Or",
+      "mapImages": []
     },
     {
       "id": "layton-mm:carnival-square",
-      "name": "Carnival Square"
+      "name": "Carnival Square",
+      "mapImages": []
     },
     {
       "id": "layton-mm:carnival-arcade",
-      "name": "Carnival Arcade"
+      "name": "Carnival Arcade",
+      "mapImages": []
     },
     {
       "id": "layton-mm:gallery-plaza",
-      "name": "Gallery Plaza"
+      "name": "Gallery Plaza",
+      "mapImages": []
     },
     {
       "id": "layton-mm:knickknack-alley",
-      "name": "Knickknack Alley"
+      "name": "Knickknack Alley",
+      "mapImages": []
     },
     {
       "id": "layton-mm:oasis-street",
-      "name": "Oasis Street"
+      "name": "Oasis Street",
+      "mapImages": []
     },
     {
       "id": "layton-mm:ledore-mansion-gate",
-      "name": "Ledore Mansion Gate"
+      "name": "Ledore Mansion Gate",
+      "mapImages": []
     },
     {
       "id": "layton-mm:ledore-mansion-garden",
-      "name": "Ledore Mansion Garden"
+      "name": "Ledore Mansion Garden",
+      "mapImages": []
     },
     {
       "id": "layton-mm:ledore-parlor",
-      "name": "Ledore Parlor"
+      "name": "Ledore Parlor",
+      "mapImages": []
     },
     {
       "id": "layton-mm:merchant-district",
-      "name": "Merchant District"
+      "name": "Merchant District",
+      "mapImages": []
     },
     {
       "id": "layton-mm:madame-lapushkas",
-      "name": "Madame Lapushka's"
+      "name": "Madame Lapushka's",
+      "mapImages": []
     },
     {
       "id": "layton-mm:city-monument",
-      "name": "City Monument"
+      "name": "City Monument",
+      "mapImages": []
     },
     {
       "id": "layton-mm:dromedary-plaza",
-      "name": "Dromedary Plaza"
+      "name": "Dromedary Plaza",
+      "mapImages": []
     },
     {
       "id": "layton-mm:dromedary-lobby",
-      "name": "Dromedary Lobby"
+      "name": "Dromedary Lobby",
+      "mapImages": []
     },
     {
       "id": "layton-mm:laytons-room",
-      "name": "Layton's Room"
+      "name": "Layton's Room",
+      "mapImages": []
     },
     {
       "id": "layton-mm:classroom",
-      "name": "Classroom"
+      "name": "Classroom",
+      "mapImages": []
     },
     {
       "id": "layton-mm:kingsbrook-academy",
-      "name": "Kingsbrook Academy"
+      "name": "Kingsbrook Academy",
+      "mapImages": []
     },
     {
       "id": "layton-mm:academy-gate",
-      "name": "Academy Gate"
+      "name": "Academy Gate",
+      "mapImages": []
     },
     {
       "id": "layton-mm:layton-home",
-      "name": "Layton Home"
+      "name": "Layton Home",
+      "mapImages": []
     },
     {
       "id": "layton-mm:living-room",
-      "name": "Living Room"
+      "name": "Living Room",
+      "mapImages": []
     },
     {
       "id": "layton-mm:pebble-lane",
-      "name": "Pebble Lane"
+      "name": "Pebble Lane",
+      "mapImages": []
     },
     {
       "id": "layton-mm:market-street",
-      "name": "Market Street"
+      "name": "Market Street",
+      "mapImages": []
     },
     {
       "id": "layton-mm:old-towne",
-      "name": "Old Towne"
+      "name": "Old Towne",
+      "mapImages": []
     },
     {
       "id": "layton-mm:edge-of-town",
-      "name": "Edge of Town"
+      "name": "Edge of Town",
+      "mapImages": []
     },
     {
       "id": "layton-mm:hershels-room",
-      "name": "Hershel's Room"
+      "name": "Hershel's Room",
+      "mapImages": []
     },
     {
       "id": "layton-mm:memory-knoll",
-      "name": "Memory Knoll"
+      "name": "Memory Knoll",
+      "mapImages": []
     },
     {
       "id": "layton-mm:ascot-house",
-      "name": "Ascot House"
+      "name": "Ascot House",
+      "mapImages": []
     },
     {
       "id": "layton-mm:henrys-study",
-      "name": "Henry's Study"
+      "name": "Henry's Study",
+      "mapImages": []
     },
     {
       "id": "layton-mm:city-hall-steps",
-      "name": "City Hall Steps"
+      "name": "City Hall Steps",
+      "mapImages": []
     },
     {
       "id": "layton-mm:briefing-room",
-      "name": "Briefing Room"
+      "name": "Briefing Room",
+      "mapImages": []
     },
     {
       "id": "layton-mm:montsarton-gallery",
-      "name": "Montsarton Gallery"
+      "name": "Montsarton Gallery",
+      "mapImages": []
     },
     {
       "id": "layton-mm:big-top",
-      "name": "Big Top"
+      "name": "Big Top",
+      "mapImages": []
     },
     {
       "id": "layton-mm:randalls-room",
-      "name": "Randall's Room"
+      "name": "Randall's Room",
+      "mapImages": []
     },
     {
       "id": "layton-mm:winding-road",
-      "name": "Winding Road"
+      "name": "Winding Road",
+      "mapImages": []
     },
     {
       "id": "layton-mm:norwell",
-      "name": "Norwell"
+      "name": "Norwell",
+      "mapImages": []
     },
     {
       "id": "layton-mm:racetrack",
-      "name": "Racetrack"
+      "name": "Racetrack",
+      "mapImages": []
     },
     {
       "id": "layton-mm:casino",
-      "name": "Casino"
+      "name": "Casino",
+      "mapImages": []
     },
     {
       "id": "layton-mm:pumpkin-park",
-      "name": "Pumpkin Park"
+      "name": "Pumpkin Park",
+      "mapImages": []
     },
     {
       "id": "layton-mm:akbadain-b1",
-      "name": "Ruins of Akbadain — Level B1"
+      "name": "Ruins of Akbadain — Level B1",
+      "mapImages": []
     },
     {
       "id": "layton-mm:akbadain-b2",
-      "name": "Ruins of Akbadain — Level B2"
+      "name": "Ruins of Akbadain — Level B2",
+      "mapImages": []
     },
     {
       "id": "layton-mm:akbadain-b3",
-      "name": "Ruins of Akbadain — Level B3"
+      "name": "Ruins of Akbadain — Level B3",
+      "mapImages": []
     },
     {
       "id": "layton-mm:akbadain-b4",
-      "name": "Ruins of Akbadain — Level B4"
+      "name": "Ruins of Akbadain — Level B4",
+      "mapImages": []
     },
     {
       "id": "layton-mm:akbadain-b5",
-      "name": "Ruins of Akbadain — Level B5"
+      "name": "Ruins of Akbadain — Level B5",
+      "mapImages": []
     },
     {
       "id": "layton-mm:akbadain-b6",
-      "name": "Ruins of Akbadain — Level B6"
+      "name": "Ruins of Akbadain — Level B6",
+      "mapImages": []
     },
     {
       "id": "layton-mm:akbadain-b7",
-      "name": "Ruins of Akbadain — Level B7"
+      "name": "Ruins of Akbadain — Level B7",
+      "mapImages": []
     },
     {
       "id": "layton-mm:reunion-inn",
-      "name": "Reunion Inn"
+      "name": "Reunion Inn",
+      "mapImages": []
     },
     {
       "id": "layton-mm:office",
-      "name": "Office"
+      "name": "Office",
+      "mapImages": []
     },
     {
       "id": "layton-mm:front-desk",
-      "name": "Front Desk"
+      "name": "Front Desk",
+      "mapImages": []
     },
     {
       "id": "layton-mm:emerald-suite",
-      "name": "Emerald Suite"
+      "name": "Emerald Suite",
+      "mapImages": []
     },
     {
       "id": "layton-mm:conservatory",
-      "name": "Conservatory"
+      "name": "Conservatory",
+      "mapImages": []
     },
     {
       "id": "layton-mm:grand-hall",
-      "name": "Grand Hall"
+      "name": "Grand Hall",
+      "mapImages": []
     },
     {
       "id": "layton-mm:auditorium",
-      "name": "Auditorium"
+      "name": "Auditorium",
+      "mapImages": []
     }
   ],
   "chapters": [

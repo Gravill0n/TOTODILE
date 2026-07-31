@@ -7,7 +7,7 @@
   "inputs": [
     {
       "file": "layers/spine.json",
-      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+      "sha256": "9a9f071da796fa98c1f3a29a53320b8996454e1aafa46424c2be8a014beed7bd"
     },
     {
       "file": "deck.json",
@@ -32,6 +32,7 @@
     "Pins come from src-tracker-maps' pin records for pack map 5_b_3. Coordinates are the pack's pixel positions divided by the image's own dimensions (3760x271), rounded to 4 decimal places, so they survive any rendered size. Every pin was checked to fall inside the image bounds.",
     "Image is the location's mapImage, already committed to guides/celeste/images/ under Git LFS by the spine pass — no new asset was downloaded.",
     "Pin item IDs reuse the data layer's own record IDs as their last segment, which are minted from chapter/side/room and are unique within a map, so a re-run reproduces them.",
-    "No flagged pins. Every pin is a direct reading of the pack's coordinate data."
+    "No flagged pins. Every pin is a direct reading of the pack's coordinate data.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

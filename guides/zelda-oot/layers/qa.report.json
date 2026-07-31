@@ -15,7 +15,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "c7f2f266082ee765cda7a01bf23eb79e82329e86d1a9e657f634cec6d5a1fd28"
+      "sha256": "d17f7402dfb50154e03c5dc01ab8b2cb56e1a1f007b22b9b0f46117167b8210a"
     },
     {
       "file": "layers/widget-achievements.json",
@@ -215,7 +215,7 @@
     },
     {
       "file": "guide.json",
-      "sha256": "8c329514ff8df2ab5baf5587df4c8c47c3812bddfdf96b298c1adf7618d95ca9"
+      "sha256": "d1c2660e494027c72928bbba4291a7d29ab9ece7d08da3dfc906c28af5e0433d"
     },
     {
       "file": "ra-mapping.json",
@@ -246,6 +246,7 @@
     "Coverage: the ra-set source contains 97 distinct achievements; all 97 are mapped in ra-mapping.json with no duplicates, and every mapping target resolves to a checkable row in widget-achievements. All 28 type=missable achievements land on a step carrying a missable banner, and each of the 20 bannered steps states a deadline.",
     "Flag spot-read: all 6 flagged checkables re-read against source this run — 2 spine (verified against the RA set descriptions) and 4 equipment (verified against layers/data.json). All honest; each has an anomaly line in its owning layer report and was approved in that layer. flaggedItemIds parity with artifact confidence:\"flagged\" verified across all 48 layers. QA edited no content.",
     "rowCount = files verified: every file under layers/ (101) + guide.json, ra-mapping.json, deck.json, sources.json + every file in images/ (120).",
-    "Verdict: PASS — ready for review-lens approval. No pass needs a re-run."
+    "Verdict: PASS — ready for review-lens approval. No pass needs a re-run.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

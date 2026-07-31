@@ -21,33 +21,44 @@ describe("guideUi store", () => {
     expect(record).toEqual(emptyGuideUi("fictional-quest"));
   });
 
-  it("remembers where the map was zoomed, not just how far", async () => {
+  it("remembers where each map was zoomed, not just how far", async () => {
     await writeGuideUi({
       ...emptyGuideUi("fictional-quest"),
-      mapZoom: 3,
-      mapPanX: 0.62,
-      mapPanY: 0.25,
+      mapViews: {
+        "images/ice-1f.png": { zoom: 3, panX: 0.62, panY: 0.25 },
+        "images/ice-b1f.png": { zoom: 1.5, panX: 0, panY: 0.5 },
+      },
     });
     await closeGuideUiDb();
 
+    // Per map, because a place holds several now and they are different
+    // pictures: 300% on floor 1 says nothing about where floor 2 should sit.
     const record = await readGuideUi("fictional-quest");
-    expect([record.mapZoom, record.mapPanX, record.mapPanY]).toEqual([
-      3, 0.62, 0.25,
-    ]);
+    expect(record.mapViews["images/ice-1f.png"]).toEqual({
+      zoom: 3,
+      panX: 0.62,
+      panY: 0.25,
+    });
+    expect(record.mapViews["images/ice-b1f.png"]?.zoom).toBe(1.5);
   });
 
   // A record written before the pan existed must still read — the store's
   // spread-over-defaults is the only forward migration these records get.
-  it("defaults the pan for a record written before it existed", async () => {
+  it("defaults the per-map views for a record written before they existed", async () => {
+    // What a v2 record looks like: one zoom for the whole guide. The reader
+    // loses that single position — an ephemeral UI detail, and there is no
+    // honest way to guess which of a place's maps it belonged to.
     await writeGuideUi({
       guideId: "fictional-quest",
       widgetOrder: [],
       pinnedWidgetIds: [],
       mapZoom: 2,
+      mapPanX: 0.4,
+      mapPanY: 0.1,
     } as never);
 
     const record = await readGuideUi("fictional-quest");
-    expect([record.mapZoom, record.mapPanX, record.mapPanY]).toEqual([2, 0, 0]);
+    expect(record.mapViews).toEqual({});
   });
 
   // Same trick again for the rail sizes (task 5.5.2), and the reason the store
@@ -82,9 +93,7 @@ describe("guideUi store", () => {
       ...emptyGuideUi("fictional-quest"),
       widgetOrder: ["fictional-quest:coins", "fictional-quest:bosses"],
       pinnedWidgetIds: ["fictional-quest:bosses"],
-      mapZoom: 2.4,
-      mapPanX: 0.5,
-      mapPanY: 0.33,
+      mapViews: { "images/gate.png": { zoom: 2.4, panX: 0.5, panY: 0.33 } },
     });
     await closeGuideUiDb();
 
@@ -94,7 +103,7 @@ describe("guideUi store", () => {
       "fictional-quest:bosses",
     ]);
     expect(record.pinnedWidgetIds).toEqual(["fictional-quest:bosses"]);
-    expect(record.mapZoom).toBe(2.4);
+    expect(record.mapViews["images/gate.png"]?.zoom).toBe(2.4);
   });
 
   it("keeps one record per guide", async () => {
@@ -123,7 +132,7 @@ describe("guideUi store", () => {
     expect(slot.itemStates["fictional-quest:c1:s1"]?.state).toBe("done");
 
     // and the new store is there, empty, on the same connection
-    expect((await readGuideUi("fictional-quest")).mapZoom).toBe(1);
+    expect((await readGuideUi("fictional-quest")).mapViews).toEqual({});
   });
 
   it("still writes progress after the upgrade", async () => {
@@ -139,13 +148,13 @@ describe("guideUi store", () => {
       ...emptyGuideUi("fictional-quest"),
       widgetOrder: [],
       pinnedWidgetIds: [],
-      mapZoom: 3,
-      mapPanX: 0,
-      mapPanY: 0,
+      mapViews: { "images/gate.png": { zoom: 3, panX: 0, panY: 0 } },
     });
     await closeProgressDb();
 
     expect((await readSlot("fictional-quest")).stats.stepsTotal).toBe(10);
-    expect((await readGuideUi("fictional-quest")).mapZoom).toBe(3);
+    expect(
+      (await readGuideUi("fictional-quest")).mapViews["images/gate.png"]?.zoom,
+    ).toBe(3);
   });
 });

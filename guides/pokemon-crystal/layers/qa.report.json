@@ -15,7 +15,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf"
+      "sha256": "30a9744446fa16368a7183695264d4f6e2b25bc0615f72640fe80abbc9e9399e"
     },
     {
       "file": "layers/widget-enc-azalea-town.json",
@@ -1291,7 +1291,7 @@
     },
     {
       "file": "guide.json",
-      "sha256": "5857c74a234391de943c517a600322841f7e4e52ed47ff5e462aafaa302d4de7"
+      "sha256": "37bc95f9068f69e0c580c842c3a5380306d946dc43f2b20247636b084c5e6b81"
     },
     {
       "file": "ra-mapping.json",
@@ -1333,6 +1333,7 @@
   },
   "notes": [
     "QA / assembly pass (6 of 6). yarn validate-guides green on the assembled guide.json; yarn assemble-guide wrote guide.json (20 chapters, 92 locations, 318 widgets) + ra-mapping.json after the staleness check passed. Coverage: 337/337 achievements mapped (0 unmapped). Images: 146 referenced map images all present on disk. Missables: all 6 missable steps state a deadline.",
-    "Verdict: content is ready for review-lens approval. The only open item is the check-stable-ids transition artifact (non-content) — it resolves once an approval establishes the v1 stable-ID baseline. No pass needs a re-run; QA edited no guide content (only refreshed stale provenance digests and trimmed two external input paths)."
+    "Verdict: content is ready for review-lens approval. The only open item is the check-stable-ids transition artifact (non-content) — it resolves once an approval establishes the v1 stable-ID baseline. No pass needs a re-run; QA edited no guide content (only refreshed stale provenance digests and trimmed two external input paths).",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

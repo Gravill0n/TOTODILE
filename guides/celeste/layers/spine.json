@@ -6,569 +6,695 @@
     {
       "id": "celeste:prologue",
       "name": "Prologue",
-      "mapImage": {
-        "src": "images/map-prologue.jpg",
-        "alt": "Stitched room-layout map of the Prologue, from the intro car across the collapsing bridge",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-prologue.jpg",
+          "alt": "Stitched room-layout map of the Prologue, from the intro car across the collapsing bridge",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:forsaken-city-a-start",
       "name": "Forsaken City A — Start",
-      "mapImage": {
-        "src": "images/map-forsaken-city-a-start.jpg",
-        "alt": "Room layout of Forsaken City A — Start",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-forsaken-city-a-start.jpg",
+          "alt": "Room layout of Forsaken City A — Start",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:forsaken-city-a-crossing",
       "name": "Forsaken City A — Crossing",
-      "mapImage": {
-        "src": "images/map-forsaken-city-a-crossing.jpg",
-        "alt": "Stitched room-layout map of Forsaken City A — Crossing, including the satellite area west of the city",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-forsaken-city-a-crossing.jpg",
+          "alt": "Stitched room-layout map of Forsaken City A — Crossing, including the satellite area west of the city",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:forsaken-city-a-chasm",
       "name": "Forsaken City A — Chasm",
-      "mapImage": {
-        "src": "images/map-forsaken-city-a-chasm.jpg",
-        "alt": "Stitched room-layout map of Forsaken City A — Chasm, including the cassette room",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-forsaken-city-a-chasm.jpg",
+          "alt": "Stitched room-layout map of Forsaken City A — Chasm, including the cassette room",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:old-site-a-start",
       "name": "Old Site A — Start",
-      "mapImage": {
-        "src": "images/map-old-site-a-start.jpg",
-        "alt": "Stitched room-layout map of Old Site A — Start, including the tower above the campfire room",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-old-site-a-start.jpg",
+          "alt": "Stitched room-layout map of Old Site A — Start, including the tower above the campfire room",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:old-site-a-intervention",
       "name": "Old Site A — Intervention",
-      "mapImage": {
-        "src": "images/map-old-site-a-intervention.jpg",
-        "alt": "Room layout of Old Site A — Intervention",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-old-site-a-intervention.jpg",
+          "alt": "Room layout of Old Site A — Intervention",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:old-site-a-awake",
       "name": "Old Site A — Awake",
-      "mapImage": {
-        "src": "images/map-old-site-a-awake.jpg",
-        "alt": "Room layout of Old Site A — Awake",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-old-site-a-awake.jpg",
+          "alt": "Room layout of Old Site A — Awake",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:celestial-resort-a-start",
       "name": "Celestial Resort A — Start",
-      "mapImage": {
-        "src": "images/map-celestial-resort-a-start.jpg",
-        "alt": "Room layout of Celestial Resort A — Start",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-celestial-resort-a-start.jpg",
+          "alt": "Room layout of Celestial Resort A — Start",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:celestial-resort-a-huge-mess",
       "name": "Celestial Resort A — Huge Mess",
-      "mapImage": {
-        "src": "images/map-celestial-resort-a-huge-mess.jpg",
-        "alt": "Stitched room-layout map of Celestial Resort A — Huge Mess, showing the green, purple and brown clutter paths",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-celestial-resort-a-huge-mess.jpg",
+          "alt": "Stitched room-layout map of Celestial Resort A — Huge Mess, showing the green, purple and brown clutter paths",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:celestial-resort-a-elevator-shaft",
       "name": "Celestial Resort A — Elevator Shaft",
-      "mapImage": {
-        "src": "images/map-celestial-resort-a-elevator-shaft.jpg",
-        "alt": "Room layout of Celestial Resort A — Elevator Shaft",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-celestial-resort-a-elevator-shaft.jpg",
+          "alt": "Room layout of Celestial Resort A — Elevator Shaft",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:celestial-resort-a-presidential-suite",
       "name": "Celestial Resort A — Presidential Suite",
-      "mapImage": {
-        "src": "images/map-celestial-resort-a-presidential-suite.jpg",
-        "alt": "Room layout of Celestial Resort A — Presidential Suite",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-celestial-resort-a-presidential-suite.jpg",
+          "alt": "Room layout of Celestial Resort A — Presidential Suite",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:golden-ridge-a-start",
       "name": "Golden Ridge A — Start",
-      "mapImage": {
-        "src": "images/map-golden-ridge-a-start.jpg",
-        "alt": "Room layout of Golden Ridge A — Start",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-golden-ridge-a-start.jpg",
+          "alt": "Room layout of Golden Ridge A — Start",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:golden-ridge-a-shrine",
       "name": "Golden Ridge A — Shrine",
-      "mapImage": {
-        "src": "images/map-golden-ridge-a-shrine.jpg",
-        "alt": "Stitched room-layout map of Golden Ridge A — Shrine, including the underwater passage to the crystal heart",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-golden-ridge-a-shrine.jpg",
+          "alt": "Stitched room-layout map of Golden Ridge A — Shrine, including the underwater passage to the crystal heart",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:golden-ridge-a-old-trail",
       "name": "Golden Ridge A — Old Trail",
-      "mapImage": {
-        "src": "images/map-golden-ridge-a-old-trail.jpg",
-        "alt": "Room layout of Golden Ridge A — Old Trail",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-golden-ridge-a-old-trail.jpg",
+          "alt": "Room layout of Golden Ridge A — Old Trail",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:golden-ridge-a-cliff-face",
       "name": "Golden Ridge A — Cliff Face",
-      "mapImage": {
-        "src": "images/map-golden-ridge-a-cliff-face.jpg",
-        "alt": "Room layout of Golden Ridge A — Cliff Face",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-golden-ridge-a-cliff-face.jpg",
+          "alt": "Room layout of Golden Ridge A — Cliff Face",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:mirror-temple-a-start",
       "name": "Mirror Temple A — Start",
-      "mapImage": {
-        "src": "images/map-mirror-temple-a-start.jpg",
-        "alt": "Room layout of Mirror Temple A — Start",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-mirror-temple-a-start.jpg",
+          "alt": "Room layout of Mirror Temple A — Start",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:mirror-temple-a-depths",
       "name": "Mirror Temple A — Depths",
-      "mapImage": {
-        "src": "images/map-mirror-temple-a-depths.jpg",
-        "alt": "Stitched room-layout map of Mirror Temple A — Depths, including the crystal heart and cassette rooms",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-mirror-temple-a-depths.jpg",
+          "alt": "Stitched room-layout map of Mirror Temple A — Depths, including the crystal heart and cassette rooms",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:mirror-temple-a-unravelling",
       "name": "Mirror Temple A — Unravelling",
-      "mapImage": {
-        "src": "images/map-mirror-temple-a-unravelling.jpg",
-        "alt": "Room layout of Mirror Temple A — Unravelling",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-mirror-temple-a-unravelling.jpg",
+          "alt": "Room layout of Mirror Temple A — Unravelling",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:mirror-temple-a-search",
       "name": "Mirror Temple A — Search",
-      "mapImage": {
-        "src": "images/map-mirror-temple-a-search.jpg",
-        "alt": "Room layout of Mirror Temple A — Search",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-mirror-temple-a-search.jpg",
+          "alt": "Room layout of Mirror Temple A — Search",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:mirror-temple-a-rescue",
       "name": "Mirror Temple A — Rescue",
-      "mapImage": {
-        "src": "images/map-mirror-temple-a-rescue.jpg",
-        "alt": "Room layout of Mirror Temple A — Rescue",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-mirror-temple-a-rescue.jpg",
+          "alt": "Room layout of Mirror Temple A — Rescue",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:reflection-a-start",
       "name": "Reflection A — Start",
-      "mapImage": {
-        "src": "images/map-reflection-a-start.jpg",
-        "alt": "Room layout of Reflection A — Start",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-reflection-a-start.jpg",
+          "alt": "Room layout of Reflection A — Start",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:reflection-a-lake",
       "name": "Reflection A — Lake",
-      "mapImage": {
-        "src": "images/map-reflection-a-lake.jpg",
-        "alt": "Room layout of Reflection A — Lake",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-reflection-a-lake.jpg",
+          "alt": "Room layout of Reflection A — Lake",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:reflection-a-hollows",
       "name": "Reflection A — Hollows",
-      "mapImage": {
-        "src": "images/map-reflection-a-hollows.jpg",
-        "alt": "Stitched room-layout map of Reflection A — Hollows, including the dash-code puzzle room and the cassette room",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-reflection-a-hollows.jpg",
+          "alt": "Stitched room-layout map of Reflection A — Hollows, including the dash-code puzzle room and the cassette room",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:reflection-a-reflection",
       "name": "Reflection A — Reflection",
-      "mapImage": {
-        "src": "images/map-reflection-a-reflection.jpg",
-        "alt": "Room layout of Reflection A — Reflection",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-reflection-a-reflection.jpg",
+          "alt": "Room layout of Reflection A — Reflection",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:reflection-a-rock-bottom",
       "name": "Reflection A — Rock Bottom",
-      "mapImage": {
-        "src": "images/map-reflection-a-rock-bottom.jpg",
-        "alt": "Room layout of Reflection A — Rock Bottom",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-reflection-a-rock-bottom.jpg",
+          "alt": "Room layout of Reflection A — Rock Bottom",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:reflection-a-resolution",
       "name": "Reflection A — Resolution",
-      "mapImage": {
-        "src": "images/map-reflection-a-resolution.jpg",
-        "alt": "Room layout of Reflection A — Resolution",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-reflection-a-resolution.jpg",
+          "alt": "Room layout of Reflection A — Resolution",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:the-summit-a-start",
       "name": "The Summit A — Start",
-      "mapImage": {
-        "src": "images/map-the-summit-a-start.jpg",
-        "alt": "Room layout of The Summit A — Start",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-the-summit-a-start.jpg",
+          "alt": "Room layout of The Summit A — Start",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:the-summit-a-500-m",
       "name": "The Summit A — 500 M",
-      "mapImage": {
-        "src": "images/map-the-summit-a-500-m.jpg",
-        "alt": "Room layout of The Summit A — 500 M",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-the-summit-a-500-m.jpg",
+          "alt": "Room layout of The Summit A — 500 M",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:the-summit-a-1000-m",
       "name": "The Summit A — 1000 M",
-      "mapImage": {
-        "src": "images/map-the-summit-a-1000-m.jpg",
-        "alt": "Room layout of The Summit A — 1000 M",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-the-summit-a-1000-m.jpg",
+          "alt": "Room layout of The Summit A — 1000 M",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:the-summit-a-1500-m",
       "name": "The Summit A — 1500 M",
-      "mapImage": {
-        "src": "images/map-the-summit-a-1500-m.jpg",
-        "alt": "Room layout of The Summit A — 1500 M",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-the-summit-a-1500-m.jpg",
+          "alt": "Room layout of The Summit A — 1500 M",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:the-summit-a-2000-m",
       "name": "The Summit A — 2000 M",
-      "mapImage": {
-        "src": "images/map-the-summit-a-2000-m.jpg",
-        "alt": "Room layout of The Summit A — 2000 M",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-the-summit-a-2000-m.jpg",
+          "alt": "Room layout of The Summit A — 2000 M",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:the-summit-a-2500-m",
       "name": "The Summit A — 2500 M",
-      "mapImage": {
-        "src": "images/map-the-summit-a-2500-m.jpg",
-        "alt": "Room layout of The Summit A — 2500 M",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-the-summit-a-2500-m.jpg",
+          "alt": "Room layout of The Summit A — 2500 M",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:the-summit-a-3000-m",
       "name": "The Summit A — 3000 M",
-      "mapImage": {
-        "src": "images/map-the-summit-a-3000-m.jpg",
-        "alt": "Stitched room-layout map of The Summit A — 3000 M, including the hidden crystal heart room near flag 28",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-the-summit-a-3000-m.jpg",
+          "alt": "Stitched room-layout map of The Summit A — 3000 M, including the hidden crystal heart room near flag 28",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:epilogue",
       "name": "Epilogue",
-      "mapImage": {
-        "src": "images/map-epilogue.jpg",
-        "alt": "Stitched room-layout map of the Epilogue, including the rebuilt bridge and the secret bird's-nest room",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-epilogue.jpg",
+          "alt": "Stitched room-layout map of the Epilogue, including the rebuilt bridge and the secret bird's-nest room",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:core-a-into-the-core",
       "name": "Core A — Into the Core",
-      "mapImage": {
-        "src": "images/map-core-a-into-the-core.jpg",
-        "alt": "Room layout of Core A — Into the Core",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-core-a-into-the-core.jpg",
+          "alt": "Room layout of Core A — Into the Core",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:core-a-hot-and-cold",
       "name": "Core A — Hot and Cold",
-      "mapImage": {
-        "src": "images/map-core-a-hot-and-cold.jpg",
-        "alt": "Room layout of Core A — Hot and Cold",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-core-a-hot-and-cold.jpg",
+          "alt": "Room layout of Core A — Hot and Cold",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:core-a-heart-of-the-mountain-section-2",
       "name": "Core A — Heart of the Mountain (map section 2)",
-      "mapImage": {
-        "src": "images/map-core-a-heart-of-the-mountain-section-2.jpg",
-        "alt": "Room layout of Core A — Heart of the Mountain (map section 2)",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-core-a-heart-of-the-mountain-section-2.jpg",
+          "alt": "Room layout of Core A — Heart of the Mountain (map section 2)",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:core-a-heart-of-the-mountain-section-3",
       "name": "Core A — Heart of the Mountain (map section 3)",
-      "mapImage": {
-        "src": "images/map-core-a-heart-of-the-mountain-section-3.jpg",
-        "alt": "Stitched room-layout map of Core A — Heart of the Mountain, ending at the crystal heart and cassette",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-core-a-heart-of-the-mountain-section-3.jpg",
+          "alt": "Stitched room-layout map of Core A — Heart of the Mountain, ending at the crystal heart and cassette",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:farewell-start",
       "name": "Farewell — Start",
-      "mapImage": {
-        "src": "images/map-farewell-start.jpg",
-        "alt": "Room layout of Farewell — Start",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-farewell-start.jpg",
+          "alt": "Room layout of Farewell — Start",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:farewell-singular",
       "name": "Farewell — Singular",
-      "mapImage": {
-        "src": "images/map-farewell-singular.jpg",
-        "alt": "Room layout of Farewell — Singular",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-farewell-singular.jpg",
+          "alt": "Room layout of Farewell — Singular",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:farewell-power-source",
       "name": "Farewell — Power Source",
-      "mapImage": {
-        "src": "images/map-farewell-power-source.jpg",
-        "alt": "Room layout of Farewell — Power Source",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-farewell-power-source.jpg",
+          "alt": "Room layout of Farewell — Power Source",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:farewell-remembered",
       "name": "Farewell — Remembered",
-      "mapImage": {
-        "src": "images/map-farewell-remembered.jpg",
-        "alt": "Room layout of Farewell — Remembered",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-farewell-remembered.jpg",
+          "alt": "Room layout of Farewell — Remembered",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:farewell-event-horizon",
       "name": "Farewell — Event Horizon",
-      "mapImage": {
-        "src": "images/map-farewell-event-horizon.jpg",
-        "alt": "Room layout of Farewell — Event Horizon",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-farewell-event-horizon.jpg",
+          "alt": "Room layout of Farewell — Event Horizon",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:farewell-determination",
       "name": "Farewell — Determination",
-      "mapImage": {
-        "src": "images/map-farewell-determination.jpg",
-        "alt": "Room layout of Farewell — Determination",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-farewell-determination.jpg",
+          "alt": "Room layout of Farewell — Determination",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:farewell-stubbornness",
       "name": "Farewell — Stubbornness",
-      "mapImage": {
-        "src": "images/map-farewell-stubbornness.jpg",
-        "alt": "Room layout of Farewell — Stubbornness",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-farewell-stubbornness.jpg",
+          "alt": "Room layout of Farewell — Stubbornness",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:farewell-reconciliation",
       "name": "Farewell — Reconciliation",
-      "mapImage": {
-        "src": "images/map-farewell-reconciliation.jpg",
-        "alt": "Room layout of Farewell — Reconciliation",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-farewell-reconciliation.jpg",
+          "alt": "Room layout of Farewell — Reconciliation",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:farewell-farewell",
       "name": "Farewell — Farewell",
-      "mapImage": {
-        "src": "images/map-farewell-farewell.jpg",
-        "alt": "Stitched room-layout map of Farewell's final checkpoint, including the Moon Berry room",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-farewell-farewell.jpg",
+          "alt": "Stitched room-layout map of Farewell's final checkpoint, including the Moon Berry room",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:forsaken-city-b",
       "name": "Forsaken City B-Side",
-      "mapImage": {
-        "src": "images/map-forsaken-city-b.jpg",
-        "alt": "Room layout of Forsaken City B-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-forsaken-city-b.jpg",
+          "alt": "Room layout of Forsaken City B-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:old-site-b",
       "name": "Old Site B-Side",
-      "mapImage": {
-        "src": "images/map-old-site-b.jpg",
-        "alt": "Room layout of Old Site B-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-old-site-b.jpg",
+          "alt": "Room layout of Old Site B-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:celestial-resort-b",
       "name": "Celestial Resort B-Side",
-      "mapImage": {
-        "src": "images/map-celestial-resort-b.jpg",
-        "alt": "Room layout of Celestial Resort B-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-celestial-resort-b.jpg",
+          "alt": "Room layout of Celestial Resort B-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:golden-ridge-b",
       "name": "Golden Ridge B-Side",
-      "mapImage": {
-        "src": "images/map-golden-ridge-b.jpg",
-        "alt": "Room layout of Golden Ridge B-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-golden-ridge-b.jpg",
+          "alt": "Room layout of Golden Ridge B-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:mirror-temple-b",
       "name": "Mirror Temple B-Side",
-      "mapImage": {
-        "src": "images/map-mirror-temple-b.jpg",
-        "alt": "Room layout of Mirror Temple B-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-mirror-temple-b.jpg",
+          "alt": "Room layout of Mirror Temple B-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:reflection-b",
       "name": "Reflection B-Side",
-      "mapImage": {
-        "src": "images/map-reflection-b.jpg",
-        "alt": "Room layout of Reflection B-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-reflection-b.jpg",
+          "alt": "Room layout of Reflection B-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:the-summit-b",
       "name": "The Summit B-Side",
-      "mapImage": {
-        "src": "images/map-the-summit-b.jpg",
-        "alt": "Room layout of The Summit B-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-the-summit-b.jpg",
+          "alt": "Room layout of The Summit B-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:core-b",
       "name": "Core B-Side",
-      "mapImage": {
-        "src": "images/map-core-b.jpg",
-        "alt": "Room layout of Core B-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-core-b.jpg",
+          "alt": "Room layout of Core B-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:forsaken-city-c",
       "name": "Forsaken City C-Side",
-      "mapImage": {
-        "src": "images/map-forsaken-city-c.jpg",
-        "alt": "Room layout of Forsaken City C-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-forsaken-city-c.jpg",
+          "alt": "Room layout of Forsaken City C-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:old-site-c",
       "name": "Old Site C-Side",
-      "mapImage": {
-        "src": "images/map-old-site-c.jpg",
-        "alt": "Room layout of Old Site C-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-old-site-c.jpg",
+          "alt": "Room layout of Old Site C-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:celestial-resort-c",
       "name": "Celestial Resort C-Side",
-      "mapImage": {
-        "src": "images/map-celestial-resort-c.jpg",
-        "alt": "Room layout of Celestial Resort C-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-celestial-resort-c.jpg",
+          "alt": "Room layout of Celestial Resort C-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:golden-ridge-c",
       "name": "Golden Ridge C-Side",
-      "mapImage": {
-        "src": "images/map-golden-ridge-c.jpg",
-        "alt": "Room layout of Golden Ridge C-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-golden-ridge-c.jpg",
+          "alt": "Room layout of Golden Ridge C-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:mirror-temple-c",
       "name": "Mirror Temple C-Side",
-      "mapImage": {
-        "src": "images/map-mirror-temple-c.jpg",
-        "alt": "Room layout of Mirror Temple C-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-mirror-temple-c.jpg",
+          "alt": "Room layout of Mirror Temple C-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:reflection-c",
       "name": "Reflection C-Side",
-      "mapImage": {
-        "src": "images/map-reflection-c.jpg",
-        "alt": "Room layout of Reflection C-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-reflection-c.jpg",
+          "alt": "Room layout of Reflection C-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:the-summit-c",
       "name": "The Summit C-Side",
-      "mapImage": {
-        "src": "images/map-the-summit-c.jpg",
-        "alt": "Room layout of The Summit C-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-the-summit-c.jpg",
+          "alt": "Room layout of The Summit C-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     },
     {
       "id": "celeste:core-c",
       "name": "Core C-Side",
-      "mapImage": {
-        "src": "images/map-core-c.jpg",
-        "alt": "Room layout of Core C-Side",
-        "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-core-c.jpg",
+          "alt": "Room layout of Core C-Side",
+          "credit": "Zeeveez PopTracker pack (src-tracker-maps)"
+        }
+      ]
     }
   ],
   "chapters": [

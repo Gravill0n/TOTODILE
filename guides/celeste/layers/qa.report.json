@@ -7,7 +7,7 @@
   "inputs": [
     {
       "file": "layers/spine.json",
-      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+      "sha256": "9a9f071da796fa98c1f3a29a53320b8996454e1aafa46424c2be8a014beed7bd"
     },
     {
       "file": "layers/widget-achievements.json",
@@ -323,7 +323,7 @@
     },
     {
       "file": "guide.json",
-      "sha256": "f804d34906d977bdb1e8db531004656168f7f26777e3da3a78db00bc80622105"
+      "sha256": "af27252d8f1959e4ba7a090b603a352ffd2d7afdfd7f07c88ccaf77ece160cd1"
     }
   ],
   "report": {
@@ -356,6 +356,7 @@
     "sourceRefs: every reference across all 761 checkables resolves to one of the 7 entries in sources.json.",
     "Derived counters: all 525 derivedFrom references (3 entries x 175) resolve to spine step IDs.",
     "Spot-reads performed: the 4 flagged rows against both sources; the winged-berry claim re-verified across all 7 berry-bearing chapters; 3 map-pin coordinate conversions recomputed from the pack's pixels and the images' own dimensions, all exact.",
-    "QA edited no guide content. Every anomaly above is routed to its owning pass."
+    "QA edited no guide content. Every anomaly above is routed to its owning pass.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

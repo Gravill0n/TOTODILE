@@ -41,6 +41,9 @@ type GuideShellProps = {
   visitId: string;
 };
 
+// A map nobody has touched opens fitted to the panel.
+const FIT_TO_PANEL = { zoom: 1, panX: 0, panY: 0 };
+
 // "center" suits small targets (step rows). Whole chapters are taller than
 // the viewport, and centering a too-tall element scrolls to its middle —
 // chapter jumps must align to "start" to land on the heading.
@@ -269,14 +272,13 @@ export function GuideShell({
         // look at the map of the room you are reading about.
         progress.ready ? (
           <MapPanel
+            // Remounted per place, so the sheet selection starts at the first
+            // map of the room you just walked into rather than at floor 3.
+            key={displayedLocation?.id}
             locationName={displayedLocation?.name ?? ""}
-            image={displayedLocation?.mapImage}
+            images={displayedLocation?.mapImages ?? []}
             resolveAsset={(path) => guideAssetUrl(entry.id, path)}
-            view={{
-              zoom: ui.mapZoom,
-              panX: ui.mapPanX,
-              panY: ui.mapPanY,
-            }}
+            viewOf={(src) => ui.mapViews[src] ?? FIT_TO_PANEL}
             onViewChange={ui.setMapView}
           />
         ) : undefined

@@ -11,7 +11,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf"
+      "sha256": "30a9744446fa16368a7183695264d4f6e2b25bc0615f72640fe80abbc9e9399e"
     },
     {
       "file": "layers/data.json",
@@ -30,6 +30,7 @@
   "notes": [
     "Maps all 337 RetroAchievements (raGameId 810 main set + Oak subset 24140, from the achievements dataset / ra-set sources) to their dedicated checklist rows: main -> RetroAchievements checklist (slot 7, pokemon-crystal:ra:a<id>, src-ra), Oak -> Oak Catch List (slot 8, pokemon-crystal:oak-<chapter>:a<id>, src-ra-oak).",
     "Target philosophy chosen by Pierre 2026-06-18: every achievement targets its own checklist row, so the RetroAchievements and Oak Catch List widgets are fully RA-synced. Gameplay steps keep their forward achievementRefs for inline badge display (set during the spine pass); the reverse sync link goes to the checklists.",
-    "0 unmapped, 0 flagged: every achievement has a 1:1 checklist row. raGameId 810 matches the library entry. The RA API is never called; the achievement list comes from the on-file ra-set sources."
+    "0 unmapped, 0 flagged: every achievement has a 1:1 checklist row. raGameId 810 matches the library entry. The RA API is never called; the achievement list comes from the on-file ra-set sources.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

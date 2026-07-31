@@ -11,7 +11,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf"
+      "sha256": "30a9744446fa16368a7183695264d4f6e2b25bc0615f72640fe80abbc9e9399e"
     },
     {
       "file": "sources.json",
@@ -29,6 +29,7 @@
   },
   "notes": [
     "Items & Hidden Spots pins (deck slot 4) on the Ice Path B 2 FBlackthorn Side map, scoped to pokemon-crystal:ice-path. 2 item/gift pins from the data-layer map-pins dataset (AP-tracker checks), filtered to items+gifts (trainers/badges/signs/events/Pokémon excluded). Pixel coords converted to [0,1] fractions using the PNG (160x288). Per-check pins: checks sharing a spot stack at identical coordinates.",
-    "Pin labels use the check name, falling back to the source ref tail where the AP section name was blank."
+    "Pin labels use the check name, falling back to the source ref tail where the AP section name was blank.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

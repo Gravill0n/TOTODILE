@@ -12,11 +12,23 @@ const MAX_ZOOM = 4;
 
 type MapPanelProps = {
   locationName: string;
-  image?: ImageRef | undefined;
+  /** Every map for this place, in spine order; the first is what opens. */
+  images: readonly ImageRef[];
   resolveAsset: (path: string) => string;
-  view: MapView;
-  onViewChange: (view: MapView) => void;
+  /** Where a given map was last left — keyed by its own src, not by place. */
+  viewOf: (src: string) => MapView;
+  onViewChange: (src: string, view: MapView) => void;
 };
+
+const FIT: MapView = { zoom: MIN_ZOOM, panX: 0, panY: 0 };
+
+// What a map is called on its tab. The authored caption if there is one, then
+// alt text; the numbered fallback is for a map whose alt reads like a sentence
+// about the whole place rather than a name for this sheet.
+export function mapLabel(image: ImageRef, index: number): string {
+  const label = image.caption ?? image.alt;
+  return label.length > 0 && label.length <= 28 ? label : `Map ${index + 1}`;
+}
 
 // Where the map is held, as a fraction of how far it *can* be moved. Stored
 // that way rather than in pixels because this panel is a resizable column on
@@ -55,14 +67,18 @@ const clamp = (value: number, min: number, max: number) =>
 // is worse than the space it would occupy.
 export function MapPanel({
   locationName,
-  image,
+  images,
   resolveAsset,
-  view,
+  viewOf,
   onViewChange,
 }: MapPanelProps) {
   const settleRef = useRef<ReturnType<typeof setTimeout>>(undefined);
-  const appliedRef = useRef(false);
-  const { zoom, panX, panY } = view;
+  const appliedRef = useRef<string | null>(null);
+  // Which of the place's maps is on screen. Local state, not an address: a
+  // floor is a detail of looking at a place, not somewhere you are.
+  const [selected, setSelected] = useState(0);
+  const image = images[selected] ?? images[0];
+  const { zoom, panX, panY } = image ? viewOf(image.src) : FIT;
   // The readout follows the gesture, not the record: the write is debounced,
   // so reading `zoom` here would leave the percentage stuck at its old value
   // for the whole of a scroll and make a smooth zoom look like a jump.
@@ -81,8 +97,10 @@ export function MapPanel({
   // over as an initial transform. Once, guarded: re-applying would fight the
   // reader mid-gesture, because every gesture writes back through `remember`.
   const applyStoredView = (ref: ReactZoomPanPinchRef) => {
-    if (appliedRef.current) return;
-    appliedRef.current = true;
+    // Guarded per map, not once per panel: the wrapper remounts on a switch
+    // (it is keyed by src below) and each sheet has its own stored corner.
+    if (appliedRef.current === image.src) return;
+    appliedRef.current = image.src;
     const wrapper = ref.instance.wrapperComponent;
     if (!wrapper || zoom === MIN_ZOOM) return;
     const { offsetWidth: w, offsetHeight: h } = wrapper;
@@ -104,7 +122,7 @@ export function MapPanel({
       if (!wrapper) return;
       const { scale, positionX, positionY } = ref.state;
       const { offsetWidth: w, offsetHeight: h } = wrapper;
-      onViewChange({
+      onViewChange(image.src, {
         zoom: clamp(scale, MIN_ZOOM, MAX_ZOOM),
         panX: clamp(panFraction(-positionX, w * scale, w), 0, 1),
         panY: clamp(panFraction(-positionY, h * scale, h), 0, 1),
@@ -119,13 +137,49 @@ export function MapPanel({
           Map
         </span>
         <span className="min-w-0 truncate text-xs">{locationName}</span>
+        {images.length > 1 ? (
+          <span className="shrink-0 font-mono text-[10px] text-ink-soft tabular-nums">
+            {`${selected + 1}/${images.length}`}
+          </span>
+        ) : null}
         {/* A readout, not a control — the gestures are the controls now. */}
         <span className="ms-auto shrink-0 font-mono text-[11px] text-ink-soft tabular-nums">
           {`${Math.round(liveZoom * 100)}%`}
         </span>
       </div>
+      {/* One sheet per map, only when there is a choice to make. A place can
+          hold nine (Tin Tower), so the strip scrolls rather than wrapping into
+          three rows and eating the map it labels. */}
+      {images.length > 1 ? (
+        <div
+          role="tablist"
+          aria-label={`Maps of ${locationName}`}
+          className="mb-2 flex shrink-0 gap-1 overflow-x-auto pb-0.5"
+        >
+          {images.map((candidate, index) => (
+            <button
+              key={candidate.src}
+              type="button"
+              role="tab"
+              aria-selected={index === selected}
+              onClick={() => setSelected(index)}
+              className={`shrink-0 rounded-sm border px-2 py-1 text-[11px] ${
+                index === selected
+                  ? "border-primary text-primary"
+                  : "border-line text-ink-soft"
+              }`}
+            >
+              {mapLabel(candidate, index)}
+            </button>
+          ))}
+        </div>
+      ) : null}
       <div className="min-h-0 flex-1 overflow-hidden rounded-sm border border-line bg-paper">
         <TransformWrapper
+          // Keyed by the map on screen: a switch remounts the zoom wrapper, so
+          // the new sheet starts from its OWN stored corner instead of
+          // inheriting the previous map's transform.
+          key={image.src}
           minScale={MIN_ZOOM}
           maxScale={MAX_ZOOM}
           limitToBounds
