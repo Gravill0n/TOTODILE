@@ -37,6 +37,7 @@
     "24 of the 32 cells correspond one-to-one with an achievement in src-ink-achievements: 7 A-Side clears, 8 crystal hearts, 8 B-Side clears, and Core's A-Side which has none. The 8 C-Side cells map collectively to the single \"Thanks For Playing\" achievement rather than one each.",
     "No flagged cells. Every cell is corroborated by a level-clear or crystal-heart pin in src-tracker-maps except Core's crystal heart, which the pack omits — see anomalies.",
     "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered.",
-    "Input digest for layers/spine.json refreshed by the 2026-07-31 spine re-run that attached the B-Side checkpoint maps. The spine layer is byte-identical outside location.mapImages — no id, step, visit or location this pass read was altered — so this layer s own output is unaffected."
+    "Input digest for layers/spine.json refreshed by the 2026-07-31 spine re-run that attached the B-Side checkpoint maps. The spine layer is byte-identical outside location.mapImages — no id, step, visit or location this pass read was altered — so this layer s own output is unaffected.",
+    "stepRef added 2026-07-31: each cell links to the one step in its chapter that the route names for that side's clear or that chapter's crystal heart (C-Side clears live in the celeste:c-sides chapter). Every pairing is 1:1 within the container the source names."
   ]
 }

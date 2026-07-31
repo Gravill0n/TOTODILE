@@ -42,7 +42,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "The strawberry floats low in the air below the second moving dust bunny. Stay bouncing on the spring until that dust bunny is at its highest, then move right, grab the berry, grab the wall and climb up."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s1"
       },
       {
         "itemId": "celeste:strawberries-c3:b02",
@@ -56,7 +57,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the third room, and only reachable by exploiting screen transitions. At the end of the room, go back left over the roof; back at the left you can see the strawberry hovering among spikes. Dash diagonally back and forth between this room and the one to the left to reach the platform. Walk off the platform to hit the strawberry, then dash left."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s2"
       },
       {
         "itemId": "celeste:strawberries-c3:b03",
@@ -70,7 +72,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the sixth room, floating near a cluster of dust bunnies. Stand on the fourth floating platform, at the top-left of the dust bunnies, and walk off to the right when the circling dust bunny moves past Madeline's bottom-right, then dash straight left to land on the green platform."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s3"
       },
       {
         "itemId": "celeste:strawberries-c3:b04",
@@ -84,7 +87,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "A hidden area is reached by walking through the bottom-left of the eighth room, the one with the second key. In the room you arrive in, walk into the spring on the floor and grab the falling platform. When it starts falling, jump and grab the next falling platform, then again for the last one, and dash left once that third platform has started to fall. The strawberry is in the room to the left. Jump left when the moving dust bunny on the right is moving up, wait a bit, then jump left again and dash directly left without touching the disappearing platform. Jump off the wall after claiming the strawberry and you can get back by jumping and dashing."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s4"
       },
       {
         "itemId": "celeste:strawberries-c3:b05",
@@ -98,7 +102,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "Follow the same route as for the previous berry. A smashable wall is in the ceiling of the room holding berry 4, so dash into that ceiling to continue. In the next room, jump and dash straight left to get past the narrow gap with the dust bunnies. Touch the dash crystal and work your way up the corridor, then dash left at the top and slide down the left wall, jumping before you land in the dust bunnies, and do the same on the wall you land against. After the room transition, complete another room: dash directly into both dash crystals and wait before dashing the last time underneath the floating dust bunny. Then go left to find the strawberry on a balcony above an earlier room."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s5"
       },
       {
         "itemId": "celeste:strawberries-c3:b06",
@@ -112,7 +117,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the ninth room, a vertical transition sits to the top-left of where Mr. Oshiro is waiting. Wait on the last sinking platform to jump to the floating platform furthest right, then climb up, jump off the right side and dash diagonally up-right to climb the corridor. In the room above, the strategy is simply to dash directly into every dash crystal. Slide down the right wall to grab the strawberry, jump off the wall, then dash left to get back to safety."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s6"
       },
       {
         "itemId": "celeste:strawberries-c3:b07",
@@ -126,7 +132,8 @@
           "checkpoint": "Start",
           "type": "winged",
           "how": "A winged strawberry at the end of the eleventh room. Climb the first platform and jump over to the next. Jump to the third platform to climb up and jump over it, then stick to the right side of the fourth platform and jump off. From there, grab the berry."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s7"
       },
       {
         "itemId": "celeste:strawberries-c3:b08",
@@ -140,7 +147,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the fourteenth room, floating underneath the leftmost sinking platform. Aim to run off the platform while both circling dust bunnies are far away, and grab the wall until you are comfortable dashing out of the pit to climb to safety."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s8"
       },
       {
         "itemId": "celeste:strawberries-c3:b09",
@@ -154,7 +162,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "In the fifteenth room, a hidden path sits above where you start. On entering the room, walk into the hole and dash to the left to land on the platform. Go right, dash left again, and slide down the wall, then jump off and land on a lower platform. Jump into the gap between the dust bunnies and dash left to reach the strawberry. To get out, start climbing the left wall and dash to any nearby disappearing platform to refresh your stamina when needed."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s9"
       },
       {
         "itemId": "celeste:strawberries-c3:b10",
@@ -168,7 +177,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "The strawberry floats at the top over spikes. From the start of the room, jump across the first set of dust bunnies and climb the wall you reach. Jump off that wall and dash over the next wall to reach the next platform. Jump to the floating platform, then jump at the top to the other side and walljump to the other floating platform. Jump to the platform the berry hovers over, then jump up and dash left. To survive, walljump off the right side of the very first wall you climbed over and climb up the left side of the wall opposite it. To continue the room without dying, walljump off the left and dash diagonally up-right to grab the rightmost floating platform, then jump over to move on."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s10"
       },
       {
         "itemId": "celeste:strawberries-c3:b11",
@@ -182,7 +192,8 @@
           "checkpoint": "Start",
           "type": "normal",
           "how": "On the right side of the fifteenth room is a smashable wall in the floor. It takes you to a spot above an earlier room, with two moving dust bunnies in a narrow corridor. Start running right as soon as the dust bunny on the floor starts moving right, then shortly after jump and dash right to reach the berry. Standing on the elevated floor where the strawberry was, dash left as soon as the moving dust bunny on the floor starts moving right, and keep going left quickly to get out."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-start-1:s11"
       },
       {
         "itemId": "celeste:strawberries-c3:b12",
@@ -196,7 +207,8 @@
           "checkpoint": "Huge Mess",
           "type": "normal",
           "how": "The third room of the green path has this strawberry hovering near dust bunnies and moving dust bunnies. Walk off the ledge while the dust bunny on the right is also going down, and touch the strawberry. Then quickly dash diagonally up-right and jump off the right wall to cling to the floating platform. Jump straight up and either walljump off the upper area on the right or climb it to get to safety."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-huge-mess-1:s1"
       },
       {
         "itemId": "celeste:strawberries-c3:b13",
@@ -210,7 +222,8 @@
           "checkpoint": "Huge Mess",
           "type": "normal",
           "how": "In the fifth room of the green path, at the bottom-right. Slide down the wall and dash right to grab the floating platform. Climb up and jump over the top of the platform to get the strawberry, then start climbing the right side of the platform, jump over it again, and when your hitbox is inside the dash crystal, dash straight left and then dash left again. Finish the room normally to claim the berry."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-huge-mess-1:s2"
       },
       {
         "itemId": "celeste:strawberries-c3:b14",
@@ -224,7 +237,8 @@
           "checkpoint": "Huge Mess",
           "type": "winged",
           "how": "This winged strawberry is protected by dust bunnies in the third room of the purple path. Jump onto each pillar when the dust bunny is moving up and hold onto the sides until the next one does the same — if clutter remains, you can stand on it instead of clinging to the wall. Dash at the end to make the winged strawberry fly up, then jump into it to grab it."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-huge-mess-1:s3"
       },
       {
         "itemId": "celeste:strawberries-c3:b15",
@@ -238,7 +252,8 @@
           "checkpoint": "Huge Mess",
           "type": "normal",
           "how": "In the fifth room of the purple path, hiding behind some foreground water. Walk off the right side of the floating platform, dash directly left, and climb up to finish the room."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-huge-mess-1:s4"
       },
       {
         "itemId": "celeste:strawberries-c3:b16",
@@ -252,7 +267,8 @@
           "checkpoint": "Huge Mess",
           "type": "normal",
           "how": "A right transition is in the second room of the brown path — third if you count the room shared with the platform-rearranging button. The room you enter holds the strawberry surrounded by trigger spikes. Climb the first pillar of boxes and dash right after jumping from the apex of your climb, to land on another set of boxes. Jump and dash right again from there, then climb the right wall to collect the berry. When you fall below the set of boxes to the left of the berry, dash directly left to land on part of the set you stepped on before. Jump left to the first set of boxes and dash left over the dust bunnies at the beginning to claim the strawberry."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-huge-mess-1:s5"
       },
       {
         "itemId": "celeste:strawberries-c3:b17",
@@ -266,7 +282,8 @@
           "checkpoint": "Huge Mess",
           "type": "normal",
           "how": "In the fifth room of the brown path, the path to the strawberry is on the left. Walljump up the first section while dodging moving dust bunnies, and dash diagonally up-left to avoid touching as many dust-bunny-spawning tiles as possible. Walljump up the second section to grab the strawberry, then dash right or up-right as you fall back down. Then safely exit the first section and go through the door."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-huge-mess-1:s6"
       },
       {
         "itemId": "celeste:strawberries-c3:b18",
@@ -280,7 +297,8 @@
           "checkpoint": "Huge Mess",
           "type": "normal",
           "how": "After pressing any clutter switch, return to the first room. You can then go below where the bridge originally covered and find a room with a strawberry. Avoid the water — dust bunnies are in it."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-huge-mess-1:s7"
       },
       {
         "itemId": "celeste:strawberries-c3:b19",
@@ -294,7 +312,8 @@
           "checkpoint": "Elevator Shaft",
           "type": "normal",
           "how": "First, try to land as far right as possible on the first platform elevated over the dust bunnies, and do not move. Jump up and dash left with no motion inputs. Next, jump left and dash straight up to grab the lower ledge. Jump up from there and land on the right side of the ledge. Then jump left, dash directly upward, and steer right to land on the right section of the upper ledge. From here, dash right into the berry and land in the lower area you have not already stood in. Walk left, jumping over the dust bunnies you spawned earlier, then jump left and dash straight up to land on the left side of the lower ledge. Do it again to land on the left side of the upper ledge, then finish the room as normal."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-elevator-shaft-1:s1"
       },
       {
         "itemId": "celeste:strawberries-c3:b20",
@@ -308,7 +327,8 @@
           "checkpoint": "Elevator Shaft",
           "type": "normal",
           "how": "This strawberry is in the room below the cutscene with Oshiro. Walk off the platform right as the moving dust bunny at the bottom reaches the right. Dash right to land as far onto the platform as possible. Jump to the wall and climb it, then jump off and dash straight up to grab the berry, then hold the wall again. Climb up a bit and, when the moving dust bunny reaches the right, jump to the platform to get past the dust bunnies you spawned earlier. Finish the room as normal to claim the berry."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-elevator-shaft-1:s2"
       },
       {
         "itemId": "celeste:strawberries-c3:b21",
@@ -322,7 +342,8 @@
           "checkpoint": "Elevator Shaft",
           "type": "normal",
           "how": "At the start of the long horizontal room containing the key is a gap in the floor. Going down it leads to a room with two strawberries. On the right side, hold onto the wall just under where the moving dust bunnies travel back and forth. When the middle one moves left, dash directly upward, then move right and fall into the gap between two moving dust bunnies. Jump from the left wall to the right and collect the dash crystal, then jump back to the left side and climb the wall. Repeat the first step mirrored to get to safety and claim this strawberry."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-elevator-shaft-1:s3"
       },
       {
         "itemId": "celeste:strawberries-c3:b22",
@@ -336,7 +357,8 @@
           "checkpoint": "Elevator Shaft",
           "type": "normal",
           "how": "In the same room as the previous berry, this one hides behind a cloth on the left. To enter the area, hold the left wall and dash up just as the middle dust bunnies move right. Then move left to land on the floor below. Jump and dash up when the moving dust bunny guarding the strawberry is moving away to grab the berry, then fall back down and land on the lower floor without touching the dust bunnies you spawned earlier. Exit by repeating the entry process mirrored."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-elevator-shaft-1:s4"
       },
       {
         "itemId": "celeste:strawberries-c3:b23",
@@ -350,7 +372,8 @@
           "checkpoint": "Presidential Suite",
           "type": "normal",
           "how": "In the fifth room, this strawberry requires you to bounce on Oshiro's head to reach it — it sits around a tunnel of dust bunnies and is out of reach without the extra boost. Stand on the right edge of the platform to its left and wait until Oshiro's laser shoots out, then jump and dash up-right and fall through the tunnel to get the berry safely."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-presidential-suite-1:s1"
       },
       {
         "itemId": "celeste:strawberries-c3:b24",
@@ -364,7 +387,8 @@
           "checkpoint": "Presidential Suite",
           "type": "normal",
           "how": "Near the start, in a tight corridor between dust bunnies. Dash up from the floor, jump across, and grab the berry without touching the dust bunnies. Another method is to bounce on Oshiro's head to get onto the wall with a dash, then dash through where the berry is to collect it."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-presidential-suite-1:s2"
       },
       {
         "itemId": "celeste:strawberries-c3:b25",
@@ -378,7 +402,8 @@
           "checkpoint": "Presidential Suite",
           "type": "normal",
           "how": "Around the middle of the ninth room, a strawberry floats at the bottom. Walk off the left edge, dash right, and climb the wall to get it. Make sure Oshiro will not attack you during this by letting him pass before you walk off."
-        }
+        },
+        "stepRef": "celeste:v-celestial-resort-a-presidential-suite-1:s3"
       }
     ]
   }

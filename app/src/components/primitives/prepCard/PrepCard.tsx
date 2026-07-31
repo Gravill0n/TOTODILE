@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import type { PrepCardWidget } from "@/schema";
 import { FlagMark } from "../FlagMark";
 import type { WidgetProps } from "../widgetProps";
+import { highlightClass } from "../widgetProps";
 
 type PrepCardProps = WidgetProps<PrepCardWidget>;
 
@@ -33,7 +34,13 @@ export function PrepCard({ widget, progress, onToggle }: PrepCardProps) {
         {widget.items.map((item) => {
           const done = progress.doneIds.has(item.itemId);
           return (
-            <li key={item.itemId} className="flex min-h-11 items-center gap-2">
+            <li
+              key={item.itemId}
+              className={cn(
+                "flex min-h-11 items-center gap-2",
+                highlightClass(progress, item.itemId),
+              )}
+            >
               <Checkbox
                 checked={done}
                 onCheckedChange={() => onToggle(item.itemId)}

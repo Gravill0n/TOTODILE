@@ -23,6 +23,7 @@ import { SyncReceipt } from "@/features/sync/SyncReceipt";
 import { type SyncOutcome, syncGuide } from "@/features/sync/syncGuide";
 import { guideAssetUrl, guideStepIds, stepDomId } from "@/lib/guide";
 import { mastery } from "@/lib/mastery";
+import { stepItemIndex } from "@/lib/widgetItems";
 import {
   type GuideFile,
   idTail,
@@ -219,9 +220,17 @@ export function GuideShell({
     }
   }, [currentStepId]);
 
+  // What the step under the pointer hands over, so the rows and pins you are
+  // about to tick point at themselves (2026-07-31). Presentation only.
+  const highlightIds = useMemo(() => {
+    if (currentStepId === null) return new Set<string>();
+    return new Set(stepItemIndex(guide).get(currentStepId) ?? []);
+  }, [guide, currentStepId]);
+
   const progressSlice: ProgressSlice = {
     doneIds: progress.ready ? progress.doneIds : new Set(),
     counterValues: progress.ready ? progress.counterValues : {},
+    highlightIds,
   };
   const handlers: WidgetHandlers = {
     onToggle: progress.ready ? progress.toggleDone : () => {},
@@ -306,6 +315,7 @@ export function GuideShell({
             onViewChange={ui.setMapView}
             pinsFor={(src) => pinsByMap.get(src) ?? []}
             doneIds={progressSlice.doneIds}
+            highlightIds={highlightIds}
             onTogglePin={handlers.onToggle}
           />
         ) : undefined

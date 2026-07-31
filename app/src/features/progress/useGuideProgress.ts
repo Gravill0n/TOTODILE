@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { chapterOf, guideStepIds } from "@/lib/guide";
+import { stepItemIndex } from "@/lib/widgetItems";
 import type { GuideFile } from "@/schema";
 import { type ProgressSlot, readSlot, writeSlot } from "./progressStore";
 import * as mutations from "./slotMutations";
@@ -50,6 +51,11 @@ function withStats(
 // functions in slotMutations.
 export function useGuideProgress(guide: GuideFile): GuideProgress {
   const stepIds = useMemo(() => guideStepIds(guide), [guide]);
+  // The rows each step hands over, built once per guide rather than per tap.
+  const linkedItems = useMemo(() => {
+    const index = stepItemIndex(guide);
+    return (stepId: string) => index.get(stepId) ?? [];
+  }, [guide]);
   const [slot, setSlot] = useState<ProgressSlot | null>(null);
 
   useEffect(() => {
@@ -98,8 +104,10 @@ export function useGuideProgress(guide: GuideFile): GuideProgress {
 
   const toggleDone = useCallback(
     (itemId: string) =>
-      mutateSlot((slot, at) => mutations.toggleDone(slot, stepIds, itemId, at)),
-    [mutateSlot, stepIds],
+      mutateSlot((slot, at) =>
+        mutations.toggleDone(slot, stepIds, itemId, at, linkedItems),
+      ),
+    [mutateSlot, stepIds, linkedItems],
   );
 
   const toggleSkip = useCallback(
@@ -111,15 +119,17 @@ export function useGuideProgress(guide: GuideFile): GuideProgress {
   const markThrough = useCallback(
     (stepId: string) =>
       mutateSlot((slot, at) =>
-        mutations.markThrough(slot, stepIds, stepId, at),
+        mutations.markThrough(slot, stepIds, stepId, at, linkedItems),
       ),
-    [mutateSlot, stepIds],
+    [mutateSlot, stepIds, linkedItems],
   );
 
   const markManyDone = useCallback(
     (itemIds: string[]) =>
-      mutateSlot((slot, at) => mutations.markManyDone(slot, itemIds, at)),
-    [mutateSlot],
+      mutateSlot((slot, at) =>
+        mutations.markManyDone(slot, itemIds, at, linkedItems),
+      ),
+    [mutateSlot, linkedItems],
   );
 
   const acknowledgeMissable = useCallback(

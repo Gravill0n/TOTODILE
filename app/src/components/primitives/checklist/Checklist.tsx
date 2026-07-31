@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import type { ChecklistWidget } from "@/schema";
 import { FlagMark } from "../FlagMark";
 import type { WidgetProps } from "../widgetProps";
+import { highlightClass } from "../widgetProps";
 
 type ChecklistProps = WidgetProps<ChecklistWidget>;
 
@@ -12,7 +13,13 @@ export function Checklist({ widget, progress, onToggle }: ChecklistProps) {
       {widget.rows.map((row) => {
         const done = progress.doneIds.has(row.itemId);
         return (
-          <li key={row.itemId} className="flex items-start gap-2">
+          <li
+            key={row.itemId}
+            className={cn(
+              "flex items-start gap-2",
+              highlightClass(progress, row.itemId),
+            )}
+          >
             <Checkbox
               checked={done}
               onCheckedChange={() => onToggle(row.itemId)}

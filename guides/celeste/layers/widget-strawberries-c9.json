@@ -42,7 +42,8 @@
           "checkpoint": "Into the Core",
           "type": "normal",
           "how": "To the left of the fifth room is a room with this strawberry floating far to the left near some fireballs. It is completely out of reach while the room is hot — though it can technically be obtained with a precise skip — so turn the Core to cold and come back. The hot bumper above the starting area will have become a bumper you can dash into diagonally up-right, bouncing you over to the ice balls on the left. Bounce across those carefully to collect the strawberry, then make your way back right and use your other dash to return."
-        }
+        },
+        "stepRef": "celeste:v-core-a-into-the-core-1:s1"
       },
       {
         "itemId": "celeste:strawberries-c9:b02",
@@ -56,7 +57,8 @@
           "checkpoint": "Hot and Cold",
           "type": "normal",
           "how": "At the end of the first room, a transition at the top of the right side is blocked by a magma barrier. To get past it, continue into the next room until you reach the hot/cold switch, hit it, and bounce back left on the ice balls it creates. Get back to the first room of the subchapter, then dash up to the vertical transition. In the room above, many bumpers sit over a spike floor, with corridors above them surrounded by ice walls; this strawberry is in the farthest right of those ice wall corridors. There are many ways in, but the most reliable is to walljump off the floating platform's ice walls to get to the bumper area without using a dash, then use both dashes to reach the strawberry. You can also barely reach the area by bouncing on the rightmost bumper and walljumping. From there, bounce on the top-left side of the right bumper and move left safely, returning to the start with either the earlier walljumping or a risky bounce on the left side of the leftmost bumper."
-        }
+        },
+        "stepRef": "celeste:v-core-a-hot-and-cold-1:s1"
       },
       {
         "itemId": "celeste:strawberries-c9:b03",
@@ -70,7 +72,8 @@
           "checkpoint": "Hot and Cold",
           "type": "normal",
           "how": "In the third room, at the end of the room floating at the top. After being bounced by the last bumper in the room, you should be in range to dash straight up into the strawberry and collect it."
-        }
+        },
+        "stepRef": "celeste:v-core-a-hot-and-cold-1:s2"
       },
       {
         "itemId": "celeste:strawberries-c9:b04",
@@ -84,7 +87,8 @@
           "checkpoint": "Hot and Cold",
           "type": "normal",
           "how": "Above the fourth room, reached through a small hole not far to the left of the hot/cold switch. It is easy to enter while the room is cold, but that blocks the strawberry off with an ice barrier and forces you to go left and restart the prior room — you need to enter while it is hot. Bounce on some ice balls near the hot/cold switch while still holding both dashes to reach it and set the room to hot. Then start moving left with dashes, stalling properly until there is an opening past any fireballs. After that the berry is there to collect, and you can head right to fall to the end of the lower room."
-        }
+        },
+        "stepRef": "celeste:v-core-a-hot-and-cold-1:s3"
       },
       {
         "itemId": "celeste:strawberries-c9:b05",
@@ -98,7 +102,8 @@
           "checkpoint": "Heart of the Mountain",
           "type": "normal",
           "how": "In the seventh room, hovering to the right of the last launching block. It looks very hard to approach, since normally you run out of time or stamina and fall into the magma below. The key: after being flung from the launching block on the left, use your other dash to get to where the strawberry floats, then walljump up — do NOT hold the climb button while doing this, or you will activate the launching block. Just walljump back and forth and jump above the top of the launching block so you can grab its left side and finish the room, claiming the strawberry."
-        }
+        },
+        "stepRef": "celeste:v-core-a-heart-of-the-mountain-section-2-1:s1"
       }
     ]
   }

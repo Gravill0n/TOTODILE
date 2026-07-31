@@ -1,4 +1,5 @@
-import type { Confidence, Widget } from "@/schema";
+import type { Confidence, GuideFile, Widget } from "@/schema";
+import { widgetCheckables } from "@/schema";
 
 // One entry per binary (toggle-to-done) item a widget exposes, with the
 // human label derived per primitive — matrix/dataTable items have no label
@@ -83,4 +84,22 @@ export function widgetBinaryItems(widget: Widget): WidgetBinaryItem[] {
     case "counter":
       return [];
   }
+}
+
+// Every widget item a step is linked to, keyed by step id (2026-07-31).
+// Built once per guide: the play view asks this on every tick, and walking
+// 318 widgets each time would be work proportional to the guide on every tap.
+//
+// One direction only. A step knows what it hands you; a row does not decide
+// that the step is walked — ticking one of a step's five items must not
+// declare the step done.
+export function stepItemIndex(guide: GuideFile): Map<string, string[]> {
+  const index = new Map<string, string[]>();
+  for (const widget of guide.widgets) {
+    for (const row of widgetCheckables(widget)) {
+      if (row.stepRef === undefined) continue;
+      index.set(row.stepRef, [...(index.get(row.stepRef) ?? []), row.itemId]);
+    }
+  }
+  return index;
 }

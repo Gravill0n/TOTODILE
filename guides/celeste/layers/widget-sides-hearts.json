@@ -71,7 +71,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-forsaken-city-a-chasm-1:s7"
       },
       {
         "itemId": "celeste:sides-hearts:forsaken-city-b-side",
@@ -81,7 +82,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-forsaken-city-b-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:forsaken-city-c-side",
@@ -91,7 +93,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-forsaken-city-c-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:forsaken-city-crystal-heart",
@@ -101,7 +104,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-forsaken-city-a-crossing-1:s4"
       },
       {
         "itemId": "celeste:sides-hearts:old-site-a-side",
@@ -111,7 +115,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-old-site-a-awake-1:s2"
       },
       {
         "itemId": "celeste:sides-hearts:old-site-b-side",
@@ -121,7 +126,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-old-site-b-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:old-site-c-side",
@@ -131,7 +137,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-old-site-c-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:old-site-crystal-heart",
@@ -141,7 +148,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-old-site-a-start-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:celestial-resort-a-side",
@@ -151,7 +159,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-celestial-resort-a-presidential-suite-1:s4"
       },
       {
         "itemId": "celeste:sides-hearts:celestial-resort-b-side",
@@ -161,7 +170,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-celestial-resort-b-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:celestial-resort-c-side",
@@ -171,7 +181,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-celestial-resort-c-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:celestial-resort-crystal-heart",
@@ -181,7 +192,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-celestial-resort-a-huge-mess-1:s8"
       },
       {
         "itemId": "celeste:sides-hearts:golden-ridge-a-side",
@@ -191,7 +203,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-golden-ridge-a-cliff-face-1:s6"
       },
       {
         "itemId": "celeste:sides-hearts:golden-ridge-b-side",
@@ -201,7 +214,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-golden-ridge-b-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:golden-ridge-c-side",
@@ -211,7 +225,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-golden-ridge-c-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:golden-ridge-crystal-heart",
@@ -221,7 +236,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-golden-ridge-a-shrine-1:s10"
       },
       {
         "itemId": "celeste:sides-hearts:mirror-temple-a-side",
@@ -231,7 +247,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-mirror-temple-a-rescue-1:s2"
       },
       {
         "itemId": "celeste:sides-hearts:mirror-temple-b-side",
@@ -241,7 +258,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-mirror-temple-b-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:mirror-temple-c-side",
@@ -251,7 +269,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-mirror-temple-c-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:mirror-temple-crystal-heart",
@@ -261,7 +280,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-mirror-temple-a-depths-1:s13"
       },
       {
         "itemId": "celeste:sides-hearts:reflection-a-side",
@@ -271,7 +291,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-reflection-a-resolution-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:reflection-b-side",
@@ -281,7 +302,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-reflection-b-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:reflection-c-side",
@@ -291,7 +313,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-reflection-c-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:reflection-crystal-heart",
@@ -301,7 +324,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-reflection-a-hollows-1:s2"
       },
       {
         "itemId": "celeste:sides-hearts:the-summit-a-side",
@@ -311,7 +335,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-the-summit-a-3000-m-1:s9"
       },
       {
         "itemId": "celeste:sides-hearts:the-summit-b-side",
@@ -321,7 +346,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-the-summit-b-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:the-summit-c-side",
@@ -331,7 +357,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-the-summit-c-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:the-summit-crystal-heart",
@@ -341,7 +368,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-the-summit-a-3000-m-1:s8"
       },
       {
         "itemId": "celeste:sides-hearts:core-a-side",
@@ -351,7 +379,8 @@
           "src-ink-chapters",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-core-a-heart-of-the-mountain-section-3-1:s3"
       },
       {
         "itemId": "celeste:sides-hearts:core-b-side",
@@ -361,7 +390,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-core-b-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:core-c-side",
@@ -371,7 +401,8 @@
           "src-ink-achievements",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-core-c-1:s1"
       },
       {
         "itemId": "celeste:sides-hearts:core-crystal-heart",
@@ -381,7 +412,8 @@
           "src-ink-achievements",
           "src-ink-collectables"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-core-a-heart-of-the-mountain-section-3-1:s2"
       }
     ]
   }

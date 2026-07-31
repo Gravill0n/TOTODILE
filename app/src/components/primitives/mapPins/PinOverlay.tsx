@@ -6,6 +6,8 @@ import { clusterLabel, clusterPins, type PinLike } from "./pinClusters";
 type PinOverlayProps = {
   pins: readonly PinLike[];
   doneIds: ReadonlySet<string>;
+  /** Pins the current step hands over — a ring, never a state change. */
+  highlightIds?: ReadonlySet<string>;
   onToggle: (itemId: string) => void;
   /** Legend position of a pin (1-based), so a lone marker shows its number. */
   legendNumberOf?: (itemId: string) => number;
@@ -23,6 +25,7 @@ type PinOverlayProps = {
 export function PinOverlay({
   pins,
   doneIds,
+  highlightIds,
   onToggle,
   legendNumberOf,
 }: PinOverlayProps) {
@@ -54,6 +57,10 @@ export function PinOverlay({
         const done = cluster.pins.filter((pin) => doneIds.has(pin.itemId));
         const allDone = done.length === cluster.pins.length;
         const open = openCluster === key;
+        // A cluster lights up when any pin under it belongs to the step.
+        const highlighted = cluster.pins.some((pin) =>
+          highlightIds?.has(pin.itemId),
+        );
         const first = cluster.pins[0];
         if (!first) return null;
 
@@ -82,6 +89,8 @@ export function PinOverlay({
                 allDone
                   ? "border-primary bg-primary text-primary-foreground"
                   : "border-primary bg-card/90 text-primary",
+                highlighted &&
+                  "ring-2 ring-primary ring-offset-2 ring-offset-paper",
               )}
             >
               {allDone && !grouped ? (

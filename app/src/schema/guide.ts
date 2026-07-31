@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { findDuplicates, guideSlug, idSlug, schemaVersion } from "./common.ts";
 import { chapter, location } from "./spine.ts";
-import { widget, widgetItemIds } from "./widgets.ts";
+import { widget, widgetCheckables, widgetItemIds } from "./widgets.ts";
 
 // guides/<slug>/guide.json — locations + spine + widget instances (§20.1), the
 // only file the player-facing app strictly needs per guide.
@@ -107,6 +107,20 @@ export const guideFile = z
           message: `Widget "${w.id}" is scoped to unknown visit "${w.scope.visitId}"`,
         });
       }
+    });
+    // FK: a row's `stepRef` names a step that exists. A dangling link would
+    // silently tick nothing, which is worse than refusing to compile.
+    const stepIdSet = new Set(visits.flatMap((v) => v.steps.map((s) => s.id)));
+    value.widgets.forEach((w, wi) => {
+      widgetCheckables(w).forEach((row) => {
+        if (row.stepRef !== undefined && !stepIdSet.has(row.stepRef)) {
+          ctx.addIssue({
+            code: "custom",
+            path: ["widgets", wi],
+            message: `Item "${row.itemId}" links to unknown step "${row.stepRef}"`,
+          });
+        }
+      });
     });
     // FK (#5): a derived counter counts checkable ids that exist in the
     // guide's shared step + widget-item namespace.

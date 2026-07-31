@@ -10,6 +10,7 @@ import {
   localId,
   locationId,
   sourceRefs,
+  stepId,
   visitId,
   widgetId,
 } from "./common.ts";
@@ -38,10 +39,22 @@ export const widgetScope = z.discriminatedUnion("kind", [
 
 // Every checkable row/cell: stable item ID (progress + RA-mapping target),
 // ≥1 source reference, and a compiler confidence level (§6.3).
+//
+// `stepRef` links the row to the step where the route says you get this thing,
+// so ticking that step ticks the row (FR-B2, 2026-07-31). It lives HERE rather
+// than as `step.itemRefs[]` because the spine is compiled before the widgets:
+// a spine field naming widget item ids would invert the pass order, while the
+// widget pass is already anchored to the spine and has the step id in hand.
+//
+// Optional, and filled only where a source ties the item to that specific
+// step — no source, no link (§24 / §0.2: gaps are flagged, never guessed). An
+// unlinked row behaves exactly as it did before, so a widget that gains no
+// links keeps its bytes and needs no re-approval.
 const checkable = {
   itemId,
   sourceRefs,
   confidence,
+  stepRef: stepId.optional(),
 };
 
 const widgetBase = {
@@ -309,6 +322,8 @@ export type WidgetCheckable = {
   itemId: string;
   sourceRefs: string[];
   confidence: Confidence;
+  /** The step where the route says you get this — see `checkable` above. */
+  stepRef?: string | undefined;
 };
 
 // All checkable rows/cells a widget exposes, regardless of primitive.

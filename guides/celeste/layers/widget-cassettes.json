@@ -19,7 +19,8 @@
           "src-ink-collectables",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-forsaken-city-a-chasm-1:s1"
       },
       {
         "itemId": "celeste:cassettes:old-site",
@@ -29,7 +30,8 @@
           "src-ink-collectables",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-old-site-a-start-1:s11"
       },
       {
         "itemId": "celeste:cassettes:celestial-resort",
@@ -39,7 +41,8 @@
           "src-ink-collectables",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-celestial-resort-a-elevator-shaft-1:s5"
       },
       {
         "itemId": "celeste:cassettes:golden-ridge",
@@ -49,7 +52,8 @@
           "src-ink-collectables",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-golden-ridge-a-start-1:s9"
       },
       {
         "itemId": "celeste:cassettes:mirror-temple",
@@ -59,7 +63,8 @@
           "src-ink-collectables",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-mirror-temple-a-depths-1:s12"
       },
       {
         "itemId": "celeste:cassettes:reflection",
@@ -69,7 +74,8 @@
           "src-ink-collectables",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-reflection-a-hollows-1:s1"
       },
       {
         "itemId": "celeste:cassettes:the-summit",
@@ -79,7 +85,8 @@
           "src-ink-collectables",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-the-summit-a-1500-m-1:s9"
       },
       {
         "itemId": "celeste:cassettes:core",
@@ -89,7 +96,8 @@
           "src-ink-collectables",
           "src-tracker-maps"
         ],
-        "confidence": "normal"
+        "confidence": "normal",
+        "stepRef": "celeste:v-core-a-heart-of-the-mountain-section-3-1:s1"
       }
     ]
   }
