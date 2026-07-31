@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { importSlots, readAllSlots } from "@/features/progress/progressStore";
 import { setEditorMode, useEditorMode } from "@/features/review/editorMode";
 import {
@@ -11,7 +12,38 @@ import {
   getCredentials,
   setCredentials,
 } from "@/features/sync/raCredentials";
+import { setTheme, type Theme, useTheme } from "@/lib/theme";
 import { progressExport, SCHEMA_VERSION } from "@/schema";
+
+// §5.4 — the system preference is still the default; this is the override.
+// A three-way choice is a toggle group, not a switch: "auto" is a real answer,
+// not the absence of one.
+function ThemeSection() {
+  const theme = useTheme();
+  return (
+    <section className="mt-8">
+      <h2 className="font-bold">Theme</h2>
+      <p className="mt-1 text-sm text-ink-soft">
+        Paper by day, dimmed paper by night. Auto follows this device and is the
+        default; pick a side to override it.
+      </p>
+      <ToggleGroup
+        type="single"
+        variant="outline"
+        value={theme}
+        // Radix clears the value when the pressed item is pressed again; a
+        // theme is never "none", so an empty answer keeps the current one.
+        onValueChange={(value) => value && setTheme(value as Theme)}
+        aria-label="Theme"
+        className="mt-3"
+      >
+        <ToggleGroupItem value="light">Light</ToggleGroupItem>
+        <ToggleGroupItem value="auto">Auto</ToggleGroupItem>
+        <ToggleGroupItem value="dark">Dark</ToggleGroupItem>
+      </ToggleGroup>
+    </section>
+  );
+}
 
 // RA username + API key entry. The key lives only in browser storage (§17.4):
 // never committed, logged, or written into a progress export. Kept as its own
@@ -204,6 +236,7 @@ export function SettingsScreen() {
           Editor mode
         </Label>
       </section>
+      <ThemeSection />
       <RaCredentialsSection />
       <p className="mt-8 text-sm">
         <Link to="/" className="underline">

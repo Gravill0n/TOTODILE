@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* `dark:` follows the resolved theme attribute, not `prefers-color-scheme`.
+   Tailwind's default would leave the ~19 `dark:` utilities in the shadcn
+   primitives obeying the system while the whole palette obeys the manual
+   override (§5.4) — a manually-light page with dark-mode input borders. One
+   variant declaration keeps every one of them in step; no `.dark` class is
+   involved either way. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 /* Paper-guide palette (§0.4, §9.1): warm neutrals after the HeartGold paper
    guide. The token NAMES are the contract — components style only through
    these (or their shadcn aliases below), never literal colors (§22.1). Taste
@@ -121,26 +129,35 @@
   --color-ring: var(--ring);
 }
 
-/* Dark mode = dimmed paper, never neutral black (§7); follows the system
-   preference (§5.4). Same paper tokens, swapped values — no `.dark` class, no
-   toggle; the semantic aliases above inherit through their var() references. */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-paper: #201c16;
-    --color-paper-dim: #181410;
-    --color-ink: #e6ddcc;
-    --color-ink-soft: #a39882;
-    --color-card: #2a241c;
-    --color-line: #443c2f;
-    --color-accent: #e0824f;
-    --color-missable: #e2574a;
+/* Dark mode = dimmed paper, never neutral black (§7). Selected by the
+   `data-theme` attribute, not by `prefers-color-scheme`: §5.4's manual
+   light/auto/dark override has to be able to beat the system preference, and a
+   media query cannot be overruled. src/lib/theme.ts resolves `auto` through
+   `matchMedia` and stamps the attribute; index.html stamps it before first
+   paint so a dark-preference load never flashes light. Same paper tokens,
+   swapped values — the semantic aliases above inherit through their var()
+   references. */
+:root[data-theme="light"] {
+  color-scheme: light;
+}
 
-    --color-missable-bg: #3a201c;
-    --color-missable-ink: #f0b9ad;
-    --color-warn: #d9a24e;
-    --color-warn-bg: #322616;
-    --color-warn-ink: #e6c88f;
-    --color-ok: #8fb28f;
-    --color-ok-bg: #22301f;
-  }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-paper: #201c16;
+  --color-paper-dim: #181410;
+  --color-ink: #e6ddcc;
+  --color-ink-soft: #a39882;
+  --color-card: #2a241c;
+  --color-line: #443c2f;
+  --color-accent: #e0824f;
+  --color-missable: #e2574a;
+
+  --color-missable-bg: #3a201c;
+  --color-missable-ink: #f0b9ad;
+  --color-warn: #d9a24e;
+  --color-warn-bg: #322616;
+  --color-warn-ink: #e6c88f;
+  --color-ok: #8fb28f;
+  --color-ok-bg: #22301f;
 }

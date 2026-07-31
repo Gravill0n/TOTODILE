@@ -214,7 +214,7 @@ All stories are v1. AC = acceptance criteria.
 ### 5.4 Accessibility & Ergonomics
 - Touch targets ≥ 44×44 px in play posture
 - Current step readable at arm's length: ≥ 18 pt body equivalent on phone
-- Dark mode supported (couch use); honors system preference
+- Dark mode supported (couch use); honors system preference. Amended 2026-07-31: settings carry a manual light / auto / dark override. `auto` is the default and is what honors the system preference — including following it live when it changes — so an install that never touches the control behaves exactly as this line originally read. The choice is a browser-local UI preference (localStorage, beside the editor-mode flag), never part of the progress export
 - Desktop review posture fully keyboard-navigable for verdicts (approve/reject/next)
 
 ### 5.5 Scalability (bounded by design)

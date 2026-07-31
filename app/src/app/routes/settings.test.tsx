@@ -92,3 +92,18 @@ describe("settings — RA credentials (§17.4)", () => {
     expect(getCredentials()).toBeNull();
   });
 });
+
+describe("settings — theme (§5.4)", () => {
+  it("overrides the system preference and persists the choice", async () => {
+    await renderSettings();
+    fireEvent.click(screen.getByRole("radio", { name: "Dark" }));
+    expect(document.documentElement.dataset.theme).toBe("dark");
+    expect(localStorage.getItem("totodile.theme")).toBe("dark");
+
+    // Back to auto: the stored choice goes away, and with no matchMedia in
+    // jsdom the resolved theme is the light paper default.
+    fireEvent.click(screen.getByRole("radio", { name: "Auto" }));
+    expect(localStorage.getItem("totodile.theme")).toBeNull();
+    expect(document.documentElement.dataset.theme).toBe("light");
+  });
+});
