@@ -241,6 +241,7 @@ function renderAt(path: string) {
     createMemoryHistory({ initialEntries: [path] }),
   );
   render(<RouterProvider router={router} />);
+  return router;
 }
 
 describe("review lens — flagged rows (FR-E2/E3)", () => {
@@ -348,11 +349,39 @@ describe("review lens — flagged rows (FR-E2/E3)", () => {
     expect(screen.getByText(/target already approved/)).toBeDefined();
   });
 
-  it("redirects an already-playable guide away from review to play", async () => {
+  // Was: a playable guide bounced to play. Recompiling a *playable* guide is
+  // exactly when the lens is wanted — that bounce made the one guide you are
+  // working on the one guide you cannot review (Pierre, 2026-07-31).
+  it("stays in the lens for an already-playable guide, in editor mode", async () => {
     setEditorMode(true);
     stubFetch({ approvals: approvedApprovals() });
-    renderAt("/review/fictional-quest");
-    expect(await screen.findByText(/Talk to gatekeeper ×2/)).toBeDefined();
+    const router = renderAt("/review/fictional-quest");
+    expect(
+      await screen.findByRole("heading", {
+        name: "Fictional Quest — 100% guide",
+      }),
+    ).toBeDefined();
+    expect(router.state.location.pathname).toBe("/review/fictional-quest");
+    // …and it does not call itself unfinished when it is not.
+    expect(screen.getByText(/Review lens — playable/)).toBeDefined();
+    expect(screen.queryByText(/Review lens — unfinished/)).toBeNull();
+  });
+
+  it("a playable guide's play view offers the way in, editor mode only", async () => {
+    setEditorMode(true);
+    stubFetch({ approvals: approvedApprovals() });
+    renderAt("/guide/fictional-quest");
+    await screen.findByText(/Talk to gatekeeper ×2/);
+    expect(
+      screen.getByRole("link", { name: "Review" }).getAttribute("href"),
+    ).toContain("/review/fictional-quest");
+  });
+
+  it("player mode's play view has no way in", async () => {
+    stubFetch({ approvals: approvedApprovals() });
+    renderAt("/guide/fictional-quest");
+    await screen.findByText(/Talk to gatekeeper ×2/);
+    expect(screen.queryByRole("link", { name: "Review" })).toBeNull();
   });
 
   it("redirects to the library when editor mode is off (§9.3)", async () => {

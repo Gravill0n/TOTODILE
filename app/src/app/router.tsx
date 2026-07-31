@@ -209,8 +209,13 @@ const cleanupRoute = createRoute({
 const reviewRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/review/$slug",
-  // The review lens is editor-mode only (§9.3) and only for unfinished guides
-  // (§7 nav map). Player mode or an already-playable guide bounces away.
+  // The review lens is editor-mode only (§9.3); player mode bounces away.
+  //
+  // A playable guide used to bounce to play as well, which made the guide you
+  // are recompiling the one guide you could not open the lens on — the layers
+  // go stale one at a time and want re-approving *while* the compiled guide
+  // still exists (Pierre, 2026-07-31). The lens now renders either way and
+  // says which it is looking at.
   loader: async ({ params }) => {
     if (!getEditorMode()) throw redirect({ to: "/" });
     const library = await loadLibrary();
@@ -220,9 +225,6 @@ const reviewRoute = createRoute({
       loadApprovals(entry.id),
       loadPlayability(entry.id),
     ]);
-    if (playable) {
-      throw redirect({ to: "/guide/$slug", params: { slug: entry.id } });
-    }
     // The roster comes from the layers manifest (contract §2 rule 9);
     // row content + sources are only worth loading once there are layers.
     const roster = await loadLayerRoster(entry.id);
@@ -235,15 +237,33 @@ const reviewRoute = createRoute({
             loadSources(entry.id),
           ])
         : [null, null, null, null];
-    return { entry, approvals, roster, guide, deck, raMapping, sources };
+    return {
+      entry,
+      approvals,
+      playable,
+      roster,
+      guide,
+      deck,
+      raMapping,
+      sources,
+    };
   },
   component: function ReviewRouteComponent() {
-    const { entry, approvals, roster, guide, deck, raMapping, sources } =
-      reviewRoute.useLoaderData();
+    const {
+      entry,
+      approvals,
+      playable,
+      roster,
+      guide,
+      deck,
+      raMapping,
+      sources,
+    } = reviewRoute.useLoaderData();
     return (
       <ReviewScreen
         entry={entry}
         approvals={approvals}
+        playable={playable}
         roster={roster}
         guide={guide}
         deck={deck}
