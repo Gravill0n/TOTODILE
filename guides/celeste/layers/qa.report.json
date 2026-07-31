@@ -3,8 +3,12 @@
   "guideId": "celeste",
   "pass": "qa",
   "layer": "qa",
-  "generatedAt": "2026-07-30T19:05:00Z",
+  "generatedAt": "2026-07-31T12:40:25Z",
   "inputs": [
+    {
+      "file": "layers/data.json",
+      "sha256": "e5ab1bc1eab4b4c0ae4c4c556dc943dd06779dd5ec7c74465b2e6020999a9e0d"
+    },
     {
       "file": "layers/spine.json",
       "sha256": "74488d1187cde876700ad9cdafa6d64edbc9d8f81df1f67ad35ee562988a036b"
@@ -274,10 +278,6 @@
       "sha256": "80c69f591082b38f7b0157b386041490a47d01f0dc6b9cacb21756426ee3ac12"
     },
     {
-      "file": "layers/widget-strawberries.json",
-      "sha256": "272e682715a26c45baf225d7b8c0375cce3e3febd7853f73662a9762b9f056e6"
-    },
-    {
       "file": "layers/widget-strawberries-c1.json",
       "sha256": "d49751df7605140f739fb647410acb864140ce208fa1ac87a75061a17cc8d89a"
     },
@@ -306,28 +306,20 @@
       "sha256": "29a551adfa17eb487f77466d2a9196508f3dc7e73957a15cd903c31e2015e9af"
     },
     {
-      "file": "layers/data.json",
-      "sha256": "e5ab1bc1eab4b4c0ae4c4c556dc943dd06779dd5ec7c74465b2e6020999a9e0d"
-    },
-    {
-      "file": "sources.json",
-      "sha256": "503f409a29c3e1a24e491f12735254832160bb2d045e136b958e23775eabd73c"
-    },
-    {
-      "file": "deck.json",
-      "sha256": "e3201f6fa921f2c3876a25b68e3cc7125b6326dfe3fbbdfb117d76c272e81cd3"
+      "file": "layers/widget-strawberries.json",
+      "sha256": "272e682715a26c45baf225d7b8c0375cce3e3febd7853f73662a9762b9f056e6"
     },
     {
       "file": "layers/manifest.json",
-      "sha256": "04ce251071cac4a16ce6942a3689d84718b771ecd1a00bedc61c5d205e81fa36"
+      "sha256": "36e6420f2f48006e057abc72251e39db06d120d6125bb173e8637f73a22d0b64"
     },
     {
-      "file": "guide.json",
-      "sha256": "af27252d8f1959e4ba7a090b603a352ffd2d7afdfd7f07c88ccaf77ece160cd1"
+      "file": "approvals.json",
+      "sha256": "4d9530ed30e6201c50f744821e1cd347e73d7e8c6c8431e2a98b418d73d8fe5d"
     }
   ],
   "report": {
-    "rowCount": 221,
+    "rowCount": 78,
     "anomalies": [
       "spine, widget-strawberries-c1: the 4 flagged rows are all one finding — Forsaken City's winged berry count. src-ink-collectables self-describes two winged berries (berry 3, \"this is a flying strawberry\"; berry 19, \"another winged strawberry\") while src-tracker-maps marks one winged berry in chapter 1. Spot-read against both sources: the flags are honest, the doubt is real, and it touches only the berry type — the route text is unaffected. No other chapter conflicts: prose and pack agree exactly at 1/2/1/1/3/0 winged for chapters 2, 3, 4, 5, 7 and Core.",
       "widget-achievements: \"Real Gamer\" (Complete Celeste for PICO-8) and \"1UP!\" (Get a 1UP) are tracked only as checklist rows — no manifested source gives either a location, so the spine emits no step for them. Owning pass: source-gathering. Both are in the 32-achievement completion definition, so the guide is playable but cannot route the player to them.",
@@ -339,10 +331,10 @@
       "library.json: celeste is still status \"in-compilation\". QA does not change it — flipping it to \"playable\" is what surfaces the guide in the app and is Pierre's call at merge."
     ],
     "flaggedItemIds": [
-      "celeste:v-forsaken-city-a-start-1:s3",
-      "celeste:v-forsaken-city-a-chasm-1:s5",
       "celeste:strawberries-c1:b03",
-      "celeste:strawberries-c1:b19"
+      "celeste:strawberries-c1:b19",
+      "celeste:v-forsaken-city-a-chasm-1:s5",
+      "celeste:v-forsaken-city-a-start-1:s3"
     ]
   },
   "notes": [
@@ -357,7 +349,8 @@
     "Derived counters: all 525 derivedFrom references (3 entries x 175) resolve to spine step IDs.",
     "Spot-reads performed: the 4 flagged rows against both sources; the winged-berry claim re-verified across all 7 berry-bearing chapters; 3 map-pin coordinate conversions recomputed from the pack's pixels and the images' own dimensions, all exact.",
     "QA edited no guide content. Every anomaly above is routed to its owning pass.",
-    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered.",
-    "Input digest for layers/spine.json refreshed by the 2026-07-31 spine re-run that attached the B-Side checkpoint maps. The spine layer is byte-identical outside location.mapImages — no id, step, visit or location this pass read was altered — so this layer s own output is unaffected."
+    "Re-run 2026-07-31 after the mapImages[] migration and the 2026-07-31 spine re-run that attached the 25 B-Side checkpoint maps, and after Pierre re-approved every layer. Gate: all 75 manifest entries are approved and hash-current against the bytes on disk. Mechanical: validate-guides, assemble-guide and check-stable-ids all green.",
+    "Scope of this run's judgment checks: the assembled guide.json is byte-identical to the shipped one outside location maps (verified programmatically), and ra-mapping.json is unchanged, so the flag spot-read and achievement-coverage review from the previous QA run still describe the current content and are carried forward above. What this run checked afresh is what changed: every map reference resolves to real bytes on disk and is not an unsmudged LFS pointer (validate-guides), and each location's maps are ordered as the player meets them.",
+    "The previous qa.report.json recorded layers/manifest.json as an input, whose digest moved when the spine layers were re-approved — that is what made assemble-guide refuse before this run. QA owns this file and replaces it, so the report was regenerated rather than digest-patched: no exemption was taken here. (The two exemptions taken elsewhere are noted in the reports they touched and in issue #34.)"
   ]
 }
