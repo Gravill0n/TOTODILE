@@ -1,6 +1,12 @@
 // @vitest-environment jsdom
 import "fake-indexeddb/auto";
-import { cleanup, render, screen, waitFor } from "@testing-library/react";
+import {
+  cleanup,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from "@testing-library/react";
 import { deleteDB } from "idb";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { readGuideUi, writeGuideUi } from "@/features/progress/guideUiStore";
@@ -28,14 +34,25 @@ const image = {
 
 const view: MapView = { zoom: 1, panX: 0, panY: 0 };
 
-function renderPanel(overrides: Partial<MapView> = {}, hasImage = true) {
+const b1f = { src: "images/b1f.png", alt: "Basement", caption: "B1F" };
+const b2f = { src: "images/b2f.png", alt: "Lower basement", caption: "B2F" };
+
+function renderPanel(
+  overrides: Partial<MapView> = {},
+  images: { src: string; alt: string; caption?: string; credit?: string }[] = [
+    image,
+  ],
+) {
   const onViewChange = vi.fn();
+  const views: Record<string, MapView> = {
+    [image.src]: { ...view, ...overrides },
+  };
   render(
     <MapPanel
       locationName="Castle Gate"
-      image={hasImage ? image : undefined}
+      images={images}
       resolveAsset={(path) => `guides/fictional-quest/${path}`}
-      view={{ ...view, ...overrides }}
+      viewOf={(src) => views[src] ?? view}
       onViewChange={onViewChange}
     />,
   );
@@ -47,8 +64,9 @@ describe("MapPanel", () => {
     const { container } = render(
       <MapPanel
         locationName="Castle Gate"
+        images={[]}
         resolveAsset={(path) => path}
-        view={view}
+        viewOf={() => view}
         onViewChange={vi.fn()}
       />,
     );
@@ -68,7 +86,7 @@ describe("MapPanel", () => {
     expect(screen.getByText("100%")).toBeDefined();
   });
 
-  it("offers no buttons at all — the map is worked by hand", () => {
+  it("offers no buttons at all for a single map — it is worked by hand", () => {
     renderPanel({ zoom: 2 });
     for (const gone of ["Zoom in", "Zoom out", "Reset zoom"]) {
       expect(screen.queryByLabelText(gone)).toBeNull();
@@ -76,6 +94,122 @@ describe("MapPanel", () => {
     expect(screen.queryAllByRole("button")).toHaveLength(0);
     // The percentage stays, as a readout rather than a control.
     expect(screen.getByText("200%")).toBeDefined();
+  });
+
+  // A place holds several maps now — Ice Path's floors, Tin Tower's nine —
+  // and they used to be reachable only as mapPins widget cards.
+  it("shows a sheet per map when a place has more than one", () => {
+    renderPanel({}, [image, b1f, b2f]);
+    const tabs = screen.getAllByRole("tab");
+    expect(tabs.map((tab) => tab.textContent)).toEqual([
+      "Castle gate and wall route",
+      "B1F",
+      "B2F",
+    ]);
+    expect(tabs[0]?.getAttribute("aria-selected")).toBe("true");
+    expect(screen.getByText("1/3")).toBeDefined();
+  });
+
+  it("opens on the first map and switches on a tap", () => {
+    renderPanel({}, [image, b1f]);
+    expect(
+      screen.getByRole("img", { name: "Castle gate and wall route" }),
+    ).toBeDefined();
+
+    fireEvent.click(screen.getByRole("tab", { name: "B1F" }));
+    const shown = screen.getByRole("img", { name: "Basement" });
+    expect(shown.getAttribute("src")).toBe(
+      "guides/fictional-quest/images/b1f.png",
+    );
+    expect(
+      screen.queryByRole("img", { name: "Castle gate and wall route" }),
+    ).toBeNull();
+  });
+
+  // Each map keeps its own corner: floor 1 at 240% says nothing about where
+  // floor 2 should sit, and they are different pictures.
+  it("reads each map's own stored view, not the place's", () => {
+    const views: Record<string, MapView> = {
+      [image.src]: { zoom: 2.4, panX: 0.5, panY: 0.5 },
+      [b1f.src]: { zoom: 1, panX: 0, panY: 0 },
+    };
+    render(
+      <MapPanel
+        locationName="Castle Gate"
+        images={[image, b1f]}
+        resolveAsset={(path) => path}
+        viewOf={(src) => views[src] ?? view}
+        onViewChange={vi.fn()}
+      />,
+    );
+    expect(screen.getByText("240%")).toBeDefined();
+    fireEvent.click(screen.getByRole("tab", { name: "B1F" }));
+    expect(screen.getByText("100%")).toBeDefined();
+  });
+
+  it("names a map by its caption, falling back to a number when alt is prose", () => {
+    renderPanel({}, [
+      image,
+      {
+        src: "images/long.png",
+        alt: "A very long description of the whole eastern wing and its cellars",
+      },
+    ]);
+    expect(screen.getByRole("tab", { name: "Map 2" })).toBeDefined();
+  });
+
+  // §7 S3 put pins only inside the widget card; the panel showed a bare map
+  // of the same room. They ride the panel map now — same itemIds, so one
+  // progress store keeps the two surfaces in step.
+  it("draws the pins that belong to the map on screen", () => {
+    const onTogglePin = vi.fn();
+    render(
+      <MapPanel
+        locationName="Castle Gate"
+        images={[image, b1f]}
+        resolveAsset={(path) => path}
+        viewOf={() => view}
+        onViewChange={vi.fn()}
+        pinsFor={(src) =>
+          src === image.src
+            ? [{ itemId: "g:w:key", label: "Gate key", x: 0.3, y: 0.6 }]
+            : [{ itemId: "g:w:torch", label: "Torch", x: 0.1, y: 0.1 }]
+        }
+        doneIds={new Set()}
+        onTogglePin={onTogglePin}
+      />,
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Gate key" }));
+    expect(onTogglePin).toHaveBeenCalledWith("g:w:key");
+
+    // Switching sheets switches the pins with them.
+    fireEvent.click(screen.getByRole("tab", { name: "B1F" }));
+    expect(screen.queryByRole("button", { name: "Gate key" })).toBeNull();
+    expect(screen.getByRole("button", { name: "Torch" })).toBeDefined();
+  });
+
+  it("keeps the pins inside the zoom layer, so they hold their landmarks", () => {
+    render(
+      <MapPanel
+        locationName="Castle Gate"
+        images={[image]}
+        resolveAsset={(path) => path}
+        viewOf={() => view}
+        onViewChange={vi.fn()}
+        pinsFor={() => [
+          { itemId: "g:w:key", label: "Gate key", x: 0.3, y: 0.6 },
+        ]}
+        doneIds={new Set()}
+        onTogglePin={vi.fn()}
+      />,
+    );
+    const marker = screen.getByRole("button", { name: "Gate key" });
+    expect(marker.closest(".react-transform-component")).not.toBeNull();
+  });
+
+  it("draws no pins for a map that has none", () => {
+    renderPanel({}, [image]);
+    expect(screen.queryAllByRole("button")).toHaveLength(0);
   });
 
   it("hands the map to the wheel and the pointer, within 100–400%", () => {
@@ -111,9 +245,9 @@ describe("the map remembers where it was left", () => {
     // Written the way a gesture would leave it.
     await writeGuideUi({
       ...(await readGuideUi("fictional-quest")),
-      mapZoom: 1.4,
-      mapPanX: 0.5,
-      mapPanY: 0.25,
+      mapViews: {
+        "images/castle-gate.png": { zoom: 1.4, panX: 0.5, panY: 0.25 },
+      },
     });
     stubGuideContent();
     renderGuideAt("fictional-quest", GATE);
@@ -129,9 +263,20 @@ describe("the map remembers where it was left", () => {
     // jsdom does not provide — that is a checkpoint-G item in a browser.
   });
 
+  // The fixture's castle gate carries two maps, so the shell has to hand the
+  // whole list down rather than a first-map-only prop.
+  it("carries every map of the displayed place into the panel", async () => {
+    stubGuideContent();
+    renderGuideAt("fictional-quest", GATE);
+    await waitFor(() => expect(screen.getByText("1/2")).toBeDefined(), {
+      timeout: 5000,
+    });
+    expect(screen.getByRole("tab", { name: "Cellar" })).toBeDefined();
+  });
+
   it("shows no map panel for a place that has none", async () => {
     stubGuideContent();
-    // The courtyard carries no mapImage in the fixture.
+    // The courtyard carries no map in the fixture.
     renderGuideAt("fictional-quest", "/chapter/c1/visit/v-courtyard-1");
     await screen.findByText(/Sweep courtyard/);
     expect(screen.queryByLabelText("Zoom in")).toBeNull();

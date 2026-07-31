@@ -19,7 +19,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "8942e0f5ff7604265390811ddafded5c399324268c764d6507d6e6122f257c2c"
+      "sha256": "0760f32f26eae1aba7af2d3f93a2fed103030fc186617218195609e07bdd07dd"
     }
   ],
   "report": {
@@ -31,6 +31,7 @@
     "Fills deck slot 0 (counter, global, defaultTitle \"Puzzles Solved\"). Shape signed off by Pierre 2026-07-08: derived counter, not manual.",
     "Single derived entry layton-mm:puzzles-solved:route — derivedFrom lists the 82 \"Solve NNN\" spine steps in route order; target omitted, so it defaults to derivedFrom.length = 82. Read-only in the tracker: it counts checked route steps.",
     "The 82-step set matches the extract-data puzzles dataset 1:1 (82 records, no gaps either way; no multi-puzzle steps; none flagged). The set is the Any% route's solved puzzles, not the game's full puzzle list — hence the \"(route)\" label.",
-    "Refresh re-run 2026-07-08 answering QA 79730d7 (stale sources.json/spine.json digests after fb6da77/556c1e9): rows re-verified against the re-approved spine (all referenced step IDs present), artifact byte-identical (1434d41fdcd1a0a1c93a02042df432425934ca5a95969a941dba16a801837c64)."
+    "Refresh re-run 2026-07-08 answering QA 79730d7 (stale sources.json/spine.json digests after fb6da77/556c1e9): rows re-verified against the re-approved spine (all referenced step IDs present), artifact byte-identical (1434d41fdcd1a0a1c93a02042df432425934ca5a95969a941dba16a801837c64).",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

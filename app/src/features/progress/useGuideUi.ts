@@ -26,15 +26,14 @@ export type GuideUi = {
   hydrated: boolean;
   widgetOrder: readonly string[];
   pinnedWidgetIds: readonly string[];
-  mapZoom: number;
-  mapPanX: number;
-  mapPanY: number;
+  /** Where each map was left, keyed by image src. */
+  mapViews: Readonly<Record<string, MapView>>;
   leftRailPct: number;
   rightRailPct: number;
   mapPanePct: number;
   setWidgetOrder: (widgetIds: string[]) => void;
   togglePinned: (widgetId: string) => void;
-  setMapView: (view: MapView) => void;
+  setMapView: (src: string, view: MapView) => void;
   setRailLayout: (layout: Partial<RailLayout>) => void;
 };
 
@@ -108,13 +107,21 @@ export function useGuideUi(guideId: string): GuideUi {
     [update],
   );
 
+  // Keyed by the map's own image src: switching between a place's maps
+  // restores each one where it was left rather than dragging the previous
+  // map's corner onto a differently-shaped picture.
   const setMapView = useCallback(
-    (view: MapView) =>
+    (src: string, view: MapView) =>
       update((record) => ({
         ...record,
-        mapZoom: clamp(view.zoom, MIN_ZOOM, MAX_ZOOM),
-        mapPanX: clamp(view.panX, 0, 1),
-        mapPanY: clamp(view.panY, 0, 1),
+        mapViews: {
+          ...record.mapViews,
+          [src]: {
+            zoom: clamp(view.zoom, MIN_ZOOM, MAX_ZOOM),
+            panX: clamp(view.panX, 0, 1),
+            panY: clamp(view.panY, 0, 1),
+          },
+        },
       })),
     [update],
   );
@@ -123,9 +130,7 @@ export function useGuideUi(guideId: string): GuideUi {
     hydrated,
     widgetOrder: record.widgetOrder,
     pinnedWidgetIds: record.pinnedWidgetIds,
-    mapZoom: record.mapZoom,
-    mapPanX: record.mapPanX,
-    mapPanY: record.mapPanY,
+    mapViews: record.mapViews,
     leftRailPct: record.leftRailPct,
     rightRailPct: record.rightRailPct,
     mapPanePct: record.mapPanePct,

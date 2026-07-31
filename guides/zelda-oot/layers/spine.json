@@ -6,308 +6,376 @@
     {
       "id": "zelda-oot:kokiri-forest",
       "name": "Kokiri Forest",
-      "mapImage": {
-        "src": "images/map-kokiri-forest.png",
-        "alt": "Map of Kokiri Forest showing Link's house, the shop, the Forest Training Center and the path to the Great Deku Tree",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-kokiri-forest.png",
+          "alt": "Map of Kokiri Forest showing Link's house, the shop, the Forest Training Center and the path to the Great Deku Tree",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:great-deku-tree",
       "name": "Great Deku Tree",
-      "mapImage": {
-        "src": "images/map-great-deku-tree.png",
-        "alt": "Map of the Inside the Deku Tree dungeon",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-great-deku-tree.png",
+          "alt": "Map of the Inside the Deku Tree dungeon",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:hyrule-field",
       "name": "Hyrule Field",
-      "mapImage": {
-        "src": "images/map-hyrule-field.png",
-        "alt": "Map of Hyrule Field connecting Kokiri Forest, Castle Town, Lon Lon Ranch and the outlying regions",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-hyrule-field.png",
+          "alt": "Map of Hyrule Field connecting Kokiri Forest, Castle Town, Lon Lon Ranch and the outlying regions",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:lost-woods",
       "name": "Lost Woods",
-      "mapImage": {
-        "src": "images/map-lost-woods.png",
-        "alt": "Map of the Lost Woods maze and its connections to the Sacred Forest Meadow",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-lost-woods.png",
+          "alt": "Map of the Lost Woods maze and its connections to the Sacred Forest Meadow",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:sacred-forest-meadow",
       "name": "Sacred Forest Meadow",
-      "mapImage": {
-        "src": "images/map-sacred-forest-meadow.png",
-        "alt": "Map of the Sacred Forest Meadow and the approach to the Forest Temple",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-sacred-forest-meadow.png",
+          "alt": "Map of the Sacred Forest Meadow and the approach to the Forest Temple",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:castle-town-market",
       "name": "Castle Town Market",
-      "mapImage": {
-        "src": "images/map-castle-town-market.png",
-        "alt": "Map of the Castle Town Market with the guardhouse, shops and Shooting Gallery",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-castle-town-market.png",
+          "alt": "Map of the Castle Town Market with the guardhouse, shops and Shooting Gallery",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:hyrule-castle",
       "name": "Hyrule Castle",
-      "mapImage": {
-        "src": "images/map-hyrule-castle.png",
-        "alt": "Map of the Hyrule Castle grounds, moat and courtyard garden",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-hyrule-castle.png",
+          "alt": "Map of the Hyrule Castle grounds, moat and courtyard garden",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:temple-of-time",
       "name": "Temple of Time",
-      "mapImage": {
-        "src": "images/map-temple-of-time.png",
-        "alt": "Map of the Temple of Time and the Master Sword pedestal chamber",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-temple-of-time.png",
+          "alt": "Map of the Temple of Time and the Master Sword pedestal chamber",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:kakariko-village",
       "name": "Kakariko Village",
-      "mapImage": {
-        "src": "images/map-kakariko-village.png",
-        "alt": "Map of Kakariko Village with the Windmill, Skulltula House, Potion Shop and the gate to Death Mountain",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-kakariko-village.png",
+          "alt": "Map of Kakariko Village with the Windmill, Skulltula House, Potion Shop and the gate to Death Mountain",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:graveyard",
       "name": "Graveyard",
-      "mapImage": {
-        "src": "images/map-graveyard.png",
-        "alt": "Map of the Kakariko Graveyard, the Royal Family's Tomb and Dampé's grave",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-graveyard.png",
+          "alt": "Map of the Kakariko Graveyard, the Royal Family's Tomb and Dampé's grave",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:bottom-of-the-well",
       "name": "Bottom of the Well",
-      "mapImage": {
-        "src": "images/map-bottom-of-the-well.png",
-        "alt": "Map of the Bottom of the Well mini-dungeon",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-bottom-of-the-well.png",
+          "alt": "Map of the Bottom of the Well mini-dungeon",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:death-mountain-trail",
       "name": "Death Mountain Trail",
-      "mapImage": {
-        "src": "images/map-death-mountain-trail.png",
-        "alt": "Map of the Death Mountain Trail from Kakariko up to the summit and Goron City",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-death-mountain-trail.png",
+          "alt": "Map of the Death Mountain Trail from Kakariko up to the summit and Goron City",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:death-mountain-crater",
       "name": "Death Mountain Crater",
-      "mapImage": {
-        "src": "images/map-death-mountain-crater.png",
-        "alt": "Map of the Death Mountain Crater and the entrance to the Fire Temple",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-death-mountain-crater.png",
+          "alt": "Map of the Death Mountain Crater and the entrance to the Fire Temple",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:goron-city",
       "name": "Goron City",
-      "mapImage": {
-        "src": "images/map-goron-city.png",
-        "alt": "Map of Goron City's tiers, Darunia's chamber and the shortcut to the Crater",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-goron-city.png",
+          "alt": "Map of Goron City's tiers, Darunia's chamber and the shortcut to the Crater",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:dodongos-cavern",
       "name": "Dodongo's Cavern",
-      "mapImage": {
-        "src": "images/map-dodongos-cavern.png",
-        "alt": "Map of the Dodongo's Cavern dungeon",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-dodongos-cavern.png",
+          "alt": "Map of the Dodongo's Cavern dungeon",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:zoras-river",
       "name": "Zora's River",
-      "mapImage": {
-        "src": "images/map-zoras-river.png",
-        "alt": "Map of Zora's River from Hyrule Field up to the waterfall entrance of Zora's Domain",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-zoras-river.png",
+          "alt": "Map of Zora's River from Hyrule Field up to the waterfall entrance of Zora's Domain",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:zoras-domain",
       "name": "Zora's Domain",
-      "mapImage": {
-        "src": "images/map-zoras-domain.png",
-        "alt": "Map of Zora's Domain, King Zora's chamber and the diving-game waterfall",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-zoras-domain.png",
+          "alt": "Map of Zora's Domain, King Zora's chamber and the diving-game waterfall",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:zoras-fountain",
       "name": "Zora's Fountain",
-      "mapImage": {
-        "src": "images/map-zoras-fountain.png",
-        "alt": "Map of Zora's Fountain, Lord Jabu-Jabu's altar and the Ice Cavern entrance",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-zoras-fountain.png",
+          "alt": "Map of Zora's Fountain, Lord Jabu-Jabu's altar and the Ice Cavern entrance",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:jabu-jabus-belly",
       "name": "Jabu-Jabu's Belly",
-      "mapImage": {
-        "src": "images/map-jabu-jabus-belly.png",
-        "alt": "Map of the Inside Jabu-Jabu's Belly dungeon",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-jabu-jabus-belly.png",
+          "alt": "Map of the Inside Jabu-Jabu's Belly dungeon",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:lon-lon-ranch",
       "name": "Lon Lon Ranch",
-      "mapImage": {
-        "src": "images/map-lon-lon-ranch.png",
-        "alt": "Map of Lon Lon Ranch, its corral, feed silo and stables",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-lon-lon-ranch.png",
+          "alt": "Map of Lon Lon Ranch, its corral, feed silo and stables",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:lake-hylia",
       "name": "Lake Hylia",
-      "mapImage": {
-        "src": "images/map-lake-hylia.png",
-        "alt": "Map of Lake Hylia with the Lakeside Laboratory, Fishing Pond and the Water Temple entrance",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-lake-hylia.png",
+          "alt": "Map of Lake Hylia with the Lakeside Laboratory, Fishing Pond and the Water Temple entrance",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:gerudo-valley",
       "name": "Gerudo Valley",
-      "mapImage": {
-        "src": "images/map-gerudo-valley.png",
-        "alt": "Map of Gerudo Valley, the broken bridge and the Carpenters' tent",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-gerudo-valley.png",
+          "alt": "Map of Gerudo Valley, the broken bridge and the Carpenters' tent",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:gerudo-fortress",
       "name": "Gerudo Fortress",
-      "mapImage": {
-        "src": "images/map-gerudo-fortress.png",
-        "alt": "Map of the Gerudo Fortress, its cells and the desert gate",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-gerudo-fortress.png",
+          "alt": "Map of the Gerudo Fortress, its cells and the desert gate",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:haunted-wasteland",
       "name": "Haunted Wasteland",
-      "mapImage": {
-        "src": "images/map-haunted-wasteland.png",
-        "alt": "Map of the Haunted Wasteland's quicksand, flag path and the guide poles",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-haunted-wasteland.png",
+          "alt": "Map of the Haunted Wasteland's quicksand, flag path and the guide poles",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:desert-colossus",
       "name": "Desert Colossus",
-      "mapImage": {
-        "src": "images/map-desert-colossus.png",
-        "alt": "Map of the Desert Colossus, the Oasis and the Spirit Temple entrance",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-desert-colossus.png",
+          "alt": "Map of the Desert Colossus, the Oasis and the Spirit Temple entrance",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:forest-temple",
       "name": "Forest Temple",
-      "mapImage": {
-        "src": "images/map-forest-temple.png",
-        "alt": "Map of the Forest Temple dungeon",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-forest-temple.png",
+          "alt": "Map of the Forest Temple dungeon",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:fire-temple",
       "name": "Fire Temple",
-      "mapImage": {
-        "src": "images/map-fire-temple.png",
-        "alt": "Map of the Fire Temple dungeon",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-fire-temple.png",
+          "alt": "Map of the Fire Temple dungeon",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:ice-cavern",
       "name": "Ice Cavern",
-      "mapImage": {
-        "src": "images/map-ice-cavern.png",
-        "alt": "Map of the Ice Cavern mini-dungeon",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-ice-cavern.png",
+          "alt": "Map of the Ice Cavern mini-dungeon",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:water-temple",
       "name": "Water Temple",
-      "mapImage": {
-        "src": "images/map-water-temple.png",
-        "alt": "Map of the Water Temple dungeon and its three water levels",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-water-temple.png",
+          "alt": "Map of the Water Temple dungeon and its three water levels",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:shadow-temple",
       "name": "Shadow Temple",
-      "mapImage": {
-        "src": "images/map-shadow-temple.png",
-        "alt": "Map of the Shadow Temple dungeon",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-shadow-temple.png",
+          "alt": "Map of the Shadow Temple dungeon",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:spirit-temple",
       "name": "Spirit Temple",
-      "mapImage": {
-        "src": "images/map-spirit-temple.png",
-        "alt": "Map of the Spirit Temple dungeon",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-spirit-temple.png",
+          "alt": "Map of the Spirit Temple dungeon",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:gerudo-training-ground",
       "name": "Gerudo Training Ground",
-      "mapImage": {
-        "src": "images/map-gerudo-training-ground.png",
-        "alt": "Map of the Gerudo Training Ground mini-dungeon",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-gerudo-training-ground.png",
+          "alt": "Map of the Gerudo Training Ground mini-dungeon",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:ganons-castle",
       "name": "Ganon's Castle",
-      "mapImage": {
-        "src": "images/map-ganons-castle.png",
-        "alt": "Map of Ganon's Castle and its six elemental barrier trials",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-ganons-castle.png",
+          "alt": "Map of Ganon's Castle and its six elemental barrier trials",
+          "credit": "oot-tracker"
+        }
+      ]
     },
     {
       "id": "zelda-oot:ganons-tower",
       "name": "Ganon's Tower",
-      "mapImage": {
-        "src": "images/map-ganons-tower.png",
-        "alt": "Map of the interior climb of Ganon's Tower to the final battle",
-        "credit": "oot-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/map-ganons-tower.png",
+          "alt": "Map of the interior climb of Ganon's Tower to the final battle",
+          "credit": "oot-tracker"
+        }
+      ]
     }
   ],
   "chapters": [

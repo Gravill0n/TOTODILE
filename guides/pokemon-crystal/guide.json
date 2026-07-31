@@ -5,820 +5,1357 @@
     {
       "id": "pokemon-crystal:new-bark-town",
       "name": "New Bark Town",
-      "mapImage": {
-        "src": "images/NewBarkTown.png",
-        "alt": "Map of New Bark Town showing the player's house and Professor Elm's Lab",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/NewBarkTown.png",
+          "alt": "Map of New Bark Town showing the player's house and Professor Elm's Lab",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-29",
       "name": "Route 29",
-      "mapImage": {
-        "src": "images/Route29.png",
-        "alt": "Map of Route 29 between New Bark Town and Cherrygrove City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route29.png",
+          "alt": "Map of Route 29 between New Bark Town and Cherrygrove City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:cherrygrove-city",
       "name": "Cherrygrove City",
-      "mapImage": {
-        "src": "images/CherrygroveCity.png",
-        "alt": "Map of Cherrygrove City with its Pokémon Center and Poké Mart",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/CherrygroveCity.png",
+          "alt": "Map of Cherrygrove City with its Pokémon Center and Poké Mart",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-30",
       "name": "Route 30",
-      "mapImage": {
-        "src": "images/Route30.png",
-        "alt": "Map of Route 30 north of Cherrygrove City, with Mr. Pokémon's house",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route30.png",
+          "alt": "Map of Route 30 north of Cherrygrove City, with Mr. Pokémon's house",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-31",
       "name": "Route 31",
-      "mapImage": {
-        "src": "images/Route31.png",
-        "alt": "Map of Route 31 leading to Violet City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route31.png",
+          "alt": "Map of Route 31 leading to Violet City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:violet-city",
       "name": "Violet City",
-      "mapImage": {
-        "src": "images/VioletCity.png",
-        "alt": "Map of Violet City with the Violet Gym and Sprout Tower",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/VioletCity.png",
+          "alt": "Map of Violet City with the Violet Gym and Sprout Tower",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:sprout-tower",
       "name": "Sprout Tower",
-      "mapImage": {
-        "src": "images/SproutTower1F.png",
-        "alt": "Map of Sprout Tower 1F",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/SproutTower1F.png",
+          "alt": "Map of Sprout Tower 1F",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/SproutTower2F.png",
+          "alt": "Sprout Tower 2 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/SproutTower3F.png",
+          "alt": "Sprout Tower 3 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/VioletCity.png",
+          "alt": "Violet City map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-32",
       "name": "Route 32",
-      "mapImage": {
-        "src": "images/Route32North.png",
-        "alt": "Map of Route 32 south of Violet City, with the Ruins of Alph nearby",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route32North.png",
+          "alt": "Map of Route 32 south of Violet City, with the Ruins of Alph nearby",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:ruins-of-alph",
       "name": "Ruins of Alph",
-      "mapImage": {
-        "src": "images/RuinsOfAlphOutside.png",
-        "alt": "Map of the Ruins of Alph exterior and its four chambers",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/RuinsOfAlphOutside.png",
+          "alt": "Map of the Ruins of Alph exterior and its four chambers",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/RuinsOfAlphAerodactylItemRoom.png",
+          "alt": "Ruins Of Alph Aerodactyl Item Room map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/RuinsOfAlphHoOhItemRoom.png",
+          "alt": "Ruins Of Alph Ho Oh Item Room map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/RuinsOfAlphKabutoItemRoom.png",
+          "alt": "Ruins Of Alph Kabuto Item Room map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/RuinsOfAlphOmanyteItemRoom.png",
+          "alt": "Ruins Of Alph Omanyte Item Room map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:union-cave",
       "name": "Union Cave",
-      "mapImage": {
-        "src": "images/UnionCave1F.png",
-        "alt": "Map of Union Cave 1F between Routes 32 and 33",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/UnionCave1F.png",
+          "alt": "Map of Union Cave 1F between Routes 32 and 33",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route32South.png",
+          "alt": "Route 32 South map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/UnionCaveB1F.png",
+          "alt": "Union Cave B 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/UnionCaveB2F.png",
+          "alt": "Union Cave B 2 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-33",
       "name": "Route 33",
-      "mapImage": {
-        "src": "images/Route33.png",
-        "alt": "Map of Route 33 leading west to Azalea Town",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route33.png",
+          "alt": "Map of Route 33 leading west to Azalea Town",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:azalea-town",
       "name": "Azalea Town",
-      "mapImage": {
-        "src": "images/AzaleaTown.png",
-        "alt": "Map of Azalea Town with the Azalea Gym, Kurt's house, and Slowpoke Well",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/AzaleaTown.png",
+          "alt": "Map of Azalea Town with the Azalea Gym, Kurt's house, and Slowpoke Well",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:slowpoke-well",
       "name": "Slowpoke Well",
-      "mapImage": {
-        "src": "images/SlowpokeWellB1F.png",
-        "alt": "Map of Slowpoke Well B1F",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/SlowpokeWellB1F.png",
+          "alt": "Map of Slowpoke Well B1F",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/SlowpokeWellB2F.png",
+          "alt": "Slowpoke Well B 2 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:ilex-forest",
       "name": "Ilex Forest",
-      "mapImage": {
-        "src": "images/IlexForest.png",
-        "alt": "Map of Ilex Forest south of Goldenrod City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/IlexForest.png",
+          "alt": "Map of Ilex Forest south of Goldenrod City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-34",
       "name": "Route 34",
-      "mapImage": {
-        "src": "images/Route34.png",
-        "alt": "Map of Route 34 between Ilex Forest and Goldenrod City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route34.png",
+          "alt": "Map of Route 34 between Ilex Forest and Goldenrod City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:goldenrod-city",
       "name": "Goldenrod City",
-      "mapImage": {
-        "src": "images/GoldenrodCity.png",
-        "alt": "Map of Goldenrod City with the Department Store, Radio Tower, and Goldenrod Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/GoldenrodCity.png",
+          "alt": "Map of Goldenrod City with the Department Store, Radio Tower, and Goldenrod Gym",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/GoldenrodDeptStore1F.png",
+          "alt": "Goldenrod Dept Store 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/GoldenrodDeptStore5F.png",
+          "alt": "Goldenrod Dept Store 5 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/GoldenrodDeptStoreB1F.png",
+          "alt": "Goldenrod Dept Store B 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/RadioTower1F.png",
+          "alt": "Radio Tower 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/RadioTower2F.png",
+          "alt": "Radio Tower 2 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/RadioTower3F.png",
+          "alt": "Radio Tower 3 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/RadioTower4F.png",
+          "alt": "Radio Tower 4 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/RadioTower5F.png",
+          "alt": "Radio Tower 5 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-35",
       "name": "Route 35",
-      "mapImage": {
-        "src": "images/Route35.png",
-        "alt": "Map of Route 35 north of Goldenrod City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route35.png",
+          "alt": "Map of Route 35 north of Goldenrod City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:national-park",
       "name": "National Park",
-      "mapImage": {
-        "src": "images/NationalPark.png",
-        "alt": "Map of the National Park where the Bug-Catching Contest is held",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/NationalPark.png",
+          "alt": "Map of the National Park where the Bug-Catching Contest is held",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-36",
       "name": "Route 36",
-      "mapImage": {
-        "src": "images/Route36.png",
-        "alt": "Map of Route 36, with the Sudowoodo blocking the path",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route36.png",
+          "alt": "Map of Route 36, with the Sudowoodo blocking the path",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-37",
       "name": "Route 37",
-      "mapImage": {
-        "src": "images/Route37.png",
-        "alt": "Map of Route 37 leading north to Ecruteak City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route37.png",
+          "alt": "Map of Route 37 leading north to Ecruteak City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:ecruteak-city",
       "name": "Ecruteak City",
-      "mapImage": {
-        "src": "images/EcruteakCity.png",
-        "alt": "Map of Ecruteak City with the Burned Tower, Tin Tower, and Ecruteak Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/EcruteakCity.png",
+          "alt": "Map of Ecruteak City with the Burned Tower, Tin Tower, and Ecruteak Gym",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:burned-tower",
       "name": "Burned Tower",
-      "mapImage": {
-        "src": "images/BurnedTower1F.png",
-        "alt": "Map of the Burned Tower 1F",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/BurnedTower1F.png",
+          "alt": "Map of the Burned Tower 1F",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/BurnedTowerB1F.png",
+          "alt": "Burned Tower B 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-38",
       "name": "Route 38",
-      "mapImage": {
-        "src": "images/Route38.png",
-        "alt": "Map of Route 38 west of Ecruteak City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route38.png",
+          "alt": "Map of Route 38 west of Ecruteak City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-39",
       "name": "Route 39",
-      "mapImage": {
-        "src": "images/Route39.png",
-        "alt": "Map of Route 39 leading to Olivine City, with Moomoo Farm",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route39.png",
+          "alt": "Map of Route 39 leading to Olivine City, with Moomoo Farm",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:olivine-city",
       "name": "Olivine City",
-      "mapImage": {
-        "src": "images/OlivineCity.png",
-        "alt": "Map of Olivine City with the Lighthouse and Olivine Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/OlivineCity.png",
+          "alt": "Map of Olivine City with the Lighthouse and Olivine Gym",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/OlivineLighthouse2F.png",
+          "alt": "Olivine Lighthouse 2 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/OlivineLighthouse3F.png",
+          "alt": "Olivine Lighthouse 3 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/OlivineLighthouse5F.png",
+          "alt": "Olivine Lighthouse 5 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/OlivineLighthouse6F.png",
+          "alt": "Olivine Lighthouse 6 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/OlivinePort.png",
+          "alt": "Olivine Port map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-40",
       "name": "Route 40",
-      "mapImage": {
-        "src": "images/Route40.png",
-        "alt": "Map of Route 40, the sea route south of Olivine City with the Battle Tower",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route40.png",
+          "alt": "Map of Route 40, the sea route south of Olivine City with the Battle Tower",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-41",
       "name": "Route 41",
-      "mapImage": {
-        "src": "images/Route41.png",
-        "alt": "Map of Route 41, the whirlpool sea around the Whirl Islands",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route41.png",
+          "alt": "Map of Route 41, the whirlpool sea around the Whirl Islands",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:cianwood-city",
       "name": "Cianwood City",
-      "mapImage": {
-        "src": "images/CianwoodCity.png",
-        "alt": "Map of Cianwood City with the Pharmacy and Cianwood Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/CianwoodCity.png",
+          "alt": "Map of Cianwood City with the Pharmacy and Cianwood Gym",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-42",
       "name": "Route 42",
-      "mapImage": {
-        "src": "images/Route42.png",
-        "alt": "Map of Route 42 along Mt. Mortar toward Mahogany Town",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route42.png",
+          "alt": "Map of Route 42 along Mt. Mortar toward Mahogany Town",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:mt-mortar",
       "name": "Mt. Mortar",
-      "mapImage": {
-        "src": "images/MountMortar1FOutside.png",
-        "alt": "Map of Mt. Mortar 1F",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/MountMortar1FOutside.png",
+          "alt": "Map of Mt. Mortar 1F",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/MountMortar1FInside.png",
+          "alt": "Mount Mortar 1 FInside map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/MountMortar2FInside.png",
+          "alt": "Mount Mortar 2 FInside map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/MountMortarB1F.png",
+          "alt": "Mount Mortar B 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route42.png",
+          "alt": "Route 42 map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:mahogany-town",
       "name": "Mahogany Town",
-      "mapImage": {
-        "src": "images/MahoganyTown.png",
-        "alt": "Map of Mahogany Town with the Souvenir Shop and Mahogany Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/MahoganyTown.png",
+          "alt": "Map of Mahogany Town with the Souvenir Shop and Mahogany Gym",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-43",
       "name": "Route 43",
-      "mapImage": {
-        "src": "images/Route43.png",
-        "alt": "Map of Route 43 between Mahogany Town and the Lake of Rage",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route43.png",
+          "alt": "Map of Route 43 between Mahogany Town and the Lake of Rage",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:lake-of-rage",
       "name": "Lake of Rage",
-      "mapImage": {
-        "src": "images/LakeOfRage.png",
-        "alt": "Map of the Lake of Rage where the red Gyarados appears",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/LakeOfRage.png",
+          "alt": "Map of the Lake of Rage where the red Gyarados appears",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:rocket-hideout",
       "name": "Team Rocket's Hideout",
-      "mapImage": {
-        "src": "images/TeamRocketBaseB1F.png",
-        "alt": "Map of Team Rocket's Hideout B1F beneath Mahogany Town",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/TeamRocketBaseB1F.png",
+          "alt": "Map of Team Rocket's Hideout B1F beneath Mahogany Town",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:goldenrod-underground",
       "name": "Goldenrod Underground",
-      "mapImage": {
-        "src": "images/GoldenrodUnderground.png",
-        "alt": "Map of the Goldenrod Underground passage and Warehouse",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/GoldenrodUnderground.png",
+          "alt": "Map of the Goldenrod Underground passage and Warehouse",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/GoldenrodCity.png",
+          "alt": "Goldenrod City map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/GoldenrodUndergroundSwitchRoomEntrances.png",
+          "alt": "Goldenrod Underground Switch Room Entrances map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/GoldenrodUndergroundWarehouse.png",
+          "alt": "Goldenrod Underground Warehouse map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:tin-tower",
       "name": "Tin Tower",
-      "mapImage": {
-        "src": "images/TinTower1F.png",
-        "alt": "Map of Tin Tower 1F in Ecruteak City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/TinTower1F.png",
+          "alt": "Map of Tin Tower 1F in Ecruteak City",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/EcruteakCity.png",
+          "alt": "Ecruteak City map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/TinTower3F.png",
+          "alt": "Tin Tower 3 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/TinTower4F.png",
+          "alt": "Tin Tower 4 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/TinTower5F.png",
+          "alt": "Tin Tower 5 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/TinTower6F.png",
+          "alt": "Tin Tower 6 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/TinTower7F.png",
+          "alt": "Tin Tower 7 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/TinTower8F.png",
+          "alt": "Tin Tower 8 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/TinTower9F.png",
+          "alt": "Tin Tower 9 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-44",
       "name": "Route 44",
-      "mapImage": {
-        "src": "images/Route44.png",
-        "alt": "Map of Route 44 between Mahogany Town and the Ice Path",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route44.png",
+          "alt": "Map of Route 44 between Mahogany Town and the Ice Path",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:ice-path",
       "name": "Ice Path",
-      "mapImage": {
-        "src": "images/IcePath1F.png",
-        "alt": "Map of the Ice Path 1F connecting Route 44 to Blackthorn City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/IcePath1F.png",
+          "alt": "Map of the Ice Path 1F connecting Route 44 to Blackthorn City",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/IcePathB1F.png",
+          "alt": "Ice Path B 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/IcePathB2FBlackthornSide.png",
+          "alt": "Ice Path B 2 FBlackthorn Side map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/IcePathB2FMahoganySide.png",
+          "alt": "Ice Path B 2 FMahogany Side map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/IcePathB3F.png",
+          "alt": "Ice Path B 3 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route44.png",
+          "alt": "Route 44 map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:blackthorn-city",
       "name": "Blackthorn City",
-      "mapImage": {
-        "src": "images/BlackthornCity.png",
-        "alt": "Map of Blackthorn City with the Blackthorn Gym and Dragon's Den",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/BlackthornCity.png",
+          "alt": "Map of Blackthorn City with the Blackthorn Gym and Dragon's Den",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/DragonsDenB1F.png",
+          "alt": "Dragons Den B 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:dragons-den",
       "name": "Dragon's Den",
-      "mapImage": {
-        "src": "images/DragonsDenB1F.png",
-        "alt": "Map of the Dragon's Den beneath Blackthorn City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/DragonsDenB1F.png",
+          "alt": "Map of the Dragon's Den beneath Blackthorn City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-45",
       "name": "Route 45",
-      "mapImage": {
-        "src": "images/Route45North.png",
-        "alt": "Map of Route 45 descending from Blackthorn City, with a Dark Cave entrance",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route45North.png",
+          "alt": "Map of Route 45 descending from Blackthorn City, with a Dark Cave entrance",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route45South.png",
+          "alt": "Route 45 South map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:dark-cave",
       "name": "Dark Cave",
-      "mapImage": {
-        "src": "images/DarkCaveBlackthornEntrance.png",
-        "alt": "Map of Dark Cave's Blackthorn-side entrance",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/DarkCaveBlackthornEntrance.png",
+          "alt": "Map of Dark Cave's Blackthorn-side entrance",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/DarkCaveVioletEntrance.png",
+          "alt": "Dark Cave Violet Entrance map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route31.png",
+          "alt": "Route 31 map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route45North.png",
+          "alt": "Route 45 North map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route46.png",
+          "alt": "Route 46 map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-46",
       "name": "Route 46",
-      "mapImage": {
-        "src": "images/Route46.png",
-        "alt": "Map of Route 46 connecting Route 45 to Route 29",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route46.png",
+          "alt": "Map of Route 46 connecting Route 45 to Route 29",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-27",
       "name": "Route 27",
-      "mapImage": {
-        "src": "images/Route27.png",
-        "alt": "Map of Route 27 east of New Bark Town, through Tohjo Falls into Kanto",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route27.png",
+          "alt": "Map of Route 27 east of New Bark Town, through Tohjo Falls into Kanto",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-26",
       "name": "Route 26",
-      "mapImage": {
-        "src": "images/Route26South.png",
-        "alt": "Map of Route 26 leading to the Pokémon League Reception Gate",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route26South.png",
+          "alt": "Map of Route 26 leading to the Pokémon League Reception Gate",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route26North.png",
+          "alt": "Route 26 North map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:victory-road",
       "name": "Victory Road",
-      "mapImage": {
-        "src": "images/VictoryRoad1F.png",
-        "alt": "Map of Victory Road 1F before Indigo Plateau",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/VictoryRoad1F.png",
+          "alt": "Map of Victory Road 1F before Indigo Plateau",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/VictoryRoad2F.png",
+          "alt": "Victory Road 2 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:indigo-plateau",
-      "name": "Indigo Plateau"
+      "name": "Indigo Plateau",
+      "mapImages": []
     },
     {
       "id": "pokemon-crystal:ss-aqua",
       "name": "S.S. Aqua",
-      "mapImage": {
-        "src": "images/FastShip1F.png",
-        "alt": "Map of the S.S. Aqua's first deck",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/FastShip1F.png",
+          "alt": "Map of the S.S. Aqua's first deck",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/FastShipCabins_Overview.png",
+          "alt": "Fast Ship Cabins Overview map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:vermilion-city",
       "name": "Vermilion City",
-      "mapImage": {
-        "src": "images/VermilionCity.png",
-        "alt": "Map of Vermilion City with the Pokémon Fan Club and Vermilion Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/VermilionCity.png",
+          "alt": "Map of Vermilion City with the Pokémon Fan Club and Vermilion Gym",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/VermilionPort.png",
+          "alt": "Vermilion Port map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-6",
       "name": "Route 6",
-      "mapImage": {
-        "src": "images/Route6.png",
-        "alt": "Map of Route 6 between Vermilion City and Saffron City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route6.png",
+          "alt": "Map of Route 6 between Vermilion City and Saffron City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:saffron-city",
       "name": "Saffron City",
-      "mapImage": {
-        "src": "images/SaffronCity.png",
-        "alt": "Map of Saffron City with Silph Co., the Fighting Dojo, and Saffron Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/SaffronCity.png",
+          "alt": "Map of Saffron City with Silph Co., the Fighting Dojo, and Saffron Gym",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-8",
       "name": "Route 8",
-      "mapImage": {
-        "src": "images/Route8.png",
-        "alt": "Map of Route 8 between Saffron City and Lavender Town",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route8.png",
+          "alt": "Map of Route 8 between Saffron City and Lavender Town",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:lavender-town",
       "name": "Lavender Town",
-      "mapImage": {
-        "src": "images/LavenderTown.png",
-        "alt": "Map of Lavender Town with the Kanto Radio Tower and Volunteer Pokémon House",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/LavenderTown.png",
+          "alt": "Map of Lavender Town with the Kanto Radio Tower and Volunteer Pokémon House",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-10",
       "name": "Route 10",
-      "mapImage": {
-        "src": "images/Route10.png",
-        "alt": "Map of Route 10 with Rock Tunnel and the Kanto Power Plant",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route10.png",
+          "alt": "Map of Route 10 with Rock Tunnel and the Kanto Power Plant",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:rock-tunnel",
       "name": "Rock Tunnel",
-      "mapImage": {
-        "src": "images/RockTunnel1F.png",
-        "alt": "Map of Rock Tunnel 1F",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/RockTunnel1F.png",
+          "alt": "Map of Rock Tunnel 1F",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/RockTunnelB1F.png",
+          "alt": "Rock Tunnel B 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route10.png",
+          "alt": "Route 10 map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route9.png",
+          "alt": "Route 9 map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-9",
       "name": "Route 9",
-      "mapImage": {
-        "src": "images/Route9.png",
-        "alt": "Map of Route 9 linking Route 10 to Cerulean City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route9.png",
+          "alt": "Map of Route 9 linking Route 10 to Cerulean City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:kanto-power-plant",
       "name": "Kanto Power Plant",
-      "mapImage": {
-        "src": "images/PowerPlant.png",
-        "alt": "Map of the Kanto Power Plant interior",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/PowerPlant.png",
+          "alt": "Map of the Kanto Power Plant interior",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:cerulean-city",
       "name": "Cerulean City",
-      "mapImage": {
-        "src": "images/CeruleanCity.png",
-        "alt": "Map of Cerulean City with the Cerulean Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/CeruleanCity.png",
+          "alt": "Map of Cerulean City with the Cerulean Gym",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/CeruleanGym.png",
+          "alt": "Cerulean Gym map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-24",
       "name": "Route 24",
-      "mapImage": {
-        "src": "images/Route24.png",
-        "alt": "Map of Route 24 and Nugget Bridge north of Cerulean City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route24.png",
+          "alt": "Map of Route 24 and Nugget Bridge north of Cerulean City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-25",
       "name": "Route 25",
-      "mapImage": {
-        "src": "images/Route25.png",
-        "alt": "Map of Route 25 leading to the Sea Cottage and Cerulean Cape",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route25.png",
+          "alt": "Map of Route 25 leading to the Sea Cottage and Cerulean Cape",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-5",
       "name": "Route 5",
-      "mapImage": {
-        "src": "images/Route5.png",
-        "alt": "Map of Route 5 between Cerulean City and Saffron City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route5.png",
+          "alt": "Map of Route 5 between Cerulean City and Saffron City",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route6.png",
+          "alt": "Route 6 map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/UndergroundPath.png",
+          "alt": "Underground Path map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-7",
       "name": "Route 7",
-      "mapImage": {
-        "src": "images/Route7.png",
-        "alt": "Map of Route 7 between Saffron City and Celadon City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route7.png",
+          "alt": "Map of Route 7 between Saffron City and Celadon City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:celadon-city",
       "name": "Celadon City",
-      "mapImage": {
-        "src": "images/CeladonCity.png",
-        "alt": "Map of Celadon City with the Department Store, Game Corner, and Celadon Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/CeladonCity.png",
+          "alt": "Map of Celadon City with the Department Store, Game Corner, and Celadon Gym",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/CeladonCafe.png",
+          "alt": "Celadon Cafe map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-16",
       "name": "Route 16",
-      "mapImage": {
-        "src": "images/Route16.png",
-        "alt": "Map of Route 16 at the start of the Cycling Road",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route16.png",
+          "alt": "Map of Route 16 at the start of the Cycling Road",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-17",
       "name": "Route 17",
-      "mapImage": {
-        "src": "images/Route17.png",
-        "alt": "Map of Route 17, the Cycling Road",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route17.png",
+          "alt": "Map of Route 17, the Cycling Road",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-18",
       "name": "Route 18",
-      "mapImage": {
-        "src": "images/Route18.png",
-        "alt": "Map of Route 18 leading into Fuchsia City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route18.png",
+          "alt": "Map of Route 18 leading into Fuchsia City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:fuchsia-city",
       "name": "Fuchsia City",
-      "mapImage": {
-        "src": "images/FuchsiaCity.png",
-        "alt": "Map of Fuchsia City with the Safari Zone and Fuchsia Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/FuchsiaCity.png",
+          "alt": "Map of Fuchsia City with the Safari Zone and Fuchsia Gym",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-15",
       "name": "Route 15",
-      "mapImage": {
-        "src": "images/Route15.png",
-        "alt": "Map of Route 15 east of Fuchsia City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route15.png",
+          "alt": "Map of Route 15 east of Fuchsia City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-14",
       "name": "Route 14",
-      "mapImage": {
-        "src": "images/Route14.png",
-        "alt": "Map of Route 14",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route14.png",
+          "alt": "Map of Route 14",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-13",
       "name": "Route 13",
-      "mapImage": {
-        "src": "images/Route13.png",
-        "alt": "Map of Route 13 leading toward Route 12",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route13.png",
+          "alt": "Map of Route 13 leading toward Route 12",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-12",
       "name": "Route 12",
-      "mapImage": {
-        "src": "images/Route12South.png",
-        "alt": "Map of Route 12, Silence Bridge",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route12South.png",
+          "alt": "Map of Route 12, Silence Bridge",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route12North.png",
+          "alt": "Route 12 North map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-11",
       "name": "Route 11",
-      "mapImage": {
-        "src": "images/Route11.png",
-        "alt": "Map of Route 11 east of Vermilion City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route11.png",
+          "alt": "Map of Route 11 east of Vermilion City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:digletts-cave",
       "name": "Diglett's Cave",
-      "mapImage": {
-        "src": "images/DiglettsCave.png",
-        "alt": "Map of Diglett's Cave linking Vermilion City to Route 2",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/DiglettsCave.png",
+          "alt": "Map of Diglett's Cave linking Vermilion City to Route 2",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-2",
-      "name": "Route 2"
+      "name": "Route 2",
+      "mapImages": []
     },
     {
       "id": "pokemon-crystal:pewter-city",
       "name": "Pewter City",
-      "mapImage": {
-        "src": "images/PewterCity.png",
-        "alt": "Map of Pewter City with the Pewter Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/PewterCity.png",
+          "alt": "Map of Pewter City with the Pewter Gym",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-3",
       "name": "Route 3",
-      "mapImage": {
-        "src": "images/Route3.png",
-        "alt": "Map of Route 3 between Pewter City and Mt. Moon",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route3.png",
+          "alt": "Map of Route 3 between Pewter City and Mt. Moon",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:mt-moon",
       "name": "Mt. Moon",
-      "mapImage": {
-        "src": "images/MountMoon.png",
-        "alt": "Map of Mt. Moon",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/MountMoon.png",
+          "alt": "Map of Mt. Moon",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/MountMoonSquare.png",
+          "alt": "Mount Moon Square map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:mt-moon-square",
       "name": "Mt. Moon Square",
-      "mapImage": {
-        "src": "images/MountMoonSquare.png",
-        "alt": "Map of Mt. Moon Square",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/MountMoonSquare.png",
+          "alt": "Map of Mt. Moon Square",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-4",
       "name": "Route 4",
-      "mapImage": {
-        "src": "images/Route4.png",
-        "alt": "Map of Route 4 leading down to Cerulean City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route4.png",
+          "alt": "Map of Route 4 leading down to Cerulean City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:viridian-city",
       "name": "Viridian City",
-      "mapImage": {
-        "src": "images/ViridianCity.png",
-        "alt": "Map of Viridian City with the Viridian Gym and Trainer House",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/ViridianCity.png",
+          "alt": "Map of Viridian City with the Viridian Gym and Trainer House",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-1",
       "name": "Route 1",
-      "mapImage": {
-        "src": "images/Route1.png",
-        "alt": "Map of Route 1 between Viridian City and Pallet Town",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route1.png",
+          "alt": "Map of Route 1 between Viridian City and Pallet Town",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:pallet-town",
       "name": "Pallet Town",
-      "mapImage": {
-        "src": "images/PalletTown.png",
-        "alt": "Map of Pallet Town with Professor Oak's Lab and Red's and Blue's houses",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/PalletTown.png",
+          "alt": "Map of Pallet Town with Professor Oak's Lab and Red's and Blue's houses",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-21",
       "name": "Route 21",
-      "mapImage": {
-        "src": "images/Route21.png",
-        "alt": "Map of Route 21, the sea between Pallet Town and Cinnabar Island",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route21.png",
+          "alt": "Map of Route 21, the sea between Pallet Town and Cinnabar Island",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:cinnabar-island",
       "name": "Cinnabar Island",
-      "mapImage": {
-        "src": "images/CinnabarIsland.png",
-        "alt": "Map of Cinnabar Island after the volcanic eruption",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/CinnabarIsland.png",
+          "alt": "Map of Cinnabar Island after the volcanic eruption",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-20",
       "name": "Route 20",
-      "mapImage": {
-        "src": "images/Route20.png",
-        "alt": "Map of Route 20 around the Seafoam Islands",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route20.png",
+          "alt": "Map of Route 20 around the Seafoam Islands",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:seafoam-islands",
       "name": "Seafoam Islands",
-      "mapImage": {
-        "src": "images/SeafoamGym.png",
-        "alt": "Map of the Seafoam Islands cave housing the relocated Cinnabar Gym",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/SeafoamGym.png",
+          "alt": "Map of the Seafoam Islands cave housing the relocated Cinnabar Gym",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-19",
       "name": "Route 19",
-      "mapImage": {
-        "src": "images/Route19.png",
-        "alt": "Map of Route 19 north toward Fuchsia City",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route19.png",
+          "alt": "Map of Route 19 north toward Fuchsia City",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-22",
       "name": "Route 22",
-      "mapImage": {
-        "src": "images/Route22.png",
-        "alt": "Map of Route 22 between Viridian City and the League Reception Gate",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route22.png",
+          "alt": "Map of Route 22 between Viridian City and the League Reception Gate",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:route-28",
       "name": "Route 28",
-      "mapImage": {
-        "src": "images/Route28.png",
-        "alt": "Map of Route 28, the hidden road to Mt. Silver",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/Route28.png",
+          "alt": "Map of Route 28, the hidden road to Mt. Silver",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:mt-silver",
       "name": "Mt. Silver",
-      "mapImage": {
-        "src": "images/SilverCaveOutside.png",
-        "alt": "Map of the exterior of Mt. Silver",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/SilverCaveOutside.png",
+          "alt": "Map of the exterior of Mt. Silver",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:mt-silver-cave",
       "name": "Mt. Silver Cave",
-      "mapImage": {
-        "src": "images/SilverCaveRoom1.png",
-        "alt": "Map of the first chamber of Mt. Silver Cave",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/SilverCaveRoom1.png",
+          "alt": "Map of the first chamber of Mt. Silver Cave",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/SilverCaveItemRooms.png",
+          "alt": "Silver Cave Item Rooms map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/SilverCaveOutside.png",
+          "alt": "Silver Cave Outside map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/SilverCaveRoom2.png",
+          "alt": "Silver Cave Room 2 map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     },
     {
       "id": "pokemon-crystal:whirl-islands",
       "name": "Whirl Islands",
-      "mapImage": {
-        "src": "images/WhirlIslandLugiaChamber.png",
-        "alt": "Map of Lugia's chamber deep within the Whirl Islands",
-        "credit": "crystal-ap-tracker"
-      }
+      "mapImages": [
+        {
+          "src": "images/WhirlIslandLugiaChamber.png",
+          "alt": "Map of Lugia's chamber deep within the Whirl Islands",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/Route41.png",
+          "alt": "Route 41 map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/WhirlIsland1F.png",
+          "alt": "Whirl Island 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/WhirlIslandB1F.png",
+          "alt": "Whirl Island B 1 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        },
+        {
+          "src": "images/WhirlIslandB2F.png",
+          "alt": "Whirl Island B 2 F map showing item and hidden-spot locations",
+          "credit": "crystal-ap-tracker"
+        }
+      ]
     }
   ],
   "chapters": [

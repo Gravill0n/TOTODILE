@@ -7,7 +7,7 @@
   "inputs": [
     {
       "file": "layers/spine.json",
-      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+      "sha256": "74488d1187cde876700ad9cdafa6d64edbc9d8f81df1f67ad35ee562988a036b"
     },
     {
       "file": "deck.json",
@@ -32,6 +32,8 @@
     "Eight rows, one per chapter that has a cassette — chapters 1 through 8 (Core). src-ink-collectables: cassette tapes are \"special entities in the A-Sides of chapters 1 through 8\". Row order follows play order.",
     "Each row's note is a locator, not a walkthrough: where the cassette room is and how to open it. The full route prose stays on the corresponding spine step, which is the same source text. An earlier draft truncated the spine detail to its first two sentences and was replaced, because that cut several routes off mid-instruction.",
     "Collecting any one cassette earns Gateway; collecting all eight is what unlocks every B-Side, and completing those B-Sides is in turn what gates the C-Sides. That chain is noted on the Forsaken City row since it is the first cassette in play order.",
-    "No flagged rows. Every cassette has both a walkthrough in src-ink-collectables and a pin in src-tracker-maps."
+    "No flagged rows. Every cassette has both a walkthrough in src-ink-collectables and a pin in src-tracker-maps.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered.",
+    "Input digest for layers/spine.json refreshed by the 2026-07-31 spine re-run that attached the B-Side checkpoint maps. The spine layer is byte-identical outside location.mapImages — no id, step, visit or location this pass read was altered — so this layer s own output is unaffected."
   ]
 }

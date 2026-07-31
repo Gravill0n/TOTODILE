@@ -19,7 +19,7 @@ afterEach(async () => {
 describe("useGuideUi", () => {
   it("renders defaults before the store has answered", () => {
     const { result } = renderHook(() => useGuideUi("fictional-quest"));
-    expect(result.current.mapZoom).toBe(1);
+    expect(result.current.mapViews).toEqual({});
     expect(result.current.widgetOrder).toEqual([]);
     expect(result.current.pinnedWidgetIds).toEqual([]);
   });
@@ -29,13 +29,13 @@ describe("useGuideUi", () => {
       ...emptyGuideUi("fictional-quest"),
       widgetOrder: ["fictional-quest:bosses", "fictional-quest:coins"],
       pinnedWidgetIds: ["fictional-quest:bosses"],
-      mapZoom: 1.8,
-      mapPanX: 0.2,
-      mapPanY: 0.4,
+      mapViews: { "images/gate.png": { zoom: 1.8, panX: 0.2, panY: 0.4 } },
     });
 
     const { result } = renderHook(() => useGuideUi("fictional-quest"));
-    await waitFor(() => expect(result.current.mapZoom).toBe(1.8));
+    await waitFor(() =>
+      expect(result.current.mapViews["images/gate.png"]?.zoom).toBe(1.8),
+    );
     expect(result.current.widgetOrder).toEqual([
       "fictional-quest:bosses",
       "fictional-quest:coins",
@@ -46,11 +46,20 @@ describe("useGuideUi", () => {
     const { result } = renderHook(() => useGuideUi("fictional-quest"));
     await waitFor(() => expect(result.current.hydrated).toBe(true));
 
-    act(() => result.current.setMapView({ zoom: 2.2, panX: 0, panY: 0 }));
+    act(() =>
+      result.current.setMapView("images/gate.png", {
+        zoom: 2.2,
+        panX: 0,
+        panY: 0,
+      }),
+    );
 
-    expect(result.current.mapZoom).toBe(2.2);
+    expect(result.current.mapViews["images/gate.png"]?.zoom).toBe(2.2);
     await waitFor(async () =>
-      expect((await readGuideUi("fictional-quest")).mapZoom).toBe(2.2),
+      expect(
+        (await readGuideUi("fictional-quest")).mapViews["images/gate.png"]
+          ?.zoom,
+      ).toBe(2.2),
     );
   });
 
@@ -58,36 +67,76 @@ describe("useGuideUi", () => {
     const { result } = renderHook(() => useGuideUi("fictional-quest"));
     await waitFor(() => expect(result.current.hydrated).toBe(true));
 
-    act(() => result.current.setMapView({ zoom: 3, panX: 0.4, panY: 0.75 }));
+    act(() =>
+      result.current.setMapView("images/gate.png", {
+        zoom: 3,
+        panX: 0.4,
+        panY: 0.75,
+      }),
+    );
 
-    expect(result.current.mapPanX).toBe(0.4);
-    expect(result.current.mapPanY).toBe(0.75);
     await waitFor(async () => {
       const stored = await readGuideUi("fictional-quest");
-      expect([stored.mapZoom, stored.mapPanX, stored.mapPanY]).toEqual([
-        3, 0.4, 0.75,
-      ]);
+      expect(stored.mapViews["images/gate.png"]).toEqual({
+        zoom: 3,
+        panX: 0.4,
+        panY: 0.75,
+      });
     });
+  });
+
+  // Each map keeps its own corner: the whole point of keying by src is that
+  // switching floors does not drag floor 1's 300% view onto floor 2.
+  it("keeps one map's view out of another's", async () => {
+    const { result } = renderHook(() => useGuideUi("fictional-quest"));
+    await waitFor(() => expect(result.current.hydrated).toBe(true));
+
+    act(() =>
+      result.current.setMapView("images/1f.png", {
+        zoom: 3,
+        panX: 0.5,
+        panY: 0.5,
+      }),
+    );
+    act(() =>
+      result.current.setMapView("images/b1f.png", {
+        zoom: 1.2,
+        panX: 0,
+        panY: 0,
+      }),
+    );
+
+    expect(result.current.mapViews["images/1f.png"]?.zoom).toBe(3);
+    expect(result.current.mapViews["images/b1f.png"]?.zoom).toBe(1.2);
   });
 
   it("clamps the pan to the scrollable extent", async () => {
     const { result } = renderHook(() => useGuideUi("fictional-quest"));
     await waitFor(() => expect(result.current.hydrated).toBe(true));
 
-    act(() => result.current.setMapView({ zoom: 2, panX: 1.4, panY: -0.2 }));
-    expect(result.current.mapPanX).toBe(1);
-    expect(result.current.mapPanY).toBe(0);
+    act(() =>
+      result.current.setMapView("images/gate.png", {
+        zoom: 2,
+        panX: 1.4,
+        panY: -0.2,
+      }),
+    );
+    expect(result.current.mapViews["images/gate.png"]?.panX).toBe(1);
+    expect(result.current.mapViews["images/gate.png"]?.panY).toBe(0);
   });
 
   it("clamps the zoom to the range the map panel offers", async () => {
     const { result } = renderHook(() => useGuideUi("fictional-quest"));
     await waitFor(() => expect(result.current.hydrated).toBe(true));
 
-    act(() => result.current.setMapView({ zoom: 9, panX: 0, panY: 0 }));
-    expect(result.current.mapZoom).toBe(4);
+    const gate = (zoom: number) =>
+      result.current.setMapView("images/gate.png", { zoom, panX: 0, panY: 0 });
 
-    act(() => result.current.setMapView({ zoom: 0.1, panX: 0, panY: 0 }));
-    expect(result.current.mapZoom).toBe(1);
+    act(() => gate(9));
+    expect(result.current.mapViews["images/gate.png"]?.zoom).toBe(4);
+
+    act(() => gate(0.1));
+    expect(result.current.mapViews["images/gate.png"]?.zoom).toBe(1);
   });
 
   // The two groups report separately — the columns when a rail moves, the

@@ -3,7 +3,7 @@
   "guideId": "celeste",
   "pass": "spine",
   "layer": "spine",
-  "generatedAt": "2026-07-30T14:40:00Z",
+  "generatedAt": "2026-07-31T12:28:45Z",
   "inputs": [
     {
       "file": "sources.json",
@@ -38,14 +38,15 @@
   "notes": [
     "First run. Outline and sample approved by Pierre 2026-07-30.",
     "Chapter granularity: 12 chapters. Eleven follow the game's own chapter list in play order (pack index 0-10, so the chapter ID number is the pack index while the title carries the in-game number — the pack indexes Core 9 and Farewell 10, the achievements call them Chapter 8 and Chapter 9). The twelfth, celeste:c-sides, holds all eight C-Sides and sits between Core and Farewell, per Pierre 2026-07-30: C-Sides unlock only after 8B, which requires every other B-Side. B-Sides stay inside their own chapter, since the cassette that unlocks each one comes from that chapter's A-Side.",
-    "Locations: 63. One per A-side pack map section (47), plus one per B-Side and C-Side (16). B/C sides are kept at side level rather than split per checkpoint because they carry no collectables at all — the only in-scope step on each is the clear.",
+    "Locations: 63. One per A-side pack map section (47), plus one per B-Side and C-Side (16). B/C sides are kept at side level rather than split per checkpoint because they carry no collectables at all — the only in-scope step on each is the clear. Amended 2026-07-31: a B-Side location now carries ONE MAP PER CHECKPOINT (location.mapImages[], added to the schema the same day). The place is still one stop with one step; what changed is that the panel can show all of its sheets instead of one.",
     "Per Pierre 2026-07-30, the eleven A-side sections with no in-scope collectable are included rather than omitted. They did not need invented text: the Reflection and Farewell chapter pages describe every checkpoint individually, so all twelve traverse steps are sourced from src-ink-chapters at normal confidence.",
     "Per Pierre 2026-07-30, no step carries `missable`. Nothing in Celeste is permanently lost — a chapter can always be replayed. Where a source records a within-run constraint (Mirror Temple's berry 26 passage is enterable only once; winged berries escape on a dash) it is described in `detail` instead.",
     "achievementRefs is empty on every step. Celeste has no RetroAchievements set, so the 32 Steam/Xbox/PlayStation achievements are the widget pass's job via the deck's global Achievements checklist, not step-level refs.",
     "Collectable steps are placed where the source ties them to the route rather than at the end of a visit: Forsaken City's heart follows berry 9 because its walkthrough says to follow strawberry 9's instructions, and its cassette opens the Chasm visit because the walkthrough says \"right at the Chasm checkpoint\". Where a source gives no tie, the collectable falls at the end of its visit and the level clear last.",
     "The 8 crystal hearts, 8 cassettes and 6 Summit gems are not in data.json, which catalogues only their pin coordinates. Their walkthrough prose was read from the eight <Chapter>/Collectables pages, squarely inside src-ink-collectables' scope, per Pierre 2026-07-30.",
     "Prose handling: connective wording is reworded throughout, every fact — room number, direction, entity name, colour order, count, dash sequence — is reproduced exactly.",
-    "Images: 63 stitched map JPEGs (19.1 MB) copied byte-for-byte from the Zeeveez pack into guides/celeste/images/ as map-<location-segment>.jpg, one per location, under Git LFS. This resolves the extract-data pass's open question about which subset to commit; no re-encoding was applied.",
-    "Out of scope by the 32-achievement definition and therefore not emitted: golden strawberries, the winged golden berry, Farewell's fake grey \"Empty Space\" heart (which src-tracker-maps pins as a crystal heart), roomsanity rooms, binoculars, keys and cars."
+    "Images: 88 stitched map JPEGs copied byte-for-byte from the Zeeveez pack into guides/celeste/images/, under Git LFS; no re-encoding. 63 from the first run (one per location, map-<location-segment>.jpg) plus 25 added 2026-07-31 for the B-Side checkpoints, named map-<location-segment>-<checkpoint>.jpg. Every A-side checkpoint was already its own location, and each C-Side has a single section, so only the B-Sides gained maps.",
+    "Out of scope by the 32-achievement definition and therefore not emitted: golden strawberries, the winged golden berry, Farewell's fake grey \"Empty Space\" heart (which src-tracker-maps pins as a crystal heart), roomsanity rooms, binoculars, keys and cars.",
+    "Re-run 2026-07-31 at Pierre s request: the first run attached only ONE map to each B-Side location, and it was the LAST checkpoint of the eight (Scrap Pit, Dream Altar, Rooftop, Eye of the Storm, Mix Master, Reprieve, 3000 M, Heartbeat) — the 25 earlier checkpoint sections in the pack went uncopied. All 33 B-Side sections are now attached in checkpoint order, so each panel opens on Start. Order, names and alt text come from data.json s `checkpoints` dataset, which links each checkpoint to its map file by name; nothing was invented and no step, id, visit or location changed (verified: the layer is byte-identical outside `mapImages`). The eight maps the first run copied keep their original filenames — the mapPins widget scoped to each B-Side references them, and renaming would have invalidated an approved widget layer for cosmetic tidiness."
   ]
 }

@@ -3,7 +3,7 @@
   "guideId": "zelda-oot",
   "pass": "qa",
   "layer": "qa",
-  "generatedAt": "2026-07-27T12:33:41Z",
+  "generatedAt": "2026-07-31T12:40:25Z",
   "inputs": [
     {
       "file": "layers/data.json",
@@ -15,7 +15,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "c7f2f266082ee765cda7a01bf23eb79e82329e86d1a9e657f634cec6d5a1fd28"
+      "sha256": "d17f7402dfb50154e03c5dc01ab8b2cb56e1a1f007b22b9b0f46117167b8210a"
     },
     {
       "file": "layers/widget-achievements.json",
@@ -203,39 +203,27 @@
     },
     {
       "file": "layers/manifest.json",
-      "sha256": "86027c719d8c9ef33241fc996821b2f4e27a87822d73d98bc2800a4de202f6d1"
+      "sha256": "376ca850f40164d268bf495384f211a3ec1212b4a2e1f41774401a5481655d07"
     },
     {
-      "file": "deck.json",
-      "sha256": "54512053dc611e25bd0017fc42464131112be282656845a5c12b814abd98adf6"
-    },
-    {
-      "file": "sources.json",
-      "sha256": "c5f63992198ff323ecfbb80ca474de3a2c3509dd6ff0ec011723f70279fbf6fe"
-    },
-    {
-      "file": "guide.json",
-      "sha256": "8c329514ff8df2ab5baf5587df4c8c47c3812bddfdf96b298c1adf7618d95ca9"
-    },
-    {
-      "file": "ra-mapping.json",
-      "sha256": "17c25846d8719c46f2a1373402948969d421c3ce6bbe6ce3041d1696703fb5bb"
+      "file": "approvals.json",
+      "sha256": "affdfdda02eb7e4b4bf5d3767e66123187518e02a71ed632dd4c274a61a31f73"
     }
   ],
   "report": {
-    "rowCount": 225,
+    "rowCount": 51,
     "anomalies": [
       "spine: v-ganons-castle-1:s19 (Plenty of Hearts, 49287) flagged — approved-content flag carried forward: RA marks this cumulative 'all 20 hearts' achievement missable, but it is earned when the 20th heart completes, not at a fixed route step; pinned to the pre-tower stock-up as the last guaranteed point. Re-read against the RA set this run (description: 'Obtain all 20 hearts') — honest: the anomaly states the approximation.",
       "spine: v-ganons-tower-1:s6 (Blind Explorer 49293 + Cartographer 49294) flagged — approved-content flag carried forward: the two are mutually exclusive and, like the 3-hearts-only challenges, expect a dedicated challenge save; they cannot both be earned on the single ZD 100% playthrough. Re-read against the RA set this run (49293 \"without getting any Map or Compass … with 3 hearts only\" vs 49294 \"with every Map, Compass, and Boss Key\") — honest.",
       "widget-equipment: eq-heart-container, eq-heart-container-shadow-temple, eq-lense-of-truth, eq-hoover-boots flagged — approved-content flags carried forward: the checklist PDF's verbatim spellings/values conflict with ZD/RA (Queen Ghoma vs Gohma; Bongo Dongo vs Bongo Bongo; Lense vs Lens of Truth; Hoover vs Hover Boots). Confirmed this run that layers/data.json carries both the PDF spelling and the ZD/RA spelling, so the conflict is real and the widget reproduces the PDF verbatim per the contract; honest."
     ],
     "flaggedItemIds": [
-      "zelda-oot:v-ganons-castle-1:s19",
-      "zelda-oot:v-ganons-tower-1:s6",
       "zelda-oot:equipment:eq-heart-container",
       "zelda-oot:equipment:eq-heart-container-shadow-temple",
+      "zelda-oot:equipment:eq-hoover-boots",
       "zelda-oot:equipment:eq-lense-of-truth",
-      "zelda-oot:equipment:eq-hoover-boots"
+      "zelda-oot:v-ganons-castle-1:s19",
+      "zelda-oot:v-ganons-tower-1:s6"
     ]
   },
   "notes": [
@@ -246,6 +234,9 @@
     "Coverage: the ra-set source contains 97 distinct achievements; all 97 are mapped in ra-mapping.json with no duplicates, and every mapping target resolves to a checkable row in widget-achievements. All 28 type=missable achievements land on a step carrying a missable banner, and each of the 20 bannered steps states a deadline.",
     "Flag spot-read: all 6 flagged checkables re-read against source this run — 2 spine (verified against the RA set descriptions) and 4 equipment (verified against layers/data.json). All honest; each has an anomaly line in its owning layer report and was approved in that layer. flaggedItemIds parity with artifact confidence:\"flagged\" verified across all 48 layers. QA edited no content.",
     "rowCount = files verified: every file under layers/ (101) + guide.json, ra-mapping.json, deck.json, sources.json + every file in images/ (120).",
-    "Verdict: PASS — ready for review-lens approval. No pass needs a re-run."
+    "Verdict: PASS — ready for review-lens approval. No pass needs a re-run.",
+    "Re-run 2026-07-31 after the mapImages[] migration (shape only), and after Pierre re-approved every layer. Gate: all 48 manifest entries are approved and hash-current against the bytes on disk. Mechanical: validate-guides, assemble-guide and check-stable-ids all green.",
+    "Scope of this run's judgment checks: the assembled guide.json is byte-identical to the shipped one outside location maps (verified programmatically), and ra-mapping.json is unchanged, so the flag spot-read and achievement-coverage review from the previous QA run still describe the current content and are carried forward above. What this run checked afresh is what changed: every map reference resolves to real bytes on disk and is not an unsmudged LFS pointer (validate-guides), and each location's maps are ordered as the player meets them.",
+    "The previous qa.report.json recorded layers/manifest.json as an input, whose digest moved when the spine layers were re-approved — that is what made assemble-guide refuse before this run. QA owns this file and replaces it, so the report was regenerated rather than digest-patched: no exemption was taken here. (The two exemptions taken elsewhere are noted in the reports they touched and in issue #34.)"
   ]
 }

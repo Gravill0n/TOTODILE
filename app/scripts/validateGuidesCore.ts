@@ -750,16 +750,14 @@ function spineImageRefs(
   chapters: Chapter[],
 ): ImageReference[] {
   return [
+    // Numbered, because a place can carry nine maps (Tin Tower) and "location
+    // X references a missing image" would not say which of them to fix.
     ...locations.flatMap((location) =>
-      location.mapImage
-        ? [
-            {
-              file,
-              owner: `location "${location.id}"`,
-              src: location.mapImage.src,
-            },
-          ]
-        : [],
+      location.mapImages.map((image, index) => ({
+        file,
+        owner: `location "${location.id}" map ${index + 1}`,
+        src: image.src,
+      })),
     ),
     ...chapters.flatMap((chapter) =>
       chapter.visits.flatMap((visit) =>

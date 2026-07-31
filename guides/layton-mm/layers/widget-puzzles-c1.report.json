@@ -19,7 +19,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "8942e0f5ff7604265390811ddafded5c399324268c764d6507d6e6122f257c2c"
+      "sha256": "0760f32f26eae1aba7af2d3f93a2fed103030fc186617218195609e07bdd07dd"
     }
   ],
   "report": {
@@ -31,6 +31,7 @@
     "Chapter-scoped Chapter Puzzles table (deck slot 1) for layton-mm:c1 (\"Chapter 1 - The Mask of Chaos\"); 6 informational row(s) (checkable: false) reproduced verbatim from the data layer puzzles dataset — the spine's \"Solve NNN\" steps are the checkables, per Pierre 2026-07-08.",
     "Columns: puzzle #, US name, UK name, and an opt-in Solution link to the puzzle's PL5-walkthrough page (Pierre 2026-07-08) — nothing is shown inline, keeping the spoiler-free rule.",
     "The Epilogue (layton-mm:c9) has no route puzzles, so slot 1 gets no instance there.",
-    "Refresh re-run 2026-07-08 answering QA 79730d7 (stale sources.json/spine.json digests after fb6da77/556c1e9): rows re-verified against the re-approved spine (all referenced step IDs present), artifact byte-identical (f98b27bdaae1de0d0727cd47202f355898d00e3f469dbad85712edade62dc5fa)."
+    "Refresh re-run 2026-07-08 answering QA 79730d7 (stale sources.json/spine.json digests after fb6da77/556c1e9): rows re-verified against the re-approved spine (all referenced step IDs present), artifact byte-identical (f98b27bdaae1de0d0727cd47202f355898d00e3f469dbad85712edade62dc5fa).",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

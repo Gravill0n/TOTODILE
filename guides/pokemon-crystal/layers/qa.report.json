@@ -3,7 +3,7 @@
   "guideId": "pokemon-crystal",
   "pass": "qa",
   "layer": "qa",
-  "generatedAt": "2026-06-18T04:30:00Z",
+  "generatedAt": "2026-07-31T12:40:25Z",
   "inputs": [
     {
       "file": "layers/data.json",
@@ -15,7 +15,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf"
+      "sha256": "30a9744446fa16368a7183695264d4f6e2b25bc0615f72640fe80abbc9e9399e"
     },
     {
       "file": "layers/widget-enc-azalea-town.json",
@@ -1290,12 +1290,12 @@
       "sha256": "1093b3c9b9eee7473e2f883501bf30e4c9e13e8379b14c6aaee2c2530ccec572"
     },
     {
-      "file": "guide.json",
-      "sha256": "5857c74a234391de943c517a600322841f7e4e52ed47ff5e462aafaa302d4de7"
+      "file": "layers/manifest.json",
+      "sha256": "4b32bf64cceeea99966875583ffa6d05e91f17c5108e92353a705de8132bd3b2"
     },
     {
-      "file": "ra-mapping.json",
-      "sha256": "60bded61416b92606d49f70d765c07ec31fee141d59da649e9fbf93cb5240d28"
+      "file": "approvals.json",
+      "sha256": "418ab3f3e731f4e5e5e258303c3a4aa6f2494960ee64acdec21694975a3230ae"
     }
   ],
   "report": {
@@ -1333,6 +1333,9 @@
   },
   "notes": [
     "QA / assembly pass (6 of 6). yarn validate-guides green on the assembled guide.json; yarn assemble-guide wrote guide.json (20 chapters, 92 locations, 318 widgets) + ra-mapping.json after the staleness check passed. Coverage: 337/337 achievements mapped (0 unmapped). Images: 146 referenced map images all present on disk. Missables: all 6 missable steps state a deadline.",
-    "Verdict: content is ready for review-lens approval. The only open item is the check-stable-ids transition artifact (non-content) — it resolves once an approval establishes the v1 stable-ID baseline. No pass needs a re-run; QA edited no guide content (only refreshed stale provenance digests and trimmed two external input paths)."
+    "Verdict: content is ready for review-lens approval. The only open item is the check-stable-ids transition artifact (non-content) — it resolves once an approval establishes the v1 stable-ID baseline. No pass needs a re-run; QA edited no guide content (only refreshed stale provenance digests and trimmed two external input paths).",
+    "Re-run 2026-07-31 after the mapImages[] migration, including the 71 maps adopted from location-scoped mapPins widgets across 26 places, and after Pierre re-approved every layer. Gate: all 320 manifest entries are approved and hash-current against the bytes on disk. Mechanical: validate-guides, assemble-guide and check-stable-ids all green.",
+    "Scope of this run's judgment checks: the assembled guide.json is byte-identical to the shipped one outside location maps (verified programmatically), and ra-mapping.json is unchanged, so the flag spot-read and achievement-coverage review from the previous QA run still describe the current content and are carried forward above. What this run checked afresh is what changed: every map reference resolves to real bytes on disk and is not an unsmudged LFS pointer (validate-guides), and each location's maps are ordered as the player meets them.",
+    "The previous qa.report.json recorded layers/manifest.json as an input, whose digest moved when the spine layers were re-approved — that is what made assemble-guide refuse before this run. QA owns this file and replaces it, so the report was regenerated rather than digest-patched: no exemption was taken here. (The two exemptions taken elsewhere are noted in the reports they touched and in issue #34.)"
   ]
 }

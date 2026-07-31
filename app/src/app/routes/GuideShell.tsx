@@ -41,6 +41,9 @@ type GuideShellProps = {
   visitId: string;
 };
 
+// A map nobody has touched opens fitted to the panel.
+const FIT_TO_PANEL = { zoom: 1, panX: 0, panY: 0 };
+
 // "center" suits small targets (step rows). Whole chapters are taller than
 // the viewport, and centering a too-tall element scrolls to its middle —
 // chapter jumps must align to "start" to land on the heading.
@@ -180,6 +183,30 @@ export function GuideShell({
     );
   }, [guide, wholeGame, widgetContext]);
 
+  // The pins that belong on each of this place's maps, keyed by image src.
+  // They come from the mapPins widgets scoped here — the guides bind pins to a
+  // place that way, and their image is one of the place's maps (that is how
+  // the maps got into `mapImages` in the first place). Same itemIds as the
+  // widget card below, one progress store, so a pin ticked on the panel
+  // strikes its row through in the card.
+  const pinsByMap = useMemo(() => {
+    const byMap = new Map<
+      string,
+      { itemId: string; label: string; x: number; y: number }[]
+    >();
+    if (!displayedLocation) return byMap;
+    for (const widget of guide.widgets) {
+      if (widget.type !== "mapPins") continue;
+      if (widget.scope.kind !== "location") continue;
+      if (widget.scope.locationId !== displayedLocation.id) continue;
+      byMap.set(widget.image.src, [
+        ...(byMap.get(widget.image.src) ?? []),
+        ...widget.pins,
+      ]);
+    }
+    return byMap;
+  }, [guide, displayedLocation]);
+
   // FR-A4: opening the guide lands on the current step — once, not on every
   // pointer move. Scroll only, never navigate: the index route already chose
   // the visit, and a deep link is a deliberate destination that must not be
@@ -269,15 +296,17 @@ export function GuideShell({
         // look at the map of the room you are reading about.
         progress.ready ? (
           <MapPanel
+            // Remounted per place, so the sheet selection starts at the first
+            // map of the room you just walked into rather than at floor 3.
+            key={displayedLocation?.id}
             locationName={displayedLocation?.name ?? ""}
-            image={displayedLocation?.mapImage}
+            images={displayedLocation?.mapImages ?? []}
             resolveAsset={(path) => guideAssetUrl(entry.id, path)}
-            view={{
-              zoom: ui.mapZoom,
-              panX: ui.mapPanX,
-              panY: ui.mapPanY,
-            }}
+            viewOf={(src) => ui.mapViews[src] ?? FIT_TO_PANEL}
             onViewChange={ui.setMapView}
+            pinsFor={(src) => pinsByMap.get(src) ?? []}
+            doneIds={progressSlice.doneIds}
+            onTogglePin={handlers.onToggle}
           />
         ) : undefined
       }

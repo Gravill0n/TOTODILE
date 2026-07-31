@@ -29,8 +29,9 @@ Ask, don't decide.
 The spine is now **locations + chapter → visit → step**:
 
 - **`locations[]`** (top level): every distinct place the route names — a stable
-  `location = { id, name, mapImage? }`. The location index aggregates everything
-  earnable at a place across all its visits, so one entry per place, deduped.
+  `location = { id, name, mapImages[] }`. The location index aggregates
+  everything earnable at a place across all its visits, so one entry per place,
+  deduped.
 - **`visit`** = one occurrence of being at a location within a chapter
   (`{ id, locationId, order, steps[] }`). Consecutive steps at the same place are
   one visit; **returning to a place later is a NEW visit with the same
@@ -118,12 +119,27 @@ summary); adjust to feedback before continuing.
     to "clean up"; `yarn check-stable-ids` is the hard gate.
 - `visit.order` is sequential within its chapter; `step.order` is sequential
   within its visit.
-- **Images**: a location's `mapImage` comes from the extract-data `images`
-  catalog — find the `kind: location-map` record for the place, copy its
-  catalogued source file into `guides/<slug>/images/`, and reference it by
+- **Images**: a location's `mapImages[]` come from the extract-data `images`
+  catalog — find the `kind: location-map` records for the place, copy their
+  catalogued source files into `guides/<slug>/images/`, and reference them by
   relative path with real alt text. Only fall back to downloading (curl) when
   the catalog has no record for it; unreachable → ask Pierre. Never emit a
   broken ref.
+- **How many maps a place gets** (amended 2026-07-31, when `mapImage` became
+  `mapImages[]`): several maps belong to ONE location when they are sheets of
+  the same place the route treats as one stop — floors of a tower, sections of
+  a cave, an interior of a building the player walks in and out of mid-visit.
+  The map panel shows them as a tab strip, first one open, so order them the
+  way a player meets them (entrance floor first, then downward or inward).
+  They are NOT one location when the route stops at each separately and the
+  spine has steps at each — then they are separate locations with separate
+  visits, and the chapter rail should say so. The test: could a step say "go
+  to the third floor" and mean a place you *arrive* at? Then split it.
+  Where the maps of a place already live in `mapPins` widgets scoped to it —
+  which is how the compiled guides carried extra floors before this field
+  existed — list them here too. The widget keeps its pins; the panel needs
+  the map.
+- **A place with no map** carries `mapImages: []`, never a phantom entry.
 
 ### 4. Report + finish
 - `layers/spine.report.json`: `pass`/`layer` = `spine`; `rowCount` = total

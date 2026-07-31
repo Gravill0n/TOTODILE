@@ -7,7 +7,7 @@
   "inputs": [
     {
       "file": "layers/spine.json",
-      "sha256": "c7f2f266082ee765cda7a01bf23eb79e82329e86d1a9e657f634cec6d5a1fd28"
+      "sha256": "d17f7402dfb50154e03c5dc01ab8b2cb56e1a1f007b22b9b0f46117167b8210a"
     },
     {
       "file": "layers/widget-achievements.json",
@@ -31,6 +31,7 @@
     "raGameId 10113 matches the library entry. All 97 achievements from the ra-set source (src-ra, the public RA game page snapshot) map 1:1 to their row in the global RetroAchievements widget (target convention confirmed by Pierre 2026-07-09) — syncing RA progress ticks the achievement in that checklist. 0 unmapped, 0 flagged.",
     "The RA API was not called; the achievement list comes from the ra-set source recorded in sources.json (per the hard rule).",
     "The reverse links (step -> achievements, for the play-view badges) live in the spine's achievementRefs; this pass provides the forward links (achievement -> guide item) for Sync. The two flagged spine step placements (Plenty of Hearts; Blind Explorer/Cartographer) do not affect this mapping, which targets the checklist rows.",
-    "Re-stamped 2026-07-27: the 2026-07-14 spine re-run added step images only (verified: with the images arrays stripped, the pre- and post-re-run spine are byte-identical), so this layer's artifact is unchanged and only the recorded layers/spine.json input digest moved."
+    "Re-stamped 2026-07-27: the 2026-07-14 spine re-run added step images only (verified: with the images arrays stripped, the pre- and post-re-run spine are byte-identical), so this layer's artifact is unchanged and only the recorded layers/spine.json input digest moved.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

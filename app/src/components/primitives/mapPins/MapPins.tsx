@@ -1,8 +1,8 @@
-import { Check } from "lucide-react";
 import { ZoomableImage } from "@/components/ZoomableImage";
 import type { MapPinsWidget } from "@/schema";
 import { FlagMark } from "../FlagMark";
 import type { WidgetProps } from "../widgetProps";
+import { PinOverlay } from "./PinOverlay";
 
 type MapPinsProps = WidgetProps<MapPinsWidget> & {
   // Image srcs are guide-folder-relative; resolution stays outside the
@@ -22,26 +22,16 @@ export function MapPins({
   onToggle,
   resolveAsset,
 }: MapPinsProps) {
-  const pinMarkers = widget.pins.map((pin, index) => {
-    const done = progress.doneIds.has(pin.itemId);
-    return (
-      <button
-        key={pin.itemId}
-        type="button"
-        onClick={() => onToggle(pin.itemId)}
-        aria-label={pin.label}
-        aria-pressed={done}
-        style={{ left: `${pin.x * 100}%`, top: `${pin.y * 100}%` }}
-        className={`absolute flex size-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 text-sm font-bold ${
-          done
-            ? "border-primary bg-primary text-primary-foreground"
-            : "border-primary bg-card/90 text-primary"
-        }`}
-      >
-        {done ? <Check className="size-5" aria-hidden /> : index + 1}
-      </button>
-    );
-  });
+  // The markers are the shared overlay, so the card and the map panel draw
+  // pins the same way — including collapsing the ones that share a spot, which
+  // in this card used to make the buried pin untappable.
+  const pinMarkers = (
+    <PinOverlay
+      pins={widget.pins}
+      doneIds={progress.doneIds}
+      onToggle={onToggle}
+    />
+  );
   return (
     <div>
       <ZoomableImage

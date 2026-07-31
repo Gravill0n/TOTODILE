@@ -7,7 +7,7 @@
   "inputs": [
     {
       "file": "layers/spine.json",
-      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+      "sha256": "74488d1187cde876700ad9cdafa6d64edbc9d8f81df1f67ad35ee562988a036b"
     },
     {
       "file": "deck.json",
@@ -35,6 +35,8 @@
     "All 32 achievements from src-ink-achievements, in the source's own four groups of eight: chapter clears, crystal hearts, B-Sides, and the remaining eight. This list is the guide's completion definition, per Pierre 2026-07-29 — it deliberately excludes golden strawberries.",
     "Notes carry the source's requirement text verbatim, prefixed with its group. The only edit is stripping the &nbsp; entities the wiki table leaves on four of the rows; no wording changed.",
     "Celeste has no RetroAchievements set, so these are Steam/Xbox/PlayStation achievements tracked by hand here rather than through the RA mapping — no step in the spine carries achievementRefs, and the ra-mapping pass does not apply to this guide.",
-    "No flagged rows."
+    "No flagged rows.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered.",
+    "Input digest for layers/spine.json refreshed by the 2026-07-31 spine re-run that attached the B-Side checkpoint maps. The spine layer is byte-identical outside location.mapImages — no id, step, visit or location this pass read was altered — so this layer s own output is unaffected."
   ]
 }

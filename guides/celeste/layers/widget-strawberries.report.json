@@ -7,7 +7,7 @@
   "inputs": [
     {
       "file": "layers/spine.json",
-      "sha256": "835e5d35466bcb9682cce600d3844b767e1c9acf5619d3b520b34c930d4f4684"
+      "sha256": "74488d1187cde876700ad9cdafa6d64edbc9d8f81df1f67ad35ee562988a036b"
     },
     {
       "file": "deck.json",
@@ -33,6 +33,8 @@
     "derivedFrom is the same set of 175 spine step IDs on every entry — every step in layers/spine.json whose first keyword is \"Grab berry <n>\". They split 20/18/25/29/31/47/5 across chapters 1, 2, 3, 4, 5, 7 and Core, matching both the per-chapter totals in the chapters dataset and the 175 that src-ink-achievements requires for Impress Your Friends.",
     "The three targets are the three strawberry achievements in src-ink-achievements: Strawberry Badge (30), Strawberry Medal (80), Impress Your Friends (175). No separate plain 0/175 entry is emitted — Impress Your Friends already is it.",
     "Targets are explicit rather than left to default from derivedFrom.length, because 30 and 80 are milestones over the same 175-item set, not smaller sets.",
-    "No flagged rows. The 175-berry set is corroborated independently by src-tracker-maps, whose pin dataset reproduces the same per-chapter split."
+    "No flagged rows. The 175-berry set is corroborated independently by src-tracker-maps, whose pin dataset reproduces the same per-chapter split.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered.",
+    "Input digest for layers/spine.json refreshed by the 2026-07-31 spine re-run that attached the B-Side checkpoint maps. The spine layer is byte-identical outside location.mapImages — no id, step, visit or location this pass read was altered — so this layer s own output is unaffected."
   ]
 }

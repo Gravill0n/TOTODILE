@@ -50,7 +50,7 @@ describe("zoom wiring (Build 3, Task 3.2)", () => {
     const zoomed = pins.find(
       (pin) => pin.closest(".react-transform-component") !== null,
     );
-    expect(zoomed?.style.left).toBe("78%");
+    expect((zoomed?.parentElement as HTMLElement).style.left).toBe("78%");
   });
 
   it("MapPins pins still toggle inline without opening the lightbox", () => {

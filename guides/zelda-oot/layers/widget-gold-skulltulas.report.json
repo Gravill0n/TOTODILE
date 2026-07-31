@@ -11,7 +11,7 @@
     },
     {
       "file": "layers/spine.json",
-      "sha256": "c7f2f266082ee765cda7a01bf23eb79e82329e86d1a9e657f634cec6d5a1fd28"
+      "sha256": "d17f7402dfb50154e03c5dc01ab8b2cb56e1a1f007b22b9b0f46117167b8210a"
     },
     {
       "file": "deck.json",
@@ -29,6 +29,7 @@
   },
   "notes": [
     "Slot 0 (counter, global). One manual tally to 100 from the gold-skulltulas dataset (exactly 100 records). Individual per-location skulltulas are checkable in the slot-3 Area Collectibles tables; House-of-Skulltula rewards unlock at 10/20/30/40/50/100.",
-    "Re-stamped 2026-07-27: the 2026-07-14 spine re-run added step images only (verified: with the images arrays stripped, the pre- and post-re-run spine are byte-identical), so this layer's artifact is unchanged and only the recorded layers/spine.json input digest moved."
+    "Re-stamped 2026-07-27: the 2026-07-14 spine re-run added step images only (verified: with the images arrays stripped, the pre- and post-re-run spine are byte-identical), so this layer's artifact is unchanged and only the recorded layers/spine.json input digest moved.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }

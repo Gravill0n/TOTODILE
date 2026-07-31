@@ -69,8 +69,29 @@ describe("location", () => {
   });
 
   it("parses a location without a map image", () => {
-    const { mapImage, ...minimal } = validLocation();
+    const { mapImages, ...minimal } = validLocation();
     expectParses(location, minimal);
+    expectParses(location, { ...validLocation(), mapImages: [] });
+  });
+
+  // A place with several maps is the point of the list: Ice Path's floors sat
+  // in mapPins widgets because a location could only hold one.
+  it("parses a location carrying several maps, in order", () => {
+    const many = {
+      ...validLocation(),
+      mapImages: [
+        { src: "images/ice-path-1f.png", alt: "Ice Path 1F" },
+        { src: "images/ice-path-b1f.png", alt: "Ice Path B1F" },
+      ],
+    };
+    expectParses(location, many);
+  });
+
+  it("rejects a malformed entry in the list", () => {
+    expectRejects(location, {
+      ...validLocation(),
+      mapImages: [{ src: "images/x.png" }],
+    });
   });
 
   it("rejects a malformed location ID", () => {

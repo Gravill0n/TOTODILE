@@ -5,18 +5,49 @@
     {
       "id": "fictional-quest:castle-gate",
       "name": "Castle Gate",
-      "mapImage": {
-        "src": "images/castle-gate.png",
-        "alt": "Castle gate and wall route",
-        "credit": "Fictional Quest wiki"
-      }
+      "mapImages": [
+        {
+          "src": "images/castle-gate.png",
+          "alt": "Castle gate and wall route",
+          "credit": "Fictional Quest wiki"
+        },
+        {
+          "src": "images/vault-map.png",
+          "alt": "Castle gate cellar",
+          "caption": "Cellar"
+        }
+      ]
     },
-    { "id": "fictional-quest:castle-wall", "name": "Castle Wall" },
-    { "id": "fictional-quest:courtyard", "name": "Courtyard" },
-    { "id": "fictional-quest:docks", "name": "Docks" },
-    { "id": "fictional-quest:sunken-vault", "name": "Sunken Vault" },
-    { "id": "fictional-quest:vault-antechamber", "name": "Vault Antechamber" },
-    { "id": "fictional-quest:vault-heart", "name": "Vault Heart" }
+    {
+      "id": "fictional-quest:castle-wall",
+      "name": "Castle Wall",
+      "mapImages": []
+    },
+    {
+      "id": "fictional-quest:courtyard",
+      "name": "Courtyard",
+      "mapImages": []
+    },
+    {
+      "id": "fictional-quest:docks",
+      "name": "Docks",
+      "mapImages": []
+    },
+    {
+      "id": "fictional-quest:sunken-vault",
+      "name": "Sunken Vault",
+      "mapImages": []
+    },
+    {
+      "id": "fictional-quest:vault-antechamber",
+      "name": "Vault Antechamber",
+      "mapImages": []
+    },
+    {
+      "id": "fictional-quest:vault-heart",
+      "name": "Vault Heart",
+      "mapImages": []
+    }
   ],
   "chapters": [
     {
@@ -194,7 +225,10 @@
       "id": "fictional-quest:treasure",
       "type": "checklist",
       "title": "Castle treasure checklist",
-      "scope": { "kind": "chapter", "chapterId": "fictional-quest:c1" },
+      "scope": {
+        "kind": "chapter",
+        "chapterId": "fictional-quest:c1"
+      },
       "deckPosition": 0,
       "rows": [
         {
@@ -223,15 +257,29 @@
       "id": "fictional-quest:badges",
       "type": "matrix",
       "title": "Badges × characters",
-      "scope": { "kind": "global" },
+      "scope": {
+        "kind": "global"
+      },
       "deckPosition": 1,
       "rows": [
-        { "id": "row-mira", "label": "Mira" },
-        { "id": "row-theo", "label": "Theo" }
+        {
+          "id": "row-mira",
+          "label": "Mira"
+        },
+        {
+          "id": "row-theo",
+          "label": "Theo"
+        }
       ],
       "columns": [
-        { "id": "col-fire", "label": "Fire badge" },
-        { "id": "col-tide", "label": "Tide badge" }
+        {
+          "id": "col-fire",
+          "label": "Fire badge"
+        },
+        {
+          "id": "col-tide",
+          "label": "Tide badge"
+        }
       ],
       "cells": [
         {
@@ -268,12 +316,23 @@
       "id": "fictional-quest:bestiary",
       "type": "dataTable",
       "title": "Bestiary",
-      "scope": { "kind": "global" },
+      "scope": {
+        "kind": "global"
+      },
       "deckPosition": 2,
       "columns": [
-        { "id": "col-hp", "label": "HP" },
-        { "id": "col-xp", "label": "XP" },
-        { "id": "col-weakness", "label": "Weakness" }
+        {
+          "id": "col-hp",
+          "label": "HP"
+        },
+        {
+          "id": "col-xp",
+          "label": "XP"
+        },
+        {
+          "id": "col-weakness",
+          "label": "Weakness"
+        }
       ],
       "rows": [
         {
@@ -315,7 +374,9 @@
       "id": "fictional-quest:counters",
       "type": "counter",
       "title": "Collectible counters",
-      "scope": { "kind": "global" },
+      "scope": {
+        "kind": "global"
+      },
       "deckPosition": 3,
       "counters": [
         {
@@ -338,7 +399,9 @@
       "id": "fictional-quest:trade",
       "type": "flowchart",
       "title": "Trade chain",
-      "scope": { "kind": "global" },
+      "scope": {
+        "kind": "global"
+      },
       "deckPosition": 4,
       "nodes": [
         {

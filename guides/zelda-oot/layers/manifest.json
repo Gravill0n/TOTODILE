@@ -7,7 +7,7 @@
       "kind": "spine",
       "artifact": "layers/spine.json",
       "report": "layers/spine.report.json",
-      "sha256": "c7f2f266082ee765cda7a01bf23eb79e82329e86d1a9e657f634cec6d5a1fd28"
+      "sha256": "d17f7402dfb50154e03c5dc01ab8b2cb56e1a1f007b22b9b0f46117167b8210a"
     },
     {
       "id": "widget-achievements",

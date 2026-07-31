@@ -5,10 +5,22 @@
   "layer": "widget-gym-badges",
   "generatedAt": "2026-06-18T00:00:00Z",
   "inputs": [
-    { "file": "deck.json", "sha256": "cf161824ea7e5516d3d8fd9be56bd84995087368cfab8f94f73381bee1e1239e" },
-    { "file": "layers/spine.json", "sha256": "d14d98e0380f0723c1cbdbc33df095fb03456d80669e9f743f094e0f94bb29bf" },
-    { "file": "sources.json", "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e" },
-    { "file": "layers/data.json", "sha256": "4d97a78b9445c7d8d6ebd3dc86c2fdc8f1cdd864006328fcc60b72d2c9c0df4c" }
+    {
+      "file": "deck.json",
+      "sha256": "cf161824ea7e5516d3d8fd9be56bd84995087368cfab8f94f73381bee1e1239e"
+    },
+    {
+      "file": "layers/spine.json",
+      "sha256": "30a9744446fa16368a7183695264d4f6e2b25bc0615f72640fe80abbc9e9399e"
+    },
+    {
+      "file": "sources.json",
+      "sha256": "032c850cd211ec595e6311a10409a687342628d9647403d6fc5693b7db078d7e"
+    },
+    {
+      "file": "layers/data.json",
+      "sha256": "4d97a78b9445c7d8d6ebd3dc86c2fdc8f1cdd864006328fcc60b72d2c9c0df4c"
+    }
   ],
   "report": {
     "rowCount": 16,
@@ -20,6 +32,7 @@
     "Each badge row anchors to a spine step (verified present): zephyr→v-violet-city-2:s1, hive→v-azalea-town-2:s2, plain→v-goldenrod-city-1:s5, fog→v-ecruteak-city-2:s2, storm→v-cianwood-city-1:s3, mineral→v-olivine-city-2:s2, glacier→v-mahogany-town-3:s1, rising→v-dragons-den-1:s2 (earned after the elder's quiz), boulder→v-pewter-city-1:s2, cascade→v-cerulean-city-3:s1, thunder→v-vermilion-city-1:s2, rainbow→v-celadon-city-1:s2, soul→v-fuchsia-city-1:s1, marsh→v-saffron-city-1:s2, volcano→v-seafoam-islands-1:s1, earth→v-viridian-city-2:s1.",
     "Volcano Badge note records the source detail that Blaine's gym is on Cinnabar Island but he is fought inside the Seafoam Islands cave in Crystal (matching the spine's c17 modelling).",
     "Achievement linkage is deferred to the ra-mapping pass: each itemId will be the target of both the main flavor set (ach-5637…5652) and the Oak badge set (ach-315131…315280). Checklist rows carry no achievementRefs by design (§6.5 — the reverse link lives in the RA mapping).",
-    "No source gaps: all 16 badge/leader/city facts are stated in src-bulba-walkthrough; confidence normal throughout, flaggedItemIds empty."
+    "No source gaps: all 16 badge/leader/city facts are stated in src-bulba-walkthrough; confidence normal throughout, flaggedItemIds empty.",
+    "Input digest for layers/spine.json / guide.json refreshed by the location.mapImage → mapImages[] migration (2026-07-31): a shape change only — no id, step, row or image this pass read was altered."
   ]
 }
