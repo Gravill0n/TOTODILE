@@ -131,15 +131,26 @@ describe("loadPlayability", () => {
     withQaReport,
     manifestIds,
     approvedIds,
+    withGuideFile = true,
+    offline = false,
   }: {
     withQaReport: boolean;
     manifestIds: string[];
     approvedIds: string[];
+    withGuideFile?: boolean;
+    offline?: boolean;
   }) {
     vi.stubGlobal(
       "fetch",
       vi.fn(async (input: RequestInfo | URL) => {
         const url = String(input);
+        if (url.endsWith("guide.json")) {
+          // A fetch that rejects is the offline signal, not a missing file.
+          if (offline) throw new TypeError("Failed to fetch");
+          return withGuideFile
+            ? new Response(null, { status: 200 })
+            : new Response("not found", { status: 404 });
+        }
         if (url.endsWith("layers/qa.report.json")) {
           return withQaReport
             ? new Response("{}", { status: 200 })
@@ -185,6 +196,33 @@ describe("loadPlayability", () => {
       approvedIds: ["spine"],
     });
     expect(await loadPlayability("fictional-quest")).toBe(false);
+  });
+
+  // A recompile rewrites guide.json: between the QA pass deleting it and the
+  // assembly writing it back, every review input still says "approved", and
+  // the play route would open a guide whose content is not there.
+  it("false when guide.json is absent, however green the review inputs are", async () => {
+    stubGuideFetch({
+      withQaReport: true,
+      manifestIds: ["spine", "widget-w1"],
+      approvedIds: ["spine", "widget-w1"],
+      withGuideFile: false,
+    });
+    expect(await loadPlayability("fictional-quest")).toBe(false);
+  });
+
+  // Offline, the probe cannot answer: HEAD is not served from the workbox
+  // precache (`caches.match` is GET-only). Fail open — offline is exactly when
+  // the precached guide.json is guaranteed to be there, and marking every
+  // guide unfinished on a plane would be the worse wrong answer.
+  it("true when the probe fails outright (offline), not false", async () => {
+    stubGuideFetch({
+      withQaReport: true,
+      manifestIds: ["spine", "widget-w1"],
+      approvedIds: ["spine", "widget-w1"],
+      offline: true,
+    });
+    expect(await loadPlayability("fictional-quest")).toBe(true);
   });
 });
 

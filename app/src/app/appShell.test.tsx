@@ -75,8 +75,13 @@ function stubContentFetch(
           ? new Response("{}", { status: 200 })
           : new Response("not found", { status: 404 });
       }
-      if (url.endsWith("guides/fictional-quest/guide.json")) {
-        return Response.json(fixtureGuide);
+      // Playability also asks whether the compiled guide is there (HEAD), so
+      // an approved slug has to have one — the fixture stands in for all.
+      const guide = url.match(/guides\/([^/]+)\/guide\.json$/);
+      if (guide) {
+        return approvedSlugs.includes(guide[1] ?? "")
+          ? Response.json(fixtureGuide)
+          : new Response("not found", { status: 404 });
       }
       return new Response("not found", { status: 404 });
     }),

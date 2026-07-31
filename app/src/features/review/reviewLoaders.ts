@@ -45,3 +45,22 @@ export async function qaReportExists(slug: string): Promise<boolean> {
   const response = await fetch(`guides/${slug}/layers/qa.report.json`);
   return response.ok;
 }
+
+// Whether the compiled guide is actually on disk. HEAD, because the library
+// screen asks this of every guide at once and Crystal's guide.json is 1.6 MB —
+// the play route fetches the body soon enough if the answer is yes.
+//
+// A rejected fetch means offline (a HEAD is not served from the workbox
+// precache — `caches.match` only matches GET), which is precisely the state in
+// which the precached guide.json is guaranteed present. Answer yes: a plane
+// journey must not turn every guide unfinished.
+export async function guideFileExists(slug: string): Promise<boolean> {
+  try {
+    const response = await fetch(`guides/${slug}/guide.json`, {
+      method: "HEAD",
+    });
+    return response.ok;
+  } catch {
+    return true;
+  }
+}

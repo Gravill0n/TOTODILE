@@ -16,7 +16,11 @@ const fixtureGuide = readFixtureJson("guides/fictional-quest/guide.json");
 type StubOptions = {
   /** The library manifest served at `library.json`. */
   library?: unknown;
-  /** Guide files by slug; defaults to the fictional-quest fixture. */
+  /**
+   * Guide files by slug; every playable slug gets the fictional-quest fixture
+   * unless named here. Pass `{}` to serve none — the mid-recompile state where
+   * the review inputs are green but the compiled guide is gone.
+   */
   guides?: Record<string, unknown>;
   /** RA mappings by slug; a slug mapped to `null` serves a 404. */
   raMappings?: Record<string, unknown | null>;
@@ -36,18 +40,23 @@ function approvedApprovals(slug: string) {
 
 export function stubGuideContent({
   library = validLibrary(),
-  guides = { "fictional-quest": fixtureGuide },
   raMappings = { "fictional-quest": validRaMapping() },
   playableSlugs = ["fictional-quest"],
+  // Playability includes "guide.json is actually there" (2026-07-31), so the
+  // one knob has to furnish the file too — otherwise `playableSlugs` would
+  // name guides the app then reads as unfinished.
+  guides = Object.fromEntries(
+    playableSlugs.map((slug) => [slug, fixtureGuide]),
+  ),
 }: StubOptions = {}) {
-  const calls: string[] = [];
+  const calls: { url: string; method: string }[] = [];
   const notFound = () => new Response("not found", { status: 404 });
 
   vi.stubGlobal(
     "fetch",
-    vi.fn(async (input: RequestInfo | URL) => {
+    vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
       const url = String(input);
-      calls.push(url);
+      calls.push({ url, method: init?.method ?? "GET" });
       if (url.endsWith("library.json")) return Response.json(library);
 
       const of = (pattern: RegExp) => url.match(pattern)?.[1] ?? null;
@@ -77,9 +86,16 @@ export function stubGuideContent({
   );
 
   return {
-    /** How many times a URL ending in `suffix` was requested. */
-    count: (suffix: string) =>
-      calls.filter((url) => url.endsWith(suffix)).length,
+    /**
+     * How many times a URL ending in `suffix` was fetched with `method`.
+     * Method-aware because playability HEAD-probes guide.json (a 1.6 MB file
+     * for Crystal): the invariant worth guarding is that the *body* is read
+     * once per guide, which a bare URL count would confuse with the probe.
+     */
+    count: (suffix: string, method = "GET") =>
+      calls.filter(
+        (call) => call.url.endsWith(suffix) && call.method === method,
+      ).length,
   };
 }
 

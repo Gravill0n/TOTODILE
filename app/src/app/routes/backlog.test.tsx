@@ -50,6 +50,11 @@ function stubContentFetch(library: unknown) {
       if (url.endsWith("guides/fictional-quest/layers/qa.report.json")) {
         return new Response("{}", { status: 200 });
       }
+      // …as it does for the compiled guide itself (HEAD-probed, body unused
+      // here: this screen is the library, which never opens the file).
+      if (url.endsWith("guides/fictional-quest/guide.json")) {
+        return new Response(null, { status: 200 });
+      }
       return new Response("not found", { status: 404 });
     }),
   );
